@@ -92,6 +92,13 @@ const fallbackStrengths = [summary.assessment].filter(Boolean);
 ---
 <BaseLayout title={`${summary.company} — Startup Diligence`} description={summary.thesis || summary.assessment}>
   <section class="report-shell sr-container">
+    <div class="print-watermark" aria-hidden="true">
+      <span>
+        <span class="wm-line wm-line-primary">AI-generated</span>
+        <span class="wm-line wm-line-secondary">verify independently</span>
+        <span class="wm-line wm-line-tertiary">startupv0.genisisiq.com</span>
+      </span>
+    </div>
     <header class="report-cover">
       <div class="report-cover-main">
         <div class="cover-eyebrow">
@@ -411,6 +418,16 @@ const fallbackStrengths = [summary.assessment].filter(Boolean);
       </section>
     )}
 
+    <section class="report-section report-disclaimer" aria-labelledby="report-disclaimer-heading">
+      <h2 id="report-disclaimer-heading">Disclaimer</h2>
+      <p>
+        This report is a public-evidence diligence snapshot, not investment advice.
+        Important financial, legal, technical, and contractual facts remain non-public
+        and should be verified directly with management and primary documents before
+        any investment decision.
+      </p>
+    </section>
+
     <div class="floating-actions" aria-label="Report shortcuts">
       {chapters.length > 0 && (
         <div class="chapter-jump" data-chapter-jump>
@@ -536,6 +553,7 @@ const fallbackStrengths = [summary.assessment].filter(Boolean);
   </script>
 
   <style>
+    .print-watermark { display: none; }
     .report-shell {
       --report-fs-kicker: clamp(0.82rem, 0.12vw + 0.78rem, 0.9rem);
       --report-fs-caption: clamp(0.88rem, 0.14vw + 0.82rem, 0.98rem);
@@ -979,6 +997,21 @@ const fallbackStrengths = [summary.assessment].filter(Boolean);
       .table-frame tbody td::before { content: attr(data-label); font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--claret); line-height: 1.25; }
     }
     @media print {
+      @page {
+        size: A4;
+        margin: 16mm 14mm 18mm;
+        @top-left { content: ""; }
+        @top-center { content: ""; }
+        @top-right { content: ""; }
+        @bottom-left { content: ""; }
+        @bottom-right { content: ""; }
+        @bottom-center {
+          content: counter(page) " / " counter(pages);
+          font-family: var(--font-sans);
+          font-size: 9pt;
+          color: #555;
+        }
+      }
       :global(.bz-utility), :global(.bz-footer), .evidence-toggle, .print-pdf, .floating-actions { display: none !important; }
       :global(html), :global(body) { background: #fff !important; color: #000; font-size: 10pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .report-shell { padding: 0 !important; font-size: 10pt; max-width: none !important; width: 100% !important; margin: 0 !important; }
@@ -990,6 +1023,39 @@ const fallbackStrengths = [summary.assessment].filter(Boolean);
       .table-frame table { width: 100% !important; min-width: 0 !important; table-layout: fixed; background: #fff !important; }
       .table-frame thead { display: table-header-group; }
       .table-frame th, .table-frame td { padding: 1.4mm 2mm; font-size: 8.5pt; line-height: 1.35; }
+      .print-watermark {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+        overflow: hidden;
+      }
+      .print-watermark > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        transform-origin: center center;
+        white-space: nowrap;
+        text-align: center;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: 0.04em;
+        color: rgba(120, 30, 30, 0.12);
+        text-transform: none;
+        line-height: 1.05;
+      }
+      .print-watermark .wm-line { display: block; }
+      .print-watermark .wm-line-primary { font-size: 72pt; }
+      .print-watermark .wm-line-secondary { font-size: 48pt; letter-spacing: 0.06em; margin-top: 0.35em; }
+      .print-watermark .wm-line-tertiary { font-size: 28pt; letter-spacing: 0.08em; margin-top: 0.4em; font-style: normal; }
     }
   </style>
 </BaseLayout>
