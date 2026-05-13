@@ -64,6 +64,7 @@ engine:
 
 tools:
   web-fetch:
+  bash: true
   cache-memory: true
 
 safe-outputs:
@@ -74,7 +75,7 @@ safe-outputs:
   missing-tool:
     create-issue: true
 
-timeout-minutes: 30
+timeout-minutes: 120
 ---
 
 # Random Unicorn Diligence Report
