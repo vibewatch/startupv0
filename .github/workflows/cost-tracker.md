@@ -14,7 +14,13 @@ on:
     branches:
       - main
 
-permissions: read-all
+# `actions: read` is required so the agentic-workflows MCP tool can
+# query workflow runs / artifacts via the GitHub Actions API.
+permissions:
+  actions: read
+  contents: read
+  issues: read
+  pull-requests: read
 
 network: defaults
 
@@ -27,13 +33,16 @@ safe-outputs:
     max: 2
 
 tools:
+  # Exposes `status` and `logs` operations to the agent. The MCP server runs
+  # outside the sandbox and authenticates with the workflow's GITHUB_TOKEN,
+  # so the agent gets run data without needing `gh` or a token of its own.
+  agentic-workflows:
   github:
     toolsets: [default]
   bash: true
 
-timeout-minutes: 10
+timeout-minutes: 60
 
-source: githubnext/agentics/workflows/cost-tracker.md@94ec5db57374c5b04a4b8eef8b4413f9af44d63f
 ---
 
 # Agent Cost Tracker
@@ -51,37 +60,30 @@ gh-aw's firewall after an agent workflow completes and report back what that run
 
 ## Instructions
 
-### Step 1: Download the agent-artifacts artifact
+### Step 1: Fetch token usage via the agentic-workflows MCP tool
 
-Use bash to download the `agent-artifacts` artifact from the triggering run:
+Call the `agentic-workflows` `logs` operation to retrieve data for the triggering
+run. Restrict the query to this single run by ID so the response is small:
 
-```bash
-gh run download ${{ github.event.workflow_run.id }} \
-  --name agent-artifacts \
-  --dir /tmp/agent-artifacts \
-  --repo ${{ github.repository }} 2>&1
-echo "exit: $?"
-```
+- `after_run_id`: ${{ github.event.workflow_run.id }} - 1
+- `before_run_id`: ${{ github.event.workflow_run.id }} + 1
+- `count`: 1
 
-**If this command fails** (the artifact does not exist), the triggering workflow did not
-produce cost data — it was not an agent run or the firewall was not enabled. Exit without
-creating any issue or comment. Do not report an error.
+The response includes parsed token usage and cost metrics for the run (when the
+triggering workflow recorded any). If the response contains **no run** matching
+`${{ github.event.workflow_run.id }}`, or the matching run has no token usage data,
+the triggering workflow was not an agent run (or the firewall was disabled).
+**Exit silently** — do not create any issue or comment, do not report an error.
 
-### Step 2: Parse token-usage.jsonl
+### Step 2: Extract per-model token counts
 
-Read the token usage file:
-
-```bash
-cat /tmp/agent-artifacts/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl 2>/dev/null
-```
-
-Each line is a JSON object. Example:
+From the matching run, collect per-model usage. Each entry has roughly this shape:
 
 ```json
 {"model":"claude-sonnet-4-5","input_tokens":1200,"output_tokens":340,"cache_read_input_tokens":500,"cache_creation_input_tokens":100}
 ```
 
-If the file is missing or empty, exit without creating any output.
+If the run reports zero tokens across all models, exit without creating any output.
 
 ### Step 3: Calculate cost
 
@@ -89,17 +91,39 @@ Aggregate token counts by model across all lines. Use this pricing table (USD pe
 
 | Model | Input | Output | Cache write | Cache read |
 |-------|-------|--------|-------------|------------|
-| claude-opus-4-5 | $15.00 | $75.00 | $18.75 | $1.50 |
-| claude-sonnet-4-5 | $3.00 | $15.00 | $3.75 | $0.30 |
-| claude-haiku-4-5 | $0.80 | $4.00 | $1.00 | $0.08 |
-| claude-3-opus | $15.00 | $75.00 | $18.75 | $1.50 |
-| claude-3-5-sonnet | $3.00 | $15.00 | $3.75 | $0.30 |
-| claude-3-5-haiku | $0.80 | $4.00 | $1.00 | $0.08 |
-| gpt-4o | $2.50 | $10.00 | — | $1.25 |
-| gpt-4o-mini | $0.15 | $0.60 | — | $0.075 |
+| claude-opus-4.7 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4.6 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4.5 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4.1 | $15.00 | $75.00 | $18.75 | $1.50 |
+| claude-opus-4 | $15.00 | $75.00 | $18.75 | $1.50 |
+| claude-sonnet-4.6 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-sonnet-4.5 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-sonnet-4 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-sonnet-3.7 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-haiku-4.5 | $1.00 | $5.00 | $1.25 | $0.10 |
+| claude-haiku-3.5 | $0.80 | $4.00 | $1.00 | $0.08 |
+| gpt-5.5 | $5.00 | $30.00 | — | $0.50 |
+| gpt-5.5-pro | $30.00 | $180.00 | — | — |
+| gpt-5.4 | $2.50 | $15.00 | — | $0.25 |
+| gpt-5.4-mini | $0.75 | $4.50 | — | $0.075 |
+| gpt-5.4-nano | $0.20 | $1.25 | — | $0.02 |
+| gpt-5.4-pro | $30.00 | $180.00 | — | — |
+| gpt-5.3-codex | $1.75 | $14.00 | — | $0.175 |
+| gpt-5.2 | $1.75 | $14.00 | — | $0.175 |
+| gpt-5.2-pro | $21.00 | $168.00 | — | — |
+| gpt-5.1 | $1.25 | $10.00 | — | $0.125 |
+| gpt-5 | $1.25 | $10.00 | — | $0.125 |
+| gpt-5-mini | $0.25 | $2.00 | — | $0.025 |
+| gpt-5-nano | $0.05 | $0.40 | — | $0.005 |
+| gpt-5-pro | $15.00 | $120.00 | — | — |
 | gpt-4.1 | $2.00 | $8.00 | — | $0.50 |
-| o3 | $10.00 | $40.00 | — | $2.50 |
-| o4-mini | $1.10 | $4.40 | — | $0.275 |
+| gpt-4.1-mini | $0.40 | $1.60 | — | $0.10 |
+| gemini-3.1-pro | $2.00 | $12.00 | — | — |
+| gemini-3.1-flash-lite | $0.25 | $1.50 | — | — |
+| gemini-3-flash | $0.50 | $3.00 | — | — |
+| gemini-2.5-pro | $1.25 | $10.00 | — | — |
+| gemini-2.5-flash | $0.30 | $2.50 | — | — |
+| gemini-2.5-flash-lite | $0.10 | $0.40 | — | — |
 | gemini-1.5-pro | $1.25 | $5.00 | — | — |
 | gemini-2.0-flash | $0.10 | $0.40 | — | — |
 
@@ -115,14 +139,9 @@ Format costs with 4 decimal places: `$0.0123`. Use `< $0.0001` if below that thr
 
 ### Step 4: Find the associated pull request
 
-Check whether the triggering run is linked to a pull request:
-
-```bash
-gh api "repos/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}" \
-  --jq '.pull_requests[0].number // empty'
-```
-
-Store the PR number if one is returned.
+Use the GitHub MCP server (default toolset) to look up the workflow run and read
+its `pull_requests` field. If a pull request is linked, store its number.
+If none, treat the run as unattached to a PR.
 
 ### Step 5: Post the cost report
 
