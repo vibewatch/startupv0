@@ -74,7 +74,7 @@ safe-outputs:
   missing-tool:
     create-issue: true
 
-timeout-minutes: 360
+timeout-minutes: 30
 ---
 
 # Random Unicorn Diligence Report
