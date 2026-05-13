@@ -12,7 +12,11 @@ on:
 
 permissions: read-all
 
-network: defaults
+network:
+  allowed:
+    - defaults
+    - "hackernews.firebaseio.com"
+    - "r.jina.ai"
 
 safe-outputs:
   create-discussion:
