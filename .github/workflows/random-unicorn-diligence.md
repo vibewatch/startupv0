@@ -14,11 +14,11 @@ permissions: read-all
 network:
   allowed:
     - defaults
-    - "*"
+    - "r.jina.ai"
 
-engine:
-  id: copilot
-  model: claude-sonnet-4.6
+# engine:
+#   id: copilot
+#   model: claude-sonnet-4.6
 
 tools:
   web-fetch:
