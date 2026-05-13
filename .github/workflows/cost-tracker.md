@@ -8,7 +8,7 @@ description: |
 
 on:
   workflow_run:
-    workflows: ["agent-implement", "agent-pr-fix"]  # Edit to match your agent workflow names
+    workflows: ["daily-repo-status", "weekly-research"]  # Edit to match your agent workflow names
     types:
       - completed
     branches:

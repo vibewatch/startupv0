@@ -7,7 +7,7 @@ description: |
   strategic decision-making.
 
 on:
-  schedule: daily
+  schedule: weekly on monday
   workflow_dispatch:
 
 permissions: read-all
