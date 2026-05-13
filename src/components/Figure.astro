@@ -72,10 +72,12 @@ if (figureType === 'timeline') {
 } else if (figureType === 'chart') {
   const xScale = String(spec?.x_axis?.scale ?? '').toLowerCase();
   const isTime = xScale === 'time' || xScale === 'date';
+  const isCategorical = xScale === 'categorical' || xScale === 'ordinal' || xScale === 'band';
   payload = {
     type: 'chart',
     chartType: String(spec?.chart_type ?? 'line').toLowerCase(),
     isTime,
+    isCategorical,
     xAxis: {
       label: text(spec?.x_axis?.label),
       unit: text(spec?.x_axis?.unit),
@@ -89,17 +91,17 @@ if (figureType === 'timeline') {
       unit: text(series?.unit),
       points: arr(series?.data_points)
         .map((point: any) => ({
-          x: isTime ? ts(point?.x) : num(point?.x),
+          x: isTime ? ts(point?.x) : isCategorical ? text(point?.x) : num(point?.x),
           y: num(point?.y),
           label: text(point?.label),
           rawX: text(point?.x),
         }))
-        .filter((p: any) => p.x !== null && p.y !== null),
+        .filter((p: any) => isCategorical ? p.x !== '' : (p.x !== null && p.y !== null)),
     })),
     annotations: arr(spec?.annotations).map((annotation: any) => ({
       label: text(annotation?.label),
       note: text(annotation?.note),
-      x: isTime ? ts(annotation?.x) : num(annotation?.x),
+      x: isTime ? ts(annotation?.x) : isCategorical ? text(annotation?.x) : num(annotation?.x),
       y: num(annotation?.y),
     })),
   };
@@ -485,9 +487,161 @@ const payloadJson = renderPayload
       });
   };
 
+  // Categorical bar chart: x-axis values are discrete category strings.
+  // Points with y === null render as dashed placeholder bars labelled with
+  // their reason ("not publicly verified" etc.) — keeps evidence-gap visible.
+  const renderCategoricalChart = (element: HTMLElement, payload: any, series: any[]) => {
+    const categories: string[] = [];
+    const seenCat = new Set<string>();
+    for (const s of series) for (const p of arr<any>(s.points)) {
+      if (!seenCat.has(p.x)) { seenCat.add(p.x); categories.push(p.x); }
+    }
+    if (!categories.length) return;
+    const annotations = arr<any>(payload.annotations);
+    const longLabels = categories.some((c) => c.length > 10) || categories.length > 5;
+    const margin = { top: 40, right: 24, bottom: longLabels ? 96 : 64, left: 64 };
+    const { svg, width, height } = svgBase(element, longLabels ? 360 : 320);
+    const allYs = series.flatMap((s: any) => arr<any>(s.points).map((p: any) => p.y).filter((v: any) => v !== null));
+    const yMaxRaw = allYs.length ? Math.max(...allYs) : 1;
+    const yPad = yMaxRaw * 0.12 || 1;
+    const xScale = d3.scaleBand<string>()
+      .domain(categories)
+      .range([margin.left, width - margin.right])
+      .padding(0.3);
+    const yScale = d3.scaleLinear()
+      .domain([0, yMaxRaw + yPad]).nice()
+      .range([height - margin.bottom, margin.top]);
+    // Gridlines
+    svg.append('g').attr('class', 'figure-grid').selectAll('line').data(yScale.ticks(5)).join('line')
+      .attr('x1', margin.left).attr('x2', width - margin.right)
+      .attr('y1', (d: any) => yScale(d)).attr('y2', (d: any) => yScale(d))
+      .attr('stroke', palette.border).attr('stroke-width', 1);
+    // Y axis
+    const yAxis = d3.axisLeft(yScale).ticks(5).tickFormat(d3.format('~s'));
+    svg.append('g').attr('transform', `translate(${margin.left},0)`).call(yAxis as any)
+      .call((g: any) => g.select('.domain').remove())
+      .call((g: any) => g.selectAll('line').attr('stroke', palette.border))
+      .call((g: any) => g.selectAll('text').attr('fill', palette.muted).attr('font-size', 11));
+    // X axis
+    const xAxisG = svg.append('g').attr('transform', `translate(0,${height - margin.bottom})`)
+      .call(d3.axisBottom(xScale) as any);
+    xAxisG.select('.domain').attr('stroke', palette.charcoal40);
+    xAxisG.selectAll('line').attr('stroke', palette.charcoal40);
+    const tickText = xAxisG.selectAll('text')
+      .attr('fill', palette.muted).attr('font-size', 11);
+    if (longLabels) {
+      tickText
+        .attr('transform', 'rotate(-28)')
+        .attr('text-anchor', 'end')
+        .attr('dx', '-0.6em')
+        .attr('dy', '0.4em');
+    }
+    // Axis labels
+    svg.append('text')
+      .attr('x', margin.left + (width - margin.left - margin.right) / 2)
+      .attr('y', height - 14).attr('text-anchor', 'middle')
+      .attr('fill', palette.muted).attr('font-size', 12).attr('font-weight', 600)
+      .text(payload.xAxis.label);
+    svg.append('text')
+      .attr('transform', `translate(18,${margin.top + (height - margin.top - margin.bottom) / 2}) rotate(-90)`)
+      .attr('text-anchor', 'middle')
+      .attr('fill', palette.muted).attr('font-size', 12).attr('font-weight', 600)
+      .text(payload.yAxis.unit ? `${payload.yAxis.label} (${payload.yAxis.unit})` : payload.yAxis.label);
+    // Bars (dodge if multiple series)
+    const colorScale = d3.scaleOrdinal<string>()
+      .domain(series.map((_: any, i: number) => String(i)))
+      .range([palette.charcoal, palette.info, palette.warning, palette.success, palette.danger]);
+    const subScale = d3.scaleBand<string>()
+      .domain(series.map((_: any, i: number) => String(i)))
+      .range([0, xScale.bandwidth()])
+      .padding(0.1);
+    const barWidth = subScale.bandwidth();
+    series.forEach((s: any, i: number) => {
+      const color = colorScale(String(i));
+      const points = arr<any>(s.points);
+      const groups = svg.append('g').selectAll('g').data(points).join('g')
+        .attr('transform', (p: any) => `translate(${(xScale(p.x) ?? 0) + (subScale(String(i)) ?? 0)},0)`);
+      // Filled bars (y present)
+      const filled = groups.filter((p: any) => p.y !== null);
+      filled.append('rect')
+        .attr('x', 0)
+        .attr('y', (p: any) => yScale(p.y))
+        .attr('width', barWidth)
+        .attr('height', (p: any) => Math.max(0, height - margin.bottom - yScale(p.y)))
+        .attr('fill', color)
+        .attr('opacity', 0.9);
+      filled.append('text')
+        .attr('x', barWidth / 2)
+        .attr('y', (p: any) => yScale(p.y) - 6)
+        .attr('text-anchor', 'middle')
+        .attr('fill', palette.charcoal)
+        .attr('font-size', 11)
+        .attr('font-weight', 600)
+        .text((p: any) => p.label || (p.y != null ? d3.format('~s')(p.y) : ''));
+      // Placeholder bars (y missing) — dashed outline, gap label centered.
+      const empty = groups.filter((p: any) => p.y === null);
+      empty.append('rect')
+        .attr('x', 0)
+        .attr('y', margin.top)
+        .attr('width', barWidth)
+        .attr('height', height - margin.bottom - margin.top)
+        .attr('fill', palette.charcoal04)
+        .attr('stroke', palette.charcoal40)
+        .attr('stroke-dasharray', '4 4')
+        .attr('stroke-width', 1);
+      empty.append('text')
+        .attr('x', barWidth / 2)
+        .attr('y', margin.top + (height - margin.top - margin.bottom) / 2 - 6)
+        .attr('text-anchor', 'middle')
+        .attr('fill', palette.muted)
+        .attr('font-size', 11)
+        .attr('font-weight', 600)
+        .each(function(p: any) {
+          renderWrapped(d3.select(this as SVGTextElement), p.label || 'not disclosed', {
+            maxChars: Math.max(8, Math.floor(barWidth / 7)),
+            maxLines: 4,
+            lineHeight: 14,
+          });
+        });
+      withTooltip(groups, (p: any) => tooltipHtml(
+        `${s.name}${s.unit ? ` (${s.unit})` : ''}`,
+        [p.rawX, p.y !== null ? `${p.y}${s.unit ? ` ${s.unit}` : ''}` : 'not publicly disclosed', p.label],
+      ));
+    });
+    // Legend (multi-series only)
+    if (series.length > 1) {
+      const legend = svg.append('g').attr('transform', `translate(${margin.left + 8},${margin.top - 6})`);
+      let xCursor = 0;
+      series.forEach((s: any, i: number) => {
+        const g = legend.append('g').attr('transform', `translate(${xCursor},0)`);
+        g.append('rect').attr('x', -4).attr('y', -6).attr('width', 10).attr('height', 10).attr('fill', colorScale(String(i)));
+        const tx = g.append('text').attr('x', 10).attr('y', 4)
+          .attr('fill', palette.charcoal).attr('font-size', 11).attr('font-weight', 600)
+          .text(s.name);
+        const node = tx.node() as SVGTextElement | null;
+        const w = (node?.getComputedTextLength?.() ?? s.name.length * 7) + 22;
+        xCursor += w;
+      });
+    }
+    // Annotations rendered as caption block beneath the SVG so they don't
+    // collide with rotated x-tick labels.
+    if (annotations.length) {
+      const notes = d3.select(element).append('div').attr('class', 'figure-chart-notes');
+      annotations.forEach((a: any) => {
+        const row = notes.append('div').attr('class', 'figure-chart-note');
+        if (a.label) row.append('strong').text(a.label);
+        if (a.note) row.append('span').text(a.note);
+      });
+    }
+  };
+
   const renderChart = (element: HTMLElement, payload: any) => {
     const series = arr<any>(payload.series).filter((s: any) => arr(s.points).length);
     if (!series.length) return;
+    if (payload.isCategorical) {
+      renderCategoricalChart(element, payload, series);
+      return;
+    }
     const margin = { top: 40, right: 24, bottom: 56, left: 64 };
     const { svg, width, height } = svgBase(element, 320);
     // Anchor labels based on horizontal position so points/annotations near
@@ -630,7 +784,7 @@ const payloadJson = renderPayload
   const computeLayeredLayout = (
     element: HTMLElement,
     payload: any,
-    opts: { cardH: number; stageLabel: (i: number) => string; orientation?: 'horizontal' | 'vertical' },
+    opts: { cardH: number; stageLabel: (i: number, nodes: any[]) => string; orientation?: 'horizontal' | 'vertical' },
   ) => {
     const nodes = arr<any>(payload.nodes).map((n: any, i: number) => ({ ...n, _key: n.id || n.label || `n${i}`, _index: i }));
     const edges = arr<any>(payload.edges).map((e: any, i: number) => ({ ...e, _index: i }));
@@ -739,7 +893,7 @@ const payloadJson = renderPayload
           .attr('x', innerLeft - 12).attr('y', rowY + 4)
           .attr('text-anchor', 'end')
           .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
-          .text(opts.stageLabel(stageIndex));
+          .text(opts.stageLabel(stageIndex, stage));
         const slotW = innerW / Math.max(1, stage.length);
         stage.forEach((node: any, i: number) => {
           positions.set(node._key, { x: innerLeft + slotW * i + slotW / 2, y: rowY, node, stage: stageIndex });
@@ -753,7 +907,7 @@ const payloadJson = renderPayload
           .attr('x', layoutWidth / 2).attr('y', cursorY - 14)
           .attr('text-anchor', 'middle')
           .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
-          .text(opts.stageLabel(stageIndex));
+          .text(opts.stageLabel(stageIndex, stage));
         stage.forEach((node: any) => {
           positions.set(node._key, { x: stageX + cardW / 2, y: cursorY + cardH / 2, node, stage: stageIndex });
           cursorY += cardH + rowGap;
@@ -770,7 +924,7 @@ const payloadJson = renderPayload
           .attr('x', xCenter).attr('y', 22)
           .attr('text-anchor', 'middle')
           .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
-          .text(opts.stageLabel(stageIndex));
+          .text(opts.stageLabel(stageIndex, stage));
         const innerH = layoutHeight - margin.top - margin.bottom;
         const slotH = innerH / Math.max(1, stage.length);
         stage.forEach((node: any, i: number) => {
@@ -813,9 +967,17 @@ const payloadJson = renderPayload
 
   // ---- architecture_diagram: system components + data-flow arrows ----
   const renderArchitectureDiagram = (element: HTMLElement, payload: any) => {
+    // Prefer the shared node_type for the column when it's uniform within a
+    // stage (e.g. all `product`); otherwise fall back to a generic "Stage N"
+    // so mixed columns don't lie about their contents.
+    const titleCase = (s: string) => s.replace(/\b\w/g, (c) => c.toUpperCase());
     const ctx = computeLayeredLayout(element, payload, {
       cardH: 64,
-      stageLabel: (i) => `Stage ${i + 1}`,
+      stageLabel: (i, nodes) => {
+        const kinds = Array.from(new Set(arr<any>(nodes).map((n) => String(n.kind || '').trim()).filter(Boolean)));
+        if (!kinds.length) return `Stage ${i + 1}`;
+        return kinds.map((k) => titleCase(humanize(k))).join(' / ');
+      },
     });
     if (!ctx) return;
     const { svg, positions, edgeData, edgePath, cardW, cardH } = ctx;
@@ -1109,7 +1271,7 @@ const payloadJson = renderPayload
       .attr('x', cx).attr('y', (d: any) => d.y + stageH / 2 + 4)
       .attr('text-anchor', 'middle')
       .attr('fill', palette.creamHighlight).attr('font-size', compact ? 11 : 12).attr('font-weight', 600)
-      .text((d: any) => d.valueLabel || `Stage ${d._index + 1}`);
+      .text((d: any) => d.valueLabel || (counted ? '—' : ''));
     // Stage label — right-aligned in the left gutter, wraps to up to 2 lines.
     stages.append('text')
       .attr('x', barLeft - 12)
@@ -1353,6 +1515,27 @@ const payloadJson = renderPayload
     color: var(--muted-gray);
     font-size: var(--fs-sm);
     line-height: 1.5;
+  }
+  .figure-chart-notes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin: var(--space-2) var(--space-5) var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border-cream);
+    background: var(--charcoal-03);
+    color: var(--muted-gray);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .figure-chart-note {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .figure-chart-note strong {
+    color: var(--charcoal);
+    font-weight: 600;
   }
 
   /* Card / dot hover state shared by architecture_diagram, org_chart, market_map */
