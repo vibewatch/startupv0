@@ -14,7 +14,47 @@ permissions: read-all
 network:
   allowed:
     - defaults
-    - "r.jina.ai"
+    # Search & read-through fetch proxy
+    - duckduckgo.com           # html.duckduckgo.com search endpoint
+    - r.jina.ai                # reader proxy: fetch arbitrary pages as text
+    # Reference / lists
+    - wikipedia.org
+    - wikimedia.org
+    # Startup / funding databases
+    - crunchbase.com
+    - cbinsights.com
+    - pitchbook.com
+    - dealroom.co
+    - tracxn.com
+    - growjo.com
+    - owler.com
+    # Business & tech press
+    - techcrunch.com
+    - theinformation.com
+    - reuters.com
+    - bloomberg.com
+    - ft.com
+    - wsj.com
+    - forbes.com
+    - cnbc.com
+    - axios.com
+    - businessinsider.com
+    - sifted.eu
+    - theverge.com
+    - wired.com
+    - arstechnica.com
+    # Regulatory / filings
+    - sec.gov
+    - courtlistener.com
+    # Hiring & employee signals
+    - linkedin.com
+    - glassdoor.com
+    - levels.fyi
+    - teamblind.com
+    - repvue.com
+    # Community signals
+    - news.ycombinator.com
+    - hn.algolia.com
 
 # engine:
 #   id: copilot
