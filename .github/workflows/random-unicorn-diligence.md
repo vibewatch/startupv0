@@ -64,7 +64,6 @@ network:
 
 tools:
   web-fetch:
-  edit:
   cache-memory: true
 
 safe-outputs:

@@ -10,10 +10,10 @@ on:
 
 permissions: read-all
 
-network: defaults
-
 tools:
-  bash: ["cat", "date", "mkdir"]
+  web-fetch:
+  
+network: defaults
 
 safe-outputs:
   create-pull-request:
