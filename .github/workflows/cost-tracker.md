@@ -8,7 +8,7 @@ description: |
 
 on:
   workflow_run:
-    workflows: ["daily-repo-status", "weekly-research"]  # Edit to match your agent workflow names
+    workflows: ["Repo Status", "Weekly Research", "Random Unicorn Diligence Report"]  # Must match the rendered workflow `name:` fields
     types:
       - completed
     branches:
