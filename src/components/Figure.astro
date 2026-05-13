@@ -1,0 +1,1539 @@
+---
+/**
+ * Renders a diligence-report figure inline within a chapter section.
+ *
+ * Architecture mirrors ../startup/website/src/components/FigureRenderer.astro:
+ *   1. Server side serializes a normalized payload to a `<script type="application/json">`.
+ *   2. Client side imports d3 and hydrates each figure into the matching `<div>`.
+ *
+ * Supported figure_type values (from our diligence schema):
+ *   timeline | chart | architecture_diagram | market_map | funnel | org_chart | risk_heatmap
+ *
+ * Styling stays in DESIGN.md tokens — cream surfaces, charcoal opacity ramps,
+ * borders for containment, no shadows except the signature button-inset.
+ */
+
+type FigureProps = {
+  figure: any;
+  index: number;
+};
+
+const { figure, index } = Astro.props as FigureProps;
+
+const figureType = String(figure?.figure_type ?? '').toLowerCase();
+const figureId = String(figure?.figure_id ?? `figure-${index + 1}`);
+const chartId = `figure-render-${figureId.replace(/[^a-z0-9_-]/gi, '-')}`;
+
+const arr = (value: unknown): any[] => (Array.isArray(value) ? value : []);
+const text = (value: unknown, fallback = ''): string => {
+  const result = String(value ?? '').trim();
+  return result.length ? result : fallback;
+};
+const num = (value: unknown): number | null => {
+  if (value === null || value === undefined || value === '') return null;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+};
+const ts = (value: unknown): number | null => {
+  if (value === null || value === undefined || value === '') return null;
+  const t = Date.parse(String(value));
+  return Number.isFinite(t) ? t : null;
+};
+const humanize = (value: unknown): string => String(value ?? '').replace(/_/g, ' ');
+
+// Map our schema's category / severity / verification status into a tone bucket
+// the renderer can color-code consistently.
+const toneFromCategory = (value: unknown): string => {
+  const v = String(value ?? '').toLowerCase();
+  if (['funding', 'positive', 'success', 'verified', 'low'].includes(v)) return 'success';
+  if (['risk', 'critical', 'high', 'negative', 'litigation', 'failed', 'disputed'].includes(v)) return 'danger';
+  if (['warning', 'medium', 'opportunity', 'partial', 'mixed'].includes(v)) return 'warning';
+  if (['infrastructure', 'product', 'governance', 'info', 'launch'].includes(v)) return 'info';
+  return 'neutral';
+};
+
+const spec = figure?.spec ?? {};
+let payload: any = null;
+
+if (figureType === 'timeline') {
+  payload = {
+    type: 'timeline',
+    items: arr(spec?.events)
+      .map((event: any) => ({
+        date: text(event?.date),
+        label: text(event?.label),
+        detail: text(event?.description),
+        tone: toneFromCategory(event?.category),
+        category: text(event?.category),
+        _ts: ts(event?.date),
+      }))
+      .sort((a: any, b: any) => (a._ts ?? 0) - (b._ts ?? 0)),
+  };
+} else if (figureType === 'chart') {
+  const xScale = String(spec?.x_axis?.scale ?? '').toLowerCase();
+  const isTime = xScale === 'time' || xScale === 'date';
+  payload = {
+    type: 'chart',
+    chartType: String(spec?.chart_type ?? 'line').toLowerCase(),
+    isTime,
+    xAxis: {
+      label: text(spec?.x_axis?.label),
+      unit: text(spec?.x_axis?.unit),
+    },
+    yAxis: {
+      label: text(spec?.y_axis?.label),
+      unit: text(spec?.y_axis?.unit),
+    },
+    series: arr(spec?.series).map((series: any) => ({
+      name: text(series?.name, 'Series'),
+      unit: text(series?.unit),
+      points: arr(series?.data_points)
+        .map((point: any) => ({
+          x: isTime ? ts(point?.x) : num(point?.x),
+          y: num(point?.y),
+          label: text(point?.label),
+          rawX: text(point?.x),
+        }))
+        .filter((p: any) => p.x !== null && p.y !== null),
+    })),
+    annotations: arr(spec?.annotations).map((annotation: any) => ({
+      label: text(annotation?.label),
+      note: text(annotation?.note),
+      x: isTime ? ts(annotation?.x) : num(annotation?.x),
+      y: num(annotation?.y),
+    })),
+  };
+} else if (figureType === 'architecture_diagram') {
+  const boundaries = arr(spec?.boundaries).map((boundary: any) => ({
+    id: text(boundary?.boundary_id),
+    label: text(boundary?.label),
+    nodeIds: arr(boundary?.node_ids).map(String),
+  }));
+  const boundaryByNode = new Map<string, string>();
+  for (const boundary of boundaries) {
+    for (const nodeId of boundary.nodeIds) boundaryByNode.set(nodeId, boundary.label);
+  }
+  payload = {
+    type: 'architecture_diagram',
+    nodes: arr(spec?.nodes).map((node: any) => ({
+      id: text(node?.node_id),
+      label: text(node?.label),
+      detail: text(node?.description),
+      kind: text(node?.node_type),
+      group: boundaryByNode.get(text(node?.node_id)) ?? '',
+      tone: toneFromCategory(node?.node_type),
+    })),
+    edges: arr(spec?.edges).map((edge: any) => ({
+      from: text(edge?.from_node_id),
+      to: text(edge?.to_node_id),
+      label: text(edge?.relationship),
+      detail: text(edge?.data_or_dependency),
+    })),
+    boundaries,
+  };
+} else if (figureType === 'org_chart') {
+  payload = {
+    type: 'org_chart',
+    nodes: arr(spec?.people_or_roles).map((node: any) => {
+      const name = text(node?.name);
+      const role = text(node?.role);
+      const dept = text(node?.department);
+      const location = text(node?.location);
+      return {
+        id: text(node?.node_id),
+        label: role || name || text(node?.node_id),
+        name: role && name ? name : '',
+        meta: [dept, location].filter(Boolean).join(' · '),
+        detail: [name && role ? name : '', dept, location].filter(Boolean).join(' · '),
+        kind: dept,
+        group: dept,
+        tone: node?.is_publicly_verified === false ? 'warning' : 'neutral',
+      };
+    }),
+    edges: arr(spec?.reporting_lines).map((line: any) => ({
+      from: text(line?.parent_node_id),
+      to: text(line?.child_node_id),
+      label: text(line?.relationship),
+      detail: '',
+    })),
+    boundaries: [],
+  };
+} else if (figureType === 'market_map') {
+  const segments = arr(spec?.segments).map((segment: any) => ({
+    id: text(segment?.segment_id),
+    label: text(segment?.name),
+    detail: text(segment?.description),
+  }));
+  payload = {
+    type: 'market_map',
+    xAxis: {
+      label: text(spec?.dimensions?.x_axis?.label),
+      low: text(spec?.dimensions?.x_axis?.low_label, 'Low'),
+      high: text(spec?.dimensions?.x_axis?.high_label, 'High'),
+    },
+    yAxis: {
+      label: text(spec?.dimensions?.y_axis?.label),
+      low: text(spec?.dimensions?.y_axis?.low_label, 'Low'),
+      high: text(spec?.dimensions?.y_axis?.high_label, 'High'),
+    },
+    segments,
+    points: arr(spec?.entities)
+      .map((entity: any) => {
+        const x = num(entity?.x_value);
+        const y = num(entity?.y_value);
+        if (x === null || y === null) return null;
+        const attrs = entity?.attributes ?? {};
+        const detail = Object.entries(attrs)
+          .map(([k, v]) => `${humanize(k)}: ${text(v)}`)
+          .filter((line) => line.endsWith(': ') === false)
+          .join(' · ');
+        return {
+          label: text(entity?.name),
+          x,
+          y,
+          segmentId: text(entity?.segment_id),
+          kind: text(entity?.entity_type),
+          isTarget: String(entity?.entity_type ?? '').toLowerCase() === 'target_company',
+          detail,
+        };
+      })
+      .filter((p: any) => p !== null),
+  };
+} else if (figureType === 'funnel') {
+  const stages = arr(spec?.stages)
+    .slice()
+    .sort((a: any, b: any) => (num(a?.order) ?? 0) - (num(b?.order) ?? 0));
+  payload = {
+    type: 'funnel',
+    items: stages.map((stage: any) => {
+      const count = num(stage?.count);
+      const conv = num(stage?.conversion_rate_from_previous);
+      return {
+        label: text(stage?.name),
+        value: count,
+        valueLabel: count !== null ? count.toLocaleString() : '',
+        conversion: conv,
+        period: text(stage?.period),
+        detail: text(stage?.period),
+      };
+    }),
+  };
+} else if (figureType === 'risk_heatmap') {
+  const xScale = arr(spec?.x_axis?.scale).map(String);
+  const yScale = arr(spec?.y_axis?.scale).map(String);
+  const points = arr(spec?.risk_points).map((point: any) => ({
+    id: text(point?.risk_id),
+    label: text(point?.label),
+    severity: text(point?.severity),
+    likelihood: text(point?.likelihood),
+    rationale: text(point?.rationale),
+  }));
+  payload = {
+    type: 'risk_heatmap',
+    xLabel: text(spec?.x_axis?.label, 'Likelihood'),
+    yLabel: text(spec?.y_axis?.label, 'Severity'),
+    columns: xScale,
+    // Render highest severity at the top.
+    rows: yScale.slice().reverse(),
+    points,
+  };
+}
+
+const isUnknown = !payload;
+const renderPayload = payload ? { id: chartId, ...payload } : null;
+const payloadJson = renderPayload
+  ? JSON.stringify(renderPayload).replace(/[<>&\u2028\u2029]/g, (char) =>
+      ({ '<': '\\u003c', '>': '\\u003e', '&': '\\u0026', '\u2028': '\\u2028', '\u2029': '\\u2029' }[char] ?? char),
+    )
+  : null;
+---
+<figure class:list={['figure-frame', `figure-${figureType || 'unknown'}`]} id={figureId}>
+  <figcaption class="figure-caption">
+    <span class="figure-title">{text(figure?.title, 'Untitled figure')}</span>
+    {figure?.description && <span class="figure-description">{text(figure.description)}</span>}
+  </figcaption>
+
+  {payload && (
+    <div class:list={['figure-render', `figure-render-${payload.type}`]} id={chartId} data-render-state="pending"></div>
+  )}
+
+  {isUnknown && (
+    <div class="figure-fallback" role="note">
+      <strong>{humanize(figureType) || 'Unknown figure type'}</strong>
+      <p>No renderer is wired up for this figure type yet. Source data remains in the report YAML.</p>
+    </div>
+  )}
+
+  {figure?.notes && <p class="figure-note">{text(figure.notes)}</p>}
+
+  {payloadJson && <script type="application/json" class="figure-payload" set:html={payloadJson}></script>}
+</figure>
+
+<script>
+  import * as d3 from 'd3';
+
+  // DESIGN.md palette — cream paper, charcoal opacity ramps, semantic accents.
+  const palette = {
+    cream: '#f7f4ed',
+    creamHighlight: '#fcfbf8',
+    charcoal: '#1c1c1c',
+    charcoal82: 'rgba(28,28,28,0.82)',
+    charcoal40: 'rgba(28,28,28,0.4)',
+    charcoal12: 'rgba(28,28,28,0.12)',
+    charcoal04: 'rgba(28,28,28,0.04)',
+    border: '#eceae4',
+    muted: '#5f5f5d',
+    danger: '#9c3a2f',
+    warning: '#8b641c',
+    success: '#486b3f',
+    info: '#375f78',
+    neutral: '#6f675d',
+  };
+  const toneColor = (tone: string | undefined) => {
+    switch (tone) {
+      case 'danger': return palette.danger;
+      case 'warning': return palette.warning;
+      case 'success': return palette.success;
+      case 'info': return palette.info;
+      default: return palette.neutral;
+    }
+  };
+  const segmentTones = ['info', 'success', 'warning', 'danger', 'neutral'];
+
+  const arr = <T,>(value: T | T[] | null | undefined): T[] => Array.isArray(value) ? value : [];
+  const truncate = (value: unknown, max = 22) => {
+    const s = String(value ?? '');
+    return s.length > max ? `${s.slice(0, max - 1)}…` : s;
+  };
+  const humanize = (value: unknown) => String(value ?? '').replace(/_/g, ' ');
+
+  // ---- Tooltip ----
+  const tooltip = (() => {
+    const node = d3.select('body')
+      .selectAll('.figure-tooltip')
+      .data([null])
+      .join('div')
+      .attr('class', 'figure-tooltip')
+      .attr('role', 'tooltip');
+    const move = (event: PointerEvent) => {
+      const gap = window.innerWidth < 520 ? 10 : 14;
+      const pad = 12;
+      const tooltipNode = node.node() as HTMLElement | null;
+      const box = tooltipNode?.getBoundingClientRect?.() ?? { width: 0, height: 0 } as DOMRect;
+      const spaceRight = window.innerWidth - event.clientX;
+      const placeLeft = spaceRight < box.width + gap + pad && event.clientX > box.width + gap + pad;
+      const rawLeft = placeLeft ? event.clientX - box.width - gap : event.clientX + gap;
+      const rawTop = event.clientY + gap;
+      const left = Math.max(pad, Math.min(window.innerWidth - box.width - pad, rawLeft));
+      const top = Math.max(pad, Math.min(window.innerHeight - box.height - pad, rawTop));
+      node.style('left', `${left}px`).style('top', `${top}px`);
+    };
+    return {
+      show(event: PointerEvent, html: string) {
+        node.html(html).classed('is-visible', true);
+        move(event);
+      },
+      move,
+      hide() { node.classed('is-visible', false); },
+    };
+  })();
+  document.addEventListener('pointerdown', (event) => {
+    const target = event.target as HTMLElement | null;
+    if (target?.closest?.('.figure-render')) return;
+    tooltip.hide();
+  });
+  const escapeHtml = (value: unknown) => String(value ?? '').replace(/[&<>"]/g, (char) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char] ?? char));
+  const tooltipHtml = (title: unknown, lines: unknown[] = []) =>
+    `<strong>${escapeHtml(title)}</strong>${lines.filter(Boolean).map((line) => `<span>${escapeHtml(line)}</span>`).join('')}`;
+  function withTooltip<T>(selection: d3.Selection<any, T, any, any>, htmlForDatum: (d: T) => string) {
+    selection
+      .on('pointerenter', function(event, datum) {
+        d3.select(this).classed('is-hovered', true);
+        tooltip.show(event as PointerEvent, htmlForDatum(datum));
+      })
+      .on('pointermove', (event) => tooltip.move(event as PointerEvent))
+      .on('pointerleave', function() {
+        d3.select(this).classed('is-hovered', false);
+        tooltip.hide();
+      });
+  }
+
+  // ---- Shared helpers ----
+  const fontFamily = 'var(--font-display, system-ui, sans-serif)';
+  const svgBase = (element: HTMLElement, height: number, minWidthOverride: number | null = null) => {
+    const containerWidth = Math.floor(element.getBoundingClientRect().width || 760);
+    const minInternalWidth = containerWidth < 420 ? 420 : 520;
+    const width = Math.max(minInternalWidth, containerWidth, minWidthOverride ?? 0);
+    d3.select(element).selectAll('*').remove();
+    const svg = d3.select(element)
+      .append('svg')
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('role', 'img')
+      .attr('width', '100%')
+      .attr('preserveAspectRatio', 'xMinYMin meet')
+      .style('font-family', fontFamily)
+      .style('display', 'block');
+    return { svg, width, height };
+  };
+  const wrapWords = (text: string, maxChars: number, maxLines: number) => {
+    const tokens = String(text ?? '').split(/\s+/).filter(Boolean);
+    if (!tokens.length) return [''];
+    const lines: string[] = [];
+    let line = '';
+    for (const token of tokens) {
+      const next = line ? `${line} ${token}` : token;
+      if (line && next.length > maxChars) {
+        lines.push(line);
+        line = token;
+      } else {
+        line = next;
+      }
+    }
+    if (line) lines.push(line);
+    const clipped = lines.slice(0, maxLines);
+    if (lines.length > maxLines) clipped[clipped.length - 1] = truncate(clipped[clipped.length - 1], Math.max(4, maxChars - 1));
+    return clipped;
+  };
+  const renderWrapped = (
+    selection: d3.Selection<SVGTextElement, any, any, any>,
+    text: string,
+    { maxChars = 22, maxLines = 2, lineHeight = 14 }: { maxChars?: number; maxLines?: number; lineHeight?: number } = {},
+  ) => {
+    const x = selection.attr('x') ?? '0';
+    selection.text(null);
+    const lines = wrapWords(text, maxChars, maxLines);
+    lines.forEach((line, i) => {
+      selection.append('tspan').attr('x', x).attr('dy', i === 0 ? 0 : lineHeight).text(line);
+    });
+  };
+
+  // ---- Renderers ----
+  const renderTimeline = (element: HTMLElement, payload: any) => {
+    const items = arr<any>(payload.items);
+    if (!items.length) return;
+    const containerWidth = Math.floor(element.getBoundingClientRect().width || 760);
+    const margin = { top: 22, right: 22, bottom: 24, left: 22 };
+    const railX = margin.left + 18;
+    const cardX = railX + 22;
+    const minInternalWidth = containerWidth < 420 ? 420 : 520;
+    const width = Math.max(minInternalWidth, containerWidth);
+    const cardW = width - cardX - margin.right;
+    const textX = railX + 38;
+    const rowGap = 14;
+    const rows = items.map((item: any) => {
+      const dateLines = wrapWords(item.date || '', Math.floor((cardW - 48) / 7), 1);
+      const labelLines = wrapWords(item.label || '', Math.floor((cardW - 48) / 7.4), 2);
+      const detailLines = wrapWords(item.detail || '', Math.floor((cardW - 48) / 7.4), 3);
+      const cardH = 18 + dateLines.length * 14 + 8 + labelLines.length * 18 + (detailLines[0] ? 8 + detailLines.length * 14 : 0) + 14;
+      return { ...item, dateLines, labelLines, detailLines, cardH };
+    });
+    let cursorY = margin.top;
+    rows.forEach((row: any) => { row.y = cursorY; cursorY += row.cardH + rowGap; });
+    const totalHeight = Math.max(220, cursorY - rowGap + margin.bottom);
+    d3.select(element).selectAll('*').remove();
+    const svg = d3.select(element)
+      .append('svg')
+      .attr('viewBox', `0 0 ${width} ${totalHeight}`)
+      .attr('role', 'img')
+      .attr('width', '100%')
+      .attr('preserveAspectRatio', 'xMinYMin meet')
+      .style('font-family', fontFamily)
+      .style('display', 'block');
+    svg.append('line')
+      .attr('x1', railX).attr('x2', railX)
+      .attr('y1', margin.top + 8).attr('y2', totalHeight - margin.bottom - 8)
+      .attr('stroke', palette.border).attr('stroke-width', 1);
+    const groups = svg.append('g').selectAll('g').data(rows).join('g')
+      .attr('transform', (d: any) => `translate(0,${d.y})`);
+    groups.append('rect')
+      .attr('x', cardX).attr('y', 0)
+      .attr('width', cardW).attr('height', (d: any) => d.cardH)
+      .attr('rx', 12)
+      .attr('fill', palette.cream)
+      .attr('stroke', palette.border);
+    groups.append('circle')
+      .attr('cx', railX)
+      .attr('cy', (d: any) => Math.min(28, d.cardH / 2))
+      .attr('r', 6)
+      .attr('fill', (d: any) => toneColor(d.tone))
+      .attr('stroke', palette.cream).attr('stroke-width', 3);
+    groups.append('text')
+      .attr('x', textX).attr('y', 18)
+      .attr('fill', palette.muted)
+      .attr('font-size', 11)
+      .attr('font-weight', 400)
+      .text((d: any) => d.dateLines[0]);
+    groups.append('text')
+      .attr('x', textX)
+      .attr('y', 36)
+      .attr('fill', palette.charcoal)
+      .attr('font-size', 14)
+      .attr('font-weight', 600)
+      .each(function(d: any) {
+        renderWrapped(d3.select(this as SVGTextElement), d.label, { maxChars: Math.floor((cardW - 48) / 7.4), maxLines: 2, lineHeight: 16 });
+      });
+    groups.append('text')
+      .attr('x', textX)
+      .attr('y', (d: any) => 38 + d.labelLines.length * 16 + 10)
+      .attr('fill', palette.charcoal82)
+      .attr('font-size', 12)
+      .attr('font-weight', 400)
+      .each(function(d: any) {
+        if (!d.detailLines[0]) return;
+        renderWrapped(d3.select(this as SVGTextElement), d.detail, { maxChars: Math.floor((cardW - 48) / 7.4), maxLines: 3, lineHeight: 14 });
+      });
+  };
+
+  const renderChart = (element: HTMLElement, payload: any) => {
+    const series = arr<any>(payload.series).filter((s: any) => arr(s.points).length);
+    if (!series.length) return;
+    const margin = { top: 40, right: 24, bottom: 56, left: 64 };
+    const { svg, width, height } = svgBase(element, 320);
+    // Anchor labels based on horizontal position so points/annotations near
+    // either edge don't bleed past the plot area or collide with axis ticks.
+    const anchorFor = (cx: number): 'start' | 'middle' | 'end' => {
+      const leftEdge = margin.left + 48;
+      const rightEdge = width - margin.right - 48;
+      if (cx < leftEdge) return 'start';
+      if (cx > rightEdge) return 'end';
+      return 'middle';
+    };
+    const offsetFor = (anchor: 'start' | 'middle' | 'end'): number =>
+      anchor === 'start' ? 8 : anchor === 'end' ? -8 : 0;
+    const allPoints = series.flatMap((s: any) => arr(s.points));
+    const xs = allPoints.map((p: any) => p.x).filter((v: any) => v !== null);
+    const ys = allPoints.map((p: any) => p.y).filter((v: any) => v !== null);
+    const xMin = Math.min(...xs);
+    const xMax = Math.max(...xs);
+    const yMinRaw = Math.min(...ys, 0);
+    const yMaxRaw = Math.max(...ys);
+    const yPad = (yMaxRaw - yMinRaw) * 0.08 || Math.max(1, Math.abs(yMaxRaw) * 0.08);
+    const yDomainMin = yMinRaw < 0 ? yMinRaw - yPad : 0;
+    const yDomainMax = yMaxRaw + yPad;
+    const xScale = payload.isTime
+      ? d3.scaleTime().domain([new Date(xMin), new Date(xMax)]).range([margin.left, width - margin.right])
+      : d3.scaleLinear().domain([xMin, xMax]).range([margin.left, width - margin.right]);
+    const yScale = d3.scaleLinear().domain([yDomainMin, yDomainMax]).nice().range([height - margin.bottom, margin.top]);
+    // Gridlines
+    svg.append('g').attr('class', 'figure-grid').selectAll('line').data(yScale.ticks(5)).join('line')
+      .attr('x1', margin.left).attr('x2', width - margin.right)
+      .attr('y1', (d: any) => yScale(d)).attr('y2', (d: any) => yScale(d))
+      .attr('stroke', palette.border).attr('stroke-width', 1);
+    // Axes
+    const yAxis = d3.axisLeft(yScale).ticks(5).tickFormat(d3.format('~s'));
+    svg.append('g').attr('transform', `translate(${margin.left},0)`).call(yAxis as any)
+      .call((g: any) => g.select('.domain').remove())
+      .call((g: any) => g.selectAll('line').attr('stroke', palette.border))
+      .call((g: any) => g.selectAll('text').attr('fill', palette.muted).attr('font-size', 11));
+    const xTicks = payload.isTime
+      ? (xScale as d3.ScaleTime<number, number>).ticks(d3.timeMonth.every(Math.max(1, Math.floor((xMax - xMin) / (1000 * 60 * 60 * 24 * 30) / 5))) ?? d3.timeMonth)
+      : (xScale as d3.ScaleLinear<number, number>).ticks(5);
+    const xAxis = (payload.isTime ? d3.axisBottom(xScale as any) : d3.axisBottom(xScale as any))
+      .tickValues(xTicks)
+      .tickFormat(payload.isTime ? d3.timeFormat('%b %Y') as any : d3.format('~g') as any);
+    svg.append('g').attr('transform', `translate(0,${height - margin.bottom})`).call(xAxis as any)
+      .call((g: any) => g.select('.domain').attr('stroke', palette.charcoal40))
+      .call((g: any) => g.selectAll('line').attr('stroke', palette.charcoal40))
+      .call((g: any) => g.selectAll('text').attr('fill', palette.muted).attr('font-size', 11));
+    // Axis labels
+    svg.append('text')
+      .attr('x', margin.left + (width - margin.left - margin.right) / 2)
+      .attr('y', height - 14).attr('text-anchor', 'middle')
+      .attr('fill', palette.muted).attr('font-size', 12).attr('font-weight', 600)
+      .text(payload.xAxis.label);
+    svg.append('text')
+      .attr('transform', `translate(18,${margin.top + (height - margin.top - margin.bottom) / 2}) rotate(-90)`)
+      .attr('text-anchor', 'middle')
+      .attr('fill', palette.muted).attr('font-size', 12).attr('font-weight', 600)
+      .text(payload.yAxis.unit ? `${payload.yAxis.label} (${payload.yAxis.unit})` : payload.yAxis.label);
+    // Series
+    const colorScale = d3.scaleOrdinal<string>()
+      .domain(series.map((_: any, i: number) => String(i)))
+      .range([palette.charcoal, palette.info, palette.warning, palette.success, palette.danger]);
+    const lineGen = d3.line<any>()
+      .x((p: any) => xScale(payload.isTime ? new Date(p.x) : p.x) as number)
+      .y((p: any) => yScale(p.y))
+      .curve(d3.curveMonotoneX);
+    series.forEach((s: any, i: number) => {
+      const color = colorScale(String(i));
+      svg.append('path')
+        .datum(s.points)
+        .attr('d', lineGen as any)
+        .attr('fill', 'none')
+        .attr('stroke', color)
+        .attr('stroke-width', 2.2)
+        .attr('stroke-linejoin', 'round')
+        .attr('stroke-linecap', 'round');
+      const dots = svg.append('g').selectAll('g').data(s.points).join('g')
+        .attr('transform', (p: any) => `translate(${xScale(payload.isTime ? new Date(p.x) : p.x)},${yScale(p.y)})`);
+      dots.append('circle')
+        .attr('r', 5)
+        .attr('fill', palette.cream)
+        .attr('stroke', color)
+        .attr('stroke-width', 2);
+      dots.append('text')
+        .attr('y', -10)
+        .attr('x', function(p: any) {
+          const cx = xScale(payload.isTime ? new Date(p.x) : p.x) as number;
+          return offsetFor(anchorFor(cx));
+        })
+        .attr('text-anchor', function(p: any) {
+          const cx = xScale(payload.isTime ? new Date(p.x) : p.x) as number;
+          return anchorFor(cx);
+        })
+        .attr('fill', palette.charcoal)
+        .attr('font-size', 11)
+        .attr('font-weight', 600)
+        .text((p: any) => p.label);
+      withTooltip(dots, (p: any) => tooltipHtml(`${s.name}: ${p.y}${s.unit ? ` ${s.unit}` : ''}`, [p.label, p.rawX]));
+    });
+    // Annotations
+    arr(payload.annotations).forEach((annotation: any) => {
+      if (annotation.x === null || annotation.y === null) return;
+      const cx = xScale(payload.isTime ? new Date(annotation.x) : annotation.x) as number;
+      const cy = yScale(annotation.y);
+      const anchor = anchorFor(cx);
+      svg.append('line')
+        .attr('x1', cx).attr('x2', cx)
+        .attr('y1', cy).attr('y2', margin.top + 4)
+        .attr('stroke', palette.warning).attr('stroke-dasharray', '3 3').attr('stroke-width', 1);
+      svg.append('text')
+        .attr('x', cx + offsetFor(anchor))
+        .attr('y', margin.top - 14)
+        .attr('text-anchor', anchor)
+        .attr('fill', palette.warning)
+        .attr('font-size', 11)
+        .attr('font-weight', 600)
+        .text(truncate(annotation.label, 28));
+    });
+    // Legend (only when >1 series)
+    if (series.length > 1) {
+      const legend = svg.append('g').attr('transform', `translate(${margin.left + 8},${margin.top - 6})`);
+      let xCursor = 0;
+      series.forEach((s: any, i: number) => {
+        const g = legend.append('g').attr('transform', `translate(${xCursor},0)`);
+        g.append('circle').attr('r', 4).attr('fill', colorScale(String(i)));
+        const tx = g.append('text').attr('x', 10).attr('y', 4)
+          .attr('fill', palette.charcoal).attr('font-size', 11).attr('font-weight', 600)
+          .text(s.name);
+        const node = tx.node() as SVGTextElement | null;
+        const w = (node?.getComputedTextLength?.() ?? s.name.length * 7) + 22;
+        xCursor += w;
+      });
+    }
+  };
+
+  // ---- Private: shared layered-graph layout (Kahn topo + barycenter sweep) ----
+  // Returns positions, edgePath, sized SVG. Each public renderer paints its own
+  // visual treatment (cards, edges, labels) on top.
+  const computeLayeredLayout = (
+    element: HTMLElement,
+    payload: any,
+    opts: { cardH: number; stageLabel: (i: number) => string; orientation?: 'horizontal' | 'vertical' },
+  ) => {
+    const nodes = arr<any>(payload.nodes).map((n: any, i: number) => ({ ...n, _key: n.id || n.label || `n${i}`, _index: i }));
+    const edges = arr<any>(payload.edges).map((e: any, i: number) => ({ ...e, _index: i }));
+    if (!nodes.length) return null;
+    const byKey = new Map(nodes.map((n: any) => [n._key, n]));
+    const incoming = d3.group(edges, (e: any) => e.to);
+    const outgoing = d3.group(edges, (e: any) => e.from);
+    const indeg = new Map(nodes.map((n: any) => [n._key, arr(incoming.get(n._key)).length]));
+    const depth = new Map<string, number>();
+    const roots = nodes.filter((n: any) => (indeg.get(n._key) ?? 0) === 0);
+    const queue = (roots.length ? roots : [nodes[0]]).slice();
+    queue.forEach((n: any) => depth.set(n._key, 0));
+    const seen = new Set<string>();
+    while (queue.length) {
+      const cur = queue.shift()!;
+      if (seen.has(cur._key)) continue;
+      seen.add(cur._key);
+      const d = depth.get(cur._key) ?? 0;
+      for (const e of arr(outgoing.get(cur._key))) {
+        const tgt = byKey.get(e.to);
+        if (!tgt) continue;
+        depth.set(tgt._key, Math.max(depth.get(tgt._key) ?? 0, d + 1));
+        const remaining = (indeg.get(tgt._key) ?? 0) - 1;
+        indeg.set(tgt._key, remaining);
+        if (remaining <= 0 && !seen.has(tgt._key)) queue.push(tgt);
+      }
+    }
+    nodes.forEach((n: any) => { if (!depth.has(n._key)) depth.set(n._key, 0); });
+    const maxDepth = Math.max(0, ...depth.values());
+    const stages: any[][] = Array.from({ length: maxDepth + 1 }, () => []);
+    nodes.forEach((n: any) => stages[depth.get(n._key) ?? 0].push(n));
+    if (stages.length > 1 && stages.some((s) => s.length >= 2)) {
+      const orderInStage = new Map<string, number>();
+      const refresh = () => { orderInStage.clear(); stages.forEach((s) => s.forEach((n: any, i: number) => orderInStage.set(n._key, i))); };
+      const bary = (node: any, neighbors: string[]) => {
+        if (!neighbors.length) return orderInStage.get(node._key) ?? 0;
+        let sum = 0, count = 0;
+        for (const k of neighbors) {
+          const idx = orderInStage.get(k);
+          if (idx == null) continue;
+          sum += idx; count += 1;
+        }
+        return count ? sum / count : (orderInStage.get(node._key) ?? 0);
+      };
+      refresh();
+      const sweep = (dir: 'down' | 'up') => {
+        const range = dir === 'down'
+          ? Array.from({ length: stages.length - 1 }, (_, i) => i + 1)
+          : Array.from({ length: stages.length - 1 }, (_, i) => stages.length - 2 - i);
+        for (const idx of range) {
+          const stage = stages[idx];
+          if (stage.length < 2) continue;
+          const decorated = stage.map((node: any, i: number) => {
+            const neighborGroup = dir === 'down'
+              ? arr(incoming.get(node._key)).map((e: any) => e.from)
+              : arr(outgoing.get(node._key)).map((e: any) => e.to);
+            return { node, i, b: bary(node, neighborGroup) };
+          });
+          decorated.sort((a, b) => (a.b - b.b) || (a.i - b.i));
+          stages[idx] = decorated.map((d) => d.node);
+          refresh();
+        }
+      };
+      sweep('down'); sweep('up'); sweep('down');
+    }
+    const cardH = opts.cardH;
+    const orientation = opts.orientation ?? 'horizontal';
+    const containerWidth = Math.floor(element.getBoundingClientRect().width || 760);
+    const compact = containerWidth < 640;
+    const vertical = orientation === 'vertical';
+    const margin = { top: 36, right: 24, bottom: 24, left: 24 };
+    const maxRows = Math.max(...stages.map((s) => s.length), 1);
+    const tierLabelGutter = vertical ? 64 : 0;
+    const cardW = vertical
+      ? Math.max(140, Math.min(220, (containerWidth - margin.left - margin.right - tierLabelGutter) / Math.max(maxRows, 1) - 24))
+      : (compact ? Math.min(containerWidth - 80, 260) : Math.max(140, Math.min(200, (containerWidth - 80) / Math.max(stages.length, 1) - 24)));
+    const colGap = vertical ? 24 : (compact ? 0 : 32);
+    const rowGap = vertical ? 36 : 14;
+    const layoutWidth = vertical
+      ? Math.max(containerWidth, margin.left + margin.right + tierLabelGutter + maxRows * cardW + Math.max(0, maxRows - 1) * colGap)
+      : (compact
+        ? Math.max(containerWidth, cardW + margin.left + margin.right + 16)
+        : Math.max(containerWidth, margin.left + margin.right + stages.length * cardW + Math.max(0, stages.length - 1) * colGap));
+    const layoutHeight = vertical
+      ? margin.top + margin.bottom + stages.length * cardH + Math.max(0, stages.length - 1) * rowGap
+      : (compact
+        ? margin.top + margin.bottom + stages.reduce((sum, s) => sum + s.length * (cardH + rowGap) + 28, 0)
+        : margin.top + margin.bottom + maxRows * (cardH + rowGap) + 8);
+    d3.select(element).selectAll('*').remove();
+    const svg = d3.select(element)
+      .append('svg')
+      .attr('viewBox', `0 0 ${layoutWidth} ${layoutHeight}`)
+      .attr('role', 'img')
+      .attr('width', '100%')
+      .attr('preserveAspectRatio', 'xMinYMin meet')
+      .style('font-family', fontFamily)
+      .style('display', 'block');
+    const positions = new Map<string, { x: number; y: number; node: any; stage: number }>();
+    if (vertical) {
+      const innerLeft = margin.left + tierLabelGutter;
+      const innerRight = layoutWidth - margin.right;
+      const innerW = innerRight - innerLeft;
+      stages.forEach((stage: any[], stageIndex: number) => {
+        const rowY = margin.top + stageIndex * (cardH + rowGap) + cardH / 2;
+        svg.append('text')
+          .attr('x', innerLeft - 12).attr('y', rowY + 4)
+          .attr('text-anchor', 'end')
+          .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
+          .text(opts.stageLabel(stageIndex));
+        const slotW = innerW / Math.max(1, stage.length);
+        stage.forEach((node: any, i: number) => {
+          positions.set(node._key, { x: innerLeft + slotW * i + slotW / 2, y: rowY, node, stage: stageIndex });
+        });
+      });
+    } else if (compact) {
+      let cursorY = margin.top;
+      stages.forEach((stage: any[], stageIndex: number) => {
+        const stageX = (layoutWidth - cardW) / 2;
+        svg.append('text')
+          .attr('x', layoutWidth / 2).attr('y', cursorY - 14)
+          .attr('text-anchor', 'middle')
+          .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
+          .text(opts.stageLabel(stageIndex));
+        stage.forEach((node: any) => {
+          positions.set(node._key, { x: stageX + cardW / 2, y: cursorY + cardH / 2, node, stage: stageIndex });
+          cursorY += cardH + rowGap;
+        });
+        cursorY += 14;
+      });
+    } else {
+      const innerW = layoutWidth - margin.left - margin.right;
+      stages.forEach((stage: any[], stageIndex: number) => {
+        const xCenter = stages.length === 1
+          ? layoutWidth / 2
+          : margin.left + cardW / 2 + (stageIndex * (innerW - cardW)) / Math.max(1, stages.length - 1);
+        svg.append('text')
+          .attr('x', xCenter).attr('y', 22)
+          .attr('text-anchor', 'middle')
+          .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
+          .text(opts.stageLabel(stageIndex));
+        const innerH = layoutHeight - margin.top - margin.bottom;
+        const slotH = innerH / Math.max(1, stage.length);
+        stage.forEach((node: any, i: number) => {
+          positions.set(node._key, { x: xCenter, y: margin.top + slotH * i + slotH / 2, node, stage: stageIndex });
+        });
+      });
+    }
+    const edgeData = edges
+      .map((e: any) => ({ ...e, source: positions.get(e.from), target: positions.get(e.to) }))
+      .filter((e: any) => e.source && e.target);
+    const stagePairLanes = d3.group(edgeData, (e: any) => `${e.source.stage}|${e.target.stage}`);
+    for (const group of stagePairLanes.values()) {
+      group.forEach((e: any, i: number) => { e._lane = i; e._laneCount = group.length; });
+    }
+    const edgePath = (e: any) => {
+      const s = e.source;
+      const t = e.target;
+      const lane = ((e._lane ?? 0) - ((e._laneCount ?? 1) - 1) / 2) * 12;
+      if (vertical || compact) {
+        const sy = s.y + cardH / 2;
+        const ty = t.y - cardH / 2;
+        const midY = (sy + ty) / 2 + lane;
+        return `M ${s.x},${sy} L ${s.x},${midY} L ${t.x},${midY} L ${t.x},${ty}`;
+      }
+      const sx = s.x + cardW / 2;
+      const tx = t.x - cardW / 2;
+      const midX = (sx + tx) / 2 + lane;
+      return `M ${sx},${s.y} L ${midX},${s.y} L ${midX},${t.y} L ${tx},${t.y}`;
+    };
+    return { svg, positions, edgeData, edgePath, cardW, cardH, compact, vertical };
+  };
+
+  // Initials fallback for org chart avatar (e.g. "Jane Doe" → "JD"; "VP Sales" → "VS").
+  const initialsOf = (label: string): string => {
+    const parts = String(label || '').trim().split(/\s+/).filter(Boolean);
+    if (!parts.length) return '?';
+    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  };
+
+  // ---- architecture_diagram: system components + data-flow arrows ----
+  const renderArchitectureDiagram = (element: HTMLElement, payload: any) => {
+    const ctx = computeLayeredLayout(element, payload, {
+      cardH: 64,
+      stageLabel: (i) => `Stage ${i + 1}`,
+    });
+    if (!ctx) return;
+    const { svg, positions, edgeData, edgePath, cardW, cardH } = ctx;
+    // Solid arrowed flow lines.
+    svg.append('defs').append('marker')
+      .attr('id', `${payload.id}-arrow`)
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 9).attr('refY', 0)
+      .attr('markerWidth', 6).attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .append('path').attr('d', 'M0,-4L9,0L0,4').attr('fill', palette.charcoal40);
+    const edgeLayer = svg.append('g');
+    edgeLayer.selectAll('path.architecture-edge').data(edgeData).join('path')
+      .attr('class', 'architecture-edge')
+      .attr('d', edgePath)
+      .attr('fill', 'none')
+      .attr('stroke', palette.charcoal40)
+      .attr('stroke-width', 1.2)
+      .attr('marker-end', `url(#${payload.id}-arrow)`);
+    const hitEdges = edgeLayer.selectAll('path.architecture-edge-hit').data(edgeData).join('path')
+      .attr('class', 'architecture-edge-hit')
+      .attr('d', edgePath)
+      .attr('fill', 'none')
+      .attr('stroke', 'transparent')
+      .attr('stroke-width', 14);
+    withTooltip(hitEdges, (e: any) => tooltipHtml(`${e.source.node.label} → ${e.target.node.label}`, [e.label, e.detail]));
+    // Rectangular technical cards: tone strip + kind/name.
+    const cards = svg.append('g').selectAll('g.architecture-card').data(Array.from(positions.values())).join('g')
+      .attr('class', 'architecture-card')
+      .attr('transform', (d: any) => `translate(${d.x - cardW / 2},${d.y - cardH / 2})`);
+    cards.append('rect')
+      .attr('width', cardW).attr('height', cardH).attr('rx', 6)
+      .attr('fill', palette.cream)
+      .attr('stroke', palette.border).attr('stroke-width', 1);
+    cards.append('rect')
+      .attr('x', 0).attr('y', 0)
+      .attr('width', 4).attr('height', cardH)
+      .attr('rx', 2)
+      .attr('fill', (d: any) => toneColor(d.node.tone));
+    cards.append('text')
+      .attr('x', 14).attr('y', 18)
+      .attr('fill', palette.muted).attr('font-size', 10).attr('font-weight', 400)
+      .attr('letter-spacing', '0.04em')
+      .text((d: any) => truncate((d.node.kind || d.node.group || '').toUpperCase(), 28));
+    cards.append('text')
+      .attr('x', 14).attr('y', 36)
+      .attr('fill', palette.charcoal).attr('font-size', 12).attr('font-weight', 600)
+      .each(function(d: any) {
+        renderWrapped(d3.select(this as SVGTextElement), d.node.label, { maxChars: Math.max(14, Math.floor((cardW - 24) / 7)), maxLines: 2, lineHeight: 14 });
+      });
+    withTooltip(cards, (d: any) => tooltipHtml(d.node.label, [d.node.detail, d.node.kind]));
+  };
+
+  // ---- org_chart: people / role hierarchy with reporting lines ----
+  const renderOrgChart = (element: HTMLElement, payload: any) => {
+    // Cards must be tall enough to fit role (up to 2 lines), name, and meta inline
+    // so no tooltip is needed.
+    const cardH = 100;
+    const ctx = computeLayeredLayout(element, payload, {
+      cardH,
+      stageLabel: (i) => `Tier ${i + 1}`,
+      orientation: 'vertical',
+    });
+    if (!ctx) return;
+    const { svg, positions, edgeData, edgePath, cardW } = ctx;
+    // Reporting lines: dashed, no arrowhead, slightly lighter — these denote
+    // "reports to" rather than data flow.
+    const edgeLayer = svg.append('g');
+    edgeLayer.selectAll('path.org-edge').data(edgeData).join('path')
+      .attr('class', 'org-edge')
+      .attr('d', edgePath)
+      .attr('fill', 'none')
+      .attr('stroke', palette.charcoal40)
+      .attr('stroke-width', 1)
+      .attr('stroke-dasharray', '3 3');
+    // Rounded rectangular people cards: avatar disc on the left, all text inline
+    // on the right (role / name / department · location). No tooltip — the card
+    // already shows everything.
+    const avatarR = 16;
+    const avatarCx = avatarR + 12;
+    const textX = avatarCx + avatarR + 12;
+    const textW = cardW - textX - 14;
+    const roleMaxChars = Math.max(14, Math.floor(textW / 6.8));
+    const nameMaxChars = Math.max(14, Math.floor(textW / 6.4));
+    const metaMaxChars = Math.max(14, Math.floor(textW / 5.8));
+    const cards = svg.append('g').selectAll('g.org-card').data(Array.from(positions.values())).join('g')
+      .attr('class', 'org-card')
+      .attr('transform', (d: any) => `translate(${d.x - cardW / 2},${d.y - cardH / 2})`);
+    cards.append('rect')
+      .attr('width', cardW).attr('height', cardH).attr('rx', 14)
+      .attr('fill', palette.creamHighlight)
+      .attr('stroke', palette.border).attr('stroke-width', 1);
+    cards.append('circle')
+      .attr('cx', avatarCx).attr('cy', cardH / 2).attr('r', avatarR)
+      .attr('fill', (d: any) => toneColor(d.node.tone))
+      .attr('fill-opacity', 0.18)
+      .attr('stroke', (d: any) => toneColor(d.node.tone))
+      .attr('stroke-width', 1);
+    cards.append('text')
+      .attr('x', avatarCx).attr('y', cardH / 2 + 4)
+      .attr('text-anchor', 'middle')
+      .attr('fill', palette.charcoal).attr('font-size', 11).attr('font-weight', 600)
+      .attr('letter-spacing', '0.04em')
+      .text((d: any) => initialsOf(d.node.label));
+    // Role / title — top, bold, wraps to at most 2 lines.
+    cards.append('text')
+      .attr('x', textX).attr('y', 22)
+      .attr('fill', palette.charcoal).attr('font-size', 13).attr('font-weight', 600)
+      .each(function(d: any) {
+        renderWrapped(d3.select(this as SVGTextElement), d.node.label, { maxChars: roleMaxChars, maxLines: 2, lineHeight: 16 });
+      });
+    // Person name (when distinct from role) — single line, regular weight.
+    cards.append('text')
+      .attr('x', textX).attr('y', 64)
+      .attr('fill', palette.charcoal).attr('font-size', 11).attr('font-weight', 400)
+      .text((d: any) => d.node.name ? truncate(d.node.name, nameMaxChars) : '');
+    // Department · location meta line — small muted.
+    cards.append('text')
+      .attr('x', textX).attr('y', 82)
+      .attr('fill', palette.muted).attr('font-size', 10).attr('font-weight', 400)
+      .text((d: any) => d.node.meta ? truncate(d.node.meta, metaMaxChars) : '');
+  };
+
+  const renderMarketMap = (element: HTMLElement, payload: any) => {
+    const points = arr<any>(payload.points);
+    if (!points.length) return;
+    const xs = points.map((p: any) => p.x);
+    const ys = points.map((p: any) => p.y);
+    const xMin = Math.min(0, ...xs);
+    const xMax = Math.max(10, ...xs);
+    const yMin = Math.min(0, ...ys);
+    const yMax = Math.max(10, ...ys);
+    const xMid = (xMin + xMax) / 2;
+    const yMid = (yMin + yMax) / 2;
+    const containerWidth = Math.floor(element.getBoundingClientRect().width || 760);
+    const compact = containerWidth < 640;
+    const { svg, width, height } = svgBase(element, compact ? 380 : 400);
+    const margin = compact ? { top: 30, right: 28, bottom: 56, left: 56 } : { top: 32, right: 36, bottom: 60, left: 70 };
+    const xScale = d3.scaleLinear().domain([xMin, xMax]).range([margin.left, width - margin.right]);
+    const yScale = d3.scaleLinear().domain([yMin, yMax]).range([height - margin.bottom, margin.top]);
+    const refX = xScale(xMid);
+    const refY = yScale(yMid);
+    // Plot frame
+    svg.append('rect')
+      .attr('x', margin.left).attr('y', margin.top)
+      .attr('width', width - margin.left - margin.right)
+      .attr('height', height - margin.top - margin.bottom)
+      .attr('rx', 12).attr('fill', palette.cream).attr('stroke', palette.border);
+    // Quadrant tints
+    const quadrants = [
+      { x: margin.left, y: margin.top, w: refX - margin.left, h: refY - margin.top, tone: palette.charcoal04 },
+      { x: refX, y: margin.top, w: width - margin.right - refX, h: refY - margin.top, tone: 'rgba(72,107,63,0.05)' },
+      { x: margin.left, y: refY, w: refX - margin.left, h: height - margin.bottom - refY, tone: 'rgba(156,58,47,0.05)' },
+      { x: refX, y: refY, w: width - margin.right - refX, h: height - margin.bottom - refY, tone: 'rgba(139,100,28,0.05)' },
+    ].filter((q) => q.w > 2 && q.h > 2);
+    svg.append('g').selectAll('rect.q').data(quadrants).join('rect')
+      .attr('class', 'q')
+      .attr('x', (q) => q.x).attr('y', (q) => q.y)
+      .attr('width', (q) => q.w).attr('height', (q) => q.h)
+      .attr('fill', (q) => q.tone);
+    svg.append('line').attr('x1', refX).attr('x2', refX).attr('y1', margin.top + 8).attr('y2', height - margin.bottom - 8)
+      .attr('stroke', palette.charcoal40).attr('stroke-dasharray', '4 4').attr('stroke-width', 1);
+    svg.append('line').attr('x1', margin.left + 8).attr('x2', width - margin.right - 8).attr('y1', refY).attr('y2', refY)
+      .attr('stroke', palette.charcoal40).attr('stroke-dasharray', '4 4').attr('stroke-width', 1);
+    // Axis labels
+    svg.append('text')
+      .attr('x', margin.left + (width - margin.left - margin.right) / 2)
+      .attr('y', height - 28).attr('text-anchor', 'middle')
+      .attr('fill', palette.charcoal).attr('font-size', 12).attr('font-weight', 600)
+      .text(payload.xAxis.label);
+    svg.append('text').attr('x', margin.left).attr('y', height - 12)
+      .attr('fill', palette.muted).attr('font-size', 10).text(payload.xAxis.low);
+    svg.append('text').attr('x', width - margin.right).attr('y', height - 12).attr('text-anchor', 'end')
+      .attr('fill', palette.muted).attr('font-size', 10).text(payload.xAxis.high);
+    svg.append('text')
+      .attr('transform', `translate(20,${margin.top + (height - margin.top - margin.bottom) / 2}) rotate(-90)`)
+      .attr('text-anchor', 'middle')
+      .attr('fill', palette.charcoal).attr('font-size', 12).attr('font-weight', 600)
+      .text(payload.yAxis.label);
+    svg.append('text').attr('x', margin.left - 8).attr('y', margin.top + 4).attr('text-anchor', 'end')
+      .attr('fill', palette.muted).attr('font-size', 10).text(payload.yAxis.high);
+    svg.append('text').attr('x', margin.left - 8).attr('y', height - margin.bottom + 2).attr('text-anchor', 'end')
+      .attr('fill', palette.muted).attr('font-size', 10).text(payload.yAxis.low);
+    // Segment color map
+    const segments = arr<any>(payload.segments);
+    const segmentColor = new Map<string, string>();
+    segments.forEach((s: any, i: number) => segmentColor.set(s.id, toneColor(segmentTones[i % segmentTones.length])));
+    // Force-collide so labels don't overlap
+    const sim = points.map((p: any, i: number) => ({
+      ...p,
+      _index: i,
+      tx: xScale(p.x),
+      ty: yScale(p.y),
+      x: xScale(p.x),
+      y: yScale(p.y),
+    }));
+    d3.forceSimulation(sim as any)
+      .force('x', d3.forceX((d: any) => d.tx).strength(0.35))
+      .force('y', d3.forceY((d: any) => d.ty).strength(0.35))
+      .force('collide', d3.forceCollide(compact ? 16 : 18))
+      .stop()
+      .tick(120);
+    sim.forEach((p: any) => {
+      p.x = Math.max(margin.left + 14, Math.min(width - margin.right - 14, p.x));
+      p.y = Math.max(margin.top + 14, Math.min(height - margin.bottom - 14, p.y));
+    });
+    const dots = svg.append('g').selectAll('g.qpt').data(sim).join('g')
+      .attr('class', 'qpt')
+      .attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+    dots.append('circle')
+      .attr('r', (d: any) => d.isTarget ? 12 : 9)
+      .attr('fill', (d: any) => segmentColor.get(d.segmentId) ?? palette.neutral)
+      .attr('stroke', palette.cream).attr('stroke-width', 2);
+    dots.append('text')
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle').attr('y', 1)
+      .attr('fill', palette.creamHighlight).attr('font-size', 10).attr('font-weight', 600)
+      .text((d: any) => d._index + 1);
+    withTooltip(dots, (d: any) => tooltipHtml(d.label, [`${payload.xAxis.label}: ${d.x}`, `${payload.yAxis.label}: ${d.y}`, d.detail]));
+    // Legend below
+    const legend = d3.select(element).append('div').attr('class', 'figure-legend');
+    legend.selectAll('div.figure-legend-item').data(sim).join('div')
+      .attr('class', 'figure-legend-item')
+      .each(function(d: any) {
+        const node = d3.select(this);
+        node.append('span').attr('class', 'figure-legend-badge')
+          .style('background', segmentColor.get(d.segmentId) ?? palette.neutral)
+          .text(String(d._index + 1));
+        node.append('span').attr('class', 'figure-legend-label').text(d.label);
+      });
+    if (segments.length) {
+      const segLegend = d3.select(element).append('div').attr('class', 'figure-segment-legend');
+      segLegend.selectAll('div.seg').data(segments).join('div')
+        .attr('class', 'seg')
+        .each(function(s: any) {
+          const node = d3.select(this);
+          node.append('span').attr('class', 'figure-segment-swatch').style('background', segmentColor.get(s.id) ?? palette.neutral);
+          const text = node.append('span').attr('class', 'figure-segment-text');
+          text.append('strong').text(s.label);
+          if (s.detail) text.append('span').text(` — ${s.detail}`);
+        });
+    }
+  };
+
+  const renderFunnel = (element: HTMLElement, payload: any) => {
+    const items = arr<any>(payload.items);
+    if (!items.length) return;
+    const containerWidth = Math.floor(element.getBoundingClientRect().width || 760);
+    const compact = containerWidth < 640;
+    const stageGap = 12;
+    const margin = compact ? { top: 32, right: 110, bottom: 24, left: 140 } : { top: 36, right: 150, bottom: 28, left: 200 };
+    const labelMaxChars = Math.max(14, Math.floor((margin.left - 18) / (compact ? 6.4 : 6.8)));
+    const labelLineHeight = 14;
+    // Pre-wrap stage labels so the row height grows when long names need 2 lines
+    // — no truncation, no tooltip required.
+    const labelLines = items.map((item: any) => wrapWords(item.label || '', labelMaxChars, 2));
+    const maxLabelLines = Math.max(1, ...labelLines.map((l: string[]) => l.length));
+    const stageH = (compact ? 48 : 54) + (maxLabelLines - 1) * labelLineHeight;
+    const height = items.length * (stageH + stageGap) + 64;
+    const { svg, width } = svgBase(element, height);
+    const maxValue = Math.max(...items.map((i: any) => Number(i.value) || 0), 1);
+    const counted = items.some((i: any) => i.value !== null);
+    const barLeft = margin.left;
+    const barRight = width - margin.right;
+    const barMaxW = barRight - barLeft;
+    const cx = barLeft + barMaxW / 2;
+    const widthScale = d3.scaleLinear().domain([0, Math.max(maxValue, 1)]).range([Math.max(48, barMaxW * 0.18), barMaxW]);
+    svg.append('text')
+      .attr('x', cx).attr('y', margin.top - 14)
+      .attr('text-anchor', 'middle')
+      .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
+      .text('Acquisition path');
+    const rows = items.map((item: any, index: number) => {
+      const fallback = (1 - (index / Math.max(1, items.length)) * 0.45) * barMaxW;
+      const w = counted && item.value !== null ? widthScale(item.value) : fallback;
+      const previous = index > 0 ? items[index - 1] : null;
+      const conversion = item.conversion ?? (previous && previous.value && item.value ? item.value / previous.value : null);
+      return { ...item, _index: index, w, y: margin.top + index * (stageH + stageGap), conversion, _lines: labelLines[index] };
+    });
+    const stages = svg.append('g').selectAll('g.fstage').data(rows).join('g').attr('class', 'fstage');
+    stages.append('rect')
+      .attr('x', barLeft).attr('y', (d: any) => d.y)
+      .attr('width', barMaxW).attr('height', stageH).attr('rx', 8)
+      .attr('fill', palette.charcoal04).attr('stroke', palette.border);
+    stages.append('rect')
+      .attr('x', (d: any) => cx - d.w / 2)
+      .attr('y', (d: any) => d.y)
+      .attr('width', (d: any) => d.w)
+      .attr('height', stageH).attr('rx', 8)
+      .attr('fill', (_d: any, i: number) => i === rows.length - 1 ? palette.success : i === 0 ? palette.charcoal82 : palette.charcoal);
+    stages.append('text')
+      .attr('x', cx).attr('y', (d: any) => d.y + stageH / 2 + 4)
+      .attr('text-anchor', 'middle')
+      .attr('fill', palette.creamHighlight).attr('font-size', compact ? 11 : 12).attr('font-weight', 600)
+      .text((d: any) => d.valueLabel || `Stage ${d._index + 1}`);
+    // Stage label — right-aligned in the left gutter, wraps to up to 2 lines.
+    stages.append('text')
+      .attr('x', barLeft - 12)
+      .attr('text-anchor', 'end')
+      .attr('fill', palette.charcoal).attr('font-size', compact ? 11 : 12).attr('font-weight', 600)
+      .each(function(d: any) {
+        const lines: string[] = d._lines && d._lines.length ? d._lines : [''];
+        const startY = d.y + stageH / 2 + 4 - ((lines.length - 1) * labelLineHeight) / 2;
+        const sel = d3.select(this as SVGTextElement);
+        sel.attr('y', startY).text(null);
+        lines.forEach((line, i) => {
+          sel.append('tspan').attr('x', barLeft - 12).attr('dy', i === 0 ? 0 : labelLineHeight).text(line);
+        });
+      });
+    stages.append('text')
+      .attr('x', barRight + 12)
+      .attr('y', (d: any) => d.y + stageH / 2 + (compact ? 4 : -2))
+      .attr('fill', palette.muted).attr('font-size', 11).attr('font-weight', 400)
+      .text((d: any) => d.conversion != null ? `conv. ${d3.format('.0%')(d.conversion)}` : 'entry');
+    if (!compact) {
+      stages.append('text')
+        .attr('x', barRight + 12)
+        .attr('y', (d: any) => d.y + stageH / 2 + 14)
+        .attr('fill', palette.muted).attr('font-size', 10)
+        .text((d: any) => d.period || '');
+    }
+  };
+
+  const renderRiskHeatmap = (element: HTMLElement, payload: any) => {
+    const columns = arr<string>(payload.columns);
+    const rows = arr<string>(payload.rows);
+    const points = arr<any>(payload.points);
+    if (!columns.length || !rows.length) return;
+    d3.select(element).selectAll('*').remove();
+    const root = d3.select(element).append('div').attr('class', 'figure-heatmap-root');
+    const grid = root.append('div')
+      .attr('class', 'figure-heatmap-grid')
+      .style('--cols', String(columns.length));
+    grid.append('div').attr('class', 'figure-heatmap-corner');
+    columns.forEach((col) => {
+      grid.append('div').attr('class', 'figure-heatmap-col-head').text(humanize(col));
+    });
+    rows.forEach((rowLabel) => {
+      // y: top of grid corresponds to highest severity (rows are pre-reversed in payload).
+      const yIdx = payload.rows.indexOf(rowLabel);
+      const severityWeight = rows.length > 1 ? 1 - yIdx / (rows.length - 1) : 1;
+      grid.append('div').attr('class', 'figure-heatmap-row-head').text(humanize(rowLabel));
+      columns.forEach((col, xIdx) => {
+        const likelihoodWeight = columns.length > 1 ? xIdx / (columns.length - 1) : 0.5;
+        const score = (severityWeight + likelihoodWeight) / 2;
+        const tone = score >= 0.75 ? palette.danger
+          : score >= 0.5 ? palette.warning
+          : score >= 0.3 ? palette.info
+          : palette.success;
+        const cellPoints = points.filter((p: any) => p.severity === rowLabel && p.likelihood === col);
+        const cell = grid.append('div')
+          .attr('class', 'figure-heatmap-cell')
+          .style('--cell-tone', tone);
+        cellPoints.forEach((point: any) => {
+          cell.append('span')
+            .attr('class', 'figure-heatmap-pin')
+            .text(point.id || point.label)
+            .datum(point)
+            .on('pointerenter', function(event: any, d: any) { tooltip.show(event, tooltipHtml(`${d.id}: ${d.label}`, [d.rationale, `Severity: ${humanize(d.severity)}`, `Likelihood: ${humanize(d.likelihood)}`])); })
+            .on('pointerleave', () => tooltip.hide());
+        });
+      });
+    });
+    root.append('p').attr('class', 'figure-heatmap-axis-x').text(`${payload.xLabel} →`);
+    const legend = root.append('ul').attr('class', 'figure-heatmap-legend');
+    legend.selectAll('li').data(points).join('li')
+      .each(function(point: any) {
+        const li = d3.select(this);
+        li.append('strong').text(`${point.id || ''} `);
+        li.append('span').text(point.label);
+        if (point.rationale) li.append('span').attr('class', 'figure-heatmap-rationale').text(` — ${point.rationale}`);
+      });
+  };
+
+  const RENDERERS: Record<string, (element: HTMLElement, payload: any) => void> = {
+    timeline: renderTimeline,
+    chart: renderChart,
+    architecture_diagram: renderArchitectureDiagram,
+    org_chart: renderOrgChart,
+    market_map: renderMarketMap,
+    funnel: renderFunnel,
+    risk_heatmap: renderRiskHeatmap,
+  };
+
+  const renderFigure = (element: HTMLElement, payload: any) => {
+    try {
+      RENDERERS[payload.type]?.(element, payload);
+      // Strip filter/shadow per DESIGN.md "borders not shadows" rule.
+      d3.select(element).selectAll('filter').remove();
+      d3.select(element).selectAll('[filter]').attr('filter', null);
+      element.dataset.renderState = 'rendered';
+    } catch (error) {
+      console.error('[Figure] failed to render', payload?.id, error);
+      d3.select(element).selectAll('*').remove();
+      d3.select(element).append('div').attr('class', 'figure-render-error').text('Figure could not be rendered.');
+      element.dataset.renderState = 'error';
+    }
+  };
+
+  const payloadByScript = new WeakMap<Element, any>();
+  const elementByScript = new WeakMap<Element, HTMLElement>();
+  const widthByElement = new WeakMap<HTMLElement, number>();
+  const RESIZE_DELTA = 32;
+  const RESIZE_DEBOUNCE = 200;
+  const pendingResize = new WeakMap<HTMLElement, number>();
+
+  const payloadFor = (script: HTMLScriptElement) => {
+    if (!payloadByScript.has(script)) {
+      try { payloadByScript.set(script, JSON.parse(script.textContent || '{}')); }
+      catch { payloadByScript.set(script, null); }
+    }
+    return payloadByScript.get(script);
+  };
+
+  const renderScript = (script: HTMLScriptElement) => {
+    const payload = payloadFor(script);
+    if (!payload?.id) return;
+    const element = document.getElementById(payload.id) as HTMLElement | null;
+    if (!element) return;
+    elementByScript.set(script, element);
+    renderFigure(element, payload);
+    widthByElement.set(element, Math.round(element.getBoundingClientRect().width || 0));
+  };
+
+  const observer = 'ResizeObserver' in window
+    ? new ResizeObserver((entries) => {
+        for (const entry of entries) {
+          const element = entry.target as HTMLElement;
+          const next = Math.round(entry.contentRect.width || 0);
+          const prev = widthByElement.get(element) ?? 0;
+          if (!next || (prev && Math.abs(next - prev) < RESIZE_DELTA)) continue;
+          const existing = pendingResize.get(element);
+          if (existing) window.clearTimeout(existing);
+          const handle = window.setTimeout(() => {
+            pendingResize.delete(element);
+            const script = Array.from(document.querySelectorAll<HTMLScriptElement>('script.figure-payload'))
+              .find((s) => elementByScript.get(s) === element);
+            if (script) renderScript(script);
+          }, RESIZE_DEBOUNCE);
+          pendingResize.set(element, handle);
+        }
+      })
+    : null;
+
+  const init = () => {
+    document.querySelectorAll<HTMLScriptElement>('script.figure-payload').forEach((script) => {
+      renderScript(script);
+      const element = elementByScript.get(script);
+      if (element && observer) observer.observe(element);
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
+  window.addEventListener('beforeprint', () => {
+    document.querySelectorAll<HTMLScriptElement>('script.figure-payload').forEach(renderScript);
+  });
+</script>
+
+<style is:global>
+  /* Figure shell: bordered cream card, no shadow (DESIGN.md borders-not-shadows rule). */
+  .figure-frame {
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--border-cream);
+    border-radius: var(--radius-card);
+    background: var(--cream-base);
+    overflow: hidden;
+  }
+  .figure-caption {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--border-cream);
+    background: var(--charcoal-03);
+  }
+  .figure-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    letter-spacing: var(--tracking-subhead);
+    color: var(--charcoal);
+  }
+  .figure-description {
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    color: var(--muted-gray);
+  }
+  .figure-render {
+    padding: var(--space-4) var(--space-5);
+    min-height: 12rem;
+  }
+  .figure-render[data-render-state='pending'] {
+    display: grid;
+    place-items: center;
+    color: var(--muted-gray);
+    font-size: var(--fs-sm);
+  }
+  .figure-render[data-render-state='pending']::before {
+    content: 'Loading figure…';
+  }
+  .figure-render svg text {
+    user-select: none;
+    pointer-events: none;
+  }
+  .figure-render-error {
+    padding: var(--space-3) var(--space-4);
+    border: 1px dashed var(--charcoal-40);
+    border-radius: var(--radius-compact);
+    background: var(--cream-base);
+    color: var(--muted-gray);
+    font-size: var(--fs-sm);
+  }
+  .figure-fallback {
+    margin: var(--space-4) var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    border: 1px dashed var(--charcoal-40);
+    border-radius: var(--radius-compact);
+    background: var(--cream-base);
+  }
+  .figure-fallback strong {
+    display: block;
+    margin-bottom: var(--space-1);
+    color: var(--charcoal);
+    font-weight: 600;
+  }
+  .figure-fallback p { margin: 0; color: var(--muted-gray); font-size: var(--fs-sm); }
+  .figure-note {
+    margin: 0;
+    padding: var(--space-3) var(--space-4);
+    border-top: 1px solid var(--border-cream);
+    background: var(--charcoal-03);
+    color: var(--muted-gray);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+
+  /* Card / dot hover state shared by architecture_diagram, org_chart, market_map */
+  .figure-render .is-hovered rect,
+  .figure-render .is-hovered circle,
+  .figure-render rect.is-hovered,
+  .figure-render circle.is-hovered {
+    stroke-width: 2.4px;
+  }
+
+  /* Quadrant + market_map legend */
+  .figure-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+    gap: var(--space-1) var(--space-3);
+    margin: var(--space-3) var(--space-5) 0;
+  }
+  .figure-legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-width: 0;
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    color: var(--charcoal);
+  }
+  .figure-legend-badge {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: var(--radius-pill);
+    background: var(--charcoal);
+    color: var(--cream-highlight);
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .figure-legend-label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .figure-segment-legend {
+    display: grid;
+    gap: var(--space-1);
+    margin: var(--space-3) var(--space-5) 0;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--border-cream);
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    color: var(--muted-gray);
+  }
+  .figure-segment-legend .seg {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+  .figure-segment-swatch {
+    flex: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--charcoal-12);
+    transform: translateY(1px);
+  }
+  .figure-segment-text strong { color: var(--charcoal); font-weight: 600; }
+
+  /* Risk heatmap (HTML grid renderer) */
+  .figure-heatmap-root {
+    display: grid;
+    gap: var(--space-3);
+  }
+  .figure-heatmap-grid {
+    display: grid;
+    grid-template-columns: minmax(7rem, auto) repeat(var(--cols), minmax(0, 1fr));
+    gap: 4px;
+  }
+  .figure-heatmap-corner { background: transparent; }
+  .figure-heatmap-col-head,
+  .figure-heatmap-row-head {
+    padding: var(--space-2) var(--space-3);
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    color: var(--muted-gray);
+  }
+  .figure-heatmap-col-head { text-align: center; }
+  .figure-heatmap-row-head { text-align: right; align-self: center; }
+  .figure-heatmap-cell {
+    min-height: 64px;
+    padding: var(--space-2);
+    border-radius: var(--radius-compact);
+    border: 1px solid color-mix(in srgb, var(--cell-tone, var(--charcoal-12)) 36%, var(--border-cream));
+    background: color-mix(in srgb, var(--cell-tone, var(--charcoal-12)) 12%, var(--cream-base));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-content: flex-start;
+  }
+  .figure-heatmap-pin {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    background: var(--cream-base);
+    border: 1px solid color-mix(in srgb, var(--cell-tone, var(--charcoal-12)) 60%, var(--border-cream));
+    color: var(--charcoal);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    cursor: default;
+  }
+  .figure-heatmap-axis-x {
+    margin: 0;
+    text-align: right;
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    color: var(--muted-gray);
+  }
+  .figure-heatmap-legend {
+    list-style: none;
+    margin: 0;
+    padding: var(--space-2) 0 0;
+    border-top: 1px solid var(--border-cream);
+    display: grid;
+    gap: var(--space-1);
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    color: var(--muted-gray);
+  }
+  .figure-heatmap-legend strong { color: var(--charcoal); font-weight: 600; font-family: var(--font-mono); }
+
+  /* Tooltip — single instance attached to <body>, reused by all figures. */
+  .figure-tooltip {
+    position: fixed;
+    z-index: 1000;
+    display: grid;
+    gap: 0.3rem;
+    width: max-content;
+    max-width: min(22rem, calc(100vw - 1.5rem));
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--border-cream);
+    border-radius: var(--radius-card);
+    background: var(--cream-highlight);
+    color: var(--charcoal);
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0.25rem);
+    transition: opacity 120ms ease, transform 120ms ease;
+  }
+  .figure-tooltip.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .figure-tooltip strong {
+    display: block;
+    color: var(--charcoal);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-base);
+    line-height: 1.2;
+  }
+  .figure-tooltip span {
+    display: block;
+    color: var(--muted-gray);
+  }
+  .figure-tooltip span + span {
+    padding-top: 0.2rem;
+    border-top: 1px solid var(--border-cream);
+  }
+
+  @media (max-width: 700px) {
+    .figure-render { padding: var(--space-3); }
+    .figure-legend { margin: var(--space-3) var(--space-3) 0; }
+    .figure-segment-legend { margin: var(--space-3) var(--space-3) 0; }
+    .figure-heatmap-pin { font-size: 0.66rem; }
+  }
+</style>

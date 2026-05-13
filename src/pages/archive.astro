@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ReportCard from '../components/ReportCard.astro';
+import { getAllReports } from '../lib/reports';
+
+const reports = getAllReports().map((entry) => entry.summary);
+const totalSources = reports.reduce((sum, report) => sum + report.sourceCount, 0);
+const avgRating = reports.length ? (reports.reduce((sum, report) => sum + Number(report.rating), 0) / reports.length).toFixed(1) : '—';
+---
+<BaseLayout title="All reports — Startup Diligence" description="Archive of all generated startup diligence reports.">
+  <section class="sr-container sr-hero">
+    <h1>All reports.</h1>
+    <p class="sr-deck">Browse every AI-generated diligence report, newest first.</p>
+    <dl class="sr-hero__meta" aria-label="Archive summary">
+      <div>
+        <dt>Reports</dt>
+        <dd>{reports.length}</dd>
+      </div>
+      <div>
+        <dt>Sources</dt>
+        <dd>{totalSources}</dd>
+      </div>
+      <div>
+        <dt>Avg rating</dt>
+        <dd>{avgRating}</dd>
+      </div>
+      <div>
+        <dt>Latest</dt>
+        <dd>{reports[0]?.researchDate || '—'}</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="sr-container sr-section">
+    <div class="sr-grid">
+      {reports.map((report) => <ReportCard report={report} />)}
+    </div>
+  </section>
+</BaseLayout>

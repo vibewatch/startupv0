@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ReportCard from '../components/ReportCard.astro';
+import { getAllReports } from '../lib/reports';
+
+const entries = getAllReports();
+const reports = entries.map((entry) => entry.summary);
+const totalSources = reports.reduce((sum, report) => sum + report.sourceCount, 0);
+const latestDate = reports[0]?.researchDate ?? null;
+---
+<BaseLayout title="Startup Diligence" description="AI-generated startup diligence reports with evidence, risks, and source-backed findings.">
+  <section class="sr-container sr-hero">
+    <h1>Diligence reports, written by AI.</h1>
+    <p class="sr-deck">
+      Concise, source-backed reports with executive summaries, evidence gaps, risks, chapters, and citations.
+    </p>
+    <dl class="sr-hero__meta" aria-label="Library summary">
+      <div>
+        <dt>Reports</dt>
+        <dd>{reports.length}</dd>
+      </div>
+      <div>
+        <dt>Sources</dt>
+        <dd>{totalSources}</dd>
+      </div>
+      {latestDate && (
+        <div>
+          <dt>Latest</dt>
+          <dd>{latestDate}</dd>
+        </div>
+      )}
+    </dl>
+  </section>
+
+  <section class="sr-container sr-section">
+    <header class="sr-section-head">
+      <h2>Latest reports</h2>
+      <a class="sr-pill" href="/archive/">View all</a>
+    </header>
+    <div class="sr-grid">
+      {reports.map((report) => <ReportCard report={report} />)}
+    </div>
+  </section>
+</BaseLayout>

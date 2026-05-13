@@ -1,0 +1,223 @@
+---
+import '../styles/global.css';
+import monaSansLatin from '@fontsource-variable/mona-sans/files/mona-sans-latin-wght-normal.woff2?url';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Startup Diligence',
+  description = 'AI-generated startup diligence reports.',
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f7f4ed" />
+    <style is:inline>
+      html { background-color: #f7f4ed; color: #1c1c1c; }
+    </style>
+    <link
+      rel="preload"
+      href={monaSansLatin}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="bz-utility">
+      <div class="bz-container bz-utility__row">
+        <a href="/" class="bz-utility__brand" aria-label="Startup Diligence">
+          <span class="bz-utility__mark" aria-hidden="true">SD</span>
+          <span class="bz-utility__brand-text">Startup Diligence</span>
+        </a>
+        <nav class="bz-utility__nav" aria-label="Sections">
+          <a href="/">Latest</a>
+          <a href="/archive/">All reports</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="bz-footer">
+      <div class="bz-container bz-footer__row">
+        <div class="bz-footer__left">
+          <span class="bz-footer__brand">Startup Diligence</span>
+          <span class="bz-footer__dot" aria-hidden="true"></span>
+          <span class="bz-footer__tag">AI-generated diligence reports</span>
+        </div>
+        <span class="bz-footer__copyright">© 2026 Yingting Huang</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .bz-utility {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    color: var(--ink-page);
+    border-bottom: 1px solid var(--border-cream);
+    backdrop-filter: blur(16px) saturate(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+  }
+  .bz-utility__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+    gap: var(--space-4);
+    flex-wrap: nowrap;
+    padding-block: var(--space-2);
+  }
+  .bz-utility__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-lg);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--ink-page);
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  .bz-utility__brand-text {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @media (min-width: 1080px) {
+    .bz-utility__brand { font-size: var(--fs-xl); }
+  }
+  .bz-utility__brand:hover { opacity: 0.8; }
+  .bz-utility__mark {
+    display: inline-grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-control);
+    background: var(--charcoal);
+    color: var(--cream-highlight);
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    box-shadow: var(--button-inset);
+    flex: 0 0 auto;
+  }
+  .bz-utility__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-1);
+    flex: 0 0 auto;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .bz-utility__nav::-webkit-scrollbar { display: none; }
+  .bz-utility__nav a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--ink-page);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: var(--fs-base);
+    letter-spacing: 0;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-2);
+    border-radius: var(--radius-control);
+    white-space: nowrap;
+  }
+  .bz-utility__nav a:hover {
+    background: var(--charcoal-04);
+    color: var(--charcoal);
+    opacity: 1;
+  }
+  @media (min-width: 820px) {
+    .bz-utility__row { padding-block: 0; }
+    .bz-utility__nav { flex: 1 1 auto; }
+  }
+  @media (min-width: 1080px) {
+    .bz-utility__nav { gap: var(--space-2); }
+    .bz-utility__nav a { padding-inline: var(--space-3); }
+  }
+  @media (max-width: 520px) {
+    .bz-utility__row { min-height: 60px; gap: var(--space-2); }
+    .bz-utility__brand { font-size: var(--fs-base); }
+    .bz-utility__mark { width: 32px; height: 32px; font-size: var(--fs-xs); }
+    .bz-utility__nav a { font-size: var(--fs-sm); padding: var(--space-1) var(--space-1); }
+  }
+  @media (max-width: 380px) {
+    .bz-utility__brand { gap: var(--space-1); }
+    .bz-utility__brand-text { max-width: 9ch; }
+  }
+  .bz-footer {
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    color: var(--charcoal);
+    margin-top: var(--space-9);
+    padding: 0;
+    border-top: 1px solid var(--border-cream);
+  }
+  .bz-footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+    gap: var(--space-4);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    padding-block: var(--space-2);
+    font-family: var(--font-sans);
+    font-size: var(--fs-base);
+  }
+  .bz-footer__left {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    min-width: 0;
+  }
+  .bz-footer__brand {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+  .bz-footer__dot {
+    width: 4px;
+    height: 4px;
+    background: var(--charcoal-40);
+    opacity: 1;
+    transform: translateY(1px);
+  }
+  .bz-footer__tag,
+  .bz-footer__copyright {
+    color: var(--muted-gray);
+    opacity: 1;
+  }
+  @media (max-width: 640px) {
+    .bz-footer__row { align-items: flex-start; flex-direction: column; }
+  }
+</style>

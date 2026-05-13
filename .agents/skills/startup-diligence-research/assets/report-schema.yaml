@@ -1,0 +1,492 @@
+schema_name: startup_diligence_report
+schema_version: "1.1"
+description: >-
+  Normalized YAML schema for an evidence-backed startup diligence research report.
+  The report verifies founder claims, uncovers hidden risks, and evaluates business fundamentals.
+
+required_top_level_keys:
+  - report_metadata
+  - research_scope
+  - founder_claims
+  - executive_summary
+  - chapters
+  - tables
+  - figures
+  - evidence_claims
+  - sources
+  - risk_register
+  - diligence_gaps
+  - follow_up_requests
+  - limitations
+
+enums:
+  verification_status:
+    - verified
+    - partially_verified
+    - contradicted
+    - unverified
+    - not_publicly_verifiable
+    - inconclusive
+  confidence:
+    - high
+    - medium
+    - low
+  risk_severity:
+    - critical
+    - high
+    - medium
+    - low
+    - informational
+  risk_likelihood:
+    - high
+    - medium
+    - low
+    - unknown
+  evidence_type:
+    - primary_company_source
+    - regulatory_filing
+    - legal_record
+    - patent_or_trademark_record
+    - customer_or_partner_source
+    - independent_news
+    - market_database
+    - review_site
+    - social_or_professional_profile
+    - technical_repository
+    - analyst_estimate
+    - user_provided_document
+    - other
+  figure_type:
+    - timeline
+    - chart
+    - market_map
+    - risk_heatmap
+    - org_chart
+    - architecture_diagram
+    - funnel
+    - other
+  chart_type:
+    - line
+    - bar
+    - stacked_bar
+    - area
+    - scatter
+    - bubble
+    - pie
+    - donut
+    - table_visual
+    - other
+
+id_conventions:
+  chapter_id: Roman numeral matching checklist chapter, such as I or VIII
+  section_id: Chapter plus letter, such as I.A or VII.C
+  evidence_claim_id: EC-001, EC-002, EC-003
+  source_id: SRC-001, SRC-002, SRC-003
+  table_id: T-001, T-002, T-003
+  figure_id: F-001, F-002, F-003
+  founder_claim_id: FC-001, FC-002, FC-003
+  risk_id: R-001, R-002, R-003
+
+figure_schema_rules:
+  - Each figure uses the common envelope in report_shape.figures for identity, report association, narrative description, source linkage, and evidence linkage.
+  - The figure_type field selects exactly one type-specific payload shape from figure_spec_shapes.
+  - The spec field must match the selected figure_type; for example, figure_type chart uses figure_spec_shapes.chart.
+  - Every material data point, node, edge, event, stage, or annotation inside spec should include evidence_claim_ids and source_ids when it supports a report claim.
+  - Use figure_type other only when no standard figure type fits, and describe the custom schema in spec.schema_description.
+
+figure_spec_shapes:
+  timeline:
+    events:
+      - event_id: string
+        date: iso_date_or_date_range_or_null
+        label: string
+        description: string
+        category: string_or_null
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+    start_date: iso_date_or_null
+    end_date: iso_date_or_null
+    ordering: chronological | reverse_chronological
+
+  chart:
+    chart_type: line | bar | stacked_bar | area | scatter | bubble | pie | donut | table_visual | other
+    x_axis:
+      label: string
+      unit: string_or_null
+      scale: linear | logarithmic | categorical | time | other
+    y_axis:
+      label: string
+      unit: string_or_null
+      scale: linear | logarithmic | categorical | time | other
+    series:
+      - series_id: string
+        name: string
+        unit: string_or_null
+        data_points:
+          - x: string_or_number_or_date
+            y: string_or_number_or_null
+            label: string_or_null
+            evidence_claim_ids:
+              - EC-001
+            source_ids:
+              - SRC-001
+    annotations:
+      - label: string
+        x: string_or_number_or_date_or_null
+        y: string_or_number_or_null
+        note: string
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+
+  market_map:
+    dimensions:
+      x_axis:
+        label: string
+        low_label: string_or_null
+        high_label: string_or_null
+      y_axis:
+        label: string
+        low_label: string_or_null
+        high_label: string_or_null
+    segments:
+      - segment_id: string
+        name: string
+        description: string_or_null
+    entities:
+      - entity_id: string
+        name: string
+        entity_type: target_company | competitor | partner | customer | supplier | other
+        segment_id: string_or_null
+        x_value: string_or_number_or_null
+        y_value: string_or_number_or_null
+        attributes:
+          key: value
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+
+  risk_heatmap:
+    x_axis:
+      label: likelihood
+      scale:
+        - low
+        - medium
+        - high
+        - unknown
+    y_axis:
+      label: severity
+      scale:
+        - informational
+        - low
+        - medium
+        - high
+        - critical
+    risk_points:
+      - risk_id: R-001
+        label: string
+        severity: critical | high | medium | low | informational
+        likelihood: high | medium | low | unknown
+        rationale: string
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+
+  org_chart:
+    people_or_roles:
+      - node_id: string
+        name: string_or_null
+        role: string
+        department: string_or_null
+        location: string_or_null
+        is_publicly_verified: boolean
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+    reporting_lines:
+      - parent_node_id: string
+        child_node_id: string
+        relationship: reports_to | dotted_line | advisor | board_member | other
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+
+  architecture_diagram:
+    nodes:
+      - node_id: string
+        label: string
+        node_type: product | service | database | model | integration | infrastructure | user | third_party | other
+        description: string_or_null
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+    edges:
+      - edge_id: string
+        from_node_id: string
+        to_node_id: string
+        relationship: string
+        data_or_dependency: string_or_null
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+    boundaries:
+      - boundary_id: string
+        label: string
+        node_ids:
+          - string
+
+  funnel:
+    stages:
+      - stage_id: string
+        name: string
+        order: integer
+        count: number_or_null
+        conversion_rate_from_previous: number_or_null
+        period: string_or_null
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+    unit: users | customers | dollars | opportunities | leads | accounts | other
+    cohort_or_period: string_or_null
+
+  other:
+    schema_description: string
+    fields:
+      key: value
+    evidence_claim_ids:
+      - EC-001
+    source_ids:
+      - SRC-001
+
+report_shape:
+  report_metadata:
+    report_title: string
+    target_company: string
+    website: string_or_null
+    known_aliases:
+      - string
+    sector: string_or_null
+    geography: string_or_null
+    company_stage: string_or_null
+    research_date: iso_date
+    analyst: string_or_null
+    report_version: string
+    currency: string_or_null
+    time_zone: string_or_null
+
+  research_scope:
+    diligence_depth: quick_screen | standard_diligence | deep_diligence
+    source_strategy:
+      - string
+    included_jurisdictions:
+      - string
+    excluded_topics:
+      - string
+    user_provided_materials:
+      - material_id: string
+        title: string
+        type: string
+        date_received: iso_date_or_null
+        notes: string_or_null
+
+  founder_claims:
+    - founder_claim_id: FC-001
+      claim_text: string
+      claim_source: string
+      claim_date: iso_date_or_null
+      mapped_chapter_ids:
+        - I
+      mapped_section_ids:
+        - I.B
+      verification_status: verified | partially_verified | contradicted | unverified | not_publicly_verifiable | inconclusive
+      confidence: high | medium | low
+      evidence_claim_ids:
+        - EC-001
+      contradiction_summary: string_or_null
+      diligence_follow_up:
+        - string
+
+  executive_summary:
+    overall_assessment: string
+    investment_or_diligence_thesis: string
+    strongest_verified_claims:
+      - founder_claim_id: FC-001
+        summary: string
+        evidence_claim_ids:
+          - EC-001
+    biggest_risks:
+      - risk_id: R-001
+        summary: string
+    key_evidence_gaps:
+      - string
+    recommended_next_steps:
+      - string
+
+  chapters:
+    - chapter_id: I
+      title: Financial Information
+      chapter_summary: string
+      founder_claim_ids:
+        - FC-001
+      evidence_claim_ids:
+        - EC-001
+      risk_ids:
+        - R-001
+      sections:
+        - section_id: I.A
+          title: Annual and quarterly financial information for the past three years
+          checklist_question_ids:
+            - I.A.1
+          summary: string
+          verification_status: verified | partially_verified | contradicted | unverified | not_publicly_verifiable | inconclusive
+          confidence: high | medium | low
+          key_findings:
+            - finding_id: string
+              finding: string
+              evidence_claim_ids:
+                - EC-001
+              risk_ids:
+                - R-001
+          hidden_risks:
+            - string
+          evidence_gaps:
+            - string
+          follow_up_questions:
+            - string
+          table_ids:
+            - T-001
+          figure_ids:
+            - F-001
+          evidence_claim_ids:
+            - EC-001
+
+  tables:
+    - table_id: T-001
+      title: string
+      chapter_id: I
+      section_id: I.A
+      purpose: string
+      columns:
+        - name: string
+          description: string
+      rows:
+        - row_id: string
+          values:
+            column_name: value
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+      evidence_claim_ids:
+        - EC-001
+      source_ids:
+        - SRC-001
+      notes: string_or_null
+
+  figures:
+    - figure_id: F-001
+      title: string
+      chapter_id: I
+      section_id: I.A
+      figure_type: timeline | chart | market_map | risk_heatmap | org_chart | architecture_diagram | funnel | other
+      description: string
+      purpose: string
+      spec_schema_ref: figure_spec_shapes.<figure_type>
+      spec: object_matching_selected_figure_type
+      rendering_guidance:
+        preferred_format: mermaid | markdown | svg | png | chart_spec | table_visual | other | null
+        display_notes: string_or_null
+      evidence_claim_ids:
+        - EC-001
+      source_ids:
+        - SRC-001
+      notes: string_or_null
+
+  evidence_claims:
+    - evidence_claim_id: EC-001
+      claim: string
+      evidence_summary: string
+      evidence_type: primary_company_source | regulatory_filing | legal_record | patent_or_trademark_record | customer_or_partner_source | independent_news | market_database | review_site | social_or_professional_profile | technical_repository | analyst_estimate | user_provided_document | other
+      verification_status: verified | partially_verified | contradicted | unverified | not_publicly_verifiable | inconclusive
+      confidence: high | medium | low
+      source_ids:
+        - SRC-001
+      quoted_evidence:
+        - source_id: SRC-001
+          quote: string
+          location: string_or_null
+      analyst_interpretation: string
+      limitations: string_or_null
+      associations:
+        chapter_id: I
+        section_id: I.A
+        founder_claim_ids:
+          - FC-001
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        risk_ids:
+          - R-001
+
+  sources:
+    - source_id: SRC-001
+      title: string
+      url: string_or_null
+      publisher: string_or_null
+      author: string_or_null
+      publication_date: iso_date_or_null
+      accessed_date: iso_date
+      source_type: primary_company_source | regulatory_filing | legal_record | patent_or_trademark_record | customer_or_partner_source | independent_news | market_database | review_site | social_or_professional_profile | technical_repository | analyst_estimate | user_provided_document | other
+      reliability_notes: string
+      archive_url: string_or_null
+
+  risk_register:
+    - risk_id: R-001
+      risk_title: string
+      risk_category: financial | market | customer | product | technical | legal | regulatory | team | operational | financing | reputational | other
+      severity: critical | high | medium | low | informational
+      likelihood: high | medium | low | unknown
+      description: string
+      impacted_chapter_ids:
+        - I
+      impacted_section_ids:
+        - I.A
+      evidence_claim_ids:
+        - EC-001
+      mitigation_or_diligence_request: string
+
+  diligence_gaps:
+    - gap_id: G-001
+      chapter_id: I
+      section_id: I.A
+      missing_information: string
+      why_it_matters: string
+      suggested_source_or_request: string
+      priority: high | medium | low
+
+  follow_up_requests:
+    - request_id: Q-001
+      chapter_id: I
+      section_id: I.A
+      request: string
+      requested_from: founder | company | investor | customer | supplier | counsel | accountant | other
+      priority: high | medium | low
+
+  limitations:
+    - limitation_id: L-001
+      description: string
+      affected_chapter_ids:
+        - I
+      affected_section_ids:
+        - I.A

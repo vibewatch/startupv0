@@ -1,0 +1,995 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Figure from '../components/Figure.astro';
+import {
+  exhibitKey,
+  getAllReports,
+  getChapterSections,
+  getTableRows,
+  getTopRisks,
+  humanize,
+  indexExhibits,
+  sentence,
+} from '../lib/reports';
+
+export function getStaticPaths() {
+  return getAllReports().map(({ summary, report }) => ({
+    params: { slug: summary.slug },
+    props: { summary, report },
+  }));
+}
+
+const { summary, report } = Astro.props;
+const topRisks: any[] = getTopRisks(report, 8);
+const chapters: any[] = Array.isArray(report.chapters) ? report.chapters : [];
+const tables: any[] = Array.isArray(report.tables) ? report.tables : [];
+const figures: any[] = Array.isArray(report.figures) ? report.figures : [];
+const sources: any[] = Array.isArray(report.sources) ? report.sources : [];
+const evidenceClaims: any[] = Array.isArray(report.evidence_claims) ? report.evidence_claims : [];
+const gaps: any[] = Array.isArray(report.diligence_gaps) ? report.diligence_gaps : [];
+const requests: any[] = Array.isArray(report.follow_up_requests) ? report.follow_up_requests : [];
+const meta = report.report_metadata ?? {};
+const executive = report.executive_summary ?? {};
+const evidenceClaimById = new Map(evidenceClaims.map((claim) => [String(claim.evidence_claim_id), claim]));
+const exhibits = indexExhibits(report);
+const tableIndex = new Map(tables.map((table) => [String(table.table_id ?? ''), table]));
+const figureIndex = new Map(figures.map((figure) => [String(figure.figure_id ?? ''), figure]));
+let figureCounter = 0;
+const nextFigureIndex = () => figureCounter++;
+
+function list(value: unknown, limit?: number): any[] {
+  const arr = Array.isArray(value) ? value : [];
+  return typeof limit === 'number' ? arr.slice(0, limit) : arr;
+}
+
+function text(value: unknown, fallback = '—'): string {
+  const result = String(value ?? '').trim();
+  return result.length ? result : fallback;
+}
+
+function sectionId(section: any) {
+  return String(section?.section_id ?? '').replace(/[^a-zA-Z0-9_-]/g, '-');
+}
+
+function refIds(value: unknown): string[] {
+  return Array.isArray(value) ? value.map(String).filter(Boolean) : [];
+}
+
+function evidenceRefs(value: unknown) {
+  return refIds(value).map((id) => {
+    const claim = evidenceClaimById.get(id);
+    return {
+      id,
+      title: text(claim?.evidence_summary ?? claim?.claim ?? id, id),
+      sourceIds: refIds(claim?.source_ids).slice(0, 4),
+    };
+  });
+}
+
+function decisionClass(value: string) {
+  return `decision-${String(value ?? 'unknown').replace(/[^a-z0-9-]/gi, '-').toLowerCase()}`;
+}
+
+function semanticClass(prefix: string, value: unknown) {
+  return `${prefix}-${String(value ?? 'unknown').replace(/[^a-z0-9-]/gi, '-').toLowerCase()}`;
+}
+
+const profileRows = [
+  ['Website', meta.website],
+  ['Sector', summary.sector],
+  ['Geography', summary.geography],
+  ['Stage', summary.stage],
+  ['Known aliases', list(meta.known_aliases).join(', ')],
+  ['Report version', meta.report_version],
+  ['Timezone', meta.time_zone],
+].filter(([, value]) => value !== undefined && value !== null && value !== '');
+
+const strengths = list(executive.strongest_verified_claims, 5).map((item) => text(item?.summary ?? item));
+const riskBullets = list(executive.biggest_risks, 5).map((item) => text(item?.summary ?? item));
+const gapBullets = list(executive.key_evidence_gaps, 6).map((item) => text(item));
+const nextSteps = list(executive.recommended_next_steps, 6).map((item) => text(item));
+const fallbackStrengths = [summary.assessment].filter(Boolean);
+---
+<BaseLayout title={`${summary.company} — Startup Diligence`} description={summary.thesis || summary.assessment}>
+  <section class="report-shell sr-container">
+    <header class="report-cover">
+      <div class="report-cover-main">
+        <div class="cover-eyebrow">
+          <span class="cover-eyebrow-tag">Diligence report</span>
+          <span class="cover-eyebrow-meta">{summary.sector}</span>
+          <span class="cover-eyebrow-meta">{summary.stage}</span>
+        </div>
+        <h1>{summary.company}</h1>
+        <p class="report-subtitle">{summary.title}</p>
+        <p class="report-headline">{summary.thesis || summary.assessment}</p>
+      </div>
+      <aside class={`decision-card ${decisionClass(summary.recommendation)} ${semanticClass('risk', summary.risk)}`}>
+        <div class="decision-headline">
+          <span class="decision-eyebrow">Recommendation</span>
+          <strong class="decision-rec">{summary.recommendation}</strong>
+        </div>
+        <div class="decision-score">
+          <span class="decision-score-value">{summary.rating}</span>
+          <span class="decision-score-label">Score / 10</span>
+        </div>
+        <dl class="decision-grid">
+          <div><dt>Confidence</dt><dd>{topRisks[0]?.likelihood ? humanize(topRisks[0].likelihood) : 'Medium'}</dd></div>
+          <div><dt>Risk rating</dt><dd><span class={`semantic-pill ${semanticClass('risk', summary.risk)}`}>{humanize(summary.risk)}</span></dd></div>
+          <div><dt>Research date</dt><dd>{summary.researchDate}</dd></div>
+          <div><dt>Sources</dt><dd>{summary.sourceCount} sources</dd></div>
+        </dl>
+        <div class="decision-actions">
+          <button type="button" class="evidence-toggle" aria-pressed="false" data-show-label="Show refs" data-hide-label="Hide refs">Show refs</button>
+          <button type="button" class="print-pdf" data-print-pdf title="Use the browser print dialog to save as PDF">Download PDF</button>
+        </div>
+      </aside>
+    </header>
+
+    <section class="report-section startup-intro">
+      <h2>Company profile</h2>
+      <p class="intro-heading"><strong>{summary.title}</strong></p>
+      <p>{sentence(summary.assessment)}</p>
+      <dl class="intro-grid">
+        {profileRows.map(([label, value]) => (
+          <div>
+            <dt>{label}</dt>
+            <dd>{label === 'Website' && typeof value === 'string' ? <a href={value}>{value.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a> : text(value)}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <section class="report-section executive-summary">
+      <h2>Executive summary</h2>
+      <div class="three-col">
+        <article class="summary-card summary-strengths">
+          <h2>Strengths</h2>
+          <ul>{(strengths.length ? strengths : fallbackStrengths).map((item) => <li>{item}</li>)}</ul>
+        </article>
+        <article class="summary-card summary-risks">
+          <h2>Risks</h2>
+          <ul>{riskBullets.map((item) => <li>{item}</li>)}</ul>
+        </article>
+        <article class="summary-card summary-gaps">
+          <h2>Gaps</h2>
+          <ul>{gapBullets.map((item) => <li>{item}</li>)}</ul>
+        </article>
+      </div>
+    </section>
+
+    {nextSteps.length > 0 && (
+      <section class="report-section next-steps">
+        <h2>Recommended next steps</h2>
+        <div class="summary-card summary-gaps">
+          <ul>{nextSteps.map((item) => <li>{item}</li>)}</ul>
+        </div>
+      </section>
+    )}
+
+    {topRisks.length > 0 && (
+      <section class="report-section risk-register">
+        <h2>Risk register</h2>
+        <div class="three-col risk-card-grid">
+          {topRisks.map((risk) => (
+            <article class={`summary-card summary-risks ${semanticClass('risk-card', risk.severity)}`}>
+              <p class="risk-meta">
+                <span class={`semantic-pill ${semanticClass('risk', risk.severity)}`}>{humanize(risk.severity)}</span>
+                <span class={`semantic-pill ${semanticClass('confidence', risk.likelihood)}`}>{humanize(risk.likelihood)} likelihood</span>
+              </p>
+              <h2>{risk.risk_id}: {risk.risk_title}</h2>
+              <p>{risk.description}</p>
+              {risk.mitigation_or_diligence_request && <p><strong>Diligence request:</strong> {risk.mitigation_or_diligence_request}</p>}
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {chapters.map((chapter, chapterIndex) => (
+      <article class="report-chapter" id={`chapter-${chapter.chapter_id}`}>
+        <header class="chapter-header">
+          <span class="chapter-eyebrow">Chapter {String(chapterIndex + 1).padStart(2, '0')}</span>
+          <h2><span class="chapter-number">{String(chapterIndex + 1).padStart(2, '0')}</span><span class="chapter-title">{chapter.title}</span></h2>
+          <p class="chapter-summary">{sentence(chapter.chapter_summary)}</p>
+          {evidenceRefs(chapter.evidence_claim_ids).length > 0 && (
+            <div class="ref-list chapter-ref-list" aria-label="Chapter evidence references">
+              {evidenceRefs(chapter.evidence_claim_ids).map((ref) => (
+                <a class="ref-chip" href={`#${ref.id}`} title={ref.title}>{ref.id}</a>
+              ))}
+            </div>
+          )}
+        </header>
+        {getChapterSections(chapter).map((section) => (
+          <section class="chapter-section" id={sectionId(section)}>
+            <h3>{section.section_id} {section.title}</h3>
+            <p class="section-status">
+              <span class={`status-pill ${semanticClass('status', section.verification_status)}`}>{humanize(section.verification_status)}</span>
+              <span class={`status-pill ${semanticClass('confidence', section.confidence)}`}>confidence: {humanize(section.confidence)}</span>
+            </p>
+            <p>{sentence(section.summary)}</p>
+            {evidenceRefs(section.evidence_claim_ids).length > 0 && (
+              <div class="ref-list section-ref-list" aria-label="Section evidence references">
+                {evidenceRefs(section.evidence_claim_ids).map((ref) => (
+                  <a class="ref-chip" href={`#${ref.id}`} title={ref.title}>{ref.id}</a>
+                ))}
+              </div>
+            )}
+            {list(section.key_findings).length > 0 && (
+              <aside class="report-callout callout-insight">
+                <span class="callout-eyebrow">key findings</span>
+                <ul>
+                  {list(section.key_findings, 6).map((finding) => (
+                    <li>
+                      <span>{text(finding?.finding ?? finding)}</span>
+                      {evidenceRefs(finding?.evidence_claim_ids).length > 0 && (
+                        <span class="ref-list finding-ref-list" aria-label="Finding evidence references">
+                          {evidenceRefs(finding?.evidence_claim_ids).map((ref) => (
+                            <a class="ref-chip" href={`#${ref.id}`} title={ref.title}>{ref.id}</a>
+                          ))}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            )}
+            <div class="section-lists">
+              {list(section.evidence_gaps).length > 0 && <div><h4>Evidence gaps</h4><ul>{list(section.evidence_gaps, 5).map((gap) => <li>{text(gap)}</li>)}</ul></div>}
+              {list(section.hidden_risks).length > 0 && <div><h4>Hidden risks</h4><ul>{list(section.hidden_risks, 5).map((risk) => <li>{text(risk)}</li>)}</ul></div>}
+              {list(section.follow_up_questions).length > 0 && <div><h4>Follow-up questions</h4><ul>{list(section.follow_up_questions, 5).map((question) => <li>{text(question)}</li>)}</ul></div>}
+            </div>
+            {(() => {
+              const sectionKey = exhibitKey(chapter.chapter_id, section.section_id);
+              const nativeTables = exhibits.tablesBySection.get(sectionKey) ?? [];
+              const nativeFigures = exhibits.figuresBySection.get(sectionKey) ?? [];
+              const refdTables = refIds(section.table_ids)
+                .map((id) => tableIndex.get(id))
+                .filter((t): t is any => Boolean(t));
+              const refdFigures = refIds(section.figure_ids)
+                .map((id) => figureIndex.get(id))
+                .filter((f): f is any => Boolean(f));
+              // Render each exhibit at most once per page. First section that
+              // either owns the exhibit (native chapter+section) OR explicitly
+              // references it via {table,figure}_ids wins; later mentions are
+              // suppressed to avoid duplicate DOM ids and double-rendering.
+              const allTables = [];
+              const seenTables = new Set();
+              for (const table of [...nativeTables, ...refdTables]) {
+                const id = String(table.table_id);
+                if (exhibits.placedTableIds.has(id) || seenTables.has(id)) continue;
+                seenTables.add(id);
+                allTables.push(table);
+              }
+              const allFigures = [];
+              const seenFigures = new Set();
+              for (const figure of [...nativeFigures, ...refdFigures]) {
+                const id = String(figure.figure_id);
+                if (exhibits.placedFigureIds.has(id) || seenFigures.has(id)) continue;
+                seenFigures.add(id);
+                allFigures.push(figure);
+              }
+              for (const table of allTables) exhibits.placedTableIds.add(String(table.table_id));
+              for (const figure of allFigures) exhibits.placedFigureIds.add(String(figure.figure_id));
+              return (allTables.length > 0 || allFigures.length > 0) ? (
+                <div class="section-exhibits">
+                  {allTables.map((table) => (
+                    <div class="table-frame inline-exhibit" id={table.table_id}>
+                      <table>
+                        <caption>{table.title}</caption>
+                        <thead>
+                          <tr>{list(table.columns).map((column) => <th>{humanize(column.name)}</th>)}</tr>
+                        </thead>
+                        <tbody>
+                          {getTableRows(table).map((row) => (
+                            <tr>{list(table.columns).map((column) => <td>{text(row.values?.[column.name])}</td>)}</tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      {table.notes && <p class="table-note">{table.notes}</p>}
+                    </div>
+                  ))}
+                  {allFigures.map((figure) => (
+                    <Figure figure={figure} index={nextFigureIndex()} />
+                  ))}
+                </div>
+              ) : null;
+            })()}
+          </section>
+        ))}
+        {(() => {
+          const chapterTables = (exhibits.tablesByChapter.get(String(chapter.chapter_id)) ?? []).filter((t) => !exhibits.placedTableIds.has(String(t.table_id)));
+          const chapterFigures = (exhibits.figuresByChapter.get(String(chapter.chapter_id)) ?? []).filter((f) => !exhibits.placedFigureIds.has(String(f.figure_id)));
+          for (const table of chapterTables) exhibits.placedTableIds.add(String(table.table_id));
+          for (const figure of chapterFigures) exhibits.placedFigureIds.add(String(figure.figure_id));
+          return (chapterTables.length > 0 || chapterFigures.length > 0) ? (
+            <section class="chapter-section chapter-exhibits">
+              <h3>Chapter exhibits</h3>
+              <div class="section-exhibits">
+                {chapterTables.map((table) => (
+                  <div class="table-frame inline-exhibit" id={table.table_id}>
+                    <table>
+                      <caption>{table.title}</caption>
+                      <thead>
+                        <tr>{list(table.columns).map((column) => <th>{humanize(column.name)}</th>)}</tr>
+                      </thead>
+                      <tbody>
+                        {getTableRows(table).map((row) => (
+                          <tr>{list(table.columns).map((column) => <td>{text(row.values?.[column.name])}</td>)}</tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    {table.notes && <p class="table-note">{table.notes}</p>}
+                  </div>
+                ))}
+                {chapterFigures.map((figure) => (
+                  <Figure figure={figure} index={nextFigureIndex()} />
+                ))}
+              </div>
+            </section>
+          ) : null;
+        })()}
+      </article>
+    ))}
+
+    {(() => {
+      const orphanTables = tables.filter((table) => !exhibits.placedTableIds.has(String(table.table_id)));
+      const orphanFigures = figures.filter((figure) => !exhibits.placedFigureIds.has(String(figure.figure_id)));
+      return (orphanTables.length > 0 || orphanFigures.length > 0) ? (
+        <section class="report-section evidence-index">
+          <h2>Unfiled exhibits</h2>
+          {orphanTables.map((table) => (
+            <div class="table-frame" id={table.table_id}>
+              <table>
+                <caption>{table.title}</caption>
+                <thead>
+                  <tr>{list(table.columns).map((column) => <th>{humanize(column.name)}</th>)}</tr>
+                </thead>
+                <tbody>
+                  {getTableRows(table).map((row) => (
+                    <tr>{list(table.columns).map((column) => <td>{text(row.values?.[column.name])}</td>)}</tr>
+                  ))}
+                </tbody>
+              </table>
+              {table.notes && <p class="table-note">{table.notes}</p>}
+            </div>
+          ))}
+          {orphanFigures.map((figure) => (
+            <Figure figure={figure} index={nextFigureIndex()} />
+          ))}
+        </section>
+      ) : null;
+    })()}
+
+    {(evidenceClaims.length > 0 || sources.length > 0 || gaps.length > 0 || requests.length > 0) && (
+      <section class="report-section evidence-index">
+        <h2>Evidence</h2>
+        {evidenceClaims.length > 0 && (
+          <div class="table-frame evidence-claims-table">
+            <table>
+              <caption>Evidence claims</caption>
+              <thead><tr><th>ID</th><th>Claim</th><th>Status</th><th>Sources</th></tr></thead>
+              <tbody>
+                {evidenceClaims.map((claim) => (
+                  <tr id={claim.evidence_claim_id}>
+                    <td><a class="evidence-id" href={`#${claim.evidence_claim_id}`}>{claim.evidence_claim_id}</a></td>
+                    <td>{text(claim.claim ?? claim.evidence_summary)}</td>
+                    <td class="evidence-status-cell">
+                      <span class={`status-pill ${semanticClass('status', claim.verification_status)}`}>{humanize(claim.verification_status)}</span>
+                      <span class={`status-pill ${semanticClass('confidence', claim.confidence)}`}>{humanize(claim.confidence)}</span>
+                    </td>
+                    <td>
+                      <span class="table-ref-list">
+                        {refIds(claim.source_ids).map((sourceId) => (
+                          <a class="ref-chip ref-chip--source" href={`#${sourceId}`}>{sourceId}</a>
+                        ))}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {sources.length > 0 && (
+          <div class="table-frame">
+            <table>
+              <caption>Sources</caption>
+              <thead><tr><th>ID</th><th>Publisher</th><th>Title</th><th>Accessed</th></tr></thead>
+              <tbody>
+                {sources.map((source) => (
+                  <tr id={source.source_id}>
+                    <td><a class="evidence-id" href={`#${source.source_id}`}>{source.source_id}</a></td>
+                    <td>{text(source.publisher || source.source_type)}</td>
+                    <td>{source.url ? <a href={source.url}>{source.title}</a> : text(source.title)}</td>
+                    <td>{text(source.accessed_date)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+    )}
+
+    <div class="floating-actions" aria-label="Report shortcuts">
+      {chapters.length > 0 && (
+        <div class="chapter-jump" data-chapter-jump>
+          <button type="button" class="chapter-jump__toggle" data-chapter-toggle aria-label="Select chapter" title="Select chapter" aria-expanded="false" aria-controls="chapter-jump-menu">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+              <path d="M6.75 4.75h7.25M6.75 9h7.25M6.75 13.25h7.25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M3.75 4.75h.01M3.75 9h.01M3.75 13.25h.01" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <nav class="chapter-jump__menu" id="chapter-jump-menu" data-chapter-menu aria-label="Select chapter" hidden>
+            <ol>
+              {chapters.map((chapter, index) => (
+                <li class="chapter-jump__item" data-chapter-target={`chapter-${chapter.chapter_id}`}>
+                  <a href={`#chapter-${chapter.chapter_id}`} data-chapter-link>
+                    <span class="chapter-jump__number">{String(index + 1).padStart(2, '0')}</span>
+                    <span class="chapter-jump__title">{chapter.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </div>
+      )}
+      <button type="button" class="back-to-top" data-back-to-top aria-label="Back to top" title="Back to top">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+          <path d="M9 3.5 L9 14.5 M9 3.5 L4 8.5 M9 3.5 L14 8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <script>
+    const reportShell = document.querySelector<HTMLElement>('.report-shell');
+    const printButton = document.querySelector<HTMLButtonElement>('[data-print-pdf]');
+    if (printButton) {
+      printButton.addEventListener('click', () => window.print());
+    }
+
+    const backToTop = document.querySelector<HTMLButtonElement>('[data-back-to-top]');
+    if (backToTop) {
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    const evidenceToggle = document.querySelector<HTMLButtonElement>('.evidence-toggle');
+    if (reportShell && evidenceToggle) {
+      const showLabel = evidenceToggle.dataset.showLabel || 'Show refs';
+      const hideLabel = evidenceToggle.dataset.hideLabel || 'Hide refs';
+      const setRefsVisible = (visible: boolean) => {
+        reportShell.classList.toggle('refs-visible', visible);
+        evidenceToggle.setAttribute('aria-pressed', String(visible));
+        evidenceToggle.textContent = visible ? hideLabel : showLabel;
+      };
+      evidenceToggle.addEventListener('click', () => setRefsVisible(!reportShell.classList.contains('refs-visible')));
+      setRefsVisible(false);
+    }
+
+    for (const frame of document.querySelectorAll<HTMLElement>('.table-frame')) {
+      if (frame.dataset.responsive === 'ready') continue;
+      const headerCells = Array.from(frame.querySelectorAll<HTMLTableCellElement>('thead th'));
+      const labels = headerCells.map((th) => (th.textContent || '').trim());
+      if (!labels.length) continue;
+      frame.dataset.columns = String(labels.length);
+      for (const row of frame.querySelectorAll('tbody tr')) {
+        const cells = row.children;
+        for (let i = 0; i < cells.length; i++) {
+          const cell = cells[i];
+          if (cell.tagName === 'TD' && labels[i]) cell.setAttribute('data-label', labels[i]);
+        }
+      }
+      frame.dataset.responsive = 'ready';
+    }
+
+    const chapterJump = document.querySelector<HTMLElement>('[data-chapter-jump]');
+    if (chapterJump) {
+      type ChapterTarget = { item: HTMLElement; el: HTMLElement };
+      const toggle = chapterJump.querySelector<HTMLButtonElement>('[data-chapter-toggle]');
+      const menu = chapterJump.querySelector<HTMLElement>('[data-chapter-menu]');
+      const items = Array.from(chapterJump.querySelectorAll<HTMLElement>('[data-chapter-target]'));
+      const links = Array.from(chapterJump.querySelectorAll<HTMLAnchorElement>('[data-chapter-link]'));
+      const setChapterMenuOpen = (open: boolean) => {
+        if (!toggle || !menu) return;
+        menu.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        chapterJump.classList.toggle('is-open', open);
+      };
+      toggle?.addEventListener('click', () => setChapterMenuOpen(menu ? menu.hidden : true));
+      links.forEach((link) => link.addEventListener('click', () => setChapterMenuOpen(false)));
+      document.addEventListener('click', (event) => {
+        if (!chapterJump.contains(event.target as Node)) setChapterMenuOpen(false);
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setChapterMenuOpen(false);
+      });
+
+      const targets = items
+        .map((item) => {
+          const id = item.dataset.chapterTarget;
+          const el = id ? document.getElementById(id) : null;
+          return el ? { item, el } : null;
+        })
+        .filter((target): target is ChapterTarget => Boolean(target));
+      if (targets.length && 'IntersectionObserver' in window) {
+        const visible = new Map<Element, number>();
+        const setActive = (activeItem: HTMLElement) => items.forEach((item) => item.classList.toggle('is-active', item === activeItem));
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) visible.set(entry.target, entry.intersectionRatio);
+            else visible.delete(entry.target);
+          }
+          let bestEl: Element | null = null;
+          let bestRatio = 0;
+          for (const [el, ratio] of visible) {
+            if (ratio > bestRatio) { bestRatio = ratio; bestEl = el; }
+          }
+          if (bestEl) {
+            const match = targets.find((target) => target.el === bestEl);
+            if (match) setActive(match.item);
+          }
+        }, { rootMargin: '-30% 0px -55% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] });
+        targets.forEach(({ el }) => observer.observe(el));
+      }
+    }
+  </script>
+
+  <style>
+    .report-shell {
+      --report-fs-kicker: clamp(0.82rem, 0.12vw + 0.78rem, 0.9rem);
+      --report-fs-caption: clamp(0.88rem, 0.14vw + 0.82rem, 0.98rem);
+      --report-fs-body: clamp(1.02rem, 0.18vw + 0.96rem, 1.12rem);
+      --report-fs-table: clamp(0.94rem, 0.14vw + 0.88rem, 1.02rem);
+      --report-fs-subhead: clamp(1.35rem, 0.6vw + 1.05rem, 1.7rem);
+      --report-fs-section: clamp(1.75rem, 1.1vw + 1.15rem, 2.2rem);
+      padding-block: var(--space-6) 0;
+      overflow-x: clip;
+      font-size: var(--report-fs-body);
+    }
+    .report-cover { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 360px); gap: var(--space-7); align-items: stretch; padding: var(--space-6) var(--space-5); margin-bottom: var(--space-5); border-top: 4px solid var(--claret); border-bottom: var(--report-rule); background: linear-gradient(135deg, color-mix(in srgb, var(--claret) 5%, var(--surface-paper)) 0%, var(--surface-paper) 60%, color-mix(in srgb, var(--gold) 4%, var(--surface-paper)) 100%); }
+    .report-cover-main { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
+    .cover-eyebrow { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); margin-bottom: var(--space-2); font-family: var(--font-sans); font-size: var(--report-fs-kicker); letter-spacing: var(--tracking-eyebrow); }
+    .cover-eyebrow-tag { display: inline-block; padding: 3px var(--space-2); border-radius: 999px; background: var(--claret); color: #fff7ef; font-variant-caps: all-small-caps; font-weight: 800; line-height: 1.1; }
+    .cover-eyebrow-meta { color: var(--caption-gray); font-variant-caps: all-small-caps; font-weight: 700; }
+    .cover-eyebrow-meta + .cover-eyebrow-meta::before { content: '·'; margin-right: var(--space-3); color: color-mix(in srgb, var(--caption-gray) 50%, transparent); }
+    .report-cover h1 { margin: 0; max-width: 22ch; font-family: var(--font-display); font-size: clamp(2.4rem, 4vw + 1rem, 4rem); font-weight: 700; letter-spacing: var(--tracking-display-tight); line-height: 0.98; color: var(--ink-page); }
+    .report-subtitle, .report-headline { width: 100%; max-width: 56ch; color: var(--ink-page); font-family: var(--font-sans); line-height: 1.5; }
+    .report-subtitle { font-size: var(--report-fs-body); color: var(--caption-gray); margin-top: 0; }
+    .report-headline { font-size: clamp(1.05rem, 0.4vw + 0.95rem, 1.2rem); font-weight: 500; }
+    .decision-card { --decision-accent: var(--semantic-info); display: flex; flex-direction: column; gap: var(--space-4); align-self: stretch; padding: var(--space-4); background: transparent; border: 0; border-top: 3px solid var(--decision-accent); border-radius: var(--radius-card); box-shadow: none; }
+    .decision-pass { --decision-accent: var(--semantic-success); }
+    .decision-avoid, .decision-decline { --decision-accent: var(--semantic-danger); }
+    .decision-research-more, .decision-track { --decision-accent: var(--semantic-warning); }
+    .decision-monitor { --decision-accent: var(--semantic-info); }
+    .decision-headline { display: flex; flex-direction: column; gap: var(--space-1); }
+    .decision-eyebrow { font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--caption-gray); line-height: 1.1; }
+    .decision-rec { display: inline-block; align-self: flex-start; padding: 4px var(--space-3); border-radius: 999px; background: var(--decision-accent); color: #fff7ef; font-family: var(--font-display); font-size: clamp(1rem, 0.4vw + 0.85rem, 1.2rem); font-weight: 800; letter-spacing: var(--tracking-display-snug); line-height: 1.15; text-transform: uppercase; }
+    .decision-score { display: flex; align-items: baseline; gap: var(--space-2); padding: var(--space-3) 0; border-top: 1px dashed color-mix(in srgb, var(--decision-accent) 30%, transparent); border-bottom: 1px dashed color-mix(in srgb, var(--decision-accent) 30%, transparent); }
+    .decision-score-value { font-family: var(--font-display); font-size: clamp(2.6rem, 2vw + 1.8rem, 3.4rem); font-weight: 800; line-height: 0.95; letter-spacing: -0.04em; color: var(--decision-accent); }
+    .decision-score-label { font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 700; letter-spacing: var(--tracking-eyebrow); color: var(--caption-gray); }
+    .decision-grid { margin: 0; display: grid; gap: var(--space-2) var(--space-3); }
+    .decision-grid div { display: grid; grid-template-columns: 1fr auto; gap: var(--space-3); align-items: baseline; }
+    .decision-grid dt { font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 700; letter-spacing: var(--tracking-eyebrow); color: var(--caption-gray); }
+    .decision-grid dd { margin: 0; font-family: var(--font-sans); font-size: var(--report-fs-caption); font-weight: 700; color: var(--ink-page); text-align: right; }
+    .decision-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: var(--space-2); padding-top: var(--space-3); }
+    .evidence-toggle, .print-pdf { appearance: none; border: 1px solid var(--claret); background: transparent; color: var(--claret); cursor: pointer; font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-caption); font-weight: 800; letter-spacing: var(--tracking-eyebrow); line-height: 1.2; padding: 4px var(--space-3); border-radius: 999px; }
+    .print-pdf { border-color: var(--gold); color: var(--gold); }
+    .evidence-toggle:hover, .evidence-toggle:focus-visible, .evidence-toggle[aria-pressed="true"] { background: var(--claret); color: #fff7ef; outline: none; }
+    .print-pdf:hover, .print-pdf:focus-visible { background: var(--gold); color: var(--ink-page); outline: none; }
+    .report-section, .report-chapter { padding-block: var(--space-4); }
+    .report-chapter { padding-block: var(--space-5) var(--space-4); border-top: 2px solid var(--claret); }
+    .report-section h2 { position: relative; margin: 0 0 var(--space-4); padding: var(--space-2) 0 var(--space-2) var(--space-3); display: flex; align-items: center; gap: var(--space-2); border-left: 4px solid var(--claret); font-family: var(--font-sans); font-variant-caps: normal; font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; color: var(--claret); font-size: clamp(1.05rem, 0.4vw + 0.95rem, 1.25rem); line-height: 1.15; }
+    .chapter-header { margin-bottom: var(--space-5); }
+    .chapter-eyebrow { display: block; font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--caption-gray); margin-bottom: var(--space-2); }
+    .chapter-header h2 { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: var(--space-4); margin: 0; font-family: var(--font-display); font-size: var(--report-fs-section); font-weight: 700; letter-spacing: var(--tracking-display-snug); line-height: var(--lh-display-block); color: var(--ink-page); }
+    .chapter-number { font-family: var(--font-display); font-size: clamp(2.4rem, 2vw + 1.6rem, 3.6rem); font-weight: 800; line-height: 0.9; letter-spacing: -0.04em; color: var(--claret); }
+    .chapter-title { min-width: 0; }
+    .chapter-summary { margin: var(--space-3) 0 0; color: var(--caption-gray); font-size: var(--report-fs-body); line-height: 1.55; }
+    .chapter-section { margin-top: var(--space-6); }
+    .chapter-section h3 { margin-bottom: var(--space-3); font-size: var(--report-fs-subhead); font-weight: 700; letter-spacing: var(--tracking-display-snug); }
+    .chapter-section p, .chapter-section li, .report-section p { width: 100%; max-width: none; font-size: var(--report-fs-body); line-height: 1.65; }
+    .section-status { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0 0 var(--space-3); font-family: var(--font-sans); font-size: var(--report-fs-kicker); font-variant-caps: all-small-caps; font-weight: 800; color: var(--caption-gray); }
+    .semantic-pill,
+    .status-pill {
+      --tone: var(--semantic-muted);
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.75rem;
+      border: 1px solid color-mix(in srgb, var(--tone) 28%, var(--border-cream));
+      border-radius: var(--radius-pill);
+      background: color-mix(in srgb, var(--tone) 8%, var(--cream-base));
+      color: color-mix(in srgb, var(--tone) 82%, var(--charcoal));
+      padding: 2px 10px;
+      font-family: var(--font-sans);
+      font-size: var(--report-fs-kicker);
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    .risk-critical,
+    .risk-high,
+    .risk-card-critical,
+    .risk-card-high,
+    .status-unverified,
+    .status-disputed,
+    .status-false,
+    .status-failed,
+    .confidence-low { --tone: var(--semantic-danger); }
+    .risk-medium,
+    .risk-card-medium,
+    .status-inconclusive,
+    .status-not-publicly-verifiable,
+    .status-partially-verified,
+    .status-partial,
+    .status-mixed,
+    .confidence-medium { --tone: var(--semantic-warning); }
+    .risk-low,
+    .risk-card-low,
+    .status-verified,
+    .status-confirmed,
+    .status-supported,
+    .confidence-high { --tone: var(--semantic-success); }
+    .status-unknown,
+    .confidence-unknown { --tone: var(--semantic-muted); }
+    .evidence-status-cell .status-pill { margin: 0 4px 4px 0; }
+    .intro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 0; margin-top: var(--space-4); border-top: 2px solid var(--claret); border-left: var(--report-rule); background: color-mix(in srgb, var(--surface-paper) 60%, transparent); }
+    .intro-grid div { position: relative; padding: var(--space-3) var(--space-4) var(--space-4); border-right: var(--report-rule); border-bottom: var(--report-rule); background: var(--surface-paper); transition: background-color 120ms ease; }
+    .intro-grid div::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 3px; background: color-mix(in srgb, var(--claret) 18%, transparent); transition: background-color 120ms ease; }
+    .intro-grid div:hover { background: color-mix(in srgb, var(--claret) 3%, var(--surface-paper)); }
+    .intro-grid div:hover::before { background: var(--claret); }
+    .intro-grid dt { font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--claret); line-height: 1.2; }
+    .intro-grid dd { margin: var(--space-2) 0 0; font-family: var(--font-sans); font-size: var(--report-fs-caption); line-height: 1.5; color: var(--ink-page); overflow-wrap: anywhere; }
+    .intro-heading { font-family: var(--font-display); font-size: var(--report-fs-subhead); font-weight: 700; line-height: 1.25; color: var(--ink-page); margin-bottom: var(--space-3); }
+    .report-chapter, .report-section.appendix { scroll-margin-top: 4.5rem; }
+    .report-callout { position: relative; margin: var(--space-5) 0; border-left: 4px solid var(--claret); background: color-mix(in srgb, var(--claret) 10%, transparent); padding: var(--space-4); border-radius: 0 var(--radius-card) var(--radius-card) 0; }
+    .report-callout .callout-eyebrow { display: inline-block; margin-bottom: var(--space-1); padding: 2px var(--space-2); border-radius: 999px; background: var(--claret); color: #fff7ef; font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); line-height: 1.1; }
+    .ref-list { display: none; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-2); }
+    .refs-visible .ref-list { display: flex; }
+    .table-ref-list { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+    .ref-chip { display: inline-flex; align-items: center; min-height: 1.6rem; border: 1px solid var(--border-cream); border-radius: var(--radius-pill); background: var(--charcoal-03); color: var(--charcoal); padding: 1px 8px; font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.35; text-decoration: none; }
+    .ref-chip:hover, .ref-chip:focus-visible { border-color: var(--charcoal-40); background: var(--charcoal-04); color: var(--charcoal); opacity: 1; }
+    .ref-chip--source { color: var(--muted-gray); }
+    .three-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: var(--space-4); }
+    .summary-card { --summary-accent: var(--claret); --summary-tint: color-mix(in srgb, var(--summary-accent) 6%, var(--surface-paper)); position: relative; padding: var(--space-4); background: var(--summary-tint); border-radius: var(--radius-card); border-left: 4px solid var(--summary-accent); padding-top: var(--space-3); }
+    .summary-card h2 { margin: 0 0 var(--space-3); display: block; padding: 0; border: 0; font-family: var(--font-sans); font-variant-caps: normal; text-transform: uppercase; font-weight: 900; letter-spacing: 0.02em; color: var(--summary-accent); font-size: clamp(1rem, 0.4vw + 0.9rem, 1.2rem); line-height: 1.15; }
+    .summary-card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+    .summary-card li { position: relative; padding-left: var(--space-4); font-family: var(--font-sans); font-size: var(--report-fs-caption); line-height: 1.5; color: var(--ink-page); }
+    .summary-card li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--summary-accent); }
+    .summary-strengths { --summary-accent: var(--gold); }
+    .summary-risks { --summary-accent: var(--risk-red); }
+    .summary-gaps { --summary-accent: var(--caption-gray); }
+    .risk-meta { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: 0 0 var(--space-3); max-width: none; }
+    .section-lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: var(--space-4); margin-top: var(--space-4); }
+    .section-lists h4 { margin: 0 0 var(--space-2); color: var(--claret); font-family: var(--font-sans); font-size: var(--report-fs-kicker); font-variant-caps: all-small-caps; font-weight: 800; letter-spacing: var(--tracking-eyebrow); }
+    .table-frame { width: 100%; max-width: 100%; margin: var(--space-5) 0; border: var(--report-rule); border-top: 3px solid var(--claret); background: var(--surface-paper); }
+    .table-frame table { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0; background: transparent; font-family: var(--font-sans); }
+    .table-frame caption { caption-side: top; text-align: left; padding: var(--space-3) var(--space-4); border-bottom: var(--report-rule); background: color-mix(in srgb, var(--claret) 6%, transparent); font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--claret); }
+    .table-frame th, .table-frame td { border-bottom: var(--report-rule); padding: var(--space-3) var(--space-4); text-align: left; vertical-align: top; font-size: var(--report-fs-table); line-height: 1.55; word-break: break-word; overflow-wrap: anywhere; hyphens: auto; }
+    .table-frame th { background: color-mix(in srgb, var(--paper) 78%, white); font-family: var(--font-sans); text-transform: uppercase; font-weight: 600; letter-spacing: var(--tracking-eyebrow); color: color-mix(in srgb, var(--claret) 88%, var(--ink-page)); white-space: normal; }
+    .table-frame tbody tr:nth-child(2n) { background: color-mix(in srgb, var(--surface-paper) 68%, transparent); }
+    .table-frame tbody tr:hover { background: color-mix(in srgb, var(--claret) 5%, var(--surface-paper)); }
+    .table-frame tbody tr:last-child td { border-bottom: 0; }
+    .table-frame td:first-child { font-weight: 650; }
+    .table-note { margin: 0; border-top: var(--report-rule); padding: var(--space-3) var(--space-4); color: var(--caption-gray); font-family: var(--font-sans); font-size: var(--report-fs-table); line-height: 1.55; }
+    .evidence-index tr:target { background: color-mix(in srgb, var(--claret) 9%, transparent); scroll-margin-top: var(--space-6); }
+    .evidence-index .table-frame th, .evidence-index .table-frame td, .evidence-index .table-note { font-size: var(--report-fs-caption); line-height: 1.5; }
+    .evidence-id { font-family: var(--font-mono); color: var(--claret); text-decoration: none; }
+    .evidence-id:hover, .evidence-id:focus-visible { text-decoration: underline; }
+    .floating-actions { position: fixed; right: var(--space-4); bottom: var(--space-4); z-index: 60; display: grid; justify-items: end; gap: var(--space-2); }
+    .chapter-jump { position: relative; display: grid; justify-items: end; }
+    .chapter-jump__toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--charcoal-40); border-radius: var(--radius-circle); background: var(--cream-base); color: var(--charcoal); cursor: pointer; padding: 0; box-shadow: var(--focus-shadow); transition: background-color 120ms ease, color 120ms ease, transform 120ms ease; }
+    .chapter-jump__toggle:hover, .chapter-jump__toggle:focus-visible, .chapter-jump.is-open .chapter-jump__toggle { background: var(--charcoal); color: var(--cream-highlight); outline: none; transform: translateY(-2px); }
+    .chapter-jump.is-open .chapter-jump__toggle svg { transform: scale(0.92); }
+    .chapter-jump__toggle svg { transition: transform 120ms ease; }
+    .chapter-jump__menu { position: absolute; right: 0; bottom: calc(100% + var(--space-2)); width: min(340px, calc(100vw - 32px)); max-height: min(440px, calc(100vh - 160px)); overflow: auto; border: 1px solid var(--border-cream); border-radius: var(--radius-container); background: color-mix(in srgb, var(--cream-base) 94%, var(--cream-highlight)); box-shadow: var(--focus-shadow); padding: var(--space-2); }
+    .chapter-jump__menu[hidden] { display: none; }
+    .chapter-jump__menu ol { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-1); }
+    .chapter-jump__item { margin: 0; }
+    .chapter-jump__item a { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: var(--space-2); min-height: 40px; border-radius: var(--radius-control); padding: var(--space-2) var(--space-3); color: var(--charcoal); text-decoration: none; }
+    .chapter-jump__item a:hover, .chapter-jump__item a:focus-visible, .chapter-jump__item.is-active a { background: var(--charcoal-04); opacity: 1; outline: none; }
+    .chapter-jump__number { display: inline-grid; place-items: center; min-width: 1.75rem; height: 1.75rem; border-radius: var(--radius-pill); background: var(--charcoal-04); color: var(--charcoal); font-family: var(--font-mono); font-size: 0.75rem; }
+    .chapter-jump__item.is-active .chapter-jump__number { background: var(--charcoal); color: var(--cream-highlight); }
+    .chapter-jump__title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--font-sans); font-size: var(--fs-sm); font-weight: 600; }
+    .back-to-top { position: fixed; right: var(--space-4); bottom: var(--space-4); z-index: 60; width: 44px; height: 44px; display: inline-grid; place-items: center; border: 1px solid var(--claret); background: var(--surface-paper); color: var(--claret); cursor: pointer; border-radius: 999px; box-shadow: 0 6px 18px color-mix(in srgb, var(--ink-page) 18%, transparent); transition: background-color 120ms ease, color 120ms ease, transform 120ms ease; }
+    .floating-actions .back-to-top { position: static; right: auto; bottom: auto; z-index: auto; }
+    .back-to-top:hover, .back-to-top:focus-visible { background: var(--claret); color: #fff7ef; outline: none; transform: translateY(-2px); }
+
+    /* DESIGN.md / Lovable visual override: keep the report information architecture,
+       but render it with warm cream surfaces, charcoal opacity depth, rounded cards,
+      original Mona Sans typography, and tactile dark buttons. */
+    .report-shell {
+      --report-fs-kicker: var(--fs-sm);
+      --report-fs-caption: var(--fs-sm);
+      --report-fs-body: var(--fs-base);
+      --report-fs-table: var(--fs-sm);
+      --report-fs-subhead: clamp(1.75rem, 4vw, 2.25rem);
+      --report-fs-section: var(--fs-2xl);
+      padding-block: var(--space-8) 0;
+    }
+    :global(body .bz-footer) {
+      margin-top: var(--space-4);
+    }
+    .report-shell .report-cover {
+      border: 1px solid var(--border-cream);
+      border-radius: var(--radius-container);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 170, 135, 0.2), transparent 28rem),
+        radial-gradient(circle at 88% 12%, rgba(98, 139, 255, 0.12), transparent 28rem),
+        var(--cream-base);
+      padding: var(--space-8);
+      margin-bottom: var(--space-7);
+    }
+    .report-shell .cover-eyebrow,
+    .report-shell .section-status,
+    .report-shell .chapter-eyebrow,
+    .report-shell .intro-grid dt,
+    .report-shell .section-lists h4,
+    .report-shell .table-frame caption,
+    .report-shell .decision-eyebrow,
+    .report-shell .decision-score-label,
+    .report-shell .decision-grid dt {
+      color: var(--muted-gray);
+      font-variant-caps: normal;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .report-shell .cover-eyebrow-tag {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: var(--charcoal);
+      color: var(--cream-highlight);
+      box-shadow: var(--button-inset);
+      font-weight: 400;
+    }
+    .report-shell .report-cover h1 {
+      max-width: 12ch;
+      font-size: var(--fs-3xl);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: var(--tracking-hero);
+    }
+    .report-shell .report-subtitle,
+    .report-shell .report-headline,
+    .report-shell .chapter-summary,
+    .report-shell .intro-grid dd,
+    .report-shell .table-note {
+      color: var(--muted-gray);
+      font-weight: 400;
+    }
+    .report-shell .decision-card {
+      border: 1px solid color-mix(in srgb, var(--decision-accent) 22%, var(--border-cream));
+      border-radius: var(--radius-card);
+      background: color-mix(in srgb, var(--decision-accent) 5%, var(--cream-base));
+      padding: var(--space-5);
+      box-shadow: inset 0 3px 0 color-mix(in srgb, var(--decision-accent) 82%, transparent);
+    }
+    .report-shell .decision-rec,
+    .report-shell .evidence-toggle[aria-pressed="true"],
+    .report-shell .print-pdf:hover,
+    .report-shell .print-pdf:focus-visible,
+    .report-shell .evidence-toggle:hover,
+    .report-shell .evidence-toggle:focus-visible,
+    .report-shell .back-to-top:hover,
+    .report-shell .back-to-top:focus-visible {
+      border-color: var(--charcoal);
+      background: var(--charcoal);
+      color: var(--cream-highlight);
+      box-shadow: var(--button-inset);
+    }
+    .report-shell .decision-rec {
+      text-transform: none;
+      font-size: var(--fs-base);
+      font-weight: 400;
+      letter-spacing: 0;
+      border-color: var(--decision-accent);
+      background: color-mix(in srgb, var(--decision-accent) 86%, var(--charcoal));
+    }
+    .report-shell .decision-score {
+      border-block: 1px solid var(--border-cream);
+    }
+    .report-shell .decision-score-value {
+      color: var(--decision-accent);
+      font-weight: 600;
+      letter-spacing: var(--tracking-section);
+    }
+    .report-shell .decision-grid dd,
+    .report-shell .archive-summary dd,
+    .report-shell .card-footer strong {
+      font-weight: 600;
+    }
+    .report-shell .evidence-toggle,
+    .report-shell .print-pdf {
+      min-height: 40px;
+      border: 1px solid var(--charcoal-40);
+      border-radius: var(--radius-control);
+      background: transparent;
+      color: var(--charcoal);
+      padding: var(--space-2) var(--space-4);
+      font-variant-caps: normal;
+      font-size: var(--fs-base);
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.5;
+    }
+    .report-shell .report-section,
+    .report-shell .report-chapter {
+      padding-block: var(--space-5) var(--space-4);
+    }
+    .report-shell .report-chapter {
+      border-top: 1px solid var(--border-cream);
+    }
+    .report-shell .report-section > h2 {
+      margin-bottom: var(--space-5);
+      padding: 0;
+      border: 0;
+      color: var(--charcoal);
+      font-family: var(--font-display);
+      font-size: var(--fs-2xl);
+      font-weight: 600;
+      letter-spacing: var(--tracking-section);
+      line-height: 1;
+      text-transform: none;
+    }
+    .report-shell .chapter-header h2 {
+      color: var(--charcoal);
+      font-weight: 600;
+      letter-spacing: var(--tracking-section);
+    }
+    .report-shell .chapter-number {
+      color: var(--charcoal-40);
+      font-weight: 600;
+      letter-spacing: var(--tracking-section);
+    }
+    .report-shell .chapter-section h3,
+    .report-shell .intro-heading {
+      font-weight: 600;
+      letter-spacing: var(--tracking-subhead);
+      line-height: 1.1;
+    }
+    .report-shell .intro-grid div,
+    .report-shell .summary-card,
+    .report-shell .table-frame,
+    .report-shell .report-callout {
+      border: 1px solid var(--border-cream);
+      border-radius: var(--radius-card);
+      background: var(--cream-base);
+      box-shadow: none;
+    }
+    .report-shell .intro-grid div::before {
+      display: none;
+    }
+    .report-shell .intro-grid div:hover,
+    .report-shell .table-frame tbody tr:hover {
+      background: var(--charcoal-03);
+    }
+    .report-shell .intro-grid {
+      gap: var(--space-3);
+      border: 0;
+      background: transparent;
+    }
+    .report-shell .intro-grid div {
+      padding: var(--space-4);
+    }
+    .report-shell .summary-card {
+      --summary-accent: var(--charcoal);
+      --summary-tint: color-mix(in srgb, var(--summary-accent) 6%, var(--cream-base));
+      padding: var(--space-5);
+      border-color: color-mix(in srgb, var(--summary-accent) 24%, var(--border-cream));
+      border-left: 4px solid color-mix(in srgb, var(--summary-accent) 78%, var(--border-cream));
+      background: var(--summary-tint);
+    }
+    .report-shell .summary-strengths {
+      --summary-accent: var(--semantic-success);
+    }
+    .report-shell .summary-risks {
+      --summary-accent: var(--semantic-danger);
+    }
+    .report-shell .summary-gaps {
+      --summary-accent: var(--semantic-warning);
+    }
+    .report-shell .risk-card-medium { --summary-accent: var(--semantic-warning); }
+    .report-shell .risk-card-low { --summary-accent: var(--semantic-success); }
+    .report-shell .risk-card-critical,
+    .report-shell .risk-card-high { --summary-accent: var(--semantic-danger); }
+    .report-shell .summary-card h2 {
+      color: color-mix(in srgb, var(--summary-accent) 84%, var(--charcoal));
+      font-size: var(--fs-lg);
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .report-shell .summary-card li::before {
+      background: color-mix(in srgb, var(--summary-accent) 70%, var(--charcoal-40));
+    }
+    .report-shell .report-callout {
+      border-left: 1px solid var(--border-cream);
+      background: var(--charcoal-03);
+    }
+    .report-shell .report-callout .callout-eyebrow {
+      border-radius: var(--radius-pill);
+      background: var(--charcoal);
+      color: var(--cream-highlight);
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+    .report-shell .table-frame {
+      overflow: hidden;
+      border-top: 1px solid var(--border-cream);
+    }
+    .report-shell .table-frame caption,
+    .report-shell .table-frame th {
+      background: var(--charcoal-03);
+      color: var(--charcoal);
+    }
+    .report-shell .table-frame caption {
+      font-family: var(--font-display);
+      font-size: var(--fs-lg);
+      font-weight: 600;
+      letter-spacing: var(--tracking-subhead);
+      text-transform: none;
+    }
+    .report-shell .table-frame th {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .report-shell .table-frame th,
+    .report-shell .table-frame td,
+    .report-shell .table-note,
+    .report-shell .table-frame caption {
+      border-color: var(--border-cream);
+    }
+    .report-shell .table-frame tbody tr:nth-child(2n) {
+      background: var(--charcoal-03);
+    }
+    .report-shell .evidence-id {
+      color: var(--charcoal);
+    }
+    .report-shell .back-to-top {
+      border: 1px solid var(--charcoal-40);
+      border-radius: var(--radius-pill);
+      background: var(--cream-base);
+      color: var(--charcoal);
+      box-shadow: var(--focus-shadow);
+    }
+
+    /* Inline exhibits — tables and figures rendered inside the section
+       they belong to, per chapter_id + section_id back-references. */
+    .section-exhibits { display: grid; gap: var(--space-5); margin-top: var(--space-5); }
+    .inline-exhibit { margin: 0; }
+    .chapter-exhibits { margin-top: var(--space-6); }
+
+    /* Figure styles live with the Figure.astro component (D3-rendered, scoped
+       via :global). Only the surrounding section/inline-exhibit layout is here. */
+
+    @media (max-width: 900px) { .report-cover, .three-col { grid-template-columns: 1fr; } }
+    @media (max-width: 760px) { .report-cover { grid-template-columns: 1fr; padding: var(--space-5) var(--space-4); gap: var(--space-5); } .report-cover h1 { font-size: clamp(2rem, 6vw + 1rem, 2.8rem); } }
+    @media (max-width: 700px) {
+      .table-frame { overflow-x: hidden; }
+      .table-frame table { min-width: 0; display: block; }
+      .table-frame thead { display: none; }
+      .table-frame tbody, .table-frame tbody tr, .table-frame tbody td { display: block; width: 100%; }
+      .table-frame tbody tr { padding: var(--space-3) 0; border-bottom: var(--report-rule); background: transparent !important; }
+      .table-frame tbody tr:last-child { border-bottom: 0; }
+      .table-frame tbody td { display: grid; grid-template-columns: minmax(7rem, 11ch) 1fr; column-gap: var(--space-3); align-items: baseline; padding: var(--space-2) var(--space-4); border-bottom: 0; font-weight: 500; }
+      .table-frame tbody td:first-child { font-weight: 700; }
+      .table-frame tbody td::before { content: attr(data-label); font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--report-fs-kicker); font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--claret); line-height: 1.25; }
+    }
+    @media print {
+      :global(.bz-utility), :global(.bz-footer), .evidence-toggle, .print-pdf, .floating-actions { display: none !important; }
+      :global(html), :global(body) { background: #fff !important; color: #000; font-size: 10pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .report-shell { padding: 0 !important; font-size: 10pt; max-width: none !important; width: 100% !important; margin: 0 !important; }
+      .report-cover { grid-template-columns: minmax(0, 1fr) 220px; gap: 8mm; padding: 4mm 0 6mm; margin: 0 0 6mm; background: #fff; }
+      .report-cover h1 { font-size: 26pt; line-height: 1.05; }
+      .report-chapter, .report-section.evidence-index { break-before: page; page-break-before: always; padding-block: 0 !important; border-top: 0; }
+      .report-section.startup-intro, .report-section.executive-summary, .report-chapter:first-of-type { break-before: avoid !important; page-break-before: avoid !important; }
+      .table-frame { overflow: visible !important; border: 1px solid #999; margin: 4mm 0; background: #fff !important; }
+      .table-frame table { width: 100% !important; min-width: 0 !important; table-layout: fixed; background: #fff !important; }
+      .table-frame thead { display: table-header-group; }
+      .table-frame th, .table-frame td { padding: 1.4mm 2mm; font-size: 8.5pt; line-height: 1.35; }
+    }
+  </style>
+</BaseLayout>
