@@ -17,6 +17,8 @@ network:
     # Search & read-through fetch proxy
     - duckduckgo.com           # html.duckduckgo.com search endpoint
     - r.jina.ai                # reader proxy: fetch arbitrary pages as text
+    - web.archive.org          # Wayback Machine snapshots + /wayback/available API
+    - archive.org              # Internet Archive (covers wayback-api.archive.org)
     # Reference / lists
     - wikipedia.org
     - wikimedia.org
