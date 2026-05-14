@@ -60,7 +60,7 @@ network:
 
 engine:
   id: copilot
-  model: gpt-5.4
+  model: gpt-5.5
   args:
     - --effort
     - xhigh
