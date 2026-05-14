@@ -63,6 +63,7 @@ network:
 
 engine:
   id: copilot
+  version: 1.0.47
   model: gpt-5.4
   args:
     - --effort
