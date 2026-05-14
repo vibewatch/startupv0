@@ -67,7 +67,6 @@ engine:
   args:
     - --effort
     - xhigh
-    - --autopilot
 
 tools:
   web-fetch:
