@@ -1,0 +1,4750 @@
+report_metadata:
+  report_title: Stash Public-Source Startup Diligence Report
+  target_company: Stash
+  website: https://www.stash.com/
+  known_aliases:
+    - Stash Financial, Inc.
+    - Stash Investments LLC
+    - Stash Capital LLC
+    - StashWorks
+    - Stock-Back Card
+    - AI Money Coach
+  sector: Consumer fintech, investing, banking-adjacent financial wellness, robo-advice, and workplace benefits
+  geography: United States, headquartered in New York
+  company_stage: Late-stage private fintech unicorn
+  research_date: 2026-05-14
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built the covered-report slug list from repository files and excluded existing Anthropic, ByteDance, Databricks, OpenAI, and SpaceX reports.
+    - Fetched a public unicorn list from Wikipedia, normalized candidate slugs, randomly selected Stash from uncovered candidates with shuf, and checked public evidence that Stash remains private and operating.
+    - Prioritized Stash-owned pages for product, pricing, financing, executive, regulatory, disclosure, careers, and acquisition/transition evidence.
+    - Supplemented company evidence with PR Newswire for the 2021 Series G valuation and public competitor pages for market positioning.
+    - Treated company-reported AUM, subscriber, profitability, and AI engagement metrics as management assertions unless independently corroborated.
+  included_jurisdictions:
+    - United States
+  excluded_topics:
+    - Private audited financial statements, bank statements, cap table, debt instruments, board minutes, revenue cohort data, and customer-level records were unavailable.
+    - No customer, supplier, investor, employee, or regulator interviews were performed.
+    - Paid databases, paywalled pages, CAPTCHA-protected profiles, and inaccessible regulator PDFs were not bypassed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-14
+      notes: The user asked for one random uncovered private unicorn diligence report and a draft pull request.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Stash is a private unicorn fintech with a latest public valuation above $1.4 billion.
+    claim_source: Public unicorn list and 2021 Series G announcement
+    claim_date: 2021-02-03
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    contradiction_summary: Public sources support a $1.4 billion-plus valuation in 2021, but the 2025 Series H did not disclose a new valuation.
+    diligence_follow_up:
+      - Request the current cap table, fully diluted share count, post-money valuation by round, SAFEs/notes, secondary transactions, and board-approved 409A history.
+  - founder_claim_id: FC-002
+    claim_text: Stash raised a $146 million Series H in 2025 to deepen AI-driven financial guidance.
+    claim_source: Stash Series H announcement
+    claim_date: 2025-05-12
+    mapped_chapter_ids:
+      - I
+      - VI
+    mapped_section_ids:
+      - I.C
+      - VI.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-003
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request financing documents, investor consents, preference stack, use-of-proceeds plan, and AI product budget.
+  - founder_claim_id: FC-003
+    claim_text: Stash offers subscription plans that bundle investing, automated investing, banking access, retirement, kids accounts, rewards, advice, education, and insurance-adjacent benefits.
+    claim_source: Stash product and plan pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VIII.F
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request product-level P&L, uptake by SKU, plan migration data, refund/complaint logs, and partner agreements.
+  - founder_claim_id: FC-004
+    claim_text: Stash has over one million paying or active subscribers and several billion dollars in assets managed or under management.
+    claim_source: Stash about page, Series H announcement, CNBC announcement, and Stockpile transition announcement
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - III
+    mapped_section_ids:
+      - I.D
+      - III.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-008
+      - EC-011
+    contradiction_summary: "Figures vary by page, date, and definition: 1.2 million active subscribers, 1.3 million paying subscribers, more than 1 million subscribers, $4.3 billion AUM, more than $5 billion assets, and more than 9 million accounts."
+    diligence_follow_up:
+      - Reconcile definitions for subscriber, active subscriber, paying subscriber, account, AUM, managed asset, and platform asset in a dated KPI bridge.
+  - founder_claim_id: FC-005
+    claim_text: Stash achieved EBITDA profitability and approximately 80% gross margin.
+    claim_source: Stash 2024 announcements
+    claim_date: 2024-10-08
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+    contradiction_summary: The profitability and margin claims are company-reported and unaudited in the public record reviewed.
+    diligence_follow_up:
+      - Request audited financial statements, EBITDA reconciliation, gross-margin methodology, revenue recognition policy, CAC/LTV, churn, and cohort profitability.
+  - founder_claim_id: FC-006
+    claim_text: Stash is not a bank, relies on regulated advisory/brokerage entities, and uses partners for banking, custody, clearing, card issuance, and insurance-adjacent benefits.
+    claim_source: Stash disclosures and product pages
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - VIII
+    mapped_section_ids:
+      - III.E
+      - VIII.G
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-006
+      - EC-020
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request all bank, clearing, custody, card-network, insurance, and marketing-partner contracts, plus vendor risk assessments and termination rights.
+  - founder_claim_id: FC-007
+    claim_text: AI Money Coach and related AI guidance are a strategic product focus with measurable engagement.
+    claim_source: Stash Series H announcement and product disclosures
+    claim_date: 2025-05-12
+    mapped_chapter_ids:
+      - II
+      - VI
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VI.B
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+    contradiction_summary: Public sources state engagement metrics and that AI Money Coach recommendations are personalized investment advice, but model controls, suitability testing, complaint data, and regulatory reviews are not public.
+    diligence_follow_up:
+      - Request AI governance policies, model evaluation logs, suitability reviews, prompt/response QA, user testing, incident logs, and regulatory correspondence.
+  - founder_claim_id: FC-008
+    claim_text: Stash agreed to transition Stockpile kids accounts to the Stash platform.
+    claim_source: Stash Stockpile announcement
+    claim_date: 2026-03-19
+    mapped_chapter_ids:
+      - II
+      - III
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - III.B
+      - VIII.F
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-011
+    contradiction_summary: Financial terms and transferred-account economics were not disclosed.
+    diligence_follow_up:
+      - Request the Stockpile agreement, migration plan, customer notification plan, retention model, assumed liabilities, and economics.
+
+executive_summary:
+  overall_assessment: >-
+    Stash is an operating late-stage U.S. fintech unicorn with credible public evidence of substantial consumer scale, a 2025 Series H, a 2021 $1.4 billion-plus valuation, and an expanded product suite across investing, automated portfolios, banking access, workplace benefits, AI guidance, and kids accounts. Public evidence also shows a complex regulated and partner-dependent model. The main diligence posture should be "promising but verification-heavy": scale and product breadth are clear, but financial quality, current valuation, customer economics, regulatory posture, and partner dependency require private records.
+  investment_or_diligence_thesis: >-
+    The upside case is a scaled subscription wealth platform serving lower- and middle-income U.S. consumers, now funded to deepen AI-driven advice and workplace distribution. The risk case is that a consumer fintech with advisory, broker-dealer, banking-partner, rewards, crypto history, and AI-advice surfaces may have thin public transparency into true profitability, churn, CAC, compliance controls, and partner concentration.
+  strongest_verified_claims:
+    - founder_claim_id: FC-002
+      summary: Stash publicly announced a $146 million Series H in May 2025 led by Goodwater with returning and institutional investors.
+      evidence_claim_ids:
+        - EC-003
+    - founder_claim_id: FC-003
+      summary: Stash publicly describes subscription plans with self-directed investing, automated investing, retirement, kids accounts, banking access, Stock-Back rewards, and advice/education features.
+      evidence_claim_ids:
+        - EC-004
+        - EC-005
+        - EC-006
+    - founder_claim_id: FC-006
+      summary: Stash publicly discloses its non-bank status, regulated advisory/brokerage entities, and major operating partners including Stride Bank and Apex Clearing.
+      evidence_claim_ids:
+        - EC-006
+        - EC-020
+  biggest_risks:
+    - risk_id: R-001
+      summary: Financials are mostly self-reported and unaudited publicly; revenue, EBITDA quality, gross-margin definition, churn, CAC, and runway remain unverified.
+    - risk_id: R-002
+      summary: Regulatory exposure is high because Stash combines investment advice, broker-dealer services, banking access, rewards paid in securities, prior crypto access, and AI-personalized advice.
+    - risk_id: R-003
+      summary: The product depends on third parties such as Stride Bank, Apex Clearing, Mastercard, Avibra, app stores, and potentially AI/model infrastructure.
+  key_evidence_gaps:
+    - Current valuation and cap table after the 2025 Series H.
+    - Audited financial statements, revenue bridge, EBITDA reconciliation, and plan-level unit economics.
+    - Subscriber cohort retention, churn, CAC, engagement, assets per user, and customer concentration.
+    - Compliance exam history, complaint data, customer arbitration/litigation records, and AI-advice suitability controls.
+    - Material partner contracts, termination rights, service levels, and concentration exposure.
+  recommended_next_steps:
+    - Start diligence with the audited financial pack, KPI bridge, and cap table because public claims vary by metric definition and date.
+    - Run specialist regulatory diligence on RIA, broker-dealer, banking partner, Stock-Back, crypto legacy, and AI advice controls.
+    - Conduct partner and vendor diligence on Stride Bank, Apex Clearing, Mastercard, Avibra, Stockpile transition, app stores, and cloud/model providers.
+    - Perform customer-economics diligence using anonymized cohorts and reference calls rather than relying on headline subscriber counts.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: >-
+      Public evidence verifies major financings, a stale public unicorn valuation, subscriber/AUM scale, and company-reported profitability milestones, but does not verify revenue, audited EBITDA, cash runway, debt, or current valuation.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-004
+      - FC-005
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+    risk_ids:
+      - R-001
+      - R-007
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+        summary: >-
+          Stash has disclosed profitability milestones but not public audited income statements, balance sheets, cash flow statements, or quarterly financials.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F-001
+            finding: Company announcements state Stash reached EBITDA profitability and 80% gross margin in 2024.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+            risk_ids:
+              - R-001
+          - finding_id: I.A-F-002
+            finding: Public sources do not disclose revenue, net income, cash balance, burn, debt, or audited reconciliation of EBITDA.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - EBITDA profitability may depend on adjusted definitions, deferred spending, partner economics, or one-time changes not visible in public releases.
+          - A subscription fintech can show high gross margin while still facing churn, CAC, credit/fraud loss, complaint, and compliance cost pressure.
+        evidence_gaps:
+          - Audited financial statements for 2023-2025.
+          - Monthly revenue, gross margin, EBITDA, cash burn, debt, customer acquisition cost, and churn by cohort.
+        follow_up_questions:
+          - What exact adjustments bridge GAAP net income to EBITDA?
+          - What percentage of gross margin depends on partner rebates, interchange, securities lending, sweep revenue, or other non-subscription lines?
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-019
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+        summary: >-
+          The public record gives high-level use-of-proceeds language around AI guidance but no financial forecast, budget, or runway plan.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F-001
+            finding: The 2025 Series H announcement says funds will accelerate Stash's mission and deepen investment in AI financial guidance, but it does not publish a forecast.
+            evidence_claim_ids:
+              - EC-003
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - AI investment may require materially higher technology, compliance, and support spend than reflected in current profitability claims.
+        evidence_gaps:
+          - Board-approved budget, hiring plan, product roadmap cost model, and 18-24 month cash runway forecast.
+        follow_up_questions:
+          - What are the 2026-2028 revenue, EBITDA, cash-flow, and funding plans under base, upside, and downside cases?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+        summary: >-
+          Public sources verify the 2021 Series G, 2023 financing, and 2025 Series H participants, but current ownership, preferences, debt, employee equity, and post-money valuation are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F-001
+            finding: Stash's 2021 Series G raised $125 million and surpassed a $1.4 billion valuation.
+            evidence_claim_ids:
+              - EC-002
+            risk_ids:
+              - R-007
+          - finding_id: I.C-F-002
+            finding: Stash's 2025 Series H was $146 million and led by Goodwater with Union Square Ventures, StepStone, Serengeti, University of Illinois Foundation, and T. Rowe Price-advised funds participating.
+            evidence_claim_ids:
+              - EC-003
+            risk_ids:
+              - R-001
+              - R-007
+        hidden_risks:
+          - Multiple late-stage rounds can create preference-stack, anti-dilution, pay-to-play, or secondary-sale complexity not visible in press releases.
+          - The 2021 unicorn valuation may not reflect current preference value or common-equity value.
+        evidence_gaps:
+          - Fully diluted capitalization, liquidation preferences, conversion ratios, warrants, debt, secondary transactions, and 409A valuations.
+        follow_up_questions:
+          - Did the 2025 Series H price above, at, or below the 2021 Series G valuation?
+        table_ids:
+          - T-001
+          - T-003
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-010
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+        summary: >-
+          Stash's public scale metrics are meaningful but definitional: active subscribers, paying subscribers, accounts, AUM, managed assets, and platform assets are not equivalent.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F-001
+            finding: Stash disclosed 1.3 million paying subscribers and $4.3 billion under management in 2025, while other company pages cite more than $5 billion assets and more than 9 million accounts.
+            evidence_claim_ids:
+              - EC-003
+              - EC-007
+              - EC-008
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Headline accounts may include closed, dormant, zero-balance, banking-only, or multi-account users.
+          - AUM growth may be driven by market appreciation or transferred assets rather than net new funded users.
+        evidence_gaps:
+          - KPI dictionary, active account bridge, funded account count, paying-subscriber bridge, AUM roll-forward, and assets by product.
+        follow_up_questions:
+          - How many unique paying households have funded investment accounts and positive net revenue in the last 90 days?
+        table_ids: []
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+          - EC-008
+
+  - chapter_id: II
+    title: Products
+    chapter_summary: >-
+      Stash's product suite is broad and publicly documented, spanning self-directed investing, automated portfolios, retirement, kids accounts, Stock-Back debit rewards, banking access, StashWorks, education, and AI guidance.
+    founder_claim_ids:
+      - FC-003
+      - FC-007
+      - FC-008
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-011
+      - EC-020
+    risk_ids:
+      - R-002
+      - R-003
+      - R-005
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+        summary: >-
+          Product evidence is strong for public features and pricing, but user-level economics, adoption by SKU, incident history, and compliance reviews remain private.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F-001
+            finding: Stash publicly offers access to stocks, ETFs, fractional shares, recurring investments, dividend reinvestment, Smart Portfolio automated investing, and personalized advice.
+            evidence_claim_ids:
+              - EC-004
+              - EC-006
+            risk_ids:
+              - R-002
+          - finding_id: II.A-F-002
+            finding: Stash Growth is publicly priced at $3 per month and Stash+ at $9 per month, with different bundles for retirement, kids accounts, Stock-Back rewards, and insurance-adjacent benefits.
+            evidence_claim_ids:
+              - EC-005
+            risk_ids:
+              - R-001
+          - finding_id: II.A-F-003
+            finding: The Stockpile transition could expand kids account reach but introduces migration, retention, and liability diligence needs.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Combining investment advice, banking access, rewards paid in securities, and AI guidance increases suitability, disclosure, and customer-support complexity.
+          - Product bundling can obscure stand-alone profitability of features such as insurance-adjacent benefits, rewards, and kids accounts.
+        evidence_gaps:
+          - Product-level revenue, gross margin, usage, churn, complaint, incident, and adoption data.
+          - AI Money Coach model governance, suitability testing, user-segmentation, and audit controls.
+        follow_up_questions:
+          - Which SKUs drive retention and contribution margin after direct partner, rewards, compliance, support, and fraud costs?
+          - How are AI recommendations supervised, tested, recorded, and reviewed for suitability?
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-006
+          - EC-011
+
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: >-
+      Public sources verify consumer-scale metrics and strategic relationships, but do not disclose customer concentration, cohort retention, net revenue retention, complaint rates, or unit economics.
+    founder_claim_ids:
+      - FC-004
+      - FC-006
+      - FC-008
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-011
+    risk_ids:
+      - R-003
+      - R-004
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A.1
+        summary: >-
+          Stash is a consumer platform, so public "top customer" data is not available; diligence should focus on user cohorts, household economics, and employer/distribution relationships.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F-001
+            finding: Stash reports more than one million active or paying subscribers and several billion dollars in assets, but individual customers are not publicly identified.
+            evidence_claim_ids:
+              - EC-003
+              - EC-007
+              - EC-008
+              - EC-011
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Subscriber counts may not equal funded, profitable, or retained customers.
+          - Consumer complaints or vulnerable-customer issues may not appear in marketing materials.
+        evidence_gaps:
+          - Cohort retention, funded-account rate, AUM per user, subscription churn, ARPU, complaints by product, and customer demographic compliance reviews.
+        follow_up_questions:
+          - What are monthly retention, funded-user, assets-per-user, and net revenue metrics by acquisition cohort and plan?
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+          - EC-008
+          - EC-011
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B.1
+        summary: >-
+          Stash has material public relationships with Stride Bank, Apex Clearing, Mastercard, Avibra, Goodwater/investors, and Stockpile.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: III.B-F-001
+            finding: Banking services and the Stock-Back debit card depend on Stride Bank and Mastercard licensing, while investment custody/clearing depends on Apex.
+            evidence_claim_ids:
+              - EC-006
+              - EC-020
+            risk_ids:
+              - R-003
+          - finding_id: III.B-F-002
+            finding: The Stockpile transition is a publicly announced strategic transaction, but financial terms are undisclosed.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Partner contract termination, pricing changes, regulatory changes, or service failures could disrupt customer experience and economics.
+        evidence_gaps:
+          - Partner contracts, concentration exposure, SLAs, termination provisions, audit reports, and contingency plans.
+        follow_up_questions:
+          - What percentage of revenue, AUM, and customer functionality depends on each strategic partner?
+        table_ids:
+          - T-006
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+          - EC-020
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C.1
+        summary: >-
+          Customer-level or channel-level revenue is not publicly disclosed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F-001
+            finding: Public pricing establishes subscription fees, but not revenue mix by customer, plan, channel, or product.
+            evidence_claim_ids:
+              - EC-005
+              - EC-019
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Revenue concentration could sit in a small set of high-AUM users, workplace relationships, rewards partners, or sweep/rebate arrangements.
+        evidence_gaps:
+          - Revenue by plan, channel, customer cohort, asset segment, and partner line.
+        follow_up_questions:
+          - What are the top 20 customer/cohort/channel revenue concentrations and their retention profiles?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-019
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D.1
+        summary: >-
+          No public evidence reviewed identified a material severed relationship in the last two years, but the search was not exhaustive and private partner notices were unavailable.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F-001
+            finding: Public releases emphasize new financing, leadership, StashWorks, AI guidance, and Stockpile transition rather than severed relationships.
+            evidence_claim_ids:
+              - EC-003
+              - EC-009
+              - EC-011
+              - EC-019
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Unannounced bank, clearing, rewards, employer, or technology partner changes could affect product reliability and economics.
+        evidence_gaps:
+          - Contract termination notices, vendor scorecards, incident reports, and board materials.
+        follow_up_questions:
+          - Which material partners were renegotiated, terminated, or placed under remediation since 2024?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E.1
+        summary: >-
+          Public supplier/dependency evidence points to regulated financial infrastructure partners more than conventional suppliers.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F-001
+            finding: Apex Clearing, Stride Bank, Mastercard, Avibra, and Stockpile are publicly visible dependencies or partners.
+            evidence_claim_ids:
+              - EC-006
+              - EC-011
+              - EC-020
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Cloud, market-data, identity/KYC, fraud, customer-support, and AI vendors are likely material but not fully public.
+        evidence_gaps:
+          - Full vendor inventory, spend concentration, SOC reports, fourth-party dependencies, and business continuity tests.
+        follow_up_questions:
+          - Which suppliers are single points of failure for trading, custody, deposits, cards, AI advice, KYC, and customer support?
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+          - EC-020
+
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: >-
+      Stash competes across subscription investing, robo-advice, self-directed brokerage, neobanking, workplace financial wellness, and rewards. Public competitor pages show substantial overlap from Acorns, Robinhood, SoFi, Betterment, and Chime.
+    founder_claim_ids:
+      - FC-003
+      - FC-007
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: >-
+          Stash is differentiated by education-first subscription investing and stock rewards, but many adjacent consumer-finance platforms can compete on price, asset breadth, bank-like features, employer distribution, or automated advice.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F-001
+            finding: Acorns publicly markets everyday investing, retirement, banking, money automation, bonus investments, and kids products that overlap with Stash's consumer wealth bundle.
+            evidence_claim_ids:
+              - EC-014
+            risk_ids:
+              - R-004
+          - finding_id: IV.A-F-002
+            finding: Robinhood and SoFi publicly market self-directed brokerage, automated/managed investing, retirement, and broader financial products that can pressure Stash on price and breadth.
+            evidence_claim_ids:
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+          - finding_id: IV.A-F-003
+            finding: Betterment competes in automated investing and advice, while Chime competes on banking-adjacent consumer financial relationships.
+            evidence_claim_ids:
+              - EC-017
+              - EC-018
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Low- or no-commission competitors can cap Stash's pricing power despite Stash's subscription positioning.
+          - Bank-like competitors may own direct deposit relationships and lower acquisition costs.
+        evidence_gaps:
+          - Win/loss data, switching behavior, CAC by competitor, price elasticity, brand perception, and market-share data.
+        follow_up_questions:
+          - How does Stash's retention and CAC compare with Acorns, Robinhood, SoFi, Betterment, and Chime by user segment?
+        table_ids:
+          - T-008
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+          - EC-016
+          - EC-017
+          - EC-018
+
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: >-
+      Public evidence supports a primarily digital direct-to-consumer motion, app-store distribution, content/education, PR, employer benefits via StashWorks, and partner-led account transitions such as Stockpile.
+    founder_claim_ids:
+      - FC-003
+      - FC-004
+      - FC-008
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-011
+      - EC-013
+    risk_ids:
+      - R-001
+      - R-004
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+        summary: >-
+          The visible strategy is a low monthly subscription entry point, app-led investing, education, rewards, AI guidance, and employer benefits.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F-001
+            finding: Stash emphasizes affordable plans starting at $3 per month and a broad set of simple automated saving and investing tools.
+            evidence_claim_ids:
+              - EC-003
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Paid acquisition economics are not public, and consumer fintech channels can become expensive during periods of high competition.
+        evidence_gaps:
+          - Budget by channel, CAC, payback, conversion rate, organic share, employer pipeline, and campaign ROI.
+        follow_up_questions:
+          - What acquisition channels are profitable on a fully loaded basis within 12 months?
+        table_ids:
+          - T-010
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-003
+          - EC-005
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+        summary: >-
+          Major named enterprise customers for StashWorks were not identified in public sources reviewed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.B-F-001
+            finding: StashWorks is publicly described as a financial wellness benefit, but named employer customers and revenue contribution are not public in the reviewed evidence.
+            evidence_claim_ids:
+              - EC-008
+              - EC-019
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Workplace distribution may still be early or concentrated in a few relationships.
+        evidence_gaps:
+          - Employer customer list, bookings, active employees, utilization, churn, and pipeline.
+        follow_up_questions:
+          - Which employers have signed StashWorks contracts and what are the activation and retention results?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-019
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C.1
+        summary: >-
+          Public channels include website/app onboarding, app stores, education content, press, referral-like reward mechanics, StashWorks, and Stockpile account transition.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F-001
+            finding: Stash product pages link users to App Store and Google Play downloads and emphasize app-based sign-up.
+            evidence_claim_ids:
+              - EC-004
+            risk_ids:
+              - R-004
+          - finding_id: V.C-F-002
+            finding: Stash uses PR and public recognition, including CNBC's fintech list, as marketing proof points.
+            evidence_claim_ids:
+              - EC-008
+              - EC-013
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - App-store policy changes or paid media inflation could degrade acquisition efficiency.
+        evidence_gaps:
+          - Channel mix, conversion funnel, app-store rankings, referral conversion, and employer lead funnel.
+        follow_up_questions:
+          - What is CAC and conversion by website, paid social, app store, referral, employer, and partner-transition channel?
+        table_ids:
+          - T-011
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-008
+          - EC-013
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+        summary: >-
+          No public sales-force productivity model is available; the model likely blends consumer growth and employer-benefits sales.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F-001
+            finding: Public materials do not disclose sales headcount, quota capacity, bookings, close rates, or customer acquisition costs.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - A shift from DTC to workplace benefits can require sales-cycle discipline and implementation capacity not proven by consumer metrics.
+        evidence_gaps:
+          - Sales headcount, funnel conversion, cycle length, quota attainment, bookings, and pipeline aging.
+        follow_up_questions:
+          - How many sales and partnership FTEs support StashWorks and what is current pipeline coverage?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E.1
+        summary: >-
+          The Series H increases resources for AI guidance, but public sources do not show a go-to-market budget or CAC payback plan.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F-001
+            finding: The 2025 financing provides new capital but does not disclose planned sales and marketing spend.
+            evidence_claim_ids:
+              - EC-003
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Over-investing in brand or acquisition before AI and workplace channels prove retention could consume the Series H quickly.
+        evidence_gaps:
+          - Marketing budget, planned headcount, channel ROI, spend controls, and downside plan.
+        follow_up_questions:
+          - What is the approved 2026 marketing budget and what CAC/payback thresholds govern spend?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: >-
+      Public R&D signals center on AI Money Coach, financial guidance, Stash Core, Smart Portfolio, and platform migration. The public record does not disclose engineering roadmap costs, model vendors, patents, or technical incidents.
+    founder_claim_ids:
+      - FC-002
+      - FC-007
+      - FC-008
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-009
+      - EC-011
+      - EC-013
+    risk_ids:
+      - R-003
+      - R-005
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+        summary: >-
+          Careers and company releases show a product/engineering organization but do not publish an R&D org chart, headcount by function, or technical vendor map.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VI.A-F-001
+            finding: Stash's careers page promotes a hybrid NYC office, engineering-team recognition, remote-work recognition, and AI-related disclosure language.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - AI and regulated-advice work may require specialized compliance, data, model-risk, security, and supervision talent beyond ordinary fintech engineering.
+        evidence_gaps:
+          - R&D headcount by function, security staffing, model-risk ownership, product governance, technical debt, and incident records.
+        follow_up_questions:
+          - Who owns AI model-risk management, suitability, supervision, privacy, data retention, and product incident response?
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+        summary: >-
+          The public pipeline emphasizes AI-driven guidance, Money Coach, StashWorks, and Stockpile account migration, but roadmap timing and development risk are not fully public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F-001
+            finding: Stash disclosed 2.2 million AI interactions and that one in four AI interactions produced a positive action within 10 minutes.
+            evidence_claim_ids:
+              - EC-003
+            risk_ids:
+              - R-005
+          - finding_id: VI.B-F-002
+            finding: Stash announced Stockpile kids account transition, which will require operational and product migration work.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Public AI engagement metrics do not prove financial outcomes, compliance suitability, hallucination control, or durable retention.
+          - Account migration can trigger customer confusion, consent, disclosure, tax, custodial, and operational risks.
+        evidence_gaps:
+          - Roadmap, release criteria, QA records, model-evaluation data, security review, and migration readiness plans.
+        follow_up_questions:
+          - How are AI outputs tested against suitability, disclosure, financial literacy, vulnerable-customer, and complaint-risk standards?
+        table_ids:
+          - T-012
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-003
+          - EC-011
+
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: >-
+      Stash has public executive signals including cofounders returning as co-CEOs, an independent audit chair, and a team size claim of 125-plus employees. Compensation, equity plans, turnover, employee relations, and detailed org charts remain private.
+    founder_claim_ids:
+      - FC-005
+      - FC-006
+    evidence_claim_ids:
+      - EC-007
+      - EC-009
+      - EC-010
+      - EC-013
+    risk_ids:
+      - R-006
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A.1
+        summary: >-
+          Public information identifies co-CEOs and an independent audit chair but does not disclose full reporting lines.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F-001
+            finding: Co-founders Brandon Krieg and Ed Robinson returned as co-CEOs in 2024.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-006
+          - finding_id: VII.A-F-002
+            finding: Amy Butte was announced as Stash's first independent audit chair in 2023.
+            evidence_claim_ids:
+              - EC-010
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Co-CEO structures can create decision-right ambiguity unless governance and escalation are explicit.
+        evidence_gaps:
+          - Full executive org chart, board composition, committee charters, succession plan, and decision rights.
+        follow_up_questions:
+          - What are the co-CEO responsibilities, reserved matters, board reporting lines, and executive scorecards?
+        table_ids: []
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B.1
+        summary: >-
+          Public sources show a 125-plus employee figure and hybrid NYC office signal, but no historical or projected headcount by function.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F-001
+            finding: Stash's about page states 125-plus employees.
+            evidence_claim_ids:
+              - EC-007
+            risk_ids:
+              - R-006
+          - finding_id: VII.B-F-002
+            finding: Stash's careers page references a hybrid NYC office and work-recognition signals, but not function-level headcount.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Reported headcount may be lean relative to regulatory, product, partner, and AI obligations.
+        evidence_gaps:
+          - Historical headcount, hiring plan, open requisitions, attrition, regretted loss, contractor use, and compliance staffing.
+        follow_up_questions:
+          - How many FTEs are in engineering, compliance, legal, customer support, operations, risk, and sales, and what are 2026 hiring priorities?
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C.1
+        summary: >-
+          Co-founder and audit-chair announcements provide partial biography information for key leaders.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F-001
+            finding: Public releases identify Brandon Krieg and Ed Robinson as co-founders and co-CEOs, and Amy Butte as an audit-chair leader with NYSE CFO experience.
+            evidence_claim_ids:
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Other key control-function leaders, including chief compliance, legal, risk, security, product, and finance owners, were not fully verified from public sources.
+        evidence_gaps:
+          - Current executive biographies, employment agreements, background checks, reference checks, and key-person risk analysis.
+        follow_up_questions:
+          - Who are the current CFO, CCO, general counsel, CTO/CPO, CRO, head of brokerage operations, and head of AI governance?
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+        summary: >-
+          Executive compensation arrangements are not publicly disclosed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F-001
+            finding: Public sources reviewed do not disclose executive compensation, retention bonuses, severance, or change-of-control arrangements.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Late-stage private-company retention risk can be material if equity is underwater or preference-stack heavy.
+        evidence_gaps:
+          - Compensation plans, bonus metrics, severance, change-of-control terms, retention packages, and key-person insurance.
+        follow_up_questions:
+          - Which executives have retention packages, severance rights, or acceleration upon financing, sale, IPO, or termination?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E.1
+        summary: >-
+          Equity incentive plans are not publicly available.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F-001
+            finding: Public sources reviewed did not provide option-pool size, grant cadence, exercise prices, or refresh policy.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Employee retention may depend on 409A movement and whether common-equity value remains attractive after preferred preferences.
+        evidence_gaps:
+          - Equity plan, option pool, outstanding options/RSUs, exercise-price history, and refresh budget.
+        follow_up_questions:
+          - What is the current option pool utilization and expected hiring-related refresh need after Series H?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F.1
+        summary: >-
+          No significant employee-relations problem was verified from the public sources reviewed, but this is not a substitute for legal, HR, or employee-reference diligence.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F-001
+            finding: Public careers and news pages emphasize culture and recognition, but do not provide employee-relations or HR investigation data.
+            evidence_claim_ids:
+              - EC-013
+              - EC-019
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Regulated fintech operations can create stress in customer support, compliance, and incident-response teams not visible in public materials.
+        evidence_gaps:
+          - HR claims, settlement agreements, employee surveys, attrition, litigation, complaints, and whistleblower records.
+        follow_up_questions:
+          - Are there unresolved HR, discrimination, wage/hour, retaliation, or whistleblower matters?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-019
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+        summary: >-
+          Public sources show leadership changes, including the return of co-founders as co-CEOs after a CEO period under Liza Landsman; full turnover data is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.G-F-001
+            finding: In 2024 Stash announced its co-founders' return as co-CEOs; the July 2024 CNBC announcement quoted Liza Landsman as CEO.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Leadership transitions may reflect strategic reset, investor pressure, execution gaps, or ordinary scaling needs; public sources do not distinguish.
+        evidence_gaps:
+          - Executive departure list, regretted attrition, succession plan, employee sentiment, and hiring/retention analytics.
+        follow_up_questions:
+          - What precipitated the 2024 co-founder return and what executive roles changed as a result?
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: >-
+      Stash's legal profile is dominated by financial regulation and partner contracts: RIA, broker-dealer, banking access, rewards in securities, AI-personalized advice, crypto history, custody/clearing, and a Stockpile transition. Public evidence did not provide a complete litigation, IP, insurance, or regulatory-exam record.
+    founder_claim_ids:
+      - FC-003
+      - FC-006
+      - FC-007
+      - FC-008
+    evidence_claim_ids:
+      - EC-006
+      - EC-011
+      - EC-012
+      - EC-019
+      - EC-020
+    risk_ids:
+      - R-002
+      - R-003
+      - R-005
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A.1
+        summary: >-
+          No docket-level lawsuit record was verified in this public-source run; this should be treated as an evidence gap, not a clean legal conclusion.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F-001
+            finding: Public-source search in this run did not produce a reliable pending-lawsuit docket for Stash.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Customer arbitration, FINRA matters, regulatory inquiries, consumer class actions, and partner disputes may not appear in ordinary web search results.
+        evidence_gaps:
+          - Legal schedule, litigation docket search, arbitration records, settlement agreements, and threatened claims.
+        follow_up_questions:
+          - Provide a complete schedule of pending, threatened, settled, or arbitrated matters since 2021.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B.1
+        summary: >-
+          No public pending lawsuit initiated by Stash was verified in this run.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F-001
+            finding: Public-source search in this run did not identify reliable pending litigation initiated by Stash.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Collection, IP, vendor, employment, or contract disputes may exist outside easily accessible sources.
+        evidence_gaps:
+          - Counsel litigation schedules and official docket searches.
+        follow_up_questions:
+          - Has Stash initiated any litigation, arbitration, regulatory appeal, or collection action since 2021?
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+        summary: >-
+          As a digital fintech, conventional environmental exposure appears limited in public materials, but employee safety, remote/hybrid work, cybersecurity, and data/privacy controls still require diligence.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F-001
+            finding: Public sources reviewed did not disclose environmental liabilities or employee-safety matters.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Employee safety and data-security issues may be handled internally without public disclosure unless they trigger litigation or regulatory reporting.
+        evidence_gaps:
+          - OSHA/workplace records, security incident reports, privacy incident logs, and employee-relations claims.
+        follow_up_questions:
+          - Have there been any reportable privacy, security, workplace safety, or employee-relations incidents since 2021?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D.1
+        summary: >-
+          Public pages identify Stash trademarks and a claimed patented Stock-Back Debit Card, but IP ownership, registrations, licenses, and encumbrances require registry and counsel review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F-001
+            finding: Stash product pages identify Stash, StashInvest, and Stock-Back as registered trademarks and public releases refer to a patented Stock-Back Debit Card.
+            evidence_claim_ids:
+              - EC-005
+              - EC-009
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - IP around rewards, advice, AI, and account migration may depend on licenses or partner technology rather than solely owned assets.
+        evidence_gaps:
+          - USPTO trademark/patent schedules, invention assignments, open-source use, model licenses, data licenses, and third-party IP indemnities.
+        follow_up_questions:
+          - Provide a schedule of all patents, patent applications, trademarks, copyrights, domain names, open-source dependencies, and AI/model licenses.
+        table_ids:
+          - T-017
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-009
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E.1
+        summary: >-
+          Stash's consumer plans include life-insurance-adjacent benefits through Avibra, but company insurance coverage is not public.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F-001
+            finding: Stash disclosures state life insurance coverage is provided through Avibra and that Stash is a paid partner of Avibra.
+            evidence_claim_ids:
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Company-level E&O, D&O, cyber, crime, fiduciary, brokerage, and regulatory defense coverage may be inadequate for the risk profile.
+        evidence_gaps:
+          - Insurance schedule, policy limits, exclusions, claims history, deductibles, and partner indemnities.
+        follow_up_questions:
+          - What insurance policies cover RIA/broker-dealer advice, AI advice, cyber incidents, customer fraud, card rewards, and Stockpile migration?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F.1
+        summary: >-
+          Material public contracts/dependencies include Stride Bank, Apex Clearing, Mastercard card issuance/licensing, Avibra, Stockpile, and advisory/customer agreements.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F-001
+            finding: Public disclosures state Stash banking services are provided by Stride Bank and brokerage custody/clearing involves Apex.
+            evidence_claim_ids:
+              - EC-006
+              - EC-020
+            risk_ids:
+              - R-003
+          - finding_id: VIII.F-F-002
+            finding: The Stockpile account transition is public, but agreement terms are undisclosed.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Adverse economics, termination rights, compliance obligations, exclusivity, indemnity, data-use restrictions, or migration liabilities may sit in private contracts.
+        evidence_gaps:
+          - Executed contracts, amendments, SLAs, data processing agreements, due-diligence questionnaires, indemnities, and termination provisions.
+        follow_up_questions:
+          - Which partner contracts are non-cancelable, exclusive, revenue-sharing, or mission-critical?
+        table_ids:
+          - T-006
+          - T-017
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+          - EC-020
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G.1
+        summary: >-
+          Public evidence verifies regulated-entity status and high regulatory surface area, but not exam results, deficiency letters, consent orders, complaints, or enforcement history.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F-001
+            finding: Stash publicly discloses an SEC-registered investment adviser, a broker-dealer, FINRA/SIPC relationships, non-bank status, Stride Bank banking services, and investment products that may lose value.
+            evidence_claim_ids:
+              - EC-006
+              - EC-020
+            risk_ids:
+              - R-002
+          - finding_id: VIII.G-F-002
+            finding: Stash's prior crypto access was powered by Apex Crypto and explicitly disclosed that crypto was not FDIC or SIPC insured.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-002
+          - finding_id: VIII.G-F-003
+            finding: Stash states AI Money Coach and Diversification Analysis recommendations are personalized investment advice, creating explicit advisory-compliance implications.
+            evidence_claim_ids:
+              - EC-006
+              - EC-020
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory findings, complaint trends, arbitration, marketing-review issues, rewards disclosures, and AI-advice suitability may be material but non-public.
+        evidence_gaps:
+          - SEC/FINRA exam history, regulatory correspondence, Form ADV/CRS support files, complaint logs, arbitration history, marketing-review files, and AI supervision records.
+        follow_up_questions:
+          - Provide all SEC, FINRA, state, banking-partner, and consumer-protection exam findings and remediation status since 2021.
+        table_ids:
+          - T-016
+          - T-018
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-006
+          - EC-012
+          - EC-020
+
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.C
+    purpose: Summarize publicly disclosed financing events relevant to valuation, runway, and investor support.
+    columns:
+      - name: Date
+        description: Public announcement date.
+      - name: Round or event
+        description: Publicly described financing event.
+      - name: Amount
+        description: Public amount disclosed.
+      - name: Valuation
+        description: Public valuation if disclosed.
+      - name: Lead and participants
+        description: Public lead and named participants.
+      - name: Verification status
+        description: Diligence confidence in the public claim.
+    rows:
+      - row_id: T-001-R-001
+        values:
+          Date: 2021-02-03
+          Round or event: Series G
+          Amount: "$125 million"
+          Valuation: "Surpassed $1.4 billion"
+          Lead and participants: "Eldridge; also included T. Rowe Price funds and other public participants per release"
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-003
+      - row_id: T-001-R-002
+        values:
+          Date: 2023-10-13
+          Round or event: Financing infusion
+          Amount: "More than $40 million"
+          Valuation: Not disclosed
+          Lead and participants: "T. Rowe Price-advised funds with Goodwater and Union Square Ventures"
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-010
+      - row_id: T-001-R-003
+        values:
+          Date: 2025-05-12
+          Round or event: Series H
+          Amount: "$146 million"
+          Valuation: Not disclosed
+          Lead and participants: "Goodwater; Union Square Ventures, StepStone, Serengeti, University of Illinois Foundation, and T. Rowe Price-advised funds"
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-010
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-010
+    notes: Current cap table, liquidation preference, and post-Series H valuation require private diligence.
+  - table_id: T-002
+    title: Public financial and operating metrics
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate publicly disclosed scale indicators from private financial gaps.
+    columns:
+      - name: Metric
+        description: Financial or operating metric.
+      - name: Public value
+        description: Value reported in public evidence.
+      - name: Date or period
+        description: Time reference.
+      - name: Source and caveat
+        description: Source characterization and limitations.
+      - name: Verification status
+        description: Public verification status.
+    rows:
+      - row_id: T-002-R-001
+        values:
+          Metric: EBITDA profitability
+          Public value: Achieved in first half of 2024 / first time in company history
+          Date or period: 2024
+          Source and caveat: Company announcement, unaudited publicly
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-008
+          - SRC-009
+      - row_id: T-002-R-002
+        values:
+          Metric: Gross margin
+          Public value: "80%"
+          Date or period: 2024
+          Source and caveat: Company announcement, methodology not public
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-008
+          - SRC-009
+      - row_id: T-002-R-003
+        values:
+          Metric: AUM / assets
+          Public value: "$4.3 billion AUM in Series H release; about or over $5 billion assets on later pages"
+          Date or period: 2025-2026 pages
+          Source and caveat: Company-reported; definitions vary
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+          - EC-011
+        source_ids:
+          - SRC-002
+          - SRC-004
+          - SRC-012
+      - row_id: T-002-R-004
+        values:
+          Metric: GAAP revenue, net income, cash, debt, burn, runway
+          Public value: Not publicly disclosed in reviewed sources
+          Date or period: 2023-2026
+          Source and caveat: Requires private financial statements
+          Verification status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-019
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-011
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-008
+      - SRC-009
+      - SRC-012
+      - SRC-019
+    notes: Treat company metrics as management assertions until reconciled to audited records.
+  - table_id: T-003
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Identify known stakeholders and cap-table diligence needs.
+    columns:
+      - name: Stakeholder or class
+        description: Publicly visible holder or security class.
+      - name: Public position
+        description: Publicly reported relationship.
+      - name: Diligence caveat
+        description: Information still required.
+      - name: Verification status
+        description: Public verification status.
+    rows:
+      - row_id: T-003-R-001
+        values:
+          Stakeholder or class: Goodwater Capital
+          Public position: Led $146 million Series H
+          Diligence caveat: Ownership percentage, security terms, and governance rights not public
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+      - row_id: T-003-R-002
+        values:
+          Stakeholder or class: Union Square Ventures, StepStone Group, Serengeti, University of Illinois Foundation, T. Rowe Price-advised funds
+          Public position: Series H participants or returning investors
+          Diligence caveat: Pro rata rights, preferences, and board rights not public
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+      - row_id: T-003-R-003
+        values:
+          Stakeholder or class: Common stock / employee equity
+          Public position: Not disclosed
+          Diligence caveat: Option pool, grants, 409A, and common-equity value required
+          Verification status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-019
+    evidence_claim_ids:
+      - EC-003
+      - EC-019
+    source_ids:
+      - SRC-004
+      - SRC-019
+    notes: This is not a cap table; it is a public stakeholder map for diligence scoping.
+  - table_id: T-004
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public Stash products to evidence, monetization, and risk questions.
+    columns:
+      - name: Product or SKU
+        description: Product described publicly.
+      - name: Audience
+        description: Target customer group.
+      - name: Key features
+        description: Publicly described features.
+      - name: Monetization / dependency
+        description: Public pricing or partner dependency.
+      - name: Verification status
+        description: Public verification status.
+    rows:
+      - row_id: T-004-R-001
+        values:
+          Product or SKU: Self-directed investing
+          Audience: U.S. retail investors
+          Key features: Stocks, ETFs, fractional shares, recurring investments, dividend reinvestment, personalized advice
+          Monetization / dependency: Subscription wrap fee and investment-account infrastructure
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-006
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-004-R-002
+        values:
+          Product or SKU: Smart Portfolio
+          Audience: Subscribers seeking automated investing
+          Key features: Stash-managed portfolio based on goals and risk level
+          Monetization / dependency: Included in subscription; additional 0.25% fee above disclosed balance threshold
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-006
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-004-R-003
+        values:
+          Product or SKU: Banking access and Stock-Back Card
+          Audience: Subscribers using debit and banking features
+          Key features: Debit card, stock rewards, banking services through partner bank
+          Monetization / dependency: Stride Bank, Mastercard, Stash Investments reward fulfillment
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+        source_ids:
+          - SRC-005
+          - SRC-007
+      - row_id: T-004-R-004
+        values:
+          Product or SKU: Retirement and kids accounts
+          Audience: Subscribers with IRA or custodial account needs
+          Key features: Roth/Traditional IRA, kids accounts, Stockpile transition
+          Monetization / dependency: Plan tier and migration execution
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+          - EC-011
+        source_ids:
+          - SRC-005
+          - SRC-012
+      - row_id: T-004-R-005
+        values:
+          Product or SKU: AI Money Coach / guidance
+          Audience: Subscribers seeking next-step financial guidance
+          Key features: AI-driven guidance and personalized advice
+          Monetization / dependency: Model governance, advisory supervision, and subscription retention
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+        source_ids:
+          - SRC-004
+          - SRC-007
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-011
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-012
+    notes: Product-level adoption, margins, and complaints are not public.
+  - table_id: T-005
+    title: Public pricing and plan limitations
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture public subscription pricing and key limitation language.
+    columns:
+      - name: Plan or feature
+        description: Public plan or feature.
+      - name: Public price / economics
+        description: Public price or reward economics.
+      - name: Key limitations
+        description: Public caveats.
+      - name: Diligence implication
+        description: What diligence should test.
+    rows:
+      - row_id: T-005-R-001
+        values:
+          Plan or feature: Stash Growth
+          Public price / economics: "$3/month"
+          Key limitations: Standard ETF expenses and ancillary/custodian fees may apply; plan pricing subject to change
+          Diligence implication: Test churn and support cost at low ARPU
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+        source_ids:
+          - SRC-005
+          - SRC-007
+      - row_id: T-005-R-002
+        values:
+          Plan or feature: Stash+
+          Public price / economics: "$9/month"
+          Key limitations: Includes richer rewards and kids accounts; rewards subject to caps and eligibility
+          Diligence implication: Verify incremental margin and retention versus Growth
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-005-R-003
+        values:
+          Plan or feature: Stock-Back rewards
+          Public price / economics: Up to 5% in selected contexts; rewards contribute to a monthly cap
+          Key limitations: Qualifying purchase limits, non-FDIC/non-bank guarantee, securities can lose value
+          Diligence implication: Review disclosures, reward expense, breakage, and complaints
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+        source_ids:
+          - SRC-005
+          - SRC-007
+      - row_id: T-005-R-004
+        values:
+          Plan or feature: Smart Portfolio
+          Public price / economics: Included in subscription; 0.25% advisory fee above disclosed threshold
+          Key limitations: Full discretionary authority; investment loss risk
+          Diligence implication: Review suitability, allocation, rebalancing, fee billing, and performance
+        evidence_claim_ids:
+          - EC-004
+          - EC-006
+        source_ids:
+          - SRC-006
+          - SRC-007
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+    notes: Public pricing does not prove realized ARPU or contribution margin.
+  - table_id: T-006
+    title: Strategic relationships and operating dependencies
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify partner concentration and contract diligence needs.
+    columns:
+      - name: Partner
+        description: Public partner or relationship.
+      - name: Role
+        description: Business or operational role.
+      - name: Public evidence
+        description: Evidence source summary.
+      - name: Diligence request
+        description: Required private follow-up.
+    rows:
+      - row_id: T-006-R-001
+        values:
+          Partner: Stride Bank, N.A.
+          Role: Banking services and card issuance partner
+          Public evidence: Stash disclosures state banking services are provided by Stride Bank and the card is issued by Stride pursuant to Mastercard license
+          Diligence request: Executed agreements, SLAs, termination rights, partner compliance reviews
+        evidence_claim_ids:
+          - EC-006
+          - EC-020
+        source_ids:
+          - SRC-005
+          - SRC-007
+      - row_id: T-006-R-002
+        values:
+          Partner: Apex Clearing
+          Role: Clearing, custody, FDIC sweep program, and prior crypto partner context
+          Public evidence: Stash disclosures reference Apex clearing/custody and prior crypto access through Apex Crypto
+          Diligence request: Clearing/custody agreement, service levels, incidents, outage and contingency plans
+        evidence_claim_ids:
+          - EC-006
+          - EC-012
+        source_ids:
+          - SRC-006
+          - SRC-011
+      - row_id: T-006-R-003
+        values:
+          Partner: Avibra
+          Role: Group life insurance coverage partner
+          Public evidence: Stash plan disclosures state life insurance coverage is provided through Avibra and Stash is a paid partner
+          Diligence request: Insurance agreement, state availability, compensation, complaints, and claims handling
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+        source_ids:
+          - SRC-005
+          - SRC-007
+      - row_id: T-006-R-004
+        values:
+          Partner: Stockpile
+          Role: Transition of Stockpile kids accounts to Stash
+          Public evidence: Stash announced an agreement to transition Stockpile kids accounts
+          Diligence request: Transaction agreement, liabilities, migration plan, customer consents, retention model
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-011
+      - EC-012
+      - EC-020
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-011
+      - SRC-012
+    notes: Other material vendors such as cloud, identity, KYC, fraud, AI/model, and market-data providers were not fully visible publicly.
+  - table_id: T-007
+    title: Customer and subscriber metric ledger
+    chapter_id: III
+    section_id: III.A
+    purpose: Reconcile public customer-scale claims and their diligence implications.
+    columns:
+      - name: Metric
+        description: Public customer or scale metric.
+      - name: Public value
+        description: Reported value.
+      - name: Source context
+        description: Source and definition caveat.
+      - name: Diligence request
+        description: Private evidence needed.
+    rows:
+      - row_id: T-007-R-001
+        values:
+          Metric: Active subscribers
+          Public value: 1.2 million
+          Source context: About page; definition not fully disclosed
+          Diligence request: Active and paying-subscriber bridge
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-002
+      - row_id: T-007-R-002
+        values:
+          Metric: Paying subscribers
+          Public value: 1.3 million
+          Source context: Series H release; management-reported
+          Diligence request: Paid-plan count by plan, month, and tenure
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+      - row_id: T-007-R-003
+        values:
+          Metric: Accounts
+          Public value: More than 9 million
+          Source context: CNBC announcement; not equivalent to unique paying users
+          Diligence request: Account-to-user and funded-account bridge
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-009
+      - row_id: T-007-R-004
+        values:
+          Metric: Customer concentration
+          Public value: Not disclosed
+          Source context: Consumer platform; requires private data
+          Diligence request: Revenue, AUM, deposits, and complaints by cohort/segment
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-019
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-008
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-009
+      - SRC-019
+    notes: Metrics are useful but not interchangeable.
+  - table_id: T-008
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame Stash's competitive set using public product overlap.
+    columns:
+      - name: Company
+        description: Target or competitor.
+      - name: Segment overlap
+        description: Where it competes with Stash.
+      - name: Public product evidence
+        description: Public evidence summary.
+      - name: Pressure on Stash
+        description: Diligence implication.
+    rows:
+      - row_id: T-008-R-001
+        values:
+          Company: Stash
+          Segment overlap: Subscription investing, robo-advice, banking access, rewards, workplace wellness, kids accounts
+          Public product evidence: $3/$9 plans, investing products, Smart Portfolio, Stock-Back, StashWorks, AI guidance
+          Pressure on Stash: Must prove bundled value offsets low-cost competitor alternatives
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-004
+          - SRC-005
+          - SRC-006
+      - row_id: T-008-R-002
+        values:
+          Company: Acorns
+          Segment overlap: Everyday investing, retirement, banking, kids, cash-back invested
+          Public product evidence: Acorns markets brokerage, IRA, checking/savings, automation, bonus investments, and kids products
+          Pressure on Stash: Similar education-first mass consumer positioning
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-014
+      - row_id: T-008-R-003
+        values:
+          Company: Robinhood
+          Segment overlap: Brokerage, crypto, managed portfolios, retirement, spending/card products
+          Public product evidence: Robinhood markets stocks, options, crypto, expert-managed portfolios, and multiple financial products
+          Pressure on Stash: Low-cost trading breadth and large brand reach
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-015
+      - row_id: T-008-R-004
+        values:
+          Company: SoFi
+          Segment overlap: Self-directed investing, automated investing, IRAs, banking ecosystem
+          Public product evidence: SoFi Invest markets stocks, ETFs, IPO access, automated investing, IRAs, and fractional shares
+          Pressure on Stash: Broad financial-services cross-sell and member ecosystem
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-016
+      - row_id: T-008-R-005
+        values:
+          Company: Betterment
+          Segment overlap: Robo-advice, retirement, cash, workplace products
+          Public product evidence: Betterment markets automated portfolios, retirement, tax-loss harvesting, checking/cash reserve, and $65 billion-plus AUM
+          Pressure on Stash: Advice credibility and larger public AUM reference point
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-017
+      - row_id: T-008-R-006
+        values:
+          Company: Chime
+          Segment overlap: Banking-adjacent consumer financial relationship and rewards
+          Public product evidence: Chime markets checking, savings, debit, credit-builder, cash back, direct deposit, and partner-bank model
+          Pressure on Stash: Direct deposit ownership and fee-free banking relationship
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-018
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+    notes: Competitor economics, market share, and win/loss results were not independently quantified.
+  - table_id: T-009
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Convert public evidence into diligence hypotheses, not final market scores.
+    columns:
+      - name: Axis
+        description: Competitive axis.
+      - name: Stash public position
+        description: Publicly evidenced Stash position.
+      - name: Competing pressure
+        description: Publicly evidenced competitor pressure.
+      - name: Diligence question
+        description: What to test with private data.
+    rows:
+      - row_id: T-009-R-001
+        values:
+          Axis: Price
+          Stash public position: Low monthly subscription with bundled features
+          Competing pressure: Robinhood/SoFi emphasize no-commission trading; Chime emphasizes fee-free banking
+          Diligence question: Does subscription value improve retention and margin versus free alternatives?
+        evidence_claim_ids:
+          - EC-005
+          - EC-015
+          - EC-016
+          - EC-018
+        source_ids:
+          - SRC-005
+          - SRC-015
+          - SRC-016
+          - SRC-018
+      - row_id: T-009-R-002
+        values:
+          Axis: Advice and automation
+          Stash public position: Smart Portfolio and AI Money Coach
+          Competing pressure: Betterment and SoFi market automated investing; Robinhood markets expert-managed portfolios
+          Diligence question: Does Stash's AI guidance create compliant financial outcomes or only engagement?
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+          - EC-015
+          - EC-016
+          - EC-017
+        source_ids:
+          - SRC-004
+          - SRC-006
+          - SRC-015
+          - SRC-016
+          - SRC-017
+      - row_id: T-009-R-003
+        values:
+          Axis: Customer relationship
+          Stash public position: Investing plus debit rewards and education
+          Competing pressure: Chime and SoFi can own broader bank-like financial workflows
+          Diligence question: Which platform owns direct deposit, primary financial relationship, and retention?
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+          - EC-018
+        source_ids:
+          - SRC-005
+          - SRC-016
+          - SRC-018
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+    notes: Scores are deliberately qualitative because private win/loss and CAC data were unavailable.
+  - table_id: T-010
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Identify public routes to customer acquisition.
+    columns:
+      - name: Channel
+        description: Public distribution or GTM channel.
+      - name: Public evidence
+        description: Public-source support.
+      - name: Likely KPI
+        description: KPI to request.
+      - name: Key risk
+        description: Diligence issue.
+    rows:
+      - row_id: T-010-R-001
+        values:
+          Channel: Website and mobile app onboarding
+          Public evidence: Product pages link to sign-up and app stores
+          Likely KPI: Visitor-to-funded-account conversion, app-install conversion, CAC
+          Key risk: Paid media and app-store dependency
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-006
+      - row_id: T-010-R-002
+        values:
+          Channel: Subscription plan packaging
+          Public evidence: Growth and Stash+ plans at $3 and $9 per month
+          Likely KPI: Plan mix, upgrade rate, gross retention, ARPU
+          Key risk: Low ARPU and benefits cost
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-010-R-003
+        values:
+          Channel: Employer benefits / StashWorks
+          Public evidence: Stash announcements reference StashWorks as financial wellness benefit
+          Likely KPI: Employer bookings, eligible employees, activation, utilization
+          Key risk: Sales-cycle and implementation risk
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-008
+          - SRC-009
+      - row_id: T-010-R-004
+        values:
+          Channel: Partner transition
+          Public evidence: Stockpile kids account transition agreement
+          Likely KPI: Migrated accounts, retained accounts, funded-account conversion
+          Key risk: Consent, confusion, attrition, and liability
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-011
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-008
+      - SRC-009
+      - SRC-012
+    notes: Public sources do not quantify channel mix.
+  - table_id: T-011
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Capture public proof points used in market messaging.
+    columns:
+      - name: Signal
+        description: Public marketing or credibility signal.
+      - name: Public detail
+        description: Source detail.
+      - name: Diligence caveat
+        description: Why it is not enough.
+      - name: Evidence strength
+        description: Analyst evidence strength.
+    rows:
+      - row_id: T-011-R-001
+        values:
+          Signal: CNBC / Statista fintech list
+          Public detail: Stash named in Wealth Technology category
+          Diligence caveat: Ranking methodology is not a customer reference or audited KPI
+          Evidence strength: medium
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-009
+      - row_id: T-011-R-002
+        values:
+          Signal: Auto-Stash savings claim
+          Public detail: Stash claims customers who Auto-Stash have 9x more after one year than customers who do not Auto-Stash
+          Diligence caveat: Internal-data claim; selection bias and withdrawals require analysis
+          Evidence strength: medium
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+      - row_id: T-011-R-003
+        values:
+          Signal: Careers and recognition
+          Public detail: Careers page references engineering-team and remote-work recognition
+          Diligence caveat: Awards do not prove retention, productivity, or controls
+          Evidence strength: low
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-003
+      - EC-008
+      - EC-013
+    source_ids:
+      - SRC-004
+      - SRC-009
+      - SRC-013
+    notes: Marketing proof points require conversion and retention back-testing.
+  - table_id: T-012
+    title: Public product and R&D pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Summarize public R&D initiatives and diligence needs.
+    columns:
+      - name: Initiative
+        description: Public initiative.
+      - name: Status
+        description: Public status.
+      - name: Public metric or evidence
+        description: Evidence detail.
+      - name: Diligence need
+        description: Private review needed.
+    rows:
+      - row_id: T-012-R-001
+        values:
+          Initiative: AI Money Coach / AI guidance
+          Status: Strategic investment focus after Series H
+          Public metric or evidence: 2.2 million AI interactions and one in four positive action within 10 minutes
+          Diligence need: Model governance, suitability testing, and outcome validation
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+      - row_id: T-012-R-002
+        values:
+          Initiative: StashWorks
+          Status: Launched / publicly promoted
+          Public metric or evidence: Described as financial wellness benefit backed by SHRM in 2024 release
+          Diligence need: Employer adoption and implementation economics
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-008
+          - SRC-009
+      - row_id: T-012-R-003
+        values:
+          Initiative: Stockpile kids account transition
+          Status: Agreement announced
+          Public metric or evidence: Transition of Stockpile kids accounts to Stash platform
+          Diligence need: Migration readiness and liabilities
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-003
+      - EC-008
+      - EC-009
+      - EC-011
+    source_ids:
+      - SRC-004
+      - SRC-008
+      - SRC-009
+      - SRC-012
+    notes: Roadmap costs and technical dependencies were not public.
+  - table_id: T-013
+    title: R&D and product-organization public signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture public staffing and technical-culture indicators.
+    columns:
+      - name: Signal
+        description: Public signal.
+      - name: Public detail
+        description: Evidence detail.
+      - name: Diligence implication
+        description: What to request.
+      - name: Verification status
+        description: Public verification status.
+    rows:
+      - row_id: T-013-R-001
+        values:
+          Signal: Engineering and remote-work recognition
+          Public detail: Careers page references Comparably engineering recognition and FlexJobs remote-work recognition
+          Diligence implication: Validate engineering retention, productivity, and delivery quality
+          Verification status: partially_verified
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-013
+      - row_id: T-013-R-002
+        values:
+          Signal: Hybrid NYC office
+          Public detail: Careers page says hybrid with NYC office
+          Diligence implication: Validate location strategy and hiring plan
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-013
+      - row_id: T-013-R-003
+        values:
+          Signal: AI-generated/AI-related website disclosure
+          Public detail: Careers page disclosure says individuals featured may be paid actors, employees, or AI-generated
+          Diligence implication: Review AI marketing and content controls
+          Verification status: verified
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-013
+    source_ids:
+      - SRC-013
+    notes: Public careers pages are weak evidence for actual R&D capability.
+  - table_id: T-014
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Track publicly verified leadership facts.
+    columns:
+      - name: Name
+        description: Publicly identified person.
+      - name: Role
+        description: Public role.
+      - name: Public background
+        description: Publicly described background.
+      - name: Diligence need
+        description: Private follow-up.
+    rows:
+      - row_id: T-014-R-001
+        values:
+          Name: Brandon Krieg
+          Role: Co-founder and Co-CEO
+          Public background: Returned as co-CEO in October 2024
+          Diligence need: Role scope, employment agreement, equity, references, decision rights
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-008
+      - row_id: T-014-R-002
+        values:
+          Name: Ed Robinson
+          Role: Co-founder and Co-CEO
+          Public background: Returned as co-CEO in October 2024
+          Diligence need: Role scope, employment agreement, equity, references, decision rights
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-008
+      - row_id: T-014-R-003
+        values:
+          Name: Amy Butte
+          Role: Independent audit chair
+          Public background: Former CFO of NYSE per announcement
+          Diligence need: Committee authority, reporting lines, audit scope, independence
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-010
+      - row_id: T-014-R-004
+        values:
+          Name: Liza Landsman
+          Role: CEO in July 2024 announcement
+          Public background: Quoted as CEO in CNBC announcement before October co-founder return
+          Diligence need: Departure/transition terms and continuity impact
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-008
+          - SRC-009
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-008
+      - SRC-009
+      - SRC-010
+    notes: Current full executive roster was not fully verified from public sources.
+  - table_id: T-015
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Capture public personnel scale and hiring caveats.
+    columns:
+      - name: Function or signal
+        description: Publicly visible personnel signal.
+      - name: Public evidence
+        description: Evidence summary.
+      - name: Risk implication
+        description: What it may mean.
+      - name: Diligence request
+        description: Required private data.
+    rows:
+      - row_id: T-015-R-001
+        values:
+          Function or signal: Total employees
+          Public evidence: About page states 125-plus employees
+          Risk implication: Lean relative to broad regulated product suite
+          Diligence request: Headcount by function, location, and FTE/contractor status
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-002
+      - row_id: T-015-R-002
+        values:
+          Function or signal: Location model
+          Public evidence: Careers page states hybrid with NYC office
+          Risk implication: Hybrid execution and compliance supervision considerations
+          Diligence request: Location distribution and supervision policy
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-013
+      - row_id: T-015-R-003
+        values:
+          Function or signal: Compliance, risk, legal, security, and support staffing
+          Public evidence: Not disclosed at functional level
+          Risk implication: Understaffing could amplify regulatory and operational risks
+          Diligence request: Org chart, vacancies, attrition, and capacity planning
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-019
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-013
+      - SRC-019
+    notes: Public headcount is a floor/claim, not a workforce diligence package.
+  - table_id: T-016
+    title: Regulatory footprint and agency surface
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Map regulatory touchpoints for specialist diligence.
+    columns:
+      - name: Area
+        description: Regulatory area.
+      - name: Public evidence
+        description: Evidence summary.
+      - name: Diligence risk
+        description: Key risk.
+      - name: Priority
+        description: Diligence priority.
+    rows:
+      - row_id: T-016-R-001
+        values:
+          Area: Investment adviser
+          Public evidence: Stash Investments LLC is disclosed as an SEC-registered investment adviser and fiduciary
+          Diligence risk: Suitability, advice supervision, fee billing, Form ADV/CRS, marketing
+          Priority: high
+        evidence_claim_ids:
+          - EC-004
+          - EC-006
+          - EC-020
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-016-R-002
+        values:
+          Area: Broker-dealer / custody / clearing
+          Public evidence: Stash Capital is disclosed as broker-dealer/FINRA/SIPC member; Apex Clearing provides clearing/custody
+          Diligence risk: Trading, custody, supervision, disclosures, customer complaints
+          Priority: high
+        evidence_claim_ids:
+          - EC-006
+          - EC-020
+        source_ids:
+          - SRC-007
+      - row_id: T-016-R-003
+        values:
+          Area: Banking and rewards
+          Public evidence: Stash is not a bank; Stride Bank provides banking services; Stock-Back rewards are securities and subject to caps/eligibility
+          Diligence risk: Partner-bank compliance, UDAAP, disclosures, reward expense, card program controls
+          Priority: high
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-020
+        source_ids:
+          - SRC-005
+          - SRC-007
+      - row_id: T-016-R-004
+        values:
+          Area: Crypto legacy
+          Public evidence: 2022 Stash crypto access was powered by Apex Crypto and disclosed crypto was not FDIC/SIPC insured
+          Diligence risk: Legacy complaints, disclosures, remediation, and customer losses
+          Priority: medium
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-012
+      - EC-020
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-011
+    notes: Public disclosures show surface area, not examination outcomes.
+  - table_id: T-017
+    title: Material contracts and IP diligence map
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Capture visible IP and contract assets plus data-room requests.
+    columns:
+      - name: Asset or contract
+        description: Publicly visible asset or contract category.
+      - name: Public status
+        description: Public evidence summary.
+      - name: Risk
+        description: Key diligence issue.
+      - name: Requested evidence
+        description: Private evidence needed.
+    rows:
+      - row_id: T-017-R-001
+        values:
+          Asset or contract: Stash / StashInvest / Stock-Back trademarks
+          Public status: Public plan page says marks are registered trademarks of Stash Financial, Inc.
+          Risk: Registry scope and encumbrances unverified
+          Requested evidence: Trademark schedule and assignments
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-017-R-002
+        values:
+          Asset or contract: Stock-Back patented card claim
+          Public status: Co-CEO release describes patented Stock-Back Debit Card
+          Risk: Patent family, ownership, license, and freedom to operate unverified
+          Requested evidence: Patent schedule, prosecution history, assignments, licenses
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-008
+      - row_id: T-017-R-003
+        values:
+          Asset or contract: Partner contracts
+          Public status: Stride, Apex, Mastercard, Avibra, and Stockpile relationships visible publicly
+          Risk: Termination, economics, liability, data, and compliance obligations private
+          Requested evidence: Executed contracts and amendments
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+          - EC-020
+        source_ids:
+          - SRC-007
+          - SRC-012
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-009
+      - EC-011
+      - EC-020
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-012
+    notes: Registry verification was not completed in-session.
+  - table_id: T-018
+    title: Litigation and regulatory-action public-source ledger
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Document legal/regulatory items found and unresolved gaps.
+    columns:
+      - name: Category
+        description: Legal or regulatory category.
+      - name: Public finding in this run
+        description: What public research found.
+      - name: Verification status
+        description: Status of evidence.
+      - name: Next diligence step
+        description: Required next step.
+    rows:
+      - row_id: T-018-R-001
+        values:
+          Category: Pending lawsuits against Stash
+          Public finding in this run: No reliable docket-level pending matter verified
+          Verification status: inconclusive
+          Next diligence step: Counsel-run docket, arbitration, and claims search
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-019
+      - row_id: T-018-R-002
+        values:
+          Category: Pending lawsuits initiated by Stash
+          Public finding in this run: No reliable docket-level pending matter verified
+          Verification status: inconclusive
+          Next diligence step: Counsel litigation schedule and docket search
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-019
+      - row_id: T-018-R-003
+        values:
+          Category: Regulatory agency actions
+          Public finding in this run: Public disclosures show regulated operations, but no exam history or agency correspondence was public
+          Verification status: not_publicly_verifiable
+          Next diligence step: SEC/FINRA/state exam and correspondence schedule
+        evidence_claim_ids:
+          - EC-020
+          - EC-019
+        source_ids:
+          - SRC-007
+          - SRC-019
+    evidence_claim_ids:
+      - EC-019
+      - EC-020
+    source_ids:
+      - SRC-007
+      - SRC-019
+    notes: This ledger is not a legal opinion.
+
+figures:
+  - figure_id: F-001
+    title: Public funding and strategic-event timeline
+    chapter_id: I
+    section_id: I.C
+    figure_type: timeline
+    description: Timeline of financing and major scale/product events visible in public sources.
+    purpose: Show dated evidence anchors and where valuation data becomes stale.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E-001
+          date: 2021-02-03
+          label: Series G and unicorn valuation
+          description: Stash raised $125 million and surpassed a $1.4 billion valuation.
+          category: financing
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E-002
+          date: 2023-10-13
+          label: $40 million-plus financing and audit chair
+          description: Stash announced more than $40 million financing and Amy Butte as independent audit chair.
+          category: financing_governance
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-010
+        - event_id: F-001-E-003
+          date: 2024-10-08
+          label: Co-founders return
+          description: Brandon Krieg and Ed Robinson returned as co-CEOs.
+          category: management
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-008
+        - event_id: F-001-E-004
+          date: 2025-05-12
+          label: $146 million Series H
+          description: Stash raised Series H to accelerate AI-driven financial guidance.
+          category: financing
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-004
+        - event_id: F-001-E-005
+          date: 2026-03-19
+          label: Stockpile kids account transition
+          description: Stash announced an agreement to transition Stockpile kids accounts.
+          category: strategic_relationship
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-012
+      start_date: 2021-02-03
+      end_date: 2026-03-19
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Show valuation disclosed only in 2021 and mark 2025 valuation as undisclosed.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-009
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-008
+      - SRC-010
+      - SRC-012
+    notes: Not all financing rounds are shown; only reviewed public evidence anchors are included.
+  - figure_id: F-002
+    title: Public financing amount chart
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Bar chart of publicly disclosed financing amounts from reviewed sources.
+    purpose: Compare public capital inflows while flagging current valuation as undisclosed.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Financing event
+        unit: event
+        scale: categorical
+      y_axis:
+        label: Public amount
+        unit: USD millions
+        scale: linear
+      series:
+        - series_id: public-financing
+          name: Public financing amounts
+          unit: USD millions
+          data_points:
+            - x: 2021 Series G
+              y: 125
+              label: "$125M Series G"
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-003
+            - x: 2023 financing
+              y: 40
+              label: ">$40M financing; chart uses disclosed floor"
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-010
+            - x: 2025 Series H
+              y: 146
+              label: "$146M Series H"
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: 2021 valuation
+          x: 2021 Series G
+          y: 125
+          note: Public valuation surpassed $1.4B in 2021; no later valuation was disclosed in reviewed sources.
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use an annotation for valuation rather than mixing valuation and financing amount units.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-004
+      - SRC-010
+    notes: The 2023 amount is charted at the minimum disclosed amount.
+  - figure_id: F-003
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Simplified public architecture of Stash's consumer products and external dependencies.
+    purpose: Show why product breadth creates partner and regulatory dependencies.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user
+          label: Consumer subscriber
+          node_type: user
+          description: U.S. consumer using Stash subscription products.
+          evidence_claim_ids:
+            - EC-003
+            - EC-007
+          source_ids:
+            - SRC-002
+            - SRC-004
+        - node_id: stash-app
+          label: Stash app and subscription plans
+          node_type: product
+          description: Growth and Stash+ subscription product bundle.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - node_id: investing
+          label: Investing and Smart Portfolio
+          node_type: service
+          description: Self-directed investing and automated managed portfolios.
+          evidence_claim_ids:
+            - EC-004
+            - EC-006
+          source_ids:
+            - SRC-006
+            - SRC-007
+        - node_id: bank-card
+          label: Banking access and Stock-Back Card
+          node_type: service
+          description: Debit and banking features with stock rewards.
+          evidence_claim_ids:
+            - EC-005
+            - EC-006
+          source_ids:
+            - SRC-005
+            - SRC-007
+        - node_id: ai-coach
+          label: AI Money Coach
+          node_type: model
+          description: AI-driven guidance and personalized investment advice surface.
+          evidence_claim_ids:
+            - EC-003
+            - EC-006
+          source_ids:
+            - SRC-004
+            - SRC-007
+        - node_id: apex
+          label: Apex Clearing
+          node_type: third_party
+          description: Clearing/custody and sweep/crypto-related infrastructure.
+          evidence_claim_ids:
+            - EC-006
+            - EC-012
+          source_ids:
+            - SRC-007
+            - SRC-011
+        - node_id: stride
+          label: Stride Bank / Mastercard
+          node_type: third_party
+          description: Banking services and card issuance/licensing relationship.
+          evidence_claim_ids:
+            - EC-006
+            - EC-020
+          source_ids:
+            - SRC-005
+            - SRC-007
+        - node_id: avibra
+          label: Avibra
+          node_type: third_party
+          description: Group life insurance coverage partner.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+      edges:
+        - edge_id: edge-user-app
+          from_node_id: user
+          to_node_id: stash-app
+          relationship: subscribes_to
+          data_or_dependency: Plan fees and user onboarding
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - edge_id: edge-app-investing
+          from_node_id: stash-app
+          to_node_id: investing
+          relationship: includes
+          data_or_dependency: Brokerage and advisory accounts
+          evidence_claim_ids:
+            - EC-004
+            - EC-006
+          source_ids:
+            - SRC-006
+            - SRC-007
+        - edge_id: edge-investing-apex
+          from_node_id: investing
+          to_node_id: apex
+          relationship: depends_on
+          data_or_dependency: Clearing, custody, and sweep
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-007
+        - edge_id: edge-app-bank
+          from_node_id: stash-app
+          to_node_id: bank-card
+          relationship: includes
+          data_or_dependency: Banking access and Stock-Back rewards
+          evidence_claim_ids:
+            - EC-005
+            - EC-006
+          source_ids:
+            - SRC-005
+            - SRC-007
+        - edge_id: edge-bank-stride
+          from_node_id: bank-card
+          to_node_id: stride
+          relationship: depends_on
+          data_or_dependency: Deposit and card infrastructure
+          evidence_claim_ids:
+            - EC-006
+            - EC-020
+          source_ids:
+            - SRC-005
+            - SRC-007
+        - edge_id: edge-app-ai
+          from_node_id: stash-app
+          to_node_id: ai-coach
+          relationship: provides_guidance
+          data_or_dependency: Personalized investment advice and AI engagement
+          evidence_claim_ids:
+            - EC-003
+            - EC-006
+          source_ids:
+            - SRC-004
+            - SRC-007
+        - edge_id: edge-app-avibra
+          from_node_id: stash-app
+          to_node_id: avibra
+          relationship: benefit_partner
+          data_or_dependency: Group life insurance coverage
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+      boundaries:
+        - boundary_id: stash-boundary
+          label: Stash product surface
+          node_ids:
+            - stash-app
+            - investing
+            - bank-card
+            - ai-coach
+        - boundary_id: partner-boundary
+          label: External regulated partners
+          node_ids:
+            - apex
+            - stride
+            - avibra
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use color or grouping to separate Stash-controlled product surfaces from external regulated partners.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-012
+      - EC-020
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-011
+    notes: This is a public-source architecture approximation, not a technical systems diagram.
+  - figure_id: F-004
+    title: Public partner dependency chart
+    chapter_id: III
+    section_id: III.B
+    figure_type: chart
+    description: Binary chart of publicly visible partners tied to core product capabilities.
+    purpose: Show concentration questions even without private revenue weights.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Partner
+        unit: partner
+        scale: categorical
+      y_axis:
+        label: Publicly material dependency flag
+        unit: binary flag
+        scale: linear
+      series:
+        - series_id: dependency-flags
+          name: Publicly material dependency
+          unit: flag
+          data_points:
+            - x: Stride Bank / Mastercard
+              y: 1
+              label: Banking and card issuance/licensing
+              evidence_claim_ids:
+                - EC-006
+                - EC-020
+              source_ids:
+                - SRC-005
+                - SRC-007
+            - x: Apex Clearing
+              y: 1
+              label: Clearing, custody, sweep, crypto history
+              evidence_claim_ids:
+                - EC-006
+                - EC-012
+              source_ids:
+                - SRC-007
+                - SRC-011
+            - x: Avibra
+              y: 1
+              label: Life insurance benefit partner
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-005
+            - x: Stockpile
+              y: 1
+              label: Kids account transition
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-012
+      annotations:
+        - label: Private weight missing
+          x: null
+          y: null
+          note: Revenue/AUM dependency weights require contract and operating data.
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-019
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Present as a dependency checklist, not a revenue concentration chart.
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-011
+      - EC-012
+      - EC-019
+      - EC-020
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-011
+      - SRC-012
+      - SRC-019
+    notes: Binary flags are used because partner economics are private.
+  - figure_id: F-005
+    title: Competitive positioning map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Public-source positioning of Stash and major adjacent competitors.
+    purpose: Illustrate market overlap across investing depth and banking/financial-relationship breadth.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Investing/advice depth
+          low_label: Light guidance
+          high_label: Broad investing/advice suite
+        y_axis:
+          label: Primary financial relationship breadth
+          low_label: Single-purpose investing
+          high_label: Banking-like financial relationship
+      segments:
+        - segment_id: subscription-investing
+          name: Subscription investing and guidance
+          description: Bundled paid investing and guidance products.
+        - segment_id: broad-finance
+          name: Broad consumer finance platforms
+          description: Platforms with bank-like or multi-product financial relationships.
+        - segment_id: robo-advice
+          name: Automated advice platforms
+          description: Automated portfolios and advice-led products.
+      entities:
+        - entity_id: stash
+          name: Stash
+          entity_type: target_company
+          segment_id: subscription-investing
+          x_value: 7
+          y_value: 7
+          attributes:
+            rationale: Subscription investing, Smart Portfolio, banking access, rewards, AI guidance
+          evidence_claim_ids:
+            - EC-003
+            - EC-004
+            - EC-005
+          source_ids:
+            - SRC-004
+            - SRC-005
+            - SRC-006
+        - entity_id: acorns
+          name: Acorns
+          entity_type: competitor
+          segment_id: subscription-investing
+          x_value: 6
+          y_value: 6
+          attributes:
+            rationale: Everyday investing, retirement, banking, kids, bonus investments
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-014
+        - entity_id: robinhood
+          name: Robinhood
+          entity_type: competitor
+          segment_id: broad-finance
+          x_value: 8
+          y_value: 7
+          attributes:
+            rationale: Brokerage, crypto, managed portfolios, spending/card products
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-015
+        - entity_id: sofi
+          name: SoFi
+          entity_type: competitor
+          segment_id: broad-finance
+          x_value: 8
+          y_value: 9
+          attributes:
+            rationale: Investing, IRAs, automated investing, broader financial products
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-016
+        - entity_id: betterment
+          name: Betterment
+          entity_type: competitor
+          segment_id: robo-advice
+          x_value: 9
+          y_value: 5
+          attributes:
+            rationale: Automated investing, retirement, checking/cash reserve, advisory focus
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-017
+        - entity_id: chime
+          name: Chime
+          entity_type: competitor
+          segment_id: broad-finance
+          x_value: 2
+          y_value: 9
+          attributes:
+            rationale: Banking, savings, debit, credit-builder, rewards, partner-bank model
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-018
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Scores are analyst judgments based on public product breadth, not market-share measurements.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+    notes: Competitive positions should be validated with customer win/loss and CAC data.
+  - figure_id: F-006
+    title: Public GTM funnel
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: Inferred public GTM funnel from discovery to funded retained subscriber.
+    purpose: Structure diligence requests for channel metrics.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      stages:
+        - stage_id: awareness
+          name: Awareness through PR, app stores, education, and referrals
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: Not publicly disclosed
+          evidence_claim_ids:
+            - EC-004
+            - EC-008
+            - EC-013
+          source_ids:
+            - SRC-006
+            - SRC-009
+            - SRC-013
+        - stage_id: signup
+          name: App or website sign-up
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: Not publicly disclosed
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-006
+        - stage_id: subscription
+          name: Growth or Stash+ subscription
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: Not publicly disclosed
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - stage_id: funded-engaged
+          name: Funded and engaged investment/banking user
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: Not publicly disclosed
+          evidence_claim_ids:
+            - EC-003
+            - EC-007
+          source_ids:
+            - SRC-002
+            - SRC-004
+        - stage_id: retained
+          name: Retained subscriber with recurring deposits or AI-guided action
+          order: 5
+          count: null
+          conversion_rate_from_previous: null
+          period: Not publicly disclosed
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-004
+      unit: users
+      cohort_or_period: Public counts unavailable; request cohort data.
+    rendering_guidance:
+      preferred_format: table_visual
+      display_notes: Show unknown counts explicitly rather than estimating conversion.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-009
+      - SRC-013
+    notes: This is a diligence funnel, not a measured performance funnel.
+  - figure_id: F-007
+    title: AI Money Coach public engagement chart
+    chapter_id: VI
+    section_id: VI.B
+    figure_type: chart
+    description: Public AI engagement metrics reported in Stash's 2025 Series H announcement.
+    purpose: Visualize AI engagement while separating activity volume from outcome quality.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: AI metric
+        unit: metric
+        scale: categorical
+      y_axis:
+        label: Public value
+        unit: mixed
+        scale: linear
+      series:
+        - series_id: interactions
+          name: AI interactions
+          unit: interactions
+          data_points:
+            - x: AI interactions
+              y: 2200000
+              label: 2.2M interactions
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-004
+        - series_id: action-rate
+          name: Positive action within 10 minutes
+          unit: percent
+          data_points:
+            - x: Positive action rate
+              y: 25
+              label: 1 in 4 interactions
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: Outcome caveat
+          x: null
+          y: null
+          note: Public metric does not prove financial outcomes, suitability, or retention.
+          evidence_claim_ids:
+            - EC-003
+            - EC-019
+          source_ids:
+            - SRC-004
+            - SRC-019
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use dual labels or separate panels because units differ.
+    evidence_claim_ids:
+      - EC-003
+      - EC-019
+    source_ids:
+      - SRC-004
+      - SRC-019
+    notes: Engagement metrics are company-reported.
+  - figure_id: F-008
+    title: Public headcount anchor chart
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public headcount evidence is limited to a 125-plus employee anchor.
+    purpose: Make the headcount data gap explicit.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Period
+        unit: year
+        scale: categorical
+      y_axis:
+        label: Public employee count
+        unit: employees
+        scale: linear
+      series:
+        - series_id: public-headcount
+          name: Public employee count anchors
+          unit: employees
+          data_points:
+            - x: 2023
+              y: null
+              label: Not publicly verified in this run
+              evidence_claim_ids:
+                - EC-019
+              source_ids:
+                - SRC-019
+            - x: 2025/2026
+              y: 125
+              label: 125-plus employees; chart uses disclosed floor
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-002
+            - x: 2026 plan
+              y: null
+              label: Projection not public
+              evidence_claim_ids:
+                - EC-019
+              source_ids:
+                - SRC-019
+      annotations:
+        - label: Function mix missing
+          x: 2025/2026
+          y: 125
+          note: Compliance, support, risk, legal, security, and engineering breakdowns are required.
+          evidence_claim_ids:
+            - EC-007
+            - EC-019
+          source_ids:
+            - SRC-002
+            - SRC-019
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use dashed or muted bars for unknown years.
+    evidence_claim_ids:
+      - EC-007
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-019
+    notes: The figure intentionally charts only public anchors and gaps.
+  - figure_id: F-009
+    title: Public leadership org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Partial leadership chart from public announcements.
+    purpose: Show verified leaders and missing reporting-line data.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: board-audit
+          name: Amy Butte
+          role: Independent audit chair
+          department: Board / audit oversight
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-010
+        - node_id: co-ceo-krieg
+          name: Brandon Krieg
+          role: Co-founder and Co-CEO
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-008
+        - node_id: co-ceo-robinson
+          name: Ed Robinson
+          role: Co-founder and Co-CEO
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-008
+        - node_id: cfo-cco-gc
+          name: null
+          role: CFO / CCO / general counsel / risk leaders
+          department: Control functions
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-019
+      reporting_lines:
+        - parent_node_id: board-audit
+          child_node_id: co-ceo-krieg
+          relationship: other
+          evidence_claim_ids:
+            - EC-010
+            - EC-019
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - parent_node_id: board-audit
+          child_node_id: co-ceo-robinson
+          relationship: other
+          evidence_claim_ids:
+            - EC-010
+            - EC-019
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - parent_node_id: co-ceo-krieg
+          child_node_id: cfo-cco-gc
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-019
+        - parent_node_id: co-ceo-robinson
+          child_node_id: cfo-cco-gc
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-019
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Dashed lines indicate inferred or unverified reporting relationships.
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-019
+    source_ids:
+      - SRC-008
+      - SRC-010
+      - SRC-019
+    notes: The org chart is intentionally partial.
+  - figure_id: F-010
+    title: Legal and regulatory risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Heatmap of main diligence risks identified from public evidence.
+    purpose: Prioritize legal, regulatory, financial, and operational diligence workstreams.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Public financial opacity
+          severity: high
+          likelihood: high
+          rationale: Public metrics are company-reported; audited financials and unit economics are not public.
+          evidence_claim_ids:
+            - EC-008
+            - EC-009
+            - EC-019
+          source_ids:
+            - SRC-008
+            - SRC-009
+            - SRC-019
+        - risk_id: R-002
+          label: Regulatory complexity
+          severity: high
+          likelihood: high
+          rationale: RIA, broker-dealer, banking access, Stock-Back securities rewards, crypto history, and personalized AI advice create broad compliance surface.
+          evidence_claim_ids:
+            - EC-006
+            - EC-012
+            - EC-020
+          source_ids:
+            - SRC-007
+            - SRC-011
+        - risk_id: R-003
+          label: Partner dependency
+          severity: high
+          likelihood: medium
+          rationale: Core product functions depend on Stride, Apex, Mastercard, Avibra, Stockpile migration, and likely undisclosed technology vendors.
+          evidence_claim_ids:
+            - EC-006
+            - EC-011
+            - EC-020
+          source_ids:
+            - SRC-007
+            - SRC-012
+        - risk_id: R-004
+          label: Competition and CAC
+          severity: medium
+          likelihood: high
+          rationale: Public competitor pages show overlapping investing, banking, advice, and rewards products.
+          evidence_claim_ids:
+            - EC-014
+            - EC-015
+            - EC-016
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-014
+            - SRC-015
+            - SRC-016
+            - SRC-017
+            - SRC-018
+        - risk_id: R-005
+          label: AI advice suitability
+          severity: high
+          likelihood: medium
+          rationale: AI Money Coach recommendations are described as personalized investment advice, but controls are not public.
+          evidence_claim_ids:
+            - EC-003
+            - EC-006
+          source_ids:
+            - SRC-004
+            - SRC-007
+        - risk_id: R-006
+          label: Management transition and staffing
+          severity: medium
+          likelihood: medium
+          rationale: Co-founders returned as co-CEOs after a different CEO was publicly quoted; full org and retention data are private.
+          evidence_claim_ids:
+            - EC-008
+            - EC-009
+            - EC-019
+          source_ids:
+            - SRC-008
+            - SRC-009
+            - SRC-019
+        - risk_id: R-007
+          label: Stale public valuation
+          severity: medium
+          likelihood: high
+          rationale: The latest public valuation found is from 2021; 2025 Series H valuation is undisclosed.
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+            - EC-003
+          source_ids:
+            - SRC-001
+            - SRC-003
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use the same risk IDs as the risk register.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-006
+      - EC-008
+      - EC-009
+      - EC-011
+      - EC-012
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-019
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-004
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-011
+      - SRC-012
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    notes: Heatmap severity/likelihood are analyst judgments based on public evidence and gaps.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: Wikipedia's unicorn list included Stash as a private unicorn candidate with a $1.4 billion valuation dated February 2021.
+    evidence_summary: The fetched public unicorn list row for Stash showed valuation 1.4, date February 2021, sector financial technology, and country United States.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "Stash ... 1.4 ... February 2021 ... Financial technology ... United States"
+        location: Fetched Wikipedia unicorn list row parsed during candidate selection
+    analyst_interpretation: The list was suitable for random target selection and initial valuation context, but the primary valuation support is stronger in the 2021 PR Newswire release.
+    limitations: Wikipedia is a public secondary source and may lag current private-company status or valuation.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-002
+        - F-010
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-002
+    claim: Stash raised $125 million in Series G funding and surpassed a $1.4 billion valuation in 2021.
+    evidence_summary: PR Newswire headline and URL identify "Stash Raises $125 Million in Series G Funding; Surpasses $1.4 Billion Valuation."
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "Stash Raises $125 Million in Series G Funding; Surpasses $1.4 Billion Valuation"
+        location: PR Newswire release title and URL slug
+    analyst_interpretation: This is the clearest public valuation evidence found.
+    limitations: It is dated 2021 and does not prove current valuation after later rounds.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+        - F-010
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-003
+    claim: Stash announced a $146 million Series H in May 2025, $4.3 billion under management, 1.3 million paying subscribers, profitability, and AI Money Coach engagement metrics.
+    evidence_summary: Stash's Series H announcement states the amount, lead investor, participants, AI use of proceeds, 1.3 million paying subscribers, $4.3 billion AUM, profitability, 2.2 million AI interactions, and one-in-four positive action within 10 minutes.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: "$146 million in an oversubscribed new Series H funding through a round led by Goodwater Capital"
+        location: Series H release, May 12, 2025
+      - source_id: SRC-004
+        quote: "1.3M paying subscribers and $4.3B AUM"
+        location: Series H release summary/title context
+      - source_id: SRC-004
+        quote: '"2.2M AI interactions" and "1 in 4" positive action within 10 minutes'
+        location: Series H release, AI Money Coach discussion
+    analyst_interpretation: Financing amount is verified from a primary company source; operating metrics remain management-reported.
+    limitations: No valuation, audited financials, or user-level definitions were disclosed.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-002
+        - FC-004
+        - FC-007
+      table_ids:
+        - T-001
+        - T-002
+        - T-004
+        - T-011
+        - T-012
+      figure_ids:
+        - F-001
+        - F-002
+        - F-007
+        - F-010
+      risk_ids:
+        - R-001
+        - R-005
+        - R-007
+  - evidence_claim_id: EC-004
+    claim: Stash publicly offers self-directed investing, fractional shares, ETFs, recurring investments, dividend reinvestment, Smart Portfolio automated investing, and personalized advice.
+    evidence_summary: Stash's invest page describes stocks, ETFs, fractional shares, recurring investments, dividend reinvestment, Smart Portfolio, RIA/fiduciary status, and personalized advice.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: "Access stocks and ETFs with personalized advice along the way."
+        location: Stash invest page
+      - source_id: SRC-006
+        quote: "We can invest for you based on your goals and risk level."
+        location: Smart Portfolio section
+      - source_id: SRC-006
+        quote: "We're a Registered Investment Advisor (RIA) and fiduciary"
+        location: Invest page trust/fiduciary section
+    analyst_interpretation: Product existence is strongly supported by Stash-owned materials.
+    limitations: Product economics, adoption, and outcome quality are private.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-005
+        - T-008
+        - T-010
+      figure_ids:
+        - F-003
+        - F-006
+      risk_ids:
+        - R-002
+        - R-004
+  - evidence_claim_id: EC-005
+    claim: Stash Growth is priced at $3 per month and Stash+ at $9 per month, with plan bundles including Stock-Back Card, retirement accounts, kids accounts, Smart Portfolio, advice, and Avibra life-insurance coverage.
+    evidence_summary: The Stash plans page lists the two plans, monthly prices, features, Stock-Back terms, insurance partner disclosure, and banking/card caveats.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: "Stash Growth costs $3/month"
+        location: Plans FAQ
+      - source_id: SRC-005
+        quote: "Stash+ costs $9/month"
+        location: Plans FAQ
+      - source_id: SRC-005
+        quote: "Stock-Back rewards available only for qualified bonus merchants on Stash+... All Stock-Back rewards contribute to a single $10 per month cap."
+        location: Plans disclosure footnotes
+    analyst_interpretation: Plan pricing and key limitations are public and current enough for diligence scoping.
+    limitations: Actual realized ARPU and plan mix are not public.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-005
+        - T-006
+        - T-008
+        - T-009
+        - T-010
+        - T-016
+        - T-017
+      figure_ids:
+        - F-003
+        - F-004
+        - F-005
+        - F-006
+      risk_ids:
+        - R-001
+        - R-002
+        - R-003
+        - R-004
+  - evidence_claim_id: EC-006
+    claim: Stash is not a bank, uses Stash Investments LLC as an SEC-registered investment adviser, Stash Capital LLC as a broker-dealer/FINRA/SIPC member, Apex for clearing/custody, Stride Bank for banking, and treats AI Money Coach recommendations as personalized investment advice.
+    evidence_summary: Stash disclosure language on product and legal pages describes regulated entities, partner-bank limitations, Apex Clearing, Smart Portfolio authority/fees, and AI Money Coach recommendation status.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: "Stash Financial, Inc. is a digital financial services company offering products to U.S.-based consumers. Stash is not a bank or depository institution."
+        location: Invest page disclosures
+      - source_id: SRC-006
+        quote: "Recommendations through the Diversification Analysis tool and the AI Money Coach tool are considered personalized investment advice."
+        location: Invest page disclosure footnotes
+      - source_id: SRC-007
+        quote: "The Monthly Wrap Fee starts at $3.00"
+        location: Advisory agreements/disclosures page
+    analyst_interpretation: Regulatory and partner structure is well evidenced by Stash disclosures.
+    limitations: Public disclosures do not reveal exam results, complaint trends, or partner contract terms.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-003
+        - FC-006
+        - FC-007
+      table_ids:
+        - T-004
+        - T-005
+        - T-006
+        - T-016
+        - T-017
+      figure_ids:
+        - F-003
+        - F-004
+        - F-010
+      risk_ids:
+        - R-002
+        - R-003
+        - R-005
+  - evidence_claim_id: EC-007
+    claim: Stash's about page says the company launched in 2015, has 1.2 million active subscribers, about $5 billion in assets managed, more than 6 million people helped, and 125-plus employees.
+    evidence_summary: Stash's about page provides company scale and people metrics and identifies co-founder leadership.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "Launched in 2015"
+        location: About page
+      - source_id: SRC-002
+        quote: '"1.2M active subscribers" and "$5B assets managed"'
+        location: About page metrics
+      - source_id: SRC-002
+        quote: "125+ employees"
+        location: About page metrics
+    analyst_interpretation: Useful primary company metrics, but definitions need reconciliation to later releases and private KPI records.
+    limitations: No audit, methodology, or time-series support.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+        - T-007
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-001
+        - R-006
+  - evidence_claim_id: EC-008
+    claim: Stash's July 2024 CNBC/Statista announcement says Stash achieved EBITDA profitability and 80% gross margin, launched StashWorks, had more than 9 million accounts, and more than $3.5 billion AUM.
+    evidence_summary: Stash's announcement of CNBC recognition contains business milestone claims and product-positioning language.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: "In the first half of 2024, Stash announced EBITDA profitability and 80% gross margin."
+        location: CNBC announcement
+      - source_id: SRC-009
+        quote: "more than 9M accounts and more than $3.5B AUM"
+        location: CNBC announcement/about section
+    analyst_interpretation: Provides important scale and profitability claims; still company-issued and unaudited.
+    limitations: Definitions and financial reconciliations are not provided.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-004
+        - FC-005
+      table_ids:
+        - T-002
+        - T-007
+        - T-011
+        - T-014
+      figure_ids:
+        - F-006
+        - F-010
+      risk_ids:
+        - R-001
+        - R-004
+        - R-006
+  - evidence_claim_id: EC-009
+    claim: Stash announced in October 2024 that co-founders Brandon Krieg and Ed Robinson returned as co-CEOs and that Stash had reached 80% gross margin and EBITDA positive for the first time.
+    evidence_summary: The co-founder return press release details leadership change, profitability/gross margin milestones, and past product innovations such as fractional investing, Stock-Back, and Stash Core.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: "Co-Founders Brandon Krieg and Ed Robinson are returning to the helm as Co-CEOs"
+        location: October 8, 2024 release
+      - source_id: SRC-008
+        quote: "achieved 80% gross margin; and successfully achieved EBITDA positive for the first time in company history"
+        location: October 8, 2024 release
+    analyst_interpretation: Leadership transition is verified from a primary source; financial claims require private audit.
+    limitations: Reasons for leadership transition, financial methodology, and current roles are not fully public.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-002
+        - T-014
+        - T-017
+      figure_ids:
+        - F-001
+        - F-009
+        - F-010
+      risk_ids:
+        - R-001
+        - R-006
+  - evidence_claim_id: EC-010
+    claim: Stash announced Amy Butte as independent audit chair in October 2023 and more than $40 million of financing led by T. Rowe Price-advised funds with Goodwater and Union Square Ventures.
+    evidence_summary: Stash's October 2023 release describes audit-chair appointment and financing participants.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: "Amy Butte as its first-ever independent audit chair"
+        location: October 13, 2023 release
+      - source_id: SRC-010
+        quote: "infusion of $40 million led by funds and accounts advised by T. Rowe Price... including Goodwater Capital and Union Square Ventures"
+        location: October 13, 2023 release
+    analyst_interpretation: The audit-chair and financing claims are directly supported by Stash's release.
+    limitations: Audit committee authority and financing terms are not disclosed.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+        - T-014
+      figure_ids:
+        - F-001
+        - F-002
+        - F-009
+      risk_ids:
+        - R-001
+        - R-006
+  - evidence_claim_id: EC-011
+    claim: Stash announced an agreement in March 2026 to transition Stockpile kids accounts to Stash.
+    evidence_summary: Stash's press release says it agreed with Stockpile to transition Stockpile kids accounts and presents Stash as a regulated adviser/broker-dealer platform with more than one million subscribers and over $5 billion assets.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: "announced an agreement with Stockpile to transition Stockpile kids' accounts to the Stash platform"
+        location: March 19, 2026 release
+      - source_id: SRC-012
+        quote: "more than 1M subscribers and over $5B assets"
+        location: March 19, 2026 release/about section
+    analyst_interpretation: The transition is verified, but deal terms and migration risks remain private.
+    limitations: No purchase price, liability allocation, or migration metrics were disclosed.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-008
+      table_ids:
+        - T-004
+        - T-006
+        - T-012
+        - T-017
+      figure_ids:
+        - F-001
+        - F-004
+        - F-010
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-012
+    claim: Stash expanded crypto access in 2022 through Apex Crypto and disclosed that crypto assets were not FDIC or SIPC insured.
+    evidence_summary: The 2022 Stash crypto release says crypto access was powered by Apex Crypto and includes non-FDIC/SIPC disclosure language.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: "powered by Apex Crypto"
+        location: 2022 crypto access release
+      - source_id: SRC-011
+        quote: "cryptocurrencies are not FDIC or SIPC insured"
+        location: 2022 crypto access release/disclosures
+    analyst_interpretation: Crypto history adds legacy regulatory, complaint, and disclosure diligence even if current product status differs.
+    limitations: Current crypto availability, user exposure, and complaint/remediation history were not public in reviewed sources.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-016
+      figure_ids:
+        - F-003
+        - F-010
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-013
+    claim: Stash's careers page shows a hybrid NYC office model, public work/engineering recognition signals, and AI-generated-content disclosure language.
+    evidence_summary: The careers page includes "Hybrid with NYC office," references to Comparably engineering team and FlexJobs remote-work recognition, and a disclosure that featured individuals may be employees, actors, or AI-generated.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: low
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "Hybrid with NYC office"
+        location: Careers page
+      - source_id: SRC-013
+        quote: "\"Comparably's Best Engineering Team\" and \"FlexJobs Top 100 Companies With Remote Jobs\""
+        location: Careers page recognition tiles
+      - source_id: SRC-013
+        quote: "Individuals featured on this website may be paid actors, Stash employees, or AI-generated."
+        location: Careers page disclosure
+    analyst_interpretation: Useful weak signals about work model and public positioning; not enough to judge staffing quality.
+    limitations: Does not show current headcount by function, attrition, org chart, or hiring plan.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-011
+        - T-013
+        - T-015
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-005
+        - R-006
+  - evidence_claim_id: EC-014
+    claim: Acorns publicly markets brokerage investing, retirement, banking, money automation, bonus investments, and kids products.
+    evidence_summary: Acorns' homepage navigation and product copy list everyday investing, retirement IRA, banking, money manager, bonus investments, and kids products.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: "Invest for every day Brokerage account... Invest for retirement IRA account... Bank smarter Checking & savings... Automate your money... Earn bonus investments... Invest for your kids"
+        location: Acorns homepage navigation
+    analyst_interpretation: Acorns is a clear product-overlap competitor for Stash's mass-market investing/subscription model.
+    limitations: No private Acorns economics or win/loss data were reviewed.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-008
+      figure_ids:
+        - F-005
+        - F-010
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-015
+    claim: Robinhood publicly markets brokerage, crypto, expert-managed portfolios, retirement/options, spending/card products, and broad regulated-entity disclosures.
+    evidence_summary: Robinhood's public page references stocks, options, crypto, expert-managed portfolios, retirement, and multiple affiliates including broker-dealer, registered investment adviser, crypto, money transmitter, and card entities.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: "Trade stocks, options, crypto, and more"
+        location: Robinhood page
+      - source_id: SRC-015
+        quote: "Portfolio Management offered through Robinhood Asset Management... an SEC-registered investment advisor."
+        location: Robinhood disclosure section
+    analyst_interpretation: Robinhood pressures Stash on trading breadth, brand, and low-cost investing.
+    limitations: No Robinhood customer overlap data with Stash was reviewed.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-008
+        - T-009
+      figure_ids:
+        - F-005
+        - F-010
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-016
+    claim: SoFi Invest publicly markets stocks, ETFs, IPO access, automated investing, retirement accounts, fractional shares, and broker-dealer/adviser structures.
+    evidence_summary: SoFi Invest page describes no-commission stock/ETF trading, IPO access, automated investing, IRAs, fractional shares, and regulated SoFi Wealth/SoFi Securities entities.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: "Trade stocks and ETFs, invest in IPOs at IPO prices, or try automated investing"
+        location: SoFi Invest page
+      - source_id: SRC-016
+        quote: "Robo investing and advisory services are provided by SoFi Wealth LLC, an SEC-registered investment adviser."
+        location: SoFi Invest disclosure
+    analyst_interpretation: SoFi is a broad financial-services competitor with overlapping investing and automated-advice products.
+    limitations: No SoFi/Stash user overlap or CAC comparison was available.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-008
+        - T-009
+      figure_ids:
+        - F-005
+        - F-010
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-017
+    claim: Betterment publicly markets automated investing, retirement, tax-loss harvesting, checking/cash products, advisory services, and $65 billion-plus AUM.
+    evidence_summary: Betterment's investing page describes automated portfolios, retirement accounts, tax-loss harvesting, in-house investment team monitoring, AUM, advisory/brokerage/cash disclosures, and non-bank status.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: "Automated Investing"
+        location: Betterment investing page title
+      - source_id: SRC-017
+        quote: "Betterment's reported assets under management (AUM) of $65 Billion+"
+        location: Betterment disclosure section
+      - source_id: SRC-017
+        quote: "Advisory services are provided by Betterment LLC, an SEC-registered investment adviser."
+        location: Betterment disclosures
+    analyst_interpretation: Betterment is a scaled robo-advice comparator, especially for automated portfolio performance and fee benchmarking.
+    limitations: Betterment public claims are not a full competitor diligence package.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-008
+        - T-009
+      figure_ids:
+        - F-005
+        - F-010
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-018
+    claim: Chime publicly markets fee-free banking, savings, debit/credit products, cash back, direct deposit, and a partner-bank model.
+    evidence_summary: Chime's homepage describes checking, savings, credit/cash-back products, fee-free banking, 47,000-plus fee-free ATMs, direct deposit, and banking services through The Bancorp Bank and Stride Bank.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: "Chime is a fintech, not a bank."
+        location: Chime homepage
+      - source_id: SRC-018
+        quote: "Banking services provided by The Bancorp Bank, N.A. or Stride Bank, N.A., Members FDIC."
+        location: Chime disclosure section
+    analyst_interpretation: Chime is not a direct investing competitor but competes for primary consumer financial relationship and direct deposit.
+    limitations: No Stash/Chime customer overlap data was reviewed.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-008
+        - T-009
+      figure_ids:
+        - F-005
+        - F-010
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-019
+    claim: Multiple diligence topics were not publicly verifiable in this run, including audited financials, current cap table, customer concentration, litigation schedules, exam history, compensation, equity plans, and vendor contracts.
+    evidence_summary: Public sources reviewed provided marketing, disclosure, financing, product, and competitor evidence but not private company records or official legal schedules.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: medium
+    source_ids:
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: "Public-source research log: private financials, cap table, litigation schedules, customer cohort data, compensation records, and partner contracts were not available in the reviewed public sources."
+        location: Analyst research log
+    analyst_interpretation: The absence of public records is a diligence gap and should not be interpreted as proof of clean status.
+    limitations: This is based on the reviewed public source set, not exhaustive paid database, counsel, regulator, or interview work.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+        - T-003
+        - T-007
+        - T-013
+        - T-015
+        - T-018
+      figure_ids:
+        - F-006
+        - F-008
+        - F-009
+        - F-010
+      risk_ids:
+        - R-001
+        - R-002
+        - R-006
+        - R-007
+  - evidence_claim_id: EC-020
+    claim: Stash's disclosures create a high regulatory surface because advisory, brokerage, banking access, card rewards paid in securities, investment-risk disclosures, and personalized AI advice coexist in one consumer product.
+    evidence_summary: Stash disclosures state non-bank status, partner-bank banking services, RIA and broker-dealer entities, Apex clearing/custody, investment risk, Stock-Back reward limitations, Smart Portfolio authority/fees, and AI Money Coach advice status.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: "Stash Banking services provided by Stride Bank, N.A., Member FDIC."
+        location: Plans disclosure footnotes
+      - source_id: SRC-006
+        quote: "Recommendations through the Diversification Analysis tool and the AI Money Coach tool are considered personalized investment advice."
+        location: Invest page disclosure footnotes
+      - source_id: SRC-011
+        quote: "cryptocurrencies are not FDIC or SIPC insured"
+        location: Crypto access release/disclosures
+    analyst_interpretation: The public disclosures themselves justify priority regulatory diligence even before any enforcement history is reviewed.
+    limitations: No regulator exam, deficiency, consent order, complaint, or arbitration file was available publicly in this run.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-006
+        - FC-007
+      table_ids:
+        - T-006
+        - T-016
+        - T-017
+        - T-018
+      figure_ids:
+        - F-003
+        - F-004
+        - F-010
+      risk_ids:
+        - R-002
+        - R-003
+        - R-005
+
+sources:
+  - source_id: SRC-001
+    title: List of unicorn startup companies
+    url: https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: market_database
+    reliability_notes: Public secondary source used for random candidate selection; individual facts require corroboration.
+    archive_url: https://r.jina.ai/https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
+  - source_id: SRC-002
+    title: About Stash
+    url: https://www.stash.com/about
+    publisher: Stash
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary company source; metrics are not independently audited in the public page.
+    archive_url: null
+  - source_id: SRC-003
+    title: Stash Raises $125 Million in Series G Funding; Surpasses $1.4 Billion Valuation
+    url: https://www.prnewswire.com/news-releases/stash-raises-125-million-in-series-g-funding-surpasses-1-4-billion-valuation-301229707.html
+    publisher: PR Newswire
+    author: Stash / PR Newswire
+    publication_date: 2021-02-03
+    accessed_date: 2026-05-14
+    source_type: independent_news
+    reliability_notes: Press-release distribution source; strong for announcement existence, less strong for unaudited company metrics.
+    archive_url: null
+  - source_id: SRC-004
+    title: With $4.3B Under Management, Stash Secures $146M Series H To Lead the Next Era of AI-Driven Financial Guidance
+    url: https://www.stash.com/news/stash-secures-146m-series-h/
+    publisher: Stash
+    author: null
+    publication_date: 2025-05-12
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary financing announcement; operating metrics are company-reported.
+    archive_url: null
+  - source_id: SRC-005
+    title: Stash plans and pricing
+    url: https://www.stash.com/plans
+    publisher: Stash
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary pricing and disclosure page; plans and pricing may change.
+    archive_url: null
+  - source_id: SRC-006
+    title: Stash invest
+    url: https://www.stash.com/invest
+    publisher: Stash
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary product page with investment and disclosure language.
+    archive_url: null
+  - source_id: SRC-007
+    title: Stash legal disclosures and advisory agreements
+    url: https://www.stash.com/disclosures/stash-advisory-agreements
+    publisher: Stash
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary disclosure page; does not replace full ADV, CRS, agreements, or regulatory filings.
+    archive_url: null
+  - source_id: SRC-008
+    title: Co-Founders Brandon Krieg and Ed Robinson Return as Stash Co-CEOs
+    url: https://www.stash.com/news/co-founders-brandon-krieg-and-ed-robinson-return-as-stash-co-ceos/
+    publisher: Stash
+    author: null
+    publication_date: 2024-10-08
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary company announcement; motivations and transition documents are not public.
+    archive_url: null
+  - source_id: SRC-009
+    title: Stash named to CNBC World's Top Fintech Companies 2024
+    url: https://www.stash.com/news/stash-named-to-cnbc-worlds-top-fintech-companies-2024/
+    publisher: Stash
+    author: null
+    publication_date: 2024-07-10
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Company announcement referencing CNBC/Statista recognition; business metrics are company-reported.
+    archive_url: null
+  - source_id: SRC-010
+    title: Stash introduces Amy Butte, former CFO of NYSE, as first-ever independent audit chair
+    url: https://www.stash.com/news/stash-introduces-amy-butte-former-cfo-of-nyse-as-first-ever-independent-audit-chair/
+    publisher: Stash
+    author: null
+    publication_date: 2023-10-13
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary announcement of audit chair and financing; audit committee materials are private.
+    archive_url: null
+  - source_id: SRC-011
+    title: Stash announces expanded crypto access
+    url: https://www.stash.com/news/stash-announces-expanded-crypto-access/
+    publisher: Stash
+    author: null
+    publication_date: 2022-10-04
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary historical product announcement; current crypto availability and remediation history require follow-up.
+    archive_url: null
+  - source_id: SRC-012
+    title: Stash Agrees to Acquire Stockpile Kids Accounts
+    url: https://www.stash.com/news/stash-agrees-to-acquire-stockpile-kids-accounts/
+    publisher: Stash
+    author: null
+    publication_date: 2026-03-19
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary announcement; transaction terms are undisclosed.
+    archive_url: null
+  - source_id: SRC-013
+    title: Stash careers
+    url: https://www.stash.com/careers
+    publisher: Stash
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Primary careers page; weak evidence for actual staffing and culture metrics.
+    archive_url: null
+  - source_id: SRC-014
+    title: Acorns homepage
+    url: https://www.acorns.com/
+    publisher: Acorns
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Competitor-owned source used for product-overlap mapping.
+    archive_url: null
+  - source_id: SRC-015
+    title: Robinhood homepage / product overview
+    url: https://robinhood.com/us/en/about/
+    publisher: Robinhood
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Competitor-owned source used for product-overlap mapping.
+    archive_url: null
+  - source_id: SRC-016
+    title: SoFi Invest
+    url: https://www.sofi.com/invest/
+    publisher: SoFi
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Competitor-owned source used for product-overlap mapping.
+    archive_url: null
+  - source_id: SRC-017
+    title: Betterment automated investing
+    url: https://www.betterment.com/investing/
+    publisher: Betterment
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Competitor-owned source used for product-overlap mapping.
+    archive_url: null
+  - source_id: SRC-018
+    title: Chime homepage
+    url: https://www.chime.com/
+    publisher: Chime
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-14
+    source_type: primary_company_source
+    reliability_notes: Competitor-owned source used for product-overlap mapping.
+    archive_url: null
+  - source_id: SRC-019
+    title: Analyst public-source search log and limitations
+    url: null
+    publisher: GitHub Copilot
+    author: GitHub Copilot
+    publication_date: 2026-05-14
+    accessed_date: 2026-05-14
+    source_type: analyst_estimate
+    reliability_notes: Internal research log documenting public-source gaps; not a primary source for company facts.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Public financial opacity and unaudited performance claims
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Stash discloses scale, profitability, margin, and financing claims, but audited financials, revenue, net income, cash, debt, burn, CAC, churn, and EBITDA reconciliation are not public.
+    impacted_chapter_ids:
+      - I
+      - V
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - I.D
+      - V.E
+    evidence_claim_ids:
+      - EC-003
+      - EC-008
+      - EC-009
+      - EC-019
+    mitigation_or_diligence_request: Request audited financials, monthly KPI pack, EBITDA bridge, cohort economics, revenue-recognition policy, cash runway, and debt/liability schedules.
+  - risk_id: R-002
+    risk_title: High regulatory complexity across advice, brokerage, banking access, rewards, crypto history, and AI
+    risk_category: regulatory
+    severity: high
+    likelihood: high
+    description: Stash's public disclosures show RIA, broker-dealer, banking-partner, Stock-Back securities rewards, crypto history, and AI-personalized advice surfaces that require specialist compliance review.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.A
+      - VIII.G
+    evidence_claim_ids:
+      - EC-006
+      - EC-012
+      - EC-020
+    mitigation_or_diligence_request: Conduct SEC/FINRA/state/banking-partner regulatory diligence, including exams, complaints, marketing reviews, Form ADV/CRS, AI supervision, and Stock-Back disclosures.
+  - risk_id: R-003
+    risk_title: Partner and operational dependency
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: Stash relies on external partners for banking, card issuance/licensing, clearing/custody, insurance benefits, Stockpile transition, and likely technology functions not fully visible publicly.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.B
+      - III.E
+      - VIII.F
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-011
+      - EC-020
+    mitigation_or_diligence_request: Review contracts, SLAs, termination rights, audit reports, incident history, vendor-risk assessments, fourth-party dependencies, and contingency plans.
+  - risk_id: R-004
+    risk_title: Competitive pressure and customer acquisition economics
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Public competitor pages show overlap from Acorns, Robinhood, SoFi, Betterment, and Chime across investing, automated advice, banking, rewards, and primary financial relationship.
+    impacted_chapter_ids:
+      - III
+      - IV
+      - V
+    impacted_section_ids:
+      - III.A
+      - IV.A
+      - V.A
+      - V.C
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+    mitigation_or_diligence_request: Request CAC/payback, channel mix, price elasticity, win/loss, churn reason, direct-deposit ownership, and competitor overlap studies.
+  - risk_id: R-005
+    risk_title: AI advice suitability and model governance
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Stash reports AI engagement and discloses AI Money Coach recommendations as personalized investment advice, but public materials do not show model-risk controls or suitability testing.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VI.B
+      - VIII.G
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-013
+      - EC-020
+    mitigation_or_diligence_request: Review AI governance, model cards, prompt/response logs, suitability test cases, escalation paths, disclosures, complaint review, and regulatory correspondence.
+  - risk_id: R-006
+    risk_title: Management transition, co-CEO governance, and staffing capacity
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public releases show co-founders returning as co-CEOs after a period with Liza Landsman as CEO, but full org design, turnover, compensation, and control-function staffing are private.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.G
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-019
+    mitigation_or_diligence_request: Request org chart, leadership transition memo, board minutes, retention plan, attrition data, executive contracts, and control-function staffing plan.
+  - risk_id: R-007
+    risk_title: Stale public valuation and unknown preference stack
+    risk_category: financing
+    severity: medium
+    likelihood: high
+    description: The latest public valuation found was the 2021 $1.4 billion-plus Series G valuation; the 2025 Series H disclosed amount and investors but no valuation or security terms.
+    impacted_chapter_ids:
+      - I
+      - VII
+    impacted_section_ids:
+      - I.C
+      - VII.E
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-019
+    mitigation_or_diligence_request: Request current cap table, round documents, liquidation preference waterfall, debt/warrants, secondaries, option pool, and 409A history.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, revenue, EBITDA bridge, gross-margin methodology, cash, debt, burn, and runway.
+    why_it_matters: Public profitability and gross-margin claims cannot be underwritten without financial-quality support.
+    suggested_source_or_request: Request 2023-2025 audits, 2026 YTD financials, board KPI pack, bank statements, debt schedule, and revenue recognition memo.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, valuation, preference stack, option pool, SAFEs/notes, debt, and 409A history.
+    why_it_matters: Public valuation is stale and later financing terms could change common-equity value and exit economics.
+    suggested_source_or_request: Request cap table export, financing documents, investor side letters, debt/warrant documents, and waterfall model.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Cohort retention, ARPU, LTV/CAC, churn, assets per user, funded-account rate, complaint rate, and customer concentration.
+    why_it_matters: Headline subscriber and account counts do not prove durable, profitable customer relationships.
+    suggested_source_or_request: Request anonymized cohort KPI pack and customer reference/interview plan.
+    priority: high
+  - gap_id: G-004
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: SEC/FINRA/state/bank-partner exams, deficiency letters, complaints, arbitrations, marketing reviews, AI-advice controls, and crypto legacy remediation.
+    why_it_matters: Regulatory exposure is one of the highest-risk diligence areas for this business model.
+    suggested_source_or_request: Request regulatory correspondence, exam reports, complaint logs, arbitration schedule, compliance policies, and AI governance records.
+    priority: high
+  - gap_id: G-005
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Material partner contracts and vendor risk assessments for Stride, Apex, Mastercard, Avibra, Stockpile, cloud, KYC/fraud, and AI/model providers.
+    why_it_matters: Partner termination, repricing, service failure, or compliance breach could disrupt core product functions.
+    suggested_source_or_request: Request executed contracts, amendments, SLAs, SOC reports, vendor due-diligence files, and contingency plans.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Functional org chart, hiring plan, attrition, compensation, equity plan, and control-function capacity.
+    why_it_matters: Stash appears lean relative to a broad regulated AI-enabled product surface.
+    suggested_source_or_request: Request HRIS export, org chart, open roles, attrition data, compensation plan, and equity plan.
+    priority: medium
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited 2023-2025 financials, 2026 YTD monthly financials, EBITDA bridge, gross-margin methodology, cash/debt schedule, and board-approved budget.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide current fully diluted cap table, all financing documents, side letters, debt/warrants, option plan, 409A history, and liquidation-preference waterfall.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide a KPI dictionary and monthly bridge for accounts, unique users, active subscribers, paying subscribers, funded accounts, AUM/assets, churn, ARPU, and LTV/CAC by cohort.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide SEC, FINRA, state, banking-partner, and consumer-protection exam/correspondence files; complaint and arbitration logs; marketing approvals; and AI advice supervision policies.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-005
+    chapter_id: VIII
+    section_id: VIII.F
+    request: Provide executed contracts and amendments for Stride, Apex, Mastercard, Avibra, Stockpile, KYC/fraud, cloud, market-data, app-store, and AI/model providers.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide AI Money Coach model governance materials, evaluation datasets, prompt/response logging policy, suitability test cases, incident reports, complaint reviews, and human-supervision procedures.
+    requested_from: company
+    priority: high
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.C
+    request: Provide customer acquisition channel mix, CAC/payback by channel, StashWorks pipeline, app-store metrics, referral/rewards conversion, and Stockpile migration retention assumptions.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide current org chart, headcount by function/location, open roles, attrition, compensation bands, equity refresh plan, and control-function staffing assessment.
+    requested_from: company
+    priority: medium
+
+limitations:
+  - limitation_id: L-001
+    description: Public research relied heavily on company-owned sources because audited financials, cap table, regulatory files, customer data, contracts, and official legal schedules are private.
+    affected_chapter_ids:
+      - I
+      - III
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.A
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-002
+    description: Some public pages and databases were inaccessible, paywalled, CAPTCHA-protected, mismatched to another company, or not reliable enough to cite; no access controls were bypassed.
+    affected_chapter_ids:
+      - I
+      - IV
+      - VIII
+    affected_section_ids:
+      - I.C
+      - IV.A
+      - VIII.A
+  - limitation_id: L-003
+    description: Competitor analysis uses competitor-owned product pages and qualitative analyst positioning, not market-share, pricing-elasticity, CAC, or customer win/loss data.
+    affected_chapter_ids:
+      - IV
+      - V
+    affected_section_ids:
+      - IV.A
+      - V.C
+  - limitation_id: L-004
+    description: Litigation and regulatory conclusions are limited to public-source review in this run and should not be treated as legal opinions or exhaustive docket/regulator searches.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.G
+  - limitation_id: L-005
+    description: The latest public valuation identified was from 2021; the 2025 Series H amount is public but valuation and security terms are not public.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.C
