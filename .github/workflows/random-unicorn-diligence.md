@@ -60,12 +60,14 @@ network:
 
 engine:
   id: copilot
-  model: claude-sonnet-4.6
+  model: gpt-5.4
+  args:
+    - --effort
+    - xhigh
 
 tools:
   web-fetch:
   bash: true
-  cache-memory: true
 
 safe-outputs:
   create-pull-request:
@@ -85,7 +87,7 @@ Pick one private startup unicorn not already covered in `reports/`, produce a ne
 ## Steps
 
 1. Pick a target unicorn.
-  - Build covered slugs from `reports/*-diligence-report.yaml` (strip suffix) plus `/tmp/gh-aw/cache-memory/recently-attempted.json`.
+  - Build covered slugs from `reports/*-diligence-report.yaml` (strip suffix).
   - Fetch one or more current unicorn lists from reputable public sources (Wikipedia, CB Insights, etc.). Use `web-fetch`; for search use `https://html.duckduckgo.com/html/?q=...` or `https://r.jina.ai/https://...`.
   - Build at least 30 candidates.
   - Normalize each candidate slug: lowercase, ASCII, non-alphanumerics replaced with `-`.
@@ -99,7 +101,6 @@ Pick one private startup unicorn not already covered in `reports/`, produce a ne
   - Never fabricate.
 
 3. Open the draft PR.
-  - Append `<slug>` to `/tmp/gh-aw/cache-memory/recently-attempted.json` (create as `[]` if missing; keep only the last 200 entries).
   - Open a draft PR via `create-pull-request`:
     - Branch: `unicorn-diligence/<slug>`
     - Title: `[unicorn-diligence] Add diligence report for <Company Name>`
