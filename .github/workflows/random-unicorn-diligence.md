@@ -11,6 +11,9 @@ on:
 
 permissions: read-all
 
+env:
+  COPILOT_PROVIDER_WIRE_API: responses
+
 network:
   allowed:
     - defaults
