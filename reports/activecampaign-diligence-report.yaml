@@ -1,0 +1,4339 @@
+report_metadata:
+  report_title: ActiveCampaign Public-Source Startup Diligence Report
+  target_company: ActiveCampaign
+  website: https://www.activecampaign.com/
+  known_aliases:
+    - ActiveCampaign, LLC
+    - ActiveCampaign Postmark
+    - Postmark
+    - Onesend
+    - Hilos
+  sector: Marketing automation, customer experience automation, sales CRM, messaging, and transactional email SaaS
+  geography: United States headquartered with customers and hubs across North America, Latin America, Europe, APAC, and Australia
+  company_stage: Late-stage private SaaS unicorn
+  research_date: 2026-05-15
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built the target from a public unicorn candidate list, normalized slugs, excluded existing report slugs, and selected ActiveCampaign at random from uncovered private candidates.
+    - Prioritized company-owned sources including the about page, product pages, pricing, integrations, customers, security, legal, privacy, terms, and careers pages.
+    - Used independent sources including PRNewswire, PCMag, Built In Chicago, Nearshore Americas, MediaPost, Wikipedia, and USPTO mirror pages where direct official pages were accessible.
+    - Treated customer ROI metrics, review counts, AI-performance claims, and marketing superiority claims as company-authored unless independently corroborated.
+    - Marked private financial statements, customer concentration, churn, cap table, debt, material contracts, insurance, litigation docket details, and employee turnover as not publicly verifiable.
+  included_jurisdictions:
+    - United States
+    - Ireland
+    - Brazil
+    - Poland
+    - Costa Rica
+    - Australia
+    - Mexico
+    - European Union
+  excluded_topics:
+    - No private financial statements, bank statements, board materials, forecasts, or quality-of-earnings materials were available.
+    - No data-room exports for customer cohorts, churn, NRR, top accounts, pipeline, partner economics, or reseller contracts were available.
+    - No management, customer, investor, auditor, counsel, employee, supplier, or regulator interviews were performed.
+    - No paid court-docket, lien, insurance, sanction-screening, or cap-table databases were accessed.
+    - Several public web sources were inaccessible, rate-limited, geo-restricted, or CAPTCHA-protected and are disclosed in limitations.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-15
+      notes: The user requested one new public-source unicorn diligence report and a draft PR; no company documents or founder claims were supplied.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: ActiveCampaign helps more than 180,000 customers in more than 170 countries with intelligent marketing automation.
+    claim_source: ActiveCampaign about and customers pages
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-019
+    contradiction_summary: The broad customer-count and country-reach claims are supported by company pages and a 2021 press release, but account-level concentration, churn, and active-paying-customer definitions are not public.
+    diligence_follow_up:
+      - Request a customer cohort schedule by month, ARR band, geography, product, and channel for the last 36 months.
+      - Request an auditor or finance reconciliation from stated customer counts to billable accounts and ARR.
+  - founder_claim_id: FC-002
+    claim_text: ActiveCampaign is a private Chicago-based SaaS company founded by Jason VandeBoom in 2003 and transitioned from on-premise software to SaaS.
+    claim_source: ActiveCampaign about page, Wikipedia, and Built In Chicago
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - II
+      - VII
+    mapped_section_ids:
+      - I.B
+      - II.A
+      - VII.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-018
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm current legal-entity structure, material subsidiaries, founder ownership, option pool, and investor rights from corporate records.
+  - founder_claim_id: FC-003
+    claim_text: ActiveCampaign raised a $240 million Series C in 2021, bringing total financing to approximately $360 million and valuation to over $3 billion.
+    claim_source: ActiveCampaign/PRNewswire funding announcement
+    claim_date: 2021-04-21
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+      - EC-020
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request the full capitalization table, financing documents, liquidation preferences, secondary sales, debt, warrants, and any valuation marks since the 2021 Series C.
+  - founder_claim_id: FC-004
+    claim_text: ActiveCampaign offers email marketing, marketing automation, CRM, SMS, WhatsApp, transactional email, AI agents, and more than 1,000 integrations.
+    claim_source: ActiveCampaign product, apps, and Active Intelligence pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - VI
+    mapped_section_ids:
+      - II.A
+      - III.B
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request product-level ARR, gross margin, attach rates, usage retention, roadmap commitments, and third-party dependency SLAs.
+  - founder_claim_id: FC-005
+    claim_text: ActiveCampaign is heavily focused on GDPR, SOC 2, and HIPAA compliance and provides proactive security controls.
+    claim_source: ActiveCampaign security, legal, terms, and privacy pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VIII
+    mapped_section_ids:
+      - II.B
+      - VIII.F
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-016
+    contradiction_summary: The company discloses controls and Trust Center materials, but SOC 2 reports, penetration-test attestations, HIPAA scope, customer-incident data, and remediation evidence require direct document review.
+    diligence_follow_up:
+      - Request current SOC 2 Type II, HIPAA/BAA scope, latest penetration-test attestation, security-incident register, and customer-notification history.
+
+executive_summary:
+  overall_assessment: >-
+    ActiveCampaign is a credible late-stage private marketing-automation SaaS unicorn with verified public anchors for founding history, major funding, broad product coverage, global customer reach, and a mature security/legal posture. The investment case depends on private diligence because the public record does not verify current ARR, growth, gross margin, churn, NRR, customer concentration, debt, cash runway, or post-2021 valuation quality.
+  investment_or_diligence_thesis: >-
+    Public evidence supports a scaled SMB and mid-market automation platform with cross-channel email, CRM, SMS, WhatsApp, transactional email, AI agents, and a large integration ecosystem. The central diligence question is whether ActiveCampaign can defend premium automation pricing and healthy retention against broad-suite competitors, entry-level email tools, e-commerce specialists, and AI-native workflows while staying compliant across consent-driven messaging channels.
+  strongest_verified_claims:
+    - founder_claim_id: FC-002
+      summary: ActiveCampaign's founding, Chicago headquarters, private status, and shift from on-premise software to SaaS are supported by company and independent sources.
+      evidence_claim_ids:
+        - EC-001
+        - EC-018
+    - founder_claim_id: FC-003
+      summary: The 2021 Series C round, total financing figure, disclosed ARR, and over $3 billion valuation are directly supported by a PRNewswire funding announcement.
+      evidence_claim_ids:
+        - EC-002
+    - founder_claim_id: FC-004
+      summary: The product suite and integration breadth are supported by current company product, apps, pricing, and independent PCMag review evidence.
+      evidence_claim_ids:
+        - EC-004
+        - EC-005
+        - EC-006
+        - EC-008
+  biggest_risks:
+    - risk_id: R-001
+      summary: Current financial quality, growth, margin, cash runway, debt, valuation marks, and cap-table economics are not public.
+    - risk_id: R-002
+      summary: Martech competition spans low-cost email tools, full-suite CRM clouds, e-commerce automation specialists, and AI-native workflow vendors, creating pricing and positioning pressure.
+    - risk_id: R-003
+      summary: Email, SMS, WhatsApp, privacy, data-transfer, and consent obligations create regulatory and platform-policy exposure.
+  key_evidence_gaps:
+    - Current ARR, GAAP revenue, gross margin, EBITDA, free cash flow, cash balance, burn, debt, and runway.
+    - Net revenue retention, gross retention, logo churn, cohort behavior, customer concentration, and expansion by segment.
+    - Cap table, liquidation preferences, investor rights, debt instruments, option pool, and post-2021 valuation marks.
+    - Product-level ARR, AI adoption, WhatsApp/SMS economics, deliverability metrics, and third-party dependency SLAs.
+    - Litigation docket details, customer claims, regulatory inquiries, insurance coverage, and breach-remediation history.
+  recommended_next_steps:
+    - Require a finance data room with monthly ARR bridge, revenue recognition memo, cohort tables, deferred revenue, AR aging, gross margin detail, and cash runway.
+    - Run customer calls across SMB, mid-market, agency/reseller, e-commerce, WhatsApp, and CRM use cases to validate retention drivers and switching costs.
+    - Review current security, privacy, DPA, SOC 2, HIPAA, incident, deliverability, and Meta/WhatsApp compliance materials with counsel and technical diligence.
+    - Benchmark pricing, win/loss, discounting, CAC payback, and expansion against HubSpot, Mailchimp/Intuit, Klaviyo, Brevo, Salesforce, Campaigner, and niche AI automation tools.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public sources verify substantial outside financing and a 2021 ARR anchor, but current financial performance and capitalization economics remain private diligence items.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-020
+    risk_ids:
+      - R-001
+      - R-006
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+        summary: ActiveCampaign publicly disclosed $165 million ARR in 2021 and Wikipedia lists a 2024 revenue figure, but no audited financial statements, current ARR bridge, profitability, cash, debt, or unit economics were available.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: A 2021 company funding announcement disclosed $165 million ARR and strong customer-scale metrics at the time of the Series C.
+            evidence_claim_ids:
+              - EC-002
+            risk_ids:
+              - R-001
+          - finding_id: I.A-F2
+            finding: Current revenue quality, margin, burn, cash runway, debt, and audited statements are not publicly verifiable.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - A high 2021 valuation could be stale if growth slowed, SMB churn increased, or SaaS multiples compressed.
+          - Public customer-count growth does not prove billable-account quality, retention, or expansion.
+        evidence_gaps:
+          - Audited income statements, balance sheets, cash-flow statements, ARR roll-forward, bookings, deferred revenue, AR aging, and cohort metrics.
+          - Current cash balance, debt, burn, and runway.
+        follow_up_questions:
+          - What are monthly ARR, GAAP revenue, gross margin, EBITDA, free cash flow, cash, and debt for the last 36 months?
+          - How much of ARR is email, CRM, SMS, WhatsApp, transactional email, reseller, partner, and professional-services revenue?
+        table_ids:
+          - T-001
+          - T-003
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids:
+          - EC-002
+          - EC-020
+      - section_id: I.B
+        title: Capitalization, ownership, financing, and valuation
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+        summary: ActiveCampaign's major external rounds are public, but ownership percentages, investor rights, liquidation preferences, secondary sales, debt, and option-pool status are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public sources identify Silversmith, Susquehanna Growth Equity, Tiger Global, and Dragoneer as major financing participants across Series A-C.
+            evidence_claim_ids:
+              - EC-002
+            risk_ids:
+              - R-001
+          - finding_id: I.B-F2
+            finding: Capital structure cannot be assessed without a private cap table and financing documents.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Investor preferences, ratchets, debt covenants, secondary proceeds, or repricing could materially change common-equity value.
+          - A post-2021 mark-down or down-round signal may not be visible in public sources.
+        evidence_gaps:
+          - Fully diluted cap table, preferred-stock terms, SAFE/note/debt instruments, board rights, option grants, and 409A history.
+        follow_up_questions:
+          - Provide the current cap table, financing documents, liquidation stack, option-pool roll-forward, debt agreements, and any secondary transaction details.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-020
+
+  - chapter_id: II
+    title: Products
+    chapter_summary: The product portfolio is broad and publicly visible, spanning marketing automation, email, CRM, SMS, WhatsApp, transactional email, AI agents, integrations, and security controls; product-level economics and adoption remain private.
+    founder_claim_ids:
+      - FC-004
+      - FC-005
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-008
+      - EC-010
+    risk_ids:
+      - R-004
+      - R-007
+    sections:
+      - section_id: II.A
+        title: Product and technology offering
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+        summary: ActiveCampaign operates a multi-product customer-experience automation platform with email, CRM, SMS, WhatsApp, transactional email, AI agents, and extensive integrations.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Company product pages and PCMag independently support a broad automation product suite with email, CRM, segmentation, predictive sending, and integrations.
+            evidence_claim_ids:
+              - EC-004
+              - EC-008
+            risk_ids:
+              - R-004
+          - finding_id: II.A-F2
+            finding: Active Intelligence is positioned around AI agents, campaign building, AI-suggested segments, predictive sending, and AI-tool connectors, but public sources do not verify adoption or product-level ROI.
+            evidence_claim_ids:
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Broad feature scope may create onboarding complexity, support load, and product-surface area for security or deliverability incidents.
+          - AI agents may raise differentiation expectations before measurable adoption, margin, or retention benefits are proven.
+        evidence_gaps:
+          - Product-level ARR, gross margin, usage retention, attach rates, R&D spend, AI model cost, latency, reliability, and incident history.
+        follow_up_questions:
+          - Which SKUs drive new ARR and expansion, and what are attach rates for SMS, WhatsApp, CRM, Postmark, and AI features?
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-006
+          - EC-008
+      - section_id: II.B
+        title: Product security, reliability, and service dependencies
+        checklist_question_ids:
+          - II.B.1
+          - II.B.2
+          - II.B.3
+        summary: ActiveCampaign publishes security and legal materials, but the current audit reports, SLAs, penetration-test attestations, incident history, and third-party dependency contracts require direct diligence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.B-F1
+            finding: The company claims GDPR, SOC 2, and HIPAA focus, single-tenancy architecture, MFA, SSO, session management, automated scanning, and internal red-team work.
+            evidence_claim_ids:
+              - EC-010
+            risk_ids:
+              - R-005
+          - finding_id: II.B-F2
+            finding: Terms disclose beta-feature risk, payment processor dependency, and WhatsApp service dependencies on eligibility, credits, usage limits, and changes or discontinuation.
+            evidence_claim_ids:
+              - EC-011
+              - EC-012
+            risk_ids:
+              - R-003
+              - R-007
+        hidden_risks:
+          - Meta/WhatsApp, telecom, payment, email deliverability, and integration-platform policies can change outside ActiveCampaign's control.
+          - Security posture cannot be fully validated without reports, logs, customer controls testing, and historical incident records.
+        evidence_gaps:
+          - Current SOC 2 report, penetration-test attestation, uptime history, disaster-recovery tests, incident postmortems, and material vendor agreements.
+        follow_up_questions:
+          - Provide current Trust Center documents, third-party vendor list, service uptime history, and remediation evidence for recent material incidents.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+          - EC-016
+
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public sources show a large, global, diverse customer base and many case studies, but they do not reveal concentration, churn, cohort retention, reseller economics, or customer-level ARR.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-019
+    risk_ids:
+      - R-001
+      - R-007
+    sections:
+      - section_id: III.A
+        title: Customers, cohorts, concentration, and retention
+        checklist_question_ids:
+          - III.A.1
+          - III.A.2
+          - III.A.3
+          - III.C.1
+        summary: ActiveCampaign lists more than 180,000 customers, customer stories across sectors and geographies, and 104 customer-story entries, but does not publish top-account concentration or churn metrics.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Company pages report more than 180,000 customers and customers in more than 170 countries, with named stories including Paperbell, Pit Boss Grills, MSI Chicago, Artivive, and Ducks Unlimited Canada.
+            evidence_claim_ids:
+              - EC-003
+              - EC-007
+            risk_ids:
+              - R-001
+          - finding_id: III.A-F2
+            finding: Customer concentration, churn, NRR, expansion, and average revenue per account are not publicly verifiable.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - SMB and solopreneur customer mix can elevate logo churn and support costs relative to enterprise SaaS.
+          - Named case studies may overrepresent successful customers and not reflect retention or monetization of the broader base.
+        evidence_gaps:
+          - Top-25 customers by ARR, churn by cohort and ARR band, NRR/GRR, reseller/agency account structure, customer references, and support-ticket trends.
+        follow_up_questions:
+          - What share of ARR is from top 10, top 25, SMB, mid-market, enterprise, agency/reseller, and international customers?
+        table_ids:
+          - T-006
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+          - EC-019
+      - section_id: III.B
+        title: Strategic relationships, partners, and platform dependencies
+        checklist_question_ids:
+          - III.B.1
+          - III.D.1
+          - III.E.1
+        summary: ActiveCampaign markets more than 1,000 integrations and product dependencies across Shopify, Salesforce, Meta, WhatsApp, Zapier, Make, payment tools, and developer APIs; public sources do not quantify partner revenue or supplier concentration.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: ActiveCampaign's integration ecosystem is public and extensive, including core CRM, e-commerce, advertising, productivity, data, and automation platforms.
+            evidence_claim_ids:
+              - EC-004
+            risk_ids:
+              - R-007
+          - finding_id: III.B-F2
+            finding: WhatsApp and SMS products expose the company to Meta, telecom, consent, deliverability, and local regulatory dependencies.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-003
+              - R-007
+        hidden_risks:
+          - Changes in Meta, telecom carrier, e-commerce platform, API, app-store, or email-provider rules could impair customer workflows.
+          - No public data shows the economics, rev-share, contractual durability, or performance obligations of key partners.
+        evidence_gaps:
+          - Partner contracts, supplier SLAs, reseller agreements, partner-sourced ARR, integration failure rates, and dependency remediation plans.
+        follow_up_questions:
+          - Which partners or suppliers are material to ARR, uptime, deliverability, data access, or customer acquisition?
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-012
+
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: ActiveCampaign occupies a mid-market automation position between low-cost email tools and broad enterprise CRM suites, but competitive pressure from HubSpot, Mailchimp, Brevo, Klaviyo, Salesforce, Campaigner, and AI-native workflows is material.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    risk_ids:
+      - R-002
+      - R-004
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape and positioning
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+          - IV.A.3
+        summary: Independent PCMag evidence positions ActiveCampaign as stronger than entry-level newsletter tools for automation, less broad than enterprise CRM suites, and subject to pricing growth as contact lists scale.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: PCMag describes ActiveCampaign as bridging simple newsletter tools and enterprise email ecosystems, with predictive sending, HIPAA compliance, and mid-market pricing.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-002
+          - finding_id: IV.A-F2
+            finding: PCMag flags a steep learning curve, contact-list-based price increases, and CRM depth below dedicated platforms.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Product breadth may not fully defend against lower-cost email providers, e-commerce-focused tools, or all-in-one CRM platforms.
+          - AI-native tools can automate workflows outside incumbent martech platforms, pressuring perceived differentiation.
+        evidence_gaps:
+          - Win/loss data, competitive discounting, migration source/destination data, CAC by channel, partner influence, and product-level churn.
+        follow_up_questions:
+          - Provide win/loss analysis against HubSpot, Mailchimp/Intuit, Klaviyo, Brevo, Salesforce, Campaigner, and AI-native workflow tools.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: ActiveCampaign uses direct self-serve, demo-led, partner, integration, customer-story, reseller, and international-hub motions, but public sources do not disclose channel mix, CAC, payback, pipeline conversion, or quota productivity.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-009
+    risk_ids:
+      - R-001
+      - R-002
+    sections:
+      - section_id: V.A
+        title: Go-to-market motions, geography, and channels
+        checklist_question_ids:
+          - V.A.1
+          - V.B.1
+          - V.C.1
+        summary: Public sources show a mix of free trial, buy-now pricing, demo-led enterprise paths, customer stories, integrations, partner/reseller references, and international hubs, but not channel economics.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: The website presents self-serve pricing flows, demo calls, partner/integration pathways, and customer-story proof points across many industries.
+            evidence_claim_ids:
+              - EC-006
+              - EC-007
+            risk_ids:
+              - R-002
+          - finding_id: V.A-F2
+            finding: International offices and hubs support global coverage, including Dublin, Brazil, Poland, Costa Rica, Sydney, and other regions.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Global customer count may mask uneven regional profitability, local compliance costs, and partner/reseller margin leakage.
+          - A broad SMB funnel can produce high lead volume but weak payback if churn or low-ARPA segments dominate.
+        evidence_gaps:
+          - CAC, payback, sales cycle, quota attainment, channel mix, lead source, conversion funnel, reseller economics, discounting, and international ARR by region.
+        follow_up_questions:
+          - What are CAC, payback, win rate, churn, and NRR by self-serve, sales-led, partner, reseller, geography, and product bundle?
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+          - EC-007
+          - EC-009
+
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: ActiveCampaign's public R&D narrative emphasizes AI agents, automation, integrations, WhatsApp/SMS expansion, security scanning, and acquired capabilities, but R&D spending, roadmap deliverability, model costs, and technical debt are not public.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-010
+      - EC-014
+    risk_ids:
+      - R-004
+      - R-007
+    sections:
+      - section_id: VI.A
+        title: R&D organization, product pipeline, and technology defensibility
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.B.1
+        summary: The public pipeline centers on Active Intelligence, cross-channel automation, integrations, WhatsApp capabilities, Postmark transactional email, and security practices; internal roadmap, R&D budget, staffing, and technical architecture require private diligence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Active Intelligence product pages describe AI agents for campaign creation, segmentation, scheduling, optimization, and AI-tool connectors.
+            evidence_claim_ids:
+              - EC-005
+            risk_ids:
+              - R-004
+          - finding_id: VI.A-F2
+            finding: Acquisitions of Postmark, Onesend, and Hilos suggest product expansion through M&A in transactional email, reseller/multi-location marketing, and WhatsApp automation.
+            evidence_claim_ids:
+              - EC-014
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Acquired product integration can create platform fragmentation, duplicate systems, and product-roadmap execution risk.
+          - AI features may increase infrastructure cost, privacy review burden, and model-vendor dependency without clear monetization.
+        evidence_gaps:
+          - R&D headcount, roadmap commitments, technical architecture diagrams, uptime SLOs, model/vendor contracts, M&A integration plans, and product telemetry.
+        follow_up_questions:
+          - What are the top R&D roadmap commitments, delivery status, AI-model cost per account, integration debt, and acquired-product migration timelines?
+        table_ids:
+          - T-013
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-010
+          - EC-014
+
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public sources identify founder/CEO Jason VandeBoom and several senior executives, along with global hubs and employee-benefit signals; current headcount, leadership retention, attrition, compensation, and succession depth are not fully public.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-009
+      - EC-013
+    risk_ids:
+      - R-006
+    sections:
+      - section_id: VII.A
+        title: Leadership, governance, and operating team
+        checklist_question_ids:
+          - VII.A.1
+          - VII.B.1
+          - VII.C.1
+        summary: The public record identifies Jason VandeBoom as founder/CEO and names recent senior hires in marketing, revenue, strategy, and finance, but board composition, succession planning, governance rights, and full executive turnover history are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: A 2024 PRNewswire announcement names Amy Kilpatrick as CMO, Carine Roman as CRO, Shay Howe as CSO, and Joy Whinery as CFO while reaffirming Jason VandeBoom as founder/CEO.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-006
+          - finding_id: VII.A-F2
+            finding: ActiveCampaign says all employees receive equity and describes benefits, hybrid work, learning, volunteer time off, and global hubs.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Multiple executive appointments can indicate scaling maturity but also warrant turnover, integration, and culture diligence.
+          - Public headcount anchors vary by year and source, requiring current HRIS validation.
+        evidence_gaps:
+          - Board roster, executive employment agreements, equity grants, retention plans, attrition by function, engagement surveys, diversity metrics, compensation bands, and key-person risk.
+        follow_up_questions:
+          - Provide current leadership roster, board composition, executive turnover since 2021, HRIS headcount, attrition, compensation philosophy, and succession plans.
+        table_ids:
+          - T-015
+          - T-016
+          - T-017
+        figure_ids:
+          - F-008
+          - F-009
+        evidence_claim_ids:
+          - EC-001
+          - EC-009
+          - EC-013
+
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: ActiveCampaign publishes legal, privacy, terms, compliance, and trademark materials and has at least one publicly reported security incident; direct litigation, regulatory-enforcement, insurance, and contractual diligence remain open.
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-015
+      - EC-016
+      - EC-017
+    risk_ids:
+      - R-003
+      - R-005
+      - R-008
+    sections:
+      - section_id: VIII.A
+        title: Litigation, regulatory, compliance, and contractual matters
+        checklist_question_ids:
+          - VIII.A.1
+          - VIII.B.1
+          - VIII.F.1
+          - VIII.G.1
+        summary: Public company legal pages show consent, privacy, DPA, Data Privacy Framework, terms, AUP, API, and WhatsApp-related obligations; blocked court sources and absent data-room materials prevent a complete legal-risk assessment.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: ActiveCampaign legal and privacy pages identify privacy, data-transfer, DPF, CCPA, LGPD, subprocessors, consent, anti-spam, cookie, DPA, SCC, terms, AUP, and SLA materials.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-003
+          - finding_id: VIII.A-F2
+            finding: Terms describe beta-feature risk, payment processor dependency, customer IP/publicity rights, and WhatsApp service conditions.
+            evidence_claim_ids:
+              - EC-011
+              - EC-012
+            risk_ids:
+              - R-003
+              - R-007
+          - finding_id: VIII.A-F3
+            finding: A 2022 MediaPost article reported a social-engineering attack affecting a small number of customer accounts.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Consent-driven email/SMS/WhatsApp marketing creates exposure to TCPA, GDPR, CASL, spam, platform-policy, consumer-protection, and class-action risks.
+          - Social-engineering events can recur if customer account takeover prevention and incident response are not strong.
+          - Public search did not establish absence of litigation or regulatory inquiries.
+        evidence_gaps:
+          - Litigation docket search, regulatory correspondence, insurance policies, customer indemnity claims, breach logs, complaint history, and counsel memos.
+        follow_up_questions:
+          - Counsel should provide a litigation/regulatory schedule, threatened claims, insurance coverage, privacy-impact assessments, incident logs, DPA templates, and material customer-contract exceptions.
+        table_ids:
+          - T-018
+          - T-020
+        figure_ids:
+          - F-010
+          - F-011
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+          - EC-016
+          - EC-017
+      - section_id: VIII.C
+        title: Intellectual property
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Trademark evidence supports ActiveCampaign's core brand registration and ActiveCampaign Postmark trademark filing, while patent, software-code ownership, open-source compliance, and acquisition IP assignment remain private diligence items.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: USPTO mirror evidence shows the ACTIVECAMPAIGN mark live and registered, with first use in 2003 and registration in 2016.
+            evidence_claim_ids:
+              - EC-015
+            risk_ids:
+              - R-008
+          - finding_id: VIII.C-F2
+            finding: A USPTO mirror page shows ACTIVECAMPAIGN POSTMARK as live/pending in 2022, supporting brand integration following the Postmark acquisition.
+            evidence_claim_ids:
+              - EC-015
+              - EC-014
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Acquired software, open-source dependencies, contractor assignments, and AI-model/tooling licenses may carry obligations not visible in trademark records.
+        evidence_gaps:
+          - Patent search, source-code ownership chain, invention assignments, OSS/SBOM review, acquired-company IP assignments, and trademark prosecution histories.
+        follow_up_questions:
+          - Provide IP schedule, registered and unregistered trademarks, patents, OSS policy, SBOM, invention assignments, M&A IP transfer documents, and any IP disputes.
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.A
+    purpose: Summarize public capital-raise evidence and valuation anchors.
+    columns:
+      - name: date
+        description: Public announcement date or year
+      - name: round
+        description: Financing round
+      - name: lead_or_participants
+        description: Publicly named investors
+      - name: amount_usd
+        description: Public amount raised
+      - name: valuation_or_post_money
+        description: Public valuation signal
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: "2016"
+          round: Series A
+          lead_or_participants: Silversmith Capital Partners
+          amount_usd: "$20 million"
+          valuation_or_post_money: Not publicly disclosed
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-003
+      - row_id: T-001-R2
+        values:
+          date: "2020-01"
+          round: Series B
+          lead_or_participants: Susquehanna Growth Equity
+          amount_usd: "$100 million"
+          valuation_or_post_money: Not publicly disclosed
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-003
+      - row_id: T-001-R3
+        values:
+          date: "2021-04-21"
+          round: Series C
+          lead_or_participants: Tiger Global led; Dragoneer, Susquehanna Growth Equity, and Silversmith participated
+          amount_usd: "$240 million"
+          valuation_or_post_money: Over $3 billion
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-002
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: Public sources identify financing events, but not security terms or ownership percentages.
+
+  - table_id: T-002
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.B
+    purpose: Separate public ownership facts from required private cap-table diligence.
+    columns:
+      - name: stakeholder
+        description: Stakeholder or stakeholder class
+      - name: public_position
+        description: Publicly observed position
+      - name: diligence_caveat
+        description: Required private validation
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-002-R1
+        values:
+          stakeholder: Jason VandeBoom
+          public_position: Founder and CEO
+          diligence_caveat: Ownership, voting rights, vesting, and key-person arrangements are not public
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-001
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-019
+      - row_id: T-002-R2
+        values:
+          stakeholder: Preferred investors
+          public_position: Silversmith, Susquehanna Growth Equity, Tiger Global, and Dragoneer are publicly named funding participants
+          diligence_caveat: Preferences, conversion terms, protective provisions, information rights, and liquidation stack are not public
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-020
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-002-R3
+        values:
+          stakeholder: Employees
+          public_position: Careers page states all employees receive equity upon hire
+          diligence_caveat: Option pool, strike prices, refresh grants, forfeitures, and 409A marks are not public
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-023
+    evidence_claim_ids:
+      - EC-002
+      - EC-009
+      - EC-020
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-023
+    notes: Requires company cap table and legal-document review.
+
+  - table_id: T-003
+    title: Public financial, scale, and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Capture financial metrics visible in public sources and highlight missing private metrics.
+    columns:
+      - name: metric
+        description: Metric or KPI
+      - name: public_signal
+        description: Publicly disclosed value
+      - name: source_context
+        description: Evidence context
+      - name: diligence_gap
+        description: Information required for validation
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-003-R1
+        values:
+          metric: ARR
+          public_signal: "$165 million ARR"
+          source_context: 2021 Series C announcement
+          diligence_gap: Current ARR bridge, retention, bookings, and revenue recognition
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: T-003-R2
+        values:
+          metric: Customer count
+          public_signal: "145,000 customers in 2021; over 180,000 customers on current company pages"
+          source_context: Funding announcement and company about/customers pages
+          diligence_gap: Active paying-account definition, churn, concentration, and cohort schedule
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+          - EC-019
+        source_ids:
+          - SRC-001
+          - SRC-002
+          - SRC-004
+      - row_id: T-003-R3
+        values:
+          metric: Gross margin, EBITDA, burn, cash, and debt
+          public_signal: Not publicly disclosed
+          source_context: No public financial statements found
+          diligence_gap: Audited statements and management accounts
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-019
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+    notes: Public scale signals are useful but insufficient for valuation underwriting.
+
+  - table_id: T-004
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map publicly visible product modules to users and evidence.
+    columns:
+      - name: product_or_module
+        description: Public product area
+      - name: audience
+        description: Primary audience
+      - name: key_public_features
+        description: Public features
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-004-R1
+        values:
+          product_or_module: Marketing automation and email
+          audience: SMBs, mid-market marketers, creators, agencies, e-commerce, nonprofits
+          key_public_features: Multi-step automation, segmentation, email marketing, predictive sending, conditional content, campaign builder
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-008
+        source_ids:
+          - SRC-006
+          - SRC-011
+      - row_id: T-004-R2
+        values:
+          product_or_module: Sales CRM
+          audience: Nimble sales and marketing teams
+          key_public_features: Sales pipelines, lead scoring, task management, automations, 1:1 email, sales routing, attribution
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-010
+      - row_id: T-004-R3
+        values:
+          product_or_module: SMS and WhatsApp messaging
+          audience: Marketers needing cross-channel conversational outreach
+          key_public_features: Two-way SMS, opt-in forms, 10DLC, quiet hours, WhatsApp flows, unified inbox, Meta BSP support
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-008
+          - SRC-009
+      - row_id: T-004-R4
+        values:
+          product_or_module: Active Intelligence and integrations
+          audience: Marketers automating campaigns and connected workflows
+          key_public_features: AI agents, AI Campaign Builder, suggested segments, MCP/AI-tool connectors, 1,000+ apps and API access
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-005
+          - SRC-007
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-008
+      - EC-012
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    notes: Product-level revenue, adoption, margins, and reliability are private diligence requests.
+
+  - table_id: T-005
+    title: Pricing and feature posture
+    chapter_id: II
+    section_id: II.A
+    purpose: Compare public plan features and independent pricing observations.
+    columns:
+      - name: tier_or_observation
+        description: Pricing tier or source observation
+      - name: public_features
+        description: Public features or constraints
+      - name: pricing_signal
+        description: Public or independent price signal
+      - name: diligence_gap
+        description: Missing economics
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-005-R1
+        values:
+          tier_or_observation: Starter
+          public_features: Marketing automation, email marketing, limited segmentation, five actions per automation, standard CRM/e-commerce integrations, one user
+          pricing_signal: Company page rendered current price dynamically; PCMag observed Starter from $19/month or $15/month annually
+          diligence_gap: Discounting, ARPA, churn, contact-count expansion, and gross margin
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+          - SRC-011
+      - row_id: T-005-R2
+        values:
+          tier_or_observation: Plus, Pro, Enterprise
+          public_features: Higher user counts, send multiples, segmentation, goals, predictive sending, SSO, premium CRM integrations, HIPAA, custom reporting, and custom objects
+          pricing_signal: PCMag observed Plus $59/month, Professional $89/month, Enterprise $159/month before annual discounts and contact-count scaling
+          diligence_gap: Sales-led discounting, enterprise ACV, implementation fees, product attach
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+        source_ids:
+          - SRC-006
+          - SRC-011
+      - row_id: T-005-R3
+        values:
+          tier_or_observation: Contact-list scaling
+          public_features: Send limits scale by contact count and tier
+          pricing_signal: PCMag reports price increases as contact lists grow and overage rules can lock sending after large excess use
+          diligence_gap: Expansion rate, overage revenue, churn sensitivity, and support burden
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    source_ids:
+      - SRC-006
+      - SRC-011
+    notes: Dynamic current pricing should be rechecked during commercial diligence.
+
+  - table_id: T-006
+    title: Publicly known customers and case studies
+    chapter_id: III
+    section_id: III.A
+    purpose: Capture named customer proof points without overclaiming concentration.
+    columns:
+      - name: customer
+        description: Named customer
+      - name: segment_or_use_case
+        description: Public segment or use case
+      - name: public_outcome_or_quote
+        description: Public outcome
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-006-R1
+        values:
+          customer: Museum of Science and Industry, Chicago
+          segment_or_use_case: Nonprofit/museum email campaigns and contact management
+          public_outcome_or_quote: Company page cites 206 percent revenue growth year over year, strongly supported by email marketing
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+      - row_id: T-006-R2
+        values:
+          customer: Artivive
+          segment_or_use_case: Creator/technology community growth
+          public_outcome_or_quote: Company page cites 47 percent email interaction rate and scaling from 100 artists to 100,000 with one community manager
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+      - row_id: T-006-R3
+        values:
+          customer: Pit Boss Grills
+          segment_or_use_case: E-commerce and retail email campaigns
+          public_outcome_or_quote: Company page cites $76,717 revenue from a single email campaign
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+          - SRC-004
+      - row_id: T-006-R4
+        values:
+          customer: Paperbell and Motrain
+          segment_or_use_case: SaaS/technology and education customer nurturing
+          public_outcome_or_quote: Customer page lists personalized outreach, automation, and segmentation use cases
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-007
+    source_ids:
+      - SRC-001
+      - SRC-004
+    notes: Case studies are company-authored and need customer reference calls.
+
+  - table_id: T-007
+    title: Strategic relationships and platform dependencies
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify partners, integration dependencies, and supplier-risk questions.
+    columns:
+      - name: partner_or_platform
+        description: Partner, platform, or supplier
+      - name: nature
+        description: Nature of relationship
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_gap
+        description: Required diligence
+    rows:
+      - row_id: T-007-R1
+        values:
+          partner_or_platform: Meta/WhatsApp
+          nature: WhatsApp Business Platform and Business Solution Provider dependency
+          public_evidence: ActiveCampaign claims WhatsApp Business API, Meta Business Partner, and official BSP positioning
+          diligence_gap: Contract terms, rev-share, eligibility limits, compliance obligations, and suspension history
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-008
+          - SRC-014
+      - row_id: T-007-R2
+        values:
+          partner_or_platform: Shopify, Wix, WordPress, Salesforce, Google, Facebook, Slack, Square, Stripe, Zapier, Make
+          nature: Integrations and workflow triggers
+          public_evidence: ActiveCampaign apps page lists 1,000+ integrations and examples
+          diligence_gap: Partner-sourced ARR, integration reliability, API change exposure, and contractual protections
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-005
+      - row_id: T-007-R3
+        values:
+          partner_or_platform: Telecom/SMS ecosystem
+          nature: SMS messaging, 10DLC registration, deliverability, and consent
+          public_evidence: SMS page references dedicated 10DLC, 180+ countries, consent-ready forms, and quiet hours
+          diligence_gap: Carrier fees, compliance failures, opt-out rates, deliverability, and regional limitations
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-004
+      - EC-012
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-009
+      - SRC-014
+    notes: Partner economics and supplier concentration are not public.
+
+  - table_id: T-008
+    title: Customer concentration, retention, and private-data requests
+    chapter_id: III
+    section_id: III.A
+    purpose: Make missing customer-quality data explicit.
+    columns:
+      - name: diligence_item
+        description: Customer diligence item
+      - name: public_status
+        description: What public sources show
+      - name: requested_private_evidence
+        description: Data-room request
+      - name: priority
+        description: Diligence priority
+    rows:
+      - row_id: T-008-R1
+        values:
+          diligence_item: Top-customer concentration
+          public_status: Not disclosed; only broad customer counts and named case studies are public
+          requested_private_evidence: Top 25 customers by ARR, contract term, product, segment, geography, and renewal status
+          priority: high
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-001
+          - SRC-004
+      - row_id: T-008-R2
+        values:
+          diligence_item: Retention and churn
+          public_status: Not disclosed
+          requested_private_evidence: Monthly logo churn, GRR, NRR, cohort retention, contraction, expansion, and win-back metrics
+          priority: high
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-001
+          - SRC-004
+      - row_id: T-008-R3
+        values:
+          diligence_item: SMB versus mid-market quality
+          public_status: Public sources emphasize small businesses and broad geographies
+          requested_private_evidence: ARR by segment, support cost by segment, CAC payback, churn, and gross margin
+          priority: high
+        evidence_claim_ids:
+          - EC-003
+          - EC-019
+        source_ids:
+          - SRC-001
+          - SRC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-019
+    source_ids:
+      - SRC-001
+      - SRC-004
+    notes: These items should be gating diligence requests.
+
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame competitive overlap and differentiators from public evidence.
+    columns:
+      - name: competitor
+        description: Competitor or substitute
+      - name: segment
+        description: Market segment
+      - name: product_overlap
+        description: Overlap with ActiveCampaign
+      - name: public_positioning
+        description: Public competitive note
+    rows:
+      - row_id: T-009-R1
+        values:
+          competitor: HubSpot Marketing Hub
+          segment: CRM and marketing suite
+          product_overlap: Marketing automation, CRM, segmentation, lead scoring, analytics
+          public_positioning: PCMag says HubSpot is better suited for enterprise-sized companies and has stronger CRM breadth
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-011
+      - row_id: T-009-R2
+        values:
+          competitor: Brevo and Mailchimp
+          segment: Entry-level and SMB email marketing
+          product_overlap: Email marketing, newsletters, automation, audience management
+          public_positioning: PCMag says ActiveCampaign is more robust but pricier than entry-level tools
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-011
+      - row_id: T-009-R3
+        values:
+          competitor: Klaviyo
+          segment: E-commerce marketing automation
+          product_overlap: Behavioral segmentation, e-commerce journeys, automation
+          public_positioning: PCMag notes Klaviyo is more e-commerce focused while ActiveCampaign balances accessibility and affordability
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-011
+      - row_id: T-009-R4
+        values:
+          competitor: Campaigner, Salesforce, and AI-native workflow tools
+          segment: Email marketing, enterprise CRM, and automation substitutes
+          product_overlap: Campaign automation, CRM integration, AI-driven workflows
+          public_positioning: Requires win/loss and market diligence; public review evidence shows category crowding
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-008
+    source_ids:
+      - SRC-011
+    notes: Competitor financial data was not normalized in public sources and should be benchmarked separately.
+
+  - table_id: T-010
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Translate public evidence into testable competitive hypotheses.
+    columns:
+      - name: axis
+        description: Competitive axis
+      - name: activecampaign_public_position
+        description: Target's public position
+      - name: competitor_pressure
+        description: Pressure point
+      - name: diligence_test
+        description: Private diligence test
+    rows:
+      - row_id: T-010-R1
+        values:
+          axis: Automation sophistication
+          activecampaign_public_position: Strong visual automation, behavioral segmentation, predictive sending, and AI-assisted workflows
+          competitor_pressure: HubSpot, Salesforce, Klaviyo, and AI-native tools can also offer advanced automation
+          diligence_test: Win/loss by automation use case and retention impact of automation depth
+        evidence_claim_ids:
+          - EC-005
+          - EC-008
+        source_ids:
+          - SRC-007
+          - SRC-011
+      - row_id: T-010-R2
+        values:
+          axis: Price/value
+          activecampaign_public_position: Mid-market price point with contact-count scaling
+          competitor_pressure: Lower-cost tools can undercut; enterprise suites can bundle
+          diligence_test: Discounting, ARPA expansion, contact-list price sensitivity, and churn after price changes
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+        source_ids:
+          - SRC-006
+          - SRC-011
+      - row_id: T-010-R3
+        values:
+          axis: Ease of use and breadth
+          activecampaign_public_position: Broad feature set but steep learning curve
+          competitor_pressure: Simpler tools reduce onboarding friction; broader suites own more workflows
+          diligence_test: Time-to-value, onboarding completion, support tickets, and feature adoption by segment
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-008
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-011
+    notes: Scores are qualitative hypotheses, not measured share data.
+
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Inventory public go-to-market routes.
+    columns:
+      - name: channel
+        description: GTM channel
+      - name: public_evidence
+        description: Public source signal
+      - name: likely_role
+        description: Analyst interpretation
+      - name: diligence_gap
+        description: Missing private data
+    rows:
+      - row_id: T-011-R1
+        values:
+          channel: Self-serve trial and buy-now
+          public_evidence: Website offers 14-day free trial, buy-now flows, and public tier pages
+          likely_role: SMB acquisition and product-led entry
+          diligence_gap: Conversion, CAC, payback, churn, and support cost by self-serve cohort
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+          - SRC-010
+      - row_id: T-011-R2
+        values:
+          channel: Sales-led demo and enterprise
+          public_evidence: Product pages route to demo flows and enterprise features such as SSO, HIPAA, custom reporting, and premium integrations
+          likely_role: Mid-market and larger-account expansion
+          diligence_gap: Pipeline conversion, sales cycle, ACV, quota attainment, discounting
+        evidence_claim_ids:
+          - EC-006
+          - EC-010
+        source_ids:
+          - SRC-006
+          - SRC-012
+      - row_id: T-011-R3
+        values:
+          channel: Partner, reseller, and integration ecosystem
+          public_evidence: Apps page, partner links, WhatsApp referral/reseller language, and OneSend acquisition references
+          likely_role: Channel expansion, agencies, franchises, and multi-location businesses
+          diligence_gap: Partner-sourced ARR, partner margin, reseller churn, and contract duration
+        evidence_claim_ids:
+          - EC-004
+          - EC-012
+          - EC-014
+        source_ids:
+          - SRC-005
+          - SRC-008
+          - SRC-022
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-010
+      - EC-012
+      - EC-014
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-008
+      - SRC-010
+      - SRC-012
+      - SRC-022
+    notes: Channel weights are not public.
+
+  - table_id: T-012
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Structure available marketing proof points and their limitations.
+    columns:
+      - name: signal
+        description: Marketing or demand signal
+      - name: public_value
+        description: Public observation
+      - name: interpretation
+        description: Analyst interpretation
+      - name: diligence_gap
+        description: Missing validation
+    rows:
+      - row_id: T-012-R1
+        values:
+          signal: Customer reviews
+          public_value: Company pages cite 14,000+ or 14.5k+ positive reviews and 4.5-star G2-linked rating
+          interpretation: Supports brand visibility, but source is company-authored and aggregator pages were not fully accessible
+          diligence_gap: Review-quality analysis, churn among reviewers, and current third-party scores
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+        source_ids:
+          - SRC-001
+          - SRC-010
+      - row_id: T-012-R2
+        values:
+          signal: Customer stories
+          public_value: Customers page shows 104 customer stories across industries, company sizes, and geographies
+          interpretation: Indicates broad use cases but not representative customer economics
+          diligence_gap: Reference calls and cohort-level retention
+        evidence_claim_ids:
+          - EC-007
+          - EC-019
+        source_ids:
+          - SRC-004
+      - row_id: T-012-R3
+        values:
+          signal: International presence
+          public_value: Company and independent sources identify customers in 170+ countries and hubs/offices across regions
+          interpretation: Supports global reach but may add compliance and localization cost
+          diligence_gap: ARR, margin, churn, compliance cost, and staffing by geography
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+        source_ids:
+          - SRC-001
+          - SRC-021
+          - SRC-022
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-009
+      - EC-019
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-010
+      - SRC-021
+      - SRC-022
+    notes: Owned marketing metrics should be reconciled to CRM and finance systems.
+
+  - table_id: T-013
+    title: Public R&D personnel and operating signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture publicly named technical/product-adjacent leadership and security-engineering posture.
+    columns:
+      - name: person_or_group
+        description: Person or group
+      - name: role_or_area
+        description: Public role or technical area
+      - name: public_evidence
+        description: Evidence signal
+      - name: diligence_gap
+        description: Missing validation
+    rows:
+      - row_id: T-013-R1
+        values:
+          person_or_group: Shay Howe
+          role_or_area: Chief Strategy Officer
+          public_evidence: PRNewswire 2024 executive announcement names Howe as CSO with company strategy responsibilities
+          diligence_gap: Product strategy ownership, roadmap governance, and operating metrics
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-019
+      - row_id: T-013-R2
+        values:
+          person_or_group: Security engineering and red-team functions
+          role_or_area: Offensive security, scanning, SDLC, vulnerability management
+          public_evidence: Security page describes internal red team, daily scans, secure SDLC, OWASP participation, and Trust Center
+          diligence_gap: Staffing, reports, incident backlog, audit findings, and remediation SLAs
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-012
+      - row_id: T-013-R3
+        values:
+          person_or_group: Acquired product teams
+          role_or_area: Postmark transactional email, Onesend multi-location/reseller marketing, Hilos WhatsApp automation
+          public_evidence: Wikipedia and Nearshore Americas discuss these acquisitions and product roles
+          diligence_gap: Retention of acquired engineers, IP assignment, platform integration, and migration plan
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-003
+          - SRC-022
+    evidence_claim_ids:
+      - EC-010
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-012
+      - SRC-019
+      - SRC-022
+    notes: Current CTO/product-leadership details should be confirmed directly with the company.
+
+  - table_id: T-014
+    title: Public product and research pipeline
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Structure roadmap-like public product signals.
+    columns:
+      - name: initiative
+        description: Product or R&D initiative
+      - name: public_status
+        description: Publicly observed status
+      - name: evidence
+        description: Public evidence
+      - name: diligence_request
+        description: Follow-up request
+    rows:
+      - row_id: T-014-R1
+        values:
+          initiative: Active Intelligence AI agents
+          public_status: Publicly marketed product area
+          evidence: Company page describes AI agents, campaign builder, suggested segments, predictive sending, AI-tool connectors, and cross-channel execution
+          diligence_request: Adoption, revenue, model/vendor cost, hallucination controls, privacy review, and retention impact
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-007
+      - row_id: T-014-R2
+        values:
+          initiative: WhatsApp and SMS automation
+          public_status: Publicly marketed and expanded through Hilos-related WhatsApp capability signal
+          evidence: Product pages describe WhatsApp flows, unified inbox, BSP status, SMS two-way messaging, and 180+ supported countries
+          diligence_request: Meta and carrier dependency, gross margin, compliance controls, spam complaint rates, and suspension history
+        evidence_claim_ids:
+          - EC-012
+          - EC-014
+        source_ids:
+          - SRC-008
+          - SRC-009
+          - SRC-003
+      - row_id: T-014-R3
+        values:
+          initiative: Integration and developer ecosystem
+          public_status: Publicly marketed
+          evidence: Apps page and FAQs describe 1,000+ apps, API, App Studio, webhooks, and no-code connections
+          diligence_request: Integration uptime, API costs, API deprecations, app marketplace economics, and developer support burden
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-012
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-009
+    notes: Public pipeline details should not be treated as committed delivery dates.
+
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Identify publicly confirmed senior leaders.
+    columns:
+      - name: name
+        description: Executive name
+      - name: role
+        description: Public role
+      - name: public_context
+        description: Evidence context
+      - name: diligence_gap
+        description: Missing validation
+    rows:
+      - row_id: T-015-R1
+        values:
+          name: Jason VandeBoom
+          role: Founder and CEO
+          public_context: Company about page and PRNewswire executive announcement identify founder/CEO
+          diligence_gap: Ownership, employment terms, succession, and key-person retention
+        evidence_claim_ids:
+          - EC-001
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-019
+      - row_id: T-015-R2
+        values:
+          name: Amy Kilpatrick
+          role: Chief Marketing Officer
+          public_context: PRNewswire 2024 executive announcement
+          diligence_gap: Tenure, compensation, goals, and marketing-performance ownership
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-019
+      - row_id: T-015-R3
+        values:
+          name: Carine Roman
+          role: Chief Revenue Officer
+          public_context: PRNewswire 2024 executive announcement
+          diligence_gap: Quota productivity, sales capacity, channel ownership, and retention plan
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-019
+      - row_id: T-015-R4
+        values:
+          name: Shay Howe
+          role: Chief Strategy Officer
+          public_context: PRNewswire 2024 executive announcement
+          diligence_gap: Strategy, product/M&A scope, roadmap governance, and integration responsibilities
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-019
+      - row_id: T-015-R5
+        values:
+          name: Joy Whinery
+          role: Chief Financial Officer
+          public_context: PRNewswire says Whinery was added as CFO in the prior twelve months
+          diligence_gap: Finance controls, audit readiness, forecasting process, and retention
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-019
+    evidence_claim_ids:
+      - EC-001
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-019
+    notes: Board composition and full C-suite are not verified from public sources.
+
+  - table_id: T-016
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Track public headcount anchors and geographic footprint.
+    columns:
+      - name: year_or_date
+        description: Public date
+      - name: headcount_or_signal
+        description: Public headcount or staffing signal
+      - name: source_context
+        description: Evidence context
+      - name: diligence_gap
+        description: Missing validation
+    rows:
+      - row_id: T-016-R1
+        values:
+          year_or_date: "2021-04"
+          headcount_or_signal: 850+ team members
+          source_context: Series C announcement
+          diligence_gap: Functional split, location split, attrition, and contractor count
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: T-016-R2
+        values:
+          year_or_date: "2021-10"
+          headcount_or_signal: Surpassed 1,000 employees
+          source_context: Built In Chicago office expansion article
+          diligence_gap: Current HRIS validation and year-end headcount reconciliation
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-021
+      - row_id: T-016-R3
+        values:
+          year_or_date: "2024-2026 public pages"
+          headcount_or_signal: 800+ global team members and hubs across Latin America, Europe, and APAC
+          source_context: Company about page and careers page
+          diligence_gap: Reason for decline from 1,000+ anchor, current headcount, attrition, and productivity
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+        source_ids:
+          - SRC-001
+          - SRC-023
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-009
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-021
+      - SRC-023
+    notes: Apparent headcount decrease may reflect different definitions, timing, or actual workforce change.
+
+  - table_id: T-017
+    title: Personnel and turnover diligence gaps
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Record personnel questions that public sources cannot answer.
+    columns:
+      - name: area
+        description: Personnel diligence area
+      - name: public_signal
+        description: Public evidence
+      - name: missing_information
+        description: Private information needed
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: T-017-R1
+        values:
+          area: Executive turnover and succession
+          public_signal: Several executives announced in 2024; founder remains CEO
+          missing_information: Departures, performance issues, succession planning, retention packages, and board evaluations
+          priority: high
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-019
+      - row_id: T-017-R2
+        values:
+          area: Workforce attrition
+          public_signal: Public pages describe benefits, equity, hybrid work, and global hubs
+          missing_information: Attrition by function/region/tenure, engagement scores, compensation competitiveness, and regretted attrition
+          priority: medium
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-023
+      - row_id: T-017-R3
+        values:
+          area: Hiring integrity and recruiting process
+          public_signal: Careers page warns about hiring scams and describes recruiting process expectations
+          missing_information: Recruiting funnel, offer acceptance, fraud incident handling, and talent-acquisition controls
+          priority: low
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-023
+    evidence_claim_ids:
+      - EC-009
+      - EC-013
+    source_ids:
+      - SRC-019
+      - SRC-023
+    notes: No private HR data was reviewed.
+
+  - table_id: T-018
+    title: Litigation, regulatory, and incident summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize public legal and security risk signals.
+    columns:
+      - name: matter
+        description: Matter type
+      - name: public_status
+        description: Public status
+      - name: source_or_limit
+        description: Source or limitation
+      - name: diligence_request
+        description: Follow-up
+    rows:
+      - row_id: T-018-R1
+        values:
+          matter: Social-engineering attack affecting customer accounts
+          public_status: MediaPost reported ActiveCampaign said a small number of customer accounts were affected in March 2022 and law enforcement was notified
+          source_or_limit: Independent news article; no underlying incident report reviewed
+          diligence_request: Incident timeline, root cause, affected customers, remediation, insurance notice, and recurrence controls
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-016
+      - row_id: T-018-R2
+        values:
+          matter: Pending lawsuits against or by company
+          public_status: Not established from accessible direct court sources during this review
+          source_or_limit: Public court sources were inaccessible or incomplete in-session
+          diligence_request: Counsel litigation schedule, threatened claims, settlements, subpoenas, and regulatory inquiries
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-013
+      - row_id: T-018-R3
+        values:
+          matter: Privacy, consent, anti-spam, DPA, Data Privacy Framework, and subprocessors
+          public_status: Company legal center and privacy policy disclose relevant policy framework and international transfer posture
+          source_or_limit: Company-authored policy pages; underlying compliance evidence not reviewed
+          diligence_request: DPA, SCCs, subprocessor list, privacy-impact assessments, consent audit, and regulator correspondence
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-013
+          - SRC-015
+    evidence_claim_ids:
+      - EC-011
+      - EC-016
+      - EC-017
+    source_ids:
+      - SRC-013
+      - SRC-015
+      - SRC-016
+    notes: Absence of public evidence should not be treated as absence of legal matters.
+
+  - table_id: T-019
+    title: Material IP and trademark signals
+    chapter_id: VIII
+    section_id: VIII.C
+    purpose: Record public IP evidence and remaining IP diligence gaps.
+    columns:
+      - name: asset
+        description: IP asset
+      - name: jurisdiction
+        description: Jurisdiction or registry
+      - name: status
+        description: Public status
+      - name: diligence_gap
+        description: Required diligence
+    rows:
+      - row_id: T-019-R1
+        values:
+          asset: ACTIVECAMPAIGN trademark
+          jurisdiction: United States
+          status: Live/registered; registration number 4935812; first use January 10, 2003; registered April 12, 2016
+          diligence_gap: Official TSDR file review, assignments, maintenance, disputes, and international marks
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-017
+      - row_id: T-019-R2
+        values:
+          asset: ACTIVECAMPAIGN POSTMARK trademark
+          jurisdiction: United States
+          status: USPTO mirror page indicated live/pending as of 2022
+          diligence_gap: Current prosecution status, acquisition assignment, and brand-integration documents
+        evidence_claim_ids:
+          - EC-015
+          - EC-014
+        source_ids:
+          - SRC-018
+      - row_id: T-019-R3
+        values:
+          asset: Software, source code, patents, data, models, connectors, and acquired IP
+          jurisdiction: Multiple
+          status: Not fully public
+          diligence_gap: IP schedule, invention assignments, OSS/SBOM, patents, M&A IP transfers, and license obligations
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+        source_ids:
+          - SRC-003
+          - SRC-017
+          - SRC-018
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-003
+      - SRC-017
+      - SRC-018
+    notes: Trademark records are a starting point, not a full IP review.
+
+  - table_id: T-020
+    title: Regulatory, contractual, and platform-policy obligations
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Map legal obligations implied by public terms and product surfaces.
+    columns:
+      - name: obligation_area
+        description: Legal or contractual area
+      - name: public_evidence
+        description: Public source signal
+      - name: risk
+        description: Diligence risk
+      - name: requested_evidence
+        description: Documents or data requested
+    rows:
+      - row_id: T-020-R1
+        values:
+          obligation_area: Privacy and international transfers
+          public_evidence: Privacy policy references Data Privacy Framework certification, FTC enforcement, JAMS dispute resolution, international transfers, and CCPA data categories including sensitive contents of communications
+          risk: Privacy notices, consent, data-transfer, subprocessor, and regulator exposure
+          requested_evidence: DPA, SCCs, DPF audit, subprocessor notices, DPIAs, DSAR logs, and privacy counsel memos
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-015
+      - row_id: T-020-R2
+        values:
+          obligation_area: SMS and WhatsApp consent
+          public_evidence: SMS page says explicit written consent is required under TCPA, GDPR, and similar laws; terms set WhatsApp eligibility, credits, and service-change rules
+          risk: Consent violations, spam complaints, opt-out failures, platform suspension, and class-action risk
+          requested_evidence: Consent logs, TCPA/CASL/GDPR controls, complaint rate, opt-out handling, carrier audits, and Meta correspondence
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-009
+          - SRC-014
+      - row_id: T-020-R3
+        values:
+          obligation_area: Security and compliance
+          public_evidence: Security page describes GDPR, SOC 2, HIPAA focus, MFA, SSO, red-team work, scans, and Trust Center
+          risk: Compliance claims may exceed actual scope if not supported by reports and customer-contract obligations
+          requested_evidence: SOC 2 Type II, HIPAA BAA scope, pen-test attestation, vulnerability SLAs, and customer security questionnaires
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-009
+      - SRC-012
+      - SRC-014
+      - SRC-015
+    notes: Counsel should verify scope and enforceability of all compliance claims.
+
+figures:
+  - figure_id: F-001
+    title: Public financing and scale timeline
+    chapter_id: I
+    section_id: I.A
+    figure_type: timeline
+    description: Timeline of publicly evidenced founding, SaaS transition, financing, and scale anchors.
+    purpose: Show the public sequence of company evolution and major financing events.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E1
+          date: "2003-01-10"
+          label: ActiveCampaign founded
+          description: Founded by Jason VandeBoom; trademark record also lists first use in commerce in 2003.
+          category: founding
+          evidence_claim_ids:
+            - EC-001
+            - EC-015
+          source_ids:
+            - SRC-001
+            - SRC-017
+        - event_id: F-001-E2
+          date: "2013"
+          label: Transition to SaaS model
+          description: Built In Chicago and company history describe transition from on-premise software to SaaS.
+          category: product
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-001
+            - SRC-020
+        - event_id: F-001-E3
+          date: "2016"
+          label: Series A
+          description: Public sources report a $20 million Series A from Silversmith.
+          category: financing
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E4
+          date: "2020-01"
+          label: Series B
+          description: Public sources report a $100 million Series B led by Susquehanna Growth Equity.
+          category: financing
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E5
+          date: "2021-04-21"
+          label: Series C and $165M ARR anchor
+          description: PRNewswire reports a $240 million Series C, $360 million total financing, $165 million ARR, and valuation over $3 billion.
+          category: financing
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - event_id: F-001-E6
+          date: "2024-2026"
+          label: Current public scale claims
+          description: Company pages claim more than 180,000 customers, 170+ countries, 800+ team members, and 120B+ experiences orchestrated in 2025.
+          category: scale
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-001
+            - SRC-004
+      start_date: "2003-01-10"
+      end_date: "2026-05-15"
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use a horizontal timeline with financing events visually distinct from product and scale events.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-018
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-020
+    notes: Current financial metrics remain missing.
+
+  - figure_id: F-002
+    title: Public valuation trajectory
+    chapter_id: I
+    section_id: I.A
+    figure_type: chart
+    description: Chart of public valuation information by funding round.
+    purpose: Highlight that only the 2021 Series C has a public valuation anchor.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Round
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation anchor
+          unit: USD billions
+          data_points:
+            - x: Series A 2016
+              y: null
+              label: Not public
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-003
+            - x: Series B 2020
+              y: null
+              label: Not public
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-003
+            - x: Series C 2021
+              y: 3.0
+              label: Over $3B
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+      annotations:
+        - label: "Series C valuation is stale"
+          x: Series C 2021
+          y: 3.0
+          note: Public evidence does not verify post-2021 valuation marks.
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render null valuation points as labeled gaps, not zero.
+    evidence_claim_ids:
+      - EC-002
+      - EC-020
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: The $3B value is plotted as a lower-bound public anchor because the announcement says over $3B.
+
+  - figure_id: F-003
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product map from customer data and automation to channels, AI, integrations, and compliance controls.
+    purpose: Show breadth and dependency surfaces in the product suite.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: customer_data
+          label: Customer contact and behavior data
+          node_type: database
+          description: Shared contact data powers email, SMS, WhatsApp, CRM, segmentation, and connected workflows.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-005
+        - node_id: automation_core
+          label: Automation and segmentation core
+          node_type: product
+          description: Multi-step automation, segmentation, lead scoring, and campaign execution.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-006
+            - SRC-011
+        - node_id: active_intelligence
+          label: Active Intelligence AI agents
+          node_type: model
+          description: AI campaign builder, suggested segments, predictive sending, and AI-tool connectors.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-007
+        - node_id: channels
+          label: Email, SMS, WhatsApp, CRM, transactional email
+          node_type: service
+          description: Cross-channel customer engagement products.
+          evidence_claim_ids:
+            - EC-004
+            - EC-012
+          source_ids:
+            - SRC-008
+            - SRC-009
+            - SRC-010
+        - node_id: integrations
+          label: 1,000+ app integrations and API
+          node_type: integration
+          description: Integrations with e-commerce, CRM, advertising, data, productivity, automation, and custom APIs.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-005
+        - node_id: platform_policies
+          label: Meta, telecom, privacy, payment, and security controls
+          node_type: third_party
+          description: External policies and compliance controls affect product availability and risk.
+          evidence_claim_ids:
+            - EC-010
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-012
+            - SRC-014
+            - SRC-015
+      edges:
+        - edge_id: edge1
+          from_node_id: customer_data
+          to_node_id: automation_core
+          relationship: feeds
+          data_or_dependency: Contact and behavioral data enables segmentation and automation.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-005
+        - edge_id: edge2
+          from_node_id: automation_core
+          to_node_id: channels
+          relationship: orchestrates
+          data_or_dependency: Campaign workflows execute across email, SMS, WhatsApp, CRM, and transactional email.
+          evidence_claim_ids:
+            - EC-004
+            - EC-012
+          source_ids:
+            - SRC-008
+            - SRC-009
+        - edge_id: edge3
+          from_node_id: active_intelligence
+          to_node_id: automation_core
+          relationship: augments
+          data_or_dependency: AI agents suggest segments, campaigns, scheduling, and actions.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-007
+        - edge_id: edge4
+          from_node_id: integrations
+          to_node_id: customer_data
+          relationship: enriches
+          data_or_dependency: Connected apps provide events and workflow triggers.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-005
+        - edge_id: edge5
+          from_node_id: platform_policies
+          to_node_id: channels
+          relationship: constrains
+          data_or_dependency: Messaging, privacy, and payment rules affect channel availability.
+          evidence_claim_ids:
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-014
+            - SRC-015
+      boundaries:
+        - boundary_id: activecampaign_platform
+          label: ActiveCampaign platform
+          node_ids:
+            - customer_data
+            - automation_core
+            - active_intelligence
+            - channels
+            - integrations
+        - boundary_id: external_policy_surface
+          label: External policy and compliance surface
+          node_ids:
+            - platform_policies
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Emphasize external dependencies around WhatsApp, SMS, privacy, and payments.
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-010
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-012
+      - SRC-014
+      - SRC-015
+    notes: Private technical architecture was not reviewed.
+
+  - figure_id: F-004
+    title: Public customer-scale anchors
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Bar chart of public customer-count anchors and missing concentration data.
+    purpose: Show customer scale growth while flagging concentration and retention gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: customers or stories
+        scale: linear
+      series:
+        - series_id: customer_scale
+          name: Public customer signals
+          unit: count
+          data_points:
+            - x: 2019 SMB customers
+              y: 60000
+              label: 60,000+ SMBs
+              evidence_claim_ids:
+                - EC-018
+              source_ids:
+                - SRC-020
+            - x: 2021 customers
+              y: 145000
+              label: 145,000 customers
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: Current public claim
+              y: 180000
+              label: 180,000+ customers
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-001
+                - SRC-004
+            - x: Customer stories
+              y: 104
+              label: 104 public stories
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-004
+        - series_id: undisclosed_quality
+          name: Undisclosed customer quality items
+          unit: not_publicly_verifiable
+          data_points:
+            - x: Top-25 ARR
+              y: null
+              label: Not public
+              evidence_claim_ids:
+                - EC-019
+              source_ids:
+                - SRC-004
+            - x: NRR/GRR
+              y: null
+              label: Not public
+              evidence_claim_ids:
+                - EC-019
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: Quality gap
+          x: Current public claim
+          y: 180000
+          note: Customer scale does not validate retention, concentration, ARPA, or churn.
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-001
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render undisclosed quality items as gap callouts.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-007
+      - EC-018
+      - EC-019
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+      - SRC-020
+    notes: Counts may use different definitions across dates.
+
+  - figure_id: F-005
+    title: Martech competitive positioning map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Positioning map using public review evidence and product-scope interpretation.
+    purpose: Show ActiveCampaign's mid-market automation position and competitive pressure.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: CRM suite breadth
+          low_label: Email/newsletter focused
+          high_label: Broad enterprise suite
+        y_axis:
+          label: Automation sophistication
+          low_label: Basic campaigns
+          high_label: Advanced behavioral automation
+      segments:
+        - segment_id: entry_email
+          name: Entry email tools
+          description: Low-cost email and newsletter tools
+        - segment_id: mid_automation
+          name: Mid-market automation platforms
+          description: Automation depth without full enterprise-suite footprint
+        - segment_id: enterprise_suite
+          name: Enterprise CRM and marketing suites
+          description: Broad CRM, sales, marketing, and analytics suites
+        - segment_id: ecommerce_specialist
+          name: E-commerce automation specialists
+          description: Commerce-focused automation and behavioral marketing
+      entities:
+        - entity_id: activecampaign
+          name: ActiveCampaign
+          entity_type: target_company
+          segment_id: mid_automation
+          x_value: 55
+          y_value: 75
+          attributes:
+            rationale: PCMag describes strong automation at mid-market price, with CRM less deep than dedicated platforms.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-011
+        - entity_id: hubspot
+          name: HubSpot Marketing Hub
+          entity_type: competitor
+          segment_id: enterprise_suite
+          x_value: 85
+          y_value: 70
+          attributes:
+            rationale: PCMag highlights stronger CRM and enterprise suitability.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-011
+        - entity_id: brevo_mailchimp
+          name: Brevo and Mailchimp
+          entity_type: competitor
+          segment_id: entry_email
+          x_value: 30
+          y_value: 45
+          attributes:
+            rationale: PCMag frames these as cheaper entry-level alternatives.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-011
+        - entity_id: klaviyo
+          name: Klaviyo
+          entity_type: competitor
+          segment_id: ecommerce_specialist
+          x_value: 50
+          y_value: 70
+          attributes:
+            rationale: PCMag notes e-commerce focus and behavioral segmentation overlap.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Treat coordinates as analyst positioning based on public evidence, not measured market-share data.
+    evidence_claim_ids:
+      - EC-008
+    source_ids:
+      - SRC-011
+    notes: A full market model requires private win/loss and paid market data.
+
+  - figure_id: F-006
+    title: Public GTM funnel and missing conversion metrics
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: Qualitative funnel of public ActiveCampaign GTM surfaces.
+    purpose: Show how public channels map from awareness to expansion and where conversion data is missing.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      stages:
+        - stage_id: awareness
+          name: Awareness through content, reviews, customer stories, and integrations
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: current public website
+          evidence_claim_ids:
+            - EC-003
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-004
+        - stage_id: trial_demo
+          name: Trial, buy-now, and demo conversion
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: current public website
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - stage_id: activation
+          name: Automation, integrations, CRM, SMS, WhatsApp, and AI activation
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: current public website
+          evidence_claim_ids:
+            - EC-004
+            - EC-005
+            - EC-012
+          source_ids:
+            - SRC-005
+            - SRC-007
+            - SRC-008
+        - stage_id: expansion_retention
+          name: Contact-list scaling, add-ons, cross-channel expansion, and renewal
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: not publicly disclosed
+          evidence_claim_ids:
+            - EC-006
+            - EC-019
+          source_ids:
+            - SRC-011
+            - SRC-004
+      unit: customers
+      cohort_or_period: Public-source funnel; no private conversion counts available
+    rendering_guidance:
+      preferred_format: table_visual
+      display_notes: Use empty counts to emphasize diligence gaps, not lack of funnel stages.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-012
+      - EC-019
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-011
+    notes: Channel and conversion weights are not public.
+
+  - figure_id: F-007
+    title: R&D and product-portfolio map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Public R&D portfolio map across AI, core automation, messaging, integrations, transactional email, and security.
+    purpose: Show product-development complexity and acquisition integration surfaces.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: ai_agents
+          label: Active Intelligence AI agents
+          node_type: model
+          description: Campaign builder, segments, scheduling, advisor, AI-tool connectors, and optimization features.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-007
+        - node_id: core_automation
+          label: Core marketing automation and CRM
+          node_type: product
+          description: Automation workflows, CRM, lead scoring, attribution, sales routing, and segmentation.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-010
+            - SRC-011
+        - node_id: messaging
+          label: SMS and WhatsApp messaging
+          node_type: service
+          description: Two-way SMS, 10DLC, WhatsApp flows, unified inbox, BSP support, and cross-channel messaging.
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+            - SRC-009
+        - node_id: postmark_onesend_hilos
+          label: Acquired capabilities
+          node_type: service
+          description: Postmark/DMARC, Onesend multi-location marketing, and Hilos WhatsApp automation capabilities.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-003
+            - SRC-022
+        - node_id: security_sdlc
+          label: Security SDLC and trust controls
+          node_type: infrastructure
+          description: Automated scans, red team, vulnerability management, Trust Center, MFA, SSO, and single-tenancy claims.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-012
+      edges:
+        - edge_id: f7e1
+          from_node_id: ai_agents
+          to_node_id: core_automation
+          relationship: enhances
+          data_or_dependency: AI suggests, builds, and optimizes campaigns and segments.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-007
+        - edge_id: f7e2
+          from_node_id: core_automation
+          to_node_id: messaging
+          relationship: orchestrates
+          data_or_dependency: Automation flows span email, SMS, WhatsApp, and CRM actions.
+          evidence_claim_ids:
+            - EC-004
+            - EC-012
+          source_ids:
+            - SRC-008
+            - SRC-009
+        - edge_id: f7e3
+          from_node_id: postmark_onesend_hilos
+          to_node_id: core_automation
+          relationship: integrates
+          data_or_dependency: Acquired products expand transactional, reseller, multi-location, and WhatsApp capabilities.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-003
+            - SRC-022
+        - edge_id: f7e4
+          from_node_id: security_sdlc
+          to_node_id: core_automation
+          relationship: governs
+          data_or_dependency: Security practices are part of product development lifecycle.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-012
+      boundaries:
+        - boundary_id: rd_portfolio
+          label: Public R&D portfolio
+          node_ids:
+            - ai_agents
+            - core_automation
+            - messaging
+            - postmark_onesend_hilos
+            - security_sdlc
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Mark acquired capabilities as integration-risk nodes.
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-010
+      - EC-012
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-012
+      - SRC-022
+    notes: Private roadmap, architecture, and R&D budget were not reviewed.
+
+  - figure_id: F-008
+    title: Public executive org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Publicly confirmed leadership from company and PRNewswire sources.
+    purpose: Show named executive coverage and governance gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Jason VandeBoom
+          role: Founder and CEO
+          department: Executive
+          location: Chicago/global
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-001
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-019
+        - node_id: cmo
+          name: Amy Kilpatrick
+          role: Chief Marketing Officer
+          department: Marketing
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - node_id: cro
+          name: Carine Roman
+          role: Chief Revenue Officer
+          department: Revenue
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - node_id: cso
+          name: Shay Howe
+          role: Chief Strategy Officer
+          department: Strategy
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - node_id: cfo
+          name: Joy Whinery
+          role: Chief Financial Officer
+          department: Finance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - node_id: board
+          name: null
+          role: Board of directors and investor rights
+          department: Governance
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-002
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: cmo
+          relationship: other
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: cro
+          relationship: other
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: cso
+          relationship: other
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: cfo
+          relationship: other
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-019
+        - parent_node_id: board
+          child_node_id: ceo
+          relationship: other
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Display board node as unverified/private-data gap.
+    evidence_claim_ids:
+      - EC-001
+      - EC-013
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-019
+    notes: Reporting relationships are inferred from roles and should be confirmed.
+
+  - figure_id: F-009
+    title: Public headcount anchors
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: chart
+    description: Public headcount and staffing anchors over time.
+    purpose: Highlight growth and possible definition changes requiring HR validation.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Date
+        unit: year
+        scale: time
+      y_axis:
+        label: Public headcount
+        unit: employees
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public headcount anchors
+          unit: employees
+          data_points:
+            - x: "2021-04"
+              y: 850
+              label: 850+ team members
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: "2021-10"
+              y: 1000
+              label: Surpassed 1,000 employees
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-021
+            - x: "2026-05"
+              y: 800
+              label: 800+ global team members
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Definition gap
+          x: "2026-05"
+          y: 800
+          note: The decrease from 1,000+ to 800+ may reflect timing, definitions, attrition, or workforce changes; HRIS validation required.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-001
+            - SRC-021
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Plot as public anchors with plus-sign labels, not precise census counts.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-009
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-021
+    notes: Current headcount requires direct HRIS export.
+
+  - figure_id: F-010
+    title: Legal, security, privacy, and IP timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Timeline of public legal, security, privacy, and IP signals.
+    purpose: Place legal-risk evidence in chronological context.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-010-E1
+          date: "2003-01-10"
+          label: ACTIVECAMPAIGN first use
+          description: Trademark mirror lists first use in commerce for ACTIVECAMPAIGN.
+          category: IP
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-017
+        - event_id: F-010-E2
+          date: "2016-04-12"
+          label: ACTIVECAMPAIGN registered
+          description: Trademark mirror lists registration number 4935812.
+          category: IP
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-017
+        - event_id: F-010-E3
+          date: "2022-03"
+          label: Social-engineering incident reported
+          description: MediaPost reported ActiveCampaign said a small number of customer accounts were affected and law enforcement notified.
+          category: security
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-016
+        - event_id: F-010-E4
+          date: "2022-06-16"
+          label: ACTIVECAMPAIGN POSTMARK trademark filing signal
+          description: USPTO mirror page indicated the mark was live/pending.
+          category: IP
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-018
+        - event_id: F-010-E5
+          date: "2026-05-15"
+          label: Current public legal-policy framework reviewed
+          description: Legal center, terms, privacy, security, and messaging pages show consent, DPA, DPF, CCPA/LGPD, WhatsApp, SMS, SOC 2, HIPAA, and GDPR-related materials.
+          category: legal
+          evidence_claim_ids:
+            - EC-010
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-012
+            - SRC-013
+            - SRC-014
+            - SRC-015
+      start_date: "2003-01-10"
+      end_date: "2026-05-15"
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Include inaccessible direct-court limitation in caption.
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+    notes: Litigation and regulatory absence is not verified.
+
+  - figure_id: F-011
+    title: Diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Risk heatmap for the full public-source risk register.
+    purpose: Prioritize diligence workstreams.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: Current ARR, margins, cash, debt, churn, and valuation marks are not public.
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-002
+        - risk_id: R-002
+          label: Competitive pricing pressure
+          severity: high
+          likelihood: high
+          rationale: PCMag identifies pricing growth, CRM depth limits, and alternatives across entry-level and enterprise tools.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-011
+        - risk_id: R-003
+          label: Messaging and privacy regulation
+          severity: high
+          likelihood: medium
+          rationale: SMS, WhatsApp, consent, privacy, and international transfers are core product surfaces.
+          evidence_claim_ids:
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-009
+            - SRC-014
+            - SRC-015
+        - risk_id: R-004
+          label: Product complexity
+          severity: medium
+          likelihood: high
+          rationale: Broad automation and AI feature set creates complexity and onboarding risk.
+          evidence_claim_ids:
+            - EC-005
+            - EC-008
+          source_ids:
+            - SRC-007
+            - SRC-011
+        - risk_id: R-005
+          label: Security/privacy incident exposure
+          severity: medium
+          likelihood: medium
+          rationale: Public incident reporting and sensitive data processing justify security diligence.
+          evidence_claim_ids:
+            - EC-010
+            - EC-016
+          source_ids:
+            - SRC-012
+            - SRC-016
+        - risk_id: R-006
+          label: Team and headcount uncertainty
+          severity: medium
+          likelihood: medium
+          rationale: Public headcount anchors differ and executive hires require turnover and retention diligence.
+          evidence_claim_ids:
+            - EC-009
+            - EC-013
+          source_ids:
+            - SRC-019
+            - SRC-021
+        - risk_id: R-007
+          label: Third-party dependency
+          severity: medium
+          likelihood: high
+          rationale: Integrations, Meta/WhatsApp, SMS carriers, payment processors, and APIs can change externally.
+          evidence_claim_ids:
+            - EC-004
+            - EC-012
+          source_ids:
+            - SRC-005
+            - SRC-014
+        - risk_id: R-008
+          label: IP/legal unknowns
+          severity: medium
+          likelihood: unknown
+          rationale: Trademark signals are public but patents, code ownership, acquired IP, OSS, and litigation records need private review.
+          evidence_claim_ids:
+            - EC-015
+            - EC-017
+          source_ids:
+            - SRC-017
+            - SRC-018
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Sort risks from top-left by severity and likelihood for diligence prioritization.
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-013
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-020
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-007
+      - SRC-009
+      - SRC-011
+      - SRC-012
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+      - SRC-021
+    notes: Risk heatmap reflects public-source diligence only.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: ActiveCampaign is a privately held Chicago-based SaaS company founded by Jason VandeBoom in 2003.
+    evidence_summary: Company and Wikipedia sources identify ActiveCampaign's founder, 2003 founding, headquarters, private status, and SaaS/customer-experience automation focus.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "ActiveCampaign was founded in 2003 by Jason VandeBoom."
+        location: About page, FAQ/history section
+      - source_id: SRC-003
+        quote: "ActiveCampaign is a privately held company headquartered in Chicago."
+        location: Wikipedia summary
+    analyst_interpretation: Founding, private status, and headquarters are credible public facts, though legal entity structure still requires company records.
+    limitations: Wikipedia is secondary; company legal entities were not independently verified.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-002
+        - T-015
+      figure_ids:
+        - F-001
+        - F-008
+      risk_ids: []
+
+  - evidence_claim_id: EC-002
+    claim: ActiveCampaign raised a $240 million Series C in 2021, had approximately $360 million total financing, disclosed $165 million ARR, 145,000 customers, and was valued over $3 billion.
+    evidence_summary: PRNewswire's funding announcement reports the Series C, valuation, ARR, total financing, customer count, team size, automated interactions, and technology partners.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "ActiveCampaign raises $240 million... Total financing now over $360 million with a valuation of over $3 billion... $165 million in annual recurring revenue."
+        location: PRNewswire Series C announcement
+      - source_id: SRC-002
+        quote: "ActiveCampaign serves 145,000 customers in 170 countries."
+        location: PRNewswire Series C announcement
+    analyst_interpretation: The 2021 round and ARR anchor are among the strongest public financial facts, but they are stale for 2026 valuation work.
+    limitations: No audited financial statements, current ARR, or financing terms were public.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-001
+        - T-003
+        - T-016
+      figure_ids:
+        - F-001
+        - F-002
+        - F-004
+        - F-009
+      risk_ids:
+        - R-001
+
+  - evidence_claim_id: EC-003
+    claim: Current company pages claim 180,000+ customers, customers in 170+ countries, 800+ global team members, 120B+ experiences orchestrated in 2025, 4B weekly automated interactions, and 14.5k+ positive reviews.
+    evidence_summary: ActiveCampaign's about and customers pages report large-scale usage, customer, geography, team, and review-count metrics.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "120 b+ Experiences orchestrated in 2025... 4 b Automated interactions every week on average... 800+ global team members. Customers in 170+ countries."
+        location: About page scale section
+      - source_id: SRC-004
+        quote: "See how 180k+ customers are growing their business."
+        location: Customers page header
+    analyst_interpretation: The company appears scaled globally, but customer definitions, paid status, and retention quality are not public.
+    limitations: Company-authored metrics were not independently audited in public sources.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-003
+        - T-008
+        - T-012
+        - T-016
+      figure_ids:
+        - F-001
+        - F-004
+        - F-006
+        - F-009
+      risk_ids:
+        - R-001
+
+  - evidence_claim_id: EC-004
+    claim: ActiveCampaign publicly offers a broad suite spanning marketing automation, email, CRM, SMS, WhatsApp, transactional email, integrations, API, App Studio, webhooks, and connected AI tools.
+    evidence_summary: Company apps, CRM, SMS, WhatsApp, product, and pricing pages show broad product coverage and more than 1,000 integrations.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-009
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: "Connect Integrations 1000+ apps you can connect to ActiveCampaign."
+        location: Apps page navigation
+      - source_id: SRC-005
+        quote: "Our 1,000+ apps and integrations include many native integrations... The ActiveCampaign API provides unlimited flexibility for custom builds."
+        location: Apps FAQ
+    analyst_interpretation: The breadth is verifiable as public product surface, but product-level economics and reliability require private data.
+    limitations: Product pages do not disclose adoption, uptime, gross margin, or customer-retention contribution.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-004
+        - T-007
+        - T-011
+        - T-014
+      figure_ids:
+        - F-003
+        - F-006
+        - F-007
+        - F-011
+      risk_ids:
+        - R-004
+        - R-007
+
+  - evidence_claim_id: EC-005
+    claim: ActiveCampaign markets Active Intelligence as AI agents that use billions of data points for campaign building, suggested segments, predictive sending, optimization, and AI-tool connectors.
+    evidence_summary: Active Intelligence page describes AI agents, billions of data points, AI Campaign Builder, AI-suggested segments, MCP/AI-tool connectors, creative copilots, and cross-channel execution.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: "Active Intelligence brings together billions of data points and purpose-built AI agents to transform your goals into fully realized marketing strategies."
+        location: Active Intelligence page
+      - source_id: SRC-007
+        quote: "Securely connect Claude, ChatGPT, and other AI tools directly to your ActiveCampaign account."
+        location: Active Intelligence MCP section
+    analyst_interpretation: AI feature availability is public, but actual adoption, model economics, accuracy, and retention impact are not verified.
+    limitations: Claims are company-authored marketing statements.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-004
+        - T-010
+        - T-014
+      figure_ids:
+        - F-003
+        - F-006
+        - F-007
+        - F-011
+      risk_ids:
+        - R-004
+
+  - evidence_claim_id: EC-006
+    claim: ActiveCampaign's public tier structure includes Starter, Plus, Pro, and Enterprise plans with feature and send-limit differences, while PCMag reports pricing starts around $19 per month and scales with contact count.
+    evidence_summary: Pricing page lists tiers and feature differences; PCMag reports price points and contact-list scaling.
+    evidence_type: review_site
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: "Enterprise... Pro... Plus... Starter... Email sends 15x contact limit 12x contact limit 10x contact limit 10x contact limit."
+        location: Pricing page features table
+      - source_id: SRC-011
+        quote: "ActiveCampaign has four pricing tiers... Starter... for $19 per month ($15 per month when billed annually)."
+        location: PCMag pricing section
+    analyst_interpretation: Pricing architecture is visible, but dynamic current prices, discounting, and realized ARPA are private.
+    limitations: Company page rendered some prices dynamically as dashes in fetched text; PCMag price observations may become stale.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-005
+        - T-010
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-002
+
+  - evidence_claim_id: EC-007
+    claim: ActiveCampaign publishes many customer stories across industries and geographies, including Paperbell, Motrain, Pit Boss Grills, MSI Chicago, Artivive, and Ducks Unlimited Canada.
+    evidence_summary: Customers and about pages list 104 customer stories and multiple named outcomes.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: "Showing 1-12 of 104 Customers."
+        location: Customers page
+      - source_id: SRC-001
+        quote: "Museum of Science and Industry, Chicago... 206% Revenue growth YoY, strongly supported by email marketing."
+        location: About page customer stories
+    analyst_interpretation: Case studies support use-case breadth, but they are selected success stories and not representative economics.
+    limitations: Customer outcomes are company-authored and not independently audited here.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-006
+        - T-012
+      figure_ids:
+        - F-004
+        - F-006
+      risk_ids:
+        - R-001
+
+  - evidence_claim_id: EC-008
+    claim: PCMag independently positions ActiveCampaign as a strong mid-market automation tool with predictive sending and integrations, but flags steep learning curve, contact-list price scaling, and CRM depth limits.
+    evidence_summary: PCMag review describes the product's pros, cons, pricing, market position, and competitor comparisons.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: "ActiveCampaign deftly bridges the divide between simple newsletter tools and massive, enterprise-focused email marketing ecosystems."
+        location: PCMag bottom line
+      - source_id: SRC-011
+        quote: "Steep learning curve... Pricing increases significantly as your contact list grows... CRM lacks the depth of dedicated platforms."
+        location: PCMag pros and cons
+    analyst_interpretation: Independent product review supports both differentiation and risk arguments.
+    limitations: A product review is not a customer-cohort or market-share study.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-004
+        - T-005
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+        - F-011
+      risk_ids:
+        - R-002
+        - R-004
+
+  - evidence_claim_id: EC-009
+    claim: ActiveCampaign has a global personnel footprint with public headcount anchors and hubs across Chicago, Indianapolis, Dublin, Brazil, Poland, Costa Rica, Sydney, and other regions.
+    evidence_summary: Built In Chicago, Nearshore Americas, about, careers, and PRNewswire sources show offices, global hubs, benefits, and headcount anchors.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-021
+      - SRC-022
+      - SRC-023
+    quoted_evidence:
+      - source_id: SRC-021
+        quote: "ActiveCampaign, which surpassed 1,000 employees in October, has expanded in the past five years from Chicago to Indianapolis, Dublin and Sydney."
+        location: Built In Chicago 2021 office article
+      - source_id: SRC-022
+        quote: "This US$4 million investment will initially create 50 new jobs."
+        location: Nearshore Americas Costa Rica article
+    analyst_interpretation: Global presence is well supported, but current headcount and attrition need HR data.
+    limitations: Public headcount figures vary by year and definition.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-012
+        - T-016
+        - T-017
+      figure_ids:
+        - F-009
+        - F-011
+      risk_ids:
+        - R-006
+
+  - evidence_claim_id: EC-010
+    claim: ActiveCampaign publishes security claims around GDPR, SOC 2, HIPAA, automated scanning, red-team work, single-tenancy architecture, MFA, SSO, session management, and Trust Center access.
+    evidence_summary: Security page describes compliance focus and security controls.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: "ActiveCampaign is heavily focused on GDPR, SOC 2, and HIPAA compliance."
+        location: Security page
+      - source_id: SRC-012
+        quote: "Our Trust Center provides self-service access to our latest SOC 2 report, penetration test attestation, legal and privacy policies, compliance certifications, and more."
+        location: Security page Trust Center section
+    analyst_interpretation: The security program appears mature from public materials, but independent audit artifacts must be reviewed directly.
+    limitations: Scope and dates of certifications/reports are not validated from fetched public text.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-013
+        - T-020
+      figure_ids:
+        - F-003
+        - F-007
+        - F-010
+        - F-011
+      risk_ids:
+        - R-005
+
+  - evidence_claim_id: EC-011
+    claim: ActiveCampaign publishes legal, privacy, DPA, Data Privacy Framework, CCPA/LGPD, subprocessor, consent, anti-spam, cookie, terms, AUP, API, and SLA materials.
+    evidence_summary: Legal center, terms, and privacy policy pages identify the public policy framework, international data transfers, DPF certification, enforcement notes, and sensitive CCPA categories.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+      - SRC-014
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "Data Processing Addendum... Data Privacy Framework Notice... Standard Contractual Clauses... Subprocessor List... California Privacy Notice... Brazil Privacy Notice."
+        location: Legal center
+      - source_id: SRC-015
+        quote: "ActiveCampaign and AC PM LLC certify to the EU-U.S. Data Privacy Framework."
+        location: Privacy policy
+    analyst_interpretation: Legal-policy coverage is visible, but operating compliance and exceptions require counsel review.
+    limitations: Policy pages do not prove control effectiveness or absence of disputes.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-018
+        - T-020
+      figure_ids:
+        - F-003
+        - F-010
+        - F-011
+      risk_ids:
+        - R-003
+
+  - evidence_claim_id: EC-012
+    claim: ActiveCampaign's SMS and WhatsApp products introduce explicit consent, TCPA/GDPR-like obligations, Meta/WhatsApp BSP and eligibility dependencies, and platform-policy risk.
+    evidence_summary: SMS page states explicit written consent requirements and 180+ country support; WhatsApp page claims Meta Business Partner/BSP capabilities; terms describe WhatsApp service dependencies.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+      - SRC-009
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: "Customers must provide explicit written consent before receiving SMS marketing messages. This is required by regulations, including TCPA (US), GDPR (EU), and similar laws worldwide."
+        location: SMS Marketing FAQ
+      - source_id: SRC-008
+        quote: "Yes, we're an official BSP."
+        location: WhatsApp Messaging FAQ
+    analyst_interpretation: Messaging products create meaningful compliance and third-party-platform dependencies that should be diligence priorities.
+    limitations: Public materials do not show complaint rates, consent logs, regulator history, or Meta/carrier correspondence.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-004
+        - T-007
+        - T-014
+        - T-020
+      figure_ids:
+        - F-003
+        - F-006
+        - F-007
+        - F-010
+        - F-011
+      risk_ids:
+        - R-003
+        - R-007
+
+  - evidence_claim_id: EC-013
+    claim: A 2024 PRNewswire announcement names Jason VandeBoom as founder/CEO and adds or identifies Amy Kilpatrick, Carine Roman, Shay Howe, and Joy Whinery as senior executives.
+    evidence_summary: PRNewswire executive-team article identifies CMO, CRO, CSO, CFO, and founder/CEO context.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: "ActiveCampaign Expands Executive Team With Proven Martech Innovators."
+        location: PRNewswire 2024 executive-team announcement
+      - source_id: SRC-019
+        quote: "Amy Kilpatrick... CMO... Carine Roman... CRO... Shay Howe... CSO... Joy Whinery... CFO."
+        location: PRNewswire 2024 executive-team announcement
+    analyst_interpretation: Leadership roster entries are credible public signals; governance, performance, and turnover require private diligence.
+    limitations: PR announcements do not provide employment terms, board structure, or complete executive history.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+        - T-013
+        - T-015
+        - T-017
+      figure_ids:
+        - F-008
+        - F-011
+      risk_ids:
+        - R-006
+
+  - evidence_claim_id: EC-014
+    claim: ActiveCampaign has expanded through acquisitions including Postmark/DMARC Digests, Onesend, and Hilos, according to public secondary and news sources.
+    evidence_summary: Wikipedia lists acquisitions in 2022, 2023, and 2025; Nearshore Americas references the OneSend acquisition and multi-location/reseller use case.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "In May 2022, ActiveCampaign acquired Postmark... In October 2023, it acquired Onesend... In April 2025, it acquired Hilos."
+        location: Wikipedia acquisitions section
+      - source_id: SRC-022
+        quote: "This expansion follows ActiveCampaign's acquisition of OneSend in October 2023."
+        location: Nearshore Americas Costa Rica article
+    analyst_interpretation: Acquisition activity is plausible and relevant to product breadth, but transaction documents and integration status are not public.
+    limitations: Some direct company acquisition pages were unavailable or returned errors during fetch attempts.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-013
+        - T-014
+        - T-019
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-007
+        - R-008
+
+  - evidence_claim_id: EC-015
+    claim: Public USPTO mirror pages show the ACTIVECAMPAIGN trademark as live/registered and ACTIVECAMPAIGN POSTMARK as live/pending in the fetched record.
+    evidence_summary: USPTO mirror records provide trademark status, registration number, first-use dates, and filing information.
+    evidence_type: patent_or_trademark_record
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-017
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: "Mark: ACTIVECAMPAIGN... US Registration Number: 4935812... Registration Date: 2016-04-12... Mark Drawing Type: Standard Character Mark."
+        location: USPTO mirror TM 86679788
+      - source_id: SRC-018
+        quote: "Mark: ACTIVECAMPAIGN POSTMARK... Application Filing Date: 2022-06-16."
+        location: USPTO mirror TM 97454945
+    analyst_interpretation: Trademark evidence supports brand ownership signals, but official registry and assignment review is still needed.
+    limitations: Mirror records should be confirmed against official USPTO TSDR and full prosecution histories.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-019
+      figure_ids:
+        - F-001
+        - F-010
+        - F-011
+      risk_ids:
+        - R-008
+
+  - evidence_claim_id: EC-016
+    claim: MediaPost reported that a March 2022 social-engineering attack affected a small number of ActiveCampaign customer accounts.
+    evidence_summary: MediaPost article states the company said it notified affected customers and law enforcement after a small number of accounts were affected.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: "ActiveCampaign... was struck by a social engineering attack that affected a small number of customers' accounts."
+        location: MediaPost article
+      - source_id: SRC-016
+        quote: "ActiveCampaign says it has notified all affected customers and notified law enforcement."
+        location: MediaPost article
+    analyst_interpretation: The incident is relevant to security diligence, even if public reporting indicates limited customer impact.
+    limitations: No internal postmortem, legal notice, breach analysis, or remediation evidence was reviewed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-018
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-005
+
+  - evidence_claim_id: EC-017
+    claim: Public-source review did not establish a complete litigation or regulatory-action schedule because direct court sources were inaccessible or incomplete.
+    evidence_summary: The review found legal-policy materials but could not complete a docket-level litigation search due to source access limits.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "Legal center materials are available, but they do not provide a litigation schedule."
+        location: Analyst note based on legal center scope
+    analyst_interpretation: Absence of accessible docket evidence should be treated as an evidence gap, not as a clean legal conclusion.
+    limitations: No paid docket, counsel schedule, regulatory correspondence, or insurance materials were reviewed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-018
+      figure_ids:
+        - F-011
+      risk_ids:
+        - R-008
+
+  - evidence_claim_id: EC-018
+    claim: ActiveCampaign began as on-premise software and transitioned to SaaS around 2013, creating a growth opportunity.
+    evidence_summary: Built In Chicago and ActiveCampaign history pages describe the original on-premise model and SaaS transition.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-020
+        quote: "We transitioned ActiveCampaign to a SaaS business in 2013."
+        location: Built In Chicago interview
+      - source_id: SRC-001
+        quote: "We started as on-premise software... transitioned to the SaaS model we offer today."
+        location: About page history FAQ
+    analyst_interpretation: The SaaS transition is material context for growth and product evolution.
+    limitations: Historical statements do not verify current architecture or revenue mix.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-004
+      risk_ids: []
+
+  - evidence_claim_id: EC-019
+    claim: Public sources do not verify customer concentration, churn, NRR, GRR, cohort retention, support cost, or customer-level ARR.
+    evidence_summary: Public sources provide customer counts and selected case studies, not customer-quality schedules.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: "Showing 1-12 of 104 Customers."
+        location: Customers page
+      - source_id: SRC-001
+        quote: "ActiveCampaign's intelligent marketing automation platform helps over 180,000 customers."
+        location: About page FAQ
+    analyst_interpretation: Public customer scale is not a substitute for retention, concentration, and ARR-quality diligence.
+    limitations: Requires data-room exports and customer references.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-003
+        - T-008
+        - T-012
+      figure_ids:
+        - F-004
+        - F-006
+      risk_ids:
+        - R-001
+
+  - evidence_claim_id: EC-020
+    claim: Public sources do not verify current financial statements, cash runway, debt, cap table, liquidation preferences, or post-2021 valuation marks.
+    evidence_summary: Public evidence discloses historical funding and valuation, but not financial statements or security terms.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "Total financing now over $360 million with a valuation of over $3 billion."
+        location: PRNewswire Series C announcement
+      - source_id: SRC-003
+        quote: "In April 2021, it closed a Series C funding round of $240 million."
+        location: Wikipedia funding summary
+    analyst_interpretation: Historical financing facts frame the diligence request but are insufficient for current valuation or downside analysis.
+    limitations: Requires company financials, cap table, debt schedule, board materials, and investor documents.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-002
+        - T-003
+      figure_ids:
+        - F-002
+        - F-008
+        - F-011
+      risk_ids:
+        - R-001
+        - R-006
+
+sources:
+  - source_id: SRC-001
+    title: ActiveCampaign About
+    url: https://www.activecampaign.com/about
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored source useful for current positioning, scale claims, history, values, customer examples, and private-company statement; marketing claims require corroboration.
+    archive_url: null
+  - source_id: SRC-002
+    title: ActiveCampaign Raises $240 Million to Help Companies Grow with Customer Experience Automation
+    url: https://www.prnewswire.com/news-releases/activecampaign-raises-240-million-to-help-companies-grow-with-customer-experience-automation-301273496.html
+    publisher: PRNewswire
+    author: ActiveCampaign
+    publication_date: 2021-04-21
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Press-release distribution of company financing announcement; strong for announced round details but not independently audited financial statements.
+    archive_url: null
+  - source_id: SRC-003
+    title: ActiveCampaign
+    url: https://en.wikipedia.org/wiki/ActiveCampaign
+    publisher: Wikipedia
+    author: Community editors
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: other
+    reliability_notes: Secondary source useful for summary and references; underlying sources should be preferred for material facts when available.
+    archive_url: null
+  - source_id: SRC-004
+    title: ActiveCampaign Customers
+    url: https://www.activecampaign.com/customers
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: customer_or_partner_source
+    reliability_notes: Company-authored customer-story index; useful for named logos and sectors, not representative customer economics.
+    archive_url: null
+  - source_id: SRC-005
+    title: ActiveCampaign Apps and Integrations
+    url: https://www.activecampaign.com/apps
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored integration catalog and FAQ; validates product surface but not integration uptime or economics.
+    archive_url: null
+  - source_id: SRC-006
+    title: ActiveCampaign Pricing
+    url: https://www.activecampaign.com/pricing
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored pricing and feature page; fetched text showed dynamic price fields as dashes, so independent pricing observations were used alongside it.
+    archive_url: null
+  - source_id: SRC-007
+    title: Active Intelligence
+    url: https://www.activecampaign.com/platform/active-intelligence
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored product marketing for AI agents and autonomous marketing; adoption and ROI require private validation.
+    archive_url: null
+  - source_id: SRC-008
+    title: WhatsApp Messaging
+    url: https://www.activecampaign.com/platform/whatsapp-messaging
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored product page; useful for public WhatsApp capabilities and BSP claims but not Meta contract terms.
+    archive_url: null
+  - source_id: SRC-009
+    title: SMS Marketing
+    url: https://www.activecampaign.com/platform/sms-marketing
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored SMS product page; useful for feature and consent framing, not compliance proof.
+    archive_url: null
+  - source_id: SRC-010
+    title: Sales CRM
+    url: https://www.activecampaign.com/platform/sales-crm
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored CRM product page with features, review-count claims, and pricing FAQ.
+    archive_url: null
+  - source_id: SRC-011
+    title: ActiveCampaign Review
+    url: https://www.pcmag.com/reviews/activecampaign
+    publisher: PCMag
+    author: Molly McLaughlin
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: review_site
+    reliability_notes: Independent product review; strong for qualitative product/pricing/competition observations, not for financial diligence.
+    archive_url: null
+  - source_id: SRC-012
+    title: ActiveCampaign Security
+    url: https://www.activecampaign.com/security
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored security claims and Trust Center pointer; reports and attestations need direct review.
+    archive_url: null
+  - source_id: SRC-013
+    title: ActiveCampaign Legal Center
+    url: https://www.activecampaign.com/legal
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company legal index; useful for identifying policy coverage but not legal-dispute absence.
+    archive_url: null
+  - source_id: SRC-014
+    title: ActiveCampaign Terms of Service
+    url: https://www.activecampaign.com/legal/terms-of-service
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company legal terms; useful for beta, payment, WhatsApp, IP, publicity, and indemnity provisions.
+    archive_url: null
+  - source_id: SRC-015
+    title: ActiveCampaign Privacy Policy
+    url: https://www.activecampaign.com/legal/privacy-policy
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company privacy policy; useful for data-transfer and privacy framework claims, but not operational compliance testing.
+    archive_url: null
+  - source_id: SRC-016
+    title: ActiveCampaign Hit by Attack, Says Small Number of Customer Accounts Affected
+    url: https://www.mediapost.com/publications/article/372197/activecampaign-hit-by-attack-says-small-number-of.html
+    publisher: MediaPost
+    author: Ray Schultz
+    publication_date: 2022-03-21
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Independent report on a company-reported security incident; no internal postmortem reviewed.
+    archive_url: null
+  - source_id: SRC-017
+    title: USPTO Report TM 86679788 - ACTIVECAMPAIGN
+    url: https://uspto.report/TM/86679788
+    publisher: USPTO.report
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: patent_or_trademark_record
+    reliability_notes: Public trademark mirror; confirm official status through USPTO TSDR in legal diligence.
+    archive_url: null
+  - source_id: SRC-018
+    title: USPTO Report TM 97454945 - ACTIVECAMPAIGN POSTMARK
+    url: https://uspto.report/TM/97454945
+    publisher: USPTO.report
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: patent_or_trademark_record
+    reliability_notes: Public trademark mirror; confirm current official status through USPTO TSDR.
+    archive_url: null
+  - source_id: SRC-019
+    title: ActiveCampaign Expands Executive Team With Proven Martech Innovators
+    url: https://www.prnewswire.com/news-releases/activecampaign-expands-executive-team-with-proven-martech-innovators-302269093.html
+    publisher: PRNewswire
+    author: ActiveCampaign
+    publication_date: 2024-10-02
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Press-release distribution of company executive announcement; useful for named leadership, not governance or turnover.
+    archive_url: null
+  - source_id: SRC-020
+    title: 5 Chicago tech leaders share what changed when their companies scaled
+    url: https://www.builtinchicago.org/articles/chicago-tech-companies-growth-mode
+    publisher: Built In Chicago
+    author: null
+    publication_date: 2019-02-07
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Independent local tech article quoting founder context; useful for historical SaaS transition and 60,000 SMB customer anchor.
+    archive_url: null
+  - source_id: SRC-021
+    title: ActiveCampaign Will Open 3 New Hybrid Offices
+    url: https://www.builtinchicago.org/2021/12/16/activecampaign-opens-offices-indianapolis-dublin-brazil
+    publisher: Built In Chicago
+    author: Jeff Rumage
+    publication_date: 2021-12-16
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Independent local tech article; useful for 2021 headcount and office expansion anchors.
+    archive_url: null
+  - source_id: SRC-022
+    title: ActiveCampaign Expands to Costa Rica with $4 Million Investment
+    url: https://nearshoreamericas.com/activecampaign-expands-to-costa-rica-with-4-million-investment/
+    publisher: Nearshore Americas
+    author: Narayan Ammachchi
+    publication_date: 2024-01-10
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Independent regional business news; useful for Costa Rica delivery center and OneSend context.
+    archive_url: null
+  - source_id: SRC-023
+    title: ActiveCampaign Careers
+    url: https://www.activecampaign.com/careers
+    publisher: ActiveCampaign
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored people, benefits, hybrid work, equity, volunteer, and recruiting-warning source.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Current financial quality and valuation are opaque
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Public sources disclose historical funding, 2021 ARR, and broad customer scale, but not current revenue quality, retention, margins, cash, debt, burn, runway, or post-2021 valuation marks.
+    impacted_chapter_ids:
+      - I
+      - III
+      - V
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - III.A
+      - V.A
+    evidence_claim_ids:
+      - EC-002
+      - EC-019
+      - EC-020
+    mitigation_or_diligence_request: Require audited financials, monthly ARR bridge, cohort retention, customer concentration, debt schedule, cash runway, cap table, and investor financing documents before valuation work.
+  - risk_id: R-002
+    risk_title: Competitive pricing and positioning pressure
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: ActiveCampaign competes with entry-level email tools, full CRM suites, e-commerce automation specialists, and AI-native automation tools; PCMag flags price scaling, learning curve, and CRM depth limits.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    mitigation_or_diligence_request: Analyze win/loss, discounting, churn by competitor, price sensitivity, CAC payback, time-to-value, and product differentiation by segment.
+  - risk_id: R-003
+    risk_title: Consent-driven messaging and privacy compliance exposure
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: SMS, WhatsApp, email, privacy, international transfers, CCPA/LGPD, DPF, and sensitive communication data create compliance obligations that may produce regulatory, class-action, and platform-policy risk.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.B
+      - VIII.A
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+    mitigation_or_diligence_request: Review consent logs, opt-out handling, complaints, regulator correspondence, DSAR logs, DPA/SCC/DPF controls, Meta/carrier policies, and privacy counsel memos.
+  - risk_id: R-004
+    risk_title: Product complexity and AI execution risk
+    risk_category: product
+    severity: medium
+    likelihood: high
+    description: Broad automation, CRM, integrations, messaging, acquired products, and AI-agent features can create onboarding complexity, support burden, technical debt, and unproven AI monetization.
+    impacted_chapter_ids:
+      - II
+      - IV
+      - VI
+    impacted_section_ids:
+      - II.A
+      - IV.A
+      - VI.A
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-008
+    mitigation_or_diligence_request: Review usage telemetry, feature adoption, onboarding completion, support tickets, R&D roadmap, AI cost, model governance, and product-level churn/ARR.
+  - risk_id: R-005
+    risk_title: Security and privacy incident exposure
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: Public security materials show controls, but a reported 2022 social-engineering event and sensitive customer-data processing warrant incident and control diligence.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.B
+      - VIII.A
+    evidence_claim_ids:
+      - EC-010
+      - EC-016
+    mitigation_or_diligence_request: Review SOC 2 Type II, pen tests, vulnerability SLAs, incident register, postmortems, customer notifications, cyber insurance, and account-takeover controls.
+  - risk_id: R-006
+    risk_title: Team, governance, and headcount uncertainty
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public sources identify senior executive hires and global headcount anchors, but do not disclose board rights, succession plans, attrition, functional productivity, or current HRIS data.
+    impacted_chapter_ids:
+      - I
+      - VII
+    impacted_section_ids:
+      - I.B
+      - VII.A
+    evidence_claim_ids:
+      - EC-009
+      - EC-013
+      - EC-020
+    mitigation_or_diligence_request: Request board roster, executive turnover, employment agreements, equity grants, HRIS export, attrition by function/geography, compensation benchmarks, and succession planning.
+  - risk_id: R-007
+    risk_title: Third-party platform and integration dependency
+    risk_category: operational
+    severity: medium
+    likelihood: high
+    description: Integrations, Meta/WhatsApp, SMS carriers, payment processors, APIs, and app ecosystems create external dependency risk that can affect availability, compliance, deliverability, and customer workflows.
+    impacted_chapter_ids:
+      - II
+      - III
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.B
+      - III.B
+      - VI.A
+      - VIII.A
+    evidence_claim_ids:
+      - EC-004
+      - EC-012
+      - EC-014
+    mitigation_or_diligence_request: Review key third-party contracts, SLAs, platform-policy change history, supplier concentration, integration uptime, and contingency plans.
+  - risk_id: R-008
+    risk_title: IP, litigation, and legal-record gaps
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: Trademark signals are public, but patents, source-code ownership, OSS compliance, acquired IP, litigation schedules, regulatory inquiries, and insurance claims are not fully verifiable from accessible public sources.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.C
+    evidence_claim_ids:
+      - EC-015
+      - EC-017
+    mitigation_or_diligence_request: Counsel should provide IP schedule, official trademark/patent review, OSS/SBOM, invention assignments, litigation/regulatory schedule, insurance policies, and M&A IP assignment documents.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited annual and quarterly financial statements, revenue recognition memo, monthly ARR bridge, bookings, deferred revenue, AR aging, gross margin, EBITDA, cash flow, cash balance, debt, burn, and runway.
+    why_it_matters: These items determine valuation, dilution, runway, debt risk, and quality of growth.
+    suggested_source_or_request: CFO, finance data room, auditors, board materials, and bank/debt statements.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Fully diluted cap table, preferred-stock terms, investor rights, option pool, warrants, SAFEs/notes, secondary sales, 409A valuations, and debt agreements.
+    why_it_matters: Liquidation preferences and security terms can materially alter investor return and control outcomes.
+    suggested_source_or_request: Company counsel, CFO, corporate secretary, and investor documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Customer cohort data, top-customer ARR, churn, GRR, NRR, expansion, contractions, support cost, and customer references.
+    why_it_matters: Public customer counts do not prove durable revenue or customer quality.
+    suggested_source_or_request: CRM, billing, data warehouse, customer success, and reference calls.
+    priority: high
+  - gap_id: G-004
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Win/loss, discounting, competitor migration data, competitive churn, CAC payback, and product differentiation by segment.
+    why_it_matters: The category is crowded and pricing pressure may impair growth or retention.
+    suggested_source_or_request: Sales ops, RevOps, CRM exports, product marketing, and customer interviews.
+    priority: high
+  - gap_id: G-005
+    chapter_id: II
+    section_id: II.A
+    missing_information: Product-level ARR, gross margin, attach rate, usage telemetry, uptime, reliability, feature adoption, AI cost, and product-level retention.
+    why_it_matters: Product breadth is public, but economic contribution and durability are private.
+    suggested_source_or_request: Product analytics, billing, engineering, customer success, and finance exports.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: SOC 2 Type II report, penetration-test attestation, security incident register, breach notifications, cyber insurance, vulnerability SLAs, and remediations.
+    why_it_matters: Marketing automation processes sensitive contact and communication data and has public incident history.
+    suggested_source_or_request: CISO/security team, Trust Center, counsel, and insurer.
+    priority: high
+  - gap_id: G-007
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: SMS/WhatsApp consent logs, TCPA/CASL/GDPR compliance controls, carrier/Meta audits, complaint rates, opt-outs, platform suspensions, and policy correspondence.
+    why_it_matters: Messaging compliance is a high-severity regulatory and platform-dependency risk.
+    suggested_source_or_request: Legal, compliance, product, Trust and Safety, Meta/carrier account teams, and customer-support logs.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Current HRIS export, executive turnover, attrition by function/geography, compensation bands, equity grants, retention plans, board roster, and succession plans.
+    why_it_matters: Public headcount anchors vary, and late-stage SaaS scaling depends on leadership and workforce execution.
+    suggested_source_or_request: People team, CFO, board materials, compensation committee, and employment agreements.
+    priority: medium
+  - gap_id: G-009
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Roadmap, R&D budget, engineering headcount, technical debt, AI vendor contracts, model governance, acquisition-integration status, and architectural diagrams.
+    why_it_matters: Product expansion and AI strategy may create cost, privacy, technical, and execution risk.
+    suggested_source_or_request: CTO/product leadership, R&D operating plan, architecture review, and M&A integration plans.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.C
+    missing_information: IP schedule, patents, official trademark records, source-code ownership, invention assignments, OSS/SBOM, acquired-company IP transfer documents, and IP disputes.
+    why_it_matters: Public trademark records do not prove full software and data IP ownership.
+    suggested_source_or_request: Company counsel, IP counsel, engineering, M&A counsel, and code-scanning tools.
+    priority: medium
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide monthly ARR bridge, GAAP revenue, gross margin, EBITDA, free cash flow, cash balance, debt, deferred revenue, AR aging, bookings, and forecast versus actuals for the last 36 months.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Provide fully diluted cap table, financing documents, liquidation preferences, investor rights, debt agreements, warrants, SAFE/notes, secondary sales, option pool, 409A history, and board approvals.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide top-25 customer ARR, cohort retention, GRR, NRR, logo churn, contraction, expansion, ARPA, support cost, and customer references by segment and geography.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide win/loss, competitive churn, discounting, pricing changes, competitor migration, and CAC payback data against HubSpot, Mailchimp, Klaviyo, Brevo, Salesforce, Campaigner, and AI-native tools.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: II
+    section_id: II.A
+    request: Provide product-level ARR, attach rates, usage telemetry, adoption cohorts, gross margin, uptime, roadmap, R&D investment, AI model cost, and product-level churn for email, CRM, SMS, WhatsApp, Postmark, and Active Intelligence.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide SOC 2 Type II, penetration-test attestation, HIPAA/BAA scope, security incident register, cyber-insurance policy, breach-notification history, and remediation evidence for the 2022 social-engineering event.
+    requested_from: company
+    priority: high
+  - request_id: Q-007
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide DPA, SCCs, DPF audit materials, subprocessor list, privacy-impact assessments, DSAR logs, consent audit, spam/TCPA/CASL/GDPR controls, complaint history, and regulator correspondence.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-008
+    chapter_id: III
+    section_id: III.B
+    request: Provide material partner, reseller, integration, Meta/WhatsApp, SMS carrier, payment processor, and API platform contracts; include revenue, uptime, SLA, rev-share, and termination terms.
+    requested_from: company
+    priority: high
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide current HRIS headcount, functional and regional split, attrition, executive turnover, compensation bands, equity grants, employment agreements, retention plans, board composition, and succession plans.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide architecture diagrams, R&D roadmap, technical-debt register, AI governance policy, model/vendor contracts, acquisition-integration plans, and uptime/error-budget history.
+    requested_from: company
+    priority: medium
+  - request_id: Q-011
+    chapter_id: VIII
+    section_id: VIII.C
+    request: Provide IP schedule, patents, official trademark status, invention assignments, contractor agreements, OSS/SBOM review, acquired-company IP assignments, and any IP disputes.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide litigation and regulatory schedule, threatened claims, settlements, subpoenas, customer indemnity claims, insurance notices, and material contract exceptions.
+    requested_from: counsel
+    priority: high
+
+limitations:
+  - limitation_id: L-001
+    description: This is a public-source diligence report; no private company data room, financial statements, cap table, customer data, contracts, security reports, or interviews were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - III.A
+      - V.A
+      - VII.A
+      - VIII.A
+  - limitation_id: L-002
+    description: Company-authored customer, review, product, AI, security, ROI, and scale claims were treated as public evidence but not independently audited unless third-party corroboration was available.
+    affected_chapter_ids:
+      - II
+      - III
+      - V
+      - VI
+      - VIII
+    affected_section_ids:
+      - II.A
+      - II.B
+      - III.A
+      - V.A
+      - VI.A
+      - VIII.A
+  - limitation_id: L-003
+    description: Several sources were blocked, rate-limited, geo-restricted, CAPTCHA-protected, or unavailable during research, including some review, news, legal-docket, and acquisition-announcement pages.
+    affected_chapter_ids:
+      - I
+      - VI
+      - VIII
+    affected_section_ids:
+      - I.B
+      - VI.A
+      - VIII.A
+      - VIII.C
+  - limitation_id: L-004
+    description: Wikipedia and USPTO mirror pages were used for selected corroboration; material legal and IP diligence should confirm facts against original filings, official registries, and counsel schedules.
+    affected_chapter_ids:
+      - I
+      - VI
+      - VIII
+    affected_section_ids:
+      - I.B
+      - VI.A
+      - VIII.C
+  - limitation_id: L-005
+    description: Charts using public customer and headcount anchors visualize differently defined public metrics; they should not be interpreted as audited time series.
+    affected_chapter_ids:
+      - III
+      - VII
+    affected_section_ids:
+      - III.A
+      - VII.A
