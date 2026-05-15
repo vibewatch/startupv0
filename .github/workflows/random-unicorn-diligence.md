@@ -1,12 +1,12 @@
 ---
 description: |
-  Weekly workflow that randomly picks a startup unicorn not already covered in
+  Workflow that runs every 2 hours and randomly picks a startup unicorn not already covered in
   the reports/ folder, performs internet research using the
   startup-diligence-research skill, and opens a pull request adding a new
   evidence-backed YAML diligence report under reports/.
 
 on:
-  schedule: weekly
+  schedule: every 2 hours
   workflow_dispatch:
 
 permissions: read-all
