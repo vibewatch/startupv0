@@ -1,0 +1,3549 @@
+report_metadata:
+  report_title: "Creditas Startup Diligence Report"
+  target_company: "Creditas"
+  website: "https://www.creditas.com/"
+  known_aliases:
+    - "Creditas Solucoes Financeiras"
+    - "Creditas Sociedade de Credito Direto"
+    - "Minuto Seguros"
+  sector: "Financial services fintech / secured lending"
+  geography: "Brazil, with public signals for Mexico and Spain operations"
+  company_stage: "Private unicorn"
+  research_date: "2026-05-15"
+  analyst: "GitHub Copilot diligence agent"
+  report_version: "1.0"
+  currency: "BRL unless otherwise noted"
+  time_zone: "America/Sao_Paulo"
+
+research_scope:
+  diligence_depth: "standard_diligence"
+  source_strategy:
+    - "Started from public unicorn lists and excluded companies already covered in reports."
+    - "Prioritized company-owned investor-relations, product, legal, privacy, transparency, careers, and developer documentation."
+    - "Supplemented with public market databases, professional profiles, and customer-review data where accessible."
+    - "Excluded inaccessible, blocked, or unrelated pages; Reuters and TechCrunch returned access blocks, Crunchbase returned access-control friction, and a CB Insights page referred to a different CREDITAS entity."
+  included_jurisdictions:
+    - "Brazil"
+    - "Mexico where publicly referenced by company sources"
+    - "Spain where publicly referenced as a technology hub"
+  excluded_topics:
+    - "Private data-room financial statements, cap table, securitization documents, bank covenants, warehouse-line agreements, and loan tapes were not available."
+    - "Non-public customer lists, supplier contracts, legal dockets, security assessments, and employee records were not accessed."
+  user_provided_materials:
+    - material_id: "UPM-001"
+      title: "Autonomous task instructions"
+      type: "workflow_request"
+      date_received: "2026-05-15"
+      notes: "No founder deck, company data room, or private financial package was provided."
+
+founder_claims:
+  - founder_claim_id: "FC-001"
+    claim_text: "Creditas is a leading fintech platform for secured and specialized financial solutions focused on auto, home, and employee-benefits ecosystems."
+    claim_source: "Company investor-relations and funding announcements"
+    claim_date: "2022-01-25"
+    mapped_chapter_ids: ["II", "IV", "V"]
+    mapped_section_ids: ["II.A", "IV.A", "V.A"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-014"]
+    contradiction_summary: "Public sources support the product breadth and secured-lending focus, but market-leadership rank requires independent market-share validation."
+    diligence_follow_up:
+      - "Request current market-share data by product line, methodology, and independent third-party corroboration."
+  - founder_claim_id: "FC-002"
+    claim_text: "The January 2022 Series F valued Creditas at US$4.8 billion and brought total equity raised to US$829 million across six rounds."
+    claim_source: "Creditas Series F announcement"
+    claim_date: "2022-01-25"
+    mapped_chapter_ids: ["I"]
+    mapped_section_ids: ["I.B"]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: ["EC-004"]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Reconcile the US$829 million Series F total with the later IR-home claim of US$987 million raised through seven financing rounds."
+  - founder_claim_id: "FC-003"
+    claim_text: "Creditas had a R$7.6 billion loan portfolio as of March 2026 and Q1 2026 annualized revenues above R$2.5 billion."
+    claim_source: "Creditas IR home and Q1 2026 financial results"
+    claim_date: "2026-05-07"
+    mapped_chapter_ids: ["I"]
+    mapped_section_ids: ["I.A"]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: ["EC-001", "EC-002"]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request audited FY2025 and Q1 2026 financial statements, reconciliation schedules, and portfolio stratification."
+  - founder_claim_id: "FC-004"
+    claim_text: "AI automation is materially improving operations, including early-stage collections, credit/legal workflows, and product-development cycle time."
+    claim_source: "Creditas Q1 2026 financial results"
+    claim_date: "2026-05-07"
+    mapped_chapter_ids: ["VI"]
+    mapped_section_ids: ["VI.B"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-009"]
+    contradiction_summary: "Claims are specific but self-reported; no independent control testing, model-governance documentation, or KPI audit was public."
+    diligence_follow_up:
+      - "Request AI-governance policy, monitoring metrics, human-review thresholds, and before/after productivity support."
+  - founder_claim_id: "FC-005"
+    claim_text: "Creditas is maintaining neutral cash flow and targeting near-term operational break-even."
+    claim_source: "Creditas Q4 2025 and Q1 2026 financial results"
+    claim_date: "2026-05-07"
+    mapped_chapter_ids: ["I"]
+    mapped_section_ids: ["I.A"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-003"]
+    contradiction_summary: "Company reports neutral cash flow but also reports IFRS operating and net losses; public statements do not include full cash-flow statements."
+    diligence_follow_up:
+      - "Request monthly cash-flow bridge, covenant tests, unrestricted cash, funding availability, and board-approved plan to IFRS profitability."
+  - founder_claim_id: "FC-006"
+    claim_text: "Creditas Insurance is the largest independent online insurance broker in Brazil."
+    claim_source: "Creditas Q1 2026 financial results and Minuto Seguros acquisition release"
+    claim_date: "2026-05-07"
+    mapped_chapter_ids: ["II", "IV"]
+    mapped_section_ids: ["II.A", "IV.A"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-006", "EC-016"]
+    contradiction_summary: "Creditas and Minuto sources support scale and broker positioning; independent ranking evidence was not publicly verified in this run."
+    diligence_follow_up:
+      - "Request insurance gross written premium, carrier concentration, ranking methodology, and regulator/brokerage filings."
+
+executive_summary:
+  overall_assessment: >-
+    Creditas is a scaled Brazil-centered secured-lending fintech with substantial public operating disclosure, diversified loan and insurance products, and mature capital-markets funding infrastructure. The company remains high-risk for investment diligence because public results still show IFRS losses, sensitivity to Brazil rates and credit cycles, reliance on securitization structures, and meaningful customer-service, privacy, AI, and regulatory questions that require private data-room validation.
+  investment_or_diligence_thesis: >-
+    The diligence thesis is "continue to second-stage diligence, not yet investment-ready": public evidence supports a real operating platform with a R$7.6 billion March 2026 portfolio, Q1 2026 revenue of R$633.0 million, US$987 million raised through seven rounds, and a last public unicorn valuation of US$4.8 billion. The underwriting question is whether Creditas can convert self-reported cohort profitability and AI productivity into durable IFRS profitability while preserving credit quality and funding access in a high-rate Brazilian environment.
+  strongest_verified_claims:
+    - founder_claim_id: "FC-002"
+      summary: "Creditas announced a US$260 million Series F at a US$4.8 billion valuation in January 2022."
+      evidence_claim_ids: ["EC-004"]
+    - founder_claim_id: "FC-003"
+      summary: "Creditas discloses a R$7.6 billion March 2026 portfolio and Q1 2026 annualized revenue above R$2.5 billion."
+      evidence_claim_ids: ["EC-001", "EC-002"]
+    - founder_claim_id: "FC-001"
+      summary: "Company product pages and IR disclosures substantiate secured lending across vehicle, home, payroll, insurance, financing, and benefits offerings."
+      evidence_claim_ids: ["EC-006", "EC-007"]
+  biggest_risks:
+    - risk_id: "R-001"
+      summary: "The company remains IFRS loss-making despite improved Q1 2026 operating loss and neutral-cash-flow claims."
+    - risk_id: "R-002"
+      summary: "Portfolio growth depends on capital-markets funding and macro/credit-cycle resilience in Brazil."
+    - risk_id: "R-005"
+      summary: "Customer-service, fraud-impersonation, privacy, and AI-data handling risks are visible in public sources."
+  key_evidence_gaps:
+    - "Audited financial statements, monthly cash-flow statements, credit-loss roll-forward, vintage/cohort loss curves, and loan-tape stratification."
+    - "Full cap table, liquidation preferences, convertible-note terms, Andbank transaction documents, FIDC/CRI covenants, and warehouse availability."
+    - "Customer concentration, churn, CAC/payback by channel, partner revenue share, and direct-versus-partner origination mix."
+    - "Independent market-share evidence for secured lending, insurance brokerage, and auto finance positions."
+    - "Model-risk, AI-governance, privacy-impact, and security-control evidence."
+  recommended_next_steps:
+    - "Run confirmatory financial diligence on IFRS profitability, cash generation, provision adequacy, funding liquidity, and covenant headroom."
+    - "Request product-level loan tapes, vintage performance, collateral LTV distributions, recoveries, delinquencies, and securitization waterfalls."
+    - "Interview capital-markets counterparties, partner channels, and a sample of borrowers and employer/payroll partners."
+    - "Review legal/regulatory permissions by entity and privacy/AI controls under LGPD and Banco Central-facing obligations."
+
+chapters:
+  - chapter_id: "I"
+    title: "Financial Information"
+    chapter_summary: >-
+      Public evidence indicates Creditas is scaled and growing but not yet IFRS profitable. The latest public quarter shows record origination, portfolio, revenue, and gross profit, alongside a narrower operating loss and a net loss.
+    founder_claim_ids: ["FC-002", "FC-003", "FC-005"]
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-003", "EC-004", "EC-005"]
+    risk_ids: ["R-001", "R-002", "R-003", "R-008"]
+    sections:
+      - section_id: "I.A"
+        title: "Recent financial performance and profitability"
+        checklist_question_ids: ["I.A.1", "I.A.2", "I.A.3"]
+        summary: >-
+          Q1 2026 public results show R$1.1 billion origination, R$7.6 billion portfolio, R$633.0 million revenue, R$253.5 million gross profit, a R$34.9 million operating loss, and a R$75.9 million net loss. The operating-loss trajectory improved versus Q4 2025, but full audited statements and cash-flow support were not public.
+        verification_status: "partially_verified"
+        confidence: "high"
+        key_findings:
+          - finding_id: "I.A-F1"
+            finding: "Creditas disclosed record Q1 2026 origination, portfolio, revenue, and gross profit while still reporting IFRS losses."
+            evidence_claim_ids: ["EC-002", "EC-003"]
+            risk_ids: ["R-001"]
+          - finding_id: "I.A-F2"
+            finding: "The Q4 2025 accounting-methodology change materially reduced reported 2025 revenue by 6.4%, creating comparability and earnings-quality diligence work."
+            evidence_claim_ids: ["EC-010"]
+            risk_ids: ["R-001"]
+        hidden_risks:
+          - "Reported gross margin improvements may be sensitive to origination mix, interest-rate curves, and front-loaded IFRS provisioning."
+          - "Neutral cash-flow claims are not independently verifiable from public source excerpts."
+        evidence_gaps:
+          - "Audited FY2023-FY2025 statements, Q1 2026 management accounts, cash-flow statements, debt maturity schedule, and covenant tests."
+        follow_up_questions:
+          - "What is the reconciliation between IFRS net loss, operating loss, cohort profitability, and cash-neutral operation by month?"
+        table_ids: ["T-002"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-002", "EC-003", "EC-010"]
+      - section_id: "I.B"
+        title: "Funding history, valuation, and ownership"
+        checklist_question_ids: ["I.B.1", "I.B.2", "I.B.3"]
+        summary: >-
+          The latest public priced equity valuation found in company sources is the January 2022 Series F at US$4.8 billion. Creditas later reported US$987 million raised through seven financing rounds, but detailed cap-table economics and preference stacks are not public.
+        verification_status: "partially_verified"
+        confidence: "high"
+        key_findings:
+          - finding_id: "I.B-F1"
+            finding: "Creditas announced US$255 million Series E financing at a US$1.75 billion valuation in December 2020 and US$260 million Series F financing at a US$4.8 billion valuation in January 2022."
+            evidence_claim_ids: ["EC-004", "EC-005"]
+            risk_ids: ["R-008"]
+          - finding_id: "I.B-F2"
+            finding: "Investor-relations highlights state US$987 million raised through seven financing rounds; detailed ownership and security terms remain private."
+            evidence_claim_ids: ["EC-001"]
+            risk_ids: ["R-008"]
+        hidden_risks:
+          - "Later financing instruments, including the July 2022 convertible note and Andbank-linked transactions, may affect dilution, control, liquidation preference, or funding obligations."
+        evidence_gaps:
+          - "Current cap table, option pool, debt instruments, side letters, and investor-rights agreements."
+        follow_up_questions:
+          - "What is the fully diluted ownership and liquidation stack after the Series F extension, convertible note, and Andbank transaction?"
+        table_ids: ["T-001", "T-003"]
+        figure_ids: ["F-001", "F-002"]
+        evidence_claim_ids: ["EC-001", "EC-004", "EC-005"]
+
+  - chapter_id: "II"
+    title: "Products"
+    chapter_summary: >-
+      Creditas offers a multi-product secured-finance ecosystem spanning vehicle-backed loans, home-backed loans, private payroll loans, auto insurance, real-estate financing, auto finance, and corporate benefits. Public pages show product terms, but product economics, approval funnels, default curves, and cross-sell conversion are not public.
+    founder_claim_ids: ["FC-001", "FC-006"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-008", "EC-014", "EC-016"]
+    risk_ids: ["R-003", "R-004", "R-007"]
+    sections:
+      - section_id: "II.A"
+        title: "Product portfolio and borrower proposition"
+        checklist_question_ids: ["II.A.1", "II.A.2", "II.A.3"]
+        summary: >-
+          Company product pages show a broad consumer and employer product catalog centered on collateral-backed credit, financing, insurance, and benefits. Public product limits include vehicle-backed loans from R$5,000 to R$150,000 and home-backed loans up to R$3 million.
+        verification_status: "verified"
+        confidence: "high"
+        key_findings:
+          - finding_id: "II.A-F1"
+            finding: "The public product catalog spans vehicle-backed loans, home-backed loans, private payroll loans, insurance, real-estate financing, auto financing, and flexible-benefits cards."
+            evidence_claim_ids: ["EC-006", "EC-007"]
+            risk_ids: ["R-003"]
+          - finding_id: "II.A-F2"
+            finding: "Creditas frames its strategy as a secured-finance ecosystem across auto, home, and employee-benefits verticals."
+            evidence_claim_ids: ["EC-014"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Product breadth creates operational and regulatory complexity across correspondent banking, SCD, insurance brokerage, marketplaces, and partner-led distribution."
+        evidence_gaps:
+          - "Approval rates, net interest margin, credit-loss rates, and unit economics by SKU."
+        follow_up_questions:
+          - "Which products account for origination, revenue, gross profit, losses, complaints, and capital use by quarter?"
+        table_ids: ["T-004"]
+        figure_ids: ["F-003"]
+        evidence_claim_ids: ["EC-006", "EC-007", "EC-014"]
+      - section_id: "II.B"
+        title: "Pricing, terms, and product economics"
+        checklist_question_ids: ["II.B.1", "II.B.2", "II.B.3"]
+        summary: >-
+          Public terms disclose indicative rates, limits, and tenors, but pricing is highly product-specific and may differ between marketing pages and legal footers. Private data is required to validate realized APR, fees, discounts, default-adjusted yield, and customer outcomes.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "II.B-F1"
+            finding: "Public pages advertise vehicle-backed rates from 1.49% monthly and home-backed rates from 1.09% monthly plus IPCA, but legal-footer examples and product-specific terms should be reconciled."
+            evidence_claim_ids: ["EC-007", "EC-008"]
+            risk_ids: ["R-004"]
+          - finding_id: "II.B-F2"
+            finding: "Creditas disclosed insurance scale through the Minuto acquisition and later claimed the insurance unit is the largest independent online broker in Brazil."
+            evidence_claim_ids: ["EC-016", "EC-006"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "High nominal Brazilian rates and complex effective-cost disclosures can increase conduct, complaint, and regulatory risk."
+        evidence_gaps:
+          - "Realized customer APR, fee schedules, prepayment rates, collection recoveries, and complaint root-cause analysis by product."
+        follow_up_questions:
+          - "How do advertised rates, effective total cost, underwriting bands, and borrower outcomes differ by channel and borrower segment?"
+        table_ids: ["T-005"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-007", "EC-008", "EC-016"]
+
+  - chapter_id: "III"
+    title: "Customer Information"
+    chapter_summary: >-
+      Public customer evidence is stronger for distribution partners and platform usage than for named end borrowers. Creditas discloses millions of credit requests and major partnerships, but customer concentration, retention, NPS, churn, and cohort economics are not public.
+    founder_claim_ids: ["FC-001"]
+    evidence_claim_ids: ["EC-011", "EC-012", "EC-013", "EC-015", "EC-017", "EC-018"]
+    risk_ids: ["R-003", "R-005", "R-007", "R-008"]
+    sections:
+      - section_id: "III.A"
+        title: "Customer base and publicly visible demand"
+        checklist_question_ids: ["III.A.1", "III.A.2", "III.A.3"]
+        summary: >-
+          Creditas publicly states it has exceeded 13 million credit requests and discloses a R$7.6 billion portfolio, but public materials do not list named borrowers or concentration metrics. Review-site data shows material customer-service friction.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "III.A-F1"
+            finding: "Public sources support large demand indicators, including millions of credit requests and a multi-billion-real credit portfolio."
+            evidence_claim_ids: ["EC-001", "EC-011"]
+            risk_ids: ["R-003"]
+          - finding_id: "III.A-F2"
+            finding: "Reclame Aqui reported a Regular rating, 1,960 complaints in the latest six-month period, and 71% resolution."
+            evidence_claim_ids: ["EC-017"]
+            risk_ids: ["R-005"]
+        hidden_risks:
+          - "Complaint volume and response times may indicate servicing strain in high-touch collateralized products."
+          - "Borrower-level concentration, repeat borrowing, charge-offs, and complaints by product are not public."
+        evidence_gaps:
+          - "Customer cohort retention, repeat usage, NPS, complaint root-cause, loan-level performance, and top-employer/top-partner concentration."
+        follow_up_questions:
+          - "What percentage of origination comes from repeat customers, employer partners, affiliates, API partners, and direct digital channels?"
+        table_ids: ["T-006"]
+        figure_ids: ["F-004"]
+        evidence_claim_ids: ["EC-001", "EC-011", "EC-017"]
+      - section_id: "III.B"
+        title: "Partners, counterparties, and operating dependencies"
+        checklist_question_ids: ["III.B.1", "III.B.2", "III.B.3"]
+        summary: >-
+          Creditas has public partnerships with Nubank, Andbank, Anga Asset, Banco Daycoval, insurance carriers, and API-based distribution partners. These relationships can reduce CAC and diversify funding, but also create dependency, integration, and governance risks.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "III.B-F1"
+            finding: "Nubank announced a partnership to bring Creditas products to Nubank customers and received an option to become a minority shareholder up to 7.7%."
+            evidence_claim_ids: ["EC-012"]
+            risk_ids: ["R-007"]
+          - finding_id: "III.B-F2"
+            finding: "Creditas API documentation describes a partner integration flow with staging validation before production activation."
+            evidence_claim_ids: ["EC-013"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Partner-led origination can create channel concentration, data-sharing, consent, security, and margin-sharing risks."
+        evidence_gaps:
+          - "Top partner volume, partner economics, termination rights, service-level commitments, data-processing agreements, and partner-specific credit quality."
+        follow_up_questions:
+          - "Which partners originate the most loans and what contractual protections exist if a partner relationship is terminated?"
+        table_ids: ["T-007", "T-008"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-012", "EC-013", "EC-015", "EC-018"]
+
+  - chapter_id: "IV"
+    title: "Competition"
+    chapter_summary: >-
+      Creditas competes with incumbent banks, digital banks, auto and home finance specialists, insurance brokers, and benefits platforms. Public evidence confirms positioning and funding scale, but independent market-share and competitor economics were not public in the reviewed source set.
+    founder_claim_ids: ["FC-001", "FC-006"]
+    evidence_claim_ids: ["EC-006", "EC-014", "EC-016", "EC-018", "EC-019"]
+    risk_ids: ["R-003", "R-007", "R-008"]
+    sections:
+      - section_id: "IV.A"
+        title: "Competitive positioning and market map"
+        checklist_question_ids: ["IV.A.1", "IV.A.2", "IV.A.3"]
+        summary: >-
+          Company and Dealroom sources support Creditas as an asset-backed consumer-loan fintech with multiple adjacent products. However, the public evidence reviewed does not independently rank Creditas against banks, digital banks, or secured-lending specialists by originations, portfolio, loss rate, or CAC.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "IV.A-F1"
+            finding: "Dealroom categorizes Creditas as a Sao Paulo fintech unicorn and a digital lending platform for asset-backed consumer loans."
+            evidence_claim_ids: ["EC-018"]
+            risk_ids: ["R-008"]
+          - finding_id: "IV.A-F2"
+            finding: "Creditas positions itself as a multi-ecosystem secured-finance platform rather than a single-product lender."
+            evidence_claim_ids: ["EC-014"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "If banks or digital banks match secured-credit pricing and distribution, Creditas may face margin pressure and higher acquisition costs."
+        evidence_gaps:
+          - "Independent TAM, market share, competitor pricing, approval speed, loss curves, and customer acquisition costs."
+        follow_up_questions:
+          - "What objective metrics show Creditas wins versus banks, digital banks, and other secured-credit platforms?"
+        table_ids: ["T-009"]
+        figure_ids: ["F-005"]
+        evidence_claim_ids: ["EC-014", "EC-018"]
+      - section_id: "IV.B"
+        title: "Basis of competition"
+        checklist_question_ids: ["IV.B.1", "IV.B.2", "IV.B.3"]
+        summary: >-
+          The public basis for Creditas differentiation is collateralized products, proprietary technology, integrated insurance/marketplace adjacencies, partner distribution, and capital-markets funding. These claims require private benchmarking to prove durable moat and pricing power.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "IV.B-F1"
+            finding: "Creditas disclosed AI and funnel-automation initiatives aimed at lowering CAC and improving productivity."
+            evidence_claim_ids: ["EC-009"]
+            risk_ids: ["R-007"]
+          - finding_id: "IV.B-F2"
+            finding: "Minuto added insurance brokerage scale and carriers, broadening the competitive perimeter."
+            evidence_claim_ids: ["EC-016"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Self-reported technology and AI improvements may be replicable unless supported by proprietary data advantages and execution evidence."
+        evidence_gaps:
+          - "Win/loss data, competitor pricing crawls, channel-conversion benchmarks, and contribution margins by competitive segment."
+        follow_up_questions:
+          - "Which products show statistically significant lower CAC, higher conversion, or better loss-adjusted returns than competitors?"
+        table_ids: ["T-010"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-009", "EC-016"]
+
+  - chapter_id: "V"
+    title: "Marketing, Sales, and Distribution"
+    chapter_summary: >-
+      Creditas appears to combine direct digital acquisition, partner distribution, employer channels, API integrations, Nubank distribution, insurance-carrier relationships, and capital-markets investor relations. Public data is insufficient to quantify channel mix, CAC, conversion, or partner concentration.
+    founder_claim_ids: ["FC-001"]
+    evidence_claim_ids: ["EC-006", "EC-012", "EC-013", "EC-015", "EC-018"]
+    risk_ids: ["R-003", "R-005", "R-007"]
+    sections:
+      - section_id: "V.A"
+        title: "Distribution channels and GTM motions"
+        checklist_question_ids: ["V.A.1", "V.A.2", "V.A.3"]
+        summary: >-
+          Public evidence supports direct product pages, partner/API integration, employer-linked payroll products, Nubank channel access, affiliate networks in home equity, and capital-markets investor distribution for funding. Channel economics and concentration are private diligence items.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "V.A-F1"
+            finding: "The public website exposes direct-consumer product simulations and partner/API entry points."
+            evidence_claim_ids: ["EC-006", "EC-013"]
+            risk_ids: ["R-007"]
+          - finding_id: "V.A-F2"
+            finding: "Creditas reported partner-led growth in auto and scaling of direct-to-consumer and affiliate networks in home equity."
+            evidence_claim_ids: ["EC-002", "EC-003"]
+            risk_ids: ["R-003"]
+        hidden_risks:
+          - "A channel shift toward partners can hide concentration and margin-sharing risk if direct CAC remains high."
+        evidence_gaps:
+          - "Channel mix, CAC by channel, conversion funnel, partner revenue share, and lead-quality metrics."
+        follow_up_questions:
+          - "What is the monthly distribution funnel from lead source to approved loan to disbursement by product?"
+        table_ids: ["T-011"]
+        figure_ids: ["F-006"]
+        evidence_claim_ids: ["EC-006", "EC-012", "EC-013"]
+      - section_id: "V.B"
+        title: "Marketing signals and brand/reputation"
+        checklist_question_ids: ["V.B.1", "V.B.2", "V.B.3"]
+        summary: >-
+          Public marketing signals include owned product pages, IR transparency, careers content, app promotion, security/fraud education, and review-site visibility. Reputation risk is non-trivial because complaint metrics and fraud impersonation warnings are visible.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "V.B-F1"
+            finding: "Dealroom reported 1.9 million monthly visits, with Brazil representing 96.6% of web traffic in its public taster profile."
+            evidence_claim_ids: ["EC-018"]
+            risk_ids: ["R-005"]
+          - finding_id: "V.B-F2"
+            finding: "Creditas maintains security content warning that it does not request upfront payments for loan approval."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-005"]
+        hidden_risks:
+          - "Fraud impersonation can create brand damage and customer-loss even when the company is not the direct perpetrator."
+        evidence_gaps:
+          - "Brand health, paid-media spend, organic conversion, complaint-to-approval rates, and fraud-loss metrics."
+        follow_up_questions:
+          - "How does Creditas monitor, remove, and compensate for impersonation scams or fraudulent solicitations using its brand?"
+        table_ids: ["T-012"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-017", "EC-018", "EC-019"]
+
+  - chapter_id: "VI"
+    title: "Research and Development"
+    chapter_summary: >-
+      Creditas reports significant technology and AI automation across collections, origination, credit analysis, legal review, contract generation, and software development. The public evidence is detailed but self-reported, so diligence should focus on model governance, reliability, controls, and productivity proof.
+    founder_claim_ids: ["FC-004"]
+    evidence_claim_ids: ["EC-009", "EC-013", "EC-020", "EC-021"]
+    risk_ids: ["R-006", "R-007", "R-008"]
+    sections:
+      - section_id: "VI.A"
+        title: "Technology organization and delivery capacity"
+        checklist_question_ids: ["VI.A.1", "VI.A.2", "VI.A.3"]
+        summary: >-
+          Public profiles show named product, risk, finance, funding, operations, and technology leadership, with The Org listing software development and data engineering teams. Creditas also appointed a CTO/COO effective December 2025 for technology, operations, HR, and AI-native platform priorities.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VI.A-F1"
+            finding: "The Org lists Software Development and Data Engineering teams, and company announcements name a CTO/COO transition focused on AI-native operations."
+            evidence_claim_ids: ["EC-020", "EC-021"]
+            risk_ids: ["R-007"]
+          - finding_id: "VI.A-F2"
+            finding: "The public API documentation indicates partner-facing technical integration with staging and production environments."
+            evidence_claim_ids: ["EC-013"]
+            risk_ids: ["R-006"]
+        hidden_risks:
+          - "Public org charts and job boards do not reveal attrition, incident history, production reliability, or technical debt."
+        evidence_gaps:
+          - "Engineering headcount by function, roadmap delivery metrics, incident logs, security reviews, and model validation documentation."
+        follow_up_questions:
+          - "What are the current engineering, data, risk-model, and platform-reliability capacities, and how are they measured?"
+        table_ids: ["T-013"]
+        figure_ids: ["F-007"]
+        evidence_claim_ids: ["EC-013", "EC-020", "EC-021"]
+      - section_id: "VI.B"
+        title: "AI, automation, and product pipeline"
+        checklist_question_ids: ["VI.B.1", "VI.B.2", "VI.B.3"]
+        summary: >-
+          Creditas reports autonomous agents in early-stage collections, AI-assisted product-development workflows, automated home-equity credit/legal/signature steps, and AI assistants for insurance productivity. These are potentially material advantages but require control testing and model-risk review.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VI.B-F1"
+            finding: "Creditas states autonomous agents handle about 90% of early-stage delinquency interactions and that AI-led pull requests compressed product cycles from three weeks to four days."
+            evidence_claim_ids: ["EC-009"]
+            risk_ids: ["R-006"]
+          - finding_id: "VI.B-F2"
+            finding: "Home Equity disclosures include 90% automated first-line credit analysis, 100% AI-assisted legal review and contract generation, and 60% signature validation without human intervention."
+            evidence_claim_ids: ["EC-009"]
+            risk_ids: ["R-006"]
+        hidden_risks:
+          - "AI in collections and credit workflows can introduce conduct, explainability, bias, privacy, and operational-resilience risks."
+        evidence_gaps:
+          - "Model inventory, validation results, human override rates, adverse-action controls, data lineage, incident logs, and regulatory review evidence."
+        follow_up_questions:
+          - "Which AI workflows affect credit decisions or collections, and what controls prevent unfair, non-compliant, or erroneous outcomes?"
+        table_ids: ["T-014"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-009"]
+
+  - chapter_id: "VII"
+    title: "Management and Personnel"
+    chapter_summary: >-
+      Public evidence identifies founder Sergio Furio and multiple senior leaders, shows historical headcount anchors above 4,000 in 2022, and current public profile ranges of 1,001-5,000 employees. The public record also shows a planned COO-to-CTO/COO transition in 2025-2026.
+    founder_claim_ids: []
+    evidence_claim_ids: ["EC-020", "EC-021", "EC-022", "EC-023"]
+    risk_ids: ["R-007", "R-008"]
+    sections:
+      - section_id: "VII.A"
+        title: "Leadership roster and governance capacity"
+        checklist_question_ids: ["VII.A.1", "VII.A.2", "VII.A.3"]
+        summary: >-
+          Public leadership evidence includes the founder/CEO, COO, VP Auto Ecosystem, Corporate Development and IR Director, VP Risk, ALM/Funding Director, VP Products, Executive Director Finance, and incoming CTO/COO. Board composition, compensation, succession depth, and incentive alignment remain private.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.A-F1"
+            finding: "The Org lists key Creditas leaders and an employee range of 1,001-5,000."
+            evidence_claim_ids: ["EC-020"]
+            risk_ids: ["R-008"]
+          - finding_id: "VII.A-F2"
+            finding: "Creditas announced Ricardo Forcano as CTO/COO effective December 1, 2025, with Ann Williams transitioning to part-time support after March 31, 2026."
+            evidence_claim_ids: ["EC-021"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Senior operating transition during a push toward profitability and AI-native operations creates execution risk."
+        evidence_gaps:
+          - "Board roster, committee structure, compensation, retention packages, turnover, and succession plans."
+        follow_up_questions:
+          - "What governance changes accompanied the CTO/COO transition, and how are technology, risk, operations, and HR decisions escalated?"
+        table_ids: ["T-015", "T-017"]
+        figure_ids: ["F-008"]
+        evidence_claim_ids: ["EC-020", "EC-021"]
+      - section_id: "VII.B"
+        title: "Headcount, hiring, and location signals"
+        checklist_question_ids: ["VII.B.1", "VII.B.2", "VII.B.3"]
+        summary: >-
+          Historical press releases reported 1,500 employees in 2020, more than 2,500 in 2021 after Minuto, and more than 4,000 in 2022. Current public profile data gives a broad 1,001-5,000 range and Gupy listed 15 jobs, suggesting selective hiring rather than enough detail for workforce-quality conclusions.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.B-F1"
+            finding: "Public headcount anchors show rapid historical growth, while current public data is less precise."
+            evidence_claim_ids: ["EC-020", "EC-022", "EC-023"]
+            risk_ids: ["R-007"]
+          - finding_id: "VII.B-F2"
+            finding: "Gupy listed 15 jobs and highlighted technology, analytics, collections, customer experience, and commercial openings."
+            evidence_claim_ids: ["EC-022"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Potential post-2022 headcount rationalization or attrition cannot be assessed from public sources alone."
+        evidence_gaps:
+          - "Current headcount by function, attrition, hiring plan, compensation bands, diversity metrics, and employee-engagement scores."
+        follow_up_questions:
+          - "How has headcount changed by quarter since 2022, and how much productivity improvement is from AI versus staffing mix?"
+        table_ids: ["T-016"]
+        figure_ids: ["F-009"]
+        evidence_claim_ids: ["EC-020", "EC-022", "EC-023"]
+
+  - chapter_id: "VIII"
+    title: "Legal and Related Matters"
+    chapter_summary: >-
+      Creditas operates in a regulated financial-services context as a digital platform, banking correspondent, and Sociedade de Credito Direto participant, with insurance brokerage through Minuto and capital-markets funding structures. Public legal and privacy pages show relevant controls but also expose regulatory, partner, complaint, fraud, privacy, and AI-data risks.
+    founder_claim_ids: []
+    evidence_claim_ids: ["EC-008", "EC-010", "EC-013", "EC-015", "EC-017", "EC-019", "EC-024", "EC-025"]
+    risk_ids: ["R-004", "R-005", "R-006", "R-008"]
+    sections:
+      - section_id: "VIII.A"
+        title: "Regulatory model, capital markets, and legal matters"
+        checklist_question_ids: ["VIII.A.1", "VIII.A.2", "VIII.A.3", "VIII.A.4"]
+        summary: >-
+          The website footer states Creditas operates as a banking correspondent and Sociedade de Credito Direto under Brazilian rules, while terms state Creditas Solucoes is not itself a financial institution, insurer, card operator, or payment scheme. Public sources also show S&P-rated FIDC activity and investor-facing transparency.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VIII.A-F1"
+            finding: "Creditas discloses operation as a correspondent bank and SCD, including a prudential conglomerate reference led by Banco Andbank (Brasil) S.A."
+            evidence_claim_ids: ["EC-008"]
+            risk_ids: ["R-004"]
+          - finding_id: "VIII.A-F2"
+            finding: "The July 2025 FIDC Auto XII had R$800 million offered volume, a brAAA senior rating by S&P, and R$2.3 billion of demand."
+            evidence_claim_ids: ["EC-015"]
+            risk_ids: ["R-002"]
+        hidden_risks:
+          - "Entity-specific permissions, correspondent obligations, SCD prudential requirements, and structured-finance covenants must be reconciled to actual products and cash flows."
+        evidence_gaps:
+          - "Complete regulatory permissions, Banco Central communications, FIDC offering documents, legal opinions, litigation dockets, and customer-contract templates."
+        follow_up_questions:
+          - "Which legal entity originates, services, funds, or brokers each product, and what obligations attach to each entity?"
+        table_ids: ["T-018", "T-019"]
+        figure_ids: ["F-010"]
+        evidence_claim_ids: ["EC-008", "EC-015", "EC-024"]
+      - section_id: "VIII.B"
+        title: "Privacy, security, IP, and related controls"
+        checklist_question_ids: ["VIII.B.1", "VIII.B.2", "VIII.B.3", "VIII.B.4"]
+        summary: >-
+          Creditas publishes privacy, cybersecurity, transparency, ethics, anti-corruption, AML/CFT, social/environmental/climate, ombudsman, and fraud-prevention materials. Privacy disclosures include financial, location, behavioral, sensitive, biometric, AI/model-training, KYC, fraud-prevention, and risk-profiling data uses, making control evidence critical.
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VIII.B-F1"
+            finding: "The privacy policy states LGPD compliance and discloses sensitive personal-data categories and AI/model-training purposes."
+            evidence_claim_ids: ["EC-025"]
+            risk_ids: ["R-006"]
+          - finding_id: "VIII.B-F2"
+            finding: "Transparency center materials list ethics, third-party ethics, anti-corruption, cybersecurity, AML/CFT, PRSAC, ethics channel, and ombudsman reports."
+            evidence_claim_ids: ["EC-024"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "Credit, collections, insurance, biometric, and AI uses of sensitive data can create LGPD, fair-lending, explainability, model-risk, and breach-notification exposure."
+        evidence_gaps:
+          - "Patent/trademark docket, IP assignments, software-license register, DPIAs, DSR metrics, security audits, penetration tests, SOC reports, and incident history."
+        follow_up_questions:
+          - "What personal data feeds AI models, and how are consent, legal basis, retention, deletion, human review, and bias testing evidenced?"
+        table_ids: ["T-020"]
+        figure_ids: ["F-011"]
+        evidence_claim_ids: ["EC-019", "EC-024", "EC-025"]
+
+tables:
+  - table_id: "T-001"
+    title: "Public funding-round history"
+    chapter_id: "I"
+    section_id: "I.B"
+    purpose: "Summarize public equity and financing milestones relevant to valuation and capitalization diligence."
+    columns:
+      - name: "date"
+        description: "Announcement date"
+      - name: "round_or_transaction"
+        description: "Financing event"
+      - name: "amount"
+        description: "Publicly disclosed amount"
+      - name: "valuation_or_context"
+        description: "Public valuation or transaction context"
+      - name: "source"
+        description: "Primary evidence"
+    rows:
+      - row_id: "T-001-R1"
+        values:
+          date: "2020-12-18"
+          round_or_transaction: "Series E"
+          amount: "US$255 million"
+          valuation_or_context: "US$1.75 billion valuation"
+          source: "Creditas Series E announcement"
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-001-R2"
+        values:
+          date: "2022-01-25"
+          round_or_transaction: "Series F"
+          amount: "US$260 million"
+          valuation_or_context: "US$4.8 billion valuation; US$829 million total equity across six rounds"
+          source: "Creditas Series F announcement"
+        evidence_claim_ids: ["EC-004"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-001-R3"
+        values:
+          date: "2022-07-08"
+          round_or_transaction: "Series F extension and convertible note"
+          amount: "US$50 million extension; US$150 million convertible note"
+          valuation_or_context: "Series F total increased to US$310 million; Andbank license acquisition and M&A activity"
+          source: "Creditas Series F extension announcement"
+        evidence_claim_ids: ["EC-023"]
+        source_ids: ["SRC-007"]
+      - row_id: "T-001-R4"
+        values:
+          date: "2026-03-31"
+          round_or_transaction: "IR cumulative financing highlights"
+          amount: "US$987 million"
+          valuation_or_context: "Raised through seven financing rounds"
+          source: "Creditas IR home"
+        evidence_claim_ids: ["EC-001"]
+        source_ids: ["SRC-002"]
+    evidence_claim_ids: ["EC-001", "EC-004", "EC-005", "EC-023"]
+    source_ids: ["SRC-002", "SRC-005", "SRC-006", "SRC-007"]
+    notes: "Public source set does not include full cap-table economics, liquidation preferences, or convertible-note conversion terms."
+
+  - table_id: "T-002"
+    title: "Public financial and operating metrics"
+    chapter_id: "I"
+    section_id: "I.A"
+    purpose: "Identify publicly disclosed financial trends and remaining earnings-quality questions."
+    columns:
+      - name: "period"
+        description: "Reporting period"
+      - name: "metric"
+        description: "Financial or operating metric"
+      - name: "value"
+        description: "Disclosed value"
+      - name: "verification_status"
+        description: "Evidence classification"
+      - name: "diligence_caveat"
+        description: "Diligence caveat"
+    rows:
+      - row_id: "T-002-R1"
+        values:
+          period: "Q1 2026"
+          metric: "Origination"
+          value: "R$1.1 billion, +29.2% YoY"
+          verification_status: "verified"
+          diligence_caveat: "Company-reported; requires audit and loan-tape support."
+        evidence_claim_ids: ["EC-002"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-002-R2"
+        values:
+          period: "Q1 2026"
+          metric: "Portfolio"
+          value: "R$7.6 billion, +22.4% YoY"
+          verification_status: "verified"
+          diligence_caveat: "Portfolio composition and delinquency not public."
+        evidence_claim_ids: ["EC-001", "EC-002"]
+        source_ids: ["SRC-002", "SRC-003"]
+      - row_id: "T-002-R3"
+        values:
+          period: "Q1 2026"
+          metric: "Revenue and gross profit"
+          value: "R$633.0 million revenue; R$253.5 million gross profit; 40.0% gross margin"
+          verification_status: "verified"
+          diligence_caveat: "Need IFRS statements and revenue recognition testing."
+        evidence_claim_ids: ["EC-002"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-002-R4"
+        values:
+          period: "Q1 2026"
+          metric: "Operating and net loss"
+          value: "R$34.9 million operating loss; R$75.9 million net loss"
+          verification_status: "verified"
+          diligence_caveat: "Profitability path depends on credit quality, funding cost, and scale."
+        evidence_claim_ids: ["EC-003"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-002-R5"
+        values:
+          period: "Q4 2025"
+          metric: "Operating and net loss"
+          value: "R$80.9 million operating loss; R$143.3 million net loss"
+          verification_status: "verified"
+          diligence_caveat: "Q1 improvement needs multi-quarter confirmation."
+        evidence_claim_ids: ["EC-003"]
+        source_ids: ["SRC-004"]
+      - row_id: "T-002-R6"
+        values:
+          period: "2025 methodology"
+          metric: "IFRS interest accrual change"
+          value: "-6.4% revenue impact and -1.7% gross-profit impact for 2025 reference year"
+          verification_status: "verified"
+          diligence_caveat: "Raises comparability and non-cash methodology questions."
+        evidence_claim_ids: ["EC-010"]
+        source_ids: ["SRC-004"]
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-003", "EC-010"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-004"]
+    notes: "All metrics are company-reported public disclosures."
+
+  - table_id: "T-003"
+    title: "Public ownership and capital-structure snapshot"
+    chapter_id: "I"
+    section_id: "I.B"
+    purpose: "Capture public investor and capital-structure signals and gaps."
+    columns:
+      - name: "stakeholder_or_instrument"
+        description: "Investor, lender, or instrument"
+      - name: "public_position"
+        description: "Publicly visible role"
+      - name: "diligence_caveat"
+        description: "Unresolved diligence issue"
+    rows:
+      - row_id: "T-003-R1"
+        values:
+          stakeholder_or_instrument: "Fidelity, QED, VEF, SoftBank, Kaszek, Lightrock, Headline, Wellington, Advent/Sunley House"
+          public_position: "Series F investors or participants listed in company announcement"
+          diligence_caveat: "Ownership percentages and liquidation preferences not public."
+        evidence_claim_ids: ["EC-004"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-003-R2"
+        values:
+          stakeholder_or_instrument: "Nubank"
+          public_position: "Partnership and option to become minority shareholder up to 7.7%"
+          diligence_caveat: "Exercise status, economics, and governance rights not public."
+        evidence_claim_ids: ["EC-012"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-003-R3"
+        values:
+          stakeholder_or_instrument: "Andbank"
+          public_position: "Series F extension investor and banking-license transaction counterparty"
+          diligence_caveat: "Regulatory approval status, final economics, and prudential-conglomerate effects require documentation."
+        evidence_claim_ids: ["EC-023", "EC-008"]
+        source_ids: ["SRC-007", "SRC-001"]
+      - row_id: "T-003-R4"
+        values:
+          stakeholder_or_instrument: "Convertible note"
+          public_position: "US$150 million convertible note announced in July 2022"
+          diligence_caveat: "Conversion mechanics, maturity, covenants, security, and investor identity not public in reviewed source."
+        evidence_claim_ids: ["EC-023"]
+        source_ids: ["SRC-007"]
+    evidence_claim_ids: ["EC-004", "EC-008", "EC-012", "EC-023"]
+    source_ids: ["SRC-001", "SRC-006", "SRC-007", "SRC-011"]
+    notes: "Public evidence identifies stakeholders but does not replace a cap-table review."
+
+  - table_id: "T-004"
+    title: "Product and SKU matrix"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Map the public product catalog to target users and diligence implications."
+    columns:
+      - name: "product"
+        description: "Public product or SKU"
+      - name: "audience"
+        description: "Primary customer segment"
+      - name: "public_features"
+        description: "Publicly disclosed features"
+      - name: "verification_status"
+        description: "Evidence classification"
+    rows:
+      - row_id: "T-004-R1"
+        values:
+          product: "Vehicle-backed loan"
+          audience: "Consumers with vehicles"
+          public_features: "R$5,000 to R$150,000, rates from 1.49% monthly, up to 60 months"
+          verification_status: "verified"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-004-R2"
+        values:
+          product: "Home-backed loan"
+          audience: "Property owners"
+          public_features: "Up to R$3 million, up to 60% of property value, rates from 1.09% monthly, up to 240 months"
+          verification_status: "verified"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-004-R3"
+        values:
+          product: "Private payroll loan"
+          audience: "Employees of partner companies"
+          public_features: "R$300 to R$70,000; fixed installments up to 35% of salary; up to 60 months on product page"
+          verification_status: "partially_verified"
+        evidence_claim_ids: ["EC-007", "EC-008"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-004-R4"
+        values:
+          product: "Auto insurance"
+          audience: "Vehicle owners"
+          public_features: "Online insurance with up to 16 insurer options and payment up to 10 installments"
+          verification_status: "verified"
+        evidence_claim_ids: ["EC-006", "EC-016"]
+        source_ids: ["SRC-001", "SRC-010"]
+      - row_id: "T-004-R5"
+        values:
+          product: "Real-estate financing and auto financing"
+          audience: "Home buyers and vehicle buyers"
+          public_features: "Multibank property financing up to 90% and vehicle financing with documentation support"
+          verification_status: "verified"
+        evidence_claim_ids: ["EC-006"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-004-R6"
+        values:
+          product: "Corporate benefits card"
+          audience: "Employers and employees"
+          public_features: "Seven categories, no recharge costs, accepted in more than 2 million establishments"
+          verification_status: "verified"
+        evidence_claim_ids: ["EC-006"]
+        source_ids: ["SRC-001"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-008", "EC-016"]
+    source_ids: ["SRC-001", "SRC-010"]
+    notes: "Private product economics and approval criteria were not public."
+
+  - table_id: "T-005"
+    title: "Public pricing and terms comparison"
+    chapter_id: "II"
+    section_id: "II.B"
+    purpose: "Highlight disclosed rate, amount, and tenor terms and where legal/product disclosures need reconciliation."
+    columns:
+      - name: "product"
+        description: "Product"
+      - name: "amount_or_limit"
+        description: "Publicly disclosed limit"
+      - name: "rate_or_cost"
+        description: "Publicly disclosed rate or CET"
+      - name: "tenor"
+        description: "Publicly disclosed repayment period"
+      - name: "caveat"
+        description: "Diligence caveat"
+    rows:
+      - row_id: "T-005-R1"
+        values:
+          product: "Vehicle-backed loan"
+          amount_or_limit: "R$5,000 to R$150,000"
+          rate_or_cost: "From 1.49% monthly"
+          tenor: "Up to 60 months; footer says 18 to 60 months"
+          caveat: "Need realized APR and fee disclosure by risk band."
+        evidence_claim_ids: ["EC-007", "EC-008"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-005-R2"
+        values:
+          product: "Home-backed loan"
+          amount_or_limit: "Up to R$3 million and up to 60% of value"
+          rate_or_cost: "From 1.09% monthly plus IPCA; example CET 12.50% annually"
+          tenor: "Up to 240 months; footer says 60 to 240 months"
+          caveat: "Need collateral valuation policy and foreclosure/recovery evidence."
+        evidence_claim_ids: ["EC-007", "EC-008"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-005-R3"
+        values:
+          product: "Private payroll loan"
+          amount_or_limit: "R$300 to R$70,000"
+          rate_or_cost: "Legal-footer CET range 18.52% to 60.78% annually"
+          tenor: "Product page says up to 60 months; legal footer says 6 to 48 months"
+          caveat: "Public terms appear inconsistent; reconcile current contractual documents."
+        evidence_claim_ids: ["EC-007", "EC-008"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-005-R4"
+        values:
+          product: "Insurance"
+          amount_or_limit: "Not disclosed as credit amount"
+          rate_or_cost: "Up to 10 installments without interest on product page"
+          tenor: "Policy-specific"
+          caveat: "Need GWP, commission rate, carrier concentration, and claim-service metrics."
+        evidence_claim_ids: ["EC-006", "EC-016"]
+        source_ids: ["SRC-001", "SRC-010"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-008", "EC-016"]
+    source_ids: ["SRC-001", "SRC-010"]
+    notes: "Diligence should treat marketing rates as indicative rather than realized customer APR."
+
+  - table_id: "T-006"
+    title: "Public customer and demand signals"
+    chapter_id: "III"
+    section_id: "III.A"
+    purpose: "Separate verified public demand signals from private customer information gaps."
+    columns:
+      - name: "signal"
+        description: "Customer or demand signal"
+      - name: "public_evidence"
+        description: "Evidence summary"
+      - name: "verification_status"
+        description: "Evidence classification"
+      - name: "gap"
+        description: "Remaining diligence request"
+    rows:
+      - row_id: "T-006-R1"
+        values:
+          signal: "Credit requests"
+          public_evidence: "Creditas says it surpassed 13 million credit requests."
+          verification_status: "verified"
+          gap: "Request request-to-disbursement conversion and duplicate-account methodology."
+        evidence_claim_ids: ["EC-011"]
+        source_ids: ["SRC-008"]
+      - row_id: "T-006-R2"
+        values:
+          signal: "Loan portfolio"
+          public_evidence: "IR home reports R$7.6 billion loan portfolio as of March 2026."
+          verification_status: "verified"
+          gap: "Request customer count, average balance, and concentration by product/channel."
+        evidence_claim_ids: ["EC-001"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-006-R3"
+        values:
+          signal: "Named end customers"
+          public_evidence: "No borrower case-study list was validated in this run."
+          verification_status: "not_publicly_verifiable"
+          gap: "Request anonymized top-customer/partner concentration and customer-reference calls."
+        evidence_claim_ids: ["EC-026"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-006-R4"
+        values:
+          signal: "Customer-service outcomes"
+          public_evidence: "Reclame Aqui shows Regular reputation, 6.5/10 score, 1,960 complaints, 87.3% response, 71% resolution."
+          verification_status: "verified"
+          gap: "Request internal complaint taxonomy, regulatory complaints, and remediation metrics."
+        evidence_claim_ids: ["EC-017"]
+        source_ids: ["SRC-013"]
+    evidence_claim_ids: ["EC-001", "EC-011", "EC-017", "EC-026"]
+    source_ids: ["SRC-002", "SRC-008", "SRC-013"]
+    notes: "Public demand signals do not prove borrower satisfaction, retention, or credit quality."
+
+  - table_id: "T-007"
+    title: "Strategic relationships and partnerships"
+    chapter_id: "III"
+    section_id: "III.B"
+    purpose: "Map public partnership relationships that may affect origination, funding, or product distribution."
+    columns:
+      - name: "partner"
+        description: "Partner or counterparty"
+      - name: "relationship"
+        description: "Nature of relationship"
+      - name: "public_evidence"
+        description: "Evidence summary"
+      - name: "gap"
+        description: "Unresolved diligence issue"
+    rows:
+      - row_id: "T-007-R1"
+        values:
+          partner: "Nubank"
+          relationship: "Distribution and investment option"
+          public_evidence: "Creditas products to be offered to Nubank customers; option for Nubank to become minority shareholder up to 7.7%."
+          gap: "Current status, volume, revenue share, and exercise status not public."
+        evidence_claim_ids: ["EC-012"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-007-R2"
+        values:
+          partner: "Andbank"
+          relationship: "Investor, banking-license transaction, funding diversification"
+          public_evidence: "Series F extension brought in Andbank and Creditas announced acquisition of Banco Andbank (Brasil) license, subject to approvals."
+          gap: "Final closing terms and regulatory conditions require documentation."
+        evidence_claim_ids: ["EC-023", "EC-008"]
+        source_ids: ["SRC-007", "SRC-001"]
+      - row_id: "T-007-R3"
+        values:
+          partner: "Insurance carriers"
+          relationship: "Insurance distribution"
+          public_evidence: "Minuto acquisition described partnerships with 15 carriers; later Creditas described insurance with more than 16 carriers."
+          gap: "Carrier concentration, commission economics, and renewal retention not public."
+        evidence_claim_ids: ["EC-016"]
+        source_ids: ["SRC-010", "SRC-006"]
+      - row_id: "T-007-R4"
+        values:
+          partner: "API partners"
+          relationship: "Lead and proposal integration"
+          public_evidence: "Developer docs describe staging validation and production activation for partner integrations."
+          gap: "Partner list, volume concentration, and integration-security audits not public."
+        evidence_claim_ids: ["EC-013"]
+        source_ids: ["SRC-014"]
+    evidence_claim_ids: ["EC-008", "EC-012", "EC-013", "EC-016", "EC-023"]
+    source_ids: ["SRC-001", "SRC-006", "SRC-007", "SRC-010", "SRC-011", "SRC-014"]
+    notes: "Partner economics and concentration are material private diligence items."
+
+  - table_id: "T-008"
+    title: "Supplier and infrastructure dependency snapshot"
+    chapter_id: "III"
+    section_id: "III.B"
+    purpose: "Identify publicly visible dependencies and where vendor concentration is not public."
+    columns:
+      - name: "supplier_or_dependency"
+        description: "Supplier, partner, or dependency category"
+      - name: "role"
+        description: "Role in operating model"
+      - name: "public_evidence"
+        description: "Evidence summary"
+      - name: "concentration_risk"
+        description: "Risk assessment"
+    rows:
+      - row_id: "T-008-R1"
+        values:
+          supplier_or_dependency: "Banco Daycoval"
+          role: "FIDC administrator and custodian for Auto XII"
+          public_evidence: "July 2025 FIDC release names Daycoval as administrator and custodian."
+          concentration_risk: "Medium; structured-finance operations depend on external administrators/custodians."
+        evidence_claim_ids: ["EC-015"]
+        source_ids: ["SRC-008"]
+      - row_id: "T-008-R2"
+        values:
+          supplier_or_dependency: "Anga Asset"
+          role: "FIDC fund manager"
+          public_evidence: "July 2025 FIDC release names Anga as manager."
+          concentration_risk: "Medium; repeated collaboration can be beneficial but requires conflict and performance review."
+        evidence_claim_ids: ["EC-015"]
+        source_ids: ["SRC-008"]
+      - row_id: "T-008-R3"
+        values:
+          supplier_or_dependency: "Credit bureaus, financial institutions, insurers, public authorities"
+          role: "Data and product counterparties"
+          public_evidence: "Privacy policy describes data from partner companies, bureaus, financial institutions, insurers, and public bodies."
+          concentration_risk: "Unknown; vendor list and processing agreements are private."
+        evidence_claim_ids: ["EC-025"]
+        source_ids: ["SRC-015"]
+      - row_id: "T-008-R4"
+        values:
+          supplier_or_dependency: "Cloud and core infrastructure"
+          role: "Technology hosting and operations"
+          public_evidence: "Specific cloud vendors were not publicly identified in the reviewed source set."
+          concentration_risk: "Not publicly verifiable."
+        evidence_claim_ids: ["EC-026"]
+        source_ids: ["SRC-015"]
+    evidence_claim_ids: ["EC-015", "EC-025", "EC-026"]
+    source_ids: ["SRC-008", "SRC-015"]
+    notes: "Vendor due diligence should include supplier inventory, subcontractors, DPAs, SLAs, and exit plans."
+
+  - table_id: "T-009"
+    title: "Competitor comparison matrix"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Frame competitive diligence questions using public evidence without overstating unsupported competitor metrics."
+    columns:
+      - name: "competitor_category"
+        description: "Competitor category"
+      - name: "product_overlap"
+        description: "Likely product overlap"
+      - name: "creditas_position"
+        description: "Publicly supported Creditas position"
+      - name: "evidence_gap"
+        description: "Evidence needed"
+    rows:
+      - row_id: "T-009-R1"
+        values:
+          competitor_category: "Incumbent banks and finance companies"
+          product_overlap: "Secured loans, payroll loans, vehicle finance, home finance"
+          creditas_position: "Creditas positions itself around lower-cost secured credit and digital user experience."
+          evidence_gap: "Independent pricing, approval-time, and loss-adjusted margin benchmarks."
+        evidence_claim_ids: ["EC-006", "EC-014"]
+        source_ids: ["SRC-001", "SRC-006"]
+      - row_id: "T-009-R2"
+        values:
+          competitor_category: "Digital banks and consumer fintech platforms"
+          product_overlap: "Digital credit, cross-sell, app distribution"
+          creditas_position: "Nubank partnership suggests Creditas can be a product partner rather than only a competitor."
+          evidence_gap: "Partner volumes and competitive leakage into proprietary digital-bank credit products."
+        evidence_claim_ids: ["EC-012"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-009-R3"
+        values:
+          competitor_category: "Insurance brokers and marketplaces"
+          product_overlap: "Auto, residential, life, travel, health, and SME insurance"
+          creditas_position: "Minuto acquisition added scale, customers, employees, and carrier relationships."
+          evidence_gap: "Independent brokerage ranking, GWP share, renewal rates, and commission margin."
+        evidence_claim_ids: ["EC-016"]
+        source_ids: ["SRC-010"]
+      - row_id: "T-009-R4"
+        values:
+          competitor_category: "Benefits and employer-finance platforms"
+          product_overlap: "Payroll loans, salary advance, benefits cards, education"
+          creditas_position: "Website shows employer benefits and private payroll products."
+          evidence_gap: "Employer count, eligible employee base, and payroll-deducted loan performance."
+        evidence_claim_ids: ["EC-006", "EC-007"]
+        source_ids: ["SRC-001"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-012", "EC-014", "EC-016"]
+    source_ids: ["SRC-001", "SRC-006", "SRC-010", "SRC-011"]
+    notes: "Named competitor benchmarking should be added after collecting competitor-specific pricing and market-share sources."
+
+  - table_id: "T-010"
+    title: "Basis-of-competition scoring"
+    chapter_id: "IV"
+    section_id: "IV.B"
+    purpose: "Score publicly visible strengths and diligence confidence."
+    columns:
+      - name: "axis"
+        description: "Competitive axis"
+      - name: "public_creditas_signal"
+        description: "Public evidence"
+      - name: "preliminary_score"
+        description: "Analyst view from public evidence"
+      - name: "evidence_needed"
+        description: "Additional evidence needed"
+    rows:
+      - row_id: "T-010-R1"
+        values:
+          axis: "Product breadth"
+          public_creditas_signal: "Credit, financing, insurance, benefits, auto, home, and employee ecosystems."
+          preliminary_score: "Strong public signal"
+          evidence_needed: "Revenue and gross profit by product."
+        evidence_claim_ids: ["EC-006", "EC-014"]
+        source_ids: ["SRC-001", "SRC-006"]
+      - row_id: "T-010-R2"
+        values:
+          axis: "Funding sophistication"
+          public_creditas_signal: "70+ capital-markets issuances and FIDC/CRI strategy."
+          preliminary_score: "Strong public signal but cycle-sensitive"
+          evidence_needed: "Covenants, weighted-average funding cost, maturities, and stress tests."
+        evidence_claim_ids: ["EC-001", "EC-015"]
+        source_ids: ["SRC-002", "SRC-008"]
+      - row_id: "T-010-R3"
+        values:
+          axis: "Technology and AI"
+          public_creditas_signal: "Self-reported AI collection, credit, legal, signature, and coding automation."
+          preliminary_score: "Potentially strong but self-reported"
+          evidence_needed: "Independent model-validation, audit logs, and productivity attribution."
+        evidence_claim_ids: ["EC-009"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-010-R4"
+        values:
+          axis: "Customer trust"
+          public_creditas_signal: "Reclame Aqui Regular rating and visible fraud-prevention content."
+          preliminary_score: "Mixed public signal"
+          evidence_needed: "NPS, regulatory complaints, fraud-loss metrics, and complaint remediation."
+        evidence_claim_ids: ["EC-017", "EC-019"]
+        source_ids: ["SRC-013", "SRC-021"]
+    evidence_claim_ids: ["EC-001", "EC-006", "EC-009", "EC-014", "EC-015", "EC-017", "EC-019"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-003", "SRC-006", "SRC-008", "SRC-013", "SRC-021"]
+    notes: "Scores are public-evidence triage, not final investment scoring."
+
+  - table_id: "T-011"
+    title: "Distribution channels and GTM motions"
+    chapter_id: "V"
+    section_id: "V.A"
+    purpose: "Map public distribution channels and private channel-economics requests."
+    columns:
+      - name: "channel"
+        description: "GTM channel"
+      - name: "public_evidence"
+        description: "Public signal"
+      - name: "likely_value"
+        description: "Potential strategic value"
+      - name: "gap"
+        description: "Diligence gap"
+    rows:
+      - row_id: "T-011-R1"
+        values:
+          channel: "Direct digital product pages"
+          public_evidence: "Website routes users to simulate loans, financing, insurance, and benefits."
+          likely_value: "Brand-led demand and first-party funnel."
+          gap: "Traffic-to-approval conversion and direct CAC."
+        evidence_claim_ids: ["EC-006", "EC-007"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-011-R2"
+        values:
+          channel: "Nubank partnership"
+          public_evidence: "Creditas products to Nubank customers."
+          likely_value: "Scaled distribution and lower CAC if productive."
+          gap: "Current volumes, economics, and exclusivity."
+        evidence_claim_ids: ["EC-012"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-011-R3"
+        values:
+          channel: "Partner API integrations"
+          public_evidence: "API docs describe partner onboarding, staging validation, and production activation."
+          likely_value: "B2B2C lead capture and embedded finance."
+          gap: "Partner concentration and security controls."
+        evidence_claim_ids: ["EC-013"]
+        source_ids: ["SRC-014"]
+      - row_id: "T-011-R4"
+        values:
+          channel: "Employer and payroll partners"
+          public_evidence: "Website offers private payroll loans and corporate benefits."
+          likely_value: "Access to employed borrowers with payroll-linked repayment."
+          gap: "Employer count, eligibility, churn, and regulatory-cap effects."
+        evidence_claim_ids: ["EC-006", "EC-007"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-011-R5"
+        values:
+          channel: "Affiliate networks"
+          public_evidence: "Q1 2026 results mention scaling direct-to-consumer and affiliate networks in Home Equity."
+          likely_value: "Distributed acquisition."
+          gap: "Affiliate quality, fraud controls, and revenue share."
+        evidence_claim_ids: ["EC-002"]
+        source_ids: ["SRC-003"]
+    evidence_claim_ids: ["EC-002", "EC-006", "EC-007", "EC-012", "EC-013"]
+    source_ids: ["SRC-001", "SRC-003", "SRC-011", "SRC-014"]
+    notes: "Channel mix percentages were not public."
+
+  - table_id: "T-012"
+    title: "Public marketing and brand-signal summary"
+    chapter_id: "V"
+    section_id: "V.B"
+    purpose: "Capture public signals relevant to growth, brand, and customer trust."
+    columns:
+      - name: "signal"
+        description: "Marketing or brand signal"
+      - name: "public_evidence"
+        description: "Public evidence"
+      - name: "implication"
+        description: "Diligence implication"
+    rows:
+      - row_id: "T-012-R1"
+        values:
+          signal: "Web traffic"
+          public_evidence: "Dealroom public taster reports 1.9 million monthly visits and Brazil at 96.6% of traffic."
+          implication: "Large Brazil-centered top-of-funnel, but source is a market database and not direct analytics."
+        evidence_claim_ids: ["EC-018"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-012-R2"
+        values:
+          signal: "App and owned-content promotion"
+          public_evidence: "Website promotes the Creditas app and product simulations."
+          implication: "Owned digital channels are central to GTM."
+        evidence_claim_ids: ["EC-006"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-012-R3"
+        values:
+          signal: "Fraud education"
+          public_evidence: "Creditas warns it does not request upfront payment and flags impersonation risks."
+          implication: "Fraud impersonation is visible enough to require dedicated customer education."
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-021"]
+      - row_id: "T-012-R4"
+        values:
+          signal: "Review-site reputation"
+          public_evidence: "Reclame Aqui shows Regular reputation, 6.5/10 six-month score, and 18 days 5 hours average response."
+          implication: "Brand and servicing diligence should be prioritized."
+        evidence_claim_ids: ["EC-017"]
+        source_ids: ["SRC-013"]
+    evidence_claim_ids: ["EC-006", "EC-017", "EC-018", "EC-019"]
+    source_ids: ["SRC-001", "SRC-013", "SRC-019", "SRC-021"]
+    notes: "Paid media, organic traffic, and conversion data were not public."
+
+  - table_id: "T-013"
+    title: "R&D and technology personnel signals"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    purpose: "Summarize public evidence for technology and product leadership/capacity."
+    columns:
+      - name: "person_or_team"
+        description: "Leader, role, or team"
+      - name: "public_role_or_signal"
+        description: "Public evidence"
+      - name: "diligence_implication"
+        description: "Diligence implication"
+    rows:
+      - row_id: "T-013-R1"
+        values:
+          person_or_team: "Ricardo Forcano"
+          public_role_or_signal: "Appointed CTO/COO effective December 1, 2025, overseeing technology, operations, and HR."
+          diligence_implication: "Key execution owner for AI-native operating model."
+        evidence_claim_ids: ["EC-021"]
+        source_ids: ["SRC-018"]
+      - row_id: "T-013-R2"
+        values:
+          person_or_team: "Marcos Henrique Masuchi"
+          public_role_or_signal: "VP of Products listed by The Org."
+          diligence_implication: "Product leadership continuity should be validated."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-013-R3"
+        values:
+          person_or_team: "Software Development"
+          public_role_or_signal: "The Org lists Software Development with 71 people."
+          diligence_implication: "Public-profile count is directional, not HR-system truth."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-013-R4"
+        values:
+          person_or_team: "Data Engineering"
+          public_role_or_signal: "The Org lists Data Engineering with 26 people."
+          diligence_implication: "Important for underwriting, automation, and data platform diligence."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-013-R5"
+        values:
+          person_or_team: "Engineering hiring"
+          public_role_or_signal: "Gupy lists technical openings including Associate Tooling Engineer, Corporate Platforms Engineer, and Martech Developer."
+          diligence_implication: "Selective hiring supports ongoing platform work but does not prove overall capacity."
+        evidence_claim_ids: ["EC-022"]
+        source_ids: ["SRC-020"]
+    evidence_claim_ids: ["EC-020", "EC-021", "EC-022"]
+    source_ids: ["SRC-012", "SRC-018", "SRC-020"]
+    notes: "Public org-profile data can be stale; validate with HR exports."
+
+  - table_id: "T-014"
+    title: "Public product, AI, and automation pipeline"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    purpose: "Track public automation claims and required control evidence."
+    columns:
+      - name: "initiative"
+        description: "Technology or AI initiative"
+      - name: "public_status"
+        description: "Publicly disclosed status"
+      - name: "evidence_strength"
+        description: "Evidence classification"
+      - name: "control_gap"
+        description: "Control diligence gap"
+    rows:
+      - row_id: "T-014-R1"
+        values:
+          initiative: "Early-stage collections AI agents"
+          public_status: "About 90% of interactions handled by autonomous agents at near-zero marginal cost, per Q1 2026 result."
+          evidence_strength: "Self-reported primary source"
+          control_gap: "Need collection-script compliance, borrower-treatment QA, and human escalation metrics."
+        evidence_claim_ids: ["EC-009"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-014-R2"
+        values:
+          initiative: "AI-led software development"
+          public_status: "Product cycle compressed from three weeks to four days, per Q1 2026 result."
+          evidence_strength: "Self-reported primary source"
+          control_gap: "Need deployment frequency, defect rate, security review, and productivity attribution."
+        evidence_claim_ids: ["EC-009"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-014-R3"
+        values:
+          initiative: "Home Equity automation"
+          public_status: "90% first-line credit analysis automated, legal review and contract generation 100% AI-assisted, 60% signature validation without human intervention."
+          evidence_strength: "Self-reported primary source"
+          control_gap: "Need model validation, legal sign-off, audit trail, override rates, and exception handling."
+        evidence_claim_ids: ["EC-009"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-014-R4"
+        values:
+          initiative: "Partner API"
+          public_status: "Public docs describe staging and production credential activation after three successful staging proposals."
+          evidence_strength: "Verified public documentation"
+          control_gap: "Need API security assessment, rate limits, data-processing agreements, and incident response."
+        evidence_claim_ids: ["EC-013"]
+        source_ids: ["SRC-014"]
+    evidence_claim_ids: ["EC-009", "EC-013"]
+    source_ids: ["SRC-003", "SRC-014"]
+    notes: "Automation claims can be material valuation drivers, but all require operational and compliance testing."
+
+  - table_id: "T-015"
+    title: "Senior management roster"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    purpose: "Identify public senior leaders and diligence follow-ups."
+    columns:
+      - name: "name"
+        description: "Leader name"
+      - name: "public_role"
+        description: "Public role"
+      - name: "source"
+        description: "Public source"
+      - name: "diligence_follow_up"
+        description: "Diligence follow-up"
+    rows:
+      - row_id: "T-015-R1"
+        values:
+          name: "Sergio Furio"
+          public_role: "Founder and CEO"
+          source: "The Org and company announcements"
+          diligence_follow_up: "Review founder ownership, board role, and key-person risk."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-015-R2"
+        values:
+          name: "Ann Williams"
+          public_role: "COO; planned full-time role through March 31, 2026, then part-time support"
+          source: "The Org and 2025 transition announcement"
+          diligence_follow_up: "Validate transition plan, retained responsibilities, and succession."
+        evidence_claim_ids: ["EC-020", "EC-021"]
+        source_ids: ["SRC-012", "SRC-018"]
+      - row_id: "T-015-R3"
+        values:
+          name: "Ricardo Forcano"
+          public_role: "CTO/COO effective December 1, 2025"
+          source: "Company transition announcement"
+          diligence_follow_up: "Assess mandate, operating cadence, and technology-modernization track record."
+        evidence_claim_ids: ["EC-021"]
+        source_ids: ["SRC-018"]
+      - row_id: "T-015-R4"
+        values:
+          name: "Fabio Zveibil"
+          public_role: "VP Auto Ecosystem"
+          source: "The Org"
+          diligence_follow_up: "Review auto-product growth, risk, and partner concentration."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-015-R5"
+        values:
+          name: "Romulo Mendes"
+          public_role: "VP Risk"
+          source: "The Org"
+          diligence_follow_up: "Review model governance, credit committee, and loss forecasting."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-015-R6"
+        values:
+          name: "Lucas Giampietri"
+          public_role: "Director ALM and Funding Strategy"
+          source: "The Org"
+          diligence_follow_up: "Review funding structure, interest-rate risk, and securitization covenants."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+    evidence_claim_ids: ["EC-020", "EC-021"]
+    source_ids: ["SRC-012", "SRC-018"]
+    notes: "The public roster is not a substitute for a current org chart and board materials."
+
+  - table_id: "T-016"
+    title: "Headcount and hiring signals"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    purpose: "Summarize public workforce size and hiring evidence."
+    columns:
+      - name: "date_or_source"
+        description: "Date/source"
+      - name: "signal"
+        description: "Workforce signal"
+      - name: "value"
+        description: "Publicly disclosed value"
+      - name: "caveat"
+        description: "Diligence caveat"
+    rows:
+      - row_id: "T-016-R1"
+        values:
+          date_or_source: "December 2020 Series E"
+          signal: "Crew members"
+          value: "1,500"
+          caveat: "Historical company press-release figure."
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-016-R2"
+        values:
+          date_or_source: "July 2021 Minuto acquisition"
+          signal: "Crew members after Minuto"
+          value: "About 2,500"
+          caveat: "Includes 350 Minuto employees per announcement."
+        evidence_claim_ids: ["EC-016", "EC-023"]
+        source_ids: ["SRC-010"]
+      - row_id: "T-016-R3"
+        values:
+          date_or_source: "January/July 2022 company releases"
+          signal: "Employees"
+          value: "More than or about 4,000"
+          caveat: "Historical scale; current exact headcount not public."
+        evidence_claim_ids: ["EC-004", "EC-023"]
+        source_ids: ["SRC-006", "SRC-007"]
+      - row_id: "T-016-R4"
+        values:
+          date_or_source: "The Org"
+          signal: "Current employee range"
+          value: "1,001-5,000"
+          caveat: "Public profile range, not HR export."
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-016-R5"
+        values:
+          date_or_source: "Gupy careers"
+          signal: "Open roles"
+          value: "15 jobs found"
+          caveat: "Point-in-time job board signal; not hiring plan."
+        evidence_claim_ids: ["EC-022"]
+        source_ids: ["SRC-020"]
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-016", "EC-020", "EC-022", "EC-023"]
+    source_ids: ["SRC-005", "SRC-006", "SRC-007", "SRC-010", "SRC-012", "SRC-020"]
+    notes: "Headcount trend likely changed after 2022; validate with payroll data."
+
+  - table_id: "T-017"
+    title: "Departures and transition signals"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    purpose: "Identify public management transition risks."
+    columns:
+      - name: "person_or_role"
+        description: "Person or role"
+      - name: "transition"
+        description: "Public transition detail"
+      - name: "risk"
+        description: "Diligence risk"
+      - name: "status"
+        description: "Verification status"
+    rows:
+      - row_id: "T-017-R1"
+        values:
+          person_or_role: "Ann Williams, COO"
+          transition: "Full-time until March 31, 2026; part-time support for remainder of 2026"
+          risk: "Continuity risk across operations and strategic programs."
+          status: "verified"
+        evidence_claim_ids: ["EC-021"]
+        source_ids: ["SRC-018"]
+      - row_id: "T-017-R2"
+        values:
+          person_or_role: "Ricardo Forcano, CTO/COO"
+          transition: "Appointed effective December 1, 2025"
+          risk: "Execution risk around integration of technology, operations, HR, and AI-native mandate."
+          status: "verified"
+        evidence_claim_ids: ["EC-021"]
+        source_ids: ["SRC-018"]
+      - row_id: "T-017-R3"
+        values:
+          person_or_role: "Other senior departures"
+          transition: "No comprehensive public departure log was validated."
+          risk: "Private attrition may be hidden by limited public data."
+          status: "not_publicly_verifiable"
+        evidence_claim_ids: ["EC-026"]
+        source_ids: ["SRC-012"]
+    evidence_claim_ids: ["EC-021", "EC-026"]
+    source_ids: ["SRC-012", "SRC-018"]
+    notes: "Request HR turnover and retention records."
+
+  - table_id: "T-018"
+    title: "Regulatory and agency action summary"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    purpose: "Map public regulatory model and agency-related evidence."
+    columns:
+      - name: "agency_or_rule"
+        description: "Agency, rule, or regulatory domain"
+      - name: "public_evidence"
+        description: "Public evidence"
+      - name: "status"
+        description: "Verification status"
+      - name: "diligence_request"
+        description: "Follow-up request"
+    rows:
+      - row_id: "T-018-R1"
+        values:
+          agency_or_rule: "Banco Central / CMN correspondent and SCD rules"
+          public_evidence: "Footer states Creditas acts as correspondent bank and SCD under CMN/Banco Central resolutions."
+          status: "verified"
+          diligence_request: "Provide entity-by-product legal matrix and Banco Central authorizations."
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-001"]
+      - row_id: "T-018-R2"
+        values:
+          agency_or_rule: "Andbank transaction approvals"
+          public_evidence: "July 2022 transaction stated approvals required from BCB, CADE, and AFA."
+          status: "verified"
+          diligence_request: "Provide final approval and closing documents."
+        evidence_claim_ids: ["EC-023"]
+        source_ids: ["SRC-007"]
+      - row_id: "T-018-R3"
+        values:
+          agency_or_rule: "S&P ratings for FIDCs"
+          public_evidence: "Creditas disclosed brAAA senior ratings and brA mezzanine upgrades for Auto FIDCs IV-VII."
+          status: "verified"
+          diligence_request: "Provide full rating reports, triggers, collateral performance, and waterfall details."
+        evidence_claim_ids: ["EC-024"]
+        source_ids: ["SRC-009"]
+      - row_id: "T-018-R4"
+        values:
+          agency_or_rule: "LGPD / ANPD privacy compliance"
+          public_evidence: "Privacy policy states compliance with LGPD and ANPD regulations."
+          status: "verified"
+          diligence_request: "Provide DPIAs, DSR logs, ANPD inquiries, incident registers, and DPO records."
+        evidence_claim_ids: ["EC-025"]
+        source_ids: ["SRC-015"]
+    evidence_claim_ids: ["EC-008", "EC-023", "EC-024", "EC-025"]
+    source_ids: ["SRC-001", "SRC-007", "SRC-009", "SRC-015"]
+    notes: "No adverse agency action database search was completed in this run; request counsel certification."
+
+  - table_id: "T-019"
+    title: "Litigation and legal matters tracker"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    purpose: "Record public litigation evidence and required legal diligence."
+    columns:
+      - name: "matter_type"
+        description: "Legal matter type"
+      - name: "public_evidence"
+        description: "Public evidence reviewed"
+      - name: "verification_status"
+        description: "Evidence classification"
+      - name: "requested_source"
+        description: "Suggested source or request"
+    rows:
+      - row_id: "T-019-R1"
+        values:
+          matter_type: "Pending lawsuits against Creditas"
+          public_evidence: "No docket-level litigation source was collected in this public-source run."
+          verification_status: "not_publicly_verifiable"
+          requested_source: "Counsel litigation schedule and court-docket searches by legal entity."
+        evidence_claim_ids: ["EC-026"]
+        source_ids: ["SRC-016"]
+      - row_id: "T-019-R2"
+        values:
+          matter_type: "Pending lawsuits initiated by Creditas"
+          public_evidence: "No docket-level affirmative-litigation source was collected in this public-source run."
+          verification_status: "not_publicly_verifiable"
+          requested_source: "Counsel litigation schedule and collections-litigation policy."
+        evidence_claim_ids: ["EC-026"]
+        source_ids: ["SRC-016"]
+      - row_id: "T-019-R3"
+        values:
+          matter_type: "Customer complaints"
+          public_evidence: "Reclame Aqui shows significant complaint volume and response metrics."
+          verification_status: "verified"
+          requested_source: "Consumer-protection, ombudsman, and regulatory complaint logs."
+        evidence_claim_ids: ["EC-017"]
+        source_ids: ["SRC-013", "SRC-017"]
+      - row_id: "T-019-R4"
+        values:
+          matter_type: "Regulatory or agency proceedings"
+          public_evidence: "No adverse agency proceeding was validated from collected public sources; regulatory model disclosures were found."
+          verification_status: "not_publicly_verifiable"
+          requested_source: "Counsel certificate, regulator correspondence, and enforcement-search evidence."
+        evidence_claim_ids: ["EC-008", "EC-026"]
+        source_ids: ["SRC-001", "SRC-016", "SRC-017"]
+    evidence_claim_ids: ["EC-008", "EC-017", "EC-026"]
+    source_ids: ["SRC-001", "SRC-013", "SRC-016", "SRC-017"]
+    notes: "Public complaint data is not equivalent to litigation or regulatory enforcement data."
+
+  - table_id: "T-020"
+    title: "IP, privacy, security, and compliance controls"
+    chapter_id: "VIII"
+    section_id: "VIII.B"
+    purpose: "Summarize public evidence for IP and control posture, plus hidden diligence needs."
+    columns:
+      - name: "control_area"
+        description: "Control area"
+      - name: "public_evidence"
+        description: "Public evidence"
+      - name: "risk"
+        description: "Risk implication"
+      - name: "diligence_request"
+        description: "Follow-up request"
+    rows:
+      - row_id: "T-020-R1"
+        values:
+          control_area: "Privacy and sensitive data"
+          public_evidence: "Privacy policy covers financial, location, behavioral, sensitive, and biometric data."
+          risk: "High sensitivity because credit, insurance, biometric, and behavioral data can trigger LGPD duties."
+          diligence_request: "DPIAs, records of processing, DSR metrics, retention schedules, and breach logs."
+        evidence_claim_ids: ["EC-025"]
+        source_ids: ["SRC-015"]
+      - row_id: "T-020-R2"
+        values:
+          control_area: "AI/model training"
+          public_evidence: "Privacy policy allows improving, developing, and training AI models and using automated systems and inferences."
+          risk: "Model-risk, consent/legal-basis, explainability, and bias-control exposure."
+          diligence_request: "Model inventory, legal bases, bias tests, monitoring, and human review."
+        evidence_claim_ids: ["EC-025"]
+        source_ids: ["SRC-015"]
+      - row_id: "T-020-R3"
+        values:
+          control_area: "Fraud prevention"
+          public_evidence: "Security page warns about impersonation, no upfront fees, and verified channels."
+          risk: "Brand impersonation can create customer harm and complaint risk."
+          diligence_request: "Fraud case volume, takedown process, customer remediation, and losses."
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-021"]
+      - row_id: "T-020-R4"
+        values:
+          control_area: "Transparency and compliance policies"
+          public_evidence: "Transparency center links ethics, third-party code, anti-corruption, cybersecurity, AML/CFT, PRSAC, ethics channel, and ombudsman reports."
+          risk: "Positive governance signal, but implementation evidence is private."
+          diligence_request: "Policy attestations, training completion, incidents, vendor due diligence, and audit results."
+        evidence_claim_ids: ["EC-024"]
+        source_ids: ["SRC-017"]
+      - row_id: "T-020-R5"
+        values:
+          control_area: "Patents, trademarks, copyrights, and licenses"
+          public_evidence: "No independent IP registry search was completed in this run; terms assert ownership of platform content and the Creditas name/design/expression."
+          risk: "IP ownership and open-source compliance need validation for technology moat."
+          diligence_request: "IP assignment schedule, trademark/patent docket, open-source SBOM, and software-license register."
+        evidence_claim_ids: ["EC-026", "EC-027"]
+        source_ids: ["SRC-016"]
+    evidence_claim_ids: ["EC-019", "EC-024", "EC-025", "EC-026", "EC-027"]
+    source_ids: ["SRC-015", "SRC-016", "SRC-017", "SRC-021"]
+    notes: "Control documents are publicly signposted but not independently audited in public sources."
+
+figures:
+  - figure_id: "F-001"
+    title: "Creditas public financing timeline"
+    chapter_id: "I"
+    section_id: "I.B"
+    figure_type: "timeline"
+    description: "Timeline of key public financing and capital-structure events from Series E through latest IR financing highlights."
+    purpose: "Show valuation and financing milestones that drive cap-table diligence."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      start_date: "2020-12-18"
+      end_date: "2026-03-31"
+      ordering: "chronological"
+      events:
+        - event_id: "F-001-E1"
+          date: "2020-12-18"
+          label: "Series E"
+          description: "US$255 million Series E at US$1.75 billion valuation."
+          category: "equity"
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-005"]
+        - event_id: "F-001-E2"
+          date: "2022-01-25"
+          label: "Series F"
+          description: "US$260 million Series F at US$4.8 billion valuation."
+          category: "equity"
+          evidence_claim_ids: ["EC-004"]
+          source_ids: ["SRC-006"]
+        - event_id: "F-001-E3"
+          date: "2022-07-08"
+          label: "Series F extension and M&A"
+          description: "US$50 million Series F extension, US$150 million convertible note, Andbank, Kzas, and Voltz-related activity."
+          category: "financing_and_mna"
+          evidence_claim_ids: ["EC-023"]
+          source_ids: ["SRC-007"]
+        - event_id: "F-001-E4"
+          date: "2026-03-31"
+          label: "IR cumulative financing"
+          description: "US$987 million raised through seven financing rounds disclosed on IR home."
+          category: "cumulative_disclosure"
+          evidence_claim_ids: ["EC-001"]
+          source_ids: ["SRC-002"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Render as a horizontal financing timeline with caveat callouts."
+    evidence_claim_ids: ["EC-001", "EC-004", "EC-005", "EC-023"]
+    source_ids: ["SRC-002", "SRC-005", "SRC-006", "SRC-007"]
+    notes: "Timeline excludes earlier rounds because detailed public amounts were not collected for this report."
+
+  - figure_id: "F-002"
+    title: "Public valuation trajectory"
+    chapter_id: "I"
+    section_id: "I.B"
+    figure_type: "chart"
+    description: "Bar chart of publicly disclosed Creditas valuations in Series E and Series F."
+    purpose: "Highlight the last verified public valuation and stale-valuation risk."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Financing round"
+        unit: null
+        scale: "categorical"
+      y_axis:
+        label: "Post-money valuation"
+        unit: "US$ billions"
+        scale: "linear"
+      series:
+        - series_id: "valuation"
+          name: "Public valuation"
+          unit: "US$ billions"
+          data_points:
+            - x: "Series E 2020"
+              y: 1.75
+              label: "US$1.75B"
+              evidence_claim_ids: ["EC-005"]
+              source_ids: ["SRC-005"]
+            - x: "Series F 2022"
+              y: 4.8
+              label: "US$4.8B"
+              evidence_claim_ids: ["EC-004"]
+              source_ids: ["SRC-006"]
+      annotations:
+        - label: "Current valuation not public"
+          x: "2026"
+          y: null
+          note: "No later priced equity valuation was verified in the public sources reviewed."
+          evidence_claim_ids: ["EC-026"]
+          source_ids: ["SRC-002"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Use a two-bar valuation chart with a visible not-public annotation for current fair value."
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-026"]
+    source_ids: ["SRC-005", "SRC-006", "SRC-002"]
+    notes: "The latest usable public valuation in this report is the January 2022 Series F valuation."
+
+  - figure_id: "F-003"
+    title: "Creditas product ecosystem architecture"
+    chapter_id: "II"
+    section_id: "II.A"
+    figure_type: "architecture_diagram"
+    description: "Product architecture showing consumers, employers, partners, financing products, insurance, benefits, and funding/legal layers."
+    purpose: "Visualize operating complexity across products and regulated roles."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - node_id: "user-consumer"
+          label: "Consumer borrower"
+          node_type: "user"
+          description: "Individuals seeking secured credit, financing, or insurance."
+          evidence_claim_ids: ["EC-006", "EC-007"]
+          source_ids: ["SRC-001"]
+        - node_id: "user-employer"
+          label: "Employer / employee-benefits channel"
+          node_type: "user"
+          description: "Companies and employees using payroll and benefits products."
+          evidence_claim_ids: ["EC-006", "EC-007"]
+          source_ids: ["SRC-001"]
+        - node_id: "creditas-platform"
+          label: "Creditas digital platform"
+          node_type: "service"
+          description: "Website/app/API platform that facilitates loans, financing, benefits, and insurance."
+          evidence_claim_ids: ["EC-006", "EC-013"]
+          source_ids: ["SRC-001", "SRC-014"]
+        - node_id: "loan-products"
+          label: "Home, vehicle, payroll, and auto finance"
+          node_type: "product"
+          description: "Core secured and specialized credit products."
+          evidence_claim_ids: ["EC-006", "EC-007"]
+          source_ids: ["SRC-001"]
+        - node_id: "insurance"
+          label: "Insurance / Minuto"
+          node_type: "product"
+          description: "Digital insurance brokerage products operated with Minuto."
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-010"]
+        - node_id: "funding"
+          label: "Capital-markets funding"
+          node_type: "third_party"
+          description: "FIDCs, CRIs, FIIs, and other market structures."
+          evidence_claim_ids: ["EC-001", "EC-015"]
+          source_ids: ["SRC-002", "SRC-008"]
+        - node_id: "regulated-entities"
+          label: "Correspondent / SCD / partner institutions"
+          node_type: "third_party"
+          description: "Legal and regulated roles disclosed by Creditas."
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-001", "SRC-016"]
+      edges:
+        - edge_id: "edge-1"
+          from_node_id: "user-consumer"
+          to_node_id: "creditas-platform"
+          relationship: "applies_or_simulates"
+          data_or_dependency: "Credit and personal data"
+          evidence_claim_ids: ["EC-006", "EC-025"]
+          source_ids: ["SRC-001", "SRC-015"]
+        - edge_id: "edge-2"
+          from_node_id: "user-employer"
+          to_node_id: "creditas-platform"
+          relationship: "benefits_and_payroll_channel"
+          data_or_dependency: "Employer-linked payroll data"
+          evidence_claim_ids: ["EC-006", "EC-007"]
+          source_ids: ["SRC-001"]
+        - edge_id: "edge-3"
+          from_node_id: "creditas-platform"
+          to_node_id: "loan-products"
+          relationship: "originates_or_facilitates"
+          data_or_dependency: "Collateral, credit, and contract data"
+          evidence_claim_ids: ["EC-006", "EC-008"]
+          source_ids: ["SRC-001"]
+        - edge_id: "edge-4"
+          from_node_id: "creditas-platform"
+          to_node_id: "insurance"
+          relationship: "brokers_or_distributes"
+          data_or_dependency: "Insurance quote and policy data"
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-010"]
+        - edge_id: "edge-5"
+          from_node_id: "loan-products"
+          to_node_id: "funding"
+          relationship: "financed_by"
+          data_or_dependency: "Credit receivables and structured-finance collateral"
+          evidence_claim_ids: ["EC-015", "EC-024"]
+          source_ids: ["SRC-008", "SRC-009"]
+        - edge_id: "edge-6"
+          from_node_id: "loan-products"
+          to_node_id: "regulated-entities"
+          relationship: "regulated_role"
+          data_or_dependency: "Legal origination/servicing role"
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-001", "SRC-016"]
+      boundaries:
+        - boundary_id: "boundary-creditas"
+          label: "Creditas customer-facing platform"
+          node_ids: ["creditas-platform", "loan-products", "insurance"]
+        - boundary_id: "boundary-external"
+          label: "External and regulated counterparties"
+          node_ids: ["funding", "regulated-entities"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Render as a left-to-right system diagram."
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-008", "EC-013", "EC-015", "EC-016", "EC-024", "EC-025"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-008", "SRC-009", "SRC-010", "SRC-014", "SRC-015", "SRC-016"]
+    notes: "Diagram is public-source inferred; legal entity-by-product mapping requires confirmation."
+
+  - figure_id: "F-004"
+    title: "Public customer and partner concentration proxy"
+    chapter_id: "III"
+    section_id: "III.A"
+    figure_type: "chart"
+    description: "Bar chart with available public customer/partner indicators and not-public gaps."
+    purpose: "Show that demand signals exist but true concentration remains private."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Signal"
+        unit: null
+        scale: "categorical"
+      y_axis:
+        label: "Public value"
+        unit: "count_or_percent"
+        scale: "linear"
+      series:
+        - series_id: "public-signals"
+          name: "Public signals"
+          unit: "mixed"
+          data_points:
+            - x: "Credit requests"
+              y: 13
+              label: "13M+ requests"
+              evidence_claim_ids: ["EC-011"]
+              source_ids: ["SRC-008"]
+            - x: "Insurance customers at Minuto acquisition"
+              y: 160000
+              label: "160k customers"
+              evidence_claim_ids: ["EC-016"]
+              source_ids: ["SRC-010"]
+            - x: "Top borrower concentration"
+              y: null
+              label: "Not public"
+              evidence_claim_ids: ["EC-026"]
+              source_ids: ["SRC-002"]
+            - x: "Top partner concentration"
+              y: null
+              label: "Not public"
+              evidence_claim_ids: ["EC-026"]
+              source_ids: ["SRC-014"]
+      annotations:
+        - label: "Concentration gap"
+          x: "Top borrower concentration"
+          y: null
+          note: "Named borrower and partner concentration metrics were not public."
+          evidence_claim_ids: ["EC-026"]
+          source_ids: ["SRC-002", "SRC-014"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Use callouts for mixed-unit public signals; do not imply comparability across bars."
+    evidence_claim_ids: ["EC-011", "EC-016", "EC-026"]
+    source_ids: ["SRC-008", "SRC-010", "SRC-002", "SRC-014"]
+    notes: "The chart is a proxy for diligence gaps, not a true concentration analysis."
+
+  - figure_id: "F-005"
+    title: "Creditas competitive positioning map"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    figure_type: "market_map"
+    description: "Market map placing Creditas against broad competitor categories by product breadth and secured-lending specialization."
+    purpose: "Frame competitor diligence without unsupported market-share claims."
+    spec_schema_ref: "figure_spec_shapes.market_map"
+    spec:
+      dimensions:
+        x_axis:
+          label: "Secured-lending specialization"
+          low_label: "General credit"
+          high_label: "Collateralized/specialized credit"
+        y_axis:
+          label: "Product ecosystem breadth"
+          low_label: "Single product"
+          high_label: "Multi-product ecosystem"
+      segments:
+        - segment_id: "segment-banks"
+          name: "Banks and finance companies"
+          description: "Broad financial institutions with overlapping products."
+        - segment_id: "segment-digital"
+          name: "Digital banks and fintechs"
+          description: "Digital distribution platforms with credit adjacency."
+        - segment_id: "segment-brokers"
+          name: "Insurance and benefits platforms"
+          description: "Adjacent insurance and employer-benefits competitors."
+        - segment_id: "segment-target"
+          name: "Creditas"
+          description: "Multi-product secured finance platform."
+      entities:
+        - entity_id: "entity-creditas"
+          name: "Creditas"
+          entity_type: "target_company"
+          segment_id: "segment-target"
+          x_value: 4
+          y_value: 4
+          attributes:
+            rationale: "Asset-backed lending plus insurance, benefits, financing, and partner ecosystem."
+          evidence_claim_ids: ["EC-006", "EC-014", "EC-018"]
+          source_ids: ["SRC-001", "SRC-006", "SRC-019"]
+        - entity_id: "entity-banks"
+          name: "Incumbent banks and finance companies"
+          entity_type: "competitor"
+          segment_id: "segment-banks"
+          x_value: 3
+          y_value: 4
+          attributes:
+            rationale: "Product overlap inferred from Creditas' collateral and financing categories; competitor-specific metrics not collected."
+          evidence_claim_ids: ["EC-006", "EC-026"]
+          source_ids: ["SRC-001"]
+        - entity_id: "entity-digital-banks"
+          name: "Digital banks and consumer fintechs"
+          entity_type: "competitor"
+          segment_id: "segment-digital"
+          x_value: 2
+          y_value: 4
+          attributes:
+            rationale: "Nubank partnership demonstrates overlap with digital-bank distribution."
+          evidence_claim_ids: ["EC-012"]
+          source_ids: ["SRC-011"]
+        - entity_id: "entity-insurance"
+          name: "Insurance brokers and marketplaces"
+          entity_type: "competitor"
+          segment_id: "segment-brokers"
+          x_value: 1
+          y_value: 2
+          attributes:
+            rationale: "Minuto acquisition moved Creditas into insurance brokerage competition."
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-010"]
+    rendering_guidance:
+      preferred_format: "svg"
+      display_notes: "Display qualitative positioning with evidence caveat."
+    evidence_claim_ids: ["EC-006", "EC-012", "EC-014", "EC-016", "EC-018", "EC-026"]
+    source_ids: ["SRC-001", "SRC-006", "SRC-010", "SRC-011", "SRC-019"]
+    notes: "Coordinates are analyst-coded qualitative positions from public evidence."
+
+  - figure_id: "F-006"
+    title: "Creditas public GTM funnel"
+    chapter_id: "V"
+    section_id: "V.A"
+    figure_type: "funnel"
+    description: "Conceptual public funnel from direct/partner lead generation through staging/API validation and loan flow."
+    purpose: "Identify the private data needed for true funnel diligence."
+    spec_schema_ref: "figure_spec_shapes.funnel"
+    spec:
+      unit: "leads"
+      cohort_or_period: "Public-source conceptual funnel; quantitative counts not public"
+      stages:
+        - stage_id: "stage-1"
+          name: "Direct, partner, employer, and affiliate leads"
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids: ["EC-006", "EC-012", "EC-013"]
+          source_ids: ["SRC-001", "SRC-011", "SRC-014"]
+        - stage_id: "stage-2"
+          name: "Simulation / proposal / API validation"
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids: ["EC-006", "EC-013"]
+          source_ids: ["SRC-001", "SRC-014"]
+        - stage_id: "stage-3"
+          name: "Credit, collateral, KYC, and fraud checks"
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids: ["EC-025", "EC-009"]
+          source_ids: ["SRC-015", "SRC-003"]
+        - stage_id: "stage-4"
+          name: "Disbursement / policy / benefits activation"
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids: ["EC-006", "EC-007"]
+          source_ids: ["SRC-001"]
+        - stage_id: "stage-5"
+          name: "Servicing, collections, renewal, and cross-sell"
+          order: 5
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids: ["EC-009", "EC-017"]
+          source_ids: ["SRC-003", "SRC-013"]
+    rendering_guidance:
+      preferred_format: "svg"
+      display_notes: "Render as a funnel with all counts marked not public."
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-009", "EC-012", "EC-013", "EC-017", "EC-025"]
+    source_ids: ["SRC-001", "SRC-003", "SRC-011", "SRC-013", "SRC-014", "SRC-015"]
+    notes: "Quantitative funnel conversion metrics require data-room evidence."
+
+  - figure_id: "F-007"
+    title: "R&D and automation operating architecture"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    figure_type: "architecture_diagram"
+    description: "High-level public-source architecture for partner API, AI automation, credit workflows, and product/engineering teams."
+    purpose: "Show where diligence should test controls and productivity claims."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - node_id: "partner-api"
+          label: "Partner API"
+          node_type: "integration"
+          description: "Staging and production API integration for partners."
+          evidence_claim_ids: ["EC-013"]
+          source_ids: ["SRC-014"]
+        - node_id: "origination"
+          label: "Origination workflow"
+          node_type: "service"
+          description: "Lead/proposal, credit, legal, signature, and disbursement workflow."
+          evidence_claim_ids: ["EC-009", "EC-013"]
+          source_ids: ["SRC-003", "SRC-014"]
+        - node_id: "ai-agents"
+          label: "AI agents and automation"
+          node_type: "model"
+          description: "Automation in collections, credit, legal, signatures, and software development."
+          evidence_claim_ids: ["EC-009"]
+          source_ids: ["SRC-003"]
+        - node_id: "data-risk"
+          label: "Risk and data teams"
+          node_type: "service"
+          description: "Risk, data engineering, and analytics capacity inferred from public org profile."
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - node_id: "product-engineering"
+          label: "Product and engineering"
+          node_type: "service"
+          description: "Product, software development, and platform engineering signals."
+          evidence_claim_ids: ["EC-020", "EC-022"]
+          source_ids: ["SRC-012", "SRC-020"]
+      edges:
+        - edge_id: "F-007-E1"
+          from_node_id: "partner-api"
+          to_node_id: "origination"
+          relationship: "feeds_leads"
+          data_or_dependency: "Partner leads and proposals"
+          evidence_claim_ids: ["EC-013"]
+          source_ids: ["SRC-014"]
+        - edge_id: "F-007-E2"
+          from_node_id: "origination"
+          to_node_id: "ai-agents"
+          relationship: "automated_by"
+          data_or_dependency: "Credit, legal, signature, and collection workflow data"
+          evidence_claim_ids: ["EC-009"]
+          source_ids: ["SRC-003"]
+        - edge_id: "F-007-E3"
+          from_node_id: "data-risk"
+          to_node_id: "ai-agents"
+          relationship: "governs_or_trains"
+          data_or_dependency: "Risk models and operational data"
+          evidence_claim_ids: ["EC-009", "EC-020"]
+          source_ids: ["SRC-003", "SRC-012"]
+        - edge_id: "F-007-E4"
+          from_node_id: "product-engineering"
+          to_node_id: "origination"
+          relationship: "builds_and_maintains"
+          data_or_dependency: "Product changes and platform releases"
+          evidence_claim_ids: ["EC-009", "EC-020", "EC-022"]
+          source_ids: ["SRC-003", "SRC-012", "SRC-020"]
+      boundaries:
+        - boundary_id: "boundary-rd"
+          label: "Publicly visible R&D and automation surface"
+          node_ids: ["partner-api", "origination", "ai-agents", "data-risk", "product-engineering"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Use control-test icons on AI-agent and data-risk nodes."
+    evidence_claim_ids: ["EC-009", "EC-013", "EC-020", "EC-022"]
+    source_ids: ["SRC-003", "SRC-012", "SRC-014", "SRC-020"]
+    notes: "Architecture is inferred from public statements and documentation."
+
+  - figure_id: "F-008"
+    title: "Public management org chart"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    figure_type: "org_chart"
+    description: "Public management chart based on The Org and transition announcement."
+    purpose: "Show visible leadership and transition points."
+    spec_schema_ref: "figure_spec_shapes.org_chart"
+    spec:
+      people_or_roles:
+        - node_id: "sergio-furio"
+          name: "Sergio Furio"
+          role: "Founder and CEO"
+          department: "Executive"
+          location: "Brazil"
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - node_id: "ann-williams"
+          name: "Ann Williams"
+          role: "Chief Operating Officer"
+          department: "Operations"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020", "EC-021"]
+          source_ids: ["SRC-012", "SRC-018"]
+        - node_id: "ricardo-forcano"
+          name: "Ricardo Forcano"
+          role: "CTO/COO effective December 1, 2025"
+          department: "Technology / Operations / HR"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-021"]
+          source_ids: ["SRC-018"]
+        - node_id: "fabio-zveibil"
+          name: "Fabio Zveibil"
+          role: "VP Auto Ecosystem"
+          department: "Auto"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - node_id: "romulo-mendes"
+          name: "Romulo Mendes"
+          role: "VP Risk"
+          department: "Risk"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - node_id: "lucas-giampietri"
+          name: "Lucas Giampietri"
+          role: "Director ALM and Funding Strategy"
+          department: "ALM / Funding"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - node_id: "marcos-masuchi"
+          name: "Marcos Henrique Masuchi"
+          role: "VP Products"
+          department: "Product"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - node_id: "maria-cazorla"
+          name: "Maria Cazorla"
+          role: "Executive Director Finance"
+          department: "Finance"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+      reporting_lines:
+        - parent_node_id: "sergio-furio"
+          child_node_id: "ann-williams"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - parent_node_id: "sergio-furio"
+          child_node_id: "ricardo-forcano"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-021"]
+          source_ids: ["SRC-018"]
+        - parent_node_id: "sergio-furio"
+          child_node_id: "fabio-zveibil"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - parent_node_id: "sergio-furio"
+          child_node_id: "romulo-mendes"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - parent_node_id: "sergio-furio"
+          child_node_id: "lucas-giampietri"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - parent_node_id: "sergio-furio"
+          child_node_id: "marcos-masuchi"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+        - parent_node_id: "sergio-furio"
+          child_node_id: "maria-cazorla"
+          relationship: "reports_to"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Show Ann Williams transition and Ricardo Forcano appointment as overlay notes."
+    evidence_claim_ids: ["EC-020", "EC-021"]
+    source_ids: ["SRC-012", "SRC-018"]
+    notes: "The Org reporting lines are treated as public profile signals and require company confirmation."
+
+  - figure_id: "F-009"
+    title: "Public headcount anchor trend"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    figure_type: "chart"
+    description: "Line chart of public historical headcount anchors and current broad range."
+    purpose: "Show workforce-growth history and current uncertainty."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "line"
+      x_axis:
+        label: "Year"
+        unit: null
+        scale: "time"
+      y_axis:
+        label: "Employees"
+        unit: "count"
+        scale: "linear"
+      series:
+        - series_id: "headcount-anchors"
+          name: "Public employee anchors"
+          unit: "employees"
+          data_points:
+            - x: "2020-12"
+              y: 1500
+              label: "1,500 crew members"
+              evidence_claim_ids: ["EC-005"]
+              source_ids: ["SRC-005"]
+            - x: "2021-07"
+              y: 2500
+              label: "2,500 crew members after Minuto"
+              evidence_claim_ids: ["EC-016"]
+              source_ids: ["SRC-010"]
+            - x: "2022-01"
+              y: 4000
+              label: "More than 4,000 employees"
+              evidence_claim_ids: ["EC-004"]
+              source_ids: ["SRC-006"]
+            - x: "2026-05"
+              y: null
+              label: "Current exact headcount not public; The Org range 1,001-5,000"
+              evidence_claim_ids: ["EC-020"]
+              source_ids: ["SRC-012"]
+      annotations:
+        - label: "Current range only"
+          x: "2026-05"
+          y: null
+          note: "Public source gives range rather than exact current headcount."
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-012"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Use dashed uncertainty band for 2026 range."
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-016", "EC-020"]
+    source_ids: ["SRC-005", "SRC-006", "SRC-010", "SRC-012"]
+    notes: "Historical anchors may not represent current headcount."
+
+  - figure_id: "F-010"
+    title: "Legal and regulatory timeline"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    figure_type: "timeline"
+    description: "Timeline of selected public legal, regulatory, capital-markets, and disclosure events."
+    purpose: "Show milestones that require legal and capital-markets diligence."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      start_date: "2021-07-21"
+      end_date: "2026-05-07"
+      ordering: "chronological"
+      events:
+        - event_id: "F-010-E1"
+          date: "2021-07-21"
+          label: "Minuto acquisition"
+          description: "Creditas acquired Minuto Seguros, adding insurance brokerage operations and carrier relationships."
+          category: "mna"
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-010"]
+        - event_id: "F-010-E2"
+          date: "2022-07-08"
+          label: "Andbank and Kzas transactions"
+          description: "Series F extension included Andbank strategic partnership/license acquisition and Kzas acquisition."
+          category: "mna_regulatory"
+          evidence_claim_ids: ["EC-023"]
+          source_ids: ["SRC-007"]
+        - event_id: "F-010-E3"
+          date: "2025-03-25"
+          label: "S&P FIDC rating action"
+          description: "S&P upgraded mezzanine tranches for Creditas Auto FIDCs IV-VII and reaffirmed senior brAAA ratings."
+          category: "capital_markets"
+          evidence_claim_ids: ["EC-024"]
+          source_ids: ["SRC-009"]
+        - event_id: "F-010-E4"
+          date: "2025-07-14"
+          label: "FIDC Auto XII"
+          description: "R$800 million FIDC Auto XII with brAAA senior rating and R$2.3 billion demand."
+          category: "capital_markets"
+          evidence_claim_ids: ["EC-015"]
+          source_ids: ["SRC-008"]
+        - event_id: "F-010-E5"
+          date: "2026-02-27"
+          label: "IFRS accrual methodology disclosure"
+          description: "Creditas disclosed revised interest-accrual methodology for past-due loans."
+          category: "financial_reporting"
+          evidence_claim_ids: ["EC-010"]
+          source_ids: ["SRC-004"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Render regulatory approval and funding events as different colors."
+    evidence_claim_ids: ["EC-010", "EC-015", "EC-016", "EC-023", "EC-024"]
+    source_ids: ["SRC-004", "SRC-007", "SRC-008", "SRC-009", "SRC-010"]
+    notes: "Court docket and enforcement searches remain diligence gaps."
+
+  - figure_id: "F-011"
+    title: "Creditas diligence risk heatmap"
+    chapter_id: "VIII"
+    section_id: "VIII.B"
+    figure_type: "risk_heatmap"
+    description: "Risk heatmap for financial, funding, macro, regulatory, customer, privacy/AI, execution, and data-gap risks."
+    purpose: "Prioritize confirmatory diligence."
+    spec_schema_ref: "figure_spec_shapes.risk_heatmap"
+    spec:
+      x_axis:
+        label: "likelihood"
+        scale: ["low", "medium", "high", "unknown"]
+      y_axis:
+        label: "severity"
+        scale: ["informational", "low", "medium", "high", "critical"]
+      risk_points:
+        - risk_id: "R-001"
+          label: "IFRS loss-making"
+          severity: "high"
+          likelihood: "high"
+          rationale: "Q1 2026 and Q4 2025 results show operating and net losses."
+          evidence_claim_ids: ["EC-003"]
+          source_ids: ["SRC-003", "SRC-004"]
+        - risk_id: "R-002"
+          label: "Capital-markets funding exposure"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "Creditas describes market structures as a core funding pillar and more than 70% of funding in market instruments."
+          evidence_claim_ids: ["EC-015"]
+          source_ids: ["SRC-008"]
+        - risk_id: "R-003"
+          label: "Brazil credit and rate cycle"
+          severity: "high"
+          likelihood: "high"
+          rationale: "Company results cite high SELIC and revised interest-rate environment."
+          evidence_claim_ids: ["EC-002", "EC-010"]
+          source_ids: ["SRC-003", "SRC-004"]
+        - risk_id: "R-004"
+          label: "Regulatory/entity complexity"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "Products span correspondent banking, SCD, partner financial institutions, insurance brokerage, and structured finance."
+          evidence_claim_ids: ["EC-008", "EC-024"]
+          source_ids: ["SRC-001", "SRC-017"]
+        - risk_id: "R-005"
+          label: "Customer-service and fraud reputation"
+          severity: "medium"
+          likelihood: "high"
+          rationale: "Review-site complaint metrics and fraud-impersonation warnings are public."
+          evidence_claim_ids: ["EC-017", "EC-019"]
+          source_ids: ["SRC-013", "SRC-021"]
+        - risk_id: "R-006"
+          label: "Privacy and AI data controls"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "Privacy policy discloses sensitive data and AI/model-training uses; Q1 results disclose AI automation."
+          evidence_claim_ids: ["EC-009", "EC-025"]
+          source_ids: ["SRC-003", "SRC-015"]
+        - risk_id: "R-007"
+          label: "Execution and transition"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "Management transition overlaps with product, AI, and profitability execution goals."
+          evidence_claim_ids: ["EC-021"]
+          source_ids: ["SRC-018"]
+        - risk_id: "R-008"
+          label: "Private-data gaps"
+          severity: "medium"
+          likelihood: "high"
+          rationale: "Cap table, loan tape, channel mix, legal matters, and audited evidence are private."
+          evidence_claim_ids: ["EC-026"]
+          source_ids: ["SRC-002"]
+    rendering_guidance:
+      preferred_format: "svg"
+      display_notes: "Plot severity by likelihood and link each point to the risk register."
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-008", "EC-009", "EC-010", "EC-015", "EC-017", "EC-019", "EC-021", "EC-024", "EC-025", "EC-026"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-003", "SRC-004", "SRC-008", "SRC-013", "SRC-015", "SRC-017", "SRC-018", "SRC-021"]
+    notes: "Risk scoring is an analyst judgment based on public evidence."
+
+evidence_claims:
+  - evidence_claim_id: "EC-001"
+    claim: "Creditas reports US$987 million raised through seven financing rounds, a R$7.6 billion loan portfolio as of March 2026, Q1 2026 annualized revenue of R$2.5 billion, annualized gross profit of R$1.012 billion, and 70+ capital-markets issuances."
+    evidence_summary: "Investor-relations home highlights list cumulative financing, portfolio, annualized revenue/gross profit, and issuance count."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-002"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "Creditas raised US$987 million through 7 financing rounds; Loan portfolio (as of March 2026); Q1-26 annualized Revenues and R$ 1,012 million annualized Gross Profit; 70+ Capital markets issuances."
+        location: "Investor Relations highlights"
+    analyst_interpretation: "Creditas has meaningful public scale and financing disclosure, but cumulative financing must be reconciled to the Series F and later instruments."
+    limitations: "Company-owned source; not an audited financial statement."
+    associations:
+      chapter_id: "I"
+      section_id: "I.B"
+      founder_claim_ids: ["FC-003"]
+      table_ids: ["T-001", "T-002", "T-010"]
+      figure_ids: ["F-001"]
+      risk_ids: ["R-001", "R-002", "R-008"]
+
+  - evidence_claim_id: "EC-002"
+    claim: "Q1 2026 results show record origination of R$1.1 billion, portfolio of R$7.6 billion, revenue of R$633.0 million, and gross profit of R$253.5 million at 40.0% gross margin."
+    evidence_summary: "Creditas Q1 2026 public financial report lists origination, portfolio, revenue, gross profit, and margin."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-003"]
+    quoted_evidence:
+      - source_id: "SRC-003"
+        quote: "Record Origination at R$1.1bn... Portfolio reached R$7.6bn... Revenues grew to R$633.0mn... Record quarterly Gross Profit at R$253.5mn... 40.0% Gross Profit Margin."
+        location: "Q1 2026 financial results, Key Highlights"
+    analyst_interpretation: "Growth and gross-profit scale are real company-reported positives; credit-quality and audit testing remain necessary."
+    limitations: "Company-owned quarterly disclosure."
+    associations:
+      chapter_id: "I"
+      section_id: "I.A"
+      founder_claim_ids: ["FC-003"]
+      table_ids: ["T-002", "T-011"]
+      figure_ids: ["F-011"]
+      risk_ids: ["R-001", "R-003"]
+
+  - evidence_claim_id: "EC-003"
+    claim: "Creditas remains IFRS loss-making publicly, with Q1 2026 operating loss of R$34.9 million and net loss of R$75.9 million after Q4 2025 operating loss of R$80.9 million and net loss of R$143.3 million."
+    evidence_summary: "Q1 2026 and Q4 2025 financial result pages disclose operating and net losses."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-003", "SRC-004"]
+    quoted_evidence:
+      - source_id: "SRC-003"
+        quote: "Operating loss narrowed to R$34.9mn... Net loss for the quarter totaled R$75.9mn."
+        location: "Q1 2026 financial results"
+      - source_id: "SRC-004"
+        quote: "In Q4-25, we recorded an operating loss of R$80.9 million... and a net loss of R$143.3 million."
+        location: "Q4 2025 financial results"
+    analyst_interpretation: "Path to profitability is the primary investment diligence issue despite improved quarter-over-quarter operating loss."
+    limitations: "Need audited statements, cash flow, and credit provision details."
+    associations:
+      chapter_id: "I"
+      section_id: "I.A"
+      founder_claim_ids: ["FC-005"]
+      table_ids: ["T-002"]
+      figure_ids: ["F-011"]
+      risk_ids: ["R-001"]
+
+  - evidence_claim_id: "EC-004"
+    claim: "Creditas announced a US$260 million Series F in January 2022 at a US$4.8 billion valuation and US$829 million total equity raised across six fundraising rounds."
+    evidence_summary: "Creditas Series F announcement includes amount, valuation, cumulative equity, investors, and headcount."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-006"]
+    quoted_evidence:
+      - source_id: "SRC-006"
+        quote: "announces a US$260 million Series-F financing round, which values the company at US$4.8 billion, bringing the total equity raised to US$829 million across six different fundraising rounds."
+        location: "Series F announcement"
+    analyst_interpretation: "This is the latest public priced equity valuation found and supports unicorn status, though current fair value may differ materially."
+    limitations: "Company-owned press release; cap-table terms private."
+    associations:
+      chapter_id: "I"
+      section_id: "I.B"
+      founder_claim_ids: ["FC-002"]
+      table_ids: ["T-001", "T-003", "T-016"]
+      figure_ids: ["F-001", "F-002", "F-009"]
+      risk_ids: ["R-008"]
+
+  - evidence_claim_id: "EC-005"
+    claim: "Creditas announced a US$255 million Series E in December 2020 at a US$1.75 billion valuation."
+    evidence_summary: "Series E announcement provides amount, valuation, and investors."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-005"]
+    quoted_evidence:
+      - source_id: "SRC-005"
+        quote: "closing of a new US$255 million investment, valuing Creditas at US$1.75 billion."
+        location: "Series E announcement"
+    analyst_interpretation: "Provides a historical valuation anchor before the 2022 Series F."
+    limitations: "Does not include investment terms."
+    associations:
+      chapter_id: "I"
+      section_id: "I.B"
+      founder_claim_ids: ["FC-002"]
+      table_ids: ["T-001", "T-016"]
+      figure_ids: ["F-001", "F-002", "F-009"]
+      risk_ids: ["R-008"]
+
+  - evidence_claim_id: "EC-006"
+    claim: "Creditas publicly offers credit, insurance, financing, and benefits products through its website."
+    evidence_summary: "Homepage describes credit, insurance, financing, and benefits categories and links to product simulations."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-001"]
+    quoted_evidence:
+      - source_id: "SRC-001"
+        quote: "Oferecemos credito, seguro e financiamento... Produtos para diferentes momentos da sua vida."
+        location: "Creditas homepage product sections"
+    analyst_interpretation: "The public product catalog supports product-breadth claims."
+    limitations: "Product economics and active volumes by SKU are not public."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: ["FC-001", "FC-006"]
+      table_ids: ["T-004", "T-005", "T-009", "T-010", "T-011", "T-012"]
+      figure_ids: ["F-003", "F-005", "F-006"]
+      risk_ids: ["R-003", "R-007"]
+
+  - evidence_claim_id: "EC-007"
+    claim: "Public product pages disclose indicative loan terms for vehicle-backed, home-backed, and private-payroll loans."
+    evidence_summary: "Homepage lists vehicle-backed loan, home-backed loan, and private payroll amount/rate/tenor details."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-001"]
+    quoted_evidence:
+      - source_id: "SRC-001"
+        quote: "Juros a partir de 1,49% ao mes... Receba R$ 5 mil ate R$ 150 mil... Pague em ate 60 meses; Use sua casa... juros a partir de 1,09% ao mes... Receba ate R$ 3 milhoes... Pague em ate 240 meses."
+        location: "Creditas homepage product terms"
+    analyst_interpretation: "Marketing terms define public borrower proposition but must be reconciled to contracts and realized APR."
+    limitations: "Public marketing rates may vary by borrower and channel."
+    associations:
+      chapter_id: "II"
+      section_id: "II.B"
+      founder_claim_ids: ["FC-001"]
+      table_ids: ["T-004", "T-005", "T-009", "T-011"]
+      figure_ids: ["F-003", "F-006"]
+      risk_ids: ["R-003", "R-004"]
+
+  - evidence_claim_id: "EC-008"
+    claim: "Creditas discloses a regulated operating model involving correspondent-banking and Sociedade de Credito Direto roles, while terms state Creditas Solucoes is not itself a financial institution, insurer, payment operator, or card scheme."
+    evidence_summary: "Website footer and terms of use describe entity roles, CMN/Banco Central rules, partner institutions, and legal caveats."
+    evidence_type: "legal_record"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-001", "SRC-016"]
+    quoted_evidence:
+      - source_id: "SRC-001"
+        quote: "A Creditas e uma plataforma digital que atua como correspondente bancario e como Sociedade de Credito Direto... seguimos as diretrizes da Resolucao CMN..."
+        location: "Website footer"
+      - source_id: "SRC-016"
+        quote: "Nos nao somos uma instituicao financeira, companhia de seguros, operadora de meios de pagamento ou bandeira de cartao de credito."
+        location: "Terms of use"
+    analyst_interpretation: "The operating model is entity-specific and should be mapped precisely before underwriting legal and regulatory risk."
+    limitations: "Public footer and terms do not replace legal opinions or regulator confirmations."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.A"
+      founder_claim_ids: []
+      table_ids: ["T-003", "T-018", "T-019"]
+      figure_ids: ["F-003", "F-011"]
+      risk_ids: ["R-004"]
+
+  - evidence_claim_id: "EC-009"
+    claim: "Creditas reports AI automation across collections, software development, and home-equity workflows, including about 90% early-stage collection interactions handled by autonomous agents and product-cycle compression from three weeks to four days."
+    evidence_summary: "Q1 2026 results provide specific automation and productivity claims."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-003"]
+    quoted_evidence:
+      - source_id: "SRC-003"
+        quote: "autonomous agents handle ~90% of interactions in early-stage delinquency... AI-led pull requests are compressing our product cycle from three weeks to four days."
+        location: "Q1 2026 financial results, operating cost/productivity discussion"
+    analyst_interpretation: "The detail is material, but it is self-reported and requires model-governance and KPI validation."
+    limitations: "No independent audit, model inventory, or control evidence was public."
+    associations:
+      chapter_id: "VI"
+      section_id: "VI.B"
+      founder_claim_ids: ["FC-004"]
+      table_ids: ["T-010", "T-014"]
+      figure_ids: ["F-007", "F-011"]
+      risk_ids: ["R-006", "R-007"]
+
+  - evidence_claim_id: "EC-010"
+    claim: "Creditas changed IFRS interest accrual/provisioning methodology in Q4 2025, reducing 2025 revenue by 6.4% and gross profit by 1.7% on the reference basis."
+    evidence_summary: "Q4 2025 report explains ceasing interest accrual after 180 days for Home Equity and 90 days for other products."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-004"]
+    quoted_evidence:
+      - source_id: "SRC-004"
+        quote: "cease interest accrual for loans past due more than 180 days for Home Equity... and 90 days for all other products... resulted in a -6.4% impact on revenues and -1.7% on gross profit."
+        location: "Q4 2025 financial results note"
+    analyst_interpretation: "The methodology change is a key earnings-quality and comparability diligence item."
+    limitations: "Underlying loan-level past-due balances and recoveries are not public."
+    associations:
+      chapter_id: "I"
+      section_id: "I.A"
+      founder_claim_ids: ["FC-005"]
+      table_ids: ["T-002"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-001", "R-003"]
+
+  - evidence_claim_id: "EC-011"
+    claim: "Creditas public capital-markets release states it surpassed 13 million credit requests and had a current credit portfolio of about R$6.2 billion at that time."
+    evidence_summary: "July 2025 FIDC Auto XII release includes demand/scale statements in About Creditas."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-008"]
+    quoted_evidence:
+      - source_id: "SRC-008"
+        quote: "Creditas has surpassed the mark of 13 million credit requests, has a current credit portfolio of R$6.2 billion..."
+        location: "FIDC Auto XII release, About Creditas"
+    analyst_interpretation: "Credit-request volume supports demand scale, but the metric requires methodology validation."
+    limitations: "Company-owned disclosure; request-to-customer conversion not public."
+    associations:
+      chapter_id: "III"
+      section_id: "III.A"
+      founder_claim_ids: []
+      table_ids: ["T-006"]
+      figure_ids: ["F-004"]
+      risk_ids: ["R-003", "R-008"]
+
+  - evidence_claim_id: "EC-012"
+    claim: "Nubank and Creditas announced a partnership to bring Creditas products to Nubank customers, with Nubank receiving an option to become a minority shareholder up to 7.7%."
+    evidence_summary: "September 2021 partnership announcement describes distribution and ownership option."
+    evidence_type: "customer_or_partner_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-011"]
+    quoted_evidence:
+      - source_id: "SRC-011"
+        quote: "partnership that will bring Creditas products to Nubank customers in Brazil... allows Nubank to... become a minority shareholder of Creditas, with up to 7.7%."
+        location: "Nubank partnership announcement"
+    analyst_interpretation: "Partnership is a material distribution and cap-table diligence item."
+    limitations: "Current status and volumes not public."
+    associations:
+      chapter_id: "III"
+      section_id: "III.B"
+      founder_claim_ids: []
+      table_ids: ["T-003", "T-007", "T-009", "T-011"]
+      figure_ids: ["F-005", "F-006"]
+      risk_ids: ["R-007", "R-008"]
+
+  - evidence_claim_id: "EC-013"
+    claim: "Creditas developer documentation describes a partner API integration process with staging credentials, three successful staging proposals, and production activation."
+    evidence_summary: "Developer docs explain partner onboarding, credentials, staging validation, and production."
+    evidence_type: "technical_repository"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-014"]
+    quoted_evidence:
+      - source_id: "SRC-014"
+        quote: "A integracao acontece em duas fases: Staging... e Producao... validacao... 3 propostas sequenciais com sucesso em staging."
+        location: "API integration guide"
+    analyst_interpretation: "Partner integrations are real and operationally relevant; security and concentration need diligence."
+    limitations: "Docs do not disclose partner list, API volumes, or security audit results."
+    associations:
+      chapter_id: "III"
+      section_id: "III.B"
+      founder_claim_ids: []
+      table_ids: ["T-007", "T-011", "T-014"]
+      figure_ids: ["F-003", "F-006", "F-007"]
+      risk_ids: ["R-006", "R-007"]
+
+  - evidence_claim_id: "EC-014"
+    claim: "Creditas describes itself as a three-ecosystem platform across auto, home, and employee benefits, with fintech products, digital insurance, and consumer solutions."
+    evidence_summary: "Series F announcement provides strategic product positioning and ecosystem description."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-006"]
+    quoted_evidence:
+      - source_id: "SRC-006"
+        quote: "strategy across 3 ecosystems: Home, Auto and Employee Benefits... complete platform including fintech products, insurance and marketplace solutions."
+        location: "Series F announcement"
+    analyst_interpretation: "Creditas' strategy is broad and ecosystem-based, not only a loan marketplace."
+    limitations: "Revenue mix by ecosystem is private."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: ["FC-001"]
+      table_ids: ["T-009", "T-010"]
+      figure_ids: ["F-005"]
+      risk_ids: ["R-007"]
+
+  - evidence_claim_id: "EC-015"
+    claim: "The July 2025 FIDC Auto XII was offered at R$800 million, received R$2.3 billion demand, carried a brAAA senior subclass rating by S&P, and Creditas stated more than 70% of funding was in market structures."
+    evidence_summary: "Creditas FIDC Auto XII release gives transaction size, demand, rating, manager/administrator, and funding strategy."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-008"]
+    quoted_evidence:
+      - source_id: "SRC-008"
+        quote: "With an offered volume of R$800 million and a brAAA senior subclass rating by S&P... demand of R$2.3 billion... more than 70% of our funding now structured through market instruments."
+        location: "FIDC Auto XII release"
+    analyst_interpretation: "Capital-markets access is a strength but creates funding-market and covenant sensitivity."
+    limitations: "Offering documents and collateral performance were not public in the source excerpt."
+    associations:
+      chapter_id: "III"
+      section_id: "III.B"
+      founder_claim_ids: []
+      table_ids: ["T-008", "T-010", "T-018"]
+      figure_ids: ["F-003", "F-010", "F-011"]
+      risk_ids: ["R-002", "R-003"]
+
+  - evidence_claim_id: "EC-016"
+    claim: "Creditas acquired Minuto Seguros in July 2021; Minuto had more than R$250 million in annual written premiums, 160,000 customers, 350 employees, and partnerships with 15 insurers."
+    evidence_summary: "Minuto acquisition announcement describes scale and strategic rationale."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-010"]
+    quoted_evidence:
+      - source_id: "SRC-010"
+        quote: "With more than R$250 million in annual written premiums and 160.000 customers... partnering with 15 insurance companies... 350 new employees."
+        location: "Minuto acquisition announcement"
+    analyst_interpretation: "Minuto created material insurance adjacency and cross-sell opportunity."
+    limitations: "Current GWP, retention, and profitability were not public."
+    associations:
+      chapter_id: "II"
+      section_id: "II.B"
+      founder_claim_ids: ["FC-006"]
+      table_ids: ["T-004", "T-005", "T-007", "T-009", "T-016"]
+      figure_ids: ["F-004", "F-005", "F-009", "F-010"]
+      risk_ids: ["R-007"]
+
+  - evidence_claim_id: "EC-017"
+    claim: "Reclame Aqui reports Creditas as verified with Regular reputation, 6.5/10 six-month score, 1,960 complaints, 87.3% response rate, 239 awaiting response, 47.9% repeat-business intent, 71% resolution, and average response time of 18 days 5 hours for 01/11/2025 to 30/04/2026."
+    evidence_summary: "Review-site page presents six-month consumer reputation metrics."
+    evidence_type: "review_site"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-013"]
+    quoted_evidence:
+      - source_id: "SRC-013"
+        quote: "Reputacao Regular... nota media nos ultimos 6 meses e 6.5/10... recebeu 1960 reclamacoes... Respondeu 87.3%... 47.9% voltariam... resolveu 71%... tempo medio de resposta e 18 dias e 5 horas."
+        location: "Reclame Aqui Creditas page"
+    analyst_interpretation: "Customer-service and reputation risks are visible and should be tied to product/root-cause data."
+    limitations: "Review-site data may not represent all customers or regulatory complaints."
+    associations:
+      chapter_id: "III"
+      section_id: "III.A"
+      founder_claim_ids: []
+      table_ids: ["T-006", "T-010", "T-012", "T-019"]
+      figure_ids: ["F-006", "F-011"]
+      risk_ids: ["R-005"]
+
+  - evidence_claim_id: "EC-018"
+    claim: "Dealroom categorizes Creditas as a Sao Paulo fintech unicorn founded in 2012 and a digital lending platform for asset-backed consumer loans, with public profile signals including 28 investors, Brazil-centered workforce and traffic, and 1.9 million monthly visits."
+    evidence_summary: "Dealroom public taster profile provides company category, investor count, workforce geography, and traffic signal."
+    evidence_type: "market_database"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-019"]
+    quoted_evidence:
+      - source_id: "SRC-019"
+        quote: "Fintech - Sao Paulo, Brazil - Founded 2012 Unicorn... Digital lending platform for asset-backed consumer loans... 28 investors... 1.9M monthly visits."
+        location: "Dealroom Creditas profile"
+    analyst_interpretation: "Useful third-party profile support for market categorization and traffic, but live database methodology is not transparent."
+    limitations: "Market database public taster may be incomplete or stale."
+    associations:
+      chapter_id: "IV"
+      section_id: "IV.A"
+      founder_claim_ids: []
+      table_ids: ["T-009", "T-012"]
+      figure_ids: ["F-005"]
+      risk_ids: ["R-008"]
+
+  - evidence_claim_id: "EC-019"
+    claim: "Creditas publishes fraud-prevention guidance stating it does not ask for upfront payment, fees, or insurance to release loans or financing and warns that impostors may pose as consultants."
+    evidence_summary: "Security page warns about impersonation and upfront-payment scams."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-021"]
+    quoted_evidence:
+      - source_id: "SRC-021"
+        quote: "pessoas com mas intencoes podem tentar se passar por consultores Creditas... Nao pedimos nenhum valor de tarifa, cadastro ou seguro para liberar seu emprestimo ou financiamento."
+        location: "Security and fraud-prevention page"
+    analyst_interpretation: "Fraud risk is salient enough for public education and should be quantified in diligence."
+    limitations: "Fraud incidence, losses, and takedown metrics are not public."
+    associations:
+      chapter_id: "V"
+      section_id: "V.B"
+      founder_claim_ids: []
+      table_ids: ["T-010", "T-012", "T-020"]
+      figure_ids: ["F-011"]
+      risk_ids: ["R-005"]
+
+  - evidence_claim_id: "EC-020"
+    claim: "The Org lists Creditas leadership, headquarters in Sao Paulo, employee range of 1,001-5,000, and team/office signals including Software Development, Home Equity and Auto Equity, Finance and Operations, Business Analysis, Data Engineering, HQ, Mexico City, and Porto Alegre."
+    evidence_summary: "The Org profile provides public org chart, employee range, teams, and offices."
+    evidence_type: "social_or_professional_profile"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-012"]
+    quoted_evidence:
+      - source_id: "SRC-012"
+        quote: "Employees 1,001-5,000... Founder & CEO... Software Development 71... Data Engineering 26... Offices HQ 551, Ciudad de Mexico 9, Porto Alegre 4."
+        location: "The Org profile"
+    analyst_interpretation: "Public leadership and org data are useful but can be stale or incomplete."
+    limitations: "Not an HR-system export."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.A"
+      founder_claim_ids: []
+      table_ids: ["T-013", "T-015", "T-016", "T-017"]
+      figure_ids: ["F-007", "F-008", "F-009"]
+      risk_ids: ["R-007", "R-008"]
+
+  - evidence_claim_id: "EC-021"
+    claim: "Creditas appointed Ricardo Forcano as CTO/COO effective December 1, 2025; Ann Williams was to remain full-time until March 31, 2026 and part-time through the rest of 2026."
+    evidence_summary: "Creditas executive transition announcement describes appointment and transition timing."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-018"]
+    quoted_evidence:
+      - source_id: "SRC-018"
+        quote: "appointment of Ricardo Forcano as Chief Technology and Operating Officer (CTO/COO), effective December 1, 2025... Ann Williams... will remain full time until March 31st, 2026 and continue with part time support."
+        location: "CTO/COO transition announcement"
+    analyst_interpretation: "Management transition is a key execution diligence item."
+    limitations: "No board minutes or internal transition plan public."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.A"
+      founder_claim_ids: []
+      table_ids: ["T-013", "T-015", "T-017"]
+      figure_ids: ["F-008", "F-011"]
+      risk_ids: ["R-007"]
+
+  - evidence_claim_id: "EC-022"
+    claim: "Creditas' Gupy careers page listed 15 jobs, including analytics, tooling engineering, corporate platforms engineering, marketing technology, collections, customer experience, and commercial roles."
+    evidence_summary: "Gupy job board shows 15 jobs and job categories."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-020"]
+    quoted_evidence:
+      - source_id: "SRC-020"
+        quote: "15 jobs found... Analista de Business Analytics... Associate Tooling Engineer... Corporate Platforms Engineer... Martech Developer... Consultora de Cobranca... Experiencia do Cliente."
+        location: "Gupy careers page"
+    analyst_interpretation: "Selective hiring supports ongoing operations and technology work, but job-board data can be stale."
+    limitations: "Gupy summary also included valuation/portfolio figures that appear stale relative to IR disclosures."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.B"
+      founder_claim_ids: []
+      table_ids: ["T-013", "T-016"]
+      figure_ids: ["F-007"]
+      risk_ids: ["R-007"]
+
+  - evidence_claim_id: "EC-023"
+    claim: "In July 2022, Creditas announced a US$50 million Series F extension, Series F total of US$310 million, a US$150 million convertible note, Andbank license acquisition/partnership, Kzas acquisition, Voltz investment support, H1 2022 revenue of R$820 million, and about 4,000 employees."
+    evidence_summary: "Series F extension/M&A announcement details financing, Andbank, Kzas, Voltz, revenue, and headcount."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-007"]
+    quoted_evidence:
+      - source_id: "SRC-007"
+        quote: "US$50 million extension... total to US$310 million... acquiring the banking license of Banco Andbank (Brasil) S.A... raising a convertible note for additional US$150 million... acquisition of Kzas... Revenues for the first half of 2022 posted at R$820mn... employs 4,000 people."
+        location: "Series F extension and M&A announcement"
+    analyst_interpretation: "The announcement expands the diligence scope from equity financing into M&A, license, and convertible-note review."
+    limitations: "Closing evidence and final terms not public."
+    associations:
+      chapter_id: "I"
+      section_id: "I.B"
+      founder_claim_ids: ["FC-002"]
+      table_ids: ["T-001", "T-003", "T-007", "T-016", "T-018"]
+      figure_ids: ["F-001", "F-010"]
+      risk_ids: ["R-002", "R-004", "R-008"]
+
+  - evidence_claim_id: "EC-024"
+    claim: "Creditas publicly links compliance, cybersecurity, ethics, anti-corruption, AML/CFT, social/environmental/climate, ethics channel, ombudsman reports, and S&P-related FIDC rating disclosures."
+    evidence_summary: "Transparency center and S&P/FIDC release provide policy and capital-markets control signals."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-017", "SRC-009"]
+    quoted_evidence:
+      - source_id: "SRC-017"
+        quote: "Codigo de Etica... Codigo de Etica para Terceiros... Politica Anticorrupcao... Politica de Seguranca... PLD.CFT... PRSAC... Canal de Etica... Relatorios de Ouvidoria."
+        location: "Transparency center"
+      - source_id: "SRC-009"
+        quote: "upgraded the mezzanine tranche ratings... to brA (sf), while reaffirming the brAAA (sf) ratings for the senior tranches."
+        location: "FIDC rating release"
+    analyst_interpretation: "Policy publication is positive but implementation and enforcement need evidence."
+    limitations: "Policy links do not prove operating effectiveness."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.B"
+      founder_claim_ids: []
+      table_ids: ["T-018", "T-020"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-002", "R-004"]
+
+  - evidence_claim_id: "EC-025"
+    claim: "Creditas' privacy policy, updated March 25, 2025, applies to Creditas, Minuto, and group companies in Brazil, states LGPD compliance, discloses financial/location/behavioral/sensitive/biometric data categories, AI/model-training purposes, KYC, fraud prevention, and risk profiling."
+    evidence_summary: "Privacy policy details data categories, purposes, sharing, security, and LGPD compliance."
+    evidence_type: "legal_record"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-015"]
+    quoted_evidence:
+      - source_id: "SRC-015"
+        quote: "Ultima atualizacao: 25 de marco de 2025... em conformidade... LGPD... Dados financeiros... Dados de localizacao... Dados de comportamento... Dados sensiveis... aprimorar, desenvolver e treinar modelos de inteligencia artificial... KYC... prevenir fraudes... risco de credito, riscos operacionais, riscos reputacionais."
+        location: "Privacy policy"
+    analyst_interpretation: "Data usage is broad and highly sensitive; privacy, AI, and credit-model controls require deep review."
+    limitations: "Public policy does not show actual control operation."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.B"
+      founder_claim_ids: []
+      table_ids: ["T-008", "T-018", "T-020"]
+      figure_ids: ["F-003", "F-006", "F-011"]
+      risk_ids: ["R-006", "R-004"]
+
+  - evidence_claim_id: "EC-026"
+    claim: "Several diligence items are not publicly verifiable from the source set, including cap-table terms, borrower concentration, partner concentration, cloud suppliers, current exact headcount, litigation dockets, and current valuation."
+    evidence_summary: "The public source set contains high-level disclosures but not private diligence records."
+    evidence_type: "analyst_estimate"
+    verification_status: "not_publicly_verifiable"
+    confidence: "high"
+    source_ids: ["SRC-002", "SRC-012", "SRC-014", "SRC-016", "SRC-017"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "Investor-relations highlights provide high-level metrics, not underlying private records."
+        location: "Analyst observation from IR home"
+    analyst_interpretation: "Absence of public records should not be interpreted as positive or negative; it defines the data-room request list."
+    limitations: "Not a factual negative finding; it is an evidence-gap classification."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.A"
+      founder_claim_ids: []
+      table_ids: ["T-006", "T-008", "T-017", "T-019", "T-020"]
+      figure_ids: ["F-002", "F-004", "F-005", "F-011"]
+      risk_ids: ["R-008"]
+
+  - evidence_claim_id: "EC-027"
+    claim: "Creditas terms assert ownership protections over the Creditas name, designs, expression, platform content, widgets, programs, databases, and related applications."
+    evidence_summary: "Terms of use include intellectual-property language."
+    evidence_type: "legal_record"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-016"]
+    quoted_evidence:
+      - source_id: "SRC-016"
+        quote: "o nome, os desenhos e a expressao Creditas... conteudos... widgets, programas, bancos de dados... sao de nossa propriedade."
+        location: "Terms of use, intellectual property"
+    analyst_interpretation: "Public terms support IP ownership claims over platform-facing assets, but registered IP and code ownership need separate review."
+    limitations: "No trademark, patent, copyright, or open-source registry search was completed."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.B"
+      founder_claim_ids: []
+      table_ids: ["T-020"]
+      figure_ids: []
+      risk_ids: ["R-008"]
+
+sources:
+  - source_id: "SRC-001"
+    title: "Emprestimo com a menor taxa do mercado | Creditas"
+    url: "https://www.creditas.com/"
+    publisher: "Creditas"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company-owned marketing and legal-footer source; useful for product, pricing, and regulatory-role disclosures, but not independent."
+    archive_url: null
+  - source_id: "SRC-002"
+    title: "Creditas Investor Relations"
+    url: "https://ir.creditas.com/ir/"
+    publisher: "Creditas"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company-owned IR highlights; good for public company-disclosed metrics, not audited support."
+    archive_url: null
+  - source_id: "SRC-003"
+    title: "Creditas Financial Results Q1-2026"
+    url: "https://ir.creditas.com/ir/financial-reports/creditas-financial-results-q1-2026"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2026-05-07"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company-owned quarterly results; detailed but unaudited in this public-source review."
+    archive_url: null
+  - source_id: "SRC-004"
+    title: "Creditas Financial Results Q4-2025"
+    url: "https://ir.creditas.com/ir/financial-reports/creditas-financial-results-q4-2025"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2026-02-27"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company-owned quarterly results; important for IFRS methodology and loss disclosures."
+    archive_url: null
+  - source_id: "SRC-005"
+    title: "Creditas announces US$255 million Series E"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-announces-ususd255-million-series-e"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2020-12-18"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company press release; valuation and round amount should be cross-checked against financing documents."
+    archive_url: null
+  - source_id: "SRC-006"
+    title: "Creditas announces $260 million Series-F fundraising round"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-announces-usd260-million-series-f-fundraising-round"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2022-01-25"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company press release; latest public priced valuation found in this run."
+    archive_url: null
+  - source_id: "SRC-007"
+    title: "Creditas announces expansion of Series-F round and recently closed M&A transactions"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-announces-expansion-of-series-f-round-and-recently-closed-m-and-a"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2022-07-08"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company press release; requires transaction-document and approval-status validation."
+    archive_url: null
+  - source_id: "SRC-008"
+    title: "Creditas announces new R$800 million FIDC to boost Auto Equity and Auto Finance"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-anuncia-novo-fidc-de-rusd-800-milhoes-para-impulsionar-operacao-de"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2025-07-14"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company capital-markets release; FIDC terms should be verified against offering documents and rating reports."
+    archive_url: null
+  - source_id: "SRC-009"
+    title: "Creditas Auto FIDC ratings upgraded by S&P Global Ratings"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-tem-rating-de-seus-fidcs-de-auto-elevados-pela-s-and-p-global"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2025-03-25"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company release summarizing S&P action; underlying S&P report should be obtained."
+    archive_url: null
+  - source_id: "SRC-010"
+    title: "Creditas acquires Minuto Seguros"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-acquires-minuto-seguros-brazils-largest-car-digital-insurance"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2021-07-21"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company M&A release; current Minuto performance not included."
+    archive_url: null
+  - source_id: "SRC-011"
+    title: "Nubank and Creditas announce partnership"
+    url: "https://www.creditas.com/ir/non-regulatory/nubank-and-creditas-announce-partnership"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2021-09-09"
+    accessed_date: "2026-05-15"
+    source_type: "customer_or_partner_source"
+    reliability_notes: "Company-hosted partnership release; current partnership status and volumes need confirmation."
+    archive_url: null
+  - source_id: "SRC-012"
+    title: "Creditas | The Org"
+    url: "https://theorg.com/org/creditas"
+    publisher: "The Org"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "social_or_professional_profile"
+    reliability_notes: "Third-party public profile; leadership and team counts can be stale or incomplete."
+    archive_url: null
+  - source_id: "SRC-013"
+    title: "Creditas - Reclame Aqui"
+    url: "https://www.reclameaqui.com.br/empresa/creditas/"
+    publisher: "Reclame Aqui"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "review_site"
+    reliability_notes: "Public customer-review site; useful for reputation signals, not statistically representative of all customers."
+    archive_url: null
+  - source_id: "SRC-014"
+    title: "Guia de Integracao API Creditas"
+    url: "https://developers.creditas.com.br/docs"
+    publisher: "Creditas"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "technical_repository"
+    reliability_notes: "Company developer documentation; does not disclose volumes, partners, or security testing."
+    archive_url: null
+  - source_id: "SRC-015"
+    title: "Politica de privacidade | Creditas"
+    url: "https://www.creditas.com/legal/politica-privacidade"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2025-03-25"
+    accessed_date: "2026-05-15"
+    source_type: "legal_record"
+    reliability_notes: "Company legal policy; useful for disclosed data practices, not proof of control effectiveness."
+    archive_url: null
+  - source_id: "SRC-016"
+    title: "Termos e Condicoes de Uso | Creditas"
+    url: "https://www.creditas.com/legal/termos-condicoes"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2023-11-09"
+    accessed_date: "2026-05-15"
+    source_type: "legal_record"
+    reliability_notes: "Company terms; useful for legal-role caveats and IP assertions."
+    archive_url: null
+  - source_id: "SRC-017"
+    title: "Central da Transparencia | Creditas"
+    url: "https://www.creditas.com/transparencia"
+    publisher: "Creditas"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company transparency page listing policy documents; implementation needs validation."
+    archive_url: null
+  - source_id: "SRC-018"
+    title: "Creditas announces CTO/COO appointment and executive transition plan"
+    url: "https://www.creditas.com/ir/non-regulatory/creditas-announces-cto-coo-appointment-and-executive-transition-plan"
+    publisher: "Creditas"
+    author: null
+    publication_date: "2025-12-01"
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company executive transition announcement."
+    archive_url: null
+  - source_id: "SRC-019"
+    title: "Creditas - Unicorn company profile"
+    url: "https://dealroom.co/companies/creditas"
+    publisher: "Dealroom"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "market_database"
+    reliability_notes: "Public taster of market database; may be incomplete and methodology is not fully disclosed."
+    archive_url: null
+  - source_id: "SRC-020"
+    title: "Creditas Solucoes Financeiras careers"
+    url: "https://creditas.gupy.io/"
+    publisher: "Gupy / Creditas"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Careers page and job listings; point-in-time hiring signal."
+    archive_url: null
+  - source_id: "SRC-021"
+    title: "Seguranca e Prevencao a Fraudes | Creditas"
+    url: "https://www.creditas.com/seguranca"
+    publisher: "Creditas"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company fraud-prevention page; indicates visible scam/impersonation risk."
+    archive_url: null
+
+risk_register:
+  - risk_id: "R-001"
+    risk_title: "IFRS loss-making and earnings-quality risk"
+    risk_category: "financial"
+    severity: "high"
+    likelihood: "high"
+    description: "Creditas reports strong growth and improved Q1 2026 operating loss, but it remains loss-making on IFRS operating and net-income measures and recently changed interest-accrual methodology."
+    impacted_chapter_ids: ["I"]
+    impacted_section_ids: ["I.A"]
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-010"]
+    mitigation_or_diligence_request: "Obtain audited financials, management accounts, cash-flow bridge, provision models, vintage curves, and month-by-month profitability plan."
+  - risk_id: "R-002"
+    risk_title: "Capital-markets funding and structured-finance dependency"
+    risk_category: "financing"
+    severity: "high"
+    likelihood: "medium"
+    description: "Capital markets are a main funding pillar, with FIDCs/CRIs/FIIs and more than 70% of funding in market structures per public release."
+    impacted_chapter_ids: ["I", "III", "VIII"]
+    impacted_section_ids: ["I.B", "III.B", "VIII.A"]
+    evidence_claim_ids: ["EC-001", "EC-015", "EC-024"]
+    mitigation_or_diligence_request: "Review all funding agreements, maturities, covenants, triggers, ratings, investor concentration, stress tests, and liquidity reserves."
+  - risk_id: "R-003"
+    risk_title: "Brazil interest-rate and credit-cycle exposure"
+    risk_category: "market"
+    severity: "high"
+    likelihood: "high"
+    description: "Creditas' lending results depend on Brazil macro conditions, SELIC, collateral values, delinquencies, recoveries, and borrower affordability."
+    impacted_chapter_ids: ["I", "II", "III", "V"]
+    impacted_section_ids: ["I.A", "II.B", "III.A", "V.A"]
+    evidence_claim_ids: ["EC-002", "EC-010", "EC-011", "EC-015"]
+    mitigation_or_diligence_request: "Request stress tests by SELIC, unemployment, collateral values, delinquencies, recovery timing, and funding spreads."
+  - risk_id: "R-004"
+    risk_title: "Regulatory and entity-structure complexity"
+    risk_category: "regulatory"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Creditas spans correspondent banking, SCD roles, partner institutions, insurance brokerage, marketplace and structured-finance arrangements."
+    impacted_chapter_ids: ["II", "VIII"]
+    impacted_section_ids: ["II.B", "VIII.A", "VIII.B"]
+    evidence_claim_ids: ["EC-008", "EC-024", "EC-025"]
+    mitigation_or_diligence_request: "Build an entity-by-product regulatory map, obtain legal opinions, regulator correspondence, and compliance testing."
+  - risk_id: "R-005"
+    risk_title: "Customer-service, complaint, and fraud-impersonation risk"
+    risk_category: "reputational"
+    severity: "medium"
+    likelihood: "high"
+    description: "Review-site data shows complaint volume and Regular reputation, while Creditas warns the public about impersonation and upfront-payment scams."
+    impacted_chapter_ids: ["III", "V", "VIII"]
+    impacted_section_ids: ["III.A", "V.B", "VIII.B"]
+    evidence_claim_ids: ["EC-017", "EC-019"]
+    mitigation_or_diligence_request: "Review complaint taxonomy, regulatory complaint logs, fraud cases, brand takedowns, remediation process, and customer-service SLAs."
+  - risk_id: "R-006"
+    risk_title: "Privacy, AI, and model-governance risk"
+    risk_category: "technical"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Creditas processes sensitive financial, location, behavioral, health/disability, biometric, and AI/model-training data and reports AI automation in collections and credit workflows."
+    impacted_chapter_ids: ["VI", "VIII"]
+    impacted_section_ids: ["VI.B", "VIII.B"]
+    evidence_claim_ids: ["EC-009", "EC-013", "EC-025"]
+    mitigation_or_diligence_request: "Request AI governance, DPIAs, model inventory, monitoring reports, bias testing, human review procedures, and data-retention controls."
+  - risk_id: "R-007"
+    risk_title: "Execution risk across product breadth, M&A, partners, and management transition"
+    risk_category: "operational"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Creditas operates many products and partnerships, completed or announced multiple strategic transactions, and is transitioning operations/technology leadership."
+    impacted_chapter_ids: ["II", "III", "IV", "V", "VI", "VII"]
+    impacted_section_ids: ["II.A", "III.B", "IV.B", "V.A", "VI.A", "VII.A"]
+    evidence_claim_ids: ["EC-012", "EC-013", "EC-016", "EC-021", "EC-023"]
+    mitigation_or_diligence_request: "Request integration scorecards, partner KPIs, product P&Ls, management cadence, and transition milestones."
+  - risk_id: "R-008"
+    risk_title: "Material private-data gaps"
+    risk_category: "other"
+    severity: "medium"
+    likelihood: "high"
+    description: "Public sources do not provide cap-table terms, audited statements, loan tapes, current valuation, litigation dockets, partner concentration, supplier list, or security audits."
+    impacted_chapter_ids: ["I", "III", "IV", "VI", "VII", "VIII"]
+    impacted_section_ids: ["I.B", "III.A", "IV.A", "VI.A", "VII.B", "VIII.A", "VIII.B"]
+    evidence_claim_ids: ["EC-026"]
+    mitigation_or_diligence_request: "Run a formal data-room request and require management representations for all not-publicly-verifiable items."
+
+diligence_gaps:
+  - gap_id: "G-001"
+    chapter_id: "I"
+    section_id: "I.A"
+    missing_information: "Audited financial statements, management accounts, cash-flow statements, and monthly bridge from IFRS loss to cash-neutral operation."
+    why_it_matters: "Profitability and runway are the central diligence questions."
+    suggested_source_or_request: "CFO data-room package and auditor workpapers."
+    priority: "high"
+  - gap_id: "G-002"
+    chapter_id: "I"
+    section_id: "I.B"
+    missing_information: "Current cap table, liquidation preferences, convertible-note terms, option pool, warrants, and side letters."
+    why_it_matters: "Public valuation and funding totals do not reveal current ownership economics."
+    suggested_source_or_request: "Corporate secretary capitalization schedule and financing documents."
+    priority: "high"
+  - gap_id: "G-003"
+    chapter_id: "I"
+    section_id: "I.A"
+    missing_information: "Loan-level tapes, vintage curves, delinquency buckets, charge-offs, recoveries, collateral values, and provision model."
+    why_it_matters: "Secured-lending quality determines true unit economics and funding availability."
+    suggested_source_or_request: "Risk/finance loan-tape export and model documentation."
+    priority: "high"
+  - gap_id: "G-004"
+    chapter_id: "II"
+    section_id: "II.B"
+    missing_information: "Realized APR, effective total cost, fee schedules, approval rates, LTV, and contribution margin by product."
+    why_it_matters: "Marketing terms may differ materially from realized economics."
+    suggested_source_or_request: "Product P&Ls and underwriting policy decks."
+    priority: "high"
+  - gap_id: "G-005"
+    chapter_id: "III"
+    section_id: "III.A"
+    missing_information: "Customer count, cohort retention, repeat borrowing, NPS, complaint taxonomy, and customer concentration."
+    why_it_matters: "Public demand signals do not prove customer quality or satisfaction."
+    suggested_source_or_request: "CRM exports, servicing dashboards, and customer-reference calls."
+    priority: "high"
+  - gap_id: "G-006"
+    chapter_id: "III"
+    section_id: "III.B"
+    missing_information: "Partner/channel concentration, API partner list, revenue share, termination rights, and partner-specific loan quality."
+    why_it_matters: "Partner distribution can hide CAC and concentration risk."
+    suggested_source_or_request: "Partnership contracts and channel-performance dashboards."
+    priority: "high"
+  - gap_id: "G-007"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    missing_information: "Independent market share, TAM, competitor pricing, and win/loss benchmarks."
+    why_it_matters: "Leadership claims and moat cannot be confirmed from company sources alone."
+    suggested_source_or_request: "Independent market study and competitor pricing scrape."
+    priority: "medium"
+  - gap_id: "G-008"
+    chapter_id: "V"
+    section_id: "V.A"
+    missing_information: "CAC, conversion, fraud, and approval funnel by channel and product."
+    why_it_matters: "Growth quality depends on channel economics and credit quality."
+    suggested_source_or_request: "Growth analytics and risk dashboards."
+    priority: "high"
+  - gap_id: "G-009"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    missing_information: "AI governance, model inventory, validation, human review thresholds, incident logs, and performance metrics."
+    why_it_matters: "AI is positioned as a productivity lever but can create conduct, privacy, and operational risks."
+    suggested_source_or_request: "CTO/COO, risk, legal, and data-governance materials."
+    priority: "high"
+  - gap_id: "G-010"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    missing_information: "Current headcount, attrition, compensation, hiring plan, and productivity attribution."
+    why_it_matters: "Public headcount ranges do not show actual operating leverage or staff reductions."
+    suggested_source_or_request: "HRIS export and board talent materials."
+    priority: "medium"
+  - gap_id: "G-011"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    missing_information: "Litigation docket, regulator correspondence, legal opinions, and FIDC offering/covenant documents."
+    why_it_matters: "Legal/regulatory and structured-finance risks cannot be closed from public summaries."
+    suggested_source_or_request: "External counsel certificate and transaction documents."
+    priority: "high"
+  - gap_id: "G-012"
+    chapter_id: "VIII"
+    section_id: "VIII.B"
+    missing_information: "Privacy impact assessments, security audits, penetration tests, breach logs, IP assignments, trademark/patent docket, and open-source inventory."
+    why_it_matters: "Sensitive data, AI, and proprietary technology claims require control and ownership evidence."
+    suggested_source_or_request: "DPO/security/legal data-room package."
+    priority: "high"
+
+follow_up_requests:
+  - request_id: "Q-001"
+    chapter_id: "I"
+    section_id: "I.A"
+    request: "Provide audited FY2023-FY2025 statements, Q1 2026 management accounts, monthly cash-flow bridge, and board-approved profitability plan."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-002"
+    chapter_id: "I"
+    section_id: "I.B"
+    request: "Provide full cap table, preference stack, convertible-note terms, Andbank transaction documents, and option/warrant schedule."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-003"
+    chapter_id: "I"
+    section_id: "I.A"
+    request: "Provide anonymized loan tapes by product with vintage, LTV, delinquency, charge-off, recovery, and collateral-sale fields."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-004"
+    chapter_id: "II"
+    section_id: "II.B"
+    request: "Provide realized pricing, fee, CET/APR, approval, loss-adjusted yield, and contribution-margin data by product and borrower segment."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-005"
+    chapter_id: "III"
+    section_id: "III.B"
+    request: "Provide top partners, channel mix, partner contracts, termination provisions, revenue share, and credit performance by channel."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-006"
+    chapter_id: "III"
+    section_id: "III.A"
+    request: "Arrange customer-reference interviews across home equity, auto equity, payroll, insurance, and employer-benefits users."
+    requested_from: "customer"
+    priority: "medium"
+  - request_id: "Q-007"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    request: "Provide independent market-share study, competitor pricing benchmarks, and win/loss analysis."
+    requested_from: "company"
+    priority: "medium"
+  - request_id: "Q-008"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    request: "Provide AI/model inventory, validation reports, human-review policies, bias testing, monitoring dashboards, and incident logs."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-009"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    request: "Provide current org chart, executive scorecards, retention packages, turnover, and management-transition plan."
+    requested_from: "company"
+    priority: "medium"
+  - request_id: "Q-010"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    request: "Provide legal-entity-by-product matrix, regulatory licenses/authorizations, regulator correspondence, and counsel certification of litigation/enforcement matters."
+    requested_from: "counsel"
+    priority: "high"
+  - request_id: "Q-011"
+    chapter_id: "VIII"
+    section_id: "VIII.B"
+    request: "Provide privacy DPIAs, DSR logs, security audit reports, penetration tests, breach/incident history, vendor DPAs, and open-source SBOM."
+    requested_from: "company"
+    priority: "high"
+
+limitations:
+  - limitation_id: "L-001"
+    description: "Research relied on public sources only; no data-room documents, private financials, loan tapes, cap table, contracts, legal dockets, or management interviews were available."
+    affected_chapter_ids: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"]
+    affected_section_ids: ["I.A", "I.B", "II.A", "II.B", "III.A", "III.B", "IV.A", "IV.B", "V.A", "V.B", "VI.A", "VI.B", "VII.A", "VII.B", "VIII.A", "VIII.B"]
+  - limitation_id: "L-002"
+    description: "Many core metrics are company-reported and have not been independently audited in the public evidence set."
+    affected_chapter_ids: ["I", "II", "III", "VI"]
+    affected_section_ids: ["I.A", "I.B", "II.A", "III.A", "VI.B"]
+  - limitation_id: "L-003"
+    description: "Some third-party sources, such as Dealroom, The Org, Gupy, and Reclame Aqui, can be incomplete, stale, methodologically opaque, or unrepresentative."
+    affected_chapter_ids: ["III", "IV", "V", "VII"]
+    affected_section_ids: ["III.A", "IV.A", "V.B", "VII.A", "VII.B"]
+  - limitation_id: "L-004"
+    description: "Reuters, TechCrunch, Crunchbase, and some direct rating/database pages were inaccessible or blocked during the run; no attempt was made to bypass access controls."
+    affected_chapter_ids: ["I", "IV", "VIII"]
+    affected_section_ids: ["I.B", "IV.A", "VIII.A"]
+  - limitation_id: "L-005"
+    description: "Legal and regulatory diligence is incomplete without counsel-led docket searches, regulator checks, entity documents, and structured-finance offering materials."
+    affected_chapter_ids: ["VIII"]
+    affected_section_ids: ["VIII.A", "VIII.B"]
