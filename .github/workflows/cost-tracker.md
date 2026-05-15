@@ -1,21 +1,16 @@
 ---
 description: |
-  Automated agent cost tracker that fires after monitored workflows complete, downloads
-  the agent-artifacts artifact written by gh-aw's firewall, parses token-usage.jsonl,
-  calculates per-model spend, and posts a cost summary on the associated pull request.
-  Creates a cost report issue when no pull request is found. Optionally creates a
-  high-spend alert issue when a single run exceeds a configurable threshold.
+  Tracks token usage for completed agent workflows, calculates estimated model
+  cost, and posts one cost report on the linked pull request or an issue.
 
 on:
   workflow_run:
-    workflows: ["Repo Status", "Weekly Research", "Random Unicorn Diligence Report"]  # Must match the rendered workflow `name:` fields
+    workflows: ["Repo Status", "Weekly Research", "Random Unicorn Diligence Report"]
     types:
       - completed
     branches:
       - main
 
-# `actions: read` is required so the agentic-workflows MCP tool can
-# query workflow runs / artifacts via the GitHub Actions API.
 permissions:
   actions: read
   contents: read
@@ -33,9 +28,6 @@ safe-outputs:
     max: 2
 
 tools:
-  # Exposes `status` and `logs` operations to the agent. The MCP server runs
-  # outside the sandbox and authenticates with the workflow's GITHUB_TOKEN,
-  # so the agent gets run data without needing `gh` or a token of its own.
   agentic-workflows:
   github:
     toolsets: [default]
@@ -47,10 +39,9 @@ timeout-minutes: 60
 
 # Agent Cost Tracker
 
-You are the Agent Cost Tracker. Your job is to read the token usage data written by
-gh-aw's firewall after an agent workflow completes and report back what that run cost.
+Calculate the cost of the triggering agent workflow run and report it once.
 
-## Current Context
+## Run Context
 
 - **Repository**: ${{ github.repository }}
 - **Run**: [#${{ github.event.workflow_run.run_number }}](${{ github.event.workflow_run.html_url }})
@@ -58,34 +49,53 @@ gh-aw's firewall after an agent workflow completes and report back what that run
 - **Conclusion**: ${{ github.event.workflow_run.conclusion }}
 - **Head SHA**: ${{ github.event.workflow_run.head_sha }}
 
-## Instructions
+## 1. Fetch Logs
 
-### Step 1: Fetch token usage via the agentic-workflows MCP tool
-
-Call the `agentic-workflows` `logs` operation to retrieve data for the triggering
-run. Restrict the query to this single run by ID so the response is small:
+Call `agentic-workflows` `logs` for only this run:
 
 - `after_run_id`: ${{ github.event.workflow_run.id }} - 1
 - `before_run_id`: ${{ github.event.workflow_run.id }} + 1
 - `count`: 1
 
-The response includes parsed token usage and cost metrics for the run (when the
-triggering workflow recorded any). If the response contains **no run** matching
-`${{ github.event.workflow_run.id }}`, or the matching run has no token usage data,
-the triggering workflow was not an agent run (or the firewall was disabled).
-**Exit silently** — do not create any issue or comment, do not report an error.
+If there is no matching run or no downloaded log directory, exit silently.
 
-### Step 2: Extract per-model token counts
+## 2. Find Usage
 
-From the matching run, collect per-model usage. Each entry has roughly this shape:
+Check this structured file first:
 
-```json
-{"model":"claude-sonnet-4-5","input_tokens":1200,"output_tokens":340,"cache_read_input_tokens":500,"cache_creation_input_tokens":100}
+```text
+/tmp/gh-aw/aw-mcp/logs/run-${{ github.event.workflow_run.id }}/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
 ```
 
-If the run reports zero tokens across all models, exit without creating any output.
+If it is not there, search the downloaded run directory:
 
-### Step 3: Calculate cost
+```sh
+find "/tmp/gh-aw/aw-mcp/logs/run-${{ github.event.workflow_run.id }}" \
+  \( -path '*/api-proxy-logs/token-usage.jsonl' -o -name 'token-usage.jsonl' -o -name 'agent_usage.json' \) \
+  -type f -print
+```
+
+Use the first structured source with nonzero usage. Expected fields:
+
+```json
+{"model":"gpt-5.5","input_tokens":1200,"output_tokens":340,"cache_read_input_tokens":500,"cache_creation_input_tokens":100}
+```
+
+If no structured usage exists, estimate from the final `Tokens` footer in `agent-stdio.log`:
+
+```text
+Tokens    ↑ 6.0m • ↓ 45.5k • 5.4m (cached) • 15.6k (reasoning)
+```
+
+Parse `k` and `m` suffixes. Treat `↑` as total input, `↓` as output, and
+`(cached)` as cache-read input. Since cached tokens are included in `↑`, use
+`input_tokens = max(input_total - cached_tokens, 0)`. Infer the model from
+`sandbox/agent/logs/process-*.log`, `sandbox/firewall/audit/docker-compose.redacted.yml`,
+or run metadata. Mark footer-based reports as estimates.
+
+If all sources report zero tokens, exit silently.
+
+## 3. Calculate Cost
 
 Aggregate token counts by model across all lines. Use this pricing table (USD per 1M tokens):
 
@@ -127,25 +137,20 @@ Aggregate token counts by model across all lines. Use this pricing table (USD pe
 | gemini-1.5-pro | $1.25 | $5.00 | — | — |
 | gemini-2.0-flash | $0.10 | $0.40 | — | — |
 
-For any model not in this table, use $3.00 input / $15.00 output as a conservative fallback.
+Use `0` for `—`. For unknown models, use `$3.00` input, `$15.00` output, and `0` for cache rates.
 
-Cost per model = (input_tokens * input_rate + output_tokens * output_rate
-               + cache_creation_input_tokens * cache_write_rate
-               + cache_read_input_tokens * cache_read_rate) / 1_000_000
+```text
+cost = (input_tokens * input_rate
+  + output_tokens * output_rate
+  + cache_creation_input_tokens * cache_write_rate
+  + cache_read_input_tokens * cache_read_rate) / 1_000_000
+```
 
-Total cost = sum across all models.
+Total cost is the sum across models. Format as `$0.0123`; use `< $0.0001` below that threshold.
 
-Format costs with 4 decimal places: `$0.0123`. Use `< $0.0001` if below that threshold.
+## 4. Post Report
 
-### Step 4: Find the associated pull request
-
-Use the GitHub MCP server (default toolset) to look up the workflow run and read
-its `pull_requests` field. If a pull request is linked, store its number.
-If none, treat the run as unattached to a PR.
-
-### Step 5: Post the cost report
-
-Build a report using this template. Fill in `$TOTAL_COST` and the breakdown table:
+Read the workflow run `pull_requests` field. If linked to a PR, post one `add_comment`; otherwise create one issue.
 
 ```markdown
 ## Agent run cost
@@ -161,33 +166,29 @@ Build a report using this template. Fill in `$TOTAL_COST` and the breakdown tabl
 
 | Model | Input | Output | Cache write | Cache read | Cost |
 |-------|------:|------:|------------:|-----------:|-----:|
-[one row per model with actual token counts and per-model cost]
+[one row per model]
 
 </details>
 
-*Data from [token-usage.jsonl](https://github.github.com/gh-aw/reference/token-usage/) written by gh-aw's firewall.*
+*Data source: token-usage.jsonl from api-proxy logs. Footer-based reports are estimates from agent-stdio.log.*
 ```
 
-**If a PR number was found**: post this as a comment on that PR using the `add_comment`
-GitHub tool.
+Issue title when no PR is linked:
 
-**If no PR was found**: create an issue using the `create_issue` GitHub tool. Use this
-title format:
-`[cost-tracker] #${{ github.event.workflow_run.run_number }}: $TOTAL_COST`
+```text
+[cost-tracker] #${{ github.event.workflow_run.run_number }}: $TOTAL_COST
+```
 
-### Step 6: High-spend alert (optional)
+## 5. Alert
 
-If the total cost exceeds **$1.00**, create a second issue using the `create_issue`
-GitHub tool with title:
-`[cost-tracker] High spend alert for run #${{ github.event.workflow_run.run_number }}: $TOTAL_COST`
+If total cost exceeds `$1.00`, create a second issue titled:
 
-Include the full breakdown and a link to the run. The $1.00 threshold is a conservative
-starting point. Edit this workflow to raise or lower it to match your budget.
+```text
+[cost-tracker] High spend alert for run #${{ github.event.workflow_run.run_number }}: $TOTAL_COST
+```
 
-## Guidelines
+## Rules
 
-- **Silent on non-agent runs**: If the artifact does not exist, produce no output at all.
-- **One report per run**: Do not create more than one comment or issue per triggering run.
-- **Accurate math**: Double-check token counts and cost calculations before posting.
-- **No retries**: If the artifact download fails with a transient error, exit silently
-  rather than retrying — the next run will generate its own report.
+- Exit silently for missing logs, missing usage, zero tokens, or transient artifact failures.
+- Do not create more than one normal report per run.
+- Double-check arithmetic before posting.
