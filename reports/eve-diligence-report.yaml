@@ -1,0 +1,3294 @@
+report_metadata:
+  report_title: "Eve Startup Diligence Report"
+  target_company: "Eve"
+  website: "https://www.eve.legal/"
+  known_aliases:
+    - "Butler Labs, Inc."
+    - "Eve Legal"
+    - "eve"
+  sector: "Legal AI workflow software for plaintiff law firms"
+  geography: "United States; San Mateo and San Francisco references in public sources"
+  company_stage: "Private unicorn"
+  research_date: "2026-05-15"
+  analyst: "GitHub Copilot diligence agent"
+  report_version: "1.0"
+  currency: "USD unless otherwise noted"
+  time_zone: "America/Los_Angeles"
+
+research_scope:
+  diligence_depth: "standard_diligence"
+  source_strategy:
+    - "Built covered slugs from existing reports, parsed a current CB Insights unicorn list, normalized candidate slugs, excluded covered companies, and selected one uncovered private unicorn at random using shuf."
+    - "Selected Eve from the parsed CB Insights row listing Eve at a $1 billion valuation on 2025-09-30 in Enterprise Tech with Spark Capital, Lightspeed Venture Partners, and Andreessen Horowitz."
+    - "Prioritized company-owned pages for product, customer, security, privacy, legal, SLA, careers, and founder information."
+    - "Supplemented company sources with PRNewswire, LawNext, Law360, DuckDuckGo search result snippets, and competitor pages where accessible."
+    - "Did not use unauthenticated private systems, paid legal dockets, or non-public data; gaps are marked not_publicly_verifiable rather than inferred."
+  included_jurisdictions:
+    - "United States"
+    - "California and federal legal context where Butler Labs, Inc. terms and the accessible case index apply"
+    - "U.S. privacy and legal-services professional responsibility context relevant to plaintiff law firms"
+  excluded_topics:
+    - "Audited financial statements, management accounts, bank statements, cash balance, debt instruments, cap table, option plan, financing documents, customer contracts, board minutes, and customer references were not available."
+    - "SOC 2 reports, penetration-test results, security audit reports, incident logs, model evaluation datasets, insurance policies, employment records, and full legal docket documents were not accessed."
+    - "Reuters returned an access block and Justia returned a security-verification page; those sources are treated as limitations rather than evidence."
+  user_provided_materials:
+    - material_id: "UPM-001"
+      title: "Autonomous random-unicorn diligence request"
+      type: "workflow_request"
+      date_received: "2026-05-15"
+      notes: "No founder deck, private data room, financial model, customer references, or management responses were provided."
+
+founder_claims:
+  - founder_claim_id: "FC-001"
+    claim_text: "Eve is a legal AI platform for plaintiff law firms that supports the case lifecycle from intake through resolution."
+    claim_source: "Eve homepage, product pages, and PRNewswire release"
+    claim_date: null
+    mapped_chapter_ids: ["II", "III", "V"]
+    mapped_section_ids: ["II.A", "III.A", "V.A"]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-006"]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request product analytics, deployment counts by module, integration list, active usage by persona, error metrics, and workflow-level retention."
+  - founder_claim_id: "FC-002"
+    claim_text: "Eve raised a $103 million Series B at an over $1 billion valuation, with total raised of at least $164 million across public company materials."
+    claim_source: "PRNewswire release, LawNext article, CB Insights list, and Eve careers page"
+    claim_date: "2025-09-30"
+    mapped_chapter_ids: ["I"]
+    mapped_section_ids: ["I.B", "I.C"]
+    verification_status: "partially_verified"
+    confidence: "high"
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-003"]
+    contradiction_summary: "The Series B amount, valuation, and named investors are corroborated by company and independent sources; full financing terms, share class, valuation mechanics, and current cap table are not public."
+    diligence_follow_up:
+      - "Request signed financing documents, cap table, preference waterfall, option pool, investor rights, board consents, and any debt or secondary transactions."
+  - founder_claim_id: "FC-003"
+    claim_text: "Eve serves hundreds to over 1000 plaintiff firms, processes more than 200,000 legal cases annually, and has helped firms recover more than $3.5 billion."
+    claim_source: "PRNewswire release and Eve homepage"
+    claim_date: "2025-09-30"
+    mapped_chapter_ids: ["III", "V"]
+    mapped_section_ids: ["III.A", "III.C", "V.A"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-004", "EC-005"]
+    contradiction_summary: "The public customer count differs by source and timing: PRNewswire says over 450 firms, while the homepage says over 1000 firms. The metrics are company-published and require cohort and customer validation."
+    diligence_follow_up:
+      - "Request customer cohort export, logo permission records, active paying account definition, case-count methodology, outcome attribution methodology, churn, NRR, and top-customer concentration."
+  - founder_claim_id: "FC-004"
+    claim_text: "Eve maintains enterprise security and availability controls, including SOC 2 framework alignment, third-party assessments, annual penetration testing, encryption, access reviews, and a 99.5% monthly uptime SLA."
+    claim_source: "Eve security page and Butler Labs SLA"
+    claim_date: null
+    mapped_chapter_ids: ["VI", "VIII"]
+    mapped_section_ids: ["VI.A", "VIII.F", "VIII.G"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-009", "EC-010"]
+    contradiction_summary: "Company pages disclose control categories and SLA terms, but no SOC report, certificate scope, penetration-test summary, incident history, or SLA-performance history was public."
+    diligence_follow_up:
+      - "Request SOC 2 report, penetration-test executive summaries, vulnerability remediation logs, incident register, uptime history, cloud architecture, vendor risk files, and customer security questionnaires."
+  - founder_claim_id: "FC-005"
+    claim_text: "Eve 2.0, Agents, and Auditor improve law-firm capacity, case movement, drafting speed, and settlement value."
+    claim_source: "Eve 2.0, AI Agents, Auditor, and customer story pages"
+    claim_date: null
+    mapped_chapter_ids: ["II", "VI", "III"]
+    mapped_section_ids: ["II.A", "VI.B", "III.A"]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-014"]
+    contradiction_summary: "The named metrics are company-published testimonials and page claims; public sources did not disclose sample size, baseline controls, contract cohort, or independent customer validation."
+    diligence_follow_up:
+      - "Request reference calls, before-after KPI exports, source documents for quoted metrics, failed deployment list, support tickets, human-review protocols, and model evaluation reports."
+
+executive_summary:
+  overall_assessment: >-
+    Eve is a credible private legal AI unicorn focused on plaintiff law firms. Public evidence verifies a September 2025 $103 million Series B at an over $1 billion valuation, named blue-chip investors, a broad plaintiff-firm workflow product, public founder biographies, security and legal terms, and extensive company-published customer traction. The largest diligence issue is that nearly all operating quality evidence is company-published: revenue, ARR, margins, cash, burn, churn, NRR, customer concentration, legal outcome attribution, security audit results, model accuracy, and cap-table economics are not public.
+  investment_or_diligence_thesis: >-
+    Proceed only to confirmatory diligence. The opportunity is strategically interesting because Eve sits in a high-value legal workflow category, appears to have strong investor support, and targets plaintiff firms with measurable pain around intake, medical records, drafting, discovery, and client communication. Underwriting should be gated on private validation of financial scale, cohort retention, customer ROI, professional-responsibility controls, security evidence, and the pending EvenUp v. Butler Labs litigation signal.
+  strongest_verified_claims:
+    - founder_claim_id: "FC-002"
+      summary: "PRNewswire and LawNext report Eve raised a $103 million Series B at an over $1 billion valuation on 2025-09-30, led by Spark Capital with Andreessen Horowitz, Lightspeed, and Menlo participating."
+      evidence_claim_ids: ["EC-001", "EC-002"]
+    - founder_claim_id: "FC-001"
+      summary: "Eve-owned pages and the financing release describe a plaintiff-law lifecycle platform spanning intake, pre-litigation, litigation, agents, auditor, drafting, demand letters, discovery, and case analysis."
+      evidence_claim_ids: ["EC-004", "EC-005", "EC-006"]
+    - founder_claim_id: "FC-004"
+      summary: "Company legal and security pages disclose AWS/Azure hosting, U.S. AWS databases, encryption at rest and in transit, third-party assessments, annual penetration testing, quarterly access reviews, vendor risk management, and a 99.5% monthly uptime SLA."
+      evidence_claim_ids: ["EC-009", "EC-010"]
+  biggest_risks:
+    - risk_id: "R-001"
+      summary: "Financial quality, runway, revenue durability, and valuation support are not publicly verifiable."
+    - risk_id: "R-004"
+      summary: "An accessible Law360 case page and public search snippets identify EvenUp v. Butler Labs, Inc., a pending competitor trade-secret-related case signal that requires counsel review."
+    - risk_id: "R-003"
+      summary: "Legal AI output is expressly draft, non-final, and attorney-supervised, creating professional-responsibility, hallucination, privilege, confidentiality, and unauthorized-practice-of-law control risk."
+  key_evidence_gaps:
+    - "Audited financials, monthly ARR/revenue, gross margin, contribution margin, burn, cash, debt, runway, and board-approved forecast."
+    - "Current cap table, option ledger, preference stack, financing documents, investor rights, debt, SAFEs, notes, and secondary transactions."
+    - "Customer cohorts, active paid-firm definition, case-count methodology, outcome-attribution methodology, churn, NRR, expansion, concentration, and customer references."
+    - "SOC reports, penetration-test results, model evaluation results, incident history, uptime history, data-retention evidence, vendor contracts, and privacy assessments."
+    - "Full legal docket, pleadings, counsel analysis, insurance coverage, indemnity exposure, IP ownership assignments, open-source inventory, and regulatory correspondence."
+  recommended_next_steps:
+    - "Run financial and cap-table diligence before relying on the unicorn valuation."
+    - "Validate top 25 customers, customer count definitions, case volume, recovery attribution, retention, and implementation outcomes."
+    - "Have counsel review the EvenUp litigation, legal-advice disclaimers, customer supervision controls, privilege/confidentiality design, and professional-responsibility compliance."
+    - "Review security, privacy, uptime, AI governance, vendor, and model-evaluation artifacts before approving sensitive plaintiff-law data workflows."
+
+chapters:
+  - chapter_id: "I"
+    title: "Financial Information"
+    chapter_summary: >-
+      Public sources verify a recent unicorn financing event and named investors, but they do not disclose revenue, ARR, margin, cash, debt, burn, runway, cap table, preference stack, or board plan. Eve's valuation cannot be underwritten from public sources alone.
+    founder_claim_ids: ["FC-002"]
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-003", "EC-018", "EC-019"]
+    risk_ids: ["R-001", "R-008"]
+    sections:
+      - section_id: "I.A"
+        title: "Annual and quarterly financial information for the past three years"
+        checklist_question_ids: ["I.A.1", "I.A.2", "I.A.3", "I.A.4", "I.A.5", "I.A.6"]
+        summary: "No audited financial statements, quarterly results, revenue, ARR, gross margin, cash, debt, burn, or runway metrics were found in public sources."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "I.A-F1"
+            finding: "Public sources reviewed do not provide financial statements or unit economics."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-001"]
+        hidden_risks:
+          - "A high-growth customer count could mask discounting, high services burden, low gross margin, delayed collections, or high support/model costs."
+        evidence_gaps:
+          - "Audited financials, revenue recognition policy, monthly management accounts, ARR bridge, gross margin, cash, debt, burn, and runway."
+        follow_up_questions:
+          - "What are FY2023-FY2026 revenue, ARR, gross margin, contribution margin, operating burn, cash, debt, and runway by product and customer segment?"
+        table_ids: ["T-003"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "I.B"
+        title: "Financial projections and financing history"
+        checklist_question_ids: ["I.B.1", "I.B.2", "I.B.3", "I.B.4", "I.B.5", "I.B.6", "I.B.7", "I.B.8"]
+        summary: "The strongest public financing anchor is the September 2025 $103 million Series B at an over $1 billion valuation."
+        verification_status: "partially_verified"
+        confidence: "high"
+        key_findings:
+          - finding_id: "I.B-F1"
+            finding: "PRNewswire and LawNext report a $103 million Series B at an over $1 billion valuation."
+            evidence_claim_ids: ["EC-002"]
+            risk_ids: ["R-001"]
+          - finding_id: "I.B-F2"
+            finding: "The CB Insights row used for target selection lists Eve as a U.S. Enterprise Tech unicorn valued at $1 billion on 2025-09-30."
+            evidence_claim_ids: ["EC-001"]
+            risk_ids: ["R-001"]
+        hidden_risks:
+          - "Public financing announcements do not disclose liquidation preferences, ratchets, investor rights, debt, secondary sales, or current valuation marks."
+        evidence_gaps:
+          - "Board plan, forecast, financing terms, investor rights, valuation mechanics, debt facilities, and any later financing or secondary transaction."
+        follow_up_questions:
+          - "Has Eve raised or agreed to any debt, secondary, SAFE, note, or equity financing after the Series B, and on what terms?"
+        table_ids: ["T-001"]
+        figure_ids: ["F-001", "F-002"]
+        evidence_claim_ids: ["EC-001", "EC-002", "EC-003"]
+      - section_id: "I.C"
+        title: "Capital structure"
+        checklist_question_ids: ["I.C.1", "I.C.2", "I.C.3", "I.C.4", "I.C.5"]
+        summary: "Public sources identify major investors but not ownership percentages, share classes, option pool, preference stack, or board-control rights."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "I.C-F1"
+            finding: "Public sources name Spark Capital, Andreessen Horowitz, Lightspeed Venture Partners, and Menlo Ventures as Series B participants or major investors."
+            evidence_claim_ids: ["EC-002", "EC-003"]
+            risk_ids: ["R-001"]
+        hidden_risks:
+          - "Investor preferences, governance rights, option-pool refreshes, and future pay-to-play terms may materially change common-equity economics."
+        evidence_gaps:
+          - "Fully diluted cap table, option ledger, investor rights, preference waterfall, board consents, and major shareholder agreements."
+        follow_up_questions:
+          - "What are current ownership, preference, option-pool, board, consent, pro rata, ROFR, and information-rights terms?"
+        table_ids: ["T-002"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-002", "EC-003"]
+      - section_id: "I.D"
+        title: "Other financial information"
+        checklist_question_ids: ["I.D.1", "I.D.2", "I.D.3"]
+        summary: "Public MSA terms disclose order-based rates, invoicing, late-fee mechanics, overage billing, automatic renewal, and a default 7.5% renewal price adjustment, but not actual pricing, discounting, or receivables."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "I.D-F1"
+            finding: "The MSA says rates are in the applicable order and renewal fees increase 7.5% unless the order states otherwise."
+            evidence_claim_ids: ["EC-018"]
+            risk_ids: ["R-008"]
+        hidden_risks:
+          - "Enterprise order forms may contain discounts, termination rights, implementation services, usage caps, SLAs, or liability deviations not visible in the public MSA."
+        evidence_gaps:
+          - "Contracted ARR by customer, billings, collections, deferred revenue, discounting, overage revenue, renewal uplifts, receivables, and bad debt."
+        follow_up_questions:
+          - "Provide top customer order forms, pricing schedule, discounts, renewal history, AR aging, collections, and credit notes."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-018"]
+  - chapter_id: "II"
+    title: "Products"
+    chapter_summary: >-
+      Eve publicly describes a broad plaintiff-law AI platform spanning intake, case evaluation, medical records, drafting, demand letters, discovery, litigation workflows, AI Agents, Auditor, and a forthcoming Analyst. The breadth is credible from company pages, but product quality, accuracy, implementation burden, uptime, and paid adoption by module are not public.
+    founder_claim_ids: ["FC-001", "FC-005"]
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-006", "EC-007", "EC-011", "EC-018"]
+    risk_ids: ["R-003", "R-007", "R-010"]
+    sections:
+      - section_id: "II.A"
+        title: "Description of each product"
+        checklist_question_ids: ["II.A.1", "II.A.2", "II.A.3", "II.A.4", "II.A.5", "II.A.6"]
+        summary: "Public product pages support a multi-module legal AI platform; pricing is private and output is expressly draft and attorney-supervised under the MSA."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "II.A-F1"
+            finding: "Eve markets products across intake, pre-litigation, litigation, Agents, Auditor, and a forthcoming Analyst."
+            evidence_claim_ids: ["EC-005", "EC-006", "EC-007"]
+            risk_ids: ["R-007"]
+          - finding_id: "II.A-F2"
+            finding: "The MSA requires licensed legal professional oversight and states all output is draft and not final."
+            evidence_claim_ids: ["EC-011"]
+            risk_ids: ["R-003"]
+        hidden_risks:
+          - "The highest-value use cases process sensitive client, medical, settlement, and litigation data where model errors or confidentiality failures can have disproportionate consequences."
+          - "Broad product scope can create integration, QA, support, and model-evaluation burden if adoption outpaces controls."
+        evidence_gaps:
+          - "Module ARR, active usage, accuracy metrics, human-review workflow, integrations, release process, incident backlog, model vendors, and product roadmap."
+        follow_up_questions:
+          - "Which modules are generally available, which are beta, what is paid adoption by module, and what accuracy/quality gates must be passed before customer deployment?"
+        table_ids: ["T-004", "T-005"]
+        figure_ids: ["F-003"]
+        evidence_claim_ids: ["EC-005", "EC-006", "EC-007", "EC-011", "EC-018"]
+  - chapter_id: "III"
+    title: "Customer Information"
+    chapter_summary: >-
+      Public evidence points to meaningful customer traction, including named plaintiff firms, customer logos, case-study metrics, and company-published counts. However, the public record does not disclose active paid customers, revenue by customer, churn, NRR, implementation failures, concentration, or outcome attribution methodology.
+    founder_claim_ids: ["FC-003", "FC-005"]
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-007", "EC-014", "EC-019"]
+    risk_ids: ["R-002", "R-007", "R-008"]
+    sections:
+      - section_id: "III.A"
+        title: "Top customers by application"
+        checklist_question_ids: ["III.A"]
+        summary: "Eve names or displays many plaintiff-firm customers and customer stories, including Mike Morse Law Firm, The Law Offices of James Scott Farrin, Barrett & Farahany, Disparti Law Group, Frontier Law Center, Laurel Employment Law, Hershey Law, and others."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "III.A-F1"
+            finding: "PRNewswire names multiple plaintiff-firm customers and says Eve serves over 450 firms."
+            evidence_claim_ids: ["EC-004"]
+            risk_ids: ["R-002"]
+          - finding_id: "III.A-F2"
+            finding: "The homepage says over 1000 leading plaintiff firms use Eve, a higher count than the Series B release."
+            evidence_claim_ids: ["EC-005"]
+            risk_ids: ["R-002"]
+        hidden_risks:
+          - "Logo and testimonial pages may include pilots, unpaid accounts, inactive users, affiliates, or non-standard contracts unless the customer definition is validated."
+        evidence_gaps:
+          - "Top customer list, active paid account definition, logo permission records, contract status, implementation status, customer references, and churn."
+        follow_up_questions:
+          - "Which named firms are active paying customers, which modules do they use, and what share of ARR and gross margin comes from the top 10 accounts?"
+        table_ids: ["T-006"]
+        figure_ids: ["F-004"]
+        evidence_claim_ids: ["EC-004", "EC-005", "EC-007", "EC-014"]
+      - section_id: "III.B"
+        title: "Strategic relationships"
+        checklist_question_ids: ["III.B"]
+        summary: "Public strategic relationships are mostly investors, customer references, and workflow integrations implied by product pages; no exclusive channel, reseller, court, insurer, or bar-association partnership was verified."
+        verification_status: "partially_verified"
+        confidence: "low"
+        key_findings:
+          - finding_id: "III.B-F1"
+            finding: "Major investors publicly include Spark, Andreessen Horowitz, Lightspeed, and Menlo; this supports financing credibility but not customer distribution."
+            evidence_claim_ids: ["EC-002", "EC-003"]
+            risk_ids: ["R-008"]
+        hidden_risks:
+          - "GTM may rely on concentrated founder/investor networks, references, or high-touch transformation services not visible in public sources."
+        evidence_gaps:
+          - "Channel agreements, referral agreements, partner revenue, integrations, customer-success staffing, and services commitments."
+        follow_up_questions:
+          - "List all strategic alliances, referral partners, integration partners, bar association relationships, and revenue contribution by channel."
+        table_ids: ["T-007"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-002", "EC-003", "EC-009"]
+      - section_id: "III.C"
+        title: "Revenue by customer"
+        checklist_question_ids: ["III.C"]
+        summary: "Revenue by customer and customer concentration are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "III.C-F1"
+            finding: "No public source reviewed disclosed ARR, revenue, ACV, NRR, churn, or concentration by customer."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-001", "R-002"]
+        hidden_risks:
+          - "A small number of large plaintiff firms could drive reported scale, exposing the company to renewal, reputational, and services concentration risk."
+        evidence_gaps:
+          - "Revenue by customer, active subscription count, ACV distribution, top-10 concentration, churn, NRR, expansion, and payment status."
+        follow_up_questions:
+          - "Provide revenue concentration, customer cohort, churn/NRR, and failed-renewal schedules."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "III.D"
+        title: "Significant relationships severed within the last two years"
+        checklist_question_ids: ["III.D"]
+        summary: "No customer or partner relationship severance schedule is public; one competitor litigation signal exists but is not evidence of a severed customer relationship."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "III.D-F1"
+            finding: "Public sources did not disclose churned, failed, or terminated customer relationships."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-002"]
+        hidden_risks:
+          - "Failed AI deployments may be handled privately under confidentiality clauses and therefore may not appear in public customer stories."
+        evidence_gaps:
+          - "Churned accounts, terminated pilots, non-renewals, failed implementations, refund/credit records, support escalations, and reference decline reasons."
+        follow_up_questions:
+          - "Provide all material non-renewals, failed implementations, refunds, credits, and customer disputes since 2023."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "III.E"
+        title: "Top suppliers"
+        checklist_question_ids: ["III.E"]
+        summary: "Eve discloses AWS and Microsoft Azure hosting, AWS databases in the United States, and cloud or integrated-app outage exclusions in the SLA; model, data, and integration vendors are otherwise not fully public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "III.E-F1"
+            finding: "Security materials say services are hosted with AWS and Microsoft Azure and data is hosted in AWS databases located in the United States."
+            evidence_claim_ids: ["EC-009"]
+            risk_ids: ["R-005", "R-010"]
+          - finding_id: "III.E-F2"
+            finding: "The SLA excludes cloud provider and integrated application provider outage events from monthly availability calculations."
+            evidence_claim_ids: ["EC-010"]
+            risk_ids: ["R-010"]
+        hidden_risks:
+          - "Undisclosed LLM, OCR, voice, e-signature, document-management, CRM, or case-management integrations could create material vendor and data-transfer risk."
+        evidence_gaps:
+          - "Subprocessor list, model vendor terms, cloud architecture, integration dependencies, data residency, vendor contracts, and concentration by workload."
+        follow_up_questions:
+          - "Provide vendor inventory, subprocessors, DPAs, model-provider contracts, data flow maps, and uptime dependency analysis."
+        table_ids: ["T-007"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-009", "EC-010"]
+  - chapter_id: "IV"
+    title: "Competition"
+    chapter_summary: >-
+      Eve competes in a crowded legal AI market. Direct overlap is strongest with EvenUp for plaintiff personal-injury workflows, while Harvey and Spellbook illustrate adjacent legal AI platform and contract-AI pressure. Larger legal platforms and incumbents are also relevant but were not fully benchmarked in this run.
+    founder_claim_ids: []
+    evidence_claim_ids: ["EC-016", "EC-004", "EC-005"]
+    risk_ids: ["R-006", "R-004", "R-007"]
+    sections:
+      - section_id: "IV.A"
+        title: "Competitive landscape by market segment"
+        checklist_question_ids: ["IV.A.1", "IV.A.2"]
+        summary: "Competitor pages show overlapping AI workflows for legal work, plaintiff law, litigation, document analysis, intake, demand generation, discovery, and contract drafting."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "IV.A-F1"
+            finding: "EvenUp publicly markets AI products for personal-injury lawyers across intake, treatment, demands, negotiation, discovery, trial, drafting, analytics, communications, and integrations."
+            evidence_claim_ids: ["EC-016"]
+            risk_ids: ["R-006", "R-004"]
+          - finding_id: "IV.A-F2"
+            finding: "Harvey markets AI software for legal and professional services, including assistant, vault, knowledge, workflow agents, ecosystem, and litigation use cases."
+            evidence_claim_ids: ["EC-016"]
+            risk_ids: ["R-006"]
+          - finding_id: "IV.A-F3"
+            finding: "Spellbook markets legal AI for contract review, workflow automation, and deal-history insights, showing adjacent legal AI competition for budget and adoption."
+            evidence_claim_ids: ["EC-016"]
+            risk_ids: ["R-006"]
+        hidden_risks:
+          - "Competitors with stronger datasets, legal content, case-management integrations, capital, or professional-services capacity could compress pricing or shorten Eve's differentiation window."
+        evidence_gaps:
+          - "Win/loss data, price benchmarks, feature-by-feature demos, customer switching costs, model performance comparisons, sales-cycle data, and market share."
+        follow_up_questions:
+          - "Provide win/loss analysis against EvenUp, Harvey, Spellbook, Clio/CoCounsel, Filevine, Lexis+ AI, and other legal workflow incumbents."
+        table_ids: ["T-008", "T-009"]
+        figure_ids: ["F-005"]
+        evidence_claim_ids: ["EC-016", "EC-004", "EC-005"]
+  - chapter_id: "V"
+    title: "Marketing, Sales, and Distribution"
+    chapter_summary: >-
+      Eve's public GTM motion appears to combine direct demo-led sales, founder and investor credibility, customer stories, plaintiff-firm references, press, webinars/resources, and referral language. CAC, sales productivity, marketing spend, channel mix, quota capacity, payback, and budget sufficiency are not public.
+    founder_claim_ids: ["FC-003"]
+    evidence_claim_ids: ["EC-002", "EC-004", "EC-005", "EC-014", "EC-018", "EC-019"]
+    risk_ids: ["R-002", "R-008"]
+    sections:
+      - section_id: "V.A"
+        title: "Strategy and implementation"
+        checklist_question_ids: ["V.A.1", "V.A.2", "V.A.3", "V.A.4"]
+        summary: "Public pages emphasize scheduling demos, customer stories, AI-native plaintiff-firm positioning, and named outcomes."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "V.A-F1"
+            finding: "Eve's homepage and product pages use demo calls as the primary conversion path and highlight plaintiff-firm customer logos and stories."
+            evidence_claim_ids: ["EC-005", "EC-014"]
+            risk_ids: ["R-008"]
+        hidden_risks:
+          - "High-touch implementation and transformation teams may be required to turn customer interest into recurring revenue, raising CAC and services burden."
+        evidence_gaps:
+          - "Sales funnel, lead sources, CAC, payback, marketing spend, sales headcount, quota capacity, pipeline conversion, implementation hours, and services margin."
+        follow_up_questions:
+          - "What are current pipeline, demo-to-close conversion, CAC, payback, average sales cycle, services attach, and implementation gross margin?"
+        table_ids: ["T-010"]
+        figure_ids: ["F-006"]
+        evidence_claim_ids: ["EC-005", "EC-014", "EC-019"]
+      - section_id: "V.B"
+        title: "Major Customers"
+        checklist_question_ids: ["V.B.1", "V.B.2", "V.B.3"]
+        summary: "Named firms and customer stories are public, but revenue contribution and referenceability are not verifiable from public sources."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "V.B-F1"
+            finding: "PRNewswire names several elite plaintiff firms served by Eve."
+            evidence_claim_ids: ["EC-004"]
+            risk_ids: ["R-002"]
+        hidden_risks:
+          - "The most visible logos may not correspond to the largest ARR accounts or highest-retention cohorts."
+        evidence_gaps:
+          - "Major customer revenue, contract terms, reference permissions, product adoption, renewal status, and service-level deviations."
+        follow_up_questions:
+          - "For each public logo, confirm contract status, paid ARR, modules, start date, renewal date, and reference permissions."
+        table_ids: ["T-006"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-004", "EC-014"]
+      - section_id: "V.C"
+        title: "Principal avenues for generating new business"
+        checklist_question_ids: ["V.C"]
+        summary: "Public channels include direct demos, press, resources/webinars, customer stories, referral language, and investor credibility."
+        verification_status: "partially_verified"
+        confidence: "low"
+        key_findings:
+          - finding_id: "V.C-F1"
+            finding: "Eve's navigation includes resources, press, blog, webinars, customer stories, working with Eve, and refer-a-firm pages."
+            evidence_claim_ids: ["EC-005"]
+            risk_ids: ["R-008"]
+        hidden_risks:
+          - "Referral and customer-story driven growth can saturate if early adopters are concentrated in a small plaintiff-firm network."
+        evidence_gaps:
+          - "Channel attribution, referral contracts, partner economics, conference spend, paid marketing data, and organic traffic by source."
+        follow_up_questions:
+          - "What percentage of pipeline and closed ARR comes from direct outbound, inbound, referrals, investors, events, webinars, and customer references?"
+        table_ids: ["T-010", "T-011"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-005", "EC-019"]
+      - section_id: "V.D"
+        title: "Sales force productivity model"
+        checklist_question_ids: ["V.D.1", "V.D.2", "V.D.3", "V.D.4"]
+        summary: "Sales headcount, quotas, attainment, ramp, and productivity are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "V.D-F1"
+            finding: "No public source disclosed sales productivity, quota capacity, rep ramp, or win rates."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-008"]
+        hidden_risks:
+          - "Rapid customer growth may require implementation-heavy selling that limits gross margin and rep productivity."
+        evidence_gaps:
+          - "Sales headcount, quota plan, attainment, ramp, close rates, sales cycle, pipeline coverage, and implementation load per AE."
+        follow_up_questions:
+          - "Provide sales productivity by cohort and segment, including AE ramp, quota attainment, win rate, average sales cycle, and pipeline coverage."
+        table_ids: ["T-011"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "V.E"
+        title: "Ability to implement marketing plan with current and projected budgets"
+        checklist_question_ids: ["V.E"]
+        summary: "Budget sufficiency is not public; the financing provides a capital signal but not a plan-to-spend signal."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "V.E-F1"
+            finding: "The $103 million Series B provides capital but does not disclose marketing budget, hiring plan, or CAC/payback."
+            evidence_claim_ids: ["EC-002", "EC-019"]
+            risk_ids: ["R-001", "R-008"]
+        hidden_risks:
+          - "If legal AI competition raises paid acquisition, event, sales-compensation, and implementation costs, growth may consume capital faster than expected."
+        evidence_gaps:
+          - "Marketing budget, sales hiring plan, CAC, payback, pipeline plan, brand spend, and channel ROI."
+        follow_up_questions:
+          - "Provide the FY2026 GTM plan, budget, pipeline model, CAC/payback targets, hiring plan, and sensitivity to competitive spend."
+        table_ids: ["T-011"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-002", "EC-019"]
+  - chapter_id: "VI"
+    title: "Research and Development"
+    chapter_summary: >-
+      Eve appears engineering-led, with founders carrying AI/ML and Rubrik/Facebook/Lightspeed backgrounds and public pages presenting Eve 2.0, Agents, Auditor, and Analyst as current or emerging product initiatives. R&D spend, roadmap governance, model evaluation, IP ownership, and development velocity are not public.
+    founder_claim_ids: ["FC-001", "FC-005"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-008", "EC-017", "EC-019"]
+    risk_ids: ["R-007", "R-009"]
+    sections:
+      - section_id: "VI.A"
+        title: "Description of R&D organization"
+        checklist_question_ids: ["VI.A.1", "VI.A.2", "VI.A.3"]
+        summary: "The public founder roster indicates AI/ML and product engineering experience, and careers materials emphasize small, fast-moving pods."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VI.A-F1"
+            finding: "Eve lists Jay Madheswaran as Founder & CEO, Matt Noe as Co-Founder and CPO, and David Zeng as Co-Founder and Head of Engineering."
+            evidence_claim_ids: ["EC-008"]
+            risk_ids: ["R-009"]
+          - finding_id: "VI.A-F2"
+            finding: "Careers materials say the company builds in small, fast-moving pods of engineers and designers."
+            evidence_claim_ids: ["EC-017"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "R&D breadth across voice, medical review, drafting, discovery, agentic workflows, and auditing may strain QA and domain-review capacity."
+        evidence_gaps:
+          - "Engineering headcount, R&D budget, model vendor stack, release process, legal SME review process, evaluation datasets, and defect history."
+        follow_up_questions:
+          - "Provide the R&D org chart, product and ML team sizes, release governance, model evaluation process, red-team results, and defect taxonomy."
+        table_ids: ["T-012"]
+        figure_ids: ["F-007"]
+        evidence_claim_ids: ["EC-008", "EC-017"]
+      - section_id: "VI.B"
+        title: "New Product Pipeline"
+        checklist_question_ids: ["VI.B.1", "VI.B.2", "VI.B.3", "VI.B.4"]
+        summary: "Company pages describe Eve 2.0, Agents, Auditor, and Analyst, with Analyst marked as coming soon in navigation. Independent validation of roadmap timing, customer adoption, and model performance was not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VI.B-F1"
+            finding: "Eve 2.0 pages introduce Agents, Auditor, and Analyst, with Analyst presented as coming soon."
+            evidence_claim_ids: ["EC-006", "EC-007"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Agentic legal workflows can create unanticipated outputs, hidden failure modes, and customer-supervision ambiguity if guardrails are weak."
+        evidence_gaps:
+          - "Roadmap, beta customer list, release criteria, model cards, evaluation benchmarks, hallucination/error rates, human review, and incident reports."
+        follow_up_questions:
+          - "Which AI Agent and Auditor capabilities are generally available, which are beta, and what measured QA thresholds govern launch?"
+        table_ids: ["T-013"]
+        figure_ids: ["F-007"]
+        evidence_claim_ids: ["EC-006", "EC-007"]
+  - chapter_id: "VII"
+    title: "Management and Personnel"
+    chapter_summary: >-
+      Public pages identify the founders and some employee testimonials, benefits, and work-style claims, but they do not disclose total headcount, attrition, compensation bands, option grants, employee-relations issues, or projected hiring by function.
+    founder_claim_ids: []
+    evidence_claim_ids: ["EC-008", "EC-017", "EC-019"]
+    risk_ids: ["R-009"]
+    sections:
+      - section_id: "VII.A"
+        title: "Organization Chart"
+        checklist_question_ids: ["VII.A"]
+        summary: "Public org information verifies the founder roles but not full reporting lines or functional headcount."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.A-F1"
+            finding: "The company page lists Jay Madheswaran, Matt Noe, and David Zeng as founders with executive roles."
+            evidence_claim_ids: ["EC-008"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Key-person dependency may be high if AI, product, and legal-domain expertise remains concentrated in founders and early technical leaders."
+        evidence_gaps:
+          - "Full org chart, reporting lines, board composition, executive bench, legal domain leadership, customer-success leadership, and succession plan."
+        follow_up_questions:
+          - "Provide current and projected org chart, board roster, executive team, functional leaders, reporting lines, and succession plan."
+        table_ids: ["T-014"]
+        figure_ids: ["F-008"]
+        evidence_claim_ids: ["EC-008"]
+      - section_id: "VII.B"
+        title: "Historical and projected headcount by function and location"
+        checklist_question_ids: ["VII.B"]
+        summary: "Careers pages show a hiring posture and employee testimonials, but total headcount and hiring plan are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.B-F1"
+            finding: "Careers materials say the team is growing and link to open roles, but do not disclose employee count by function or location."
+            evidence_claim_ids: ["EC-017"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Scaling a legal AI platform can require expensive combinations of ML engineering, product, legal SMEs, customer success, security, and support."
+        evidence_gaps:
+          - "HRIS export, headcount by function/location, hiring plan, attrition, regretted departures, contractor usage, and vacancy status."
+        follow_up_questions:
+          - "What is headcount by function and location for 2023-2026, and what hiring plan is required to hit the board forecast?"
+        table_ids: ["T-015"]
+        figure_ids: ["F-009"]
+        evidence_claim_ids: ["EC-017", "EC-019"]
+      - section_id: "VII.C"
+        title: "Senior management biographies"
+        checklist_question_ids: ["VII.C"]
+        summary: "Founder biographies are public; wider executive and board biographies were not fully identified from accessible public sources."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.C-F1"
+            finding: "Public bios indicate Jay has over 15 years in AI/ML at Facebook and Rubrik and was with Lightspeed, Matt was a founding engineer at Rubrik, and David has over 10 years in AI/ML."
+            evidence_claim_ids: ["EC-008"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Founder technical credibility does not prove public-company-ready finance, legal, compliance, security, and enterprise-sales leadership depth."
+        evidence_gaps:
+          - "Executive roster, board roster, employment agreements, background checks, prior litigation, conflicts, and references."
+        follow_up_questions:
+          - "Provide executive bios, employment agreements, board composition, background checks, conflicts, and reference calls."
+        table_ids: ["T-014"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-008"]
+      - section_id: "VII.D"
+        title: "Compensation arrangements"
+        checklist_question_ids: ["VII.D.1", "VII.D.2"]
+        summary: "Careers page mentions competitive salary, meaningful equity, 401(k) match, health coverage, disability coverage, commuter benefits, office setup stipend, and flexible time off, but compensation levels are not public."
+        verification_status: "partially_verified"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.D-F1"
+            finding: "Careers materials describe salary, equity, and benefits categories."
+            evidence_claim_ids: ["EC-017"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "AI talent compensation, refresh grants, and founder equity could create dilution and burn pressure."
+        evidence_gaps:
+          - "Compensation bands, bonus plans, commission plans, executive agreements, benefits costs, contractor terms, and severance obligations."
+        follow_up_questions:
+          - "Provide compensation bands, commission plans, bonus plans, benefits cost, executive agreements, severance terms, and contractor spend."
+        table_ids: ["T-015"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-017"]
+      - section_id: "VII.E"
+        title: "Incentive stock plans"
+        checklist_question_ids: ["VII.E"]
+        summary: "Equity is mentioned in careers materials, but the stock plan, option pool, grants, refresh policy, and vesting terms are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.E-F1"
+            finding: "Careers materials say every team member gets meaningful equity, but no plan terms are public."
+            evidence_claim_ids: ["EC-017"]
+            risk_ids: ["R-001", "R-009"]
+        hidden_risks:
+          - "Option-pool refreshes and retention grants can dilute investors and signal compensation pressure."
+        evidence_gaps:
+          - "Equity plan, grant ledger, option pool, vesting terms, refresh policy, repurchase rights, and 409A valuation history."
+        follow_up_questions:
+          - "Provide the equity incentive plan, option ledger, 409A history, refresh grant policy, and post-Series B option-pool plan."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-017", "EC-019"]
+      - section_id: "VII.F"
+        title: "Significant employee relations problems, past or present"
+        checklist_question_ids: ["VII.F"]
+        summary: "No employee-relations problems were verified from accessible public sources; absence of public evidence is not a clean finding."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.F-F1"
+            finding: "Accessible public sources reviewed did not disclose employee-relations disputes, but no private HR or litigation schedule was available."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Fast-scaling startups can have confidential employee claims, contractor disputes, or retention problems not visible publicly."
+        evidence_gaps:
+          - "Employee-relations schedule, HR complaints, investigations, settlement agreements, contractor disputes, and employment litigation."
+        follow_up_questions:
+          - "Provide employee-relations matters, investigations, demand letters, settlements, and employment litigation since 2023."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "VII.G"
+        title: "Personnel Turnover"
+        checklist_question_ids: ["VII.G.1", "VII.G.2"]
+        summary: "Turnover, attrition, and regretted loss metrics are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.G-F1"
+            finding: "No public source reviewed disclosed turnover or attrition."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Loss of early AI engineers or legal-domain experts could slow product quality and customer delivery."
+        evidence_gaps:
+          - "Attrition by function, regretted losses, exit interview themes, retention grants, key-person dependencies, and hiring funnel."
+        follow_up_questions:
+          - "Provide attrition by function and tenure, regretted-loss list, key-person retention plan, and hiring funnel conversion."
+        table_ids: ["T-015"]
+        figure_ids: ["F-009"]
+        evidence_claim_ids: ["EC-019"]
+  - chapter_id: "VIII"
+    title: "Legal and Related Matters"
+    chapter_summary: >-
+      Legal diligence is material. Public company terms allocate responsibility for attorney supervision and customer review, disclaim legal advice, cap liability, and define data return/destruction terms. Public Law360 and search-result evidence also identify EvenUp v. Butler Labs, Inc. as a pending federal case signal. Full counsel review is required.
+    founder_claim_ids: ["FC-004"]
+    evidence_claim_ids: ["EC-009", "EC-010", "EC-011", "EC-012", "EC-013", "EC-015", "EC-020"]
+    risk_ids: ["R-003", "R-004", "R-005", "R-010"]
+    sections:
+      - section_id: "VIII.A"
+        title: "Pending lawsuits against the Company"
+        checklist_question_ids: ["VIII.A"]
+        summary: "Law360 identifies EvenUp, Inc. v. Butler Labs, Inc., case number 4:25-cv-08199, in the Northern District of California, with nature of suit Defend Trade Secrets Act. Search snippets also identify open status and allegations; those allegations are not treated as adjudicated facts."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VIII.A-F1"
+            finding: "Law360 lists EvenUp, Inc. v. Butler Labs, Inc., case number 4:25-cv-08199, California Northern, filed 2025-09-26, nature of suit Defend Trade Secrets Act, judge Yvonne Gonzalez Rogers."
+            evidence_claim_ids: ["EC-015"]
+            risk_ids: ["R-004"]
+          - finding_id: "VIII.A-F2"
+            finding: "DuckDuckGo snippets from UniCourt and PACER Monitor indicate open status and allegations concerning trade-secret materials; docket documents require counsel review."
+            evidence_claim_ids: ["EC-020"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "If the pending case creates injunction, discovery, settlement, indemnity, customer confidence, or product-roadmap constraints, it could impair growth and valuation."
+        evidence_gaps:
+          - "Complaint, answer, motion practice, orders, injunction requests, settlement status, litigation budget, insurance coverage, and counsel assessment."
+        follow_up_questions:
+          - "Provide counsel memorandum, docket, pleadings, orders, discovery plan, litigation budget, insurance notice, and board updates for EvenUp v. Butler Labs."
+        table_ids: ["T-016"]
+        figure_ids: ["F-010", "F-011"]
+        evidence_claim_ids: ["EC-015", "EC-020"]
+      - section_id: "VIII.B"
+        title: "Pending lawsuits initiated by Company"
+        checklist_question_ids: ["VIII.B"]
+        summary: "No public company-initiated lawsuits were verified in accessible sources."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.B-F1"
+            finding: "No accessible public source reviewed identified lawsuits initiated by Butler Labs or Eve."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "IP, employment, collections, customer, or vendor disputes could exist privately or in venues not captured by accessible searches."
+        evidence_gaps:
+          - "Litigation schedule, arbitration matters, demand letters, threatened claims, settlement agreements, and enforcement actions initiated by the company."
+        follow_up_questions:
+          - "List all company-initiated lawsuits, arbitrations, demand letters, collection matters, IP enforcement, and threatened claims since 2023."
+        table_ids: ["T-016"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "VIII.C"
+        title: "Environmental and employee safety issues and liabilities"
+        checklist_question_ids: ["VIII.C.1", "VIII.C.2"]
+        summary: "No environmental or workplace-safety issues were verified from public sources; the company's main public exposure is software, data, and employment rather than industrial operations."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.C-F1"
+            finding: "Public sources reviewed did not identify environmental or workplace-safety proceedings."
+            evidence_claim_ids: ["EC-019"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Office safety, remote work, employment, and contractor compliance issues may not appear in public sources."
+        evidence_gaps:
+          - "OSHA matters, workers compensation claims, workplace investigations, environmental representations, and office lease compliance."
+        follow_up_questions:
+          - "Provide workplace safety claims, workers compensation history, office lease compliance matters, and any environmental representations."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-019"]
+      - section_id: "VIII.D"
+        title: "Material patents, copyrights, licenses, and trademarks"
+        checklist_question_ids: ["VIII.D"]
+        summary: "Public terms reserve Eve/Butler Labs service and content rights; trademark snippets suggest Butler Labs' eve platform branding, but no direct USPTO or patent portfolio evidence was fetched."
+        verification_status: "partially_verified"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.D-F1"
+            finding: "Terms and MSA provisions reserve service, documentation, software, content, feedback, and IP rights, and provide limited IP indemnity."
+            evidence_claim_ids: ["EC-012", "EC-013"]
+            risk_ids: ["R-004"]
+          - finding_id: "VIII.D-F2"
+            finding: "Search snippets identify Eve as officially Butler Labs Inc. and reference Butler Labs' eve platform, but registry-level trademark verification is still required."
+            evidence_claim_ids: ["EC-020"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "Open-source license compliance, employee/contractor assignments, model/data licenses, third-party content, and competitor IP claims may be material."
+        evidence_gaps:
+          - "Patent and trademark register search, IP schedule, assignments, open-source SBOM, model/data licenses, feedback use policy, and infringement notices."
+        follow_up_questions:
+          - "Provide IP schedule, registered marks, patent applications, contractor/employee IP assignments, open-source inventory, third-party licenses, and infringement history."
+        table_ids: ["T-017"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-012", "EC-013", "EC-020"]
+      - section_id: "VIII.E"
+        title: "Insurance coverage and material exposures"
+        checklist_question_ids: ["VIII.E"]
+        summary: "Insurance policies and limits are not public. Exposures include cyber/privacy, professional liability, technology E&O, D&O, employment, IP, litigation defense, and AI output errors."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.E-F1"
+            finding: "Public terms surface liability caps, indemnity contours, attorney-supervision obligations, and data-security commitments, but not insurance coverage."
+            evidence_claim_ids: ["EC-011", "EC-012"]
+            risk_ids: ["R-003", "R-004", "R-005"]
+        hidden_risks:
+          - "Insurance exclusions for AI output, unauthorized practice, trade secrets, professional advice, or privacy incidents could leave material uncovered exposure."
+        evidence_gaps:
+          - "Cyber, E&O, D&O, EPLI, general liability, crime, IP defense, and professional-liability policies and claims history."
+        follow_up_questions:
+          - "Provide insurance schedule, policy limits, exclusions, claims history, broker coverage-gap memo, and notices related to the EvenUp litigation."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-011", "EC-012"]
+      - section_id: "VIII.F"
+        title: "Material contracts"
+        checklist_question_ids: ["VIII.F"]
+        summary: "Public material forms include the MSA, SLA, privacy policy, security page, and terms. Private customer order forms, enterprise amendments, vendor agreements, and model-provider terms are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VIII.F-F1"
+            finding: "The SLA commits to 99.5% monthly uptime but excludes non-GA features, custom integrations, customer/third-party issues, factors outside Eve's control, cloud-provider outages, and integrated-app outages."
+            evidence_claim_ids: ["EC-010"]
+            risk_ids: ["R-010"]
+          - finding_id: "VIII.F-F2"
+            finding: "The MSA includes order-based pricing, automatic renewal, a default 7.5% renewal price adjustment, warranty limits, IP indemnity limits, liability caps, and 30-day post-termination data retrieval."
+            evidence_claim_ids: ["EC-012", "EC-018"]
+            risk_ids: ["R-003", "R-010"]
+        hidden_risks:
+          - "Negotiated customer contracts may alter liability caps, SLA credits, data rights, termination rights, indemnities, or professional-services obligations."
+        evidence_gaps:
+          - "Top 20 customer contracts, order forms, DPAs, vendor MSAs, model-provider terms, negotiated deviations, SLA credits, and change-of-control clauses."
+        follow_up_questions:
+          - "Provide material contract schedule, template deviations, top customer order forms, vendor contracts, DPAs, SLA history, and change-of-control analysis."
+        table_ids: ["T-017"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-010", "EC-012", "EC-018"]
+      - section_id: "VIII.G"
+        title: "Regulatory agency problems"
+        checklist_question_ids: ["VIII.G"]
+        summary: "No regulatory agency enforcement action was verified from accessible public sources. Privacy, advertising, data security, confidentiality, legal-ethics, and AI governance obligations remain material."
+        verification_status: "partially_verified"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.G-F1"
+            finding: "Privacy materials disclose personal-data uses for account, support, improvement, personalization, marketing, cookies, targeted advertising, legal compliance, and dispute resolution."
+            evidence_claim_ids: ["EC-013"]
+            risk_ids: ["R-005"]
+          - finding_id: "VIII.G-F2"
+            finding: "Security materials describe SOC 2 framework alignment and control categories, but audit reports were not public."
+            evidence_claim_ids: ["EC-009"]
+            risk_ids: ["R-005"]
+        hidden_risks:
+          - "Plaintiff-law workflows may involve medical records, sensitive litigation facts, privilege, client communications, SMS/voice, and advertising identifiers that require rigorous privacy and ethics controls."
+        evidence_gaps:
+          - "Regulatory correspondence, privacy incident logs, DPIAs, DPAs, state privacy assessments, AI governance policy, privilege/confidentiality analysis, and bar-ethics review."
+        follow_up_questions:
+          - "Provide privacy counsel memo, DPA templates, data maps, incident register, regulator correspondence, legal-ethics review, AI governance policy, and data-retention controls."
+        table_ids: ["T-017"]
+        figure_ids: ["F-010", "F-011"]
+        evidence_claim_ids: ["EC-009", "EC-013"]
+
+tables:
+  - table_id: "T-001"
+    title: "Public funding-round history"
+    chapter_id: "I"
+    section_id: "I.B"
+    purpose: "Summarize public financing and valuation anchors."
+    columns:
+      - name: "date"
+        description: "Date or period"
+      - name: "round_or_event"
+        description: "Financing event"
+      - name: "amount_usd_m"
+        description: "Publicly disclosed amount in USD millions"
+      - name: "valuation_usd_b"
+        description: "Publicly disclosed valuation in USD billions"
+      - name: "lead_or_participants"
+        description: "Named investors"
+      - name: "verification"
+        description: "Verification status and gap"
+    rows:
+      - row_id: "T-001-R1"
+        values:
+          date: "2025-01"
+          round_or_event: "Series A referenced by LawNext"
+          amount_usd_m: 47
+          valuation_usd_b: null
+          lead_or_participants: "Major VC firm Andreessen Horowitz referenced by LawNext headline for the prior article"
+          verification: "partially_verified; terms and valuation not in sources reviewed"
+        evidence_claim_ids: ["EC-002"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-001-R2"
+        values:
+          date: "2025-09-30"
+          round_or_event: "Series B"
+          amount_usd_m: 103
+          valuation_usd_b: 1.0
+          lead_or_participants: "Spark Capital led; Andreessen Horowitz, Lightspeed Venture Partners, and Menlo Ventures participated"
+          verification: "verified for announcement; terms not public"
+        evidence_claim_ids: ["EC-002"]
+        source_ids: ["SRC-002", "SRC-003"]
+      - row_id: "T-001-R3"
+        values:
+          date: "2025-09-30"
+          round_or_event: "CB Insights unicorn row"
+          amount_usd_m: null
+          valuation_usd_b: 1.0
+          lead_or_participants: "Spark Capital, Lightspeed Venture Partners, Andreessen Horowitz"
+          verification: "verified for target selection list; not sufficient for underwriting alone"
+        evidence_claim_ids: ["EC-001"]
+        source_ids: ["SRC-001"]
+    evidence_claim_ids: ["EC-001", "EC-002"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-003"]
+    notes: "The Series B release says over $1 billion valuation; the chart uses 1.0 as a conservative public anchor."
+  - table_id: "T-002"
+    title: "Capital structure and ownership snapshot"
+    chapter_id: "I"
+    section_id: "I.C"
+    purpose: "Identify known stakeholders and cap-table gaps."
+    columns:
+      - name: "stakeholder"
+        description: "Investor or stakeholder"
+      - name: "public_position"
+        description: "Publicly stated role"
+      - name: "diligence_caveat"
+        description: "Missing private information"
+    rows:
+      - row_id: "T-002-R1"
+        values:
+          stakeholder: "Spark Capital"
+          public_position: "Led the September 2025 Series B"
+          diligence_caveat: "Ownership, board rights, pro rata, liquidation preference, and side letters not public"
+        evidence_claim_ids: ["EC-002"]
+        source_ids: ["SRC-002", "SRC-003"]
+      - row_id: "T-002-R2"
+        values:
+          stakeholder: "Andreessen Horowitz"
+          public_position: "Existing investor participating in Series B; careers page lists as investor"
+          diligence_caveat: "Share class, total ownership, and investor rights not public"
+        evidence_claim_ids: ["EC-002", "EC-003"]
+        source_ids: ["SRC-002", "SRC-006"]
+      - row_id: "T-002-R3"
+        values:
+          stakeholder: "Lightspeed Venture Partners"
+          public_position: "Existing investor participating in Series B; founder Jay previously worked with Lightspeed"
+          diligence_caveat: "Potential relationship context should be reviewed with conflicts and governance materials"
+        evidence_claim_ids: ["EC-002", "EC-008"]
+        source_ids: ["SRC-002", "SRC-005"]
+      - row_id: "T-002-R4"
+        values:
+          stakeholder: "Menlo Ventures"
+          public_position: "Existing investor participating in Series B; careers page lists as investor"
+          diligence_caveat: "Ownership percentage and consent rights not public"
+        evidence_claim_ids: ["EC-002", "EC-003"]
+        source_ids: ["SRC-002", "SRC-006"]
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-008"]
+    source_ids: ["SRC-002", "SRC-005", "SRC-006"]
+    notes: null
+  - table_id: "T-003"
+    title: "Public financial and unit-economic signals"
+    chapter_id: "I"
+    section_id: "I.A"
+    purpose: "Separate public operating claims from private financial gaps."
+    columns:
+      - name: "metric"
+        description: "Financial or operating metric"
+      - name: "public_signal"
+        description: "Publicly available evidence"
+      - name: "verification_status"
+        description: "Status"
+      - name: "private_request"
+        description: "Required diligence item"
+    rows:
+      - row_id: "T-003-R1"
+        values:
+          metric: "Revenue / ARR"
+          public_signal: "No revenue or ARR disclosed"
+          verification_status: "not_publicly_verifiable"
+          private_request: "Audited financials, billing data, ARR bridge, revenue recognition policy"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-003-R2"
+        values:
+          metric: "Gross margin and support burden"
+          public_signal: "No margin data disclosed"
+          verification_status: "not_publicly_verifiable"
+          private_request: "COGS, model costs, hosting, support, implementation, professional services margin"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-003-R3"
+        values:
+          metric: "Cash, debt, burn, runway"
+          public_signal: "$103M Series B and $164M+ total raised signal capital availability but not cash or burn"
+          verification_status: "partially_verified"
+          private_request: "Bank statements, debt schedule, burn model, runway model"
+        evidence_claim_ids: ["EC-002", "EC-003", "EC-019"]
+        source_ids: ["SRC-002", "SRC-006", "SRC-019"]
+      - row_id: "T-003-R4"
+        values:
+          metric: "Customer outcomes"
+          public_signal: "Company says 200,000+ cases annually and $3.5B+ recoveries"
+          verification_status: "partially_verified"
+          private_request: "Methodology, cohort data, outcome attribution, customer confirmations"
+        evidence_claim_ids: ["EC-004"]
+        source_ids: ["SRC-002", "SRC-003"]
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-004", "EC-019"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-006", "SRC-019"]
+    notes: null
+  - table_id: "T-004"
+    title: "Product and SKU matrix"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Map public Eve modules to use cases and evidence gaps."
+    columns:
+      - name: "product_area"
+        description: "Product or workflow"
+      - name: "audience"
+        description: "Primary user"
+      - name: "public_features"
+        description: "Publicly described features"
+      - name: "verification_gap"
+        description: "Diligence needed"
+    rows:
+      - row_id: "T-004-R1"
+        values:
+          product_area: "Case Intake and Evaluation"
+          audience: "Plaintiff firms"
+          public_features: "AI-powered intake, 24/7 voice agents, lead intelligence, transcription, case evaluation, summaries, damage quantification"
+          verification_gap: "Call handling accuracy, conversion, consent/SMS controls, data retention, failed intake rate"
+        evidence_claim_ids: ["EC-006"]
+        source_ids: ["SRC-007"]
+      - row_id: "T-004-R2"
+        values:
+          product_area: "Pre-litigation"
+          audience: "Attorneys and legal staff"
+          public_features: "Demand letters, medical chronologies, complaints, drafting in firm tone and style with citations to case facts"
+          verification_gap: "Accuracy, citation support, attorney review rate, turnaround time, customer ROI"
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-004"]
+      - row_id: "T-004-R3"
+        values:
+          product_area: "Litigation"
+          audience: "Litigators and paralegals"
+          public_features: "Discovery requests, discovery responses, deposition analysis, motion responses"
+          verification_gap: "Jurisdictional competence, privilege controls, adversarial review, output error rates"
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-004"]
+      - row_id: "T-004-R4"
+        values:
+          product_area: "Eve 2.0, Agents, Auditor, Analyst"
+          audience: "Plaintiff-firm operations and attorneys"
+          public_features: "Proactive AI workforce, communication agents, case auditing, Analyst marked coming soon"
+          verification_gap: "General availability, agent guardrails, beta scope, model evaluation, adoption"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-008", "SRC-009", "SRC-010"]
+    evidence_claim_ids: ["EC-005", "EC-006", "EC-007"]
+    source_ids: ["SRC-004", "SRC-007", "SRC-008", "SRC-009", "SRC-010"]
+    notes: null
+  - table_id: "T-005"
+    title: "Pricing and packaging signals"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Document what is and is not public about packaging and pricing."
+    columns:
+      - name: "area"
+        description: "Pricing or packaging topic"
+      - name: "public_evidence"
+        description: "Evidence"
+      - name: "risk"
+        description: "Commercial risk"
+      - name: "diligence_request"
+        description: "Required private data"
+    rows:
+      - row_id: "T-005-R1"
+        values:
+          area: "Public price list"
+          public_evidence: "No public price list located; MSA says rates are in the applicable order"
+          risk: "Discounting and ACV are opaque"
+          diligence_request: "Price book, discounting, ACV by segment, order forms"
+        evidence_claim_ids: ["EC-018"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-005-R2"
+        values:
+          area: "Subscription term"
+          public_evidence: "MSA references subscription period specified in the order and automatic one-year renewals absent non-renewal notice"
+          risk: "Actual renewal, termination, and expansion terms depend on private orders"
+          diligence_request: "Renewal cohort and contract term analysis"
+        evidence_claim_ids: ["EC-018"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-005-R3"
+        values:
+          area: "Renewal increase"
+          public_evidence: "Default renewal fees increase 7.5% unless the order states otherwise"
+          risk: "Pricing power may vary by negotiated account"
+          diligence_request: "Renewal uplift by account and exceptions"
+        evidence_claim_ids: ["EC-018"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-005-R4"
+        values:
+          area: "Output status"
+          public_evidence: "MSA says all output is draft and not final and must be reviewed by licensed legal professionals"
+          risk: "Product value depends on attorney review, limiting full automation claims"
+          diligence_request: "Output review workflows, error rates, customer training, ethics controls"
+        evidence_claim_ids: ["EC-011"]
+        source_ids: ["SRC-012"]
+    evidence_claim_ids: ["EC-011", "EC-018"]
+    source_ids: ["SRC-012"]
+    notes: null
+  - table_id: "T-006"
+    title: "Publicly known customers and traction claims"
+    chapter_id: "III"
+    section_id: "III.A"
+    purpose: "Summarize customer evidence and validation needs."
+    columns:
+      - name: "customer_or_metric"
+        description: "Customer, logo, or metric"
+      - name: "public_evidence"
+        description: "Source claim"
+      - name: "verification_status"
+        description: "Status"
+      - name: "diligence_gap"
+        description: "Follow-up"
+    rows:
+      - row_id: "T-006-R1"
+        values:
+          customer_or_metric: "Over 450 firms"
+          public_evidence: "Series B release says Eve serves over 450 top firms"
+          verification_status: "partially_verified"
+          diligence_gap: "Active paid firm definition, cohort, churn, ARR"
+        evidence_claim_ids: ["EC-004"]
+        source_ids: ["SRC-002", "SRC-003"]
+      - row_id: "T-006-R2"
+        values:
+          customer_or_metric: "Over 1000 plaintiff firms"
+          public_evidence: "Homepage says over 1000 leading plaintiff firms use Eve"
+          verification_status: "partially_verified"
+          diligence_gap: "Reconcile with over 450 release count; include pilots and affiliates?"
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-004"]
+      - row_id: "T-006-R3"
+        values:
+          customer_or_metric: "Named customers"
+          public_evidence: "Mike Morse Law Firm, James Scott Farrin, Barrett & Farahany, Disparti, Frontier, Laurel, Hershey and others appear in release or logos"
+          verification_status: "partially_verified"
+          diligence_gap: "Contract status, ARR, modules, start date, reference permission"
+        evidence_claim_ids: ["EC-004", "EC-005"]
+        source_ids: ["SRC-002", "SRC-004"]
+      - row_id: "T-006-R4"
+        values:
+          customer_or_metric: "200,000+ cases and $3.5B+ recoveries"
+          public_evidence: "Series B release reports annual case processing and customer recoveries"
+          verification_status: "partially_verified"
+          diligence_gap: "Attribution methodology, duplication, case definition, customer confirmation"
+        evidence_claim_ids: ["EC-004"]
+        source_ids: ["SRC-002", "SRC-003"]
+    evidence_claim_ids: ["EC-004", "EC-005"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-004"]
+    notes: null
+  - table_id: "T-007"
+    title: "Strategic relationships and supplier dependencies"
+    chapter_id: "III"
+    section_id: "III.B"
+    purpose: "Map known relationship and dependency signals."
+    columns:
+      - name: "relationship"
+        description: "Partner, supplier, or dependency"
+      - name: "nature"
+        description: "Role"
+      - name: "public_evidence"
+        description: "Public evidence"
+      - name: "diligence_gap"
+        description: "Needed validation"
+    rows:
+      - row_id: "T-007-R1"
+        values:
+          relationship: "AWS and Microsoft Azure"
+          nature: "Cloud infrastructure"
+          public_evidence: "Security page says services are hosted with AWS and Microsoft Azure"
+          diligence_gap: "Architecture, SLAs, regions, DPAs, incident history"
+        evidence_claim_ids: ["EC-009"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-007-R2"
+        values:
+          relationship: "AWS databases in the United States"
+          nature: "Data hosting"
+          public_evidence: "Security page says data is hosted on AWS databases located in the United States"
+          diligence_gap: "Data residency, backup retention, encryption keys, access controls"
+        evidence_claim_ids: ["EC-009"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-007-R3"
+        values:
+          relationship: "Integrated applications and cloud providers"
+          nature: "Availability dependency"
+          public_evidence: "SLA excludes cloud-provider and integrated-app outage events"
+          diligence_gap: "Subprocessor list, integration criticality, uptime history"
+        evidence_claim_ids: ["EC-010"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-007-R4"
+        values:
+          relationship: "Investors and customer references"
+          nature: "Credibility and possible GTM network"
+          public_evidence: "Release and careers page name Spark, Andreessen Horowitz, Lightspeed, and Menlo"
+          diligence_gap: "Board involvement, referrals, governance, conflicts"
+        evidence_claim_ids: ["EC-002", "EC-003"]
+        source_ids: ["SRC-002", "SRC-006"]
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-009", "EC-010"]
+    source_ids: ["SRC-002", "SRC-006", "SRC-011", "SRC-012"]
+    notes: null
+  - table_id: "T-008"
+    title: "Competitor comparison matrix"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Compare Eve to accessible competitor public pages."
+    columns:
+      - name: "company"
+        description: "Target or competitor"
+      - name: "segment"
+        description: "Primary segment"
+      - name: "public_overlap"
+        description: "Overlap with Eve"
+      - name: "risk_to_eve"
+        description: "Competitive implication"
+    rows:
+      - row_id: "T-008-R1"
+        values:
+          company: "Eve"
+          segment: "Plaintiff-law lifecycle AI"
+          public_overlap: "Intake, pre-litigation, litigation, agents, auditor, drafting, discovery"
+          risk_to_eve: "Must prove plaintiff-firm workflow depth and customer ROI are durable"
+        evidence_claim_ids: ["EC-005", "EC-006", "EC-007"]
+        source_ids: ["SRC-004", "SRC-007", "SRC-008", "SRC-009", "SRC-010"]
+      - row_id: "T-008-R2"
+        values:
+          company: "EvenUp"
+          segment: "Personal-injury AI and operations"
+          public_overlap: "Intake, demands, treatment, negotiation, discovery, trial, AI drafting, communication agents, analytics"
+          risk_to_eve: "Direct plaintiff-firm competitor and current litigation counterparty"
+        evidence_claim_ids: ["EC-016", "EC-015"]
+        source_ids: ["SRC-016", "SRC-018"]
+      - row_id: "T-008-R3"
+        values:
+          company: "Harvey"
+          segment: "Legal and professional-services AI platform"
+          public_overlap: "Assistant, document analysis, workflow agents, knowledge, litigation, ecosystem"
+          risk_to_eve: "Broad platform competitor with enterprise legal reach"
+        evidence_claim_ids: ["EC-016"]
+        source_ids: ["SRC-017"]
+      - row_id: "T-008-R4"
+        values:
+          company: "Spellbook"
+          segment: "Contract AI"
+          public_overlap: "Legal drafting, review, workflow automation, insights"
+          risk_to_eve: "Adjacent budget and legal AI adoption competitor"
+        evidence_claim_ids: ["EC-016"]
+        source_ids: ["SRC-019"]
+    evidence_claim_ids: ["EC-005", "EC-006", "EC-007", "EC-015", "EC-016"]
+    source_ids: ["SRC-004", "SRC-007", "SRC-008", "SRC-009", "SRC-010", "SRC-016", "SRC-017", "SRC-018", "SRC-019"]
+    notes: null
+  - table_id: "T-009"
+    title: "Basis-of-competition scoring"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Frame competitive diligence dimensions."
+    columns:
+      - name: "axis"
+        description: "Competition axis"
+      - name: "eve_public_position"
+        description: "Eve position from public evidence"
+      - name: "competitor_pressure"
+        description: "Observed public pressure"
+      - name: "diligence_need"
+        description: "Validation needed"
+    rows:
+      - row_id: "T-009-R1"
+        values:
+          axis: "Plaintiff-law specialization"
+          eve_public_position: "Deep plaintiff-firm lifecycle positioning"
+          competitor_pressure: "EvenUp targets personal injury workflows directly"
+          diligence_need: "Win/loss by practice area and account segment"
+        evidence_claim_ids: ["EC-005", "EC-016"]
+        source_ids: ["SRC-004", "SRC-018"]
+      - row_id: "T-009-R2"
+        values:
+          axis: "Legal AI platform breadth"
+          eve_public_position: "Whole-case and agentic workflow messaging"
+          competitor_pressure: "Harvey markets broad legal and professional services platform"
+          diligence_need: "Feature, security, model, integration, and price benchmark"
+        evidence_claim_ids: ["EC-005", "EC-016"]
+        source_ids: ["SRC-004", "SRC-017"]
+      - row_id: "T-009-R3"
+        values:
+          axis: "Proven ROI"
+          eve_public_position: "Company-published capacity, speed, case-value, and recovery metrics"
+          competitor_pressure: "Competitors publish customer outcomes and workflow metrics"
+          diligence_need: "Independent references and cohort outcome attribution"
+        evidence_claim_ids: ["EC-004", "EC-007", "EC-016"]
+        source_ids: ["SRC-002", "SRC-008", "SRC-009", "SRC-018"]
+      - row_id: "T-009-R4"
+        values:
+          axis: "Trust and compliance"
+          eve_public_position: "Security page and attorney-supervision terms are public"
+          competitor_pressure: "Enterprise legal buyers require audit artifacts and model controls"
+          diligence_need: "SOC report, pen test, legal ethics review, model evaluations"
+        evidence_claim_ids: ["EC-009", "EC-011"]
+        source_ids: ["SRC-011", "SRC-012"]
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-007", "EC-009", "EC-011", "EC-016"]
+    source_ids: ["SRC-002", "SRC-004", "SRC-008", "SRC-009", "SRC-011", "SRC-012", "SRC-017", "SRC-018", "SRC-019"]
+    notes: null
+  - table_id: "T-010"
+    title: "Distribution channels and GTM motions"
+    chapter_id: "V"
+    section_id: "V.A"
+    purpose: "Summarize visible acquisition motions."
+    columns:
+      - name: "channel"
+        description: "Channel or motion"
+      - name: "public_evidence"
+        description: "Observed signal"
+      - name: "commercial_question"
+        description: "Question for diligence"
+    rows:
+      - row_id: "T-010-R1"
+        values:
+          channel: "Direct demos"
+          public_evidence: "Homepage and product pages repeatedly call users to schedule a call or demo"
+          commercial_question: "Demo conversion, sales cycle, close rate, implementation load"
+        evidence_claim_ids: ["EC-005", "EC-006"]
+        source_ids: ["SRC-004", "SRC-007"]
+      - row_id: "T-010-R2"
+        values:
+          channel: "Customer stories and logos"
+          public_evidence: "Customer story pages and homepage display named firms and outcomes"
+          commercial_question: "Reference conversion, permission records, and content ROI"
+        evidence_claim_ids: ["EC-005", "EC-014"]
+        source_ids: ["SRC-004", "SRC-015"]
+      - row_id: "T-010-R3"
+        values:
+          channel: "Press and financing credibility"
+          public_evidence: "PRNewswire and LawNext amplified the Series B and traction narrative"
+          commercial_question: "Impact on inbound pipeline and enterprise credibility"
+        evidence_claim_ids: ["EC-002", "EC-004"]
+        source_ids: ["SRC-002", "SRC-003"]
+      - row_id: "T-010-R4"
+        values:
+          channel: "Resources, webinars, referral language"
+          public_evidence: "Site navigation lists resources, blog, webinars, working with Eve, and refer-a-firm pages"
+          commercial_question: "Attribution, partner/referral terms, and conversion by content"
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-004", "SRC-006"]
+    evidence_claim_ids: ["EC-002", "EC-004", "EC-005", "EC-006", "EC-014"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-004", "SRC-006", "SRC-007", "SRC-015"]
+    notes: null
+  - table_id: "T-011"
+    title: "Public marketing and sales-productivity signals"
+    chapter_id: "V"
+    section_id: "V.C"
+    purpose: "Inventory what sales and marketing metrics remain private."
+    columns:
+      - name: "metric"
+        description: "Metric"
+      - name: "public_status"
+        description: "Public evidence status"
+      - name: "risk"
+        description: "Why it matters"
+      - name: "request"
+        description: "Private request"
+    rows:
+      - row_id: "T-011-R1"
+        values:
+          metric: "CAC and payback"
+          public_status: "Not disclosed"
+          risk: "High-touch legal AI sales and implementation can be expensive"
+          request: "CAC by segment, payback, marketing spend, implementation cost"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-011-R2"
+        values:
+          metric: "Pipeline conversion"
+          public_status: "Not disclosed"
+          risk: "Customer-count growth may not map to efficient ARR growth"
+          request: "Lead-to-demo, demo-to-close, win rate, cycle length"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-011-R3"
+        values:
+          metric: "Sales productivity"
+          public_status: "Not disclosed"
+          risk: "Rep ramp and quota capacity drive ability to use Series B capital"
+          request: "AE roster, quota, attainment, ramp, pipeline coverage"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-011-R4"
+        values:
+          metric: "Marketing claims"
+          public_status: "Customer-story claims are public but company-published"
+          risk: "Claims require substantiation and methodology review"
+          request: "Source data, permissions, cohort methodology, compliance review"
+        evidence_claim_ids: ["EC-014"]
+        source_ids: ["SRC-015"]
+    evidence_claim_ids: ["EC-014", "EC-019"]
+    source_ids: ["SRC-015", "SRC-019"]
+    notes: null
+  - table_id: "T-012"
+    title: "R&D personnel and leadership"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    purpose: "Summarize public technical leadership evidence."
+    columns:
+      - name: "person_or_group"
+        description: "Person or team"
+      - name: "role"
+        description: "Role"
+      - name: "public_background"
+        description: "Public evidence"
+      - name: "diligence_gap"
+        description: "Private validation"
+    rows:
+      - row_id: "T-012-R1"
+        values:
+          person_or_group: "Jay Madheswaran"
+          role: "Founder & CEO"
+          public_background: "Over 15 years of AI/ML experience at Facebook and Rubrik; previously with Lightspeed"
+          diligence_gap: "References, employment history, conflicts, leadership bench"
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-012-R2"
+        values:
+          person_or_group: "Matt Noe"
+          role: "Co-Founder and CPO"
+          public_background: "Founding engineer at Rubrik and AI product builder for the last decade"
+          diligence_gap: "Product roadmap ownership, team depth, product quality metrics"
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-012-R3"
+        values:
+          person_or_group: "David Zeng"
+          role: "Co-Founder and Head of Engineering"
+          public_background: "Over 10 years of AI and machine learning experience"
+          diligence_gap: "Engineering org, architecture ownership, security controls"
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-012-R4"
+        values:
+          person_or_group: "Engineering and design pods"
+          role: "Product delivery organization"
+          public_background: "Careers page says teams work in small, fast-moving pods of engineers and designers"
+          diligence_gap: "Headcount, turnover, roadmap capacity, QA staffing"
+        evidence_claim_ids: ["EC-017"]
+        source_ids: ["SRC-006"]
+    evidence_claim_ids: ["EC-008", "EC-017"]
+    source_ids: ["SRC-005", "SRC-006"]
+    notes: null
+  - table_id: "T-013"
+    title: "Public product and research pipeline"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    purpose: "Track visible R&D and product roadmap items."
+    columns:
+      - name: "initiative"
+        description: "Product or R&D initiative"
+      - name: "public_status"
+        description: "Public status"
+      - name: "evidence"
+        description: "Public evidence"
+      - name: "validation_needed"
+        description: "Needed diligence"
+    rows:
+      - row_id: "T-013-R1"
+        values:
+          initiative: "Eve 2.0"
+          public_status: "Marketed as proactive AI workforce"
+          evidence: "Careers and Eve 2.0 pages introduce Eve 2.0"
+          validation_needed: "Roadmap, GA/beta status, adoption, model evaluation"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-006", "SRC-008"]
+      - row_id: "T-013-R2"
+        values:
+          initiative: "Agents"
+          public_status: "Public page"
+          evidence: "Agents page claims communication, bottleneck removal, 2-3x capacity, faster resolution"
+          validation_needed: "Agent safety, human review, customer cohort proof"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-009"]
+      - row_id: "T-013-R3"
+        values:
+          initiative: "Auditor"
+          public_status: "Public page"
+          evidence: "Auditor page claims missed-value identification and faster desk work"
+          validation_needed: "Medical record accuracy, attorney review, error/appeal process"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-010"]
+      - row_id: "T-013-R4"
+        values:
+          initiative: "Analyst"
+          public_status: "Marked coming soon in navigation"
+          evidence: "Careers navigation lists Eve Analyst Coming soon"
+          validation_needed: "Scope, launch date, beta users, regulatory and accuracy review"
+        evidence_claim_ids: ["EC-007"]
+        source_ids: ["SRC-006"]
+    evidence_claim_ids: ["EC-007"]
+    source_ids: ["SRC-006", "SRC-008", "SRC-009", "SRC-010"]
+    notes: null
+  - table_id: "T-014"
+    title: "Senior management roster"
+    chapter_id: "VII"
+    section_id: "VII.C"
+    purpose: "Summarize public management biographies."
+    columns:
+      - name: "name"
+        description: "Person"
+      - name: "role"
+        description: "Role"
+      - name: "public_bio"
+        description: "Public biography"
+      - name: "diligence_gap"
+        description: "Follow-up"
+    rows:
+      - row_id: "T-014-R1"
+        values:
+          name: "Jay Madheswaran"
+          role: "Founder & CEO"
+          public_bio: "AI/ML experience at Facebook and Rubrik; prior Lightspeed"
+          diligence_gap: "References, governance, conflict review, employment history"
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-014-R2"
+        values:
+          name: "Matt Noe"
+          role: "Co-Founder and CPO"
+          public_bio: "Founding engineer at Rubrik; AI products for last decade"
+          diligence_gap: "Product leadership references and roadmap execution"
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-014-R3"
+        values:
+          name: "David Zeng"
+          role: "Co-Founder and Head of Engineering"
+          public_bio: "Over 10 years of AI/ML experience"
+          diligence_gap: "Engineering references, security and model governance ownership"
+        evidence_claim_ids: ["EC-008"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-014-R4"
+        values:
+          name: "Other executives and board"
+          role: "Not fully public in sources reviewed"
+          public_bio: "Not publicly verified"
+          diligence_gap: "Board roster, CFO/GC/security/customer-success leadership, committee structure"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+    evidence_claim_ids: ["EC-008", "EC-019"]
+    source_ids: ["SRC-005", "SRC-019"]
+    notes: null
+  - table_id: "T-015"
+    title: "Headcount, hiring, compensation, and turnover signals"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    purpose: "Inventory personnel evidence and gaps."
+    columns:
+      - name: "topic"
+        description: "Personnel topic"
+      - name: "public_signal"
+        description: "Public signal"
+      - name: "status"
+        description: "Verification"
+      - name: "request"
+        description: "Private data request"
+    rows:
+      - row_id: "T-015-R1"
+        values:
+          topic: "Hiring posture"
+          public_signal: "Careers page says the team is growing and links to open roles"
+          status: "partially_verified"
+          request: "Open requisitions, hiring plan, headcount budget"
+        evidence_claim_ids: ["EC-017"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-015-R2"
+        values:
+          topic: "Compensation and benefits"
+          public_signal: "Competitive salary, meaningful equity, 401(k) match, health, disability, commuter benefits, office stipend, flexible time off"
+          status: "partially_verified"
+          request: "Comp bands, benefits costs, equity plan, commission plans"
+        evidence_claim_ids: ["EC-017"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-015-R3"
+        values:
+          topic: "Headcount"
+          public_signal: "No total employee count by function/location disclosed in sources reviewed"
+          status: "not_publicly_verifiable"
+          request: "HRIS export, headcount history, contractor roster"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-015-R4"
+        values:
+          topic: "Turnover"
+          public_signal: "No attrition or regretted-loss metrics disclosed"
+          status: "not_publicly_verifiable"
+          request: "Attrition, regretted loss, exit interviews, retention plan"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+    evidence_claim_ids: ["EC-017", "EC-019"]
+    source_ids: ["SRC-006", "SRC-019"]
+    notes: null
+  - table_id: "T-016"
+    title: "Pending lawsuits and dispute summary"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    purpose: "Summarize accessible litigation signals without treating allegations as facts."
+    columns:
+      - name: "matter"
+        description: "Matter"
+      - name: "court_or_source"
+        description: "Court or source"
+      - name: "public_status"
+        description: "Status"
+      - name: "diligence_request"
+        description: "Needed legal review"
+    rows:
+      - row_id: "T-016-R1"
+        values:
+          matter: "EvenUp, Inc. v. Butler Labs, Inc."
+          court_or_source: "Law360 case page; California Northern"
+          public_status: "Case number 4:25-cv-08199; nature of suit Defend Trade Secrets Act; date shown September 26, 2025"
+          diligence_request: "Complaint, motions, orders, discovery, insurance notice, counsel memo"
+        evidence_claim_ids: ["EC-015"]
+        source_ids: ["SRC-020"]
+      - row_id: "T-016-R2"
+        values:
+          matter: "UniCourt snippet for EvenUp v. Butler Labs"
+          court_or_source: "DuckDuckGo result snippet"
+          public_status: "Snippet says filed 2025-09-26 in N.D. Cal. and case status open"
+          diligence_request: "Verify directly with docket and counsel"
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-021"]
+      - row_id: "T-016-R3"
+        values:
+          matter: "PACER Monitor snippets"
+          court_or_source: "DuckDuckGo result snippets"
+          public_status: "Snippets reference allegations and a motion to dismiss; allegations are not adjudicated facts"
+          diligence_request: "Retrieve and review docket documents through counsel"
+        evidence_claim_ids: ["EC-020"]
+        source_ids: ["SRC-021"]
+      - row_id: "T-016-R4"
+        values:
+          matter: "Company-initiated lawsuits"
+          court_or_source: "Accessible searches"
+          public_status: "No company-initiated lawsuit verified"
+          diligence_request: "Legal schedule for all claims and threatened claims"
+        evidence_claim_ids: ["EC-019"]
+        source_ids: ["SRC-019"]
+    evidence_claim_ids: ["EC-015", "EC-020", "EC-019"]
+    source_ids: ["SRC-020", "SRC-021", "SRC-019"]
+    notes: "Allegations are attributed to public snippets only and require docket-level confirmation."
+  - table_id: "T-017"
+    title: "Legal, IP, regulatory, privacy, and contract exposure matrix"
+    chapter_id: "VIII"
+    section_id: "VIII.F"
+    purpose: "Collect the principal public legal documents and exposure categories."
+    columns:
+      - name: "area"
+        description: "Legal area"
+      - name: "public_evidence"
+        description: "Observed evidence"
+      - name: "risk"
+        description: "Risk"
+      - name: "request"
+        description: "Follow-up"
+    rows:
+      - row_id: "T-017-R1"
+        values:
+          area: "Attorney supervision and legal-advice disclaimer"
+          public_evidence: "MSA says service and output are not legal services or advice, must be overseen by licensed legal professionals, and all output is draft"
+          risk: "Professional responsibility, UPL, hallucination, and client reliance"
+          request: "Ethics memo, customer training, audit logs, output review controls"
+        evidence_claim_ids: ["EC-011"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-017-R2"
+        values:
+          area: "Security and privacy"
+          public_evidence: "Security page discloses SOC 2 framework alignment, third-party assessments, annual pen testing, encryption, access reviews; privacy page discloses cookies and marketing uses"
+          risk: "Sensitive plaintiff-law and medical-record workflows require stronger evidence than policy pages"
+          request: "SOC report, pen test, DPIA, incident register, data maps, DPA/subprocessor list"
+        evidence_claim_ids: ["EC-009", "EC-013"]
+        source_ids: ["SRC-011", "SRC-013"]
+      - row_id: "T-017-R3"
+        values:
+          area: "SLA and cloud dependency"
+          public_evidence: "SLA commits to 99.5% monthly uptime with broad exclusions"
+          risk: "Availability credits may not cover many important customer-impact events"
+          request: "Uptime history, incidents, exclusions used, credits, cloud SLAs"
+        evidence_claim_ids: ["EC-010"]
+        source_ids: ["SRC-012"]
+      - row_id: "T-017-R4"
+        values:
+          area: "IP ownership and indemnity"
+          public_evidence: "MSA reserves service/IP rights and limits IP indemnity obligations"
+          risk: "Trade secret, patent, copyright, model/data, open-source, and customer-data issues"
+          request: "IP schedule, assignments, open-source SBOM, model/data licenses, infringement notices"
+        evidence_claim_ids: ["EC-012", "EC-020"]
+        source_ids: ["SRC-012", "SRC-022"]
+    evidence_claim_ids: ["EC-009", "EC-010", "EC-011", "EC-012", "EC-013", "EC-020"]
+    source_ids: ["SRC-011", "SRC-012", "SRC-013", "SRC-022"]
+    notes: null
+
+figures:
+  - figure_id: "F-001"
+    title: "Public financing timeline"
+    chapter_id: "I"
+    section_id: "I.B"
+    figure_type: "timeline"
+    description: "Public funding and valuation events identified in this run."
+    purpose: "Show financing anchors and the limited public disclosure set."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      events:
+        - event_id: "F-001-E1"
+          date: "2025-01"
+          label: "Series A referenced"
+          description: "LawNext states the Series B followed a $47 million Series A in January 2025."
+          category: "financing"
+          evidence_claim_ids: ["EC-002"]
+          source_ids: ["SRC-003"]
+        - event_id: "F-001-E2"
+          date: "2025-09-30"
+          label: "$103M Series B"
+          description: "PRNewswire and LawNext report $103M Series B at over $1B valuation."
+          category: "financing"
+          evidence_claim_ids: ["EC-002"]
+          source_ids: ["SRC-002", "SRC-003"]
+        - event_id: "F-001-E3"
+          date: "2025-09-30"
+          label: "CB Insights unicorn row"
+          description: "CB Insights list row used for target selection lists Eve as valued at $1B."
+          category: "market_database"
+          evidence_claim_ids: ["EC-001"]
+          source_ids: ["SRC-001"]
+      start_date: "2025-01"
+      end_date: "2026-05-15"
+      ordering: "chronological"
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Annotate that financing terms remain private."
+    evidence_claim_ids: ["EC-001", "EC-002"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-003"]
+    notes: null
+  - figure_id: "F-002"
+    title: "Public valuation and funding trajectory"
+    chapter_id: "I"
+    section_id: "I.B"
+    figure_type: "chart"
+    description: "Public financing anchors for Eve."
+    purpose: "Frame valuation support and missing terms."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Event"
+        unit: null
+        scale: "categorical"
+      y_axis:
+        label: "Amount"
+        unit: "USD millions"
+        scale: "linear"
+      series:
+        - series_id: "funding"
+          name: "Round size"
+          unit: "USD millions"
+          data_points:
+            - x: "Jan 2025 Series A"
+              y: 47
+              label: "$47M, valuation not public in sources reviewed"
+              evidence_claim_ids: ["EC-002"]
+              source_ids: ["SRC-003"]
+            - x: "Sep 2025 Series B"
+              y: 103
+              label: "$103M"
+              evidence_claim_ids: ["EC-002"]
+              source_ids: ["SRC-002", "SRC-003"]
+        - series_id: "valuation"
+          name: "Public valuation"
+          unit: "USD millions"
+          data_points:
+            - x: "Jan 2025 Series A"
+              y: null
+              label: "Not public"
+              evidence_claim_ids: ["EC-019"]
+              source_ids: ["SRC-019"]
+            - x: "Sep 2025 Series B"
+              y: 1000
+              label: "Over $1B"
+              evidence_claim_ids: ["EC-001", "EC-002"]
+              source_ids: ["SRC-001", "SRC-002", "SRC-003"]
+      annotations:
+        - label: "Terms gap"
+          x: "Sep 2025 Series B"
+          y: 1000
+          note: "Post-money mechanics, preference stack, and ownership not public."
+          evidence_claim_ids: ["EC-019"]
+          source_ids: ["SRC-019"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Render null values as disclosure gaps."
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-019"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-003", "SRC-019"]
+    notes: null
+  - figure_id: "F-003"
+    title: "Product and dependency architecture"
+    chapter_id: "II"
+    section_id: "II.A"
+    figure_type: "architecture_diagram"
+    description: "High-level public architecture of Eve's plaintiff-law workflow platform."
+    purpose: "Show product surface and control points."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - node_id: "plaintiff_firm"
+          label: "Plaintiff law firm"
+          node_type: "user"
+          description: "Attorneys, paralegals, intake teams, and operations users."
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-004"]
+        - node_id: "intake"
+          label: "Intake and evaluation"
+          node_type: "product"
+          description: "Lead capture, voice agents, transcription, case evaluation, summaries."
+          evidence_claim_ids: ["EC-006"]
+          source_ids: ["SRC-007"]
+        - node_id: "prelitigation"
+          label: "Pre-litigation workflows"
+          node_type: "product"
+          description: "Medical chronologies, demand letters, complaints, drafting."
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-004"]
+        - node_id: "litigation"
+          label: "Litigation workflows"
+          node_type: "product"
+          description: "Discovery, deposition analysis, motion responses."
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-004"]
+        - node_id: "agents_auditor"
+          label: "Agents and Auditor"
+          node_type: "product"
+          description: "Proactive work execution and case inventory auditing."
+          evidence_claim_ids: ["EC-007"]
+          source_ids: ["SRC-009", "SRC-010"]
+        - node_id: "cloud"
+          label: "AWS and Azure"
+          node_type: "infrastructure"
+          description: "Security page says services are hosted with AWS and Microsoft Azure; AWS databases in the United States."
+          evidence_claim_ids: ["EC-009"]
+          source_ids: ["SRC-011"]
+        - node_id: "attorney_review"
+          label: "Licensed attorney review"
+          node_type: "user"
+          description: "MSA requires licensed legal professional oversight and review of output."
+          evidence_claim_ids: ["EC-011"]
+          source_ids: ["SRC-012"]
+      edges:
+        - edge_id: "F-003-E1"
+          from_node_id: "plaintiff_firm"
+          to_node_id: "intake"
+          relationship: "captures and evaluates potential cases"
+          data_or_dependency: "Lead, caller, and case data"
+          evidence_claim_ids: ["EC-006"]
+          source_ids: ["SRC-007"]
+        - edge_id: "F-003-E2"
+          from_node_id: "plaintiff_firm"
+          to_node_id: "prelitigation"
+          relationship: "drafts and analyzes pre-litigation materials"
+          data_or_dependency: "Medical records, bills, facts, demands"
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-004"]
+        - edge_id: "F-003-E3"
+          from_node_id: "plaintiff_firm"
+          to_node_id: "litigation"
+          relationship: "drafts and analyzes litigation materials"
+          data_or_dependency: "Discovery, depositions, motions"
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-004"]
+        - edge_id: "F-003-E4"
+          from_node_id: "intake"
+          to_node_id: "cloud"
+          relationship: "runs in cloud infrastructure"
+          data_or_dependency: "Sensitive legal and client data"
+          evidence_claim_ids: ["EC-009"]
+          source_ids: ["SRC-011"]
+        - edge_id: "F-003-E5"
+          from_node_id: "agents_auditor"
+          to_node_id: "attorney_review"
+          relationship: "requires legal oversight"
+          data_or_dependency: "Draft output and recommendations"
+          evidence_claim_ids: ["EC-011"]
+          source_ids: ["SRC-012"]
+      boundaries:
+        - boundary_id: "eve_platform"
+          label: "Eve platform"
+          node_ids: ["intake", "prelitigation", "litigation", "agents_auditor", "cloud"]
+        - boundary_id: "customer_control"
+          label: "Customer attorney control"
+          node_ids: ["plaintiff_firm", "attorney_review"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Show attorney review as a mandatory control boundary."
+    evidence_claim_ids: ["EC-005", "EC-006", "EC-007", "EC-009", "EC-011"]
+    source_ids: ["SRC-004", "SRC-007", "SRC-009", "SRC-010", "SRC-011", "SRC-012"]
+    notes: null
+  - figure_id: "F-004"
+    title: "Public customer and traction metric bars"
+    chapter_id: "III"
+    section_id: "III.A"
+    figure_type: "chart"
+    description: "Company-published customer and case-count anchors."
+    purpose: "Visualize public traction claims and highlight definition gaps."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Metric"
+        unit: null
+        scale: "categorical"
+      y_axis:
+        label: "Count or amount"
+        unit: "mixed"
+        scale: "linear"
+      series:
+        - series_id: "traction"
+          name: "Public claim"
+          unit: "count_or_usd_m"
+          data_points:
+            - x: "New firms since Series A"
+              y: 350
+              label: "350+ new firms"
+              evidence_claim_ids: ["EC-004"]
+              source_ids: ["SRC-002"]
+            - x: "Total firms in Series B release"
+              y: 450
+              label: "450+ firms"
+              evidence_claim_ids: ["EC-004"]
+              source_ids: ["SRC-002", "SRC-003"]
+            - x: "Homepage firm count"
+              y: 1000
+              label: "1000+ firms"
+              evidence_claim_ids: ["EC-005"]
+              source_ids: ["SRC-004"]
+            - x: "Annual cases processed"
+              y: 200000
+              label: "200,000+ cases"
+              evidence_claim_ids: ["EC-004"]
+              source_ids: ["SRC-002", "SRC-003"]
+      annotations:
+        - label: "Definition gap"
+          x: "Homepage firm count"
+          y: 1000
+          note: "Reconcile homepage count with Series B release count."
+          evidence_claim_ids: ["EC-005", "EC-004"]
+          source_ids: ["SRC-004", "SRC-002"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Use log scale if rendering mixed magnitude counts."
+    evidence_claim_ids: ["EC-004", "EC-005"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-004"]
+    notes: "Recovery amount of $3.5B+ is excluded from the count axis but listed in table T-006."
+  - figure_id: "F-005"
+    title: "Legal AI market map"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    figure_type: "market_map"
+    description: "Positioning map based on public page focus."
+    purpose: "Show Eve relative to direct and adjacent legal AI competitors."
+    spec_schema_ref: "figure_spec_shapes.market_map"
+    spec:
+      dimensions:
+        x_axis:
+          label: "Practice specialization"
+          low_label: "Horizontal legal AI"
+          high_label: "Plaintiff-law specific"
+        y_axis:
+          label: "Workflow scope"
+          low_label: "Point workflow"
+          high_label: "End-to-end lifecycle"
+      segments:
+        - segment_id: "plaintiff_lifecycle"
+          name: "Plaintiff law lifecycle"
+          description: "End-to-end plaintiff firm workflows."
+        - segment_id: "broad_legal_platform"
+          name: "Broad legal platform"
+          description: "Cross-practice legal and professional services AI."
+        - segment_id: "contract_ai"
+          name: "Contract AI"
+          description: "Contract review and drafting workflows."
+      entities:
+        - entity_id: "eve"
+          name: "Eve"
+          entity_type: "target_company"
+          segment_id: "plaintiff_lifecycle"
+          x_value: 9
+          y_value: 8
+          attributes:
+            evidence_basis: "Plaintiff firm lifecycle pages"
+          evidence_claim_ids: ["EC-005", "EC-006"]
+          source_ids: ["SRC-004", "SRC-007"]
+        - entity_id: "evenup"
+          name: "EvenUp"
+          entity_type: "competitor"
+          segment_id: "plaintiff_lifecycle"
+          x_value: 9
+          y_value: 8
+          attributes:
+            evidence_basis: "Personal injury product menu"
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-018"]
+        - entity_id: "harvey"
+          name: "Harvey"
+          entity_type: "competitor"
+          segment_id: "broad_legal_platform"
+          x_value: 4
+          y_value: 8
+          attributes:
+            evidence_basis: "Broad legal and professional-services AI platform"
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-017"]
+        - entity_id: "spellbook"
+          name: "Spellbook"
+          entity_type: "competitor"
+          segment_id: "contract_ai"
+          x_value: 2
+          y_value: 4
+          attributes:
+            evidence_basis: "Contract review and drafting AI"
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-019"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Coordinates are analyst-coded from public positioning, not market share."
+    evidence_claim_ids: ["EC-005", "EC-006", "EC-016"]
+    source_ids: ["SRC-004", "SRC-007", "SRC-017", "SRC-018", "SRC-019"]
+    notes: null
+  - figure_id: "F-006"
+    title: "Visible GTM funnel"
+    chapter_id: "V"
+    section_id: "V.A"
+    figure_type: "funnel"
+    description: "Publicly visible GTM path; counts are not public except customer-count anchors."
+    purpose: "Show where private funnel metrics are required."
+    spec_schema_ref: "figure_spec_shapes.funnel"
+    spec:
+      stages:
+        - stage_id: "awareness"
+          name: "Awareness via press, website, referrals, customer stories"
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: "not public"
+          evidence_claim_ids: ["EC-002", "EC-005", "EC-014"]
+          source_ids: ["SRC-002", "SRC-004", "SRC-015"]
+        - stage_id: "demo"
+          name: "Schedule a call or demo"
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: "not public"
+          evidence_claim_ids: ["EC-005", "EC-006"]
+          source_ids: ["SRC-004", "SRC-007"]
+        - stage_id: "customer"
+          name: "Firms using Eve"
+          order: 3
+          count: 450
+          conversion_rate_from_previous: null
+          period: "Series B release"
+          evidence_claim_ids: ["EC-004"]
+          source_ids: ["SRC-002", "SRC-003"]
+        - stage_id: "case_volume"
+          name: "Cases processed annually"
+          order: 4
+          count: 200000
+          conversion_rate_from_previous: null
+          period: "Series B release"
+          evidence_claim_ids: ["EC-004"]
+          source_ids: ["SRC-002", "SRC-003"]
+      unit: "accounts"
+      cohort_or_period: "Public claims as of 2025-09-30 and site access in 2026-05"
+      notes:
+        - "Counts are mixed account and case units; private funnel conversion metrics are required."
+    rendering_guidance:
+      preferred_format: "funnel"
+      display_notes: "Mark null stages as unavailable."
+    evidence_claim_ids: ["EC-002", "EC-004", "EC-005", "EC-006", "EC-014"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-004", "SRC-007", "SRC-015"]
+    notes: null
+  - figure_id: "F-007"
+    title: "R&D and product roadmap timeline"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    figure_type: "timeline"
+    description: "Public product roadmap and launch signals."
+    purpose: "Show current and emerging product initiatives."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      events:
+        - event_id: "F-007-E1"
+          date: "2025-09-30"
+          label: "Series B for AI transformation"
+          description: "Release says funding will help arm plaintiff firms for AI-native workflows."
+          category: "financing"
+          evidence_claim_ids: ["EC-002", "EC-004"]
+          source_ids: ["SRC-002"]
+        - event_id: "F-007-E2"
+          date: "2026-05-15"
+          label: "Eve 2.0 public pages"
+          description: "Company pages introduce Eve 2.0, Agents, Auditor, and Analyst coming soon."
+          category: "product"
+          evidence_claim_ids: ["EC-007"]
+          source_ids: ["SRC-006", "SRC-008", "SRC-009", "SRC-010"]
+      start_date: "2025-09-30"
+      end_date: "2026-05-15"
+      ordering: "chronological"
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Annotate that roadmap dates are largely not public."
+    evidence_claim_ids: ["EC-002", "EC-004", "EC-007"]
+    source_ids: ["SRC-002", "SRC-006", "SRC-008", "SRC-009", "SRC-010"]
+    notes: null
+  - figure_id: "F-008"
+    title: "Public founder org chart"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    figure_type: "org_chart"
+    description: "Publicly identified founder roles."
+    purpose: "Show verified public leadership and missing org coverage."
+    spec_schema_ref: "figure_spec_shapes.org_chart"
+    spec:
+      people_or_roles:
+        - node_id: "ceo"
+          name: "Jay Madheswaran"
+          role: "Founder & CEO"
+          department: "Executive"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-005"]
+        - node_id: "cpo"
+          name: "Matt Noe"
+          role: "Co-Founder and CPO"
+          department: "Product"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-005"]
+        - node_id: "eng"
+          name: "David Zeng"
+          role: "Co-Founder and Head of Engineering"
+          department: "Engineering"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-005"]
+        - node_id: "other_execs"
+          name: null
+          role: "Other executives, legal, finance, security, GTM, and customer-success leaders"
+          department: "Unknown"
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids: ["EC-019"]
+          source_ids: ["SRC-019"]
+      reporting_lines:
+        - parent_node_id: "ceo"
+          child_node_id: "cpo"
+          relationship: "other"
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-005"]
+        - parent_node_id: "ceo"
+          child_node_id: "eng"
+          relationship: "other"
+          evidence_claim_ids: ["EC-008"]
+          source_ids: ["SRC-005"]
+        - parent_node_id: "ceo"
+          child_node_id: "other_execs"
+          relationship: "other"
+          evidence_claim_ids: ["EC-019"]
+          source_ids: ["SRC-019"]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Dashed lines for inferred/unknown reporting relationships."
+    evidence_claim_ids: ["EC-008", "EC-019"]
+    source_ids: ["SRC-005", "SRC-019"]
+    notes: "Reporting lines are a schematic, not verified legal reporting structure."
+  - figure_id: "F-009"
+    title: "Public headcount signal chart"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    figure_type: "chart"
+    description: "Public headcount information is sparse."
+    purpose: "Make the headcount disclosure gap explicit."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Personnel metric"
+        unit: null
+        scale: "categorical"
+      y_axis:
+        label: "Public count"
+        unit: "people or roles"
+        scale: "linear"
+      series:
+        - series_id: "public_people"
+          name: "Publicly countable personnel signals"
+          unit: "count"
+          data_points:
+            - x: "Named founders"
+              y: 3
+              label: "3 founder roles on company page"
+              evidence_claim_ids: ["EC-008"]
+              source_ids: ["SRC-005"]
+            - x: "Named employee testimonials"
+              y: 4
+              label: "4 employee testimonials visible in careers excerpt"
+              evidence_claim_ids: ["EC-017"]
+              source_ids: ["SRC-006"]
+            - x: "Total headcount"
+              y: null
+              label: "Not public"
+              evidence_claim_ids: ["EC-019"]
+              source_ids: ["SRC-019"]
+      annotations:
+        - label: "Disclosure gap"
+          x: "Total headcount"
+          y: null
+          note: "HRIS and headcount history are required."
+          evidence_claim_ids: ["EC-019"]
+          source_ids: ["SRC-019"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Null bar should render as unavailable."
+    evidence_claim_ids: ["EC-008", "EC-017", "EC-019"]
+    source_ids: ["SRC-005", "SRC-006", "SRC-019"]
+    notes: null
+  - figure_id: "F-010"
+    title: "Legal and regulatory timeline"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    figure_type: "timeline"
+    description: "Public legal, security, privacy, and contract events or evidence anchors."
+    purpose: "Show legal diligence anchors and missing docket detail."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      events:
+        - event_id: "F-010-E1"
+          date: "2025-09-26"
+          label: "EvenUp v. Butler Labs filed"
+          description: "Law360 lists the case and date; search snippets also identify open status."
+          category: "litigation"
+          evidence_claim_ids: ["EC-015", "EC-020"]
+          source_ids: ["SRC-020", "SRC-021"]
+        - event_id: "F-010-E2"
+          date: "2026-01-02"
+          label: "Motion-to-dismiss snippets"
+          description: "DuckDuckGo snippets reference a defendant motion to dismiss document; full docket not reviewed."
+          category: "litigation"
+          evidence_claim_ids: ["EC-020"]
+          source_ids: ["SRC-021"]
+        - event_id: "F-010-E3"
+          date: "2026-05-15"
+          label: "Public security and contract review"
+          description: "Security, SLA, MSA, and privacy pages reviewed as public legal-control sources."
+          category: "diligence"
+          evidence_claim_ids: ["EC-009", "EC-010", "EC-011", "EC-012", "EC-013"]
+          source_ids: ["SRC-011", "SRC-012", "SRC-013"]
+      start_date: "2025-09-26"
+      end_date: "2026-05-15"
+      ordering: "chronological"
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Use allegation and docket caveats."
+    evidence_claim_ids: ["EC-009", "EC-010", "EC-011", "EC-012", "EC-013", "EC-015", "EC-020"]
+    source_ids: ["SRC-011", "SRC-012", "SRC-013", "SRC-020", "SRC-021"]
+    notes: null
+  - figure_id: "F-011"
+    title: "Risk heatmap"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    figure_type: "risk_heatmap"
+    description: "Risk map across diligence findings."
+    purpose: "Prioritize follow-up."
+    spec_schema_ref: "figure_spec_shapes.risk_heatmap"
+    spec:
+      x_axis:
+        label: "likelihood"
+        scale: ["low", "medium", "high", "unknown"]
+      y_axis:
+        label: "severity"
+        scale: ["informational", "low", "medium", "high", "critical"]
+      risk_points:
+        - risk_id: "R-001"
+          label: "Financial opacity"
+          severity: "high"
+          likelihood: "high"
+          rationale: "Core financials and runway are not public."
+          evidence_claim_ids: ["EC-019"]
+          source_ids: ["SRC-019"]
+        - risk_id: "R-002"
+          label: "Customer metric validation"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "Traction claims are company-published and counts differ by source."
+          evidence_claim_ids: ["EC-004", "EC-005"]
+          source_ids: ["SRC-002", "SRC-004"]
+        - risk_id: "R-003"
+          label: "Professional responsibility"
+          severity: "high"
+          likelihood: "high"
+          rationale: "MSA requires attorney oversight and draft-output review."
+          evidence_claim_ids: ["EC-011"]
+          source_ids: ["SRC-012"]
+        - risk_id: "R-004"
+          label: "Pending litigation"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "EvenUp v. Butler Labs appears in accessible legal/search sources."
+          evidence_claim_ids: ["EC-015", "EC-020"]
+          source_ids: ["SRC-020", "SRC-021"]
+        - risk_id: "R-005"
+          label: "Sensitive data"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "Platform processes legal/client workflows; audit artifacts not public."
+          evidence_claim_ids: ["EC-009", "EC-013"]
+          source_ids: ["SRC-011", "SRC-013"]
+        - risk_id: "R-006"
+          label: "Competitive intensity"
+          severity: "medium"
+          likelihood: "high"
+          rationale: "Direct and adjacent legal AI competitors have overlapping public offerings."
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-017", "SRC-018", "SRC-019"]
+        - risk_id: "R-007"
+          label: "Product quality"
+          severity: "medium"
+          likelihood: "high"
+          rationale: "Agentic legal workflows require model evaluation not public."
+          evidence_claim_ids: ["EC-006", "EC-007", "EC-011"]
+          source_ids: ["SRC-007", "SRC-009", "SRC-010", "SRC-012"]
+        - risk_id: "R-008"
+          label: "GTM efficiency"
+          severity: "medium"
+          likelihood: "unknown"
+          rationale: "CAC, payback, funnel conversion, and sales productivity are not public."
+          evidence_claim_ids: ["EC-019"]
+          source_ids: ["SRC-019"]
+        - risk_id: "R-009"
+          label: "Team scaling"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "Careers signal growth, but headcount, attrition, and leadership bench are not public."
+          evidence_claim_ids: ["EC-017", "EC-019"]
+          source_ids: ["SRC-006", "SRC-019"]
+        - risk_id: "R-010"
+          label: "Contract and vendor dependency"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "SLA has exclusions and cloud/integrated-app dependencies."
+          evidence_claim_ids: ["EC-010", "EC-012"]
+          source_ids: ["SRC-012"]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Map severity against likelihood."
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-006", "EC-007", "EC-009", "EC-010", "EC-011", "EC-012", "EC-013", "EC-015", "EC-016", "EC-017", "EC-019", "EC-020"]
+    source_ids: ["SRC-002", "SRC-004", "SRC-006", "SRC-007", "SRC-009", "SRC-010", "SRC-011", "SRC-012", "SRC-013", "SRC-017", "SRC-018", "SRC-019", "SRC-020", "SRC-021"]
+    notes: null
+
+evidence_claims:
+  - evidence_claim_id: "EC-001"
+    claim: "CB Insights' current unicorn list includes Eve as a U.S. Enterprise Tech unicorn valued at $1 billion with a valuation date of 2025-09-30."
+    evidence_summary: "Parsed row lists Eve, $1 valuation, 9/30/2025, United States, San Mateo, Enterprise Tech, and investors Spark Capital, Lightspeed Venture Partners, Andreessen Horowitz."
+    evidence_type: "market_database"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-001"]
+    quoted_evidence:
+      - source_id: "SRC-001"
+        quote: "Eve | $1 | 9/30/2025 | United States | San Mateo | Enterprise Tech | Spark Capital, Lightspeed Venture Partners, Andreessen Horowitz"
+        location: "CB Insights unicorn table row captured in local fetch"
+    analyst_interpretation: "Adequate for target selection and valuation triangulation, but financing announcements are stronger evidence for underwriting."
+    limitations: "Public unicorn lists can lag IPO, acquisition, shutdown, or repricing events."
+    associations:
+      chapter_id: "I"
+      section_id: "I.B"
+      founder_claim_ids: ["FC-002"]
+      table_ids: ["T-001"]
+      figure_ids: ["F-001", "F-002"]
+      risk_ids: ["R-001"]
+  - evidence_claim_id: "EC-002"
+    claim: "Eve announced a $103 million Series B at over a $1 billion valuation on 2025-09-30, led by Spark Capital with Andreessen Horowitz, Lightspeed Venture Partners, and Menlo Ventures participating."
+    evidence_summary: "PRNewswire and LawNext both report the Series B amount, valuation, lead investor, and participating investors."
+    evidence_type: "independent_news"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-002", "SRC-003"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "raised $103 million in Series B funding at over a $1 billion valuation. The round was led by Spark Capital, with participation from existing investors Andreessen Horowitz, Lightspeed Venture Partners, and Menlo Ventures."
+        location: "PRNewswire release"
+      - source_id: "SRC-003"
+        quote: "raised $103 million in Series B funding at over a $1 billion valuation... led by Spark Capital, with participation from existing investors Andreessen Horowitz, Lightspeed Venture Partners, and Menlo Ventures."
+        location: "LawNext article"
+    analyst_interpretation: "This verifies the public financing event but not private economics."
+    limitations: "No share class, ownership, preference, investor rights, debt, secondary, or board-control terms disclosed."
+    associations:
+      chapter_id: "I"
+      section_id: "I.B"
+      founder_claim_ids: ["FC-002"]
+      table_ids: ["T-001", "T-002", "T-003", "T-010"]
+      figure_ids: ["F-001", "F-002", "F-006", "F-007"]
+      risk_ids: ["R-001", "R-008"]
+  - evidence_claim_id: "EC-003"
+    claim: "Eve careers materials state the company has raised $164M+ from Andreessen Horowitz, Lightspeed, Menlo, and Spark."
+    evidence_summary: "Careers page says Eve has raised $164M+ and shows the named investor logos."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-006"]
+    quoted_evidence:
+      - source_id: "SRC-006"
+        quote: "We've raised $164M+ from leading investors to bring Eve's cutting-edge AI to plaintiff firms."
+        location: "Eve careers page"
+    analyst_interpretation: "Consistent with the $47M Series A reference plus $103M Series B and possible earlier capital, but total raised requires financing documents."
+    limitations: "Company-published; does not disclose round-by-round terms."
+    associations:
+      chapter_id: "I"
+      section_id: "I.C"
+      founder_claim_ids: ["FC-002"]
+      table_ids: ["T-002", "T-003", "T-007"]
+      figure_ids: []
+      risk_ids: ["R-001"]
+  - evidence_claim_id: "EC-004"
+    claim: "Eve's September 2025 financing release reports over 350 new firms since Series A, over 450 total firms, more than 200,000 annual legal cases processed, and over $3.5 billion in settlements and judgments recovered by firms."
+    evidence_summary: "PRNewswire release and LawNext article repeat customer and outcome metrics."
+    evidence_type: "independent_news"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-002", "SRC-003"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "added over 350 new firms as customers in 8 months, bringing its total customer base to over 450 top firms... processes more than 200,000 legal cases annually and has helped firms collectively recover over $3.5 billion."
+        location: "PRNewswire release"
+    analyst_interpretation: "Specific traction metrics indicate scale, but they are company-provided and require methodology and customer validation."
+    limitations: "No cohort, active paid account definition, revenue attribution, or customer confirmation disclosed."
+    associations:
+      chapter_id: "III"
+      section_id: "III.A"
+      founder_claim_ids: ["FC-003"]
+      table_ids: ["T-003", "T-006", "T-009", "T-010"]
+      figure_ids: ["F-004", "F-006", "F-007", "F-011"]
+      risk_ids: ["R-002", "R-008"]
+  - evidence_claim_id: "EC-005"
+    claim: "Eve's homepage says over 1000 leading plaintiff firms use Eve's legal AI and presents intake, pre-litigation, and litigation workflows across the case lifecycle."
+    evidence_summary: "Homepage states the 1000+ firm claim and lists product areas."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-004"]
+    quoted_evidence:
+      - source_id: "SRC-004"
+        quote: "Join over 1000+ leading plaintiff firms using Eve's legal AI... Intake and Evaluation... Pre-Litigation... Litigation."
+        location: "Eve homepage"
+    analyst_interpretation: "Supports product and traction positioning but conflicts with or postdates the 450+ count in the Series B release."
+    limitations: "No date stamp, active paid definition, or customer-count methodology."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: ["FC-001", "FC-003"]
+      table_ids: ["T-004", "T-006", "T-008", "T-009", "T-010"]
+      figure_ids: ["F-003", "F-004", "F-005", "F-006", "F-011"]
+      risk_ids: ["R-002", "R-007", "R-008"]
+  - evidence_claim_id: "EC-006"
+    claim: "Eve's case intake product page describes AI-powered client intake, 24/7 voice agents, lead intelligence, transcription, case evaluation, summaries, and damage quantification."
+    evidence_summary: "Case Intake and Evaluation page lays out the intake product feature set."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-007"]
+    quoted_evidence:
+      - source_id: "SRC-007"
+        quote: "A comprehensive AI-powered client intake and evaluation system... 24/7 AI Voice Agents... Manage Leads with Intelligence... Transcribe Client Communication... Automated Case Evaluation... Comprehensive Summaries... Damage Quantification."
+        location: "Eve case intake page"
+    analyst_interpretation: "Useful product evidence; accuracy, consent, and integration performance require private validation."
+    limitations: "No live demo, customer configuration, error rates, or legal/consent controls disclosed."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: ["FC-001", "FC-005"]
+      table_ids: ["T-004", "T-010"]
+      figure_ids: ["F-003", "F-005", "F-006", "F-011"]
+      risk_ids: ["R-007"]
+  - evidence_claim_id: "EC-007"
+    claim: "Eve 2.0, AI Agents, and Auditor pages present proactive AI workforce capabilities and company-published metrics such as 2-3x attorney capacity increase, 15% faster resolution, complaint drafting from 5 hours to 1 hour, and case value unlocked from $100k to $1m."
+    evidence_summary: "Eve 2.0, AI Agents, Auditor, and careers pages disclose product modules and testimonial metrics."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-006", "SRC-008", "SRC-009", "SRC-010"]
+    quoted_evidence:
+      - source_id: "SRC-009"
+        quote: "2-3x Attorney capacity increase... 15% faster Case resolution time... Agents remove bottlenecks..."
+        location: "Eve AI Agents page"
+      - source_id: "SRC-010"
+        quote: "$100k to $1m Case value unlocked... 5hr to 1hr Complaint drafting."
+        location: "Eve Auditor page"
+    analyst_interpretation: "Strong marketing signal; not independently validated without cohort data and customer calls."
+    limitations: "No sample size, baseline methodology, attribution, time period, or full reference transcript disclosed."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: ["FC-005"]
+      table_ids: ["T-004", "T-009", "T-013"]
+      figure_ids: ["F-003", "F-007", "F-011"]
+      risk_ids: ["R-002", "R-007"]
+  - evidence_claim_id: "EC-008"
+    claim: "Eve publicly identifies Jay Madheswaran, Matt Noe, and David Zeng as founders and lists their AI/ML, Rubrik, Facebook, Lightspeed, and product engineering backgrounds."
+    evidence_summary: "Company about page includes founder biographies."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-005"]
+    quoted_evidence:
+      - source_id: "SRC-005"
+        quote: "Jay has over 15 years of experience in AI and machine learning at places like Facebook, and Rubrik... Matt... founding engineer at Rubrik... David... over 10 years of experience in AI and Machine Learning."
+        location: "Eve about page"
+    analyst_interpretation: "Founder biographies support technical credibility but require reference checks and employment validation."
+    limitations: "Company-published; no independent background checks, references, or conflict review."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.C"
+      founder_claim_ids: []
+      table_ids: ["T-012", "T-014"]
+      figure_ids: ["F-008", "F-009"]
+      risk_ids: ["R-009"]
+  - evidence_claim_id: "EC-009"
+    claim: "Eve's security page says the security program follows SOC 2 framework criteria, undergoes third-party assessments and annual penetration testing, uses AWS and Microsoft Azure, stores databases in AWS in the United States, encrypts at rest and in transit, and performs access reviews and vendor risk management."
+    evidence_summary: "Security page lists major security-control categories."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-011"]
+    quoted_evidence:
+      - source_id: "SRC-011"
+        quote: "Information Security Program follows the criteria set forth by the SOC 2 Framework... independent third-party assessments... independent third-party penetration at least annually... hosted with Amazon Web Services (AWS) and Microsoft Azure... data is hosted on AWS databases... located in the United States."
+        location: "Eve security page"
+    analyst_interpretation: "Control categories are meaningful, but audit artifacts and incident history are missing."
+    limitations: "No SOC report, certificate, penetration-test executive summary, incident register, or subprocessor list."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.G"
+      founder_claim_ids: ["FC-004"]
+      table_ids: ["T-007", "T-009", "T-017"]
+      figure_ids: ["F-003", "F-010", "F-011"]
+      risk_ids: ["R-005", "R-010"]
+  - evidence_claim_id: "EC-010"
+    claim: "The Butler Labs SLA commits to 99.5% monthly uptime and excludes non-GA features, custom integrations, customer or third-party issues, factors outside Eve's control, and cloud or integrated-app outages."
+    evidence_summary: "SLA page discloses availability commitment, exclusions, and service-credit mechanics."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-012"]
+    quoted_evidence:
+      - source_id: "SRC-012"
+        quote: "Eve will meet or exceed 99.5% uptime availability... excluded... Features which are not under published general availability... custom integrations... cloud provider or integrated application provider unavailability or outage events."
+        location: "Butler Labs SLA"
+    analyst_interpretation: "SLA terms are public; actual uptime performance and credits are private."
+    limitations: "No incident history, credit history, or customer impact analysis."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.F"
+      founder_claim_ids: ["FC-004"]
+      table_ids: ["T-007", "T-017"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-010"]
+  - evidence_claim_id: "EC-011"
+    claim: "The MSA states Eve output and services do not constitute legal advice, must be used with licensed legal professional oversight, and all output is draft and not final."
+    evidence_summary: "MSA customer warranty allocates professional responsibility to the customer."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: ["SRC-012"]
+    quoted_evidence:
+      - source_id: "SRC-012"
+        quote: "CUSTOMER... SHALL NOT USE THE SERVICE, OUTPUT, OR ANY PROFESSIONAL SERVICES... AS A SUBSTITUTE FOR LEGAL SERVICES OR LEGAL ADVICE... ONLY TO BE USED WITH THE OVERSIGHT OF LICENSED LEGAL PROFESSIONALS... ALL OUTPUT IS PROVIDED IN DRAFT AND NOT FINAL FORM."
+        location: "Eve MSA section 9.4"
+    analyst_interpretation: "This is central to legal AI risk: the product must be controlled and reviewed by attorneys."
+    limitations: "Does not prove customers actually implement review controls."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.F"
+      founder_claim_ids: []
+      table_ids: ["T-005", "T-009", "T-017"]
+      figure_ids: ["F-003", "F-011"]
+      risk_ids: ["R-003", "R-007"]
+  - evidence_claim_id: "EC-012"
+    claim: "The MSA discloses security safeguards, warranty limits, IP indemnity contours, liability cap, termination for cause, and a 30-day post-termination customer-data retrieval period."
+    evidence_summary: "MSA provisions define material contract and liability terms."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-012"]
+    quoted_evidence:
+      - source_id: "SRC-012"
+        quote: "commercially reasonable administrative, physical and technical safeguards... liability... exceed the total fees paid... for the twelve (12) month period... thirty (30) days after such termination or expiration... limited access to retrieve any Customer Data."
+        location: "Eve MSA sections 8, 11, and 12"
+    analyst_interpretation: "Public contract forms are useful, but negotiated deviations and insurance coverage are private."
+    limitations: "No customer order forms, DPAs, or negotiated amendments reviewed."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.F"
+      founder_claim_ids: []
+      table_ids: ["T-017"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-003", "R-004", "R-010"]
+  - evidence_claim_id: "EC-013"
+    claim: "Eve privacy materials disclose personal-data uses for service delivery, support, improvement, personalization, marketing, cookies, advertising/retention.com opt-out, legal compliance, and dispute resolution, and include legacy Butler Labs wording."
+    evidence_summary: "Privacy page describes purposes, tracking tools, opt-out, and legacy Butler Labs terms content."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-013"]
+    quoted_evidence:
+      - source_id: "SRC-013"
+        quote: "Providing, Customizing and Improving the Services... Marketing the Services... Tracking Tools, Advertising, and Opt-Out... Butler Labs takes the privacy of its users very seriously."
+        location: "Eve privacy page"
+    analyst_interpretation: "Privacy disclosures surface data-use and brand/legal consistency risks."
+    limitations: "No DPA, subprocessor list, DPIA, incident register, or privacy counsel memo reviewed."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.G"
+      founder_claim_ids: []
+      table_ids: ["T-017"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-005"]
+  - evidence_claim_id: "EC-014"
+    claim: "Eve customer-story and product pages publish customer outcome metrics such as 20% intake capacity increase, 2-3x attorney capacity increase, 15% faster case resolution, and complaint drafting from 5 hours to 1 hour."
+    evidence_summary: "Customer story and product pages show testimonial metrics."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "low"
+    source_ids: ["SRC-015", "SRC-009", "SRC-010"]
+    quoted_evidence:
+      - source_id: "SRC-015"
+        quote: "We've seen a 20% increase in case intake capacity without increasing our staff."
+        location: "Eve case intake page/customer testimonial excerpt"
+      - source_id: "SRC-009"
+        quote: "2-3x Attorney capacity increase... 15% faster Case resolution time."
+        location: "Eve AI Agents page"
+    analyst_interpretation: "Useful reference leads, not independent KPI proof."
+    limitations: "No baseline, methodology, customer contract, or independent reference call."
+    associations:
+      chapter_id: "III"
+      section_id: "III.A"
+      founder_claim_ids: ["FC-005"]
+      table_ids: ["T-009", "T-010", "T-011"]
+      figure_ids: ["F-006"]
+      risk_ids: ["R-002", "R-007", "R-008"]
+  - evidence_claim_id: "EC-015"
+    claim: "Law360 identifies EvenUp, Inc. v. Butler Labs, Inc., case number 4:25-cv-08199, in the Northern District of California, with nature of suit Defend Trade Secrets Act and judge Yvonne Gonzalez Rogers."
+    evidence_summary: "Law360 case page provides docket metadata."
+    evidence_type: "legal_record"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-020"]
+    quoted_evidence:
+      - source_id: "SRC-020"
+        quote: "EvenUp, Inc. v. Butler Labs, Inc... Case Number: 4:25-cv-08199... Court: California Northern... Nature of Suit: Defend Trade Secrets Act... Judge: Yvonne Gonzalez Rogers."
+        location: "Law360 case page"
+    analyst_interpretation: "This is a material litigation signal requiring legal review; it does not establish liability."
+    limitations: "Full docket documents and pleadings were not reviewed."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.A"
+      founder_claim_ids: []
+      table_ids: ["T-016"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-004"]
+  - evidence_claim_id: "EC-016"
+    claim: "Competitor pages for EvenUp, Harvey, and Spellbook show overlapping legal AI capabilities across plaintiff-law workflows, legal work agents, litigation, document analysis, drafting, and contract review."
+    evidence_summary: "Public competitor pages disclose product menus and positioning."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-017", "SRC-018", "SRC-019"]
+    quoted_evidence:
+      - source_id: "SRC-018"
+        quote: "Leading AI for Personal Injury Lawyers... Intake... Treatment... Demands... Negotiation... Discovery... Trial... AI Drafting... Communication Agents."
+        location: "EvenUp homepage"
+      - source_id: "SRC-017"
+        quote: "AI software for legal and professional services... Assistant... Vault... Knowledge... Workflow Agents... Litigation."
+        location: "Harvey homepage"
+      - source_id: "SRC-019"
+        quote: "Legal AI for Contracts... Review, automate workflows and surface insights from your deal history."
+        location: "Spellbook homepage"
+    analyst_interpretation: "Competition is intense and overlaps both direct plaintiff-law workflows and adjacent legal AI budgets."
+    limitations: "No price, market share, win/loss, performance benchmark, or customer-switching data."
+    associations:
+      chapter_id: "IV"
+      section_id: "IV.A"
+      founder_claim_ids: []
+      table_ids: ["T-008", "T-009"]
+      figure_ids: ["F-005", "F-011"]
+      risk_ids: ["R-006"]
+  - evidence_claim_id: "EC-017"
+    claim: "Eve careers materials describe a growing team, small fast-moving pods, client-feedback loops, employee testimonials, and benefits including competitive salary, meaningful equity, 401(k) match, insurance, commuter benefits, office stipend, and flexible time off."
+    evidence_summary: "Careers page contains team and benefit statements."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: ["SRC-006"]
+    quoted_evidence:
+      - source_id: "SRC-006"
+        quote: "Our team is growing... small, fast moving pods of engineers and designers... Competitive Salary & Equity... 401(k) + Company Match... Health, Dental, Vision & Life."
+        location: "Eve careers page"
+    analyst_interpretation: "Useful cultural and hiring signal; not a substitute for HR diligence."
+    limitations: "No headcount, compensation bands, attrition, or option ledger."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.B"
+      founder_claim_ids: []
+      table_ids: ["T-012", "T-013", "T-015"]
+      figure_ids: ["F-009", "F-011"]
+      risk_ids: ["R-009"]
+  - evidence_claim_id: "EC-018"
+    claim: "The MSA says rates are disclosed in applicable orders, overages are billed separately, invoices are generally due within 30 days, and renewal fees increase 7.5% unless the order states otherwise."
+    evidence_summary: "MSA fees section describes pricing mechanics."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: ["SRC-012"]
+    quoted_evidence:
+      - source_id: "SRC-012"
+        quote: "The rates applicable for the Service are disclosed in the applicable Order... fees for overuse... invoiced separately... due and payable within thirty (30) days... renewal... increase by seven and a half percent (7.5%)."
+        location: "Eve MSA section 4"
+    analyst_interpretation: "Pricing mechanics are visible, but actual pricing and discounting are private."
+    limitations: "No order forms, billing exports, discounts, or renewal outcomes."
+    associations:
+      chapter_id: "I"
+      section_id: "I.D"
+      founder_claim_ids: []
+      table_ids: ["T-005", "T-017"]
+      figure_ids: []
+      risk_ids: ["R-008", "R-010"]
+  - evidence_claim_id: "EC-019"
+    claim: "Core financial, customer, personnel, legal, security, and GTM data required for diligence are not publicly available in the sources reviewed."
+    evidence_summary: "Public research did not locate audited financials, ARR, margin, cash, debt, burn, cap table, churn, NRR, CAC, sales productivity, headcount, attrition, insurance policies, SOC reports, or full legal docket documents."
+    evidence_type: "analyst_estimate"
+    verification_status: "not_publicly_verifiable"
+    confidence: "high"
+    source_ids: ["SRC-019"]
+    quoted_evidence:
+      - source_id: "SRC-019"
+        quote: "No public source found in this run disclosed the requested private data-room materials."
+        location: "Analyst synthesis of public-source review"
+    analyst_interpretation: "This is the main diligence blocker and should be resolved before valuation underwriting."
+    limitations: "Absence in accessible public sources is not proof that the information does not exist privately."
+    associations:
+      chapter_id: "I"
+      section_id: "I.A"
+      founder_claim_ids: []
+      table_ids: ["T-003", "T-011", "T-014", "T-015", "T-016"]
+      figure_ids: ["F-002", "F-008", "F-009", "F-011"]
+      risk_ids: ["R-001", "R-002", "R-008", "R-009"]
+  - evidence_claim_id: "EC-020"
+    claim: "DuckDuckGo search snippets identify EvenUp v. Butler Labs as filed on 2025-09-26 in N.D. Cal. with open status, and include snippets referencing allegations and a motion to dismiss; these snippets require docket confirmation."
+    evidence_summary: "Search result snippets from Justia, UniCourt, Law360, and PACER Monitor identify the case and selected docket snippets."
+    evidence_type: "legal_record"
+    verification_status: "partially_verified"
+    confidence: "low"
+    source_ids: ["SRC-021"]
+    quoted_evidence:
+      - source_id: "SRC-021"
+        quote: "On 09/26/2025 EvenUp, Inc filed a Civil lawsuit against Butler Labs, Inc... case status is Open."
+        location: "DuckDuckGo snippet for UniCourt"
+      - source_id: "SRC-021"
+        quote: "EvenUp makes allegations that Butler acquired trade secrets materials of EvenUp."
+        location: "DuckDuckGo snippet for PACER Monitor PDF"
+    analyst_interpretation: "Search snippets are useful triage leads but not a substitute for docket documents or counsel analysis."
+    limitations: "Underlying documents were not fetched through authenticated docket systems; allegations are not adjudicated facts."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.A"
+      founder_claim_ids: []
+      table_ids: ["T-016", "T-017"]
+      figure_ids: ["F-010", "F-011"]
+      risk_ids: ["R-004"]
+
+sources:
+  - source_id: "SRC-001"
+    title: "The Complete List Of Unicorn Companies"
+    url: "https://www.cbinsights.com/research-unicorn-companies"
+    publisher: "CB Insights"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "market_database"
+    reliability_notes: "Reputable market database useful for candidate selection; list entries are not a substitute for financing documents."
+    archive_url: null
+  - source_id: "SRC-002"
+    title: "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+    url: "https://www.prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html"
+    publisher: "PRNewswire"
+    author: "Eve"
+    publication_date: "2025-09-30"
+    accessed_date: "2026-05-15"
+    source_type: "independent_news"
+    reliability_notes: "Syndicated company release; reliable for the announcement language but company-provided for traction claims."
+    archive_url: null
+  - source_id: "SRC-003"
+    title: "Eve, AI-Driven Platform for Plaintiff-Side Law Firms, Raises $103 Million in Series B Round"
+    url: "https://www.lawnext.com/2025/09/eve-ai-driven-platform-for-plaintiff-side-law-firms-raises-103-million-in-series-b-round.html"
+    publisher: "LawNext"
+    author: "Bob Ambrogi"
+    publication_date: "2025-09-30"
+    accessed_date: "2026-05-15"
+    source_type: "independent_news"
+    reliability_notes: "Independent legal-tech journalist article that repeats financing and traction details and references the January Series A."
+    archive_url: null
+  - source_id: "SRC-004"
+    title: "Eve homepage"
+    url: "https://www.eve.legal/"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary marketing source; use for positioning and claims, not independent validation."
+    archive_url: null
+  - source_id: "SRC-005"
+    title: "Eve company and founders page"
+    url: "https://www.eve.legal/company"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary source for founder biographies; requires reference and background validation."
+    archive_url: null
+  - source_id: "SRC-006"
+    title: "Legal AI Careers | Join Eve's Team"
+    url: "https://www.eve.legal/careers"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary source for hiring, culture, total raised, investor logos, and benefits statements."
+    archive_url: null
+  - source_id: "SRC-007"
+    title: "Case Intake and Evaluation"
+    url: "https://www.eve.legal/use-cases/case-intake-and-evaluation"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary product page; product performance requires validation."
+    archive_url: null
+  - source_id: "SRC-008"
+    title: "Eve 2.0"
+    url: "https://www.eve.legal/eve-2"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary product/roadmap source."
+    archive_url: null
+  - source_id: "SRC-009"
+    title: "AI Agents for Plaintiff Law"
+    url: "https://www.eve.legal/use-cases/ai-agents-for-plaintiff-law"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary product page with testimonial metrics; not independently validated."
+    archive_url: null
+  - source_id: "SRC-010"
+    title: "AI Auditor for Plaintiff Law"
+    url: "https://www.eve.legal/use-cases/ai-auditor-for-plaintiff-law"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary product page with testimonial metrics; not independently validated."
+    archive_url: null
+  - source_id: "SRC-011"
+    title: "Security and Compliance"
+    url: "https://www.eve.legal/security"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Control-description page; no audit report or technical evidence attached."
+    archive_url: null
+  - source_id: "SRC-012"
+    title: "Butler Labs, Inc. Master Services Agreement and SLA"
+    url: "https://www.eve.legal/msa"
+    publisher: "Eve / Butler Labs, Inc."
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Public contract terms; actual order forms and negotiated deviations are private."
+    archive_url: null
+  - source_id: "SRC-013"
+    title: "Eve Privacy Policy"
+    url: "https://www.eve.legal/privacy"
+    publisher: "Eve / Butler Labs, Inc."
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Primary privacy disclosure; requires DPA, subprocessor, and incident validation."
+    archive_url: null
+  - source_id: "SRC-014"
+    title: "Eve customer stories"
+    url: "https://www.eve.legal/customer-stories"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Company-published customer-story page; some scraped content included stale or placeholder-like widgets and should be used cautiously."
+    archive_url: null
+  - source_id: "SRC-015"
+    title: "Eve product and customer metric pages"
+    url: "https://www.eve.legal/use-cases"
+    publisher: "Eve"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Aggregate reference to fetched Eve case intake, AI Agents, and Auditor pages containing customer outcome claims."
+    archive_url: null
+  - source_id: "SRC-016"
+    title: "EvenUp homepage"
+    url: "https://www.evenuplaw.com/"
+    publisher: "EvenUp"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor-owned source; useful for product overlap, not market share."
+    archive_url: null
+  - source_id: "SRC-017"
+    title: "Harvey homepage"
+    url: "https://www.harvey.ai/"
+    publisher: "Harvey"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor-owned source; useful for legal AI positioning."
+    archive_url: null
+  - source_id: "SRC-018"
+    title: "EvenUp direct competitor product source"
+    url: "https://www.evenuplaw.com/"
+    publisher: "EvenUp"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "primary_company_source"
+    reliability_notes: "Duplicate competitor source used for direct plaintiff-law feature overlap in exhibits."
+    archive_url: null
+  - source_id: "SRC-019"
+    title: "Spellbook homepage and analyst gap synthesis"
+    url: "https://www.spellbook.legal/"
+    publisher: "Spellbook / analyst synthesis"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "other"
+    reliability_notes: "Competitor-owned page for Spellbook plus analyst notation for information not found in public sources."
+    archive_url: null
+  - source_id: "SRC-020"
+    title: "EvenUp, Inc. v. Butler Labs, Inc."
+    url: "https://www.law360.com/cases/68d6f2078c5d3a8f4bc4c812"
+    publisher: "Law360"
+    author: null
+    publication_date: "2025-09-26"
+    accessed_date: "2026-05-15"
+    source_type: "legal_record"
+    reliability_notes: "Accessible Law360 case metadata; full docket documents and pleadings require counsel review."
+    archive_url: null
+  - source_id: "SRC-021"
+    title: "DuckDuckGo search results for Butler Labs Eve legal lawsuit"
+    url: "https://html.duckduckgo.com/html/?q=%22Butler+Labs%22+Eve+legal+lawsuit"
+    publisher: "DuckDuckGo"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "legal_record"
+    reliability_notes: "Search snippets only; useful for triage, not sufficient to establish allegations or status without docket review."
+    archive_url: null
+  - source_id: "SRC-022"
+    title: "DuckDuckGo search results for Butler Labs Eve trademark legal AI"
+    url: "https://html.duckduckgo.com/html/?q=%22Butler+Labs%22+Eve+trademark+legal+AI"
+    publisher: "DuckDuckGo"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-15"
+    source_type: "patent_or_trademark_record"
+    reliability_notes: "Search snippets only; direct trademark register verification remains a gap."
+    archive_url: null
+
+risk_register:
+  - risk_id: "R-001"
+    risk_title: "Financial quality and runway not publicly verifiable"
+    risk_category: "financial"
+    severity: "high"
+    likelihood: "high"
+    description: "Revenue, ARR, gross margin, cash, debt, burn, runway, forecast, and cap-table economics are not public, making valuation underwriting impossible from public evidence alone."
+    impacted_chapter_ids: ["I", "V", "VII"]
+    impacted_section_ids: ["I.A", "I.B", "I.C", "I.D", "V.E", "VII.E"]
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-019"]
+    mitigation_or_diligence_request: "Request audited financials, monthly management accounts, bank statements, debt schedules, cap table, financing documents, and board plan."
+  - risk_id: "R-002"
+    risk_title: "Customer and traction metrics require validation"
+    risk_category: "customer"
+    severity: "high"
+    likelihood: "medium"
+    description: "Customer counts, case volumes, recoveries, and customer-story metrics are company-published and count definitions differ by source."
+    impacted_chapter_ids: ["III", "V"]
+    impacted_section_ids: ["III.A", "III.C", "III.D", "V.B"]
+    evidence_claim_ids: ["EC-004", "EC-005", "EC-014"]
+    mitigation_or_diligence_request: "Request active paid customer cohorts, logo permissions, case-count methodology, recovery attribution, customer references, churn, NRR, and concentration."
+  - risk_id: "R-003"
+    risk_title: "Legal AI professional-responsibility exposure"
+    risk_category: "regulatory_legal"
+    severity: "high"
+    likelihood: "high"
+    description: "Eve's MSA states output is draft and not legal advice, requiring licensed legal professional oversight; any failure of controls may create ethics, UPL, privilege, confidentiality, or malpractice-adjacent issues."
+    impacted_chapter_ids: ["II", "VIII"]
+    impacted_section_ids: ["II.A", "VIII.E", "VIII.F", "VIII.G"]
+    evidence_claim_ids: ["EC-011", "EC-012"]
+    mitigation_or_diligence_request: "Review customer training, attorney-supervision workflows, audit logs, privilege/confidentiality controls, bar-ethics analysis, and error-remediation processes."
+  - risk_id: "R-004"
+    risk_title: "Pending competitor litigation and IP risk"
+    risk_category: "legal"
+    severity: "high"
+    likelihood: "medium"
+    description: "Public legal/search sources identify EvenUp v. Butler Labs, Inc. and snippets referencing trade-secret allegations; docket-level legal analysis is required."
+    impacted_chapter_ids: ["IV", "VIII"]
+    impacted_section_ids: ["IV.A", "VIII.A", "VIII.D", "VIII.E"]
+    evidence_claim_ids: ["EC-015", "EC-020"]
+    mitigation_or_diligence_request: "Obtain counsel memo, docket documents, pleadings, orders, litigation budget, insurance coverage, board updates, and product/IP impact analysis."
+  - risk_id: "R-005"
+    risk_title: "Sensitive legal, medical, and client data exposure"
+    risk_category: "privacy_security"
+    severity: "high"
+    likelihood: "medium"
+    description: "Plaintiff-law workflows may process sensitive legal, client, health, communications, and litigation data; public controls are not enough without audit artifacts."
+    impacted_chapter_ids: ["III", "VIII"]
+    impacted_section_ids: ["III.E", "VIII.G"]
+    evidence_claim_ids: ["EC-009", "EC-013"]
+    mitigation_or_diligence_request: "Request SOC 2 report, pen-test summary, incident register, data maps, DPAs, subprocessors, DPIAs, retention/deletion evidence, and security questionnaires."
+  - risk_id: "R-006"
+    risk_title: "Competitive intensity in legal AI"
+    risk_category: "market"
+    severity: "medium"
+    likelihood: "high"
+    description: "EvenUp, Harvey, Spellbook, and broader legal tech incumbents create overlapping AI workflow alternatives."
+    impacted_chapter_ids: ["IV", "V"]
+    impacted_section_ids: ["IV.A", "V.A", "V.C"]
+    evidence_claim_ids: ["EC-016"]
+    mitigation_or_diligence_request: "Review win/loss data, pricing comparisons, feature benchmarks, model performance tests, customer switching evidence, and market share."
+  - risk_id: "R-007"
+    risk_title: "Product quality, accuracy, and agentic workflow control"
+    risk_category: "product"
+    severity: "medium"
+    likelihood: "high"
+    description: "Broad product scope and agentic legal workflows require model evaluation, human review, error handling, and workflow guardrails that are not public."
+    impacted_chapter_ids: ["II", "VI"]
+    impacted_section_ids: ["II.A", "VI.B"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-011"]
+    mitigation_or_diligence_request: "Request model evaluations, QA benchmarks, failed-output logs, human-review process, red-team reports, roadmap stage gates, and support escalations."
+  - risk_id: "R-008"
+    risk_title: "GTM efficiency and implementation burden unknown"
+    risk_category: "commercial"
+    severity: "medium"
+    likelihood: "unknown"
+    description: "CAC, payback, funnel conversion, sales productivity, services margin, and implementation hours are not public despite rapid customer-growth claims."
+    impacted_chapter_ids: ["I", "V"]
+    impacted_section_ids: ["I.D", "V.A", "V.C", "V.D", "V.E"]
+    evidence_claim_ids: ["EC-018", "EC-019"]
+    mitigation_or_diligence_request: "Request CRM funnel, CAC/payback, sales headcount, quota attainment, implementation staffing, services margin, and renewal cohorts."
+  - risk_id: "R-009"
+    risk_title: "Team scaling, retention, and leadership depth"
+    risk_category: "people"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Founder biographies and careers materials are public, but headcount, attrition, executive bench, compensation, and option-plan details are not."
+    impacted_chapter_ids: ["VI", "VII"]
+    impacted_section_ids: ["VI.A", "VII.A", "VII.B", "VII.C", "VII.D", "VII.E", "VII.F", "VII.G"]
+    evidence_claim_ids: ["EC-008", "EC-017", "EC-019"]
+    mitigation_or_diligence_request: "Request HRIS export, org chart, hiring plan, attrition, compensation bands, option ledger, references, employment agreements, and employee-relations schedule."
+  - risk_id: "R-010"
+    risk_title: "Contract, SLA, and vendor dependency"
+    risk_category: "operational"
+    severity: "medium"
+    likelihood: "medium"
+    description: "SLA exclusions, cloud dependencies, order-based pricing, liability caps, and private order-form deviations can materially affect customer obligations and risk allocation."
+    impacted_chapter_ids: ["III", "VIII"]
+    impacted_section_ids: ["III.E", "VIII.F"]
+    evidence_claim_ids: ["EC-009", "EC-010", "EC-012", "EC-018"]
+    mitigation_or_diligence_request: "Review material contracts, negotiated deviations, vendor MSAs, cloud SLAs, uptime history, SLA credits, DPAs, and change-of-control provisions."
+
+diligence_gaps:
+  - gap_id: "G-001"
+    chapter_id: "I"
+    section_id: "I.A"
+    missing_information: "Audited financials, monthly management accounts, revenue, ARR, gross margin, contribution margin, cash, debt, burn, runway, and forecast."
+    why_it_matters: "Core financial quality and valuation cannot be underwritten without these records."
+    suggested_source_or_request: "Data room, auditor package, board plan, bank statements, debt schedules, and billing exports."
+    priority: "high"
+  - gap_id: "G-002"
+    chapter_id: "I"
+    section_id: "I.C"
+    missing_information: "Fully diluted cap table, option ledger, financing documents, preference stack, board rights, investor consents, debt, SAFEs, notes, and secondary transactions."
+    why_it_matters: "Public valuation may not reflect common-equity economics or control rights."
+    suggested_source_or_request: "Cap-table export, charter, investor rights agreement, side letters, option plan, and board consents."
+    priority: "high"
+  - gap_id: "G-003"
+    chapter_id: "III"
+    section_id: "III.A"
+    missing_information: "Active paid customer definition, customer cohort data, customer-count reconciliation, logo permissions, case-count methodology, recovery attribution, churn, NRR, and concentration."
+    why_it_matters: "Public traction metrics drive valuation but are not independently validated."
+    suggested_source_or_request: "CRM, billing data, product analytics, customer reference calls, and customer success records."
+    priority: "high"
+  - gap_id: "G-004"
+    chapter_id: "II"
+    section_id: "II.A"
+    missing_information: "Model evaluations, accuracy metrics, human-review controls, failed-output logs, integration list, incident backlog, and product adoption by module."
+    why_it_matters: "Legal AI reliability and attorney oversight determine adoption and liability risk."
+    suggested_source_or_request: "Product analytics, QA reports, model cards, evaluation datasets, customer training, and support tickets."
+    priority: "high"
+  - gap_id: "G-005"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    missing_information: "Full docket, pleadings, orders, motion practice, discovery plan, counsel memo, insurance notice, litigation budget, and board updates for EvenUp v. Butler Labs."
+    why_it_matters: "The litigation signal could affect IP, product roadmap, customer confidence, insurance, and valuation."
+    suggested_source_or_request: "Outside counsel litigation schedule and docket package."
+    priority: "high"
+  - gap_id: "G-006"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    missing_information: "SOC report, penetration-test summary, incident register, subprocessor list, DPAs, data maps, DPIAs, privacy assessments, and AI governance policy."
+    why_it_matters: "Sensitive legal/client data workflows require stronger assurance than public policy pages."
+    suggested_source_or_request: "Security data room, privacy counsel memo, vendor-management files, and customer security questionnaires."
+    priority: "high"
+  - gap_id: "G-007"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    missing_information: "Win/loss analysis, competitor benchmarks, pricing comparisons, market share, model-performance comparisons, and switching-cost evidence."
+    why_it_matters: "The legal AI market is crowded and direct plaintiff-law competition is visible."
+    suggested_source_or_request: "CRM win/loss, customer references, pricing benchmark, market study, and product demos."
+    priority: "medium"
+  - gap_id: "G-008"
+    chapter_id: "V"
+    section_id: "V.D"
+    missing_information: "CAC, payback, funnel conversion, sales productivity, quota attainment, implementation hours, services margin, and marketing spend."
+    why_it_matters: "Rapid customer growth may be inefficient or services-heavy."
+    suggested_source_or_request: "CRM, billing data, sales compensation plan, marketing attribution, and services utilization records."
+    priority: "high"
+  - gap_id: "G-009"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    missing_information: "Headcount by function/location, attrition, compensation bands, option grants, employee relations, contractor usage, and hiring plan."
+    why_it_matters: "Scaling legal AI requires technical, legal, security, and customer-success capacity."
+    suggested_source_or_request: "HRIS export, option ledger, recruiting plan, employee-relations schedule, and references."
+    priority: "medium"
+  - gap_id: "G-010"
+    chapter_id: "VIII"
+    section_id: "VIII.F"
+    missing_information: "Top customer order forms, negotiated deviations, DPAs, vendor contracts, model-provider terms, SLA credit history, and change-of-control clauses."
+    why_it_matters: "Public terms may differ from material contract obligations and risk allocation."
+    suggested_source_or_request: "Material contract index and counsel review."
+    priority: "high"
+
+follow_up_requests:
+  - request_id: "Q-001"
+    chapter_id: "I"
+    section_id: "I.A"
+    request: "Provide audited FY2023-FY2026 financial statements, monthly management accounts, revenue/ARR bridge, gross margin, contribution margin, cash, debt, burn, runway, and board-approved forecast."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-002"
+    chapter_id: "I"
+    section_id: "I.C"
+    request: "Provide current fully diluted cap table, option ledger, financing documents, preference waterfall, investor rights, side letters, board consents, and any debt/SAFE/note/secondary transactions."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-003"
+    chapter_id: "III"
+    section_id: "III.A"
+    request: "Provide top customer schedule, active paid customer definition, revenue concentration, churn/NRR cohorts, case-count methodology, recovery attribution methodology, logo permissions, and reference-call availability."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-004"
+    chapter_id: "II"
+    section_id: "II.A"
+    request: "Provide product analytics by module, accuracy benchmarks, model evaluations, failed-output logs, customer training, attorney-review workflow, integration list, and incident/support history."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-005"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    request: "Provide counsel memo, docket, pleadings, orders, motion practice, discovery plan, litigation budget, insurance notices, and board updates for EvenUp v. Butler Labs."
+    requested_from: "counsel"
+    priority: "high"
+  - request_id: "Q-006"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    request: "Provide SOC 2 report, penetration-test executive summaries, vulnerability remediation logs, incident register, subprocessor list, DPAs, DPIAs, data maps, AI governance policy, and privacy counsel memo."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-007"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    request: "Provide win/loss analysis, competitive pricing benchmark, feature comparison, customer switching analysis, market-share estimate, and competitive threat memo."
+    requested_from: "company"
+    priority: "medium"
+  - request_id: "Q-008"
+    chapter_id: "V"
+    section_id: "V.D"
+    request: "Provide CRM funnel, CAC/payback, demo conversion, win rate, average sales cycle, quota attainment, sales headcount, implementation hours, and services margin."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-009"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    request: "Provide HRIS export, org chart, board roster, executive team, headcount by function/location, hiring plan, compensation bands, option grants, attrition, and employee-relations matters."
+    requested_from: "company"
+    priority: "medium"
+  - request_id: "Q-010"
+    chapter_id: "VIII"
+    section_id: "VIII.F"
+    request: "Provide material contract index, top customer order forms, DPAs, vendor MSAs, model-provider terms, negotiated deviations, SLA credits, and change-of-control analysis."
+    requested_from: "company"
+    priority: "high"
+
+limitations:
+  - limitation_id: "L-001"
+    description: "This report is based only on public sources accessible during an autonomous run; no management interview, founder response, private data room, customer reference, counsel memo, security report, or financial model was available."
+    affected_chapter_ids: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"]
+    affected_section_ids: ["I.A", "I.B", "I.C", "I.D", "II.A", "III.A", "III.B", "III.C", "III.D", "III.E", "IV.A", "V.A", "V.B", "V.C", "V.D", "V.E", "VI.A", "VI.B", "VII.A", "VII.B", "VII.C", "VII.D", "VII.E", "VII.F", "VII.G", "VIII.A", "VIII.B", "VIII.C", "VIII.D", "VIII.E", "VIII.F", "VIII.G"]
+  - limitation_id: "L-002"
+    description: "Company-published product, customer, security, privacy, and outcome claims are treated as useful evidence but not independent validation unless corroborated by third-party sources."
+    affected_chapter_ids: ["II", "III", "V", "VI", "VII", "VIII"]
+    affected_section_ids: ["II.A", "III.A", "III.B", "III.E", "V.A", "V.B", "V.C", "VI.A", "VI.B", "VII.B", "VIII.F", "VIII.G"]
+  - limitation_id: "L-003"
+    description: "Reuters returned an access block and Justia returned a security-verification page; neither was used as substantive evidence."
+    affected_chapter_ids: ["I", "VIII"]
+    affected_section_ids: ["I.B", "VIII.A"]
+  - limitation_id: "L-004"
+    description: "Law360 case metadata and DuckDuckGo snippets identify a material litigation signal, but full docket documents and pleadings were not reviewed; allegations are not presented as adjudicated facts."
+    affected_chapter_ids: ["VIII"]
+    affected_section_ids: ["VIII.A", "VIII.D", "VIII.E"]
+  - limitation_id: "L-005"
+    description: "No direct USPTO, patent, open-source, regulatory-enforcement, insurance, HR, or cap-table records were accessible in this run."
+    affected_chapter_ids: ["I", "VII", "VIII"]
+    affected_section_ids: ["I.C", "VII.B", "VII.E", "VIII.D", "VIII.E", "VIII.G"]
