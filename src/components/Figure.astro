@@ -166,6 +166,19 @@ if (figureType === 'timeline') {
     label: text(segment?.name),
     detail: text(segment?.description),
   }));
+  // Accept either numeric coordinates (e.g. 0–10) or qualitative buckets
+  // (very_low/low/medium/high/very_high) so reports written in either style render.
+  const axisValue = (value: unknown): number | null => {
+    const n = num(value);
+    if (n !== null) return n;
+    const key = String(value ?? '').trim().toLowerCase().replace(/[\s-]+/g, '_');
+    const bucket: Record<string, number> = {
+      very_low: 1, low: 3, medium_low: 4, mid_low: 4,
+      medium: 5, mid: 5, moderate: 5, neutral: 5,
+      medium_high: 7, mid_high: 7, high: 8, very_high: 9.5,
+    };
+    return key in bucket ? bucket[key] : null;
+  };
   payload = {
     type: 'market_map',
     xAxis: {
@@ -181,8 +194,8 @@ if (figureType === 'timeline') {
     segments,
     points: arr(spec?.entities)
       .map((entity: any) => {
-        const x = num(entity?.x_value);
-        const y = num(entity?.y_value);
+        const x = axisValue(entity?.x_value);
+        const y = axisValue(entity?.y_value);
         if (x === null || y === null) return null;
         const attrs = entity?.attributes ?? {};
         const detail = Object.entries(attrs)
