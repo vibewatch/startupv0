@@ -4,6 +4,12 @@ description: |
   cost, and posts one cost report on the linked pull request or an issue.
 
 on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Completed workflow run ID to inspect"
+        required: true
+        type: string
   workflow_run:
     workflows: ["Repo Status", "Weekly Research", "Random Unicorn Diligence Report"]
     types:
@@ -44,17 +50,15 @@ Calculate the cost of the triggering agent workflow run and report it once.
 ## Run Context
 
 - **Repository**: ${{ github.repository }}
-- **Run**: [#${{ github.event.workflow_run.run_number }}](${{ github.event.workflow_run.html_url }})
-- **Run ID**: ${{ github.event.workflow_run.id }}
-- **Conclusion**: ${{ github.event.workflow_run.conclusion }}
-- **Head SHA**: ${{ github.event.workflow_run.head_sha }}
+- **Target run ID**: ${{ github.event.workflow_run.id || inputs.run_id }}
+- **Trigger**: ${{ github.event_name }}
 
 ## 1. Fetch Logs
 
 Call `agentic-workflows` `logs` for only this run:
 
-- `after_run_id`: ${{ github.event.workflow_run.id }} - 1
-- `before_run_id`: ${{ github.event.workflow_run.id }} + 1
+- `after_run_id`: ${{ github.event.workflow_run.id || inputs.run_id }} - 1
+- `before_run_id`: ${{ github.event.workflow_run.id || inputs.run_id }} + 1
 - `count`: 1
 
 If there is no matching run or no downloaded log directory, exit silently.
@@ -64,13 +68,13 @@ If there is no matching run or no downloaded log directory, exit silently.
 Check this structured file first:
 
 ```text
-/tmp/gh-aw/aw-mcp/logs/run-${{ github.event.workflow_run.id }}/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+/tmp/gh-aw/aw-mcp/logs/run-${{ github.event.workflow_run.id || inputs.run_id }}/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
 ```
 
 If it is not there, search the downloaded run directory:
 
 ```sh
-find "/tmp/gh-aw/aw-mcp/logs/run-${{ github.event.workflow_run.id }}" \
+find "/tmp/gh-aw/aw-mcp/logs/run-${{ github.event.workflow_run.id || inputs.run_id }}" \
   \( -path '*/api-proxy-logs/token-usage.jsonl' -o -name 'token-usage.jsonl' -o -name 'agent_usage.json' \) \
   -type f -print
 ```
@@ -150,15 +154,21 @@ Total cost is the sum across models. Format as `$0.0123`; use `< $0.0001` below 
 
 ## 4. Post Report
 
-Read the workflow run `pull_requests` field. If linked to a PR, post one `add_comment`; otherwise create one issue.
+Read the matching workflow run's `pull_requests`, `run_number`, `html_url`, and `conclusion` fields. Set:
+
+- `$TARGET_RUN_LINK`: `[#RUN_NUMBER](HTML_URL)`, or `run TARGET_RUN_ID` if unavailable
+- `$RUN_LABEL`: `#RUN_NUMBER`, or `TARGET_RUN_ID` if unavailable
+- `$RUN_CONCLUSION`: the matching run conclusion, or `${{ github.event.workflow_run.conclusion || 'unknown' }}`
+
+If linked to a PR, post one `add_comment`; otherwise create one issue.
 
 ```markdown
 ## Agent run cost
 
 | | |
 |---|---|
-| **Run** | [#${{ github.event.workflow_run.run_number }}](${{ github.event.workflow_run.html_url }}) |
-| **Conclusion** | ${{ github.event.workflow_run.conclusion }} |
+| **Run** | $TARGET_RUN_LINK |
+| **Conclusion** | $RUN_CONCLUSION |
 | **Total cost** | $TOTAL_COST |
 
 <details>
@@ -176,7 +186,7 @@ Read the workflow run `pull_requests` field. If linked to a PR, post one `add_co
 Issue title when no PR is linked:
 
 ```text
-[cost-tracker] #${{ github.event.workflow_run.run_number }}: $TOTAL_COST
+[cost-tracker] $RUN_LABEL: $TOTAL_COST
 ```
 
 ## 5. Alert
@@ -184,7 +194,7 @@ Issue title when no PR is linked:
 If total cost exceeds `$1.00`, create a second issue titled:
 
 ```text
-[cost-tracker] High spend alert for run #${{ github.event.workflow_run.run_number }}: $TOTAL_COST
+[cost-tracker] High spend alert for run $RUN_LABEL: $TOTAL_COST
 ```
 
 ## Rules
