@@ -19,8 +19,6 @@ network:
     - defaults
     # Search & read-through fetch proxy
     - duckduckgo.com           # html.duckduckgo.com search endpoint
-    - r.jina.ai                # reader proxy: fetch arbitrary pages as text
-    - web.archive.org          # Wayback Machine snapshots + /wayback/available API
     - archive.org              # Internet Archive (covers wayback-api.archive.org)
     # Reference / lists
     - wikipedia.org
@@ -60,6 +58,35 @@ network:
     # Community signals
     - news.ycombinator.com
     - hn.algolia.com
+    # Additional diligence targets / source domains
+    - doctolib.com
+    - doctolib.fr
+    - clickhouse.com
+    - huggingface.co
+    - apple.com
+    - ltx.studio
+    - popularpays.com
+    - tech.eu
+    - justia.com
+    - businesswire.com
+    - lightricks.com
+    - pappers.fr
+    - prnewswire.com
+    - ashbyhq.com
+    - distyl.ai
+    - forgeglobal.com
+    - lsvp.com
+    - openai.com
+    - jina.ai
+    - brave.com
+    - uspto.gov
+    - uspto.report
+    - applyboard.com
+    - astronomer.io
+    - channeldive.com
+    - delltechnologiescapital.com
+    - ecosia.org
+    - globenewswire.com
 
 engine:
   id: copilot
