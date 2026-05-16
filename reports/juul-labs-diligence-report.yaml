@@ -1,0 +1,4381 @@
+report_metadata:
+  report_title: JUUL Labs Public-Source Startup Diligence Report
+  target_company: JUUL Labs
+  website: https://www.juul.com/
+  known_aliases:
+    - JUUL
+    - Juul Labs, Inc.
+    - Ploom
+    - Pax Labs spinout
+  sector: Regulated consumer products, electronic nicotine delivery systems, and tobacco harm-reduction alternatives
+  geography: United States, headquartered in San Francisco
+  company_stage: Late-stage private unicorn with material regulatory, litigation, and valuation overhang
+  research_date: 2026-05-15
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built the covered-report slug list from repository files and excluded existing diligence report slugs before selecting a new target.
+    - Fetched current public unicorn lists, normalized company names to slugs, removed covered slugs, built more than 30 uncovered candidates, and randomly selected JUUL Labs with shuf.
+    - Prioritized primary public evidence from JUUL-owned pages, FDA tobacco marketing-order records, FTC enforcement materials, Altria investor communications, and public patent/trademark records.
+    - Used secondary sources only for historical market share, settlement chronology, and leadership/founding context where primary records were unavailable or inaccessible.
+    - Treated private financials, customer concentration, supplier contracts, litigation dockets, and current cap-table information as evidence gaps rather than estimating them.
+  included_jurisdictions:
+    - United States
+  excluded_topics:
+    - Private audited financial statements, cash balances, revenue ledgers, board minutes, cap table, debt instruments, settlement agreements, and customer-level records were unavailable.
+    - No customer, supplier, investor, regulator, employee, plaintiff, defense-counsel, or management interviews were performed.
+    - Paywalled, CAPTCHA-protected, bot-blocked, or unavailable pages were not bypassed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-15
+      notes: The user asked for one random uncovered private unicorn diligence report and a draft pull request.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: JUUL Labs is a private unicorn on a current public unicorn list with a USD 12 billion listed valuation.
+    claim_source: CB Insights unicorn list
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-001
+      - EC-008
+    contradiction_summary: CB Insights lists JUUL Labs at USD 12 billion, but Altria reported only USD 250 million fair value for its minority economic investment before exchanging the stake in 2023.
+    diligence_follow_up:
+      - Request the current cap table, fully diluted share count, financing terms, preference stack, most recent 409A, and any secondary-transfer data to reconcile the stale public unicorn valuation.
+  - founder_claim_id: FC-002
+    claim_text: JUUL markets its product as an alternative for adult smokers and limits U.S. purchasing to age-verified adults.
+    claim_source: JUUL company and product-access pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - V
+    mapped_section_ids:
+      - II.A
+      - V.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request age-verification performance metrics, failed-verification rates, retailer compliance audits, chargeback/refund logs, and underage-access incident reporting.
+  - founder_claim_id: FC-003
+    claim_text: The FDA has authorized the JUUL System for U.S. sale after scientific review.
+    claim_source: JUUL regulatory-policy page and FDA tobacco-products marketing-order records
+    claim_date: 2025-07-17
+    mapped_chapter_ids:
+      - II
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VIII.G
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-020
+    contradiction_summary: The 2025 marketing granted orders materially improve the U.S. regulatory posture, but the same FDA record shows 2022 denials and 2024 rescission history, so the diligence focus should remain on order scope, conditions, and compliance.
+    diligence_follow_up:
+      - Obtain the complete marketing granted orders, post-market reporting obligations, product-change controls, warning letters if any, and PMTA correspondence history.
+  - founder_claim_id: FC-004
+    claim_text: JUUL has a substantial intellectual-property estate around devices, pods, charging accessories, and JUUL2 products.
+    claim_source: JUUL patent notice and Justia patent records
+    claim_date: null
+    mapped_chapter_ids:
+      - VI
+      - VIII
+    mapped_section_ids:
+      - VI.A
+      - VIII.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request the patent docket, freedom-to-operate opinions, ownership chain, inventor assignments, open oppositions, maintenance-fee status, and license encumbrances.
+  - founder_claim_id: FC-005
+    claim_text: Youth use of JUUL has fallen sharply since 2019.
+    claim_source: JUUL youth-prevention page citing the 2025 National Youth Tobacco Survey
+    claim_date: 2025-10-06
+    mapped_chapter_ids:
+      - V
+      - VIII
+    mapped_section_ids:
+      - V.C
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-012
+    contradiction_summary: The public page reports a 99% decrease in past-30-day JUUL use since 2019, but the reviewed record is company presentation of survey results rather than the underlying survey microdata or independent enforcement analysis.
+    diligence_follow_up:
+      - Request the underlying survey citations, brand-specific trend calculations, youth-prevention audits, retailer mystery-shop data, and regulator correspondence on youth access.
+  - founder_claim_id: FC-006
+    claim_text: JUUL's current revenue, profitability, cash runway, customer concentration, and settlement liabilities can be evaluated from public information.
+    claim_source: Analyst diligence request
+    claim_date: 2026-05-15
+    mapped_chapter_ids:
+      - I
+      - III
+      - VIII
+    mapped_section_ids:
+      - I.A
+      - III.A
+      - VIII.A
+    verification_status: not_publicly_verifiable
+    confidence: high
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-018
+    contradiction_summary: Public sources contain isolated historical revenue, valuation, settlement, and channel signals, but not audited financial statements, customer files, cash runway, or a complete legal-liability schedule.
+    diligence_follow_up:
+      - Request audited financials, management accounts, budget-to-actuals, cash runway model, settlement reserve roll-forward, customer/channel concentration, and payment waterfall.
+
+executive_summary:
+  overall_assessment: >-
+    JUUL Labs remains a private, highly regulated consumer-nicotine company with
+    meaningful product and IP assets, improved U.S. FDA authorization posture as
+    of 2025, and severe historical overhang from litigation, youth-use scrutiny,
+    and valuation deterioration. The public record supports operating continuity
+    and regulatory progress, but it does not support underwriting the CB Insights
+    USD 12 billion unicorn-list valuation without private cap-table, financial,
+    settlement, and order-condition diligence.
+  investment_or_diligence_thesis: >-
+    A viable diligence case depends on whether JUUL can convert FDA-authorized
+    U.S. products, age-gated distribution, and IP coverage into compliant,
+    cash-generative adult-smoker conversion while containing litigation reserves,
+    channel concentration, illicit-disposable competition, and reputational risk.
+  strongest_verified_claims:
+    - founder_claim_id: FC-002
+      summary: JUUL's public product pages and company pages consistently position the product for adult smokers and show age-gated U.S. purchasing mechanics.
+      evidence_claim_ids:
+        - EC-003
+        - EC-004
+    - founder_claim_id: FC-003
+      summary: FDA public marketing-order records list July 17, 2025 marketing granted orders for JUUL device and tobacco/menthol JUULpods.
+      evidence_claim_ids:
+        - EC-006
+        - EC-007
+    - founder_claim_id: FC-004
+      summary: Company patent notices and public patent records show a broad IP estate across devices, pods, charging accessories, and JUUL2 products.
+      evidence_claim_ids:
+        - EC-010
+        - EC-011
+  biggest_risks:
+    - risk_id: R-001
+      summary: Public valuation signals conflict sharply; CB Insights lists USD 12 billion while Altria marked its stake to USD 250 million before exchanging it for IP rights.
+    - risk_id: R-002
+      summary: FDA authorization improved the U.S. posture, but the order scope, product-change controls, post-market obligations, and enforcement sensitivity remain central diligence risks.
+    - risk_id: R-003
+      summary: Youth-marketing litigation, settlements, and reputational overhang can constrain distribution, brand trust, financing options, and strategic exits.
+  key_evidence_gaps:
+    - Current audited financial statements, cash runway, gross margin, contribution margin, settlement reserves, and revenue by channel are not publicly available.
+    - Current cap table, preference stack, debt, warrants, secondary transactions, and board/investor rights are not publicly available.
+    - Customer/channel concentration, retailer economics, distributor contracts, and age-verification performance data are not publicly available.
+    - Full litigation docket, settlement-payment schedule, insurance coverage, indemnities, and regulatory correspondence are not publicly available.
+  recommended_next_steps:
+    - Treat the CB Insights USD 12 billion valuation as a list marker, not an investable current mark, until reconciled against company records and financing terms.
+    - Make FDA marketing-order conditions, PMTA correspondence, post-market reporting, and product-change controls a red-flag review led by regulatory counsel.
+    - Require a settlement and litigation reserve schedule, including payment timing, covered claims, insurance recoveries, and covenants.
+    - Underwrite only after receiving channel economics, retailer concentration, age-gate metrics, and adult-smoker conversion cohorts.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: >-
+      Public financial evidence is dominated by historical valuation signals,
+      Altria's 2023 exit from its minority economic investment, and isolated
+      secondary-source operating metrics. Current revenue, profitability, cash
+      runway, debt, and settlement reserves are not publicly verifiable.
+    founder_claim_ids:
+      - FC-001
+      - FC-006
+    evidence_claim_ids:
+      - EC-001
+      - EC-008
+      - EC-014
+      - EC-018
+    risk_ids:
+      - R-001
+      - R-006
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+        summary: Public sources do not disclose JUUL's current audited financial statements, current revenue, gross margin, EBITDA, cash balance, debt, or settlement reserves.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Altria's 2023 statement provides an external valuation signal but not JUUL's full financial statements.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-001
+          - finding_id: I.A-F2
+            finding: Current revenue quality, profitability, cash runway, and settlement reserve adequacy require private company records.
+            evidence_claim_ids:
+              - EC-014
+              - EC-018
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Historical valuation declines may mask a down-round, restructuring, debt, or liquidation-preference overhang not visible in public sources.
+          - Settlement cash payments and legal fees could materially affect liquidity even if products remain authorized.
+        evidence_gaps:
+          - Audited financial statements and management accounts for the last three fiscal years.
+          - Cash, debt, off-balance-sheet obligations, settlement reserve roll-forward, and cash runway model.
+        follow_up_questions:
+          - What were revenue, gross margin, adjusted EBITDA, free cash flow, legal cash outflows, and cash balances by quarter for the last three years?
+          - What debt, warrants, settlement obligations, or covenant restrictions exist today?
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-014
+          - EC-018
+      - section_id: I.B
+        title: Revenue recognition, margins, and quality of earnings
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+        summary: Public materials show adult-smoker product access and online/retail channels, but not revenue-recognition policy, margins, returns, chargebacks, promotions, or channel gross-to-net adjustments.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Online Auto-Ship and retail-locator signals indicate recurring and retail distribution motions, but the economics by channel are undisclosed.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Promotional allowances, retailer chargebacks, settlement payments, and FDA compliance costs could make gross revenue a poor proxy for contribution margin.
+        evidence_gaps:
+          - Revenue-recognition memo, channel gross-to-net bridge, SKU margin, and return/refund history.
+        follow_up_questions:
+          - How much revenue is generated through direct online sales versus retail and wholesale channels, and what is contribution margin by channel?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+      - section_id: I.C
+        title: Financing history, valuation, and capital structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+        summary: CB Insights lists JUUL Labs as a USD 12 billion unicorn, but public Altria disclosures and secondary sources show a steep valuation reset from the implied 2018 Altria transaction value.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: CB Insights lists JUUL Labs at USD 12 billion and identifies Tiger Global Management as an investor in the public unicorn-list row.
+            evidence_claim_ids:
+              - EC-001
+            risk_ids:
+              - R-001
+          - finding_id: I.C-F2
+            finding: Altria said it exchanged its entire minority economic investment in JUUL for a non-exclusive heated-tobacco IP license and disclosed a USD 250 million carrying and fair value at year-end 2022.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Preference stack, liquidation preferences, anti-dilution, debt, warrants, and secondary-sale restrictions could dominate common-equity economics.
+        evidence_gaps:
+          - Current cap table, financing documents, investor rights, board consents, 409A reports, and secondary-transfer history.
+        follow_up_questions:
+          - What is the fully diluted capitalization and waterfall at plausible exit values after settlement liabilities and any debt?
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-008
+          - EC-013
+      - section_id: I.D
+        title: Forecasts, budgets, and operating plan
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+        summary: No public source reviewed provides a current board-approved forecast, budget, cash runway plan, or covenant model.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Regulatory authorization is a necessary operating-plan input, but public authorization evidence alone does not establish demand, margin, or runway.
+            evidence_claim_ids:
+              - EC-007
+              - EC-014
+            risk_ids:
+              - R-002
+              - R-006
+        hidden_risks:
+          - Forecasts may depend on restricted products, retail expansion, price increases, or litigation assumptions that are not evident in public sources.
+        evidence_gaps:
+          - Board-approved plan, monthly budget-to-actuals, scenario model, covenant model, and settlement payment schedule.
+        follow_up_questions:
+          - What operating plan is management using after the July 2025 FDA marketing granted orders, and what downside case assumes renewed enforcement or channel constraints?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-014
+
+  - chapter_id: II
+    title: Products
+    chapter_summary: >-
+      JUUL's public product evidence supports an age-gated vapor product for
+      adult smokers with FDA-authorized U.S. product scope. Product diligence
+      should center on exact authorized SKUs, product-change controls, toxicology
+      data, quality systems, and roadmap claims.
+    founder_claim_ids:
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-020
+    risk_ids:
+      - R-002
+      - R-004
+    sections:
+      - section_id: II.A
+        title: Product overview, SKU scope, and roadmap
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+        summary: Public pages describe the JUUL vaporizer/e-cigarette for adult smokers, online product access, Auto-Ship, and retail access, while FDA records show marketing granted orders for the device and specified tobacco and menthol JUULpods.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: FDA public records list July 17, 2025 marketing granted orders for the JUUL device, Virginia tobacco JUULpods, and menthol JUULpods.
+            evidence_claim_ids:
+              - EC-007
+            risk_ids:
+              - R-002
+          - finding_id: II.A-F2
+            finding: JUUL product-access pages show age-gated online account creation, Auto-Ship, online benefits, and a retail locator.
+            evidence_claim_ids:
+              - EC-004
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Product changes outside the scope of FDA orders may require new submissions or trigger enforcement.
+          - Roadmap claims around JUUL2 and future products are not equivalent to U.S. marketing authorization.
+        evidence_gaps:
+          - Full marketing-order letters, authorized labeling, post-market study obligations, adverse-event process, product-change protocols, and roadmap status.
+        follow_up_questions:
+          - Which exact device, pod, flavor, nicotine concentration, packaging, and labeling configurations are authorized for U.S. sale today?
+          - What product roadmap items depend on new FDA submissions?
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+          - EC-007
+          - EC-020
+      - section_id: II.B
+        title: Product performance, quality, and regulatory science
+        checklist_question_ids:
+          - II.B.1
+          - II.B.2
+        summary: FDA's 2022 denial record cited toxicological-data concerns, the 2024 update rescinded denials and returned applications to review, and the 2025 marketing-order list indicates subsequent authorization for specified products.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: II.B-F1
+            finding: The same FDA public record history contains denial, rescission, and authorization events, making the underlying toxicology and post-market compliance record a priority diligence area.
+            evidence_claim_ids:
+              - EC-005
+              - EC-006
+              - EC-007
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Public order listings do not reveal complete FDA conditions, study commitments, manufacturing quality findings, or adverse-event trends.
+        evidence_gaps:
+          - PMTA data package, toxicology studies, FDA deficiency letters, quality-system audit reports, complaint logs, and product recall history.
+        follow_up_questions:
+          - What deficiencies cited in 2022 were remediated, and what continuing obligations came with the 2025 marketing granted orders?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-007
+      - section_id: II.C
+        title: Product economics and pricing
+        checklist_question_ids:
+          - II.C.1
+          - II.C.2
+        summary: Public product pages support sales access and subscription-like Auto-Ship mechanics, but current SKU pricing, discounting, gross margin, and replenishment economics were not fully observable in the reviewed public sources.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.C-F1
+            finding: Auto-Ship indicates repeat-purchase mechanics, but churn, frequency, fulfillment cost, and promotional economics are not publicly verifiable.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Price compression from competitors, illicit disposables, taxes, and retailer margin demands could erode unit economics.
+        evidence_gaps:
+          - SKU price book, discounting policy, refill cadence, return rates, fulfillment cost, and margin by channel.
+        follow_up_questions:
+          - What is net revenue per adult purchaser, by product and channel, after taxes, discounts, returns, and retailer margin?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: >-
+      Public materials identify the intended customer as age-verified adult
+      smokers and show direct online plus retail access. They do not disclose
+      customer concentration, cohort retention, top retailers, wholesale terms,
+      supplier terms, or age-verification failure rates.
+    founder_claim_ids:
+      - FC-002
+      - FC-006
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-012
+      - EC-015
+      - EC-019
+    risk_ids:
+      - R-003
+      - R-005
+    sections:
+      - section_id: III.A
+        title: Customer base, cohorts, and concentration
+        checklist_question_ids:
+          - III.A.1
+          - III.A.2
+        summary: JUUL identifies the intended end user as adult smokers, but no public source reviewed discloses active adult purchasers, retention cohorts, channel-level concentration, or customer-level revenue.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Adult-smoker positioning is public and consistent across company pages, but actual customer cohorts and revenue concentration are not publicly verifiable.
+            evidence_claim_ids:
+              - EC-003
+              - EC-015
+            risk_ids:
+              - R-005
+          - finding_id: III.A-F2
+            finding: JUUL reports sharply reduced youth use of JUUL, but youth-use and access-control diligence remains material because of historical legal and reputational exposure.
+            evidence_claim_ids:
+              - EC-012
+              - EC-018
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Retailer, distributor, or geography concentration could be high even if end-user demand appears diversified.
+          - Youth-use or unauthorized-access incidents could trigger new restrictions, settlements, or reputational harm.
+        evidence_gaps:
+          - Active adult-customer counts, repeat-purchase cohorts, churn, top-retailer revenue, distributor concentration, and age-verification outcomes.
+        follow_up_questions:
+          - What percentage of net revenue comes from the top five retail partners, direct-to-consumer accounts, and each U.S. state?
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-003
+          - EC-012
+          - EC-015
+      - section_id: III.B
+        title: Strategic relationships, partners, and suppliers
+        checklist_question_ids:
+          - III.B.1
+          - III.B.2
+        summary: Public records show a historical strategic relationship with Altria, later terminated economically through an IP-license exchange, while current strategic, retailer, manufacturing, logistics, and age-verification vendor agreements are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Altria's 2023 exchange eliminated its minority economic investment and replaced it with a non-exclusive heated-tobacco IP license, changing the strategic-partner context.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-001
+              - R-007
+          - finding_id: III.B-F2
+            finding: Public company pages show online and retail access but not the contracts or dependencies behind distribution, manufacturing, or compliance vendors.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+              - EC-019
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Termination rights, volume commitments, retail delisting rights, manufacturer concentration, and compliance-vendor failures may not surface in public materials.
+        evidence_gaps:
+          - Retailer, distributor, manufacturer, logistics, payment, identity-verification, and technology-vendor contracts.
+        follow_up_questions:
+          - Which suppliers or retailers are single points of failure, and what termination or exclusivity rights do they hold?
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-008
+          - EC-015
+          - EC-019
+      - section_id: III.C
+        title: Customer satisfaction, complaints, and churn
+        checklist_question_ids:
+          - III.C.1
+          - III.C.2
+        summary: Complaint volume, adult-smoker conversion outcomes, product satisfaction, retention, and churn data were not available in public sources reviewed.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C-F1
+            finding: The company mission emphasizes adult-smoker switching, but public evidence does not disclose adult-smoker conversion, satisfaction, or retention metrics.
+            evidence_claim_ids:
+              - EC-003
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - High churn, product complaints, battery/pod quality issues, or customer-service failures could impair repeat purchase economics.
+        evidence_gaps:
+          - NPS, complaint logs, churn cohorts, refund rates, product-return codes, and adult-smoker conversion data.
+        follow_up_questions:
+          - What percentage of purchasers are verified adult smokers who remain active after 3, 6, and 12 months?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-015
+      - section_id: III.D
+        title: Revenue by customer, channel, and geography
+        checklist_question_ids:
+          - III.D.1
+          - III.D.2
+        summary: Public materials show channel types but not revenue splits by customer, retailer, distributor, state, or country.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Retail locator and online access show routes to market, but channel revenue weights are not public.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - State flavor laws, excise taxes, retailer policies, or local enforcement could create revenue volatility by geography.
+        evidence_gaps:
+          - State-level and channel-level revenue, retailer concentration, and distributor sell-through.
+        follow_up_questions:
+          - Which states and retail partners drive the largest net revenue and margin contribution?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+      - section_id: III.E
+        title: Dependency on suppliers, platforms, and channels
+        checklist_question_ids:
+          - III.E.1
+          - III.E.2
+        summary: Public evidence is sufficient to identify categories of dependency, but not contractual exposure or concentration.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Age-verification, online commerce, retail distribution, manufacturing, FDA compliance, and payment processing are all operational dependency categories that need contract-level review.
+            evidence_claim_ids:
+              - EC-004
+              - EC-007
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - A compliance-vendor failure could create regulatory exposure even when demand and product authorization remain intact.
+        evidence_gaps:
+          - Vendor risk assessments, service-level agreements, audit reports, and contingency plans.
+        follow_up_questions:
+          - What controls detect and prevent sales to underage users across direct and retail channels?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-007
+          - EC-015
+
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: >-
+      JUUL competes in a heavily regulated nicotine-alternatives market where
+      brand, product authorization, retail access, adult-smoker conversion, and
+      enforcement against illicit disposables are major axes of competition.
+      Public secondary sources indicate JUUL lost substantial share from its
+      2018 peak.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-020
+    risk_ids:
+      - R-004
+      - R-005
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape and basis of competition
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Competitors include authorized large-company vapor products, oral nicotine alternatives, and illicit or gray-market disposable devices that can compete on flavor variety, price, channel availability, and regulatory evasion.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Public secondary sources indicate JUUL's U.S. e-cigarette share fell from a 2018 peak, while FDA authorization and compliance posture became a central differentiator.
+            evidence_claim_ids:
+              - EC-007
+              - EC-013
+            risk_ids:
+              - R-004
+          - finding_id: IV.A-F2
+            finding: JUUL's regulatory-policy page argues that illicit disposable products create a market challenge, but the magnitude of competitive displacement is not publicly quantified in JUUL financials.
+            evidence_claim_ids:
+              - EC-020
+              - EC-014
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Authorized competitors may have stronger retail relationships, larger parent-company balance sheets, or more diversified nicotine portfolios.
+          - Illicit disposables may pressure price and flavors without bearing equivalent compliance costs.
+        evidence_gaps:
+          - Current share by SKU, channel, state, and adult-smoker segment; competitor pricing; retailer shelf-space data.
+        follow_up_questions:
+          - What share recovery, pricing, and shelf-space assumptions underpin management's forecast after the 2025 FDA marketing granted orders?
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+          - EC-020
+      - section_id: IV.B
+        title: Market size, growth, and substitution
+        checklist_question_ids:
+          - IV.B.1
+          - IV.B.2
+        summary: Public sources reviewed did not provide a reliable bottom-up TAM/SAM/SOM for JUUL's authorized product scope; substitution among cigarettes, vapor, oral nicotine, and disposables requires independent market work.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: IV.B-F1
+            finding: JUUL's public positioning depends on adult-smoker transition away from combustible cigarettes, but the reviewed public record does not quantify JUUL's current conversion funnel.
+            evidence_claim_ids:
+              - EC-003
+              - EC-015
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Market growth may accrue to lower-cost disposables, oral nicotine, or parent-company portfolios rather than JUUL.
+        evidence_gaps:
+          - Adult-smoker conversion studies, repeat-purchase cohorts, retailer sell-through, and market-share data after 2025 authorization.
+        follow_up_questions:
+          - What independently sourced market-size work supports the operating plan by state, product category, and channel?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-015
+
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: >-
+      Public evidence supports a constrained adult-smoker GTM with online
+      age-gated access, Auto-Ship, retail locator, and compliance messaging.
+      Marketing effectiveness, paid media, retailer terms, sales productivity,
+      and channel economics are not publicly verifiable.
+    founder_claim_ids:
+      - FC-002
+      - FC-005
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-012
+      - EC-018
+    risk_ids:
+      - R-003
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Distribution channels and go-to-market motion
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+        summary: JUUL's public pages show adult-only online access, account setup, Auto-Ship, online benefits, and a retail locator, but not channel mix, retailer sell-through, or sales productivity.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Direct online account creation and Auto-Ship can support recurring replenishment, but the contribution of that channel is not public.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-005
+          - finding_id: V.A-F2
+            finding: Retail distribution is publicly visible through the retail-locator flow, but retailer concentration and contracts require private diligence.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Retailer delisting, state restrictions, payment processor policy shifts, or age-verification friction could suppress conversion.
+        evidence_gaps:
+          - Channel mix, top accounts, retailer terms, distributor economics, funnel conversion, and sales productivity.
+        follow_up_questions:
+          - What are conversion, retention, and gross-margin profiles for direct online, Auto-Ship, retail, and distributor channels?
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+      - section_id: V.B
+        title: Sales pipeline, bookings, and recurring demand
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+        summary: Public sources do not disclose pipeline, bookings, repeat-purchase rates, Auto-Ship penetration, cohort retention, or retailer sell-through velocity.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Auto-Ship suggests a repeat-purchase motion, but recurring revenue quality cannot be assessed from public evidence.
+            evidence_claim_ids:
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Subscriber churn or retail inventory destocking could make sell-in revenue materially different from end-user demand.
+        evidence_gaps:
+          - Repeat-purchase curves, Auto-Ship penetration, inventory days, bookings, backlog, and sell-through by retailer.
+        follow_up_questions:
+          - What percentage of adult purchasers reorder within 30, 60, 90, and 180 days?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+      - section_id: V.C
+        title: Brand, marketing claims, and public trust
+        checklist_question_ids:
+          - V.C.1
+          - V.C.2
+        summary: JUUL emphasizes adult-smoker transition and underage-use prevention, but the brand remains affected by youth-use litigation history and public enforcement scrutiny.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: JUUL publicly reports a steep decline in youth use of its brand, but the youth-marketing settlement history remains a major diligence consideration.
+            evidence_claim_ids:
+              - EC-012
+              - EC-018
+            risk_ids:
+              - R-003
+          - finding_id: V.C-F2
+            finding: Adult-smoker mission statements are consistent across company sources, but brand perception and regulator trust require independent testing.
+            evidence_claim_ids:
+              - EC-003
+              - EC-012
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Any mismatch between marketing claims, actual audience, and retailer practices could reopen legal or regulatory exposure.
+        evidence_gaps:
+          - Marketing approval workflows, media-buying restrictions, influencer policies, retailer training, and brand tracking by age cohort.
+        follow_up_questions:
+          - What controls ensure marketing reaches only adult smokers and avoids youth appeal across all channels?
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-012
+          - EC-018
+      - section_id: V.D
+        title: Partnerships and channel enablement
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+        summary: Current partnership economics are not public; historical Altria support ended economically through the 2023 exchange.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Altria's exit removes a major historical strategic relationship from the current channel and financing context.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Lost strategic support may affect distribution, regulatory affairs, or financing even if the brand remains recognizable.
+        evidence_gaps:
+          - Current commercial partnership agreements, retailer programs, and co-marketing restrictions.
+        follow_up_questions:
+          - Which historical Altria support services ended, and what internal or third-party capabilities replaced them?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+      - section_id: V.E
+        title: Marketing compliance and sales operations
+        checklist_question_ids:
+          - V.E.1
+          - V.E.2
+        summary: Public pages contain nicotine warnings, age minimums, and underage-use prevention messaging, but operating controls require audit evidence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Public age-gate and nicotine-warning disclosures reduce but do not eliminate marketing-compliance risk.
+            evidence_claim_ids:
+              - EC-004
+              - EC-012
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Sales incentives, retailer behavior, and compliance-audit failures can undermine central marketing policy.
+        evidence_gaps:
+          - Sales incentive plans, compliance training records, retailer audit results, violation remediation, and complaint workflows.
+        follow_up_questions:
+          - How are retailer violations tracked, escalated, and tied to account restrictions or termination?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-012
+
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: >-
+      JUUL has a visible IP estate and product-family patent notice, including
+      device, pod, charging, and JUUL2 references. The public record does not
+      reveal current R&D budget, pipeline gates, toxicology data ownership,
+      manufacturing process controls, or technical-roadmap dependencies.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-016
+    risk_ids:
+      - R-002
+      - R-007
+    sections:
+      - section_id: VI.A
+        title: Technology, IP-backed product architecture, and defensibility
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+        summary: Company patent notices and public patent records support an IP estate around JUUL device, JUULpods, charging accessories, JUUL2, and related systems.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: JUUL's public patent notice lists product families protected by issued and pending patents and designs.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-007
+          - finding_id: VI.A-F2
+            finding: Altria received a non-exclusive, irrevocable global license to certain heated-tobacco IP, which may encumber some future monetization paths.
+            evidence_claim_ids:
+              - EC-008
+              - EC-016
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Patent quantity does not prove freedom to operate, enforceability, commercial relevance, or unencumbered ownership.
+        evidence_gaps:
+          - Patent docket, assignments, maintenance fees, claim charts, freedom-to-operate opinions, trade-secret inventory, and license agreements.
+        follow_up_questions:
+          - Which patents cover current authorized U.S. revenue, and which are licensed, pledged, challenged, expired, or non-core?
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+          - EC-011
+          - EC-016
+      - section_id: VI.B
+        title: R&D pipeline, regulatory science, and development process
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+        summary: Public sources show product-family references and regulatory history but not the R&D pipeline, budget, stage gates, or technical readiness of future products.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: The 2022, 2024, and 2025 FDA sequence makes regulatory science and toxicology remediation central to product development diligence.
+            evidence_claim_ids:
+              - EC-005
+              - EC-006
+              - EC-007
+              - EC-016
+            risk_ids:
+              - R-002
+          - finding_id: VI.B-F2
+            finding: Public product and patent sources reference JUUL2, but U.S. product availability and authorization status require direct confirmation.
+            evidence_claim_ids:
+              - EC-011
+              - EC-016
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Future revenue may depend on products requiring new PMTAs, new toxicology evidence, or additional manufacturing validation.
+        evidence_gaps:
+          - R&D budget, technical roadmap, PMTA submission calendar, study protocols, quality-system controls, and design-history files.
+        follow_up_questions:
+          - What R&D milestones, regulatory submissions, and technical risks are included in the next 24-month operating plan?
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-007
+          - EC-011
+          - EC-016
+
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: >-
+      Public sources identify founders and historical leadership changes, but
+      a complete current management roster, board composition, headcount by
+      function, turnover, compensation, and key-person retention are not public.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-017
+      - EC-014
+    risk_ids:
+      - R-008
+    sections:
+      - section_id: VII.A
+        title: Organization and governance structure
+        checklist_question_ids:
+          - VII.A.1
+          - VII.A.2
+        summary: Current organizational chart and board governance are not public in sufficient detail for control, succession, or incentive diligence.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public secondary sources identify historical founders and leadership changes, but not a complete current reporting structure.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Key-person dependency, investor-control rights, and regulatory-compliance staffing gaps may be hidden without internal records.
+        evidence_gaps:
+          - Current organization chart, board composition, committee charters, management bios, succession plan, and delegation-of-authority matrix.
+        follow_up_questions:
+          - Who owns regulatory affairs, quality, legal, compliance, R&D, commercial operations, and finance today?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VII.B
+        title: Headcount, hiring, and retention
+        checklist_question_ids:
+          - VII.B.1
+          - VII.B.2
+        summary: Public secondary sources contain historical employee-count and layoff signals, but current headcount, attrition, key hires, and open roles were not reliably verifiable.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Historical headcount volatility and layoffs reported in secondary sources raise retention and capability questions, but current staffing requires company confirmation.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Regulatory authorization without sufficient quality, compliance, and commercial staffing may create execution risk.
+        evidence_gaps:
+          - Employee roster, hiring plan, attrition by function, retention grants, severance liabilities, and contractor dependencies.
+        follow_up_questions:
+          - What is current headcount by function and geography, and what roles are critical to PMTA compliance and sales execution?
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VII.C
+        title: Senior leadership and key-person assessment
+        checklist_question_ids:
+          - VII.C.1
+          - VII.C.2
+        summary: Public secondary sources identify founders Adam Bowen and James Monsees and later leadership references, but current executive authority and incentives are not fully public.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Historical founder and leadership information is public, but management diligence should verify the current CEO, CFO, general counsel, regulatory lead, quality lead, and commercial lead directly.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Leadership turnover could impair regulatory execution, settlement management, and retailer trust.
+        evidence_gaps:
+          - Current executive roster, employment agreements, retention incentives, references, and board minutes approving key hires.
+        follow_up_questions:
+          - Which executives have binding retention arrangements through the next two FDA/commercial milestones?
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VII.D
+        title: Compensation, equity, and incentives
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation plans, option grants, refresh grants, severance terms, and executive incentives are not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Valuation deterioration can materially affect employee option incentives, but current equity economics are not public.
+            evidence_claim_ids:
+              - EC-001
+              - EC-008
+              - EC-014
+            risk_ids:
+              - R-001
+              - R-008
+        hidden_risks:
+          - Underwater options or unclear change-of-control economics may increase retention risk.
+        evidence_gaps:
+          - Equity plan, option strike distribution, refresh history, severance, bonus plans, and retention agreements.
+        follow_up_questions:
+          - What percentage of employees hold underwater equity and what retention actions have been taken?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-008
+          - EC-014
+      - section_id: VII.E
+        title: Culture, compliance, and internal controls
+        checklist_question_ids:
+          - VII.E.1
+          - VII.E.2
+        summary: Public-facing compliance commitments are visible, but internal culture, whistleblower systems, compliance training, and control effectiveness require private evidence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Given youth-use and regulatory history, culture and compliance controls are diligence-critical even though public company pages emphasize prevention.
+            evidence_claim_ids:
+              - EC-012
+              - EC-018
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Sales pressure or informal practices could undermine written compliance policies.
+        evidence_gaps:
+          - Compliance training records, internal audit reports, hotline statistics, disciplinary actions, and policy exceptions.
+        follow_up_questions:
+          - How does the board monitor youth-access controls, FDA obligations, retailer compliance, and marketing approval?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-012
+          - EC-018
+      - section_id: VII.F
+        title: Employee disputes and workplace liabilities
+        checklist_question_ids:
+          - VII.F.1
+          - VII.F.2
+        summary: Public research in this run did not establish a complete employee-dispute docket or labor-liability schedule.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Employee disputes, severance obligations, and restrictive-covenant risks require company counsel disclosure.
+            evidence_claim_ids:
+              - EC-014
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Former employees may be key witnesses in regulatory, consumer-protection, or IP disputes.
+        evidence_gaps:
+          - Employment claims docket, severance schedule, restrictive-covenant agreements, and whistleblower matters.
+        follow_up_questions:
+          - Are any current or former employees involved in material litigation, regulatory investigations, or whistleblower matters?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+      - section_id: VII.G
+        title: Hiring plan and capability gaps
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Public evidence does not show a current hiring plan tied to the 2025 FDA authorization, sales expansion, quality systems, or litigation management.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: A staffing plan aligned to FDA obligations and commercial execution is necessary but not public.
+            evidence_claim_ids:
+              - EC-007
+              - EC-014
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Understaffing in quality, regulatory, legal, or retailer compliance can create downside even after marketing authorization.
+        evidence_gaps:
+          - Hiring plan, budget approvals, recruiting pipeline, and critical role vacancy list.
+        follow_up_questions:
+          - What open roles are mandatory to maintain FDA compliance and scale adult-only distribution?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-014
+
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: >-
+      Legal and regulatory diligence is the central risk area. FDA records show
+      a denial, rescission, and later marketing granted orders for specified
+      products; FTC records show historical antitrust allegations around the
+      Altria transaction; secondary sources describe major youth-marketing
+      settlements. Complete litigation, insurance, and settlement schedules are
+      not public.
+    founder_claim_ids:
+      - FC-003
+      - FC-004
+      - FC-005
+      - FC-006
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-018
+      - EC-020
+    risk_ids:
+      - R-002
+      - R-003
+      - R-006
+      - R-007
+    sections:
+      - section_id: VIII.A
+        title: Pending and threatened litigation against the company
+        checklist_question_ids:
+          - VIII.A.1
+          - VIII.A.2
+        summary: Public secondary sources describe major youth-marketing settlements, but a complete current litigation docket, settlement reserve, payment schedule, and insurance recovery position are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Secondary sources describe a USD 462 million multistate settlement and broader settlement history, but private legal schedules are required to quantify remaining exposure.
+            evidence_claim_ids:
+              - EC-018
+            risk_ids:
+              - R-003
+              - R-006
+        hidden_risks:
+          - Additional consumer, school-district, state, or product-liability claims may remain unresolved or reserved below realistic payout levels.
+        evidence_gaps:
+          - Full litigation docket, claim inventory, settlement agreements, payment schedules, insurance towers, retentions, and counsel letters.
+        follow_up_questions:
+          - What claims remain open, what cash payments are scheduled, and what insurance recoveries are probable?
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-018
+      - section_id: VIII.B
+        title: Litigation initiated by the company
+        checklist_question_ids:
+          - VIII.B.1
+          - VIII.B.2
+        summary: This public-source review did not establish a complete docket of active claims initiated by JUUL, including IP, contract, competitor, or enforcement actions.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Company-initiated litigation cannot be assessed without counsel's docket export and pleadings review.
+            evidence_claim_ids:
+              - EC-014
+              - EC-010
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Offensive IP or contract claims may create counterclaims, fee exposure, or settlement constraints.
+        evidence_gaps:
+          - Complete docket of plaintiff-side matters, demand letters, settlement negotiations, and IP enforcement files.
+        follow_up_questions:
+          - What active claims has JUUL initiated, and what counterclaim or fee-shifting exposure exists?
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-014
+      - section_id: VIII.C
+        title: Government investigations, consent orders, and agency matters
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: FDA and FTC records create a clear public regulatory history, but ongoing correspondence, inspections, state AG matters, and post-market obligations require direct disclosure.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: FDA's sequence of 2022 MDOs, 2024 rescission, and 2025 marketing granted orders is independently verifiable from agency records.
+            evidence_claim_ids:
+              - EC-005
+              - EC-006
+              - EC-007
+            risk_ids:
+              - R-002
+          - finding_id: VIII.C-F2
+            finding: FTC publicly filed an administrative complaint challenging aspects of the Altria-JUUL transaction, illustrating historic antitrust scrutiny.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - New inspection observations, warning letters, PMTA post-market findings, or state AG inquiries may not yet be visible in public records.
+        evidence_gaps:
+          - FDA correspondence, inspection reports, warning letters, post-market reports, consent orders, and state AG correspondence.
+        follow_up_questions:
+          - What conditions, studies, and reporting obligations attach to each FDA marketing granted order?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-007
+          - EC-009
+      - section_id: VIII.D
+        title: Intellectual property, trademarks, and licenses
+        checklist_question_ids:
+          - VIII.D.1
+          - VIII.D.2
+        summary: Public patent and trademark sources verify material IP assets, while license encumbrances and freedom-to-operate require private legal files.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Public records support patents and trademarks around JUUL brands, devices, pods, charging accessories, and JUUL2.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-007
+          - finding_id: VIII.D-F2
+            finding: Altria's 2023 heated-tobacco IP license must be reviewed as a potential encumbrance on strategic alternatives.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Some assets may be licensed, challenged, expired, pledged, or insufficient to block competitors.
+        evidence_gaps:
+          - License agreements, patent-maintenance records, assignments, FTO opinions, invalidity analyses, and trademark oppositions.
+        follow_up_questions:
+          - Which patents and trademarks are core to authorized U.S. revenue, and which are subject to third-party licenses or challenges?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+          - EC-011
+      - section_id: VIII.E
+        title: Material contracts and commitments
+        checklist_question_ids:
+          - VIII.E.1
+          - VIII.E.2
+        summary: Public evidence does not disclose retailer, distributor, manufacturer, logistics, payment, age-verification, debt, or settlement contracts.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Material contracts are central to channel, compliance, manufacturing, financing, and legal-risk underwriting, but they are private.
+            evidence_claim_ids:
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-005
+              - R-006
+        hidden_risks:
+          - Change-of-control provisions, minimum purchase commitments, exclusivity, termination rights, and compliance indemnities may impair an investment or acquisition.
+        evidence_gaps:
+          - Contract list, top 20 agreements, change-of-control matrix, debt covenants, settlement agreements, and vendor risk reports.
+        follow_up_questions:
+          - What contracts require consent or accelerate obligations upon financing, sale, product-change, or regulatory event?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+      - section_id: VIII.F
+        title: Insurance, indemnities, and claims coverage
+        checklist_question_ids:
+          - VIII.F.1
+          - VIII.F.2
+        summary: Public sources reviewed did not disclose insurance programs, claim notices, coverage disputes, retentions, exclusions, or recoveries.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Insurance recoverability is critical because public sources indicate large historical legal exposure, but coverage details are private.
+            evidence_claim_ids:
+              - EC-018
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Youth-marketing, regulatory, intentional-conduct, or product-liability exclusions may reduce insurance value.
+        evidence_gaps:
+          - Insurance towers, policies, claim notices, reservation-of-rights letters, coverage litigation, and recovery assumptions.
+        follow_up_questions:
+          - Which settlement and litigation costs are insured, self-insured, disputed, or excluded?
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-018
+      - section_id: VIII.G
+        title: Regulatory compliance and restricted-product obligations
+        checklist_question_ids:
+          - VIII.G.1
+          - VIII.G.2
+        summary: FDA authorization for specified products is the most favorable public legal development, but restricted-product compliance remains a gating diligence area.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: FDA public marketing-order records independently verify 2025 marketing granted orders for specified JUUL products.
+            evidence_claim_ids:
+              - EC-007
+              - EC-020
+            risk_ids:
+              - R-002
+          - finding_id: VIII.G-F2
+            finding: The FDA record and JUUL's public policy page show a narrow regulated-product posture, not blanket authorization for all future products or claims.
+            evidence_claim_ids:
+              - EC-006
+              - EC-007
+              - EC-020
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Noncompliant labeling, unauthorized product changes, youth access, or post-market study failures could jeopardize authorization.
+        evidence_gaps:
+          - Complete FDA orders, compliance calendar, responsible-person matrix, adverse-event reports, inspections, and post-market study progress.
+        follow_up_questions:
+          - What controls prevent sales, claims, packaging, or product changes outside the exact FDA-authorized scope?
+        table_ids: []
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-020
+
+tables:
+  - table_id: T-001
+    title: Public financing and valuation signals
+    chapter_id: I
+    section_id: I.C
+    purpose: Reconcile the unicorn-list valuation with later public valuation and ownership signals.
+    columns:
+      - name: date
+        description: Date or period of the public signal
+      - name: event
+        description: Public financing, valuation, or ownership event
+      - name: valuation_or_amount
+        description: Amount or valuation in USD where disclosed
+      - name: diligence_read
+        description: Analyst interpretation for valuation diligence
+      - name: verification
+        description: Verification status
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2017-12-20
+          event: CB Insights unicorn-list join date for JUUL Labs
+          valuation_or_amount: USD 12 billion list valuation
+          diligence_read: Establishes unicorn-list inclusion but not current fair value.
+          verification: verified list row, valuation freshness inconclusive
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+      - row_id: T-001-R2
+        values:
+          date: 2018-12
+          event: Altria acquired a 35% stake according to FTC and secondary sources
+          valuation_or_amount: More than USD 12 billion paid; implied valuation commonly reported near USD 38 billion
+          diligence_read: Historical strategic premium; no longer current after Altria exit.
+          verification: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-013
+        source_ids:
+          - SRC-009
+          - SRC-013
+      - row_id: T-001-R3
+        values:
+          date: 2022-12-31
+          event: Altria carrying and fair value of its JUUL minority economic investment
+          valuation_or_amount: USD 250 million stake fair value
+          diligence_read: Strong contradictory valuation signal versus unicorn-list mark.
+          verification: verified
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-001-R4
+        values:
+          date: 2023-03-03
+          event: Altria exchanged its entire JUUL minority economic investment for heated-tobacco IP rights
+          valuation_or_amount: Non-exclusive, irrevocable global license; no cash consideration disclosed
+          diligence_read: Signals strategic de-risking by Altria and potential IP encumbrance.
+          verification: verified
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-001
+      - EC-008
+      - EC-009
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-008
+      - SRC-009
+      - SRC-013
+    notes: The table intentionally separates public list inclusion from investable current fair value.
+
+  - table_id: T-002
+    title: Public financial KPI and data-room request ledger
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify which financial diligence items can and cannot be verified publicly.
+    columns:
+      - name: kpi
+        description: Financial or operating KPI
+      - name: public_signal
+        description: Public evidence reviewed
+      - name: diligence_status
+        description: Verification status
+      - name: requested_record
+        description: Required private source for underwriting
+    rows:
+      - row_id: T-002-R1
+        values:
+          kpi: Current revenue
+          public_signal: No current audited revenue or management revenue series found in public sources.
+          diligence_status: not_publicly_verifiable
+          requested_record: Audited financials, monthly revenue ledger, revenue-recognition memo, and channel revenue bridge.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+      - row_id: T-002-R2
+        values:
+          kpi: Profitability and cash runway
+          public_signal: No current EBITDA, free-cash-flow, cash, debt, or runway disclosure found.
+          diligence_status: not_publicly_verifiable
+          requested_record: Cash balance, debt schedule, budget-to-actuals, and 24-month liquidity forecast.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+      - row_id: T-002-R3
+        values:
+          kpi: Settlement liabilities
+          public_signal: Secondary sources describe large historical settlements, including a USD 462 million multistate settlement.
+          diligence_status: partially_verified
+          requested_record: Settlement agreements, payment schedules, reserves, insurance recovery analysis, and counsel letter.
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-013
+      - row_id: T-002-R4
+        values:
+          kpi: Channel gross margin
+          public_signal: Product access, Auto-Ship, and retail locator are public; margins by channel are not.
+          diligence_status: not_publicly_verifiable
+          requested_record: SKU margin, retailer allowances, fulfillment cost, taxes, returns, and chargeback data.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-004
+      - EC-014
+      - EC-015
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-013
+    notes: Public sources are insufficient for quality-of-earnings analysis.
+
+  - table_id: T-003
+    title: Public product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Summarize product scope evidenced in public sources.
+    columns:
+      - name: product_or_feature
+        description: Product, SKU, or feature
+      - name: audience
+        description: Stated or intended user group
+      - name: public_evidence
+        description: Evidence observed
+      - name: diligence_caveat
+        description: Key caveat or follow-up
+    rows:
+      - row_id: T-003-R1
+        values:
+          product_or_feature: JUUL device
+          audience: Adult smokers and age-verified purchasers
+          public_evidence: FDA marketing-order page lists a July 17, 2025 marketing granted order for JUUL device.
+          diligence_caveat: Obtain exact order conditions and authorized labeling.
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+        source_ids:
+          - SRC-002
+          - SRC-007
+      - row_id: T-003-R2
+        values:
+          product_or_feature: Virginia tobacco JUULpods
+          audience: Adult smokers and age-verified purchasers
+          public_evidence: FDA page lists a July 17, 2025 marketing granted order for Virginia tobacco JUULpods.
+          diligence_caveat: Confirm nicotine concentration, packaging, labeling, and post-market duties.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-003-R3
+        values:
+          product_or_feature: Menthol JUULpods
+          audience: Adult smokers and age-verified purchasers
+          public_evidence: FDA page lists a July 17, 2025 marketing granted order for menthol JUULpods.
+          diligence_caveat: Review flavor-specific restrictions and monitoring obligations.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-003-R4
+        values:
+          product_or_feature: JUUL2 product family
+          audience: Not established for U.S. sale in reviewed public sources
+          public_evidence: JUUL patent notice lists JUUL2 device, pods, and charging dock families.
+          diligence_caveat: Patent-notice inclusion does not prove U.S. authorization or commercial availability.
+        evidence_claim_ids:
+          - EC-011
+          - EC-016
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-003
+      - EC-007
+      - EC-011
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-007
+      - SRC-011
+    notes: Product scope should be tied to FDA order letters before any forecast is underwritten.
+
+  - table_id: T-004
+    title: Product authorization and control matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Track public regulatory milestones that affect product sale and development controls.
+    columns:
+      - name: date
+        description: Date of public event
+      - name: authority_or_source
+        description: Source of event
+      - name: action
+        description: Regulatory or control event
+      - name: diligence_implication
+        description: Meaning for product diligence
+    rows:
+      - row_id: T-004-R1
+        values:
+          date: 2022-06-23
+          authority_or_source: FDA
+          action: FDA issued marketing denial orders for JUUL device and four JUULpod types, citing insufficient and conflicting toxicological data.
+          diligence_implication: Historical technical/regulatory deficiency requires remediation review.
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-004-R2
+        values:
+          date: 2024-06-06
+          authority_or_source: FDA
+          action: FDA rescinded the 2022 MDOs and returned applications to pending status; rescission was not authorization at that time.
+          diligence_implication: Shows procedural improvement but did not itself authorize marketing.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: T-004-R3
+        values:
+          date: 2025-07-17
+          authority_or_source: FDA
+          action: FDA marketing-order page lists marketing granted orders for JUUL device and tobacco/menthol JUULpods.
+          diligence_implication: Positive authorization signal for specified products, subject to order conditions.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-004-R4
+        values:
+          date: current public page
+          authority_or_source: JUUL product-access page
+          action: Minimum U.S. purchase age 21 and account/age-verification flow presented.
+          diligence_implication: Verify implementation, audit results, and retailer compliance.
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-006
+      - SRC-007
+    notes: FDA authorization should be reviewed at order-letter level, not just by public list entry.
+
+  - table_id: T-005
+    title: Customer and demand evidence ledger
+    chapter_id: III
+    section_id: III.A
+    purpose: Separate observable customer signals from private cohort and concentration records.
+    columns:
+      - name: customer_or_segment
+        description: Customer, segment, or non-target audience
+      - name: public_signal
+        description: Public evidence reviewed
+      - name: diligence_status
+        description: Verification status
+      - name: follow_up
+        description: Required follow-up
+    rows:
+      - row_id: T-005-R1
+        values:
+          customer_or_segment: Adult smokers
+          public_signal: JUUL mission and product pages position the product for adult smokers seeking alternatives to combustible cigarettes.
+          diligence_status: verified positioning, conversion not publicly verifiable
+          follow_up: Verify adult-smoker status, conversion, retention, and satisfaction cohorts.
+        evidence_claim_ids:
+          - EC-003
+          - EC-015
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-005-R2
+        values:
+          customer_or_segment: Direct online purchasers
+          public_signal: Account creation, age verification, online benefits, and Auto-Ship are public.
+          diligence_status: partially_verified
+          follow_up: Request DTC funnel, reorder, chargeback, and cancellation data.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-005-R3
+        values:
+          customer_or_segment: Retail purchasers
+          public_signal: Retail-locator access is public, but retailer names, economics, and concentration are not disclosed.
+          diligence_status: partially_verified
+          follow_up: Request top-retailer revenue, sell-through, audit results, and contract terms.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-005-R4
+        values:
+          customer_or_segment: Underage users
+          public_signal: JUUL states CDC 2025 NYTS showed 0.06% past-30-day JUUL use among middle/high schoolers and a 99% decrease since 2019.
+          diligence_status: partially_verified company-reported public claim
+          follow_up: Reconcile source survey data, brand-specific methodology, and retailer incident logs.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-012
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: Intended-customer evidence is stronger than customer-quality evidence.
+
+  - table_id: T-006
+    title: Strategic relationship and dependency matrix
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify dependency categories and unavailable contract-level evidence.
+    columns:
+      - name: relationship_or_dependency
+        description: Partner, supplier, channel, or dependency class
+      - name: public_evidence
+        description: Evidence observed
+      - name: risk
+        description: Diligence risk
+      - name: requested_record
+        description: Contract or data-room record needed
+    rows:
+      - row_id: T-006-R1
+        values:
+          relationship_or_dependency: Altria historical strategic relationship
+          public_evidence: Altria exchanged its entire minority economic investment for a heated-tobacco IP license in 2023.
+          risk: Loss of strategic support and potential IP encumbrance.
+          requested_record: Termination documents, support-service history, license agreement, and board materials.
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-006-R2
+        values:
+          relationship_or_dependency: Retail distribution
+          public_evidence: Retail-locator flow is public.
+          risk: Concentration, delisting, state restrictions, and retailer compliance.
+          requested_record: Retailer/distributor contracts, top-account revenue, and audit reports.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-006-R3
+        values:
+          relationship_or_dependency: Manufacturing and supply chain
+          public_evidence: Secondary sources provide historical manufacturing context; current contracts are not public.
+          risk: Supplier concentration, quality systems, and product-change controls.
+          requested_record: Manufacturer contracts, quality agreements, batch records, and contingency plans.
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-013
+      - row_id: T-006-R4
+        values:
+          relationship_or_dependency: Age verification and online commerce
+          public_evidence: Account creation and age-verification flow is visible on public pages.
+          risk: Compliance failures, payment restrictions, and conversion friction.
+          requested_record: Vendor contracts, audit logs, failed-verification rates, and incident remediation.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-004
+      - EC-008
+      - EC-015
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-013
+    notes: Dependencies are identifiable, but concentration and contract terms are private.
+
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame competition against authorized brands, diversified tobacco companies, oral nicotine, and illicit disposables.
+    columns:
+      - name: competitor_or_category
+        description: Competitor or competitor class
+      - name: segment
+        description: Market segment
+      - name: overlap_with_juul
+        description: Product or channel overlap
+      - name: juul_relative_position
+        description: Diligence interpretation
+      - name: evidence_status
+        description: Evidence status
+    rows:
+      - row_id: T-007-R1
+        values:
+          competitor_or_category: Reynolds/Vuse
+          segment: Large-company vapor products
+          overlap_with_juul: Adult nicotine vapor products and retail channels.
+          juul_relative_position: Competes on authorization, retail relationships, brand, and parent-company resources.
+          evidence_status: market context; independent share data needed
+        evidence_claim_ids:
+          - EC-013
+          - EC-020
+        source_ids:
+          - SRC-013
+          - SRC-014
+      - row_id: T-007-R2
+        values:
+          competitor_or_category: Altria/NJOY and related nicotine portfolio
+          segment: Diversified tobacco and vapor alternatives
+          overlap_with_juul: Adult nicotine alternatives, retail influence, regulatory affairs.
+          juul_relative_position: Altria exited JUUL economically and may compete or partner through other portfolio assets.
+          evidence_status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-007-R3
+        values:
+          competitor_or_category: Oral nicotine products
+          segment: Non-combustible nicotine alternatives
+          overlap_with_juul: Adult nicotine substitution and retailer shelf space.
+          juul_relative_position: Product-form substitution risk; current impact not publicly quantified.
+          evidence_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-014
+          - EC-020
+        source_ids:
+          - SRC-014
+      - row_id: T-007-R4
+        values:
+          competitor_or_category: Illicit or unauthorized disposable vapor products
+          segment: Disposable e-cigarettes and gray-market products
+          overlap_with_juul: Compete for nicotine users through price, flavor, and availability.
+          juul_relative_position: JUUL highlights illicit disposables as a policy and competitive problem.
+          evidence_status: partially_verified
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-014
+    evidence_claim_ids:
+      - EC-008
+      - EC-013
+      - EC-014
+      - EC-020
+    source_ids:
+      - SRC-008
+      - SRC-013
+      - SRC-014
+    notes: This matrix frames diligence questions rather than ranking current market share.
+
+  - table_id: T-008
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Identify the axes where JUUL's public evidence is strong, weak, or unresolved.
+    columns:
+      - name: axis
+        description: Competitive axis
+      - name: juul_public_position
+        description: Publicly supported position
+      - name: risk_or_question
+        description: Diligence implication
+      - name: evidence_claims
+        description: Linked evidence claim IDs
+    rows:
+      - row_id: T-008-R1
+        values:
+          axis: FDA authorization
+          juul_public_position: Positive signal for specified device and tobacco/menthol pods after 2025 marketing granted orders.
+          risk_or_question: Scope and conditions determine commercial freedom.
+          evidence_claims: EC-007, EC-020
+        evidence_claim_ids:
+          - EC-007
+          - EC-020
+        source_ids:
+          - SRC-007
+          - SRC-014
+      - row_id: T-008-R2
+        values:
+          axis: Brand trust
+          juul_public_position: Strong historical brand awareness but material youth-use and litigation overhang.
+          risk_or_question: Reputation may limit marketing latitude and financing appetite.
+          evidence_claims: EC-012, EC-018
+        evidence_claim_ids:
+          - EC-012
+          - EC-018
+        source_ids:
+          - SRC-004
+          - SRC-013
+      - row_id: T-008-R3
+        values:
+          axis: Retail/channel access
+          juul_public_position: Retail locator is visible; concentration and terms are not public.
+          risk_or_question: Retailers can be gating accounts and compliance vectors.
+          evidence_claims: EC-004, EC-015
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-008-R4
+        values:
+          axis: IP and product design
+          juul_public_position: Broad public patent and trademark footprint.
+          risk_or_question: Commercial relevance, encumbrances, and enforceability need counsel review.
+          evidence_claims: EC-010, EC-011
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        source_ids:
+          - SRC-010
+          - SRC-011
+    evidence_claim_ids:
+      - EC-004
+      - EC-007
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-015
+      - EC-018
+      - EC-020
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-007
+      - SRC-010
+      - SRC-011
+      - SRC-013
+      - SRC-014
+    notes: Scoring is qualitative because current market-share and pricing data are not public.
+
+  - table_id: T-009
+    title: GTM and distribution channel matrix
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize observable go-to-market channels and missing economics.
+    columns:
+      - name: channel
+        description: GTM or distribution channel
+      - name: public_evidence
+        description: Evidence observed
+      - name: monetization_question
+        description: Underwriting question
+      - name: compliance_question
+        description: Compliance or legal question
+    rows:
+      - row_id: T-009-R1
+        values:
+          channel: Direct online account and product access
+          public_evidence: Product-access page shows account creation and age-verification flow.
+          monetization_question: Conversion, AOV, repeat purchase, refund, and fulfillment economics.
+          compliance_question: Accuracy and auditability of age verification.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-009-R2
+        values:
+          channel: Auto-Ship
+          public_evidence: Public page references Auto-Ship benefits.
+          monetization_question: Retention, cancellation, subscription-like revenue quality, and margin.
+          compliance_question: Ongoing eligibility checks and address restrictions.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-009-R3
+        values:
+          channel: Retail stores
+          public_evidence: Retail locator access is public.
+          monetization_question: Top-retailer concentration, distributor fees, sell-through, and returns.
+          compliance_question: Retailer training, mystery-shop audits, and violation remediation.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-009-R4
+        values:
+          channel: Policy and regulatory advocacy
+          public_evidence: JUUL policy page describes FDA authorization, risk-continuum positioning, and illicit-market concerns.
+          monetization_question: Ability to shape legal adult-smoker market access.
+          compliance_question: Claims substantiation and lobbying disclosures.
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-014
+    evidence_claim_ids:
+      - EC-004
+      - EC-015
+      - EC-020
+    source_ids:
+      - SRC-002
+      - SRC-014
+    notes: GTM channel presence is public; channel unit economics are not.
+
+  - table_id: T-010
+    title: Brand, marketing, and public-trust signals
+    chapter_id: V
+    section_id: V.C
+    purpose: Balance adult-smoker positioning with youth-use and litigation overhang.
+    columns:
+      - name: signal
+        description: Public marketing or trust signal
+      - name: evidence
+        description: Public evidence reviewed
+      - name: diligence_read
+        description: Analyst interpretation
+      - name: follow_up
+        description: Follow-up request
+    rows:
+      - row_id: T-010-R1
+        values:
+          signal: Adult-smoker mission
+          evidence: JUUL company page states a mission to transition adult smokers away from combustible cigarettes.
+          diligence_read: Supports intended audience, not actual audience composition.
+          follow_up: Verify audience, conversion, and claims-substantiation data.
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: T-010-R2
+        values:
+          signal: Age-gated product access
+          evidence: Product-access page shows account and minimum-age mechanics.
+          diligence_read: Positive compliance signal requiring audit validation.
+          follow_up: Provide failed-verification rates and retailer audits.
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+      - row_id: T-010-R3
+        values:
+          signal: Youth-use decline claim
+          evidence: JUUL youth-prevention page reports 0.06% past-30-day JUUL use and a 99% decrease since 2019.
+          diligence_read: Positive company-reported signal; verify methodology and regulator acceptance.
+          follow_up: Provide source survey citations and brand-specific methodology.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-004
+      - row_id: T-010-R4
+        values:
+          signal: Youth-marketing settlement history
+          evidence: Secondary sources describe major settlements, including USD 462 million multistate settlement.
+          diligence_read: Material reputational and legal overhang despite current prevention messaging.
+          follow_up: Provide complete settlement schedule and marketing-control audit.
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-012
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-013
+    notes: Trust diligence should include independent brand and regulator interviews.
+
+  - table_id: T-011
+    title: R&D and IP asset matrix
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Summarize public evidence of technical and IP assets.
+    columns:
+      - name: asset_or_program
+        description: R&D, product, or IP asset
+      - name: public_evidence
+        description: Evidence observed
+      - name: diligence_question
+        description: Key diligence question
+      - name: verification
+        description: Verification status
+    rows:
+      - row_id: T-011-R1
+        values:
+          asset_or_program: JUUL device and pods
+          public_evidence: Patent notice lists device and pod patent families; FDA page lists 2025 marketing granted orders for specified products.
+          diligence_question: Which claims protect authorized revenue and which product changes require new authorization?
+          verification: verified public records
+        evidence_claim_ids:
+          - EC-007
+          - EC-011
+        source_ids:
+          - SRC-007
+          - SRC-011
+      - row_id: T-011-R2
+        values:
+          asset_or_program: Charging accessories and cases
+          public_evidence: Patent notice lists charging docks, portable charging cases, and charging cases.
+          diligence_question: Are these commercial, defensive, licensed, or obsolete assets?
+          verification: verified patent notice
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-011
+      - row_id: T-011-R3
+        values:
+          asset_or_program: JUUL2 family
+          public_evidence: Patent notice lists JUUL2 device, pods, and charging dock.
+          diligence_question: Commercial availability and U.S. authorization status require confirmation.
+          verification: partially_verified
+        evidence_claim_ids:
+          - EC-011
+          - EC-016
+        source_ids:
+          - SRC-011
+      - row_id: T-011-R4
+        values:
+          asset_or_program: Heated-tobacco IP licensed to Altria
+          public_evidence: Altria received a non-exclusive, irrevocable global license to certain heated tobacco IP.
+          diligence_question: What economics and exclusivity limitations affect future monetization?
+          verification: verified
+        evidence_claim_ids:
+          - EC-008
+          - EC-016
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-016
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-011
+    notes: Patent notices do not substitute for claim-chart or freedom-to-operate analysis.
+
+  - table_id: T-012
+    title: R&D pipeline and governance request table
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Convert sparse public pipeline evidence into concrete data-room requests.
+    columns:
+      - name: diligence_item
+        description: Pipeline or governance area
+      - name: public_signal
+        description: Public evidence or absence
+      - name: risk
+        description: Why it matters
+      - name: requested_record
+        description: Private record requested
+    rows:
+      - row_id: T-012-R1
+        values:
+          diligence_item: PMTA remediation and toxicology
+          public_signal: FDA cited toxicological-data concerns in 2022, later rescinded denial and listed 2025 marketing granted orders.
+          risk: Future products may require similar scientific support.
+          requested_record: PMTA data room, FDA correspondence, toxicology studies, and deficiency remediation tracker.
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-007
+        source_ids:
+          - SRC-005
+          - SRC-006
+          - SRC-007
+      - row_id: T-012-R2
+        values:
+          diligence_item: JUUL2 roadmap
+          public_signal: Patent notice lists JUUL2 product families.
+          risk: Patent coverage does not equal authorization or market demand.
+          requested_record: Product roadmap, regulatory submission status, and commercialization plan.
+        evidence_claim_ids:
+          - EC-011
+          - EC-016
+        source_ids:
+          - SRC-011
+      - row_id: T-012-R3
+        values:
+          diligence_item: Quality and manufacturing controls
+          public_signal: Not publicly disclosed at control level.
+          risk: Restricted products require consistent manufacturing and change controls.
+          requested_record: Quality manual, CAPA log, supplier audits, batch records, and change-control board materials.
+        evidence_claim_ids:
+          - EC-014
+          - EC-016
+        source_ids:
+          - SRC-013
+      - row_id: T-012-R4
+        values:
+          diligence_item: R&D budget and headcount
+          public_signal: Not publicly disclosed in current materials reviewed.
+          risk: Insufficient regulatory science capacity could constrain products.
+          requested_record: R&D budget, headcount by function, and milestone plan.
+        evidence_claim_ids:
+          - EC-014
+          - EC-016
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-011
+      - EC-014
+      - EC-016
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-011
+      - SRC-013
+    notes: The public record is strong enough to define R&D diligence requests, not enough to underwrite pipeline value.
+
+  - table_id: T-013
+    title: Public leadership and founder roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Capture public leadership signals and mark current-roster uncertainty.
+    columns:
+      - name: person
+        description: Person named in public sources
+      - name: public_role_or_context
+        description: Role or historical context
+      - name: evidence_status
+        description: Verification status
+      - name: diligence_request
+        description: Follow-up needed
+    rows:
+      - row_id: T-013-R1
+        values:
+          person: Adam Bowen
+          public_role_or_context: Co-founder listed in secondary company history.
+          evidence_status: partially_verified secondary source
+          diligence_request: Confirm current role, equity, employment, non-compete, and board observer/advisor status.
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-013
+      - row_id: T-013-R2
+        values:
+          person: James Monsees
+          public_role_or_context: Co-founder listed in secondary company history.
+          evidence_status: partially_verified secondary source
+          diligence_request: Confirm current role, equity, employment, non-compete, and IP assignment status.
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-013
+      - row_id: T-013-R3
+        values:
+          person: Current CEO
+          public_role_or_context: Current executive authority not fully verified in this public-source run.
+          evidence_status: not_publicly_verifiable
+          diligence_request: Provide current executive roster, employment agreements, board approvals, and succession plan.
+        evidence_claim_ids:
+          - EC-014
+          - EC-017
+        source_ids:
+          - SRC-013
+      - row_id: T-013-R4
+        values:
+          person: Regulatory, legal, quality, and finance leads
+          public_role_or_context: Critical functions for a regulated product company.
+          evidence_status: not_publicly_verifiable
+          diligence_request: Provide named function leaders, resumes, reporting lines, and retention plans.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-013
+    notes: Public leadership information is stale and insufficient for key-person diligence.
+
+  - table_id: T-014
+    title: Headcount and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Identify public staffing signals and required private records.
+    columns:
+      - name: period_or_topic
+        description: Period or people topic
+      - name: public_signal
+        description: Public evidence reviewed
+      - name: diligence_status
+        description: Verification status
+      - name: requested_record
+        description: Private record needed
+    rows:
+      - row_id: T-014-R1
+        values:
+          period_or_topic: Historical headcount growth
+          public_signal: Secondary source describes historical headcount growth from roughly 200 to 1,500 employees.
+          diligence_status: partially_verified and stale
+          requested_record: Current HRIS roster and headcount bridge by month.
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-013
+      - row_id: T-014-R2
+        values:
+          period_or_topic: Historical layoffs
+          public_signal: Secondary source describes material layoffs in prior years.
+          diligence_status: partially_verified and stale
+          requested_record: Layoff history, severance obligations, and retained critical roles.
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-013
+      - row_id: T-014-R3
+        values:
+          period_or_topic: Current headcount by function
+          public_signal: Not publicly available in reliable current form.
+          diligence_status: not_publicly_verifiable
+          requested_record: HRIS export, contractor roster, location split, open roles, and attrition report.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+      - row_id: T-014-R4
+        values:
+          period_or_topic: Compliance staffing
+          public_signal: FDA authorization and youth-prevention posture imply critical compliance needs; staffing not public.
+          diligence_status: not_publicly_verifiable
+          requested_record: Regulatory, quality, legal, retailer-compliance, and age-gate staffing plan.
+        evidence_claim_ids:
+          - EC-007
+          - EC-014
+        source_ids:
+          - SRC-007
+          - SRC-013
+    evidence_claim_ids:
+      - EC-007
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-007
+      - SRC-013
+    notes: Historical headcount anchors are not a substitute for current operating capacity.
+
+  - table_id: T-015
+    title: Regulatory and legal action summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize material public legal and regulatory events affecting risk assessment.
+    columns:
+      - name: date
+        description: Date of event
+      - name: matter
+        description: Legal or regulatory matter
+      - name: status_or_outcome
+        description: Public status or outcome
+      - name: diligence_implication
+        description: Why it matters
+    rows:
+      - row_id: T-015-R1
+        values:
+          date: 2020-04-01
+          matter: FTC administrative complaint challenging Altria/JUUL transaction
+          status_or_outcome: FTC alleged Altria agreed not to compete and acquired a 35% JUUL stake; complaint is a legal allegation record.
+          diligence_implication: Historic antitrust and strategic-relationship scrutiny.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-009
+      - row_id: T-015-R2
+        values:
+          date: 2022-06-23
+          matter: FDA marketing denial orders
+          status_or_outcome: FDA denied authorization for JUUL products and cited toxicological-data concerns.
+          diligence_implication: Historical regulatory risk and science diligence trigger.
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-015-R3
+        values:
+          date: 2024-06-06
+          matter: FDA rescission of MDOs
+          status_or_outcome: FDA rescinded MDOs and returned applications to pending review, without authorizing marketing at that time.
+          diligence_implication: Procedural improvement before later authorization.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: T-015-R4
+        values:
+          date: 2025-07-17
+          matter: FDA marketing granted orders
+          status_or_outcome: FDA marketing-order page lists marketing granted orders for JUUL device and Virginia tobacco and menthol JUULpods.
+          diligence_implication: Positive U.S. authorization signal with conditions to review.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-015-R5
+        values:
+          date: 2023-04
+          matter: Multistate youth-marketing settlement
+          status_or_outcome: Secondary source describes USD 462 million settlement with multiple states.
+          diligence_implication: Settlement schedule, insurance, and residual claims require counsel review.
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-018
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-013
+    notes: Public legal sources are incomplete; counsel docket and settlement schedule are mandatory.
+
+  - table_id: T-016
+    title: IP, contracts, insurance, and litigation gap table
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Record legal workstreams not fully resolvable from public sources.
+    columns:
+      - name: legal_area
+        description: Legal workstream
+      - name: public_signal
+        description: Public evidence or absence
+      - name: risk
+        description: Risk if unresolved
+      - name: requested_record
+        description: Data-room request
+    rows:
+      - row_id: T-016-R1
+        values:
+          legal_area: Company-initiated litigation
+          public_signal: Complete plaintiff-side docket not established in this public-source run.
+          risk: Counterclaims, fee exposure, and settlement constraints.
+          requested_record: Full docket, pleadings, demand letters, and settlement status.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+      - row_id: T-016-R2
+        values:
+          legal_area: Patent and trademark estate
+          public_signal: Justia, JUUL patent notice, and JUUL trademark page show patents, applications, product-family notices, and trademarks.
+          risk: Ownership, encumbrance, challenges, and FTO uncertainty.
+          requested_record: Docket, assignments, FTO opinions, licenses, liens, and opposition files.
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        source_ids:
+          - SRC-010
+          - SRC-011
+          - SRC-012
+      - row_id: T-016-R3
+        values:
+          legal_area: Material contracts
+          public_signal: Retail, supplier, settlement, debt, and vendor contracts are not public.
+          risk: Change-of-control, exclusivity, termination, indemnity, and covenant restrictions.
+          requested_record: Top contracts, contract summary matrix, and consent requirements.
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+        source_ids:
+          - SRC-013
+      - row_id: T-016-R4
+        values:
+          legal_area: Insurance and indemnities
+          public_signal: Insurance program and recoveries are not public.
+          risk: Large legal liabilities may be uninsured or disputed.
+          requested_record: Insurance policies, claim notices, reservation letters, and coverage analysis.
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-014
+      - EC-015
+      - EC-018
+    source_ids:
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-013
+    notes: This table intentionally lists unresolved legal diligence workstreams.
+
+figures:
+  - figure_id: F-001
+    title: Public valuation signal trajectory
+    chapter_id: I
+    section_id: I.C
+    figure_type: chart
+    description: Public valuation and stake-value signals show a sharp decline from the implied 2018 strategic valuation to Altria's 2022 fair-value mark.
+    purpose: Visualize why the CB Insights USD 12 billion list value must be reconciled before underwriting.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Date
+        unit: year
+        scale: time
+      y_axis:
+        label: Public valuation signal
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation_signals
+          name: Public valuation or stake-value signal
+          unit: USD billions
+          data_points:
+            - x: 2017-12-20
+              y: 12
+              label: CB Insights list valuation
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+            - x: 2018-12-20
+              y: 38
+              label: Secondary-source implied Altria transaction valuation
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-013
+            - x: 2022-12-31
+              y: 0.25
+              label: Altria stake fair value
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: Altria exits
+          x: 2023-03-03
+          y: 0.25
+          note: Altria exchanged its entire JUUL minority economic investment for heated-tobacco IP rights.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use a log scale if rendering cannot display the USD 38B to USD 0.25B range clearly.
+    evidence_claim_ids:
+      - EC-001
+      - EC-008
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-008
+      - SRC-013
+    notes: The 2018 implied valuation is secondary-source context; the Altria 2022 stake fair value is primary-source evidence.
+
+  - figure_id: F-002
+    title: Product authorization and control architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Product sale depends on the interaction between adult users, age-gated channels, authorized products, manufacturing/quality controls, and FDA obligations.
+    purpose: Show key diligence dependencies around the authorized product system.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: adult_smoker
+          label: Age-verified adult smoker
+          node_type: user
+          description: Intended end user identified in company materials.
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: online_access
+          label: Online account and Auto-Ship
+          node_type: service
+          description: Public product-access flow includes account setup, online benefits, and Auto-Ship.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+        - node_id: retail_access
+          label: Retail locator and retail channel
+          node_type: service
+          description: Public product-access flow includes a retail locator.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+        - node_id: juul_device
+          label: JUUL device and authorized pods
+          node_type: product
+          description: FDA marketing-order page lists the device and tobacco/menthol JUULpods.
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - node_id: compliance_controls
+          label: Age, labeling, quality, and product-change controls
+          node_type: other
+          description: Controls inferred as required diligence around restricted tobacco products.
+          evidence_claim_ids:
+            - EC-004
+            - EC-007
+          source_ids:
+            - SRC-002
+            - SRC-007
+        - node_id: fda_orders
+          label: FDA marketing granted orders
+          node_type: third_party
+          description: Agency records list July 2025 marketing granted orders for specified JUUL products.
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+      edges:
+        - edge_id: e1
+          from_node_id: adult_smoker
+          to_node_id: online_access
+          relationship: purchase path
+          data_or_dependency: Account creation and age verification.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+        - edge_id: e2
+          from_node_id: adult_smoker
+          to_node_id: retail_access
+          relationship: purchase path
+          data_or_dependency: Retail locator and retailer controls.
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+        - edge_id: e3
+          from_node_id: online_access
+          to_node_id: juul_device
+          relationship: sells
+          data_or_dependency: Authorized SKU and account eligibility.
+          evidence_claim_ids:
+            - EC-004
+            - EC-007
+          source_ids:
+            - SRC-002
+            - SRC-007
+        - edge_id: e4
+          from_node_id: retail_access
+          to_node_id: juul_device
+          relationship: sells
+          data_or_dependency: Retail compliance and state restrictions.
+          evidence_claim_ids:
+            - EC-004
+            - EC-007
+          source_ids:
+            - SRC-002
+            - SRC-007
+        - edge_id: e5
+          from_node_id: compliance_controls
+          to_node_id: fda_orders
+          relationship: governed by
+          data_or_dependency: Marketing-order conditions and post-market obligations.
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+      boundaries:
+        - boundary_id: customer_boundary
+          label: Customer access
+          node_ids:
+            - adult_smoker
+            - online_access
+            - retail_access
+        - boundary_id: regulated_product_boundary
+          label: Regulated product system
+          node_ids:
+            - juul_device
+            - compliance_controls
+            - fda_orders
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Emphasize control dependencies rather than engineering internals.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-007
+    notes: Architecture is a diligence control model, not a full technical design.
+
+  - figure_id: F-003
+    title: Customer evidence disclosure completeness
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Public sources verify intended audience and access channels but leave most customer-quality metrics undisclosed.
+    purpose: Show how little customer and concentration evidence is publicly underwritable.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer diligence item
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public evidence completeness score
+        unit: analyst score 0-2
+        scale: linear
+      series:
+        - series_id: disclosure_score
+          name: Public evidence completeness
+          unit: score
+          data_points:
+            - x: Adult-smoker positioning
+              y: 2
+              label: Publicly supported
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-003
+            - x: Online access mechanics
+              y: 2
+              label: Publicly supported
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-002
+            - x: Customer cohorts
+              y: 0
+              label: Not public
+              evidence_claim_ids:
+                - EC-015
+              source_ids:
+                - SRC-002
+            - x: Channel concentration
+              y: 0
+              label: Not public
+              evidence_claim_ids:
+                - EC-015
+              source_ids:
+                - SRC-002
+            - x: Youth-use trend claim
+              y: 1
+              label: Company-reported public claim
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: Scoring convention
+          x: Customer cohorts
+          y: 0
+          note: 0 means not publicly verifiable, 1 means partially evidenced, 2 means directly public.
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as horizontal bar chart if labels are crowded.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-012
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: The chart is an evidence-completeness visualization, not a customer concentration chart.
+
+  - figure_id: F-004
+    title: Nicotine alternatives competitive positioning map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: JUUL sits in a regulated vapor-products segment between authorized large-company brands, oral nicotine alternatives, and illicit disposables.
+    purpose: Frame competitive diligence around authorization and compliance burden.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Regulatory compliance burden
+          low_label: Low or evading enforcement
+          high_label: High regulated burden
+        y_axis:
+          label: Product substitution overlap with JUUL
+          low_label: Lower overlap
+          high_label: Higher overlap
+      segments:
+        - segment_id: authorized_vapor
+          name: Authorized vapor products
+          description: Vapor products competing in adult nicotine channels.
+        - segment_id: alternative_nicotine
+          name: Alternative nicotine
+          description: Non-combustible but different form factors.
+        - segment_id: illicit_disposables
+          name: Illicit or gray-market disposables
+          description: Products competing through availability, flavors, or price despite enforcement concerns.
+      entities:
+        - entity_id: juul
+          name: JUUL
+          entity_type: target_company
+          segment_id: authorized_vapor
+          x_value: high
+          y_value: high
+          attributes:
+            public_position: FDA 2025 marketing granted orders for specified products
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - entity_id: vuse
+          name: Vuse/Reynolds
+          entity_type: competitor
+          segment_id: authorized_vapor
+          x_value: high
+          y_value: high
+          attributes:
+            public_position: Large-company vapor competitor
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-013
+        - entity_id: oral_nicotine
+          name: Oral nicotine products
+          entity_type: competitor
+          segment_id: alternative_nicotine
+          x_value: medium_high
+          y_value: medium
+          attributes:
+            public_position: Substitution risk
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-014
+        - entity_id: unauthorized_disposables
+          name: Unauthorized disposables
+          entity_type: competitor
+          segment_id: illicit_disposables
+          x_value: low
+          y_value: high
+          attributes:
+            public_position: JUUL policy page identifies illicit disposable-market concerns
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-014
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Coordinates are qualitative diligence positioning, not measured market share.
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-020
+    source_ids:
+      - SRC-007
+      - SRC-013
+      - SRC-014
+    notes: Independent market-share data is needed for quantitative competition analysis.
+
+  - figure_id: F-005
+    title: Adult-only GTM funnel and private-data gaps
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: Public GTM steps are visible, but conversion counts and rates are not disclosed.
+    purpose: Convert public product-access evidence into funnel data requests.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      stages:
+        - stage_id: stage_1
+          name: Adult smoker awareness
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: current public materials
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - stage_id: stage_2
+          name: Account creation and age verification
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: current public product-access flow
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+        - stage_id: stage_3
+          name: Online, Auto-Ship, or retail purchase
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: current public product-access flow
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+        - stage_id: stage_4
+          name: Repeat adult-smoker replenishment
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: not publicly disclosed
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-002
+      unit: users
+      cohort_or_period: Public-source structure as of 2026-05-15; counts not public
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Render null counts as unknown and preserve stage order.
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: This is a diligence request funnel rather than a measured sales funnel.
+
+  - figure_id: F-006
+    title: Public IP product-family coverage
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: chart
+    description: JUUL's patent notice covers multiple product families across devices, pods, charging accessories, and JUUL2.
+    purpose: Show breadth of product-family IP notices that require detailed docket review.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Product family group
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Product-family notices
+        unit: count
+        scale: linear
+      series:
+        - series_id: patent_notice_family_count
+          name: Count of product-family headings in JUUL patent notice
+          unit: count
+          data_points:
+            - x: JUUL device and pods
+              y: 2
+              label: Device, pods
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-011
+            - x: Charging accessories
+              y: 4
+              label: Charging dock, C1, portable charging case, charging case
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-011
+            - x: JUUL2
+              y: 3
+              label: JUUL2 device, pods, charging dock
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-011
+      annotations:
+        - label: Docket review needed
+          x: JUUL2
+          y: 3
+          note: Product-family notice count does not indicate patent strength, expiry, ownership, or authorization.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Treat counts as patent-notice headings, not total patent counts.
+    evidence_claim_ids:
+      - EC-011
+    source_ids:
+      - SRC-011
+    notes: The chart counts public product-family categories on the patent notice page.
+
+  - figure_id: F-007
+    title: Historical personnel volatility anchor points
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Secondary public sources provide only stale headcount and layoff anchors; current staffing remains a diligence gap.
+    purpose: Show why management and capability diligence cannot rely on public people data.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public people signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: people
+        scale: linear
+      series:
+        - series_id: historical_people_signals
+          name: Historical public people signals
+          unit: people
+          data_points:
+            - x: Historical headcount anchor 2017
+              y: 200
+              label: Secondary source historical headcount
+              evidence_claim_ids:
+                - EC-017
+              source_ids:
+                - SRC-013
+            - x: Historical headcount anchor 2018
+              y: 1500
+              label: Secondary source historical headcount
+              evidence_claim_ids:
+                - EC-017
+              source_ids:
+                - SRC-013
+            - x: Public layoff signal
+              y: 500
+              label: Secondary source layoff signal; not current headcount
+              evidence_claim_ids:
+                - EC-017
+              source_ids:
+                - SRC-013
+      annotations:
+        - label: Current headcount unknown
+          x: Public layoff signal
+          y: 500
+          note: Current headcount and function mix are not publicly verifiable.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-013
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Label the layoff bar as a restructuring signal rather than ending headcount.
+    evidence_claim_ids:
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-013
+    notes: Counts are stale secondary-source anchors and must not be treated as current staffing.
+
+  - figure_id: F-008
+    title: Legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Public legal and regulatory events show repeated scrutiny, later FDA authorization, and unresolved private legal-liability questions.
+    purpose: Place key public legal and regulatory events in sequence.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: event_ftc_2020
+          date: 2020-04-01
+          label: FTC administrative complaint
+          description: FTC announced an administrative complaint challenging Altria's JUUL transaction and alleging Altria exited competition.
+          category: litigation
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-009
+        - event_id: event_fda_2022
+          date: 2022-06-23
+          label: FDA marketing denial orders
+          description: FDA issued MDOs for JUUL products and cited toxicological-data concerns.
+          category: risk
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - event_id: event_altria_2023
+          date: 2023-03-03
+          label: Altria exits economic investment
+          description: Altria exchanged its entire JUUL minority economic investment for heated-tobacco IP rights.
+          category: governance
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - event_id: event_settlement_2023
+          date: 2023-04-01
+          label: Multistate settlement reported
+          description: Secondary source describes a USD 462 million multistate settlement.
+          category: litigation
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-013
+        - event_id: event_fda_2024
+          date: 2024-06-06
+          label: FDA rescinds MDOs
+          description: FDA rescinded the 2022 MDOs and returned applications to pending review, without authorization at that time.
+          category: regulatory
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - event_id: event_fda_2025
+          date: 2025-07-17
+          label: FDA marketing granted orders
+          description: FDA marketing-order page lists MGOs for JUUL device and Virginia tobacco and menthol JUULpods.
+          category: positive
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+      start_date: 2020-04-01
+      end_date: 2025-07-17
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Use category colors to distinguish positive authorization events from legal risk events.
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-018
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-013
+    notes: Litigation status remains incomplete without counsel docket review.
+
+  - figure_id: F-009
+    title: JUUL public diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Highest-priority risks cluster around valuation, FDA compliance, youth-marketing overhang, legal liabilities, and channel economics.
+    purpose: Summarize the report's risk register in a single review artifact.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Valuation contradiction
+          severity: critical
+          likelihood: high
+          rationale: Public valuation signals diverge materially between CB Insights and Altria's stake fair value.
+          evidence_claim_ids:
+            - EC-001
+            - EC-008
+          source_ids:
+            - SRC-001
+            - SRC-008
+        - risk_id: R-002
+          label: FDA authorization scope
+          severity: high
+          likelihood: medium
+          rationale: Authorization exists for specified products, but conditions and product-change controls are not public.
+          evidence_claim_ids:
+            - EC-005
+            - EC-006
+            - EC-007
+          source_ids:
+            - SRC-005
+            - SRC-006
+            - SRC-007
+        - risk_id: R-003
+          label: Youth-use overhang
+          severity: high
+          likelihood: high
+          rationale: Youth-use and settlement history remain material despite company-reported declines.
+          evidence_claim_ids:
+            - EC-012
+            - EC-018
+          source_ids:
+            - SRC-004
+            - SRC-013
+        - risk_id: R-005
+          label: Channel economics unknown
+          severity: high
+          likelihood: unknown
+          rationale: Public pages show channels, not concentration or margin.
+          evidence_claim_ids:
+            - EC-004
+            - EC-015
+          source_ids:
+            - SRC-002
+        - risk_id: R-006
+          label: Settlement and liquidity exposure
+          severity: critical
+          likelihood: unknown
+          rationale: Public settlement history is large, but reserve and payment schedules are private.
+          evidence_claim_ids:
+            - EC-018
+            - EC-014
+          source_ids:
+            - SRC-013
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Use risk IDs from risk_register as labels if space is constrained.
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-012
+      - EC-014
+      - EC-015
+      - EC-018
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-013
+    notes: Risk ratings reflect public-source diligence only.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists JUUL Labs as a United States Consumer & Retail unicorn with a USD 12 billion valuation, joined date of 2017-12-20, San Francisco city, and Tiger Global Management investor signal.
+    evidence_summary: The CB Insights current unicorn table row captured in the selection workflow listed JUUL Labs, USD 12B, 12/20/2017, United States, San Francisco, Consumer & Retail, and Tiger Global Management.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: JUUL Labs | $12 | 12/20/2017 | United States | San Francisco | Consumer & Retail | Tiger Global Management
+        location: Public unicorn-list table row
+    analyst_interpretation: The row verifies list inclusion and a public valuation marker, but it is not enough to establish current fair value.
+    limitations: CB Insights list valuation may be stale and conflicts with later Altria fair-value evidence.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+
+  - evidence_claim_id: EC-002
+    claim: JUUL Labs is a private company associated with San Francisco and founded by Adam Bowen and James Monsees after earlier Ploom/Pax Labs history.
+    evidence_summary: Secondary company-history source describes JUUL as private, founded in 2015, headquartered in San Francisco, and founded by Adam Bowen and James Monsees.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Public company-history entry identifies Juul Labs as a private electronic cigarette company headquartered in San Francisco and names Adam Bowen and James Monsees as founders.
+        location: Company-history summary
+    analyst_interpretation: This is useful context but should be confirmed against corporate records and management-provided documents.
+    limitations: Secondary source may be stale for current headquarters, executive roles, and entity structure.
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-013
+      figure_ids: []
+      risk_ids:
+        - R-008
+
+  - evidence_claim_id: EC-003
+    claim: JUUL publicly positions its mission and product around transitioning adult smokers away from combustible cigarettes.
+    evidence_summary: JUUL company and product pages describe adult-smoker positioning and a mission to move adult smokers away from combustible cigarettes while combating underage use.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: JUUL's public company page states a mission focused on transitioning adult smokers away from combustible cigarettes and combating underage usage.
+        location: Company/about page
+      - source_id: SRC-002
+        quote: Product-access pages frame JUUL as a vaporizer or e-cigarette for adult smokers.
+        location: Product-access page
+    analyst_interpretation: The public positioning is verified; actual customer composition and conversion are separate data-room questions.
+    limitations: Company positioning is not independent proof of audience composition or health outcomes.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-003
+        - T-005
+        - T-010
+      figure_ids:
+        - F-002
+        - F-003
+        - F-005
+      risk_ids:
+        - R-003
+        - R-005
+
+  - evidence_claim_id: EC-004
+    claim: JUUL's public product-access flow includes age-gated account creation, minimum U.S. purchase age 21, online benefits, Auto-Ship, and retail-locator signals.
+    evidence_summary: Product-access pages include nicotine warnings, age and account gating, Auto-Ship, online benefits, and retail-location content.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: The public product-access content presents account creation, age verification, online benefits, Auto-Ship, retail locator, and minimum U.S. purchase age of 21.
+        location: Product-access page
+    analyst_interpretation: The presence of controls is positive, but control effectiveness needs logs, audits, and exception reporting.
+    limitations: Public pages do not disclose conversion, failures, audits, or retailer compliance data.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-004
+        - T-005
+        - T-006
+        - T-009
+        - T-010
+      figure_ids:
+        - F-002
+        - F-003
+        - F-005
+      risk_ids:
+        - R-003
+        - R-005
+
+  - evidence_claim_id: EC-005
+    claim: FDA issued marketing denial orders in June 2022 for JUUL products and cited insufficient and conflicting toxicological data; a stay did not authorize marketing.
+    evidence_summary: FDA's 2022 public statement described MDOs for JUUL device and JUULpod products, toxicological-data concerns, and the legal effect of a stay.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: FDA announced marketing denial orders for JUUL products and cited insufficient and conflicting data, including toxicological data, while noting a stay did not constitute authorization.
+        location: FDA 2022 announcement
+    analyst_interpretation: This historical denial is a central diligence item even after later rescission and authorization.
+    limitations: The public summary does not include the full PMTA review file.
+    associations:
+      chapter_id: II
+      section_id: II.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-012
+        - T-015
+      figure_ids:
+        - F-008
+        - F-009
+      risk_ids:
+        - R-002
+
+  - evidence_claim_id: EC-006
+    claim: FDA rescinded the 2022 JUUL marketing denial orders in June 2024 and returned the applications to pending review, while clarifying rescission was not authorization.
+    evidence_summary: FDA's 2024 update states it rescinded the MDOs and returned the applications to pending status; at that time the action was neither authorization nor denial.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: FDA rescinded the marketing denial orders, returned applications to pending status, and stated the rescission was not authorization or denial at that time.
+        location: FDA 2024 update
+    analyst_interpretation: This was a procedural improvement that preceded later marketing granted orders but did not itself authorize sales.
+    limitations: Full FDA correspondence and conditions are not public in the reviewed source.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.C
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-012
+        - T-015
+      figure_ids:
+        - F-008
+        - F-009
+      risk_ids:
+        - R-002
+
+  - evidence_claim_id: EC-007
+    claim: FDA public marketing-order records list July 17, 2025 marketing granted orders for JUUL device, Virginia tobacco JUULpods, and menthol JUULpods.
+    evidence_summary: FDA's tobacco-products marketing orders page includes July 17, 2025 marketing granted orders associated with JUUL Labs Inc. for the device and specified pod products.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: Marketing Granted Orders dated July 17, 2025 are listed for JUUL Labs Inc. products including JUUL Device, Virginia Tobacco JUULpods, and Menthol JUULpods.
+        location: FDA tobacco-products marketing orders page
+    analyst_interpretation: This is a strong positive regulatory signal for specified U.S. products but must be reviewed with the full order letters and conditions.
+    limitations: The list does not itself disclose all post-market obligations, label conditions, or product-change restrictions.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-003
+        - T-004
+        - T-011
+        - T-012
+        - T-014
+        - T-015
+      figure_ids:
+        - F-001
+        - F-002
+        - F-004
+        - F-008
+        - F-009
+      risk_ids:
+        - R-002
+
+  - evidence_claim_id: EC-008
+    claim: Altria exchanged its entire minority economic investment in JUUL for a non-exclusive, irrevocable global license to certain heated-tobacco IP and reported a USD 250 million carrying and fair value for its JUUL investment as of 2022-12-31.
+    evidence_summary: Altria's March 3, 2023 press release states the exchange, identifies regulatory and legal challenges, and discloses the year-end 2022 fair value.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Altria exchanged its entire minority economic investment in JUUL Labs for a non-exclusive, irrevocable global license to certain heated tobacco intellectual property and stated the carrying and fair value was USD 250 million as of December 31, 2022.
+        location: Altria March 3, 2023 press release
+    analyst_interpretation: This is the strongest public contradiction to the stale CB Insights valuation and a potential IP encumbrance.
+    limitations: Altria's stake value is not a full-company valuation and may reflect minority terms, legal risk, and strategic assumptions.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-006
+        - T-007
+        - T-011
+      figure_ids:
+        - F-001
+        - F-008
+        - F-009
+      risk_ids:
+        - R-001
+        - R-007
+
+  - evidence_claim_id: EC-009
+    claim: FTC filed an administrative complaint in 2020 challenging aspects of the Altria-JUUL transaction, alleging Altria exited competition and acquired a 35% JUUL stake.
+    evidence_summary: FTC press release announced the complaint and described allegations around Altria's exit from e-cigarette competition and JUUL's receipt of more than USD 12 billion plus support.
+    evidence_type: legal_record
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: FTC announced an administrative complaint concerning Altria's 35% stake in JUUL and alleged Altria exited the e-cigarette market before the transaction.
+        location: FTC April 1, 2020 press release
+    analyst_interpretation: The FTC record is an allegation and enforcement history signal, not a finding that all allegations were proven.
+    limitations: Further case outcome research and docket review are needed for final legal posture.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-007
+
+  - evidence_claim_id: EC-010
+    claim: Public patent records list numerous patents and applications assigned to or naming JUUL Labs Inc. across device, pod, charging, and related technology areas.
+    evidence_summary: Justia patent assignment/applicant pages contain public records for JUUL Labs Inc. patents and applications.
+    evidence_type: patent_or_trademark_record
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: Public patent listings identify JUUL Labs Inc. as assignee or applicant across multiple patents and applications.
+        location: Justia patents assigned to JUUL Labs Inc.
+    analyst_interpretation: Public patent records verify an IP estate but not its commercial relevance or enforceability.
+    limitations: Patent listings are incomplete for ownership, encumbrances, validity, and claim scope without docket review.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-011
+        - T-016
+      figure_ids: []
+      risk_ids:
+        - R-007
+
+  - evidence_claim_id: EC-011
+    claim: JUUL's patent notice lists product families including JUUL Device, JUULpods, charging accessories, JUUL2 Device, JUUL2 pods, and JUUL2 Charging Dock as protected by issued and pending patents and designs.
+    evidence_summary: JUUL's patent page states continuous innovation and lists product-family patent notices for devices, pods, charging accessories, and JUUL2.
+    evidence_type: patent_or_trademark_record
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: The JUUL patent notice identifies JUUL Device, JUULpods, charging docks/cases, JUUL2 Device, JUUL2 pods, and JUUL2 Charging Dock product families.
+        location: JUUL patents page
+    analyst_interpretation: The notice supports breadth of product-family IP but not validity, freedom to operate, or revenue relevance.
+    limitations: Product-family headings are not a complete patent-strength analysis.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-003
+        - T-011
+        - T-012
+        - T-016
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-007
+
+  - evidence_claim_id: EC-012
+    claim: JUUL publicly reports that CDC's 2025 National Youth Tobacco Survey showed 5.2% past-30-day e-cigarette use among middle and high school students, 0.06% past-30-day JUUL use, and a 99% decrease in past-30-day JUUL use since 2019.
+    evidence_summary: JUUL's youth-prevention page provides the cited figures and frames them as evidence of reduced underage use.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: JUUL states CDC's 2025 NYTS found 5.2% of middle and high school students reported past-30-day e-cigarette use and 0.06% reported past-30-day JUUL use, which JUUL describes as a 99% decrease since 2019.
+        location: JUUL youth-prevention page
+    analyst_interpretation: This supports a public youth-use decline claim, but independent verification should review original survey materials and brand-specific methodology.
+    limitations: Company presentation of survey data may omit confidence intervals, definitions, or enforcement context.
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-005
+        - T-010
+      figure_ids:
+        - F-003
+        - F-009
+      risk_ids:
+        - R-003
+
+  - evidence_claim_id: EC-013
+    claim: Secondary sources describe JUUL's historical U.S. e-cigarette market share declining from a 2018 peak and provide historical Altria transaction valuation context.
+    evidence_summary: Secondary company-history source reports 72% share in 2018, 42% in 2020, 28% in 2022, and an Altria transaction commonly associated with an implied valuation near USD 38 billion.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Secondary source describes JUUL's U.S. market share at 72% in September 2018, 42% in July 2020, and 28% in September 2022, and summarizes Altria's 2018 investment.
+        location: Company-history and market-share sections
+    analyst_interpretation: Useful for market trend context, but current share and independent market database work are required.
+    limitations: Secondary-source figures may be stale, and no current channel-specific share was verified.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+        - T-007
+      figure_ids:
+        - F-001
+        - F-004
+      risk_ids:
+        - R-004
+
+  - evidence_claim_id: EC-014
+    claim: Current audited financials, cap table, cash runway, debt, headcount, compensation, employee matters, and complete contract/legal schedules were not publicly verifiable in this research run.
+    evidence_summary: Reviewed public sources contain historical and point-in-time signals but not the private data-room records needed for underwriting.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Public company-history and news summaries do not contain audited current financial statements, cap table, debt schedule, current headcount, or complete legal contract schedules.
+        location: Public-source research limitation
+    analyst_interpretation: These are mandatory diligence requests rather than analyst-estimate inputs.
+    limitations: Absence from public sources does not imply absence of records at the company.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-002
+        - T-012
+        - T-013
+        - T-014
+        - T-016
+      figure_ids:
+        - F-007
+        - F-009
+      risk_ids:
+        - R-001
+        - R-006
+        - R-008
+
+  - evidence_claim_id: EC-015
+    claim: Customer concentration, channel revenue mix, retailer economics, supplier contracts, conversion cohorts, and churn are not publicly verifiable from the reviewed sources.
+    evidence_summary: JUUL public pages show intended audience and access paths, but no top-customer, retailer, distributor, cohort, or margin schedules.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Public pages show online access, Auto-Ship, and a retail locator but do not disclose revenue contribution, conversion, churn, or top-account concentration.
+        location: Product-access page and analyst review
+    analyst_interpretation: Public GTM evidence should be treated as channel existence, not channel quality.
+    limitations: Company data room and partner interviews are required.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-002
+        - T-005
+        - T-006
+        - T-009
+        - T-016
+      figure_ids:
+        - F-003
+        - F-005
+        - F-009
+      risk_ids:
+        - R-005
+
+  - evidence_claim_id: EC-016
+    claim: Public product-family and patent sources indicate R&D activity, but current pipeline, budget, stage gates, and product authorization status for future products are not publicly verifiable.
+    evidence_summary: JUUL patent notices reference multiple product families including JUUL2, while FDA authorization evidence is specific to listed products.
+    evidence_type: patent_or_trademark_record
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: JUUL patent notice includes JUUL2 product families.
+        location: JUUL patents page
+      - source_id: SRC-007
+        quote: FDA marketing-order records list specified JUUL device and pod products.
+        location: FDA marketing-order page
+    analyst_interpretation: Patent notices are useful R&D signals but cannot establish commercialization or regulatory status for future products.
+    limitations: Pipeline status, budgets, and submissions require management disclosure.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-011
+        - T-012
+      figure_ids: []
+      risk_ids:
+        - R-002
+        - R-007
+
+  - evidence_claim_id: EC-017
+    claim: Public secondary sources identify historical founders, leadership changes, headcount growth, and layoffs, but current management and staffing are not fully public.
+    evidence_summary: Secondary company-history source provides founder and historical headcount/layoff context; current verified roster requires company records.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: low
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Secondary source identifies Adam Bowen and James Monsees as founders and describes historical employee growth and layoffs.
+        location: Company-history and operations sections
+    analyst_interpretation: People diligence should not rely on stale public snapshots.
+    limitations: Current roles, reporting lines, incentives, and retention status are not established.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-008
+
+  - evidence_claim_id: EC-018
+    claim: Secondary sources report major youth-marketing litigation settlements, including an April 2023 multistate settlement of USD 462 million.
+    evidence_summary: Public secondary company-history source summarizes settlement history and describes the USD 462 million multistate settlement; primary state pages attempted in this run were inaccessible or unavailable.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Secondary source describes an April 2023 USD 462 million settlement with multiple states and broader youth-marketing settlement history.
+        location: Litigation and settlement sections
+    analyst_interpretation: The settlement history is material, but exact remaining liability requires counsel records and settlement agreements.
+    limitations: Primary state settlement pages were not available in this run; use counsel confirmation for legal exposure.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-005
+        - FC-006
+      table_ids:
+        - T-002
+        - T-010
+        - T-015
+        - T-016
+      figure_ids:
+        - F-008
+        - F-009
+      risk_ids:
+        - R-003
+        - R-006
+
+  - evidence_claim_id: EC-019
+    claim: Secondary sources provide historical manufacturing and supply-chain context, but current supplier, manufacturer, and quality agreements are not publicly verifiable.
+    evidence_summary: Public secondary source contains historical operational context, while current manufacturing contracts and quality agreements were not disclosed in public sources reviewed.
+    evidence_type: independent_news
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Secondary company-history source contains historical operations and manufacturing context but not current supplier contracts.
+        location: Operations sections
+    analyst_interpretation: Treat supplier and manufacturing risk as a private-diligence workstream.
+    limitations: Historical context may be stale and should not be used to underwrite current operations.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+      figure_ids: []
+      risk_ids:
+        - R-005
+
+  - evidence_claim_id: EC-020
+    claim: JUUL's regulatory-policy page states the FDA formally authorized the JUUL System for sale in the United States in July 2025 and frames policy around a continuum of risk and illicit disposable products.
+    evidence_summary: Company policy page discusses the Tobacco Control Act, PMTA pathway, reduced-risk continuum, July 2025 authorization, and illicit disposable-market concerns.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-014
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: JUUL regulatory-policy page states that FDA formally authorized the JUUL System for sale in the United States in July 2025 after scientific review.
+        location: JUUL regulatory policy page
+      - source_id: SRC-007
+        quote: FDA marketing-order page independently lists July 17, 2025 marketing granted orders for specified JUUL products.
+        location: FDA tobacco-products marketing orders page
+    analyst_interpretation: Company authorization claims are corroborated at high level by FDA's public marketing-order list, but exact order conditions remain private/legal diligence.
+    limitations: Company policy page is advocacy-oriented and should be read with FDA order documents.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-007
+        - T-008
+        - T-009
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-002
+        - R-004
+
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: market_database
+    reliability_notes: Reputable startup market database for list inclusion; valuation may be stale and should not be treated as current fair value.
+    archive_url: null
+  - source_id: SRC-002
+    title: JUUL product access and product information pages
+    url: https://www.juul.com/product-access
+    publisher: JUUL Labs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-controlled product page; reliable for current public claims and page mechanics, not independent for performance metrics.
+    archive_url: null
+  - source_id: SRC-003
+    title: JUUL company page
+    url: https://www.juul.com/company
+    publisher: JUUL Labs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-controlled page; useful for mission and positioning but not independent proof of impact.
+    archive_url: null
+  - source_id: SRC-004
+    title: JUUL combating underage use and youth-prevention page
+    url: https://www.juul.com/youth-prevention
+    publisher: JUUL Labs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-controlled presentation of youth-use survey figures; underlying CDC source should be reviewed separately.
+    archive_url: null
+  - source_id: SRC-005
+    title: FDA Denies Authorization to Market JUUL Products
+    url: https://www.fda.gov/news-events/press-announcements/fda-denies-authorization-market-juul-products
+    publisher: U.S. Food and Drug Administration
+    author: null
+    publication_date: 2022-06-23
+    accessed_date: 2026-05-15
+    source_type: regulatory_filing
+    reliability_notes: Primary regulator source for 2022 MDO history; full PMTA file not public in this source.
+    archive_url: null
+  - source_id: SRC-006
+    title: FDA Provides Update on JUUL Labs Inc. Marketing Denial Orders
+    url: https://www.fda.gov/tobacco-products/ctp-newsroom/fda-provides-update-juul-labs-inc-marketing-denial-orders
+    publisher: U.S. Food and Drug Administration
+    author: null
+    publication_date: 2024-06-06
+    accessed_date: 2026-05-15
+    source_type: regulatory_filing
+    reliability_notes: Primary regulator source for 2024 rescission and pending-review status.
+    archive_url: null
+  - source_id: SRC-007
+    title: Tobacco Products Marketing Orders
+    url: https://www.fda.gov/tobacco-products/market-and-distribute-tobacco-product/tobacco-products-marketing-orders
+    publisher: U.S. Food and Drug Administration
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: regulatory_filing
+    reliability_notes: Primary FDA marketing-order listing; exact order letters and conditions should be reviewed separately.
+    archive_url: null
+  - source_id: SRC-008
+    title: Altria Exchanges Minority Economic Investment in JUUL Labs for Intellectual Property Rights
+    url: https://www.altria.com/en/newsroom/press-releases/altria-exchanges-minority-economic-investment-in-juul-labs-for-intellectual-property-rights
+    publisher: Altria Group
+    author: null
+    publication_date: 2023-03-03
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary public company investor communication from former strategic investor; use alongside transaction agreements if available.
+    archive_url: null
+  - source_id: SRC-009
+    title: FTC Sues to Unwind Altria's $12.8 Billion Investment in Competitor JUUL
+    url: https://www.ftc.gov/news-events/news/press-releases/2020/04/ftc-sues-unwind-altria-juul-deal
+    publisher: Federal Trade Commission
+    author: null
+    publication_date: 2020-04-01
+    accessed_date: 2026-05-15
+    source_type: legal_record
+    reliability_notes: Primary agency press release describing allegations and procedural posture; docket outcome requires separate review.
+    archive_url: null
+  - source_id: SRC-010
+    title: Patents Assigned to JUUL Labs Inc.
+    url: https://patents.justia.com/assignee/juul-labs-inc
+    publisher: Justia Patents
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: patent_or_trademark_record
+    reliability_notes: Public patent record aggregator; verify against USPTO/PAIR and company docket for legal opinions.
+    archive_url: null
+  - source_id: SRC-011
+    title: JUUL patents notice
+    url: https://www.juul.com/patents
+    publisher: JUUL Labs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: patent_or_trademark_record
+    reliability_notes: Company-controlled patent notice; useful for product-family coverage, not a substitute for docket review.
+    archive_url: null
+  - source_id: SRC-012
+    title: JUUL trademark list
+    url: https://www.juul.com/trademarks
+    publisher: JUUL Labs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: patent_or_trademark_record
+    reliability_notes: Company-controlled trademark page listing non-exhaustive marks and usage guidance.
+    archive_url: null
+  - source_id: SRC-013
+    title: Juul company-history article
+    url: https://en.wikipedia.org/wiki/Juul
+    publisher: Wikipedia
+    author: Community contributors
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Secondary source used for historical context, market share, settlement chronology, and leadership history; critical claims require primary confirmation.
+    archive_url: null
+  - source_id: SRC-014
+    title: JUUL regulatory policy page
+    url: https://www.juul.com/policy/regulatory-science
+    publisher: JUUL Labs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company policy and advocacy page; FDA records used for independent corroboration of marketing-order status.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Public valuation signals are materially contradictory
+    risk_category: financial
+    severity: critical
+    likelihood: high
+    description: CB Insights lists JUUL Labs at USD 12 billion, while Altria's disclosed stake fair value and 2023 exit point to a much lower public valuation signal.
+    impacted_chapter_ids:
+      - I
+      - VII
+    impacted_section_ids:
+      - I.C
+      - VII.D
+    evidence_claim_ids:
+      - EC-001
+      - EC-008
+    mitigation_or_diligence_request: Obtain cap table, financing documents, 409A reports, secondary-transfer data, debt schedule, and liquidation waterfall before assigning value.
+  - risk_id: R-002
+    risk_title: FDA authorization scope and compliance obligations may constrain operations
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: FDA records show improved authorization status in 2025, but only for specified products and subject to order conditions not fully visible in public sources.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - II.B
+      - VI.B
+      - VIII.C
+      - VIII.G
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-020
+    mitigation_or_diligence_request: Have tobacco regulatory counsel review full order letters, post-market obligations, PMTA files, product-change controls, and compliance calendar.
+  - risk_id: R-003
+    risk_title: Youth-use and marketing-history overhang remains material
+    risk_category: reputational
+    severity: high
+    likelihood: high
+    description: Company-reported youth-use declines are positive, but youth-marketing settlement history can continue to affect brand, regulators, retailers, and financing.
+    impacted_chapter_ids:
+      - III
+      - V
+      - VIII
+    impacted_section_ids:
+      - III.A
+      - V.C
+      - V.E
+      - VIII.A
+    evidence_claim_ids:
+      - EC-012
+      - EC-018
+    mitigation_or_diligence_request: Review marketing-control policies, retailer audits, survey methodology, settlement obligations, and regulator correspondence.
+  - risk_id: R-004
+    risk_title: Competitive position and share recovery are not public
+    risk_category: market
+    severity: high
+    likelihood: medium
+    description: Secondary sources show share decline from JUUL's historical peak, while competition from authorized brands, oral nicotine, and illicit disposables may pressure growth.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+      - IV.B
+    evidence_claim_ids:
+      - EC-013
+      - EC-020
+    mitigation_or_diligence_request: Obtain independent market-share data, pricing studies, retailer shelf audits, and management's share-recovery model.
+  - risk_id: R-005
+    risk_title: Customer, retailer, and channel economics are opaque
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: Public pages show online, Auto-Ship, and retail channels, but not active customers, retention, channel revenue mix, top-account concentration, or margins.
+    impacted_chapter_ids:
+      - I
+      - III
+      - V
+    impacted_section_ids:
+      - I.B
+      - III.A
+      - III.B
+      - III.D
+      - V.A
+      - V.B
+    evidence_claim_ids:
+      - EC-004
+      - EC-015
+    mitigation_or_diligence_request: Require cohort data, channel P&L, top-retailer revenue, distributor contracts, sell-through, and age-gate performance metrics.
+  - risk_id: R-006
+    risk_title: Settlement liabilities and liquidity are not publicly quantifiable
+    risk_category: financing
+    severity: critical
+    likelihood: unknown
+    description: Public settlement history is material, but remaining liabilities, reserves, payment schedules, insurance, and cash runway are private.
+    impacted_chapter_ids:
+      - I
+      - VIII
+    impacted_section_ids:
+      - I.A
+      - I.D
+      - VIII.A
+      - VIII.F
+    evidence_claim_ids:
+      - EC-014
+      - EC-018
+    mitigation_or_diligence_request: Request counsel letter, full litigation docket, settlement agreements, payment schedule, reserve analysis, insurance policies, and liquidity model.
+  - risk_id: R-007
+    risk_title: IP encumbrances and strategic relationship changes can affect exit value
+    risk_category: legal
+    severity: medium
+    likelihood: medium
+    description: Public records show a broad IP estate but also Altria's heated-tobacco IP license and historic FTC scrutiny around the Altria transaction.
+    impacted_chapter_ids:
+      - III
+      - VI
+      - VIII
+    impacted_section_ids:
+      - III.B
+      - VI.A
+      - VIII.B
+      - VIII.C
+      - VIII.D
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+    mitigation_or_diligence_request: Review license agreements, patent docket, assignments, liens, FTO opinions, antitrust history, and change-of-control restrictions.
+  - risk_id: R-008
+    risk_title: Current management, headcount, and incentives are not publicly underwritable
+    risk_category: team
+    severity: medium
+    likelihood: unknown
+    description: Historical people data are stale, and current leadership, compliance staffing, retention, and incentives require private records.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+    evidence_claim_ids:
+      - EC-014
+      - EC-017
+    mitigation_or_diligence_request: Obtain org chart, HRIS export, executive agreements, retention grants, attrition data, hiring plan, and compliance staffing model.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Current audited financial statements, management accounts, cash balances, debt, settlement reserves, and revenue by channel.
+    why_it_matters: These records are required to assess solvency, quality of earnings, and whether FDA authorization can produce cash generation.
+    suggested_source_or_request: CFO data room with audited statements, trial balance, monthly KPI pack, settlement reserve roll-forward, and liquidity model.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, liquidation preferences, debt, warrants, 409A reports, and secondary-transfer history.
+    why_it_matters: Public valuation signals conflict by orders of magnitude, so ownership economics cannot be inferred.
+    suggested_source_or_request: Corporate counsel and CFO cap-table package with waterfall model.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: Full FDA marketing granted orders, conditions, labeling, post-market obligations, and product-change controls.
+    why_it_matters: U.S. commercial scope depends on exact order conditions and compliance.
+    suggested_source_or_request: Regulatory counsel PMTA/FDA correspondence binder.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.A
+    missing_information: Customer cohorts, adult-smoker verification, churn, repeat purchase, top retailer concentration, and channel margin.
+    why_it_matters: Public pages show channel existence, not customer quality or revenue durability.
+    suggested_source_or_request: Sales, CRM, ecommerce, retailer, and cohort dashboards.
+    priority: high
+  - gap_id: G-005
+    chapter_id: V
+    section_id: V.C
+    missing_information: Marketing-control policies, youth-access incidents, retailer audit results, and survey methodology behind youth-use claims.
+    why_it_matters: Youth-use and marketing history are central legal and reputational risks.
+    suggested_source_or_request: Compliance audit binder, marketing approval workflow, retailer mystery-shop data, and CDC survey methodology reconciliation.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Patent docket, assignments, FTO opinions, patent-strength analysis, and license encumbrances.
+    why_it_matters: Public patent notices do not establish enforceability, revenue coverage, or unencumbered rights.
+    suggested_source_or_request: IP counsel docket and claim-chart package.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Current executive roster, org chart, headcount, attrition, retention grants, and critical hiring plan.
+    why_it_matters: A regulated consumer-product company needs sufficient legal, quality, regulatory, and channel-compliance capacity.
+    suggested_source_or_request: HRIS export, org chart, employment agreements, and hiring plan.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Complete litigation docket, settlement agreements, payment schedule, insurance policies, and counsel letter.
+    why_it_matters: Legal liabilities may dominate enterprise value and cash runway.
+    suggested_source_or_request: General counsel legal disclosure schedule and outside counsel confirmation.
+    priority: high
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, monthly management accounts, cash runway, debt schedule, revenue-recognition memo, and settlement reserve roll-forward for the last three fiscal years and year-to-date period.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide current fully diluted cap table, financing documents, preference stack, debt/warrants, 409A reports, option strike distribution, and liquidation waterfall.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide the complete FDA marketing granted orders, product authorization matrix, labeling/packaging approvals, product-change control SOP, and PMTA correspondence log.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer cohort data, adult-smoker verification status, retention, churn, repeat-purchase rates, top retailer/distributor concentration, and channel P&L.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: V
+    section_id: V.C
+    request: Provide marketing approval policies, youth-use prevention audits, retailer mystery-shop results, age-verification vendor reports, and substantiation for youth-use decline claims.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide patent docket, assignments, claim charts, FTO opinions, maintenance status, license agreements, and details of the Altria heated-tobacco IP license.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-007
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide current executive roster, board roster, org chart, HRIS export, attrition report, key-person retention plan, and compliance staffing plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide complete litigation docket, threatened claims, settlement agreements, payment schedules, insurance policies, claim notices, coverage disputes, and counsel letter.
+    requested_from: counsel
+    priority: high
+
+limitations:
+  - limitation_id: L-001
+    description: This is a public-source diligence report; no private company data room, interviews, bank records, contracts, board materials, or counsel letters were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.A
+      - VII.A
+      - VIII.A
+  - limitation_id: L-002
+    description: CB Insights list valuation is treated as a public list marker and not as current fair value because Altria's later public fair-value and exit disclosures materially conflict with it.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.C
+  - limitation_id: L-003
+    description: Some primary state settlement pages and news URLs attempted during research were unavailable, blocked, or returned page-not-found/bot-challenge content; settlement details therefore rely partly on secondary sources and require counsel confirmation.
+    affected_chapter_ids:
+      - VIII
+      - V
+    affected_section_ids:
+      - VIII.A
+      - V.C
+  - limitation_id: L-004
+    description: Public patent and trademark notices verify asset existence but not ownership chain, enforceability, freedom to operate, encumbrances, expiry, or commercial relevance.
+    affected_chapter_ids:
+      - VI
+      - VIII
+    affected_section_ids:
+      - VI.A
+      - VIII.D
+  - limitation_id: L-005
+    description: Current management, headcount, channel economics, customer cohorts, and supplier/manufacturer relationships were not publicly verifiable and should not be inferred from stale secondary sources.
+    affected_chapter_ids:
+      - III
+      - V
+      - VII
+    affected_section_ids:
+      - III.A
+      - III.B
+      - V.A
+      - VII.B
