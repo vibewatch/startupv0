@@ -1,0 +1,4986 @@
+report_metadata:
+  report_title: Astronomer Public-Source Startup Diligence Report
+  target_company: Astronomer
+  website: https://www.astronomer.io/
+  known_aliases:
+    - Astronomer, Inc.
+    - Astro
+    - Astro Private Cloud
+    - Otto
+    - Datakin
+  sector: Enterprise data infrastructure, Apache Airflow orchestration, DataOps, and AI-assisted data engineering
+  geography: United States; headquarters publicly moved to New York City with global enterprise operations
+  company_stage: Late-stage private venture-backed unicorn
+  research_date: 2026-05-16
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used public company pages, pricing/security/product pages, press releases, customer stories, CB Insights unicorn database, GitHub repositories/API metadata, SEC ticker data, USPTO.report mirror, CourtListener sample search and competitor product pages.
+    - Treated all sources as untrusted until cross-checked where possible; management-authored growth and customer claims remain flagged as unaudited.
+    - Did not use private company data, non-public customer interviews, data-room materials, paid market databases or credentials.
+  included_jurisdictions:
+    - United States
+    - Public global operations signals only
+  excluded_topics:
+    - No private financial statements, contracts, cap table, SOC reports, tax schedules, insurance policies or board materials reviewed.
+    - No direct customer, employee, partner, investor, counsel or management interviews performed.
+    - No full PACER/state-court/arbitration/USPTO-depth sweep completed beyond sampled public sources.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-16
+      notes: User requested one public-source evidence-backed startup diligence YAML report for Astronomer only.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Astronomer provides Astro, an enterprise Apache Airflow orchestration platform spanning development, deployment, scale, observability and security.
+    claim_source: Astronomer Astro product page
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - IV
+      - V
+      - VI
+    mapped_section_ids:
+      - II.A
+      - IV.A
+      - V.A
+      - VI.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-008
+    contradiction_summary: No contradiction found in public sources, but product-line revenue and gross margin are private.
+    diligence_follow_up:
+      - Request product ARR, gross margin and retention split by Astro tier, Private Cloud, observability/lineage and Otto.
+  - founder_claim_id: FC-002
+    claim_text: Astronomer has scaled enterprise adoption and growth, citing 150%+ ARR growth, 90%+ utilization, 700+ enterprises in 2025 and 900+ enterprises in 2026.
+    claim_source: Astronomer Series D and CFO releases
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - III
+      - V
+    mapped_section_ids:
+      - I.A
+      - I.B
+      - III.A
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-014
+    contradiction_summary: The disclosures are official but unaudited, definitions changed across releases, and public sources do not show customer ARR or logo retention.
+    diligence_follow_up:
+      - Request ARR bridge, paying-customer definition, NRR/GRR, cohort retention, and reconciliation of 700+, 750+ and 900+ customer claims.
+  - founder_claim_id: FC-003
+    claim_text: Astronomer is a private U.S./New York Enterprise Tech unicorn with a public secondary-database valuation of $1.20B and substantial venture financing.
+    claim_source: CB Insights and Astronomer financing releases
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-022
+    contradiction_summary: Headline funding and CB Insights valuation are public, but current cap table, preferences, debt, secondaries and option overhang are not publicly verifiable.
+    diligence_follow_up:
+      - Request current cap table, fully diluted shares, option pool, SAFEs/notes, debt, liquidation preferences, secondary transactions and 409A history.
+  - founder_claim_id: FC-004
+    claim_text: Astronomer can support regulated enterprise deployment patterns through Astro Private Cloud, air-gapped/customer-controlled options and published security controls.
+    claim_source: Astronomer security and Private Cloud pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - III.E
+      - VIII.F
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-026
+    contradiction_summary: Public materials support the architecture claim but do not include SOC reports, pen tests, customer contracts, incident history or insurance schedules.
+    diligence_follow_up:
+      - Request SOC 2 Type II, ISO certificates if any, penetration-test summaries, subprocessors, DPIAs, incident log, cyber insurance and standard enterprise contract terms.
+  - founder_claim_id: FC-005
+    claim_text: Astronomer benefits from Apache Airflow open-source leadership and related OSS projects.
+    claim_source: Astronomer About page and GitHub records
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - IV
+      - VI
+    mapped_section_ids:
+      - II.A
+      - IV.A
+      - VI.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+      - EC-029
+    contradiction_summary: Airflow ecosystem scale and Astronomer OSS activity are observable, but employment-adjusted contributor share, community governance durability and conversion to paid accounts are not public.
+    diligence_follow_up:
+      - Request contributor rosters, OSS-to-paid conversion metrics, community governance dependencies and policies for maintaining Apache-aligned neutrality.
+  - founder_claim_id: FC-006
+    claim_text: Astronomer is expanding toward AI-assisted data engineering through Otto and agentic data-orchestration messaging.
+    claim_source: Astronomer Otto and Series D pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-012
+      - EC-028
+    contradiction_summary: Otto is publicly marketed, but public evidence does not prove enterprise attach rate, AI-specific ARR, model-cost margins or production reliability.
+    diligence_follow_up:
+      - Request Otto GA metrics, paid conversion, support burden, model-provider cost, security review, evals and roadmap milestones.
+executive_summary:
+  overall_assessment: Astronomer is a credible late-stage private enterprise data-infrastructure company built around managed Apache Airflow. Public evidence verifies product existence, named customer proof points, major funding rounds, cloud alliances and a CB Insights $1.20B unicorn listing. The investability question is not whether the company exists, but whether the public growth narrative translates into durable ARR, efficient GTM, secure regulated deployments and defensible economics versus hyperscalers and orchestration alternatives.
+  investment_or_diligence_thesis: Proceed only with private-document diligence. Underwrite Astronomer as an Airflow-native enterprise orchestration specialist with upside from AI/data engineering and regulated private-cloud deployments, while treating headline growth and valuation as unaudited until reconciled to ARR, retention, gross margin, cap-table and security data.
+  strongest_verified_claims:
+    - CB Insights lists Astronomer as a U.S./New York Enterprise Tech unicorn valued at $1.20B and joined 2022-03-23.
+    - Astronomer publicly announced $213M Series C funding with Datakin acquisition and $93M Series D funding.
+    - Product pages verify Astro, Private Cloud, pricing tiers, security architecture and Otto AI-assistant positioning.
+    - Public customer pages and releases cite named enterprise customers, customer outcomes and 700+/900+ enterprise scale claims.
+    - Open-source records support a large Apache Airflow ecosystem and Astronomer OSS footprint.
+  biggest_risks:
+    - "Financial opacity: audited statements, ARR bridge, gross margin, backlog, churn, burn and runway are not public."
+    - "Cap-table and valuation opacity: headline unicorn valuation does not disclose current preferences, options, debt or common-equity economics."
+    - "Hyperscaler coopetition: AWS/Microsoft partnerships coexist with AWS MWAA and Google Composer competitive pressure."
+    - "Security/shared responsibility: orchestration touches sensitive workloads but SOC reports, incident history, pen tests and insurance are private."
+    - "AI/Otto monetization: product existence is public; paid adoption, model-cost margin and reliability are not."
+  key_evidence_gaps:
+    - Audited financial statements and ARR/unit-economics schedules.
+    - Current cap table, financing terms, debt and option plan.
+    - Top-customer concentration, renewal calendar and retention cohorts.
+    - Material customer/cloud/model-provider/marketplace contracts and security artifacts.
+    - Personnel, compensation, attrition and legal/IP/OSS schedules.
+  recommended_next_steps:
+    - Open data-room request list centered on finance, cap table, customer retention, material contracts, security and IP/OSS.
+    - Run expert/customer calls focused on Astro versus MWAA/Composer/Prefect/Dagster and buyer willingness to pay.
+    - Have counsel complete full litigation, trademark, OSS and regulatory review.
+    - Rebuild a bottoms-up model using actual deployment-hour usage, discounts, gross margin and quota capacity.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Astronomer shows strong public financing and growth signals but does not disclose audited financial statements, unit economics, customer concentration, debt or cap-table schedules. Public evidence supports headline venture scale, not revenue quality.
+    founder_claim_ids:
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-006
+      - EC-007
+      - EC-027
+    risk_ids:
+      - R-001
+      - R-002
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Public sources disclose growth percentages and operating scale, not audited income statements, balance sheets, cash flows, backlog, AR aging, planned-versus-actual reports or segment gross profits.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: 206% H1 2023 revenue growth, 292% 2024 Astro revenue growth and 150%+ ARR growth are management disclosures, not audited financials.
+            evidence_claim_ids:
+              - EC-003
+              - EC-006
+              - EC-007
+          - finding: No public SEC ticker was found, consistent with Astronomer remaining a private issuer.
+            evidence_claim_ids:
+              - EC-022
+          - finding: Public materials do not expose product/channel/geography gross profit, backlog or AR aging.
+            evidence_claim_ids:
+              - EC-027
+        hidden_risks:
+          - High-growth percentages could mask low absolute ARR, heavy discounting, cloud-cost pressure, services mix, churn or elongated receivables.
+        evidence_gaps:
+          - Audited FY2023-FY2025 financial statements; monthly ARR/MRR; deferred revenue; backlog; AR aging; product/channel/geography gross margin; budget-vs-actuals.
+        follow_up_questions:
+          - Provide audited statements, management reports and ARR bridge by quarter from FY2023 through current YTD.
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+          - EC-007
+          - EC-022
+          - EC-027
+        table_ids:
+          - T-001
+          - T-002
+        figure_ids:
+          - F-002
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public releases identify growth drivers around Astro, Private Cloud, cloud alliances and AI/Otto, but no three-year model or assumptions are public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Usage-based published pricing creates a diligence path for modeling deployment-hour revenue, but enterprise discounting and committed-spend terms are private.
+            evidence_claim_ids:
+              - EC-009
+          - finding: Series D messaging frames AI data workflows as a growth driver.
+            evidence_claim_ids:
+              - EC-003
+              - EC-028
+          - finding: International exposure exists through enterprise and cloud channels, but FX, regional margins and geographic mix are not public.
+            evidence_claim_ids:
+              - EC-024
+        hidden_risks:
+          - Forecast may depend on hyperscaler marketplace economics, AI attach rates, cloud gross margin and sales capacity not visible in public sources.
+        evidence_gaps:
+          - Three-year financial model; CAC payback; pipeline; quota capacity; pricing assumptions; capex/cloud cost; working-capital assumptions; external financing assumptions.
+        follow_up_questions:
+          - Provide board-approved projections with scenarios for cloud pricing, AI adoption, win rates versus hyperscalers, and overseas expansion.
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+          - EC-024
+          - EC-028
+        table_ids:
+          - T-002
+          - T-006
+        figure_ids:
+          - F-002
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Headline funding is public, including a CB Insights unicorn valuation and venture rounds, but current share count, investor ownership, preferences, options, debt and off-balance-sheet obligations are private.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding: CB Insights lists Astronomer at a $1.20B valuation with a 2022-03-23 unicorn date.
+            evidence_claim_ids:
+              - EC-001
+          - finding: Public financing evidence includes $1.9M seed, $3.5M 2017 financing, $213M Series C and $93M Series D.
+            evidence_claim_ids:
+              - EC-002
+              - EC-003
+              - EC-004
+          - finding: No public source provides fully diluted ownership or debt terms.
+            evidence_claim_ids:
+              - EC-027
+        hidden_risks:
+          - Preference stack and option overhang could materially change common-equity economics relative to headline valuation.
+        evidence_gaps:
+          - Current cap table; financing documents; option/warrant/SAFE/note schedule; debt and bank-line terms; secondary transactions; 409A valuations.
+        follow_up_questions:
+          - Provide fully diluted capitalization and financing history by security, investor, price, preferences and current ownership.
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-027
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-001
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Tax positions, revenue-recognition policies and detailed financing basis are not public. Financing history can be reconstructed only at headline level.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public financing history supports the main outside rounds but not ownership percentages or implied price per share for each financing.
+            evidence_claim_ids:
+              - EC-004
+              - EC-027
+          - finding: Public pricing suggests usage-based and quote-based revenue components; revenue recognition policy is not disclosed.
+            evidence_claim_ids:
+              - EC-009
+        hidden_risks:
+          - Unseen tax liabilities, NOL limitations, rev-rec complexity or structured financing terms could affect value.
+        evidence_gaps:
+          - Tax schedules; NOLs; sales/VAT nexus; revenue-recognition memo; debt covenants; off-balance-sheet commitments.
+        follow_up_questions:
+          - Provide tax position summaries and revenue recognition policies for subscription, usage, services and marketplace transactions.
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-027
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-001
+    table_ids:
+      - T-001
+      - T-002
+      - T-003
+      - T-004
+      - T-006
+    figure_ids:
+      - F-001
+      - F-002
+  - chapter_id: II
+    title: Products
+    chapter_summary: Astronomer is centered on managed Apache Airflow through Astro, with enterprise/private-cloud/security layers and emerging AI assistant Otto. Public materials strongly support product existence and positioning but not SKU-level economics.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+      - FC-005
+      - FC-006
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-025
+      - EC-028
+    risk_ids:
+      - R-003
+      - R-004
+      - R-006
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Astro provides managed Airflow; Private Cloud addresses customer-controlled and air-gapped deployment; Otto extends into AI-assisted DAG development and operations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding: Astro product pages describe deployment, scaling, observability and security capabilities.
+            evidence_claim_ids:
+              - EC-008
+          - finding: Pricing pages disclose entry usage rates and quote-based enterprise packages.
+            evidence_claim_ids:
+              - EC-009
+          - finding: Private Cloud and security pages support regulated-enterprise deployment claims.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+          - finding: Otto is a real public product page but remains commercially unproven.
+            evidence_claim_ids:
+              - EC-012
+              - EC-028
+        hidden_risks:
+          - Feature breadth can hide limited attach rates, support burden, cloud-cost pass-through, AI margin compression or product gaps versus native hyperscaler services.
+        evidence_gaps:
+          - SKU-level ARR; attach and expansion rates; gross margin by product; product roadmap; reliability/SLA metrics; customer win/loss by use case.
+        follow_up_questions:
+          - Provide product P&Ls, roadmap milestones, competitive win/loss data, and reliability/security exceptions by SKU.
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+          - EC-011
+          - EC-012
+          - EC-025
+          - EC-028
+        table_ids:
+          - T-005
+          - T-006
+          - T-007
+        figure_ids:
+          - F-003
+          - F-004
+    table_ids:
+      - T-005
+      - T-006
+      - T-007
+    figure_ids:
+      - F-003
+      - F-004
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Astronomer public pages provide credible named customer examples and partnership signals, but not a top-customer list, revenue concentration, churn, supplier spend or severed-relationship history.
+    founder_claim_ids:
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-011
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-027
+    risk_ids:
+      - R-001
+      - R-005
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Public customer pages cite named proof points across financial services, software, retail, mobility and operational data use cases, but not top-15 revenue customers.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Named examples include Northern Trust, Autodesk, Everlane, Foursquare, Société Générale, Idelic, LIQID and Atmosphere.
+            evidence_claim_ids:
+              - EC-011
+              - EC-013
+          - finding: Published outcomes include 20%, 33%, 25%, 9,000 assets, 1,000 engineers, 800, 63% and 10k-style selected metrics.
+            evidence_claim_ids:
+              - EC-011
+              - EC-013
+        hidden_risks:
+          - Marketing-selected case studies may omit churned, low-usage or low-margin customers.
+        evidence_gaps:
+          - Top-15 customers by ARR for last two fiscal years and YTD, application, purchase timing, renewal dates and expansion history.
+        follow_up_questions:
+          - Provide anonymized and named customer concentration schedule plus reference calls for largest accounts.
+        evidence_claim_ids:
+          - EC-011
+          - EC-013
+        table_ids:
+          - T-008
+        figure_ids:
+          - F-005
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: AWS and Microsoft Azure alliances are publicly announced and potentially important for distribution and credibility. Commercial economics and revenue contribution are not public.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding: Astronomer announced strategic relationships with AWS and Microsoft Azure.
+            evidence_claim_ids:
+              - EC-015
+          - finding: Cloud partnerships can be distribution channels but also expose Astronomer to hyperscaler bargaining power.
+            evidence_claim_ids:
+              - EC-030
+        hidden_risks:
+          - Co-sell dependence can reduce pricing power and create platform lock-in or channel conflict.
+        evidence_gaps:
+          - Alliance agreements, marketplace revenue contribution, MDF/co-sell commitments, termination rights and pipeline by partner.
+        follow_up_questions:
+          - Provide channel contribution by cloud marketplace and the executed AWS/Microsoft agreements.
+        evidence_claim_ids:
+          - EC-015
+          - EC-030
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-007
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: No public evidence identifies customer-level revenue or whether any customer accounts for 5% or more of revenue.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public customer pages are useful for logos and applications, not customer concentration.
+            evidence_claim_ids:
+              - EC-013
+          - finding: Public financial gaps explicitly include customer concentration.
+            evidence_claim_ids:
+              - EC-027
+        hidden_risks:
+          - A small number of regulated-enterprise customers could drive a disproportionate share of ARR, renewal risk or services burden.
+        evidence_gaps:
+          - Customer ARR schedule, top-20 concentration, renewal dates, gross retention, net retention, aging and disputes.
+        follow_up_questions:
+          - Provide customer-level ARR, churn and expansion waterfall for FY2023-current.
+        evidence_claim_ids:
+          - EC-013
+          - EC-027
+        table_ids:
+          - T-010
+        figure_ids: []
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No public source found a systematic list of severed customer, partner or supplier relationships.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public sources reviewed emphasize customer wins and partnerships; they do not disclose churned or terminated relationships.
+            evidence_claim_ids:
+              - EC-013
+              - EC-015
+              - EC-027
+        hidden_risks:
+          - Undisclosed churn or partner termination could contradict growth messaging.
+        evidence_gaps:
+          - Lost-customer log, major downgrades, terminated partner/supplier agreements and open disputes.
+        follow_up_questions:
+          - Provide churned/lost accounts above a materiality threshold with reason codes and remediation.
+        evidence_claim_ids:
+          - EC-013
+          - EC-015
+          - EC-027
+        table_ids:
+          - T-010
+        figure_ids: []
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Top suppliers are not disclosed. Public product and security materials imply reliance on cloud infrastructure, model providers for Otto and security vendors such as Bugcrowd, but spend levels are unknown.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding: Security materials list AWS/Azure/GCP support and Bugcrowd-type vulnerability program signals.
+            evidence_claim_ids:
+              - EC-010
+          - finding: Otto page references model providers including OpenAI, Anthropic and Google.
+            evidence_claim_ids:
+              - EC-012
+        hidden_risks:
+          - Supplier concentration or model-provider pricing could pressure gross margins and data-protection obligations.
+        evidence_gaps:
+          - Top supplier spend, cloud commitments, model-provider contracts, subprocessor list, DPAs and termination/price-change clauses.
+        follow_up_questions:
+          - Provide supplier concentration schedule and standard subprocessors/security addenda.
+        evidence_claim_ids:
+          - EC-010
+          - EC-012
+          - EC-027
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-003
+    table_ids:
+      - T-008
+      - T-009
+      - T-010
+    figure_ids:
+      - F-003
+      - F-005
+      - F-007
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Astronomer competes in workflow orchestration against hyperscaler managed-Airflow services, modern orchestration vendors, DIY Airflow and broader data-platform suites. Its Airflow-native specialization is real, but coopetition is a central risk.
+    founder_claim_ids:
+      - FC-001
+      - FC-005
+    evidence_claim_ids:
+      - EC-016
+      - EC-023
+      - EC-030
+    risk_ids:
+      - R-003
+      - R-004
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Public competitor pages show direct alternatives in AWS MWAA, Google Cloud Composer, Prefect and Dagster, with additional DIY/self-managed Airflow pressure.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding: Astronomer is Airflow-native and benefits from Airflow ecosystem scale.
+            evidence_claim_ids:
+              - EC-016
+              - EC-029
+          - finding: AWS and Google offer managed Airflow alternatives; Prefect and Dagster position around workflow/data orchestration.
+            evidence_claim_ids:
+              - EC-023
+          - finding: AWS and Microsoft partnerships coexist with hyperscaler competitive pressure.
+            evidence_claim_ids:
+              - EC-030
+        hidden_risks:
+          - Hyperscalers can bundle, discount or integrate managed orchestration in ways that compress Astronomer pricing; modern orchestration vendors can win greenfield workloads.
+        evidence_gaps:
+          - Win/loss by competitor; price realization versus AWS/GCP; market share; customer switching costs; reasons for renewals/downgrades.
+        follow_up_questions:
+          - Provide competitive win/loss cohort and discounting data for MWAA, Composer, Prefect, Dagster and DIY Airflow alternatives.
+        evidence_claim_ids:
+          - EC-016
+          - EC-023
+          - EC-030
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+    table_ids:
+      - T-011
+      - T-012
+    figure_ids:
+      - F-006
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Astronomer uses enterprise positioning, open-source credibility, direct sales, customer stories and cloud alliances. Public sources do not reveal sales productivity, quota capacity, CAC payback or marketing-budget sufficiency.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+    evidence_claim_ids:
+      - EC-008
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-018
+      - EC-030
+    risk_ids:
+      - R-003
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public GTM emphasizes enterprise-grade Airflow, AI/data orchestration, customer stories, events/content and cloud alliances.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding: Official positioning ties Astro to enterprise orchestration, security and AI data workflows.
+            evidence_claim_ids:
+              - EC-008
+              - EC-028
+          - finding: Customer stories and partner releases create marketing proof points.
+            evidence_claim_ids:
+              - EC-013
+              - EC-015
+        hidden_risks:
+          - Messaging breadth could outpace monetized product depth; public PR does not prove pipeline conversion.
+        evidence_gaps:
+          - Marketing calendar, source-of-pipeline metrics, regional channel mix, campaign ROI and analyst/reference strategy.
+        follow_up_questions:
+          - Provide pipeline source analysis and conversion rates for direct, cloud, OSS and content-led channels.
+        evidence_claim_ids:
+          - EC-008
+          - EC-013
+          - EC-015
+          - EC-028
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Public customer momentum is credible but selective. Releases cite growing enterprise counts, and customer pages show usage outcomes, but customer health and pipeline are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Enterprise-count disclosures increased from 700+ in 2025 to 900+ in 2026 across public releases, with a 750+ reference in another release.
+            evidence_claim_ids:
+              - EC-014
+          - finding: Named customer outcomes support value proposition across regulated and data-intensive use cases.
+            evidence_claim_ids:
+              - EC-011
+              - EC-013
+        hidden_risks:
+          - Different customer-count definitions may make growth comparisons misleading. Concentration, renewal risk and pipeline quality are unknown.
+        evidence_gaps:
+          - Major-customer status, renewal calendar, NRR by cohort, pipeline by stage and forecast category, referenceability and expansion plans.
+        follow_up_questions:
+          - Provide top-account health scores, NRR/GRR and pipeline conversion by customer segment.
+        evidence_claim_ids:
+          - EC-011
+          - EC-013
+          - EC-014
+        table_ids:
+          - T-008
+        figure_ids:
+          - F-005
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Likely avenues include direct enterprise sales, cloud marketplaces/co-sell, OSS community conversion, partner referrals and AI/Otto expansion. Public sources do not quantify each channel.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: AWS and Microsoft alliances provide public evidence of cloud-channel strategy.
+            evidence_claim_ids:
+              - EC-015
+          - finding: Open-source footprint may support developer-led awareness and conversion.
+            evidence_claim_ids:
+              - EC-016
+              - EC-017
+        hidden_risks:
+          - Channel partner economics and marketplace fees may dilute ARR or limit direct customer control.
+        evidence_gaps:
+          - New ARR by lead source, marketplace revenue, partner-sourced ARR, OSS-to-paid funnel and AI upsell funnel.
+        follow_up_questions:
+          - Provide channel-mix and CAC-payback by source for the last eight quarters.
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+          - EC-017
+          - EC-030
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+          - F-008
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: No public data discloses sales compensation, average quota, cycle length or hiring ramp. Leadership additions suggest GTM scaling but not productivity.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public leadership releases show GTM/field operations leadership additions.
+            evidence_claim_ids:
+              - EC-018
+          - finding: Public sources do not disclose quotas, attainment, sales cycles or compensation plans.
+            evidence_claim_ids:
+              - EC-027
+        hidden_risks:
+          - Rapid hiring without quota productivity could burn cash; enterprise Airflow deals may have long security/procurement cycles.
+        evidence_gaps:
+          - Quota capacity, attainment distribution, sales-cycle length, ramp time, compensation plan, pipeline coverage and attrition.
+        follow_up_questions:
+          - Provide sales productivity model and cohort attainment for AEs, SEs and customer success.
+        evidence_claim_ids:
+          - EC-018
+          - EC-027
+        table_ids:
+          - T-014
+        figure_ids: []
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Budget sufficiency cannot be verified publicly. The company has recent financing and hiring signals, but spend plan, burn and runway are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Series D funding provides headline resources, but use-of-proceeds, burn and runway are not public.
+            evidence_claim_ids:
+              - EC-003
+          - finding: Careers/about signal active hiring but not budget allocation.
+            evidence_claim_ids:
+              - EC-019
+        hidden_risks:
+          - Marketing and field investment may require additional financing if ARR growth slows or gross margin compresses.
+        evidence_gaps:
+          - Budget, burn, runway, forecast spend by function, hiring plan and sensitivity to missed pipeline.
+        follow_up_questions:
+          - Provide operating plan and budget-vs-actual by department.
+        evidence_claim_ids:
+          - EC-003
+          - EC-019
+          - EC-027
+        table_ids:
+          - T-014
+        figure_ids: []
+    table_ids:
+      - T-008
+      - T-013
+      - T-014
+    figure_ids:
+      - F-005
+      - F-007
+      - F-008
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Astronomer R&D is publicly tied to Airflow expertise, OSS projects, Datakin/lineage heritage, Private Cloud/security work and Otto AI. R&D cost, velocity and key-person dependencies are not public.
+    founder_claim_ids:
+      - FC-001
+      - FC-005
+      - FC-006
+    evidence_claim_ids:
+      - EC-012
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-025
+      - EC-028
+      - EC-029
+    risk_ids:
+      - R-004
+      - R-007
+      - R-008
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public sources support deep Airflow and OSS involvement, plus named R&D leadership. They do not disclose engineering headcount, team structure, roadmap velocity or key-person concentration.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Astronomer claims deep Airflow contributor/PMC involvement and has observable OSS projects.
+            evidence_claim_ids:
+              - EC-016
+              - EC-017
+              - EC-029
+          - finding: Public releases identify Carter Page as R&D leader and Pete DeJoy/Andy Byron leadership context.
+            evidence_claim_ids:
+              - EC-018
+        hidden_risks:
+          - Airflow governance is outside Astronomer control; losing key contributors could weaken differentiation.
+        evidence_gaps:
+          - Engineering org chart, key-person dependency map, release cadence, OSS contribution policy and security backlog.
+        follow_up_questions:
+          - Provide R&D org plan and top technical risks by product line.
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+          - EC-018
+          - EC-029
+        table_ids:
+          - T-015
+          - T-016
+        figure_ids:
+          - F-008
+          - F-009
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public pipeline signals include Otto AI, observability/lineage from Datakin heritage, Private Cloud and enterprise Airflow enhancements. Timing, development cost and reliability metrics are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Otto is public and references multiple model providers, team memory and Airflow-specific workflows.
+            evidence_claim_ids:
+              - EC-012
+          - finding: Datakin acquisition and platform messaging support lineage/metadata expansion.
+            evidence_claim_ids:
+              - EC-025
+          - finding: Series D messaging connects Astronomer to AI data workflows.
+            evidence_claim_ids:
+              - EC-028
+        hidden_risks:
+          - AI product reliability, model cost, data-leakage controls and buyer willingness to pay are unproven publicly.
+        evidence_gaps:
+          - Roadmap, GA/beta status, R&D spend by initiative, model-provider contracts, AI evals, customer pilots and adoption.
+        follow_up_questions:
+          - Provide Otto product metrics, security review and roadmap with spend/ROI.
+        evidence_claim_ids:
+          - EC-012
+          - EC-025
+          - EC-028
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-004
+    table_ids:
+      - T-015
+      - T-016
+    figure_ids:
+      - F-004
+      - F-008
+      - F-009
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public leadership disclosures identify key executives and hiring signals, but organization charts, compensation, stock plans, employee relations and turnover data are not public.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-018
+      - EC-019
+      - EC-024
+      - EC-027
+    risk_ids:
+      - R-008
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: A full organization chart is not public. Public releases identify CEO/co-founder Pete DeJoy, CFO Chris Lynch, field operations leader Matt Simontacchi, R&D leader Carter Page and prior CEO Andy Byron context.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Public leadership releases identify current and historical senior roles.
+            evidence_claim_ids:
+              - EC-018
+        hidden_risks:
+          - Executive transitions or unclear reporting lines can create execution risk if not stabilized.
+        evidence_gaps:
+          - Current organization chart, board composition, reporting lines, vacancies and succession plan.
+        follow_up_questions:
+          - Provide current org chart and executive transition documentation.
+        evidence_claim_ids:
+          - EC-018
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-009
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public sources show NYC headquarters relocation, global/EMEA signals and 27 open roles observed, but not historical or projected headcount by function/location.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding: Astronomer publicly relocated headquarters to New York City and shows global operating signals.
+            evidence_claim_ids:
+              - EC-024
+          - finding: Careers/about page listed 27 open roles during research.
+            evidence_claim_ids:
+              - EC-019
+        hidden_risks:
+          - Hiring plan may lag revenue plan; location strategy may affect compensation, retention and enterprise coverage.
+        evidence_gaps:
+          - Headcount by function/location for FY2023-current, hiring plan, attrition, open roles and recruiting funnel.
+        follow_up_questions:
+          - Provide headcount waterfall and hiring plan by function and region.
+        evidence_claim_ids:
+          - EC-019
+          - EC-024
+        table_ids:
+          - T-018
+        figure_ids: []
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public releases provide basic leadership biographies and role context; ages, compensation, exact tenure, equity and performance history are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Public announcements support senior-management roster verification at a high level.
+            evidence_claim_ids:
+              - EC-018
+        hidden_risks:
+          - Biography gaps and transition terms could affect leadership underwriting.
+        evidence_gaps:
+          - Detailed bios, employment agreements, references, board minutes on transitions and background checks.
+        follow_up_questions:
+          - Provide senior-executive diligence package and references.
+        evidence_claim_ids:
+          - EC-018
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-009
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: No public evidence discloses key employment agreements, cash compensation, severance, benefits or change-of-control terms.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public sources identify roles, not compensation arrangements.
+            evidence_claim_ids:
+              - EC-018
+              - EC-027
+        hidden_risks:
+          - Unusual severance, retention packages or change-of-control terms could create hidden liabilities.
+        evidence_gaps:
+          - Employment agreements, bonus plans, benefits summaries, severance/change-of-control provisions.
+        follow_up_questions:
+          - Provide compensation summary and all executive employment agreements.
+        evidence_claim_ids:
+          - EC-018
+          - EC-027
+        table_ids:
+          - T-019
+        figure_ids: []
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Option pool, grants, vesting, exercise prices and refresh policy are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public cap-table gaps include options and potentially dilutive securities.
+            evidence_claim_ids:
+              - EC-027
+        hidden_risks:
+          - Option overhang and underwater equity could affect retention and valuation.
+        evidence_gaps:
+          - Equity incentive plan, grants by employee group, vesting schedule, exercise prices, option-pool refresh and 409A history.
+        follow_up_questions:
+          - Provide incentive stock plan and fully diluted option schedule.
+        evidence_claim_ids:
+          - EC-027
+        table_ids:
+          - T-019
+        figure_ids: []
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No comprehensive public employment-litigation, whistleblower, HR complaint or culture review was completed; no material issue was verified from sampled sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: CourtListener sample did not identify a clear material operating lawsuit, but it was not comprehensive.
+            evidence_claim_ids:
+              - EC-021
+        hidden_risks:
+          - Private HR disputes, employee relations issues or cultural problems would not necessarily appear in public sources.
+        evidence_gaps:
+          - Employment claims, HR complaints, investigation summaries, Glassdoor trend review, severance records and counsel letters.
+        follow_up_questions:
+          - Provide employee-relations and litigation summary from counsel/HR.
+        evidence_claim_ids:
+          - EC-021
+          - EC-027
+        table_ids:
+          - T-019
+        figure_ids: []
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover and retention data are not public. Hiring openings and executive announcements are insufficient to determine attrition.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public hiring signals are point-in-time and do not measure turnover.
+            evidence_claim_ids:
+              - EC-019
+        hidden_risks:
+          - High turnover in engineering, sales or customer success could impair product velocity and renewals.
+        evidence_gaps:
+          - Voluntary/involuntary attrition by function, regretted losses, tenure distribution, retention programs and employee engagement results.
+        follow_up_questions:
+          - Provide turnover data for last two fiscal years and current YTD.
+        evidence_claim_ids:
+          - EC-019
+          - EC-027
+        table_ids:
+          - T-019
+        figure_ids: []
+    table_ids:
+      - T-017
+      - T-018
+      - T-019
+    figure_ids:
+      - F-009
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal/IP/security diligence found trademark records, product/security statements and limited sampled litigation evidence, but no substitute for counsel review, contract review, insurance review or regulatory inquiry.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-010
+      - EC-020
+      - EC-021
+      - EC-026
+      - EC-027
+    risk_ids:
+      - R-006
+      - R-009
+      - R-010
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: A sampled CourtListener search found limited Astronomer-related references and no clear material operating lawsuit, but the search is not comprehensive.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding: No clear material operating lawsuit was verified in the sampled public legal search.
+            evidence_claim_ids:
+              - EC-021
+        hidden_risks:
+          - PACER/state/arbitration matters, threatened claims or sealed disputes may be missing.
+        evidence_gaps:
+          - Counsel litigation schedule, docket search across jurisdictions, demand letters, threatened claims and reserves.
+        follow_up_questions:
+          - Have counsel perform full litigation search and provide schedule of pending/threatened claims.
+        evidence_claim_ids:
+          - EC-021
+          - EC-027
+        table_ids:
+          - T-020
+        figure_ids:
+          - F-010
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No public-source evidence found a complete list of lawsuits initiated by Astronomer.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Sampled legal search was limited and not a comprehensive company-initiated litigation review.
+            evidence_claim_ids:
+              - EC-021
+        hidden_risks:
+          - Collections, IP enforcement or contract claims could signal customer or partner stress.
+        evidence_gaps:
+          - Litigation schedule of plaintiff matters, settlement history, collection actions and IP enforcement.
+        follow_up_questions:
+          - Request counsel-prepared schedule of initiated claims and settlements.
+        evidence_claim_ids:
+          - EC-021
+          - EC-027
+        table_ids:
+          - T-020
+        figure_ids: []
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: As a software company, material environmental and workplace safety issues are likely office/remote-work compliance matters, but no public safety schedule was found.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public sources do not disclose environmental or employee safety liabilities.
+            evidence_claim_ids:
+              - EC-027
+        hidden_risks:
+          - Remote/global workforce and offices can still create labor, health, privacy and compliance exposure.
+        evidence_gaps:
+          - Workplace safety policies, workers compensation claims, office leases, environmental representations and labor compliance by jurisdiction.
+        follow_up_questions:
+          - Provide EHS/workplace safety and labor compliance summary.
+        evidence_claim_ids:
+          - EC-027
+        table_ids:
+          - T-020
+        figure_ids: []
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Trademark records support Astronomer/ASTRO brand filings. OSS licensing and Apache governance are material because the product is Airflow-centered.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: USPTO.report lists Astronomer, Inc. with ASTRONOMER, ASTRO and related trademark records/applications.
+            evidence_claim_ids:
+              - EC-020
+          - finding: Apache Airflow and Astronomer OSS project footprint create license/governance diligence requirements.
+            evidence_claim_ids:
+              - EC-016
+              - EC-017
+              - EC-029
+        hidden_risks:
+          - Trademark mirror may be incomplete; OSS license compliance, third-party code and Apache governance cannot be verified from the report alone.
+        evidence_gaps:
+          - Official USPTO/TSDR, patent search, copyright registrations, OSS SBOM, contributor agreements and license compliance audit.
+        follow_up_questions:
+          - Have counsel complete IP/OSS review and confirm rights to product marks and code.
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+          - EC-020
+          - EC-029
+        table_ids:
+          - T-020
+        figure_ids:
+          - F-008
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage, cyber limits, D&O, E&O, EPLI and exclusions are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public security and legal materials do not include insurance schedules.
+            evidence_claim_ids:
+              - EC-026
+              - EC-027
+        hidden_risks:
+          - A security incident in orchestration infrastructure could be costly if cyber/E&O limits or exclusions are inadequate.
+        evidence_gaps:
+          - Insurance certificates, policies, limits, exclusions, claims history and renewals.
+        follow_up_questions:
+          - Provide insurance schedule and claims history.
+        evidence_claim_ids:
+          - EC-026
+          - EC-027
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-010
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material customer, cloud, model-provider, marketplace and strategic alliance contracts are not public. Product/security pages imply shared responsibility and sensitive infrastructure access.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding: AWS/Microsoft alliances are public but commercial terms are private.
+            evidence_claim_ids:
+              - EC-015
+          - finding: Security materials describe architecture and shared controls but not contract obligations, indemnities or SLAs.
+            evidence_claim_ids:
+              - EC-010
+              - EC-026
+          - finding: Otto references external model providers, implying vendor/privacy contract diligence.
+            evidence_claim_ids:
+              - EC-012
+        hidden_risks:
+          - Enterprise contract terms, SLAs, indemnities, DPA obligations, customer termination rights and provider pass-throughs could materially affect risk and margin.
+        evidence_gaps:
+          - Top customer contracts, standard MSA/SOW/DPA/SLA, AWS/Microsoft agreements, model-provider contracts and subprocessors.
+        follow_up_questions:
+          - Provide material-contract schedule and redlines for largest accounts and partners.
+        evidence_claim_ids:
+          - EC-010
+          - EC-012
+          - EC-015
+          - EC-026
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-003
+          - F-010
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: No public evidence verified regulatory agency problems, but data orchestration for regulated enterprises creates privacy, security and sector-compliance exposure.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public security materials outline controls but not regulatory inquiries, audit exceptions or customer-regulatory findings.
+            evidence_claim_ids:
+              - EC-010
+              - EC-026
+        hidden_risks:
+          - Hidden regulatory inquiries, privacy incidents or audit exceptions could impair regulated-enterprise growth.
+        evidence_gaps:
+          - Regulatory correspondence, privacy/security incident logs, audit exceptions, DPIAs, subprocessors and compliance certifications.
+        follow_up_questions:
+          - Request counsel and CISO certifications on regulatory inquiries, incidents and audit exceptions.
+        evidence_claim_ids:
+          - EC-010
+          - EC-026
+          - EC-027
+        table_ids:
+          - T-020
+          - T-021
+        figure_ids:
+          - F-010
+    table_ids:
+      - T-020
+      - T-021
+    figure_ids:
+      - F-003
+      - F-008
+      - F-010
+tables:
+  - table_id: T-001
+    title: Public financial evidence matrix
+    chapter_id: I
+    columns:
+      - name: financial_item
+        type: string
+        description: financial item
+      - name: public_status
+        type: string
+        description: public status
+      - name: public_evidence
+        type: string
+        description: public evidence
+      - name: diligence_implication
+        type: string
+        description: diligence implication
+    rows:
+      - values:
+          financial_item: Audited statements
+          public_status: Not public
+          public_evidence: No SEC public ticker match or public financial statements found
+          diligence_implication: Revenue quality, cash flow and balance sheet require company data
+        evidence_claim_ids:
+          - EC-022
+          - EC-027
+        row_id: T-001-R1
+        source_ids:
+          - SRC-028
+          - SRC-009
+          - SRC-010
+          - SRC-022
+      - values:
+          financial_item: ARR/revenue growth
+          public_status: Management disclosed
+          public_evidence: 206% H1 2023, 292% 2024 and 150%+ ARR growth claims
+          diligence_implication: Validate definitions, denominator, retention and gross margin
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+          - EC-007
+        row_id: T-001-R2
+        source_ids:
+          - SRC-010
+          - SRC-011
+          - SRC-012
+      - values:
+          financial_item: Customer count
+          public_status: Management disclosed
+          public_evidence: 700+ to 900+ enterprise customer claims
+          diligence_implication: Logo breadth does not prove ARR concentration
+        evidence_claim_ids:
+          - EC-014
+        row_id: T-001-R3
+        source_ids:
+          - SRC-010
+          - SRC-013
+          - SRC-017
+    notes: Financial disclosures are strong on growth narrative, weak on audited quality.
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-022
+      - EC-027
+      - EC-014
+    section_id: I.A
+    purpose: Structure public evidence and diligence gaps for Public financial evidence matrix.
+    source_ids:
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-028
+      - SRC-009
+      - SRC-022
+      - SRC-013
+      - SRC-017
+  - table_id: T-002
+    title: Public growth disclosures
+    chapter_id: I
+    columns:
+      - name: period
+        type: string
+        description: period
+      - name: metric
+        type: string
+        description: metric
+      - name: disclosed_value
+        type: string
+        description: disclosed value
+      - name: underwriting_note
+        type: string
+        description: underwriting note
+    rows:
+      - values:
+          period: H1 2023
+          metric: Astro revenue growth
+          disclosed_value: 206% YoY
+          underwriting_note: Unaudited management claim
+        evidence_claim_ids:
+          - EC-006
+        row_id: T-002-R1
+        source_ids:
+          - SRC-011
+      - values:
+          period: H1 2023
+          metric: Astro usage growth
+          disclosed_value: 1400% YoY
+          underwriting_note: Usage may not convert linearly to revenue
+        evidence_claim_ids:
+          - EC-006
+        row_id: T-002-R2
+        source_ids:
+          - SRC-011
+      - values:
+          period: 2024 release
+          metric: Astro revenue growth
+          disclosed_value: 292% YoY
+          underwriting_note: Denominator and gross margin private
+        evidence_claim_ids:
+          - EC-007
+        row_id: T-002-R3
+        source_ids:
+          - SRC-012
+      - values:
+          period: 2025 Series D
+          metric: Astro ARR growth/utilization
+          disclosed_value: 150%+ / 90%+
+          underwriting_note: Definitions and cohorts private
+        evidence_claim_ids:
+          - EC-003
+        row_id: T-002-R4
+        source_ids:
+          - SRC-010
+    notes: Growth metrics use different definitions and should not be combined without company data.
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+    section_id: I.A
+    purpose: Structure public evidence and diligence gaps for Public growth disclosures.
+    source_ids:
+      - SRC-010
+      - SRC-011
+      - SRC-012
+  - table_id: T-003
+    title: Financing history
+    chapter_id: I
+    columns:
+      - name: date
+        type: string
+        description: date
+      - name: round_or_event
+        type: string
+        description: round or event
+      - name: amount
+        type: string
+        description: amount
+      - name: investors_or_notes
+        type: string
+        description: investors or notes
+    rows:
+      - values:
+          date: "2016"
+          round_or_event: Seed
+          amount: $1.9M
+          investors_or_notes: CincyTech-led early funding
+        evidence_claim_ids:
+          - EC-004
+        row_id: T-003-R1
+        source_ids:
+          - SRC-019
+          - SRC-020
+      - values:
+          date: "2017"
+          round_or_event: Financing
+          amount: $3.5M
+          investors_or_notes: Wireframe Ventures and CincyTech referenced
+        evidence_claim_ids:
+          - EC-004
+        row_id: T-003-R2
+        source_ids:
+          - SRC-019
+          - SRC-020
+      - values:
+          date: 2022-03-23
+          round_or_event: Series C / unicorn era
+          amount: $213M
+          investors_or_notes: Series C and Datakin acquisition; CB Insights $1.20B unicorn row
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        row_id: T-003-R3
+        source_ids:
+          - SRC-022
+          - SRC-009
+      - values:
+          date: "2025"
+          round_or_event: Series D
+          amount: $93M
+          investors_or_notes: Bain-led; Salesforce Ventures/existing investors; growth claims
+        evidence_claim_ids:
+          - EC-003
+        row_id: T-003-R4
+        source_ids:
+          - SRC-010
+    notes: Financing is well evidenced publicly; ownership economics are not.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+    section_id: I.C
+    purpose: Structure public evidence and diligence gaps for Financing history.
+    source_ids:
+      - SRC-022
+      - SRC-009
+      - SRC-010
+      - SRC-019
+      - SRC-020
+  - table_id: T-004
+    title: Capital-structure open questions
+    chapter_id: I
+    columns:
+      - name: topic
+        type: string
+        description: topic
+      - name: public_evidence
+        type: string
+        description: public evidence
+      - name: missing_private_data
+        type: string
+        description: missing private data
+      - name: risk
+        type: string
+        description: risk
+    rows:
+      - values:
+          topic: Valuation
+          public_evidence: CB Insights $1.20B valuation
+          missing_private_data: Latest 409A, post-Series D valuation, secondary terms
+          risk: High
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+        row_id: T-004-R1
+        source_ids:
+          - SRC-022
+          - SRC-010
+      - values:
+          topic: Securities
+          public_evidence: No cap table public
+          missing_private_data: Shares, options, warrants, rights, vesting
+          risk: High
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-004-R2
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Debt/off-balance-sheet
+          public_evidence: No debt schedule public
+          missing_private_data: Credit lines, cloud commits, SLA credits
+          risk: Medium
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-004-R3
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Tax/accounting
+          public_evidence: No tax or revenue policy public
+          missing_private_data: NOLs, revenue recognition, transfer pricing
+          risk: Medium
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-004-R4
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+    notes: The public unicorn valuation is not enough to price common equity.
+    evidence_claim_ids:
+      - EC-001
+      - EC-027
+      - EC-003
+    section_id: I.C
+    purpose: Structure public evidence and diligence gaps for Capital-structure open questions.
+    source_ids:
+      - SRC-022
+      - SRC-009
+      - SRC-010
+      - SRC-028
+  - table_id: T-005
+    title: Product portfolio map
+    chapter_id: II
+    columns:
+      - name: product
+        type: string
+        description: product
+      - name: buyer_problem
+        type: string
+        description: buyer problem
+      - name: public_capabilities
+        type: string
+        description: public capabilities
+      - name: diligence_view
+        type: string
+        description: diligence view
+    rows:
+      - values:
+          product: Astro
+          buyer_problem: Managed enterprise Airflow
+          public_capabilities: Develop, deploy, scale, observe and secure Airflow
+          diligence_view: Core product; validate ARR/margin/retention
+        evidence_claim_ids:
+          - EC-008
+        row_id: T-005-R1
+        source_ids:
+          - SRC-003
+      - values:
+          product: Astro Private Cloud
+          buyer_problem: Regulated/isolated deployments
+          public_capabilities: Customer-controlled and air-gapped options
+          diligence_view: Differentiated but support-intensive
+        evidence_claim_ids:
+          - EC-011
+        row_id: T-005-R2
+        source_ids:
+          - SRC-006
+      - values:
+          product: Observe/lineage
+          buyer_problem: Pipeline visibility
+          public_capabilities: Datakin acquisition and platform observe messaging
+          diligence_view: Upsell potential; attach rates private
+        evidence_claim_ids:
+          - EC-002
+          - EC-025
+        row_id: T-005-R3
+        source_ids:
+          - SRC-009
+          - SRC-003
+          - SRC-015
+      - values:
+          product: Otto
+          buyer_problem: AI-assisted DAG work
+          public_capabilities: CLI/IDE assistant using Airflow/team context and model providers
+          diligence_view: Strategic AI wedge; monetization unproven
+        evidence_claim_ids:
+          - EC-012
+          - EC-028
+        row_id: T-005-R4
+        source_ids:
+          - SRC-007
+          - SRC-010
+    notes: Product breadth is coherent around Airflow operations and AI-assisted DataOps.
+    evidence_claim_ids:
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-025
+      - EC-002
+      - EC-028
+    section_id: II.A
+    purpose: Structure public evidence and diligence gaps for Product portfolio map.
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-015
+      - SRC-010
+  - table_id: T-006
+    title: Pricing and packaging signals
+    chapter_id: II
+    columns:
+      - name: package
+        type: string
+        description: package
+      - name: public_detail
+        type: string
+        description: public detail
+      - name: commercial_interpretation
+        type: string
+        description: commercial interpretation
+      - name: open_question
+        type: string
+        description: open question
+    rows:
+      - values:
+          package: Developer
+          public_detail: $0.35/deployment hour
+          commercial_interpretation: Transparent entry tier
+          open_question: Conversion to enterprise ARR
+        evidence_claim_ids:
+          - EC-009
+        row_id: T-006-R1
+        source_ids:
+          - SRC-004
+      - values:
+          package: Team
+          public_detail: $0.42/deployment hour
+          commercial_interpretation: Usage-based scale path
+          open_question: Gross margin after cloud costs
+        evidence_claim_ids:
+          - EC-009
+        row_id: T-006-R2
+        source_ids:
+          - SRC-004
+      - values:
+          package: Business/Enterprise
+          public_detail: Quote-based
+          commercial_interpretation: Enterprise monetization lever
+          open_question: Discounting and minimum commits
+        evidence_claim_ids:
+          - EC-009
+        row_id: T-006-R3
+        source_ids:
+          - SRC-004
+      - values:
+          package: Private Cloud
+          public_detail: Customer-environment deployment
+          commercial_interpretation: Regulated-account differentiation
+          open_question: Implementation/support cost
+        evidence_claim_ids:
+          - EC-011
+        row_id: T-006-R4
+        source_ids:
+          - SRC-006
+    notes: Public prices show packaging but not realized ACV or margin.
+    evidence_claim_ids:
+      - EC-009
+      - EC-011
+    section_id: II.A
+    purpose: Structure public evidence and diligence gaps for Pricing and packaging signals.
+    source_ids:
+      - SRC-004
+      - SRC-006
+  - table_id: T-007
+    title: Technology moat signals
+    chapter_id: II
+    columns:
+      - name: asset
+        type: string
+        description: asset
+      - name: public_signal
+        type: string
+        description: public signal
+      - name: why_it_matters
+        type: string
+        description: why it matters
+      - name: limitation
+        type: string
+        description: limitation
+    rows:
+      - values:
+          asset: Apache Airflow
+          public_signal: ~45k stars, ~17k forks observed
+          why_it_matters: Category validation
+          limitation: Not owned by Astronomer
+        evidence_claim_ids:
+          - EC-016
+        row_id: T-007-R1
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+      - values:
+          asset: Astronomer contributor claims
+          public_signal: Company claims top contributors/PMC members
+          why_it_matters: Technical credibility
+          limitation: Needs Apache roster reconciliation
+        evidence_claim_ids:
+          - EC-016
+          - EC-029
+        row_id: T-007-R2
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+      - values:
+          asset: Astronomer OSS repos
+          public_signal: dag-factory, Cosmos, CLI and agents repos
+          why_it_matters: Developer mindshare
+          limitation: Stars are not revenue
+        evidence_claim_ids:
+          - EC-017
+        row_id: T-007-R3
+        source_ids:
+          - SRC-024
+          - SRC-029
+      - values:
+          asset: Otto
+          public_signal: AI assistant for Airflow context
+          why_it_matters: Productivity wedge
+          limitation: Reliability and privacy diligence needed
+        evidence_claim_ids:
+          - EC-012
+          - EC-028
+        row_id: T-007-R4
+        source_ids:
+          - SRC-007
+          - SRC-010
+    notes: Moat is strongest where Airflow credibility meets enterprise controls.
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+      - EC-029
+      - EC-012
+      - EC-028
+    section_id: II.A
+    purpose: Structure public evidence and diligence gaps for Technology moat signals.
+    source_ids:
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-024
+      - SRC-029
+      - SRC-007
+      - SRC-010
+  - table_id: T-008
+    title: Public customer proof matrix
+    chapter_id: III
+    columns:
+      - name: customer_or_segment
+        type: string
+        description: customer or segment
+      - name: public_outcome
+        type: string
+        description: public outcome
+      - name: application_area
+        type: string
+        description: application area
+      - name: diligence_use
+        type: string
+        description: diligence use
+    rows:
+      - values:
+          customer_or_segment: Northern Trust
+          public_outcome: 20% improvement claim
+          application_area: Regulated financial workflows
+          diligence_use: Validate private-cloud contract and reference
+        evidence_claim_ids:
+          - EC-011
+        row_id: T-008-R1
+        source_ids:
+          - SRC-006
+      - values:
+          customer_or_segment: Autodesk
+          public_outcome: 33% improvement claim
+          application_area: Enterprise data platform
+          diligence_use: Validate scope and ARR
+        evidence_claim_ids:
+          - EC-011
+        row_id: T-008-R2
+        source_ids:
+          - SRC-006
+      - values:
+          customer_or_segment: Everlane
+          public_outcome: 25% improvement claim
+          application_area: Retail data workflows
+          diligence_use: Cross-industry proof
+        evidence_claim_ids:
+          - EC-013
+        row_id: T-008-R3
+        source_ids:
+          - SRC-008
+      - values:
+          customer_or_segment: Foursquare / SocGen
+          public_outcome: 9,000 assets / 1,000 engineers
+          application_area: Large data/developer platforms
+          diligence_use: Scale references; economics private
+        evidence_claim_ids:
+          - EC-013
+        row_id: T-008-R4
+        source_ids:
+          - SRC-008
+    notes: Customer stories show breadth but not concentration or retention.
+    evidence_claim_ids:
+      - EC-011
+      - EC-013
+      - EC-014
+    section_id: III.A
+    purpose: Structure public evidence and diligence gaps for Public customer proof matrix.
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-010
+      - SRC-013
+      - SRC-017
+  - table_id: T-009
+    title: Strategic relationships
+    chapter_id: III
+    columns:
+      - name: relationship
+        type: string
+        description: relationship
+      - name: public_description
+        type: string
+        description: public description
+      - name: strategic_value
+        type: string
+        description: strategic value
+      - name: contract_risk
+        type: string
+        description: contract risk
+    rows:
+      - values:
+          relationship: AWS
+          public_description: Strategic collaboration
+          strategic_value: Cloud marketplace/co-sell
+          contract_risk: AWS MWAA competitor; terms private
+        evidence_claim_ids:
+          - EC-015
+          - EC-030
+        row_id: T-009-R1
+        source_ids:
+          - SRC-017
+          - SRC-018
+          - SRC-030
+          - SRC-031
+      - values:
+          relationship: Microsoft Azure
+          public_description: Managed Airflow alliance
+          strategic_value: Azure enterprise distribution
+          contract_risk: Revenue share/exclusivity unknown
+        evidence_claim_ids:
+          - EC-015
+        row_id: T-009-R2
+        source_ids:
+          - SRC-017
+          - SRC-018
+      - values:
+          relationship: Investors
+          public_description: Insight, Bain, Salesforce Ventures and others
+          strategic_value: Capital and enterprise network
+          contract_risk: No guarantee of customer pull-through
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+        row_id: T-009-R3
+        source_ids:
+          - SRC-022
+          - SRC-010
+      - values:
+          relationship: Model providers
+          public_description: OpenAI, Anthropic, Google options for Otto
+          strategic_value: AI capability acceleration
+          contract_risk: Data handling, costs and indemnity unknown
+        evidence_claim_ids:
+          - EC-012
+        row_id: T-009-R4
+        source_ids:
+          - SRC-007
+    notes: Partnerships broaden reach but create coopetition and dependency risk.
+    evidence_claim_ids:
+      - EC-012
+      - EC-015
+      - EC-030
+      - EC-001
+      - EC-003
+    section_id: III.B
+    purpose: Structure public evidence and diligence gaps for Strategic relationships.
+    source_ids:
+      - SRC-007
+      - SRC-017
+      - SRC-018
+      - SRC-030
+      - SRC-031
+      - SRC-022
+      - SRC-010
+  - table_id: T-010
+    title: Customer revenue and supplier gaps
+    chapter_id: III
+    columns:
+      - name: topic
+        type: string
+        description: topic
+      - name: publicly_known
+        type: string
+        description: publicly known
+      - name: unknown_or_gap
+        type: string
+        description: unknown or gap
+      - name: priority
+        type: string
+        description: priority
+    rows:
+      - values:
+          topic: Revenue by customer
+          publicly_known: No customer ARR/concentration public
+          unknown_or_gap: Top-15 customers, >5% accounts, NRR/GRR
+          priority: High
+        evidence_claim_ids:
+          - EC-014
+          - EC-027
+        row_id: T-010-R1
+        source_ids:
+          - SRC-010
+          - SRC-013
+          - SRC-017
+          - SRC-009
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Severed relationships
+          publicly_known: No public severed strategic relationship found
+          unknown_or_gap: Churned accounts/lost partners
+          priority: Medium
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-010-R2
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Top suppliers
+          publicly_known: Cloud/model providers implied
+          unknown_or_gap: Spend, commits, DPAs, SLAs
+          priority: High
+        evidence_claim_ids:
+          - EC-010
+          - EC-012
+          - EC-015
+        row_id: T-010-R3
+        source_ids:
+          - SRC-005
+          - SRC-007
+          - SRC-017
+          - SRC-018
+      - values:
+          topic: Support obligations
+          publicly_known: Enterprise/private-cloud support implied
+          unknown_or_gap: SLA credits, support margin, backlog
+          priority: Medium
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        row_id: T-010-R4
+        source_ids:
+          - SRC-005
+          - SRC-006
+    notes: Customer concentration and supplier economics are key data-room requests.
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-014
+      - EC-027
+      - EC-015
+      - EC-011
+    section_id: III.C
+    purpose: Structure public evidence and diligence gaps for Customer revenue and supplier gaps.
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-010
+      - SRC-013
+      - SRC-017
+      - SRC-009
+      - SRC-022
+      - SRC-028
+      - SRC-018
+      - SRC-006
+  - table_id: T-011
+    title: Competitive alternatives
+    chapter_id: IV
+    columns:
+      - name: competitor
+        type: string
+        description: competitor
+      - name: category
+        type: string
+        description: category
+      - name: public_positioning
+        type: string
+        description: public positioning
+      - name: threat
+        type: string
+        description: threat
+    rows:
+      - values:
+          competitor: AWS MWAA
+          category: Hyperscaler managed Airflow
+          public_positioning: AWS-managed Airflow
+          threat: Native procurement and pricing pressure
+        evidence_claim_ids:
+          - EC-023
+          - EC-030
+        row_id: T-011-R1
+        source_ids:
+          - SRC-030
+          - SRC-031
+          - SRC-032
+          - SRC-033
+          - SRC-017
+          - SRC-018
+      - values:
+          competitor: Google Cloud Composer
+          category: Hyperscaler managed Airflow
+          public_positioning: GCP managed Airflow
+          threat: Strong for GCP-standardized buyers
+        evidence_claim_ids:
+          - EC-023
+        row_id: T-011-R2
+        source_ids:
+          - SRC-030
+          - SRC-031
+          - SRC-032
+          - SRC-033
+      - values:
+          competitor: Prefect
+          category: Workflow orchestration
+          public_positioning: Modern orchestration/observability
+          threat: Alternative to Airflow complexity
+        evidence_claim_ids:
+          - EC-023
+        row_id: T-011-R3
+        source_ids:
+          - SRC-030
+          - SRC-031
+          - SRC-032
+          - SRC-033
+      - values:
+          competitor: Dagster
+          category: Data orchestration
+          public_positioning: Asset-centric orchestration
+          threat: Modern data-asset abstractions
+        evidence_claim_ids:
+          - EC-023
+        row_id: T-011-R4
+        source_ids:
+          - SRC-030
+          - SRC-031
+          - SRC-032
+          - SRC-033
+      - values:
+          competitor: DIY Airflow
+          category: Open-source self-managed
+          public_positioning: Free software, internal operations
+          threat: Price anchor and migration friction
+        evidence_claim_ids:
+          - EC-016
+        row_id: T-011-R5
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+    notes: Astronomer faces both managed Airflow and non-Airflow alternatives.
+    evidence_claim_ids:
+      - EC-016
+      - EC-023
+      - EC-030
+    section_id: IV.A
+    purpose: Structure public evidence and diligence gaps for Competitive alternatives.
+    source_ids:
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-030
+      - SRC-031
+      - SRC-032
+      - SRC-033
+      - SRC-017
+      - SRC-018
+  - table_id: T-012
+    title: Basis of competition
+    chapter_id: IV
+    columns:
+      - name: basis
+        type: string
+        description: basis
+      - name: astronomer_strength
+        type: string
+        description: astronomer strength
+      - name: competitive_pressure
+        type: string
+        description: competitive pressure
+      - name: diligence_test
+        type: string
+        description: diligence test
+    rows:
+      - values:
+          basis: Airflow expertise
+          astronomer_strength: Contributor/PMC claims
+          competitive_pressure: Apache governance not proprietary
+          diligence_test: Validate contributor continuity
+        evidence_claim_ids:
+          - EC-016
+          - EC-029
+        row_id: T-012-R1
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+      - values:
+          basis: Enterprise security
+          astronomer_strength: Security and private-cloud architecture
+          competitive_pressure: Hyperscaler native controls
+          diligence_test: Compare controls in regulated references
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-023
+        row_id: T-012-R2
+        source_ids:
+          - SRC-005
+          - SRC-006
+          - SRC-030
+          - SRC-031
+          - SRC-032
+          - SRC-033
+      - values:
+          basis: Developer productivity
+          astronomer_strength: CLI, Cosmos, dag-factory, Otto
+          competitive_pressure: Prefect/Dagster developer experience
+          diligence_test: Run buyer workloads
+        evidence_claim_ids:
+          - EC-012
+          - EC-017
+          - EC-023
+        row_id: T-012-R3
+        source_ids:
+          - SRC-007
+          - SRC-024
+          - SRC-029
+          - SRC-030
+          - SRC-031
+          - SRC-032
+          - SRC-033
+      - values:
+          basis: Distribution
+          astronomer_strength: AWS/Azure alliances
+          competitive_pressure: Partners can compete
+          diligence_test: Review marketplace bookings
+        evidence_claim_ids:
+          - EC-015
+          - EC-030
+        row_id: T-012-R4
+        source_ids:
+          - SRC-017
+          - SRC-018
+          - SRC-030
+          - SRC-031
+    notes: Airflow specialization must beat bundled cloud-native alternatives.
+    evidence_claim_ids:
+      - EC-010
+      - EC-015
+      - EC-016
+      - EC-023
+      - EC-029
+      - EC-011
+      - EC-012
+      - EC-017
+      - EC-030
+    section_id: IV.A
+    purpose: Structure public evidence and diligence gaps for Basis of competition.
+    source_ids:
+      - SRC-005
+      - SRC-017
+      - SRC-018
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-030
+      - SRC-031
+      - SRC-032
+      - SRC-033
+      - SRC-006
+      - SRC-007
+      - SRC-024
+      - SRC-029
+  - table_id: T-013
+    title: GTM channels and programs
+    chapter_id: V
+    columns:
+      - name: channel
+        type: string
+        description: channel
+      - name: public_signal
+        type: string
+        description: public signal
+      - name: opportunity
+        type: string
+        description: opportunity
+      - name: risk
+        type: string
+        description: risk
+    rows:
+      - values:
+          channel: Direct enterprise sales
+          public_signal: Field/GTM leadership hires
+          opportunity: Expansion in regulated accounts
+          risk: Quota and cycle data private
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-013-R1
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+      - values:
+          channel: Cloud alliances
+          public_signal: AWS and Azure announcements
+          opportunity: Marketplace/co-sell reach
+          risk: Revenue share and coopetition
+        evidence_claim_ids:
+          - EC-015
+          - EC-030
+        row_id: T-013-R2
+        source_ids:
+          - SRC-017
+          - SRC-018
+          - SRC-030
+          - SRC-031
+      - values:
+          channel: Open-source community
+          public_signal: Airflow and Astronomer repos
+          opportunity: Developer-led adoption
+          risk: Free alternatives cap price
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+        row_id: T-013-R3
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+          - SRC-024
+          - SRC-029
+      - values:
+          channel: AI thought leadership
+          public_signal: Otto and Series D messaging
+          opportunity: AI budget capture
+          risk: Monetization unproven
+        evidence_claim_ids:
+          - EC-012
+          - EC-028
+        row_id: T-013-R4
+        source_ids:
+          - SRC-007
+          - SRC-010
+    notes: GTM evidence proves channels exist, not that they are efficient.
+    evidence_claim_ids:
+      - EC-012
+      - EC-015
+      - EC-016
+      - EC-018
+      - EC-030
+      - EC-017
+      - EC-028
+    section_id: V.A
+    purpose: Structure public evidence and diligence gaps for GTM channels and programs.
+    source_ids:
+      - SRC-007
+      - SRC-017
+      - SRC-018
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-030
+      - SRC-031
+      - SRC-024
+      - SRC-029
+      - SRC-010
+  - table_id: T-014
+    title: Sales productivity public gaps
+    chapter_id: V
+    columns:
+      - name: metric
+        type: string
+        description: metric
+      - name: public_status
+        type: string
+        description: public status
+      - name: why_it_matters
+        type: string
+        description: why it matters
+      - name: request
+        type: string
+        description: request
+    rows:
+      - values:
+          metric: Sales compensation
+          public_status: Not disclosed
+          why_it_matters: Determines efficient growth
+          request: Comp plans and attainment
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-014-R1
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          metric: Quota/ramp
+          public_status: Not disclosed
+          why_it_matters: Interprets ARR growth and hiring
+          request: Quota by cohort and ramp
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-014-R2
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          metric: Sales cycle/pipeline
+          public_status: Not disclosed
+          why_it_matters: Enterprise deals can be long
+          request: Stage conversion and renewal calendar
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-014-R3
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          metric: Budget/runway
+          public_status: $93M Series D known; burn private
+          why_it_matters: Funding sufficiency
+          request: Operating plan and runway
+        evidence_claim_ids:
+          - EC-003
+          - EC-027
+        row_id: T-014-R4
+        source_ids:
+          - SRC-010
+          - SRC-009
+          - SRC-022
+          - SRC-028
+    notes: Public growth cannot be converted into CAC/payback without data-room metrics.
+    evidence_claim_ids:
+      - EC-003
+      - EC-027
+    section_id: V.D
+    purpose: Structure public evidence and diligence gaps for Sales productivity public gaps.
+    source_ids:
+      - SRC-010
+      - SRC-009
+      - SRC-022
+      - SRC-028
+  - table_id: T-015
+    title: R&D organization and pipeline
+    chapter_id: VI
+    columns:
+      - name: area
+        type: string
+        description: area
+      - name: public_signal
+        type: string
+        description: public signal
+      - name: dependency
+        type: string
+        description: dependency
+      - name: risk
+        type: string
+        description: risk
+    rows:
+      - values:
+          area: Core Airflow engineering
+          public_signal: Contributor claims
+          dependency: Apache Airflow roadmap
+          risk: OSS governance and retention
+        evidence_claim_ids:
+          - EC-016
+          - EC-029
+        row_id: T-015-R1
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+      - values:
+          area: Observability/lineage
+          public_signal: Datakin acquisition
+          dependency: Metadata integrations
+          risk: Integration/attach rates private
+        evidence_claim_ids:
+          - EC-002
+          - EC-025
+        row_id: T-015-R2
+        source_ids:
+          - SRC-009
+          - SRC-003
+          - SRC-015
+      - values:
+          area: Private Cloud
+          public_signal: Private Cloud product
+          dependency: Customer cloud/networking automation
+          risk: Support complexity
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        row_id: T-015-R3
+        source_ids:
+          - SRC-005
+          - SRC-006
+      - values:
+          area: Otto AI assistant
+          public_signal: CLI/IDE and model-provider page
+          dependency: LLM APIs and safe code generation
+          risk: Privacy/reliability/monetization
+        evidence_claim_ids:
+          - EC-012
+          - EC-028
+        row_id: T-015-R4
+        source_ids:
+          - SRC-007
+          - SRC-010
+    notes: R&D priorities fit enterprise Airflow expansion; economics private.
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-016
+      - EC-025
+      - EC-029
+      - EC-002
+      - EC-011
+      - EC-028
+    section_id: VI.A
+    purpose: Structure public evidence and diligence gaps for R&D organization and pipeline.
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-009
+      - SRC-003
+      - SRC-015
+      - SRC-006
+      - SRC-010
+  - table_id: T-016
+    title: Open-source repository snapshot
+    chapter_id: VI
+    columns:
+      - name: repository
+        type: string
+        description: repository
+      - name: public_metric_observed
+        type: string
+        description: public metric observed
+      - name: strategic_meaning
+        type: string
+        description: strategic meaning
+      - name: caveat
+        type: string
+        description: caveat
+    rows:
+      - values:
+          repository: apache/airflow
+          public_metric_observed: ~45,439 stars; ~17,064 forks; Apache-2.0
+          strategic_meaning: Category scale
+          caveat: Not Astronomer-owned
+        evidence_claim_ids:
+          - EC-016
+        row_id: T-016-R1
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+      - values:
+          repository: astronomer/dag-factory
+          public_metric_observed: ~1,431 stars
+          strategic_meaning: DAG generation mindshare
+          caveat: Not revenue
+        evidence_claim_ids:
+          - EC-017
+        row_id: T-016-R2
+        source_ids:
+          - SRC-024
+          - SRC-029
+      - values:
+          repository: astronomer/astronomer-cosmos
+          public_metric_observed: ~1,201 stars
+          strategic_meaning: dbt/Airflow integration
+          caveat: Adoption telemetry needed
+        evidence_claim_ids:
+          - EC-017
+        row_id: T-016-R3
+        source_ids:
+          - SRC-024
+          - SRC-029
+      - values:
+          repository: astronomer/astro-cli
+          public_metric_observed: ~452 stars
+          strategic_meaning: Developer entry point
+          caveat: Stars may understate/overstate usage
+        evidence_claim_ids:
+          - EC-017
+        row_id: T-016-R4
+        source_ids:
+          - SRC-024
+          - SRC-029
+      - values:
+          repository: astronomer/agents
+          public_metric_observed: ~364 stars
+          strategic_meaning: AI/agentic experimentation
+          caveat: Early-stage
+        evidence_claim_ids:
+          - EC-017
+        row_id: T-016-R5
+        source_ids:
+          - SRC-024
+          - SRC-029
+    notes: Repository metrics are developer-mindshare signals only.
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+    section_id: VI.A
+    purpose: Structure public evidence and diligence gaps for Open-source repository snapshot.
+    source_ids:
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-024
+      - SRC-029
+  - table_id: T-017
+    title: Public management roster
+    chapter_id: VII
+    columns:
+      - name: person
+        type: string
+        description: person
+      - name: public_role
+        type: string
+        description: public role
+      - name: public_context
+        type: string
+        description: public context
+      - name: diligence_note
+        type: string
+        description: diligence note
+    rows:
+      - values:
+          person: Pete DeJoy
+          public_role: CEO / co-founder
+          public_context: 2026 public materials
+          diligence_note: Founder continuity; confirm mandate
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-017-R1
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+      - values:
+          person: Andy Byron
+          public_role: Prior CEO
+          public_context: 2023-2025 releases
+          diligence_note: Review transition terms and impact
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-017-R2
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+      - values:
+          person: Chris Lynch
+          public_role: CFO
+          public_context: 2026 CFO announcement
+          diligence_note: Audit/forecasting readiness
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-017-R3
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+      - values:
+          person: Matt Simontacchi
+          public_role: President Field Operations
+          public_context: 2026 field ops release
+          diligence_note: GTM scaling evidence
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-017-R4
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+      - values:
+          person: Carter Page
+          public_role: EVP R&D
+          public_context: R&D leadership release
+          diligence_note: Roadmap/reliability owner
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-017-R5
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+    notes: Public roster supports screening, not compensation or succession diligence.
+    evidence_claim_ids:
+      - EC-018
+    section_id: VII.A
+    purpose: Structure public evidence and diligence gaps for Public management roster.
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+  - table_id: T-018
+    title: Headcount, location and hiring signals
+    chapter_id: VII
+    columns:
+      - name: signal
+        type: string
+        description: signal
+      - name: public_detail
+        type: string
+        description: public detail
+      - name: interpretation
+        type: string
+        description: interpretation
+      - name: gap
+        type: string
+        description: gap
+    rows:
+      - values:
+          signal: Headquarters
+          public_detail: HQ moved to New York City
+          interpretation: Enterprise/investor market access
+          gap: Office commitments and distribution
+        evidence_claim_ids:
+          - EC-007
+          - EC-024
+        row_id: T-018-R1
+        source_ids:
+          - SRC-012
+          - SRC-002
+          - SRC-013
+      - values:
+          signal: Open roles
+          public_detail: 27 open roles observed
+          interpretation: Ongoing hiring
+          gap: Total headcount and attrition
+        evidence_claim_ids:
+          - EC-019
+        row_id: T-018-R2
+        source_ids:
+          - SRC-002
+      - values:
+          signal: Global operations
+          public_detail: Enterprise/EMEA signals
+          interpretation: International growth
+          gap: Country revenue and payroll
+        evidence_claim_ids:
+          - EC-014
+          - EC-024
+        row_id: T-018-R3
+        source_ids:
+          - SRC-010
+          - SRC-013
+          - SRC-017
+          - SRC-012
+          - SRC-002
+      - values:
+          signal: Founding history
+          public_detail: Cincinnati origins and Airflow commercialization
+          interpretation: Long category operating history
+          gap: Founder roles and retention
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+        row_id: T-018-R4
+        source_ids:
+          - SRC-019
+          - SRC-020
+          - SRC-002
+          - SRC-021
+    notes: Headcount history and attrition are not public.
+    evidence_claim_ids:
+      - EC-004
+      - EC-007
+      - EC-019
+      - EC-024
+      - EC-014
+      - EC-005
+    section_id: VII.B
+    purpose: Structure public evidence and diligence gaps for Headcount, location and hiring signals.
+    source_ids:
+      - SRC-019
+      - SRC-020
+      - SRC-012
+      - SRC-002
+      - SRC-013
+      - SRC-010
+      - SRC-017
+      - SRC-021
+  - table_id: T-019
+    title: Personnel and turnover gaps
+    chapter_id: VII
+    columns:
+      - name: topic
+        type: string
+        description: topic
+      - name: public_evidence
+        type: string
+        description: public evidence
+      - name: missing_information
+        type: string
+        description: missing information
+      - name: risk
+        type: string
+        description: risk
+    rows:
+      - values:
+          topic: Compensation
+          public_evidence: No public agreements
+          missing_information: Employment/severance/bonus terms
+          risk: Medium
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-019-R1
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Stock plans
+          public_evidence: No public option schedule
+          missing_information: Pool, strike prices, vesting, tender history
+          risk: High
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-019-R2
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Employee relations
+          public_evidence: No major public problem found
+          missing_information: Claims, investigations, engagement data
+          risk: Medium
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-019-R3
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Turnover
+          public_evidence: CEO transition visible in releases
+          missing_information: Executive/engineering/sales attrition
+          risk: Medium
+        evidence_claim_ids:
+          - EC-018
+        row_id: T-019-R4
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+    notes: People risk is not publicly measurable.
+    evidence_claim_ids:
+      - EC-018
+      - EC-027
+    section_id: VII.D
+    purpose: Structure public evidence and diligence gaps for Personnel and turnover gaps.
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-009
+      - SRC-010
+      - SRC-022
+      - SRC-028
+  - table_id: T-020
+    title: Legal and IP matrix
+    chapter_id: VIII
+    columns:
+      - name: topic
+        type: string
+        description: topic
+      - name: public_evidence
+        type: string
+        description: public evidence
+      - name: assessment
+        type: string
+        description: assessment
+      - name: next_step
+        type: string
+        description: next step
+    rows:
+      - values:
+          topic: Lawsuits against company
+          public_evidence: Sampled CourtListener search found no clear material operating suit
+          assessment: No obvious public overhang; incomplete search
+          next_step: Counsel litigation schedule
+        evidence_claim_ids:
+          - EC-021
+        row_id: T-020-R1
+        source_ids:
+          - SRC-027
+      - values:
+          topic: Company-initiated lawsuits
+          public_evidence: No material plaintiff case identified in sample
+          assessment: Low visibility
+          next_step: Pending/threatened claims list
+        evidence_claim_ids:
+          - EC-021
+        row_id: T-020-R2
+        source_ids:
+          - SRC-027
+      - values:
+          topic: Environmental/safety
+          public_evidence: Software company; no public EHS liability found
+          assessment: Likely low relative risk
+          next_step: Workplace policies and claims
+        evidence_claim_ids:
+          - EC-027
+        row_id: T-020-R3
+        source_ids:
+          - SRC-009
+          - SRC-010
+          - SRC-022
+          - SRC-028
+      - values:
+          topic: Trademarks
+          public_evidence: ASTRONOMER/ASTRO/A-related records on USPTO.report
+          assessment: Brand protection exists
+          next_step: Official USPTO/TSDR and assignments
+        evidence_claim_ids:
+          - EC-020
+        row_id: T-020-R4
+        source_ids:
+          - SRC-026
+      - values:
+          topic: Regulatory
+          public_evidence: No public enforcement found; security controls marketed
+          assessment: Focus on privacy/security/AI obligations
+          next_step: SOC, DPIAs, regulator correspondence
+        evidence_claim_ids:
+          - EC-010
+          - EC-026
+        row_id: T-020-R5
+        source_ids:
+          - SRC-005
+    notes: No obvious public legal overhang, but counsel schedules are required.
+    evidence_claim_ids:
+      - EC-010
+      - EC-020
+      - EC-021
+      - EC-026
+      - EC-027
+    section_id: VIII.A
+    purpose: Structure public evidence and diligence gaps for Legal and IP matrix.
+    source_ids:
+      - SRC-005
+      - SRC-026
+      - SRC-027
+      - SRC-009
+      - SRC-010
+      - SRC-022
+      - SRC-028
+  - table_id: T-021
+    title: Contracts, insurance and regulatory exposure
+    chapter_id: VIII
+    columns:
+      - name: area
+        type: string
+        description: area
+      - name: public_signal
+        type: string
+        description: public signal
+      - name: material_exposure
+        type: string
+        description: material exposure
+      - name: diligence_request
+        type: string
+        description: diligence request
+    rows:
+      - values:
+          area: Cyber/privacy insurance
+          public_signal: Security page but no policies
+          material_exposure: Sensitive metadata/credentials
+          diligence_request: D&O/E&O/cyber/IP policy schedules
+        evidence_claim_ids:
+          - EC-010
+          - EC-026
+        row_id: T-021-R1
+        source_ids:
+          - SRC-005
+      - values:
+          area: Cloud contracts
+          public_signal: AWS/Azure relationships and cloud architecture
+          material_exposure: Revenue share, commits, SLAs, indemnity
+          diligence_request: AWS/Microsoft/GCP agreements
+        evidence_claim_ids:
+          - EC-010
+          - EC-015
+          - EC-030
+        row_id: T-021-R2
+        source_ids:
+          - SRC-005
+          - SRC-017
+          - SRC-018
+          - SRC-030
+          - SRC-031
+      - values:
+          area: Model providers
+          public_signal: Otto names OpenAI/Anthropic/Google
+          material_exposure: AI data handling, costs, output liability
+          diligence_request: DPAs, usage caps, indemnities
+        evidence_claim_ids:
+          - EC-012
+        row_id: T-021-R3
+        source_ids:
+          - SRC-007
+      - values:
+          area: OSS licenses
+          public_signal: Airflow Apache-2.0 and Astronomer repos
+          material_exposure: License and contribution compliance
+          diligence_request: OSS audit and license schedule
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+          - EC-020
+        row_id: T-021-R4
+        source_ids:
+          - SRC-002
+          - SRC-023
+          - SRC-025
+          - SRC-024
+          - SRC-029
+          - SRC-026
+    notes: Public security claims must be backed by controls, contracts and insurance.
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-015
+      - EC-016
+      - EC-026
+      - EC-030
+      - EC-017
+      - EC-020
+    section_id: VIII.E
+    purpose: Structure public evidence and diligence gaps for Contracts, insurance and regulatory exposure.
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-017
+      - SRC-018
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-030
+      - SRC-031
+      - SRC-024
+      - SRC-029
+      - SRC-026
+figures:
+  - figure_id: F-001
+    title: Funding and growth timeline
+    chapter_id: I
+    figure_type: timeline
+    spec:
+      events:
+        - date: 2015-01-01
+          label: Founding era
+          description: Cincinnati origins and Airflow commercialization history.
+          category: founding
+        - date: 2016-01-01
+          label: $1.9M seed
+          description: CincyTech-led early funding.
+          category: funding
+        - date: 2017-05-24
+          label: $3.5M financing
+          description: Wireframe/CincyTech financing.
+          category: funding
+        - date: 2022-03-23
+          label: $213M Series C / unicorn
+          description: Series C, Datakin acquisition and CB Insights $1.20B unicorn row.
+          category: funding
+        - date: 2024-02-01
+          label: 292% Astro growth
+          description: Astro growth and NYC HQ announcement.
+          category: growth
+        - date: 2025-05-01
+          label: $93M Series D
+          description: Bain-led Series D and 150%+ ARR growth claim.
+          category: funding
+        - date: 2026-02-01
+          label: 900+ enterprises
+          description: CFO release customer-count claim.
+          category: growth
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-007
+      - EC-014
+    notes: Dates normalized where exact day unavailable.
+    section_id: I.C
+    description: Funding and growth timeline
+    purpose: Visualize public evidence and diligence gaps for Funding and growth timeline.
+    spec_schema_ref: figure_spec_shapes.timeline
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-022
+      - SRC-009
+      - SRC-010
+      - SRC-019
+      - SRC-020
+      - SRC-012
+      - SRC-013
+      - SRC-017
+  - figure_id: F-002
+    title: Selected public growth metrics
+    chapter_id: I
+    figure_type: chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Disclosure
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: "%"
+        scale: linear
+      series:
+        - name: Disclosed value
+          unit: "%"
+          data_points:
+            - x: H1 2023 revenue
+              y: 206
+              label: 206%
+            - x: 2024 revenue
+              y: 292
+              label: 292%
+            - x: 2025 ARR
+              y: 150
+              label: 150%+
+            - x: 2025 utilization
+              y: 90
+              label: 90%+
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+    notes: Mixed definitions; not a single KPI series.
+    section_id: I.A
+    description: Selected public growth metrics
+    purpose: Visualize public evidence and diligence gaps for Selected public growth metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    source_ids:
+      - SRC-010
+      - SRC-011
+      - SRC-012
+  - figure_id: F-003
+    title: Public Astro architecture
+    chapter_id: II
+    figure_type: architecture_diagram
+    spec:
+      nodes:
+        - node_id: customer_vpc
+          label: Customer cloud/VPC
+          node_type: infrastructure
+          description: Customer-controlled data plane.
+        - node_id: astro_control
+          label: Astro control plane
+          node_type: product
+          description: Astronomer-managed orchestration and UI.
+        - node_id: airflow
+          label: Airflow deployments
+          node_type: product
+          description: Managed Airflow environments.
+        - node_id: data_systems
+          label: Data systems
+          node_type: infrastructure
+          description: Warehouses, lakes, APIs and apps.
+        - node_id: controls
+          label: Security controls
+          node_type: other
+          description: SSO/RBAC, TLS/mTLS, SOC controls and vulnerability program.
+      edges:
+        - from_node_id: astro_control
+          to_node_id: airflow
+          relationship: manages
+          data_or_dependency: Deployment lifecycle
+        - from_node_id: customer_vpc
+          to_node_id: airflow
+          relationship: hosts
+          data_or_dependency: Workload resources
+        - from_node_id: airflow
+          to_node_id: data_systems
+          relationship: orchestrates
+          data_or_dependency: DAG jobs
+        - from_node_id: controls
+          to_node_id: astro_control
+          relationship: protects
+          data_or_dependency: Identity/network/audit controls
+        - from_node_id: controls
+          to_node_id: customer_vpc
+          relationship: protects
+          data_or_dependency: Shared responsibility
+      boundaries:
+        - boundary_id: astronomer
+          label: Astronomer-managed
+          node_ids:
+            - astro_control
+        - boundary_id: customer
+          label: Customer-managed
+          node_ids:
+            - customer_vpc
+            - airflow
+            - data_systems
+    evidence_claim_ids:
+      - EC-008
+      - EC-010
+      - EC-011
+    notes: Analyst summary of public security/product pages.
+    section_id: II.A
+    description: Public Astro architecture
+    purpose: Visualize public evidence and diligence gaps for Public Astro architecture.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-006
+  - figure_id: F-004
+    title: Product expansion map
+    chapter_id: II
+    figure_type: market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Workflow breadth
+          low_label: DAG operations
+          high_label: AI/DataOps
+        y_axis:
+          label: Enterprise control
+          low_label: Self-serve
+          high_label: Regulated enterprise
+      segments:
+        - segment_id: core
+          name: Core orchestration
+          description: Managed Airflow
+        - segment_id: enterprise
+          name: Enterprise operations
+          description: Security/private cloud/observability
+        - segment_id: ai
+          name: AI data engineering
+          description: AI-assisted workflows
+      entities:
+        - name: Astro
+          entity_type: target_company
+          segment_id: core
+          x_value: 5
+          y_value: 6
+          attributes:
+            role: Managed Airflow
+          entity_id: entity-1
+        - name: Private Cloud
+          entity_type: target_company
+          segment_id: enterprise
+          x_value: 6
+          y_value: 9
+          attributes:
+            role: Regulated deployment
+          entity_id: entity-2
+        - name: Observe/lineage
+          entity_type: target_company
+          segment_id: enterprise
+          x_value: 7
+          y_value: 7
+          attributes:
+            role: Visibility
+          entity_id: entity-3
+        - name: Otto
+          entity_type: target_company
+          segment_id: ai
+          x_value: 9
+          y_value: 6
+          attributes:
+            role: AI assistant
+          entity_id: entity-4
+    evidence_claim_ids:
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-025
+    notes: Analyst abstraction.
+    section_id: II.A
+    description: Product expansion map
+    purpose: Visualize public evidence and diligence gaps for Product expansion map.
+    spec_schema_ref: figure_spec_shapes.market_map
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-015
+  - figure_id: F-005
+    title: Selected customer outcome metrics
+    chapter_id: III
+    figure_type: chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer proof point
+        scale: categorical
+      y_axis:
+        label: Public value
+        unit: reported units
+        scale: linear
+      series:
+        - name: Publicly cited value
+          unit: mixed
+          data_points:
+            - x: Northern Trust
+              y: 20
+              label: 20%
+            - x: Autodesk
+              y: 33
+              label: 33%
+            - x: Everlane
+              y: 25
+              label: 25%
+            - x: Foursquare
+              y: 9000
+              label: 9,000 assets
+            - x: SocGen
+              y: 1000
+              label: 1,000 engineers
+    evidence_claim_ids:
+      - EC-011
+      - EC-013
+    notes: Mixed units visualize breadth only.
+    section_id: III.A
+    description: Selected customer outcome metrics
+    purpose: Visualize public evidence and diligence gaps for Selected customer outcome metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    source_ids:
+      - SRC-006
+      - SRC-008
+  - figure_id: F-006
+    title: Workflow orchestration competitive map
+    chapter_id: IV
+    figure_type: market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Airflow specificity
+          low_label: Airflow-agnostic
+          high_label: Airflow-native
+        y_axis:
+          label: Managed enterprise control
+          low_label: Self-managed
+          high_label: Managed enterprise
+      segments:
+        - segment_id: hyperscaler
+          name: Hyperscaler managed Airflow
+          description: Native cloud services
+        - segment_id: specialist
+          name: Specialist orchestration
+          description: Independent platforms
+        - segment_id: diy
+          name: DIY open source
+          description: Self-managed Airflow
+      entities:
+        - name: Astronomer
+          entity_type: target_company
+          segment_id: specialist
+          x_value: 9
+          y_value: 8
+          attributes:
+            differentiation: Enterprise Airflow specialization
+          entity_id: entity-1
+        - name: AWS MWAA
+          entity_type: competitor
+          segment_id: hyperscaler
+          x_value: 8
+          y_value: 7
+          attributes:
+            differentiation: AWS-native
+          entity_id: entity-2
+        - name: Google Composer
+          entity_type: competitor
+          segment_id: hyperscaler
+          x_value: 8
+          y_value: 7
+          attributes:
+            differentiation: GCP-native
+          entity_id: entity-3
+        - name: Prefect
+          entity_type: competitor
+          segment_id: specialist
+          x_value: 2
+          y_value: 6
+          attributes:
+            differentiation: Modern orchestration
+          entity_id: entity-4
+        - name: Dagster
+          entity_type: competitor
+          segment_id: specialist
+          x_value: 2
+          y_value: 6
+          attributes:
+            differentiation: Asset-centric
+          entity_id: entity-5
+        - name: DIY Airflow
+          entity_type: other
+          segment_id: diy
+          x_value: 10
+          y_value: 2
+          attributes:
+            differentiation: Low software cost/high ops burden
+          entity_id: entity-6
+    evidence_claim_ids:
+      - EC-016
+      - EC-023
+      - EC-030
+    notes: Requires buyer workload testing.
+    section_id: IV.A
+    description: Workflow orchestration competitive map
+    purpose: Visualize public evidence and diligence gaps for Workflow orchestration competitive map.
+    spec_schema_ref: figure_spec_shapes.market_map
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-030
+      - SRC-031
+      - SRC-032
+      - SRC-033
+      - SRC-017
+      - SRC-018
+  - figure_id: F-007
+    title: GTM channel dependency map
+    chapter_id: V
+    figure_type: architecture_diagram
+    spec:
+      nodes:
+        - node_id: direct
+          label: Direct sales
+          node_type: product
+          description: Enterprise field teams
+        - node_id: cloud
+          label: AWS/Azure alliances
+          node_type: infrastructure
+          description: Marketplace/co-sell channels
+        - node_id: oss
+          label: OSS community
+          node_type: other
+          description: Airflow and Astronomer OSS users
+        - node_id: buyers
+          label: Enterprise buyers
+          node_type: other
+          description: Data platform, engineering and AI teams
+        - node_id: investors
+          label: Investor network
+          node_type: other
+          description: Insight/Bain/Salesforce Ventures network
+      edges:
+        - from_node_id: direct
+          to_node_id: buyers
+          relationship: sells to
+          data_or_dependency: Enterprise contracts
+        - from_node_id: cloud
+          to_node_id: buyers
+          relationship: co-sells to
+          data_or_dependency: Marketplace/co-sell
+        - from_node_id: oss
+          to_node_id: buyers
+          relationship: influences
+          data_or_dependency: Developer trust
+        - from_node_id: investors
+          to_node_id: direct
+          relationship: supports
+          data_or_dependency: Introductions
+      boundaries: []
+    evidence_claim_ids:
+      - EC-013
+      - EC-015
+      - EC-016
+      - EC-018
+    notes: Channel economics private.
+    section_id: V.A
+    description: GTM channel dependency map
+    purpose: Visualize public evidence and diligence gaps for GTM channel dependency map.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-008
+      - SRC-017
+      - SRC-018
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+  - figure_id: F-008
+    title: Open-source footprint snapshot
+    chapter_id: VI
+    figure_type: chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Repository
+        scale: categorical
+      y_axis:
+        label: Stars observed
+        unit: stars
+        scale: linear
+      series:
+        - name: GitHub stars observed
+          unit: stars
+          data_points:
+            - x: apache/airflow
+              y: 45439
+              label: 45,439
+            - x: dag-factory
+              y: 1431
+              label: 1,431
+            - x: astronomer-cosmos
+              y: 1201
+              label: 1,201
+            - x: astro-cli
+              y: 452
+              label: "452"
+            - x: agents
+              y: 364
+              label: "364"
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+    notes: Point-in-time observations.
+    section_id: VI.A
+    description: Open-source footprint snapshot
+    purpose: Visualize public evidence and diligence gaps for Open-source footprint snapshot.
+    spec_schema_ref: figure_spec_shapes.chart
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    source_ids:
+      - SRC-002
+      - SRC-023
+      - SRC-025
+      - SRC-024
+      - SRC-029
+  - figure_id: F-009
+    title: Public leadership map
+    chapter_id: VII
+    figure_type: org_chart
+    spec:
+      people_or_roles:
+        - node_id: pete
+          name: Pete DeJoy
+          role: CEO / co-founder
+          department: Executive
+          location: Publicly listed
+          is_publicly_verified: true
+        - node_id: chris
+          name: Chris Lynch
+          role: Chief Financial Officer
+          department: Finance
+          location: Publicly listed
+          is_publicly_verified: true
+        - node_id: matt
+          name: Matt Simontacchi
+          role: President of Field Operations
+          department: GTM
+          location: Publicly listed
+          is_publicly_verified: true
+        - node_id: carter
+          name: Carter Page
+          role: EVP R&D
+          department: R&D
+          location: Publicly listed
+          is_publicly_verified: true
+        - node_id: andy
+          name: Andy Byron
+          role: Prior CEO in 2023-2025 releases
+          department: Historical executive
+          location: Publicly listed
+          is_publicly_verified: true
+      reporting_lines:
+        - parent_node_id: pete
+          child_node_id: chris
+          relationship: other
+        - parent_node_id: pete
+          child_node_id: matt
+          relationship: other
+        - parent_node_id: pete
+          child_node_id: carter
+          relationship: other
+        - parent_node_id: andy
+          child_node_id: pete
+          relationship: other
+    evidence_claim_ids:
+      - EC-018
+    notes: Does not assert formal reporting lines beyond public context.
+    section_id: VII.A
+    description: Public leadership map
+    purpose: Visualize public evidence and diligence gaps for Public leadership map.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+  - figure_id: F-010
+    title: Public-source risk heatmap
+    chapter_id: VIII
+    figure_type: risk_heatmap
+    spec:
+      x_axis:
+        label: Likelihood
+        scale:
+          - low
+          - medium
+          - high
+      y_axis:
+        label: Severity
+        scale:
+          - low
+          - medium
+          - high
+      risk_points:
+        - risk_id: R-001
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: No audited financials or ARR bridge public
+        - risk_id: R-002
+          label: Cap table/valuation
+          severity: high
+          likelihood: medium
+          rationale: Headline valuation but private economics
+        - risk_id: R-003
+          label: Hyperscaler coopetition
+          severity: high
+          likelihood: high
+          rationale: Partners also compete
+        - risk_id: R-006
+          label: Security exposure
+          severity: high
+          likelihood: medium
+          rationale: Orchestration touches sensitive workloads
+        - risk_id: R-009
+          label: Legal/IP unknowns
+          severity: medium
+          likelihood: medium
+          rationale: No major public lawsuit found; counsel review absent
+    evidence_claim_ids:
+      - EC-010
+      - EC-021
+      - EC-023
+      - EC-027
+      - EC-030
+    notes: Public-source risk view only.
+    section_id: VIII.A
+    description: Public-source risk heatmap
+    purpose: Visualize public evidence and diligence gaps for Public-source risk heatmap.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    source_ids:
+      - SRC-005
+      - SRC-027
+      - SRC-030
+      - SRC-031
+      - SRC-032
+      - SRC-033
+      - SRC-009
+      - SRC-010
+      - SRC-022
+      - SRC-028
+      - SRC-017
+      - SRC-018
+evidence_claims:
+  - evidence_claim_id: EC-001
+    source_ids:
+      - SRC-022
+    verification_status: verified
+    confidence: high
+    limitations: Secondary database may lag latest private valuations.
+    claim: CB Insights lists Astronomer as a U.S./New York Enterprise Tech unicorn valued at $1.20B, joined 2022-03-23, with investors including Insight Partners, Bain Capital Ventures and Sierra Ventures.
+    evidence_summary: CB Insights lists Astronomer as a U.S./New York Enterprise Tech unicorn valued at $1.20B, joined 2022-03-23, with investors including Insight Partners, Bain Capital Ventures and Sierra Ventures.
+    evidence_type: market_database
+    source_quotes:
+      - quote: "CB Insights unicorn row: valuation $1.20B; joined 2022-03-23."
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-002
+    source_ids:
+      - SRC-009
+    verification_status: verified
+    confidence: high
+    limitations: Company release; integration results private.
+    claim: Astronomer announced a $213M Series C and Datakin acquisition in 2022.
+    evidence_summary: Astronomer announced a $213M Series C and Datakin acquisition in 2022.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Series C release tied funding to Datakin acquisition.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-003
+    source_ids:
+      - SRC-010
+    verification_status: verified
+    confidence: high
+    limitations: Management disclosure; ARR definition private.
+    claim: Astronomer announced a $93M Series D led by Bain Capital Ventures and claimed 150%+ YoY Astro ARR growth, 90%+ utilization and 700+ enterprises.
+    evidence_summary: Astronomer announced a $93M Series D led by Bain Capital Ventures and claimed 150%+ YoY Astro ARR growth, 90%+ utilization and 700+ enterprises.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Series D release cites $93M, 150%+ ARR growth, 90%+ utilization and 700+ enterprises.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-004
+    source_ids:
+      - SRC-019
+      - SRC-020
+    verification_status: verified
+    confidence: medium
+    limitations: Older financing impact requires company confirmation.
+    claim: Public early funding sources describe a $1.9M seed round in 2016 and a $3.5M financing in 2017.
+    evidence_summary: Public early funding sources describe a $1.9M seed round in 2016 and a $3.5M financing in 2017.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: CincyTech and Business Wire evidence early financings.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-005
+    source_ids:
+      - SRC-002
+      - SRC-021
+    verification_status: partially_verified
+    confidence: medium
+    limitations: Company-authored narrative.
+    claim: Company history materials support a long-running Airflow commercialization thesis and founding-team narrative.
+    evidence_summary: Company history materials support a long-running Airflow commercialization thesis and founding-team narrative.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: About/blog materials describe company history and Airflow focus.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-006
+    source_ids:
+      - SRC-011
+    verification_status: verified
+    confidence: high
+    limitations: Unaudited management disclosure.
+    claim: Astronomer disclosed 206% YoY Astro revenue growth and 1400% YoY usage growth in H1 2023.
+    evidence_summary: Astronomer disclosed 206% YoY Astro revenue growth and 1400% YoY usage growth in H1 2023.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Revenue jumps more than 200 percent in H1 2023.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-007
+    source_ids:
+      - SRC-012
+    verification_status: verified
+    confidence: high
+    limitations: Unaudited management disclosure.
+    claim: Astronomer disclosed 292% YoY Astro revenue growth, over one billion monthly tasks and a headquarters move to New York City in 2024.
+    evidence_summary: Astronomer disclosed 292% YoY Astro revenue growth, over one billion monthly tasks and a headquarters move to New York City in 2024.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Exceptional growth release and NYC HQ relocation.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-008
+    source_ids:
+      - SRC-003
+    verification_status: verified
+    confidence: high
+    limitations: Product-line economics private.
+    claim: Astronomer positions Astro as a unified orchestration platform for Apache Airflow across development, deployment, scale, observability and security.
+    evidence_summary: Astronomer positions Astro as a unified orchestration platform for Apache Airflow across development, deployment, scale, observability and security.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Astro product page describes enterprise Airflow orchestration.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-009
+    source_ids:
+      - SRC-004
+    verification_status: verified
+    confidence: high
+    limitations: Discounts and enterprise contracts private.
+    claim: Astronomer pricing shows usage-based starting prices for Developer and Team tiers and quote-based Business/Enterprise packages.
+    evidence_summary: Astronomer pricing shows usage-based starting prices for Developer and Team tiers and quote-based Business/Enterprise packages.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Developer $0.35 and Team $0.42 per deployment hour; higher tiers quote-based.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-010
+    source_ids:
+      - SRC-005
+    verification_status: verified
+    confidence: high
+    limitations: Audit artifacts and incidents private.
+    claim: Astronomer security materials describe control-plane/data-plane separation, customer-cloud options, TLS/mTLS, SOC-oriented controls, Bugcrowd and AWS/Azure/GCP support.
+    evidence_summary: Astronomer security materials describe control-plane/data-plane separation, customer-cloud options, TLS/mTLS, SOC-oriented controls, Bugcrowd and AWS/Azure/GCP support.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Security page outlines architecture and controls.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-011
+    source_ids:
+      - SRC-006
+    verification_status: verified
+    confidence: high
+    limitations: Customer-story metrics are selected and unaudited.
+    claim: Astro Private Cloud is marketed for customer-controlled and air-gapped environments and cites Northern Trust 20% and Autodesk 33% improvement metrics.
+    evidence_summary: Astro Private Cloud is marketed for customer-controlled and air-gapped environments and cites Northern Trust 20% and Autodesk 33% improvement metrics.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Private Cloud page cites regulated deployment and customer outcomes.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-012
+    source_ids:
+      - SRC-007
+    verification_status: verified
+    confidence: high
+    limitations: Early AI product; monetization and reliability unproven.
+    claim: Otto is an AI assistant for Airflow development/operations using CLI/IDE workflows, Airflow docs, team memory and model providers including OpenAI, Anthropic and Google.
+    evidence_summary: Otto is an AI assistant for Airflow development/operations using CLI/IDE workflows, Airflow docs, team memory and model providers including OpenAI, Anthropic and Google.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Otto product page lists assistant capabilities and model providers.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-013
+    source_ids:
+      - SRC-008
+    verification_status: verified
+    confidence: high
+    limitations: Customer stories are not revenue concentration data.
+    claim: Astronomer customer pages cite named proof points including Everlane, Foursquare, Société Générale, Idelic, LIQID and Atmosphere.
+    evidence_summary: Astronomer customer pages cite named proof points including Everlane, Foursquare, Société Générale, Idelic, LIQID and Atmosphere.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Customer page cites outcomes such as 25%, 9,000 assets, 1,000 engineers, 800, 63% and 10k.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-014
+    source_ids:
+      - SRC-010
+      - SRC-013
+      - SRC-017
+    verification_status: partially_verified
+    confidence: medium
+    limitations: Definitions may differ.
+    claim: Public releases cite enterprise customer scale from 700+ in 2025 to 900+ in 2026, with another release referencing 750+ enterprises.
+    evidence_summary: Public releases cite enterprise customer scale from 700+ in 2025 to 900+ in 2026, with another release referencing 750+ enterprises.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Multiple releases disclose 700+, 750+ and 900+ enterprise customers.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-015
+    source_ids:
+      - SRC-017
+      - SRC-018
+    verification_status: verified
+    confidence: high
+    limitations: Commercial terms private.
+    claim: Astronomer announced strategic relationships with AWS and Microsoft Azure.
+    evidence_summary: Astronomer announced strategic relationships with AWS and Microsoft Azure.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: AWS collaboration and Azure alliance releases.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-016
+    source_ids:
+      - SRC-002
+      - SRC-023
+      - SRC-025
+    verification_status: partially_verified
+    confidence: medium
+    limitations: Stars/forks and contributor claims require point-in-time caveats.
+    claim: Apache Airflow is a large open-source ecosystem; observed GitHub metadata showed about 45,439 stars and 17,064 forks, and Astronomer claims deep contributor/PMC involvement.
+    evidence_summary: Apache Airflow is a large open-source ecosystem; observed GitHub metadata showed about 45,439 stars and 17,064 forks, and Astronomer claims deep contributor/PMC involvement.
+    evidence_type: technical_repository
+    source_quotes:
+      - quote: Airflow GitHub metrics plus Astronomer contributor claims.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-017
+    source_ids:
+      - SRC-024
+      - SRC-029
+    verification_status: verified
+    confidence: medium
+    limitations: Stars are not paid adoption.
+    claim: Astronomer OSS projects observed include dag-factory (~1,431 stars), astronomer-cosmos (~1,201), astro-cli (~452) and agents (~364).
+    evidence_summary: Astronomer OSS projects observed include dag-factory (~1,431 stars), astronomer-cosmos (~1,201), astro-cli (~452) and agents (~364).
+    evidence_type: technical_repository
+    source_quotes:
+      - quote: Astronomer repo metrics observed during research.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-018
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    verification_status: verified
+    confidence: medium
+    limitations: Compensation and transition terms private.
+    claim: Public releases identify Pete DeJoy as CEO/co-founder in 2026, Andy Byron as CEO in 2023-2025 releases, and leaders including Chris Lynch, Carter Page and Matt Simontacchi.
+    evidence_summary: Public releases identify Pete DeJoy as CEO/co-founder in 2026, Andy Byron as CEO in 2023-2025 releases, and leaders including Chris Lynch, Carter Page and Matt Simontacchi.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Leadership announcements and growth releases.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-019
+    source_ids:
+      - SRC-002
+    verification_status: verified
+    confidence: medium
+    limitations: Open roles change quickly.
+    claim: Astronomer public careers/about surface listed 27 open roles during research.
+    evidence_summary: Astronomer public careers/about surface listed 27 open roles during research.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Careers module listed 27 open roles.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-020
+    source_ids:
+      - SRC-026
+    verification_status: partially_verified
+    confidence: medium
+    limitations: Secondary mirror; official USPTO check needed.
+    claim: USPTO.report lists Astronomer, Inc. as a Delaware corporation with ASTRONOMER, ASTRO and A-related trademark records/applications.
+    evidence_summary: USPTO.report lists Astronomer, Inc. as a Delaware corporation with ASTRONOMER, ASTRO and A-related trademark records/applications.
+    evidence_type: patent_or_trademark_record
+    source_quotes:
+      - quote: USPTO.report company page for Astronomer, Inc.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-021
+    source_ids:
+      - SRC-027
+    verification_status: partially_verified
+    confidence: low
+    limitations: Not comprehensive PACER/state/arbitration review.
+    claim: Sampled CourtListener search found limited Astronomer-related docket references and no clear material operating lawsuit in the sampled public search.
+    evidence_summary: Sampled CourtListener search found limited Astronomer-related docket references and no clear material operating lawsuit in the sampled public search.
+    evidence_type: legal_record
+    source_quotes:
+      - quote: CourtListener search showed a small number of references.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-022
+    source_ids:
+      - SRC-028
+    verification_status: verified
+    confidence: high
+    limitations: Does not cover all private filings.
+    claim: SEC company ticker data did not show Astronomer as a public issuer during research.
+    evidence_summary: SEC company ticker data did not show Astronomer as a public issuer during research.
+    evidence_type: regulatory_filing
+    source_quotes:
+      - quote: SEC company_tickers.json no public ticker match.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-023
+    source_ids:
+      - SRC-030
+      - SRC-031
+      - SRC-032
+      - SRC-033
+    verification_status: verified
+    confidence: high
+    limitations: No market share or win/loss data.
+    claim: AWS MWAA, Google Cloud Composer, Prefect and Dagster publicly position as managed Airflow or workflow/data orchestration alternatives.
+    evidence_summary: AWS MWAA, Google Cloud Composer, Prefect and Dagster publicly position as managed Airflow or workflow/data orchestration alternatives.
+    evidence_type: other
+    source_quotes:
+      - quote: Competitor product pages describe alternatives.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-024
+    source_ids:
+      - SRC-012
+      - SRC-002
+      - SRC-013
+    verification_status: verified
+    confidence: medium
+    limitations: Headcount by location private.
+    claim: Astronomer publicly relocated headquarters to New York City while maintaining broader hiring and EMEA/global operating signals.
+    evidence_summary: Astronomer publicly relocated headquarters to New York City while maintaining broader hiring and EMEA/global operating signals.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: NYC HQ release plus careers/leadership pages.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-025
+    source_ids:
+      - SRC-009
+      - SRC-003
+      - SRC-015
+    verification_status: partially_verified
+    confidence: medium
+    limitations: Integration and attach rates private.
+    claim: Datakin acquisition and Astro platform messaging support expansion into lineage, observability and operational metadata around Airflow.
+    evidence_summary: Datakin acquisition and Astro platform messaging support expansion into lineage, observability and operational metadata around Airflow.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Datakin acquisition and platform/R&D messaging.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-026
+    source_ids:
+      - SRC-005
+    verification_status: verified
+    confidence: high
+    limitations: Requires private security diligence.
+    claim: Astronomer security pages provide public control descriptions but not SOC reports, pen tests, incident history, DPIAs or insurance schedules.
+    evidence_summary: Astronomer security pages provide public control descriptions but not SOC reports, pen tests, incident history, DPIAs or insurance schedules.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Detailed audit artifacts are not public.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-027
+    source_ids:
+      - SRC-009
+      - SRC-010
+      - SRC-022
+      - SRC-028
+    verification_status: verified
+    confidence: high
+    limitations: Absence of public evidence is not evidence of absence.
+    claim: Audited financials, cap table, debt, tax, customer concentration, sales productivity, compensation and attrition data were not found publicly.
+    evidence_summary: Audited financials, cap table, debt, tax, customer concentration, sales productivity, compensation and attrition data were not found publicly.
+    evidence_type: other
+    source_quotes:
+      - quote: Public financing records disclose headline facts but not operating schedules.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-028
+    source_ids:
+      - SRC-007
+      - SRC-010
+    verification_status: partially_verified
+    confidence: medium
+    limitations: AI ARR and reliability private.
+    claim: Astronomer AI/agentic data-engineering positioning is supported by Otto and Series D messaging but lacks public proof of durable AI-specific monetization.
+    evidence_summary: Astronomer AI/agentic data-engineering positioning is supported by Otto and Series D messaging but lacks public proof of durable AI-specific monetization.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: Otto and Series D frame AI data orchestration opportunity.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-029
+    source_ids:
+      - SRC-002
+      - SRC-023
+    verification_status: partially_verified
+    confidence: medium
+    limitations: Needs reconciliation to Apache rosters and employment.
+    claim: Astronomer claims deep Apache Airflow contributor and PMC involvement.
+    evidence_summary: Astronomer claims deep Apache Airflow contributor and PMC involvement.
+    evidence_type: primary_company_source
+    source_quotes:
+      - quote: About page claims Airflow contribution since 2018 and top contributor/PMC participation.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+  - evidence_claim_id: EC-030
+    source_ids:
+      - SRC-017
+      - SRC-018
+      - SRC-030
+      - SRC-031
+    verification_status: verified
+    confidence: high
+    limitations: Partner economics not public.
+    claim: AWS and Microsoft can be distribution partners while hyperscaler-managed workflow services create competitive and bargaining pressure.
+    evidence_summary: AWS and Microsoft can be distribution partners while hyperscaler-managed workflow services create competitive and bargaining pressure.
+    evidence_type: other
+    source_quotes:
+      - quote: Alliance releases coexist with cloud-native Airflow services.
+        location: null
+    associations:
+      chapter_id: null
+      section_id: null
+sources:
+  - source_id: SRC-001
+    title: Astronomer homepage
+    publisher: Astronomer
+    url: https://www.astronomer.io/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Current company positioning
+    source_type: primary_company_source
+    reliability_notes: Official company source; management-controlled
+    archive_url: null
+  - source_id: SRC-002
+    title: About Astronomer
+    publisher: Astronomer
+    url: https://www.astronomer.io/about/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Company history, contributor claims, careers signal
+    source_type: primary_company_source
+    reliability_notes: Official company source; hiring counts can change
+    archive_url: null
+  - source_id: SRC-003
+    title: Astro product page
+    publisher: Astronomer
+    url: https://www.astronomer.io/product/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Astro product positioning and capabilities
+    source_type: primary_company_source
+    reliability_notes: Official product marketing
+    archive_url: null
+  - source_id: SRC-004
+    title: Astronomer pricing
+    publisher: Astronomer
+    url: https://www.astronomer.io/pricing/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Public packaging and usage-based prices
+    source_type: primary_company_source
+    reliability_notes: Official pricing; enterprise discounts absent
+    archive_url: null
+  - source_id: SRC-005
+    title: Astronomer security
+    publisher: Astronomer
+    url: https://www.astronomer.io/security/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Architecture, controls and security claims
+    source_type: primary_company_source
+    reliability_notes: Not a substitute for SOC reports
+    archive_url: null
+  - source_id: SRC-006
+    title: Astro Private Cloud
+    publisher: Astronomer
+    url: https://www.astronomer.io/product/astro-private-cloud/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Private-cloud deployment and customer outcomes
+    source_type: primary_company_source
+    reliability_notes: Official product/customer marketing
+    archive_url: null
+  - source_id: SRC-007
+    title: Otto product page
+    publisher: Astronomer
+    url: https://www.astronomer.io/product/otto/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: AI assistant capabilities and model-provider references
+    source_type: primary_company_source
+    reliability_notes: Official product marketing for emerging product
+    archive_url: null
+  - source_id: SRC-008
+    title: Astronomer customers
+    publisher: Astronomer
+    url: https://www.astronomer.io/customers/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Named customer proof points
+    source_type: primary_company_source
+    reliability_notes: Selected customer marketing, not revenue evidence
+    archive_url: null
+  - source_id: SRC-009
+    title: Astronomer raises $213M Series C and acquires Datakin
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-raises-213-million-series-c-acquires-datakin/
+    publication_date: 2022-03-23
+    accessed_date: 2026-05-16
+    relevance: Series C and acquisition evidence
+    source_type: primary_company_source
+    reliability_notes: Company release
+    archive_url: null
+  - source_id: SRC-010
+    title: Astronomer secures $93M Series D
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-secures-93-million-series-d-funding/
+    publication_date: 2025-05-01
+    accessed_date: 2026-05-16
+    relevance: Series D, growth and customer-count evidence
+    source_type: primary_company_source
+    reliability_notes: Company release; ARR definitions private
+    archive_url: null
+  - source_id: SRC-011
+    title: Astronomer revenue jumps more than 200 percent in H1 2023
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-revenue-jumps-more-than-200-percent-in-h1-2023/
+    publication_date: 2023-08-01
+    accessed_date: 2026-05-16
+    relevance: 206% revenue and 1400% usage growth claims
+    source_type: primary_company_source
+    reliability_notes: Company release
+    archive_url: null
+  - source_id: SRC-012
+    title: Astronomer growth and NYC headquarters release
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-achieves-exceptional-company-growth-driven-by-astro-the-apache-airflow-powered-platform-and-relocates-hq-to-new-york-city/
+    publication_date: 2024-02-01
+    accessed_date: 2026-05-16
+    relevance: 292% Astro growth, task scale and HQ move
+    source_type: primary_company_source
+    reliability_notes: Company release
+    archive_url: null
+  - source_id: SRC-013
+    title: Astronomer announces Chris Lynch as CFO
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-announces-chris-lynch-as-chief-financial-officer/
+    publication_date: 2026-02-01
+    accessed_date: 2026-05-16
+    relevance: CFO and 900+ enterprise customer claim
+    source_type: primary_company_source
+    reliability_notes: Company release
+    archive_url: null
+  - source_id: SRC-014
+    title: Astronomer bolsters leadership team
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-bolsters-leadership-team-to-drive-go-to-market-strategy-cloud-revenue-growth/
+    publication_date: 2025-01-01
+    accessed_date: 2026-05-16
+    relevance: GTM and leadership evidence
+    source_type: primary_company_source
+    reliability_notes: Company release
+    archive_url: null
+  - source_id: SRC-015
+    title: Astronomer announces Carter Page as EVP R&D
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-announces-carter-page-as-evp-rd/
+    publication_date: 2026-01-01
+    accessed_date: 2026-05-16
+    relevance: R&D leadership evidence
+    source_type: primary_company_source
+    reliability_notes: Company release slug inferred from public press naming pattern
+    archive_url: null
+  - source_id: SRC-016
+    title: Astronomer announces Matt Simontacchi as President of Field Operations
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-announces-matt-simontacchi-as-president-of-field-operations/
+    publication_date: 2026-04-13
+    accessed_date: 2026-05-16
+    relevance: Field operations leadership
+    source_type: primary_company_source
+    reliability_notes: Company release
+    archive_url: null
+  - source_id: SRC-017
+    title: Astronomer and AWS strategic collaboration
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-and-aws-announce-strategic-collaboration-agreement/
+    publication_date: 2026-01-01
+    accessed_date: 2026-05-16
+    relevance: AWS channel/partner evidence
+    source_type: primary_company_source
+    reliability_notes: Company release; terms private
+    archive_url: null
+  - source_id: SRC-018
+    title: Astronomer Microsoft Azure alliance
+    publisher: Astronomer
+    url: https://www.astronomer.io/press-releases/astronomer-announces-strategic-alliance-with-microsoft-offering-fully-managed-apache-airflow-for-microsoft-azure-customers/
+    publication_date: 2023-01-01
+    accessed_date: 2026-05-16
+    relevance: Azure channel/partner evidence
+    source_type: primary_company_source
+    reliability_notes: Company release; terms private
+    archive_url: null
+  - source_id: SRC-019
+    title: Astronomer raises $1.9M seed round
+    publisher: CincyTech
+    url: https://www.cincytechusa.com/news/astronomer-raises-1-9m-seed-round
+    publication_date: 2016-01-01
+    accessed_date: 2026-05-16
+    relevance: Early seed funding evidence
+    source_type: primary_company_source
+    reliability_notes: Third-party/regional investor source
+    archive_url: null
+  - source_id: SRC-020
+    title: Astronomer raises $3.5M
+    publisher: Business Wire
+    url: https://www.businesswire.com/news/home/20170524005313/en/Astronomer-Raises-3.5-Million-to-Help-Enterprises-Unlock-the-Value-in-Their-Data
+    publication_date: 2017-05-24
+    accessed_date: 2026-05-16
+    relevance: 2017 financing evidence
+    source_type: primary_company_source
+    reliability_notes: Newswire; company-provided content
+    archive_url: null
+  - source_id: SRC-021
+    title: Astronomer blog and founder history materials
+    publisher: Astronomer
+    url: https://www.astronomer.io/blog/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Founder/history narrative
+    source_type: primary_company_source
+    reliability_notes: Company-authored; exact posts should be reconciled
+    archive_url: null
+  - source_id: SRC-022
+    title: Complete list of unicorn companies
+    publisher: CB Insights
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Unicorn valuation, sector, geography and investors
+    source_type: market_database
+    reliability_notes: Secondary database; may lag private changes
+    archive_url: null
+  - source_id: SRC-023
+    title: apache/airflow GitHub repository
+    publisher: GitHub / Apache Software Foundation
+    url: https://github.com/apache/airflow
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Airflow ecosystem metrics
+    source_type: technical_repository
+    reliability_notes: Point-in-time public repo data
+    archive_url: null
+  - source_id: SRC-024
+    title: Astronomer GitHub organization
+    publisher: GitHub / Astronomer
+    url: https://github.com/astronomer
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Astronomer OSS footprint
+    source_type: technical_repository
+    reliability_notes: Point-in-time public repo data
+    archive_url: null
+  - source_id: SRC-025
+    title: GitHub API apache/airflow metadata
+    publisher: GitHub API
+    url: https://api.github.com/repos/apache/airflow
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Airflow star/fork/license metadata
+    source_type: technical_repository
+    reliability_notes: API values change over time
+    archive_url: null
+  - source_id: SRC-026
+    title: Astronomer trademark records
+    publisher: USPTO.report
+    url: https://uspto.report/company/Astronomer-Inc
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Trademark/IP evidence
+    source_type: patent_or_trademark_record
+    reliability_notes: Secondary mirror; official TSDR needed
+    archive_url: null
+  - source_id: SRC-027
+    title: CourtListener search for Astronomer, Inc.
+    publisher: CourtListener
+    url: https://www.courtlistener.com/?q=Astronomer%2C%20Inc.&type=r&order_by=score%20desc
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Public litigation search
+    source_type: legal_record
+    reliability_notes: Search sample, not comprehensive legal review
+    archive_url: null
+  - source_id: SRC-028
+    title: SEC company tickers JSON
+    publisher: SEC
+    url: https://www.sec.gov/files/company_tickers.json
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Public ticker check
+    source_type: regulatory_filing
+    reliability_notes: Ticker file only
+    archive_url: null
+  - source_id: SRC-029
+    title: GitHub API Astronomer repositories
+    publisher: GitHub API
+    url: https://api.github.com/orgs/astronomer/repos
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Astronomer repo metrics
+    source_type: technical_repository
+    reliability_notes: Point-in-time API results
+    archive_url: null
+  - source_id: SRC-030
+    title: Amazon Managed Workflows for Apache Airflow
+    publisher: AWS
+    url: https://aws.amazon.com/managed-workflows-for-apache-airflow/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Managed Airflow competitor
+    source_type: primary_company_source
+    reliability_notes: Competitor marketing
+    archive_url: null
+  - source_id: SRC-031
+    title: Google Cloud Composer
+    publisher: Google Cloud
+    url: https://cloud.google.com/composer
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Managed Airflow competitor
+    source_type: primary_company_source
+    reliability_notes: Competitor marketing
+    archive_url: null
+  - source_id: SRC-032
+    title: Prefect workflow orchestration
+    publisher: Prefect
+    url: https://www.prefect.io/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Workflow orchestration alternative
+    source_type: primary_company_source
+    reliability_notes: Competitor marketing
+    archive_url: null
+  - source_id: SRC-033
+    title: Dagster data orchestration
+    publisher: Dagster
+    url: https://dagster.io/
+    publication_date: null
+    accessed_date: 2026-05-16
+    relevance: Data orchestration alternative
+    source_type: primary_company_source
+    reliability_notes: Competitor marketing
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Revenue quality and unit economics are opaque
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Public sources disclose growth percentages and customer counts, not audited revenue, ARR bridge, gross margin, backlog, deferred revenue, AR aging or burn.
+    impacted_chapter_ids:
+      - I
+      - III
+      - V
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - III.C
+      - V.D
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-014
+      - EC-027
+    mitigation_or_diligence_request: Request audited financial statements, ARR definitions, cohort retention, gross margin and budget-vs-actual packs.
+  - risk_id: R-002
+    risk_title: Headline valuation may not reflect current security economics
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: CB Insights and press releases support a unicorn valuation and major financings, but current cap table, preferences, option overhang, debt and secondary transactions are private.
+    impacted_chapter_ids:
+      - I
+      - VII
+    impacted_section_ids:
+      - I.C
+      - I.D
+      - VII.E
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-027
+    mitigation_or_diligence_request: Obtain full cap table, financing documents, liquidation preferences, option plan and 409A history.
+  - risk_id: R-003
+    risk_title: Hyperscaler coopetition and channel bargaining power
+    risk_category: competition
+    severity: high
+    likelihood: high
+    description: AWS and Microsoft are important partners while AWS MWAA and Google Composer compete directly; hyperscalers can bundle, discount or control marketplace access.
+    impacted_chapter_ids:
+      - III
+      - IV
+      - V
+      - VIII
+    impacted_section_ids:
+      - III.B
+      - IV.A
+      - V.C
+      - VIII.F
+    evidence_claim_ids:
+      - EC-015
+      - EC-023
+      - EC-030
+    mitigation_or_diligence_request: Review alliance contracts, marketplace economics, win/loss by hyperscaler service and change-of-control restrictions.
+  - risk_id: R-004
+    risk_title: Airflow-native differentiation could narrow as orchestration market evolves
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: Astronomer benefits from Airflow scale, but buyers may choose modern orchestration frameworks, DIY Airflow or broader data-platform orchestration.
+    impacted_chapter_ids:
+      - II
+      - IV
+      - VI
+    impacted_section_ids:
+      - II.A
+      - IV.A
+      - VI.A
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+      - EC-023
+      - EC-029
+    mitigation_or_diligence_request: Review roadmap, product NPS, retention by workload and competitive win/loss against Airflow alternatives.
+  - risk_id: R-005
+    risk_title: Customer concentration and retention are not public
+    risk_category: commercial
+    severity: high
+    likelihood: medium
+    description: Named customer stories do not disclose top-customer ARR, churn, renewal timing, expansion, disputes or concentration above 5% of revenue.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-027
+    mitigation_or_diligence_request: Request top-customer ARR concentration, renewal calendar, NRR/GRR and churned-account reason codes.
+  - risk_id: R-006
+    risk_title: Security and shared-responsibility exposure in sensitive workloads
+    risk_category: security
+    severity: high
+    likelihood: medium
+    description: Airflow orchestration can touch credentials, data pipelines and regulated workflows; public security pages omit SOC reports, incident history, pen tests, DPIAs and insurance limits.
+    impacted_chapter_ids:
+      - II
+      - III
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - III.E
+      - VIII.E
+      - VIII.F
+      - VIII.G
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-026
+    mitigation_or_diligence_request: Obtain SOC 2 Type II, pen-test summaries, incident log, subprocessors, cyber/E&O insurance and largest-customer security exceptions.
+  - risk_id: R-007
+    risk_title: Otto and AI monetization remain unproven
+    risk_category: product
+    severity: medium
+    likelihood: high
+    description: Otto is publicly marketed and strategically relevant, but public sources do not prove paid adoption, attach rate, model-cost margin, security posture or reliability.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VI.B
+      - VIII.F
+    evidence_claim_ids:
+      - EC-012
+      - EC-028
+    mitigation_or_diligence_request: Request Otto revenue, active usage, conversion, evals, model-provider costs, DPAs and roadmap milestones.
+  - risk_id: R-008
+    risk_title: Management transition and personnel data gaps
+    risk_category: people
+    severity: medium
+    likelihood: medium
+    description: Public releases show leadership changes and hiring signals, but not succession plans, compensation, attrition, equity incentives or employee-relations issues.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+    evidence_claim_ids:
+      - EC-018
+      - EC-019
+      - EC-027
+    mitigation_or_diligence_request: Request org chart, executive agreements, attrition data, equity plan, HR claims and succession materials.
+  - risk_id: R-009
+    risk_title: Legal and IP diligence incomplete from public sources
+    risk_category: legal
+    severity: medium
+    likelihood: medium
+    description: Trademark records and sampled legal searches are incomplete; OSS licensing, patents, contracts, litigation and regulatory correspondence require counsel review.
+    impacted_chapter_ids:
+      - VIII
+      - VI
+    impacted_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.G
+      - VI.A
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+      - EC-027
+      - EC-029
+    mitigation_or_diligence_request: Have counsel provide litigation, IP, OSS, regulatory and contract schedules.
+  - risk_id: R-010
+    risk_title: Supplier and cloud/model-provider dependency may pressure margins
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Product architecture depends on cloud ecosystems and Otto references external model providers; spend concentration, committed cloud usage and price-change clauses are not public.
+    impacted_chapter_ids:
+      - III
+      - V
+      - VIII
+    impacted_section_ids:
+      - III.E
+      - V.C
+      - VIII.F
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-015
+      - EC-030
+    mitigation_or_diligence_request: Request top-supplier spend, cloud commitments, model-provider contracts and margin sensitivity to price changes.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, management reporting, ARR bridge, deferred revenue, backlog, AR aging and gross margin by product/channel/geography.
+    why_it_matters: Public growth rates do not prove revenue quality, cash conversion or unit economics.
+    suggested_source_or_request: Request audited FY2023-FY2025 financial statements and monthly management packs.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, preferred rights, option pool, warrants/notes, debt, 409A history and primary/secondary funding mix.
+    why_it_matters: Headline valuation can materially diverge from investor economics and common-equity value.
+    suggested_source_or_request: Request full capitalization export and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Top-customer ARR concentration, revenue by customer, churn, NRR/GRR and renewal calendar.
+    why_it_matters: Customer stories may hide concentration, churn or low-margin enterprise support.
+    suggested_source_or_request: Request top-20 customer and cohort-retention schedules.
+    priority: high
+  - gap_id: G-004
+    chapter_id: V
+    section_id: V.D
+    missing_information: Sales compensation, quota, attainment, ramp, sales cycle, CAC payback and pipeline conversion.
+    why_it_matters: Growth claims cannot be translated into efficient scaling without GTM productivity.
+    suggested_source_or_request: Request sales productivity model and cohort attainment.
+    priority: high
+  - gap_id: G-005
+    chapter_id: II
+    section_id: II.A
+    missing_information: Product-line ARR, gross margin, attach rates and reliability metrics for Astro, Private Cloud, observability/lineage and Otto.
+    why_it_matters: Product breadth does not prove profitable, sticky monetization across SKUs.
+    suggested_source_or_request: Request product P&Ls, roadmap and support/reliability data.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Otto adoption, AI-specific ARR, model cost, security review, evals and roadmap timing.
+    why_it_matters: AI positioning is strategically important but commercially and operationally unproven publicly.
+    suggested_source_or_request: Request Otto metrics and security/financial review materials.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.G
+    missing_information: Two-year attrition, regretted attrition, employee-relations issues, executive agreements and succession plan.
+    why_it_matters: Personnel risk can impair sales execution, product velocity and customer trust before appearing publicly.
+    suggested_source_or_request: Request HR dashboards and executive diligence files.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Official IP, patent, trademark, OSS license, contributor and inbound/outbound license schedules.
+    why_it_matters: Airflow/OSS-centric products require careful license and governance diligence.
+    suggested_source_or_request: Request counsel IP/OSS memo and SBOM/license audit.
+    priority: medium
+  - gap_id: G-009
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Material customer, cloud, marketplace, model-provider, security, insurance and alliance contracts.
+    why_it_matters: Contract terms drive margin, liability, indemnity, data-protection and change-of-control exposure.
+    suggested_source_or_request: Request material-contract schedule and executed agreements.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited historical financial statements for the last three fiscal years and monthly management reporting for the latest twelve months.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide the current fully diluted cap table with all preferred classes, option pools, warrants, notes, debt and liquidation preferences.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: I
+    section_id: I.B
+    request: Provide the board-approved three-year forecast with assumptions for ARR, usage, gross margin, cloud cost, hiring, burn, runway and financing.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.C
+    request: Provide top-20 customer ARR, product usage, renewal timing, NRR/GRR, churned accounts and concentration above 5% of revenue.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.B
+    request: Provide AWS, Microsoft, marketplace and other strategic-partner agreements, including revenue share, exclusivity and termination provisions.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: V
+    section_id: V.D
+    request: "Provide sales productivity data: quotas, attainment, ramp, sales cycle, CAC payback, pipeline conversion and compensation plan."
+    requested_from: company
+    priority: high
+  - request_id: Q-007
+    chapter_id: II
+    section_id: II.A
+    request: Provide SKU-level ARR, gross margin, attach rates, support cost and reliability/SLA metrics for Astro, Private Cloud, observability/lineage and Otto.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide Otto product metrics, active usage, paid conversion, model-provider costs, security review and roadmap milestones.
+    requested_from: company
+    priority: medium
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.D
+    request: Provide executive employment agreements, compensation summaries, benefits, equity grants, option plan and change-of-control terms.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: VII
+    section_id: VII.G
+    request: Provide headcount and attrition by function/location for the last two years, plus regretted attrition and succession plans.
+    requested_from: company
+    priority: medium
+  - request_id: Q-011
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide counsel-prepared litigation, IP, trademark, patent, OSS license and inbound/outbound license schedules.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.E
+    request: Provide insurance schedules, cyber/E&O/D&O limits, exclusions, claims history, security incident log, SOC reports and pen-test summaries.
+    requested_from: company
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: This report uses public sources only. No private financial statements, cap tables, board materials, contracts, SOC reports, customer calls or counsel memos were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.C
+      - V.D
+      - VII.D
+      - VIII.F
+  - limitation_id: L-002
+    description: Most growth, customer and product metrics are management-authored press, product or customer-story claims and should be treated as untrusted until reconciled to source systems.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - V
+    affected_section_ids:
+      - I.A
+      - I.B
+      - II.A
+      - III.A
+      - V.B
+  - limitation_id: L-003
+    description: Public source availability changes; GitHub stars, careers counts, customer counts, pricing and leadership pages are point-in-time observations as of the accessed date.
+    affected_chapter_ids:
+      - II
+      - V
+      - VI
+      - VII
+    affected_section_ids:
+      - II.A
+      - V.C
+      - VI.A
+      - VII.B
+  - limitation_id: L-004
+    description: The legal review was limited to sampled public searches and secondary trademark mirrors; no full PACER, state-court, arbitration, USPTO/TSDR or international registry review was completed.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.G
+  - limitation_id: L-005
+    description: Competitive and market-share analysis relies on public competitor positioning, not paid market databases, win/loss interviews or customer procurement data.
+    affected_chapter_ids:
+      - IV
+      - V
+    affected_section_ids:
+      - IV.A
+      - V.A
+      - V.C
