@@ -1,0 +1,3723 @@
+report_metadata:
+  report_title: TradingView Public-Source Startup Diligence Report
+  target_company: TradingView
+  website: https://www.tradingview.com/
+  known_aliases:
+    - TradingView Inc.
+    - TradingView
+    - Pine Script
+    - Supercharts
+  sector: Financial charting, market data, social investing, broker connectivity,
+    and retail/professional trading tools
+  geography: United Kingdom-listed unicorn with United States and global operating
+    footprint; paying users and usage signals span more than 180 countries
+  company_stage: Late-stage private unicorn
+  research_date: 2026-05-15
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built covered slugs from reports/*-diligence-report.yaml and selected
+      TradingView at random from a current public unicorn list after excluding
+      covered companies.
+    - Prioritized primary company pages covering product, pricing, brokers,
+      market-data coverage, careers, security, privacy, terms, widgets, and Pine
+      Script documentation.
+    - Used the October 2021 PRNewswire announcement for the financing and
+      valuation anchor.
+    - Used Apple App Store and Google Play public listings as third-party mobile
+      traction signals.
+    - Used public competitor pages for a limited competitive benchmark and treated
+      inaccessible or private financial information as evidence gaps.
+  included_jurisdictions:
+    - United Kingdom
+    - United States
+    - Global consumer and brokerage markets
+  excluded_topics:
+    - No private financial statements, ARR schedules, cohort-retention exports,
+      cap table, board materials, data-provider contracts, broker contracts, or
+      customer references were available.
+    - No paid database access, PACER downloads, or exhaustive trademark/patent
+      registry searches were performed.
+    - No interviews were conducted with management, customers, employees,
+      brokers, data providers, investors, or counsel.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-15
+      notes: The user requested one random uncovered private unicorn diligence
+        report and a draft pull request.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: TradingView is a charting platform and social network used by
+      100M+ traders and investors worldwide.
+    claim_source: TradingView about page and app listings
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - V
+    mapped_section_ids:
+      - II.A
+      - III.A
+      - V.C
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request the active-user, registered-user, paying-user, and cohort
+        retention definitions behind the 100M+ user claim.
+  - founder_claim_id: FC-002
+    claim_text: TradingView raised $298 million led by Tiger Global at a $3
+      billion valuation in October 2021.
+    claim_source: PRNewswire financing announcement
+    claim_date: 2021-10-14
+    mapped_chapter_ids:
+      - I
+      - VII
+    mapped_section_ids:
+      - I.C
+      - VII.C
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request round documents, post-money cap table, liquidation preferences,
+        pro-rata rights, and any secondary-sale details.
+  - founder_claim_id: FC-003
+    claim_text: TradingView offers a freemium-to-enterprise pricing ladder,
+      broad market-data coverage, and millions of instruments.
+    claim_source: TradingView pricing and market-data pages
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - II
+      - VIII
+    mapped_section_ids:
+      - I.D
+      - II.A
+      - VIII.F
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-003
+      - EC-008
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request gross margin by plan, exchange-fee pass-through economics, data
+        vendor commitments, and enterprise discounting.
+  - founder_claim_id: FC-004
+    claim_text: TradingView is expanding broker integrations so users can trade
+      from TradingView through preferred financial institutions.
+    claim_source: PRNewswire announcement and TradingView brokers page
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+      - VIII
+    mapped_section_ids:
+      - III.B
+      - V.C
+      - VIII.F
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request broker partner contracts, revenue-share terms, regulatory
+        responsibility matrix, incident logs, and broker concentration data.
+  - founder_claim_id: FC-005
+    claim_text: TradingView's product differentiation includes hundreds of built-in
+      indicators, 100,000+ public indicators, alerts, Pine Script, and wide data
+      coverage.
+    claim_source: TradingView features and Pine Script documentation
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-005
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request feature adoption, script publishing quality metrics, moderation
+        metrics, R&D roadmap, and cloud-cost attribution.
+  - founder_claim_id: FC-006
+    claim_text: TradingView is the world's most popular investing website and a
+      top-rated finance app.
+    claim_source: TradingView blog, Apple App Store, and Google Play
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - IV
+      - V
+    mapped_section_ids:
+      - III.A
+      - IV.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-006
+      - EC-011
+    contradiction_summary: App-store rating and download signals are observable,
+      but the investing-website ranking is company-authored and should be
+      refreshed directly from Similarweb or another independent traffic source.
+    diligence_follow_up:
+      - Request verified traffic analytics, channel mix, conversion funnels, app
+        retention, and independent brand tracking.
+executive_summary:
+  overall_assessment: TradingView is a scaled, late-stage private fintech software
+    company with strong public evidence of user reach, mobile traction, product
+    depth, and broker/data-provider ecosystem relevance. Public evidence does not
+    verify revenue quality, profitability, churn, customer concentration, data-cost
+    exposure, or cap-table terms, so financial diligence remains gating.
+  investment_or_diligence_thesis: The public case is that TradingView has built a
+    global network and workflow layer for traders by combining charts, social
+    publishing, market data, alerts, custom scripting, broker connectivity, and
+    freemium subscription packaging. The principal diligence question is whether
+    that reach converts into durable, high-margin subscription and partner revenue
+    after exchange/data costs, broker obligations, consumer churn, and competitive
+    pressure.
+  strongest_verified_claims:
+    - TradingView publicly states it is used by 100M+ traders and investors
+      worldwide.
+    - PRNewswire reports a $298 million Tiger Global-led financing at a $3
+      billion valuation in October 2021.
+    - Public product pages verify a broad pricing ladder, large instrument count,
+      market-data packages, alerts, indicators, Pine Script, mobile apps, widgets,
+      and broker marketplace integrations.
+  biggest_risks:
+    - "Financial opacity: no public audited financials, ARR, retention, gross margin,
+      customer concentration, burn, cash, debt, or cap-table terms."
+    - "Market-data dependency: exchange rules, per-user data fees, vendor contracts,
+      and delayed/real-time data licensing can affect margins, UX, and plan packaging."
+    - "Regulatory and partner exposure: broker integrations, trading workflows,
+      market-data terms, user-generated scripts, and global privacy obligations create
+      legal, operational, and reputational risk."
+  key_evidence_gaps:
+    - Audited financial statements, ARR/revenue bridge, cohort retention, gross
+      margin by plan, sales efficiency, cash balance, runway, and debt schedule.
+    - Cap table, investor rights, option pool, secondary-sale details, liquidation
+      stack, and board-control documents.
+    - Data-provider and broker contracts, usage commitments, revenue share,
+      incident history, and concentration by vendor or partner.
+    - Active-user definitions, paying-user count, conversion funnel, app retention,
+      churn, refund rates, support quality, and consumer complaint trends.
+  recommended_next_steps:
+    - Run a finance workstream covering revenue recognition, subscriptions,
+      exchange-fee pass-through, gross margin, billing churn, refunds, and cohort
+      retention.
+    - Run contract diligence on exchange/data-provider, broker, enterprise,
+      app-store, cloud, and widget/API arrangements.
+    - Conduct customer and broker reference calls across retail, professional, and
+      enterprise segments.
+    - Verify current traffic, app analytics, and competitive positioning through
+      independent analytics providers.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: The only public priced financing located in this session was
+      the October 2021 $298 million round at a $3 billion valuation. Public pages
+      expose monetization surfaces - subscriptions, paid market data, enterprise
+      plans, broker integrations, widgets, and app distribution - but not audited
+      revenue, ARR, margin, burn, debt, or retention.
+    founder_claim_ids:
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-008
+    risk_ids:
+      - R-001
+      - R-002
+      - R-006
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: No audited financial statements, quarterly financials, revenue
+          bridge, gross margin, EBITDA, burn, cash, or debt schedule were found in
+          public sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public evidence verifies scaled usage and monetization
+              surfaces, but not financial statement quality.
+            evidence_claim_ids:
+              - EC-001
+              - EC-003
+        hidden_risks:
+          - Revenue may be more consumer-subscription and data-fee sensitive than
+            user-scale headlines suggest.
+        evidence_gaps:
+          - Audited income statements, balance sheets, cash-flow statements, ARR,
+            recognized revenue, deferred revenue, gross margin, support costs,
+            app-store fees, and exchange/data pass-throughs.
+        follow_up_questions:
+          - What share of gross revenue is retained after app-store fees,
+            exchange/data fees, broker economics, refunds, and taxes?
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8]
+        summary: Public pages do not disclose projections; management's 2021
+          announcement did state an intent to expand broker relationships.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: The 2021 financing announcement framed broker integrations
+              as a growth priority.
+            evidence_claim_ids:
+              - EC-004
+        hidden_risks:
+          - Forecasts may depend on partner integrations that require broker
+            compliance, uptime, commercial alignment, and regional approvals.
+        evidence_gaps:
+          - Board-approved forecast, pipeline, bookings, churn, gross margin,
+            hiring plan, data-cost plan, broker attach-rate, and downside case.
+        follow_up_questions:
+          - What sensitivity has management modeled for user growth, paid
+            conversion, data fees, and broker revenue share?
+        table_ids: []
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids:
+          - EC-002
+          - EC-004
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: The October 2021 announcement verifies a $298 million financing
+          led by Tiger Global at a $3 billion valuation, but public sources do not
+          disclose the full capitalization, security type, investor rights, or
+          option-pool treatment.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: The financing and valuation are directly supported by a
+              named public announcement.
+            evidence_claim_ids:
+              - EC-002
+        hidden_risks:
+          - Late-stage private round terms may include preferences, secondary
+            sales, veto rights, or pro-rata rights that materially change common
+            equity economics.
+        evidence_gaps:
+          - Cap table, round documents, investor rights, board composition,
+            liquidation stack, option pool, SAFEs/notes, warrants, and debt.
+        follow_up_questions:
+          - What rights did Tiger Global and other investors receive, and how much
+            of the round was primary versus secondary?
+        table_ids:
+          - T-001
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: Pricing pages verify Free, Essential, Plus, Premium, Ultimate,
+          paid market data, and Enterprise plans, creating multiple revenue
+          levers but also potential complexity in revenue recognition and data
+          cost attribution.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: TradingView publicly lists annual monthly-equivalent prices
+              for Essential, Plus, Premium, and Ultimate plans, and offers
+              enterprise subscriptions for 100+ users.
+            evidence_claim_ids:
+              - EC-003
+        hidden_risks:
+          - Exchange fees and real-time data packages can create margin drag and
+            user dissatisfaction if customers expect real-time data to be bundled.
+        evidence_gaps:
+          - Revenue by product, monthly versus annual mix, renewal rate, refunds,
+            discounts, data package margins, enterprise ACV, and broker revenue.
+        follow_up_questions:
+          - What are gross and contribution margins by plan after vendor,
+            exchange, payment, app-store, support, and cloud costs?
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-008
+  - chapter_id: II
+    title: Products
+    chapter_summary: TradingView's public product suite combines charting,
+      screeners, alerts, custom scripting, social publishing, data coverage,
+      widgets, mobile apps, desktop, broker connectivity, and paid plans. Product
+      breadth is well supported by primary pages; adoption, retention, and
+      profitability by product are not public.
+    founder_claim_ids:
+      - FC-001
+      - FC-003
+      - FC-005
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-005
+      - EC-013
+    risk_ids:
+      - R-002
+      - R-005
+      - R-008
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: Public evidence verifies a broad product matrix with a free
+          entry point, paid individual plans, Ultimate, Enterprise, real-time data
+          packages, widgets, broker connectivity, Pine Script, alerts, and mobile
+          apps.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding: Product breadth is directly supported by company product,
+              pricing, data, broker, widget, and app pages.
+            evidence_claim_ids:
+              - EC-003
+              - EC-004
+              - EC-005
+              - EC-013
+        hidden_risks:
+          - The same breadth increases dependency on data vendors, exchange
+            rules, broker integrations, community moderation, app stores, and
+            support operations.
+        evidence_gaps:
+          - Product-level active use, paid conversion, churn, cloud cost, support
+            load, quality metrics, roadmap, and technical-debt register.
+        follow_up_questions:
+          - Which products drive paid conversion and retention versus top-of-funnel
+            engagement?
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+          - EC-004
+          - EC-005
+          - EC-013
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public customer evidence is strongest for aggregate user
+      scale, mobile reach, country reach, broker relationships, and data-provider
+      dependencies. It does not disclose top customers, revenue concentration,
+      segment mix, churn, NPS, or referenceable enterprise accounts.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+      - FC-006
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-006
+      - EC-008
+    risk_ids:
+      - R-002
+      - R-003
+      - R-004
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids: [III.A]
+        summary: Public sources indicate mass-market trader and investor reach,
+          but do not identify top customers or revenue by customer.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: TradingView states 100M+ traders and investors worldwide;
+              app listings show large mobile review and download counts.
+            evidence_claim_ids:
+              - EC-001
+              - EC-006
+        hidden_risks:
+          - User count can overstate monetizable customer depth if active,
+            paying, professional, and enterprise users are not separated.
+        evidence_gaps:
+          - Top customers, customer contracts, paid-seat counts, enterprise
+            accounts, geographic revenue mix, churn, NPS, and support SLAs.
+        follow_up_questions:
+          - What percentage of revenue comes from the top 10 customers, consumer
+            subscriptions, enterprise seats, broker partners, and data packages?
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-001
+          - EC-006
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids: [III.B]
+        summary: TradingView maintains public broker and data-provider
+          relationships, including broker listings and market-data/reference-data
+          vendors.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding: The brokers page lists verified broker options; footer and
+              data pages identify ICE Data Services, FactSet, Quartr, and other
+              data/reference sources.
+            evidence_claim_ids:
+              - EC-004
+              - EC-008
+        hidden_risks:
+          - Partner concentration or degraded integrations could directly affect
+            product utility, conversion, or support burden.
+        evidence_gaps:
+          - Broker contracts, commercial terms, integration uptime, revenue share,
+            data-provider contracts, minimum commitments, and termination rights.
+        follow_up_questions:
+          - Which brokers and data vendors account for the most revenue, usage,
+            incidents, and support escalations?
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-008
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids: [III.C]
+        summary: Revenue by customer, segment, geography, plan, broker, and data
+          package is not publicly disclosed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Pricing pages show monetization SKUs but not revenue mix or
+              concentration.
+            evidence_claim_ids:
+              - EC-003
+        hidden_risks:
+          - Concentration can hide in brokers, enterprise customers, data-package
+            resellers, app-store channels, or high-ARPU professional users.
+        evidence_gaps:
+          - Revenue by customer, plan, geography, channel, broker, data package,
+            and professional versus non-professional subscriber status.
+        follow_up_questions:
+          - What is revenue retention by cohort and by major customer/channel?
+        table_ids:
+          - T-005
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids: [III.D]
+        summary: No reliable public evidence was located for material severed
+          customer, broker, or data-provider relationships during this session.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public pages show active broker/data relationships, but do
+              not provide a history of terminated relationships.
+            evidence_claim_ids:
+              - EC-004
+              - EC-008
+        hidden_risks:
+          - Lost exchange or broker access could be material even if not broadly
+            disclosed.
+        evidence_gaps:
+          - Churned enterprise customers, terminated brokers, removed exchanges,
+            data-vendor disputes, and postmortems for service interruptions.
+        follow_up_questions:
+          - Which significant relationships were lost, renegotiated, suspended,
+            or degraded during the last 24 months?
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-008
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids: [III.E]
+        summary: Public supplier evidence is concentrated in data/reference
+          providers and app-store/mobile distribution; cloud, payments, support,
+          and enterprise tooling suppliers were not publicly verified.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Public pages identify select market data from ICE Data
+              Services, reference data from FactSet, and SEC filings/documents
+              from Quartr.
+            evidence_claim_ids:
+              - EC-008
+        hidden_risks:
+          - Data suppliers and exchanges can change availability, terms, fees, or
+            display restrictions with direct margin and product consequences.
+        evidence_gaps:
+          - Top suppliers by spend, cloud architecture, data entitlements, minimum
+            commitments, payments processors, app-store exposure, and disaster
+            recovery arrangements.
+        follow_up_questions:
+          - What suppliers are single points of failure for real-time data,
+            alerts, chart rendering, payments, support, and brokerage workflows?
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: >-
+      TradingView competes across several overlapping segments:
+      retail charting communities, professional market terminals, broker-owned
+      trading platforms, finance portals, screeners, widgets, and data platforms.
+      Public sources support product overlap, but not win/loss rates or switching
+      economics.
+    founder_claim_ids:
+      - FC-006
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-011
+      - EC-012
+    risk_ids:
+      - R-005
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: TradingView's public strengths are reach, community, indicators,
+          script ecosystem, app traction, pricing ladder, and broker/data
+          integrations. Competitors range from professional terminals and
+          investment platforms to brokers and retail charting tools.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Public competitor pages verify alternative products in
+              professional terminals, investment analytics, charting, and
+              brokerage-adjacent segments.
+            evidence_claim_ids:
+              - EC-012
+        hidden_risks:
+          - Broker platforms can subsidize tools with trading economics, while
+            professional terminals and analytics platforms may compete for
+            high-value users and enterprises.
+        evidence_gaps:
+          - Win/loss data, direct churn to competitors, price elasticity, feature
+            parity analysis, and independent market-share data.
+        follow_up_questions:
+          - Which competitor segments create the highest churn or acquisition-cost
+            pressure by customer cohort?
+        table_ids:
+          - T-008
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-003
+          - EC-005
+          - EC-011
+          - EC-012
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: TradingView appears to combine product-led growth, SEO/content,
+      app distribution, social/community activity, broker integrations, widgets,
+      and enterprise plans. Public materials provide strong reach signals but no
+      customer acquisition cost, payback, channel mix, or sales productivity.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+      - FC-006
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-006
+      - EC-011
+      - EC-013
+    risk_ids:
+      - R-003
+      - R-004
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids: [V.A.1, V.A.2, V.A.3, V.A.4]
+        summary: Public evidence supports a multi-channel GTM strategy based on
+          freemium usage, high-traffic web presence, mobile apps, widgets,
+          broker integrations, and plan upgrades.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: TradingView publishes free widgets, mobile apps, pricing
+              tiers, broker pages, and a company blog claim of leading investing
+              website rank.
+            evidence_claim_ids:
+              - EC-006
+              - EC-011
+              - EC-013
+        hidden_risks:
+          - Public reach may not translate into efficient paid conversion if
+            acquisition, support, refunds, exchange fees, and app-store fees are
+            high.
+        evidence_gaps:
+          - Channel mix, CAC, payback, conversion, churn, reseller/broker
+            economics, paid marketing spend, and attribution quality.
+        follow_up_questions:
+          - What is paid conversion and CAC payback by web, app, broker, widget,
+            referral, organic search, and enterprise channels?
+        table_ids:
+          - T-010
+          - T-011
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+          - EC-013
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids: [V.B.1, V.B.2, V.B.3]
+        summary: Major customers are not publicly disclosed; public evidence is
+          primarily aggregate user, mobile, and country reach.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: PRNewswire stated paying customers in over 180 countries in
+              2021, but did not identify accounts or revenue weights.
+            evidence_claim_ids:
+              - EC-002
+        hidden_risks:
+          - Enterprise or broker concentration may be material despite consumer
+            brand visibility.
+        evidence_gaps:
+          - Named major customers, contract values, renewal status, gross
+            retention, NRR, and reference-call availability.
+        follow_up_questions:
+          - Are any brokers, data customers, enterprise accounts, or app stores
+            individually material to revenue?
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids: [V.C]
+        summary: Principal public avenues include freemium/product-led sign-up,
+          app-store distribution, broker partnerships, widgets embedded on third
+          party sites, social sharing, and enterprise plans.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: TradingView's public widgets page, app listings, pricing
+              tiers, and broker marketplace support multiple acquisition paths.
+            evidence_claim_ids:
+              - EC-003
+              - EC-004
+              - EC-006
+              - EC-013
+        hidden_risks:
+          - Embedded widgets may create wide brand exposure without high-quality
+            paid conversion.
+        evidence_gaps:
+          - Funnel metrics by acquisition path, attribution model, widget traffic,
+            broker referral economics, and enterprise pipeline quality.
+        follow_up_questions:
+          - Which GTM paths generate high-LTV customers rather than low-intent
+            traffic?
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+          - EC-006
+          - EC-013
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids: [V.D.1, V.D.2, V.D.3, V.D.4]
+        summary: Public evidence does not disclose sales force size, productivity,
+          quota capacity, pipeline coverage, or enterprise sales efficiency.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Enterprise plans are publicly offered for 100+ subscriptions,
+              but enterprise sales metrics are not public.
+            evidence_claim_ids:
+              - EC-003
+        hidden_risks:
+          - Enterprise growth may require sales, support, legal, and security
+            capabilities that differ from consumer product-led growth.
+        evidence_gaps:
+          - Sales headcount, quota capacity, pipeline, win rate, deal cycle,
+            discounting, implementation load, and sales compensation.
+        follow_up_questions:
+          - What is enterprise CAC payback and sales productivity by region and
+            segment?
+        table_ids:
+          - T-011
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids: [V.E]
+        summary: Budget sufficiency is not public. Hiring pages and broad public
+          reach suggest ongoing investment, but cash, burn, and marketing spend
+          are not verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Careers pages list open roles across multiple regions, which
+              is a public signal of operating investment but not budget adequacy.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - If growth depends on paid marketing, broker incentives, app-store
+            spend, or enterprise sales capacity, public user metrics may not prove
+            budget adequacy.
+        evidence_gaps:
+          - Marketing budget, headcount plan, CAC targets, channel spend, cash
+            runway, and variance to plan.
+        follow_up_questions:
+          - How much budget is required to sustain growth after 2021 pandemic-era
+            trading and account-creation tailwinds normalized?
+        table_ids:
+          - T-011
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public product and careers pages show an active R&D surface
+      across charting, alerts, Pine Script, data engineering, mobile, product, QA,
+      and machine learning. The roadmap, R&D spend, velocity, reliability metrics,
+      and technical-debt profile are not public.
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-015
+    risk_ids:
+      - R-002
+      - R-007
+      - R-008
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids: [VI.A.1, VI.A.2, VI.A.3]
+        summary: Careers evidence shows public hiring for product, frontend,
+          mobile, machine learning, QA, backend, data engineering, SRE, DevOps,
+          and technical product roles, with a heavy concentration in Tbilisi and
+          Limassol.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Public roles indicate continued investment in core product,
+              data, mobile, reliability, and QA capabilities.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - Geographic concentration in selected offices may create talent,
+            continuity, and operational resilience questions.
+        evidence_gaps:
+          - Actual R&D headcount, reporting structure, retention, compensation,
+            roadmap ownership, incident history, and cloud cost allocation.
+        follow_up_questions:
+          - How is R&D organized across core charting, data, broker integrations,
+            mobile, Pine Script, alerts, security, and platform reliability?
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-007
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.B.3, VI.B.4]
+        summary: Public product pages verify many current capabilities, including
+          volume footprint, TPO, session volume profile, hundreds of indicators,
+          public indicators, alerts, fundamentals, Pine Script, and data sets. A
+          dated roadmap and commercialization pipeline were not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: The product surface includes advanced charting, community
+              indicators, alerts, Pine Script, fundamentals, and market data.
+            evidence_claim_ids:
+              - EC-005
+              - EC-015
+        hidden_risks:
+          - Public feature depth may mask roadmap slippage, technical debt,
+            moderation burden, or reliability constraints under high alert/data
+            volume.
+        evidence_gaps:
+          - Product roadmap, sprint metrics, product adoption, R&D capitalization,
+            release quality, incident trends, and customer-request backlog.
+        follow_up_questions:
+          - Which roadmap items are required to defend pricing power against
+            broker-owned and professional-platform competitors?
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-015
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public management detail is limited. PRNewswire identifies
+      Denis Globa as CEO and co-founder. Careers pages disclose global office and
+      hiring signals. Public information does not verify the full leadership team,
+      board, compensation, option plans, turnover, or employee-relations history.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+    risk_ids:
+      - R-006
+      - R-007
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids: [VII.A]
+        summary: Public org evidence is insufficient for a complete organization
+          chart, but public hiring signals show functions across product,
+          engineering, QA, data, SRE, DevOps, finance, HR, and regional offices.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding: Careers pages state a global organization based in 25
+              countries with five offices and list roles across technical,
+              product, finance, and HR functions.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - Missing org and succession detail makes key-person and scaling risk
+            difficult to assess.
+        evidence_gaps:
+          - Current org chart, board, management team, reporting lines, span of
+            control, location strategy, and succession plans.
+        follow_up_questions:
+          - Who owns data licensing, broker integrations, security, compliance,
+            consumer growth, enterprise sales, and platform reliability?
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-007
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids: [VII.B]
+        summary: Public careers pages list open roles by location but not total
+          headcount or historical/projected headcount.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Open role counts were visible for Tbilisi, Limassol, Pafos,
+              London, Malaga, UAE, Germany, and Saudi Arabia.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - Hiring concentration can imply execution dependency in specific
+            geographies, while total headcount and productivity remain unknown.
+        evidence_gaps:
+          - Employee roster, historical headcount, planned hiring, attrition,
+            contractors, recruiting funnel, and location-by-function plan.
+        follow_up_questions:
+          - How do open roles map to budgeted headcount and near-term product or
+            operational priorities?
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-007
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids: [VII.C]
+        summary: PRNewswire identifies Denis Globa as CEO and co-founder; a full
+          senior management biography set was not located in public sources used
+          in this session.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: The financing announcement quotes Denis Globa as CEO and
+              co-founder.
+            evidence_claim_ids:
+              - EC-002
+        hidden_risks:
+          - Sparse public leadership disclosure limits assessment of bench depth,
+            functional coverage, and governance.
+        evidence_gaps:
+          - Full executive roster, bios, tenure, prior roles, board members,
+            advisors, background checks, and reference checks.
+        follow_up_questions:
+          - What is the current executive team and how has it changed since the
+            2021 financing?
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids: [VII.D.1, VII.D.2]
+        summary: Executive and employee compensation arrangements are not publicly
+          verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: No public compensation arrangements were found in the sources
+              reviewed.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - Compensation competitiveness and retention risk cannot be assessed
+            without internal data.
+        evidence_gaps:
+          - Compensation philosophy, salary bands, bonus plans, commissions,
+            executive packages, and retention grants.
+        follow_up_questions:
+          - Are compensation and equity refresh practices sufficient for senior
+            technical, data, security, product, and compliance talent?
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids: [VII.E]
+        summary: Incentive stock plans, option pool size, vesting schedules, and
+          refresh-grant practices are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: The public financing announcement does not disclose employee
+              equity plan terms.
+            evidence_claim_ids:
+              - EC-002
+        hidden_risks:
+          - Option-pool size and underwater equity can materially affect retention
+            and fully diluted ownership.
+        evidence_gaps:
+          - Equity plan, option pool, refresh practices, exercise data, tax
+            treatment, secondary liquidity, and fully diluted capitalization.
+        follow_up_questions:
+          - How large is the current option pool and what retention issues exist
+            after the 2021 valuation reset?
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids: [VII.F]
+        summary: No reliable public evidence of significant employee-relations
+          problems was located in this session; absence of evidence should not be
+          treated as verification.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Careers pages present an active recruiting posture but do not
+              disclose employee-relations claims or disputes.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - Employee-relations issues may be non-public, especially across a
+            distributed global workforce.
+        evidence_gaps:
+          - HR complaints, litigation, investigations, labor compliance, turnover
+            logs, exit interviews, engagement surveys, and works-council matters.
+        follow_up_questions:
+          - Have there been material employee relations, wage/hour, immigration,
+            contractor classification, or workplace claims in any jurisdiction?
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids: [VII.G.1, VII.G.2]
+        summary: Personnel turnover is not publicly verifiable from the reviewed
+          sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Open roles show hiring demand but do not indicate attrition.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - High growth or technical operating complexity could hide attrition
+            pressure in key engineering, data, and support functions.
+        evidence_gaps:
+          - Voluntary/involuntary attrition, regret loss, key departures, offer
+            acceptance, backfill aging, and critical-role succession.
+        follow_up_questions:
+          - What functions have the highest attrition and longest time to fill?
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: The main public legal diligence issues are market-data
+      licensing, broker/trading workflows, privacy and international data
+      transfers, security/account protection, user-generated content and scripts,
+      subscription/refund terms, and professional versus non-professional data
+      status. Litigation, regulatory actions, insurance, and material contract
+      terms require private or specialist diligence.
+    founder_claim_ids:
+      - FC-003
+      - FC-004
+      - FC-005
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-014
+    risk_ids:
+      - R-002
+      - R-003
+      - R-007
+      - R-008
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids: [VIII.A]
+        summary: No pending lawsuits were verified from reviewed public company
+          pages, but no exhaustive docket search was performed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Reviewed terms, privacy, and security sources do not provide
+              a pending-litigation docket.
+            evidence_claim_ids:
+              - EC-009
+              - EC-010
+        hidden_risks:
+          - Consumer subscription, data accuracy, broker execution, privacy,
+            user-generated content, or IP disputes may be non-public or outside
+            easily searchable sources.
+        evidence_gaps:
+          - Litigation docket search, demand letters, arbitration claims,
+            threatened claims, settlement agreements, and counsel letters.
+        follow_up_questions:
+          - Provide a litigation schedule with all pending, threatened, settled,
+            and arbitrated matters by jurisdiction.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids: [VIII.B]
+        summary: No pending lawsuits initiated by TradingView were verified from
+          reviewed public sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Public sources reviewed did not disclose company-initiated
+              litigation.
+            evidence_claim_ids:
+              - EC-010
+        hidden_risks:
+          - IP enforcement, vendor disputes, or account-abuse enforcement may be
+            material but non-public.
+        evidence_gaps:
+          - Litigation schedule, IP enforcement matters, vendor claims, collections
+            matters, and threatened disputes.
+        follow_up_questions:
+          - Has TradingView initiated material claims against users, vendors,
+            brokers, competitors, or former employees?
+        table_ids:
+          - T-017
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids: [VIII.C.1, VIII.C.2]
+        summary: As a software company, environmental exposure is likely limited,
+          but workplace safety, distributed workforce, office leases, and
+          employment compliance were not publicly verified.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Careers pages identify a global office footprint but do not
+              disclose workplace safety or environmental liabilities.
+            evidence_claim_ids:
+              - EC-007
+        hidden_risks:
+          - Multi-country operations can create employment, immigration, tax,
+            benefits, contractor, and workplace-safety exposure.
+        evidence_gaps:
+          - Leases, workplace policies, safety logs, employment audits,
+            immigration files, contractor classification, and local labor counsel
+            reviews.
+        follow_up_questions:
+          - Are any employment, contractor classification, workplace safety, or
+            office-lease liabilities material in the company's key jurisdictions?
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids: [VIII.D]
+        summary: Public evidence supports important software/content IP and
+          licensing issues, including user scripts and default MPL 2.0 licensing
+          if no license is specified in a script comment; a complete IP inventory
+          was not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Terms address user scripts, IP representations, and default
+              MPL 2.0 licensing for published scripts without another license.
+            evidence_claim_ids:
+              - EC-014
+        hidden_risks:
+          - User-generated scripts, open-source license compliance, charting
+            libraries, data feeds, marks, and copied strategies can create IP and
+            moderation risk.
+        evidence_gaps:
+          - Trademark portfolio, patents, copyright registrations, open-source
+            inventory, third-party code audit, script takedown history, and
+            license compliance.
+        follow_up_questions:
+          - Provide the IP schedule and open-source/software-composition analysis
+            for core products, mobile apps, widgets, and Pine Script ecosystem.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids: [VIII.E]
+        summary: Insurance coverage is not publicly verifiable. Public exposure
+          categories suggest a need to review cyber, E&O, D&O, technology,
+          privacy, employment, and global office coverage.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Security and privacy pages show cyber/privacy exposures, but
+              not insurance coverage.
+            evidence_claim_ids:
+              - EC-009
+        hidden_risks:
+          - Trading workflows and market-data services can generate high-severity
+            claims if data, alerts, integrations, accounts, or advice disclaimers
+            fail.
+        evidence_gaps:
+          - Insurance policies, limits, retentions, exclusions, claims history,
+            broker letters, and coverage by jurisdiction.
+        follow_up_questions:
+          - Are cyber, E&O, D&O, technology, privacy, broker-integration, and
+            employment claims adequately covered?
+        table_ids:
+          - T-019
+        figure_ids:
+          - F-011
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids: [VIII.F]
+        summary: Public terms indicate restrictions and obligations around market
+          data, subscriptions, non-professional subscriber criteria, broker
+          connectivity, and user content. Material commercial contract economics
+          are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding: Terms include market-data restrictions, subscription/refund
+              mechanics, non-professional subscriber criteria, and investment
+              disclaimers.
+            evidence_claim_ids:
+              - EC-010
+        hidden_risks:
+          - Retroactive professional data fees, data display restrictions, vendor
+            minimums, broker indemnities, and consumer refund rules can materially
+            affect economics.
+        evidence_gaps:
+          - Data-provider contracts, broker contracts, enterprise agreements,
+            app-store agreements, payment processing, cloud, SLAs, indemnities,
+            minimum commitments, and termination rights.
+        follow_up_questions:
+          - Which contracts have exclusivity, most-favored-nation, minimum
+            commitment, termination, indemnity, audit, or price-escalator clauses?
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids: [VIII.G]
+        summary: No regulatory agency actions were verified from reviewed public
+          sources. Exposure remains plausible because TradingView touches market
+          data, broker integrations, trading workflows, privacy, and global users.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding: Terms emphasize that publications are not financial advice
+              and include market-data restrictions; privacy pages describe data
+              controller status, EEA/UK rights, and international transfers.
+            evidence_claim_ids:
+              - EC-009
+              - EC-010
+        hidden_risks:
+          - Regulators may scrutinize advice boundaries, influencer/user-generated
+            content, broker routing, market-data entitlements, dark patterns,
+            privacy transfers, or consumer subscription practices.
+        evidence_gaps:
+          - Regulatory correspondence, agency inquiries, exams, complaints,
+            privacy impact assessments, broker responsibility matrix, and data
+            entitlement audits.
+        follow_up_questions:
+          - Has TradingView received agency inquiries or exchange/vendor audits
+            related to advice, trading, data entitlements, privacy, or consumer
+            subscriptions?
+        table_ids:
+          - T-017
+          - T-019
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+tables:
+  - table_id: T-001
+    title: Public funding round history
+    chapter_id: I
+    section_id: I.C
+    description: Publicly verified financing events located during this session.
+    columns:
+      - name: date
+      - name: event
+      - name: lead_or_participants
+      - name: amount
+      - name: valuation
+      - name: verification
+    rows:
+      - values:
+          date: "2021-10-14"
+          event: Growth financing
+          lead_or_participants: Tiger Global led the round
+          amount: "$298 million"
+          valuation: "$3 billion"
+          verification: verified by PRNewswire announcement
+      - values:
+          date: Pre-2021
+          event: Prior capitalization
+          lead_or_participants: not publicly verified in this session
+          amount: not publicly verified
+          valuation: not publicly verified
+          verification: diligence request
+    evidence_claim_ids:
+      - EC-002
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: Public diligence should not infer ownership percentages or preferences
+      from the round headline.
+  - table_id: T-002
+    title: Public financial and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    description: Publicly observable signals versus private diligence needs.
+    columns:
+      - name: signal
+      - name: public_evidence
+      - name: diligence_need
+      - name: verification
+    rows:
+      - values:
+          signal: User scale
+          public_evidence: 100M+ traders and investors worldwide
+          diligence_need: active, paying, cohort, and churn definitions
+          verification: verified claim, financial effect unverified
+      - values:
+          signal: Pricing ladder
+          public_evidence: Free, Essential, Plus, Premium, Ultimate, Enterprise,
+            and real-time data packages
+          diligence_need: revenue by SKU, gross margin, discounts, refunds
+          verification: verified SKU disclosure
+      - values:
+          signal: Paying customers by geography
+          public_evidence: PRNewswire stated paying customers in over 180 countries
+          diligence_need: country revenue, tax, local compliance, churn
+          verification: verified 2021 statement, current values need update
+      - values:
+          signal: Revenue and profitability
+          public_evidence: not publicly disclosed
+          diligence_need: audited financial statements and ARR bridge
+          verification: not publicly verifiable
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+    notes: Financial quality remains the highest-priority private-data request.
+  - table_id: T-003
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    description: Public product surfaces and key diligence considerations.
+    columns:
+      - name: product_or_sku
+      - name: audience
+      - name: public_evidence
+      - name: diligence_focus
+    rows:
+      - values:
+          product_or_sku: Supercharts and technical analysis
+          audience: Retail and professional traders
+          public_evidence: Chart types, indicators, drawing tools, alerts, market
+            replay, fundamentals, and data sets
+          diligence_focus: retention, uptime, support, feature adoption
+      - values:
+          product_or_sku: Pine Script and public indicators
+          audience: Developers, creators, and advanced users
+          public_evidence: Pine documentation and 100,000+ public indicators
+          diligence_focus: IP, moderation, quality, compute cost
+      - values:
+          product_or_sku: Broker integrations
+          audience: Users who trade through preferred brokers
+          public_evidence: Verified brokers page with multiple broker listings
+          diligence_focus: contracts, incident allocation, compliance
+      - values:
+          product_or_sku: Widgets
+          audience: Websites, publishers, affiliates, and partners
+          public_evidence: Free financial widgets for charts, watchlists, tickers,
+            and more
+          diligence_focus: lead quality, brand control, terms
+      - values:
+          product_or_sku: Mobile and desktop apps
+          audience: Mobile and multi-device users
+          public_evidence: Apple and Google Play listings; Google Play shows 50M+
+            downloads
+          diligence_focus: app-store fees, reviews, retention
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-013
+      - EC-015
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-009
+      - SRC-010
+      - SRC-015
+      - SRC-019
+  - table_id: T-004
+    title: Public pricing ladder
+    chapter_id: II
+    section_id: II.A
+    description: Publicly listed annual monthly-equivalent prices and plan roles.
+    columns:
+      - name: plan
+      - name: public_price
+      - name: role_in_ladder
+      - name: diligence_focus
+    rows:
+      - values:
+          plan: Free
+          public_price: Free
+          role_in_ladder: top-of-funnel and trial usage
+          diligence_focus: conversion and support cost
+      - values:
+          plan: Essential
+          public_price: "$12.95 per month billed annually"
+          role_in_ladder: entry paid plan
+          diligence_focus: conversion, churn, price sensitivity
+      - values:
+          plan: Plus
+          public_price: "$29.95 per month billed annually"
+          role_in_ladder: mid-tier active trader plan
+          diligence_focus: feature adoption and expansion
+      - values:
+          plan: Premium
+          public_price: "$59.95 per month billed annually"
+          role_in_ladder: advanced individual plan
+          diligence_focus: high-ARPU retention
+      - values:
+          plan: Ultimate
+          public_price: "$199.95 per month billed annually"
+          role_in_ladder: highest public individual tier
+          diligence_focus: professional-user data status and support burden
+      - values:
+          plan: Enterprise
+          public_price: Custom; for 100+ subscriptions
+          role_in_ladder: teams and organizations
+          diligence_focus: ACV, discounts, contract terms, security review
+    evidence_claim_ids:
+      - EC-003
+    source_ids:
+      - SRC-004
+  - table_id: T-005
+    title: Public customer and usage signals
+    chapter_id: III
+    section_id: III.A
+    description: Aggregate customer evidence available publicly.
+    columns:
+      - name: signal
+      - name: value
+      - name: source
+      - name: limitation
+    rows:
+      - values:
+          signal: Global users
+          value: 100M+ traders and investors worldwide
+          source: TradingView about page
+          limitation: active/paying definitions not disclosed
+      - values:
+          signal: Paying countries
+          value: paying customers in over 180 countries in 2021
+          source: PRNewswire
+          limitation: current paying-user count and revenue by country not public
+      - values:
+          signal: Apple App Store rating count
+          value: 4.8/5 from roughly 381K ratings
+          source: Apple App Store listing
+          limitation: rating mix and retention not disclosed
+      - values:
+          signal: Google Play downloads/reviews
+          value: 50M+ downloads and roughly 905K reviews
+          source: Google Play listing
+          limitation: active users, geography, and paid conversion not disclosed
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-009
+      - SRC-010
+  - table_id: T-006
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    description: Publicly visible relationship categories.
+    columns:
+      - name: relationship
+      - name: examples_or_evidence
+      - name: role
+      - name: risk_or_gap
+    rows:
+      - values:
+          relationship: Brokers
+          examples_or_evidence: OKX, OANDA, FOREX.com, NinjaTrader, Tradovate,
+            TradeStation, IBKR, Webull, Coinbase Advanced, Alpaca, and others
+            appear on the brokers page
+          role: trading connectivity and partner ecosystem
+          risk_or_gap: contracts, revenue share, support, outages, regulatory
+            allocation not public
+      - values:
+          relationship: Market data
+          examples_or_evidence: Data pages and footers identify ICE Data Services
+            and exchange packages
+          role: real-time and delayed market data
+          risk_or_gap: fee schedules, minimums, audits, display restrictions
+      - values:
+          relationship: Reference and filings data
+          examples_or_evidence: FactSet reference data and Quartr documents are
+            referenced publicly
+          role: reference data, filings, and company documents
+          risk_or_gap: vendor concentration and renewals not public
+      - values:
+          relationship: App stores
+          examples_or_evidence: Apple App Store and Google Play distribution
+          role: mobile acquisition and engagement
+          risk_or_gap: fees, ranking, reviews, policy changes
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-008
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-010
+  - table_id: T-007
+    title: Top supplier and dependency snapshot
+    chapter_id: III
+    section_id: III.E
+    description: Publicly observed supplier categories and diligence needs.
+    columns:
+      - name: supplier_or_category
+      - name: public_role
+      - name: concentration_risk
+      - name: diligence_request
+    rows:
+      - values:
+          supplier_or_category: Exchanges and market-data vendors
+          public_role: real-time and delayed price data across asset classes
+          concentration_risk: high product dependency; economics unknown
+          diligence_request: contracts, fees, audits, termination, SLAs
+      - values:
+          supplier_or_category: ICE Data Services
+          public_role: select market data provider
+          concentration_risk: material for data coverage where used
+          diligence_request: spend, entitlements, renewal terms
+      - values:
+          supplier_or_category: FactSet
+          public_role: select reference data provider
+          concentration_risk: material for reference data where used
+          diligence_request: data rights, costs, renewal terms
+      - values:
+          supplier_or_category: Quartr
+          public_role: SEC filings and documents referenced in footer
+          concentration_risk: narrower content dependency
+          diligence_request: contract, uptime, permitted use
+      - values:
+          supplier_or_category: Cloud and payments
+          public_role: not publicly verified in this session
+          concentration_risk: unknown
+          diligence_request: vendor list, spend, SLAs, resilience
+    evidence_claim_ids:
+      - EC-008
+    source_ids:
+      - SRC-007
+      - SRC-008
+  - table_id: T-008
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    description: Selected public competitors and adjacent substitutes.
+    columns:
+      - name: competitor
+      - name: segment
+      - name: overlap
+      - name: TradingView_position
+    rows:
+      - values:
+          competitor: Bloomberg Terminal
+          segment: Professional market data and workflow terminal
+          overlap: market data, analytics, charting, news, professional workflow
+          TradingView_position: lower-cost, web/mobile, community-led, broader
+            retail reach
+      - values:
+          competitor: Koyfin
+          segment: Investment analytics and market data platform
+          overlap: charts, data, dashboards, screening, portfolio workflows
+          TradingView_position: stronger public community, broker ecosystem, and
+            charting brand
+      - values:
+          competitor: StockCharts
+          segment: Retail charting and technical analysis
+          overlap: charts, indicators, scans, market commentary
+          TradingView_position: broader social, scripting, app, and broker
+            integration footprint
+      - values:
+          competitor: Webull and broker platforms
+          segment: Brokerage and trading app
+          overlap: trading tools, charts, account execution, market data
+          TradingView_position: neutral multi-broker workflow rather than a single
+            broker account
+    evidence_claim_ids:
+      - EC-012
+    source_ids:
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-020
+  - table_id: T-009
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    description: Public-source qualitative scoring for diligence framing.
+    columns:
+      - name: axis
+      - name: TradingView_public_position
+      - name: principal_challenge
+      - name: diligence_need
+    rows:
+      - values:
+          axis: Reach and brand
+          TradingView_public_position: strong, based on 100M+ user claim and app
+            traction
+          principal_challenge: independent traffic and conversion verification
+          diligence_need: analytics, cohorts, app retention
+      - values:
+          axis: Professional data depth
+          TradingView_public_position: broad but dependent on vendors and paid
+            exchange packages
+          principal_challenge: professional terminals and direct exchange tools
+          diligence_need: data costs, entitlements, uptime, SLAs
+      - values:
+          axis: Execution workflow
+          TradingView_public_position: multi-broker marketplace
+          principal_challenge: broker-owned platforms and compliance allocation
+          diligence_need: broker revenue, incident history, partner concentration
+      - values:
+          axis: Community and scripts
+          TradingView_public_position: public indicators and Pine Script ecosystem
+          principal_challenge: quality, IP, moderation, and copied strategies
+          diligence_need: moderation metrics and takedown history
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-005
+      - EC-012
+    source_ids:
+      - SRC-001
+      - SRC-006
+      - SRC-005
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-020
+  - table_id: T-010
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    description: Publicly visible routes to market.
+    columns:
+      - name: channel
+      - name: public_evidence
+      - name: likely_role
+      - name: diligence_gap
+    rows:
+      - values:
+          channel: Web product-led growth
+          public_evidence: 100M+ global users; pricing page with free and paid tiers
+          likely_role: acquisition and self-serve conversion
+          diligence_gap: traffic quality, signup conversion, paid conversion
+      - values:
+          channel: Mobile apps
+          public_evidence: Apple and Google Play listings with large rating/review
+            bases and Google Play 50M+ downloads
+          likely_role: retention, acquisition, mobile engagement
+          diligence_gap: app-store fees, retention, support, refunds
+      - values:
+          channel: Broker partnerships
+          public_evidence: verified broker listings and 2021 stated expansion plan
+          likely_role: transaction workflow, partner acquisition, potential revenue
+            share
+          diligence_gap: contracts, broker concentration, compliance
+      - values:
+          channel: Widgets
+          public_evidence: free financial widgets for third-party sites
+          likely_role: brand reach, embedded distribution, leads
+          diligence_gap: attribution, conversion, terms compliance
+      - values:
+          channel: Enterprise
+          public_evidence: enterprise plan for 100+ subscriptions
+          likely_role: team sales and higher ACV
+          diligence_gap: pipeline, security review, sales productivity
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-006
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-006
+      - SRC-009
+      - SRC-010
+      - SRC-019
+  - table_id: T-011
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    description: Public metrics useful for follow-up, not a substitute for GTM
+      analytics.
+    columns:
+      - name: signal
+      - name: public_value
+      - name: interpretation
+      - name: follow_up
+    rows:
+      - values:
+          signal: Users
+          public_value: 100M+ traders and investors worldwide
+          interpretation: major top-of-funnel reach
+          follow_up: active and paying user definitions
+      - values:
+          signal: 2021 growth
+          public_value: 400% increase in created accounts and 237% increase in
+            visitors over 18 months
+          interpretation: strong pandemic-era retail-trading tailwind
+          follow_up: post-2021 normalization and retention
+      - values:
+          signal: App ratings
+          public_value: Apple 4.8/5 on about 381K ratings; Google Play 4.7 with
+            about 905K reviews
+          interpretation: broad mobile footprint
+          follow_up: cohort retention, support, refunds
+      - values:
+          signal: Open roles
+          public_value: visible recruiting across Tbilisi, Limassol, Pafos,
+            London, Malaga, UAE, Germany, and Saudi Arabia
+          interpretation: ongoing investment
+          follow_up: budget and headcount plan
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-006
+      - EC-007
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-008
+      - SRC-009
+      - SRC-010
+  - table_id: T-012
+    title: Public product and R&D pipeline signals
+    chapter_id: VI
+    section_id: VI.B
+    description: Current product capabilities that imply R&D investment.
+    columns:
+      - name: area
+      - name: public_signal
+      - name: status
+      - name: diligence_need
+    rows:
+      - values:
+          area: Advanced charting
+          public_signal: volume footprint, TPO, session volume profile, many chart
+            types
+          status: available on public feature pages
+          diligence_need: adoption, performance, support
+      - values:
+          area: Indicators and strategies
+          public_signal: 400+ built-in indicators and strategies; 100,000+ public
+            indicators
+          status: available on public feature pages
+          diligence_need: quality, moderation, IP
+      - values:
+          area: Alerts
+          public_signal: server-side alerts, multiple conditions, app/email/browser
+            delivery, webhooks
+          status: available on public feature pages
+          diligence_need: reliability, latency, cost
+      - values:
+          area: Pine Script
+          public_signal: official user manual and scripting capabilities
+          status: documented
+          diligence_need: developer adoption, compute cost, security review
+      - values:
+          area: Machine learning
+          public_signal: machine learning engineer role on careers page
+          status: hiring signal only
+          diligence_need: roadmap, data governance, ROI
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-015
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-015
+  - table_id: T-013
+    title: Public R&D personnel and hiring signals
+    chapter_id: VI
+    section_id: VI.A
+    description: Selected technical roles visible in public careers pages.
+    columns:
+      - name: function
+      - name: public_roles
+      - name: inferred_priority
+      - name: diligence_need
+    rows:
+      - values:
+          function: Product and frontend
+          public_roles: Senior Product Manager; Frontend Team Lead; frontend
+            developers
+          inferred_priority: core UX and product delivery
+          diligence_need: roadmap ownership and velocity
+      - values:
+          function: Mobile
+          public_roles: iOS Team Lead; Android Team Lead; mobile QA
+          inferred_priority: mobile engagement and app quality
+          diligence_need: app crash, retention, release quality
+      - values:
+          function: Backend and platform
+          public_roles: backend architect, backend developers, deploy engineer,
+            SRE manager, DevOps
+          inferred_priority: charting/data/alert reliability
+          diligence_need: uptime, scalability, incident response
+      - values:
+          function: Data and ML
+          public_roles: director of data engineering, data analyst, data engineer,
+            machine learning engineer
+          inferred_priority: data infrastructure and analytics
+          diligence_need: data governance, product ROI, vendor dependencies
+      - values:
+          function: QA and DataOps
+          public_roles: product QA, core QA, backend QA, DataOps QA
+          inferred_priority: product reliability and data quality
+          diligence_need: defect rate, test coverage, release process
+    evidence_claim_ids:
+      - EC-007
+    source_ids:
+      - SRC-008
+  - table_id: T-014
+    title: Senior management roster from public evidence
+    chapter_id: VII
+    section_id: VII.C
+    description: Public leadership evidence found during this session.
+    columns:
+      - name: person_or_role
+      - name: public_title
+      - name: evidence
+      - name: diligence_gap
+    rows:
+      - values:
+          person_or_role: Denis Globa
+          public_title: CEO and co-founder
+          evidence: quoted in the October 2021 PRNewswire financing announcement
+          diligence_gap: current role, tenure, biography, compensation, ownership
+      - values:
+          person_or_role: Tiger Global / Alex Cook
+          public_title: Lead investor representative quoted in announcement
+          evidence: PRNewswire quote from Alex Cook, Partner, Tiger Global
+          diligence_gap: board seat, observer rights, investor rights not public
+      - values:
+          person_or_role: Other senior leaders
+          public_title: not publicly verified in reviewed sources
+          evidence: careers pages imply functional leadership needs
+          diligence_gap: full management roster and succession plan
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-008
+  - table_id: T-015
+    title: Headcount and hiring signals by location
+    chapter_id: VII
+    section_id: VII.B
+    description: Public open-role counts observed on TradingView careers page.
+    columns:
+      - name: location
+      - name: open_roles
+      - name: observation
+      - name: diligence_need
+    rows:
+      - values:
+          location: Tbilisi, Georgia
+          open_roles: "31"
+          observation: largest public open-role concentration
+          diligence_need: function mix, retention, office strategy
+      - values:
+          location: Limassol, Cyprus
+          open_roles: "30"
+          observation: second largest public open-role concentration
+          diligence_need: function mix, employment compliance
+      - values:
+          location: Pafos, Cyprus
+          open_roles: "5"
+          observation: smaller public hiring hub
+          diligence_need: office role and hiring plan
+      - values:
+          location: London, United Kingdom
+          open_roles: "5"
+          observation: UK hiring signal
+          diligence_need: leadership, legal, sales, and market role
+      - values:
+          location: Malaga, Spain
+          open_roles: "3"
+          observation: smaller public hiring hub
+          diligence_need: function mix
+      - values:
+          location: UAE, Germany, Saudi Arabia
+          open_roles: 2, 1, and 1 respectively
+          observation: regional expansion signals
+          diligence_need: local compliance and GTM rationale
+    evidence_claim_ids:
+      - EC-007
+    source_ids:
+      - SRC-008
+  - table_id: T-016
+    title: Personnel, compensation, and turnover diligence gaps
+    chapter_id: VII
+    section_id: VII.G
+    description: Personnel areas not publicly verifiable.
+    columns:
+      - name: area
+      - name: public_signal
+      - name: verification
+      - name: request
+    rows:
+      - values:
+          area: Compensation
+          public_signal: not publicly disclosed
+          verification: not publicly verifiable
+          request: compensation philosophy, salary bands, bonus and commission plans
+      - values:
+          area: Equity incentives
+          public_signal: financing announcement but no option-plan detail
+          verification: not publicly verifiable
+          request: option pool, grants, refreshes, secondary liquidity, vesting
+      - values:
+          area: Employee relations
+          public_signal: active careers site, no public issue schedule
+          verification: not publicly verifiable
+          request: HR complaints, labor claims, classification reviews
+      - values:
+          area: Turnover
+          public_signal: open roles but no attrition metrics
+          verification: not publicly verifiable
+          request: attrition by function/location, regret loss, backfill aging
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-008
+  - table_id: T-017
+    title: Litigation and regulatory action summary
+    chapter_id: VIII
+    section_id: VIII.A
+    description: Public legal action findings and diligence requests.
+    columns:
+      - name: category
+      - name: public_finding
+      - name: verification
+      - name: diligence_request
+    rows:
+      - values:
+          category: Pending lawsuits against TradingView
+          public_finding: not verified from reviewed sources
+          verification: not publicly verifiable
+          diligence_request: litigation schedule and counsel letters
+      - values:
+          category: Lawsuits initiated by TradingView
+          public_finding: not verified from reviewed sources
+          verification: not publicly verifiable
+          diligence_request: plaintiff-side matters and IP enforcement schedule
+      - values:
+          category: Regulatory or agency actions
+          public_finding: not verified from reviewed sources
+          verification: not publicly verifiable
+          diligence_request: agency correspondence, inquiries, audits, complaints
+      - values:
+          category: Advice and trading disclaimers
+          public_finding: terms state publications are not financial advice and
+            include trading/investment disclaimers
+          verification: verified public terms
+          diligence_request: compliance review and user-content moderation
+    evidence_claim_ids:
+      - EC-010
+    source_ids:
+      - SRC-013
+  - table_id: T-018
+    title: Material IP, content, and licensing snapshot
+    chapter_id: VIII
+    section_id: VIII.D
+    description: Publicly visible IP/licensing matters.
+    columns:
+      - name: asset_or_area
+      - name: public_evidence
+      - name: risk
+      - name: diligence_request
+    rows:
+      - values:
+          asset_or_area: TradingView brand and product UI
+          public_evidence: primary website, apps, widgets, product pages
+          risk: trademark and brand enforcement details not public
+          diligence_request: trademark portfolio and domain inventory
+      - values:
+          asset_or_area: Pine Script and public scripts
+          public_evidence: Pine Script docs and terms for user scripts
+          risk: user-generated IP, copied strategies, license conflicts
+          diligence_request: takedown history, moderation, code scanning
+      - values:
+          asset_or_area: Published scripts without explicit license
+          public_evidence: terms indicate default MPL 2.0 if no license is in the
+            script comment
+          risk: license compliance and user expectations
+          diligence_request: script-license enforcement process
+      - values:
+          asset_or_area: Data feeds and reference content
+          public_evidence: market/reference data vendor notices
+          risk: permitted-use, redistribution, display, and audit obligations
+          diligence_request: data contracts and entitlement controls
+    evidence_claim_ids:
+      - EC-008
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-007
+      - SRC-013
+      - SRC-015
+  - table_id: T-019
+    title: Privacy, security, contracts, and compliance obligations
+    chapter_id: VIII
+    section_id: VIII.F
+    description: Key public terms and operational legal obligations.
+    columns:
+      - name: area
+      - name: public_evidence
+      - name: risk
+      - name: private_diligence_request
+    rows:
+      - values:
+          area: Privacy and data protection
+          public_evidence: privacy policy describes controller role, paid-user data,
+            service providers, TLS/firewalls/access controls, EEA/UK rights, and
+            international transfers
+          risk: global privacy and transfer compliance
+          private_diligence_request: DPA, subprocessors, audits, DPIAs, incident logs
+      - values:
+          area: Account security and abuse
+          public_evidence: security page discusses 2FA, phishing, fake premium,
+            cracked apps, social impersonation, account hacking, and bug bounty
+          risk: account takeover and scam reputational risk
+          private_diligence_request: incident metrics, bug bounty reports, controls
+      - values:
+          area: Market data restrictions
+          public_evidence: terms include display-only and non-display/algorithmic
+            use restrictions
+          risk: exchange audits, retroactive fees, product limits
+          private_diligence_request: data contracts, audit history, entitlement controls
+      - values:
+          area: Professional subscriber status
+          public_evidence: terms describe non-professional subscriber criteria and
+            possible retroactive professional rate liability
+          risk: unexpected fees or user disputes
+          private_diligence_request: classification controls and exposure estimate
+      - values:
+          area: Subscriptions and refunds
+          public_evidence: terms describe recurring billing, cancellation, refunds,
+            tax registrations, and local entities
+          risk: consumer-law, refund, chargeback, and app-store exposure
+          private_diligence_request: refund rates, chargebacks, complaint logs
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+figures:
+  - figure_id: F-001
+    title: Public funding and operating-scale timeline
+    chapter_id: I
+    section_id: I.B
+    figure_type: timeline
+    description: Publicly verified milestones relevant to financing and scale.
+    spec:
+      start_date: "2021-10-14"
+      end_date: "2026-05-15"
+      ordering: chronological
+      events:
+        - event_id: F001-E1
+          date: "2021-10-14"
+          label: "$298M financing at $3B valuation"
+          description: PRNewswire announcement led by Tiger Global.
+          category: financing
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-002]
+        - event_id: F001-E2
+          date: "2021-10-14"
+          label: 30M monthly users and 180+ paying countries stated
+          description: Announcement cited 30M monthly users and paying customers
+            in more than 180 countries.
+          category: traction
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-002]
+        - event_id: F001-E3
+          date: "2026-05-15"
+          label: 100M+ global users claimed on current pages
+          description: Company about and pricing pages state 100M+ traders and
+            investors worldwide.
+          category: traction
+          evidence_claim_ids: [EC-001]
+          source_ids: [SRC-001, SRC-004]
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+    notes: Dates after 2021 reflect source access date where page publication date
+      was not available.
+  - figure_id: F-002
+    title: Public valuation anchor
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: The only public priced valuation anchor found in this session.
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Event
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Post-money valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: public_valuation
+          name: Publicly disclosed valuation
+          unit: USD billions
+          data_points:
+            - x: October 2021 financing
+              y: 3
+              label: "$3B"
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-002]
+      annotations:
+        - label: Missing later marks
+          x: October 2021 financing
+          y: 3
+          note: No later priced private round, IPO, acquisition, or shutdown was
+            verified from reviewed sources.
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-002]
+    evidence_claim_ids:
+      - EC-002
+    source_ids:
+      - SRC-002
+  - figure_id: F-003
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product surfaces and major dependencies.
+    spec:
+      nodes:
+        - node_id: user
+          label: Traders and investors
+          node_type: user
+          description: 100M+ claimed global audience.
+          evidence_claim_ids: [EC-001]
+          source_ids: [SRC-001]
+        - node_id: platform
+          label: TradingView web, desktop, and mobile apps
+          node_type: product
+          description: Charting, social network, screeners, alerts, and apps.
+          evidence_claim_ids: [EC-003, EC-005, EC-006]
+          source_ids: [SRC-004, SRC-005, SRC-009, SRC-010]
+        - node_id: pine
+          label: Pine Script and public indicators
+          node_type: service
+          description: Script ecosystem and custom indicators.
+          evidence_claim_ids: [EC-005, EC-015]
+          source_ids: [SRC-005, SRC-015]
+        - node_id: data
+          label: Market and reference data providers
+          node_type: third_party
+          description: Exchanges, ICE Data Services, FactSet, Quartr, and other
+            providers.
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-007, SRC-008]
+        - node_id: brokers
+          label: Broker integrations
+          node_type: integration
+          description: Verified brokers and direct trading integrations.
+          evidence_claim_ids: [EC-004]
+          source_ids: [SRC-006]
+        - node_id: widgets
+          label: Free financial widgets
+          node_type: integration
+          description: Embedded distribution for third-party sites.
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-019]
+      edges:
+        - edge_id: e1
+          from_node_id: user
+          to_node_id: platform
+          relationship: uses
+          data_or_dependency: charting, alerts, social publishing, subscriptions
+          evidence_claim_ids: [EC-001, EC-003]
+          source_ids: [SRC-001, SRC-004]
+        - edge_id: e2
+          from_node_id: platform
+          to_node_id: data
+          relationship: depends_on
+          data_or_dependency: market data, reference data, filings, real-time data
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-007, SRC-008]
+        - edge_id: e3
+          from_node_id: platform
+          to_node_id: brokers
+          relationship: integrates_with
+          data_or_dependency: trade connectivity through preferred brokers
+          evidence_claim_ids: [EC-004]
+          source_ids: [SRC-006]
+        - edge_id: e4
+          from_node_id: platform
+          to_node_id: pine
+          relationship: supports
+          data_or_dependency: indicators, strategies, alerts, community scripts
+          evidence_claim_ids: [EC-005, EC-015]
+          source_ids: [SRC-005, SRC-015]
+        - edge_id: e5
+          from_node_id: widgets
+          to_node_id: platform
+          relationship: distributes
+          data_or_dependency: embedded charting and market widgets
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-019]
+      boundaries:
+        - boundary_id: tv_boundary
+          label: TradingView controlled product surfaces
+          node_ids: [platform, pine, widgets]
+        - boundary_id: third_party_boundary
+          label: Third-party dependencies
+          node_ids: [data, brokers]
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-008
+      - EC-013
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-015
+      - SRC-019
+  - figure_id: F-004
+    title: Public customer and mobile reach anchors
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Scale indicators are not revenue concentration, but they frame
+      customer diligence.
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: millions where applicable
+        scale: linear
+      series:
+        - series_id: reach
+          name: Public reach signals
+          unit: millions
+          data_points:
+            - x: Claimed global users
+              y: 100
+              label: 100M+
+              evidence_claim_ids: [EC-001]
+              source_ids: [SRC-001]
+            - x: Google Play downloads
+              y: 50
+              label: 50M+
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-010]
+            - x: Apple rating count
+              y: 0.381
+              label: 381K ratings
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-009]
+            - x: Google Play reviews
+              y: 0.905
+              label: 905K reviews
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-010]
+      annotations:
+        - label: Revenue concentration missing
+          x: Claimed global users
+          y: 100
+          note: Top-customer and revenue-concentration data are not public.
+          evidence_claim_ids: [EC-001]
+          source_ids: [SRC-001]
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-009
+      - SRC-010
+  - figure_id: F-005
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map across cost/accessibility and professional depth.
+    spec:
+      dimensions:
+        x_axis:
+          label: Accessibility and community reach
+          low_label: specialist/closed
+          high_label: broad/self-serve/community
+        y_axis:
+          label: Professional workflow depth
+          low_label: basic retail tools
+          high_label: institutional workflow
+      segments:
+        - segment_id: terminals
+          name: Professional terminals
+          description: High depth, high-cost institutional workflow.
+        - segment_id: analytics
+          name: Investment analytics
+          description: Data and portfolio analytics platforms.
+        - segment_id: retail_charting
+          name: Retail charting and communities
+          description: Self-serve charting, social, and technical analysis.
+        - segment_id: brokers
+          name: Broker platforms
+          description: Trading apps with integrated account execution.
+      entities:
+        - entity_id: tradingview
+          name: TradingView
+          entity_type: target_company
+          segment_id: retail_charting
+          x_value: 85
+          y_value: 65
+          attributes:
+            rationale: 100M+ reach, community scripts, paid data, broker marketplace
+          evidence_claim_ids: [EC-001, EC-003, EC-004, EC-005]
+          source_ids: [SRC-001, SRC-004, SRC-005, SRC-006]
+        - entity_id: bloomberg
+          name: Bloomberg Terminal
+          entity_type: competitor
+          segment_id: terminals
+          x_value: 20
+          y_value: 95
+          attributes:
+            rationale: professional terminal and market-data workflow
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-018]
+        - entity_id: koyfin
+          name: Koyfin
+          entity_type: competitor
+          segment_id: analytics
+          x_value: 60
+          y_value: 70
+          attributes:
+            rationale: investment analytics, charts, dashboards
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-016]
+        - entity_id: stockcharts
+          name: StockCharts
+          entity_type: competitor
+          segment_id: retail_charting
+          x_value: 60
+          y_value: 50
+          attributes:
+            rationale: charting and technical analysis focus
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-017]
+        - entity_id: webull
+          name: Webull
+          entity_type: competitor
+          segment_id: brokers
+          x_value: 70
+          y_value: 55
+          attributes:
+            rationale: broker-owned trading app and tools
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-020]
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-012
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-020
+  - figure_id: F-006
+    title: Public GTM reach signals
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public GTM indicators by channel; not a substitute for internal
+      funnel analytics.
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public count
+        unit: millions except countries
+        scale: linear
+      series:
+        - series_id: gtm_public_signals
+          name: Public GTM signals
+          unit: count
+          data_points:
+            - x: Global users
+              y: 100
+              label: 100M+
+              evidence_claim_ids: [EC-001]
+              source_ids: [SRC-001]
+            - x: Google downloads
+              y: 50
+              label: 50M+
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-010]
+            - x: Paying countries in 2021
+              y: 180
+              label: 180+ countries
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-002]
+            - x: Enterprise minimum seats
+              y: 100
+              label: 100+ subscriptions
+              evidence_claim_ids: [EC-003]
+              source_ids: [SRC-004]
+      annotations:
+        - label: Funnel not public
+          x: Global users
+          y: 100
+          note: CAC, conversion, payback, and retention require internal data.
+          evidence_claim_ids: [EC-001]
+          source_ids: [SRC-001]
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+      - SRC-010
+  - figure_id: F-007
+    title: R&D capability map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Publicly visible R&D areas inferred from products and open roles.
+    spec:
+      nodes:
+        - node_id: product
+          label: Product management
+          node_type: service
+          description: Product manager roles and product surfaces.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - node_id: frontend_mobile
+          label: Frontend and mobile engineering
+          node_type: service
+          description: Frontend, iOS, Android, and UX roles.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - node_id: backend_data
+          label: Backend, data, and platform
+          node_type: service
+          description: Backend architect, data engineering, SRE, DevOps roles.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - node_id: qa
+          label: QA and DataOps
+          node_type: service
+          description: Product, core, backend, frontend, mobile, and DataOps QA
+            roles.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - node_id: product_surface
+          label: TradingView product surface
+          node_type: product
+          description: Charts, indicators, alerts, Pine Script, broker/data
+            integrations, mobile apps.
+          evidence_claim_ids: [EC-005, EC-015]
+          source_ids: [SRC-005, SRC-015]
+      edges:
+        - edge_id: rd1
+          from_node_id: product
+          to_node_id: product_surface
+          relationship: prioritizes
+          data_or_dependency: roadmap and user needs
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - edge_id: rd2
+          from_node_id: frontend_mobile
+          to_node_id: product_surface
+          relationship: builds
+          data_or_dependency: web, desktop, and mobile UX
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - edge_id: rd3
+          from_node_id: backend_data
+          to_node_id: product_surface
+          relationship: powers
+          data_or_dependency: data, alerts, platform, reliability
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - edge_id: rd4
+          from_node_id: qa
+          to_node_id: product_surface
+          relationship: validates
+          data_or_dependency: release quality and data quality
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+      boundaries:
+        - boundary_id: rd_org
+          label: Publicly visible R&D areas
+          node_ids: [product, frontend_mobile, backend_data, qa]
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-015
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-015
+  - figure_id: F-008
+    title: Public management and function org sketch
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Minimal public org sketch; not a complete organization chart.
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Denis Globa
+          role: CEO and co-founder
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-002]
+        - node_id: product_eng
+          name: null
+          role: Product and engineering leaders
+          department: Product and Engineering
+          location: Tbilisi, Limassol, and other hubs
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - node_id: data_platform
+          name: null
+          role: Data, SRE, DevOps, and QA leaders
+          department: Platform and Quality
+          location: Tbilisi and other hubs
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - node_id: business_ops
+          name: null
+          role: Finance, HR, regional, broker, and commercial leaders
+          department: Business Operations
+          location: global
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: product_eng
+          relationship: other
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - parent_node_id: ceo
+          child_node_id: data_platform
+          relationship: other
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+        - parent_node_id: ceo
+          child_node_id: business_ops
+          relationship: other
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-008
+    notes: Reporting lines are diligence placeholders, not verified reporting
+      relationships.
+  - figure_id: F-009
+    title: Public open roles by location
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Open-role counts from the careers page.
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Location
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Open roles
+        unit: roles
+        scale: linear
+      series:
+        - series_id: open_roles
+          name: Open roles
+          unit: roles
+          data_points:
+            - x: Tbilisi
+              y: 31
+              label: "31"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: Limassol
+              y: 30
+              label: "30"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: Pafos
+              y: 5
+              label: "5"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: London
+              y: 5
+              label: "5"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: Malaga
+              y: 3
+              label: "3"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: UAE
+              y: 2
+              label: "2"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: Germany
+              y: 1
+              label: "1"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+            - x: Saudi Arabia
+              y: 1
+              label: "1"
+              evidence_claim_ids: [EC-007]
+              source_ids: [SRC-008]
+      annotations:
+        - label: Headcount not public
+          x: Tbilisi
+          y: 31
+          note: Open roles are not total headcount and may change frequently.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-008]
+    evidence_claim_ids:
+      - EC-007
+    source_ids:
+      - SRC-008
+  - figure_id: F-010
+    title: Legal and regulatory public-source timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Public legal and policy source anchors reviewed.
+    spec:
+      start_date: "2024-04-19"
+      end_date: "2026-05-15"
+      ordering: chronological
+      events:
+        - event_id: F010-E1
+          date: "2024-04-19"
+          label: Privacy policy modification date
+          description: Privacy policy indicates it was modified April 19, 2024.
+          category: privacy
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-012]
+        - event_id: F010-E2
+          date: "2026-05-15"
+          label: Public terms reviewed
+          description: Terms reviewed for data-use restrictions, subscriptions,
+            non-professional subscriber criteria, scripts, and disclaimers.
+          category: terms
+          evidence_claim_ids: [EC-010, EC-014]
+          source_ids: [SRC-013]
+        - event_id: F010-E3
+          date: "2026-05-15"
+          label: Security page reviewed
+          description: Security guidance and bug-bounty reporting page reviewed.
+          category: security
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-011]
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-014
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+  - figure_id: F-011
+    title: Diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.E
+    figure_type: risk_heatmap
+    description: Cross-report risk prioritization.
+    spec:
+      x_axis:
+        label: likelihood
+        scale: [low, medium, high, unknown]
+      y_axis:
+        label: severity
+        scale: [informational, low, medium, high, critical]
+      risk_points:
+        - risk_id: R-001
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: No public financial statements, ARR, margin, churn, or cash data.
+          evidence_claim_ids: [EC-002, EC-003]
+          source_ids: [SRC-002, SRC-004]
+        - risk_id: R-002
+          label: Market-data dependency
+          severity: high
+          likelihood: medium
+          rationale: Product utility depends on real-time/delayed data, vendor
+            notices, exchange rules, and paid packages.
+          evidence_claim_ids: [EC-008, EC-010]
+          source_ids: [SRC-007, SRC-013]
+        - risk_id: R-003
+          label: Broker and trading integration exposure
+          severity: high
+          likelihood: medium
+          rationale: Broker marketplace and trade workflows create partner,
+            compliance, support, and incident-allocation risk.
+          evidence_claim_ids: [EC-004, EC-010]
+          source_ids: [SRC-006, SRC-013]
+        - risk_id: R-004
+          label: Consumer subscription and data-paywall friction
+          severity: medium
+          likelihood: high
+          rationale: App-store evidence includes strong ratings but also user
+            friction around real-time data/paywalls.
+          evidence_claim_ids: [EC-006, EC-008]
+          source_ids: [SRC-009, SRC-007]
+        - risk_id: R-005
+          label: Competitive pressure
+          severity: medium
+          likelihood: high
+          rationale: TradingView faces substitutes from terminals, analytics
+            platforms, retail charting tools, and broker apps.
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-016, SRC-017, SRC-018, SRC-020]
+        - risk_id: R-007
+          label: Security and account abuse
+          severity: medium
+          likelihood: medium
+          rationale: Security page highlights phishing, fake premium, cracked apps,
+            impersonation, and account hacking risks.
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-011]
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-006
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-011
+      - SRC-013
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-020
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: TradingView publicly describes itself as a charting platform and social
+      network used by 100M+ traders and investors worldwide.
+    evidence_summary: The TradingView about page states the company identity and
+      100M+ worldwide user claim.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-001]
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "We're TradingView, a charting platform and social network used by 100M+ traders and investors worldwide to spot opportunities across global markets."
+        location: About page
+    analyst_interpretation: This is strong evidence for the public claim, but not
+      for active-user, paying-user, or retention definitions.
+    limitations: User-count definitions are not disclosed.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-001]
+      table_ids: [T-002, T-005, T-010, T-011]
+      figure_ids: [F-001, F-004, F-006]
+      risk_ids: [R-004, R-005]
+  - evidence_claim_id: EC-002
+    claim: TradingView announced a $298 million investment round led by Tiger
+      Global at a $3 billion valuation on October 14, 2021, and stated it had
+      paying customers in over 180 countries and 30 million monthly users.
+    evidence_summary: PRNewswire carried a TradingView announcement with the
+      financing, valuation, CEO quote, user growth, and country reach.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "TradingView Inc ... announced a new $298 million investment round - led by Tiger Global. The financing takes the company ... to a $3 billion valuation."
+        location: PRNewswire announcement
+      - source_id: SRC-002
+        quote: "with paying customers in over 180 countries worldwide"
+        location: PRNewswire announcement
+      - source_id: SRC-002
+        quote: "Denis Globa, CEO and co-founder of TradingView"
+        location: PRNewswire announcement
+    analyst_interpretation: The round and valuation are credible public anchors,
+      while current financials and ownership terms remain private.
+    limitations: The announcement does not disclose security type, primary versus
+      secondary mix, liquidation preferences, investor rights, or current valuation.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-002]
+      table_ids: [T-001, T-002, T-005, T-011, T-014, T-016]
+      figure_ids: [F-001, F-002, F-006, F-008, F-011]
+      risk_ids: [R-001, R-006]
+  - evidence_claim_id: EC-003
+    claim: TradingView publicly offers a freemium-to-enterprise pricing ladder
+      across Free, Essential, Plus, Premium, Ultimate, Enterprise, and real-time
+      data packages.
+    evidence_summary: The pricing page lists plans and prices, identifies
+      Enterprise for 100+ subscriptions, and references millions of instruments
+      and hundreds of data feeds.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-004]
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: "Essential $12.95/mo annually; Plus $29.95/mo annually; Premium $59.95/mo annually; Ultimate $199.95/mo annually."
+        location: Pricing page
+      - source_id: SRC-004
+        quote: "Enterprise plans for 100+ subscriptions"
+        location: Pricing page
+      - source_id: SRC-004
+        quote: "3,539,722 instruments"
+        location: Pricing page
+    analyst_interpretation: Product packaging is well evidenced; economics and
+      conversion require internal data.
+    limitations: Public prices do not show discounts, promotions, refunds, taxes,
+      app-store fees, exchange fees, or actual realized ARPU.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: [FC-003]
+      table_ids: [T-002, T-004, T-010]
+      figure_ids: [F-003, F-006, F-011]
+      risk_ids: [R-001, R-002, R-004]
+  - evidence_claim_id: EC-004
+    claim: TradingView has a public broker marketplace and has stated an intent to
+      expand brokerage partnerships and integrations.
+    evidence_summary: The brokers page lists verified brokers; the 2021 financing
+      announcement said TradingView was doubling down on broker relationships.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-006, SRC-002]
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Get trading with verified brokers today.
+        location: Brokers page
+      - source_id: SRC-002
+        quote: "The company is also doubling down on its broker relationships and is expecting to partner and integrate with most major brokerage platforms over the next few years."
+        location: PRNewswire announcement
+    analyst_interpretation: Broker ecosystem evidence is strong, but partner
+      economics and compliance allocation are private.
+    limitations: Public listings do not disclose contracts, revenue share,
+      uptime, indemnities, incident history, or concentration.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: [FC-004]
+      table_ids: [T-003, T-006, T-010]
+      figure_ids: [F-003, F-005, F-011]
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-005
+    claim: TradingView's public product feature set includes hundreds of built-in
+      indicators and strategies, 100,000+ public indicators, drawing tools,
+      alerts, fundamentals, Pine Script, and advanced charting capabilities.
+    evidence_summary: The feature page documents current technical-analysis,
+      alert, fundamental, charting, and Pine Script surfaces.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-005]
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: "400+ built-in indicators and strategies"
+        location: Features page
+      - source_id: SRC-005
+        quote: "100,000+ public indicators"
+        location: Features page
+      - source_id: SRC-005
+        quote: "Our alerts run on powerful servers. Fast and robust."
+        location: Features page
+    analyst_interpretation: Product breadth is well supported, but usage,
+      reliability, moderation, and gross margin are not public.
+    limitations: Public features do not establish adoption, uptime, costs, or
+      monetization.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-005]
+      table_ids: [T-003, T-009, T-012]
+      figure_ids: [F-003, F-005, F-007]
+      risk_ids: [R-005, R-008]
+  - evidence_claim_id: EC-006
+    claim: TradingView has substantial public mobile traction, including a 4.8/5
+      Apple App Store rating from roughly 381K ratings and a Google Play listing
+      with 4.7 stars, about 905K reviews, and 50M+ downloads.
+    evidence_summary: Apple and Google Play listings provide third-party mobile
+      rating and download signals.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-009, SRC-010]
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: "4.8 ... 381K Ratings"
+        location: Apple App Store listing
+      - source_id: SRC-010
+        quote: "4.7 star ... 905K reviews ... 50M+ Downloads"
+        location: Google Play listing
+    analyst_interpretation: Mobile reach is credible, but mobile conversion,
+      retention, refund rates, and support burden require internal data.
+    limitations: App listings do not disclose active users, paid conversion,
+      churn, region mix, or revenue.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-001, FC-006]
+      table_ids: [T-003, T-005, T-006, T-010, T-011]
+      figure_ids: [F-004, F-006, F-011]
+      risk_ids: [R-004]
+  - evidence_claim_id: EC-007
+    claim: TradingView's careers page shows global operating scale and open roles
+      across technical, product, QA, data, SRE, DevOps, finance, HR, and regional
+      functions, with visible role counts concentrated in Tbilisi and Limassol.
+    evidence_summary: Careers page text states broad operating scale and lists
+      open roles by location and function.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-008]
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: "100M people, 180+ countries, 900,000 symbols analyzed multiple times per second, 360M real-time quotes/minute, five million active online users"
+        location: Careers page
+      - source_id: SRC-008
+        quote: "Tbilisi 31 Limassol 30 Pafos 5 London 5 Malaga 3 UAE 2 Germany 1 Saudi Arabia 1"
+        location: Careers page
+      - source_id: SRC-008
+        quote: "global org based in 25 countries with five offices"
+        location: Careers page
+    analyst_interpretation: Hiring evidence supports ongoing operating investment,
+      but does not show total headcount, attrition, or budget.
+    limitations: Careers pages are point-in-time and can change without notice.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids: [T-011, T-012, T-013, T-014, T-015, T-016]
+      figure_ids: [F-007, F-008, F-009]
+      risk_ids: [R-006, R-007]
+  - evidence_claim_id: EC-008
+    claim: TradingView's product depends on market-data and reference-data
+      providers and exchange rules; public pages reference real-time data
+      packages, delayed data constraints, ICE Data Services, FactSet, and Quartr.
+    evidence_summary: Market-data coverage and page footers describe data
+      availability, real-time packages, and named providers.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-007, SRC-008]
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: "We provide real-time data for free whenever we're allowed. Some data is delayed for public display due to specific exchange regulations."
+        location: Market data page
+      - source_id: SRC-007
+        quote: "Select market data provided by ICE Data Services."
+        location: Market data page
+      - source_id: SRC-008
+        quote: "Select reference data provided by FactSet ... SEC filings and other documents provided by Quartr."
+        location: Footer/provider notices
+    analyst_interpretation: Data coverage is a core value proposition and a core
+      dependency.
+    limitations: Public notices do not disclose fees, minimums, SLAs, renewal
+      terms, audit findings, or concentration.
+    associations:
+      chapter_id: III
+      section_id: III.E
+      founder_claim_ids: [FC-003]
+      table_ids: [T-006, T-007, T-018, T-019]
+      figure_ids: [F-003, F-011]
+      risk_ids: [R-002]
+  - evidence_claim_id: EC-009
+    claim: TradingView publicly describes privacy and security controls including
+      controller status, data collected for accounts and paid users, service
+      providers, TLS, firewalls, authentication/access controls, EEA/UK rights,
+      international transfers, two-factor authentication, phishing guidance, and
+      bug-bounty/security reporting.
+    evidence_summary: Privacy and security pages describe security guidance,
+      privacy controls, and user rights.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-011, SRC-012]
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: "We use Transport Layer Security (TLS), firewalls, authentication, access controls, and secure facilities."
+        location: Privacy policy
+      - source_id: SRC-011
+        quote: "Enable two-factor authentication (2FA)"
+        location: Security page
+      - source_id: SRC-011
+        quote: "bug bounty"
+        location: Security page
+    analyst_interpretation: Public policies show controls and user guidance, but
+      audit reports and incident histories are private.
+    limitations: No SOC report, penetration-test report, incident log, or
+      regulator correspondence was available.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids: []
+      table_ids: [T-019]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-007]
+  - evidence_claim_id: EC-010
+    claim: TradingView terms include market-data restrictions, investment/trading
+      disclaimers, non-professional subscriber criteria with possible
+      retroactive professional-rate liability, subscription/refund mechanics, user
+      script representations, and statements that publications are not financial
+      advice.
+    evidence_summary: Terms page covers data/IP ownership, non-display and
+      algorithmic-use restrictions, subscriptions, non-professional status,
+      scripts, and financial-advice disclaimers.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-013]
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "display-only market data restrictions" 
+        location: Terms
+      - source_id: SRC-013
+        quote: "non-professional subscriber criteria and possible retroactive professional rate liability"
+        location: Terms
+      - source_id: SRC-013
+        quote: "publications are not financial advice"
+        location: Terms
+    analyst_interpretation: Terms identify several material legal/commercial risk
+      surfaces that require contract and compliance diligence.
+    limitations: Public terms do not disclose negotiated contracts, compliance
+      testing, user disputes, or regulatory correspondence.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids: []
+      table_ids: [T-017, T-019]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-002, R-003, R-004, R-008]
+  - evidence_claim_id: EC-011
+    claim: TradingView claims it is the world's most popular investing website
+      according to Similarweb data and states it is highly rated in finance app
+      stores.
+    evidence_summary: A TradingView blog post makes the ranking claim and cites
+      Similarweb; app listings independently show high ratings.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-014, SRC-009, SRC-010]
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: "TradingView is now officially the world's most popular investing website, according to SimilarWeb data"
+        location: TradingView blog
+      - source_id: SRC-009
+        quote: "4.8 ... 381K Ratings"
+        location: Apple App Store listing
+    analyst_interpretation: The claim is useful but should be refreshed directly
+      from independent traffic data because the ranking source is company-authored.
+    limitations: Direct Similarweb data was not independently fetched and traffic
+      rankings change over time.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-009, T-011]
+      figure_ids: [F-005]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-012
+    claim: TradingView faces public competitors and substitutes across
+      professional terminals, investment analytics, charting, and brokerage
+      platforms.
+    evidence_summary: Competitor pages from Bloomberg, Koyfin, StockCharts, and
+      Webull describe adjacent products in market data, analytics, charting, and
+      brokerage/trading.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-016, SRC-017, SRC-018, SRC-020]
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: Bloomberg Terminal
+        location: Bloomberg Professional Services product page
+      - source_id: SRC-016
+        quote: Koyfin pricing
+        location: Koyfin pricing page
+      - source_id: SRC-017
+        quote: StockCharts pricing
+        location: StockCharts pricing page
+    analyst_interpretation: The competitive frame is credible, but direct
+      win/loss and share data require internal or paid market research.
+    limitations: This is a selected public sample, not a comprehensive market map.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids: [T-008, T-009]
+      figure_ids: [F-005, F-011]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-013
+    claim: TradingView offers free financial widgets that can distribute its
+      charts, watchlists, tickers, and other market components on third-party
+      websites.
+    evidence_summary: The widgets page is titled "Free Financial Widgets" and
+      lists multiple widget categories.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-019]
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: "Free Financial Widgets: Stocks, Crypto & More"
+        location: Widgets page
+    analyst_interpretation: Widgets are a distribution and brand-reach vector, but
+      attribution and conversion are not public.
+    limitations: Widget traffic, conversion, and terms compliance are not public.
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids: []
+      table_ids: [T-003, T-010]
+      figure_ids: [F-003]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-014
+    claim: TradingView's terms address user scripts, IP representations, and
+      default MPL 2.0 treatment for published scripts without a license comment.
+    evidence_summary: Terms page includes script/IP representations and a default
+      license mechanism.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-013]
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "default MPL 2.0 if no license in script comment"
+        location: Terms
+    analyst_interpretation: The script ecosystem creates differentiated product
+      value and IP/moderation diligence needs.
+    limitations: Public terms do not show takedown volume, infringement claims,
+      moderation rules, or software-composition audits.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: [FC-005]
+      table_ids: [T-018]
+      figure_ids: [F-010]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-015
+    claim: TradingView maintains official Pine Script documentation describing the
+      scripting language, concepts, indicators, strategies, and release notes.
+    evidence_summary: The Pine Script user manual contains sections for primer,
+      language, concepts, strategies, indicators, programming, and release notes.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-015]
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: "Everything you need to know about Pine Script."
+        location: Pine Script User Manual
+    analyst_interpretation: Official documentation supports the existence and
+      maintenance of a developer/scripting surface.
+    limitations: Documentation does not disclose active developers, script
+      quality, compute cost, or roadmap.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: [FC-005]
+      table_ids: [T-003, T-012, T-018]
+      figure_ids: [F-003, F-007]
+      risk_ids: [R-008]
+sources:
+  - source_id: SRC-001
+    title: TradingView About
+    url: https://www.tradingview.com/about/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary company page for identity, mission, and user-scale
+      claim.
+    archive_url: null
+  - source_id: SRC-002
+    title: TradingView hits $3 billion valuation with $298 million investment
+    url: https://www.prnewswire.com/news-releases/tradingview-hits-3-billion-valuation-with-298-million-investment-301400502.html
+    publisher: PRNewswire
+    author: TradingView
+    publication_date: 2021-10-14
+    accessed_date: 2026-05-15
+    source_type: independent_news
+    reliability_notes: Public financing announcement distributed through
+      PRNewswire and attributed to TradingView.
+    archive_url: null
+  - source_id: SRC-003
+    title: List of unicorn startup companies raw wikitext
+    url: https://en.wikipedia.org/w/index.php?title=List_of_unicorn_startup_companies&action=raw
+    publisher: Wikipedia
+    author: multiple contributors
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: market_database
+    reliability_notes: Used for random target selection after excluding existing
+      report slugs; not relied upon as the primary valuation source.
+    archive_url: null
+  - source_id: SRC-004
+    title: TradingView Pricing
+    url: https://www.tradingview.com/pricing/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary public pricing page for subscription tiers, public
+      plan prices, data packages, and enterprise plan signal.
+    archive_url: null
+  - source_id: SRC-005
+    title: TradingView Features
+    url: https://www.tradingview.com/features/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary feature page for indicators, alerts, charting,
+      fundamentals, Pine Script, and market-analysis tools.
+    archive_url: null
+  - source_id: SRC-006
+    title: TradingView Brokers
+    url: https://www.tradingview.com/brokers/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary broker marketplace and integration evidence.
+    archive_url: null
+  - source_id: SRC-007
+    title: TradingView Market Data
+    url: https://www.tradingview.com/data-coverage/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary page for market-data coverage, real-time data
+      packages, and exchange-delay constraints.
+    archive_url: null
+  - source_id: SRC-008
+    title: TradingView Careers
+    url: https://www.tradingview.com/careers/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary hiring and operating-scale signal; open-role counts
+      are point-in-time.
+    archive_url: null
+  - source_id: SRC-009
+    title: TradingView Apple App Store listing
+    url: https://apps.apple.com/us/app/tradingview-track-all-markets/id1205990992
+    publisher: Apple App Store
+    author: Apple and TradingView
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: review_site
+    reliability_notes: Third-party app listing for ratings and user reviews.
+    archive_url: null
+  - source_id: SRC-010
+    title: TradingView Google Play listing
+    url: https://play.google.com/store/apps/details?id=com.tradingview.tradingviewapp
+    publisher: Google Play
+    author: Google and TradingView
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: review_site
+    reliability_notes: Third-party Android app listing for rating, reviews, and
+      download band.
+    archive_url: null
+  - source_id: SRC-011
+    title: TradingView Security
+    url: https://www.tradingview.com/security/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary security guidance and bug-bounty/security reporting
+      page.
+    archive_url: null
+  - source_id: SRC-012
+    title: TradingView Privacy Policy
+    url: https://www.tradingview.com/privacy-policy/
+    publisher: TradingView
+    author: null
+    publication_date: 2024-04-19
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary privacy policy for data-controller, security, user
+      rights, service providers, and transfer disclosures.
+    archive_url: null
+  - source_id: SRC-013
+    title: TradingView Terms of Use
+    url: https://www.tradingview.com/policies/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary terms governing subscriptions, market data, user
+      scripts, disclaimers, and non-professional subscriber status.
+    archive_url: null
+  - source_id: SRC-014
+    title: We're officially the world's number one!
+    url: https://www.tradingview.com/blog/en/we-are-officially-number-one-in-the-world-25885/
+    publisher: TradingView Blog
+    author: TradingView
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Company-authored blog post citing Similarweb; useful but
+      should be refreshed with independent traffic data.
+    archive_url: null
+  - source_id: SRC-015
+    title: Pine Script User Manual
+    url: https://www.tradingview.com/pine-script-docs/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Official TradingView documentation for the Pine Script
+      ecosystem.
+    archive_url: null
+  - source_id: SRC-016
+    title: Koyfin Pricing
+    url: https://www.koyfin.com/pricing/
+    publisher: Koyfin
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: other
+    reliability_notes: Public competitor/adjacent platform pricing page.
+    archive_url: null
+  - source_id: SRC-017
+    title: StockCharts Pricing
+    url: https://stockcharts.com/pricing/
+    publisher: StockCharts
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: other
+    reliability_notes: Public competitor/adjacent charting pricing page.
+    archive_url: null
+  - source_id: SRC-018
+    title: Bloomberg Terminal
+    url: https://www.bloomberg.com/professional/products/bloomberg-terminal/
+    publisher: Bloomberg Professional Services
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: other
+    reliability_notes: Public professional-terminal product page for competitive
+      framing.
+    archive_url: null
+  - source_id: SRC-019
+    title: TradingView Financial Widgets
+    url: https://www.tradingview.com/widget/
+    publisher: TradingView
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: primary_company_source
+    reliability_notes: Primary page for free financial widgets and embedded
+      distribution.
+    archive_url: null
+  - source_id: SRC-020
+    title: Webull Pricing
+    url: https://www.webull.com/pricing
+    publisher: Webull
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-15
+    source_type: other
+    reliability_notes: Public broker/platform page used as adjacent competitor
+      evidence.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk: Financial opacity and inability to verify revenue quality
+    severity: high
+    likelihood: high
+    evidence_strength: high
+    diligence_priority: critical
+    rationale: Public sources verify scale and pricing but do not disclose audited
+      financials, ARR, churn, gross margin, cash, burn, debt, or concentration.
+    evidence_claim_ids: [EC-001, EC-002, EC-003]
+    mitigation_or_next_step: Obtain audited financials, ARR bridge, billing and
+      cohort exports, margin by SKU, cash/debt schedule, and budget variance.
+  - risk_id: R-002
+    risk: Market-data licensing, exchange-fee, and vendor-dependency exposure
+    severity: high
+    likelihood: medium
+    evidence_strength: high
+    diligence_priority: high
+    rationale: Market data is core to the product and public pages explicitly
+      reference delayed data constraints, real-time packages, data providers, and
+      usage restrictions.
+    evidence_claim_ids: [EC-008, EC-010]
+    mitigation_or_next_step: Review data-provider contracts, exchange audits,
+      fees, entitlements, vendor concentration, SLAs, and gross-margin impact.
+  - risk_id: R-003
+    risk: Broker integration and trading workflow regulatory/partner exposure
+    severity: high
+    likelihood: medium
+    evidence_strength: medium
+    diligence_priority: high
+    rationale: Broker integrations are public and strategically important, but
+      contracts, revenue share, execution responsibility, incidents, and regional
+      regulatory allocation are not public.
+    evidence_claim_ids: [EC-004, EC-010]
+    mitigation_or_next_step: Review broker agreements, incident logs, compliance
+      matrix, monitoring, indemnities, and partner concentration.
+  - risk_id: R-004
+    risk: Consumer subscription, refund, and real-time-data paywall friction
+    severity: medium
+    likelihood: high
+    evidence_strength: medium
+    diligence_priority: high
+    rationale: Public app listings show strong ratings but also evidence of user
+      friction around real-time data and paywalls; terms include recurring billing
+      and refund mechanics.
+    evidence_claim_ids: [EC-006, EC-008, EC-010]
+    mitigation_or_next_step: Analyze refunds, chargebacks, support tickets, app
+      reviews, paid conversion, exchange-fee messaging, and retention by plan.
+  - risk_id: R-005
+    risk: Competitive pressure across terminals, analytics, charting, and broker apps
+    severity: medium
+    likelihood: high
+    evidence_strength: medium
+    diligence_priority: medium
+    rationale: TradingView competes against professional terminals, investment
+      analytics platforms, retail charting tools, broker-owned trading apps, and
+      finance portals.
+    evidence_claim_ids: [EC-011, EC-012]
+    mitigation_or_next_step: Obtain win/loss, churn reasons, competitor cohorts,
+      pricing elasticity, and independent market-share data.
+  - risk_id: R-006
+    risk: Cap-table, governance, and leadership opacity
+    severity: medium
+    likelihood: unknown
+    evidence_strength: medium
+    diligence_priority: high
+    rationale: The 2021 financing is public, but current cap table, investor
+      rights, board, management roster, and option plan are not.
+    evidence_claim_ids: [EC-002, EC-007]
+    mitigation_or_next_step: Request cap table, investor rights, board materials,
+      option plan, leadership roster, and succession plan.
+  - risk_id: R-007
+    risk: Account security, fraud, phishing, and global workforce resilience
+    severity: medium
+    likelihood: medium
+    evidence_strength: medium
+    diligence_priority: medium
+    rationale: Security page highlights phishing, fake premium, cracked apps,
+      impersonation, account hacking, 2FA, and bug-bounty reporting; workforce
+      is distributed across multiple countries.
+    evidence_claim_ids: [EC-007, EC-009]
+    mitigation_or_next_step: Review SOC reports, incident logs, fraud metrics,
+      bug bounty history, access controls, business continuity, and security
+      staffing.
+  - risk_id: R-008
+    risk: User-generated script, IP, content, and advice-boundary exposure
+    severity: medium
+    likelihood: medium
+    evidence_strength: medium
+    diligence_priority: medium
+    rationale: Pine Script and public indicators are differentiated, but terms
+      show IP representations, default licensing, and disclaimers that should be
+      tested against moderation and takedown operations.
+    evidence_claim_ids: [EC-005, EC-010, EC-014, EC-015]
+    mitigation_or_next_step: Review script moderation, takedowns, license
+      compliance, creator disputes, financial advice controls, and open-source
+      software inventory.
+diligence_gaps:
+  - gap_id: DG-001
+    area: Financial statements and revenue quality
+    description: Audited financials, ARR, gross margin, churn, retention, cash,
+      burn, debt, and customer/channel concentration are not public.
+    priority: critical
+    related_risk_ids: [R-001]
+    requested_evidence:
+      - Audited financial statements and management accounts for the last three
+        fiscal years and YTD.
+      - ARR/revenue bridge by SKU, geography, channel, broker, and data package.
+      - Cohort retention, churn, refunds, chargebacks, and support-cost exports.
+  - gap_id: DG-002
+    area: Capitalization and governance
+    description: Public sources do not disclose security terms, ownership,
+      preferences, board rights, option pool, debt, or secondary-sale details.
+    priority: high
+    related_risk_ids: [R-006]
+    requested_evidence:
+      - Cap table, financing documents, investor rights, option plan, board
+        minutes, debt instruments, SAFEs/notes, and warrants.
+  - gap_id: DG-003
+    area: Data-provider and broker contracts
+    description: Market-data and broker relationships are public, but commercial
+      contracts and compliance obligations are not.
+    priority: high
+    related_risk_ids: [R-002, R-003]
+    requested_evidence:
+      - Exchange/data-provider contracts, broker agreements, revenue-share terms,
+        SLAs, audit findings, minimum commitments, and incident allocation matrix.
+  - gap_id: DG-004
+    area: Customer and GTM analytics
+    description: Public reach is strong, but user definitions, conversion, CAC,
+      payback, retention, app economics, and enterprise sales productivity are not
+      public.
+    priority: high
+    related_risk_ids: [R-004, R-005]
+    requested_evidence:
+      - Funnel analytics, traffic sources, paid conversion, app retention, CAC,
+        LTV, sales pipeline, win/loss, and brand tracking.
+  - gap_id: DG-005
+    area: Legal, privacy, security, and IP
+    description: Public policies reveal risk surfaces but not actual compliance,
+      incident, litigation, regulatory, IP, or insurance history.
+    priority: high
+    related_risk_ids: [R-002, R-003, R-007, R-008]
+    requested_evidence:
+      - Litigation schedule, regulator correspondence, SOC/penetration reports,
+        incident logs, insurance policies, IP portfolio, open-source inventory,
+        script takedowns, and privacy assessments.
+follow_up_requests:
+  - request_id: FU-001
+    owner: CFO or finance lead
+    request: Provide audited financials, management accounts, ARR bridge, gross
+      margin by product, cash/debt schedule, budget variance, and revenue
+      recognition memo.
+    priority: critical
+    related_chapter_ids: [I]
+    related_risk_ids: [R-001]
+  - request_id: FU-002
+    owner: General counsel
+    request: Provide cap table, financing documents, investor rights, board
+      materials, litigation/regulatory schedule, data-provider contracts, broker
+      agreements, and insurance policies.
+    priority: high
+    related_chapter_ids: [I, VIII]
+    related_risk_ids: [R-002, R-003, R-006]
+  - request_id: FU-003
+    owner: Product and data leaders
+    request: Provide product adoption, uptime, alert latency, data entitlements,
+      roadmap, incident history, script moderation, and cloud-cost attribution.
+    priority: high
+    related_chapter_ids: [II, VI, VIII]
+    related_risk_ids: [R-002, R-007, R-008]
+  - request_id: FU-004
+    owner: GTM and analytics leaders
+    request: Provide channel mix, CAC/payback, conversion by channel, app
+      retention, broker funnel, enterprise pipeline, refunds, support tickets,
+      and competitor win/loss analysis.
+    priority: high
+    related_chapter_ids: [III, IV, V]
+    related_risk_ids: [R-004, R-005]
+  - request_id: FU-005
+    owner: People leader
+    request: Provide current org chart, executive roster, headcount by function
+      and location, hiring plan, compensation/equity plans, attrition, employee
+      relations, and succession plans.
+    priority: medium
+    related_chapter_ids: [VII]
+    related_risk_ids: [R-006, R-007]
+limitations:
+  - This report is based only on public sources accessible during the session and
+    does not include management interviews, customer calls, private data-room
+    materials, paid databases, or legal docket downloads.
+  - Public pages can change; pricing, app ratings, open roles, product claims,
+    source availability, and traffic rankings should be refreshed before any
+    investment decision.
+  - The latest public valuation anchor located was the October 2021 $3 billion
+    valuation; current valuation, current ownership, and current financing status
+    are not publicly verified.
+  - The absence of public litigation, regulatory, customer-loss, or employee
+    relations evidence should not be interpreted as absence of such matters.
+  - Competitor coverage is illustrative rather than comprehensive and should be
+    supplemented with independent market research and win/loss data.
