@@ -1,0 +1,3349 @@
+report_metadata:
+  report_title: Snyk Public-Source Startup Diligence Report
+  target_company: Snyk
+  website: "https://snyk.io/"
+  known_aliases:
+    - Snyk Limited
+    - SNYK LIMITED
+    - Snyk, Inc.
+    - DeepCode
+    - Fugue
+    - Probely
+  sector: Enterprise Tech; developer security; AI application security; software supply-chain security
+  geography: United States headquarters in Boston with UK legal entity and global offices
+  company_stage: Late-stage private unicorn
+  research_date: 2026-05-16
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built covered slugs from reports/*-diligence-report.yaml and selected one uncovered
+      unicorn at random from a current public CB Insights unicorn list after excluding
+      covered companies.
+    - >
+      Prioritized public primary sources: Snyk product, pricing, customer, security,
+      privacy, terms, careers, leadership, board, integrations, and partner pages.
+    - Used Companies House for UK corporate status; CB Insights and Wikipedia for
+      market, valuation, financing, and company context; Justia for trademark signals.
+    - Treated vendor-published customer stories and comparison pages as useful but not
+      independently confirmed evidence.
+    - Marked private financials, customer-level ARR, cap table, contracts, litigation
+      clearance, security audit reports, and HR data as not publicly verifiable rather
+      than inferring.
+  included_jurisdictions:
+    - United States
+    - United Kingdom
+    - European Union
+    - Israel
+    - Global enterprise software markets
+  excluded_topics:
+    - No private financial statements, ARR schedules, customer contracts, cap table,
+      board materials, debt documents, security audit reports, DPAs, or employee records
+      were available.
+    - No paid database access, court-docket downloads, patent file-wrapper review, or
+      customer/management interviews were conducted.
+    - Blocked, inaccessible, stale, or 404 pages were not used as affirmative evidence
+      except as limitations.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-16
+      notes: The user requested one randomly selected uncovered private unicorn diligence
+        report and a draft pull request.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Snyk is a private unicorn valued at $7.40B in the current CB Insights
+      unicorn tracker.
+    claim_source: CB Insights unicorn list
+    claim_date: null
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-001]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate valuation methodology and last priced-round terms against financing
+        documents.
+  - founder_claim_id: FC-002
+    claim_text: Snyk is an AI security company helping organizations secure code,
+      dependencies, containers, and cloud infrastructure.
+    claim_source: Snyk about and product pages
+    claim_date: null
+    mapped_chapter_ids: [II]
+    mapped_section_ids: [II.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-004, EC-006]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate active usage, remediation accuracy, AI governance, and product-level ARR
+        by module.
+  - founder_claim_id: FC-003
+    claim_text: Snyk offers a freemium-to-enterprise product ladder across Free, Team,
+      Ignite, and Enterprise plans.
+    claim_source: Snyk plans page
+    claim_date: null
+    mapped_chapter_ids: [I, II, V]
+    mapped_section_ids: [I.C, II.B, V.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-005]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request pricing waterfall, seat utilization, conversion, and enterprise
+        discounting data.
+  - founder_claim_id: FC-004
+    claim_text: Snyk serves hundreds of organizations and has named customers including
+      large technology, travel, financial, manufacturing, and enterprise software
+      companies.
+    claim_source: Snyk about and customer pages
+    claim_date: null
+    mapped_chapter_ids: [III, V]
+    mapped_section_ids: [III.A, V.A]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-007]
+    contradiction_summary: Vendor-published logo and case-study evidence supports customer
+      existence but not current ARR, renewal status, concentration, or NRR.
+    diligence_follow_up:
+      - Directly confirm active customer status, ARR, renewal dates, case-study metrics,
+        and logo rights.
+  - founder_claim_id: FC-005
+    claim_text: Snyk was founded in 2015, has Boston headquarters, global offices, and
+      a global team of over 1,000 employees.
+    claim_source: Snyk about/careers pages and Companies House
+    claim_date: null
+    mapped_chapter_ids: [VII, VIII]
+    mapped_section_ids: [VII.B, VIII.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-002, EC-004, EC-010]
+    contradiction_summary: A secondary source reports 1,400 employees in 2022 while
+      current Snyk careers language says over 1,000; reconcile definitions and trend.
+    diligence_follow_up:
+      - Request headcount bridge, attrition, restructuring history, office leases, and
+        entity chart.
+  - founder_claim_id: FC-006
+    claim_text: Snyk has public compliance/security posture including SOC 2 Type II,
+      GDPR, ISO 27001/27017, FedRAMP plan support, encryption, and data residency options.
+    claim_source: Snyk plans, security, and privacy pages
+    claim_date: null
+    mapped_chapter_ids: [VIII]
+    mapped_section_ids: [VIII.D]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-013]
+    contradiction_summary: Public marketing and policy language is not the same as
+      reviewing audit reports, customer security exceptions, or DPAs.
+    diligence_follow_up:
+      - Review SOC 2/ISO/FedRAMP evidence, DPAs, subprocessors, incidents, privacy DPIAs,
+        and customer security exceptions.
+
+executive_summary:
+  overall_assessment: >-
+    Track with high-priority financial, customer, competitive, and legal diligence before
+    any investment decision. Public evidence supports Snyk as an active, late-stage
+    private developer-security unicorn with broad product and enterprise traction, but
+    the most material underwriting inputs remain private.
+  investment_or_diligence_thesis: >-
+    Snyk is a scaled developer-security platform in a strategically important category:
+    AI-assisted secure software development, open-source supply-chain risk, container/IaC
+    security, and application risk management. The upside case depends on durable
+    enterprise retention, platform attach, AI remediation efficacy, and ability to defend
+    pricing against bundled platform-native tools and cloud-security suites.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Snyk appears on CB Insights current unicorn list at $7.40B valuation.
+      evidence_claim_ids: [EC-001]
+    - founder_claim_id: FC-002
+      summary: Snyk publicly offers a broad developer-security product platform.
+      evidence_claim_ids: [EC-004, EC-006]
+    - founder_claim_id: FC-003
+      summary: Snyk has public Free-to-Enterprise packaging.
+      evidence_claim_ids: [EC-005]
+    - founder_claim_id: FC-005
+      summary: SNYK LIMITED is active at Companies House and Snyk states it has a global
+        team over 1,000 employees.
+      evidence_claim_ids: [EC-002, EC-010]
+  biggest_risks:
+    - risk_id: R-001
+      summary: Valuation, preference-stack, and financing terms are opaque.
+    - risk_id: R-002
+      summary: Revenue quality, profitability, and SaaS unit economics are not public.
+    - risk_id: R-003
+      summary: Crowded AppSec and developer-security competition may pressure growth and pricing.
+    - risk_id: R-005
+      summary: Customer concentration, renewal quality, and churn are not publicly visible.
+    - risk_id: R-006
+      summary: Privacy, security, and regulated-enterprise obligations require private review.
+  key_evidence_gaps:
+    - Audited financial statements, ARR bridge, NRR/GRR, gross-margin waterfall,
+      CAC/payback, collections, and cash runway.
+    - Current cap table, preference stack, debt/warrants, secondaries, option pool, and
+      employee-equity repricing or retention analysis.
+    - Top-customer ARR, renewal schedule, churn reasons, direct references, support
+      history, and customer security exceptions.
+    - Win/loss, market share, competitor-specific pricing pressure, AI remediation
+      benchmarks, and module-level product telemetry.
+    - Full legal entity chart, litigation and demand-letter register, IP assignments, OSS
+      compliance audit, DPAs, audit reports, insurance, and incident history.
+  recommended_next_steps:
+    - Condition further diligence on a financial data room covering audited financials,
+      ARR/retention, gross margin, bookings/billings, cash runway, and financing documents.
+    - Run customer diligence on top accounts and selected churned/lost prospects, focusing
+      on concentration, renewal risk, module attach, procurement pressure, and
+      Snyk-vs-bundled-tool tradeoffs.
+    - Run product/technology diligence on AI remediation quality, vulnerability-intelligence
+      provenance, product telemetry, security architecture, incident history, and roadmap
+      delivery.
+    - Run legal diligence on corporate structure, IP ownership, OSS/data rights, customer
+      contracts, DPAs/subprocessors, SOC2/ISO/FedRAMP evidence, insurance, employment,
+      and litigation.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: >-
+      Snyk is a late-stage private security-software unicorn with public valuation and
+      funding signals but no public audited financial package, ARR bridge, gross-margin
+      detail, cohort retention, cap table, debt schedule, or runway disclosure.
+    founder_claim_ids: [FC-001, FC-003]
+    evidence_claim_ids: [EC-001, EC-003, EC-005, EC-015]
+    risk_ids: [R-001, R-002]
+    sections:
+      - section_id: I.A
+        title: Historical financial statements and quality of earnings
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3]
+        summary: Secondary sources report revenue and loss, but audited financials,
+          ARR, margin, burn, and cash conversion are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: A secondary source reports 2023 revenue of $220M and net loss of
+              $176M, but this run did not identify audited financial statements.
+            evidence_claim_ids: [EC-003]
+            risk_ids: [R-002]
+          - finding_id: I.A-F2
+            finding: ARR, NRR, GRR, gross margin, CAC payback, deferred revenue, cash
+              runway, and cohort retention are not publicly verifiable.
+            evidence_claim_ids: [EC-015]
+            risk_ids: [R-001, R-002]
+        hidden_risks:
+          - Revenue quality or retention may differ materially from valuation assumptions.
+          - Cash runway and financing contingency cannot be assessed from public sources.
+        evidence_gaps:
+          - Audited 2022-2025 financial statements, monthly management accounts, ARR bridge,
+            deferred-revenue roll-forward, gross margin by product, and cash model.
+        follow_up_questions:
+          - Provide audited statements, management reporting packs, ARR/NRR by cohort,
+            gross-margin bridge, CAC/payback analysis, and cash-burn forecast.
+        table_ids: [T-002]
+        figure_ids: []
+        evidence_claim_ids: [EC-003, EC-015]
+      - section_id: I.B
+        title: Financing history and capitalization
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3]
+        summary: Public sources support unicorn status and funding scale, but round
+          documents and capitalization economics are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: CB Insights lists Snyk at $7.40B valuation in the unicorn tracker.
+            evidence_claim_ids: [EC-001]
+            risk_ids: [R-001]
+          - finding_id: I.B-F2
+            finding: CB Insights reports $1.247B total raised, but the preference stack,
+              debt, side letters, option pool, and secondary transactions are not public.
+            evidence_claim_ids: [EC-015]
+            risk_ids: [R-001]
+        hidden_risks:
+          - A valuation below a prior peak signal could create employee-equity, preference,
+            and exit-waterfall complexity.
+        evidence_gaps:
+          - Round documents, investor consents, option-pool detail, fully diluted
+            capitalization, debt schedule, warrants, and liquidation preference stack.
+        follow_up_questions:
+          - Provide current and pro forma cap table, financing documents, investor-rights
+            agreements, debt/credit agreements, warrant schedules, and option-pool history.
+        table_ids: [T-001]
+        figure_ids: [F-001, F-002]
+        evidence_claim_ids: [EC-001, EC-015]
+
+  - chapter_id: II
+    title: Products
+    chapter_summary: >-
+      Snyk offers a broad developer-security platform covering code, open-source
+      dependencies, containers, IaC, and application risk management. Product breadth is
+      well evidenced by company pages; product-level ARR, usage, remediation efficacy,
+      and AI governance remain private.
+    founder_claim_ids: [FC-002, FC-003]
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-008]
+    risk_ids: [R-003, R-004, R-010]
+    sections:
+      - section_id: II.A
+        title: Product portfolio and core capabilities
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3]
+        summary: Public product pages evidence a multi-module platform across SAST/code
+          scanning, SCA/license risk, containers, IaC, and AppRisk.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Snyk publicly positions itself as an AI security company that helps
+              secure code, dependencies, containers, and cloud infrastructure.
+            evidence_claim_ids: [EC-004]
+            risk_ids: [R-004]
+          - finding_id: II.A-F2
+            finding: Public product pages describe Snyk Code, Open Source, Container,
+              IaC, and AppRisk modules.
+            evidence_claim_ids: [EC-006]
+            risk_ids: [R-003, R-004]
+        hidden_risks:
+          - Product breadth may mask uneven module adoption or weak attach rates.
+          - AI remediation claims may create accuracy and liability exposure.
+        evidence_gaps:
+          - Product-level ARR, active projects/repos, scan volumes, false-positive rates,
+            fix acceptance, SLA history, and roadmap delivery metrics.
+        follow_up_questions:
+          - Provide ARR by module, usage telemetry, remediation accuracy, false-positive
+            rates, AI governance, incident history, and roadmap completion history.
+        table_ids: [T-003]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-004, EC-006]
+      - section_id: II.B
+        title: Packaging, pricing, and buyer fit
+        checklist_question_ids: [II.B.1, II.B.2]
+        summary: Snyk discloses a Free, Team, Ignite, and Enterprise ladder, but
+          discounting, utilization, and plan-level economics are not public.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.B-F1
+            finding: Public plans include Free, Team, Ignite, and Enterprise, with
+              Enterprise-specific compliance and data-residency options.
+            evidence_claim_ids: [EC-005, EC-013]
+            risk_ids: [R-002, R-006]
+          - finding_id: II.B-F2
+            finding: Public pages do not disclose ACV, discounting, utilization,
+              paid-conversion rates, or module attach.
+            evidence_claim_ids: [EC-005]
+            risk_ids: [R-002]
+        hidden_risks:
+          - Competitive discounting or low seat utilization could pressure revenue quality.
+        evidence_gaps:
+          - Contract-level pricing, discount bands, paid-seat utilization, SKU attach,
+            overage economics, services revenue, and enterprise procurement terms.
+        follow_up_questions:
+          - Provide pricing waterfall, discount bands by segment, usage-to-entitlement
+            analysis, packaging migration history, churn by plan, and expansion by SKU.
+        table_ids: [T-004]
+        figure_ids: []
+        evidence_claim_ids: [EC-005, EC-013]
+
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: >-
+      Public customer evidence supports a broad enterprise security customer base with
+      named examples and vendor-published outcomes. Customer concentration, retention,
+      NPS, contract terms, renewal calendar, and reference quality remain private.
+    founder_claim_ids: [FC-004]
+    evidence_claim_ids: [EC-007, EC-008]
+    risk_ids: [R-005, R-009]
+    sections:
+      - section_id: III.A
+        title: Customers, case studies, and references
+        checklist_question_ids: [III.A.1, III.A.2, III.A.3]
+        summary: Snyk publicly cites hundreds of organizations and named customers, but
+          ARR concentration and active status need direct validation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Snyk customer pages cite hundreds of organizations and named logos
+              including Skyscanner, Okta, ICE/NYSE, Labelbox, TechnologyOne, Komatsu,
+              Snowflake, Spotify, Google, and AB InBev.
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-005]
+          - finding_id: III.A-F2
+            finding: Vendor-published outcomes are useful proof points but require direct
+              customer confirmation and contract-level reconciliation.
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-005]
+        hidden_risks:
+          - Public logo evidence may include inactive, low-ARR, or narrow-scope accounts.
+        evidence_gaps:
+          - Customer-level ARR, top-20 concentration, renewal dates, churn history, NPS,
+            support tickets, contract obligations, and reference permissions.
+        follow_up_questions:
+          - Provide top-50 customer ARR, renewal schedule, NRR/GRR cohorts, churn reasons,
+            support history, NPS, and permissioned customer references.
+        table_ids: [T-005]
+        figure_ids: [F-004]
+        evidence_claim_ids: [EC-007]
+      - section_id: III.B
+        title: Partners, integrations, and supplier dependencies
+        checklist_question_ids: [III.B.1, III.B.2, III.C.1]
+        summary: Snyk has broad integration and partner evidence, which creates both
+          distribution leverage and platform-dependency exposure.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public integrations span source-code management, CI/CD, issue
+              tracking, container registries, IDEs, and cloud ecosystems.
+            evidence_claim_ids: [EC-008]
+            risk_ids: [R-009]
+          - finding_id: III.B-F2
+            finding: Partner-sourced bookings, reseller economics, marketplace revenue,
+              and API/platform change risk are not public.
+            evidence_claim_ids: [EC-008]
+            risk_ids: [R-009]
+        hidden_risks:
+          - API, marketplace, or platform-policy changes could affect workflow access or
+            competitive positioning.
+        evidence_gaps:
+          - Partner pipeline/revenue, reseller contracts, marketplace performance,
+            co-sell terms, supplier concentration, cloud spend, and subprocessor list.
+        follow_up_questions:
+          - Provide partner-sourced revenue, reseller terms, integration usage by account,
+            API dependency map, cloud/infrastructure spend, and business continuity plans.
+        table_ids: [T-006]
+        figure_ids: []
+        evidence_claim_ids: [EC-008]
+
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: >-
+      Snyk operates in a crowded application-security and developer-security market
+      spanning GitHub/GitLab-native tools, legacy AppSec vendors, cloud-security
+      platforms, secrets scanners, and newer AI security entrants. Public evidence
+      supports competitive breadth but not market share, win rates, or pricing pressure.
+    founder_claim_ids: []
+    evidence_claim_ids: [EC-006, EC-009]
+    risk_ids: [R-003, R-004, R-010]
+    sections:
+      - section_id: IV.A
+        title: Competitive set and market positioning
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: CB Insights and Snyk comparison pages identify a broad competitive set
+          across platform-native, legacy AppSec, and specialized developer-security tools.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Snyk comparison pages target GitHub Advanced Security, GitLab, and
+              Veracode; CB Insights names additional specialized competitors.
+            evidence_claim_ids: [EC-009]
+            risk_ids: [R-003]
+          - finding_id: IV.A-F2
+            finding: Snyk's public differentiation centers on developer workflow,
+              remediation, AI, and platform breadth.
+            evidence_claim_ids: [EC-006, EC-009]
+            risk_ids: [R-003, R-004]
+        hidden_risks:
+          - Bundled tools from SCM and DevOps platforms may lower buyer willingness to
+            pay for standalone developer-security products.
+        evidence_gaps:
+          - Market share, win/loss, competitor replacement source, discounting, proof-of-
+            concept conversion, and analyst-report detail.
+        follow_up_questions:
+          - Provide win/loss by competitor, pipeline displacement data, discount approval
+            logs, proof-of-concept conversion rates, and competitive churn reasons.
+        table_ids: [T-007]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-006, EC-009]
+      - section_id: IV.B
+        title: Basis of competition and pricing pressure
+        checklist_question_ids: [IV.B.1, IV.B.2]
+        summary: Competition likely centers on developer workflow depth, platform breadth,
+          AI remediation quality, enterprise trust, and bundled-platform economics.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: IV.B-F1
+            finding: Snyk has credible public platform breadth, but the report cannot
+              verify win rates, market share, or competitive pricing pressure.
+            evidence_claim_ids: [EC-006, EC-009]
+            risk_ids: [R-003]
+          - finding_id: IV.B-F2
+            finding: AI-native code security and bundled SCM/DevOps security tools are
+              material strategic threats requiring customer and win/loss diligence.
+            evidence_claim_ids: [EC-009]
+            risk_ids: [R-010]
+        hidden_risks:
+          - A large competitor could bundle enough security capability to cap Snyk pricing.
+        evidence_gaps:
+          - Competitive win-rate data, customer replacement maps, pricing benchmarks,
+            buyer-budget wallet share, and competitor discounting.
+        follow_up_questions:
+          - Provide segmented win/loss, competitor pricing benchmarks, renewal discount
+            analysis, roadmap response to GitHub/GitLab/Wiz/legacy suites, and buyer-budget
+            analysis.
+        table_ids: [T-008]
+        figure_ids: []
+        evidence_claim_ids: [EC-009]
+
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: >-
+      Snyk appears to combine developer-led adoption, freemium/low-friction plans,
+      enterprise sales, partner/integration channels, and customer proof. The public
+      channel map is credible, but pipeline conversion, sales efficiency, partner
+      contribution, and demand-generation ROI are not public.
+    founder_claim_ids: [FC-003, FC-004]
+    evidence_claim_ids: [EC-005, EC-007, EC-008, EC-009, EC-013]
+    risk_ids: [R-002, R-003, R-005, R-009]
+    sections:
+      - section_id: V.A
+        title: Go-to-market motions
+        checklist_question_ids: [V.A.1, V.A.2]
+        summary: Public plans and integrations support product-led and developer-led entry
+          with enterprise conversion paths.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Free, Team, Ignite, and Enterprise plans support a developer-led to
+              enterprise GTM ladder.
+            evidence_claim_ids: [EC-005]
+            risk_ids: [R-002]
+          - finding_id: V.A-F2
+            finding: Customer pages and integrations support enterprise credibility and
+              workflow-led distribution, but channel contribution is not public.
+            evidence_claim_ids: [EC-007, EC-008]
+            risk_ids: [R-005, R-009]
+        hidden_risks:
+          - Sales productivity or partner contribution may be weaker than implied by
+            product and logo breadth.
+        evidence_gaps:
+          - Sales headcount by segment, pipeline source, conversion rates, partner-sourced
+            bookings, average sales cycle, and enterprise seat utilization.
+        follow_up_questions:
+          - Provide pipeline source mix, funnel conversion, ACV and sales cycle by segment,
+            partner-sourced ARR, win-rate by channel, self-serve-to-enterprise conversion,
+            and sales capacity plan.
+        table_ids: [T-009]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-005, EC-007, EC-008]
+      - section_id: V.B
+        title: Marketing signals and enterprise procurement
+        checklist_question_ids: [V.B.1, V.B.2, V.C.1]
+        summary: Category positioning, comparison pages, customer proof, and compliance
+          claims support enterprise demand generation but not conversion economics.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Snyk's "AI security company" positioning and competitor comparison
+              pages suggest high-intent category marketing.
+            evidence_claim_ids: [EC-004, EC-009]
+            risk_ids: [R-003]
+          - finding_id: V.B-F2
+            finding: Enterprise procurement likely depends on compliance and security
+              evidence that is only summarized publicly.
+            evidence_claim_ids: [EC-013]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Enterprise redlines, DPAs, and security exceptions may slow sales cycles or
+            increase liability exposure.
+        evidence_gaps:
+          - Marketing spend, MQL-to-SQL conversion, channel CAC, event ROI, brand-search
+            trends, procurement redlines, and security exception logs.
+        follow_up_questions:
+          - Provide demand-generation spend by channel, source-to-close attribution, CAC by
+            channel, web conversion, procurement redlines, and security exception history.
+        table_ids: [T-010]
+        figure_ids: []
+        evidence_claim_ids: [EC-004, EC-009, EC-013]
+
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: >-
+      Snyk product pages and IP signals indicate ongoing R&D investment in AI-assisted
+      developer security, AppRisk, SCA, containers, and IaC. Public sources do not disclose
+      engineering headcount allocation, model governance, vulnerability-research process,
+      roadmap commitments, or R&D accounting.
+    founder_claim_ids: [FC-002]
+    evidence_claim_ids: [EC-004, EC-006, EC-014]
+    risk_ids: [R-004, R-007, R-010]
+    sections:
+      - section_id: VI.A
+        title: R&D organization and product pipeline
+        checklist_question_ids: [VI.A.1, VI.A.2]
+        summary: Public product pages show a multi-module R&D surface, but technical
+          execution and roadmap evidence remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Snyk's public R&D surface spans code, dependency/license, container,
+              IaC, AppRisk, and AI remediation workflows.
+            evidence_claim_ids: [EC-006]
+            risk_ids: [R-004, R-010]
+          - finding_id: VI.A-F2
+            finding: The public roadmap does not disclose delivery confidence, technical
+              debt, AI safety validation, or R&D spend allocation.
+            evidence_claim_ids: [EC-006]
+            risk_ids: [R-004, R-010]
+        hidden_risks:
+          - Weak model governance or vulnerability-intelligence provenance could undermine
+            customer trust.
+        evidence_gaps:
+          - Engineering headcount by module, R&D budget, roadmap burnup, technical-debt
+            backlog, model governance, and vulnerability-research process.
+        follow_up_questions:
+          - Provide R&D headcount by team, roadmap and delivery metrics, AI/model
+            governance, vulnerability-research process, technical-debt register, product
+            incident history, and R&D capitalization policy.
+        table_ids: [T-011]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-006]
+      - section_id: VI.B
+        title: Technology defensibility and intellectual property
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.D.1]
+        summary: Public IP signals exist, but patents, trademarks, assignments, OSS
+          obligations, and AI/data rights require legal/technical review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: CB Insights reports 9 patents and Justia shows Snyk-related marks.
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-007]
+          - finding_id: VI.B-F2
+            finding: No patent-claim chart, invention assignment review, open-source
+              license audit, trade-secret process, or AI training-data rights review was
+              available.
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-007, R-010]
+        hidden_risks:
+          - OSS or data-rights gaps could affect a developer-security business that scans
+            code and depends on vulnerability intelligence.
+        evidence_gaps:
+          - Patent applications, assignment history, employee invention agreements, OSS
+            license scans, third-party code provenance, AI training-data rights, and
+            trade-secret procedures.
+        follow_up_questions:
+          - Provide patent portfolio report, invention assignments, OSS license audit,
+            AI training-data provenance, security research IP ownership, third-party code
+            provenance, and litigation/non-infringement analysis.
+        table_ids: [T-012]
+        figure_ids: []
+        evidence_claim_ids: [EC-014]
+
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: >-
+      Snyk has public evidence of scale, global offices, a 1,000+ employee base, and a
+      current leadership roster. A notable diligence item is leadership transition because
+      current Snyk pages list Ken MacAskill as interim CEO/CFO while some secondary
+      sources may still show prior CEO information.
+    founder_claim_ids: [FC-005]
+    evidence_claim_ids: [EC-003, EC-004, EC-010, EC-011, EC-012]
+    risk_ids: [R-008]
+    sections:
+      - section_id: VII.A
+        title: Leadership team and board
+        checklist_question_ids: [VII.A.1, VII.A.2]
+        summary: Current Snyk leadership pages list an interim CEO/CFO and a senior
+          leadership roster; board pages list founder and investor/operator directors.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Snyk lists Ken MacAskill as Chief Executive Officer & CFO and
+              describes him as interim CEO.
+            evidence_claim_ids: [EC-011]
+            risk_ids: [R-008]
+          - finding_id: VII.A-F2
+            finding: The board page lists Guy Podjarny as Chairman & Founder and includes
+              several operator/investor directors and advisors.
+            evidence_claim_ids: [EC-012]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Interim CEO/CFO role combination can create succession, bandwidth, retention,
+            and customer-confidence questions.
+        evidence_gaps:
+          - Board minutes, succession plan, executive employment agreements, compensation,
+            retention grants, option repricing, and key-person insurance.
+        follow_up_questions:
+          - Provide management org chart, succession plan, executive agreements,
+            compensation/retention plan, board minutes for CEO transition, key-person
+            coverage, and option refresh/repricing details.
+        table_ids: [T-013]
+        figure_ids: [F-008, F-009]
+        evidence_claim_ids: [EC-011, EC-012]
+      - section_id: VII.B
+        title: Headcount, hiring, and geographic footprint
+        checklist_question_ids: [VII.B.1, VII.B.2, VII.C.1]
+        summary: Snyk states it has a global team over 1,000 employees and global offices;
+          a secondary 2022 employee count should be reconciled to current headcount.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Current Snyk careers language says the company has a global team of
+              over 1,000 employees.
+            evidence_claim_ids: [EC-010]
+            risk_ids: [R-008]
+          - finding_id: VII.B-F2
+            finding: A secondary source reports 1,400 employees in 2022, creating a trend
+              ambiguity that requires company confirmation.
+            evidence_claim_ids: [EC-003, EC-010]
+            risk_ids: [R-008]
+        hidden_risks:
+          - The apparent gap between 2022 and current public headcount anchors could
+            reflect layoffs, stale data, contractor definitions, or changed disclosure.
+        evidence_gaps:
+          - Actual headcount by function/region, contractor count, attrition, hiring plan,
+            office commitments, layoffs/restructuring history, and employee claims.
+        follow_up_questions:
+          - Provide headcount bridge, attrition and regretted-loss data, contractor/vendor
+            population, hiring plan, restructuring history, office leases, and employee
+            engagement survey summaries.
+        table_ids: [T-014]
+        figure_ids: []
+        evidence_claim_ids: [EC-003, EC-004, EC-010]
+
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: >-
+      Snyk is an active private company with public privacy, terms, security, compliance,
+      and trademark evidence. No legal clearance should be inferred: litigation, customer
+      obligations, employment matters, IP chain of title, DPAs, subprocessors, insurance,
+      sanctions/export controls, and regulatory correspondence require private review.
+    founder_claim_ids: [FC-005, FC-006]
+    evidence_claim_ids: [EC-002, EC-013, EC-014, EC-016]
+    risk_ids: [R-006, R-007]
+    sections:
+      - section_id: VIII.A
+        title: Corporate status, litigation, and entity structure
+        checklist_question_ids: [VIII.A.1, VIII.B.1, VIII.B.2]
+        summary: Companies House confirms SNYK LIMITED is active, but global entity
+          structure, litigation, claims, insurance, and change-of-control consents are not
+          public.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: SNYK LIMITED is an active UK private limited company incorporated on
+              2015-07-09.
+            evidence_claim_ids: [EC-002]
+            risk_ids: [R-007]
+          - finding_id: VIII.A-F2
+            finding: Accessible public sources reviewed in this run did not provide
+              comprehensive litigation or dispute clearance.
+            evidence_claim_ids: [EC-016]
+            risk_ids: [R-006, R-007]
+        hidden_risks:
+          - Unseen disputes, indemnity claims, insurance exclusions, or entity-level
+            consent rights could affect transaction risk.
+        evidence_gaps:
+          - Full entity org chart, charter documents, board/investor consents, litigation
+            dockets, settlement agreements, insurance policies, loss runs, and claims logs.
+        follow_up_questions:
+          - Provide entity chart, constitutional documents, board minutes/consents,
+            investor approval rights, counsel-run docket searches, claims register,
+            settlements, insurance policies, and loss runs.
+        table_ids: [T-015]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-002, EC-016]
+      - section_id: VIII.B
+        title: IP, privacy, security, and regulatory obligations
+        checklist_question_ids: [VIII.C.1, VIII.D.1, VIII.F.1, VIII.G.1]
+        summary: Public sources show trademarks/patent signals and compliance/security
+          posture claims, but detailed IP, OSS, DPA, audit, incident, and regulatory
+          materials require private review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Justia and CB Insights provide public IP signals, including
+              Snyk-related trademarks and a reported patent count.
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-007]
+          - finding_id: VIII.B-F2
+            finding: Snyk public pages reference encryption, SOC 2 Type II, GDPR, ISO
+              27001/27017, FedRAMP options, and data residency, but audit packages and
+              customer-specific obligations are not public.
+            evidence_claim_ids: [EC-013, EC-016]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Code scanning, vulnerability intelligence, and AI remediation create sensitive
+            data, IP, privacy, and contractual risk surfaces.
+        evidence_gaps:
+          - Patent/trademark files, IP assignments, OSS audit, AI/data rights, SOC2/ISO
+            evidence, FedRAMP package, DPAs, subprocessor list, incident history, export
+            controls, and regulated-customer obligations.
+        follow_up_questions:
+          - Provide IP schedule, assignment agreements, OSS compliance audit, data licenses,
+            AI input/output policies, SOC 2/ISO/FedRAMP evidence, DPAs, subprocessors,
+            incident logs, and export-control assessment.
+        table_ids: [T-016]
+        figure_ids: [F-011]
+        evidence_claim_ids: [EC-013, EC-014, EC-016]
+
+tables:
+  - table_id: T-001
+    title: Public funding and valuation history
+    chapter_id: I
+    section_id: I.B
+    purpose: Summarize publicly visible financing and valuation anchors and identify
+      private financing diligence needs.
+    columns:
+      - name: date
+        description: Public date or period.
+      - name: event
+        description: Financing or corporate event.
+      - name: amount_or_valuation
+        description: Public amount or valuation signal.
+      - name: diligence_caveat
+        description: Follow-up needed to underwrite the signal.
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2020-01-21
+          event: CB Insights unicorn tracker date joined.
+          amount_or_valuation: $7.40B valuation in current tracker.
+          diligence_caveat: Verify valuation methodology, last priced round, and current
+            preference stack.
+        evidence_claim_ids: [EC-001]
+        source_ids: [S-001]
+      - row_id: T-001-R2
+        values:
+          date: Current profile
+          event: CB Insights company profile funding signal.
+          amount_or_valuation: $1.247B total raised per profile.
+          diligence_caveat: Does not disclose preferences, debt, secondaries, warrants, or
+            runway.
+        evidence_claim_ids: [EC-015]
+        source_ids: [S-002]
+      - row_id: T-001-R3
+        values:
+          date: 2021
+          event: Secondary source peak valuation signal.
+          amount_or_valuation: $8.5B valuation signal reported by Wikipedia for a $300M round.
+          diligence_caveat: Obtain original round documents and board materials; treat as
+            secondary until verified.
+        evidence_claim_ids: [EC-003]
+        source_ids: [S-003]
+    evidence_claim_ids: [EC-001, EC-003, EC-015]
+    source_ids: [S-001, S-002, S-003]
+    notes: Public financing records are incomplete; do not infer full capitalization.
+
+  - table_id: T-002
+    title: Public revenue, profitability, and unit-economics signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Distinguish public financial signals from private financial diligence gaps.
+    columns:
+      - name: metric
+        description: Financial or operating metric.
+      - name: public_signal
+        description: Publicly visible evidence.
+      - name: verification_status
+        description: Evidence classification.
+      - name: diligence_request
+        description: Private record needed.
+    rows:
+      - row_id: T-002-R1
+        values:
+          metric: Revenue
+          public_signal: Secondary source reports US$220M revenue for 2023.
+          verification_status: partially_verified
+          diligence_request: Audited revenue by month, SKU, region, customer segment, and
+            contract type.
+        evidence_claim_ids: [EC-003]
+        source_ids: [S-003]
+      - row_id: T-002-R2
+        values:
+          metric: Net income / loss
+          public_signal: Secondary source reports US$176M net loss for 2023.
+          verification_status: partially_verified
+          diligence_request: Audited income statement, cash-flow statement, EBITDA bridge,
+            non-cash adjustments, and one-time items.
+        evidence_claim_ids: [EC-003]
+        source_ids: [S-003]
+      - row_id: T-002-R3
+        values:
+          metric: ARR / NRR / gross retention
+          public_signal: Not disclosed publicly.
+          verification_status: not_publicly_verifiable
+          diligence_request: ARR bridge, NRR/GRR by cohort, logo churn, expansion,
+            contraction, and downgrade reasons.
+        evidence_claim_ids: [EC-015]
+        source_ids: [S-002]
+      - row_id: T-002-R4
+        values:
+          metric: Gross margin and unit economics
+          public_signal: Pricing ladder indicates SaaS plans but not economics.
+          verification_status: not_publicly_verifiable
+          diligence_request: COGS by product, cloud spend, support cost, CAC, payback,
+            LTV/CAC, and services mix.
+        evidence_claim_ids: [EC-005]
+        source_ids: [S-007]
+    evidence_claim_ids: [EC-003, EC-005, EC-015]
+    source_ids: [S-002, S-003, S-007]
+    notes: Public financial signals are insufficient for valuation underwriting.
+
+  - table_id: T-003
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map Snyk's public product modules to buyer value and diligence tests.
+    columns:
+      - name: module
+        description: Public product module.
+      - name: public_capability
+        description: Capability described by Snyk.
+      - name: diligence_test
+        description: Diligence needed to validate value.
+    rows:
+      - row_id: T-003-R1
+        values:
+          module: Snyk Code
+          public_capability: Code scanning/SAST and AI-assisted fixes.
+          diligence_test: Measure false positives, fix acceptance, language coverage,
+            scan latency, and secure-code AI governance.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-009]
+      - row_id: T-003-R2
+        values:
+          module: Snyk Open Source
+          public_capability: Dependency vulnerability and license-compliance management.
+          diligence_test: Verify vulnerability database quality, license coverage, SBOM
+            output, and remediation accuracy.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-010]
+      - row_id: T-003-R3
+        values:
+          module: Snyk Container
+          public_capability: Container image and Kubernetes security.
+          diligence_test: Benchmark image scanning, base image recommendation value,
+            registry coverage, and runtime relevance.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-011]
+      - row_id: T-003-R4
+        values:
+          module: Snyk IaC
+          public_capability: Infrastructure-as-code misconfiguration detection.
+          diligence_test: Verify policy coverage, developer workflow adoption, and cloud
+            misconfiguration outcomes.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-012]
+      - row_id: T-003-R5
+        values:
+          module: Snyk AppRisk
+          public_capability: Application risk management, asset discovery, and prioritization.
+          diligence_test: Verify asset coverage, prioritization accuracy, executive
+            dashboard adoption, and CNAPP/ASPM overlap.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-013]
+    evidence_claim_ids: [EC-004, EC-006]
+    source_ids: [S-008, S-009, S-010, S-011, S-012, S-013]
+    notes: Product existence is public; adoption and economics are private.
+
+  - table_id: T-004
+    title: Public packaging and pricing signals
+    chapter_id: II
+    section_id: II.B
+    purpose: Summarize public plan ladder and pricing diligence needs.
+    columns:
+      - name: plan
+        description: Public package.
+      - name: target_customer
+        description: Buyer segment.
+      - name: public_features
+        description: Publicly described feature emphasis.
+      - name: diligence_gap
+        description: Private pricing data needed.
+    rows:
+      - row_id: T-004-R1
+        values:
+          plan: Free
+          target_customer: Individual developers and small teams.
+          public_features: Entry-level scanning and developer adoption.
+          diligence_gap: Conversion rate, support burden, abuse controls, and paid-upgrade paths.
+        evidence_claim_ids: [EC-005]
+        source_ids: [S-007]
+      - row_id: T-004-R2
+        values:
+          plan: Team
+          target_customer: Development teams.
+          public_features: Team-level Snyk security coverage.
+          diligence_gap: Paid-seat utilization, churn, ARPU, and discounting.
+        evidence_claim_ids: [EC-005]
+        source_ids: [S-007]
+      - row_id: T-004-R3
+        values:
+          plan: Ignite
+          target_customer: Organizations with under 50 developers.
+          public_features: Broader governance and reporting for smaller organizations.
+          diligence_gap: Upgrade rate to Enterprise, margin, and discounting by account size.
+        evidence_claim_ids: [EC-005]
+        source_ids: [S-007]
+      - row_id: T-004-R4
+        values:
+          plan: Enterprise
+          target_customer: Large organizations.
+          public_features: SSO, SBOMs, compliance, reporting, data residency, and FedRAMP options.
+          diligence_gap: ACV, renewal uplift, security addenda, DPAs, and procurement exceptions.
+        evidence_claim_ids: [EC-005, EC-013]
+        source_ids: [S-007, S-020]
+    evidence_claim_ids: [EC-005, EC-013]
+    source_ids: [S-007, S-020]
+    notes: Public plan labels do not reveal realized economics.
+
+  - table_id: T-005
+    title: Public customer and case-study evidence
+    chapter_id: III
+    section_id: III.A
+    purpose: Catalog public customers and the diligence needed to verify active status and economics.
+    columns:
+      - name: customer
+        description: Named public customer or customer set.
+      - name: public_use_case_or_outcome
+        description: Vendor-published public evidence.
+      - name: diligence_request
+        description: Direct verification needed.
+    rows:
+      - row_id: T-005-R1
+        values:
+          customer: Skyscanner
+          public_use_case_or_outcome: Vendor-published case study says nearly 500 projects
+            were monitored and security shifted left.
+          diligence_request: Obtain direct customer reference and contract metrics.
+        evidence_claim_ids: [EC-007]
+        source_ids: [S-015]
+      - row_id: T-005-R2
+        values:
+          customer: Okta
+          public_use_case_or_outcome: Customer quote tied to Snyk Code / AI static analysis
+            appears on Snyk customer page.
+          diligence_request: Confirm usage, ARR, renewal status, and procurement terms.
+        evidence_claim_ids: [EC-007]
+        source_ids: [S-014]
+      - row_id: T-005-R3
+        values:
+          customer: ICE / NYSE
+          public_use_case_or_outcome: Customer page cites TEI benefits and remediation-speed claims.
+          diligence_request: Review underlying study, implementation scope, and contract value.
+        evidence_claim_ids: [EC-007]
+        source_ids: [S-014]
+      - row_id: T-005-R4
+        values:
+          customer: Google, AB InBev, Spotify, Snowflake, Komatsu, TechnologyOne, Labelbox
+          public_use_case_or_outcome: Named examples appear on Snyk customer/about pages.
+          diligence_request: Confirm active status, ARR, renewal, scope, and logo rights.
+        evidence_claim_ids: [EC-004, EC-007]
+        source_ids: [S-005, S-014]
+    evidence_claim_ids: [EC-004, EC-007]
+    source_ids: [S-005, S-014, S-015]
+    notes: Vendor-published customer evidence is not a substitute for reference calls.
+
+  - table_id: T-006
+    title: Strategic relationships and integration dependency map
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify ecosystem leverage and supplier/platform dependency risk.
+    columns:
+      - name: relationship_category
+        description: Integration or partner category.
+      - name: examples_publicly_visible
+        description: Public examples.
+      - name: business_role
+        description: Why it matters.
+      - name: diligence_gap
+        description: Private data needed.
+    rows:
+      - row_id: T-006-R1
+        values:
+          relationship_category: Source-code management
+          examples_publicly_visible: GitHub, GitLab, Bitbucket, Azure Repos.
+          business_role: Core developer workflow entry point.
+          diligence_gap: API dependency, marketplace performance, change-of-policy risk,
+            co-sell or partnership terms.
+        evidence_claim_ids: [EC-008]
+        source_ids: [S-016]
+      - row_id: T-006-R2
+        values:
+          relationship_category: CI/CD and issue tracking
+          examples_publicly_visible: Jenkins, Jira and workflow tooling categories.
+          business_role: Remediation workflow and developer notification.
+          diligence_gap: Integration usage by account, maintenance burden, and partner SLAs.
+        evidence_claim_ids: [EC-008]
+        source_ids: [S-016]
+      - row_id: T-006-R3
+        values:
+          relationship_category: Cloud, registry, and container ecosystem
+          examples_publicly_visible: AWS, Azure, Google Cloud, Docker, Kubernetes categories.
+          business_role: Container, IaC, and cloud-risk coverage.
+          diligence_gap: Cloud marketplace ARR, registry API limits, policy dependencies.
+        evidence_claim_ids: [EC-008]
+        source_ids: [S-016]
+      - row_id: T-006-R4
+        values:
+          relationship_category: Reseller / solution partner ecosystem
+          examples_publicly_visible: Snyk partner directory categories.
+          business_role: Implementation and channel reach.
+          diligence_gap: Partner-sourced bookings, margin, rev-share, partner concentration.
+        evidence_claim_ids: [EC-008]
+        source_ids: [S-017]
+    evidence_claim_ids: [EC-008]
+    source_ids: [S-016, S-017]
+    notes: Integration breadth creates both distribution and operational dependency.
+
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Map public competitor evidence to Snyk positioning questions.
+    columns:
+      - name: competitor_or_category
+        description: Competitor or competitor category.
+      - name: segment_overlap
+        description: Overlapping buyer problem.
+      - name: Snyk_positioning
+        description: Public positioning.
+      - name: diligence_question
+        description: Follow-up test.
+    rows:
+      - row_id: T-007-R1
+        values:
+          competitor_or_category: GitHub Advanced Security / SCM-native security
+          segment_overlap: Code scanning, dependency scanning, secret scanning, developer workflow.
+          Snyk_positioning: Independent multi-platform developer security.
+          diligence_question: Win/loss versus bundled SCM security and attach/renewal impact.
+        evidence_claim_ids: [EC-009]
+        source_ids: [S-024]
+      - row_id: T-007-R2
+        values:
+          competitor_or_category: GitLab security
+          segment_overlap: DevSecOps platform-native security.
+          Snyk_positioning: Cross-platform breadth and remediation.
+          diligence_question: Budget displacement versus bundled DevOps suites.
+        evidence_claim_ids: [EC-009]
+        source_ids: [S-026]
+      - row_id: T-007-R3
+        values:
+          competitor_or_category: Veracode and legacy AppSec suites
+          segment_overlap: SAST, SCA, enterprise AppSec governance.
+          Snyk_positioning: Developer-first workflow and remediation.
+          diligence_question: Replacement versus coexistence, regulated-enterprise preferences, price pressure.
+        evidence_claim_ids: [EC-009]
+        source_ids: [S-025]
+      - row_id: T-007-R4
+        values:
+          competitor_or_category: GitGuardian and specialized developer-security vendors
+          segment_overlap: Secrets, code risk, and adjacent developer workflows.
+          Snyk_positioning: Broader platform breadth.
+          diligence_question: Need specialized acquisitions or integrations for best-of-breed gaps.
+        evidence_claim_ids: [EC-009]
+        source_ids: [S-002]
+    evidence_claim_ids: [EC-009]
+    source_ids: [S-002, S-024, S-025, S-026]
+    notes: Vendor comparison pages are useful positioning evidence but not neutral win-rate data.
+
+  - table_id: T-008
+    title: Basis of competition scoring
+    chapter_id: IV
+    section_id: IV.B
+    purpose: Score public competitive dimensions and identify validation work.
+    columns:
+      - name: axis
+        description: Competitive dimension.
+      - name: Snyk_public_position
+        description: Publicly evidenced position.
+      - name: competitor_pressure
+        description: Main pressure source.
+      - name: follow_up
+        description: Diligence request.
+    rows:
+      - row_id: T-008-R1
+        values:
+          axis: Developer workflow breadth
+          Snyk_public_position: Strong public evidence across SCM/CI/CD/IDE/container/cloud integrations.
+          competitor_pressure: Bundled SCM/DevOps platforms.
+          follow_up: Measure active usage and attach by integration.
+        evidence_claim_ids: [EC-006, EC-008, EC-009]
+        source_ids: [S-008, S-016, S-024]
+      - row_id: T-008-R2
+        values:
+          axis: Platform breadth
+          Snyk_public_position: Code, SCA, Container, IaC, AppRisk.
+          competitor_pressure: CNAPP, ASPM, AppSec suites, point tools.
+          follow_up: ARR and retention by module.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-008, S-009, S-010, S-011, S-012, S-013]
+      - row_id: T-008-R3
+        values:
+          axis: AI remediation
+          Snyk_public_position: AI security and DeepCode-style positioning.
+          competitor_pressure: AI coding assistants and AI-native AppSec entrants.
+          follow_up: Model evals, fix acceptance, liability terms.
+        evidence_claim_ids: [EC-004, EC-006]
+        source_ids: [S-005, S-009]
+      - row_id: T-008-R4
+        values:
+          axis: Enterprise trust/compliance
+          Snyk_public_position: SOC2/GDPR/ISO/FedRAMP/data-residency signals.
+          competitor_pressure: Established AppSec and cloud-security vendors.
+          follow_up: Review audit reports and customer security exceptions.
+        evidence_claim_ids: [EC-005, EC-013]
+        source_ids: [S-007, S-020]
+    evidence_claim_ids: [EC-004, EC-006, EC-008, EC-009, EC-013]
+    source_ids: [S-005, S-007, S-008, S-016, S-020, S-024]
+    notes: Scoring is analyst judgment from public evidence and requires customer validation.
+
+  - table_id: T-009
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Convert public packaging and ecosystem evidence into a channel diligence map.
+    columns:
+      - name: channel
+        description: GTM channel or motion.
+      - name: public_signal
+        description: Public evidence.
+      - name: likely_role
+        description: Likely GTM role.
+      - name: diligence_metric_needed
+        description: Private KPI needed.
+    rows:
+      - row_id: T-009-R1
+        values:
+          channel: Developer-led free/self-serve
+          public_signal: Free plan and developer workflow integrations.
+          likely_role: Usage seeding and product-led acquisition.
+          diligence_metric_needed: Free-to-paid conversion, active usage, abuse/support costs.
+        evidence_claim_ids: [EC-005, EC-008]
+        source_ids: [S-007, S-016]
+      - row_id: T-009-R2
+        values:
+          channel: Team and Ignite paid plans
+          public_signal: Public Team and Ignite packaging.
+          likely_role: Paid expansion and land-and-expand bridge.
+          diligence_metric_needed: ARPU, churn, conversion to Enterprise, utilization.
+        evidence_claim_ids: [EC-005]
+        source_ids: [S-007]
+      - row_id: T-009-R3
+        values:
+          channel: Enterprise direct sales
+          public_signal: Enterprise plan, compliance capabilities, and named customers.
+          likely_role: Primary large-account monetization.
+          diligence_metric_needed: ACV, sales cycle, pipeline coverage, discounting, win/loss.
+        evidence_claim_ids: [EC-005, EC-007, EC-013]
+        source_ids: [S-007, S-014, S-020]
+      - row_id: T-009-R4
+        values:
+          channel: Partner/reseller/integration ecosystem
+          public_signal: Partner directory and integrations.
+          likely_role: Distribution leverage and platform stickiness.
+          diligence_metric_needed: Partner-sourced pipeline, reseller margin, marketplace revenue.
+        evidence_claim_ids: [EC-008]
+        source_ids: [S-016, S-017]
+    evidence_claim_ids: [EC-005, EC-007, EC-008, EC-013]
+    source_ids: [S-007, S-014, S-016, S-017, S-020]
+    notes: Channel weights are not disclosed publicly.
+
+  - table_id: T-010
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.B
+    purpose: Summarize public demand-generation signals and related gaps.
+    columns:
+      - name: signal
+        description: Public marketing signal.
+      - name: evidence
+        description: Evidence found.
+      - name: interpretation
+        description: Analyst interpretation.
+      - name: diligence_gap
+        description: Private KPI or record needed.
+    rows:
+      - row_id: T-010-R1
+        values:
+          signal: Category positioning
+          evidence: AI security company and developer-security platform language.
+          interpretation: Snyk is refreshing AppSec positioning around AI and developer workflows.
+          diligence_gap: Message testing, pipeline influence, brand-search conversion.
+        evidence_claim_ids: [EC-004]
+        source_ids: [S-005]
+      - row_id: T-010-R2
+        values:
+          signal: Customer proof
+          evidence: Named customers and case-study outcomes.
+          interpretation: Supports enterprise credibility but is vendor-curated.
+          diligence_gap: Reference calls, logo-rights agreements, active-customer status.
+        evidence_claim_ids: [EC-007]
+        source_ids: [S-014, S-015]
+      - row_id: T-010-R3
+        values:
+          signal: Competitive landing pages
+          evidence: Comparison pages against GitHub Advanced Security, Veracode, GitLab.
+          interpretation: High-intent acquisition and differentiation tactic.
+          diligence_gap: Traffic, conversion rate, influenced pipeline, competitor-specific win rates.
+        evidence_claim_ids: [EC-009]
+        source_ids: [S-024, S-025, S-026]
+      - row_id: T-010-R4
+        values:
+          signal: Enterprise trust
+          evidence: Public security/compliance posture and data-residency features.
+          interpretation: Security posture likely supports enterprise procurement.
+          diligence_gap: Audit packages, security exceptions, DPAs, and procurement redlines.
+        evidence_claim_ids: [EC-013]
+        source_ids: [S-007, S-020, S-021]
+    evidence_claim_ids: [EC-004, EC-007, EC-009, EC-013]
+    source_ids: [S-005, S-007, S-014, S-015, S-020, S-021, S-024, S-025, S-026]
+    notes: Marketing efficiency cannot be inferred from public evidence alone.
+
+  - table_id: T-011
+    title: Public product and R&D pipeline map
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Map public product initiatives to R&D diligence questions.
+    columns:
+      - name: initiative
+        description: Public initiative.
+      - name: public_status
+        description: Public evidence.
+      - name: RnD_question
+        description: Follow-up topic.
+    rows:
+      - row_id: T-011-R1
+        values:
+          initiative: AI-assisted code remediation
+          public_status: Marketed via Snyk Code and AI positioning.
+          RnD_question: Fix acceptance, model accuracy, secure-code outcomes, liability boundaries.
+        evidence_claim_ids: [EC-004, EC-006]
+        source_ids: [S-005, S-009]
+      - row_id: T-011-R2
+        values:
+          initiative: Application risk management
+          public_status: Snyk AppRisk product page.
+          RnD_question: Asset discovery accuracy, prioritization quality, integration maintenance.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-013]
+      - row_id: T-011-R3
+        values:
+          initiative: SCA/SBOM/license governance
+          public_status: Snyk Open Source and plan features.
+          RnD_question: License data accuracy, vulnerability feed quality, SBOM adoption.
+        evidence_claim_ids: [EC-005, EC-006]
+        source_ids: [S-007, S-010]
+      - row_id: T-011-R4
+        values:
+          initiative: Container and IaC expansion
+          public_status: Container and IaC product pages.
+          RnD_question: Cloud-provider coverage, Kubernetes relevance, drift/runtime signal,
+            CNAPP overlap.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-011, S-012]
+    evidence_claim_ids: [EC-004, EC-005, EC-006]
+    source_ids: [S-005, S-007, S-009, S-010, S-011, S-012, S-013]
+    notes: Roadmap and delivery metrics are private.
+
+  - table_id: T-012
+    title: Technology defensibility and IP review table
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Summarize public technical defensibility signals and legal/technical review needs.
+    columns:
+      - name: signal
+        description: Public defensibility signal.
+      - name: public_evidence
+        description: Source evidence.
+      - name: risk_or_opportunity
+        description: Why it matters.
+      - name: diligence_request
+        description: Follow-up request.
+    rows:
+      - row_id: T-012-R1
+        values:
+          signal: Patents
+          public_evidence: CB Insights reports 9 patents filed.
+          risk_or_opportunity: Some visible IP footprint, but claim scope unknown.
+          diligence_request: Patent family list, assignments, prosecution status, claim chart, FTO review.
+        evidence_claim_ids: [EC-014]
+        source_ids: [S-002]
+      - row_id: T-012-R2
+        values:
+          signal: Trademarks
+          public_evidence: Justia search results show SNYK and related marks.
+          risk_or_opportunity: Brand and acquisition-history assets need chain-of-title review.
+          diligence_request: Official trademark files, renewals, assignments, oppositions, and mark-use evidence.
+        evidence_claim_ids: [EC-014]
+        source_ids: [S-023]
+      - row_id: T-012-R3
+        values:
+          signal: AI/security data assets
+          public_evidence: Snyk positions AI-assisted code security and vulnerability management.
+          risk_or_opportunity: Potential differentiation and liability/data-rights exposure.
+          diligence_request: Model cards, data provenance, evaluation metrics, vulnerability database licenses.
+        evidence_claim_ids: [EC-004, EC-006]
+        source_ids: [S-005, S-008, S-009]
+      - row_id: T-012-R4
+        values:
+          signal: Open-source compliance
+          public_evidence: Snyk Open Source and license-compliance product positioning.
+          risk_or_opportunity: Product credibility depends on license-data accuracy and internal OSS compliance.
+          diligence_request: Internal OSS audit, third-party code provenance, and customer deliverable review.
+        evidence_claim_ids: [EC-006]
+        source_ids: [S-010]
+    evidence_claim_ids: [EC-004, EC-006, EC-014]
+    source_ids: [S-002, S-005, S-008, S-009, S-010, S-023]
+    notes: IP and OSS claims require counsel and technical audit.
+
+  - table_id: T-013
+    title: Senior management and board roster
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Capture current public leadership roster and diligence focus.
+    columns:
+      - name: name
+        description: Person publicly listed.
+      - name: public_role
+        description: Public role.
+      - name: source
+        description: Public source.
+      - name: diligence_focus
+        description: Follow-up area.
+    rows:
+      - row_id: T-013-R1
+        values:
+          name: Ken MacAskill
+          public_role: Chief Executive Officer & CFO; described as interim CEO.
+          source: Snyk leadership page.
+          diligence_focus: Succession plan, CFO bandwidth, CEO transition, retention plan.
+        evidence_claim_ids: [EC-011]
+        source_ids: [S-018]
+      - row_id: T-013-R2
+        values:
+          name: Lindsey Bennett
+          public_role: Chief Accounting Officer.
+          source: Snyk leadership page.
+          diligence_focus: Accounting controls, close process, audit readiness.
+        evidence_claim_ids: [EC-011]
+        source_ids: [S-018]
+      - row_id: T-013-R3
+        values:
+          name: Diana Brunelle
+          public_role: Chief People Officer.
+          source: Snyk leadership page.
+          diligence_focus: Attrition, hiring plan, compensation, culture.
+        evidence_claim_ids: [EC-011]
+        source_ids: [S-018]
+      - row_id: T-013-R4
+        values:
+          name: Manoj Nair
+          public_role: Chief Innovation Officer.
+          source: Snyk leadership page.
+          diligence_focus: R&D roadmap and AI/product governance.
+        evidence_claim_ids: [EC-011]
+        source_ids: [S-018]
+      - row_id: T-013-R5
+        values:
+          name: Tom Nielsen
+          public_role: Chief Revenue Officer.
+          source: Snyk leadership page.
+          diligence_focus: GTM productivity, pipeline, renewals, customer concentration.
+        evidence_claim_ids: [EC-011]
+        source_ids: [S-018]
+      - row_id: T-013-R6
+        values:
+          name: Guy Podjarny
+          public_role: Chairman & Founder.
+          source: Snyk board page.
+          diligence_focus: Founder continuity, governance, IP assignment, strategic oversight.
+        evidence_claim_ids: [EC-012]
+        source_ids: [S-019]
+    evidence_claim_ids: [EC-011, EC-012]
+    source_ids: [S-018, S-019]
+    notes: Public role list should be validated against management org chart and board materials.
+
+  - table_id: T-014
+    title: Headcount and geography signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Summarize public employee-count and location anchors.
+    columns:
+      - name: signal
+        description: Public people/geography signal.
+      - name: public_value
+        description: Public value.
+      - name: source
+        description: Public source.
+      - name: diligence_caveat
+        description: Follow-up needed.
+    rows:
+      - row_id: T-014-R1
+        values:
+          signal: Employee count 2022
+          public_value: 1,400 employees in secondary source.
+          source: Wikipedia.
+          diligence_caveat: Definition and date require company confirmation.
+        evidence_claim_ids: [EC-003]
+        source_ids: [S-003]
+      - row_id: T-014-R2
+        values:
+          signal: Current public headcount language
+          public_value: Global team of over 1,000 employees.
+          source: Snyk careers.
+          diligence_caveat: May indicate contraction or definitional difference versus 2022 secondary figure.
+        evidence_claim_ids: [EC-010]
+        source_ids: [S-006]
+      - row_id: T-014-R3
+        values:
+          signal: Headquarters and offices
+          public_value: Boston headquarters; offices include Boston, Bucharest, Cluj, Lisbon,
+            London, Ottawa, Singapore, Sydney, Tel Aviv, Tokyo, Zurich.
+          source: Snyk about.
+          diligence_caveat: Lease commitments and employment-law exposure require review.
+        evidence_claim_ids: [EC-004]
+        source_ids: [S-005]
+    evidence_claim_ids: [EC-003, EC-004, EC-010]
+    source_ids: [S-003, S-005, S-006]
+    notes: Headcount trend requires company payroll and HRIS records.
+
+  - table_id: T-015
+    title: Corporate and litigation diligence table
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Combine public corporate status with unresolved legal-review requests.
+    columns:
+      - name: matter
+        description: Legal or corporate matter.
+      - name: public_status
+        description: Public evidence.
+      - name: verification_status
+        description: Evidence status.
+      - name: diligence_request
+        description: Private review required.
+    rows:
+      - row_id: T-015-R1
+        values:
+          matter: SNYK LIMITED corporate status
+          public_status: Active private limited company incorporated 2015-07-09.
+          verification_status: verified
+          diligence_request: Full legal entity chart and all material subsidiaries/branches.
+        evidence_claim_ids: [EC-002]
+        source_ids: [S-004]
+      - row_id: T-015-R2
+        values:
+          matter: Pending lawsuits against Snyk
+          public_status: No comprehensive docket search available in this run.
+          verification_status: not_publicly_verifiable
+          diligence_request: Counsel-run docket searches in US, UK, EU, Israel, and material
+            operating jurisdictions.
+        evidence_claim_ids: [EC-016]
+        source_ids: [S-022]
+      - row_id: T-015-R3
+        values:
+          matter: Threatened claims, settlements, indemnities, insurance
+          public_status: Not public.
+          verification_status: not_publicly_verifiable
+          diligence_request: Claims register, demand letters, settlement agreements,
+            indemnity notices, cyber/E&O/D&O policies, and loss runs.
+        evidence_claim_ids: [EC-016]
+        source_ids: [S-020, S-022]
+    evidence_claim_ids: [EC-002, EC-016]
+    source_ids: [S-004, S-020, S-022]
+    notes: Absence of public docket review is not legal clearance.
+
+  - table_id: T-016
+    title: IP, regulatory, privacy, and customer-contract review table
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Summarize public IP/compliance signals and private legal diligence requests.
+    columns:
+      - name: topic
+        description: Legal topic.
+      - name: public_signal
+        description: Public evidence.
+      - name: risk
+        description: Risk area.
+      - name: diligence_request
+        description: Private material requested.
+    rows:
+      - row_id: T-016-R1
+        values:
+          topic: Trademarks and patents
+          public_signal: Justia lists Snyk-related marks; CB Insights reports 9 filed patents.
+          risk: Ownership, scope, renewals, assignments, and freedom-to-operate remain unverified.
+          diligence_request: Official patent/trademark files, assignment chain, claim charts,
+            FTO review, and acquisition IP schedules.
+        evidence_claim_ids: [EC-014]
+        source_ids: [S-002, S-023]
+      - row_id: T-016-R2
+        values:
+          topic: Privacy and data protection
+          public_signal: Privacy policy publicly available.
+          risk: Cross-border transfer, processor/controller obligations, code telemetry, and
+            sensitive security data.
+          diligence_request: DPAs, subprocessor list, DPIAs, transfer assessments, incident logs,
+            and privacy counsel memo.
+        evidence_claim_ids: [EC-013, EC-016]
+        source_ids: [S-021]
+      - row_id: T-016-R3
+        values:
+          topic: Enterprise security commitments
+          public_signal: Security and plan pages reference encryption, SOC 2 Type II, GDPR,
+            ISO 27001/27017, FedRAMP options, and data residency.
+          risk: Customer-specific exceptions and audit obligations may exceed public terms.
+          diligence_request: SOC 2 report, ISO certificates, FedRAMP package, security
+            questionnaire exceptions, and customer audit rights.
+        evidence_claim_ids: [EC-013]
+        source_ids: [S-007, S-020]
+      - row_id: T-016-R4
+        values:
+          topic: Terms, indemnities, export controls, and regulated customers
+          public_signal: Public terms are available; enterprise MSAs are private.
+          risk: Enterprise liability caps, IP/security indemnities, sanctions/export controls,
+            and regulated-customer requirements.
+          diligence_request: Top customer MSAs, liability caps, indemnities, export-control
+            assessment, sanctions screening, and regulated-customer obligations.
+        evidence_claim_ids: [EC-016]
+        source_ids: [S-022]
+    evidence_claim_ids: [EC-013, EC-014, EC-016]
+    source_ids: [S-002, S-007, S-020, S-021, S-022, S-023]
+    notes: Public compliance language must be reconciled to audit reports and contracts.
+
+figures:
+  - figure_id: F-001
+    title: Snyk public financing timeline
+    chapter_id: I
+    section_id: I.B
+    figure_type: timeline
+    description: Public financing and corporate-history anchors used for financial diligence scoping.
+    purpose: Show sparse public financing timeline and highlight private evidence gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2015-07-09
+      end_date: 2026-05-16
+      ordering: chronological
+      events:
+        - event_id: F-001-E1
+          date: 2015-07-09
+          label: SNYK LIMITED incorporated
+          description: Companies House active private limited company record.
+          category: legal_record
+          evidence_claim_ids: [EC-002]
+          source_ids: [S-004]
+        - event_id: F-001-E2
+          date: 2020-01-21
+          label: Unicorn tracker date joined
+          description: CB Insights unicorn tracker row for Snyk.
+          category: funding
+          evidence_claim_ids: [EC-001]
+          source_ids: [S-001]
+        - event_id: F-001-E3
+          date: 2021
+          label: Peak valuation signal
+          description: Secondary source reports a $300M round at $8.5B valuation.
+          category: funding
+          evidence_claim_ids: [EC-003]
+          source_ids: [S-003]
+        - event_id: F-001-E4
+          date: 2026-05-16
+          label: Current research snapshot
+          description: CB Insights tracker shows $7.40B valuation and profile shows $1.247B total raised.
+          category: diligence
+          evidence_claim_ids: [EC-001, EC-015]
+          source_ids: [S-001, S-002]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Timeline uses only public anchors.
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-015]
+    source_ids: [S-001, S-002, S-003, S-004]
+    notes: Financing documents are required for final underwriting.
+
+  - figure_id: F-002
+    title: Public valuation anchor chart
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: Sparse public valuation anchors show the need to reconcile current database valuation with prior priced-round evidence.
+    purpose: Quantify available public valuation anchors.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Public valuation anchor date
+        unit: year
+        scale: time
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: F-002-S1
+          name: Public valuation anchors
+          unit: USD billions
+          data_points:
+            - x: 2021-09-01
+              y: 8.5
+              label: Secondary-source Series F valuation signal
+              evidence_claim_ids: [EC-003]
+              source_ids: [S-003]
+            - x: 2026-05-16
+              y: 7.4
+              label: CB Insights current unicorn tracker valuation
+              evidence_claim_ids: [EC-001]
+              source_ids: [S-001]
+      annotations:
+        - label: Preference stack unknown
+          x: 2026-05-16
+          y: 7.4
+          note: Private terms, methodology, and preference stack require verification.
+          evidence_claim_ids: [EC-015]
+          source_ids: [S-002]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Uses public anchors; not a full valuation history.
+    evidence_claim_ids: [EC-001, EC-003, EC-015]
+    source_ids: [S-001, S-002, S-003]
+    notes: Treat the line as a sparse anchor chart, not a continuous valuation series.
+
+  - figure_id: F-003
+    title: Snyk platform architecture map
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product modules map into developer workflows and security governance.
+    purpose: Visualize how the public product modules relate to customer workflows.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: repo
+          label: Source code repositories
+          node_type: third_party
+          description: GitHub, GitLab, Bitbucket, Azure Repos and similar source systems.
+          evidence_claim_ids: [EC-008]
+          source_ids: [S-016]
+        - node_id: cicd
+          label: CI/CD and IDE workflows
+          node_type: integration
+          description: Build, developer, and remediation workflows.
+          evidence_claim_ids: [EC-008]
+          source_ids: [S-016]
+        - node_id: code
+          label: Snyk Code
+          node_type: product
+          description: Code scanning and AI-assisted fixes.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-009]
+        - node_id: oss
+          label: Snyk Open Source
+          node_type: product
+          description: Dependency vulnerability and license management.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-010]
+        - node_id: container
+          label: Snyk Container
+          node_type: product
+          description: Container image and Kubernetes security.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-011]
+        - node_id: iac
+          label: Snyk IaC
+          node_type: product
+          description: Infrastructure-as-code security.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-012]
+        - node_id: apprisk
+          label: Snyk AppRisk
+          node_type: product
+          description: Application risk management and prioritization.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-013]
+        - node_id: teams
+          label: Developers and security teams
+          node_type: user
+          description: Users who consume findings, fixes, and governance.
+          evidence_claim_ids: [EC-004]
+          source_ids: [S-005]
+      edges:
+        - edge_id: F-003-E1
+          from_node_id: repo
+          to_node_id: code
+          relationship: scan code
+          data_or_dependency: repository content
+          evidence_claim_ids: [EC-006, EC-008]
+          source_ids: [S-009, S-016]
+        - edge_id: F-003-E2
+          from_node_id: repo
+          to_node_id: oss
+          relationship: scan dependencies
+          data_or_dependency: manifests and package metadata
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-010]
+        - edge_id: F-003-E3
+          from_node_id: cicd
+          to_node_id: container
+          relationship: scan images
+          data_or_dependency: image and Kubernetes metadata
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-011]
+        - edge_id: F-003-E4
+          from_node_id: cicd
+          to_node_id: iac
+          relationship: check infrastructure code
+          data_or_dependency: IaC templates and policy data
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-012]
+        - edge_id: F-003-E5
+          from_node_id: code
+          to_node_id: apprisk
+          relationship: risk context
+          data_or_dependency: findings and asset context
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-013]
+        - edge_id: F-003-E6
+          from_node_id: apprisk
+          to_node_id: teams
+          relationship: prioritize remediation
+          data_or_dependency: application risk context
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-013]
+      boundaries:
+        - boundary_id: snyk-platform
+          label: Snyk platform
+          node_ids: [code, oss, container, iac, apprisk]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Product-level ARR and active usage are not shown.
+    evidence_claim_ids: [EC-004, EC-006, EC-008]
+    source_ids: [S-005, S-009, S-010, S-011, S-012, S-013, S-016]
+    notes: Architecture is inferred from public product pages.
+
+  - figure_id: F-004
+    title: Public customer evidence concentration chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Public references are logo/case-study evidence, not revenue concentration.
+    purpose: Visualize that customer ARR concentration is not disclosed publicly.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public customer evidence item
+        unit: account
+        scale: categorical
+      y_axis:
+        label: Disclosed ARR weight
+        unit: percent
+        scale: linear
+      series:
+        - series_id: F-004-S1
+          name: Disclosed ARR weight
+          unit: percent
+          data_points:
+            - x: Skyscanner
+              y: null
+              label: Case study; ARR not public
+              evidence_claim_ids: [EC-007]
+              source_ids: [S-015]
+            - x: Okta
+              y: null
+              label: Quote; ARR not public
+              evidence_claim_ids: [EC-007]
+              source_ids: [S-014]
+            - x: ICE/NYSE
+              y: null
+              label: Outcome claim; ARR not public
+              evidence_claim_ids: [EC-007]
+              source_ids: [S-014]
+            - x: Google / AB InBev
+              y: null
+              label: Named examples; ARR not public
+              evidence_claim_ids: [EC-004, EC-007]
+              source_ids: [S-005, S-014]
+      annotations:
+        - label: Customer concentration gap
+          x: Skyscanner
+          y: null
+          note: Top-customer concentration requires customer-level ARR and renewal schedule.
+          evidence_claim_ids: [EC-007]
+          source_ids: [S-014, S-015]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Null bars intentionally show missing public ARR weights.
+    evidence_claim_ids: [EC-007]
+    source_ids: [S-014, S-015]
+    notes: Customer evidence is vendor-published and should be reference-checked.
+
+  - figure_id: F-005
+    title: Developer-security competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Public competitor map by platform breadth and developer-workflow depth.
+    purpose: Position Snyk against categories of competitors visible in public sources.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Developer workflow depth
+          low_label: Security-team centric
+          high_label: Developer-native
+        y_axis:
+          label: Platform breadth
+          low_label: Point solution
+          high_label: Broad platform
+      segments:
+        - segment_id: broad-dev
+          name: Developer-native broad platform
+          description: Broad developer-security platforms and platform-native suites.
+        - segment_id: legacy-suite
+          name: Security-suite platform
+          description: Established enterprise AppSec/security suites.
+        - segment_id: specialist
+          name: Specialized developer tools
+          description: Point products for secrets, dependencies, AI code security, or narrow risks.
+      entities:
+        - entity_id: snyk
+          name: Snyk
+          entity_type: target_company
+          segment_id: broad-dev
+          x_value: 8
+          y_value: 8
+          attributes:
+            note: Code, SCA, Container, IaC, AppRisk public breadth.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-008]
+        - entity_id: github-advanced-security
+          name: GitHub Advanced Security
+          entity_type: competitor
+          segment_id: broad-dev
+          x_value: 9
+          y_value: 6
+          attributes:
+            note: SCM-native bundled security pressure.
+          evidence_claim_ids: [EC-009]
+          source_ids: [S-024]
+        - entity_id: gitlab
+          name: GitLab security
+          entity_type: competitor
+          segment_id: broad-dev
+          x_value: 8
+          y_value: 6
+          attributes:
+            note: DevOps-suite bundle pressure.
+          evidence_claim_ids: [EC-009]
+          source_ids: [S-026]
+        - entity_id: veracode
+          name: Veracode
+          entity_type: competitor
+          segment_id: legacy-suite
+          x_value: 5
+          y_value: 7
+          attributes:
+            note: Enterprise AppSec suite pressure.
+          evidence_claim_ids: [EC-009]
+          source_ids: [S-025]
+        - entity_id: gitguardian-specialists
+          name: GitGuardian and specialists
+          entity_type: competitor
+          segment_id: specialist
+          x_value: 7
+          y_value: 4
+          attributes:
+            note: Point-solution pressure.
+          evidence_claim_ids: [EC-009]
+          source_ids: [S-002]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Coordinates are analyst scoring from public evidence.
+    evidence_claim_ids: [EC-006, EC-009]
+    source_ids: [S-002, S-008, S-024, S-025, S-026]
+    notes: Requires win/loss and customer validation.
+
+  - figure_id: F-006
+    title: GTM channel mix diligence chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public channel evidence exists, but channel revenue weight is not disclosed.
+    purpose: Show channel categories and the absence of public revenue-share data.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: channel
+        scale: categorical
+      y_axis:
+        label: Disclosed revenue share
+        unit: percent
+        scale: linear
+      series:
+        - series_id: F-006-S1
+          name: Disclosed revenue share
+          unit: percent
+          data_points:
+            - x: Free/self-serve
+              y: null
+              label: Public plan; revenue share not public
+              evidence_claim_ids: [EC-005]
+              source_ids: [S-007]
+            - x: Team/Ignite
+              y: null
+              label: Public tiers; revenue share not public
+              evidence_claim_ids: [EC-005]
+              source_ids: [S-007]
+            - x: Enterprise direct
+              y: null
+              label: Customer proof; revenue share not public
+              evidence_claim_ids: [EC-007]
+              source_ids: [S-014]
+            - x: Partners/integrations
+              y: null
+              label: Partner directory; revenue share not public
+              evidence_claim_ids: [EC-008]
+              source_ids: [S-016, S-017]
+      annotations:
+        - label: Channel economics gap
+          x: Enterprise direct
+          y: null
+          note: Request pipeline source, bookings, CAC, and win-rate by channel.
+          evidence_claim_ids: [EC-005, EC-008]
+          source_ids: [S-007, S-016]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Null values mark undisclosed public channel share.
+    evidence_claim_ids: [EC-005, EC-007, EC-008]
+    source_ids: [S-007, S-014, S-016, S-017]
+    notes: Channel mix cannot be estimated responsibly from public evidence.
+
+  - figure_id: F-007
+    title: R&D portfolio map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Public R&D surface derived from product modules and IP signals.
+    purpose: Map product modules and IP signals to R&D review areas.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: ai
+          label: AI remediation and code intelligence
+          node_type: model
+          description: AI-assisted secure-code findings and fixes.
+          evidence_claim_ids: [EC-004, EC-006]
+          source_ids: [S-005, S-009]
+        - node_id: vuln
+          label: Vulnerability and license intelligence
+          node_type: database
+          description: Dependency, license, and SBOM intelligence.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-010]
+        - node_id: cloud
+          label: Container / IaC / cloud posture
+          node_type: service
+          description: Container and IaC security workflows.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-011, S-012]
+        - node_id: risk
+          label: Application risk prioritization
+          node_type: service
+          description: AppRisk asset discovery and prioritization.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-013]
+        - node_id: ip
+          label: Patents and trademarks
+          node_type: other
+          description: Public IP footprint that requires legal review.
+          evidence_claim_ids: [EC-014]
+          source_ids: [S-002, S-023]
+        - node_id: platform
+          label: Snyk platform modules
+          node_type: product
+          description: Product suite customer sees.
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-008]
+      edges:
+        - edge_id: F-007-E1
+          from_node_id: ai
+          to_node_id: platform
+          relationship: powers fixes and prioritization
+          data_or_dependency: model and code-intelligence signals
+          evidence_claim_ids: [EC-004, EC-006]
+          source_ids: [S-005, S-009]
+        - edge_id: F-007-E2
+          from_node_id: vuln
+          to_node_id: platform
+          relationship: feeds dependency and license findings
+          data_or_dependency: vulnerability and license data
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-010]
+        - edge_id: F-007-E3
+          from_node_id: cloud
+          to_node_id: platform
+          relationship: extends cloud/container coverage
+          data_or_dependency: container, IaC, and cloud metadata
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-011, S-012]
+        - edge_id: F-007-E4
+          from_node_id: risk
+          to_node_id: platform
+          relationship: provides risk context
+          data_or_dependency: application asset and prioritization data
+          evidence_claim_ids: [EC-006]
+          source_ids: [S-013]
+        - edge_id: F-007-E5
+          from_node_id: ip
+          to_node_id: platform
+          relationship: defensibility signal to verify
+          data_or_dependency: patents, marks, assignments
+          evidence_claim_ids: [EC-014]
+          source_ids: [S-002, S-023]
+      boundaries:
+        - boundary_id: rd-review
+          label: R&D diligence areas
+          node_ids: [ai, vuln, cloud, risk, ip]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Public roadmap depth is limited.
+    evidence_claim_ids: [EC-004, EC-006, EC-014]
+    source_ids: [S-002, S-005, S-008, S-009, S-010, S-011, S-012, S-013, S-023]
+    notes: Technical diligence should inspect telemetry and architecture, not just product pages.
+
+  - figure_id: F-008
+    title: Public leadership and governance org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Current public leadership/board structure from Snyk pages.
+    purpose: Show leadership continuity and interim CEO/CFO diligence focus.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: board
+          name: null
+          role: Board of directors
+          department: Governance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-012]
+          source_ids: [S-019]
+        - node_id: guy
+          name: Guy Podjarny
+          role: Chairman & Founder
+          department: Governance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-012]
+          source_ids: [S-019]
+        - node_id: ken
+          name: Ken MacAskill
+          role: Interim CEO & CFO
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - node_id: lindsey
+          name: Lindsey Bennett
+          role: Chief Accounting Officer
+          department: Finance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - node_id: diana
+          name: Diana Brunelle
+          role: Chief People Officer
+          department: People
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - node_id: manoj
+          name: Manoj Nair
+          role: Chief Innovation Officer
+          department: Product/R&D
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - node_id: tom
+          name: Tom Nielsen
+          role: Chief Revenue Officer
+          department: Revenue
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+      reporting_lines:
+        - parent_node_id: board
+          child_node_id: guy
+          relationship: board_member
+          evidence_claim_ids: [EC-012]
+          source_ids: [S-019]
+        - parent_node_id: board
+          child_node_id: ken
+          relationship: other
+          evidence_claim_ids: [EC-011, EC-012]
+          source_ids: [S-018, S-019]
+        - parent_node_id: ken
+          child_node_id: lindsey
+          relationship: other
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - parent_node_id: ken
+          child_node_id: diana
+          relationship: other
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - parent_node_id: ken
+          child_node_id: manoj
+          relationship: other
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+        - parent_node_id: ken
+          child_node_id: tom
+          relationship: other
+          evidence_claim_ids: [EC-011]
+          source_ids: [S-018]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Reporting lines beyond board/CEO are inferred for display from executive roles.
+    evidence_claim_ids: [EC-011, EC-012]
+    source_ids: [S-018, S-019]
+    notes: Verify current reporting structure and succession plan with company records.
+
+  - figure_id: F-009
+    title: Public headcount anchor chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: chart
+    description: Public headcount anchors suggest scale and possible trend ambiguity.
+    purpose: Quantify available employee-count anchors and highlight the reconciliation request.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Year / source date
+        unit: year
+        scale: time
+      y_axis:
+        label: Employee count public anchor
+        unit: employees
+        scale: linear
+      series:
+        - series_id: F-009-S1
+          name: Public employee count anchors
+          unit: employees
+          data_points:
+            - x: 2022-01-01
+              y: 1400
+              label: Secondary source employee count
+              evidence_claim_ids: [EC-003]
+              source_ids: [S-003]
+            - x: 2026-05-16
+              y: 1000
+              label: Snyk careers says over 1,000 employees; plotted at floor value
+              evidence_claim_ids: [EC-010]
+              source_ids: [S-006]
+      annotations:
+        - label: Definition gap
+          x: 2026-05-16
+          y: 1000
+          note: Difference may reflect contraction, definition, or stale source; request headcount bridge.
+          evidence_claim_ids: [EC-003, EC-010]
+          source_ids: [S-003, S-006]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Current value plotted at disclosed floor because Snyk says over 1,000.
+    evidence_claim_ids: [EC-003, EC-010]
+    source_ids: [S-003, S-006]
+    notes: Requires HRIS/payroll validation.
+
+  - figure_id: F-010
+    title: Legal and regulatory diligence timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Public legal/IP/compliance milestones visible from accessible sources.
+    purpose: Anchor legal diligence to public records and explicit gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2015-07-09
+      end_date: 2026-05-16
+      ordering: chronological
+      events:
+        - event_id: F-010-E1
+          date: 2015-07-09
+          label: SNYK LIMITED incorporated
+          description: Active private limited company in Companies House.
+          category: legal_record
+          evidence_claim_ids: [EC-002]
+          source_ids: [S-004]
+        - event_id: F-010-E2
+          date: null
+          label: Snyk-related trademarks visible
+          description: Justia search shows SNYK and related marks.
+          category: ip
+          evidence_claim_ids: [EC-014]
+          source_ids: [S-023]
+        - event_id: F-010-E3
+          date: 2026-05-16
+          label: Security/compliance posture marketed
+          description: Public pages reference encryption, SOC2, GDPR, ISO, FedRAMP, and data residency.
+          category: compliance
+          evidence_claim_ids: [EC-013]
+          source_ids: [S-007, S-020, S-021]
+        - event_id: F-010-E4
+          date: 2026-05-16
+          label: Private legal review required
+          description: Litigation, contracts, DPAs, insurance, IP assignments, and regulatory correspondence are not public.
+          category: risk
+          evidence_claim_ids: [EC-016]
+          source_ids: [S-022]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Null-date IP event reflects search result without a single event date.
+    evidence_claim_ids: [EC-002, EC-013, EC-014, EC-016]
+    source_ids: [S-004, S-007, S-020, S-021, S-022, S-023]
+    notes: Legal timeline is not a docket or clearance opinion.
+
+  - figure_id: F-011
+    title: Snyk risk heatmap
+    chapter_id: VIII
+    section_id: VIII.B
+    figure_type: risk_heatmap
+    description: Risk register summarized by severity and likelihood.
+    purpose: Provide a visual risk prioritization for follow-up diligence.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale: [low, medium, high, unknown]
+      y_axis:
+        label: severity
+        scale: [informational, low, medium, high, critical]
+      risk_points:
+        - risk_id: R-001
+          label: Valuation and financing opacity
+          severity: high
+          likelihood: medium
+          rationale: Valuation and total funding are public; economics and terms are private.
+          evidence_claim_ids: [EC-001, EC-015]
+          source_ids: [S-001, S-002]
+        - risk_id: R-002
+          label: Profitability and unit economics opacity
+          severity: high
+          likelihood: medium
+          rationale: Revenue/loss signals are secondary and ARR economics are private.
+          evidence_claim_ids: [EC-003, EC-015]
+          source_ids: [S-002, S-003]
+        - risk_id: R-003
+          label: Competitive and pricing pressure
+          severity: high
+          likelihood: high
+          rationale: Public competitor evidence spans bundled platforms and AppSec suites.
+          evidence_claim_ids: [EC-009]
+          source_ids: [S-002, S-024, S-025, S-026]
+        - risk_id: R-005
+          label: Customer concentration/retention unknown
+          severity: high
+          likelihood: medium
+          rationale: Logos are public but ARR concentration and renewals are private.
+          evidence_claim_ids: [EC-007]
+          source_ids: [S-014, S-015]
+        - risk_id: R-006
+          label: Privacy/security/regulatory exposure
+          severity: high
+          likelihood: medium
+          rationale: Public compliance posture exists but audit packages and DPAs are private.
+          evidence_claim_ids: [EC-013, EC-016]
+          source_ids: [S-007, S-020, S-021, S-022]
+        - risk_id: R-010
+          label: AI security threat pace
+          severity: high
+          likelihood: high
+          rationale: AI security positioning is strategic but fast-moving and hard to verify publicly.
+          evidence_claim_ids: [EC-004, EC-006, EC-009]
+          source_ids: [S-005, S-008, S-024]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Covers the full high-priority risk register subset.
+    evidence_claim_ids: [EC-001, EC-003, EC-004, EC-006, EC-007, EC-009, EC-013, EC-015, EC-016]
+    source_ids: [S-001, S-002, S-003, S-005, S-007, S-008, S-014, S-015, S-020, S-021, S-022, S-024, S-025, S-026]
+    notes: Risk ratings are analyst judgments from public evidence.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights listed Snyk as a current unicorn with a $7.40B valuation, 2020-01-21
+      date joined, United States/Boston geography, Enterprise Tech category, and selected
+      investors BOLDstart Ventures, Google Ventures, and Accel.
+    evidence_summary: CB Insights unicorn tracker row for Snyk.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids: [S-001]
+    quoted_evidence:
+      - source_id: S-001
+        quote: "Snyk | $7.40 | 1/21/2020 | United States | Boston | Enterprise Tech | BOLDstart Ventures, Google Ventures, Accel"
+        location: CB Insights unicorn table row
+    analyst_interpretation: Strong public support that Snyk remains listed as a private unicorn.
+    limitations: Database valuation methodology and round terms require primary documents.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: [FC-001]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002, F-011]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-002
+    claim: SNYK LIMITED is an active private limited company incorporated in the United
+      Kingdom on 2015-07-09.
+    evidence_summary: Companies House profile shows active company status, company type,
+      incorporation date, registered office, and SIC code.
+    evidence_type: legal_record
+    verification_status: verified
+    confidence: high
+    source_ids: [S-004]
+    quoted_evidence:
+      - source_id: S-004
+        quote: "Company status Active; Company type Private limited Company; Incorporated on 9 July 2015."
+        location: Companies House company profile
+    analyst_interpretation: Primary registry evidence supports active UK legal entity status.
+    limitations: Does not show full global entity structure or transaction consent rights.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: [FC-005]
+      table_ids: [T-015]
+      figure_ids: [F-001, F-010]
+      risk_ids: [R-007]
+  - evidence_claim_id: EC-003
+    claim: Secondary public sources describe Snyk as a private computer-security company
+      founded in 2015, headquartered in Boston, with founders Guy Podjarny, Danny Grander,
+      and Assaf Hefetz; the same source reports 2023 revenue of $220M, 2023 net loss of
+      $176M, and 1,400 employees in 2022.
+    evidence_summary: Wikipedia infobox and company history.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-003]
+    quoted_evidence:
+      - source_id: S-003
+        quote: "Private; Computer security; Founded 2015; Headquarters Boston; Revenue US$220 million (2023); Net income -US$176 million (2023); Number of employees 1,400 (2022)."
+        location: Wikipedia Snyk page
+    analyst_interpretation: Useful secondary context, but financial and headcount metrics require primary company records.
+    limitations: Secondary and potentially stale; not a substitute for audited financials.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: [FC-005]
+      table_ids: [T-001, T-002, T-014]
+      figure_ids: [F-002, F-009]
+      risk_ids: [R-001, R-002, R-008]
+  - evidence_claim_id: EC-004
+    claim: Snyk publicly positions itself as an AI security company that helps organizations
+      find and fix security issues across code, dependencies, containers, and cloud
+      infrastructure, with Boston headquarters and global offices.
+    evidence_summary: Snyk about page.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-005]
+    quoted_evidence:
+      - source_id: S-005
+        quote: The AI security company; quickly finds and fixes security issues across code,
+          dependencies, containers, and cloud infrastructure; headquartered in Boston.
+        location: Snyk about page
+    analyst_interpretation: Primary company source supports product and geographic positioning.
+    limitations: Does not quantify product usage or customer outcomes.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-002, FC-005]
+      table_ids: [T-003, T-005, T-010, T-012, T-014]
+      figure_ids: [F-003, F-007, F-011]
+      risk_ids: [R-004, R-010]
+  - evidence_claim_id: EC-005
+    claim: Snyk publicly offers Free, Team, Ignite, and Enterprise plans with features
+      spanning Code, Open Source, IaC, Container, AppRisk, reports, SSO, SBOMs, compliance,
+      and data residency options.
+    evidence_summary: Snyk plans/pricing page.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-007]
+    quoted_evidence:
+      - source_id: S-007
+        quote: Free; Team; Ignite; Enterprise; Snyk Open Source; Snyk Code; Snyk IaC;
+          Snyk Container; reports; SSO; SBOM; data residency United States, European
+          Union, Australia.
+        location: Snyk plans page
+    analyst_interpretation: Public packaging supports freemium-to-enterprise GTM and platform breadth.
+    limitations: Realized pricing, discounting, utilization, attach, and retention are private.
+    associations:
+      chapter_id: II
+      section_id: II.B
+      founder_claim_ids: [FC-003]
+      table_ids: [T-002, T-004, T-009, T-010]
+      figure_ids: [F-006]
+      risk_ids: [R-002, R-006]
+  - evidence_claim_id: EC-006
+    claim: Public product pages describe modules for code scanning, open-source dependency
+      and license risk, container security, infrastructure-as-code security, and
+      application risk management.
+    evidence_summary: Snyk platform and product pages.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-008, S-009, S-010, S-011, S-012, S-013]
+    quoted_evidence:
+      - source_id: S-008
+        quote: Snyk platform.
+        location: Platform overview
+      - source_id: S-009
+        quote: Snyk Code.
+        location: Product page
+      - source_id: S-010
+        quote: Snyk Open Source.
+        location: Product page
+      - source_id: S-011
+        quote: Snyk Container.
+        location: Product page
+      - source_id: S-012
+        quote: Snyk IaC.
+        location: Product page
+      - source_id: S-013
+        quote: Snyk AppRisk.
+        location: Product page
+    analyst_interpretation: Product-module existence and positioning are well supported.
+    limitations: Does not prove adoption, module ARR, accuracy, or roadmap delivery.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-002]
+      table_ids: [T-003, T-008, T-011, T-012]
+      figure_ids: [F-003, F-005, F-007, F-011]
+      risk_ids: [R-003, R-004, R-010]
+  - evidence_claim_id: EC-007
+    claim: Snyk customer pages cite hundreds of organizations and named customer examples,
+      while the Skyscanner case study says nearly 500 projects were monitored.
+    evidence_summary: Snyk customer index and Skyscanner customer story.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-014, S-015]
+    quoted_evidence:
+      - source_id: S-014
+        quote: From Google to Anheuser-Busch InBev, hundreds of organizations.
+        location: Snyk customers page
+      - source_id: S-015
+        quote: monitors nearly 500 projects.
+        location: Skyscanner customer story
+    analyst_interpretation: Supports enterprise traction but is vendor-published and not revenue evidence.
+    limitations: Active status, ARR, renewal terms, and concentration are private.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-004]
+      table_ids: [T-005, T-009, T-010]
+      figure_ids: [F-004, F-006, F-011]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-008
+    claim: Snyk exposes a broad ecosystem surface through integrations and partner listings
+      across code hosts, CI/CD, issue tracking, cloud providers, registries, IDEs, and
+      security workflow tools.
+    evidence_summary: Snyk integrations page and partner directory.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-016, S-017]
+    quoted_evidence:
+      - source_id: S-016
+        quote: Integrations; GitHub; GitLab; Bitbucket; Azure Repos; Jira; Jenkins; Docker;
+          Kubernetes; AWS; Azure; Google Cloud.
+        location: Snyk integrations page
+      - source_id: S-017
+        quote: Partner directory.
+        location: Snyk partner directory
+    analyst_interpretation: Integration breadth supports workflow reach and platform dependency.
+    limitations: Integration usage, API risk, and partner-sourced revenue are private.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: []
+      table_ids: [T-006, T-008, T-009]
+      figure_ids: [F-003, F-006]
+      risk_ids: [R-009]
+  - evidence_claim_id: EC-009
+    claim: Snyk faces competition from adjacent developer-security, application-security,
+      cloud-security, secrets-detection, and vulnerability-management vendors; CB Insights
+      names competitors and Snyk comparison pages target GitHub Advanced Security,
+      Veracode, and GitLab.
+    evidence_summary: CB Insights competitor list and Snyk comparison pages.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids: [S-002, S-024, S-025, S-026]
+    quoted_evidence:
+      - source_id: S-002
+        quote: Competitors include Factory, GitGuardian, Backslash, RapidFort, Symbiotic Security.
+        location: CB Insights Snyk profile
+      - source_id: S-024
+        quote: Compare GitHub Advanced Security.
+        location: Snyk comparison page
+      - source_id: S-025
+        quote: Compare Veracode.
+        location: Snyk comparison page
+      - source_id: S-026
+        quote: Compare GitLab.
+        location: Snyk comparison page
+    analyst_interpretation: Public evidence supports a crowded competitive set.
+    limitations: Market share, win/loss, and pricing pressure are not public.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids: [T-007, T-008, T-010]
+      figure_ids: [F-005, F-011]
+      risk_ids: [R-003, R-010]
+  - evidence_claim_id: EC-010
+    claim: Snyk states on its careers site that it was founded in London and Tel Aviv in
+      2015 and has a global team of over 1,000 employees.
+    evidence_summary: Snyk careers page.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-006]
+    quoted_evidence:
+      - source_id: S-006
+        quote: Founded in London and Tel Aviv in 2015; global team of over 1000 employees.
+        location: Snyk careers page
+    analyst_interpretation: Supports scale and founding geography.
+    limitations: Requires payroll/HRIS confirmation and reconciliation to secondary 2022 count.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: [FC-005]
+      table_ids: [T-014]
+      figure_ids: [F-009]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-011
+    claim: Snyk current leadership page lists Ken MacAskill as Chief Executive Officer &
+      CFO and describes him as interim CEO; the same page lists Lindsey Bennett, Diana
+      Brunelle, Manoj Nair, Tom Nielsen, and Austin Martin in senior roles.
+    evidence_summary: Snyk leadership page.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-018]
+    quoted_evidence:
+      - source_id: S-018
+        quote: Ken MacAskill, Chief Executive Officer & CFO; Our Interim CEO; Lindsey
+          Bennett, Chief Accounting Officer; Diana Brunelle, Chief People Officer; Manoj
+          Nair, Chief Innovation Officer; Tom Nielsen, Chief Revenue Officer.
+        location: Snyk leadership page
+    analyst_interpretation: Current primary-source leadership roster creates CEO succession diligence focus.
+    limitations: Does not disclose reporting lines, succession process, or executive agreements.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids: [T-013]
+      figure_ids: [F-008]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-012
+    claim: Snyk board page lists Guy Podjarny as Chairman & Founder and lists Mike
+      Scarpelli, Sanjay Poonen, Ken Fox, Ping Li, Philippe Botteri, and Peter McKay as
+      board/advisor figures.
+    evidence_summary: Snyk board page.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [S-019]
+    quoted_evidence:
+      - source_id: S-019
+        quote: Guy Podjarny, Chairman & Founder; co-founded Snyk in 2015; Mike Scarpelli;
+          Sanjay Poonen; Ken Fox; Ping Li; Philippe Botteri; Peter McKay, advisor/former CEO.
+        location: Snyk board page
+    analyst_interpretation: Founder and board/advisor continuity are publicly supported.
+    limitations: Board rights, committees, and succession plans are private.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids: [T-013]
+      figure_ids: [F-008]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-013
+    claim: Snyk public security, privacy, and plan pages disclose compliance/security
+      posture such as encryption in transit/rest, SOC 2 Type II, GDPR, ISO 27001/27017,
+      FedRAMP plan support, and US/EU/Australia data-residency options.
+    evidence_summary: Snyk plans, security, and privacy pages.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-007, S-020, S-021]
+    quoted_evidence:
+      - source_id: S-007
+        quote: Data encrypted in transit and at rest; SOC 2 Type II; GDPR; ISO 27001;
+          ISO 27017; FedRAMP; data residency United States, European Union, Australia.
+        location: Snyk plans page
+    analyst_interpretation: Public trust posture exists but audit reports and contracts remain private.
+    limitations: Marketing/policy pages are not audit evidence or legal advice.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.B
+      founder_claim_ids: [FC-006]
+      table_ids: [T-004, T-008, T-010, T-016]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-006]
+  - evidence_claim_id: EC-014
+    claim: Justia trademark results show SNYK, DEVSECCON, FUGUE, and PROBELY marks
+      associated with Snyk entities; CB Insights says Snyk has filed 9 patents.
+    evidence_summary: Justia trademark search and CB Insights profile.
+    evidence_type: patent_or_trademark_record
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-002, S-023]
+    quoted_evidence:
+      - source_id: S-023
+        quote: SNYK marks owned by Snyk Limited; DEVSECCON; FUGUE owned by SNYK, INC.; PROBELY.
+        location: Justia trademark search results
+      - source_id: S-002
+        quote: Snyk has filed 9 patents.
+        location: CB Insights profile
+    analyst_interpretation: Public IP footprint exists but defensibility and ownership require counsel review.
+    limitations: Justia search is not a complete official registry review; CB Insights patent count lacks claim detail.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids: [T-012, T-016]
+      figure_ids: [F-007, F-010]
+      risk_ids: [R-007, R-010]
+  - evidence_claim_id: EC-015
+    claim: Public financing data is incomplete; CB Insights profile reports total funding
+      raised of $1.247B and investor names, while the unicorn tracker reports $7.40B
+      latest valuation; detailed cap table, liquidation preferences, debt, secondary
+      sales, and runway are not public.
+    evidence_summary: CB Insights unicorn list and profile.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-001, S-002]
+    quoted_evidence:
+      - source_id: S-002
+        quote: Total raised $1.247B; latest funding round Unattributed VC - II; investors
+          include Glynn Capital Management, ServiceNow, Boldstart Ventures, Tiger Global,
+          Sands Capital.
+        location: CB Insights Snyk profile
+    analyst_interpretation: Public funding context is useful but insufficient for cap-table underwriting.
+    limitations: Financing terms, runway, debt, and secondaries require company documents.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: [FC-001]
+      table_ids: [T-001, T-002]
+      figure_ids: [F-001, F-002, F-011]
+      risk_ids: [R-001, R-002]
+  - evidence_claim_id: EC-016
+    claim: No comprehensive public-source litigation docket review, customer-contract
+      review, employment-agreement review, insurance review, or data-processing agreement
+      review was available in this run; legal exposure remains a diligence gap rather
+      than a cleared item.
+    evidence_summary: Public legal/policy sources were available, but private legal records were not.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids: [S-004, S-021, S-022, S-023]
+    quoted_evidence:
+      - source_id: S-022
+        quote: Public terms are available; customer-specific contracts are not public.
+        location: Snyk terms page
+    analyst_interpretation: This is an explicit limitation and legal diligence request.
+    limitations: Requires counsel-run searches and company legal data room.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids: [T-015, T-016]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-006, R-007]
+
+sources:
+  - source_id: S-001
+    title: CB Insights - The Complete List of Unicorn Companies
+    url: "https://www.cbinsights.com/research-unicorn-companies"
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: market_database
+    reliability_notes: Current unicorn tracker used for candidate selection and Snyk valuation/country/sector row.
+    archive_url: null
+  - source_id: S-002
+    title: CB Insights company profile - Snyk
+    url: "https://www.cbinsights.com/company/snyk"
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: market_database
+    reliability_notes: Company profile with total raised, investors, competitors, collections, and patent count.
+    archive_url: null
+  - source_id: S-003
+    title: Snyk - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Snyk"
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: independent_news
+    reliability_notes: Secondary source used for historical funding, revenue, net income, employee, founder, and acquisition context; private records required to verify.
+    archive_url: null
+  - source_id: S-004
+    title: Companies House - SNYK LIMITED company profile
+    url: "https://find-and-update.company-information.service.gov.uk/company/09677925"
+    publisher: Companies House
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: legal_record
+    reliability_notes: UK registry record for active private limited company SNYK LIMITED.
+    archive_url: null
+  - source_id: S-005
+    title: Snyk - About
+    url: "https://snyk.io/about/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company description, mission, customer examples, founding geographies, and office footprint.
+    archive_url: null
+  - source_id: S-006
+    title: Snyk - Careers
+    url: "https://snyk.io/careers/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company founding statement and current public headcount language.
+    archive_url: null
+  - source_id: S-007
+    title: Snyk - Plans and pricing
+    url: "https://snyk.io/plans/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Packaging, feature tiers, compliance and data-residency claims.
+    archive_url: null
+  - source_id: S-008
+    title: Snyk - Platform overview
+    url: "https://snyk.io/platform/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Platform positioning and workflow coverage.
+    archive_url: null
+  - source_id: S-009
+    title: Snyk Code product page
+    url: "https://snyk.io/product/snyk-code/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: SAST and AI-fix product claims.
+    archive_url: null
+  - source_id: S-010
+    title: Snyk Open Source product page
+    url: "https://snyk.io/product/open-source-security-management/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Open-source dependency and license-management product claims.
+    archive_url: null
+  - source_id: S-011
+    title: Snyk Container product page
+    url: "https://snyk.io/product/container-vulnerability-management/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Container image and Kubernetes security product claims.
+    archive_url: null
+  - source_id: S-012
+    title: Snyk Infrastructure as Code product page
+    url: "https://snyk.io/product/infrastructure-as-code-security/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: IaC misconfiguration detection and remediation product claims.
+    archive_url: null
+  - source_id: S-013
+    title: Snyk AppRisk product page
+    url: "https://snyk.io/product/snyk-apprisk/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Application risk management and asset-discovery positioning.
+    archive_url: null
+  - source_id: S-014
+    title: Snyk - Customers
+    url: "https://snyk.io/customers/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: customer_or_partner_source
+    reliability_notes: Vendor-published customer proof points and named examples; needs direct reference confirmation.
+    archive_url: null
+  - source_id: S-015
+    title: Snyk customer story - Skyscanner
+    url: "https://snyk.io/customers/skyscanner/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: customer_or_partner_source
+    reliability_notes: Vendor-published case study; useful but should be customer-confirmed.
+    archive_url: null
+  - source_id: S-016
+    title: Snyk - Integrations
+    url: "https://snyk.io/integrations/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Integration surface across SCM, CI/CD, issue tracking, container registries, cloud, and IDE workflows.
+    archive_url: null
+  - source_id: S-017
+    title: Snyk partner directory
+    url: "https://partners.snyk.io/English/solutions/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: customer_or_partner_source
+    reliability_notes: Public partner ecosystem and solution categories.
+    archive_url: null
+  - source_id: S-018
+    title: Snyk - Leadership
+    url: "https://snyk.io/about/leadership/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Current executive roster as represented by Snyk.
+    archive_url: null
+  - source_id: S-019
+    title: Snyk - Board of directors
+    url: "https://snyk.io/about/board/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Board and advisor roster, including founder/board-role language.
+    archive_url: null
+  - source_id: S-020
+    title: Snyk - Security
+    url: "https://snyk.io/security/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Trust, security, compliance, and responsible disclosure information.
+    archive_url: null
+  - source_id: S-021
+    title: Snyk - Privacy policy
+    url: "https://snyk.io/policies/privacy/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Privacy-policy terms; legal counsel should review current terms and controller/processor mapping.
+    archive_url: null
+  - source_id: S-022
+    title: Snyk - Terms of service
+    url: "https://snyk.io/policies/terms-of-service/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Public standard terms; customer-specific agreements not available.
+    archive_url: null
+  - source_id: S-023
+    title: Justia trademark search - Snyk
+    url: "https://trademarks.justia.com/search?q=snyk"
+    publisher: Justia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: patent_or_trademark_record
+    reliability_notes: Public trademark search results for Snyk, DEVSECCON, FUGUE, and PROBELY marks.
+    archive_url: null
+  - source_id: S-024
+    title: Snyk comparison page - GitHub Advanced Security alternative
+    url: "https://snyk.io/compare/github-advanced-security/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Vendor comparison page; useful for positioning but not neutral market-share evidence.
+    archive_url: null
+  - source_id: S-025
+    title: Snyk comparison page - Veracode alternative
+    url: "https://snyk.io/compare/veracode/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Vendor comparison page for competitive positioning.
+    archive_url: null
+  - source_id: S-026
+    title: Snyk comparison page - GitLab alternative
+    url: "https://snyk.io/compare/gitlab/"
+    publisher: Snyk
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Vendor comparison page for competitive positioning.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Valuation, preference-stack, and financing opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: CB Insights shows a $7.40B current valuation and $1.247B total raised,
+      while secondary evidence reports a prior $8.5B valuation. Without round documents,
+      preference stack, secondary-sale detail, and runway data, investor-return and
+      employee-equity implications cannot be assessed.
+    impacted_chapter_ids: [I]
+    impacted_section_ids: [I.B]
+    evidence_claim_ids: [EC-001, EC-003, EC-015]
+    mitigation_or_diligence_request: Review full cap table, round documents, liquidation
+      preferences, debt/warrants, secondaries, cash runway, and board financing plan.
+  - risk_id: R-002
+    risk_title: Revenue quality, profitability, and SaaS unit economics are not public
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Secondary public revenue/loss figures are not enough to validate ARR
+      quality, margin profile, retention, CAC, payback, or cash conversion.
+    impacted_chapter_ids: [I, II, V]
+    impacted_section_ids: [I.A, II.B, V.A]
+    evidence_claim_ids: [EC-003, EC-005, EC-015]
+    mitigation_or_diligence_request: Obtain audited statements, ARR bridge, cohort
+      retention, gross-margin waterfall, CAC/payback, billings/collections, and cash-flow model.
+  - risk_id: R-003
+    risk_title: Crowded AppSec/developer-security competition may pressure growth and pricing
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: Snyk competes against platform-native tooling, legacy AppSec suites,
+      CNAPP/ASPM vendors, secrets scanners, and AI security entrants.
+    impacted_chapter_ids: [II, IV, V]
+    impacted_section_ids: [II.A, IV.A, IV.B, V.B]
+    evidence_claim_ids: [EC-009]
+    mitigation_or_diligence_request: Review win/loss, competitor displacement, pricing
+      and discounts, analyst reports, and churn reasons by competitor.
+  - risk_id: R-004
+    risk_title: AI and remediation efficacy must be proven quantitatively
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: Public product claims establish product modules and AI positioning, but
+      not false-positive rates, model governance, fix acceptance, or customer outcome repeatability.
+    impacted_chapter_ids: [II, VI]
+    impacted_section_ids: [II.A, VI.A]
+    evidence_claim_ids: [EC-004, EC-006]
+    mitigation_or_diligence_request: Review product telemetry, scan/fix benchmarks, AI
+      model governance, incident history, and reference calls.
+  - risk_id: R-005
+    risk_title: Customer concentration and retention are opaque
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Named customers and case studies support enterprise traction, but
+      account-level ARR, renewal dates, churn, NRR, and logo-rights status are not public.
+    impacted_chapter_ids: [III, V]
+    impacted_section_ids: [III.A, V.A]
+    evidence_claim_ids: [EC-007]
+    mitigation_or_diligence_request: Request top-customer ARR, renewal schedule, churn logs,
+      NRR/GRR cohorts, and direct references.
+  - risk_id: R-006
+    risk_title: Privacy, security, and regulated-enterprise obligations require document review
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Public pages cite compliance and security posture, but audit reports,
+      DPAs, subprocessors, incident history, and customer-specific exceptions are private.
+    impacted_chapter_ids: [V, VIII]
+    impacted_section_ids: [V.B, VIII.A, VIII.B]
+    evidence_claim_ids: [EC-013, EC-016]
+    mitigation_or_diligence_request: Review SOC2/ISO/FedRAMP evidence, DPAs, subprocessors,
+      incident/breach logs, export-control analysis, and regulated-customer contracts.
+  - risk_id: R-007
+    risk_title: IP chain of title and litigation clearance are incomplete from public sources
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: Trademark/patent signals exist, but patent scope, assignments, OSS
+      obligations, litigation, settlements, and infringement exposure are not public.
+    impacted_chapter_ids: [VI, VIII]
+    impacted_section_ids: [VI.B, VIII.A, VIII.B]
+    evidence_claim_ids: [EC-014, EC-016]
+    mitigation_or_diligence_request: Counsel should review IP assignments, OSS scans,
+      patent/trademark files, litigation dockets, settlements, and infringement opinions.
+  - risk_id: R-008
+    risk_title: Leadership transition and workforce trend ambiguity
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Snyk currently lists an interim CEO/CFO, while headcount public anchors
+      differ between a 2022 secondary count and current careers language.
+    impacted_chapter_ids: [VII]
+    impacted_section_ids: [VII.A, VII.B]
+    evidence_claim_ids: [EC-003, EC-010, EC-011, EC-012]
+    mitigation_or_diligence_request: Review CEO succession, executive retention, headcount
+      bridge, attrition, restructuring, and employee morale data.
+  - risk_id: R-009
+    risk_title: Integration and platform dependency exposure
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Snyk derives product value from many external developer/cloud ecosystems
+      whose API, marketplace, or policy changes could affect workflows.
+    impacted_chapter_ids: [III, V]
+    impacted_section_ids: [III.B, V.A]
+    evidence_claim_ids: [EC-008]
+    mitigation_or_diligence_request: Review integration usage, partner contracts, platform
+      API risk, marketplace dependence, and contingency plans.
+  - risk_id: R-010
+    risk_title: Fast-moving AI security threat landscape
+    risk_category: technical
+    severity: high
+    likelihood: high
+    description: AI-assisted development and attacker automation can both increase demand
+      and accelerate product-obsolescence risk if Snyk remediation accuracy or coverage lags.
+    impacted_chapter_ids: [II, IV, VI]
+    impacted_section_ids: [II.A, IV.B, VI.A, VI.B]
+    evidence_claim_ids: [EC-004, EC-006, EC-009, EC-014]
+    mitigation_or_diligence_request: Evaluate AI roadmap, model/data rights, accuracy
+      benchmarks, security research cadence, and competitive AI-native alternatives.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements and quality-of-earnings detail.
+    why_it_matters: Needed to validate reported revenue/loss, recurring revenue quality,
+      cash conversion, and profitability path.
+    suggested_source_or_request: Audited statements, management accounts, QoE schedule,
+      EBITDA bridge, and revenue-recognition memo.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Cap table, preference stack, debt, secondaries, and runway.
+    why_it_matters: Valuation and exit outcomes depend on financing terms and capital structure.
+    suggested_source_or_request: Cap table, financing documents, debt/warrants, side
+      letters, secondary ledger, option pool, and cash-runway model.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: Product-level usage, ARR, false positives, remediation acceptance,
+      and AI-evaluation metrics.
+    why_it_matters: Product breadth alone does not prove customer value, retention, or
+      technology defensibility.
+    suggested_source_or_request: Telemetry by module, scan/fix benchmarks, language
+      coverage, AI governance, incident history, and roadmap delivery metrics.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.A
+    missing_information: Customer concentration, renewal schedule, NRR/GRR, churn, support
+      issues, and direct references.
+    why_it_matters: Enterprise SaaS valuation depends on durable renewals and expansion in top accounts.
+    suggested_source_or_request: Top-50 ARR, renewal calendar, cohort retention, churn
+      reasons, support ticket trends, NPS, and reference calls.
+    priority: high
+  - gap_id: G-005
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Win/loss, market share, competitor pricing, and buyer-budget share.
+    why_it_matters: Bundled SCM/DevOps and cloud/AppSec platforms could pressure growth and pricing.
+    suggested_source_or_request: Win/loss by competitor, discount logs, analyst reports,
+      replacement maps, and competitive churn analysis.
+    priority: high
+  - gap_id: G-006
+    chapter_id: V
+    section_id: V.A
+    missing_information: Pipeline source mix, CAC, sales cycle, conversion rates,
+      partner-sourced bookings, and marketing ROI.
+    why_it_matters: Growth efficiency and channel scalability determine late-stage SaaS durability.
+    suggested_source_or_request: Sales/marketing funnel, channel attribution, CAC/payback,
+      partner revenue, conversion, and sales capacity model.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: IP assignments, patent details, OSS license compliance, data rights,
+      and AI training/use rights.
+    why_it_matters: Developer-security products often rely on code/data/vulnerability
+      intelligence where ownership and license compliance are critical.
+    suggested_source_or_request: IP schedule, assignment chain, patent/trademark files,
+      OSS audit, data licenses, AI policies, and FTO review.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Executive succession, retention, compensation, option repricing,
+      and board minutes.
+    why_it_matters: Interim CEO/CFO status and possible headcount trend ambiguity raise
+      continuity diligence questions.
+    suggested_source_or_request: Succession plan, executive agreements, retention plan,
+      board minutes, headcount bridge, and attrition history.
+    priority: medium
+  - gap_id: G-009
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Litigation, threatened claims, settlements, indemnity notices,
+      and insurance loss runs.
+    why_it_matters: Unseen disputes can affect valuation, indemnities, and closing risk.
+    suggested_source_or_request: Counsel docket search, claims register, settlements,
+      demand letters, insurance policies, and loss runs.
+    priority: high
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.B
+    missing_information: SOC2/ISO/FedRAMP evidence, DPAs, subprocessors, security incidents,
+      breach history, and regulated-customer obligations.
+    why_it_matters: Snyk handles sensitive code/security data and sells to
+      enterprise/security-conscious buyers.
+    suggested_source_or_request: Audit reports/certificates, DPAs, subprocessor list,
+      incident logs, security exceptions, export-control and privacy assessments.
+    priority: high
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, monthly management accounts, ARR bridge,
+      retention cohorts, gross-margin waterfall, bookings/billings, cash runway, and
+      board-approved operating plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Provide current and fully diluted cap table, financing documents, liquidation
+      preferences, debt/warrants, side letters, secondary ledgers, option pool, and
+      equity-retention/repricing analysis.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide top-50 customer ARR, renewal dates, NRR/GRR, churn reasons, customer
+      health, support tickets, contract terms, and permissioned references.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide product telemetry by module, scan/fix benchmarks, AI governance,
+      model/data provenance, incident history, roadmap execution, and security architecture.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide win/loss, pipeline source mix, competitor pricing, channel CAC,
+      partner revenue, funnel conversion, and demand-generation ROI.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: VIII
+    section_id: VIII.B
+    request: Provide entity chart, board/investor consents, customer MSAs/DPAs, audit
+      reports, subprocessor list, incident logs, export-control assessment, insurance,
+      litigation/claims register, IP assignments, OSS audit, and patent/trademark files.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-007
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide headcount bridge, attrition, restructuring history, executive
+      succession plan, retention grants, compensation benchmarks, and employee claims register.
+    requested_from: company
+    priority: medium
+
+limitations:
+  - limitation_id: L-001
+    description: This report is based only on public sources accessible during the run and
+      should not be treated as legal, financial, tax, security, or investment advice.
+    affected_chapter_ids: [I, II, III, IV, V, VI, VII, VIII]
+    affected_section_ids: []
+  - limitation_id: L-002
+    description: Vendor-published customer stories, comparison pages, and product pages are
+      attributed as company evidence but require customer and third-party validation.
+    affected_chapter_ids: [II, III, IV, V]
+    affected_section_ids: [II.A, III.A, IV.A, V.A]
+  - limitation_id: L-003
+    description: Wikipedia and CB Insights profile data are secondary/database sources;
+      financing, revenue, net-loss, patent, and competitor details require primary
+      documents for final underwriting.
+    affected_chapter_ids: [I, IV, VI, VII]
+    affected_section_ids: [I.A, I.B, IV.A, VI.B, VII.B]
+  - limitation_id: L-004
+    description: No direct management, customer, investor, counsel, employee, supplier, or
+      competitor interviews were conducted.
+    affected_chapter_ids: [I, II, III, IV, V, VI, VII, VIII]
+    affected_section_ids: []
+  - limitation_id: L-005
+    description: No comprehensive court docket, patent file-wrapper, UCC/lien, sanctions,
+      export-control, privacy enforcement, employment claim, or insurance review was performed.
+    affected_chapter_ids: [VIII]
+    affected_section_ids: [VIII.A, VIII.B]
+  - limitation_id: L-006
+    description: Private metrics such as ARR, NRR, gross margin, customer concentration,
+      churn, CAC, cash runway, cap table, debt, contracts, DPAs, incident history, and
+      board materials are not publicly verifiable.
+    affected_chapter_ids: [I, III, V, VIII]
+    affected_section_ids: [I.A, I.B, III.A, V.A, VIII.A, VIII.B]
