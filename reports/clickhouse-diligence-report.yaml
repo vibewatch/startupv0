@@ -1,0 +1,4619 @@
+report_metadata:
+  report_title: ClickHouse, Inc. Public-Source Startup Diligence Report
+  target_company: ClickHouse, Inc.
+  website: https://clickhouse.com/
+  known_aliases:
+    - ClickHouse
+    - ClickHouse Cloud
+    - ClickHouse, Inc.
+  sector: Enterprise Tech; real-time analytics database; open-source data infrastructure; observability
+  geography: United States headquarters reported by public databases; globally distributed enterprise
+    software operations
+  company_stage: Late-stage private unicorn
+  research_date: 2026-05-16
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Prepared exactly one public-source standard diligence report for ClickHouse, Inc. using
+      company pages, public financing announcements, GitHub repository/API evidence, CB Insights,
+      legal/privacy/trust pages, and trademark/context sources.
+    - Prioritized primary company and technical repository evidence for product, financing,
+      customer, security, and operating claims; treated vendor-published claims as evidence
+      requiring private verification.
+    - Mapped the report to the eight-chapter startup diligence checklist and separated verified
+      public facts from private diligence gaps.
+    - Did not infer audited financials, cap table, customer ARR, contracts, litigation clearance, HR
+      data, security audit results, or legal opinions from absence of public evidence.
+  included_jurisdictions:
+    - United States
+    - European Union / GDPR-facing markets
+    - Global cloud and enterprise software markets
+  excluded_topics:
+    - No private data room, management interviews, customer calls, supplier calls, legal searches
+      beyond public pages, paid database exports, or audit/security reports were reviewed.
+    - No investment recommendation, valuation opinion, tax opinion, legal opinion, IP
+      freedom-to-operate opinion, or cybersecurity attestation is provided.
+  user_provided_materials:
+    - material_id: M-001
+      title: User request
+      type: prompt_argument
+      date_received: 2026-05-16
+      notes: User requested exactly one standard-depth startup diligence YAML report for ClickHouse, Inc.
+        at reports/clickhouse-diligence-report.yaml and no unrelated file modifications.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: ClickHouse is an active private unicorn valued at $15B in the public CB Insights unicorn
+      tracker.
+    claim_source: CB Insights unicorn tracker
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm latest priced-round valuation, preference stack, secondary transactions, and fully
+        diluted ownership.
+  - founder_claim_id: FC-002
+    claim_text: ClickHouse has raised multiple large venture rounds including Series A, Series B, Series
+      C/credit facility, and Series D financing.
+    claim_source: ClickHouse financing announcements
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+    contradiction_summary: Public announcements verify financing events but not definitive terms,
+      current cash, debt covenants, or ownership.
+    diligence_follow_up:
+      - Request financing documents, debt agreements, cap table, pro forma liquidation waterfall,
+        and use-of-proceeds plan.
+  - founder_claim_id: FC-003
+    claim_text: ClickHouse is an open-source real-time analytics database with a managed ClickHouse
+      Cloud commercialization path.
+    claim_source: GitHub README and ClickHouse Cloud pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - V
+      - VI
+    mapped_section_ids:
+      - II.A
+      - V.C
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-018
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate cloud attach rate, free-to-paid conversion, gross margin, support burden, and OSS
+        community health.
+  - founder_claim_id: FC-004
+    claim_text: ClickHouse reports more than 3,000 Cloud customers and ARR growth above 250% year over year.
+    claim_source: ClickHouse financing announcements
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - III
+      - V
+    mapped_section_ids:
+      - I.A
+      - III.A
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-009
+    contradiction_summary: Company-published metrics are not audited and do not reveal net revenue
+      retention, churn, ACV distribution, or concentration.
+    diligence_follow_up:
+      - Request ARR bridge, cohort retention, customer count definitions, expansion/contraction
+        analysis, and top-customer schedule.
+  - founder_claim_id: FC-005
+    claim_text: ClickHouse has expanded product scope through BYOC, Postgres, ClickStack/observability,
+      and Langfuse Cloud.
+    claim_source: ClickHouse product pages and announcements
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+    contradiction_summary: Public pages verify product availability/positioning but not product-level
+      revenue, roadmap costs, or integration maturity.
+    diligence_follow_up:
+      - Request product-level ARR, roadmap, integration plan, customer adoption, and R&D investment
+        by product line.
+  - founder_claim_id: FC-006
+    claim_text: ClickHouse has named enterprise/customer proof points published on its customer pages.
+    claim_source: ClickHouse customer stories
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-012
+    contradiction_summary: Vendor-published customer proof does not confirm current contract status or ARR.
+    diligence_follow_up:
+      - Confirm referenceability, active usage, renewal dates, gross retention, NPS, and logo-rights
+        permissions directly with customers.
+  - founder_claim_id: FC-007
+    claim_text: ClickHouse maintains public security, privacy, terms, compliance, and IP/trademark
+      signals appropriate for enterprise software diligence.
+    claim_source: Trust Center, legal pages, GitHub license, trademark sources
+    claim_date: null
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.C
+      - VIII.D
+      - VIII.F
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-019
+    contradiction_summary: Public posture does not replace audit reports, incident history, DPAs,
+      export-control analysis, or IP assignments.
+    diligence_follow_up:
+      - Request SOC 2/ISO reports, pen tests, DPAs, subprocessors, incident log, export-control
+        memo, IP assignments, and OSS scans.
+  - founder_claim_id: FC-008
+    claim_text: ClickHouse continues to show active technical development and operating presence.
+    claim_source: GitHub API, careers, company pages
+    claim_date: null
+    mapped_chapter_ids:
+      - VI
+      - VII
+    mapped_section_ids:
+      - VI.A
+      - VII.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-007
+      - EC-015
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request engineering productivity, release quality, attrition, succession planning, and
+        option/compensation information.
+executive_summary:
+  overall_assessment: "ClickHouse appears to be an active late-stage private enterprise-data unicorn
+    with strong public signals: a $15B CB Insights tracker valuation, large public financing
+    announcements, a widely adopted Apache-2.0 open-source core, same-day repository activity,
+    managed ClickHouse Cloud, and company-published customer/ARR growth claims. The report should be
+    treated as a diligence roadmap rather than an underwriting conclusion because audited
+    financials, customer-level ARR, cap table, contracts, legal clearance, security audit artifacts,
+    and HR data are private."
+  investment_or_diligence_thesis: The diligence thesis is that open-source technical adoption plus a
+    managed cloud product can support durable real-time analytics infrastructure revenue if
+    ClickHouse proves cloud gross margins, retention, enterprise conversion, product focus, and
+    competitive differentiation at a valuation implied by current public unicorn databases.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights lists ClickHouse as a $15B private unicorn.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-003
+      summary: The public repository describes ClickHouse as an open-source column-oriented real-time
+        analytics database.
+      evidence_claim_ids:
+        - EC-006
+    - founder_claim_id: FC-008
+      summary: GitHub API metrics show substantial current activity and community scale.
+      evidence_claim_ids:
+        - EC-007
+    - founder_claim_id: FC-004
+      summary: Company-published materials cite more than 3,000 Cloud customers and ARR growth above 250%
+        YoY.
+      evidence_claim_ids:
+        - EC-009
+  biggest_risks:
+    - risk_id: R-001
+      summary: Public $15B valuation must be reconciled to financing terms, current cap table,
+        preferences, and revenue quality.
+    - risk_id: R-002
+      summary: Audited financials, ARR bridge, margins, burn, and cash runway are not public.
+    - risk_id: R-003
+      summary: Managed cloud/BYOC economics and credit-facility terms could pressure gross margin or
+        flexibility.
+    - risk_id: R-005
+      summary: Competition from hyperscalers, data-platform suites, and observability vendors is intense.
+    - risk_id: R-007
+      summary: Security, privacy, IP, contract, litigation, insurance, and regulatory clearance require
+        private legal/security review.
+  key_evidence_gaps:
+    - Audited financial statements, management accounts, ARR/NRR/GRR cohort metrics, gross margin by
+      product/deployment, cash/burn, and forecast model.
+    - Current cap table, financing documents, liquidation preferences, option pool, investor rights,
+      and credit-facility covenants.
+    - Customer-level ARR, concentration, usage, churn, renewal calendar, customer reference calls,
+      and supplier/cloud commitments.
+    - Product-level P&L, cloud COGS, roadmap/adoption for BYOC/Postgres/ClickStack/Langfuse,
+      engineering quality, and security/incident history.
+    - "Legal data room: material contracts, DPAs, SLAs, insurance, IP assignments, OSS audit,
+      litigation/regulatory searches, and HR claims/compensation data."
+  recommended_next_steps:
+    - Open a management diligence track focused on financial statements, ARR cohorts, cloud gross
+      margin, sales productivity, and valuation bridge.
+    - Run customer/supplier diligence covering top accounts, renewals, customer interviews,
+      cloud-provider contracts, subprocessors, and margin commitments.
+    - Run technical/security diligence covering architecture, product roadmap, incident history,
+      vulnerability management, SBOM/OSS scan, and Trust Center audit artifacts.
+    - Run legal/HR diligence covering cap table, financing/debt, material contracts, DPAs, IP
+      assignments, litigation/regulatory searches, insurance, org/compensation, and option plans.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: "Public evidence verifies a large private financing trajectory and strong
+      company-published Cloud traction, but core financial diligence remains private: audited
+      statements, ARR bridge, gross margin, burn, cash, debt covenants, backlog, collections, taxes,
+      and cap table were not public."
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-009
+      - EC-016
+    risk_ids:
+      - R-001
+      - R-002
+      - R-003
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Audited financials, management reporting, backlog, AR aging, and revenue/margin by
+          product/channel/geography are not public; only financing announcements and high-level
+          customer/ARR growth claims are visible.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.A-F1
+            finding: No public audited income statement, balance sheet, cash-flow statement, backlog schedule,
+              or AR aging schedule was located in reviewed public sources.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-002
+          - finding_id: I.A-F2
+            finding: Company-published metrics cite more than 3,000 Cloud customers and ARR growth above 250%
+              year over year, but these are not substitutes for audited revenue, cohort, or margin
+              schedules.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Headline ARR/customer-growth language may mask consumption volatility, discounts, churn,
+            professional-services mix, or cloud infrastructure gross-margin pressure.
+        evidence_gaps:
+          - Audited annual/quarterly financial statements, revenue-recognition memo,
+            product/channel/geography revenue, backlog, AR aging, gross margin by deployment model,
+            cash/burn, and management KPI packs.
+        follow_up_questions:
+          - Provide audited financials for the last three fiscal years, current-year monthly
+            management accounts, ARR bridge, NRR/GRR, gross-margin by product, backlog, AR aging,
+            cash runway, and board financial packages.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-009
+          - EC-016
+      - section_id: I.B
+        title: Financial projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public sources identify growth drivers—cloud adoption, open-source reach, BYOC,
+          observability, Postgres, and AI-adjacent products—but do not provide three-year financial
+          projections or scenario assumptions.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public product expansion creates multiple possible growth vectors but no public plan
+              quantifies revenue, costs, or capital needs by vector.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-001
+              - R-003
+              - R-005
+        hidden_risks:
+          - A high valuation could depend on sustained consumption growth and successful expansion
+            into adjacent products without visible proof of forecast achievability.
+        evidence_gaps:
+          - Three-year quarterly forecast, cohort model, usage/consumption model, pricing
+            assumptions, infrastructure capacity plan, hiring plan, and sensitivity cases.
+        follow_up_questions:
+          - Provide downside/base/upside projections with ARR, GAAP revenue, COGS, cloud costs,
+            operating expense, cash, debt, and financing assumptions.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-016
+      - section_id: I.C
+        title: Capital structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public funding announcements identify large equity rounds and a credit facility, but share
+          counts, option pool, warrants, SAFE/notes, debt covenants, investor rights, and
+          off-balance-sheet liabilities are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: The $350M Series C and $100M credit facility announcement creates a public debt/financing
+              diligence hook.
+            evidence_claim_ids:
+              - EC-004
+            risk_ids:
+              - R-003
+          - finding_id: I.C-F2
+            finding: CB Insights current $15B valuation should be reconciled to actual current fully diluted cap
+              table and liquidation stack.
+            evidence_claim_ids:
+              - EC-001
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Credit covenants, liquidation preferences, secondary-sale economics, or employee option
+            repricing needs could materially change common-equity value.
+        evidence_gaps:
+          - Cap table, stockholder list, option/warrant schedules, debt documents, board consents,
+            investor rights, side letters, and off-balance-sheet commitments.
+        follow_up_questions:
+          - Provide current fully diluted cap table, option pool, debt agreements, preference stack,
+            warrants/notes, investor rights, and liquidation waterfall.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-004
+          - EC-016
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Financing history is public at a headline level, while tax positions, accounting policies,
+          basis in prior rounds, and current ownership are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public sources show a step-up from early venture financing to a CB Insights $15B unicorn
+              valuation.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-003
+              - EC-004
+              - EC-005
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Round headline amounts can include secondary proceeds, structured terms, debt, or
+            milestones that affect true dilution and preference economics.
+        evidence_gaps:
+          - Tax/NOL schedule, accounting policies, financing documents, round-by-round ownership,
+            debt basis, and revenue-recognition policies.
+        follow_up_questions:
+          - Provide financing history by round with date, investors, gross/new money, secondary
+            proceeds, post-money valuation, share price, preferences, ownership, and current
+            carrying basis.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-005
+  - chapter_id: II
+    title: Products
+    chapter_summary: "ClickHouse’s public product story is strong: a widely used Apache-2.0 open-source
+      columnar database, managed ClickHouse Cloud, BYOC, pricing/packaging, and expanding adjacent
+      products. Diligence should focus on product-level ARR, gross margin, retention, integration
+      maturity, and technical differentiation durability."
+    founder_claim_ids:
+      - FC-003
+      - FC-005
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-011
+    risk_ids:
+      - R-003
+      - R-005
+      - R-006
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public materials support the core database and cloud product line plus BYOC, Postgres,
+          observability/ClickStack, and Langfuse Cloud. Product-level economics and market share are
+          not public.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: The ClickHouse README describes the core product as an open-source column-oriented database
+              for real-time analytical reporting.
+            evidence_claim_ids:
+              - EC-006
+            risk_ids:
+              - R-006
+          - finding_id: II.A-F2
+            finding: Managed Cloud, BYOC, Postgres, ClickStack/observability, and Langfuse Cloud indicate a
+              broader commercial portfolio.
+            evidence_claim_ids:
+              - EC-008
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-003
+              - R-005
+          - finding_id: II.A-F3
+            finding: GitHub repository metrics provide a strong public technical-adoption signal.
+            evidence_claim_ids:
+              - EC-007
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Product sprawl could dilute engineering focus, increase support cost, or create
+            integration debt before commercial traction is proven by module.
+        evidence_gaps:
+          - Product-level ARR, gross margin, attach rate, roadmap, uptime/SLA performance, incident
+            history, cloud COGS, support costs, product security reviews, and win/loss by product.
+        follow_up_questions:
+          - Provide product P&L, roadmap, technical architecture review, deployment mix, churn/NRR
+            by product, cloud COGS, support ticket trends, and product-security artifacts.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-008
+          - EC-010
+          - EC-011
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Customer evidence is encouraging but incomplete. Company-published materials cite
+      more than 3,000 Cloud customers and named customer stories; private diligence must verify
+      active contracts, concentration, retention, consumption volatility, pipeline quality, and
+      cloud/provider dependencies.
+    founder_claim_ids:
+      - FC-004
+      - FC-006
+    evidence_claim_ids:
+      - EC-009
+      - EC-012
+      - EC-016
+    risk_ids:
+      - R-002
+      - R-004
+      - R-009
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Public customer stories and 3,000+ Cloud-customer language support broad adoption, but
+          top-15 customer lists by application, ARR, product ownership, and purchase timing are
+          private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Company-published materials cite more than 3,000 Cloud customers.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-004
+          - finding_id: III.A-F2
+            finding: Named customer stories support use-case breadth but require direct customer confirmation.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Logo evidence may include former, low-spend, trial, or non-referenceable customers;
+            usage-based models can create concentration in a few high-consumption accounts.
+        evidence_gaps:
+          - Top-15 customers by ARR/usage/application, customer interviews, contract status,
+            NRR/GRR, expansion/contraction, renewal dates, and logo-rights proof.
+        follow_up_questions:
+          - Provide top customer schedule for the last two fiscal years and current YTD, with ARR,
+            product, use case, owner, purchase timing, renewal date, NRR, and reference status.
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-009
+          - EC-012
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Strategic cloud, technology, open-source, channel, and ecosystem relationships are
+          directionally visible through product positioning but revenue contribution and contract
+          terms are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.B-F1
+            finding: BYOC and managed-cloud positioning imply important relationships with customer cloud
+              accounts and infrastructure ecosystems.
+            evidence_claim_ids:
+              - EC-008
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-009
+        hidden_risks:
+          - Dependence on hyperscaler marketplaces, credits, co-sell, or infrastructure terms may
+            affect margins and go-to-market efficiency.
+        evidence_gaps:
+          - Partner agreements, cloud marketplace revenue, co-sell commitments, referral/channel
+            economics, and strategic alliance KPIs.
+        follow_up_questions:
+          - Provide strategic partner list, contracts, revenue contribution, marketplace/co-sell
+            metrics, MDF, commitments, and termination/change-of-control rights.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Customer-level revenue and any 5%+ customer concentration are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public customer counts and stories do not disclose customer-level ARR, usage, or
+              concentration.
+            evidence_claim_ids:
+              - EC-009
+              - EC-012
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - A small number of very large consumption customers could drive growth, increase
+            forecasting volatility, and create renewal leverage.
+        evidence_gaps:
+          - Revenue by customer, ARR concentration, usage concentration, expansion/contraction,
+            commitments versus pay-as-you-go, and renewal calendar.
+        follow_up_questions:
+          - Provide customer revenue by month, top-customer concentration, cohort expansion, churn
+            details, committed spend, consumption variance, and renewals for the next eight
+            quarters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-009
+          - EC-012
+          - EC-016
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No comprehensive public source identified severed customer, partner, or supplier
+          relationships.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Reviewed public sources did not provide a reliable severed-relationship schedule.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-004
+              - R-009
+        hidden_risks:
+          - Lost lighthouse customers, terminated strategic alliances, or cloud-provider disputes
+            may not be visible publicly.
+        evidence_gaps:
+          - Lost customer/partner/supplier logs, churn reasons, dispute letters, termination
+            notices, and win-back plans.
+        follow_up_questions:
+          - Provide list of material customer, partner, and supplier terminations/non-renewals over
+            the last two years with ARR impact and root cause.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-016
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Supplier exposure is not public; likely material dependencies include cloud infrastructure,
+          data sub-processors, security tooling, and open-source maintainer/developer ecosystem
+          support.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Public Cloud/BYOC positioning makes cloud infrastructure and subprocessors a central
+              supplier diligence area.
+            evidence_claim_ids:
+              - EC-008
+              - EC-010
+              - EC-014
+            risk_ids:
+              - R-003
+              - R-009
+        hidden_risks:
+          - Cloud-provider pricing changes, egress costs, committed-spend obligations, capacity
+            constraints, or subprocessor incidents could affect margin and service quality.
+        evidence_gaps:
+          - Top suppliers by spend, cloud commits, support contracts, subprocessors, security
+            reviews, business-continuity tests, and supplier concentration.
+        follow_up_questions:
+          - Provide top supplier schedule, cloud-provider agreements, committed spend, subprocessor
+            list, SLAs, incident history, vendor security reviews, and termination rights.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+          - EC-014
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: ClickHouse sits in a strategically attractive but intensely competitive market
+      spanning cloud data warehouses, lakehouses, real-time analytics, observability/log analytics,
+      and developer-data platforms. Its open-source technical adoption is a differentiator, but
+      enterprise buying committees can compare it against hyperscaler and bundled platform
+      alternatives.
+    founder_claim_ids:
+      - FC-003
+      - FC-005
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-017
+      - EC-018
+    risk_ids:
+      - R-005
+      - R-006
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Public product positioning indicates competition across analytics databases, cloud
+          warehouses/lakehouses, observability/search, and managed open-source database services.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Open-source adoption and repository activity support technical credibility versus
+              proprietary-only competitors.
+            evidence_claim_ids:
+              - EC-006
+              - EC-007
+              - EC-018
+            risk_ids:
+              - R-006
+          - finding_id: IV.A-F2
+            finding: Cloud, BYOC, Postgres, observability, and AI-adjacent products expand the competitor set
+              and basis of competition.
+            evidence_claim_ids:
+              - EC-008
+              - EC-010
+              - EC-011
+              - EC-017
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Hyperscalers and large data platforms can bundle, discount, or integrate analytics
+            capabilities in ways that pressure standalone pricing and sales cycles.
+        evidence_gaps:
+          - Win/loss data, displacement evidence, discount trends, competitive pricing analysis,
+            feature benchmarks, market-share estimates, analyst notes, and channel conflicts.
+        follow_up_questions:
+          - Provide win/loss report, competitive battlecards, pricing/discount analysis, replacement
+            versus expansion data, analyst references, and market-share evidence by segment.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-017
+          - EC-018
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: The public GTM motion appears to combine open-source community adoption,
+      self-service/cloud conversion, enterprise sales, product-led usage expansion, customer
+      stories, and ecosystem/channel motions. Private diligence should test conversion, CAC,
+      payback, sales productivity, discounting, pipeline quality, and ability to support a high
+      valuation with current budgets.
+    founder_claim_ids:
+      - FC-003
+      - FC-004
+      - FC-006
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-012
+      - EC-018
+    risk_ids:
+      - R-001
+      - R-004
+      - R-005
+      - R-006
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public materials show product-led and enterprise positioning around real-time analytics and
+          ClickHouse Cloud; distribution-channel economics are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Open-source-to-cloud positioning creates a plausible PLG and enterprise conversion funnel.
+            evidence_claim_ids:
+              - EC-006
+              - EC-008
+              - EC-018
+            risk_ids:
+              - R-006
+          - finding_id: V.A-F2
+            finding: Published customer stories and growth claims support marketing proof points.
+            evidence_claim_ids:
+              - EC-009
+              - EC-012
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - PLG signups may not convert economically, and enterprise sales may require heavy
+            discounts, support, or cloud credits to win.
+        evidence_gaps:
+          - CAC by channel, conversion funnel, channel revenue, campaign ROI, marketplace economics,
+            discounting, payback, and marketing budget plan.
+        follow_up_questions:
+          - Provide acquisition funnel, pipeline by source, CAC/payback, sales cycle, discounting,
+            channel/marketplace contribution, and campaign ROI by segment.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-012
+          - EC-018
+      - section_id: V.B
+        title: Major customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major customer status, trend, growth prospects, and pipeline are not public beyond
+          company-published customer stories and aggregate Cloud-customer count.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: More than 3,000 Cloud customers is a meaningful public adoption marker, but customer
+              quality is unverified.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Named logo momentum may not map to near-term expansion if usage stabilizes or customers
+            optimize cloud spend.
+        evidence_gaps:
+          - Top-account plans, renewal/expansion pipeline, customer health scores, NPS, usage
+            trends, churn risks, and reference calls.
+        follow_up_questions:
+          - Provide top-account QBRs, customer health, expansion pipeline, renewal schedule, churn
+            risks, and direct customer-reference calls.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-009
+          - EC-012
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Principal public avenues appear to include open-source community, managed cloud, BYOC
+          enterprise requirements, product expansion, customer stories, events, and ecosystem
+          partnerships.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Open-source adoption and active GitHub community are likely top-of-funnel advantages.
+            evidence_claim_ids:
+              - EC-007
+              - EC-018
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Community users may self-host without monetizing; aggressive cloud competitors can
+            capture workloads before conversion.
+        evidence_gaps:
+          - Source-to-opportunity conversion, OSS telemetry, developer funnel, marketplace funnel,
+            partner pipeline, and inbound/outbound mix.
+        follow_up_questions:
+          - Provide funnel metrics from anonymous OSS/community activity to signup, activation, paid
+            conversion, expansion, and enterprise opportunity.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-018
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales compensation, quotas, cycle time, ramp, and hiring plans are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: High-growth claims imply a scaling sales organization, but productivity details were not
+              public.
+            evidence_claim_ids:
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Growth may be dependent on unsustainably high hiring, discounting, sales-engineering
+            burden, or founder/executive involvement in strategic deals.
+        evidence_gaps:
+          - AE/SE headcount, quotas, attainment, ramp, sales cycle, pipeline coverage, discounting,
+            churn by rep cohort, and sales compensation plan.
+        follow_up_questions:
+          - Provide sales productivity model with AE/SE headcount, quota, attainment, ramp, pipeline
+            coverage, bookings, churn, and compensation by segment/region.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-009
+          - EC-016
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Public sources do not disclose marketing/sales budget or forecast resources required to
+          execute the plan.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Recent large financing suggests capital availability, but budget allocation and efficiency
+              are not public.
+            evidence_claim_ids:
+              - EC-004
+              - EC-005
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - Marketing and sales spend could need to rise sharply to maintain ARR growth, pressuring
+            path to profitability.
+        evidence_gaps:
+          - Budget, burn, CAC payback, pipeline generation capacity, hiring plan, event/community
+            costs, and ROI by program.
+        follow_up_questions:
+          - Provide budget-to-plan bridge, marketing program ROI, CAC/payback by segment, hiring
+            plan, and sensitivity cases for lower conversion or higher cloud costs.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-016
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: "The technical signal is strong: same-day GitHub activity, high star/fork counts,
+      Apache-2.0 licensing, documentation, and public product expansion. Key diligence issues are
+      engineering productivity, product quality, security, roadmap prioritization, OSS governance,
+      and cost to integrate newer product lines."
+    founder_claim_ids:
+      - FC-003
+      - FC-005
+      - FC-008
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-011
+      - EC-018
+      - EC-019
+    risk_ids:
+      - R-005
+      - R-006
+      - R-007
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public repository and documentation show active engineering activity; public sources do not
+          disclose engineering headcount, release quality, roadmap resourcing, or key-person risk.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: GitHub API metrics show a large, active repository with same-day push activity.
+            evidence_claim_ids:
+              - EC-007
+            risk_ids:
+              - R-006
+          - finding_id: VI.A-F2
+            finding: Apache-2.0/open-source signals require sustained governance, security response, and
+              community stewardship.
+            evidence_claim_ids:
+              - EC-006
+              - EC-019
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - A large OSS codebase may carry vulnerability, governance, maintainer-concentration, or
+            release-quality risks not visible from star/fork metrics.
+        evidence_gaps:
+          - Engineering headcount by team, release metrics, incident/postmortem history,
+            vulnerability backlog, code ownership, key-person coverage, and roadmap resourcing.
+        follow_up_questions:
+          - Provide engineering org chart, roadmap, release quality metrics, vulnerability
+            management, incident postmortems, dependency scan, code ownership, and key-person
+            succession plan.
+        table_ids:
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-019
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public product pages and announcements show adjacent product initiatives, but cost,
+          timeline, adoption, and critical technology dependencies are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Postgres, ClickStack/observability, BYOC, and Langfuse Cloud are public pipeline/portfolio
+              expansion signals.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Adjacent products may not share the same buyer, deployment model, or margin structure as
+            the core database, increasing execution risk.
+        evidence_gaps:
+          - Product roadmap, launch KPIs, R&D cost by initiative, dependency map, adoption cohorts,
+            deprecation plans, and integration architecture.
+        follow_up_questions:
+          - Provide product pipeline with status, launch dates, R&D cost, dependencies, customer
+            adoption, technical blockers, and kill/continue thresholds.
+        table_ids:
+          - T-011
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public company/careers pages show active hiring and leadership presence, but core
+      HR diligence—org chart, headcount by function/location, employment agreements, compensation,
+      option plans, attrition, culture, and employee relations—is not public.
+    founder_claim_ids:
+      - FC-008
+    evidence_claim_ids:
+      - EC-015
+      - EC-016
+    risk_ids:
+      - R-008
+    sections:
+      - section_id: VII.A
+        title: Organization chart
+        checklist_question_ids:
+          - VII.A
+        summary: Public sources identify an active company presence but do not provide a full management org
+          chart or reporting lines.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Company and careers pages evidence an operating organization but not full reporting
+              structure.
+            evidence_claim_ids:
+              - EC-015
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Founder/technical-leader concentration, unclear succession, or distributed-team
+            coordination risk could be material.
+        evidence_gaps:
+          - Current org chart, reporting lines, board composition, executive responsibilities,
+            succession plans, and key-person dependencies.
+        follow_up_questions:
+          - Provide current org chart, reporting lines, executive roles, board/advisor list,
+            succession plan, and key-person retention details.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-015
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Headcount by function/location and hiring plan are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Careers pages indicate ongoing hiring/operating presence but not historical or projected
+              headcount.
+            evidence_claim_ids:
+              - EC-015
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Rapid growth may have created management-layer, remote-distribution, compliance, or
+            retention challenges.
+        evidence_gaps:
+          - Headcount bridge, contractor count, location mix, hiring plan, attrition, regretted
+            losses, immigration/PEO exposure, and restructuring history.
+        follow_up_questions:
+          - Provide monthly headcount by function/location, contractor population, hiring plan,
+            attrition, regretted loss, restructuring history, and office/remote policies.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public leadership context is available at a high level, but full biographies, tenure,
+          outside commitments, and references need verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Company pages provide public leadership/company context suitable for initial diligence
+              only.
+            evidence_claim_ids:
+              - EC-015
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Unverified executive tenure, prior-company issues, conflicts, or retention risks may not
+            be visible in company-published bios.
+        evidence_gaps:
+          - Executive CVs, background checks, references, employment agreements, outside activities,
+            and board minutes.
+        follow_up_questions:
+          - Provide executive biographies, tenure, prior employment, references, background-check
+            confirmations, outside commitments, and key employment agreements.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-015
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Key employment agreements, compensation, benefits, and severance/change-of-control terms
+          are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Public sources do not disclose management compensation or benefits.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Retention gaps or expensive change-of-control obligations could affect transaction value
+            and integration planning.
+        evidence_gaps:
+          - Employment agreements, offer letters, bonus plans, severance/change-of-control terms,
+            benefits, and compensation benchmarking.
+        follow_up_questions:
+          - Provide compensation schedule, employment agreements, bonus/commission plans, benefits,
+            severance, change-of-control terms, and retention plan.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-016
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Option plans, option pool, refresh grants, exercise prices, and equity-incentive overhang
+          are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Financing and valuation evidence makes option-plan diligence important, but no public
+              option schedule was available.
+            evidence_claim_ids:
+              - EC-001
+              - EC-016
+            risk_ids:
+              - R-001
+              - R-008
+        hidden_risks:
+          - High 409A valuations, underwater options, or insufficient refresh pools can create
+            retention risk after a valuation reset.
+        evidence_gaps:
+          - Stock plan, grant ledger, exercise prices, vesting, 409A history, refresh plan, option
+            expirations, and secondary-sale policies.
+        follow_up_questions:
+          - Provide stock plan, grant ledger, 409A valuations, option pool, vesting schedule,
+            refresh/repricing history, and secondary-sale policy.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-016
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No public employee-relations clearance can be concluded from reviewed sources.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public sources reviewed did not provide a comprehensive employee claims or relations
+              history.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Employee claims, investigations, whistleblower issues, harassment/discrimination
+            matters, or contractor-classification risk may be undisclosed.
+        evidence_gaps:
+          - Claims log, HR investigations, litigation/arbitration, whistleblower matters, employee
+            survey data, and contractor classification review.
+        follow_up_questions:
+          - Provide HR claims register, investigation summaries, employment litigation/arbitration,
+            whistleblower reports, contractor classification review, and employee survey results.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-016
+      - section_id: VII.G
+        title: Personnel turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover and retention metrics are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: No public turnover schedule or retention-plan data was located.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - High growth and high valuation can mask attrition, burnout, or equity-retention problems
+            until after financing or transaction diligence.
+        evidence_gaps:
+          - Voluntary/involuntary attrition by function/location, regretted losses, retention
+            grants, employee engagement, and hiring velocity.
+        follow_up_questions:
+          - Provide turnover by month/function/location, regretted-loss details, exit-interview
+            themes, retention grants, engagement survey trends, and hiring velocity.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-016
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: ClickHouse has public legal, privacy, security, trust, open-source license, and
+      trademark signals, but public sources do not provide legal clearance. Private diligence must
+      cover litigation, IP chain of title, OSS compliance, security audits, incidents, DPAs,
+      customer contracts, regulatory exposure, insurance, employment claims, and
+      environmental/safety matters.
+    founder_claim_ids:
+      - FC-007
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-019
+      - EC-020
+    risk_ids:
+      - R-006
+      - R-007
+      - R-010
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: No comprehensive public litigation search or counsel clearance was performed; absence of
+          identified public lawsuits is not legal clearance.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Public sources reviewed do not establish pending-lawsuit clearance.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Confidential disputes, arbitration, customer indemnity claims, IP claims, or employment
+            matters may not be visible.
+        evidence_gaps:
+          - Counsel-run docket searches, claims register, settlement agreements, demand letters,
+            arbitrations, and insurance notices.
+        follow_up_questions:
+          - Provide counsel litigation memo, docket searches, claims register, settlements, demand
+            letters, arbitrations, and insurance notices/loss runs.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No public schedule of lawsuits initiated by ClickHouse was identified.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Reviewed public sources did not provide a complete plaintiff-side litigation schedule.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Outbound IP, contract, employment, or collection disputes could affect relationships and
+            financial reserves.
+        evidence_gaps:
+          - Company-initiated claims, collections, IP enforcement, settlement terms, outside-counsel
+            budgets, and likelihood of recovery.
+        follow_up_questions:
+          - Provide schedule of lawsuits/demands initiated by the company, counsel budgets, claimed
+            damages, status, and recovery assumptions.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: As an enterprise software/cloud company, environmental and safety exposure appears lower
+          than industrial companies, but office, remote-work, data-center/supplier, and
+          employee-safety matters are not fully public.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Trust/security posture is public, while environmental/safety policies and liabilities were
+              not public.
+            evidence_claim_ids:
+              - EC-013
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Cloud infrastructure supply chain, office obligations, remote-work ergonomics, and
+            regulatory changes could create indirect exposure.
+        evidence_gaps:
+          - Workplace safety policies, office leases, insurance, ESG/cloud emissions commitments,
+            supplier policies, and claims history.
+        follow_up_questions:
+          - Provide safety policies, office leases, insurance coverage, ESG/cloud emissions
+            commitments, workplace claims, and regulatory compliance review.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-013
+          - EC-020
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Public IP signals include Apache-2.0 repository licensing and trademark records, but
+          chain-of-title, contributor agreements, patents, encumbrances, and OSS compliance need
+          counsel review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: The public repository displays Apache-2.0 licensing signals.
+            evidence_claim_ids:
+              - EC-006
+              - EC-019
+            risk_ids:
+              - R-006
+              - R-007
+          - finding_id: VIII.D-F2
+            finding: Justia trademark search results provide a public trademark diligence starting point.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Contributor ownership, third-party dependencies, license compatibility, trademark
+            disputes, or unassigned inventions could impair commercial rights.
+        evidence_gaps:
+          - IP schedule, assignments, contributor agreements, OSS scan/SBOM, patent/trademark
+            prosecution files, encumbrances, licenses, and dispute history.
+        follow_up_questions:
+          - Provide IP schedule, invention assignments, contributor agreements, OSS scan/SBOM,
+            trademark/patent files, licenses, encumbrances, and IP dispute history.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+          - EC-019
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Cyber, E&O, D&O, EPLI, general liability, and cloud outage coverage are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Public trust/legal pages do not disclose insurance coverage or exclusions.
+            evidence_claim_ids:
+              - EC-014
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Coverage gaps or exclusions for cyber incidents, AI/data issues, OSS claims, or outage
+            liability could be material.
+        evidence_gaps:
+          - Insurance policies, coverage limits, exclusions, loss runs, claims, broker memos, and
+            required customer coverage.
+        follow_up_questions:
+          - Provide insurance policies, coverage limits, exclusions, loss runs, open claims, broker
+            memos, and customer-required coverage schedules.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-020
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Public terms are visible, but enterprise MSAs, SLAs, DPAs, marketplace/channel agreements,
+          debt documents, leases, and change-of-control consents are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public terms/privacy pages establish baseline legal posture but not negotiated enterprise
+              obligations.
+            evidence_claim_ids:
+              - EC-014
+            risk_ids:
+              - R-007
+          - finding_id: VIII.F-F2
+            finding: Credit facility and cloud/BYOC model make contract review especially important.
+            evidence_claim_ids:
+              - EC-004
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-007
+        hidden_risks:
+          - Enterprise contracts may contain uncapped indemnities, security SLAs, data residency
+            obligations, audit rights, MFNs, termination rights, or change-of-control consents.
+        evidence_gaps:
+          - Top contracts, MSAs, DPAs, SLAs, marketplace/channel agreements, debt/credit agreements,
+            leases, data-processing terms, and change-of-control consents.
+        follow_up_questions:
+          - Provide material contract schedule, top customer/vendor agreements, DPAs, SLAs,
+            marketplace/channel contracts, debt agreements, leases, side letters, and consent
+            requirements.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-010
+          - EC-014
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: No public regulatory-problem clearance can be concluded; privacy, security, export-control,
+          sanctions, AI/data, and sector-specific customer obligations require review.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Trust/privacy/legal pages provide public compliance posture but no comprehensive regulatory
+              correspondence history.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-020
+            risk_ids:
+              - R-007
+              - R-010
+        hidden_risks:
+          - Data, encryption, export controls, regulated customer use cases, or incident
+            notification obligations could create hidden regulatory exposure.
+        evidence_gaps:
+          - Regulatory correspondence, privacy assessments, DPIAs, export-control classification,
+            sanctions screening, incident notifications, and compliance audits.
+        follow_up_questions:
+          - Provide regulatory correspondence, privacy/security assessments, export-control memo,
+            sanctions screening, incident notification history, and compliance audit results.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+          - EC-020
+tables:
+  - table_id: T-001
+    title: Public financing and valuation chronology
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize public financing/valuation anchors and related diligence caveats.
+    columns:
+      - name: date_or_period
+        description: date or period
+      - name: event
+        description: event
+      - name: public_amount_or_valuation
+        description: public amount or valuation
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T-001-R1
+        values:
+          date_or_period: "2021"
+          event: Series A / company launch
+          public_amount_or_valuation: nearly $50M
+          diligence_caveat: Confirm round documents, share price, ownership, and option-pool treatment.
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: T-001-R2
+        values:
+          date_or_period: "2021"
+          event: Series B
+          public_amount_or_valuation: $250M at $2B valuation
+          diligence_caveat: Confirm preferences, secondary component, and investor rights.
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: T-001-R3
+        values:
+          date_or_period: Later stage
+          event: Series C plus credit facility
+          public_amount_or_valuation: $350M equity plus $100M credit facility
+          diligence_caveat: Review debt covenants, security, runway, and use of proceeds.
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-001-R4
+        values:
+          date_or_period: Later stage
+          event: Series D
+          public_amount_or_valuation: $400M
+          diligence_caveat: Confirm valuation, preferences, dilution, and secondary proceeds.
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-001-R5
+        values:
+          date_or_period: Current public tracker
+          event: CB Insights unicorn valuation
+          public_amount_or_valuation: $15B
+          diligence_caveat: Reconcile tracker valuation to latest financing and fully diluted cap table.
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+    notes: null
+  - table_id: T-002
+    title: Public financial KPI evidence and missing schedules
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify which public KPI claims are visible versus missing financial diligence materials.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public signal
+      - name: missing_private_evidence
+        description: missing private evidence
+      - name: risk_link
+        description: risk link
+    rows:
+      - row_id: T-002-R1
+        values:
+          area: Customer count
+          public_signal: ">3,000 Cloud customers"
+          missing_private_evidence: Definition, active paid count, ARR split, churn, and customer concentration.
+          risk_link: Customer quality and revenue concentration.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-004
+          - SRC-005
+      - row_id: T-002-R2
+        values:
+          area: ARR growth
+          public_signal: ">250% YoY ARR growth"
+          missing_private_evidence: ARR bridge, NRR/GRR, cohort usage, revenue recognition, and one-time effects.
+          risk_link: Growth durability and valuation support.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-005
+      - row_id: T-002-R3
+        values:
+          area: Statements
+          public_signal: No audited statements public
+          missing_private_evidence: Income statements, balance sheets, cash flows, footnotes, and management reports.
+          risk_link: Cannot underwrite margins, burn, or cash runway from public data.
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-009
+      - EC-016
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-005
+    notes: null
+  - table_id: T-003
+    title: Product portfolio and economics diligence map
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public products to monetization/economics diligence questions.
+    columns:
+      - name: product_area
+        description: product area
+      - name: public_evidence
+        description: public evidence
+      - name: monetization_or_cost_questions
+        description: monetization or cost questions
+    rows:
+      - row_id: T-003-R1
+        values:
+          product_area: Open-source ClickHouse
+          public_evidence: Apache-2.0 open-source column-oriented database.
+          monetization_or_cost_questions: Free-to-paid conversion, support burden, fork risk, community governance.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: T-003-R2
+        values:
+          product_area: ClickHouse Cloud
+          public_evidence: Managed cloud service and public pricing.
+          monetization_or_cost_questions: Gross margin, cloud COGS, credits, committed spend, NRR, usage volatility.
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-007
+          - SRC-009
+      - row_id: T-003-R3
+        values:
+          product_area: BYOC
+          public_evidence: Bring Your Own Cloud offering.
+          monetization_or_cost_questions: Support model, security boundary, revenue recognition, implementation effort.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-008
+      - row_id: T-003-R4
+        values:
+          product_area: Postgres / ClickStack / Langfuse
+          public_evidence: Public adjacent product pages and announcements.
+          monetization_or_cost_questions: Attach rate, cannibalization, R&D investment, roadmap focus, integration debt.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+          - SRC-011
+          - SRC-012
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    notes: null
+  - table_id: T-004
+    title: Open-source technical adoption snapshot
+    chapter_id: II
+    section_id: II.A
+    purpose: Record public repository metrics captured during the diligence run.
+    columns:
+      - name: metric
+        description: metric
+      - name: captured_value
+        description: captured value
+      - name: interpretation
+        description: interpretation
+      - name: diligence_follow_up
+        description: diligence follow up
+    rows:
+      - row_id: T-004-R1
+        values:
+          metric: Stars
+          captured_value: 47,443
+          interpretation: Strong public developer awareness signal.
+          diligence_follow_up: Correlate stars to active users and cloud conversions.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-022
+      - row_id: T-004-R2
+        values:
+          metric: Forks
+          captured_value: 8,405
+          interpretation: Broad developer engagement and contribution/fork surface.
+          diligence_follow_up: Assess contributor concentration, important forks, and governance.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-022
+      - row_id: T-004-R3
+        values:
+          metric: License
+          captured_value: Apache-2.0
+          interpretation: Permissive OSS posture supports adoption.
+          diligence_follow_up: Review CLA, third-party dependencies, and commercial license boundaries.
+        evidence_claim_ids:
+          - EC-006
+          - EC-019
+        source_ids:
+          - SRC-006
+          - SRC-022
+      - row_id: T-004-R4
+        values:
+          metric: Latest push captured
+          captured_value: 2026-05-16T14:39:34Z
+          interpretation: Current activity during diligence.
+          diligence_follow_up: Review release quality, test coverage, incidents, and vulnerability response.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-022
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-019
+    source_ids:
+      - SRC-006
+      - SRC-022
+    notes: null
+  - table_id: T-005
+    title: Customer proof and verification needs
+    chapter_id: III
+    section_id: III.A
+    purpose: Separate public customer proof from private customer-quality diligence.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: not_verified_publicly
+        description: not verified publicly
+      - name: required_private_check
+        description: required private check
+    rows:
+      - row_id: T-005-R1
+        values:
+          signal: Cloud customer count
+          public_evidence: ">3,000 Cloud customers"
+          not_verified_publicly: Paid/active definition, ARR distribution, churn, usage, and concentration.
+          required_private_check: Customer schedule and cohort retention analysis.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-004
+          - SRC-005
+      - row_id: T-005-R2
+        values:
+          signal: Named customer stories
+          public_evidence: Vendor-published customer stories/logos.
+          not_verified_publicly: Current contract status, ARR, renewal, satisfaction, and referenceability.
+          required_private_check: Direct customer calls and contract review.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-013
+      - row_id: T-005-R3
+        values:
+          signal: Use-case breadth
+          public_evidence: Real-time analytics, observability, data app use cases.
+          not_verified_publicly: Use-case-level margin, support cost, and expansion potential.
+          required_private_check: Use-case ARR and product telemetry.
+        evidence_claim_ids:
+          - EC-008
+          - EC-011
+        source_ids:
+          - SRC-007
+          - SRC-011
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-012
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-007
+      - SRC-011
+      - SRC-013
+    notes: null
+  - table_id: T-006
+    title: Supplier and dependency diligence map
+    chapter_id: III
+    section_id: III.E
+    purpose: Identify supplier/dependency areas likely material to cloud database operations.
+    columns:
+      - name: dependency_area
+        description: dependency area
+      - name: why_material
+        description: why material
+      - name: evidence_anchor
+        description: evidence anchor
+      - name: private_diligence_needed
+        description: private diligence needed
+    rows:
+      - row_id: T-006-R1
+        values:
+          dependency_area: Cloud infrastructure
+          why_material: Managed cloud and BYOC economics depend on cloud pricing, credits, and capacity.
+          evidence_anchor: Cloud/BYOC product pages.
+          private_diligence_needed: Cloud agreements, committed spend, credits, margin by provider.
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+        source_ids:
+          - SRC-007
+          - SRC-008
+      - row_id: T-006-R2
+        values:
+          dependency_area: Subprocessors and security vendors
+          why_material: Enterprise trust depends on data handling and security controls.
+          evidence_anchor: Trust/privacy pages.
+          private_diligence_needed: Subprocessor list, vendor reviews, incident history, DPAs.
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+        source_ids:
+          - SRC-014
+          - SRC-015
+      - row_id: T-006-R3
+        values:
+          dependency_area: Open-source ecosystem
+          why_material: Community and maintainers influence roadmap quality and adoption.
+          evidence_anchor: GitHub repository metrics.
+          private_diligence_needed: Contributor concentration, maintainer employment, governance.
+        evidence_claim_ids:
+          - EC-007
+          - EC-018
+        source_ids:
+          - SRC-006
+          - SRC-022
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-013
+      - EC-014
+      - EC-018
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-014
+      - SRC-015
+      - SRC-022
+    notes: null
+  - table_id: T-007
+    title: Competitive landscape by segment
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame public competitor categories for later win/loss review.
+    columns:
+      - name: segment
+        description: segment
+      - name: competitor_examples
+        description: competitor examples
+      - name: clickhouse_angle
+        description: clickhouse angle
+      - name: diligence_question
+        description: diligence question
+    rows:
+      - row_id: T-007-R1
+        values:
+          segment: Cloud data warehouse/lakehouse
+          competitor_examples: Snowflake, Databricks, BigQuery, Redshift
+          clickhouse_angle: High-performance real-time analytics and open-source familiarity.
+          diligence_question: Where does ClickHouse win standalone versus bundled platform suites?
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-007
+          - SRC-020
+      - row_id: T-007-R2
+        values:
+          segment: Search/log analytics/observability
+          competitor_examples: Elastic, OpenSearch, Splunk, observability vendors
+          clickhouse_angle: ClickStack/observability positioning and high-throughput analytics.
+          diligence_question: Are observability workloads expansion or distraction?
+        evidence_claim_ids:
+          - EC-011
+          - EC-017
+        source_ids:
+          - SRC-011
+      - row_id: T-007-R3
+        values:
+          segment: Open-source analytical databases
+          competitor_examples: DuckDB, Apache Druid, Pinot, other OLAP engines
+          clickhouse_angle: Large mature OSS repository and cloud service.
+          diligence_question: What differentiates ClickHouse on performance, operations, ecosystem, and support?
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-017
+        source_ids:
+          - SRC-006
+          - SRC-022
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-011
+      - EC-017
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-011
+      - SRC-020
+      - SRC-022
+    notes: null
+  - table_id: T-008
+    title: Basis of competition and risk implications
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Tie competitive basis to diligence requests.
+    columns:
+      - name: basis
+        description: basis
+      - name: clickhouse_public_signal
+        description: clickhouse public signal
+      - name: potential_risk
+        description: potential risk
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-008-R1
+        values:
+          basis: Performance and real-time analytics
+          clickhouse_public_signal: README real-time analytics positioning.
+          potential_risk: Benchmarks may not translate to customer workloads.
+          diligence_request: Review benchmark methodology, workload telemetry, and win/loss proof.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: T-008-R2
+        values:
+          basis: Open source and community
+          clickhouse_public_signal: 47k+ GitHub stars and Apache-2.0 license.
+          potential_risk: Self-hosting and forks can reduce monetization.
+          diligence_request: Measure conversion, fork risk, and support cost.
+        evidence_claim_ids:
+          - EC-007
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-006
+          - SRC-022
+      - row_id: T-008-R3
+        values:
+          basis: Cloud managed service
+          clickhouse_public_signal: ClickHouse Cloud and pricing pages.
+          potential_risk: Hyperscaler pricing and bundled alternatives pressure margins.
+          diligence_request: Analyze gross margin, discounting, and marketplace economics.
+        evidence_claim_ids:
+          - EC-008
+          - EC-017
+        source_ids:
+          - SRC-007
+          - SRC-009
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-017
+      - EC-018
+      - EC-019
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-022
+    notes: null
+  - table_id: T-009
+    title: Go-to-market motion hypothesis
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public GTM evidence and private validation needs.
+    columns:
+      - name: motion
+        description: motion
+      - name: public_signal
+        description: public signal
+      - name: diligence_metric_needed
+        description: diligence metric needed
+    rows:
+      - row_id: T-009-R1
+        values:
+          motion: Open-source/community top of funnel
+          public_signal: Large active GitHub repository and docs/events.
+          diligence_metric_needed: Visitor-to-signup, community-to-paid conversion, activation, and support load.
+        evidence_claim_ids:
+          - EC-007
+          - EC-018
+        source_ids:
+          - SRC-006
+          - SRC-020
+          - SRC-022
+      - row_id: T-009-R2
+        values:
+          motion: Self-service cloud and usage expansion
+          public_signal: Cloud/pricing pages and customer count language.
+          diligence_metric_needed: Paid conversion, usage expansion, NRR, consumption volatility, CAC payback.
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-007
+          - SRC-009
+      - row_id: T-009-R3
+        values:
+          motion: Enterprise sales/BYOC
+          public_signal: BYOC and trust/security posture.
+          diligence_metric_needed: Sales cycle, POC conversion, implementation effort, security exceptions, discounting.
+        evidence_claim_ids:
+          - EC-010
+          - EC-013
+        source_ids:
+          - SRC-008
+          - SRC-014
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-013
+      - EC-018
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-014
+      - SRC-020
+      - SRC-022
+    notes: null
+  - table_id: T-010
+    title: Sales productivity and pipeline diligence checklist
+    chapter_id: V
+    section_id: V.C
+    purpose: List operational metrics needed to validate growth repeatability.
+    columns:
+      - name: metric_area
+        description: metric area
+      - name: why_it_matters
+        description: why it matters
+      - name: requested_schedule
+        description: requested schedule
+    rows:
+      - row_id: T-010-R1
+        values:
+          metric_area: Pipeline by source/segment/region
+          why_it_matters: Validates repeatability beyond OSS awareness.
+          requested_schedule: Monthly pipeline creation, stage conversion, win rate, and weighted forecast.
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-010-R2
+        values:
+          metric_area: Quota/ramp/attainment
+          why_it_matters: Tests sales-capacity assumptions.
+          requested_schedule: AE/SE headcount, quota, ramp, attainment, productivity by cohort.
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-001
+      - row_id: T-010-R3
+        values:
+          metric_area: Discounting and payback
+          why_it_matters: High-growth cloud companies can over-rely on discounts and credits.
+          requested_schedule: Gross/net retention, discounts, cloud credits, CAC, payback, margin by cohort.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-009
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-011
+    title: New product pipeline diligence map
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Track public product expansions and private execution diligence needs.
+    columns:
+      - name: initiative
+        description: initiative
+      - name: public_evidence
+        description: public evidence
+      - name: execution_questions
+        description: execution questions
+    rows:
+      - row_id: T-011-R1
+        values:
+          initiative: BYOC
+          public_evidence: BYOC product page.
+          execution_questions: Implementation complexity, support burden, security model, sales cycle, revenue
+            recognition.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-008
+      - row_id: T-011-R2
+        values:
+          initiative: Postgres managed by ClickHouse
+          public_evidence: Postgres product page.
+          execution_questions: Buyer overlap, migration roadmap, margin, competitive fit, engineering resourcing.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+      - row_id: T-011-R3
+        values:
+          initiative: ClickStack / observability
+          public_evidence: Observability/ClickStack positioning.
+          execution_questions: Competitive differentiation, feature completeness, attach rate, support and
+            data retention costs.
+        evidence_claim_ids:
+          - EC-011
+          - EC-017
+        source_ids:
+          - SRC-011
+      - row_id: T-011-R4
+        values:
+          initiative: Langfuse Cloud
+          public_evidence: Langfuse announcement.
+          execution_questions: Integration roadmap, AI/LLM observability buyer fit, retention and data rights.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-017
+    source_ids:
+      - SRC-008
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    notes: null
+  - table_id: T-012
+    title: R&D and open-source governance checks
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Convert technical repository signals into diligence requests.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public signal
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-012-R1
+        values:
+          area: Repository activity
+          public_signal: Same-day push captured by GitHub API.
+          diligence_request: Release cadence, QA metrics, critical bug backlog, incident postmortems.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-022
+      - row_id: T-012-R2
+        values:
+          area: Community scale
+          public_signal: 47k+ stars and 8.4k forks.
+          diligence_request: Contributor concentration, maintainer coverage, governance rules, community health.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-022
+      - row_id: T-012-R3
+        values:
+          area: License/IP
+          public_signal: Apache-2.0 license signal.
+          diligence_request: CLA/invention assignment, dependency scan, SBOM, patent/trademark review.
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-006
+          - SRC-019
+    evidence_claim_ids:
+      - EC-007
+      - EC-019
+    source_ids:
+      - SRC-006
+      - SRC-019
+      - SRC-022
+    notes: null
+  - table_id: T-013
+    title: Public management and governance diligence map
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Identify management/governance materials required beyond public pages.
+    columns:
+      - name: topic
+        description: topic
+      - name: public_signal
+        description: public signal
+      - name: private_material_needed
+        description: private material needed
+    rows:
+      - row_id: T-013-R1
+        values:
+          topic: Leadership presence
+          public_signal: Company page and public operating presence.
+          private_material_needed: Executive bios, employment agreements, references, succession plan.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-018
+      - row_id: T-013-R2
+        values:
+          topic: Hiring/culture
+          public_signal: Careers page.
+          private_material_needed: Headcount bridge, hiring plan, attrition, engagement, comp bands.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-017
+      - row_id: T-013-R3
+        values:
+          topic: Board/investor governance
+          public_signal: Financing announcements imply investor governance rights.
+          private_material_needed: Board minutes, investor rights, voting agreements, protective provisions.
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-002
+          - SRC-003
+          - SRC-004
+          - SRC-005
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-017
+      - SRC-018
+    notes: null
+  - table_id: T-014
+    title: People operations diligence checklist
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Cover HR schedules not available in public sources.
+    columns:
+      - name: people_area
+        description: people area
+      - name: hidden_risk
+        description: hidden risk
+      - name: requested_evidence
+        description: requested evidence
+    rows:
+      - row_id: T-014-R1
+        values:
+          people_area: Headcount and contractors
+          hidden_risk: Rapid growth may obscure contractor dependence or geographic compliance exposure.
+          requested_evidence: Monthly headcount, contractor list, legal employer, PEO/EOR use, hiring plan.
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+        source_ids:
+          - SRC-017
+      - row_id: T-014-R2
+        values:
+          people_area: Retention/equity
+          hidden_risk: High valuation may create underwater or illiquid equity issues.
+          requested_evidence: Option grant ledger, 409A history, refresh plan, secondary policy.
+        evidence_claim_ids:
+          - EC-001
+          - EC-016
+        source_ids:
+          - SRC-001
+      - row_id: T-014-R3
+        values:
+          people_area: Employee relations
+          hidden_risk: Claims and investigations may be confidential.
+          requested_evidence: Claims log, investigations, employment litigation, engagement survey.
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-001
+      - SRC-017
+    notes: null
+  - table_id: T-015
+    title: Legal, IP, security, and compliance public posture
+    chapter_id: VIII
+    section_id: VIII.C
+    purpose: Summarize public legal/compliance signals and gaps.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public signal
+      - name: not_publicly_verified
+        description: not publicly verified
+    rows:
+      - row_id: T-015-R1
+        values:
+          area: Security/compliance
+          public_signal: Trust Center available.
+          not_publicly_verified: Audit reports, pen tests, exceptions, incident log, customer security addenda.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-014
+      - row_id: T-015-R2
+        values:
+          area: IP/license
+          public_signal: Apache-2.0 repository and trademark search signals.
+          not_publicly_verified: Assignments, CLA, patents, dependency scan, encumbrances, disputes.
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-006
+          - SRC-019
+      - row_id: T-015-R3
+        values:
+          area: Privacy/terms
+          public_signal: Privacy policy and terms of service.
+          not_publicly_verified: DPAs, subprocessors, SLAs, negotiated MSAs, regulated-customer obligations.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-015
+          - SRC-016
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-019
+    source_ids:
+      - SRC-006
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-019
+    notes: null
+  - table_id: T-016
+    title: Material contract and regulatory diligence requests
+    chapter_id: VIII
+    section_id: VIII.F
+    purpose: List private legal materials required before transaction reliance.
+    columns:
+      - name: topic
+        description: topic
+      - name: why_material
+        description: why material
+      - name: request
+        description: request
+    rows:
+      - row_id: T-016-R1
+        values:
+          topic: Customer contracts / DPAs / SLAs
+          why_material: Cloud database customers negotiate data, security, indemnity, and uptime terms.
+          request: Top customer MSAs, DPAs, SLAs, amendments, side letters, and change-of-control consents.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-015
+          - SRC-016
+      - row_id: T-016-R2
+        values:
+          topic: Debt and vendor contracts
+          why_material: Credit facility and cloud suppliers can constrain cash and operations.
+          request: Credit agreement, covenants, liens, cloud agreements, vendor commitments, leases.
+        evidence_claim_ids:
+          - EC-004
+          - EC-010
+        source_ids:
+          - SRC-004
+          - SRC-008
+      - row_id: T-016-R3
+        values:
+          topic: Regulatory / incident history
+          why_material: Security/privacy incidents and export/sanctions obligations can create hidden
+            liabilities.
+          request: Regulatory correspondence, incident notifications, DPIAs, export-control memo, sanctions
+            screening.
+        evidence_claim_ids:
+          - EC-013
+          - EC-020
+        source_ids:
+          - SRC-014
+          - SRC-015
+    evidence_claim_ids:
+      - EC-004
+      - EC-010
+      - EC-013
+      - EC-014
+      - EC-020
+    source_ids:
+      - SRC-004
+      - SRC-008
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Public financing and valuation step-up
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Chart of disclosed financing/valuation anchors from company announcements and CB Insights.
+    purpose: Visualize valuation and financing trajectory while emphasizing that terms must be verified
+      privately.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Financing / valuation event
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public amount or valuation
+        unit: USD millions
+        scale: linear
+      series:
+        - series_id: amounts
+          name: Round amount or public valuation
+          unit: USD millions
+          data_points:
+            - x: Series A
+              y: 50
+              label: nearly $50M
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: Series B
+              y: 250
+              label: $250M round
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-003
+            - x: Series C
+              y: 350
+              label: $350M round
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: Credit facility
+              y: 100
+              label: $100M facility
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: Series D
+              y: 400
+              label: $400M round
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-005
+            - x: CB Insights valuation
+              y: 15000
+              label: $15B valuation
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Not a cap table
+          x: CB Insights valuation
+          y: 15000
+          note: Tracker valuation requires financing-document confirmation.
+          evidence_claim_ids:
+            - EC-001
+            - EC-016
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as chart_spec; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-001
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-001
+    notes: null
+  - figure_id: F-002
+    title: Product and deployment architecture map
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level map of public product/deployment model from open source to managed cloud and
+      adjacent products.
+    purpose: Show where product/economics diligence should be requested.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: oss
+          label: Open-source ClickHouse
+          node_type: database
+          description: Apache-2.0 column-oriented database.
+          evidence_claim_ids:
+            - EC-006
+            - EC-019
+          source_ids:
+            - SRC-006
+        - node_id: cloud
+          label: ClickHouse Cloud
+          node_type: service
+          description: Managed ClickHouse service.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-007
+            - SRC-009
+        - node_id: byoc
+          label: BYOC
+          node_type: infrastructure
+          description: Customer cloud-account deployment model.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-008
+        - node_id: adjacent
+          label: Postgres / ClickStack / Langfuse
+          node_type: service
+          description: Adjacent product expansion.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+            - SRC-011
+            - SRC-012
+        - node_id: customers
+          label: Customers / applications
+          node_type: user
+          description: Real-time analytics, observability, data apps.
+          evidence_claim_ids:
+            - EC-009
+            - EC-012
+          source_ids:
+            - SRC-004
+            - SRC-013
+      edges:
+        - edge_id: e1
+          from_node_id: oss
+          to_node_id: cloud
+          relationship: commercializes
+          data_or_dependency: Open-source users can convert to managed cloud.
+          evidence_claim_ids:
+            - EC-006
+            - EC-008
+            - EC-018
+          source_ids:
+            - SRC-006
+            - SRC-007
+        - edge_id: e2
+          from_node_id: cloud
+          to_node_id: byoc
+          relationship: deployment variant
+          data_or_dependency: Enterprise cloud-control requirement.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-008
+        - edge_id: e3
+          from_node_id: cloud
+          to_node_id: adjacent
+          relationship: portfolio expansion
+          data_or_dependency: Additional use cases and buyer entry points.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+            - SRC-011
+            - SRC-012
+        - edge_id: e4
+          from_node_id: cloud
+          to_node_id: customers
+          relationship: serves
+          data_or_dependency: Cloud customers and named stories.
+          evidence_claim_ids:
+            - EC-009
+            - EC-012
+          source_ids:
+            - SRC-004
+            - SRC-013
+      boundaries:
+        - boundary_id: open-source-boundary
+          label: Open-source ecosystem
+          node_ids:
+            - oss
+        - boundary_id: commercial-boundary
+          label: Commercial cloud portfolio
+          node_ids:
+            - cloud
+            - byoc
+            - adjacent
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render as mermaid; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-006
+      - EC-019
+      - EC-008
+      - EC-010
+      - EC-011
+      - EC-009
+      - EC-012
+      - EC-018
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-008
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-004
+      - SRC-013
+    notes: null
+  - figure_id: F-003
+    title: Customer traction public signals
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Chart of public customer-count and evidence-quality signals.
+    purpose: Distinguish headline Cloud-customer count from unverified customer-quality metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer evidence category
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public count / confidence proxy
+        unit: count
+        scale: linear
+      series:
+        - series_id: customer-signals
+          name: Public customer signal
+          unit: count
+          data_points:
+            - x: Cloud customers
+              y: 3000
+              label: ">3,000 Cloud customers"
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-004
+                - SRC-005
+            - x: Top-customer ARR disclosed
+              y: 0
+              label: Not public
+              evidence_claim_ids:
+                - EC-016
+              source_ids:
+                - SRC-001
+            - x: Customer concentration disclosed
+              y: 0
+              label: Not public
+              evidence_claim_ids:
+                - EC-016
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Quality gap
+          x: Cloud customers
+          y: 3000
+          note: Request ARR, active-paid definition, concentration, and retention.
+          evidence_claim_ids:
+            - EC-009
+            - EC-016
+          source_ids:
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as chart_spec; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-009
+      - EC-016
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-001
+    notes: null
+  - figure_id: F-004
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Market map by workload focus and deployment/commercial model.
+    purpose: Frame competitor categories for win/loss diligence.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Deployment / commercial model
+          low_label: open-source/self-managed
+          high_label: managed/bundled cloud
+        y_axis:
+          label: Workload focus
+          low_label: single-purpose analytics
+          high_label: broader data/observability platform
+      segments:
+        - segment_id: analytics-db
+          name: Real-time analytical databases
+          description: OLAP systems and managed real-time analytics.
+        - segment_id: warehouse-lakehouse
+          name: Warehouse/lakehouse suites
+          description: Large data platforms and hyperscaler services.
+        - segment_id: observability
+          name: Observability/search platforms
+          description: Log, metrics, search, and observability workloads.
+      entities:
+        - entity_id: clickhouse
+          name: ClickHouse
+          entity_type: target_company
+          segment_id: analytics-db
+          x_value: 65
+          y_value: 50
+          attributes:
+            evidence: OSS plus Cloud/BYOC
+          evidence_claim_ids:
+            - EC-006
+            - EC-008
+            - EC-010
+          source_ids:
+            - SRC-006
+            - SRC-007
+            - SRC-008
+        - entity_id: hyperscalers
+          name: BigQuery / Redshift / cloud platforms
+          entity_type: competitor
+          segment_id: warehouse-lakehouse
+          x_value: 90
+          y_value: 80
+          attributes:
+            risk: bundle and discount power
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-007
+            - SRC-020
+        - entity_id: warehouse
+          name: Snowflake / Databricks
+          entity_type: competitor
+          segment_id: warehouse-lakehouse
+          x_value: 80
+          y_value: 75
+          attributes:
+            risk: enterprise data-platform competition
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-007
+            - SRC-020
+        - entity_id: observability
+          name: Elastic / Splunk / observability vendors
+          entity_type: competitor
+          segment_id: observability
+          x_value: 75
+          y_value: 85
+          attributes:
+            risk: ClickStack adjacency
+          evidence_claim_ids:
+            - EC-011
+            - EC-017
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as chart_spec; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-010
+      - EC-017
+      - EC-011
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-020
+      - SRC-011
+    notes: null
+  - figure_id: F-005
+    title: Open-source-to-cloud GTM funnel
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public GTM funnel hypothesis from community awareness to paid/enterprise customers.
+    purpose: Highlight required conversion metrics not visible publicly.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Funnel stage
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public signal count
+        unit: count
+        scale: linear
+      series:
+        - series_id: gtm-funnel
+          name: Publicly visible signal
+          unit: count
+          data_points:
+            - x: GitHub stars
+              y: 47443
+              label: 47,443 stars
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-022
+            - x: GitHub forks
+              y: 8405
+              label: 8,405 forks
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-022
+            - x: Cloud customers
+              y: 3000
+              label: ">3,000 Cloud customers"
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-004
+                - SRC-005
+            - x: Paid conversion disclosed
+              y: 0
+              label: Not public
+              evidence_claim_ids:
+                - EC-016
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Conversion unknown
+          x: Paid conversion disclosed
+          y: 0
+          note: Request source-to-paid and paid-to-enterprise conversion cohorts.
+          evidence_claim_ids:
+            - EC-016
+            - EC-018
+          source_ids:
+            - SRC-006
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as chart_spec; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-007
+      - EC-009
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-022
+      - SRC-004
+      - SRC-005
+      - SRC-001
+      - SRC-006
+    notes: null
+  - figure_id: F-006
+    title: R&D and product expansion signals
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: chart
+    description: Chart of public technical and product-development evidence.
+    purpose: Show strong technical activity and need for quality/productivity diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Technical signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public value
+        unit: count or binary
+        scale: linear
+      series:
+        - series_id: technical-signals
+          name: Public technical evidence
+          unit: count
+          data_points:
+            - x: Stars
+              y: 47443
+              label: 47,443 stars
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-022
+            - x: Forks
+              y: 8405
+              label: 8,405 forks
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-022
+            - x: Same-day push
+              y: 1
+              label: Pushed on research date
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-022
+            - x: Adjacent product signals
+              y: 4
+              label: BYOC, Postgres, ClickStack, Langfuse
+              evidence_claim_ids:
+                - EC-010
+                - EC-011
+              source_ids:
+                - SRC-008
+                - SRC-010
+                - SRC-011
+                - SRC-012
+      annotations:
+        - label: Quality not inferred
+          x: Same-day push
+          y: 1
+          note: Activity does not prove security, release quality, or roadmap execution.
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-022
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as chart_spec; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-007
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-022
+      - SRC-008
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    notes: null
+  - figure_id: F-007
+    title: Management and people diligence org view
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Publicly verifiable management/org information is limited; this org chart is a
+      diligence request map rather than a confirmed reporting chart.
+    purpose: Identify people materials needed for a real org chart.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: board
+          name: null
+          role: Board / investor governance
+          department: Governance
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-001
+            - EC-004
+            - EC-005
+          source_ids:
+            - SRC-001
+            - SRC-004
+            - SRC-005
+        - node_id: exec
+          name: null
+          role: Executive leadership
+          department: Management
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-018
+        - node_id: eng
+          name: null
+          role: Engineering / open-source maintainers
+          department: R&D
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-022
+        - node_id: gtm
+          name: null
+          role: Sales, marketing, customer success
+          department: GTM
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-009
+            - EC-012
+          source_ids:
+            - SRC-004
+            - SRC-013
+        - node_id: trust
+          name: null
+          role: Security, privacy, legal, compliance
+          department: G&A / Trust
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-014
+            - SRC-015
+            - SRC-016
+      reporting_lines:
+        - parent_node_id: board
+          child_node_id: exec
+          relationship: board_member
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-018
+        - parent_node_id: exec
+          child_node_id: eng
+          relationship: other
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-022
+        - parent_node_id: exec
+          child_node_id: gtm
+          relationship: other
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-004
+        - parent_node_id: exec
+          child_node_id: trust
+          relationship: other
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-014
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render as mermaid; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-005
+      - EC-015
+      - EC-007
+      - EC-009
+      - EC-012
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-005
+      - SRC-018
+      - SRC-022
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    notes: Names/reporting lines must be filled from company-provided org chart.
+  - figure_id: F-008
+    title: Risk heatmap
+    chapter_id: VIII
+    section_id: VIII.C
+    figure_type: risk_heatmap
+    description: Heatmap of primary diligence risks identified from public-source review.
+    purpose: Prioritize private diligence requests.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Valuation and financing terms
+          severity: high
+          likelihood: medium
+          rationale: Public $15B tracker valuation and large financing rounds require cap-table and preference
+            verification.
+          evidence_claim_ids:
+            - EC-001
+            - EC-005
+          source_ids:
+            - SRC-001
+            - SRC-005
+        - risk_id: R-002
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: Private financial statements and cohort economics are not public.
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-001
+        - risk_id: R-003
+          label: Cloud gross margin / credit facility
+          severity: high
+          likelihood: medium
+          rationale: Cloud/BYOC model and credit facility create margin and covenant diligence needs.
+          evidence_claim_ids:
+            - EC-004
+            - EC-008
+            - EC-010
+          source_ids:
+            - SRC-004
+            - SRC-007
+            - SRC-008
+        - risk_id: R-005
+          label: Competitive intensity
+          severity: high
+          likelihood: high
+          rationale: ClickHouse competes against data platforms, hyperscalers, and observability vendors.
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-007
+            - SRC-011
+        - risk_id: R-007
+          label: Legal/security/privacy gaps
+          severity: high
+          likelihood: medium
+          rationale: Public trust/legal pages do not replace audit, incident, DPA, and contract review.
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+            - EC-020
+          source_ids:
+            - SRC-014
+            - SRC-015
+            - SRC-016
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as chart_spec; keep evidence chips visible.
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-016
+      - EC-004
+      - EC-008
+      - EC-010
+      - EC-017
+      - EC-013
+      - EC-014
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-004
+      - SRC-007
+      - SRC-008
+      - SRC-011
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists ClickHouse as a private unicorn valued at $15.0B.
+    evidence_summary: Public unicorn-tracker evidence supports ClickHouse as an active late-stage
+      private unicorn, but the database valuation is not a substitute for cap-table and
+      financing-document diligence.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: ClickHouse ... $15B ... 10/28/2021 ... Enterprise Tech
+        location: CB Insights unicorn tracker row
+    analyst_interpretation: Public unicorn-tracker evidence supports ClickHouse as an active late-stage
+      private unicorn, but the database valuation is not a substitute for cap-table and
+      financing-document diligence.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-002
+    claim: ClickHouse publicly announced a nearly $50M Series A around company launch.
+    evidence_summary: The company launch/Series A source supports initial venture backing but does not
+      disclose current ownership, preferences, or dilution.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: nearly $50 million in Series A funding
+        location: ClickHouse funding announcement
+    analyst_interpretation: The company launch/Series A source supports initial venture backing but does
+      not disclose current ownership, preferences, or dilution.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-003
+    claim: ClickHouse publicly announced a $250M Series B at a $2B valuation.
+    evidence_summary: The Series B announcement is a strong public financing milestone and helps
+      triangulate the valuation step-up to later unicorn-list marks.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: $250 million Series B ... $2 billion valuation
+        location: ClickHouse Series B announcement
+    analyst_interpretation: The Series B announcement is a strong public financing milestone and helps
+      triangulate the valuation step-up to later unicorn-list marks.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-004
+    claim: ClickHouse publicly announced a $350M Series C and $100M credit facility.
+    evidence_summary: Later financing and debt signals indicate access to capital but create diligence
+      questions about burn, covenants, security interests, and financing runway.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: $350 million Series C ... $100 million credit facility
+        location: ClickHouse Series C announcement
+    analyst_interpretation: Later financing and debt signals indicate access to capital but create
+      diligence questions about burn, covenants, security interests, and financing runway.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+        - R-003
+  - evidence_claim_id: EC-005
+    claim: ClickHouse publicly announced a $400M Series D.
+    evidence_summary: The Series D source supports late-stage financing momentum; economics, liquidation
+      preference, anti-dilution, secondary sales, and use of proceeds are not public.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: $400 million Series D
+        location: ClickHouse Series D announcement
+    analyst_interpretation: The Series D source supports late-stage financing momentum; economics,
+      liquidation preference, anti-dilution, secondary sales, and use of proceeds are not public.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-006
+    claim: The ClickHouse repository describes ClickHouse as an open-source column-oriented database for
+      real-time analytics.
+    evidence_summary: Repository README and license signals support the core technical claim and
+      open-source adoption thesis.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: ClickHouse® is an open-source column-oriented database management system that allows
+          generating analytical data reports in real-time.
+        location: GitHub README
+    analyst_interpretation: Repository README and license signals support the core technical claim and
+      open-source adoption thesis.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-007
+    claim: GitHub metadata shows substantial and current ClickHouse repository activity.
+    evidence_summary: The repository had 47,443 stars, 8,405 forks, Apache-2.0 license metadata, and a
+      same-day push on 2026-05-16, supporting active OSS community and development signals.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-022
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-022
+        quote: stargazers_count 47443; forks_count 8405; license Apache-2.0; pushed_at 2026-05-16T14:39:34Z
+        location: GitHub API response captured during diligence
+    analyst_interpretation: The repository had 47,443 stars, 8,405 forks, Apache-2.0 license metadata,
+      and a same-day push on 2026-05-16, supporting active OSS community and development signals.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-008
+      table_ids:
+        - T-004
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-008
+    claim: ClickHouse Cloud is the company-managed cloud service for ClickHouse.
+    evidence_summary: Public product materials support a cloud monetization path around the open-source
+      database; unit economics and cohort behavior remain private.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: ClickHouse Cloud
+        location: Product page title and positioning
+      - source_id: SRC-009
+        quote: pricing
+        location: Pricing page
+    analyst_interpretation: Public product materials support a cloud monetization path around the
+      open-source database; unit economics and cohort behavior remain private.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-009
+    claim: ClickHouse states public growth/customer metrics including more than 3,000 Cloud customers
+      and ARR growth above 250% year over year.
+    evidence_summary: Company-published metrics are strong traction signals but require
+      revenue-recognition, retention, usage, and concentration verification.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: more than 3,000 ClickHouse Cloud customers
+        location: Financing announcement
+      - source_id: SRC-005
+        quote: ARR growth of more than 250% year over year
+        location: Financing announcement
+    analyst_interpretation: Company-published metrics are strong traction signals but require
+      revenue-recognition, retention, usage, and concentration verification.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+        - T-005
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-002
+        - R-004
+  - evidence_claim_id: EC-010
+    claim: ClickHouse offers Bring Your Own Cloud deployment for customers needing cloud-account control.
+    evidence_summary: BYOC expands enterprise addressability but may add operational, support,
+      security-boundary, and revenue-recognition complexity.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Bring Your Own Cloud
+        location: Product page
+    analyst_interpretation: BYOC expands enterprise addressability but may add operational, support,
+      security-boundary, and revenue-recognition complexity.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-003
+        - R-007
+  - evidence_claim_id: EC-011
+    claim: ClickHouse has broadened public product scope beyond the core database into adjacent
+      data/observability/application products.
+    evidence_summary: Postgres, ClickStack, and Langfuse Cloud signals indicate product expansion beyond
+      the original OLAP database core; integration economics and execution risk require review.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: Postgres
+        location: Product page
+      - source_id: SRC-011
+        quote: observability
+        location: ClickStack/use-case page
+      - source_id: SRC-012
+        quote: Langfuse
+        location: Company announcement
+    analyst_interpretation: Postgres, ClickStack, and Langfuse Cloud signals indicate product expansion
+      beyond the original OLAP database core; integration economics and execution risk require
+      review.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-012
+    claim: ClickHouse publishes named customer stories and logos.
+    evidence_summary: Customer-story evidence supports market relevance and use cases but does not
+      confirm current contractual status, ARR, renewal timing, or customer satisfaction.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Customers
+        location: ClickHouse customer page
+    analyst_interpretation: Customer-story evidence supports market relevance and use cases but does not
+      confirm current contractual status, ARR, renewal timing, or customer satisfaction.
+    limitations: Vendor-published stories are not independent confirmations.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-005
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-013
+    claim: ClickHouse publishes security and compliance posture through a Trust Center.
+    evidence_summary: The Trust Center supports enterprise readiness signals such as security/compliance
+      controls, but audit reports, pen tests, incidents, and exceptions were not reviewed.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Trust Center
+        location: ClickHouse trust portal
+    analyst_interpretation: The Trust Center supports enterprise readiness signals such as
+      security/compliance controls, but audit reports, pen tests, incidents, and exceptions were not
+      reviewed.
+    limitations: Audit artifacts typically require NDA/access.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.C
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-014
+    claim: ClickHouse publishes privacy policy and terms governing public legal/commercial posture.
+    evidence_summary: Public legal pages show baseline privacy and contractual terms; enterprise
+      contracts, DPAs, subprocessors, indemnities, SLAs, and regulated-customer obligations are
+      private.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-015
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Privacy Policy
+        location: Legal page
+      - source_id: SRC-016
+        quote: Terms of Service
+        location: Legal page
+    analyst_interpretation: Public legal pages show baseline privacy and contractual terms; enterprise
+      contracts, DPAs, subprocessors, indemnities, SLAs, and regulated-customer obligations are
+      private.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-015
+    claim: ClickHouse public company pages evidence a functioning leadership/hiring presence.
+    evidence_summary: Company and careers pages support an active operating organization but not
+      headcount by function, attrition, compensation, option plans, or key-person dependence.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-017
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: Careers
+        location: Company careers page
+      - source_id: SRC-018
+        quote: Company
+        location: Company page
+    analyst_interpretation: Company and careers pages support an active operating organization but not
+      headcount by function, attrition, compensation, option plans, or key-person dependence.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids:
+        - FC-008
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-016
+    claim: Public sources do not disclose audited financials, customer-level ARR, cap table, or board
+      materials.
+    evidence_summary: The lack of private operating data is a core diligence limitation and should be
+      resolved before underwriting valuation, retention, margins, and governance.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: valuation database row without financial statements
+        location: Analyst review of public tracker
+      - source_id: SRC-004
+        quote: financing announcement without audited financial statements
+        location: Analyst review
+    analyst_interpretation: The lack of private operating data is a core diligence limitation and should
+      be resolved before underwriting valuation, retention, margins, and governance.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-002
+      figure_ids: []
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-017
+    claim: ClickHouse competes in crowded analytics, warehouse/lakehouse, search/observability, and
+      cloud database markets.
+    evidence_summary: The public product scope places ClickHouse against hyperscalers and specialist
+      vendors; win/loss data, discounting, and churn require private diligence.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+      - SRC-010
+      - SRC-011
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: ClickHouse Cloud
+        location: Cloud product page
+      - source_id: SRC-011
+        quote: observability
+        location: Observability use case
+    analyst_interpretation: The public product scope places ClickHouse against hyperscalers and
+      specialist vendors; win/loss data, discounting, and churn require private diligence.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-018
+    claim: ClickHouse uses an open-source-to-cloud commercial motion.
+    evidence_summary: Open-source adoption can lower acquisition cost and improve trust, but creates
+      monetization, support, fork, and community-governance diligence questions.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: open-source column-oriented database
+        location: GitHub README
+      - source_id: SRC-007
+        quote: ClickHouse Cloud
+        location: Cloud product page
+    analyst_interpretation: Open-source adoption can lower acquisition cost and improve trust, but
+      creates monetization, support, fork, and community-governance diligence questions.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-019
+    claim: Public IP signals include Apache-2.0 repository licensing and trademark records.
+    evidence_summary: The public IP record supports brand/open-source status, but IP assignments,
+      third-party code scans, patents, and trademark disputes require counsel review.
+    evidence_type: patent_or_trademark_record
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Apache 2.0 License
+        location: GitHub README badge
+      - source_id: SRC-019
+        quote: ClickHouse trademark search results
+        location: Justia search
+    analyst_interpretation: The public IP record supports brand/open-source status, but IP assignments,
+      third-party code scans, patents, and trademark disputes require counsel review.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-006
+        - R-007
+  - evidence_claim_id: EC-020
+    claim: Public review did not establish complete litigation, regulatory, insurance, employment, or
+      environmental clearance.
+    evidence_summary: Absence of public adverse evidence is not a clean legal opinion; counsel-run
+      searches and company disclosures are needed.
+    evidence_type: legal_record
+    verification_status: inconclusive
+    confidence: medium
+    source_ids:
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Trust Center
+        location: Public trust portal
+      - source_id: SRC-016
+        quote: Terms of Service
+        location: Public legal page
+    analyst_interpretation: Absence of public adverse evidence is not a clean legal opinion; counsel-run
+      searches and company disclosures are needed.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-007
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: market_database
+    reliability_notes: Current public unicorn tracker used as the valuation/stage anchor; values are
+      secondary-market/database estimates and require financing-document confirmation.
+    archive_url: null
+  - source_id: SRC-002
+    title: ClickHouse, Inc. launches with Series A funding
+    url: https://clickhouse.com/blog/introducing-click-house-inc
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-published financing announcement; reliable for the company narrative but
+      not audited financial disclosure.
+    archive_url: null
+  - source_id: SRC-003
+    title: ClickHouse raises $250M Series B
+    url: https://clickhouse.com/blog/click-house-raises-a-250m-series-b-at-a-2b-valuationand-we-are-hiring
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-published financing announcement; use alongside financing documents for exact terms.
+    archive_url: null
+  - source_id: SRC-004
+    title: ClickHouse announces Series C financing and credit facility
+    url: https://clickhouse.com/blog/clickhouse-raises-350-million-series-c-to-power-analytics-for-ai-era
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-published financing announcement; exact economics and covenants are not public.
+    archive_url: null
+  - source_id: SRC-005
+    title: ClickHouse raises $400M Series D
+    url: https://clickhouse.com/blog/clickhouse-raises-400-million-series-d-acquires-langfuse-launches-postgres
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-published financing announcement; independently verify valuation,
+      preferences, and use of proceeds.
+    archive_url: null
+  - source_id: SRC-006
+    title: ClickHouse GitHub repository README
+    url: https://github.com/ClickHouse/ClickHouse
+    publisher: GitHub / ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: technical_repository
+    reliability_notes: Primary technical repository and README; repository metrics were read via GitHub
+      API during this diligence run.
+    archive_url: null
+  - source_id: SRC-007
+    title: ClickHouse Cloud product page
+    url: https://clickhouse.com/cloud
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page for managed ClickHouse Cloud.
+    archive_url: null
+  - source_id: SRC-008
+    title: ClickHouse Bring Your Own Cloud offering
+    url: https://clickhouse.com/cloud/bring-your-own-cloud
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page for BYOC deployment model.
+    archive_url: null
+  - source_id: SRC-009
+    title: ClickHouse pricing page
+    url: https://clickhouse.com/pricing
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company pricing/packaging page; public pricing may not reflect enterprise
+      discounts or committed-spend terms.
+    archive_url: null
+  - source_id: SRC-010
+    title: Postgres managed by ClickHouse product page
+    url: https://clickhouse.com/cloud/postgres
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page describing the managed Postgres offering.
+    archive_url: null
+  - source_id: SRC-011
+    title: ClickStack OSS observability stack announcement
+    url: https://clickhouse.com/blog/clickstack-a-high-performance-oss-observability-stack-on-clickhouse
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product/use-case page for observability and ClickStack positioning.
+    archive_url: null
+  - source_id: SRC-012
+    title: Langfuse Cloud joins ClickHouse product portfolio
+    url: https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company announcement; used as a public product-expansion signal, not as acquisition economics.
+    archive_url: null
+  - source_id: SRC-013
+    title: ClickHouse customer stories
+    url: https://clickhouse.com/customers
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: customer_or_partner_source
+    reliability_notes: Vendor-published customer logos and stories; useful proof points but not
+      independent ARR or renewal evidence.
+    archive_url: null
+  - source_id: SRC-014
+    title: ClickHouse Trust center
+    url: https://clickhouse.com/trust/security
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company trust/compliance portal; audit reports usually require NDA/access and
+      were not reviewed.
+    archive_url: null
+  - source_id: SRC-015
+    title: ClickHouse Privacy Policy
+    url: https://clickhouse.com/legal/privacy-policy
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Current public privacy policy; customer-specific DPAs and subprocessors require private review.
+    archive_url: null
+  - source_id: SRC-016
+    title: ClickHouse Terms of Service
+    url: https://clickhouse.com/legal/terms-of-service
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Public terms; enterprise MSAs, SLAs, indemnities, and change-of-control clauses are private.
+    archive_url: null
+  - source_id: SRC-017
+    title: ClickHouse careers page
+    url: https://clickhouse.com/company/careers
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company hiring/culture page; not a complete headcount, attrition, or compensation source.
+    archive_url: null
+  - source_id: SRC-018
+    title: ClickHouse leadership/company page
+    url: https://clickhouse.com/company
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-published management and company context; verify roles, employment terms,
+      and succession privately.
+    archive_url: null
+  - source_id: SRC-019
+    title: ClickHouse trademark search results
+    url: https://trademarks.justia.com/search?q=ClickHouse
+    publisher: Justia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: patent_or_trademark_record
+    reliability_notes: Public trademark-search signal only; counsel should confirm current
+      registrations, assignments, disputes, and encumbrances.
+    archive_url: null
+  - source_id: SRC-020
+    title: ClickHouse open-source documentation
+    url: https://clickhouse.com/docs
+    publisher: ClickHouse
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Technical documentation and product references; useful for product scope, not
+      revenue attribution.
+    archive_url: null
+  - source_id: SRC-021
+    title: ClickHouse Wikipedia overview
+    url: https://en.wikipedia.org/wiki/ClickHouse
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: other
+    reliability_notes: Secondary background source; used only for contextual triangulation, not decisive evidence.
+    archive_url: null
+  - source_id: SRC-022
+    title: GitHub API repository metadata for ClickHouse/ClickHouse
+    url: https://api.github.com/repos/ClickHouse/ClickHouse
+    publisher: GitHub
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: technical_repository
+    reliability_notes: "API response read on the research date: 47,443 stars, 8,405 forks, Apache-2.0
+      license, latest push 2026-05-16T14:39:34Z."
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Valuation and financing terms risk
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: CB Insights lists a $15B valuation and company announcements show large late-stage
+      financings, but actual current pricing, secondary components, preferences, debt terms, and
+      common-equity value are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-005
+    mitigation_or_diligence_request: Request financing documents, current cap table, liquidation
+      waterfall, investor rights, and debt covenants.
+  - risk_id: R-002
+    risk_title: Private financial quality risk
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Audited statements, revenue quality, ARR bridge, gross margin, cash burn, backlog, AR
+      aging, and tax positions are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+    evidence_claim_ids:
+      - EC-009
+      - EC-016
+    mitigation_or_diligence_request: Review audited financials, management accounts, revenue-recognition
+      policies, cohort metrics, and cash runway.
+  - risk_id: R-003
+    risk_title: Cloud infrastructure economics and debt risk
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: Managed Cloud and BYOC offerings may depend on cloud provider economics, capacity,
+      credits, SLAs, and a public credit facility whose covenants are unknown.
+    impacted_chapter_ids:
+      - I
+      - II
+      - III
+      - VIII
+    impacted_section_ids:
+      - I.C
+      - II.A
+      - III.E
+      - VIII.F
+    evidence_claim_ids:
+      - EC-004
+      - EC-008
+      - EC-010
+    mitigation_or_diligence_request: Analyze cloud COGS by provider, credits/commits, BYOC support
+      model, debt documents, and gross-margin forecast.
+  - risk_id: R-004
+    risk_title: Customer concentration and retention risk
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Public customer count and logos do not disclose active ARR, concentration, retention,
+      churn, renewal timing, or usage volatility.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    evidence_claim_ids:
+      - EC-009
+      - EC-012
+      - EC-016
+    mitigation_or_diligence_request: Request customer-level ARR, NRR/GRR, cohort retention, renewals,
+      churn reasons, and customer reference calls.
+  - risk_id: R-005
+    risk_title: Competitive intensity and product expansion risk
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: ClickHouse competes with large data platforms and is expanding into adjacent product
+      areas that may require new execution muscles.
+    impacted_chapter_ids:
+      - II
+      - IV
+      - VI
+    impacted_section_ids:
+      - II.A
+      - IV.A
+      - VI.B
+    evidence_claim_ids:
+      - EC-011
+      - EC-017
+    mitigation_or_diligence_request: Review win/loss, displacement evidence, pricing pressure, product-level ARR, and roadmap focus.
+  - risk_id: R-006
+    risk_title: Open-source monetization and governance risk
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: Apache-2.0 open source drives adoption but creates fork, support, contributor,
+      security, and monetization questions.
+    impacted_chapter_ids:
+      - II
+      - IV
+      - V
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - IV.A
+      - V.C
+      - VI.A
+      - VIII.D
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-018
+      - EC-019
+    mitigation_or_diligence_request: Review conversion funnel, maintainer concentration, CLA/IP
+      assignments, OSS scanning, vulnerability process, and fork strategy.
+  - risk_id: R-007
+    risk_title: Security, privacy, contract, and legal exposure
+    risk_category: legal
+    severity: high
+    likelihood: medium
+    description: Trust/legal pages are public, but audit reports, incidents, DPAs, indemnities, IP chain
+      of title, litigation, regulatory correspondence, and insurance are private.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.C
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-019
+      - EC-020
+    mitigation_or_diligence_request: Request SOC/ISO evidence, pen tests, incident logs, DPAs, material
+      contracts, insurance policies, docket searches, and IP schedules.
+  - risk_id: R-008
+    risk_title: Management, people, and retention risk
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: The company has a public operating presence, but org chart, headcount, attrition,
+      compensation, option plans, and employee claims are not public.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+    evidence_claim_ids:
+      - EC-015
+      - EC-016
+    mitigation_or_diligence_request: Request org chart, headcount bridge, attrition, compensation,
+      employment agreements, option grants, and employee-relations files.
+  - risk_id: R-009
+    risk_title: Supplier and ecosystem dependency risk
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Cloud services, subprocessors, security vendors, and open-source ecosystem dependencies
+      may affect margin, availability, compliance, and roadmap.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.E
+      - VIII.F
+    evidence_claim_ids:
+      - EC-008
+      - EC-010
+      - EC-013
+      - EC-014
+    mitigation_or_diligence_request: Review vendor contracts, cloud commitments, subprocessor list,
+      SLAs, incidents, business-continuity tests, and vendor concentration.
+  - risk_id: R-010
+    risk_title: Regulated data and AI/data-use risk
+    risk_category: regulatory
+    severity: medium
+    likelihood: medium
+    description: Observability, database, and AI-adjacent products can touch sensitive customer data,
+      regulated workloads, export controls, and data-residency commitments.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VI.B
+      - VIII.G
+    evidence_claim_ids:
+      - EC-011
+      - EC-013
+      - EC-014
+      - EC-020
+    mitigation_or_diligence_request: Review data maps, DPIAs, regulated-customer obligations,
+      export-control classification, sanctions screening, AI/data policies, and incident
+      notification history.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, management accounts, ARR bridge, gross margin, cash, and burn.
+    why_it_matters: Needed to underwrite valuation, growth quality, runway, and profitability path.
+    suggested_source_or_request: Company CFO / auditor workpapers and board financial packages.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, option pool, investor rights, preferences, and debt covenants.
+    why_it_matters: Determines ownership, dilution, common-equity value, and financing risk.
+    suggested_source_or_request: Company counsel, finance team, and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: Product-level ARR, gross margin, cloud COGS, and roadmap adoption.
+    why_it_matters: Validates whether product expansion is accretive or dilutive.
+    suggested_source_or_request: Product P&L, telemetry, roadmap, and customer cohorts.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top-customer ARR, usage, renewal, churn, and reference status.
+    why_it_matters: Tests concentration and customer-quality risk behind public customer counts.
+    suggested_source_or_request: Customer schedule, contracts, and reference calls.
+    priority: high
+  - gap_id: G-005
+    chapter_id: III
+    section_id: III.E
+    missing_information: Top supplier/cloud/subprocessor agreements and commitments.
+    why_it_matters: Cloud economics and compliance depend on supplier terms.
+    suggested_source_or_request: Vendor contracts, cloud commits, subprocessor list, and vendor security reviews.
+    priority: high
+  - gap_id: G-006
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Win/loss, discounting, market-share, and benchmark evidence.
+    why_it_matters: Competitive intensity is a primary underwriting risk.
+    suggested_source_or_request: Sales ops, product marketing, customer interviews, analyst reports.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.D
+    missing_information: Sales productivity, pipeline, CAC/payback, and discounting.
+    why_it_matters: Determines if growth is repeatable and capital efficient.
+    suggested_source_or_request: CRM exports, finance metrics, comp plans, and sales forecasts.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Engineering quality, security backlog, release metrics, and key-person dependencies.
+    why_it_matters: Public GitHub activity does not prove enterprise-grade reliability.
+    suggested_source_or_request: Engineering dashboards, incident reports, vulnerability program, org chart.
+    priority: high
+  - gap_id: G-009
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Headcount, attrition, compensation, option plan, and employee claims.
+    why_it_matters: People risks affect execution and retention at late-stage valuation.
+    suggested_source_or_request: HRIS, legal claims, stock plan, engagement surveys, comp data.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: IP chain of title, OSS scan/SBOM, contributor agreements, and trademark/patent files.
+    why_it_matters: Protects core technology and brand rights.
+    suggested_source_or_request: Company counsel, OSS audit, IP counsel searches.
+    priority: high
+  - gap_id: G-011
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Material contracts, DPAs, SLAs, indemnities, consent rights, and insurance.
+    why_it_matters: Hidden obligations can affect transaction risk and liability.
+    suggested_source_or_request: Legal data room and contract abstraction.
+    priority: high
+  - gap_id: G-012
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: Regulatory correspondence, incident notifications, export-control and privacy assessments.
+    why_it_matters: Data, security, and regulated customer exposure may create hidden liabilities.
+    suggested_source_or_request: Compliance, security, privacy counsel, and incident response records.
+    priority: medium
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, monthly management accounts, ARR bridge, gross
+      margin, burn, cash, backlog, AR aging, and tax/NOL schedule.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide cap table, option/warrant/convertible schedule, investor rights, financing
+      documents, debt agreements, and liquidation waterfall.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide product-level ARR, margin, adoption, support burden, roadmap, uptime/SLA, incident
+      history, and cloud COGS.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide top-customer schedule, contracts, cohort retention, concentration, renewal
+      calendar, churn details, and customer references.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.E
+    request: Provide top suppliers, cloud contracts/commitments, subprocessors, vendor security reviews,
+      SLAs, and business-continuity tests.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide win/loss analysis, competitive benchmark evidence, pricing/discount trends,
+      market-share estimates, and displacement references.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.C
+    request: Provide pipeline by source, conversion funnel, CAC/payback, quota/ramp/attainment, sales
+      cycle, discounting, and marketing ROI.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide engineering org chart, release quality metrics, vulnerability backlog, incident
+      postmortems, SBOM/OSS scan, and roadmap resourcing.
+    requested_from: company
+    priority: high
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide org chart, executive bios, employment agreements, compensation/benefits, option
+      plan, attrition, engagement surveys, and employee claims log.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide IP schedule, assignments, contributor agreements, OSS compliance audit,
+      trademark/patent files, encumbrances, and disputes.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-011
+    chapter_id: VIII
+    section_id: VIII.F
+    request: Provide material contracts, DPAs, SLAs, customer/vendor agreements, debt/lease agreements,
+      insurance policies, loss runs, and consent schedule.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide regulatory correspondence, privacy/security assessments, incident notifications,
+      export-control memo, sanctions screening, and compliance audit results.
+    requested_from: counsel
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: This report is public-source diligence only; no management interviews, customer calls,
+      private financials, legal data room, or paid database exports were used.
+    affected_chapter_ids:
+      - I
+      - III
+      - VIII
+    affected_section_ids:
+      - I.A
+      - III.A
+      - VIII.F
+  - limitation_id: L-002
+    description: Company-published financing, customer, product, and security claims were treated as
+      useful evidence but not audited or independently confirmed unless separately sourced.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - V
+      - VIII
+    affected_section_ids:
+      - I.D
+      - II.A
+      - III.A
+      - V.A
+      - VIII.C
+  - limitation_id: L-003
+    description: CB Insights valuation and headquarters/location fields are secondary database signals;
+      reconcile against company records and note any database/location discrepancy directly with the
+      company.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.D
+  - limitation_id: L-004
+    description: GitHub metrics are point-in-time values captured on 2026-05-16 and can change continuously.
+    affected_chapter_ids:
+      - II
+      - VI
+    affected_section_ids:
+      - II.A
+      - VI.A
+  - limitation_id: L-005
+    description: No legal opinion, litigation clearance, IP freedom-to-operate opinion, security audit
+      review, tax opinion, or regulatory clearance is provided.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.D
+      - VIII.G
+  - limitation_id: L-006
+    description: URLs and public pages may change; archive critical materials before relying on them in
+      an investment committee or transaction process.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - II.A
+      - III.A
+      - IV.A
+      - V.A
+      - VI.A
+      - VII.A
+      - VIII.A
