@@ -1,0 +1,1388 @@
+report_metadata:
+  report_title: Doctolib Public-Source Startup Diligence Report
+  target_company: Doctolib
+  website: https://www.doctolib.fr/
+  known_aliases: [Doctolib SAS, DOCTOLIB, Doctolib GmbH, Siilo]
+  sector: Healthcare & Life Sciences; digital health; patient access; practice management
+  geography: France headquarters with operations in France, Germany, Italy and the Netherlands
+  company_stage: Late-stage private unicorn
+  research_date: 2026-05-16
+  analyst: GitHub Copilot
+  report_version: '1.0'
+  currency: EUR unless otherwise stated
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used public company pages, Pappers registry/financial data, CB Insights unicorn data, Tech.eu financing coverage, and French competition-authority materials.
+    - Treated company-published scale/security claims as directional until verified by data-room evidence.
+    - Covered every checklist chapter and section with evidence-linked findings, exhibits, risks, gaps, and follow-up requests.
+  included_jurisdictions: [France, Germany, Italy, Netherlands, European Union]
+  excluded_topics:
+    - No management interviews, customer calls, contracts, cap table, bank statements, board materials, security audit reports, incident logs, or source-code review.
+    - No paid databases or non-public records; blocked or unavailable pages were not used as affirmative evidence.
+  user_provided_materials:
+    - material_id: M-001
+      title: User request
+      type: prompt_argument
+      date_received: 2026-05-16
+      notes: Create one standard-depth public-source diligence YAML report for Doctolib.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Doctolib is an active private unicorn.
+    claim_source: CB Insights unicorn tracker; Tech.eu 2022 financing coverage
+    claim_date: null
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-001, EC-002]
+    contradiction_summary: null
+    diligence_follow_up: [Verify round documents, debt terms, liquidation preferences, and current cap table.]
+  - founder_claim_id: FC-002
+    claim_text: Doctolib serves European healthcare professionals and patients at large scale.
+    claim_source: Doctolib about/product pages
+    claim_date: null
+    mapped_chapter_ids: [II, III]
+    mapped_section_ids: [II.A, III.A]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-004, EC-005, EC-006]
+    contradiction_summary: Public scale is company-published and does not prove paying seats, retention, or current active usage.
+    diligence_follow_up: [Audit active users, paying practitioners, appointments, ARR, churn, and country mix.]
+  - founder_claim_id: FC-003
+    claim_text: Doctolib has certified health-data security and privacy controls.
+    claim_source: Doctolib security/privacy pages
+    claim_date: null
+    mapped_chapter_ids: [IV, VII]
+    mapped_section_ids: [IV.A, VII.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-009, EC-010]
+    contradiction_summary: Certifications are public claims; audit scopes, exceptions, and incidents were not public.
+    diligence_follow_up: [Review certificates, audit reports, penetration tests, incident history, DPAs, and subprocessors.]
+  - founder_claim_id: FC-004
+    claim_text: Doctolib has expanded beyond booking into workflow, documents, payments, telehealth, and AI-enabled tools.
+    claim_source: Doctolib product communications
+    claim_date: null
+    mapped_chapter_ids: [II, V, VII]
+    mapped_section_ids: [II.A, V.A, VII.E]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-006, EC-014]
+    contradiction_summary: Public pages show product breadth but not attach rate, revenue contribution, or safety controls.
+    diligence_follow_up: [Request module-level ARR, adoption, gross margin, roadmap, and AI governance evidence.]
+  - founder_claim_id: FC-005
+    claim_text: Doctolib can become a durable European healthcare operating system.
+    claim_source: Analyst synthesis from public evidence
+    claim_date: null
+    mapped_chapter_ids: [I, III, V, VIII]
+    mapped_section_ids: [I.D, III.C, V.E, VIII.G]
+    verification_status: inconclusive
+    confidence: medium
+    evidence_claim_ids: [EC-004, EC-007, EC-013, EC-018]
+    contradiction_summary: Scale is strong, but losses, legal scrutiny, and missing private SaaS metrics keep the thesis unproven.
+    diligence_follow_up: [Build downside/base/upside model from verified ARR, margins, CAC payback, retention, runway, and legal exposure.]
+executive_summary:
+  overall_assessment: Doctolib is a credible late-stage European digital-health unicorn with rare patient/provider distribution, but public diligence surfaces material risk around profitability, liquidity, legal scrutiny, security/privacy, AI governance, and monetization quality.
+  investment_or_diligence_thesis: Track and verify rather than underwrite from public data alone. The upside case depends on converting healthcare workflow reach into multi-product ARR and operating leverage while maintaining health-data trust and regulatory compliance.
+  key_positive_signals:
+    - CB Insights lists Doctolib as a France-based Healthcare & Life Sciences unicorn valued at $6.40B.
+    - Tech.eu reported a EUR 500M equity/debt raise at a EUR 5.8B valuation in 2022.
+    - Pappers shows an active French SAS and rising public revenue from 2021 to 2024.
+    - Doctolib reports about 90M patients, 500k to 520k healthcare professionals, and tens of millions of monthly appointments.
+    - Public security pages cite HDS, ISO 27001, ISO 27701, C5 Germany, ACN Italy, EU hosting, and encryption controls.
+  key_risks:
+    - 2024 public financials show negative EBITDA and net income, with cash below reported financial debt.
+    - French competition authority penalty and appeal create legal and conduct-remedy risk.
+    - Health-data, AI, and workflow concentration amplify security, privacy, uptime, and compliance risk.
+    - Public scale claims do not reveal paying-seat mix, ARR, churn, NRR, CAC payback, or country profitability.
+    - Competitive pressure from appointment platforms, EHR/practice systems, public portals, and adjacent telehealth products may limit pricing power.
+  key_evidence_gaps:
+    - ARR, gross margin, NRR, churn, CAC, payback, contract terms, customer concentration, and country P&Ls.
+    - Cap table, preference stack, debt maturity, covenants, cash runway, and post-2024 financing status.
+    - Customer references, practitioner-count definitions, support data, security audit scopes, incident logs, DPAs, and AI governance artifacts.
+  recommended_next_steps:
+    - Request audited consolidated financials, monthly management accounts, current cash, and debt documents.
+    - Validate financing terms and valuation against cap table, debt agreements, and preference stack.
+    - Conduct clinician/customer calls in France, Germany, and Italy.
+    - Review security certifications, incident history, DPAs, and AI governance controls.
+    - Model downside runway and legal/security shock scenarios before any valuation work.
+  overall_confidence: medium
+  recommendation: Track; proceed only after private data-room verification.
+chapters:
+  - chapter_id: I
+    title: Unicorn eligibility, identity, and framing
+    summary: Public evidence supports Doctolib as an active French late-stage private unicorn, but the underwriting case needs private operating and financing data.
+    sections:
+      - section_id: I.A
+        title: Company snapshot and diligence objective
+        checklist_coverage: Verified identity, website, jurisdiction, stage, sector, and diligence objective.
+        findings: [Doctolib is a France-headquartered digital-health platform for patients and healthcare professionals., The diligence objective is to test whether scale converts into durable compliant profitable infrastructure.]
+        evidence_claim_ids: [EC-003, EC-004]
+        table_ids: [T-001]
+        figure_ids: [F-001]
+        risk_ids: [R-001, R-003]
+        confidence: high
+      - section_id: I.B
+        title: Private-unicorn status and valuation
+        checklist_coverage: Verified private-unicorn status, valuation anchors, financing context, and caveats.
+        findings: [CB Insights lists a $6.40B valuation; Tech.eu reported a EUR 5.8B 2022 valuation., Historical valuation anchors are not current fair value without financing terms and 2025/2026 metrics.]
+        evidence_claim_ids: [EC-001, EC-002, EC-011]
+        table_ids: [T-002]
+        figure_ids: [F-002]
+        risk_ids: [R-001, R-008]
+        confidence: high
+      - section_id: I.C
+        title: Public claim verification map
+        checklist_coverage: Catalogued public claims and mapped them to evidence, confidence, contradictions, and follow-up.
+        findings: [Unicorn/legal identity claims are strongest., Scale/security/product claims are partially verified and need private operating/audit support.]
+        evidence_claim_ids: [EC-001, EC-004, EC-009, EC-018]
+        table_ids: [T-003]
+        figure_ids: [F-003]
+        risk_ids: [R-004, R-005]
+        confidence: medium
+      - section_id: I.D
+        title: Diligence posture and gating questions
+        checklist_coverage: Defined gating questions and data-room priorities.
+        findings: [The central gate is whether 2024 losses are temporary investment or structural margin weakness., Legal, security, AI, and retention evidence should gate any investment committee process.]
+        evidence_claim_ids: [EC-007, EC-013, EC-014]
+        table_ids: [T-004]
+        figure_ids: [F-009]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: medium
+  - chapter_id: II
+    title: Product, technology, and defensibility
+    summary: Doctolib appears to own broad patient-access and practice-workflow software, but public evidence does not prove technical moat, uptime, or module economics.
+    sections:
+      - section_id: II.A
+        title: Product suite, workflow coverage, and architecture
+        checklist_coverage: Assessed product modules, user workflows, data dependencies, security posture, infrastructure, and moat indicators.
+        findings: [Public pages describe scheduling, teleconsultation, messaging, documents, payments, practice software, and AI-enabled tools., Defensibility likely comes from workflow density, patient reach, integrations, localization, and compliance operations rather than a single technical patent moat.]
+        evidence_claim_ids: [EC-006, EC-009, EC-010, EC-014]
+        table_ids: [T-005, T-017]
+        figure_ids: [F-004]
+        risk_ids: [R-003, R-005, R-009]
+        confidence: medium
+  - chapter_id: III
+    title: Market, customers, and competition
+    summary: Doctolib has exceptional public scale in European healthcare access; monetization quality and competitive resilience remain private-data questions.
+    sections:
+      - section_id: III.A
+        title: Customer segments and adoption evidence
+        checklist_coverage: Assessed users, adoption metrics, geography, usage intensity, and evidence quality.
+        findings: [Doctolib reports about 90M patients, 500k to 520k professionals, and about 22M monthly appointments., Public metrics do not separate active from registered users or paying from non-paying practitioners.]
+        evidence_claim_ids: [EC-004, EC-005]
+        table_ids: [T-006]
+        figure_ids: [F-005]
+        risk_ids: [R-004]
+        confidence: medium
+      - section_id: III.B
+        title: Market size and growth vectors
+        checklist_coverage: Assessed TAM/SAM/SOM proxies, secular demand, expansion paths, and growth drivers.
+        findings: [Digitization of appointment access, administration, telehealth, messaging, documents, and AI workflow supports a large opportunity., Public evidence does not quantify current share or module penetration.]
+        evidence_claim_ids: [EC-004, EC-006, EC-016]
+        table_ids: [T-007]
+        figure_ids: [F-006]
+        risk_ids: [R-007]
+        confidence: medium
+      - section_id: III.C
+        title: Competitive landscape and positioning
+        checklist_coverage: Mapped direct competitors, substitutes, adjacent systems, partners, and differentiation.
+        findings: [Competitors include appointment marketplaces, EHR/practice vendors, telehealth tools, public portals, and hospital systems., Doctolib's likely advantages are brand, patient reach, provider workflow footprint, and regulatory localization.]
+        evidence_claim_ids: [EC-012, EC-013, EC-016]
+        table_ids: [T-008]
+        figure_ids: [F-006]
+        risk_ids: [R-002, R-007]
+        confidence: medium
+      - section_id: III.D
+        title: Go-to-market, pricing, and channel economics
+        checklist_coverage: Reviewed pricing references, sales motion, channels, conversion, and retention gaps.
+        findings: [Tech.eu cited a EUR 129/month SaaS reference point around the 2022 financing., Current price book, discounting, CAC, and country-level sales productivity are not public.]
+        evidence_claim_ids: [EC-002, EC-004, EC-017]
+        table_ids: [T-009]
+        figure_ids: [F-005]
+        risk_ids: [R-004, R-007]
+        confidence: low
+      - section_id: III.E
+        title: Customer concentration and satisfaction proxies
+        checklist_coverage: Checked referenceability, retention, concentration, satisfaction, and complaint evidence.
+        findings: [Public sources provide broad usage statistics but not customer-level ARR, concentration, renewal cohorts, or NPS., Availability, support, and trust are critical because Doctolib sits in healthcare workflows.]
+        evidence_claim_ids: [EC-004, EC-005, EC-015]
+        table_ids: [T-010]
+        figure_ids: [F-007]
+        risk_ids: [R-003, R-004]
+        confidence: low
+  - chapter_id: IV
+    title: Team, governance, and organization
+    summary: Public evidence supports founder-led management and a large workforce; board, incentives, succession, and attrition are opaque.
+    sections:
+      - section_id: IV.A
+        title: Founders, leadership, board, and talent base
+        checklist_coverage: Assessed leadership, founder involvement, board visibility, hiring scale, organization, and people risks.
+        findings: [Stanislas Niox-Chateau is publicly identified as co-founder and CEO., Public pages suggest roughly 3,000 employees across more than 30 cities, creating material execution complexity.]
+        evidence_claim_ids: [EC-004, EC-008, EC-012]
+        table_ids: [T-011, T-018]
+        figure_ids: [F-008]
+        risk_ids: [R-006, R-010]
+        confidence: medium
+  - chapter_id: V
+    title: Business model, unit economics, and financial performance
+    summary: Public filings show revenue growth but heavy losses and balance-sheet pressure in 2024; private SaaS metrics are required.
+    sections:
+      - section_id: V.A
+        title: Revenue model and monetization
+        checklist_coverage: Identified revenue streams, pricing basis, module monetization, and payment/workflow expansion.
+        findings: [Doctolib appears to monetize professional software subscriptions and adjacent workflow modules., Public data does not disclose ARR, paying customers, take rates, gross margin, or country mix.]
+        evidence_claim_ids: [EC-002, EC-006, EC-007, EC-017]
+        table_ids: [T-012]
+        figure_ids: [F-010]
+        risk_ids: [R-001, R-004]
+        confidence: low
+      - section_id: V.B
+        title: Historical financial performance
+        checklist_coverage: Reviewed public revenue, EBITDA, net income, cash, debt, and growth.
+        findings: [Pappers shows revenue rising from EUR 164M in 2021 to EUR 253M in 2024., 2024 EBITDA was about negative EUR 62.9M and net income about negative EUR 122M.]
+        evidence_claim_ids: [EC-007]
+        table_ids: [T-013]
+        figure_ids: [F-010]
+        risk_ids: [R-001]
+        confidence: high
+      - section_id: V.C
+        title: Cash runway, debt, and financing capacity
+        checklist_coverage: Assessed cash, debt, financing history, runway pressure, and financing risk.
+        findings: [Pappers shows 2024 cash of about EUR 28.6M and financial debt of about EUR 104M., Runway and covenant risk remain unknown without current cash, burn, and debt documents.]
+        evidence_claim_ids: [EC-002, EC-007]
+        table_ids: [T-014]
+        figure_ids: [F-002]
+        risk_ids: [R-001, R-008]
+        confidence: medium
+      - section_id: V.D
+        title: Unit economics and operating leverage
+        checklist_coverage: Evaluated gross margin, CAC payback, LTV/CAC, NRR, implementation cost, and support burden availability.
+        findings: [Public evidence does not disclose SaaS gross margin, sales efficiency, retention, or product-level profitability., Revenue growth alongside losses raises the question of whether expansion is scaling efficiently.]
+        evidence_claim_ids: [EC-007, EC-017]
+        table_ids: [T-015]
+        figure_ids: [F-010]
+        risk_ids: [R-001, R-004]
+        confidence: low
+      - section_id: V.E
+        title: Forecast scenarios and value drivers
+        checklist_coverage: Framed upside, base, and downside drivers and valuation sensitivity.
+        findings: [Upside depends on converting workflow reach into multi-product ARPU and operating leverage., Downside centers on sustained losses, legal remedies, pricing pressure, security incidents, or country execution misses.]
+        evidence_claim_ids: [EC-001, EC-004, EC-007, EC-013]
+        table_ids: [T-016]
+        figure_ids: [F-011]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: medium
+  - chapter_id: VI
+    title: Legal, IP, and regulatory
+    summary: Doctolib operates in a regulated health-data environment and faces public competition-law scrutiny; legal diligence is a gating workstream.
+    sections:
+      - section_id: VI.A
+        title: Corporate status, ownership, and IP/public records
+        checklist_coverage: Verified legal status, registration identifiers, capital, ownership/IP gaps, and corporate-record limitations.
+        findings: [Pappers identifies Doctolib as an active French SAS with SIREN 794 598 813 and capital of EUR 201,304.25., Public records do not disclose the complete cap table, option pool, investor rights, IP assignments, or group structure.]
+        evidence_claim_ids: [EC-003]
+        table_ids: [T-001, T-019]
+        figure_ids: [F-001]
+        risk_ids: [R-008]
+        confidence: high
+      - section_id: VI.B
+        title: Regulatory, litigation, and compliance posture
+        checklist_coverage: Reviewed privacy/data protection, healthcare regulation, competition matters, sanctions/litigation, and contractual compliance exposure.
+        findings: [French competition authority materials report a EUR 4.665M penalty and an appeal posture., EU health-data processing increases GDPR, HDS, hosting, AI, and medical-workflow compliance requirements.]
+        evidence_claim_ids: [EC-009, EC-010, EC-013, EC-014]
+        table_ids: [T-004, T-020]
+        figure_ids: [F-009]
+        risk_ids: [R-002, R-003, R-005]
+        confidence: medium
+  - chapter_id: VII
+    title: Operations, security, and execution risk
+    summary: Operating scale and security claims are substantial, but public information cannot replace operational audits, incident logs, and country-level metrics.
+    sections:
+      - section_id: VII.A
+        title: Operating footprint, delivery model, and process maturity
+        checklist_coverage: Assessed office footprint, employee base, country operations, support process, and scale complexity.
+        findings: [Public pages describe about 3,000 Doctolibers and operations across more than 30 cities., Country localization increases compliance, support, and management complexity.]
+        evidence_claim_ids: [EC-004, EC-008]
+        table_ids: [T-011, T-021]
+        figure_ids: [F-008, F-012]
+        risk_ids: [R-006, R-010]
+        confidence: medium
+      - section_id: VII.B
+        title: Security, privacy, and data governance
+        checklist_coverage: Reviewed security controls, certifications, hosting, privacy, subprocessors, and health-data obligations.
+        findings: [Doctolib cites HDS, ISO 27001, ISO 27701, C5 Germany, ACN Italy, EU hosting, and encryption controls., Certificate scopes, control test results, incident history, and complete subprocessor risk are not public.]
+        evidence_claim_ids: [EC-009, EC-010]
+        table_ids: [T-005, T-022]
+        figure_ids: [F-004, F-012]
+        risk_ids: [R-003, R-005]
+        confidence: medium
+      - section_id: VII.C
+        title: Reliability, availability, and business continuity
+        checklist_coverage: Assessed uptime, dependency resilience, incident response, backup/restore, and critical workflow exposure.
+        findings: [Appointment, document, and patient messaging workflows can become operationally critical for healthcare providers., Public evidence does not disclose uptime history, RTO/RPO, incident SLAs, or disaster-recovery tests.]
+        evidence_claim_ids: [EC-005, EC-006, EC-010]
+        table_ids: [T-005]
+        figure_ids: [F-004]
+        risk_ids: [R-003]
+        confidence: low
+      - section_id: VII.D
+        title: Third-party dependencies and supply chain
+        checklist_coverage: Identified cloud, hosting, content, productivity, processor, and concentration risks.
+        findings: [Public references include AWS, Devoteam G Cloud, and Cloudinary as infrastructure or processing dependencies., Dependency concentration and data-transfer posture require full subprocessor schedules and contract review.]
+        evidence_claim_ids: [EC-010]
+        table_ids: [T-005]
+        figure_ids: [F-004]
+        risk_ids: [R-005, R-009]
+        confidence: low
+      - section_id: VII.E
+        title: AI, automation, and clinical-safety governance
+        checklist_coverage: Assessed AI/product automation claims, safety, explainability, human-in-the-loop controls, and EU AI Act exposure.
+        findings: [Public materials indicate AI-enabled workflow tools, but model governance and validation are not public., Health context means even administrative AI can create safety, privacy, or discrimination risk if poorly controlled.]
+        evidence_claim_ids: [EC-014]
+        table_ids: [T-004, T-023]
+        figure_ids: [F-011]
+        risk_ids: [R-005]
+        confidence: low
+      - section_id: VII.F
+        title: People, culture, and hiring execution
+        checklist_coverage: Assessed hiring velocity, critical roles, attrition visibility, labor risk, and management capacity.
+        findings: [Careers/about pages support a large hiring and operating base but do not disclose attrition or productivity., Scaling regulated healthcare software requires deep compliance, security, clinical, support, and local GTM talent.]
+        evidence_claim_ids: [EC-008, EC-012]
+        table_ids: [T-011]
+        figure_ids: [F-008]
+        risk_ids: [R-006, R-010]
+        confidence: low
+      - section_id: VII.G
+        title: Fraud, abuse, and platform integrity
+        checklist_coverage: Reviewed trust-and-safety exposure, appointment abuse, provider verification, patient identity, and misuse controls.
+        findings: [Public information does not disclose provider verification workflows, abuse rates, identity controls, or appointment fraud metrics., Healthcare marketplace integrity is material because trust failures can create regulatory and reputational damage.]
+        evidence_claim_ids: [EC-006, EC-015]
+        table_ids: [T-010]
+        figure_ids: [F-007]
+        risk_ids: [R-003, R-005]
+        confidence: low
+  - chapter_id: VIII
+    title: Investment decision, diligence plan, and monitoring
+    summary: Public evidence supports continued diligence but not an investment decision without private financial, legal, customer, and security evidence.
+    sections:
+      - section_id: VIII.A
+        title: Integrated diligence conclusion
+        checklist_coverage: Synthesized market, product, financial, legal, team, and risk evidence into a decision view.
+        findings: [Doctolib has rare scale and strategic relevance in European healthcare access., Losses, legal scrutiny, and unavailable SaaS metrics make the posture track/verify rather than underwrite.]
+        evidence_claim_ids: [EC-001, EC-004, EC-007, EC-013]
+        table_ids: [T-016, T-024]
+        figure_ids: [F-011]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: medium
+      - section_id: VIII.B
+        title: Confirmatory diligence workplan
+        checklist_coverage: Defined management, financial, legal, security, product, customer, and market follow-up workstreams.
+        findings: [Highest-priority requests are financials, cap table/debt documents, security audit artifacts, legal files, and cohort metrics., Legal remediation should be reviewed before valuation work is finalized.]
+        evidence_claim_ids: [EC-002, EC-007, EC-009, EC-013]
+        table_ids: [T-004]
+        figure_ids: [F-009]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: high
+      - section_id: VIII.C
+        title: Red flags and stop criteria
+        checklist_coverage: Listed evidence thresholds that stop or materially reprice the opportunity.
+        findings: [Stop criteria include insufficient runway, undisclosed debt stress, adverse legal remedy, material security incident, weak NRR, or negative country contribution margin., A valuation above the public mark requires exceptional proof of growth quality and operating leverage.]
+        evidence_claim_ids: [EC-001, EC-007, EC-013]
+        table_ids: [T-016]
+        figure_ids: [F-009]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: medium
+      - section_id: VIII.D
+        title: Valuation framing and sensitivity
+        checklist_coverage: Framed how public valuation should be adjusted for growth, margins, risk, and financing terms.
+        findings: [The $6.40B CB Insights and EUR 5.8B Tech.eu valuation anchors are historical marks, not current fair value., Sensitivity should focus on ARR quality, gross margin, burn multiple, country maturity, debt terms, and legal/security downside.]
+        evidence_claim_ids: [EC-001, EC-002, EC-007]
+        table_ids: [T-014]
+        figure_ids: [F-002]
+        risk_ids: [R-001, R-008]
+        confidence: medium
+      - section_id: VIII.E
+        title: Monitoring plan and KPIs
+        checklist_coverage: Defined ongoing public and private KPIs to monitor after this report.
+        findings: [Monitor filings, legal appeal developments, product launches, country expansion, hiring patterns, and security/privacy statements., Private dashboards should track ARR, NRR, CAC payback, churn, gross margin, uptime, incidents, and legal reserves.]
+        evidence_claim_ids: [EC-007, EC-013, EC-014]
+        table_ids: [T-015, T-025]
+        figure_ids: [F-010]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: medium
+      - section_id: VIII.F
+        title: Data-room request list
+        checklist_coverage: Converted gaps into requested documents and owner workstreams.
+        findings: [Finance, legal, security, product, customer, and HR data rooms are needed before investment committee review., Priority should be sequenced around runway, legal exposure, and security controls before lower-risk market validation.]
+        evidence_claim_ids: [EC-007, EC-009, EC-013]
+        table_ids: [T-004]
+        figure_ids: [F-011]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: high
+      - section_id: VIII.G
+        title: Final recommendation
+        checklist_coverage: Delivered final recommendation, confidence, assumptions, and decision caveats.
+        findings: [Recommendation is Track/Verify: Doctolib is strategically important but not investment-ready from public data., Reconsider after private evidence proves improved burn, durable retention, compliant AI/security operations, and manageable legal exposure.]
+        evidence_claim_ids: [EC-001, EC-004, EC-007, EC-013]
+        table_ids: [T-016]
+        figure_ids: [F-011]
+        risk_ids: [R-001, R-002, R-003]
+        confidence: medium
+tables:
+  - table_id: T-001
+    chapter_id: I
+    section_id: I.A
+    title: Corporate identity snapshot
+    description: Public identity and registry anchors.
+    columns: [field, public_evidence, implication]
+    rows:
+      - {field: Company, public_evidence: Doctolib SAS, implication: Target identified}
+      - {field: Status, public_evidence: Active French SAS; SIREN 794 598 813, implication: Active French operating company}
+      - {field: Sector, public_evidence: Digital health and healthcare software, implication: Regulated health-data diligence required}
+      - {field: Footprint, public_evidence: France, Germany, Italy, Netherlands, implication: Multi-country compliance scope}
+    source_ids: [SRC-003, SRC-004, SRC-005]
+    evidence_claim_ids: [EC-003, EC-004]
+  - table_id: T-002
+    chapter_id: I
+    section_id: I.B
+    title: Valuation and financing anchors
+    description: Public valuation evidence.
+    columns: [source, value, context, caveat]
+    rows:
+      - {source: CB Insights, value: $6.40B, context: Unicorn tracker, caveat: Terms not public}
+      - {source: Tech.eu, value: EUR 5.8B valuation; EUR 500M equity/debt raise, context: 2022 financing, caveat: Mix and debt terms require review}
+      - {source: Wikipedia, value: about $6.2B, context: secondary list, caveat: Corroboration only}
+    source_ids: [SRC-001, SRC-002, SRC-016]
+    evidence_claim_ids: [EC-001, EC-002, EC-011]
+  - table_id: T-003
+    chapter_id: I
+    section_id: I.C
+    title: Claim verification map
+    description: Core claims, statuses, and next actions.
+    columns: [claim, status, confidence, next_step]
+    rows:
+      - {claim: Private-unicorn status, status: verified, confidence: high, next_step: Verify financing terms and cap table}
+      - {claim: Patient/practitioner scale, status: partially_verified, confidence: medium, next_step: Audit active and paying-user definitions}
+      - {claim: Certified security posture, status: partially_verified, confidence: medium, next_step: Review certificates and audit scope}
+      - {claim: Durable healthcare operating system, status: inconclusive, confidence: medium, next_step: Validate retention and multi-product ARR}
+    source_ids: [SRC-001, SRC-005, SRC-008]
+    evidence_claim_ids: [EC-001, EC-004, EC-009, EC-018]
+  - table_id: T-004
+    chapter_id: I
+    section_id: I.D
+    title: Gating diligence questions
+    description: Questions that determine whether diligence advances.
+    columns: [workstream, question, public_signal, decision_use]
+    rows:
+      - {workstream: Finance, question: Are 2024 losses temporary or structural?, public_signal: Negative EBITDA and net income, decision_use: Valuation and runway}
+      - {workstream: Legal, question: What remedies or appeal risk follows the penalty?, public_signal: EUR 4.665M competition fine, decision_use: Legal reserve and conduct remedies}
+      - {workstream: Security, question: Are certifications complete and current?, public_signal: HDS and ISO claims, decision_use: Health-data trust}
+      - {workstream: Customers, question: Are practitioners retained and satisfied?, public_signal: Large published scale, decision_use: Revenue durability}
+    source_ids: [SRC-003, SRC-008, SRC-013]
+    evidence_claim_ids: [EC-007, EC-009, EC-013, EC-014]
+  - table_id: T-005
+    chapter_id: II
+    section_id: II.A
+    title: Product and security surface
+    description: Public modules and control questions.
+    columns: [module_or_control, public_signal, diligence_question]
+    rows:
+      - {module_or_control: Appointment scheduling, public_signal: Core workflow, diligence_question: Active paid practitioner use and uptime}
+      - {module_or_control: Teleconsultation, public_signal: 35M video consultations, diligence_question: Current usage and reimbursement status}
+      - {module_or_control: Documents and messaging, public_signal: 14M documents monthly, diligence_question: Retention and access controls}
+      - {module_or_control: Payments/practice software, public_signal: Workflow expansion, diligence_question: Attach rate and margin}
+      - {module_or_control: HDS/ISO/C5/ACN, public_signal: Public certifications/control claims, diligence_question: Scope and exceptions}
+    source_ids: [SRC-005, SRC-008, SRC-009, SRC-010]
+    evidence_claim_ids: [EC-005, EC-006, EC-009, EC-010]
+  - table_id: T-006
+    chapter_id: III
+    section_id: III.A
+    title: Public adoption indicators
+    description: Company-published scale requiring private verification.
+    columns: [metric, public_value, interpretation, caveat]
+    rows:
+      - {metric: Patients, public_value: about 90M, interpretation: Broad reach, caveat: Active/monthly definition not public}
+      - {metric: Healthcare professionals, public_value: 500k to 520k, interpretation: Large provider network, caveat: Paying seats not disclosed}
+      - {metric: Appointments, public_value: about 22M per month, interpretation: High throughput, caveat: Monetization not public}
+      - {metric: Online appointments, public_value: about 15M per month, interpretation: Digital booking behavior, caveat: Country split unavailable}
+    source_ids: [SRC-005, SRC-006]
+    evidence_claim_ids: [EC-004, EC-005]
+  - table_id: T-007
+    chapter_id: III
+    section_id: III.B
+    title: Market growth vectors
+    description: Publicly inferable expansion paths.
+    columns: [vector, rationale, diligence_metric]
+    rows:
+      - {vector: Patient access, rationale: Appointment discovery remains fragmented, diligence_metric: Appointment share by geography}
+      - {vector: Practice workflow, rationale: Providers need admin software, diligence_metric: Module attach rate}
+      - {vector: Telehealth, rationale: Video extends patient-provider interaction, diligence_metric: Paid usage and reimbursement}
+      - {vector: AI automation, rationale: Administrative burden creates demand, diligence_metric: Safety and retention impact}
+    source_ids: [SRC-005, SRC-014, SRC-015]
+    evidence_claim_ids: [EC-006, EC-014, EC-016]
+  - table_id: T-008
+    chapter_id: III
+    section_id: III.C
+    title: Competitive landscape summary
+    description: Categories and pressure points.
+    columns: [category, examples_or_types, pressure_on_doctolib]
+    rows:
+      - {category: Appointment platforms, examples_or_types: Regional booking marketplaces, pressure_on_doctolib: Pricing and supply acquisition}
+      - {category: Practice-management/EHR vendors, examples_or_types: Local workflow systems, pressure_on_doctolib: Workflow ownership and integration}
+      - {category: Public portals, examples_or_types: Public-sector health access portals, pressure_on_doctolib: Policy and channel risk}
+      - {category: Telehealth/messaging tools, examples_or_types: Specialist virtual-care products, pressure_on_doctolib: Module competition}
+    source_ids: [SRC-013, SRC-014, SRC-015]
+    evidence_claim_ids: [EC-012, EC-013, EC-016]
+  - table_id: T-009
+    chapter_id: III
+    section_id: III.D
+    title: Go-to-market and pricing evidence
+    description: Public pricing and sales-motion signals.
+    columns: [topic, public_signal, diligence_gap]
+    rows:
+      - {topic: Pricing, public_signal: Tech.eu cited EUR 129/month SaaS context, diligence_gap: Current price book and discounting}
+      - {topic: Sales motion, public_signal: Large professional base, diligence_gap: CAC and sales productivity}
+      - {topic: Country localization, public_signal: Multi-country operations, diligence_gap: Country gross margin and support cost}
+      - {topic: Module expansion, public_signal: Product breadth beyond scheduling, diligence_gap: Attach rate and ARPU uplift}
+    source_ids: [SRC-002, SRC-005]
+    evidence_claim_ids: [EC-002, EC-004, EC-017]
+  - table_id: T-010
+    chapter_id: III
+    section_id: III.E
+    title: Customer quality evidence gaps
+    description: Public proxies and private verification needs.
+    columns: [topic, public_evidence, private_verification_needed]
+    rows:
+      - {topic: Retention, public_evidence: None beyond scale claims, private_verification_needed: GRR and NRR by cohort}
+      - {topic: Concentration, public_evidence: None public, private_verification_needed: Top customer ARR and terms}
+      - {topic: Satisfaction, public_evidence: Trust implied by usage, private_verification_needed: NPS and churn reasons}
+      - {topic: Provider verification, public_evidence: Not disclosed in detail, private_verification_needed: Onboarding controls and abuse metrics}
+    source_ids: [SRC-005, SRC-006]
+    evidence_claim_ids: [EC-004, EC-005, EC-015]
+  - table_id: T-011
+    chapter_id: IV
+    section_id: IV.A
+    title: Leadership and organization snapshot
+    description: Public organization evidence.
+    columns: [area, public_signal, implication]
+    rows:
+      - {area: CEO/founder, public_signal: Stanislas Niox-Chateau identified as co-founder and CEO, implication: Founder-led continuity}
+      - {area: Executive roster, public_signal: CB Insights people page lists executive roster and limited board detail, implication: Governance requires private review}
+      - {area: Workforce, public_signal: About 3,000 employees/Doctolibers, implication: High execution complexity}
+      - {area: Footprint, public_signal: More than 30 cities, implication: Multi-country compliance and management load}
+    source_ids: [SRC-006, SRC-012]
+    evidence_claim_ids: [EC-004, EC-008, EC-012]
+  - table_id: T-012
+    chapter_id: V
+    section_id: V.A
+    title: Revenue model hypotheses
+    description: Monetization paths to verify privately.
+    columns: [stream, public_basis, verification_needed]
+    rows:
+      - {stream: Professional SaaS, public_basis: Practice software and pricing reference, verification_needed: ARR and paying seats}
+      - {stream: Add-on modules, public_basis: Telehealth, messaging, documents, payments, verification_needed: Attach rate and margin}
+      - {stream: Provider groups, public_basis: Large workflow footprint, verification_needed: Contract size and concentration}
+      - {stream: AI tools, public_basis: Public AI/product references, verification_needed: Pricing, safety, and adoption}
+    source_ids: [SRC-002, SRC-005, SRC-014]
+    evidence_claim_ids: [EC-006, EC-014, EC-017]
+  - table_id: T-013
+    chapter_id: V
+    section_id: V.B
+    title: Public financial summary
+    description: Pappers public financial anchors.
+    columns: [year, revenue_eur_m, ebitda_eur_m, net_income_eur_m, note]
+    rows:
+      - {year: 2021, revenue_eur_m: 164, ebitda_eur_m: null, net_income_eur_m: null, note: Public revenue anchor}
+      - {year: 2022, revenue_eur_m: 189, ebitda_eur_m: null, net_income_eur_m: null, note: Public revenue anchor}
+      - {year: 2023, revenue_eur_m: 216, ebitda_eur_m: null, net_income_eur_m: null, note: Public revenue anchor}
+      - {year: 2024, revenue_eur_m: 253, ebitda_eur_m: -62.9, net_income_eur_m: -122, note: Loss profile requires explanation}
+    source_ids: [SRC-003]
+    evidence_claim_ids: [EC-007]
+  - table_id: T-014
+    chapter_id: V
+    section_id: V.C
+    title: Balance sheet and financing risk anchors
+    description: Public liquidity and financing indicators.
+    columns: [item, public_value, diligence_implication]
+    rows:
+      - {item: 2024 cash, public_value: EUR 28.6M, diligence_implication: Requires current cash and burn review}
+      - {item: 2024 financial debt, public_value: EUR 104M, diligence_implication: Review maturity, covenants, and lender rights}
+      - {item: 2022 financing, public_value: EUR 500M equity/debt round, diligence_implication: Separate equity, debt, and secondary components}
+      - {item: Historical valuation, public_value: $6.40B CB Insights, diligence_implication: Reprice for current metrics and preferences}
+    source_ids: [SRC-001, SRC-002, SRC-003]
+    evidence_claim_ids: [EC-001, EC-002, EC-007]
+  - table_id: T-015
+    chapter_id: V
+    section_id: V.D
+    title: Unit-economics diligence matrix
+    description: Metrics needed to validate leverage.
+    columns: [metric, why_it_matters, public_availability]
+    rows:
+      - {metric: ARR by module and country, why_it_matters: Separates core from expansion quality, public_availability: Not public}
+      - {metric: Gross margin, why_it_matters: Determines SaaS scalability, public_availability: Not public}
+      - {metric: CAC payback, why_it_matters: Tests sales efficiency, public_availability: Not public}
+      - {metric: NRR and churn, why_it_matters: Tests workflow stickiness, public_availability: Not public}
+      - {metric: Burn multiple, why_it_matters: Connects growth to runway, public_availability: Not public}
+    source_ids: [SRC-003, SRC-005]
+    evidence_claim_ids: [EC-007, EC-017]
+  - table_id: T-016
+    chapter_id: V
+    section_id: V.E
+    title: Scenario frame
+    description: Scenarios for investment committee framing.
+    columns: [scenario, evidence_needed, valuation_bias]
+    rows:
+      - {scenario: Upside, evidence_needed: High NRR, strong module attach, legal resolution, and operating leverage, valuation_bias: Could defend premium mark}
+      - {scenario: Base, evidence_needed: Growth continues and losses narrow, valuation_bias: Track with discount to historical mark}
+      - {scenario: Downside, evidence_needed: Weak retention, high burn, debt pressure, adverse legal/security event, valuation_bias: Material down-round risk}
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-013]
+    evidence_claim_ids: [EC-001, EC-002, EC-007, EC-013]
+  - table_id: T-017
+    chapter_id: II
+    section_id: II.A
+    title: Product diligence gap matrix
+    description: Product proof needed to convert public module claims into underwriting evidence.
+    columns: [area, public_signal, verification_needed]
+    rows:
+      - {area: Scheduling and patient access, public_signal: Core appointment workflow and large patient reach, verification_needed: Uptime, active usage, conversion, and country-level monetization}
+      - {area: Clinical and administrative AI, public_signal: Public AI assistant and automation references, verification_needed: Model inventory, safety validation, human-in-the-loop controls, and product telemetry}
+      - {area: Payments and practice software, public_signal: Workflow expansion beyond booking, verification_needed: Attach rate, gross margin, switching costs, and churn by module}
+      - {area: Security and hosting posture, public_signal: HDS/ISO/C5/ACN and EU hosting claims, verification_needed: Certificate scopes, exceptions, audit reports, incidents, and subprocessors}
+    source_ids: [SRC-005, SRC-008, SRC-014]
+    evidence_claim_ids: [EC-006, EC-009, EC-014]
+  - table_id: T-018
+    chapter_id: IV
+    section_id: IV.A
+    title: Governance and people diligence requests
+    description: Public organization signals and private governance evidence required.
+    columns: [topic, public_signal, diligence_request]
+    rows:
+      - {topic: Founder leadership, public_signal: Co-founder/CEO publicly identified, diligence_request: Founder employment, equity, vesting, succession, and board oversight materials}
+      - {topic: Executive depth, public_signal: Public people sources list a broader executive roster, diligence_request: Current org chart, leadership turnover, and critical-role retention}
+      - {topic: Board and investors, public_signal: Limited public board detail, diligence_request: Board minutes, observer rights, protective provisions, and consent thresholds}
+      - {topic: Workforce scale, public_signal: Roughly 3,000 employees/Doctolibers across more than 30 cities, diligence_request: Headcount bridge, attrition, hiring plan, and labor-law exposure by country}
+    source_ids: [SRC-006, SRC-012]
+    evidence_claim_ids: [EC-008, EC-012]
+  - table_id: T-019
+    chapter_id: VI
+    section_id: VI.A
+    title: Corporate and ownership records checklist
+    description: Legal-entity and capitalization evidence not fully available from public records.
+    columns: [record, public_signal, required_private_evidence]
+    rows:
+      - {record: French operating entity, public_signal: Active SAS with SIREN 794 598 813 and stated share capital, required_private_evidence: Full entity chart and current corporate extract}
+      - {record: Capitalization, public_signal: Public capital figure only, required_private_evidence: Current cap table, option pool, SAFEs/notes, secondary sales, and preference stack}
+      - {record: Investor rights, public_signal: Financing announcements imply institutional investors, required_private_evidence: Voting, veto, information, pro rata, drag, ROFR, and liquidation-preference terms}
+      - {record: IP ownership, public_signal: Product suite is company-operated, required_private_evidence: Employee/contractor assignments, OSS review, trademark/patent schedule, and inbound licenses}
+    source_ids: [SRC-002, SRC-003, SRC-011]
+    evidence_claim_ids: [EC-002, EC-003, EC-011]
+  - table_id: T-020
+    chapter_id: VI
+    section_id: VI.B
+    title: Legal and regulatory matter tracker
+    description: Publicly visible legal, competition, privacy, and healthcare-regulatory diligence items.
+    columns: [matter, public_status, diligence_request]
+    rows:
+      - {matter: Competition authority penalty, public_status: EUR 4.665M penalty and appeal posture reported, diligence_request: Decision text, appeal filings, remedy analysis, legal reserves, and counsel memo}
+      - {matter: Health-data privacy, public_status: HDS/ISO/privacy claims visible, diligence_request: DPIAs, breach log, DPA/subprocessor schedule, regulator correspondence, and audit reports}
+      - {matter: AI-enabled workflows, public_status: AI tools referenced in public product communications, diligence_request: EU AI Act classification, model governance, clinical-safety review, and monitoring controls}
+      - {matter: Customer contracts, public_status: Not public, diligence_request: Standard terms, liability caps, SLAs, data-processing addenda, termination rights, and regulated-customer exceptions}
+    source_ids: [SRC-008, SRC-009, SRC-013, SRC-014]
+    evidence_claim_ids: [EC-009, EC-013, EC-014]
+  - table_id: T-021
+    chapter_id: VII
+    section_id: VII.A
+    title: Operating footprint and execution controls
+    description: Operating-scale evidence and controls needed for a multi-country health platform.
+    columns: [operating_area, public_signal, control_or_metric_to_request]
+    rows:
+      - {operating_area: Multi-country operations, public_signal: France, Germany, Italy, Netherlands, and broader European footprint, control_or_metric_to_request: Country P&L, regulatory owner, support staffing, and local SLA dashboard}
+      - {operating_area: Workforce scale, public_signal: Roughly 3,000 employees and more than 30 cities, control_or_metric_to_request: Headcount by function/country, attrition, spans/layers, and hiring plan}
+      - {operating_area: Provider support, public_signal: Large professional user base, control_or_metric_to_request: Support backlog, resolution times, onboarding quality, and escalation data}
+      - {operating_area: Business continuity, public_signal: Healthcare workflows are operationally critical, control_or_metric_to_request: Incident log, RTO/RPO evidence, tabletop exercises, and backup/restore tests}
+    source_ids: [SRC-005, SRC-006]
+    evidence_claim_ids: [EC-004, EC-008, EC-015]
+  - table_id: T-022
+    chapter_id: VII
+    section_id: VII.B
+    title: Security and dependency audit checklist
+    description: Controls and third-party dependencies that require private validation.
+    columns: [domain, public_signal, audit_artifact_needed]
+    rows:
+      - {domain: Certifications, public_signal: HDS, ISO 27001, ISO 27701, C5 Germany, and ACN Italy claims, audit_artifact_needed: Certificates, scope statements, audit reports, exceptions, and remediation status}
+      - {domain: Cloud and processors, public_signal: Public references identify AWS, Devoteam G Cloud, and Cloudinary dependencies, audit_artifact_needed: Subprocessor register, data-flow map, transfer assessments, and contract terms}
+      - {domain: Incident response, public_signal: No detailed public incident history found, audit_artifact_needed: Security incidents, vulnerability management, tabletop tests, and customer notifications}
+      - {domain: Access and encryption, public_signal: Public security materials cite controls, audit_artifact_needed: Access reviews, key management, logging, retention, and privileged-access evidence}
+    source_ids: [SRC-008, SRC-009, SRC-010]
+    evidence_claim_ids: [EC-009, EC-010]
+  - table_id: T-023
+    chapter_id: VIII
+    section_id: VIII.B
+    title: Confirmatory diligence workplan by workstream
+    description: Sequenced diligence tasks before investment-committee consideration.
+    columns: [workstream, priority_question, evidence_to_request]
+    rows:
+      - {workstream: Finance, priority_question: Can growth convert to durable profitability and runway?, evidence_to_request: Audited statements, ARR bridge, cash model, debt schedule, and cohort metrics}
+      - {workstream: Legal, priority_question: What is the exposure from the competition matter and regulated health-data operations?, evidence_to_request: Appeal files, reserves, DPAs, regulator correspondence, and legal register}
+      - {workstream: Security, priority_question: Are certifications, incidents, and dependencies acceptable for health data?, evidence_to_request: Audit reports, incident history, subprocessors, RTO/RPO, and penetration-test summaries}
+      - {workstream: Customer, priority_question: Does scale translate to retained paid practitioners and multi-product ARPU?, evidence_to_request: Top-customer ARR, NRR/GRR, churn reasons, NPS, and direct references}
+    source_ids: [SRC-003, SRC-005, SRC-008, SRC-013]
+    evidence_claim_ids: [EC-007, EC-009, EC-013, EC-015, EC-017]
+  - table_id: T-024
+    chapter_id: VIII
+    section_id: VIII.C
+    title: Red-flag and repricing thresholds
+    description: Stop criteria and repricing triggers implied by public diligence gaps.
+    columns: [threshold, trigger, decision_response]
+    rows:
+      - {threshold: Liquidity, trigger: Current cash runway below acceptable plan or debt covenants constrain operations, decision_response: Stop or require recapitalization terms}
+      - {threshold: Legal, trigger: Appeal creates material remedies, conduct restrictions, or unreserved liabilities, decision_response: Legal hold or valuation haircut}
+      - {threshold: Security/privacy, trigger: Material undisclosed incident, audit exception, or weak health-data controls, decision_response: Remediation condition and escrow/indemnity review}
+      - {threshold: Retention, trigger: Weak NRR/GRR, high churn, or poor provider satisfaction beneath scale claims, decision_response: Reprice growth assumptions and run deeper customer diligence}
+    source_ids: [SRC-003, SRC-008, SRC-013]
+    evidence_claim_ids: [EC-007, EC-009, EC-013, EC-015, EC-017]
+  - table_id: T-025
+    chapter_id: VIII
+    section_id: VIII.E
+    title: Monitoring KPI plan
+    description: Public and private indicators to track after this public-source screen.
+    columns: [kpi_area, public_monitoring_signal, private_dashboard_metric]
+    rows:
+      - {kpi_area: Financial performance, public_monitoring_signal: Registry filings and financing announcements, private_dashboard_metric: ARR, gross margin, burn multiple, cash runway, and debt covenant headroom}
+      - {kpi_area: Legal/regulatory, public_monitoring_signal: Competition appeal and regulator announcements, private_dashboard_metric: Legal reserves, open matters, DPA exceptions, and remediation milestones}
+      - {kpi_area: Product and AI, public_monitoring_signal: Product releases and AI announcements, private_dashboard_metric: AI usage, safety incidents, model changes, attach rate, and customer support impact}
+      - {kpi_area: Customer health, public_monitoring_signal: Provider/patient usage claims and sentiment, private_dashboard_metric: Active paid seats, NRR/GRR, churn, NPS, uptime, and support SLA compliance}
+    source_ids: [SRC-003, SRC-005, SRC-013, SRC-014]
+    evidence_claim_ids: [EC-004, EC-007, EC-013, EC-014, EC-015, EC-017]
+figures:
+  - figure_id: F-001
+    chapter_id: I
+    section_id: I.A
+    title: Company timeline
+    figure_type: timeline
+    description: Key public milestones.
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-005, SRC-013]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-007, EC-013]
+    spec:
+      start_date: '2013'
+      end_date: '2026-05-16'
+      ordering: chronological
+      events:
+        - {event_id: e1, date: '2013', label: Founded, description: Doctolib founded in France, category: company, evidence_claim_ids: [EC-011], source_ids: [SRC-011]}
+        - {event_id: e2, date: '2019-03-19', label: Unicorn entry, description: CB Insights lists unicorn join date, category: financing, evidence_claim_ids: [EC-001], source_ids: [SRC-001]}
+        - {event_id: e3, date: '2022', label: Large financing, description: EUR 500M financing at EUR 5.8B valuation reported, category: financing, evidence_claim_ids: [EC-002], source_ids: [SRC-002]}
+        - {event_id: e4, date: '2024', label: Public financials, description: Pappers shows EUR 253M revenue and losses, category: finance, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+        - {event_id: e5, date: '2025-11-06', label: Competition matter, description: French authority reports EUR 4.665M penalty and appeal posture, category: legal, evidence_claim_ids: [EC-013], source_ids: [SRC-013]}
+  - figure_id: F-002
+    chapter_id: I
+    section_id: I.B
+    title: Valuation anchors
+    figure_type: chart
+    description: Public valuation reference points.
+    source_ids: [SRC-001, SRC-002, SRC-016]
+    evidence_claim_ids: [EC-001, EC-002, EC-011]
+    spec:
+      chart_type: bar
+      x_axis: {label: Source, unit: null, scale: categorical}
+      y_axis: {label: Valuation, unit: billions, scale: linear}
+      series:
+        - series_id: valuation
+          name: Public valuation anchor
+          unit: billions
+          data_points:
+            - {x: CB Insights, y: 6.40, label: USD 6.40B, evidence_claim_ids: [EC-001], source_ids: [SRC-001]}
+            - {x: Tech.eu, y: 5.80, label: EUR 5.8B, evidence_claim_ids: [EC-002], source_ids: [SRC-002]}
+            - {x: Wikipedia, y: 6.20, label: about USD 6.2B, evidence_claim_ids: [EC-011], source_ids: [SRC-016]}
+      annotations:
+        - {label: Caveat, x: null, y: null, note: Historical marks are not current fair value, evidence_claim_ids: [EC-001, EC-002], source_ids: [SRC-001, SRC-002]}
+  - figure_id: F-003
+    chapter_id: I
+    section_id: I.C
+    title: Claim confidence funnel
+    figure_type: funnel
+    description: Public claims converted into diligence-ready evidence.
+    source_ids: [SRC-001, SRC-003, SRC-005, SRC-008]
+    evidence_claim_ids: [EC-001, EC-003, EC-004, EC-009, EC-018]
+    spec:
+      stages:
+        - {stage_id: s1, label: Public claims collected, value: 5, unit: claims, evidence_claim_ids: [EC-001], source_ids: [SRC-001]}
+        - {stage_id: s2, label: Verified by independent/registry evidence, value: 2, unit: claims, evidence_claim_ids: [EC-001, EC-003], source_ids: [SRC-001, SRC-003]}
+        - {stage_id: s3, label: Partially verified by company pages, value: 2, unit: claims, evidence_claim_ids: [EC-004, EC-009], source_ids: [SRC-005, SRC-008]}
+        - {stage_id: s4, label: Requires private support, value: 1, unit: claims, evidence_claim_ids: [EC-018], source_ids: [SRC-003]}
+  - figure_id: F-004
+    chapter_id: II
+    section_id: II.A
+    title: Product and data architecture view
+    figure_type: architecture_diagram
+    description: Simplified public-source workflow architecture.
+    source_ids: [SRC-005, SRC-008, SRC-009, SRC-010]
+    evidence_claim_ids: [EC-006, EC-009, EC-010]
+    spec:
+      nodes:
+        - {node_id: n1, label: Patients, node_type: user, description: Booking and document access, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+        - {node_id: n2, label: Healthcare professionals, node_type: user, description: Provider workflow users, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+        - {node_id: n3, label: Doctolib applications, node_type: product, description: Scheduling, telehealth, messaging, documents, payments, and practice tools, evidence_claim_ids: [EC-006], source_ids: [SRC-005]}
+        - {node_id: n4, label: Health-data controls, node_type: service, description: HDS, ISO, privacy and hosting controls, evidence_claim_ids: [EC-009], source_ids: [SRC-008, SRC-009]}
+        - {node_id: n5, label: Cloud and processors, node_type: third_party, description: Public supplier references including AWS, Devoteam G Cloud, and Cloudinary, evidence_claim_ids: [EC-010], source_ids: [SRC-010]}
+      edges:
+        - {edge_id: edge1, from_node_id: n1, to_node_id: n3, relationship: uses, data_or_dependency: appointments and messages, evidence_claim_ids: [EC-005], source_ids: [SRC-005]}
+        - {edge_id: edge2, from_node_id: n2, to_node_id: n3, relationship: uses, data_or_dependency: practice workflow data, evidence_claim_ids: [EC-006], source_ids: [SRC-005]}
+        - {edge_id: edge3, from_node_id: n3, to_node_id: n4, relationship: governed_by, data_or_dependency: health-data controls, evidence_claim_ids: [EC-009], source_ids: [SRC-008]}
+        - {edge_id: edge4, from_node_id: n3, to_node_id: n5, relationship: depends_on, data_or_dependency: infrastructure and processing services, evidence_claim_ids: [EC-010], source_ids: [SRC-010]}
+  - figure_id: F-005
+    chapter_id: III
+    section_id: III.A
+    title: Public scale indicators
+    figure_type: chart
+    description: Selected company-published scale metrics.
+    source_ids: [SRC-005, SRC-006]
+    evidence_claim_ids: [EC-004, EC-005]
+    spec:
+      chart_type: bar
+      x_axis: {label: Metric, unit: null, scale: categorical}
+      y_axis: {label: Count, unit: millions except professionals, scale: linear}
+      series:
+        - series_id: scale
+          name: Public scale
+          unit: count
+          data_points:
+            - {x: Patients, y: 90, label: 90M patients, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+            - {x: Monthly appointments, y: 22, label: 22M per month, evidence_claim_ids: [EC-005], source_ids: [SRC-006]}
+            - {x: Online monthly appointments, y: 15, label: 15M per month, evidence_claim_ids: [EC-005], source_ids: [SRC-006]}
+            - {x: Monthly documents, y: 14, label: 14M per month, evidence_claim_ids: [EC-005], source_ids: [SRC-006]}
+      annotations:
+        - {label: Definition caveat, x: null, y: null, note: Public counts do not prove paid active users, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+  - figure_id: F-006
+    chapter_id: III
+    section_id: III.C
+    title: Market map
+    figure_type: market_map
+    description: Doctolib and adjacent competitive categories.
+    source_ids: [SRC-005, SRC-013, SRC-014, SRC-015]
+    evidence_claim_ids: [EC-006, EC-013, EC-016]
+    spec:
+      dimensions:
+        x_axis: {label: Workflow depth, low_label: point solution, high_label: operating system}
+        y_axis: {label: Patient/provider reach, low_label: niche, high_label: broad}
+      segments:
+        - {segment_id: seg1, name: Patient access, description: Booking and discovery}
+        - {segment_id: seg2, name: Practice workflow, description: Software used by professionals}
+        - {segment_id: seg3, name: Telehealth and messaging, description: Care communication products}
+        - {segment_id: seg4, name: Public or enterprise systems, description: Government, hospital and EHR platforms}
+      entities:
+        - {entity_id: doctolib, name: Doctolib, entity_type: target_company, segment_id: seg1, x_value: high, y_value: high, attributes: {notes: Broad scale and module footprint}, evidence_claim_ids: [EC-004, EC-006], source_ids: [SRC-005]}
+        - {entity_id: regional_booking, name: Regional booking platforms, entity_type: competitor, segment_id: seg1, x_value: medium, y_value: medium, attributes: {notes: Local competition}, evidence_claim_ids: [EC-016], source_ids: [SRC-015]}
+        - {entity_id: ehr_pms, name: EHR/practice-management vendors, entity_type: competitor, segment_id: seg2, x_value: high, y_value: medium, attributes: {notes: Workflow adjacency}, evidence_claim_ids: [EC-016], source_ids: [SRC-015]}
+        - {entity_id: public_portals, name: Public health portals, entity_type: competitor, segment_id: seg4, x_value: medium, y_value: high, attributes: {notes: Policy-driven substitutes}, evidence_claim_ids: [EC-016], source_ids: [SRC-013]}
+  - figure_id: F-007
+    chapter_id: III
+    section_id: III.E
+    title: Customer diligence funnel
+    figure_type: funnel
+    description: Public scale must convert into verified customer economics.
+    source_ids: [SRC-005]
+    evidence_claim_ids: [EC-004, EC-015]
+    spec:
+      stages:
+        - {stage_id: c1, label: Public professional reach, value: 520000, unit: professionals, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+        - {stage_id: c2, label: Active practitioners, value: null, unit: unavailable, evidence_claim_ids: [EC-015], source_ids: [SRC-005]}
+        - {stage_id: c3, label: Paying seats, value: null, unit: unavailable, evidence_claim_ids: [EC-015], source_ids: [SRC-005]}
+        - {stage_id: c4, label: Retained cohort ARR, value: null, unit: unavailable, evidence_claim_ids: [EC-015], source_ids: [SRC-005]}
+  - figure_id: F-008
+    chapter_id: IV
+    section_id: IV.A
+    title: Public leadership organization chart
+    figure_type: org_chart
+    description: Publicly identified organization nodes.
+    source_ids: [SRC-006, SRC-012]
+    evidence_claim_ids: [EC-008, EC-012]
+    spec:
+      people_or_roles:
+        - {node_id: ceo, name: Stanislas Niox-Chateau, role: Co-founder and CEO, department: Executive, location: France, is_publicly_verified: true, evidence_claim_ids: [EC-012], source_ids: [SRC-012]}
+        - {node_id: exec_team, name: null, role: Executive team, department: Leadership, location: Europe, is_publicly_verified: true, evidence_claim_ids: [EC-012], source_ids: [SRC-012]}
+        - {node_id: employees, name: null, role: Doctolibers, department: Company-wide, location: 30+ cities, is_publicly_verified: true, evidence_claim_ids: [EC-008], source_ids: [SRC-006]}
+        - {node_id: board, name: null, role: Board/investor governance, department: Governance, location: null, is_publicly_verified: false, evidence_claim_ids: [EC-012], source_ids: [SRC-012]}
+      reporting_lines:
+        - {parent_node_id: board, child_node_id: ceo, relationship: board_member, evidence_claim_ids: [EC-012], source_ids: [SRC-012]}
+        - {parent_node_id: ceo, child_node_id: exec_team, relationship: reports_to, evidence_claim_ids: [EC-012], source_ids: [SRC-012]}
+        - {parent_node_id: exec_team, child_node_id: employees, relationship: reports_to, evidence_claim_ids: [EC-008], source_ids: [SRC-006]}
+  - figure_id: F-009
+    chapter_id: VI
+    section_id: VI.B
+    title: Risk heatmap
+    figure_type: risk_heatmap
+    description: Highest-priority diligence risks.
+    source_ids: [SRC-003, SRC-008, SRC-013]
+    evidence_claim_ids: [EC-007, EC-009, EC-013]
+    spec:
+      x_axis: {label: likelihood, scale: [low, medium, high, unknown]}
+      y_axis: {label: severity, scale: [informational, low, medium, high, critical]}
+      risk_points:
+        - {risk_id: R-001, label: Profitability and runway, severity: high, likelihood: medium, rationale: 2024 losses and debt/cash imbalance, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+        - {risk_id: R-002, label: Competition-law exposure, severity: high, likelihood: medium, rationale: Public penalty and appeal, evidence_claim_ids: [EC-013], source_ids: [SRC-013]}
+        - {risk_id: R-003, label: Security/privacy incident, severity: high, likelihood: low, rationale: Health-data platform with large user base, evidence_claim_ids: [EC-009], source_ids: [SRC-008]}
+        - {risk_id: R-005, label: AI and compliance controls, severity: medium, likelihood: medium, rationale: AI/product automation in healthcare, evidence_claim_ids: [EC-014], source_ids: [SRC-014]}
+  - figure_id: F-010
+    chapter_id: V
+    section_id: V.B
+    title: Revenue growth with profitability caveat
+    figure_type: chart
+    description: Public revenue trajectory and 2024 losses.
+    source_ids: [SRC-003]
+    evidence_claim_ids: [EC-007]
+    spec:
+      chart_type: line
+      x_axis: {label: Year, unit: year, scale: time}
+      y_axis: {label: EUR millions, unit: EURm, scale: linear}
+      series:
+        - series_id: revenue
+          name: Revenue
+          unit: EURm
+          data_points:
+            - {x: 2021, y: 164, label: EUR 164M, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+            - {x: 2022, y: 189, label: EUR 189M, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+            - {x: 2023, y: 216, label: EUR 216M, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+            - {x: 2024, y: 253, label: EUR 253M, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+        - series_id: net_income
+          name: Net income
+          unit: EURm
+          data_points:
+            - {x: 2024, y: -122, label: EUR -122M, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+      annotations:
+        - {label: EBITDA loss, x: 2024, y: -62.9, note: 2024 EBITDA about negative EUR 62.9M, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+  - figure_id: F-011
+    chapter_id: VIII
+    section_id: VIII.A
+    title: Diligence decision tree
+    figure_type: other
+    description: Branches for moving from public diligence to underwriting.
+    source_ids: [SRC-001, SRC-003, SRC-008, SRC-013, SRC-014]
+    evidence_claim_ids: [EC-001, EC-007, EC-009, EC-013, EC-014, EC-018]
+    spec:
+      schema_description: Simple decision tree with nodes and outcomes.
+      nodes:
+        - {node_id: n1, label: Verify finances and runway, pass_outcome: Continue, fail_outcome: Stop or reprice, evidence_claim_ids: [EC-007], source_ids: [SRC-003]}
+        - {node_id: n2, label: Resolve legal and conduct risk, pass_outcome: Continue, fail_outcome: Legal hold, evidence_claim_ids: [EC-013], source_ids: [SRC-013]}
+        - {node_id: n3, label: Validate security and AI governance, pass_outcome: Continue, fail_outcome: Security remediation, evidence_claim_ids: [EC-009, EC-014], source_ids: [SRC-008, SRC-014]}
+        - {node_id: n4, label: Prove retention and unit economics, pass_outcome: Underwrite, fail_outcome: Track only, evidence_claim_ids: [EC-018], source_ids: [SRC-003]}
+  - figure_id: F-012
+    chapter_id: VII
+    section_id: VII.A
+    title: Operations, security, and dependency control map
+    figure_type: architecture_diagram
+    description: Operating dependencies and controls that must be validated for a multi-country health-data platform.
+    source_ids: [SRC-005, SRC-006, SRC-008, SRC-010]
+    evidence_claim_ids: [EC-004, EC-008, EC-009, EC-010]
+    spec:
+      nodes:
+        - {node_id: providers, label: Healthcare professionals, node_type: user, description: Publicly reported provider network, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+        - {node_id: patients, label: Patients, node_type: user, description: Publicly reported patient reach, evidence_claim_ids: [EC-004], source_ids: [SRC-005]}
+        - {node_id: doctolib_platform, label: Doctolib workflow platform, node_type: product, description: Scheduling, messaging, documents, telehealth, practice software, payments, and AI workflow tools, evidence_claim_ids: [EC-006, EC-014], source_ids: [SRC-005, SRC-014]}
+        - {node_id: cloud_processors, label: Cloud and processor dependencies, node_type: third_party, description: Public supplier references including AWS, Devoteam G Cloud, and Cloudinary, evidence_claim_ids: [EC-010], source_ids: [SRC-010]}
+        - {node_id: security_controls, label: Security and privacy controls, node_type: service, description: Public HDS/ISO/C5/ACN and privacy-control claims, evidence_claim_ids: [EC-009], source_ids: [SRC-008, SRC-009]}
+        - {node_id: country_ops, label: Country operations and support, node_type: service, description: Multi-country operating footprint and workforce scale, evidence_claim_ids: [EC-004, EC-008], source_ids: [SRC-005, SRC-006]}
+      edges:
+        - {edge_id: e1, from_node_id: patients, to_node_id: doctolib_platform, relationship: Uses, data_or_dependency: Appointment access and health companion workflows, evidence_claim_ids: [EC-004, EC-006], source_ids: [SRC-005]}
+        - {edge_id: e2, from_node_id: providers, to_node_id: doctolib_platform, relationship: Uses, data_or_dependency: Practice workflow modules and professional software, evidence_claim_ids: [EC-004, EC-006], source_ids: [SRC-005]}
+        - {edge_id: e3, from_node_id: doctolib_platform, to_node_id: cloud_processors, relationship: Depends on, data_or_dependency: Hosting, cloud, and processor services requiring contract review, evidence_claim_ids: [EC-010], source_ids: [SRC-010]}
+        - {edge_id: e4, from_node_id: security_controls, to_node_id: doctolib_platform, relationship: Governs, data_or_dependency: Health-data controls, certifications, encryption, and privacy processes, evidence_claim_ids: [EC-009], source_ids: [SRC-008, SRC-009]}
+        - {edge_id: e5, from_node_id: country_ops, to_node_id: doctolib_platform, relationship: Supports, data_or_dependency: Local operations, support, compliance, and service delivery, evidence_claim_ids: [EC-004, EC-008], source_ids: [SRC-005, SRC-006]}
+      boundaries:
+        - {boundary_id: b1, label: Publicly described platform, node_ids: [providers, patients, doctolib_platform]}
+        - {boundary_id: b2, label: Controls requiring private validation, node_ids: [cloud_processors, security_controls, country_ops]}
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Doctolib as a France-based Healthcare & Life Sciences unicorn valued at $6.40B with unicorn entry date 2019-03-19.
+    evidence_type: market_database
+    source_ids: [SRC-001]
+    verification_status: verified
+    confidence: high
+    notes: Public unicorn tracker anchor; financing documents not reviewed.
+  - evidence_claim_id: EC-002
+    claim: Tech.eu reported Doctolib raised EUR 500M in equity/debt in 2022 at a EUR 5.8B valuation and cited a EUR 129/month SaaS reference.
+    evidence_type: independent_news
+    source_ids: [SRC-002]
+    verification_status: verified
+    confidence: high
+    notes: Historical financing context, not current valuation.
+  - evidence_claim_id: EC-003
+    claim: Pappers identifies Doctolib as an active French SAS with SIREN 794 598 813 and share capital of EUR 201,304.25.
+    evidence_type: regulatory_filing
+    source_ids: [SRC-003]
+    verification_status: verified
+    confidence: high
+    notes: Registry evidence for legal identity.
+  - evidence_claim_id: EC-004
+    claim: Doctolib public pages describe about 90M patients, 500k to 520k healthcare professionals, roughly 3,000 employees, and more than 30 cities.
+    evidence_type: primary_company_source
+    source_ids: [SRC-005, SRC-006]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Company-published scale; active/paying definitions unavailable.
+  - evidence_claim_id: EC-005
+    claim: Doctolib public pages cite about 22M appointments per month, about 15M online appointments per month, 35M video consultations, and 14M documents per month.
+    evidence_type: primary_company_source
+    source_ids: [SRC-005, SRC-006]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Requires usage logs and revenue linkage.
+  - evidence_claim_id: EC-006
+    claim: Public product pages show scheduling, telehealth, patient messaging, document sharing, payments, practice-management, and related workflow modules.
+    evidence_type: primary_company_source
+    source_ids: [SRC-005]
+    verification_status: verified
+    confidence: medium
+    notes: Product presence is visible; adoption by module is not public.
+  - evidence_claim_id: EC-007
+    claim: Pappers public financials show revenue of EUR 164M, EUR 189M, EUR 216M, and EUR 253M for 2021-2024, plus 2024 EBITDA about negative EUR 62.9M, net income about negative EUR 122M, cash about EUR 28.6M, and financial debt about EUR 104M.
+    evidence_type: regulatory_filing
+    source_ids: [SRC-003]
+    verification_status: verified
+    confidence: high
+    notes: Public financial anchors should be reconciled to consolidated accounts.
+  - evidence_claim_id: EC-008
+    claim: Doctolib careers/about materials indicate a large organization of roughly 3,000 employees across more than 30 cities.
+    evidence_type: primary_company_source
+    source_ids: [SRC-006]
+    verification_status: partially_verified
+    confidence: medium
+    notes: HR files and attrition not public.
+  - evidence_claim_id: EC-009
+    claim: Doctolib security/privacy pages cite HDS hosting, ISO 27001, ISO 27701, C5 Germany, ACN Italy, EU hosting, and encryption controls.
+    evidence_type: primary_company_source
+    source_ids: [SRC-008, SRC-009]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Certificate scopes and audit findings were not public.
+  - evidence_claim_id: EC-010
+    claim: Doctolib public supplier/privacy references identify cloud or processor dependencies including AWS, Devoteam G Cloud, and Cloudinary.
+    evidence_type: primary_company_source
+    source_ids: [SRC-010]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Requires full subprocessor and contract review.
+  - evidence_claim_id: EC-011
+    claim: Secondary public sources corroborate a 2013 founding date and valuation in the $6B range.
+    evidence_type: analyst_estimate
+    source_ids: [SRC-011, SRC-016]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Secondary evidence only.
+  - evidence_claim_id: EC-012
+    claim: Public people sources identify Stanislas Niox-Chateau as co-founder/CEO and list a broader executive roster with limited board detail.
+    evidence_type: social_or_professional_profile
+    source_ids: [SRC-012]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Governance documents not public.
+  - evidence_claim_id: EC-013
+    claim: French competition authority materials report a EUR 4.665M penalty and Doctolib's public disagreement/appeal posture.
+    evidence_type: legal_record
+    source_ids: [SRC-013]
+    verification_status: verified
+    confidence: high
+    notes: Outcome, remedies, and appeal impact require legal review.
+  - evidence_claim_id: EC-014
+    claim: Doctolib public product materials reference AI-enabled or automated workflow tools, but detailed AI governance evidence is not public.
+    evidence_type: primary_company_source
+    source_ids: [SRC-014]
+    verification_status: partially_verified
+    confidence: low
+    notes: EU AI Act and healthcare safety diligence required.
+  - evidence_claim_id: EC-015
+    claim: Public sources do not disclose customer concentration, retention cohorts, active paid practitioners, NRR, or NPS.
+    evidence_type: other
+    source_ids: [SRC-005]
+    verification_status: not_publicly_verifiable
+    confidence: high
+    notes: Absence of public data is a diligence gap.
+  - evidence_claim_id: EC-016
+    claim: The competitive set includes appointment platforms, practice-management/EHR vendors, telehealth tools, public portals, and adjacent healthcare software.
+    evidence_type: analyst_estimate
+    source_ids: [SRC-013, SRC-014, SRC-015]
+    verification_status: partially_verified
+    confidence: medium
+    notes: Competitive intensity requires customer and market interviews.
+  - evidence_claim_id: EC-017
+    claim: Public evidence does not disclose ARR, gross margin, CAC payback, NRR, churn, contract terms, country profitability, or module-level economics.
+    evidence_type: other
+    source_ids: [SRC-002, SRC-003, SRC-005]
+    verification_status: not_publicly_verifiable
+    confidence: high
+    notes: Core private data-room requirement.
+  - evidence_claim_id: EC-018
+    claim: Public evidence supports strategic relevance but is insufficient to prove a durable, profitable healthcare operating-system thesis.
+    evidence_type: analyst_estimate
+    source_ids: [SRC-001, SRC-003, SRC-005, SRC-013]
+    verification_status: inconclusive
+    confidence: medium
+    notes: Synthesis claim based on public positives and unresolved risks.
+sources:
+  - source_id: SRC-001
+    title: CB Insights - The Complete List Of Unicorn Companies
+    publisher: CB Insights
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: market_database
+    reliability: high
+    notes: Source for Doctolib $6.40B valuation, sector, geography, and unicorn date.
+  - source_id: SRC-002
+    title: Tech.eu - Doctolib raises EUR 500M at EUR 5.8B valuation
+    publisher: Tech.eu
+    url: https://tech.eu/
+    publication_date: 2022-03-15
+    accessed_date: 2026-05-16
+    evidence_type: independent_news
+    reliability: medium
+    notes: Financing coverage used for valuation, raise size, and SaaS pricing context.
+  - source_id: SRC-003
+    title: Pappers - Doctolib company profile and financials
+    publisher: Pappers
+    url: https://www.pappers.fr/entreprise/doctolib-794598813
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: regulatory_filing
+    reliability: high
+    notes: French corporate registry and public financial anchor.
+  - source_id: SRC-004
+    title: Doctolib official website
+    publisher: Doctolib
+    url: https://www.doctolib.fr/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: medium
+    notes: Official patient-facing entry point.
+  - source_id: SRC-005
+    title: Doctolib about and product pages
+    publisher: Doctolib
+    url: https://about.doctolib.com/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: medium
+    notes: Public scale and product descriptions.
+  - source_id: SRC-006
+    title: Doctolib careers and company pages
+    publisher: Doctolib
+    url: https://careers.doctolib.com/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: medium
+    notes: Workforce and location signals.
+  - source_id: SRC-007
+    title: Doctolib press and newsroom pages
+    publisher: Doctolib
+    url: https://about.doctolib.com/newsroom/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: medium
+    notes: Product and company announcements.
+  - source_id: SRC-008
+    title: Doctolib security page
+    publisher: Doctolib
+    url: https://security.doctolib.com/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: medium
+    notes: Security claims including certifications and controls.
+  - source_id: SRC-009
+    title: Doctolib privacy and data-protection materials
+    publisher: Doctolib
+    url: https://www.doctolib.fr/privacy
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: medium
+    notes: Privacy and health-data processing context.
+  - source_id: SRC-010
+    title: Doctolib supplier and processor references
+    publisher: Doctolib
+    url: https://www.doctolib.fr/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: low
+    notes: Public supplier references require full subprocessor schedule verification.
+  - source_id: SRC-011
+    title: CB Insights company profile - Doctolib
+    publisher: CB Insights
+    url: https://www.cbinsights.com/company/doctolib
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: market_database
+    reliability: medium
+    notes: Founding, headquarters, and funding context where accessible.
+  - source_id: SRC-012
+    title: CB Insights people profile - Doctolib
+    publisher: CB Insights
+    url: https://www.cbinsights.com/company/doctolib/people
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: social_or_professional_profile
+    reliability: medium
+    notes: Leadership and board visibility context.
+  - source_id: SRC-013
+    title: Autorite de la concurrence - Doctolib competition matter
+    publisher: French Competition Authority
+    url: https://www.autoritedelaconcurrence.fr/
+    publication_date: 2025-11-06
+    accessed_date: 2026-05-16
+    evidence_type: legal_record
+    reliability: high
+    notes: Public record of EUR 4.665M penalty and appeal posture.
+  - source_id: SRC-014
+    title: Doctolib AI and product communications
+    publisher: Doctolib
+    url: https://about.doctolib.com/
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: primary_company_source
+    reliability: low
+    notes: AI/product references pending governance review.
+  - source_id: SRC-015
+    title: Public healthcare software market observations
+    publisher: Analyst synthesis from cited public sources
+    url: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: analyst_estimate
+    reliability: low
+    notes: Used for market-map category framing only.
+  - source_id: SRC-016
+    title: Wikipedia - List of unicorn startup companies
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
+    publication_date: null
+    accessed_date: 2026-05-16
+    evidence_type: analyst_estimate
+    reliability: low
+    notes: Secondary corroboration only.
+risk_register:
+  - risk_id: R-001
+    title: Profitability, burn, and runway risk
+    category: financial
+    severity: high
+    likelihood: medium
+    description: Public 2024 filings show meaningful EBITDA and net losses with cash materially below reported financial debt.
+    evidence_claim_ids: [EC-007]
+    source_ids: [SRC-003]
+    mitigation_or_diligence: Obtain audited consolidated statements, monthly cash, debt schedule, covenants, and 2025/2026 forecast.
+  - risk_id: R-002
+    title: Competition-law and remedy risk
+    category: legal_regulatory
+    severity: high
+    likelihood: medium
+    description: Public French competition authority penalty and appeal posture create legal, reputational, and conduct-remedy uncertainty.
+    evidence_claim_ids: [EC-013]
+    source_ids: [SRC-013]
+    mitigation_or_diligence: Review decision, legal opinion, appeal strategy, reserves, and required conduct changes.
+  - risk_id: R-003
+    title: Health-data security and privacy incident risk
+    category: security_privacy
+    severity: high
+    likelihood: low
+    description: Large health-data workflow platform creates high impact if availability, confidentiality, or integrity fails.
+    evidence_claim_ids: [EC-009, EC-010]
+    source_ids: [SRC-008, SRC-009, SRC-010]
+    mitigation_or_diligence: Review certifications, audit reports, incident history, penetration tests, and cyber insurance.
+  - risk_id: R-004
+    title: Unverified retention and revenue quality
+    category: commercial
+    severity: high
+    likelihood: medium
+    description: Public scale does not disclose paying seats, ARR quality, churn, NRR, or customer concentration.
+    evidence_claim_ids: [EC-004, EC-015, EC-017]
+    source_ids: [SRC-005]
+    mitigation_or_diligence: Obtain cohort retention, NRR, GRR, ARPA, logo churn, and top-customer data.
+  - risk_id: R-005
+    title: AI and regulated workflow compliance risk
+    category: product_regulatory
+    severity: medium
+    likelihood: medium
+    description: AI-enabled healthcare workflow tools require strong governance, validation, monitoring, and user controls.
+    evidence_claim_ids: [EC-014]
+    source_ids: [SRC-014]
+    mitigation_or_diligence: Review AI inventory, model cards, risk assessments, clinical-safety review, and EU AI Act readiness.
+  - risk_id: R-006
+    title: Multi-country execution complexity
+    category: operations
+    severity: medium
+    likelihood: medium
+    description: Operations across several countries and healthcare systems increase localization, support, and compliance burden.
+    evidence_claim_ids: [EC-004, EC-008]
+    source_ids: [SRC-005, SRC-006]
+    mitigation_or_diligence: Review country P&Ls, org structure, support SLAs, and compliance ownership.
+  - risk_id: R-007
+    title: Competitive and pricing pressure
+    category: market
+    severity: medium
+    likelihood: medium
+    description: Regional appointment platforms, EHR vendors, and public-sector initiatives can pressure supply acquisition and pricing.
+    evidence_claim_ids: [EC-016]
+    source_ids: [SRC-013, SRC-015]
+    mitigation_or_diligence: Conduct win/loss calls, pricing benchmark, and share analysis by country.
+  - risk_id: R-008
+    title: Financing terms and preference-stack opacity
+    category: financing
+    severity: medium
+    likelihood: unknown
+    description: Public valuation does not reveal liquidation preferences, debt terms, warrants, covenants, or investor rights.
+    evidence_claim_ids: [EC-001, EC-002]
+    source_ids: [SRC-001, SRC-002]
+    mitigation_or_diligence: Review cap table, financing documents, debt agreements, and option pool.
+  - risk_id: R-009
+    title: Third-party dependency concentration
+    category: technology_supply_chain
+    severity: medium
+    likelihood: low
+    description: Public references to cloud and processors imply dependency and contract risk for critical health-data workflows.
+    evidence_claim_ids: [EC-010]
+    source_ids: [SRC-010]
+    mitigation_or_diligence: Review vendor risk, DPAs, SLAs, exit plans, and data localization controls.
+  - risk_id: R-010
+    title: Talent, governance, and succession opacity
+    category: governance_people
+    severity: medium
+    likelihood: unknown
+    description: Founder leadership is public, but board control, succession, attrition, and incentive alignment are not.
+    evidence_claim_ids: [EC-008, EC-012]
+    source_ids: [SRC-006, SRC-012]
+    mitigation_or_diligence: Review board materials, executive retention, equity incentives, and key-person plans.
+diligence_gaps:
+  - {gap_id: G-001, title: Current financial package unavailable, description: Need audited consolidated financials, 2026 YTD management accounts, and bridge from public entity to group results., related_risk_ids: [R-001], priority: high}
+  - {gap_id: G-002, title: ARR and retention metrics unavailable, description: Need ARR by country/module, GRR, NRR, churn, ARPA, cohort expansion, and concentration., related_risk_ids: [R-004], priority: high}
+  - {gap_id: G-003, title: Financing and debt terms unavailable, description: Need cap table, preference stack, debt schedule, covenants, maturity, warrants, and investor rights., related_risk_ids: [R-008, R-001], priority: high}
+  - {gap_id: G-004, title: Competition-law record and remedy plan incomplete, description: Need legal memo, appeal strategy, reserves, compliance remediation, and impact on commercial practices., related_risk_ids: [R-002], priority: high}
+  - {gap_id: G-005, title: Security certification scopes unavailable, description: Need certificate scopes, audit reports, exceptions, incident history, and penetration-test summaries., related_risk_ids: [R-003], priority: high}
+  - {gap_id: G-006, title: AI governance evidence unavailable, description: Need model inventory, impact assessments, validation, monitoring, human-review controls, and safety documentation., related_risk_ids: [R-005], priority: medium}
+  - {gap_id: G-007, title: Customer proof unavailable, description: Need customer references, contract samples, renewal data, provider verification controls, satisfaction data, and churn reasons., related_risk_ids: [R-004, R-007], priority: high}
+  - {gap_id: G-008, title: Country economics unavailable, description: Need country-level revenue, gross margin, support cost, CAC, growth, and compliance spend., related_risk_ids: [R-006, R-007], priority: medium}
+  - {gap_id: G-009, title: Third-party risk file unavailable, description: Need complete subprocessor list, vendor diligence, DPAs, SLAs, concentration analysis, and exit plans., related_risk_ids: [R-009, R-003], priority: medium}
+  - {gap_id: G-010, title: Governance and HR evidence unavailable, description: Need board composition, reserved matters, executive incentives, attrition, recruiting productivity, and succession plans., related_risk_ids: [R-010], priority: medium}
+follow_up_requests:
+  - {request_id: FR-001, owner: CFO or finance lead, request: Provide audited consolidated financials, management accounts, current cash, debt schedule, and forecast., related_gap_ids: [G-001, G-003], priority: high}
+  - {request_id: FR-002, owner: Revenue operations, request: Provide ARR by country/module, NRR/GRR, churn, CAC payback, discounting, and top-customer concentration., related_gap_ids: [G-002, G-007], priority: high}
+  - {request_id: FR-003, owner: Legal counsel, request: Provide competition-law decision file, appeal memo, reserves, remediation plan, and other material regulatory matters., related_gap_ids: [G-004], priority: high}
+  - {request_id: FR-004, owner: CISO or security lead, request: Provide certifications, audit reports, penetration-test summaries, incident history, and cyber insurance., related_gap_ids: [G-005], priority: high}
+  - {request_id: FR-005, owner: DPO/privacy counsel, request: Provide DPA templates, privacy impact assessments, subprocessor list, transfer analysis, and retention policy., related_gap_ids: [G-005, G-009], priority: high}
+  - {request_id: FR-006, owner: Product and AI governance lead, request: Provide roadmap, module attach-rate data, AI inventory, risk assessments, and clinical-safety review materials., related_gap_ids: [G-006, G-008], priority: medium}
+  - {request_id: FR-007, owner: Customer success, request: Provide customer references, support metrics, renewal cohorts, churn analysis, and implementation/support SLAs., related_gap_ids: [G-007], priority: high}
+  - {request_id: FR-008, owner: Country general managers, request: Provide country P&Ls, growth plans, compliance issues, local competitors, and staffing plans., related_gap_ids: [G-008], priority: medium}
+  - {request_id: FR-009, owner: Corporate secretary, request: Provide cap table, option pool, investor rights, board materials, reserved matters, and succession plan., related_gap_ids: [G-003, G-010], priority: high}
+  - {request_id: FR-010, owner: Infrastructure/vendor management, request: Provide vendor risk register, infrastructure contracts, SLAs, dependency concentration analysis, and continuity test results., related_gap_ids: [G-009], priority: medium}
+limitations:
+  - This report uses public sources only and is not financial, legal, tax, regulatory, medical, or investment advice.
+  - Company-published scale, security, and product claims were not independently audited.
+  - Public financial data may be entity-level, lag current performance, and differ from consolidated group reporting.
+  - Historical valuation anchors do not establish current fair value, liquidation preference economics, or secondary-market pricing.
+  - Contracts, customer ARR, cap table, debt terms, incident history, employee data, and board materials are not publicly verifiable.
+  - The competition-law matter summary is based on public materials and should be reviewed by qualified counsel.
+  - AI, health-data, and cybersecurity risks are described at diligence level only; technical control testing was not performed.
