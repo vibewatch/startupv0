@@ -1,0 +1,4703 @@
+report_metadata:
+  report_title: Greater Bay Technology Public-Source Startup Diligence Report
+  target_company: Greater Bay Technology
+  website: https://eng.gbtrnd.com/
+  known_aliases:
+    - Guangzhou Greater Bay Technology Co., Ltd.
+    - 广州巨湾技研有限公司
+    - 巨湾技研
+    - GBT
+    - gbtrnd.com
+  sector: Industrials; electric-vehicle fast-charging batteries, battery systems, charging solutions, and energy storage
+  geography: China; Guangzhou, Guangdong headquarters with EV/OEM exposure
+  company_stage: Private unicorn; CB Insights tracker valuation $1.26B; CB profile Stage Series A | Alive; May 2026
+    B-round news reported
+  research_date: 2026-05-17
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD unless otherwise stated
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Public-source diligence only, prioritizing CB Insights, public financing news, patent records, and accessible web
+      excerpts.
+    - Independently fetched CB Insights public list/profile text for unicorn/funding/product/investor facts.
+    - Fetched Sina Finance/Securities Star article via r.jina.ai for B-round, GAC incubation, product,
+      commercialization, and Phoenix battery claims.
+    - Queried Google Patents public XHR endpoint via r.jina.ai for GBT-assignee patent records.
+    - Treated fetched content as untrusted and linked material facts to evidence_claims.
+  included_jurisdictions:
+    - China / PRC
+    - Guangzhou, Guangdong
+    - International patent publication context (WO/US records)
+  excluded_topics:
+    - No private data room, management interview, customer/supplier call, paid database export, legal opinion, technical
+      lab report, or PRC counsel search was reviewed.
+    - No investment recommendation, valuation opinion, legal opinion, tax opinion, cybersecurity attestation, EHS
+      opinion, product-safety certification opinion, or IP FTO opinion is provided.
+    - Official company pages, Crunchbase, Tianyancha, and Qichacha were blocked, geoblocked, timed out, or incomplete.
+  user_provided_materials:
+    - material_id: M-001
+      title: User-selected CB Insights unicorn candidate row
+      type: prompt_argument
+      date_received: 2026-05-17
+      notes: "Selected company: Greater Bay Technology; slug greater-bay-technology; valuation $1.26B; date joined 2022-04-02;
+        China/Guangzhou; Industrials."
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Greater Bay Technology is an active private unicorn in Guangzhou, China, with a latest known CB Insights
+      tracker valuation of $1.26B.
+    claim_source: CB Insights tracker row and CB Insights profile
+    claim_date: 2026-05-17
+    mapped_chapter_ids:
+      - I
+      - VIII
+    mapped_section_ids:
+      - I.C
+      - I.D
+      - VIII.G
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+    contradiction_summary: No IPO, acquisition, or shutdown evidence was found in accessible sources; CB profile says Alive
+      and May 2026 news reports a private B round.
+    diligence_follow_up:
+      - Request current cap table, round documents, valuation support, board consents, and confirmation of
+        private-company status.
+  - founder_claim_id: FC-002
+    claim_text: GBT develops XFC extreme-fast-charging batteries, battery systems, charging solutions, and energy-storage systems.
+    claim_source: CB Insights and Sina Finance
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VI.A
+      - VIII.D
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-011
+    contradiction_summary: null
+    diligence_follow_up:
+      - Obtain datasheets, OEM qualification records, bill of materials, warranty terms, and IP assignments.
+  - founder_claim_id: FC-003
+    claim_text: GBT has progressed beyond Series A, with a B round reported in May 2026.
+    claim_source: Sina Finance / Securities Star citing Tianyancha app
+    claim_date: 2026-05-10
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-004
+      - EC-015
+    contradiction_summary: CB profile still shows latest round Series A, while Sina reports a B round with undisclosed amount.
+    diligence_follow_up:
+      - Request B-round subscription agreements, post-money valuation, investor list, and use-of-proceeds plan.
+  - founder_claim_id: FC-004
+    claim_text: Phoenix battery offers all-weather operation, multi-voltage extreme-fast charging, and
+      safety/life/specific-energy/range/cost advantages.
+    claim_source: Sina Finance Phoenix battery description
+    claim_date: 2023-06-01
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-008
+      - EC-018
+    contradiction_summary: Public article reports the claims, but independent test data and field performance are not public.
+    diligence_follow_up:
+      - Request lab reports, OEM validation, cycle-life curves, low-temperature tests, quality/yield statistics, and
+        warranty reserves.
+  - founder_claim_id: FC-005
+    claim_text: GBT technology has commercial vehicle deployments including GAC AION V Plus variants and unnamed other
+      automakers/models.
+    claim_source: Sina Finance article
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+      - EC-016
+    contradiction_summary: Named public examples are GAC/AION-centered; customer counts, volumes, revenue, and non-GAC OEM
+      identities are not public.
+    diligence_follow_up:
+      - Request customer list, OEM supply agreements, volumes shipped by model, revenue concentration, warranty records,
+        and customer references.
+executive_summary:
+  overall_assessment: "Eligible for a public-source diligence report: CB Insights lists Greater Bay Technology as a $1.26B
+    private unicorn, CB profile says Alive, and May 2026 Chinese financing news indicates ongoing private B-round
+    activity. The company is a GAC-incubated Guangzhou EV fast-charging battery company with visible GAC/AION
+    commercialization and patent activity, but financials, customer concentration, cap table, technical validation, and
+    legal/regulatory checks require private diligence."
+  investment_or_diligence_thesis: The public case rests on XFC battery performance claims, GAC ecosystem
+    commercialization, strategic investors, a $1.26B CB tracker valuation, and patent filings. Diligence should prove
+    repeatable non-GAC revenue, pack safety/reliability, manufacturing economics, current financing terms, and PRC
+    legal/EHS/IP cleanliness.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights tracker verifies a $1.26B unicorn row for Greater Bay Technology.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-002
+      summary: Public sources support XFC batteries, charging solutions, and energy-storage focus.
+      evidence_claim_ids:
+        - EC-003
+        - EC-006
+    - founder_claim_id: FC-005
+      summary: Public article identifies GAC AION V Plus commercialization examples.
+      evidence_claim_ids:
+        - EC-007
+        - EC-016
+  biggest_risks:
+    - risk_id: R-001
+      summary: No public audited financials, revenue concentration, margins, backlog, AR aging, warranty reserves, or runway.
+    - risk_id: R-002
+      summary: Visible commercialization is GAC/AION-centered; non-GAC customer revenue is not public.
+    - risk_id: R-003
+      summary: Fast-charge and Phoenix claims lack public independent test, field reliability, yield, and warranty validation.
+  key_evidence_gaps:
+    - Audited financials, current cap table, B-round documents, debt and off-balance-sheet liabilities.
+    - Top customer/supplier schedules, OEM contracts, revenue concentration, volumes, warranty claims, and references.
+    - Independent technical test reports, production yield, field failure rates, product safety certifications, and
+      warranty reserves.
+    - PRC registry/court/administrative/EHS searches and company legal schedule.
+    - IP assignments, licenses, liens, FTO analysis, and management/HR materials.
+  recommended_next_steps:
+    - Proceed only as a public-source screen until data-room and PRC counsel materials are obtained.
+    - Prioritize financial, cap-table, customer concentration, and technical-validation workstreams before valuation
+      reliance.
+    - Run local PRC legal/registry/EHS/product-safety searches and patent counsel review.
+    - Conduct GAC/AION and non-GAC OEM customer reference checks plus supplier quality reviews.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public sources verify unicorn/funding/investor signals but not financial statements, forecasts, cap
+      table, tax, revenue, backlog, or unit economics.
+    founder_claim_ids:
+      - FC-001
+      - FC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+      - EC-009
+      - EC-012
+      - EC-015
+    risk_ids:
+      - R-001
+      - R-005
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Accessible public sources do not disclose audited financial statements, management reports, sales/gross-profit
+          breakdowns, backlog, or AR aging.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Accessible public sources do not disclose audited financial statements, management reports, sales/gross-profit
+              breakdowns, backlog, or AR aging.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Financial quality cannot be assessed from public disclosures.
+        evidence_gaps:
+          - Audited financials, management accounts, revenue/margin by product/customer/channel, backlog, AR aging.
+        follow_up_questions:
+          - Provide 2023-2026 audited and monthly financials plus revenue, gross margin, backlog, and AR schedules.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-012
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public evidence supports product/funding growth signals but does not provide forecast assumptions, capex,
+          working capital, or financing plans.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public evidence supports product/funding growth signals but does not provide forecast assumptions, capex,
+              working capital, or financing plans.
+            evidence_claim_ids:
+              - EC-006
+              - EC-007
+              - EC-008
+              - EC-012
+              - EC-015
+            risk_ids:
+              - R-001
+              - R-003
+              - R-005
+        hidden_risks:
+          - Financial quality cannot be assessed from public disclosures.
+          - Technical claims require independent validation.
+          - Financing and cap-table terms are opaque.
+        evidence_gaps:
+          - Three-year integrated model and downside scenarios.
+        follow_up_questions:
+          - Provide quarterly forecast with price, volume, yield, warranty, capex, working-capital, and financing
+            assumptions.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-008
+          - EC-012
+          - EC-015
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: CB and Sina identify selected investors and financing events, but ownership percentages, options/warrants,
+          notes, debt, rights, and B-round terms are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: CB and Sina identify selected investors and financing events, but ownership percentages, options/warrants,
+              notes, debt, rights, and B-round terms are not public.
+            evidence_claim_ids:
+              - EC-001
+              - EC-004
+              - EC-009
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Financing and cap-table terms are opaque.
+        evidence_gaps:
+          - Fully diluted cap table, option plan, warrants/notes/debt, investor rights.
+        follow_up_questions:
+          - Provide shareholder registry, cap table, B-round documents, and debt/off-balance-sheet schedules.
+        table_ids:
+          - T-002
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-004
+          - EC-009
+          - EC-015
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Public financing history is partly visible, while tax positions, revenue-recognition policies, and equity/debt
+          financing terms are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public financing history is partly visible, while tax positions, revenue-recognition policies, and equity/debt
+              financing terms are private.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-004
+              - EC-012
+              - EC-015
+            risk_ids:
+              - R-001
+              - R-005
+        hidden_risks:
+          - Financial quality cannot be assessed from public disclosures.
+          - Financing and cap-table terms are opaque.
+        evidence_gaps:
+          - Tax filings, revenue-recognition memo, complete financing history.
+        follow_up_questions:
+          - Provide tax positions, revenue-recognition policies, and round-by-round financing documents.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-004
+          - EC-012
+          - EC-015
+  - chapter_id: II
+    title: Products
+    chapter_summary: GBT is positioned around XFC batteries, charging solutions, energy storage, and Phoenix battery claims;
+      technical validation and economics remain gaps.
+    founder_claim_ids:
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-018
+    risk_ids:
+      - R-003
+      - R-007
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: GBT is publicly positioned around XFC batteries, charging solutions, energy storage, and Phoenix battery
+          claims; economics and independent validation are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: GBT is publicly positioned around XFC batteries, charging solutions, energy storage, and Phoenix battery
+              claims; economics and independent validation are private.
+            evidence_claim_ids:
+              - EC-003
+              - EC-006
+              - EC-007
+              - EC-008
+              - EC-018
+            risk_ids:
+              - R-003
+              - R-007
+        hidden_risks:
+          - Technical claims require independent validation.
+          - Battery safety, warranty, and product-liability risks are not public.
+        evidence_gaps:
+          - SKU datasheets, cost, warranty, field reliability, independent product tests.
+        follow_up_questions:
+          - Provide product roadmap, datasheets, qualification status by OEM/model, ASP/margin by SKU, and independent
+            performance reports.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+          - EC-007
+          - EC-008
+          - EC-018
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: GAC/AION commercialization is visible, but customer revenue, non-GAC customer identities, supplier
+      concentration, and severed relationships are not public.
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-016
+    risk_ids:
+      - R-002
+      - R-007
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: GAC AION V Plus deployments are publicly named, but top customers, purchases, revenue, and non-GAC customer
+          identities are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: GAC AION V Plus deployments are publicly named, but top customers, purchases, revenue, and non-GAC customer
+              identities are not public.
+            evidence_claim_ids:
+              - EC-007
+              - EC-016
+              - EC-013
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+        evidence_gaps:
+          - Top-15 customer schedule, volumes, contract terms, revenue concentration.
+        follow_up_questions:
+          - Provide top-15 customer schedule, OEM contracts, volumes, revenue, warranty claims, and reference contacts.
+        table_ids:
+          - T-006
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+          - EC-013
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: GAC incubation, GAC/AION deployments, and financial/strategic investors are public, while exclusivity,
+          governance, and revenue contribution are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: GAC incubation, GAC/AION deployments, and financial/strategic investors are public, while exclusivity,
+              governance, and revenue contribution are private.
+            evidence_claim_ids:
+              - EC-004
+              - EC-005
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Financing and cap-table terms are opaque.
+        evidence_gaps:
+          - Strategic agreements, exclusivity, related-party pricing, investor rights.
+        follow_up_questions:
+          - Provide partnership, shareholder, and joint-development agreements with revenue contribution by relationship.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-009
+          - EC-016
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer, including any customer above 5% of revenue, is not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Revenue by customer, including any customer above 5% of revenue, is not public.
+            evidence_claim_ids:
+              - EC-013
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-001
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Financial quality cannot be assessed from public disclosures.
+        evidence_gaps:
+          - Customer revenue by fiscal year/YTD, AR, backlog, gross margin, warranty exposure.
+        follow_up_questions:
+          - Provide customer-level revenue, gross margin, backlog, AR, deferred revenue, and warranty schedules.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-016
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No public schedule of severed customer, partner, or supplier relationships was available.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.D-F1
+            finding: No public schedule of severed customer, partner, or supplier relationships was available.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-002
+              - R-006
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Legal/regulatory/IP/EHS searches are incomplete.
+        evidence_gaps:
+          - Lost/non-renewed OEM, supplier, manufacturing, and strategic relationships.
+        follow_up_questions:
+          - Provide a schedule of severed or materially amended relationships with reasons and financial impact.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Supplier concentration, purchase amounts, and supplier agreements were not public; materials, equipment, and
+          vehicle-integration dependencies require private review.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Supplier concentration, purchase amounts, and supplier agreements were not public; materials, equipment, and
+              vehicle-integration dependencies require private review.
+            evidence_claim_ids:
+              - EC-008
+              - EC-013
+            risk_ids:
+              - R-007
+              - R-006
+        hidden_risks:
+          - Battery safety, warranty, and product-liability risks are not public.
+          - Legal/regulatory/IP/EHS searches are incomplete.
+        evidence_gaps:
+          - Top suppliers by spend and critical material/equipment dependencies.
+        follow_up_questions:
+          - Provide top-supplier schedule, contracts, alternate-source plan, quality metrics, and compliance
+            documentation.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-013
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: CB identifies fast-charging competitors; GBT must prove cost, scale, OEM qualification, safety, and IP
+      defensibility.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-011
+      - EC-018
+    risk_ids:
+      - R-004
+      - R-003
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: CB identifies fast-charging competitors; GBT must prove scale, cost, OEM qualification, safety, and IP
+          defensibility.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: CB identifies fast-charging competitors; GBT must prove scale, cost, OEM qualification, safety, and IP
+              defensibility.
+            evidence_claim_ids:
+              - EC-006
+              - EC-007
+              - EC-008
+              - EC-010
+              - EC-011
+              - EC-018
+            risk_ids:
+              - R-004
+              - R-003
+        hidden_risks:
+          - Fast-charging battery competition may pressure pricing/margins.
+          - Technical claims require independent validation.
+        evidence_gaps:
+          - Independent market-share, pricing, benchmark, win/loss, and cost-curve data.
+        follow_up_questions:
+          - Provide competitor win/loss analysis, benchmark tests, market-share assumptions, and pricing/margin
+            sensitivity.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-008
+          - EC-010
+          - EC-011
+          - EC-018
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: The apparent GTM is OEM/B2B and GAC ecosystem-led; pipeline, productivity, budgets, and channel
+      economics are private.
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-004
+      - EC-007
+      - EC-009
+      - EC-013
+      - EC-016
+    risk_ids:
+      - R-002
+      - R-004
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public GTM evidence is primarily B2B/OEM and GAC ecosystem-led; distribution channels, budgets, and
+          international strategy are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public GTM evidence is primarily B2B/OEM and GAC ecosystem-led; distribution channels, budgets, and
+              international strategy are private.
+            evidence_claim_ids:
+              - EC-004
+              - EC-007
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Fast-charging battery competition may pressure pricing/margins.
+        evidence_gaps:
+          - Domestic/international GTM plan, marketing budget, channel agreements.
+        follow_up_questions:
+          - Provide GTM plan, channel agreements, marketing spend, lead pipeline, and expansion assumptions.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-004
+          - EC-007
+          - EC-009
+          - EC-016
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major customer status, future growth, and pipeline analysis are not public beyond GAC/AION examples and unnamed
+          multiple automakers.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Major customer status, future growth, and pipeline analysis are not public beyond GAC/AION examples and unnamed
+              multiple automakers.
+            evidence_claim_ids:
+              - EC-007
+              - EC-013
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-001
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Financial quality cannot be assessed from public disclosures.
+        evidence_gaps:
+          - Signed vs forecast pipeline, SOP dates, major-customer growth prospects.
+        follow_up_questions:
+          - Provide customer pipeline and major-customer status report with contracts, SOP dates, volumes, and
+            probability weighting.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+          - EC-016
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Likely new-business avenues are OEM program wins, GAC ecosystem pull-through, investor networks, and
+          energy-storage applications; pipeline conversion is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Likely new-business avenues are OEM program wins, GAC ecosystem pull-through, investor networks, and
+              energy-storage applications; pipeline conversion is not public.
+            evidence_claim_ids:
+              - EC-003
+              - EC-004
+              - EC-006
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Fast-charging battery competition may pressure pricing/margins.
+        evidence_gaps:
+          - Sales pipeline, conversion rates, sales cycle, and lost-deal reasons.
+        follow_up_questions:
+          - Provide pipeline report by stage, channel, customer, expected SOP/revenue, and win probability.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+          - EC-006
+          - EC-016
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales compensation, quotas, sales cycle, conversion, and new-hire plan are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Sales compensation, quotas, sales cycle, conversion, and new-hire plan are not public.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Financial quality cannot be assessed from public disclosures.
+        evidence_gaps:
+          - Sales roster, quotas, compensation, conversion, bookings, sales cycle.
+        follow_up_questions:
+          - Provide sales compensation plan, quotas, funnel conversion, cycle time, bookings, backlog, and sales hiring
+            plan.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Marketing/sales budgets, burn, runway, and implementation capacity are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Marketing/sales budgets, burn, runway, and implementation capacity are not public.
+            evidence_claim_ids:
+              - EC-004
+              - EC-012
+              - EC-015
+            risk_ids:
+              - R-005
+              - R-001
+        hidden_risks:
+          - Financing and cap-table terms are opaque.
+          - Financial quality cannot be assessed from public disclosures.
+        evidence_gaps:
+          - Budget-to-plan bridge, runway, GTM staffing, use of B-round proceeds.
+        follow_up_questions:
+          - Provide budget-to-plan bridge, runway forecast, marketing/sales hiring plan, and capital allocation.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-012
+          - EC-015
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Patent records and Phoenix/product announcements show active R&D; budget, team, validation, and
+      manufacturability are unresolved.
+    founder_claim_ids:
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-011
+      - EC-018
+    risk_ids:
+      - R-003
+      - R-006
+      - R-007
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Patent records and product claims show R&D in controls, power battery systems, thermal management, materials,
+          and electrodes; org/budget/team are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Patent records and product claims show R&D in controls, power battery systems, thermal management, materials,
+              and electrodes; org/budget/team are private.
+            evidence_claim_ids:
+              - EC-006
+              - EC-008
+              - EC-011
+            risk_ids:
+              - R-003
+              - R-006
+        hidden_risks:
+          - Technical claims require independent validation.
+          - Legal/regulatory/IP/EHS searches are incomplete.
+        evidence_gaps:
+          - R&D org chart, budget, key personnel, lab/factory capabilities, invention assignments.
+        follow_up_questions:
+          - Provide R&D org chart, budget, hiring plan, lab capability list, invention assignments, and roadmap
+            governance.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+          - EC-011
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Phoenix battery and recent patent publications indicate a pipeline, but development cost, timing, readiness,
+          manufacturability, and risks are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Phoenix battery and recent patent publications indicate a pipeline, but development cost, timing, readiness,
+              manufacturability, and risks are not public.
+            evidence_claim_ids:
+              - EC-008
+              - EC-011
+              - EC-018
+            risk_ids:
+              - R-003
+              - R-007
+        hidden_risks:
+          - Technical claims require independent validation.
+          - Battery safety, warranty, and product-liability risks are not public.
+        evidence_gaps:
+          - Pipeline roadmap, development cost, TRL/MRL, OEM SOP dates, validation gates.
+        follow_up_questions:
+          - Provide pipeline roadmap, TRL/MRL status, capex/development budget, validation reports, and risk register by
+            program.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-011
+          - EC-018
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: GAC incubation and Guangzhou headquarters are public; org chart, management bios, headcount, comp,
+      equity, employee issues, and turnover are largely not public.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-011
+      - EC-013
+      - EC-014
+    risk_ids:
+      - R-006
+      - R-008
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Public sources verify GAC incubation and Guangzhou headquarters, but current organization chart and reporting
+          lines are not public.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public sources verify GAC incubation and Guangzhou headquarters, but current organization chart and reporting
+              lines are not public.
+            evidence_claim_ids:
+              - EC-002
+              - EC-005
+              - EC-014
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Current org chart, legal entities, board composition, decision rights.
+        follow_up_questions:
+          - Provide current organization chart, board/advisor roster, legal entity chart, and reporting lines.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-002
+          - EC-005
+          - EC-014
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Historical/projected headcount by function/location is not public; sources only support Guangzhou headquarters
+          and R&D/patent activity.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Historical/projected headcount by function/location is not public; sources only support Guangzhou headquarters
+              and R&D/patent activity.
+            evidence_claim_ids:
+              - EC-002
+              - EC-011
+              - EC-013
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Headcount history and hiring plan by function/location.
+        follow_up_questions:
+          - Provide monthly headcount history, open roles, attrition, contractor count, and projected hiring.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-002
+          - EC-011
+          - EC-013
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Senior management biographies were not available in accessible sources; patent records identify inventors but
+          not current executive roles.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Senior management biographies were not available in accessible sources; patent records identify inventors but
+              not current executive roles.
+            evidence_claim_ids:
+              - EC-011
+              - EC-014
+            risk_ids:
+              - R-006
+              - R-008
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - CEO/CFO/CTO/COO bios, tenure, board roles, background checks.
+        follow_up_questions:
+          - Provide senior management biographies, employment histories, board/advisor roles, and background-check
+            authorizations.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+          - EC-014
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Employment agreements, executive compensation, benefits, and related-party arrangements are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Employment agreements, executive compensation, benefits, and related-party arrangements are not public.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-006
+              - R-008
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Employment agreements, compensation, benefits, severance, invention assignments.
+        follow_up_questions:
+          - Provide executive employment agreements, compensation summary, benefit plan documents, invention
+            assignments, and related-party schedule.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Employee incentive stock plan, option pool size, vesting, exercise prices, and dilution are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Employee incentive stock plan, option pool size, vesting, exercise prices, and dilution are not public.
+            evidence_claim_ids:
+              - EC-012
+              - EC-013
+            risk_ids:
+              - R-005
+              - R-008
+        hidden_risks:
+          - Financing and cap-table terms are opaque.
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Equity incentive plan, grants, vesting, exercise prices, repurchase rights.
+        follow_up_questions:
+          - Provide stock incentive plan, grant ledger, vesting schedules, exercise prices, tax memos, and board
+            approvals.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No accessible public source provided employee-relations problem data; this is not evidence of absence.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: No accessible public source provided employee-relations problem data; this is not evidence of absence.
+            evidence_claim_ids:
+              - EC-013
+              - EC-017
+            risk_ids:
+              - R-006
+              - R-008
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Labor disputes, safety incidents, inspections, complaints, severance claims.
+        follow_up_questions:
+          - Provide HR/legal schedule of employee disputes, safety incidents, labor inspections, severance claims, and
+            whistleblower matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-017
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover data and retention benefit plans are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Turnover data and retention benefit plans are not public.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Voluntary/involuntary turnover by month/function/location and retention plans.
+        follow_up_questions:
+          - Provide two-year turnover data, retention-benefit plans, critical-role succession plan, and regretted-loss
+            analysis.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Patent records are available; litigation, regulatory, EHS, insurance, contracts, registry, IP
+      assignment, and FTO diligence require counsel and company schedules.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+    evidence_claim_ids:
+      - EC-011
+      - EC-014
+      - EC-017
+    risk_ids:
+      - R-006
+      - R-007
+      - R-008
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: No lawsuit against the company was found in accessible sources, but local registry/court searches were blocked;
+          counsel search is required.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No lawsuit against the company was found in accessible sources, but local registry/court searches were blocked;
+              counsel search is required.
+            evidence_claim_ids:
+              - EC-014
+              - EC-017
+            risk_ids:
+              - R-006
+              - R-008
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - PRC court/arbitration/threatened-claims schedule.
+        follow_up_questions:
+          - Have PRC counsel run court/arbitration searches and provide company legal schedule of pending/threatened
+            claims.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-014
+          - EC-017
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No company-initiated lawsuits were found in accessible public sources; local docket search and management legal
+          schedule are required.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: No company-initiated lawsuits were found in accessible public sources; local docket search and management legal
+              schedule are required.
+            evidence_claim_ids:
+              - EC-014
+              - EC-017
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+        evidence_gaps:
+          - Affirmative lawsuits, IP enforcement, collection matters, arbitration.
+        follow_up_questions:
+          - Provide legal schedule of affirmative claims and counsel search results.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-017
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Battery and energy-storage production creates EHS/product-safety exposure, but permits, incidents, inspections,
+          and liabilities were not public.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Battery and energy-storage production creates EHS/product-safety exposure, but permits, incidents, inspections,
+              and liabilities were not public.
+            evidence_claim_ids:
+              - EC-006
+              - EC-017
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Battery safety, warranty, and product-liability risks are not public.
+        evidence_gaps:
+          - EHS permits, hazardous materials, inspections, incidents, remediation, certifications.
+        follow_up_questions:
+          - Provide EHS permits, incident logs, hazardous-material processes, inspection reports, safety certifications,
+            and insurance claims.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+          - EC-017
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Google Patents verifies six patent/application records assigned to GBT; trademarks, copyrights, licenses,
+          assignments, liens, and FTO are not fully assessed.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Google Patents verifies six patent/application records assigned to GBT; trademarks, copyrights, licenses,
+              assignments, liens, and FTO are not fully assessed.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-006
+              - R-003
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Technical claims require independent validation.
+        evidence_gaps:
+          - IP assignment chain, licenses, liens, trademarks, copyrights, FTO.
+        follow_up_questions:
+          - Provide patent/trademark schedule, assignments, invention agreements, licenses, liens, prosecution status,
+            and FTO opinions.
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance policies, exclusions, limits, product liability coverage, and claims history are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Insurance policies, exclusions, limits, product liability coverage, and claims history are not public.
+            evidence_claim_ids:
+              - EC-013
+              - EC-017
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Battery safety, warranty, and product-liability risks are not public.
+        evidence_gaps:
+          - Insurance policies, coverage limits/exclusions, claims, warranty coverage.
+        follow_up_questions:
+          - Provide insurance policies, claims history, broker summaries, warranty reserves, and coverage adequacy
+            analysis.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-017
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material customer, supplier, investor, JV, license, manufacturing, and property contracts were not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Material customer, supplier, investor, JV, license, manufacturing, and property contracts were not public.
+            evidence_claim_ids:
+              - EC-004
+              - EC-007
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-005
+              - R-006
+        hidden_risks:
+          - Visible commercialization is GAC/AION-centered.
+          - Financing and cap-table terms are opaque.
+          - Legal/regulatory/IP/EHS searches are incomplete.
+        evidence_gaps:
+          - OEM supply, GAC-related, supplier, investor-rights, license, lease, change-of-control terms.
+        follow_up_questions:
+          - Provide material contract schedule and copies with termination/change-of-control, exclusivity, warranty, and
+            indemnity terms.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-007
+          - EC-009
+          - EC-016
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: No agency action was found in accessible sources, but registry/agency search coverage was incomplete due access
+          limits.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: No agency action was found in accessible sources, but registry/agency search coverage was incomplete due access
+              limits.
+            evidence_claim_ids:
+              - EC-014
+              - EC-017
+            risk_ids:
+              - R-006
+              - R-008
+        hidden_risks:
+          - Legal/regulatory/IP/EHS searches are incomplete.
+          - Access gaps limit management, HR, legal, and registry verification.
+        evidence_gaps:
+          - Administrative penalties, EHS orders, product recalls, subsidy/export/cyber compliance.
+        follow_up_questions:
+          - Have PRC counsel run administrative penalty, EHS, product safety, customs/export, subsidy, and cyber/data
+            compliance searches.
+        table_ids: []
+        figure_ids:
+          - F-011
+        evidence_claim_ids:
+          - EC-014
+          - EC-017
+tables:
+  - table_id: T-001
+    title: Public funding and valuation history
+    chapter_id: I
+    section_id: I.B
+    purpose: Normalize visible financing events and valuation anchors.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-001-R1
+        values:
+          item: 2022-04-02 CB unicorn entry
+          public_evidence: $1.26B valuation; China/Guangzhou; Industrials; selected investors Tencent, Utrust, GF Xinde
+          verification_status: verified
+          diligence_request: Confirm current valuation and terms with round documents.
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+      - row_id: T-001-R2
+        values:
+          item: CB company profile Series A / total raised
+          public_evidence: Stage Series A | Alive; total raised $157.15M; founded 2020; Guangzhou HQ
+          verification_status: verified
+          diligence_request: Reconcile profile with newer B-round news.
+        evidence_claim_ids:
+          - EC-002
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-001-R3
+        values:
+          item: May 2026 B round
+          public_evidence: Sina reports B round with Runxin Micro and Skyworth; amount undisclosed
+          verification_status: partially_verified
+          diligence_request: Obtain B-round documents, valuation, security type, dilution, and use of proceeds.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-002
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Identify public stakeholders and unresolved cap-table items.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-002-R1
+        values:
+          item: Tencent / Utrust / GF Xinde
+          public_evidence: Named in CB unicorn row/profile
+          verification_status: verified
+          diligence_request: Ownership %, rights, liquidation preferences.
+        evidence_claim_ids:
+          - EC-001
+          - EC-009
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-002-R2
+        values:
+          item: BOC & UTRUST / GF Qianhe / Nanyue Fund
+          public_evidence: Named in CB profile
+          verification_status: verified
+          diligence_request: Exact entities, securities, governance rights.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-002
+      - row_id: T-002-R3
+        values:
+          item: Runxin Micro Technology / Skyworth Group
+          public_evidence: Reported B-round investors
+          verification_status: partially_verified
+          diligence_request: B-round amount, valuation, side letters, commercial rights.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-003
+      - row_id: T-002-R4
+        values:
+          item: GAC ecosystem
+          public_evidence: Sina reports GAC incubation and GAC/AION deployments
+          verification_status: verified as context
+          diligence_request: Equity stake, board rights, related-party agreements.
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-002-R5
+        values:
+          item: Options, warrants, notes, debt
+          public_evidence: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Fully diluted cap table and all debt/off-balance-sheet schedules.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-005
+      - EC-009
+      - EC-012
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-003
+    title: Public financial and unit-economic signal ledger
+    chapter_id: I
+    section_id: I.A
+    purpose: Document public financial evidence and data-room requests.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-003-R1
+        values:
+          item: Audited statements and footnotes
+          public_evidence: Not in accessible sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Audited statements and trial balances for 2023-2025.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-003-R2
+        values:
+          item: Revenue / gross margin by product and customer
+          public_evidence: Products and deployments described, no revenue amounts
+          verification_status: not_publicly_verifiable
+          diligence_request: Revenue/margin by SKU, customer, channel, geography.
+        evidence_claim_ids:
+          - EC-006
+          - EC-012
+          - EC-013
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-003-R3
+        values:
+          item: Backlog / pipeline / AR aging
+          public_evidence: No public schedules
+          verification_status: not_publicly_verifiable
+          diligence_request: Backlog, signed pipeline, AR aging, deferred revenue.
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-004
+    title: Product / SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Summarize public product lines.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-004-R1
+        values:
+          item: XFC extreme-fast-charging power batteries
+          public_evidence: CB and Sina describe XFC battery focus
+          verification_status: verified as product category
+          diligence_request: Datasheets, qualification records, cost, warranty, field performance.
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-004-R2
+        values:
+          item: 15Min / super-fast battery
+          public_evidence: Sina cites GAC AION V Plus September 2021 sale
+          verification_status: partially_verified
+          diligence_request: Volumes, revenue, pack specs, warranty data.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-004-R3
+        values:
+          item: 7Min / extreme-fast battery
+          public_evidence: Sina reports 0-80% as fast as 7.5 minutes and AION V Plus 70 example
+          verification_status: partially_verified
+          diligence_request: Independent tests, cycle life, safety, field failures.
+        evidence_claim_ids:
+          - EC-007
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-004-R4
+        values:
+          item: Phoenix battery
+          public_evidence: Sina describes June 2023 Phoenix battery launch and claims
+          verification_status: partially_verified
+          diligence_request: Lab reports, OEM validation, roadmap, BOM, cost curve.
+        evidence_claim_ids:
+          - EC-008
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-004-R5
+        values:
+          item: Energy-storage systems
+          public_evidence: Sina cites next-generation storage devices/systems
+          verification_status: verified as public category
+          diligence_request: Customers, certifications, revenue model, safety record.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-005
+    title: Pricing and product-economics request table
+    chapter_id: II
+    section_id: II.A
+    purpose: Frame missing pricing/unit economics.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-005-R1
+        values:
+          item: OEM pack ASP / kWh price
+          public_evidence: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: ASP by OEM, SKU, chemistry, contract, and period.
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-005-R2
+        values:
+          item: BOM, COGS, yield, scrap
+          public_evidence: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: BOM, material cost, yield, labor, energy, depreciation, logistics.
+        evidence_claim_ids:
+          - EC-012
+          - EC-018
+        source_ids:
+          - SRC-003
+          - SRC-004
+      - row_id: T-005-R3
+        values:
+          item: Warranty / field failure economics
+          public_evidence: Not public despite performance claims
+          verification_status: not_publicly_verifiable
+          diligence_request: Warranty terms, claims history, field failure rates, recall reserves.
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-006
+    title: Publicly known customers and applications
+    chapter_id: III
+    section_id: III.A
+    purpose: Capture named deployments and customer gaps.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-006-R1
+        values:
+          item: GAC AION V Plus
+          public_evidence: Reported 15Min battery mass-market sale in September 2021
+          verification_status: partially_verified
+          diligence_request: Contract, volumes, revenue, warranty, program status.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-006-R2
+        values:
+          item: GAC AION V Plus 70 extreme-fast-charge version
+          public_evidence: Reported Chengdu Auto Show launch/listing August 26, 2022
+          verification_status: partially_verified
+          diligence_request: SOP, pack specs, volumes, warranty.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-006-R3
+        values:
+          item: Multiple other automakers/models
+          public_evidence: Sina says applications exist but names not provided
+          verification_status: partially_verified
+          diligence_request: Customer names, contracts, volumes, revenue, references.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-006-R4
+        values:
+          item: Energy-storage customers
+          public_evidence: Product category public; customers not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Storage customers, certifications, pipeline, safety data.
+        evidence_claim_ids:
+          - EC-006
+          - EC-013
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+      - EC-016
+    source_ids:
+      - SRC-003
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Map public strategic relationships.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-007-R1
+        values:
+          item: GAC Group ecosystem
+          public_evidence: GAC incubation and GAC/AION examples
+          verification_status: verified as context
+          diligence_request: Ownership, governance, exclusivity, related-party pricing.
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-007-R2
+        values:
+          item: Tencent / GF / BOC & UTRUST / Nanyue investors
+          public_evidence: CB investor list
+          verification_status: verified
+          diligence_request: Investor rights and conflicts.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-002
+      - row_id: T-007-R3
+        values:
+          item: Runxin Micro / Skyworth
+          public_evidence: Reported B-round participants
+          verification_status: partially_verified
+          diligence_request: Strategic side letters, valuation, board rights.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-003
+      - row_id: T-007-R4
+        values:
+          item: WRCA certification context
+          public_evidence: Sina cites fastest EV charging technology record
+          verification_status: partially_verified
+          diligence_request: Certificate, test protocol, marketing rights.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-007
+      - EC-009
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-008
+    title: Supplier and operating-dependency diligence table
+    chapter_id: III
+    section_id: III.E
+    purpose: Identify supplier/dependency gaps.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-008-R1
+        values:
+          item: Battery materials / electrochemistry
+          public_evidence: Phoenix claims cite materials and electrochemistry; suppliers unnamed
+          verification_status: not_publicly_verifiable
+          diligence_request: Top material suppliers, contracts, alternates, price escalators.
+        evidence_claim_ids:
+          - EC-008
+          - EC-013
+        source_ids:
+          - SRC-003
+      - row_id: T-008-R2
+        values:
+          item: Manufacturing equipment / process yield
+          public_evidence: Production focus reported; plant/equipment/yield details not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Factory list, capacity, yields, capex, bottlenecks.
+        evidence_claim_ids:
+          - EC-006
+          - EC-012
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-008-R3
+        values:
+          item: OEM integration / qualification
+          public_evidence: GAC AION examples public; criteria private
+          verification_status: partially_verified
+          diligence_request: OEM PPAP/APQP, SOP dates, change-control obligations.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-012
+      - EC-013
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-003
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare against publicly identified competitors.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-009-R1
+        values:
+          item: Greater Bay Technology
+          public_evidence: XFC focus; GAC/AION examples; Phoenix claims; patents
+          verification_status: partially_verified
+          diligence_request: Benchmark test and market-share data.
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-008
+          - EC-011
+          - EC-018
+        source_ids:
+          - SRC-003
+          - SRC-004
+      - row_id: T-009-R2
+        values:
+          item: StoreDot
+          public_evidence: Named CB competitor
+          verification_status: verified as CB-named competitor
+          diligence_request: Benchmark against StoreDot data and OEM wins.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: T-009-R3
+        values:
+          item: Ebull
+          public_evidence: CB describes fast-charging technology/changers for batteries
+          verification_status: verified as CB-described competitor
+          diligence_request: Benchmark segment overlap, scale, OEM traction.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: T-009-R4
+        values:
+          item: Other CB-listed competitors
+          public_evidence: CB says StoreDot and four more; excerpt incomplete
+          verification_status: partially_verified
+          diligence_request: Complete competitive market map and source-verified profiles.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-011
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-010
+    title: Basis of competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Assess key competitive axes.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-010-R1
+        values:
+          item: Charging speed
+          public_evidence: Reported 0-80% in 7.5 minutes and WRCA record
+          verification_status: partially_verified
+          diligence_request: Independent tests across SOC, temperature, charger power, cycles.
+        evidence_claim_ids:
+          - EC-007
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-010-R2
+        values:
+          item: OEM qualification
+          public_evidence: GAC AION examples; other OEMs unnamed
+          verification_status: partially_verified
+          diligence_request: Signed contracts, SOPs, volumes, customer references.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-010-R3
+        values:
+          item: Cost and safety/life
+          public_evidence: Phoenix claims advantages; no cost/warranty data
+          verification_status: inconclusive
+          diligence_request: Costed BOM, safety tests, cycle-life data, warranty reserves.
+        evidence_claim_ids:
+          - EC-008
+          - EC-012
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-010-R4
+        values:
+          item: IP defensibility
+          public_evidence: Six public patent/application records
+          verification_status: verified as filings
+          diligence_request: Assignments, claims scope, FTO, licenses.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Catalog public GTM signals.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-011-R1
+        values:
+          item: OEM / vehicle-program supply
+          public_evidence: CB says EV manufacturers; Sina cites GAC AION and multiple automakers
+          verification_status: partially_verified
+          diligence_request: Pipeline, contracts, SOP, revenue by OEM.
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-011-R2
+        values:
+          item: GAC ecosystem pull-through
+          public_evidence: GAC incubated background and AION examples
+          verification_status: verified as context
+          diligence_request: Related-party terms and exclusivity.
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-011-R3
+        values:
+          item: Strategic investor network
+          public_evidence: Named investors and B-round participants
+          verification_status: partially_verified
+          diligence_request: Commercial side letters and introductions.
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-011-R4
+        values:
+          item: Energy storage
+          public_evidence: Product category public; channel/customers not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Customer pipeline, certifications, partners.
+        evidence_claim_ids:
+          - EC-006
+          - EC-013
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-013
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-012
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public proof points.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-012-R1
+        values:
+          item: WRCA record
+          public_evidence: Reported fastest EV charging technology record
+          verification_status: partially_verified
+          diligence_request: Certificate and test protocol.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-003
+      - row_id: T-012-R2
+        values:
+          item: AION V Plus launches
+          public_evidence: 15Min and 7Min examples
+          verification_status: partially_verified
+          diligence_request: Volumes and customer acceptance.
+        evidence_claim_ids:
+          - EC-007
+          - EC-016
+        source_ids:
+          - SRC-003
+      - row_id: T-012-R3
+        values:
+          item: Phoenix battery announcement
+          public_evidence: June 2023 Phoenix claims
+          verification_status: partially_verified
+          diligence_request: Independent lab/OEM validation.
+        evidence_claim_ids:
+          - EC-008
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-012-R4
+        values:
+          item: B-round news
+          public_evidence: Runxin Micro and Skyworth; amount undisclosed
+          verification_status: partially_verified
+          diligence_request: Confirm valuation, amount, strategic terms.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-003
+    notes: null
+  - table_id: T-013
+    title: Public R&D personnel and inventor signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Use patent records as limited R&D personnel signal.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-013-R1
+        values:
+          item: Xiangdong Huang / 黄向东
+          public_evidence: Inventor in patent results
+          verification_status: verified as inventor
+          diligence_request: Current role, employment, invention assignment.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-013-R2
+        values:
+          item: Hu Fusheng / 胡福胜
+          public_evidence: Inventor on WO2025236616A1
+          verification_status: verified as inventor
+          diligence_request: Employment and assignment confirmation.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-013-R3
+        values:
+          item: Cao Zhimin / 曹智敏
+          public_evidence: Inventor on WO2025036171A1
+          verification_status: verified as inventor
+          diligence_request: Employment and assignment confirmation.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-013-R4
+        values:
+          item: Li Yikun / 李毅崑; Hou Lintao / 侯林涛
+          public_evidence: Inventors on WO2025036172A1 and WO2025241461A1
+          verification_status: verified as inventors
+          diligence_request: Employment and assignment confirmation.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-011
+    source_ids:
+      - SRC-004
+    notes: Inventor list is not a management roster.
+  - table_id: T-014
+    title: Public product and research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Map product and patent pipeline signals.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-014-R1
+        values:
+          item: Phoenix battery
+          public_evidence: Reported launch June 2023
+          verification_status: partially_verified
+          diligence_request: Validation, production readiness, OEM contracts.
+        evidence_claim_ids:
+          - EC-008
+          - EC-018
+        source_ids:
+          - SRC-003
+      - row_id: T-014-R2
+        values:
+          item: Charging control patent/application
+          public_evidence: WO2025236616A1 published 2025-11-20
+          verification_status: verified as filing
+          diligence_request: Claims scope, assignment, product mapping.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-014-R3
+        values:
+          item: Power battery control/system applications
+          public_evidence: WO2025036171A1 and WO2025036172A1 published 2025-02-20
+          verification_status: verified as filings
+          diligence_request: FTO and OEM integration relevance.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-014-R4
+        values:
+          item: Thermal/material/electrode applications
+          public_evidence: US20240010567A1; WO2024251007A1; WO2025241461A1
+          verification_status: verified as filings
+          diligence_request: Manufacturability, safety, claims scope, FTO.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-008
+      - EC-011
+      - EC-018
+    source_ids:
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-015
+    title: Senior management and governance roster request
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Separate public role signals from management gaps.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-015-R1
+        values:
+          item: GAC Group ecosystem
+          public_evidence: GAC incubation reported
+          verification_status: verified as context
+          diligence_request: Ownership, board seats, reserved matters.
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-003
+      - row_id: T-015-R2
+        values:
+          item: Patent inventors
+          public_evidence: Inventors visible in Google Patents
+          verification_status: verified as inventor signals
+          diligence_request: Roles, biographies, employment, assignments.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-015-R3
+        values:
+          item: CEO/CFO/CTO/COO and board
+          public_evidence: Not found in accessible sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Bios, tenure, agreements, board minutes, background checks.
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+        source_ids:
+          - SRC-005
+          - SRC-006
+    evidence_claim_ids:
+      - EC-005
+      - EC-011
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+    notes: null
+  - table_id: T-016
+    title: Headcount, hiring, turnover, and compensation signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Document personnel information gaps.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-016-R1
+        values:
+          item: Headquarters
+          public_evidence: CB says Guangzhou, Guangdong HQ
+          verification_status: verified
+          diligence_request: Sites, leases, legal entities, workforce by site.
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: T-016-R2
+        values:
+          item: Total headcount by function/location
+          public_evidence: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Monthly history, open roles, contractors, hiring plan.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-016-R3
+        values:
+          item: R&D depth
+          public_evidence: Patent inventors indicate R&D activity but not staffing depth
+          verification_status: partially_verified
+          diligence_request: R&D org chart, retention, lab capability.
+        evidence_claim_ids:
+          - EC-011
+          - EC-013
+        source_ids:
+          - SRC-004
+      - row_id: T-016-R4
+        values:
+          item: Turnover / compensation / equity
+          public_evidence: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Turnover, disputes, compensation, option plans, grants.
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+          - EC-017
+        source_ids:
+          - SRC-002
+          - SRC-003
+          - SRC-006
+    evidence_claim_ids:
+      - EC-002
+      - EC-011
+      - EC-012
+      - EC-013
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-006
+    notes: null
+  - table_id: T-017
+    title: Pending lawsuits against the company
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Record legal-search findings and limits.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-017-R1
+        values:
+          item: Pending lawsuits against GBT
+          public_evidence: No litigation detail in accessible CB/Sina sources
+          verification_status: inconclusive
+          diligence_request: PRC counsel court/arbitration search and company legal schedule.
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-017-R2
+        values:
+          item: Tianyancha legal-risk search
+          public_evidence: Geoblocked
+          verification_status: not_publicly_verifiable
+          diligence_request: Local registry/legal-risk export.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-006
+      - row_id: T-017-R3
+        values:
+          item: Qichacha commercial registry search
+          public_evidence: No usable public details via fetch path
+          verification_status: not_publicly_verifiable
+          diligence_request: Local court/admin/abnormal-operation checks.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-006
+      - SRC-007
+    notes: No lawsuit found in accessible public sources is not a clean legal opinion.
+  - table_id: T-018
+    title: Lawsuits initiated, regulatory actions, EHS, insurance, and contracts request table
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Consolidate legal/regulatory/contract matters.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-018-R1
+        values:
+          item: Company-initiated lawsuits / IP enforcement
+          public_evidence: No public schedule
+          verification_status: not_publicly_verifiable
+          diligence_request: Legal schedule and counsel search.
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-002
+          - SRC-003
+          - SRC-006
+      - row_id: T-018-R2
+        values:
+          item: Regulatory / administrative actions
+          public_evidence: No accessible agency records; registry access limited
+          verification_status: not_publicly_verifiable
+          diligence_request: Admin penalty, EHS, product safety, export/subsidy/cyber search.
+        evidence_claim_ids:
+          - EC-014
+          - EC-017
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-018-R3
+        values:
+          item: EHS / employee safety / insurance
+          public_evidence: Battery production category public; permits/incidents/policies not public
+          verification_status: not_publicly_verifiable
+          diligence_request: EHS permits, incident logs, product safety certifications, policies, claims.
+        evidence_claim_ids:
+          - EC-006
+          - EC-017
+        source_ids:
+          - SRC-003
+          - SRC-006
+      - row_id: T-018-R4
+        values:
+          item: Material contracts
+          public_evidence: Relationships/investors visible; contract terms not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Customer/supplier/investor/license/lease contract schedule.
+        evidence_claim_ids:
+          - EC-004
+          - EC-007
+          - EC-009
+          - EC-016
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-014
+      - EC-016
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-019
+    title: Material IP assets and requests
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: List public patent assets and IP gaps.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-019-R1
+        values:
+          item: WO2025236616A1
+          public_evidence: Battery charging control method, published 2025-11-20
+          verification_status: verified as filing
+          diligence_request: Prosecution file, assignments, product mapping.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-019-R2
+        values:
+          item: WO2025036171A1 / WO2025036172A1
+          public_evidence: Power battery discharge/system/control publications, 2025-02-20
+          verification_status: verified as filings
+          diligence_request: Assignments, FTO, OEM integration implications.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-019-R3
+        values:
+          item: US20240010567A1 / WO2024251007A1 / WO2025241461A1
+          public_evidence: Materials, temperature adjustment, lithium-free electrode publications
+          verification_status: verified as filings
+          diligence_request: Product relevance, claims scope, FTO, manufacturability.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-019-R4
+        values:
+          item: Trademarks, copyrights, licenses, trade secrets
+          public_evidence: No public schedule in accessible sources
+          verification_status: not_publicly_verifiable
+          diligence_request: IP inventory, assignments, licenses, liens, trade-secret controls.
+        evidence_claim_ids:
+          - EC-014
+          - EC-017
+        source_ids:
+          - SRC-005
+          - SRC-006
+          - SRC-007
+    evidence_claim_ids:
+      - EC-011
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Company financing and commercialization timeline
+    chapter_id: I
+    section_id: I.C
+    figure_type: timeline
+    description: Timeline of public company, financing, and commercialization events.
+    purpose: Timeline of public company, financing, and commercialization events.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E1
+          date: 2020-09
+          label: Founded / GAC incubated
+          description: Sina reports founding and GAC incubation.
+          category: founding
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E2
+          date: 2021-09
+          label: AION V Plus 15Min
+          description: Sina reports mass-market sale.
+          category: commercialization
+          evidence_claim_ids:
+            - EC-007
+            - EC-016
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E3
+          date: 2022-04-02
+          label: CB unicorn entry
+          description: CB lists $1.26B valuation.
+          category: financing
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+        - event_id: F-001-E4
+          date: 2022-08-26
+          label: AION V Plus 70 7Min
+          description: Sina reports Chengdu Auto Show launch/listing.
+          category: commercialization
+          evidence_claim_ids:
+            - EC-007
+            - EC-016
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E5
+          date: 2023-06
+          label: Phoenix battery
+          description: Sina reports Phoenix battery launch.
+          category: product
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E6
+          date: 2026-05
+          label: B round reported
+          description: Sina reports B round with Runxin Micro and Skyworth.
+          category: financing
+          evidence_claim_ids:
+            - EC-004
+            - EC-015
+          source_ids:
+            - SRC-003
+      start_date: 2020-09
+      end_date: 2026-05
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-001
+      - SRC-003
+    notes: null
+  - figure_id: F-002
+    title: Public valuation and financing visibility chart
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: Chart of public valuation/financing anchors and undisclosed gaps.
+    purpose: Chart of public valuation/financing anchors and undisclosed gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Event
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public valuation or amount
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public USD billion value
+          unit: USD billions
+          data_points:
+            - x: 2022 CB unicorn valuation
+              y: 1.26
+              label: CB tracker valuation
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+            - x: CB total raised
+              y: 0.15715
+              label: CB total raised converted to USD billions
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: 2026 B round
+              y: null
+              label: Amount and valuation undisclosed
+              evidence_claim_ids:
+                - EC-004
+                - EC-015
+              source_ids:
+                - SRC-003
+      annotations:
+        - label: B-round terms missing
+          x: 2026 B round
+          y: null
+          note: Sina reports B round but amount/valuation undisclosed.
+          evidence_claim_ids:
+            - EC-004
+            - EC-015
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+      - EC-012
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: Null bar is intentional.
+  - figure_id: F-003
+    title: XFC product/dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level public product architecture inferred from source descriptions.
+    purpose: High-level public product architecture inferred from source descriptions.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: oem
+          label: EV OEMs / GAC AION examples
+          node_type: user
+          description: EV customer/application layer.
+          evidence_claim_ids:
+            - EC-003
+            - EC-007
+            - EC-016
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: xfc
+          label: XFC battery systems
+          node_type: product
+          description: Fast-charging battery product family.
+          evidence_claim_ids:
+            - EC-003
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: controls
+          label: Charging and battery controls
+          node_type: service
+          description: Patent control-method records.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - node_id: thermal
+          label: Thermal / all-weather performance
+          node_type: service
+          description: Phoenix/temperature adjustment claims.
+          evidence_claim_ids:
+            - EC-008
+            - EC-011
+          source_ids:
+            - SRC-003
+            - SRC-004
+        - node_id: materials
+          label: Materials and electrodes
+          node_type: other
+          description: Materials/electrochemistry/electrode assets.
+          evidence_claim_ids:
+            - EC-008
+            - EC-011
+          source_ids:
+            - SRC-003
+            - SRC-004
+        - node_id: storage
+          label: Energy-storage systems
+          node_type: product
+          description: Reported product category.
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+      edges:
+        - edge_id: e1
+          from_node_id: oem
+          to_node_id: xfc
+          relationship: integrates
+          data_or_dependency: OEM program qualification and vehicle integration.
+          evidence_claim_ids:
+            - EC-007
+            - EC-016
+          source_ids:
+            - SRC-003
+        - edge_id: e2
+          from_node_id: controls
+          to_node_id: xfc
+          relationship: controls
+          data_or_dependency: BMS and charging control.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - edge_id: e3
+          from_node_id: thermal
+          to_node_id: xfc
+          relationship: enables
+          data_or_dependency: Thermal safety and low-temperature performance.
+          evidence_claim_ids:
+            - EC-008
+            - EC-011
+          source_ids:
+            - SRC-003
+            - SRC-004
+        - edge_id: e4
+          from_node_id: materials
+          to_node_id: xfc
+          relationship: enables
+          data_or_dependency: Performance/cost claims.
+          evidence_claim_ids:
+            - EC-008
+            - EC-018
+          source_ids:
+            - SRC-003
+        - edge_id: e5
+          from_node_id: materials
+          to_node_id: storage
+          relationship: technology reuse
+          data_or_dependency: Storage category not independently detailed.
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+      boundaries:
+        - boundary_id: b1
+          label: Publicly described GBT product/R&D stack
+          node_ids:
+            - xfc
+            - controls
+            - thermal
+            - materials
+            - storage
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: null
+  - figure_id: F-004
+    title: Public customer/application concentration chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Bar chart of named public deployment evidence, not revenue concentration.
+    purpose: Bar chart of named public deployment evidence, not revenue concentration.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer/application bucket
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Named public deployment examples
+        unit: count
+        scale: linear
+      series:
+        - series_id: deployments
+          name: Named public examples
+          unit: count
+          data_points:
+            - x: GAC/AION named variants
+              y: 2
+              label: AION V Plus 15Min and AION V Plus 70 7Min
+              evidence_claim_ids:
+                - EC-007
+                - EC-016
+              source_ids:
+                - SRC-003
+            - x: Other automakers
+              y: null
+              label: Reported but unnamed
+              evidence_claim_ids:
+                - EC-007
+                - EC-016
+              source_ids:
+                - SRC-003
+            - x: Energy storage customers
+              y: null
+              label: Not public
+              evidence_claim_ids:
+                - EC-006
+                - EC-013
+              source_ids:
+                - SRC-003
+      annotations:
+        - label: Revenue concentration unknown
+          x: GAC/AION named variants
+          y: 2
+          note: Request customer revenue schedule.
+          evidence_claim_ids:
+            - EC-013
+            - EC-016
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+      - EC-016
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-005
+    title: Fast-charging competitive positioning map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative market map based on CB competitor evidence and GBT public claims.
+    purpose: Qualitative market map based on CB competitor evidence and GBT public claims.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Public fast-charge specialization
+          low_label: general/adjacent
+          high_label: fast-charge focused
+        y_axis:
+          label: Public commercialization signal
+          low_label: limited public examples
+          high_label: named OEM/platform examples
+      segments:
+        - segment_id: s1
+          name: Fast-charge battery technology
+          description: Battery charging speed or enabling technology.
+      entities:
+        - entity_id: gbt
+          name: Greater Bay Technology
+          entity_type: target_company
+          segment_id: s1
+          x_value: 0.9
+          y_value: 0.65
+          attributes:
+            rationale: XFC product focus plus GAC/AION examples.
+          evidence_claim_ids:
+            - EC-006
+            - EC-007
+            - EC-016
+          source_ids:
+            - SRC-003
+        - entity_id: storedot
+          name: StoreDot
+          entity_type: competitor
+          segment_id: s1
+          x_value: 0.85
+          y_value: null
+          attributes:
+            rationale: CB names as competitor; traction not fetched.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-002
+        - entity_id: ebull
+          name: Ebull
+          entity_type: competitor
+          segment_id: s1
+          x_value: 0.75
+          y_value: null
+          attributes:
+            rationale: CB describes fast-charging technology/changers.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-010
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: Positioning values are analyst judgments, not market-share estimates.
+  - figure_id: F-006
+    title: Public GTM channel signal chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Qualitative evidence-strength chart for GTM channels.
+    purpose: Qualitative evidence-strength chart for GTM channels.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: GTM channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public evidence strength
+        unit: 0-3 qualitative score
+        scale: linear
+      series:
+        - series_id: evidence_strength
+          name: Evidence strength
+          unit: score
+          data_points:
+            - x: GAC/OEM programs
+              y: 3
+              label: Named GAC AION examples and multiple automakers claim
+              evidence_claim_ids:
+                - EC-007
+                - EC-016
+              source_ids:
+                - SRC-003
+            - x: Strategic investors
+              y: 2
+              label: Named investors and B-round participants
+              evidence_claim_ids:
+                - EC-004
+                - EC-009
+              source_ids:
+                - SRC-002
+                - SRC-003
+            - x: Energy storage channel
+              y: 1
+              label: Product category but no customers
+              evidence_claim_ids:
+                - EC-006
+                - EC-013
+              source_ids:
+                - SRC-003
+            - x: International distribution
+              y: 0
+              label: No public evidence in accessible sources
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-002
+                - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-013
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: Not revenue weighted.
+  - figure_id: F-007
+    title: Public patent publication trend
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: chart
+    description: Chart of patent/application publication counts from Google Patents query.
+    purpose: Chart of patent/application publication counts from Google Patents query.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Publication year
+        unit: year
+        scale: categorical
+      y_axis:
+        label: Returned patent/application records
+        unit: count
+        scale: linear
+      series:
+        - series_id: patent_publications
+          name: Public patent/application records
+          unit: count
+          data_points:
+            - x: "2024"
+              y: 2
+              label: US20240010567A1 and WO2024251007A1
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-004
+            - x: "2025"
+              y: 4
+              label: WO2025036171A1, WO2025036172A1, WO2025236616A1, WO2025241461A1
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: FTO not assessed
+          x: "2025"
+          y: 4
+          note: Patent count does not prove enforceability or freedom to operate.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-011
+    source_ids:
+      - SRC-004
+    notes: null
+  - figure_id: F-008
+    title: Public organization signal chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Illustrative org chart separating verified public context from private org-chart gaps.
+    purpose: Illustrative org chart separating verified public context from private org-chart gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: gac
+          name: GAC Group ecosystem
+          role: Incubator / strategic context
+          department: External ecosystem
+          location: Guangzhou / China
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - node_id: gbt
+          name: Guangzhou Greater Bay Technology Co., Ltd.
+          role: Target company
+          department: Company
+          location: Guangzhou, Guangdong
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-002
+            - EC-005
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: rd
+          name: null
+          role: R&D organization
+          department: R&D
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-011
+            - EC-013
+          source_ids:
+            - SRC-004
+        - node_id: mfg
+          name: null
+          role: Manufacturing / operations
+          department: Operations
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-006
+            - EC-013
+          source_ids:
+            - SRC-003
+        - node_id: exec
+          name: null
+          role: Executive management and board
+          department: Management
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-005
+            - SRC-006
+      reporting_lines:
+        - parent_node_id: gac
+          child_node_id: gbt
+          relationship: other
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - parent_node_id: gbt
+          child_node_id: rd
+          relationship: other
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - parent_node_id: gbt
+          child_node_id: mfg
+          relationship: other
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+        - parent_node_id: gbt
+          child_node_id: exec
+          relationship: other
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-005
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-006
+      - EC-011
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+    notes: Not a verified reporting-line chart.
+  - figure_id: F-009
+    title: Headcount public anchor chart
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Chart showing that public headcount anchors are unavailable.
+    purpose: Chart showing that public headcount anchors are unavailable.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Publicly disclosed headcount
+        unit: employees
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public headcount
+          unit: employees
+          data_points:
+            - x: 2020 founding
+              y: null
+              label: Founded in 2020; headcount not public
+              evidence_claim_ids:
+                - EC-002
+                - EC-005
+                - EC-013
+              source_ids:
+                - SRC-002
+                - SRC-003
+            - x: 2026 research date
+              y: null
+              label: Headcount not public in accessible sources
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-002
+                - SRC-003
+      annotations:
+        - label: Data-room required
+          x: 2026 research date
+          y: null
+          note: Request monthly headcount by function/location and turnover.
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-002
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: Null values are intentional.
+  - figure_id: F-010
+    title: Legal, IP, and regulatory diligence timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Timeline of public legal/IP anchors and missing registry review.
+    purpose: Timeline of public legal/IP anchors and missing registry review.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-010-E1
+          date: 2020-09
+          label: Founding / GAC incubation
+          description: Company existence and origin context.
+          category: corporate
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - event_id: F-010-E2
+          date: 2024-01-11
+          label: US patent publication
+          description: US20240010567A1 published.
+          category: ip
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - event_id: F-010-E3
+          date: 2024-12-12
+          label: WO temperature-adjustment publication
+          description: WO2024251007A1 published.
+          category: ip
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - event_id: F-010-E4
+          date: 2025-02-20
+          label: WO power-battery control publications
+          description: WO2025036171A1 and WO2025036172A1 published.
+          category: ip
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - event_id: F-010-E5
+          date: 2025-11
+          label: WO charging-control/electrode publications
+          description: WO2025236616A1 and WO2025241461A1 published.
+          category: ip
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-004
+        - event_id: F-010-E6
+          date: 2026-05-17
+          label: Registry/court access gap noted
+          description: Tianyancha/Qichacha/official-source access limitations prevent full public legal screen.
+          category: diligence_gap
+          evidence_claim_ids:
+            - EC-014
+            - EC-017
+          source_ids:
+            - SRC-005
+            - SRC-006
+            - SRC-007
+      start_date: 2020-09
+      end_date: 2026-05-17
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-011
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+    notes: Not a legal opinion.
+  - figure_id: F-011
+    title: Risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk heatmap for the public-source diligence risk register.
+    purpose: Risk heatmap for the public-source diligence risk register.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: Financials and unit economics are not public.
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - risk_id: R-002
+          label: GAC/customer concentration
+          severity: high
+          likelihood: medium
+          rationale: Named deployments are GAC/AION-centered.
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-003
+        - risk_id: R-003
+          label: Technical validation
+          severity: high
+          likelihood: medium
+          rationale: Performance claims lack public independent validation.
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-003
+            - SRC-004
+        - risk_id: R-004
+          label: Competition
+          severity: medium
+          likelihood: high
+          rationale: CB names fast-charging competitors.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-002
+        - risk_id: R-005
+          label: Financing/cap table
+          severity: high
+          likelihood: medium
+          rationale: B-round terms undisclosed and CB profile stale.
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - risk_id: R-006
+          label: Legal/IP/EHS gaps
+          severity: high
+          likelihood: unknown
+          rationale: Registry/court access incomplete; IP ownership/FTO not reviewed.
+          evidence_claim_ids:
+            - EC-011
+            - EC-014
+            - EC-017
+          source_ids:
+            - SRC-004
+            - SRC-006
+            - SRC-007
+        - risk_id: R-007
+          label: Battery safety/warranty
+          severity: high
+          likelihood: unknown
+          rationale: Safety, warranty, yield, field-failure data not public.
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-003
+        - risk_id: R-008
+          label: Access gaps
+          severity: medium
+          likelihood: high
+          rationale: Official/registry pages were blocked or incomplete.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-005
+            - SRC-006
+            - SRC-007
+            - SRC-008
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Greater Bay Technology as a unicorn at a $1.26B valuation, date joined 2022-04-02, China /
+      Guangzhou, Industrials, with selected investors Tencent Holdings, Utrust Venture Capital, and GF Xinde Investment
+      Management Co.
+    evidence_summary: Verifies selected-company unicorn status and latest known CB tracker valuation.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Greater Bay Technology $1.26 4/2/2022 China Guangzhou Industrials Tencent Holdings, Utrust Venture Capital, GF
+          Xinde Investment Management Co.
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: Tracker value is not a current cap-table-backed valuation opinion.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-002
+    claim: CB Insights company profile describes GBT as founded in 2020, Stage Series A | Alive, total raised $157.15M,
+      headquartered in Guangzhou, Guangdong.
+    evidence_summary: CB Insights company profile describes GBT as founded in 2020, Stage Series A | Alive, total raised
+      $157.15M, headquartered in Guangzhou, Guangdong.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Founded Year 2020 Stage Series A | Alive Total Raised $157.15M ... Headquarters Location Building 1, No. 8, Qijie
+          3rd Road, Nancun Town, Panyu District Guangzhou, Guangdong, China
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: Profile may lag the May 2026 B-round article.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-016
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-005
+        - R-008
+  - evidence_claim_id: EC-003
+    claim: CB Insights describes GBT as providing EV battery solutions, charging infrastructure, XFC batteries, battery
+      systems, and charging solutions to EV manufacturers.
+    evidence_summary: CB Insights describes GBT as providing EV battery solutions, charging infrastructure, XFC batteries,
+      battery systems, and charging solutions to EV manufacturers.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: specializes in electric vehicle battery solutions and charging infrastructure ... extreme fast charging (XFC)
+          batteries ... serves the electric vehicle manufacturing sector with its battery systems and charging solutions
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-004
+        - T-011
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-004
+    claim: Sina Finance / Securities Star reports a May 2026 B round for Guangzhou Greater Bay Technology with undisclosed
+      amount and investors Runxin Micro Technology and Skyworth Group.
+    evidence_summary: Sina Finance / Securities Star reports a May 2026 B round for Guangzhou Greater Bay Technology with
+      undisclosed amount and investors Runxin Micro Technology and Skyworth Group.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: 广州巨湾技研有限公司B轮融资，融资额未披露，参与投资的机构包括润芯微科技，创维集团
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: Underlying Tianyancha details were not accessible.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-001
+        - T-002
+        - T-007
+        - T-012
+      figure_ids:
+        - F-001
+        - F-002
+        - F-006
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-005
+    claim: Sina reports GBT was founded in September 2020 and is GAC Group’s first internally incubated mixed-ownership
+      high-tech enterprise.
+    evidence_summary: Sina reports GBT was founded in September 2020 and is GAC Group’s first internally incubated
+      mixed-ownership high-tech enterprise.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: 成立于2020年9月，是广汽集团首家内部孵化的混合所有制高科技企业
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: Ownership percentages and governance rights are not public.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-002
+        - T-007
+        - T-015
+      figure_ids:
+        - F-001
+        - F-008
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-006
+    claim: Sina reports GBT focuses on XFC extreme-fast-charging power batteries and next-generation energy-storage
+      devices/systems, with extreme-fast, super-fast, and normal-fast product series.
+    evidence_summary: Sina reports GBT focuses on XFC extreme-fast-charging power batteries and next-generation
+      energy-storage devices/systems, with extreme-fast, super-fast, and normal-fast product series.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: 专注于XFC（eXtreme Fast Charging）极速动力电池和新一代突破性储能器及其系统的研发、生产、销售和服务。目前已形成极快、超快和普快三大产品系列
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-004
+        - T-005
+        - T-008
+        - T-014
+        - T-018
+      figure_ids:
+        - F-003
+        - F-006
+      risk_ids:
+        - R-003
+        - R-007
+  - evidence_claim_id: EC-007
+    claim: Sina reports GBT batteries can charge 0-80% in as little as 7.5 minutes, received a WRCA fastest EV charging
+      technology record on a GAC model, and were used in GAC AION V Plus 15Min and 7Min variants.
+    evidence_summary: Sina reports GBT batteries can charge 0-80% in as little as 7.5 minutes, received a WRCA fastest EV
+      charging technology record on a GAC model, and were used in GAC AION V Plus 15Min and 7Min variants.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: 0-80%电量充电最快仅需7.5分钟 ... WRCA ... 最快电动汽车充电技术 ... 广汽AION V plus ... 15Min ... AION V plus 70极速快充版本
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: Commercialization and performance claims need independent test and customer/volume verification.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-004
+        - T-006
+        - T-010
+        - T-012
+      figure_ids:
+        - F-001
+        - F-004
+        - F-006
+      risk_ids:
+        - R-002
+        - R-003
+        - R-007
+  - evidence_claim_id: EC-008
+    claim: Sina reports GBT launched Phoenix battery in June 2023 with claimed all-weather operation, multi-voltage
+      extreme-fast charging, and advantages in safety, life, specific energy, range, and cost.
+    evidence_summary: Sina reports GBT launched Phoenix battery in June 2023 with claimed all-weather operation,
+      multi-voltage extreme-fast charging, and advantages in safety, life, specific energy, range, and cost.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: 2023年6月发布全新研发的“巨湾凤凰电池” ... 全天候条件下均正常运行并在不同电压平台上实现极速充电 ... 安全性、使用寿命、比能量、续航和成本等方面也具有综合优势
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: No independent lab/OEM validation was public.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-004
+        - T-010
+        - T-014
+      figure_ids:
+        - F-003
+        - F-007
+      risk_ids:
+        - R-003
+        - R-007
+  - evidence_claim_id: EC-009
+    claim: CB Insights profile names investors including Tencent, GF Xinde, BOC & UTRUST Private Equity Fund Management, GF
+      Qianhe, Nanyue Fund, and others.
+    evidence_summary: CB Insights profile names investors including Tencent, GF Xinde, BOC & UTRUST Private Equity Fund
+      Management, GF Qianhe, Nanyue Fund, and others.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Investors of Greater Bay Technology include Tencent, GF Xinde Investment Management Co., BOC & UTRUST Private
+          Equity Fund Management, GF Qianhe, Nanyue Fund and 10 more
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-002
+        - T-007
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-010
+    claim: CB Insights profile says competitors include StoreDot and four more, and describes Ebull as a fast-charging
+      technology competitor.
+    evidence_summary: Supports a fast-charging competitive landscape, not a complete market-share map.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Competitors of Greater Bay Technology include StoreDot and 4 more ... Ebull ... development ... technologies for
+          fast charging of various batteries
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-011
+    claim: Google Patents returned six patent/application records assigned to Guangzhou Greater Bay Technology / 广州巨湾技研有限公司,
+      covering charging control, power-battery systems, temperature adjustment, materials, and lithium-free negative
+      electrodes.
+    evidence_summary: Google Patents returned six patent/application records assigned to Guangzhou Greater Bay Technology /
+      广州巨湾技研有限公司, covering charging control, power-battery systems, temperature adjustment, materials, and lithium-free
+      negative electrodes.
+    evidence_type: patent_or_trademark_record
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: total 6 ... WO2025236616A1 Battery charging control method ... WO2025036172A1 Power battery system ...
+          US20240010567A1 ... Guangzhou Greater Bay Technology Co., Ltd
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: Patent publications do not prove enforceability, ownership completeness, or freedom to operate.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids:
+        - FC-002
+        - FC-004
+      table_ids:
+        - T-013
+        - T-014
+        - T-019
+      figure_ids:
+        - F-007
+        - F-010
+      risk_ids:
+        - R-003
+        - R-006
+  - evidence_claim_id: EC-012
+    claim: Audited financial statements, revenue by product/customer/channel, backlog, AR aging, cost structure, pricing,
+      projections, cap table, debt, and option/warrant schedules were not publicly available in accessible sources.
+    evidence_summary: Absence in reviewed public sources makes financial quality a data-room item.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Accessible sources disclose valuation/funding/product facts but not financial statements, ARR, revenue, backlog,
+          AR aging, cap table, or debt schedules.
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-003
+        - T-005
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-001
+        - R-005
+  - evidence_claim_id: EC-013
+    claim: Customer revenue concentration, supplier concentration, contracts, sales productivity, headcount, compensation,
+      turnover, insurance, and material contracts were not publicly verifiable in accessible sources.
+    evidence_summary: Customer revenue concentration, supplier concentration, contracts, sales productivity, headcount,
+      compensation, turnover, insurance, and material contracts were not publicly verifiable in accessible sources.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Public sources identify GAC/AION examples and investors but not customer revenue, concentration, contracts,
+          supplier spend, headcount, or insurance schedules.
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-008
+        - T-011
+        - T-016
+        - T-018
+      figure_ids:
+        - F-004
+        - F-009
+      risk_ids:
+        - R-001
+        - R-002
+        - R-008
+  - evidence_claim_id: EC-014
+    claim: Official company pages and major Chinese registry pages were not reliably accessible from the research
+      environment, limiting first-party and legal/regulatory verification.
+    evidence_summary: Official company pages and major Chinese registry pages were not reliably accessible from the research
+      environment, limiting first-party and legal/regulatory verification.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: "Tianyancha returned: access is temporarily not supported in your current location; official-domain fetches timed
+          out or returned CONNECT tunnel failed."
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-017
+        - T-018
+        - T-019
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-006
+        - R-008
+  - evidence_claim_id: EC-015
+    claim: "Public financing data is incomplete or stale: CB profile reports latest round Series A / $157.15M total raised,
+      while Sina reports a May 2026 B round with undisclosed amount."
+    evidence_summary: "Public financing data is incomplete or stale: CB profile reports latest round Series A / $157.15M
+      total raised, while Sina reports a May 2026 B round with undisclosed amount."
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "CB: latest funding round is Series A / total raised $157.15M; Sina: B轮融资，融资额未披露"
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-016
+    claim: Public evidence supports at least one visible GAC/AION commercialization path, but revenue/customer concentration
+      outside that ecosystem is not public.
+    evidence_summary: Public evidence supports at least one visible GAC/AION commercialization path, but revenue/customer
+      concentration outside that ecosystem is not public.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: 已应用于多家车企的不同车型上，例如 ... 广汽AION V plus ... AION V plus 70极速快充版本
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-006
+        - T-007
+        - T-011
+      figure_ids:
+        - F-004
+        - F-006
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-017
+    claim: No public lawsuit, regulatory enforcement, environmental/safety, or insurance schedule was accessible in this
+      research pass; blocked registries mean absence of evidence is not evidence of absence.
+    evidence_summary: No public lawsuit, regulatory enforcement, environmental/safety, or insurance schedule was accessible
+      in this research pass; blocked registries mean absence of evidence is not evidence of absence.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Accessible sources did not provide legal schedules, and local registry/commercial database access was blocked or
+          unusable.
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-017
+        - T-018
+        - T-019
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-006
+        - R-007
+  - evidence_claim_id: EC-018
+    claim: Public technology claims are promising but not independently validated for cycle life, warranty cost,
+      low-temperature charging, safety, yield, or production economics.
+    evidence_summary: Public technology claims are promising but not independently validated for cycle life, warranty cost,
+      low-temperature charging, safety, yield, or production economics.
+    evidence_type: analyst_estimate
+    verification_status: inconclusive
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Public sources report speed/Phoenix/patent signals but do not disclose third-party lab reports, degradation
+          curves, warranty reserves, field failure rates, or manufacturing yield.
+        location: Accessible public text or parsed fetch output
+    analyst_interpretation: null
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-005
+        - T-010
+        - T-014
+      figure_ids:
+        - F-007
+        - F-011
+      risk_ids:
+        - R-003
+        - R-007
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: 2026-03-01
+    accessed_date: 2026-05-17
+    source_type: market_database
+    reliability_notes: Public tracker used for unicorn status, $1.26B valuation, date joined, geography, industry, and selected investors.
+    archive_url: null
+  - source_id: SRC-002
+    title: Greater Bay Technology company profile
+    url: https://www.cbinsights.com/company/greater-bay-technology
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-17
+    source_type: market_database
+    reliability_notes: Public profile used for alive/stage, founded year, headquarters, total raised, products, investors,
+      and competitors; appears stale after May 2026 B-round report.
+    archive_url: null
+  - source_id: SRC-003
+    title: 【投融资动态】巨湾技研B轮融资，投资方为润芯微科技、创维集团等
+    url: https://cj.sina.cn/articles/view/1850649324/6e4eaaec02002a0lu
+    publisher: Sina Finance / 财经头条; citing Securities Star and Tianyancha app
+    author: null
+    publication_date: 2026-05-10
+    accessed_date: 2026-05-17
+    source_type: independent_news
+    reliability_notes: Chinese financing-news article used for B-round, GAC incubation, product portfolio, commercialization
+      examples, and Phoenix battery claims.
+    archive_url: null
+  - source_id: SRC-004
+    title: Google Patents assignee query for Guangzhou Greater Bay Technology
+    url: https://patents.google.com/xhr/query?url=assignee%3D%22Guangzhou%20Greater%20Bay%20Technology%22&exp=
+    publisher: Google Patents
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-17
+    source_type: patent_or_trademark_record
+    reliability_notes: Public patent endpoint returned six records assigned to Guangzhou Greater Bay Technology /
+      广州巨湾技研有限公司; not an IP legal opinion.
+    archive_url: null
+  - source_id: SRC-005
+    title: Greater Bay Technology official English site access attempt
+    url: https://eng.gbtrnd.com/
+    publisher: Greater Bay Technology
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-17
+    source_type: primary_company_source
+    reliability_notes: Official-domain pages were discovered from public search snippets/CB domain references, but direct
+      fetches returned 403 and r.jina.ai navigation timed out; not used for material claims.
+    archive_url: null
+  - source_id: SRC-006
+    title: Tianyancha search access attempt for 广州巨湾技研有限公司
+    url: https://www.tianyancha.com/search?key=%E5%B9%BF%E5%B7%9E%E5%B7%A8%E6%B9%BE%E6%8A%80%E7%A0%94%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8
+    publisher: Tianyancha
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-17
+    source_type: legal_record
+    reliability_notes: Registry/commercial database page was geoblocked from the research environment; cited only for access limitation.
+    archive_url: null
+  - source_id: SRC-007
+    title: Qichacha search access attempt for 广州巨湾技研有限公司
+    url: https://www.qcc.com/web/search?key=%E5%B9%BF%E5%B7%9E%E5%B7%A8%E6%B9%BE%E6%8A%80%E7%A0%94%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8
+    publisher: Qichacha
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-17
+    source_type: legal_record
+    reliability_notes: Commercial database page returned no usable details through the public fetch path; not used for material claims.
+    archive_url: null
+  - source_id: SRC-008
+    title: Crunchbase Greater Bay Technology profile access attempt
+    url: https://www.crunchbase.com/organization/greater-bay-technology
+    publisher: Crunchbase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-17
+    source_type: market_database
+    reliability_notes: Crunchbase blocked automated public access with Cloudflare; not used for material claims.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Financial opacity and inability to underwrite revenue quality
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Audited financials, revenue by customer/product/channel, backlog, AR aging, margin, warranty reserves, and
+      cash runway are not public.
+    impacted_chapter_ids:
+      - I
+      - V
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - V.E
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+    mitigation_or_diligence_request: Require audited financials, monthly accounts, revenue/gross-margin schedules, cash
+      runway, backlog, AR aging, and warranty reserves.
+  - risk_id: R-002
+    risk_title: Customer and ecosystem concentration around GAC/AION
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Publicly named commercialization evidence is concentrated in GAC AION examples and GAC incubation; non-GAC
+      OEMs are unnamed and revenue concentration is not public.
+    impacted_chapter_ids:
+      - III
+      - V
+      - VII
+      - VIII
+    impacted_section_ids:
+      - III.A
+      - III.B
+      - III.C
+      - V.B
+      - VIII.F
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-016
+    mitigation_or_diligence_request: Request customer revenue schedule, OEM contracts, volumes by model, non-GAC customer
+      references, and GAC agreement terms.
+  - risk_id: R-003
+    risk_title: Technical performance and manufacturability not independently validated publicly
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: Fast charging and Phoenix claims require independent validation and production-yield evidence.
+    impacted_chapter_ids:
+      - II
+      - IV
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - IV.A
+      - VI.B
+      - VIII.D
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-018
+    mitigation_or_diligence_request: Commission technical diligence on lab tests, cycle life, low-temperature charging,
+      safety, yield, warranty claims, and OEM acceptance.
+  - risk_id: R-004
+    risk_title: Fast-charging battery competition and pricing pressure
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: CB identifies fast-charging competitors; without pricing/cost data, defensibility and margins are unclear.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+      - V.C
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-018
+    mitigation_or_diligence_request: Obtain win/loss data, competitor benchmarks, pricing history, cost curves, and OEM qualification comparisons.
+  - risk_id: R-005
+    risk_title: Financing, valuation, and cap-table opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: CB shows Series A/$157.15M total raised, while Sina reports a newer B round with undisclosed amount;
+      ownership, rights, debt, valuation, and dilution are not public.
+    impacted_chapter_ids:
+      - I
+      - V
+      - VIII
+    impacted_section_ids:
+      - I.C
+      - I.D
+      - V.E
+      - VIII.F
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-009
+      - EC-015
+    mitigation_or_diligence_request: Request current fully diluted cap table, B-round documents, investor rights, debt schedules, and valuation support.
+  - risk_id: R-006
+    risk_title: Legal, regulatory, EHS, and IP ownership gaps
+    risk_category: legal
+    severity: high
+    likelihood: unknown
+    description: Patent filings are public, but registry/court/admin-penalty access was limited; IP assignments, licenses,
+      FTO, EHS permits, litigation, and regulatory matters are not publicly verified.
+    impacted_chapter_ids:
+      - VI
+      - VII
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VII.C
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.D
+      - VIII.G
+    evidence_claim_ids:
+      - EC-011
+      - EC-014
+      - EC-017
+    mitigation_or_diligence_request: Engage PRC counsel and require legal/IP schedules, assignments, licenses, FTO analysis,
+      and product-safety certifications.
+  - risk_id: R-007
+    risk_title: Battery safety, warranty, and product liability exposure
+    risk_category: product
+    severity: high
+    likelihood: unknown
+    description: High-power fast charging and storage products can create safety, thermal, warranty, recall, and
+      product-liability exposure; claims history/insurance are not public.
+    impacted_chapter_ids:
+      - II
+      - III
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - III.E
+      - VI.B
+      - VIII.C
+      - VIII.E
+    evidence_claim_ids:
+      - EC-008
+      - EC-018
+    mitigation_or_diligence_request: Request safety certifications, abuse/thermal tests, field failure and warranty data,
+      recalls, EHS permits, insurance, and indemnity terms.
+  - risk_id: R-008
+    risk_title: Public-source access limitations impede verification
+    risk_category: other
+    severity: medium
+    likelihood: high
+    description: Official pages, Chinese registry/commercial databases, and Crunchbase were blocked, timed out, geoblocked,
+      or incomplete.
+    impacted_chapter_ids:
+      - VII
+      - VIII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VIII.G
+    evidence_claim_ids:
+      - EC-014
+    mitigation_or_diligence_request: Repeat source collection with local PRC access, official materials, management interviews, and registry exports.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, management accounts, revenue/margin schedules, backlog, AR aging,
+      cash runway, warranty reserves.
+    why_it_matters: Needed to assess revenue quality, gross margin, working capital, capital intensity, and runway.
+    suggested_source_or_request: Company finance data room, auditor workpapers, bank statements, ERP exports.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current fully diluted cap table, B-round terms, debt, options/warrants/notes, investor rights.
+    why_it_matters: Needed to evaluate valuation, dilution, control, preferences, and financing risk.
+    suggested_source_or_request: Corporate records, financing documents, board approvals, debt agreements.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: Independent product validation, datasheets, field reports, warranty data, ASP/COGS by SKU.
+    why_it_matters: Needed to test technical claims and margin durability.
+    suggested_source_or_request: Lab reports, OEM validation, warranty/quality systems, product management files.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top-15 customers, OEM contracts, volumes, revenue concentration, customer references.
+    why_it_matters: Needed to determine concentration and commercial repeatability beyond GAC/AION.
+    suggested_source_or_request: Sales/customer data room, contract repository, reference calls.
+    priority: high
+  - gap_id: G-005
+    chapter_id: III
+    section_id: III.E
+    missing_information: Top supplier schedule, contracts, material sourcing, quality/yield, alternate-source plan.
+    why_it_matters: Battery materials and manufacturing dependencies can impair cost, quality, and delivery.
+    suggested_source_or_request: Procurement records, supplier agreements, quality dashboards.
+    priority: high
+  - gap_id: G-006
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Independent market-share, competitor benchmarking, win/loss, pricing/cost comparison.
+    why_it_matters: Needed to assess defensibility.
+    suggested_source_or_request: Management market model, third-party market reports, OEM reference checks.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.D
+    missing_information: Pipeline, quota, sales-cycle, conversion, GTM budget, productivity metrics.
+    why_it_matters: Needed to underwrite bookings and forecast predictability.
+    suggested_source_or_request: CRM export, sales compensation plan, budget-to-actuals.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: R&D roadmap, cost, readiness, manufacturability, validation gates.
+    why_it_matters: Needed to evaluate Phoenix and patent-to-product risk.
+    suggested_source_or_request: R&D roadmap, validation plans, capex budget, quality/yield reports.
+    priority: high
+  - gap_id: G-009
+    chapter_id: VII
+    section_id: VII.C
+    missing_information: Senior management biographies, org chart, board roster, employment agreements, headcount and turnover.
+    why_it_matters: Needed to assess leadership execution and key-person risk.
+    suggested_source_or_request: HR data room, management interviews, board records.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: IP assignment chain, licenses, liens, trademarks, trade secrets, FTO.
+    why_it_matters: Needed to assess defensibility and infringement risk.
+    suggested_source_or_request: Patent counsel memo, IP schedule, assignment/license agreements, FTO opinion.
+    priority: high
+  - gap_id: G-011
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: Comprehensive PRC litigation, arbitration, regulatory, EHS, product recall, and administrative penalty search.
+    why_it_matters: Public access was incomplete and battery products carry regulatory/safety exposure.
+    suggested_source_or_request: PRC counsel search and legal schedule.
+    priority: high
+  - gap_id: G-012
+    chapter_id: VIII
+    section_id: VIII.E
+    missing_information: Insurance policies, claims history, exclusions, product liability coverage, warranty reserves.
+    why_it_matters: Needed to assess downside protection for battery safety/warranty exposure.
+    suggested_source_or_request: Broker summaries, insurance policies, claims logs, warranty reserve model.
+    priority: medium
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, monthly accounts, revenue/margin schedules, backlog, AR aging, cash
+      runway, and warranty reserves.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide current fully diluted cap table, shareholder registry, investor rights, B-round documents,
+      debt/notes/warrants/options.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide SKU datasheets, chemistry/pack specs, ASP/COGS, field failure data, and independent
+      fast-charge/low-temperature test reports.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide top customers by revenue/application, OEM contracts, model volumes, backlog, AR, warranty claims, and
+      reference contacts.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.E
+    request: Provide top suppliers, material/equipment contracts, alternate-source plan, quality/yield data, and compliance
+      files.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide competitor benchmark tests, win/loss analysis, market-share assumptions, pricing sensitivity, and
+      cost-curve comparison.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.C
+    request: Provide CRM pipeline, probability weighting, SOP dates, sales cycle, GTM budgets, channel agreements, and
+      productivity model.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide R&D roadmap, TRL/MRL status, Phoenix validation package, development budget, manufacturing yield, and
+      program risk register.
+    requested_from: company
+    priority: high
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide current org chart, board/advisor roster, management biographies, employment agreements,
+      compensation/equity plans, headcount, and turnover.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide patent/trademark/license/trade-secret schedule, assignments, liens, prosecution status, FTO analysis,
+      and invention agreements.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-011
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Have PRC counsel conduct court, arbitration, administrative penalty, EHS, product safety, export-control,
+      subsidy, and registry searches.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.E
+    request: Provide insurance policies, claims history, coverage adequacy memo, product liability limits, exclusions, and
+      warranty/recall reserves.
+    requested_from: company
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: Public-source report only; no data room, management interview, customer/supplier call, paid database
+      export, legal opinion, technical lab report, or PRC counsel search was reviewed.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - I.D
+      - II.A
+      - III.A
+      - III.B
+      - III.C
+      - III.D
+      - III.E
+      - IV.A
+      - V.A
+      - V.B
+      - V.C
+      - V.D
+      - V.E
+      - VI.A
+      - VI.B
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-002
+    description: Official company pages and Chinese registry/commercial databases were not reliably accessible, limiting
+      first-party, legal, regulatory, and management verification.
+    affected_chapter_ids:
+      - VII
+      - VIII
+    affected_section_ids:
+      - VII.A
+      - VII.B
+      - VII.C
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.G
+  - limitation_id: L-003
+    description: CB and Sina financing data differ on latest round status; current valuation, ownership, investor rights,
+      and runway require primary company documents.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.C
+      - I.D
+  - limitation_id: L-004
+    description: Product performance claims are public reported claims, not independent technical validation; safety, cycle
+      life, low-temperature charging, yield, and warranty data require technical diligence.
+    affected_chapter_ids:
+      - II
+      - VI
+      - VIII
+    affected_section_ids:
+      - II.A
+      - VI.A
+      - VI.B
+      - VIII.C
+      - VIII.D
+      - VIII.E
+  - limitation_id: L-005
+    description: Absence of accessible public lawsuits, regulatory actions, or customer/supplier disputes should not be
+      interpreted as absence of such matters.
+    affected_chapter_ids:
+      - III
+      - VIII
+    affected_section_ids:
+      - III.D
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.G
