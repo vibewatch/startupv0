@@ -1,0 +1,1865 @@
+report_metadata:
+  report_title: Sentry Public-Source Startup Diligence Report
+  target_company: Sentry
+  website: "https://sentry.io/"
+  known_aliases:
+    - Functional Software, Inc.
+    - Functional Software
+    - GetSentry
+    - getsentry
+    - Sentry.io
+  sector: Enterprise Tech; developer tools; observability; application performance monitoring; error tracking; AI debugging
+  geography: United States headquarters in San Francisco with public offices in Vienna and Toronto and global customer footprint
+  company_stage: Late-stage private unicorn / Series E
+  research_date: "2026-05-17"
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - "Used only public evidence: company pages, public documentation, GitHub repository/API metadata, CB Insights public pages, LinkedIn, The Org, CourtListener, and public competitor product pages."
+    - Prioritized primary company sources for product, pricing, security, subprocessors, customer stories, careers, and legal-policy claims.
+    - Treated vendor-published customer stories as partially verified evidence requiring direct customer reference calls.
+    - Marked private financial, customer, contract, cap-table, legal, HR, and insurance data as not_publicly_verifiable rather than inferring.
+  included_jurisdictions:
+    - United States
+    - Canada
+    - Austria
+    - European Union
+    - Global SaaS/developer-tools markets
+  excluded_topics:
+    - No private financial statements, ARR schedules, customer contracts, cap table, debt documents, board materials, audit reports, insurance policies, HR records, or counsel disclosures were available.
+    - No paid database access, PACER/RECAP docket downloads, full trademark/patent prosecution review, or customer/supplier/management interviews were conducted.
+    - Blocked or inaccessible pages were not used as affirmative evidence except as limitations or source-access notes.
+  user_provided_materials:
+    - material_id: M-001
+      title: User request
+      type: prompt_argument
+      date_received: "2026-05-17"
+      notes: User requested a standard-depth public-source startup diligence YAML report for Sentry at reports/sentry-diligence-report.yaml.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Sentry is a late-stage private unicorn with a $3B CB Insights valuation marker and Series E/alive market-database status.
+    claim_source: CB Insights unicorn list and Sentry company profile
+    claim_date: null
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.C]
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids: [EC-001, EC-002]
+    contradiction_summary: Valuation and stage are public secondary-data claims; current private-market mark is not publicly verifiable.
+    diligence_follow_up:
+      - Request capitalization table, financing history, post-money valuation support, preferences, debt, convertibles, and secondary transaction history.
+  - founder_claim_id: FC-002
+    claim_text: Sentry reports 4M+ developers, 150K+ organizations, 146 countries, and 790B+ events processed monthly.
+    claim_source: Sentry About
+    claim_date: null
+    mapped_chapter_ids: [I, III, V]
+    mapped_section_ids: [I.D, III.A, V.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-003]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Reconcile public aggregate usage metrics to active paid organizations, event volume by plan, retention, and gross margin by data type.
+  - founder_claim_id: FC-003
+    claim_text: Sentry provides a full-stack debugging and monitoring platform for errors, tracing, profiling, metrics, releases, replays, logs, uptime, cron, and integrations.
+    claim_source: Sentry Docs and GitHub README
+    claim_date: null
+    mapped_chapter_ids: [II, VI]
+    mapped_section_ids: [II.A, VI.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-006, EC-007]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Map product modules to ARR, usage, COGS, attach rates, roadmap, reliability, and competitive win/loss data.
+  - founder_claim_id: FC-004
+    claim_text: Sentry uses a freemium, usage-based, and enterprise SaaS pricing model with Seer AI as a paid add-on.
+    claim_source: Sentry Pricing and Seer product page
+    claim_date: null
+    mapped_chapter_ids: [I, II, V, VI]
+    mapped_section_ids: [I.D, II.A, V.A, VI.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-005, EC-019]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request pricing waterfall, discounting, attach rate for Seer, usage overage economics, and plan migration cohorts.
+  - founder_claim_id: FC-005
+    claim_text: Sentry has broad customer proof, including more than 130k customers and named case studies with Anthropic, Bolt, and Supabase.
+    claim_source: Sentry Customers and customer stories
+    claim_date: null
+    mapped_chapter_ids: [III, V]
+    mapped_section_ids: [III.A, V.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-009, EC-010, EC-011, EC-012, EC-013]
+    contradiction_summary: Customer existence and vendor-published metrics are supported; customer-level ARR, concentration, and renewals are not public.
+    diligence_follow_up:
+      - Directly confirm active status, contract size, renewal date, case-study metrics, logo rights, and reference willingness for top customers.
+  - founder_claim_id: FC-006
+    claim_text: Sentry maintains enterprise security/compliance controls, GCP hosting, disclosed subprocessors, and customer-facing audit materials.
+    claim_source: Sentry Security and Subprocessors pages
+    claim_date: null
+    mapped_chapter_ids: [III, VIII]
+    mapped_section_ids: [III.E, VIII.G]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-014, EC-015, EC-021]
+    contradiction_summary: Controls are vendor-stated; underlying audit reports and customer contract obligations were not reviewed.
+    diligence_follow_up:
+      - Review SOC 2/ISO reports, pen-test summaries, incident history, data-flow diagrams, DPA, and subprocessor risk assessments.
+  - founder_claim_id: FC-007
+    claim_text: Sentry has a global team and public leadership bench including CEO Milin Desai, co-founders Chris Jennings and David Cramer, revenue, legal/people, and technology leadership.
+    claim_source: Sentry About, LinkedIn, Careers, and The Org
+    claim_date: null
+    mapped_chapter_ids: [VII]
+    mapped_section_ids: [VII.A, VII.B, VII.C]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-016, EC-017, EC-018]
+    contradiction_summary: LinkedIn, Sentry About, and The Org counts differ and The Org is unverified; treat public headcount as directional.
+    diligence_follow_up:
+      - Request signed org chart, executive biographies, board roster, headcount by function/location, attrition, compensation, option pool, and employment issues.
+  - founder_claim_id: FC-008
+    claim_text: Sentry is expanding into AI debugging with Seer, Agent, Autofix, and AI Code Review.
+    claim_source: Sentry Seer product page and docs
+    claim_date: null
+    mapped_chapter_ids: [VI, VIII]
+    mapped_section_ids: [VI.B, VIII.G]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-019, EC-025]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request Seer adoption, model/provider costs, safety evaluation, incorrect-fix rates, data-use controls, and attach-rate economics.
+
+executive_summary:
+  overall_assessment: >-
+    Sentry appears to be an active late-stage private developer-tools unicorn with strong public evidence of product breadth, developer reach, named customer outcomes, and enterprise security posture. The main underwriting blocker is private-company opacity: financial statements, ARR, margin, burn/runway, cap table, customer concentration, GTM efficiency, legal disclosure, and HR data are not public.
+  investment_or_diligence_thesis: >-
+    Sentry's developer-first error/performance monitoring wedge, broad SDK ecosystem, usage-based SaaS packaging, and AI debugging expansion could support durable enterprise value if private metrics confirm efficient conversion of large developer reach into high-retention ARR with acceptable cloud/model COGS. Validate against financial quality, competitive pressure, customer concentration, security/privacy obligations, AI governance, and fair-source licensing risk.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights public evidence supports Sentry's $3B unicorn-list marker and Series E/alive profile.
+      evidence_claim_ids: [EC-001, EC-002]
+    - founder_claim_id: FC-002
+      summary: Sentry's own About page supports 4M+ developers, 150K+ organizations, 146 countries, and 790B+ monthly events.
+      evidence_claim_ids: [EC-003]
+    - founder_claim_id: FC-003
+      summary: Primary docs and GitHub support Sentry's full-stack monitoring/debugging product breadth and SDK ecosystem.
+      evidence_claim_ids: [EC-006, EC-007]
+    - founder_claim_id: FC-004
+      summary: Pricing pages support free, Team, Business, Enterprise, usage-based, and Seer AI add-on packaging.
+      evidence_claim_ids: [EC-005, EC-019]
+  biggest_risks:
+    - risk_id: R-001
+      summary: "Financial and unit-economics opacity: ARR, margin, burn, runway, cash, debt, and COGS are private."
+    - risk_id: R-003
+      summary: Competitive pressure from broad observability suites and open/no-lock-in ecosystems.
+    - risk_id: R-005
+      summary: Security/privacy/subprocessor exposure due to customer telemetry ingestion, GCP/cloud dependency, and AI subprocessors.
+    - risk_id: R-004
+      summary: Customer revenue concentration and retention are not inferable from public logos or customer counts.
+    - risk_id: R-006
+      summary: AI debugging execution, data-use, model-cost, and incorrect-fix governance risks.
+  key_evidence_gaps:
+    - Audited financials, monthly management accounts, ARR/revenue bridge, gross margin, cloud/model COGS, cash, burn, runway, and debt.
+    - Fully diluted cap table, financing terms, preference stack, option pool, 409A, and recent private-market marks.
+    - Top-customer ARR, NRR/GRR, churn/downgrades, severed relationships, active paid customer reconciliation, and reference calls.
+    - GTM funnel conversion, CAC/payback, sales productivity, pipeline coverage, marketing budget, and channel ROI.
+    - SOC/ISO reports, pen-test summaries, incident history, material contracts, insurance, counsel disclosures, and regulatory correspondence.
+    - Seer AI adoption, accuracy/safety benchmarks, model provider costs, data-use controls, and AI governance artifacts.
+  recommended_next_steps:
+    - Run financial QofE-style review focused on ARR quality, gross margin, telemetry/cloud COGS, AI model costs, burn, and runway.
+    - "Perform customer diligence: top-customer schedule, churn/NRR cohorts, reference calls with Anthropic/Bolt/Supabase-like accounts, and competitive displacement analysis."
+    - "Complete legal/security diligence: SOC/ISO reports, pen tests, DPA/subprocessor reviews, material contracts, litigation/regulatory disclosure, IP/license review, and insurance loss runs."
+    - Validate GTM efficiency with funnel, CAC/payback, sales capacity, pipeline, discounting, and plan/usage migration cohorts.
+    - Assess AI product governance and economics for Seer/Autofix/AI Code Review before underwriting AI-driven expansion.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public evidence verifies Sentry's private-unicorn marker, fundraising scale, pricing ladder, and aggregate usage; audited financial statements, ARR, revenue growth, margin, burn, runway, debt, cap table, and customer revenue schedule remain not publicly verifiable.
+    founder_claim_ids: [FC-001, FC-002, FC-004]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-005]
+    risk_ids: [R-001, R-002]
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: No audited annual/quarterly statements, revenue, gross margin, operating expense, EBITDA, cash balance, burn, or runway were found in public sources. Only proxy metrics such as funding, pricing, adoption counts, and event volume are public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public materials disclose scale and financing, not financial statements or unit economics.
+            evidence_claim_ids: [EC-003, EC-004]
+            risk_ids: [R-001]
+        hidden_risks:
+          - "Valuation cannot be underwritten against profitability, growth durability, or cash runway from public data alone."
+        evidence_gaps: [Audited financial statements and monthly management accounts, ARR/revenue bridge by product/geography/segment/cohort, Gross margin and cloud/model COGS by telemetry type]
+        follow_up_questions:
+          - "Provide audited financials and trial balance for the past three fiscal years plus YTD monthly financials, Provide ARR billings deferred revenue gross margin burn cash runway and debt schedules"
+        table_ids: [T-001]
+        figure_ids: []
+        evidence_claim_ids: [EC-004]
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8]
+        summary: No management forecast, bookings pipeline, model assumptions, hiring plan, cash forecast, or break-even plan is public. Public pricing and hiring signals indicate monetization levers but not forecast reliability.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Team, Business, Enterprise, usage overages, and Seer add-ons give revenue-model inputs but not projections.
+            evidence_claim_ids: [EC-005]
+            risk_ids: [R-001, R-002]
+        hidden_risks:
+          - "A $3B valuation could be exposed if ARR growth, NRR, or gross margin assumptions are below market expectations."
+        evidence_gaps: [Board-approved forecast and sensitivity cases, Pipeline coverage and sales capacity model, Cloud/model COGS assumptions]
+        follow_up_questions:
+          - "Provide the latest board plan downside plan budget-vs-actuals and model driver tabs"
+        table_ids: [T-002]
+        figure_ids: []
+        evidence_claim_ids: [EC-004, EC-005]
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: CB Insights and Sentry sources support late-stage venture backing, roughly $216.5M-$217M raised, Series E/alive status, and a $3B unicorn valuation marker. Cap table, option pool, preferences, debt, and convertibles are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public market-database and company sources align on large late-stage financing history.
+            evidence_claim_ids: [EC-001, EC-002, EC-003]
+            risk_ids: [R-002]
+        hidden_risks:
+          - "Liquidation stack, preferences, anti-dilution terms, and option-pool needs could materially change common-equity economics."
+        evidence_gaps: [Fully diluted cap table by share class, Financing documents for each preferred round, Debt warrants SAFEs convertibles and secondary transactions]
+        follow_up_questions:
+          - "Provide cap table investor rights agreements certificates of incorporation option pool schedule and debt/warrant agreements"
+        table_ids: [T-003]
+        figure_ids: [F-001]
+        evidence_claim_ids: [EC-001, EC-002, EC-003]
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: Public pricing, adoption, event volume, and customer counts provide commercial signals, but realized usage, overage revenue, ARPA, DSO, billing terms, tax status, and working capital are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Plan pricing and usage pricing imply a mix of subscription and consumption economics.
+            evidence_claim_ids: [EC-005]
+            risk_ids: [R-001, R-003]
+          - finding_id: I.D-F2
+            finding: 790B+ monthly events and 150K+ organizations suggest large operational scale and potential cloud-cost exposure.
+            evidence_claim_ids: [EC-003]
+            risk_ids: [R-001, R-005]
+        hidden_risks:
+          - "Telemetry ingestion volumes may create gross-margin sensitivity to retention period, sampling, overages, and infrastructure contracts."
+        evidence_gaps: [Actual usage by plan and product, Cloud COGS support COGS and AI model costs, Tax working capital DSO and billing terms]
+        follow_up_questions:
+          - "Provide cohort-level usage overage gross-margin and billing collections schedules"
+        table_ids: [T-004]
+        figure_ids: [F-002]
+        evidence_claim_ids: [EC-003, EC-005]
+  - chapter_id: II
+    title: Taxes
+    chapter_summary: No public tax returns or tax provision documents are available. Sentry's US base, offices in Canada and Austria, and global customers indicate federal, state/local, international, indirect-tax, transfer-pricing, payroll, and data-localization tax diligence needs.
+    founder_claim_ids: [FC-002]
+    evidence_claim_ids: [EC-003, EC-016]
+    risk_ids: [R-007]
+    sections:
+      - section_id: II.A
+        title: Tax Matters
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: Public sources identify international reach and office locations but do not disclose tax filings, audits, NOLs, sales/VAT registration, transfer pricing, R&D credits, payroll taxes, or uncertain tax positions.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Public footprint spans US headquarters, Vienna, Toronto, 146 countries, and global SaaS customers, creating multi-jurisdiction tax diligence needs.
+            evidence_claim_ids: [EC-003, EC-016]
+            risk_ids: [R-007]
+        hidden_risks:
+          - "Historic sales/VAT nexus, transfer-pricing exposure, R&D credit support, and payroll/PE issues could create unrecorded liabilities."
+        evidence_gaps: [Federal state local and foreign tax returns, Sales VAT GST registrations and exposure analysis, Transfer pricing studies and intercompany agreements, Tax audit correspondence and uncertain-tax-position memo]
+        follow_up_questions:
+          - "Provide three years of tax returns all jurisdictional registrations transfer-pricing files sales-tax/VAT analyses and open audit correspondence"
+        table_ids: [T-005, T-006]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-003, EC-016]
+  - chapter_id: III
+    title: Customers and Suppliers
+    chapter_summary: Public sources indicate large developer/customer reach, named customer stories, extensive integrations, enterprise packaging, and critical cloud/AI/communications subprocessors. Private diligence must verify paying customer counts, top-customer concentration, retention, revenue quality, contract terms, supplier economics, and security/compliance obligations.
+    founder_claim_ids: [FC-002, FC-005, FC-006]
+    evidence_claim_ids: [EC-003, EC-009, EC-010, EC-011, EC-012, EC-013, EC-014, EC-015, EC-021]
+    risk_ids: [R-003, R-004, R-005]
+    sections:
+      - section_id: III.A
+        title: Customer Information
+        checklist_question_ids: [III.A.1, III.A.2, III.A.3, III.A.4, III.A.5, III.A.6, III.A.7]
+        summary: Sentry publicly claims 130k+ customers, 150k+ organizations, 4M+ developers, and named customer outcomes from Anthropic, Bolt, and Supabase. Paid-customer reconciliation, top-customer ARR, NRR/GRR, churn, renewal dates, discounts, and backlog are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public scale metrics and logos establish broad market presence but do not prove revenue concentration or retention.
+            evidence_claim_ids: [EC-003, EC-009]
+            risk_ids: [R-004]
+          - finding_id: III.A-F2
+            finding: Case studies provide qualitative and quantified customer outcome proof, but they are vendor-published and should be reference-checked.
+            evidence_claim_ids: [EC-010, EC-011, EC-012, EC-013]
+            risk_ids: [R-004]
+        hidden_risks:
+          - "High logo count may include free or low-ARPA accounts; revenue could be concentrated in enterprise or high-event-volume customers."
+        evidence_gaps: [Top 50 customer ARR and renewal schedule, Paid-vs-free customer reconciliation, NRR GRR churn downgrades expansions and cohort retention, Customer support tickets NPS and SLA credits]
+        follow_up_questions:
+          - "Provide customer master ARR by account churn cohorts renewal calendar top contract terms and permission for reference calls"
+        table_ids: [T-007]
+        figure_ids: [F-004, F-011]
+        evidence_claim_ids: [EC-003, EC-009, EC-010, EC-011, EC-012, EC-013]
+      - section_id: III.B
+        title: Suppliers
+        checklist_question_ids: [III.B.1, III.B.2, III.B.3, III.B.4]
+        summary: Sentry discloses infrastructure and service subprocessors including Google Cloud, AWS, Anthropic, OpenAI, Cloudflare, Intercom, Mailgun, and SendGrid. Contract commitments, pricing, SLAs, audit rights, vendor concentration, and termination rights are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: GCP appears central to hosted infrastructure, with additional AI and communications subprocessors relevant to data protection and reliability.
+            evidence_claim_ids: [EC-014, EC-015, EC-021]
+            risk_ids: [R-005, R-006]
+        hidden_risks:
+          - "Cloud/AI supplier pricing or SLA changes could affect gross margin, product availability, data residency, and contractual compliance."
+        evidence_gaps: [Cloud and model-provider MSAs, Supplier spend by vendor, SLAs credits audit rights and termination rights, Vendor risk assessments]
+        follow_up_questions:
+          - "Provide vendor spend schedule critical contracts security reviews and business-continuity dependency map"
+        table_ids: [T-008]
+        figure_ids: []
+        evidence_claim_ids: [EC-014, EC-015, EC-021]
+      - section_id: III.C
+        title: Sales and Marketing
+        checklist_question_ids: [III.C.1, III.C.2, III.C.3, III.C.4, III.C.5]
+        summary: Public evidence supports a product-led developer funnel with free/developer entry, paid Team/Business plans, enterprise custom packages, integrations, and case-study marketing. CAC, payback, sales headcount, quota attainment, pipeline, win/loss, and channel economics are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public pricing and customer pages indicate self-serve plus enterprise GTM motions.
+            evidence_claim_ids: [EC-005, EC-009]
+            risk_ids: [R-001, R-003]
+        hidden_risks:
+          - "Developer adoption may not convert efficiently to enterprise ARR if usage costs rise, competitors bundle observability, or conversion funnels weaken."
+        evidence_gaps: [Funnel metrics from free signup to paid expansion, CAC payback and sales productivity, Pipeline coverage and win/loss by competitor, Marketing/channel spend ROI]
+        follow_up_questions:
+          - "Provide GTM dashboard by channel segment cohort competitor and salesperson for the last eight quarters"
+        table_ids: [T-009]
+        figure_ids: []
+        evidence_claim_ids: [EC-005, EC-009, EC-022, EC-023, EC-024, EC-026]
+      - section_id: III.D
+        title: Backlog
+        checklist_question_ids: [III.D.1, III.D.2, III.D.3, III.D.4]
+        summary: No public backlog, remaining performance obligations, deferred revenue, contracted ARR, or bookings schedule is available. Enterprise custom pricing likely creates contracted commitments but terms are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Enterprise packaging is public; backlog and contracted revenue are private.
+            evidence_claim_ids: [EC-005]
+            risk_ids: [R-001, R-004]
+        hidden_risks:
+          - "Public customer logos may obscure short contract terms, consumption variability, renewal risk, or low committed backlog."
+        evidence_gaps: [Bookings backlog and RPO schedule, Deferred revenue rollforward, Renewal and cancellation terms, Usage commitments and minimums]
+        follow_up_questions:
+          - "Provide contracted ARR RPO deferred revenue and renewal backlog schedules"
+        table_ids: [T-009]
+        figure_ids: []
+        evidence_claim_ids: [EC-005]
+      - section_id: III.E
+        title: Contracts and commitments
+        checklist_question_ids: [III.E.1, III.E.2, III.E.3, III.E.4, III.E.5]
+        summary: Sentry publishes security, privacy/legal, and subprocessor pages but material customer contracts, vendor contracts, DPAs, indemnities, SLAs, MFNs, data-use clauses, and termination/change-of-control terms are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Security and subprocessor disclosures create a starting point for contract and data-processing diligence.
+            evidence_claim_ids: [EC-014, EC-015, EC-021]
+            risk_ids: [R-005]
+        hidden_risks:
+          - "Enterprise security commitments, incident notice duties, data residency terms, customer indemnities, or AI data-use restrictions may be burdensome."
+        evidence_gaps: [Material customer and vendor contracts, DPA and SCC terms, Indemnity liability cap SLA and audit clauses, Change-of-control and assignment consents]
+        follow_up_questions:
+          - "Provide a material-contracts list and copies of top customer supplier DPA security SLA and reseller agreements"
+        table_ids: [T-008]
+        figure_ids: []
+        evidence_claim_ids: [EC-014, EC-015, EC-021]
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Sentry competes in a crowded observability and developer-tools market against full-stack platforms, hyperscale ecosystems, open-source/no-lock-in stacks, and specialized debugging/APM vendors. Public differentiation centers on developer experience, SDK coverage, error/performance workflow, Codecov, and AI debugging.
+    founder_claim_ids: [FC-003, FC-004, FC-008]
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-019, EC-022, EC-023, EC-024, EC-025, EC-026]
+    risk_ids: [R-003, R-006]
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape
+        checklist_question_ids: [IV.A.1, IV.A.2, IV.A.3, IV.A.4, IV.A.5]
+        summary: Public competitor pages show Sentry faces enterprise observability suites from Datadog, New Relic, Dynatrace, Grafana Cloud, Honeycomb, and others. Bundling and broad platform scope may pressure Sentry on enterprise consolidation; Sentry's advantage is a developer-first workflow and broad SDK/product integrations.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Competitors position broad observability, APM, logs, metrics, traces, AI assistance, and cloud-native coverage.
+            evidence_claim_ids: [EC-022, EC-023, EC-024, EC-026]
+            risk_ids: [R-003]
+          - finding_id: IV.A-F2
+            finding: Sentry's public docs/product pages position debugging, tracing, replay, profiling, Codecov, and Seer AI around developer workflows.
+            evidence_claim_ids: [EC-006, EC-007, EC-019, EC-025]
+            risk_ids: [R-003, R-006]
+        hidden_risks:
+          - "Large observability vendors can bundle, discount, and use incumbent procurement relationships to compress standalone developer-tool pricing."
+        evidence_gaps: [Win/loss by competitor, Price-discount benchmarking, Replacement/displacement churn, Product roadmap and moat analysis, Analyst reports and market-sizing data]
+        follow_up_questions:
+          - "Provide win-loss data competitive displacement lists product usage by module analyst/market studies and roadmap evidence"
+        table_ids: [T-010, T-011]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-006, EC-007, EC-019, EC-022, EC-023, EC-024, EC-025, EC-026]
+  - chapter_id: V
+    title: Sales and Marketing
+    chapter_summary: Sentry's public GTM appears product-led with a free/developer entry, transparent paid tiers, enterprise custom sales, customer stories, integrations, and developer community reach. Private diligence must test funnel conversion, CAC/payback, pricing realization, sales productivity, churn, and market segmentation.
+    founder_claim_ids: [FC-002, FC-004, FC-005]
+    evidence_claim_ids: [EC-003, EC-005, EC-009, EC-010, EC-011, EC-012, EC-013, EC-019]
+    risk_ids: [R-001, R-003, R-004]
+    sections:
+      - section_id: V.A
+        title: Products and Services
+        checklist_question_ids: [V.A.1, V.A.2, V.A.3, V.A.4, V.A.5, V.A.6]
+        summary: Sentry publicly offers issue/error monitoring, tracing, session replay, profiling, metrics/logs, releases, uptime/cron, dashboards, Codecov, SDKs, integrations, and Seer AI. Feature breadth is strong; monetization by product and attach rates are private.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Product documentation supports a broad full-stack monitoring/debugging platform.
+            evidence_claim_ids: [EC-006, EC-007]
+            risk_ids: [R-003]
+          - finding_id: V.A-F2
+            finding: Seer AI is a paid product expansion with separate active-contributor pricing.
+            evidence_claim_ids: [EC-019]
+            risk_ids: [R-006]
+        hidden_risks:
+          - "Breadth may mask uneven module adoption or expensive telemetry/model costs."
+        evidence_gaps: [ARR by module, Attach rates, Usage and gross margin by module, Roadmap and feature adoption]
+        follow_up_questions:
+          - "Provide product revenue usage attach churn roadmap and gross-margin schedules"
+        table_ids: [T-012]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-006, EC-007, EC-019]
+      - section_id: V.B
+        title: Customer Concentration
+        checklist_question_ids: [V.B.1, V.B.2, V.B.3, V.B.4]
+        summary: Public sources name many customers and provide case studies but do not disclose top-customer revenue concentration, account ownership, contract term, renewal risk, or contribution margins.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Customer proof is broad but not revenue-weighted.
+            evidence_claim_ids: [EC-009, EC-010, EC-011, EC-012, EC-013]
+            risk_ids: [R-004]
+        hidden_risks:
+          - "A small number of high-volume enterprise accounts could drive ARR, usage COGS, or expansion despite broad logo count."
+        evidence_gaps: [Top 10/25/50 customer ARR, Concentration by industry and geography, Gross margin by large account, Renewal and termination exposure]
+        follow_up_questions:
+          - "Provide top customer schedule and permit blind customer concentration analysis"
+        table_ids: [T-013]
+        figure_ids: []
+        evidence_claim_ids: [EC-009, EC-010, EC-011, EC-012, EC-013]
+      - section_id: V.C
+        title: Revenue model
+        checklist_question_ids: [V.C.1, V.C.2, V.C.3, V.C.4]
+        summary: Pricing pages support free/developer, Team, Business, Enterprise, usage-based, and Seer add-on monetization. Realized ARPA, discounting, overages, expansion, and enterprise custom terms are private.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public plans indicate hybrid subscription plus usage/add-on monetization.
+            evidence_claim_ids: [EC-005, EC-019]
+            risk_ids: [R-001]
+        hidden_risks:
+          - "Revenue may depend on overage policies, discounts, enterprise credits, data retention, and product-led conversion."
+        evidence_gaps: [ARR by plan, Pricing waterfall, Overage realization, Discount and credit policies]
+        follow_up_questions:
+          - "Provide actual pricing waterfall and ARPA/ARR by plan and cohort"
+        table_ids: [T-012]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-005, EC-019]
+      - section_id: V.D
+        title: Channels and partnerships
+        checklist_question_ids: [V.D.1, V.D.2, V.D.3]
+        summary: Public integrations and platform ecosystem are extensive, but channel partner revenue, reseller terms, marketplace revenue, and co-sell economics are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Sentry's integrations support ecosystem distribution but not channel economics.
+            evidence_claim_ids: [EC-006, EC-007]
+            risk_ids: [R-003]
+        hidden_risks:
+          - "Ecosystem dependence can create roadmap/API risk if platform partners change terms."
+        evidence_gaps: [Channel ARR, Marketplace revenue, Reseller contracts, Integration usage]
+        follow_up_questions:
+          - "Provide partnership revenue and strategic integration dependency reports"
+        table_ids: [T-014]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-007]
+      - section_id: V.E
+        title: Marketing and brand
+        checklist_question_ids: [V.E.1, V.E.2, V.E.3, V.E.4]
+        summary: Sentry's public brand is developer-oriented and supported by open/fair-source repository presence, documentation, customer stories, and social/company profiles. Brand awareness quality, paid marketing ROI, and sentiment are not fully public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Public customer stories and GitHub activity provide brand credibility signals in developer communities.
+            evidence_claim_ids: [EC-007, EC-009]
+            risk_ids: [R-008]
+        hidden_risks:
+          - "Fair-source license changes or OSS-community tension could weaken community goodwill."
+        evidence_gaps: [Brand surveys, Organic acquisition mix, Community sentiment, Marketing ROI]
+        follow_up_questions:
+          - "Provide marketing source attribution and developer-community sentiment analysis"
+        table_ids: [T-014]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-008, EC-009]
+  - chapter_id: VI
+    title: Products and Services; Technology; IP
+    chapter_summary: Public docs and repository metadata support a broad developer-observability platform, extensive SDK ecosystem, self-hostable codebase, and fair-source licensing posture. Private technical diligence should test architecture, reliability, scalability, security, AI model governance, product roadmap, proprietary IP, and OSS/license obligations.
+    founder_claim_ids: [FC-003, FC-004, FC-008]
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-008, EC-019, EC-025]
+    risk_ids: [R-003, R-006, R-008]
+    sections:
+      - section_id: VI.A
+        title: Technology and intellectual property
+        checklist_question_ids: [VI.A.1, VI.A.2, VI.A.3, VI.A.4, VI.A.5, VI.A.6, VI.A.7]
+        summary: The public GitHub repo and docs support substantial technical scope across event capture, issue management, tracing, profiling, replay, metrics/logs, releases, uptime, cron, dashboards, SDKs, and integrations. Architecture diagrams, uptime/SLO history, security testing, proprietary IP inventory, patent/trademark portfolio, third-party OSS compliance, and roadmap details are not public.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Sentry's public repository and docs evidence a mature, broad product surface and self-host/community posture.
+            evidence_claim_ids: [EC-006, EC-007]
+            risk_ids: [R-003, R-008]
+          - finding_id: VI.A-F2
+            finding: Licensing is fair-source with a future Apache-2.0 license, requiring diligence on customer and community implications.
+            evidence_claim_ids: [EC-008]
+            risk_ids: [R-008]
+        hidden_risks:
+          - "License obligations, third-party dependencies, scalability limits, telemetry retention costs, and open-source community expectations could affect adoption."
+        evidence_gaps: [Architecture diagrams and SLO history, IP assignment and OSS compliance files, Patent/trademark schedules, Security test results and incident postmortems]
+        follow_up_questions:
+          - "Provide architecture docs IP assignment/license review OSS SCA reports SLO/incident history and roadmap"
+        table_ids: [T-015]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-007, EC-008]
+      - section_id: VI.B
+        title: Product roadmap and AI expansion
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.B.3, VI.B.4, VI.B.5]
+        summary: Sentry publicly markets Seer, Agent, Autofix, and AI Code Review. Private diligence must evaluate AI accuracy, false-positive/incorrect-fix rates, data-use boundaries, model providers, cost per active contributor, attach rates, and regulatory/customer-contract constraints.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Seer and AI debugging are visible expansion bets with distinct pricing and subprocessor implications.
+            evidence_claim_ids: [EC-019, EC-025, EC-015]
+            risk_ids: [R-006, R-005]
+        hidden_risks:
+          - "AI debugging can introduce high model COGS, hallucinated fixes, security regressions, customer data-use concerns, and procurement friction."
+        evidence_gaps: [AI adoption/attach rate, Model/provider cost by feature, Evaluation benchmark and safety processes, Customer data-use opt-outs]
+        follow_up_questions:
+          - "Provide Seer/AI metrics model contracts safety evals prompt/data-retention controls and customer objections"
+        table_ids: [T-016]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-019, EC-025, EC-015]
+  - chapter_id: VII
+    title: Management and Employees
+    chapter_summary: Public sources identify Sentry as led by CEO Milin Desai with co-founder and functional leadership visibility, public office locations, open roles, and directional LinkedIn/The Org team counts. Private HR diligence must validate organization structure, board, ownership, compensation, retention, attrition, compliance, employment claims, and culture.
+    founder_claim_ids: [FC-007]
+    evidence_claim_ids: [EC-003, EC-016, EC-017, EC-018]
+    risk_ids: [R-009]
+    sections:
+      - section_id: VII.A
+        title: Management biographies and organization
+        checklist_question_ids: [VII.A.1, VII.A.2, VII.A.3, VII.A.4]
+        summary: Sentry's About page and public profiles identify leadership and location facts, while The Org provides an unverified org snapshot. Formal signed org charts, succession planning, executive agreements, board minutes, and background checks are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: CEO and public leadership roster are visible, but formal board/executive governance data is not public.
+            evidence_claim_ids: [EC-016, EC-018]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Late-stage execution depends on leadership depth across enterprise GTM, AI, platform reliability, and privacy/security."
+        evidence_gaps: [Board roster and minutes, Signed org chart, Executive employment agreements, Succession plan]
+        follow_up_questions:
+          - "Provide org chart board materials executive agreements and management references"
+        table_ids: [T-017]
+        figure_ids: [F-008]
+        evidence_claim_ids: [EC-016, EC-018]
+      - section_id: VII.B
+        title: Employee census and human resources
+        checklist_question_ids: [VII.B.1, VII.B.2, VII.B.3, VII.B.4, VII.B.5]
+        summary: LinkedIn public profile showed 437 employees and 201-500 company-size band; Sentry About says 200+ employees; careers page showed 39 openings during research. These are directional, not a verified census.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public headcount signals differ and should be reconciled to payroll records and legal entities.
+            evidence_claim_ids: [EC-016, EC-017]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Hiring pace, attrition, geographic compliance, and compensation obligations cannot be assessed from public pages."
+        evidence_gaps: [Employee census by entity/location/function, Open requisitions and hiring plan, Attrition, Compensation and equity schedules]
+        follow_up_questions:
+          - "Provide employee census payroll benefits equity compensation attrition and hiring-plan records"
+        table_ids: [T-018]
+        figure_ids: [F-009]
+        evidence_claim_ids: [EC-016, EC-017]
+      - section_id: VII.C
+        title: Compensation and benefits
+        checklist_question_ids: [VII.C.1, VII.C.2, VII.C.3, VII.C.4]
+        summary: Compensation, bonus plans, commission plans, option grants, benefits, severance, change-of-control terms, and payroll liabilities are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: No public compensation schedules were located.
+            evidence_claim_ids: [EC-016]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Option-refresh needs, sales commission liabilities, pay-equity issues, or severance/change-of-control costs may be material."
+        evidence_gaps: [Compensation bands, Commission/bonus plans, Equity grants, Benefits and payroll liabilities]
+        follow_up_questions:
+          - "Provide compensation benefit equity and commission plan details"
+        table_ids: [T-017]
+        figure_ids: []
+        evidence_claim_ids: [EC-016]
+      - section_id: VII.D
+        title: Labor and employment matters
+        checklist_question_ids: [VII.D.1, VII.D.2, VII.D.3, VII.D.4]
+        summary: No public employment litigation, union/works-council issue, classification audit, immigration issue, or harassment/discrimination claim was identified in scoped sources. This is not a clearance conclusion.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Public-source silence is insufficient for employment legal clearance.
+            evidence_claim_ids: [EC-020]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Remote/international workforce can create classification, immigration, payroll tax, and employment-law exposure."
+        evidence_gaps: [Employment claims and settlements, Contractor classification audit, Immigration records, Works-council/union matters]
+        follow_up_questions:
+          - "Provide employment counsel disclosure and HR/legal claims log"
+        table_ids: [T-019]
+        figure_ids: []
+        evidence_claim_ids: [EC-020]
+      - section_id: VII.E
+        title: Employee agreements and IP assignment
+        checklist_question_ids: [VII.E.1, VII.E.2, VII.E.3]
+        summary: Public GitHub/IP visibility does not establish complete employee/contractor IP assignment, invention assignment, confidentiality, non-solicit, or contractor agreement coverage.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Assignment chain is private and critical because the product relies on software, SDKs, integrations, and AI features.
+            evidence_claim_ids: [EC-007, EC-008]
+            risk_ids: [R-008, R-009]
+        hidden_risks:
+          - "Missing contractor/employee IP assignments could impair ownership of core code or AI/product assets."
+        evidence_gaps: [PIIA coverage report, Contractor agreements, Open-source contribution policies, Invention disclosures]
+        follow_up_questions:
+          - "Provide IP assignment audit and exception list"
+        table_ids: [T-019]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-008]
+      - section_id: VII.F
+        title: Culture, retention, and recruiting
+        checklist_question_ids: [VII.F.1, VII.F.2, VII.F.3]
+        summary: Public careers listings demonstrate active hiring; private culture, engagement, attrition, regretted losses, offer acceptance, and recruiting pipeline data are needed to judge team health.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public open roles indicate continued investment but not hiring success or attrition pressure.
+            evidence_claim_ids: [EC-016]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Late-stage private companies may face retention pressure if liquidity expectations, valuation marks, or workload change."
+        evidence_gaps: [Engagement survey, Attrition and regretted loss, Recruiting funnel, Offer acceptance and compensation competitiveness]
+        follow_up_questions:
+          - "Provide HR dashboards for attrition recruiting and engagement"
+        table_ids: [T-020]
+        figure_ids: []
+        evidence_claim_ids: [EC-016]
+      - section_id: VII.G
+        title: Management diligence follow-up
+        checklist_question_ids: [VII.G.1, VII.G.2, VII.G.3]
+        summary: Public management evidence is sufficient for initial identification but not investment underwriting. Complete management diligence requires references, background checks where permitted, governance records, equity/compensation review, and key-person retention analysis.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Public team profile should be treated as a diligence starting point, not formal HR/legal evidence.
+            evidence_claim_ids: [EC-016, EC-017, EC-018]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Governance, retention, and incentive alignment may be materially different from public profile impressions."
+        evidence_gaps: [Management references, Board and governance records, Retention plans, Key-person risk map]
+        follow_up_questions:
+          - "Conduct management interviews references and governance review"
+        table_ids: [T-018, T-020]
+        figure_ids: []
+        evidence_claim_ids: [EC-016, EC-017, EC-018]
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public pages disclose legal/security/privacy posture, subprocessors, license terms, and no scoped CourtListener published-opinion results for searched names. This does not replace counsel-led diligence on corporate authority, contracts, litigation, IP, privacy, security, regulatory, insurance, and AI governance.
+    founder_claim_ids: [FC-006, FC-008]
+    evidence_claim_ids: [EC-008, EC-014, EC-015, EC-020, EC-021, EC-025]
+    risk_ids: [R-005, R-006, R-008, R-010]
+    sections:
+      - section_id: VIII.A
+        title: Corporate organization and governance
+        checklist_question_ids: [VIII.A.1, VIII.A.2, VIII.A.3, VIII.A.4]
+        summary: Public sources identify company branding, headquarters, and legal/privacy/security pages, but charter documents, bylaws, board minutes, consents, subsidiaries, equity plans, and authority records are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Public pages do not establish corporate authorization or governance history.
+            evidence_claim_ids: [EC-021]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Corporate approvals, subsidiary obligations, investor rights, and change-of-control consents may affect transaction execution."
+        evidence_gaps: [Charter bylaws consents minutes subsidiary list investor rights stock plans]
+        follow_up_questions:
+          - "Provide corporate minute book and governance documents"
+        table_ids: [T-021]
+        figure_ids: []
+        evidence_claim_ids: [EC-021]
+      - section_id: VIII.B
+        title: Litigation, claims, and investigations
+        checklist_question_ids: [VIII.B.1, VIII.B.2, VIII.B.3, VIII.B.4]
+        summary: Scoped CourtListener searches for Functional Software/Sentry and getsentry returned no published-opinion results during research. This is not litigation clearance because complaints, arbitrations, investigations, demands, settlements, and non-published dockets may be absent from those results.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Public search found no published-opinion results for scoped names, but legal disclosure is still required.
+            evidence_claim_ids: [EC-020]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Private settlements, customer disputes, employment claims, IP disputes, privacy incidents, or regulatory inquiries may not appear in public opinion search."
+        evidence_gaps: [Counsel litigation memo, Claims/demand log, Settlement agreements, Regulatory correspondence]
+        follow_up_questions:
+          - "Provide legal disclosure schedule and counsel confirmation"
+        table_ids: [T-021]
+        figure_ids: []
+        evidence_claim_ids: [EC-020]
+      - section_id: VIII.C
+        title: Intellectual property and licenses
+        checklist_question_ids: [VIII.C.1, VIII.C.2, VIII.C.3, VIII.C.4, VIII.C.5]
+        summary: The public Sentry repository and LICENSE show fair-source licensing with future Apache-2.0 conversion. Complete diligence requires trademarks, patents, domain names, proprietary code ownership, third-party dependency scanning, contribution governance, and customer license commitments.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public license posture is identifiable; full IP ownership and OSS compliance are private.
+            evidence_claim_ids: [EC-007, EC-008]
+            risk_ids: [R-008]
+        hidden_risks:
+          - "Fair-source licensing may limit some open-source adoption, affect self-host users, or create compliance questions."
+        evidence_gaps: [IP schedules, OSS SCA reports, Contributor agreements, Trademark/patent/domain schedules]
+        follow_up_questions:
+          - "Provide IP and OSS compliance schedules"
+        table_ids: [T-021]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-008]
+      - section_id: VIII.D
+        title: Privacy, security, and data protection
+        checklist_question_ids: [VIII.D.1, VIII.D.2, VIII.D.3, VIII.D.4, VIII.D.5, VIII.D.6]
+        summary: Sentry publishes security controls, GCP hosting, PII scrubbing, MFA/SSO/SAML/SCIM capabilities, backups/encryption claims, and subprocessors. Audit reports, data maps, DPIAs, breach logs, vulnerability SLAs, customer obligations, and regulatory correspondence are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Public security/subprocessor pages evidence an enterprise control program and material data-processing dependencies.
+            evidence_claim_ids: [EC-014, EC-015, EC-021]
+            risk_ids: [R-005]
+        hidden_risks:
+          - "Telemetry data may include personal data/secrets if customers misconfigure scrubbing, creating breach and contractual exposure."
+        evidence_gaps: [SOC2/ISO reports, Pen-test reports, Security incidents, Data maps DPIAs TIAs and DPA exceptions]
+        follow_up_questions:
+          - "Provide security/audit/privacy data room including SOC reports pen tests incidents DPIAs DPAs and subprocessor assessments"
+        table_ids: [T-022]
+        figure_ids: []
+        evidence_claim_ids: [EC-014, EC-015, EC-021]
+      - section_id: VIII.E
+        title: Material contracts and commercial legal terms
+        checklist_question_ids: [VIII.E.1, VIII.E.2, VIII.E.3, VIII.E.4]
+        summary: Public legal pages do not disclose negotiated enterprise terms. Key diligence includes top customer/supplier contracts, DPAs, SLAs, indemnities, liability caps, assignment/change-of-control restrictions, MFNs, and AI/data-use terms.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Enterprise custom pricing indicates likely negotiated legal terms that are not public.
+            evidence_claim_ids: [EC-005, EC-021]
+            risk_ids: [R-005, R-010]
+        hidden_risks:
+          - "Customer consents or contract restrictions may affect transaction timing or post-close operations."
+        evidence_gaps: [Top customer/supplier contracts and contract abstraction, DPA/SLA/indemnity terms, Assignment/change-of-control consents]
+        follow_up_questions:
+          - "Provide material contracts list and contract abstracts"
+        table_ids: [T-021]
+        figure_ids: []
+        evidence_claim_ids: [EC-005, EC-021]
+      - section_id: VIII.F
+        title: Insurance and risk management
+        checklist_question_ids: [VIII.F.1, VIII.F.2, VIII.F.3]
+        summary: No public insurance policies, coverage limits, exclusions, loss runs, or cyber/E&O claims history were identified. Given telemetry/security exposure, insurance adequacy is a material diligence item.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Insurance is not public and must be verified directly.
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-005, R-010]
+        hidden_risks:
+          - "Cyber/E&O exclusions could leave material data, outage, AI, or customer-indemnity exposures uninsured."
+        evidence_gaps: [Policy schedule, Cyber/E&O/D&O limits, Loss runs, Broker letters]
+        follow_up_questions:
+          - "Provide all insurance policies loss runs and broker summaries"
+        table_ids: [T-022]
+        figure_ids: []
+        evidence_claim_ids: [EC-014]
+      - section_id: VIII.G
+        title: Regulatory, compliance, and AI governance
+        checklist_question_ids: [VIII.G.1, VIII.G.2, VIII.G.3, VIII.G.4]
+        summary: Public evidence supports security/compliance controls and AI product expansion, but private diligence must test GDPR/CCPA/other privacy compliance, AI governance, model provider terms, customer data use, security certification validity, export/sanctions, and incident response.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: AI subprocessors and Seer product expansion make AI governance and data-use controls material.
+            evidence_claim_ids: [EC-015, EC-019, EC-025]
+            risk_ids: [R-006, R-005]
+        hidden_risks:
+          - "AI features could conflict with customer data-use restrictions or produce insecure/incorrect remediation suggestions."
+        evidence_gaps: [AI policy and evaluation records, Model provider terms, Customer opt-in/opt-out controls, Regulatory correspondence]
+        follow_up_questions:
+          - "Provide AI governance artifacts model agreements evaluation logs and privacy impact assessments"
+        table_ids: [T-022]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-015, EC-019, EC-025]
+tables:
+  - table_id: T-001
+    chapter_id: I
+    title: Public financial-disclosure map
+    columns: [Topic, Public evidence, Diligence implication]
+    rows:
+      - [Financial statements, No public audited or quarterly statements located, Request full financial data room]
+      - [Scale proxies, 4M+ developers; 150K+ organizations; 790B+ monthly events, Useful demand signal but not revenue]
+  - table_id: T-002
+    chapter_id: I
+    title: Forecast input signals visible publicly
+    columns: [Input, Public signal, Missing private driver]
+    rows:
+      - [Pricing, Developer free; Team $26/month; Business $80/month; Enterprise custom, Realized ARPA and discounting]
+      - [AI add-on, Seer listed at $40 per active contributor/month, Attach rate and model COGS]
+  - table_id: T-003
+    chapter_id: I
+    title: Capital structure public evidence
+    columns: [Item, Public evidence, Open question]
+    rows:
+      - [Valuation marker, CB Insights unicorn list reports $3B, Current fair value and terms]
+      - [Funding scale, CB Insights and Sentry indicate about $216.5M-$217M raised, Preference stack and dilution]
+  - table_id: T-004
+    chapter_id: I
+    title: Unit-economics diligence map
+    columns: [Driver, Public proxy, Required proof]
+    rows:
+      - [Cloud COGS, 790B+ events/month and GCP hosting disclosed, COGS by event/product/customer]
+      - [Expansion revenue, Usage pricing and Seer add-on, Cohort expansion and attach data]
+  - table_id: T-005
+    chapter_id: II
+    title: Jurisdiction footprint
+    columns: [Jurisdiction, Public basis, Tax diligence focus]
+    rows:
+      - [United States, Headquarters in San Francisco, Federal/state income tax sales tax payroll]
+      - [Canada/Austria/global, Public offices and customers in 146 countries, VAT/GST transfer pricing employment tax]
+  - table_id: T-006
+    chapter_id: II
+    title: Tax documents required
+    columns: [Area, Public status, Request]
+    rows:
+      - [Income tax, Not public, Three years filed returns and open audits]
+      - [Indirect tax, Not public, Nexus registration and exposure analysis]
+  - table_id: T-007
+    chapter_id: III
+    title: Public customer evidence
+    columns: [Customer signal, Public evidence, Verification need]
+    rows:
+      - [Scale, Sentry reports 130k+ customers and 150k+ organizations, Paid/free reconciliation]
+      - [Named outcomes, Anthropic Bolt and Supabase case studies, Direct reference calls and contract checks]
+  - table_id: T-008
+    chapter_id: III
+    title: Supplier and subprocessor map
+    columns: [Category, Publicly listed examples, Diligence issue]
+    rows:
+      - [Cloud/infrastructure, Google Cloud Platform and AWS-related subprocessors, Contract pricing SLA data residency]
+      - [AI/support/comms, Anthropic OpenAI Cloudflare Intercom Mailgun SendGrid, Data-use and vendor-risk controls]
+  - table_id: T-009
+    chapter_id: III
+    title: GTM and backlog visibility
+    columns: [Area, Public signal, Missing evidence]
+    rows:
+      - [GTM motion, Free Team Business and Enterprise tiers, Funnel CAC payback sales productivity]
+      - [Backlog, Enterprise custom pricing implies contracts, Contracted ARR RPO deferred revenue]
+  - table_id: T-010
+    chapter_id: IV
+    title: Competitive market map
+    columns: [Competitor, Public positioning, Sentry diligence response]
+    rows:
+      - [Datadog/New Relic/Dynatrace, Broad observability and APM platforms, Test suite consolidation risk]
+      - [Grafana Cloud/Honeycomb, Cloud-native/open/no-lock-in observability narratives, Test developer workflow differentiation]
+  - table_id: T-011
+    chapter_id: IV
+    title: Sentry differentiation hypotheses
+    columns: [Hypothesis, Public evidence, Proof needed]
+    rows:
+      - [Developer-first workflow, Docs and GitHub emphasize errors performance replay profiling Codecov SDKs, Win/loss and NPS by persona]
+      - [AI debugging expansion, Seer Agent Autofix AI Code Review pages, Attach rate accuracy cost and retention impact]
+  - table_id: T-012
+    chapter_id: V
+    title: Product and pricing surface
+    columns: [Offering, Public evidence, Revenue diligence item]
+    rows:
+      - [Core platform, Error monitoring tracing replay profiling logs/metrics releases uptime cron dashboards, ARR and gross margin by module]
+      - [Seer AI, $40 active contributor/month public pricing, Attach rate model cost and churn impact]
+  - table_id: T-013
+    chapter_id: V
+    title: Customer concentration unknowns
+    columns: [Metric, Public status, Required schedule]
+    rows:
+      - [Top-customer ARR, Not public, Top 10/25/50 ARR and renewal dates]
+      - [Retention, Not public, NRR GRR churn downgrade expansion cohorts]
+  - table_id: T-014
+    chapter_id: V
+    title: Channel and brand evidence
+    columns: [Signal, Evidence, Caveat]
+    rows:
+      - [Developer ecosystem, Public GitHub repository docs SDKs and integrations, Does not prove channel ARR]
+      - [Customer marketing, Public customer stories and logos, Vendor-published metrics require confirmation]
+  - table_id: T-015
+    chapter_id: VI
+    title: Technology/IP diligence checklist
+    columns: [Area, Public evidence, Private proof needed]
+    rows:
+      - [Core codebase, Public getsentry/sentry repository and docs, Architecture SLO security and dependency audits]
+      - [License, FSL-1.1-Apache-2.0 future license, IP ownership and OSS compliance]
+  - table_id: T-016
+    chapter_id: VI
+    title: AI product diligence checklist
+    columns: [Area, Public evidence, Required proof]
+    rows:
+      - [AI features, Seer Agent Autofix AI Code Review, Accuracy false-fix safety evaluation]
+      - [AI vendors/cost, AI subprocessors publicly listed, Model contracts data-use terms unit economics]
+  - table_id: T-017
+    chapter_id: VII
+    title: Public management evidence
+    columns: [Topic, Public evidence, Diligence need]
+    rows:
+      - [Leadership, Sentry About and The Org identify CEO/co-founders and functional leaders, Signed org chart and board roster]
+      - [Headcount, 200+ on Sentry About; 437 on LinkedIn, Payroll census reconciliation]
+  - table_id: T-018
+    chapter_id: VII
+    title: Workforce footprint signals
+    columns: [Signal, Evidence, Diligence question]
+    rows:
+      - [Open roles, Careers page showed 39 roles, Hiring plan and budget]
+      - [Locations, SF Vienna Toronto and global customer footprint, Employer-of-record and compliance]
+  - table_id: T-019
+    chapter_id: VII
+    title: HR/legal employment gaps
+    columns: [Area, Public status, Required item]
+    rows:
+      - [Employment claims, Not public; scoped opinion search not clearance, Counsel disclosure and claims log]
+      - [IP assignment, Not public, PIIA and contractor assignment audit]
+  - table_id: T-020
+    chapter_id: VII
+    title: Retention and culture diligence
+    columns: [Area, Public signal, Private proof]
+    rows:
+      - [Hiring momentum, Active careers postings, Recruiting funnel offer acceptance]
+      - [Retention, Not public, Attrition regretted loss engagement and compensation data]
+  - table_id: T-021
+    chapter_id: VIII
+    title: Legal diligence status
+    columns: [Legal area, Public evidence, Open request]
+    rows:
+      - [Corporate governance, Public legal pages but no minute book, Charter bylaws board consents investor rights]
+      - [Litigation, Scoped CourtListener searches found no published-opinion results, Counsel disclosure and claims log]
+  - table_id: T-022
+    chapter_id: VIII
+    title: Security/privacy/insurance diligence status
+    columns: [Area, Public evidence, Private proof]
+    rows:
+      - [Security/privacy, GCP hosting controls subprocessors PII scrubbing SSO/SAML/SCIM public, SOC reports pen tests incident logs DPIAs]
+      - [Insurance/AI governance, Not public for insurance; Seer/AI public, Policies loss runs AI evaluation and model terms]
+
+figures:
+  - figure_id: F-001
+    chapter_id: I
+    title: Public financing and scale timeline
+    figure_type: timeline
+    description: Publicly supported financing and scale milestones relevant to capital-structure diligence.
+    data:
+      events:
+        - {date: "2011", label: Founded, description: Sentry/Functional Software founding year listed by CB Insights and public company materials.}
+        - {date: "2021-02-18", label: Unicorn marker, description: CB Insights unicorn list reports Sentry joined at a $3B valuation.}
+        - {date: "2026-05-17", label: Current public scale, description: Company page reports 4M+ developers 150K+ organizations and 790B+ monthly events.}
+    source_ids: [SRC-001, SRC-002, SRC-003]
+  - figure_id: F-002
+    chapter_id: I
+    title: Public monetization levers
+    figure_type: chart
+    description: Visible revenue-model levers inferred from public pricing pages.
+    data:
+      chart_type: bar
+      series:
+        - name: Monthly list price
+          values:
+            - {label: Developer, value: 0}
+            - {label: Team, value: 26}
+            - {label: Business, value: 80}
+            - {label: Seer add-on, value: 40}
+    source_ids: [SRC-004, SRC-018]
+  - figure_id: F-003
+    chapter_id: II
+    title: Tax footprint trigger map
+    figure_type: market_map
+    description: Public footprint indicators that trigger tax diligence workstreams.
+    data:
+      categories:
+        - {name: Entity/office, companies: [United States, Canada, Austria]}
+        - {name: Customer reach, companies: [146 countries, Enterprise SaaS, Online self-serve]}
+        - {name: Tax workstream, companies: [Income tax, VAT/GST, Transfer pricing, Payroll]}
+    source_ids: [SRC-001, SRC-016]
+  - figure_id: F-004
+    chapter_id: III
+    title: Customer evidence funnel
+    figure_type: funnel
+    description: Public customer proof narrows from aggregate reach to named case studies to private revenue verification.
+    data:
+      stages:
+        - {name: Developers, value: 4000000}
+        - {name: Organizations, value: 150000}
+        - {name: Customers, value: 130000}
+        - {name: Named public case studies reviewed, value: 3}
+    source_ids: [SRC-001, SRC-009, SRC-010, SRC-011, SRC-012]
+  - figure_id: F-005
+    chapter_id: IV
+    title: Observability competitive market map
+    figure_type: market_map
+    description: Public competitor categories relevant to Sentry's positioning.
+    data:
+      categories:
+        - {name: Full-stack observability, companies: [Datadog, New Relic, Dynatrace]}
+        - {name: Open/cloud-native observability, companies: [Grafana Cloud, Honeycomb]}
+        - {name: Developer debugging, companies: [Sentry, Codecov, Seer]}
+    source_ids: [SRC-022, SRC-023, SRC-024, SRC-025, SRC-026]
+  - figure_id: F-006
+    chapter_id: V
+    title: Product-led GTM funnel hypothesis
+    figure_type: funnel
+    description: Public pricing implies a self-serve-to-enterprise funnel that must be validated with private metrics.
+    data:
+      stages:
+        - {name: Free/developer adoption, value: 100}
+        - {name: Team usage, value: 50}
+        - {name: Business expansion, value: 25}
+        - {name: Enterprise/custom, value: 10}
+    source_ids: [SRC-004, SRC-009]
+  - figure_id: F-007
+    chapter_id: VI
+    title: AI debugging workstream map
+    figure_type: architecture_diagram
+    description: Conceptual diligence view of AI debugging controls; based on public Seer/AI product and subprocessor evidence, not internal architecture.
+    data:
+      nodes:
+        - {id: product, label: Seer/Agent/Autofix/AI Code Review, type: product}
+        - {id: customer_data, label: Customer events and code context, type: data}
+        - {id: model, label: AI subprocessors/models, type: supplier}
+        - {id: controls, label: Evaluation privacy security controls, type: control}
+      edges:
+        - {from: customer_data, to: product, label: context}
+        - {from: product, to: model, label: inference}
+        - {from: controls, to: product, label: governance}
+    source_ids: [SRC-014, SRC-018]
+  - figure_id: F-008
+    chapter_id: VII
+    title: Public leadership snapshot
+    figure_type: org_chart
+    description: Public leadership snapshot to be reconciled to the company's official org chart.
+    data:
+      root: {name: Milin Desai, title: CEO}
+      reports:
+        - {name: Chris Jennings, title: Co-founder}
+        - {name: David Cramer, title: Co-founder}
+        - {name: Revenue leader, title: Publicly listed executive function}
+        - {name: People/legal/technology leaders, title: Publicly listed functions}
+    source_ids: [SRC-001, SRC-017]
+  - figure_id: F-009
+    chapter_id: VII
+    title: Workforce signals
+    figure_type: chart
+    description: Public headcount and hiring signals are directional and require payroll reconciliation.
+    data:
+      chart_type: bar
+      series:
+        - name: Public count
+          values:
+            - {label: Sentry About employees, value: 200}
+            - {label: LinkedIn employees, value: 437}
+            - {label: Careers open roles, value: 39}
+    source_ids: [SRC-001, SRC-015, SRC-016]
+  - figure_id: F-010
+    chapter_id: VIII
+    title: Legal/security risk heatmap
+    figure_type: risk_heatmap
+    description: Public evidence identifies high-priority legal, privacy, IP, AI, and insurance diligence areas.
+    data:
+      risks:
+        - {id: R-005, label: Security/privacy/subprocessor, likelihood: medium, impact: high}
+        - {id: R-006, label: AI governance/economics, likelihood: medium, impact: medium}
+        - {id: R-008, label: Fair-source/IP, likelihood: medium, impact: medium}
+        - {id: R-010, label: Legal disclosure opacity, likelihood: medium, impact: high}
+    source_ids: [SRC-008, SRC-013, SRC-014, SRC-019, SRC-020, SRC-021]
+  - figure_id: F-011
+    chapter_id: III
+    section_id: III.A
+    title: Public customer and usage scale
+    figure_type: chart
+    description: Public customer and usage anchors demonstrate broad reach while leaving paid-customer mix, concentration, retention, and revenue quality unresolved.
+    purpose: Visualize non-financial public scale metrics that drive customer diligence requests.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public scale metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: count
+        scale: logarithmic
+      series:
+        - series_id: public-scale
+          name: Public scale
+          unit: count
+          data_points:
+            - x: Developers
+              y: 4000000
+              label: 4M+ developers
+              evidence_claim_ids: [EC-003]
+              source_ids: [SRC-001]
+            - x: Organizations
+              y: 150000
+              label: 150K+ organizations
+              evidence_claim_ids: [EC-003]
+              source_ids: [SRC-001]
+            - x: Customers
+              y: 130000
+              label: 130K+ customers
+              evidence_claim_ids: [EC-009]
+              source_ids: [SRC-009]
+      annotations:
+        - label: Paid mix private
+          x: Customers
+          y: 130000
+          note: Public logo/customer counts do not disclose paid-vs-free mix, top-customer ARR, or retention.
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-009]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use a logarithmic y-axis because developer, organization, and customer counts differ materially in scale.
+    evidence_claim_ids: [EC-003, EC-009]
+    source_ids: [SRC-001, SRC-009]
+    notes: Counts are public company-reported scale anchors and should be reconciled to customer master and revenue records.
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights' unicorn list includes Sentry with a $3B valuation marker, joined date 2021-02-18, and investors including NEA, Accel, and Bond.
+    source_ids: [SRC-002]
+    quote: CB Insights unicorn row for Sentry listed valuation $3B, joined 2021-02-18, and investor names including NEA, Accel, Bond.
+    verification_status: verified
+    confidence: medium
+    related_founder_claim_ids: [FC-001]
+  - evidence_claim_id: EC-002
+    claim: CB Insights' public Sentry profile listed the company as alive, Series E, founded in 2011, with total raised around $216.5M.
+    source_ids: [SRC-003]
+    quote: CB Insights profile fields observed during research included alive status, Series E, founded 2011, and total raised $216.5M.
+    verification_status: verified
+    confidence: medium
+    related_founder_claim_ids: [FC-001]
+  - evidence_claim_id: EC-003
+    claim: Sentry's About page reports 4M+ developers, 150K+ organizations, 146 countries, 790B+ monthly events, approximately $217M raised, 200+ employees, and SF/Vienna/Toronto offices.
+    source_ids: [SRC-001]
+    quote: Sentry About presented public scale metrics including 4M+ developers, 150K+ organizations, 146 countries, and 790B+ monthly events.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-002]
+  - evidence_claim_id: EC-004
+    claim: No audited financial statements, ARR, profitability, burn, cash, debt, or runway data were found in scoped public sources.
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-004]
+    quote: Public company, pricing, and CB Insights pages provided financing/pricing/scale metrics but not financial statements or operating results.
+    verification_status: not_publicly_verifiable
+    confidence: high
+    related_founder_claim_ids: []
+  - evidence_claim_id: EC-005
+    claim: Sentry's pricing page lists a free Developer plan, Team at $26/month, Business at $80/month, Enterprise custom, and usage-based platform packaging.
+    source_ids: [SRC-004]
+    quote: Public pricing included Developer $0, Team $26/month, Business $80/month, and Enterprise custom plan structure.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-004]
+  - evidence_claim_id: EC-006
+    claim: Sentry documentation covers errors/issues, tracing, replay, profiling, metrics/logs, releases, uptime/cron, dashboards, SDKs, and integrations.
+    source_ids: [SRC-005, SRC-006]
+    quote: Sentry docs exposed product areas spanning error monitoring, tracing, session replay, profiling, metrics/logs, releases, uptime, cron, dashboards, SDKs, and integrations.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-003]
+  - evidence_claim_id: EC-007
+    claim: The public getsentry/sentry GitHub repository and README support a large self-hostable application monitoring/error-tracking codebase and community footprint.
+    source_ids: [SRC-007]
+    quote: GitHub repository metadata and README identify getsentry/sentry as Sentry's application monitoring/error tracking codebase.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-003]
+  - evidence_claim_id: EC-008
+    claim: Sentry's public license file identifies Fair Source License 1.1 with Apache-2.0 future license terms.
+    source_ids: [SRC-008]
+    quote: LICENSE.md indicates FSL-1.1-Apache-2.0 future license terms.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: []
+  - evidence_claim_id: EC-009
+    claim: Sentry's customer page publicly represents 130k+ customers and named customer logos/stories.
+    source_ids: [SRC-009]
+    quote: Sentry Customers page indicated 130k+ customers and public customer proof.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-005]
+  - evidence_claim_id: EC-010
+    claim: Sentry publishes an Anthropic customer story with quantified developer/productivity outcome claims.
+    source_ids: [SRC-010]
+    quote: Anthropic case-study page provided vendor-published metrics and qualitative deployment context.
+    verification_status: partially_verified
+    confidence: medium
+    related_founder_claim_ids: [FC-005]
+  - evidence_claim_id: EC-011
+    claim: Sentry publishes a Bolt customer story with quantified reliability/productivity outcome claims.
+    source_ids: [SRC-011]
+    quote: Bolt case-study page provided vendor-published metrics and qualitative customer context.
+    verification_status: partially_verified
+    confidence: medium
+    related_founder_claim_ids: [FC-005]
+  - evidence_claim_id: EC-012
+    claim: Sentry publishes a Supabase customer story with quantified adoption or debugging outcome claims.
+    source_ids: [SRC-012]
+    quote: Supabase case-study page provided vendor-published metrics and qualitative customer context.
+    verification_status: partially_verified
+    confidence: medium
+    related_founder_claim_ids: [FC-005]
+  - evidence_claim_id: EC-013
+    claim: Vendor-published customer stories are useful proof points but require direct reference checks and contract confirmation.
+    source_ids: [SRC-010, SRC-011, SRC-012]
+    quote: The case studies are company-published marketing materials rather than independent customer diligence materials.
+    verification_status: partially_verified
+    confidence: high
+    related_founder_claim_ids: [FC-005]
+  - evidence_claim_id: EC-014
+    claim: Sentry's security page describes enterprise controls including GCP hosting, SOC/ISO availability, penetration testing, backups/encryption, PII scrubbing, MFA/SSO/SAML/SCIM, and related safeguards.
+    source_ids: [SRC-013]
+    quote: Sentry Security page described hosting, audit/compliance, access, encryption, backup, PII scrubbing, and enterprise authentication/security controls.
+    verification_status: partially_verified
+    confidence: medium
+    related_founder_claim_ids: [FC-006]
+  - evidence_claim_id: EC-015
+    claim: Sentry's subprocessors page lists material providers including AWS, Anthropic, Cloudflare, Google Cloud Platform, Intercom, OpenAI, Mailgun, and SendGrid.
+    source_ids: [SRC-014]
+    quote: Sentry Subprocessors page listed infrastructure, AI, support, email, and service providers relevant to data processing.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-006, FC-008]
+  - evidence_claim_id: EC-016
+    claim: Sentry careers and About pages show active hiring and public offices, including 39 open roles observed during research and offices in SF, Vienna, and Toronto.
+    source_ids: [SRC-001, SRC-016]
+    quote: Careers page showed 39 open positions during research; About page listed SF, Vienna, and Toronto offices.
+    verification_status: verified
+    confidence: medium
+    related_founder_claim_ids: [FC-007]
+  - evidence_claim_id: EC-017
+    claim: LinkedIn's public company page showed Sentry with 437 associated employees, 201-500 company-size band, and more than 31k followers during research.
+    source_ids: [SRC-015]
+    quote: LinkedIn public company profile displayed 437 employees and 201-500 employees size range during research.
+    verification_status: partially_verified
+    confidence: medium
+    related_founder_claim_ids: [FC-007]
+  - evidence_claim_id: EC-018
+    claim: The Org listed Sentry leadership/team information but marked the page as unverified, so it is directional rather than formal evidence.
+    source_ids: [SRC-017]
+    quote: The Org presented leadership/team data and an unverified page indicator.
+    verification_status: partially_verified
+    confidence: low
+    related_founder_claim_ids: [FC-007]
+  - evidence_claim_id: EC-019
+    claim: Sentry's Seer page describes AI debugging capabilities and lists Seer pricing at $40 per active contributor per month.
+    source_ids: [SRC-018]
+    quote: Seer product page listed AI debugging functionality and $40 per active contributor/month pricing.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-004, FC-008]
+  - evidence_claim_id: EC-020
+    claim: Scoped CourtListener searches for Functional Software/Sentry and getsentry returned no published-opinion results, but this is not comprehensive litigation clearance.
+    source_ids: [SRC-019, SRC-020]
+    quote: CourtListener searches returned zero published-opinion results for searched terms during research.
+    verification_status: partially_verified
+    confidence: low
+    related_founder_claim_ids: []
+  - evidence_claim_id: EC-021
+    claim: Sentry's public legal/security pages provide policies and customer-facing legal context but not negotiated material contracts or full legal disclosures.
+    source_ids: [SRC-013, SRC-014, SRC-021]
+    quote: Legal/security pages are public policy pages and do not disclose individual contracts, litigation schedules, or counsel memoranda.
+    verification_status: partially_verified
+    confidence: medium
+    related_founder_claim_ids: [FC-006]
+  - evidence_claim_id: EC-022
+    claim: Datadog publicly positions broad APM and observability capabilities that overlap with Sentry's monitoring/debugging value proposition.
+    source_ids: [SRC-022]
+    quote: Datadog APM/observability page presents broad application performance monitoring and observability features.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: []
+  - evidence_claim_id: EC-023
+    claim: New Relic publicly positions a broad observability platform with APM, logs, infrastructure, and user monitoring capabilities.
+    source_ids: [SRC-023]
+    quote: New Relic platform pages present broad observability capabilities.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: []
+  - evidence_claim_id: EC-024
+    claim: Dynatrace publicly positions a broad observability and AIOps platform that can compete in enterprise monitoring budgets.
+    source_ids: [SRC-024]
+    quote: Dynatrace public platform materials emphasize observability, AI, automation, and enterprise monitoring.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: []
+  - evidence_claim_id: EC-025
+    claim: Sentry publicly markets AI-assisted debugging capabilities including Seer, Agent, Autofix, and AI Code Review.
+    source_ids: [SRC-018, SRC-005]
+    quote: Sentry product/docs pages identified Seer, Agent, Autofix, and AI Code Review capabilities.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: [FC-008]
+  - evidence_claim_id: EC-026
+    claim: Grafana Cloud and Honeycomb publicly position cloud-native/open/no-lock-in observability alternatives relevant to Sentry's competitive diligence.
+    source_ids: [SRC-025, SRC-026]
+    quote: Grafana Cloud and Honeycomb public pages present observability products overlapping logs metrics traces and service debugging workflows.
+    verification_status: verified
+    confidence: high
+    related_founder_claim_ids: []
+
+sources:
+  - source_id: SRC-001
+    title: Sentry About
+    publisher: Sentry
+    url: "https://sentry.io/about/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-002
+    title: CB Insights The Complete List of Unicorn Companies
+    publisher: CB Insights
+    url: "https://www.cbinsights.com/research-unicorn-companies"
+    accessed_at: "2026-05-17"
+    source_type: database
+    credibility: medium
+  - source_id: SRC-003
+    title: CB Insights Sentry Company Profile
+    publisher: CB Insights
+    url: "https://www.cbinsights.com/company/sentry"
+    accessed_at: "2026-05-17"
+    source_type: database
+    credibility: medium
+  - source_id: SRC-004
+    title: Sentry Pricing
+    publisher: Sentry
+    url: "https://sentry.io/pricing/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-005
+    title: Sentry Product Documentation
+    publisher: Sentry
+    url: "https://docs.sentry.io/product/"
+    accessed_at: "2026-05-17"
+    source_type: documentation
+    credibility: high
+  - source_id: SRC-006
+    title: Sentry Documentation Home
+    publisher: Sentry
+    url: "https://docs.sentry.io/"
+    accessed_at: "2026-05-17"
+    source_type: documentation
+    credibility: high
+  - source_id: SRC-007
+    title: getsentry/sentry GitHub Repository
+    publisher: GitHub / Sentry
+    url: "https://github.com/getsentry/sentry"
+    accessed_at: "2026-05-17"
+    source_type: github
+    credibility: high
+  - source_id: SRC-008
+    title: Sentry LICENSE.md
+    publisher: GitHub / Sentry
+    url: "https://github.com/getsentry/sentry/blob/master/LICENSE.md"
+    accessed_at: "2026-05-17"
+    source_type: github
+    credibility: high
+  - source_id: SRC-009
+    title: Sentry Customers
+    publisher: Sentry
+    url: "https://sentry.io/customers/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-010
+    title: Anthropic Customer Story
+    publisher: Sentry
+    url: "https://sentry.io/customers/anthropic/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: medium
+  - source_id: SRC-011
+    title: Bolt Customer Story
+    publisher: Sentry
+    url: "https://sentry.io/customers/bolt/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: medium
+  - source_id: SRC-012
+    title: Supabase Customer Story
+    publisher: Sentry
+    url: "https://sentry.io/customers/supabase/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: medium
+  - source_id: SRC-013
+    title: Sentry Security
+    publisher: Sentry
+    url: "https://sentry.io/security/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-014
+    title: Sentry Subprocessors
+    publisher: Sentry
+    url: "https://sentry.io/legal/subprocessors/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-015
+    title: Sentry LinkedIn Company Page
+    publisher: LinkedIn
+    url: "https://www.linkedin.com/company/getsentry/"
+    accessed_at: "2026-05-17"
+    source_type: social_profile
+    credibility: medium
+  - source_id: SRC-016
+    title: Sentry Careers
+    publisher: Sentry
+    url: "https://sentry.io/careers/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-017
+    title: Sentry Profile
+    publisher: The Org
+    url: "https://theorg.com/org/sentry"
+    accessed_at: "2026-05-17"
+    source_type: public_profile
+    credibility: low
+  - source_id: SRC-018
+    title: Sentry Seer
+    publisher: Sentry
+    url: "https://sentry.io/for/seer/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-019
+    title: CourtListener search for Functional Software Sentry
+    publisher: CourtListener
+    url: "https://www.courtlistener.com/"
+    accessed_at: "2026-05-17"
+    source_type: public_records_search
+    credibility: medium
+  - source_id: SRC-020
+    title: CourtListener search for getsentry
+    publisher: CourtListener
+    url: "https://www.courtlistener.com/"
+    accessed_at: "2026-05-17"
+    source_type: public_records_search
+    credibility: medium
+  - source_id: SRC-021
+    title: Sentry Legal
+    publisher: Sentry
+    url: "https://sentry.io/legal/"
+    accessed_at: "2026-05-17"
+    source_type: company_website
+    credibility: high
+  - source_id: SRC-022
+    title: Datadog APM
+    publisher: Datadog
+    url: "https://www.datadoghq.com/product/apm/"
+    accessed_at: "2026-05-17"
+    source_type: competitor_website
+    credibility: medium
+  - source_id: SRC-023
+    title: New Relic Observability Platform
+    publisher: New Relic
+    url: "https://newrelic.com/platform"
+    accessed_at: "2026-05-17"
+    source_type: competitor_website
+    credibility: medium
+  - source_id: SRC-024
+    title: Dynatrace Platform
+    publisher: Dynatrace
+    url: "https://www.dynatrace.com/platform/"
+    accessed_at: "2026-05-17"
+    source_type: competitor_website
+    credibility: medium
+  - source_id: SRC-025
+    title: Grafana Cloud
+    publisher: Grafana Labs
+    url: "https://grafana.com/products/cloud/"
+    accessed_at: "2026-05-17"
+    source_type: competitor_website
+    credibility: medium
+  - source_id: SRC-026
+    title: Honeycomb Observability Platform
+    publisher: Honeycomb
+    url: "https://www.honeycomb.io/platform"
+    accessed_at: "2026-05-17"
+    source_type: competitor_website
+    credibility: medium
+
+risk_register:
+  - risk_id: R-001
+    title: Financial and unit-economics opacity
+    category: financial
+    severity: high
+    likelihood: high
+    impact: high
+    description: Private ARR, revenue growth, gross margin, burn, runway, cash, debt, and cloud/model COGS prevent valuation underwriting from public evidence alone.
+    evidence_claim_ids: [EC-004]
+    affected_chapters: [I, III, V]
+    mitigation: Obtain audited financials, management accounts, ARR bridge, COGS support, cash/debt schedules, and cohort economics.
+  - risk_id: R-002
+    title: Private valuation and preference-stack risk
+    category: financial
+    severity: medium
+    likelihood: medium
+    impact: high
+    description: Public $3B unicorn marker does not disclose current mark, preferences, option pool, debt, warrants, secondaries, or liquidation stack.
+    evidence_claim_ids: [EC-001, EC-002]
+    affected_chapters: [I]
+    mitigation: Review cap table, financing documents, investor rights, 409A, secondary transactions, and waterfall model.
+  - risk_id: R-003
+    title: Observability platform competition
+    category: market
+    severity: high
+    likelihood: high
+    impact: high
+    description: Datadog, New Relic, Dynatrace, Grafana Cloud, Honeycomb, and bundled cloud platforms can pressure standalone monitoring/debugging spend.
+    evidence_claim_ids: [EC-022, EC-023, EC-024, EC-026]
+    affected_chapters: [III, IV, V, VI]
+    mitigation: Validate win/loss, pricing pressure, displacement churn, module adoption, roadmap, and retention by competitor.
+  - risk_id: R-004
+    title: Customer concentration and retention opacity
+    category: commercial
+    severity: high
+    likelihood: medium
+    impact: high
+    description: Public customer counts and case studies do not prove paid customer reconciliation, top-account concentration, NRR/GRR, or renewal quality.
+    evidence_claim_ids: [EC-009, EC-013]
+    affected_chapters: [III, V]
+    mitigation: Obtain customer-level ARR schedules, churn/expansion cohorts, renewal calendar, and direct reference confirmations.
+  - risk_id: R-005
+    title: Telemetry security privacy and subprocessor exposure
+    category: legal_compliance
+    severity: high
+    likelihood: medium
+    impact: high
+    description: Sentry ingests customer telemetry and relies on cloud/AI/support subprocessors, creating privacy, breach, contractual, and vendor-risk exposure.
+    evidence_claim_ids: [EC-014, EC-015, EC-021]
+    affected_chapters: [III, VIII]
+    mitigation: Review SOC/ISO reports, pen tests, incident logs, DPAs, data maps, DPIAs/TIAs, subprocessor assessments, and customer security obligations.
+  - risk_id: R-006
+    title: AI debugging execution and governance risk
+    category: technology
+    severity: medium
+    likelihood: medium
+    impact: high
+    description: Seer/AI features may introduce model COGS, hallucinated fixes, data-use objections, security risks, and governance/regulatory exposure.
+    evidence_claim_ids: [EC-015, EC-019, EC-025]
+    affected_chapters: [VI, VIII]
+    mitigation: Review AI feature metrics, model contracts, evaluation/guardrail process, cost curves, data-retention controls, and customer opt-out terms.
+  - risk_id: R-007
+    title: Multi-jurisdiction tax exposure
+    category: tax
+    severity: medium
+    likelihood: medium
+    impact: medium
+    description: US headquarters, Canada/Austria offices, and global customers can create income tax, VAT/GST, transfer-pricing, payroll, and PE exposure.
+    evidence_claim_ids: [EC-003, EC-016]
+    affected_chapters: [II]
+    mitigation: Review tax returns, nexus study, VAT/GST registrations, transfer pricing, payroll compliance, and audit correspondence.
+  - risk_id: R-008
+    title: Fair-source license and OSS/IP tension
+    category: legal_compliance
+    severity: medium
+    likelihood: medium
+    impact: medium
+    description: FSL-1.1-Apache-2.0 future licensing and public repo/community posture may create adoption, compliance, or IP-ownership diligence issues.
+    evidence_claim_ids: [EC-007, EC-008]
+    affected_chapters: [V, VI, VIII]
+    mitigation: Review IP assignments, license compliance, contributor agreements, third-party dependency scan, and community/customer feedback.
+  - risk_id: R-009
+    title: HR census retention and compensation opacity
+    category: people
+    severity: medium
+    likelihood: medium
+    impact: medium
+    description: Public headcount signals conflict and do not disclose payroll census, attrition, compensation, equity grants, or employment claims.
+    evidence_claim_ids: [EC-016, EC-017, EC-018]
+    affected_chapters: [VII]
+    mitigation: Obtain HR census, payroll, compensation, equity, attrition, engagement, recruiting, and employment legal records.
+  - risk_id: R-010
+    title: Legal disclosure incompleteness
+    category: legal_compliance
+    severity: high
+    likelihood: medium
+    impact: high
+    description: Public legal pages and scoped public-record searches cannot identify all litigation, regulatory, contractual, insurance, corporate, or IP issues.
+    evidence_claim_ids: [EC-020, EC-021]
+    affected_chapters: [VIII]
+    mitigation: Conduct counsel-led legal diligence and review disclosure schedules, contracts, policies, claims logs, and insurance materials.
+
+diligence_gaps:
+  - gap_id: G-001
+    title: Audited financials and management accounts
+    category: financial
+    status: open
+    description: Required to verify revenue, expenses, margin, EBITDA, cash, burn, runway, and debt.
+    related_chapter_ids: [I]
+    related_risk_ids: [R-001]
+    priority: high
+  - gap_id: G-002
+    title: ARR revenue quality and cohort data
+    category: financial
+    status: open
+    description: Required to test NRR/GRR, churn, expansion, plan migration, usage growth, and concentration.
+    related_chapter_ids: [I, III, V]
+    related_risk_ids: [R-001, R-004]
+    priority: high
+  - gap_id: G-003
+    title: Cloud and AI unit economics
+    category: technology
+    status: open
+    description: Required to assess gross margin under event volume, retention, sampling, overages, and Seer/model usage.
+    related_chapter_ids: [I, VI]
+    related_risk_ids: [R-001, R-006]
+    priority: high
+  - gap_id: G-004
+    title: Cap table and financing documents
+    category: financial
+    status: open
+    description: Required to confirm ownership, preferences, investor rights, option pool, convertibles, debt, and valuation marks.
+    related_chapter_ids: [I]
+    related_risk_ids: [R-002]
+    priority: high
+  - gap_id: G-005
+    title: Top customers and reference checks
+    category: commercial
+    status: open
+    description: Required to validate customer concentration, contract terms, vendor-published case-study claims, renewal risk, and satisfaction.
+    related_chapter_ids: [III, V]
+    related_risk_ids: [R-004]
+    priority: high
+  - gap_id: G-006
+    title: GTM funnel and CAC/payback
+    category: commercial
+    status: open
+    description: Required to assess conversion from developer adoption to paid enterprise ARR and sales efficiency.
+    related_chapter_ids: [III, V]
+    related_risk_ids: [R-001, R-003]
+    priority: high
+  - gap_id: G-007
+    title: Security privacy and subprocessor data room
+    category: legal_compliance
+    status: open
+    description: Required to verify SOC/ISO, pen tests, incidents, data maps, DPIAs/TIAs, DPAs, and vendor risk.
+    related_chapter_ids: [III, VIII]
+    related_risk_ids: [R-005]
+    priority: high
+  - gap_id: G-008
+    title: AI governance and model-provider terms
+    category: technology
+    status: open
+    description: Required to assess Seer/Autofix/AI Code Review accuracy, cost, data use, safety, and customer obligations.
+    related_chapter_ids: [VI, VIII]
+    related_risk_ids: [R-006]
+    priority: high
+  - gap_id: G-009
+    title: IP ownership and OSS compliance
+    category: legal_compliance
+    status: open
+    description: Required to test employee/contractor assignment, fair-source licensing, third-party dependencies, patents, trademarks, and contributor agreements.
+    related_chapter_ids: [VI, VIII]
+    related_risk_ids: [R-008]
+    priority: medium
+  - gap_id: G-010
+    title: HR census compensation and retention
+    category: people
+    status: open
+    description: Required to reconcile headcount and evaluate compensation, option grants, attrition, recruiting, and employment liabilities.
+    related_chapter_ids: [VII]
+    related_risk_ids: [R-009]
+    priority: medium
+  - gap_id: G-011
+    title: Tax and international compliance records
+    category: tax
+    status: open
+    description: Required to evaluate federal/state/local/foreign tax, VAT/GST, transfer pricing, payroll, and audits.
+    related_chapter_ids: [II]
+    related_risk_ids: [R-007]
+    priority: medium
+  - gap_id: G-012
+    title: Full legal disclosure and insurance
+    category: legal_compliance
+    status: open
+    description: Required to clear litigation, regulatory, corporate, material-contract, IP, privacy, and coverage issues.
+    related_chapter_ids: [VIII]
+    related_risk_ids: [R-010, R-005]
+    priority: high
+
+follow_up_requests:
+  - request_id: FR-001
+    title: Financial data room
+    owner: CFO / finance team
+    priority: high
+    request: Provide audited financial statements, monthly management accounts, ARR bridge, COGS support, cash/debt schedule, budget-vs-actuals, and runway model.
+    related_gap_ids: [G-001, G-002, G-003]
+  - request_id: FR-002
+    title: Revenue and customer cohort export
+    owner: Revenue operations
+    priority: high
+    request: Provide customer-level ARR, plan, product, usage, overage, discount, expansion, churn, renewal date, and NRR/GRR cohorts.
+    related_gap_ids: [G-002, G-005]
+  - request_id: FR-003
+    title: Cap table and financing history
+    owner: Legal / finance
+    priority: high
+    request: Provide fully diluted cap table, financing documents, investor rights, stock plans, 409A reports, debt/convertibles/warrants, and secondary history.
+    related_gap_ids: [G-004]
+  - request_id: FR-004
+    title: Customer reference program
+    owner: Sales / customer success
+    priority: high
+    request: Approve reference calls with top customers and named case-study customers, including Anthropic, Bolt, and Supabase if active and material.
+    related_gap_ids: [G-005]
+  - request_id: FR-005
+    title: GTM efficiency workbook
+    owner: CRO / revenue operations
+    priority: high
+    request: Provide funnel metrics, CAC/payback, pipeline, sales productivity, quota attainment, channel ROI, win/loss, and competitor displacement data.
+    related_gap_ids: [G-006]
+  - request_id: FR-006
+    title: Cloud and AI cost detail
+    owner: Engineering / finance
+    priority: high
+    request: Provide cloud spend by service/product/customer, retention and sampling policies, model-provider costs, and margin scenarios for event volume and AI usage.
+    related_gap_ids: [G-003, G-008]
+  - request_id: FR-007
+    title: Security privacy data room
+    owner: CISO / legal
+    priority: high
+    request: Provide SOC2/ISO reports, pen tests, vulnerability process, incident logs, data maps, DPIAs/TIAs, DPA template and exceptions, and subprocessor assessments.
+    related_gap_ids: [G-007]
+  - request_id: FR-008
+    title: AI governance evidence
+    owner: Product / engineering / legal
+    priority: high
+    request: Provide Seer/AI feature metrics, evaluation results, safety guardrails, prompt/data retention controls, model-provider terms, and customer opt-out handling.
+    related_gap_ids: [G-008]
+  - request_id: FR-009
+    title: IP and OSS compliance review
+    owner: Legal / engineering
+    priority: medium
+    request: Provide IP assignment coverage, contractor agreements, OSS SCA reports, dependency policies, contributor agreements, patents, trademarks, and domain schedule.
+    related_gap_ids: [G-009]
+  - request_id: FR-010
+    title: HR diligence package
+    owner: People team
+    priority: medium
+    request: Provide employee census, payroll, compensation bands, equity grants, commission plans, benefits, attrition, recruiting, engagement, and employment claims.
+    related_gap_ids: [G-010]
+  - request_id: FR-011
+    title: Tax diligence package
+    owner: Tax / finance
+    priority: medium
+    request: Provide income tax returns, nexus study, VAT/GST registrations, transfer pricing files, payroll tax records, R&D credit support, and audit correspondence.
+    related_gap_ids: [G-011]
+  - request_id: FR-012
+    title: Legal disclosure and insurance
+    owner: General counsel
+    priority: high
+    request: Provide legal disclosure schedules, material contracts, litigation/claims logs, regulatory correspondence, corporate records, insurance policies, and loss runs.
+    related_gap_ids: [G-012]
+
+limitations:
+  - limitation_id: L-001
+    title: Public-source-only scope
+    description: This report uses public information only and cannot confirm private financials, contracts, cap table, HR records, legal disclosures, security audit reports, or customer references.
+  - limitation_id: L-002
+    title: Vendor-published evidence caveat
+    description: Sentry product, pricing, customer, security, and subprocessors pages are primary evidence for company claims but may be marketing-oriented and require documentary confirmation.
+  - limitation_id: L-003
+    title: Secondary database caveat
+    description: CB Insights valuation, funding, and status fields are useful external markers but are not substitute evidence for financing documents or current private-market valuation.
+  - limitation_id: L-004
+    title: Litigation search limitation
+    description: CourtListener published-opinion searches are not comprehensive legal clearance and may omit dockets, complaints, private arbitrations, demands, settlements, investigations, and sealed matters.
+  - limitation_id: L-005
+    title: Headcount/profile limitation
+    description: LinkedIn and The Org counts are directional public profile signals and may differ from payroll census, contractor counts, or legal-entity employment records.
+  - limitation_id: L-006
+    title: Access limitations
+    description: Some direct web access was blocked or rate-limited during research; unsupported blocked pages were not used as affirmative evidence.
