@@ -1,0 +1,3584 @@
+report_metadata:
+  report_title: Salt Security Public-Source Startup Diligence Report
+  target_company: Salt Security
+  website: https://salt.security/
+  known_aliases:
+    - Salt Security, Inc.
+    - Salt
+    - Secful
+  sector: API security, application security, and cloud security software
+  geography: United States headquartered with Israel-linked founding and R&D footprint
+  company_stage: Late-stage private cybersecurity unicorn
+  research_date: 2026-05-16
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Prioritized company-owned press releases, product pages, customer pages, privacy documentation, and subprocessor disclosures.
+    - Cross-checked financing and unicorn status against independent news and market-database sources where available.
+    - Used public patent records to test founder and IP provenance, and negative public-search results only as a low-confidence absence-of-evidence signal.
+    - Treated all revenue, customer-growth, employee-growth, customer-logo, and product-efficacy statements as unaudited management or marketing claims unless independently corroborated.
+  included_jurisdictions:
+    - United States
+    - Israel
+    - European Union / EEA privacy context
+    - United Kingdom privacy and customer context
+  excluded_topics:
+    - Private audited financial statements, ARR schedules, gross margin, burn, cash, debt, option ledgers, investor rights agreements, and board materials were unavailable.
+    - No customer reference calls, supplier diligence calls, code review, penetration-test review, SOC 2 report review, or paid database research was performed.
+    - Litigation checks were limited to public web-searchable records; no PACER, state-court docket, or regulator-portal exhaustive search was completed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-05-16
+      notes: User requested a standard-depth public-source diligence report for Salt Security saved as reports/salt-security-diligence-report.yaml.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Salt Security is an API security company whose platform covers API discovery, posture/governance, and behavioral threat protection.
+    claim_source: Salt Security product and platform pages
+    claim_date: null
+    mapped_chapter_ids: [II, IV, VI]
+    mapped_section_ids: [II.A, IV.A, VI.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-008, EC-009, EC-010]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request product telemetry, deployment architecture, false-positive/false-negative history, and third-party validation for claimed protection coverage.
+  - founder_claim_id: FC-002
+    claim_text: Salt Security became a unicorn at a $1.4 billion valuation after a $140 million Series D led by CapitalG.
+    claim_source: Salt Security / PRNewswire Series D announcement and CB Insights unicorn tracker
+    claim_date: 2022-02-10
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.C]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-001, EC-002]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request the Series D financing documents, liquidation preferences, option-pool refresh, and current post-money valuation bridge.
+  - founder_claim_id: FC-003
+    claim_text: Salt Security reported 500% revenue growth, 300% customer growth, 250% employee growth, and 900% Fortune/Global 500 signed-customer growth around the Series D.
+    claim_source: Salt Security / PRNewswire Series D announcement
+    claim_date: 2022-02-10
+    mapped_chapter_ids: [I, III, V, VII]
+    mapped_section_ids: [I.A, III.A, V.D, VII.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-006, EC-024]
+    contradiction_summary: Growth percentages are publicly stated, but public sources do not disclose baseline values, period definitions, audited revenue, net retention, customer count, or headcount detail.
+    diligence_follow_up:
+      - Request ARR cohort tables, customer-count definitions, employee roster history, and reconciliation from public percentages to audited operating metrics.
+  - founder_claim_id: FC-004
+    claim_text: Salt Security's customer base includes large enterprises such as Ally Bank, Finastra, Equinix, Armis, Carrefour, City National Bank, Payoneer, and TripActions.
+    claim_source: Salt Security customer pages and case studies
+    claim_date: null
+    mapped_chapter_ids: [III, V]
+    mapped_section_ids: [III.A, V.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-011, EC-012]
+    contradiction_summary: Logos and case studies are public marketing evidence, but revenue contribution, renewal status, current deployment scope, and reference willingness are not public.
+    diligence_follow_up:
+      - Conduct customer reference calls and request current signed-order forms, renewal history, NRR/GRR, support tickets, and churn/downsells by logo.
+  - founder_claim_id: FC-005
+    claim_text: Salt Security applies behavioral analytics, machine learning, and newer agentic-security positioning to detect API threats.
+    claim_source: Salt Security product pages and agentic-security announcement
+    claim_date: null
+    mapped_chapter_ids: [II, VI]
+    mapped_section_ids: [II.A, VI.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-009, EC-022]
+    contradiction_summary: Public materials describe the technical approach, but model design, training data, performance benchmarks, and production incident data are not independently verifiable from public sources.
+    diligence_follow_up:
+      - Review detection benchmark methodology, model governance, incident postmortems, red-team results, and customer-measured outcomes.
+  - founder_claim_id: FC-006
+    claim_text: Public company materials and older public sources consistently identify the company's founding history and founders.
+    claim_source: Salt Security about page, older financing announcements, Crunchbase snippets, and patent records
+    claim_date: null
+    mapped_chapter_ids: [VII, VIII]
+    mapped_section_ids: [VII.C, VIII.D]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-015, EC-016, EC-017]
+    contradiction_summary: Current Salt materials reviewed in-session cite Roey Eliyahu and Michael Nicosia with a 2018 founding narrative, while older financing materials and market-database snippets reference a 2016 origin and/or Omer Sadika; patent records tie Roey Eliyahu and Omer Sadika to Secful IP.
+    diligence_follow_up:
+      - Request incorporation records, founder IP assignment agreements, founder separation documents, option/vesting treatment, and representations on any unresolved founder claims.
+  - founder_claim_id: FC-007
+    claim_text: Salt Security publishes privacy, GDPR/CCPA, cross-border-transfer, and subprocessor disclosures for its customer-data processing.
+    claim_source: Salt Security privacy policy and subprocessor page
+    claim_date: null
+    mapped_chapter_ids: [III, VIII]
+    mapped_section_ids: [III.E, VIII.G]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-013, EC-014, EC-026]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request the current DPA, SCC modules, SOC 2 report, ISO certificates, vendor-risk assessments, and data-retention implementation evidence.
+
+executive_summary:
+  overall_assessment: >-
+    Salt Security is a credible late-stage API security vendor with verified unicorn financing, recognizable enterprise logos, and a public product narrative aligned to API discovery, posture, and threat protection. The diligence case is nevertheless materially incomplete because audited financials, current ARR, current valuation, customer concentration, product-efficacy evidence, cap table economics, and founder/IP provenance documents are not public.
+  investment_or_diligence_thesis: >-
+    Track for follow-on diligence rather than underwrite from public sources alone: the company occupies an important security category and has strong historical financing validation, but the 2022 valuation and growth claims must be re-underwritten against current ARR quality, renewal data, competitive displacement, and technical efficacy.
+  strongest_verified_claims:
+    - founder_claim_id: FC-002
+      summary: CB Insights and the Series D announcement support Salt's $1.4 billion unicorn valuation and $140 million Series D financing.
+      evidence_claim_ids: [EC-001, EC-002]
+    - founder_claim_id: FC-001
+      summary: Company product materials consistently position Salt around API discovery, posture/governance, and runtime threat protection.
+      evidence_claim_ids: [EC-008, EC-009]
+    - founder_claim_id: FC-007
+      summary: Salt publishes privacy and subprocessor disclosures naming key infrastructure, AI, database, analytics, and affiliated processing vendors.
+      evidence_claim_ids: [EC-013, EC-014]
+  biggest_risks:
+    - risk_id: R-001
+      summary: Financial opacity and the age of the $1.4 billion valuation make current enterprise value hard to underwrite.
+    - risk_id: R-002
+      summary: Inconsistent public founding narratives and Secful-linked patent history require direct founder/IP document diligence.
+    - risk_id: R-003
+      summary: API security is strategically attractive but competitive against standalone vendors and larger application-security/platform suites.
+    - risk_id: R-005
+      summary: Privacy, AI, cloud, database, and analytics subprocessors create operational and regulatory diligence dependencies.
+  key_evidence_gaps:
+    - Audited financial statements, ARR/MRR bridge, gross margin, cash runway, debt, and burn were not public.
+    - Current cap table, preference stack, option pool, SAFE/convertible instruments, and valuation marks were not public.
+    - Current customer list, revenue concentration, churn, NRR/GRR, deployment scope, and referenceability were not public.
+    - Product-efficacy metrics, independent benchmarks, incident history, and SOC 2 / ISO evidence were not public.
+    - Founder IP assignment and any founder separation or dispute documents were not public.
+  recommended_next_steps:
+    - Obtain financial statements, ARR waterfall, bookings pipeline, cohort retention, margin, burn, cash, debt, and board KPI packs.
+    - Review Series A-D financing documents, current cap table, investor rights, liquidation preferences, and valuation marks.
+    - Conduct five to eight customer references across named logos and recent wins/losses; reconcile references to live revenue and renewal records.
+    - Perform technical diligence on API discovery coverage, runtime detection efficacy, deployment friction, data flows, AI usage, and incident history.
+    - Commission legal review of incorporation history, founder/IP assignments, Secful patent assets, privacy obligations, subprocessors, and material contracts.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: >-
+      Public financing evidence is strong through the 2022 Series D, but operating financials are not public. The central diligence issue is whether Salt's current ARR quality, growth durability, and cash profile support or reset the historical $1.4 billion valuation.
+    founder_claim_ids: [FC-002, FC-003]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-005, EC-006, EC-007]
+    risk_ids: [R-001, R-007]
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: >-
+          No audited financial statements, quarterly P&L, revenue by product, gross margin, deferred revenue, burn, cash, or debt schedule were located in public sources. The most concrete operating datapoints are unaudited growth percentages reported in the 2022 Series D announcement.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-KF-001
+            finding: Public sources support historical financing and growth claims but not absolute ARR or profitability.
+            evidence_claim_ids: [EC-006, EC-007]
+            risk_ids: [R-001]
+          - finding_id: I.A-KF-002
+            finding: The absence of current public financials means valuation must be re-underwritten directly from management data.
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-001, R-007]
+        hidden_risks:
+          - Public percentage-growth claims can mask small baselines, one-time enterprise wins, or weaker net retention after the funding cycle.
+          - Cybersecurity budget cycles and consolidation into larger suites may pressure standalone ARR growth and pricing.
+        evidence_gaps:
+          - Audited financials, current ARR, revenue by product/customer/region, gross margin, burn, cash, debt, and bookings pipeline.
+        follow_up_questions:
+          - What were ARR, net dollar retention, gross retention, CAC payback, gross margin, burn multiple, cash balance, and runway at each quarter since 2021?
+        table_ids: [T-001, T-002, T-003]
+        figure_ids: [F-001, F-002]
+        evidence_claim_ids: [EC-001, EC-002, EC-006, EC-007]
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8]
+        summary: >-
+          Public sources did not provide management forecasts, pipeline conversion, budget, or hiring-plan projections. Any underwriting case requires direct access to the plan and variance history.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-KF-001
+            finding: The Series D release describes rapid growth and customer expansion, but no forecast methodology or current plan was public.
+            evidence_claim_ids: [EC-006, EC-007]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Forecasts may depend on continued enterprise-security budget expansion, channel performance, and displacement of broader application-security platforms.
+        evidence_gaps:
+          - Board-approved plan, pipeline coverage, sales capacity model, quota attainment, churn scenarios, and sensitivity cases.
+        follow_up_questions:
+          - How does management bridge current ARR to the next 24 months by new logos, expansion, price increases, churn, and channel contribution?
+        table_ids: [T-002, T-003]
+        figure_ids: [F-002]
+        evidence_claim_ids: [EC-006, EC-007]
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: >-
+          Public announcements identify Seed/Series A-D milestones and the 2022 $1.4 billion valuation, but cap table economics, preference stack, option pool, debt, and secondary activity are not public.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.C-KF-001
+            finding: Series D was $140 million led by CapitalG, bringing total disclosed funding to $271 million at a $1.4 billion valuation.
+            evidence_claim_ids: [EC-001, EC-002]
+            risk_ids: [R-001]
+          - finding_id: I.C-KF-002
+            finding: Earlier rounds include Series A, B, and C financing events led or joined by recognized venture investors.
+            evidence_claim_ids: [EC-003, EC-004, EC-005]
+            risk_ids: [R-001]
+        hidden_risks:
+          - A high 2022 valuation may imply complex liquidation preferences or reset risk if current growth has decelerated.
+          - Public funding totals do not reveal liquidation preference, participating preferred rights, redemption rights, debt, or option-pool dilution.
+        evidence_gaps:
+          - Fully diluted cap table, investor-rights agreements, option grants, secondary transactions, debt documents, and valuation marks.
+        follow_up_questions:
+          - What is the current fully diluted ownership, preference stack, liquidation waterfall, and most recent 409A / third-party valuation?
+        table_ids: [T-001]
+        figure_ids: [F-001, F-002]
+        evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-005]
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: >-
+          Tax, debt, off-balance-sheet liabilities, significant contracts, credit facilities, and insurance schedules were not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.D-KF-001
+            finding: No public source reviewed disclosed debt, liens, cash balance, or material non-equity financing.
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-001]
+        hidden_risks:
+          - Enterprise SaaS contracts may include service-credit, indemnity, privacy, and breach-notification obligations not visible in marketing materials.
+        evidence_gaps:
+          - Debt schedule, liens, tax exposures, customer indemnities, data breach insurance, and material-contract liabilities.
+        follow_up_questions:
+          - Provide all debt, liens, guarantees, material off-balance-sheet obligations, service-credit exposure, and insurance claims history.
+        table_ids: [T-002]
+        figure_ids: []
+        evidence_claim_ids: [EC-007]
+  - chapter_id: II
+    title: Products
+    chapter_summary: >-
+      Salt's public product architecture centers on API discovery, posture/governance, runtime threat protection, and security-program integrations. The key diligence question is whether runtime efficacy and deployment coverage are independently validated across live enterprise environments.
+    founder_claim_ids: [FC-001, FC-005]
+    evidence_claim_ids: [EC-008, EC-009, EC-010, EC-022]
+    risk_ids: [R-003, R-006, R-005]
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: >-
+          Public product pages describe a platform for API discovery, inventory/context, posture and compliance, threat detection, testing/remediation, and integrations into development, cloud, and security workflows. Public materials also highlight newer agentic-security positioning.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-KF-001
+            finding: Product modules are clearly described in public Salt materials, but performance claims remain management assertions.
+            evidence_claim_ids: [EC-008, EC-009]
+            risk_ids: [R-006]
+          - finding_id: II.A-KF-002
+            finding: Public integration signals include GitHub Connect and Databricks/Netlify-related connectors or partner content.
+            evidence_claim_ids: [EC-010]
+            risk_ids: [R-003]
+          - finding_id: II.A-KF-003
+            finding: AI/agentic-security messaging creates incremental product opportunity and incremental data-governance questions.
+            evidence_claim_ids: [EC-009, EC-022, EC-026]
+            risk_ids: [R-005, R-006]
+        hidden_risks:
+          - API discovery gaps can undermine downstream posture and threat-detection claims if traffic coverage is incomplete.
+          - Runtime detection quality may vary by deployment mode, data sources, baseline period, and customer API complexity.
+          - AI-enabled security positioning may create customer questions about data processing, explainability, and model/vendor dependencies.
+        evidence_gaps:
+          - Architecture diagrams, deployment modes, supported gateways, API coverage metrics, detection precision/recall, model governance, and customer incident outcomes.
+        follow_up_questions:
+          - What percentage of APIs are discovered in production within 30/60/90 days, and how is coverage measured against customer source-of-truth inventories?
+          - What independent benchmark or red-team evidence supports Salt's threat-detection claims?
+        table_ids: [T-004, T-005, T-006]
+        figure_ids: [F-003, F-004]
+        evidence_claim_ids: [EC-008, EC-009, EC-010, EC-022, EC-026]
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: >-
+      Salt publicly names credible enterprise customers and publishes case-study/logos, but revenue concentration, renewal status, deployment breadth, customer satisfaction, and churn are not public.
+    founder_claim_ids: [FC-003, FC-004, FC-007]
+    evidence_claim_ids: [EC-011, EC-012, EC-013, EC-014, EC-025]
+    risk_ids: [R-004, R-005]
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids: [III.A]
+        summary: >-
+          Public Salt materials list enterprise customers across financial services, technology, retail, travel, and infrastructure. Public sources do not rank customers by revenue or deployment size.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-KF-001
+            finding: Salt's named logos include multiple large enterprises, but the revenue contribution and current contract status of each logo are not public.
+            evidence_claim_ids: [EC-011, EC-012]
+            risk_ids: [R-004]
+        hidden_risks:
+          - Customer logos may include pilots, expired deployments, limited-scope contracts, or low-revenue reference use.
+          - Large financial-services customers can create demanding uptime, privacy, audit, and indemnity obligations.
+        evidence_gaps:
+          - Top-20 customer list by ARR, contract start/end dates, deployment scope, renewal status, NRR/GRR, support tickets, and churn/downsells.
+        follow_up_questions:
+          - Which public customer logos remain active paid customers today, what ARR do they represent, and are they willing to provide references?
+        table_ids: [T-007, T-008]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-011, EC-012]
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids: [III.B]
+        summary: >-
+          Public materials indicate integrations and ecosystem relationships with developer, data, and deployment platforms, but channel economics and contractual commitments are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-KF-001
+            finding: GitHub Connect and Databricks/Netlify references support a strategy of embedding API security into existing developer and data workflows.
+            evidence_claim_ids: [EC-010]
+            risk_ids: [R-003]
+        hidden_risks:
+          - Integration partners may not drive material revenue unless supported by joint selling, marketplace motions, and technical stickiness.
+        evidence_gaps:
+          - Partner agreements, marketplace revenue, referral fees, integration usage, and co-sell pipeline.
+        follow_up_questions:
+          - What portion of pipeline and ARR comes through partner or marketplace motions, and what contractual commitments exist?
+        table_ids: [T-005, T-013]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-010, EC-020]
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids: [III.C]
+        summary: >-
+          Revenue by customer is not public. Public logos and growth percentages are insufficient to assess concentration, expansion, churn, or cohort quality.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-KF-001
+            finding: Salt's customer-growth percentage is public, but the underlying denominator and revenue distribution are not.
+            evidence_claim_ids: [EC-006, EC-012]
+            risk_ids: [R-004]
+        hidden_risks:
+          - Enterprise cybersecurity ARR can be concentrated in a small number of large accounts or renewals.
+        evidence_gaps:
+          - Customer ARR distribution, renewal schedule, cohort retention, upsell/downsell, and customer health scores.
+        follow_up_questions:
+          - Provide top customers by ARR and renewal month, including gross retention and net retention by cohort.
+        table_ids: [T-008]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-012]
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids: [III.D]
+        summary: >-
+          Public sources reviewed did not identify significant severed customer relationships, but absence of public evidence is not conclusive.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: III.D-KF-001
+            finding: No public churn or severed-strategic-relationship disclosures were located.
+            evidence_claim_ids: [EC-012]
+            risk_ids: [R-004]
+        hidden_risks:
+          - Churn, product replacement, security incidents, or procurement disputes may remain confidential.
+        evidence_gaps:
+          - Churn log, lost-deal reports, customer escalations, legal demand letters, and non-renewal reasons.
+        follow_up_questions:
+          - List every top-50 customer churn, non-renewal, or material downsell in the last 24 months and the stated reason.
+        table_ids: [T-008]
+        figure_ids: []
+        evidence_claim_ids: [EC-012]
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids: [III.E]
+        summary: >-
+          Salt's public subprocessor disclosure identifies major infrastructure, AI, database, analytics, and affiliated-service providers, including AWS, Microsoft Azure OpenAI, MongoDB Atlas, SingleStore, Sisense, Sec4U, Salt Canada, and Salt Ltd.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: III.E-KF-001
+            finding: Public subprocessor disclosures provide supplier-risk leads for security, privacy, continuity, and AI/data-processing diligence.
+            evidence_claim_ids: [EC-013, EC-025, EC-026]
+            risk_ids: [R-005]
+        hidden_risks:
+          - Cloud, database, analytics, and AI subprocessors can create concentration, cross-border transfer, retention, and regulatory-control dependencies.
+        evidence_gaps:
+          - Supplier contracts, DPAs, incident SLAs, data residency controls, audit reports, and business-continuity plans.
+        follow_up_questions:
+          - Which subprocessors process production customer traffic, API payloads, model inputs, security findings, logs, or metadata?
+        table_ids: [T-009, T-020]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-013, EC-014, EC-025, EC-026]
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: >-
+      API security is a meaningful security subcategory, but Salt competes with standalone API-security vendors and broader application-security, cloud-security, gateway, and security-platform vendors. Public differentiation claims require customer win/loss and technical evidence.
+    founder_claim_ids: [FC-001, FC-005]
+    evidence_claim_ids: [EC-008, EC-009, EC-019, EC-020]
+    risk_ids: [R-003, R-006]
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: >-
+          Salt's public positioning emphasizes dedicated API security, behavioral runtime protection, posture, and discovery. Competitive pressure comes from other API-security specialists and larger security platforms that can bundle API protection into existing customer footprints.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-KF-001
+            finding: Salt has clear category positioning, but public sources do not prove win rates versus standalone competitors or platform vendors.
+            evidence_claim_ids: [EC-008, EC-019]
+            risk_ids: [R-003]
+          - finding_id: IV.A-KF-002
+            finding: Integration and agentic-security messaging could help maintain relevance but may also invite competition from platform vendors.
+            evidence_claim_ids: [EC-010, EC-022]
+            risk_ids: [R-003, R-006]
+        hidden_risks:
+          - Incumbent security platforms may undercut pricing or bundle API functionality.
+          - Customer security teams may prefer consolidated CNAPP/WAF/API gateway/application-security platforms over standalone tools.
+        evidence_gaps:
+          - Win/loss reports, displacement data, renewal loss reasons, competitive battlecards, feature benchmark results, and pricing comparisons.
+        follow_up_questions:
+          - Against which vendors does Salt most often win or lose, and what is the pattern by customer segment, deployment mode, and geography?
+        table_ids: [T-010, T-011, T-012]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-008, EC-009, EC-010, EC-019, EC-022]
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: >-
+      Public materials indicate an enterprise-led go-to-market motion supported by customer logos, case studies, product integrations, and security thought leadership. Sales productivity, pipeline conversion, partner economics, and budget efficiency are not public.
+    founder_claim_ids: [FC-003, FC-004]
+    evidence_claim_ids: [EC-006, EC-011, EC-020]
+    risk_ids: [R-004, R-007, R-003]
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids: [V.A.1, V.A.2, V.A.3, V.A.4]
+        summary: >-
+          Salt appears to sell to enterprise security and application teams through direct enterprise sales, customer references, category education, and product integrations. Public sources do not disclose sales capacity or productivity.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-KF-001
+            finding: Customer logos, API-security education, and integrations support an enterprise GTM narrative.
+            evidence_claim_ids: [EC-011, EC-020]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Enterprise GTM can be expensive, sales-cycle length can lengthen in security budget downturns, and channel contribution may be overstated.
+        evidence_gaps:
+          - Quota-carrying reps, pipeline coverage, win rates, sales cycle, CAC payback, marketing spend, partner attribution, and discounting.
+        follow_up_questions:
+          - Provide by-quarter pipeline, bookings, quota attainment, win/loss, CAC payback, sales-cycle length, and channel contribution since 2021.
+        table_ids: [T-013, T-015]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-011, EC-020]
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids: [V.B.1, V.B.2, V.B.3]
+        summary: >-
+          Major-customer evidence is primarily logo/case-study based. This supports brand credibility but does not substitute for live references and contract-level diligence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-KF-001
+            finding: Named enterprises support market credibility, but deployment size and paid status must be checked.
+            evidence_claim_ids: [EC-011, EC-012]
+            risk_ids: [R-004]
+        hidden_risks:
+          - Some logos may be non-referenceable or reflect narrow product use.
+        evidence_gaps:
+          - Customer consent to reference, live deployments, renewal dates, contract value, expansion opportunities, and support escalations.
+        follow_up_questions:
+          - Which customer logos can take diligence calls within two weeks, and what deployment metrics will they validate?
+        table_ids: [T-007, T-014]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-011, EC-012]
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids: [V.C]
+        summary: >-
+          Public signals point to direct enterprise sales, product-led technical education, partner/integration visibility, and thought leadership around API attack risk.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-KF-001
+            finding: Integrations and named customer stories can feed demand generation but public evidence does not quantify pipeline attribution.
+            evidence_claim_ids: [EC-010, EC-011, EC-020]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Category awareness may be high, but budgets could be captured by application-security, WAF, API gateway, or CNAPP vendors.
+        evidence_gaps:
+          - Lead-source attribution, campaign ROI, partner pipeline, marketplace transactions, and sales-assist economics.
+        follow_up_questions:
+          - What are the top three lead sources by closed-won ARR and CAC payback?
+        table_ids: [T-013, T-015]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-010, EC-020]
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids: [V.D.1, V.D.2, V.D.3, V.D.4]
+        summary: >-
+          Public sources did not disclose sales force size, quota attainment, ramp time, rep productivity, sales cycle, or CAC payback.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-KF-001
+            finding: Public employee-growth claims do not identify quota capacity or productivity.
+            evidence_claim_ids: [EC-006, EC-024]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Headcount growth without quota productivity can materially increase burn multiple.
+        evidence_gaps:
+          - Rep roster, quota capacity, attainment, ramp cohorts, sales cycle, discounting, CAC payback, and pipeline coverage.
+        follow_up_questions:
+          - How many quota-carrying reps are currently productive, ramping, or underperforming, and what ARR does each cohort generate?
+        table_ids: [T-015, T-019]
+        figure_ids: [F-011]
+        evidence_claim_ids: [EC-006, EC-024]
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids: [V.E]
+        summary: >-
+          Current and projected marketing budgets were not public. Category education, customer references, and partner integrations are visible, but their cost and conversion rates are unknown.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-KF-001
+            finding: Public GTM signals are qualitative; spend efficiency cannot be assessed from public evidence.
+            evidence_claim_ids: [EC-020]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Marketing ROI may decline if API-security demand is captured by broader platform vendors.
+        evidence_gaps:
+          - Marketing budget, campaign ROI, lead quality, paid-channel mix, field-event spend, and partner marketing contribution.
+        follow_up_questions:
+          - Provide marketing source-of-pipeline and source-of-ARR by channel for the past eight quarters.
+        table_ids: [T-013, T-015]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-020]
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: >-
+      Public evidence shows active product development around API security, integrations, and AI/agentic positioning, while patent evidence links Secful-era IP to Roey Eliyahu and Omer Sadika. Internal roadmap, code quality, R&D headcount, and technical debt remain non-public.
+    founder_claim_ids: [FC-001, FC-005, FC-006]
+    evidence_claim_ids: [EC-008, EC-009, EC-010, EC-015, EC-022, EC-023]
+    risk_ids: [R-002, R-006, R-005]
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids: [VI.A.1, VI.A.2, VI.A.3]
+        summary: >-
+          Public materials indicate Israel-linked founding/R&D context and product development in API security, but no detailed R&D org chart, headcount-by-function, budget, release cadence, backlog, or technical-debt register was public.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VI.A-KF-001
+            finding: Public patent records and product releases show technical history, but not current R&D capacity.
+            evidence_claim_ids: [EC-010, EC-015, EC-023]
+            risk_ids: [R-002, R-006]
+        hidden_risks:
+          - R&D execution may depend on scarce API-security, threat-research, and machine-learning talent.
+          - Founder/IP provenance questions can affect technical ownership if not contractually clean.
+        evidence_gaps:
+          - Engineering org chart, team locations, attrition, roadmap, bug backlog, technical debt, SDLC controls, and security review process.
+        follow_up_questions:
+          - Provide current R&D headcount by function and geography, roadmap commitments, release cadence, security bug backlog, and model-governance ownership.
+        table_ids: [T-016, T-017, T-019]
+        figure_ids: [F-008, F-011]
+        evidence_claim_ids: [EC-010, EC-015, EC-023, EC-024]
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.B.3, VI.B.4]
+        summary: >-
+          Public new-product signals include integrations and agentic-security positioning, but commercial adoption, release timing, and roadmap risk are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-KF-001
+            finding: GitHub Connect, Databricks/Netlify references, and agentic-security messaging indicate pipeline direction toward developer workflows and AI-era API risk.
+            evidence_claim_ids: [EC-010, EC-022]
+            risk_ids: [R-003, R-006]
+        hidden_risks:
+          - New product messaging may be ahead of realized customer adoption or monetization.
+          - AI/agentic features may increase evaluation burden for privacy, security, and model-risk teams.
+        evidence_gaps:
+          - Roadmap, beta customer list, SKU/pricing, attach rates, usage telemetry, release risks, and model-validation results.
+        follow_up_questions:
+          - Which new products have separate SKU revenue, committed design partners, active production usage, and measurable retention impact?
+        table_ids: [T-005, T-016]
+        figure_ids: [F-004, F-008]
+        evidence_claim_ids: [EC-010, EC-022]
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: >-
+      Public leadership and growth claims support a scaled late-stage organization, but founder history contains public inconsistencies and detailed personnel data is not public.
+    founder_claim_ids: [FC-003, FC-006]
+    evidence_claim_ids: [EC-016, EC-017, EC-024]
+    risk_ids: [R-002, R-007, R-008]
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids: [VII.A]
+        summary: >-
+          Current public pages identify executive leadership at a high level, but no complete organization chart, reporting lines, board composition, or functional ownership map was public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-KF-001
+            finding: Public leadership pages are useful for executive identification but not enough for organizational diligence.
+            evidence_claim_ids: [EC-017]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Leadership changes, founder role changes, and unclear ownership of AI/privacy/security controls may affect execution risk.
+        evidence_gaps:
+          - Full org chart, board roster, committee structure, decision rights, succession plan, and key-person dependencies.
+        follow_up_questions:
+          - Provide current org chart, board and observer list, executive compensation, succession plans, and key-person retention risk assessment.
+        table_ids: [T-018, T-019]
+        figure_ids: [F-009]
+        evidence_claim_ids: [EC-017, EC-024]
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids: [VII.B]
+        summary: >-
+          The Series D release reported 250% employee growth, but public sources do not disclose baseline headcount, current headcount, functional mix, location mix, attrition, or hiring plan.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-KF-001
+            finding: Employee-growth percentage is public, but absolute employee numbers and cost structure are not.
+            evidence_claim_ids: [EC-006, EC-024]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Rapid hiring may have increased burn or organizational complexity without proportional ARR productivity.
+        evidence_gaps:
+          - Headcount by month/function/location, attrition, open roles, hiring plan, compensation bands, and recruiter capacity.
+        follow_up_questions:
+          - Reconcile employee-growth claims to payroll records and provide headcount by function/location since 2020.
+        table_ids: [T-019]
+        figure_ids: [F-011]
+        evidence_claim_ids: [EC-006, EC-024]
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids: [VII.C]
+        summary: >-
+          Public sources identify key executives, but diligence should verify employment history, founder roles, equity ownership, departures, and any unresolved claims from early company formation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-KF-001
+            finding: Founder and leadership narratives are not fully consistent across current company materials, older financing sources, market-database snippets, and Secful patent records.
+            evidence_claim_ids: [EC-015, EC-016, EC-017]
+            risk_ids: [R-002, R-008]
+        hidden_risks:
+          - Founder-history ambiguity may reflect ordinary narrative evolution, but it can also signal unresolved IP, equity, attribution, or separation issues.
+        evidence_gaps:
+          - Incorporation documents, founder agreements, IP assignments, invention-assignment chains, founder departures, and equity treatment.
+        follow_up_questions:
+          - Identify all founders and early inventors, describe any departures or role changes, and provide signed IP assignment and release documents.
+        table_ids: [T-018, T-017]
+        figure_ids: [F-009]
+        evidence_claim_ids: [EC-015, EC-016, EC-017, EC-023]
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids: [VII.D.1, VII.D.2]
+        summary: Compensation arrangements were not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-KF-001
+            finding: Public materials do not disclose executive compensation, severance, bonus plans, commissions, or retention packages.
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Retention packages and sales commissions may affect burn, dilution, and post-transaction incentives.
+        evidence_gaps:
+          - Executive compensation, commission plans, severance, retention grants, and change-of-control terms.
+        follow_up_questions:
+          - Provide executive compensation, commission plan, retention packages, and change-of-control arrangements.
+        table_ids: [T-019]
+        figure_ids: []
+        evidence_claim_ids: [EC-007]
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids: [VII.E]
+        summary: Option plans, equity grants, and option-pool capacity were not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-KF-001
+            finding: Public financing data does not reveal employee equity dilution or incentive-plan sufficiency.
+            evidence_claim_ids: [EC-001, EC-002]
+            risk_ids: [R-001, R-007]
+        hidden_risks:
+          - Late-stage down-round or refresh grants could dilute common holders and complicate retention.
+        evidence_gaps:
+          - Equity incentive plan, grant ledger, option pool, refresh policy, 409A history, and retention grants.
+        follow_up_questions:
+          - Provide option ledger, fully diluted share count, refresh grants, 409A values, and unallocated pool.
+        table_ids: [T-001, T-019]
+        figure_ids: [F-002]
+        evidence_claim_ids: [EC-001, EC-002]
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids: [VII.F]
+        summary: Public sources reviewed did not identify significant employee-relations problems, but no exhaustive employment docket or internal HR review was performed.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-KF-001
+            finding: No public employee-relations issue was identified in the reviewed source set.
+            evidence_claim_ids: [EC-018]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Employment disputes, investigations, or retention problems may be confidential.
+        evidence_gaps:
+          - Employment claims, HR investigations, attrition data, engagement surveys, and exit-interview themes.
+        follow_up_questions:
+          - Disclose any employment claims, threatened claims, internal investigations, or material attrition events since 2020.
+        table_ids: [T-020]
+        figure_ids: []
+        evidence_claim_ids: [EC-018]
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids: [VII.G.1, VII.G.2]
+        summary: Personnel turnover was not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-KF-001
+            finding: Public employee-growth percentages do not disclose attrition or retention of key technical and sales personnel.
+            evidence_claim_ids: [EC-024]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Rapid growth can obscure turnover or talent-density changes in critical engineering and sales roles.
+        evidence_gaps:
+          - Attrition by function/location, regretted attrition, key-person departures, and retention plans.
+        follow_up_questions:
+          - Provide quarterly attrition, regretted attrition, and key-person departure logs since 2020.
+        table_ids: [T-019]
+        figure_ids: [F-011]
+        evidence_claim_ids: [EC-024]
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: >-
+      Public legal evidence includes privacy/subprocessor disclosures and patent records. Major litigation was not identified in public searches, but this is not a substitute for counsel-led docket, contract, IP, insurance, and regulatory diligence.
+    founder_claim_ids: [FC-006, FC-007]
+    evidence_claim_ids: [EC-013, EC-014, EC-015, EC-016, EC-018, EC-021, EC-023, EC-026]
+    risk_ids: [R-002, R-005, R-008]
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids: [VIII.A]
+        summary: >-
+          No major pending lawsuit against Salt Security was identified in the public web searches summarized for this report, but this is low-confidence because docket systems were not exhaustively queried.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-KF-001
+            finding: Negative public-search evidence did not surface major pending litigation, IPO, acquisition, shutdown, or enforcement events.
+            evidence_claim_ids: [EC-018, EC-021]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Private arbitration, threatened claims, small docket entries, employment claims, customer disputes, or sealed matters may not be captured.
+        evidence_gaps:
+          - Counsel litigation letter, docket searches, demand letters, threatened claims, indemnity claims, and insurance notices.
+        follow_up_questions:
+          - Provide a counsel-prepared litigation and threatened-claims schedule across all jurisdictions.
+        table_ids: [T-020, T-021]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-018, EC-021]
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids: [VIII.B]
+        summary: >-
+          Public sources reviewed did not identify material litigation initiated by Salt, but exhaustive docket searches were not completed.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-KF-001
+            finding: No public material litigation initiated by the company was found in the reviewed source set.
+            evidence_claim_ids: [EC-018]
+            risk_ids: [R-008]
+        hidden_risks:
+          - IP, customer, vendor, or employment claims may be pending or threatened outside public visibility.
+        evidence_gaps:
+          - Counsel schedule of company-initiated proceedings and threatened matters.
+        follow_up_questions:
+          - List all claims or disputes initiated by Salt or its subsidiaries since inception.
+        table_ids: [T-020, T-021]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-018]
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids: [VIII.C.1, VIII.C.2]
+        summary: >-
+          As a software company, public environmental exposure appears limited; employee safety and workplace issues were not publicly verifiable.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-KF-001
+            finding: Public source set did not identify environmental or employee-safety liabilities.
+            evidence_claim_ids: [EC-018]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Office leases, remote-work compliance, travel, and local employment-law compliance may create non-obvious exposures.
+        evidence_gaps:
+          - EHS policies, employment-law compliance, workers' compensation claims, and office lease obligations.
+        follow_up_questions:
+          - Provide employment-law, workplace-safety, remote-work, and lease-compliance disclosures.
+        table_ids: [T-020]
+        figure_ids: []
+        evidence_claim_ids: [EC-018]
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids: [VIII.D]
+        summary: >-
+          Patent records identify Secful-linked patent US9853996B2 with Roey Eliyahu and Omer Sadika as inventors. The broader IP estate, trademark ownership, open-source usage, invention assignments, and any founder separation terms were not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-KF-001
+            finding: Public patent records provide specific IP provenance evidence but also reinforce the need to reconcile founder and assignment history.
+            evidence_claim_ids: [EC-015, EC-016, EC-023]
+            risk_ids: [R-002, R-008]
+        hidden_risks:
+          - Missing or disputed IP assignments could affect ownership of early inventions, patents, code, trade secrets, or data sets.
+          - Public patent coverage may be narrower than product claims or irrelevant to current defensibility.
+        evidence_gaps:
+          - Patent schedule, trademark schedule, open-source BOM, code ownership, contractor assignments, founder assignments, and IP dispute history.
+        follow_up_questions:
+          - Provide complete IP schedule and all invention-assignment agreements from founders, employees, contractors, and acquired entities.
+        table_ids: [T-017, T-018, T-021]
+        figure_ids: [F-008, F-010]
+        evidence_claim_ids: [EC-015, EC-016, EC-023]
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids: [VIII.E]
+        summary: Insurance coverage and claims history were not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-KF-001
+            finding: Public sources do not disclose cyber, E&O, D&O, EPLI, crime, or general liability coverage.
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Customer indemnity, data breach, service outage, or AI/privacy claims could exceed coverage if policies are weak.
+        evidence_gaps:
+          - Insurance policies, coverage limits, exclusions, claims history, customer-required coverage, and broker letters.
+        follow_up_questions:
+          - Provide current policies, limits, exclusions, pending claims, and customer contract insurance requirements.
+        table_ids: [T-021]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-007]
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids: [VIII.F]
+        summary: >-
+          Material customer, vendor, subprocessor, cloud, AI, database, partner, lease, and financing contracts are not public. Privacy and subprocessor disclosures provide the main public leads.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-KF-001
+            finding: Public subprocessor disclosures identify third-party providers but not contract terms, SLAs, indemnities, or termination rights.
+            evidence_claim_ids: [EC-013, EC-025, EC-026]
+            risk_ids: [R-005]
+        hidden_risks:
+          - Vendor terms may create data-transfer, service-continuity, audit, cost, or AI/data-use obligations.
+          - Customer contracts may include broad security warranties, indemnities, audit rights, or breach penalties.
+        evidence_gaps:
+          - Top customer contracts, vendor contracts, cloud commitments, AI-service terms, DPAs, partner agreements, and termination rights.
+        follow_up_questions:
+          - Provide all material contracts over the diligence threshold, including customer, vendor, partner, cloud, AI, and database agreements.
+        table_ids: [T-009, T-020, T-021]
+        figure_ids: [F-003, F-010]
+        evidence_claim_ids: [EC-013, EC-014, EC-025, EC-026]
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids: [VIII.G]
+        summary: >-
+          Public privacy materials indicate GDPR/CCPA and cross-border-transfer commitments. No regulator enforcement action was identified in the reviewed public source set, but privacy and AI-related data processing warrant counsel review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-KF-001
+            finding: Salt's privacy policy and subprocessor list create concrete diligence workstreams around customer-data processing, cross-border transfers, and AI/vendor use.
+            evidence_claim_ids: [EC-013, EC-014, EC-026]
+            risk_ids: [R-005]
+          - finding_id: VIII.G-KF-002
+            finding: No public regulatory action was identified, but public-search limitations prevent a definitive conclusion.
+            evidence_claim_ids: [EC-018]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Security vendors handling API traffic metadata may process sensitive customer data and be subject to strict contractual, sectoral, and cross-border requirements.
+        evidence_gaps:
+          - Regulator correspondence, DPIAs, transfer-impact assessments, DPA templates, privacy incidents, customer audit reports, and AI governance documentation.
+        follow_up_questions:
+          - Provide privacy incident logs, regulator correspondence, DPIAs, transfer-impact assessments, customer audit findings, and AI governance documentation.
+        table_ids: [T-020, T-021]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-013, EC-014, EC-018, EC-026]
+
+tables:
+  - table_id: T-001
+    title: Public financing history and valuation evidence
+    chapter_id: I
+    section_id: I.C
+    purpose: Summarize disclosed equity financing milestones and diligence implications.
+    columns:
+      - name: milestone
+        description: Publicly disclosed financing event.
+      - name: date
+        description: Announcement or unicorn date.
+      - name: disclosed_terms
+        description: Public amount, lead investor, valuation, or funding total.
+      - name: diligence_read
+        description: What the evidence does and does not prove.
+    rows:
+      - row_id: T-001-R1
+        values:
+          milestone: Series A
+          date: 2020
+          disclosed_terms: $20M Series A led by Tenaya Capital reported publicly.
+          diligence_read: Supports venture validation but not current valuation, preference terms, or ARR.
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-005]
+      - row_id: T-001-R2
+        values:
+          milestone: Series B
+          date: 2020
+          disclosed_terms: $30M Series B led by Sequoia Capital reported publicly.
+          diligence_read: Supports strong investor syndicate; cap table terms remain private.
+        evidence_claim_ids: [EC-004]
+        source_ids: [SRC-004]
+      - row_id: T-001-R3
+        values:
+          milestone: Series C
+          date: 2021
+          disclosed_terms: $70M Series C led by Advent International reported publicly.
+          diligence_read: Indicates pre-Series-D capital availability but not operating quality.
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-003]
+      - row_id: T-001-R4
+        values:
+          milestone: Series D / unicorn
+          date: 2022-02-10
+          disclosed_terms: $140M Series D led by CapitalG; $271M total funding; $1.4B valuation.
+          diligence_read: Verifies unicorn status historically; must be re-underwritten against current metrics.
+        evidence_claim_ids: [EC-001, EC-002]
+        source_ids: [SRC-001, SRC-002]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-005]
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-004, SRC-005]
+    notes: Public sources do not disclose liquidation preference, option-pool refresh, secondary sales, debt, or current valuation.
+  - table_id: T-002
+    title: Financial statement visibility matrix
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify public availability of core financial diligence materials.
+    columns:
+      - name: item
+        description: Financial item required for diligence.
+      - name: public_status
+        description: Whether it was found in public sources.
+      - name: diligence_implication
+        description: Why the gap matters.
+    rows:
+      - row_id: T-002-R1
+        values:
+          item: Audited financial statements
+          public_status: Not found publicly
+          diligence_implication: Cannot assess revenue recognition, costs, margins, cash, debt, or contingencies.
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-002]
+      - row_id: T-002-R2
+        values:
+          item: ARR / MRR schedule
+          public_status: Not found publicly
+          diligence_implication: Historical growth percentages cannot be converted into current run-rate quality.
+        evidence_claim_ids: [EC-006, EC-007]
+        source_ids: [SRC-002]
+      - row_id: T-002-R3
+        values:
+          item: Cash, burn, debt, and runway
+          public_status: Not found publicly
+          diligence_implication: Current financing risk cannot be measured from public evidence.
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-002]
+      - row_id: T-002-R4
+        values:
+          item: Revenue by product and customer
+          public_status: Not found publicly
+          diligence_implication: Product-market fit and customer concentration remain unverified.
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-012]
+    evidence_claim_ids: [EC-006, EC-007, EC-012]
+    source_ids: [SRC-002, SRC-012]
+    notes: Absence of public disclosure is expected for a private company but is material for underwriting.
+  - table_id: T-003
+    title: Public growth claims requiring denominator diligence
+    chapter_id: I
+    section_id: I.A
+    purpose: Convert public growth percentages into explicit diligence requests.
+    columns:
+      - name: metric
+        description: Publicly stated growth claim.
+      - name: public_claim
+        description: Percentage reported.
+      - name: missing_denominator
+        description: Needed baseline and period definition.
+      - name: primary_request
+        description: Data to request from management.
+    rows:
+      - row_id: T-003-R1
+        values:
+          metric: Revenue growth
+          public_claim: 500%
+          missing_denominator: Starting ARR, ending ARR, period, currency, and revenue-recognition policy.
+          primary_request: ARR bridge, audited revenue, bookings, NRR/GRR, and revenue by customer/product.
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-002]
+      - row_id: T-003-R2
+        values:
+          metric: Customer growth
+          public_claim: 300%
+          missing_denominator: Customer-count definition, paid versus pilot, and starting/ending count.
+          primary_request: Customer roster by quarter, paid status, contract value, cohort retention, and churn.
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-002]
+      - row_id: T-003-R3
+        values:
+          metric: Employee growth
+          public_claim: 250%
+          missing_denominator: Starting headcount, function, geography, and contractor inclusion.
+          primary_request: Payroll roster, hiring plan, attrition, and headcount by function/location.
+        evidence_claim_ids: [EC-006, EC-024]
+        source_ids: [SRC-002]
+      - row_id: T-003-R4
+        values:
+          metric: Fortune/Global 500 signed customers
+          public_claim: 900%
+          missing_denominator: Signed-customer baseline, active deployment, contract value, and renewal status.
+          primary_request: Signed enterprise-customer roster, ARR, contract dates, reference status, and deployment scope.
+        evidence_claim_ids: [EC-006, EC-011, EC-012]
+        source_ids: [SRC-002, SRC-012]
+    evidence_claim_ids: [EC-006, EC-011, EC-012, EC-024]
+    source_ids: [SRC-002, SRC-012]
+    notes: Percentage claims are directionally useful but cannot be valued without denominators and current metrics.
+  - table_id: T-004
+    title: Salt product module evidence matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product claims to diligence questions.
+    columns:
+      - name: module
+        description: Public product or capability area.
+      - name: public_evidence
+        description: Company-described capability.
+      - name: diligence_question
+        description: Validation needed.
+    rows:
+      - row_id: T-004-R1
+        values:
+          module: API discovery and inventory
+          public_evidence: Salt describes discovery and context for APIs across environments.
+          diligence_question: What percentage of live APIs are discovered and classified versus a customer source of truth?
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-007, SRC-008]
+      - row_id: T-004-R2
+        values:
+          module: API posture and governance
+          public_evidence: Product materials reference posture, compliance, and remediation workflows.
+          diligence_question: How are policy violations prioritized, assigned, remediated, and verified?
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-007, SRC-009]
+      - row_id: T-004-R3
+        values:
+          module: Runtime threat protection
+          public_evidence: Salt describes behavioral threat detection and protection against API attacks.
+          diligence_question: What precision, recall, and response-time evidence exists in production environments?
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-007, SRC-010]
+      - row_id: T-004-R4
+        values:
+          module: AI / agentic security positioning
+          public_evidence: Salt markets an Agentic Security Platform and AI-era API protection.
+          diligence_question: Which features use AI models or AI vendors, and how are customer data and model outputs governed?
+        evidence_claim_ids: [EC-009, EC-022, EC-026]
+        source_ids: [SRC-011, SRC-015, SRC-016]
+    evidence_claim_ids: [EC-008, EC-009, EC-022, EC-026]
+    source_ids: [SRC-007, SRC-008, SRC-009, SRC-010, SRC-011, SRC-015, SRC-016]
+    notes: Product descriptions are publicly verifiable; efficacy requires non-public technical evidence.
+  - table_id: T-005
+    title: Public integration and ecosystem signals
+    chapter_id: II
+    section_id: II.A
+    purpose: Identify product integrations that support ecosystem strategy.
+    columns:
+      - name: integration_signal
+        description: Publicly referenced integration or connector.
+      - name: strategic_logic
+        description: How it may support customer workflows.
+      - name: diligence_request
+        description: Evidence needed to verify commercial value.
+    rows:
+      - row_id: T-005-R1
+        values:
+          integration_signal: GitHub Connect
+          strategic_logic: Shifts API-security findings into developer workflow and source context.
+          diligence_request: Usage metrics, attach rates, remediation time, and customer adoption.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-020]
+      - row_id: T-005-R2
+        values:
+          integration_signal: Databricks-related connector or partner content
+          strategic_logic: Extends API/data security workflow to data-platform environments.
+          diligence_request: Production deployments, revenue contribution, and partner terms.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-021]
+      - row_id: T-005-R3
+        values:
+          integration_signal: Netlify-related connector or partner content
+          strategic_logic: Connects API security to modern application delivery and developer workflows.
+          diligence_request: Active users, conversion to paid accounts, and co-marketing pipeline.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-022]
+      - row_id: T-005-R4
+        values:
+          integration_signal: Security operations, cloud, and application workflows
+          strategic_logic: Increases stickiness if findings route to SIEM/SOAR, ticketing, and cloud controls.
+          diligence_request: Integration telemetry, customer retention impact, and support burden.
+        evidence_claim_ids: [EC-008, EC-020]
+        source_ids: [SRC-007, SRC-023]
+    evidence_claim_ids: [EC-008, EC-010, EC-020]
+    source_ids: [SRC-007, SRC-020, SRC-021, SRC-022, SRC-023]
+    notes: Public integration existence does not establish meaningful revenue or retention impact.
+  - table_id: T-006
+    title: Product efficacy diligence checklist
+    chapter_id: II
+    section_id: II.A
+    purpose: Translate product claims into technical diligence tests.
+    columns:
+      - name: claim_area
+        description: Product capability area.
+      - name: public_claim_status
+        description: Publicly supported or not.
+      - name: validation_artifact
+        description: Artifact to request.
+    rows:
+      - row_id: T-006-R1
+        values:
+          claim_area: API discovery coverage
+          public_claim_status: Described by Salt product pages
+          validation_artifact: Side-by-side inventory reconciliation for sampled customers.
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-008]
+      - row_id: T-006-R2
+        values:
+          claim_area: Behavioral threat detection
+          public_claim_status: Described by Salt product pages
+          validation_artifact: Precision/recall, incident-response evidence, false-positive logs, and customer outcomes.
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-010]
+      - row_id: T-006-R3
+        values:
+          claim_area: AI / agentic controls
+          public_claim_status: Marketing and product positioning visible
+          validation_artifact: Model cards, data-flow diagrams, vendor terms, prompt/log retention, and abuse-testing records.
+        evidence_claim_ids: [EC-009, EC-022, EC-026]
+        source_ids: [SRC-011, SRC-015, SRC-016]
+      - row_id: T-006-R4
+        values:
+          claim_area: Remediation workflow impact
+          public_claim_status: Integration signals visible
+          validation_artifact: Time-to-remediate metrics, ticket closure data, and developer-adoption evidence.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-020]
+    evidence_claim_ids: [EC-008, EC-009, EC-010, EC-022, EC-026]
+    source_ids: [SRC-008, SRC-010, SRC-011, SRC-015, SRC-016, SRC-020]
+    notes: Technical diligence should include live demo, architecture review, customer telemetry, and red-team results.
+  - table_id: T-007
+    title: Public named-customer evidence
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize public customer-logo evidence and limits.
+    columns:
+      - name: customer_or_segment
+        description: Publicly named logo or customer segment.
+      - name: public_source_type
+        description: Case study, logo, announcement, or customer page.
+      - name: diligence_limit
+        description: What remains unknown.
+    rows:
+      - row_id: T-007-R1
+        values:
+          customer_or_segment: Ally Bank
+          public_source_type: Salt customer/case-study evidence reviewed in-session
+          diligence_limit: Current contract value, deployment scope, renewal, and reference status.
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-012, SRC-013]
+      - row_id: T-007-R2
+        values:
+          customer_or_segment: Finastra, Equinix, Armis, Carrefour
+          public_source_type: Salt customer-logo evidence reviewed in-session
+          diligence_limit: Paid status, ARR, product modules used, and deployment breadth.
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-012]
+      - row_id: T-007-R3
+        values:
+          customer_or_segment: City National Bank, Payoneer, TripActions
+          public_source_type: Salt customer-logo or case-study evidence reviewed in-session
+          diligence_limit: Current customer status and customer referenceability.
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-012, SRC-014]
+      - row_id: T-007-R4
+        values:
+          customer_or_segment: Fortune / Global 500 signed customers
+          public_source_type: Series D growth claim
+          diligence_limit: Baseline, count, contract value, current status, and deployment scope.
+        evidence_claim_ids: [EC-006, EC-011, EC-012]
+        source_ids: [SRC-002]
+    evidence_claim_ids: [EC-006, EC-011, EC-012]
+    source_ids: [SRC-002, SRC-012, SRC-013, SRC-014]
+    notes: Public logo use is useful but must be tested through direct references and contract data.
+  - table_id: T-008
+    title: Customer economics evidence gaps
+    chapter_id: III
+    section_id: III.C
+    purpose: List the customer metrics missing from public sources.
+    columns:
+      - name: customer_metric
+        description: Metric needed.
+      - name: public_status
+        description: Public availability.
+      - name: risk_if_missing
+        description: Diligence risk.
+    rows:
+      - row_id: T-008-R1
+        values:
+          customer_metric: ARR by customer
+          public_status: Not public
+          risk_if_missing: Concentration and dependence on a few enterprise contracts cannot be measured.
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-012]
+      - row_id: T-008-R2
+        values:
+          customer_metric: Net revenue retention and gross retention
+          public_status: Not public
+          risk_if_missing: Logo growth may hide churn, downsell, or weak expansion.
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-012]
+      - row_id: T-008-R3
+        values:
+          customer_metric: Deployment scope and modules used
+          public_status: Not public
+          risk_if_missing: Logos may represent narrow pilots rather than broad production usage.
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-012]
+      - row_id: T-008-R4
+        values:
+          customer_metric: Renewal and churn schedule
+          public_status: Not public
+          risk_if_missing: Near-term ARR stability cannot be assessed.
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-012]
+    evidence_claim_ids: [EC-012]
+    source_ids: [SRC-012]
+    notes: Customer economics are priority diligence before valuation work.
+  - table_id: T-009
+    title: Public subprocessor and supplier risk leads
+    chapter_id: III
+    section_id: III.E
+    purpose: Identify public vendors to include in supplier diligence.
+    columns:
+      - name: vendor
+        description: Publicly listed subprocessor or affiliate.
+      - name: apparent_role
+        description: Role inferred from public subprocessor category.
+      - name: diligence_focus
+        description: Contract and control review focus.
+    rows:
+      - row_id: T-009-R1
+        values:
+          vendor: AWS
+          apparent_role: Cloud infrastructure
+          diligence_focus: Data residency, uptime, security controls, BCP/DR, cloud spend, and commitments.
+        evidence_claim_ids: [EC-013, EC-025]
+        source_ids: [SRC-016]
+      - row_id: T-009-R2
+        values:
+          vendor: Microsoft Azure OpenAI
+          apparent_role: AI service subprocessor
+          diligence_focus: Customer-data use, retention, prompt/log controls, model governance, and regulatory representations.
+        evidence_claim_ids: [EC-013, EC-026]
+        source_ids: [SRC-016]
+      - row_id: T-009-R3
+        values:
+          vendor: MongoDB Atlas and SingleStore
+          apparent_role: Database/storage infrastructure
+          diligence_focus: Customer-data segregation, encryption, backups, access controls, and data-location commitments.
+        evidence_claim_ids: [EC-013, EC-025]
+        source_ids: [SRC-016]
+      - row_id: T-009-R4
+        values:
+          vendor: Sisense, Sec4U, Salt Canada, Salt Ltd.
+          apparent_role: Analytics, services, and affiliated processing
+          diligence_focus: Data flows, affiliate agreements, support access, and cross-border transfer controls.
+        evidence_claim_ids: [EC-013, EC-025]
+        source_ids: [SRC-016]
+    evidence_claim_ids: [EC-013, EC-025, EC-026]
+    source_ids: [SRC-016]
+    notes: The subprocessor list is a concrete starting point for privacy, vendor, and business-continuity diligence.
+  - table_id: T-010
+    title: Competitive segment map
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Organize competitive pressure around API security use cases.
+    columns:
+      - name: segment
+        description: Competitive segment.
+      - name: example_competition
+        description: Publicly recognizable competitive set.
+      - name: implication_for_salt
+        description: Risk or opportunity.
+    rows:
+      - row_id: T-010-R1
+        values:
+          segment: Standalone API security
+          example_competition: Specialist vendors focused on API discovery, posture, and runtime protection.
+          implication_for_salt: Direct product comparisons and win/loss matter most.
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-023, SRC-024]
+      - row_id: T-010-R2
+        values:
+          segment: Application security platforms
+          example_competition: SAST/DAST/IAST, ASPM, and application-risk platforms adding API security.
+          implication_for_salt: Buyers may consolidate testing, posture, and remediation budgets.
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-023, SRC-024]
+      - row_id: T-010-R3
+        values:
+          segment: WAF, gateway, and CDN platforms
+          example_competition: Traffic-management and edge-security vendors with API controls.
+          implication_for_salt: Incumbent traffic position can reduce standalone deployment willingness.
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-023, SRC-024]
+      - row_id: T-010-R4
+        values:
+          segment: CNAPP and cloud security suites
+          example_competition: Cloud-security platforms expanding into application and API risk.
+          implication_for_salt: Suite consolidation could pressure price and procurement priority.
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-023, SRC-024]
+    evidence_claim_ids: [EC-019]
+    source_ids: [SRC-023, SRC-024]
+    notes: Competitive examples are category-level; specific win/loss data must come from management and customers.
+  - table_id: T-011
+    title: Differentiation claims and validation plan
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Convert differentiation claims into diligence tests.
+    columns:
+      - name: claimed_edge
+        description: Differentiation area.
+      - name: public_support
+        description: Public evidence.
+      - name: validation_test
+        description: Diligence test.
+    rows:
+      - row_id: T-011-R1
+        values:
+          claimed_edge: Behavioral runtime protection
+          public_support: Salt product pages describe behavioral threat detection.
+          validation_test: Review customer incident detections, false positives, false negatives, and response workflows.
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-010]
+      - row_id: T-011-R2
+        values:
+          claimed_edge: Broad API discovery
+          public_support: Salt describes API discovery and inventory capabilities.
+          validation_test: Compare discovered APIs against customer CMDB, gateway logs, and code repositories.
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-008]
+      - row_id: T-011-R3
+        values:
+          claimed_edge: Developer and ecosystem integrations
+          public_support: GitHub Connect and data/deployment connectors are publicly referenced.
+          validation_test: Measure attach rate, workflow adoption, ticket close time, and retained ARR lift.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-020, SRC-021, SRC-022]
+      - row_id: T-011-R4
+        values:
+          claimed_edge: Agentic-security positioning
+          public_support: Salt markets an Agentic Security Platform.
+          validation_test: Validate product readiness, SKU revenue, customer adoption, model risk, and competitor parity.
+        evidence_claim_ids: [EC-022]
+        source_ids: [SRC-011]
+    evidence_claim_ids: [EC-008, EC-009, EC-010, EC-022]
+    source_ids: [SRC-008, SRC-010, SRC-011, SRC-020, SRC-021, SRC-022]
+    notes: Differentiation must be backed by win/loss, technical benchmarks, and customer ROI.
+  - table_id: T-012
+    title: Competitive hidden-risk register
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Highlight market risks not resolved by public sources.
+    columns:
+      - name: risk_theme
+        description: Competitive risk.
+      - name: public_evidence
+        description: What public sources show.
+      - name: diligence_request
+        description: Needed proof.
+    rows:
+      - row_id: T-012-R1
+        values:
+          risk_theme: Suite bundling
+          public_evidence: Market contains many adjacent security categories that can add API capabilities.
+          diligence_request: Win/loss and pricing pressure by competitor class.
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-023, SRC-024]
+      - row_id: T-012-R2
+        values:
+          risk_theme: Feature parity
+          public_evidence: Salt's product claims are public, but competitor feature comparison is not independently proven.
+          diligence_request: Third-party benchmark, buyer survey, and competitive demo results.
+        evidence_claim_ids: [EC-008, EC-009, EC-019]
+        source_ids: [SRC-007, SRC-023, SRC-024]
+      - row_id: T-012-R3
+        values:
+          risk_theme: Buyer consolidation
+          public_evidence: Public customer logos show enterprise relevance but not procurement priority.
+          diligence_request: Customer budget ownership, renewal justification, and stack-consolidation plans.
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-012]
+    evidence_claim_ids: [EC-008, EC-009, EC-011, EC-012, EC-019]
+    source_ids: [SRC-007, SRC-012, SRC-023, SRC-024]
+    notes: Competitive diligence should be customer-led, not vendor-marketing-led.
+  - table_id: T-013
+    title: Public go-to-market channel signals
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize observable GTM motions.
+    columns:
+      - name: channel_signal
+        description: Public GTM evidence.
+      - name: likely_role
+        description: How it may support growth.
+      - name: needed_metric
+        description: Metric needed to evaluate.
+    rows:
+      - row_id: T-013-R1
+        values:
+          channel_signal: Enterprise customer pages and case studies
+          likely_role: Reference selling and category validation.
+          needed_metric: Closed-won ARR influenced by references and case studies.
+        evidence_claim_ids: [EC-011, EC-020]
+        source_ids: [SRC-012, SRC-013]
+      - row_id: T-013-R2
+        values:
+          channel_signal: Product integrations
+          likely_role: Developer workflow stickiness and partner-led discovery.
+          needed_metric: Integration attach rate, partner-sourced pipeline, and renewal lift.
+        evidence_claim_ids: [EC-010, EC-020]
+        source_ids: [SRC-020, SRC-021, SRC-022]
+      - row_id: T-013-R3
+        values:
+          channel_signal: API-security threat research and content
+          likely_role: Demand generation and buyer education.
+          needed_metric: Content-sourced pipeline, MQL-to-SQL conversion, and CAC payback.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-023]
+      - row_id: T-013-R4
+        values:
+          channel_signal: Enterprise direct sales
+          likely_role: Closing large security and application-team contracts.
+          needed_metric: Quota attainment, ramp time, sales cycle, discounting, and win rate.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-012]
+    evidence_claim_ids: [EC-010, EC-011, EC-020]
+    source_ids: [SRC-012, SRC-013, SRC-020, SRC-021, SRC-022, SRC-023]
+    notes: Public GTM signals do not establish productivity or efficiency.
+  - table_id: T-014
+    title: Reference-call plan for major customers
+    chapter_id: V
+    section_id: V.B
+    purpose: Define customer reference work required after public diligence.
+    columns:
+      - name: reference_group
+        description: Customer group to interview.
+      - name: key_questions
+        description: Questions to ask.
+      - name: evidence_to_match
+        description: Company data to reconcile.
+    rows:
+      - row_id: T-014-R1
+        values:
+          reference_group: Financial services logos
+          key_questions: Why Salt, what APIs are protected, what alternatives were evaluated, what outcomes were measured?
+          evidence_to_match: Contract ARR, deployment scope, renewal status, security findings, and support tickets.
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-012, SRC-013]
+      - row_id: T-014-R2
+        values:
+          reference_group: Technology and infrastructure logos
+          key_questions: How was Salt integrated into developer, data, and runtime workflows?
+          evidence_to_match: Integration usage, remediation workflow telemetry, and expansion history.
+        evidence_claim_ids: [EC-010, EC-011, EC-012]
+        source_ids: [SRC-012, SRC-020, SRC-021]
+      - row_id: T-014-R3
+        values:
+          reference_group: Recent wins and recent losses
+          key_questions: What drove selection or rejection, and what competitive vendors were involved?
+          evidence_to_match: Win/loss database, pricing, competitor, and procurement timeline.
+        evidence_claim_ids: [EC-019, EC-020]
+        source_ids: [SRC-023, SRC-024]
+    evidence_claim_ids: [EC-010, EC-011, EC-012, EC-019, EC-020]
+    source_ids: [SRC-012, SRC-013, SRC-020, SRC-021, SRC-023, SRC-024]
+    notes: Reference selection should include management-provided references and off-list customer checks.
+  - table_id: T-015
+    title: Sales productivity requests
+    chapter_id: V
+    section_id: V.D
+    purpose: Specify non-public sales metrics required for underwriting.
+    columns:
+      - name: metric
+        description: Sales metric.
+      - name: why_it_matters
+        description: Diligence relevance.
+      - name: requested_cut
+        description: Requested segmentation.
+    rows:
+      - row_id: T-015-R1
+        values:
+          metric: Quota attainment
+          why_it_matters: Tests sales force productivity after headcount growth.
+          requested_cut: Quarter, region, segment, rep tenure, new logo vs expansion.
+        evidence_claim_ids: [EC-006, EC-024]
+        source_ids: [SRC-002]
+      - row_id: T-015-R2
+        values:
+          metric: CAC payback and burn multiple
+          why_it_matters: Links GTM efficiency to valuation and financing risk.
+          requested_cut: Segment, channel, customer size, and cohort.
+        evidence_claim_ids: [EC-007, EC-020]
+        source_ids: [SRC-002, SRC-012]
+      - row_id: T-015-R3
+        values:
+          metric: Pipeline conversion
+          why_it_matters: Tests forecast reliability.
+          requested_cut: Source, stage, channel, segment, and competitor.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-012]
+      - row_id: T-015-R4
+        values:
+          metric: Discounting and sales cycle
+          why_it_matters: Reveals price pressure and enterprise procurement friction.
+          requested_cut: Segment, competitor, product module, and deal size.
+        evidence_claim_ids: [EC-019, EC-020]
+        source_ids: [SRC-023, SRC-024]
+    evidence_claim_ids: [EC-006, EC-007, EC-019, EC-020, EC-024]
+    source_ids: [SRC-002, SRC-012, SRC-023, SRC-024]
+    notes: These data are not public; request directly from management.
+  - table_id: T-016
+    title: R&D and roadmap public signal matrix
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Identify product-development signals and open diligence items.
+    columns:
+      - name: signal
+        description: Public R&D or roadmap signal.
+      - name: interpretation
+        description: What it suggests.
+      - name: diligence_gap
+        description: What remains unknown.
+    rows:
+      - row_id: T-016-R1
+        values:
+          signal: GitHub Connect
+          interpretation: Product development reaches earlier into developer workflow and source context.
+          diligence_gap: Adoption, SKU economics, remediation impact, and support burden.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-020]
+      - row_id: T-016-R2
+        values:
+          signal: Databricks and Netlify connector references
+          interpretation: Product strategy may follow modern data and application delivery workflows.
+          diligence_gap: Active customer usage, partner terms, and revenue impact.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-021, SRC-022]
+      - row_id: T-016-R3
+        values:
+          signal: Agentic Security Platform positioning
+          interpretation: Salt is adapting API security for AI/agentic software risk.
+          diligence_gap: Technical maturity, model governance, customer adoption, and differentiated IP.
+        evidence_claim_ids: [EC-009, EC-022, EC-026]
+        source_ids: [SRC-011, SRC-015, SRC-016]
+      - row_id: T-016-R4
+        values:
+          signal: Behavioral runtime protection messaging
+          interpretation: Core R&D focus remains API abuse detection and runtime context.
+          diligence_gap: Detection efficacy, customer incident proof, and scalability.
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-010]
+    evidence_claim_ids: [EC-009, EC-010, EC-022, EC-026]
+    source_ids: [SRC-010, SRC-011, SRC-015, SRC-016, SRC-020, SRC-021, SRC-022]
+    notes: Public roadmap signals require management roadmap and customer adoption evidence.
+  - table_id: T-017
+    title: Patent and IP provenance evidence
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Connect public patent records to founder/IP diligence.
+    columns:
+      - name: item
+        description: Public IP fact.
+      - name: evidence
+        description: Source-backed detail.
+      - name: diligence_implication
+        description: Why it matters.
+    rows:
+      - row_id: T-017-R1
+        values:
+          item: Secful-linked patent
+          evidence: Patent record for US9853996B2 identifies Secful and inventors Roey Eliyahu and Omer Sadika.
+          diligence_implication: Verify whether and how Secful IP was assigned to Salt.
+        evidence_claim_ids: [EC-015, EC-023]
+        source_ids: [SRC-017, SRC-018]
+      - row_id: T-017-R2
+        values:
+          item: Founder narrative inconsistency
+          evidence: Current and older public sources reviewed in-session vary on date/founder framing.
+          diligence_implication: Request formation, assignment, founder departure, and release documents.
+        evidence_claim_ids: [EC-016]
+        source_ids: [SRC-006, SRC-002, SRC-025]
+      - row_id: T-017-R3
+        values:
+          item: Broader IP estate
+          evidence: Only limited public patent evidence was captured for this standard screen.
+          diligence_implication: Verify patents, trademarks, copyrights, open-source use, and trade-secret ownership.
+        evidence_claim_ids: [EC-023]
+        source_ids: [SRC-017, SRC-018]
+    evidence_claim_ids: [EC-015, EC-016, EC-023]
+    source_ids: [SRC-006, SRC-002, SRC-017, SRC-018, SRC-025]
+    notes: IP assignment is a priority legal diligence item because public records alone do not prove clean ownership.
+  - table_id: T-018
+    title: Founder and leadership narrative reconciliation
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Flag public inconsistencies that require direct document review.
+    columns:
+      - name: source_cluster
+        description: Public source group.
+      - name: observed_narrative
+        description: Narrative captured in public research.
+      - name: reconciliation_needed
+        description: Document needed.
+    rows:
+      - row_id: T-018-R1
+        values:
+          source_cluster: Current Salt about / leadership pages
+          observed_narrative: Current materials reviewed in-session cite Roey Eliyahu and Michael Nicosia with a 2018 founding narrative.
+          reconciliation_needed: Incorporation records, board consents, role history, and company-approved founder list.
+        evidence_claim_ids: [EC-016, EC-017]
+        source_ids: [SRC-006, SRC-019]
+      - row_id: T-018-R2
+        values:
+          source_cluster: Older financing and market-database sources
+          observed_narrative: Older materials and snippets reference 2016 origin and/or Omer Sadika.
+          reconciliation_needed: Founder agreements, separation agreements, equity treatment, and public correction history.
+        evidence_claim_ids: [EC-016]
+        source_ids: [SRC-002, SRC-025]
+      - row_id: T-018-R3
+        values:
+          source_cluster: Patent records
+          observed_narrative: Secful patent records name Roey Eliyahu and Omer Sadika as inventors.
+          reconciliation_needed: Invention assignment and asset-transfer chain from Secful-era work to Salt.
+        evidence_claim_ids: [EC-015, EC-023]
+        source_ids: [SRC-017, SRC-018]
+    evidence_claim_ids: [EC-015, EC-016, EC-017, EC-023]
+    source_ids: [SRC-006, SRC-002, SRC-017, SRC-018, SRC-019, SRC-025]
+    notes: Inconsistency is not proof of wrongdoing; it is a document request trigger.
+  - table_id: T-019
+    title: Personnel and headcount diligence matrix
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Translate employee-growth claims into personnel diligence requests.
+    columns:
+      - name: topic
+        description: Personnel area.
+      - name: public_evidence
+        description: Public evidence found.
+      - name: requested_detail
+        description: Non-public data required.
+    rows:
+      - row_id: T-019-R1
+        values:
+          topic: Employee growth
+          public_evidence: 250% employee growth claim in Series D announcement.
+          requested_detail: Monthly headcount by function, geography, employee/contractor status, and cost.
+        evidence_claim_ids: [EC-006, EC-024]
+        source_ids: [SRC-002]
+      - row_id: T-019-R2
+        values:
+          topic: Sales capacity
+          public_evidence: No public quota-carrying rep details.
+          requested_detail: Rep roster, quota, ramp cohort, attainment, and turnover.
+        evidence_claim_ids: [EC-024]
+        source_ids: [SRC-002]
+      - row_id: T-019-R3
+        values:
+          topic: R&D capacity
+          public_evidence: Product releases and patent evidence show technical activity but not current capacity.
+          requested_detail: Engineers by team, attrition, roadmap ownership, and technical debt.
+        evidence_claim_ids: [EC-010, EC-015, EC-024]
+        source_ids: [SRC-017, SRC-020]
+      - row_id: T-019-R4
+        values:
+          topic: Compensation and equity
+          public_evidence: Not public.
+          requested_detail: Compensation bands, executive pay, commission plans, option ledger, and retention grants.
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-002]
+    evidence_claim_ids: [EC-006, EC-007, EC-010, EC-015, EC-024]
+    source_ids: [SRC-002, SRC-017, SRC-020]
+    notes: Payroll and equity data are necessary to understand execution risk and dilution.
+  - table_id: T-020
+    title: Legal, privacy, and regulatory issue matrix
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Map legal topics to public evidence and diligence workstreams.
+    columns:
+      - name: topic
+        description: Legal or compliance topic.
+      - name: public_evidence
+        description: Public source evidence.
+      - name: diligence_workstream
+        description: Follow-up work.
+    rows:
+      - row_id: T-020-R1
+        values:
+          topic: Privacy and customer data processing
+          public_evidence: Privacy policy describes customer-data processing, privacy rights, transfer mechanisms, and related obligations.
+          diligence_workstream: DPA, SOC 2, ISO, DPIA, retention, incident, audit, and customer-security review.
+        evidence_claim_ids: [EC-014, EC-026]
+        source_ids: [SRC-015]
+      - row_id: T-020-R2
+        values:
+          topic: Subprocessors
+          public_evidence: Public list includes cloud, AI, database, analytics, services, and affiliate subprocessors.
+          diligence_workstream: Vendor contracts, data flows, AI terms, transfer-impact assessments, and BCP/DR.
+        evidence_claim_ids: [EC-013, EC-025, EC-026]
+        source_ids: [SRC-016]
+      - row_id: T-020-R3
+        values:
+          topic: Litigation and regulatory actions
+          public_evidence: No major public action identified in reviewed public search set.
+          diligence_workstream: Counsel-led docket searches, claims schedule, demand letters, and regulator correspondence.
+        evidence_claim_ids: [EC-018, EC-021]
+        source_ids: [SRC-026]
+      - row_id: T-020-R4
+        values:
+          topic: IP / founder provenance
+          public_evidence: Secful patent record and inconsistent founder-source narratives.
+          diligence_workstream: IP schedule, assignment chain, founder agreements, and separation releases.
+        evidence_claim_ids: [EC-015, EC-016, EC-023]
+        source_ids: [SRC-006, SRC-017, SRC-018, SRC-025]
+    evidence_claim_ids: [EC-013, EC-014, EC-015, EC-016, EC-018, EC-021, EC-023, EC-025, EC-026]
+    source_ids: [SRC-006, SRC-015, SRC-016, SRC-017, SRC-018, SRC-025, SRC-026]
+    notes: Legal diligence should be counsel-led and include jurisdictions beyond public web searches.
+  - table_id: T-021
+    title: Material contracts and insurance requests
+    chapter_id: VIII
+    section_id: VIII.F
+    purpose: Define legal documents needed after public screening.
+    columns:
+      - name: document_group
+        description: Contract or insurance document set.
+      - name: why_needed
+        description: Diligence purpose.
+      - name: priority
+        description: Priority level.
+    rows:
+      - row_id: T-021-R1
+        values:
+          document_group: Top customer contracts and DPAs
+          why_needed: Verify ARR, renewal, indemnity, service levels, security obligations, and privacy terms.
+          priority: high
+        evidence_claim_ids: [EC-011, EC-012, EC-014]
+        source_ids: [SRC-012, SRC-015]
+      - row_id: T-021-R2
+        values:
+          document_group: Vendor and subprocessor contracts
+          why_needed: Test data-processing, AI, continuity, audit, termination, and cost risks.
+          priority: high
+        evidence_claim_ids: [EC-013, EC-025, EC-026]
+        source_ids: [SRC-016]
+      - row_id: T-021-R3
+        values:
+          document_group: IP, founder, and employee assignment documents
+          why_needed: Resolve Secful/founder provenance and ownership of product IP.
+          priority: high
+        evidence_claim_ids: [EC-015, EC-016, EC-023]
+        source_ids: [SRC-006, SRC-017, SRC-018, SRC-025]
+      - row_id: T-021-R4
+        values:
+          document_group: Insurance policies and claims history
+          why_needed: Assess coverage for cyber, E&O, D&O, EPLI, customer claims, and privacy incidents.
+          priority: medium
+        evidence_claim_ids: [EC-007, EC-018]
+        source_ids: [SRC-026]
+    evidence_claim_ids: [EC-007, EC-011, EC-012, EC-013, EC-014, EC-015, EC-016, EC-018, EC-023, EC-025, EC-026]
+    source_ids: [SRC-006, SRC-012, SRC-015, SRC-016, SRC-017, SRC-018, SRC-025, SRC-026]
+    notes: These requests should be tied to a diligence materiality threshold and counsel review.
+
+figures:
+  - figure_id: F-001
+    title: Salt financing and product-development timeline
+    chapter_id: I
+    section_id: I.C
+    figure_type: timeline
+    description: Public timeline of disclosed financing and selected product/integration signals.
+    purpose: Show how Salt moved from early venture funding to unicorn status and later product expansion.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E1
+          date: 2020-06
+          label: Series A
+          description: $20M Series A publicly reported.
+          category: funding
+          evidence_claim_ids: [EC-005]
+          source_ids: [SRC-005]
+        - event_id: F-001-E2
+          date: 2020-12
+          label: Series B
+          description: $30M Series B publicly reported.
+          category: funding
+          evidence_claim_ids: [EC-004]
+          source_ids: [SRC-004]
+        - event_id: F-001-E3
+          date: 2021
+          label: Series C
+          description: $70M Series C publicly reported.
+          category: funding
+          evidence_claim_ids: [EC-003]
+          source_ids: [SRC-003]
+        - event_id: F-001-E4
+          date: 2022-02-10
+          label: Series D unicorn
+          description: $140M Series D at $1.4B valuation, with $271M total funding reported.
+          category: funding
+          evidence_claim_ids: [EC-001, EC-002]
+          source_ids: [SRC-001, SRC-002]
+        - event_id: F-001-E5
+          date: 2024
+          label: Ecosystem integrations
+          description: Public integration signals such as GitHub Connect and data/application connectors.
+          category: product
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-020, SRC-021, SRC-022]
+        - event_id: F-001-E6
+          date: 2025
+          label: Agentic security positioning
+          description: Salt publicly markets agentic-security and AI-era API risk positioning.
+          category: product
+          evidence_claim_ids: [EC-022]
+          source_ids: [SRC-011]
+      start_date: 2020-01-01
+      end_date: 2026-05-16
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render as a left-to-right financing/product timeline.
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-005, EC-010, EC-022]
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-004, SRC-005, SRC-011, SRC-020, SRC-021, SRC-022]
+    notes: Timeline dates after financing are public-source signals, not audited roadmap milestones.
+  - figure_id: F-002
+    title: Disclosed cumulative funding and valuation snapshot
+    chapter_id: I
+    section_id: I.C
+    figure_type: chart
+    description: Chart comparing disclosed financing amounts and the 2022 unicorn valuation snapshot.
+    purpose: Visualize the funding scale relative to valuation.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public financing milestone
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD millions
+        unit: USD millions
+        scale: linear
+      series:
+        - series_id: F-002-S1
+          name: Round amount
+          unit: USD millions
+          data_points:
+            - x: Series A
+              y: 20
+              label: $20M
+              evidence_claim_ids: [EC-005]
+              source_ids: [SRC-005]
+            - x: Series B
+              y: 30
+              label: $30M
+              evidence_claim_ids: [EC-004]
+              source_ids: [SRC-004]
+            - x: Series C
+              y: 70
+              label: $70M
+              evidence_claim_ids: [EC-003]
+              source_ids: [SRC-003]
+            - x: Series D
+              y: 140
+              label: $140M
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-002]
+        - series_id: F-002-S2
+          name: Valuation marker
+          unit: USD millions
+          data_points:
+            - x: Series D
+              y: 1400
+              label: $1.4B valuation
+              evidence_claim_ids: [EC-001, EC-002]
+              source_ids: [SRC-001, SRC-002]
+      annotations:
+        - label: Total disclosed funding
+          x: Series D
+          y: 271
+          note: Series D announcement reported $271M total funding after the round.
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-002]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use a log or broken axis if rendering valuation and round amount in one chart.
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-005]
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-004, SRC-005]
+    notes: Round amounts and valuation are public disclosures; current valuation is unknown.
+  - figure_id: F-003
+    title: Publicly described Salt platform data-flow architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level architecture inferred from public product and subprocessor materials.
+    purpose: Map capability areas and supplier diligence touchpoints.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: customer_apps
+          label: Customer APIs and applications
+          node_type: user
+          description: Enterprise APIs and application environments to be discovered and protected.
+          evidence_claim_ids: [EC-008, EC-011]
+          source_ids: [SRC-007, SRC-012]
+        - node_id: discovery
+          label: API discovery / inventory
+          node_type: product
+          description: Publicly described API discovery and context capability.
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-008]
+        - node_id: posture
+          label: Posture / compliance
+          node_type: product
+          description: Publicly described posture, governance, and remediation capability.
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-009]
+        - node_id: threat
+          label: Behavioral threat protection
+          node_type: product
+          description: Publicly described API abuse and threat-detection capability.
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-010]
+        - node_id: workflows
+          label: Developer / security workflows
+          node_type: integration
+          description: Public integration signals such as GitHub Connect and related connectors.
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-020, SRC-021, SRC-022]
+        - node_id: cloud
+          label: Cloud, AI, database, analytics subprocessors
+          node_type: third_party
+          description: AWS, Azure OpenAI, MongoDB Atlas, SingleStore, Sisense, affiliates, and service providers are public subprocessor diligence leads.
+          evidence_claim_ids: [EC-013, EC-025, EC-026]
+          source_ids: [SRC-016]
+      edges:
+        - edge_id: F-003-E1
+          from_node_id: customer_apps
+          to_node_id: discovery
+          relationship: API traffic and metadata context
+          data_or_dependency: Customer API metadata and environment signals.
+          evidence_claim_ids: [EC-008, EC-014]
+          source_ids: [SRC-007, SRC-015]
+        - edge_id: F-003-E2
+          from_node_id: discovery
+          to_node_id: posture
+          relationship: Inventory feeds posture assessment
+          data_or_dependency: Discovered APIs become governance/remediation inputs.
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-008, SRC-009]
+        - edge_id: F-003-E3
+          from_node_id: discovery
+          to_node_id: threat
+          relationship: Context supports behavioral threat detection
+          data_or_dependency: API context and behavior baselines.
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-010]
+        - edge_id: F-003-E4
+          from_node_id: posture
+          to_node_id: workflows
+          relationship: Findings route to workflow tools
+          data_or_dependency: Tickets, source context, and remediation workflows.
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-020]
+        - edge_id: F-003-E5
+          from_node_id: threat
+          to_node_id: cloud
+          relationship: Platform infrastructure and processing
+          data_or_dependency: Hosting, storage, analytics, AI, and support dependencies.
+          evidence_claim_ids: [EC-013, EC-025, EC-026]
+          source_ids: [SRC-016]
+      boundaries:
+        - boundary_id: salt_platform
+          label: Salt public product surface
+          node_ids: [discovery, posture, threat, workflows]
+        - boundary_id: third_party
+          label: Public subprocessor diligence boundary
+          node_ids: [cloud]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Show third-party processors outside the core product boundary.
+    evidence_claim_ids: [EC-008, EC-009, EC-010, EC-013, EC-014, EC-025, EC-026]
+    source_ids: [SRC-007, SRC-008, SRC-009, SRC-010, SRC-015, SRC-016, SRC-020, SRC-021, SRC-022]
+    notes: This is an inferred architecture from public materials, not a verified internal diagram.
+  - figure_id: F-004
+    title: Public Series D growth-claim index
+    chapter_id: II
+    section_id: II.A
+    figure_type: chart
+    description: Series D announcement growth percentages indexed for visual comparison.
+    purpose: Highlight the magnitude of public growth claims and why denominators matter.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Claimed metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Reported growth percent
+        unit: percent
+        scale: linear
+      series:
+        - series_id: F-004-S1
+          name: Public growth claim
+          unit: percent
+          data_points:
+            - x: Revenue
+              y: 500
+              label: 500%
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-002]
+            - x: Customers
+              y: 300
+              label: 300%
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-002]
+            - x: Employees
+              y: 250
+              label: 250%
+              evidence_claim_ids: [EC-006, EC-024]
+              source_ids: [SRC-002]
+            - x: Fortune/Global 500 signed customers
+              y: 900
+              label: 900%
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-002]
+      annotations:
+        - label: Denominator gap
+          x: Revenue
+          y: 500
+          note: Public percentages do not disclose baseline values or periods.
+          evidence_claim_ids: [EC-006, EC-007]
+          source_ids: [SRC-002]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Annotate that values are unaudited public claims.
+    evidence_claim_ids: [EC-006, EC-007, EC-024]
+    source_ids: [SRC-002]
+    notes: Growth percentages are not audited financial metrics in public sources.
+  - figure_id: F-005
+    title: Public customer segment map
+    chapter_id: III
+    section_id: III.A
+    figure_type: market_map
+    description: Public named-customer evidence by segment and verification depth.
+    purpose: Show that public logo strength is broad but contract depth remains unknown.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Public evidence depth
+          low_label: Logo only
+          high_label: Case study / stronger public proof
+        y_axis:
+          label: Enterprise-criticality
+          low_label: Lower regulated pressure
+          high_label: Regulated / mission-critical
+      segments:
+        - segment_id: financial
+          name: Financial services
+          description: Banks, payments, and financial technology.
+        - segment_id: tech
+          name: Technology / infrastructure
+          description: Software, data, and infrastructure customers.
+        - segment_id: retail_travel
+          name: Retail / travel
+          description: Consumer-scale digital businesses.
+      entities:
+        - entity_id: ally
+          name: Ally Bank
+          entity_type: customer
+          segment_id: financial
+          x_value: high
+          y_value: high
+          attributes:
+            diligence_note: Validate current production scope and ARR.
+          evidence_claim_ids: [EC-011, EC-012]
+          source_ids: [SRC-012, SRC-013]
+        - entity_id: finastra
+          name: Finastra
+          entity_type: customer
+          segment_id: financial
+          x_value: medium
+          y_value: high
+          attributes:
+            diligence_note: Verify deployment and referenceability.
+          evidence_claim_ids: [EC-011, EC-012]
+          source_ids: [SRC-012]
+        - entity_id: equinix
+          name: Equinix
+          entity_type: customer
+          segment_id: tech
+          x_value: medium
+          y_value: high
+          attributes:
+            diligence_note: Verify contract status and modules used.
+          evidence_claim_ids: [EC-011, EC-012]
+          source_ids: [SRC-012]
+        - entity_id: carrefour
+          name: Carrefour
+          entity_type: customer
+          segment_id: retail_travel
+          x_value: medium
+          y_value: medium_high
+          attributes:
+            diligence_note: Verify current status and geographic deployment.
+          evidence_claim_ids: [EC-011, EC-012]
+          source_ids: [SRC-012]
+        - entity_id: tripactions
+          name: TripActions
+          entity_type: customer
+          segment_id: retail_travel
+          x_value: medium
+          y_value: medium
+          attributes:
+            diligence_note: Verify name changes, renewal, and active use.
+          evidence_claim_ids: [EC-011, EC-012]
+          source_ids: [SRC-012, SRC-014]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Place logos by qualitative evidence depth and criticality; do not imply ARR.
+    evidence_claim_ids: [EC-011, EC-012]
+    source_ids: [SRC-012, SRC-013, SRC-014]
+    notes: Map reflects public evidence only, not customer size or revenue.
+  - figure_id: F-006
+    title: API security competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Positioning map for Salt versus competitive segment types.
+    purpose: Illustrate standalone-vendor versus platform-suite competitive pressure.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: API-security specialization
+          low_label: Broad suite
+          high_label: Dedicated API security
+        y_axis:
+          label: Enterprise platform leverage
+          low_label: Lower incumbent footprint
+          high_label: Broad incumbent footprint
+      segments:
+        - segment_id: specialist
+          name: API security specialists
+          description: Dedicated API security and protection vendors.
+        - segment_id: platform
+          name: Broader security platforms
+          description: WAF, application security, gateway, CNAPP, and security suites.
+      entities:
+        - entity_id: salt
+          name: Salt Security
+          entity_type: target_company
+          segment_id: specialist
+          x_value: high
+          y_value: medium
+          attributes:
+            positioning: Dedicated API discovery, posture, and runtime security.
+          evidence_claim_ids: [EC-008, EC-009]
+          source_ids: [SRC-007, SRC-010]
+        - entity_id: standalone_competitors
+          name: Other API security specialists
+          entity_type: competitor
+          segment_id: specialist
+          x_value: high
+          y_value: medium
+          attributes:
+            positioning: Direct feature and win/loss comparison.
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-023, SRC-024]
+        - entity_id: appsec_platforms
+          name: AppSec / ASPM platforms
+          entity_type: competitor
+          segment_id: platform
+          x_value: medium
+          y_value: high
+          attributes:
+            positioning: Bundled testing, posture, and remediation workflows.
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-023, SRC-024]
+        - entity_id: gateway_waf
+          name: Gateway / WAF / edge platforms
+          entity_type: competitor
+          segment_id: platform
+          x_value: medium
+          y_value: high
+          attributes:
+            positioning: Existing traffic-control and security footprint.
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-023, SRC-024]
+        - entity_id: cloud_security
+          name: CNAPP / cloud security suites
+          entity_type: competitor
+          segment_id: platform
+          x_value: medium_low
+          y_value: high
+          attributes:
+            positioning: Cloud/application consolidation pressure.
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-023, SRC-024]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Positioning is qualitative and should be validated with buyer interviews.
+    evidence_claim_ids: [EC-008, EC-009, EC-019]
+    source_ids: [SRC-007, SRC-010, SRC-023, SRC-024]
+    notes: This market map is analytical, not a paid analyst quadrant.
+  - figure_id: F-007
+    title: Public go-to-market evidence funnel
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: A diligence funnel showing what public GTM evidence can and cannot prove.
+    purpose: Clarify the gap from public awareness signals to revenue-quality evidence.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      stages:
+        - stage_id: awareness
+          name: Category awareness / thought leadership
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: Public source set
+          evidence_claim_ids: [EC-020]
+          source_ids: [SRC-023]
+        - stage_id: consideration
+          name: Logos, case studies, integrations
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: Public source set
+          evidence_claim_ids: [EC-010, EC-011]
+          source_ids: [SRC-012, SRC-013, SRC-020, SRC-021, SRC-022]
+        - stage_id: pipeline
+          name: Pipeline / opportunity conversion
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: Not public
+          evidence_claim_ids: [EC-007, EC-020]
+          source_ids: [SRC-012]
+        - stage_id: arr
+          name: ARR / retention / expansion
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: Not public
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-012]
+      unit: other
+      cohort_or_period: Public evidence versus management data request
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Null counts are intentional; show the missing management data layers.
+    evidence_claim_ids: [EC-010, EC-011, EC-012, EC-020]
+    source_ids: [SRC-012, SRC-013, SRC-020, SRC-021, SRC-022, SRC-023]
+    notes: Funnel is a diligence logic model, not a measured conversion chart.
+  - figure_id: F-008
+    title: IP and product provenance timeline
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: timeline
+    description: Public IP and product signals relevant to technical and legal diligence.
+    purpose: Connect Secful patent evidence, founder history, and product-development claims.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-008-E1
+          date: 2018-01-01
+          label: Current public founding narrative
+          description: Current Salt materials reviewed in-session cite a 2018 founding narrative.
+          category: warning
+          evidence_claim_ids: [EC-016, EC-017]
+          source_ids: [SRC-006, SRC-019]
+        - event_id: F-008-E2
+          date: 2018-01-01
+          label: Patent record relevance
+          description: Secful patent US9853996B2 identifies Roey Eliyahu and Omer Sadika as inventors; exact assignment chain requires verification.
+          category: warning
+          evidence_claim_ids: [EC-015, EC-023]
+          source_ids: [SRC-017, SRC-018]
+        - event_id: F-008-E3
+          date: 2022-02-10
+          label: Scale-up financing
+          description: Series D announcement marks late-stage scale-up and growth claims.
+          category: funding
+          evidence_claim_ids: [EC-002, EC-006]
+          source_ids: [SRC-002]
+        - event_id: F-008-E4
+          date: 2024
+          label: Developer/data integrations
+          description: Public integration signals point to continued product expansion.
+          category: product
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-020, SRC-021, SRC-022]
+        - event_id: F-008-E5
+          date: 2025
+          label: Agentic-security positioning
+          description: Public agentic-security messaging creates technical and privacy diligence needs.
+          category: product
+          evidence_claim_ids: [EC-022, EC-026]
+          source_ids: [SRC-011, SRC-015, SRC-016]
+      start_date: 2016-01-01
+      end_date: 2026-05-16
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use warning tone for unresolved founder/IP provenance items.
+    evidence_claim_ids: [EC-002, EC-006, EC-010, EC-015, EC-016, EC-017, EC-022, EC-023, EC-026]
+    source_ids: [SRC-002, SRC-006, SRC-011, SRC-015, SRC-016, SRC-017, SRC-018, SRC-019, SRC-020, SRC-021, SRC-022]
+    notes: Current and older public narratives should be reconciled with legal documents.
+  - figure_id: F-009
+    title: Public leadership and diligence org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Publicly identified leadership nodes and missing diligence functions.
+    purpose: Show high-level leadership evidence while emphasizing non-public reporting lines.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Roey Eliyahu / Michael Nicosia public leadership narrative requires reconciliation
+          role: Founder / executive leadership narrative
+          department: Executive
+          location: United States / Israel public footprint
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-016, EC-017]
+          source_ids: [SRC-006, SRC-019]
+        - node_id: product_security
+          name: null
+          role: Product and security leadership
+          department: Product / Engineering
+          location: Not publicly mapped
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-008, EC-009]
+          source_ids: [SRC-007, SRC-010]
+        - node_id: privacy
+          name: null
+          role: Privacy / legal / compliance ownership
+          department: Legal / Compliance
+          location: Not publicly mapped
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-014, EC-026]
+          source_ids: [SRC-015, SRC-016]
+        - node_id: sales
+          name: null
+          role: Enterprise sales leadership
+          department: Sales
+          location: Not publicly mapped
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-020, EC-024]
+          source_ids: [SRC-002, SRC-012]
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: product_security
+          relationship: other
+          evidence_claim_ids: [EC-017]
+          source_ids: [SRC-019]
+        - parent_node_id: ceo
+          child_node_id: privacy
+          relationship: other
+          evidence_claim_ids: [EC-017]
+          source_ids: [SRC-019]
+        - parent_node_id: ceo
+          child_node_id: sales
+          relationship: other
+          evidence_claim_ids: [EC-017]
+          source_ids: [SRC-019]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Mark unknown roles as diligence placeholders, not confirmed vacancies.
+    evidence_claim_ids: [EC-008, EC-009, EC-014, EC-016, EC-017, EC-020, EC-024, EC-026]
+    source_ids: [SRC-006, SRC-007, SRC-010, SRC-015, SRC-016, SRC-019]
+    notes: This figure is a diligence ownership map, not Salt's official org chart.
+  - figure_id: F-010
+    title: Salt diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk severity and likelihood ratings derived from this public-source report.
+    purpose: Prioritize follow-up requests.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale: [low, medium, high, unknown]
+      y_axis:
+        label: severity
+        scale: [informational, low, medium, high, critical]
+      risk_points:
+        - risk_id: R-001
+          label: Financial opacity / valuation reset
+          severity: high
+          likelihood: medium
+          rationale: Operating metrics and current valuation are not public despite old unicorn valuation.
+          evidence_claim_ids: [EC-001, EC-002, EC-007]
+          source_ids: [SRC-001, SRC-002]
+        - risk_id: R-002
+          label: Founder/IP provenance
+          severity: high
+          likelihood: medium
+          rationale: Public narratives differ and patent records require assignment-chain review.
+          evidence_claim_ids: [EC-015, EC-016, EC-023]
+          source_ids: [SRC-006, SRC-017, SRC-018, SRC-025]
+        - risk_id: R-003
+          label: Competitive compression
+          severity: high
+          likelihood: medium
+          rationale: Standalone API security can face platform bundling and pricing pressure.
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-023, SRC-024]
+        - risk_id: R-005
+          label: Privacy / AI / vendor dependencies
+          severity: high
+          likelihood: medium
+          rationale: Subprocessors include cloud, AI, database, analytics, services, and affiliates.
+          evidence_claim_ids: [EC-013, EC-014, EC-025, EC-026]
+          source_ids: [SRC-015, SRC-016]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Place high/medium items first for diligence prioritization.
+    evidence_claim_ids: [EC-001, EC-002, EC-007, EC-013, EC-014, EC-015, EC-016, EC-019, EC-023, EC-025, EC-026]
+    source_ids: [SRC-001, SRC-002, SRC-006, SRC-015, SRC-016, SRC-017, SRC-018, SRC-023, SRC-024, SRC-025]
+    notes: Ratings reflect public-source uncertainty, not an investment recommendation.
+  - figure_id: F-011
+    title: Personnel-growth claim versus diligence data need
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public employee-growth percentage compared with missing personnel metrics.
+    purpose: Highlight that percentage growth does not equal productivity.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Personnel metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public percentage or availability index
+        unit: index
+        scale: linear
+      series:
+        - series_id: F-011-S1
+          name: Publicly quantified
+          unit: percent
+          data_points:
+            - x: Employee growth
+              y: 250
+              label: 250% claimed growth
+              evidence_claim_ids: [EC-006, EC-024]
+              source_ids: [SRC-002]
+            - x: Current headcount
+              y: 0
+              label: Not public
+              evidence_claim_ids: [EC-024]
+              source_ids: [SRC-002]
+            - x: Quota capacity
+              y: 0
+              label: Not public
+              evidence_claim_ids: [EC-024]
+              source_ids: [SRC-002]
+            - x: Attrition
+              y: 0
+              label: Not public
+              evidence_claim_ids: [EC-024]
+              source_ids: [SRC-002]
+      annotations:
+        - label: Productivity gap
+          x: Employee growth
+          y: 250
+          note: Need function/location/tenure/attrition data to interpret headcount growth.
+          evidence_claim_ids: [EC-024]
+          source_ids: [SRC-002]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Values of 0 represent unavailable public data, not actual zero.
+    evidence_claim_ids: [EC-006, EC-024]
+    source_ids: [SRC-002]
+    notes: Chart intentionally shows data availability, not actual headcount.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Salt Security as a unicorn with a $1.4 billion valuation and a 2022-02-10 unicorn date.
+    evidence_summary: Independent market-database evidence supports Salt's historical unicorn status.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-001]
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Salt Security; $1.4B valuation; 2/10/2022 unicorn date.
+        location: CB Insights unicorn company list entry reviewed in-session.
+    analyst_interpretation: This verifies historical unicorn eligibility, not current enterprise value.
+    limitations: CB Insights is a secondary market database and may lag current valuation changes.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-002]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-002
+    claim: Salt Security announced a $140 million Series D led by CapitalG, $271 million total funding, and a $1.4 billion valuation.
+    evidence_summary: Company/PRNewswire announcement corroborates Series D amount, lead investor, total funding, and valuation.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: $140 million Series D financing led by CapitalG; $271 million in total funding; $1.4 billion valuation.
+        location: Series D announcement.
+    analyst_interpretation: Financing validation is strong, but cap table terms and current valuation remain private.
+    limitations: Announcement is company-controlled and does not disclose financial statements or financing terms.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-002]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-003
+    claim: Salt Security publicly announced or was reported to have raised a $70 million Series C led by Advent International.
+    evidence_summary: Public financing coverage supports the Series C milestone.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-003]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: $70 million Series C led by Advent.
+        location: Series C public announcement or coverage reviewed in-session.
+    analyst_interpretation: Series C adds historical financing credibility.
+    limitations: Cap table and round terms are not public.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-002]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-004
+    claim: Salt Security publicly announced or was reported to have raised a $30 million Series B led by Sequoia.
+    evidence_summary: Public financing coverage supports the Series B milestone.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-004]
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: $30 million Series B led by Sequoia.
+        location: Series B coverage reviewed in-session.
+    analyst_interpretation: Series B adds investor-syndicate quality but not current performance evidence.
+    limitations: Round terms and operating metrics are not public.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-002]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-005
+    claim: Salt Security publicly announced or was reported to have raised a $20 million Series A led by Tenaya Capital.
+    evidence_summary: Public financing coverage supports the Series A milestone.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-005]
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: $20 million Series A led by Tenaya Capital.
+        location: Series A coverage reviewed in-session.
+    analyst_interpretation: Supports early venture financing history.
+    limitations: Terms, ownership, and pre-money valuation are not public.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-002]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-006
+    claim: Salt's Series D announcement reported 500% revenue growth, 300% customer growth, 250% employee growth, and 900% Fortune/Global 500 signed-customer growth.
+    evidence_summary: Company announcement provides directional growth claims.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: 500% revenue growth, 300% customer growth, 250% employee growth, and 900% Fortune/Global 500 signed customer growth.
+        location: Series D announcement growth metrics.
+    analyst_interpretation: Growth is impressive but requires denominators, period, ARR bridge, and customer definitions.
+    limitations: Unaudited public claim; baselines and periods are not disclosed.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-003]
+      figure_ids: [F-004, F-011]
+      risk_ids: [R-001, R-007]
+  - evidence_claim_id: EC-007
+    claim: Public sources did not disclose Salt's audited financial statements, current ARR, gross margin, cash, debt, burn, or detailed forecasts.
+    evidence_summary: Reviewed public materials contain financing and growth claims but not private-company financial statements.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: medium
+    source_ids: [SRC-002, SRC-012]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Financing announcement discloses funding and growth claims, not financial statements.
+        location: Analyst review of public source content.
+    analyst_interpretation: Financial opacity is normal for private companies but is the central valuation risk.
+    limitations: Non-public materials may fully address this gap.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-002]
+      figure_ids: [F-002]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-008
+    claim: Salt publicly describes API discovery, inventory/context, posture/governance, and remediation capabilities.
+    evidence_summary: Salt product pages describe platform modules for API visibility and posture management.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-007, SRC-008, SRC-009]
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: API security platform with discovery, posture, and protection capabilities.
+        location: Salt platform/product pages reviewed in-session.
+    analyst_interpretation: Product scope is publicly supported.
+    limitations: Public product pages do not prove production coverage or efficacy.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-001]
+      table_ids: [T-004, T-006, T-011]
+      figure_ids: [F-003, F-006]
+      risk_ids: [R-006]
+  - evidence_claim_id: EC-009
+    claim: Salt publicly describes behavioral threat protection and AI/agentic-security positioning.
+    evidence_summary: Product and agentic-security materials support Salt's runtime and AI-era positioning.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-010, SRC-011]
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: Behavioral threat protection and API attack detection.
+        location: Salt threat-protection product material reviewed in-session.
+    analyst_interpretation: Claims are credible product positioning but require benchmark and customer telemetry validation.
+    limitations: Model details, false-positive rates, precision/recall, and customer outcomes are not public.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-001, FC-005]
+      table_ids: [T-004, T-006, T-011]
+      figure_ids: [F-003, F-006]
+      risk_ids: [R-006, R-005]
+  - evidence_claim_id: EC-010
+    claim: Salt publicly references product integrations or connectors such as GitHub Connect, Databricks, and Netlify-related workflows.
+    evidence_summary: Public product/announcement materials support integration strategy.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-020, SRC-021, SRC-022]
+    quoted_evidence:
+      - source_id: SRC-020
+        quote: GitHub Connect.
+        location: Salt integration material reviewed in-session.
+    analyst_interpretation: Integrations can improve workflow stickiness, but commercial adoption is unknown.
+    limitations: Integration usage and revenue contribution are not public.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-001, FC-005]
+      table_ids: [T-005, T-016]
+      figure_ids: [F-001, F-003, F-008]
+      risk_ids: [R-003, R-006]
+  - evidence_claim_id: EC-011
+    claim: Salt publicly names enterprise customers including Ally Bank, Finastra, Equinix, Armis, Carrefour, City National Bank, Payoneer, and TripActions.
+    evidence_summary: Company customer pages and case-study materials provide public customer-logo evidence.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-012, SRC-013, SRC-014]
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Public customer pages list enterprise customer logos and stories.
+        location: Salt customer pages reviewed in-session.
+    analyst_interpretation: Logos support market credibility but not ARR, deployment scope, or renewal status.
+    limitations: Customer evidence is company-curated marketing material.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-004]
+      table_ids: [T-007, T-014]
+      figure_ids: [F-005, F-007]
+      risk_ids: [R-004]
+  - evidence_claim_id: EC-012
+    claim: Salt's public customer materials do not disclose customer revenue concentration, churn, NRR/GRR, renewal status, or deployment breadth.
+    evidence_summary: Public logo evidence lacks contract-level customer economics.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids: [SRC-012, SRC-013]
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Customer marketing pages provide logos/stories, not revenue concentration or retention tables.
+        location: Analyst review of customer pages.
+    analyst_interpretation: Customer economics are a priority diligence gap.
+    limitations: Management may provide complete data under NDA.
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids: [FC-004]
+      table_ids: [T-007, T-008, T-014]
+      figure_ids: [F-005, F-007]
+      risk_ids: [R-004]
+  - evidence_claim_id: EC-013
+    claim: Salt's public subprocessor list includes AWS, Microsoft Azure OpenAI, MongoDB Atlas, SingleStore, Sisense, Sec4U, Salt Canada, and Salt Ltd.
+    evidence_summary: Public subprocessor disclosure provides vendor-risk leads.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-016]
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: AWS; Microsoft Azure OpenAI; MongoDB Atlas; SingleStore; Sisense; Sec4U; Salt Canada; Salt Ltd.
+        location: Salt subprocessor list reviewed in-session.
+    analyst_interpretation: The subprocessor list is a concrete supplier and data-processing diligence map.
+    limitations: Public list does not disclose contract terms, data categories, volumes, or controls.
+    associations:
+      chapter_id: III
+      section_id: III.E
+      founder_claim_ids: [FC-007]
+      table_ids: [T-009, T-020, T-021]
+      figure_ids: [F-003, F-010]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-014
+    claim: Salt's privacy policy describes customer-data processing, privacy rights, GDPR/CCPA context, SCCs/cross-border transfers, and retention/processing concepts.
+    evidence_summary: Public privacy policy supports existence of privacy and data-protection commitments.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-015]
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Privacy policy language addresses customer data, GDPR/CCPA, transfers, and retention.
+        location: Salt privacy policy reviewed in-session.
+    analyst_interpretation: Privacy obligations are visible and should be tested with DPA/SOC 2/incident evidence.
+    limitations: Public policy does not prove implementation.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: [FC-007]
+      table_ids: [T-020, T-021]
+      figure_ids: [F-003, F-010]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-015
+    claim: Public patent records for US9853996B2 identify Secful and inventors Roey Eliyahu and Omer Sadika.
+    evidence_summary: Patent records provide specific inventor and assignee/provenance evidence relevant to Salt's early IP.
+    evidence_type: patent_or_trademark_record
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-017, SRC-018]
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: US9853996B2; inventors Roey Eliyahu and Omer Sadika.
+        location: Patent record reviewed in-session.
+    analyst_interpretation: Patent record is strong public evidence; assignment chain to Salt still needs legal review.
+    limitations: One patent record does not establish the entire IP estate.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: [FC-006]
+      table_ids: [T-017, T-018, T-020, T-021]
+      figure_ids: [F-008, F-010]
+      risk_ids: [R-002, R-008]
+  - evidence_claim_id: EC-016
+    claim: Public founder/founding narratives reviewed in-session are inconsistent across current company materials, older financing materials, market-database snippets, and patent records.
+    evidence_summary: Current materials reviewed in-session cite Roey Eliyahu and Michael Nicosia with a 2018 founding narrative, while older materials/snippets reference 2016 and/or Omer Sadika; patent records name Roey Eliyahu and Omer Sadika.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-006, SRC-002, SRC-017, SRC-018, SRC-025]
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Current Salt about-page founder narrative reviewed in-session.
+        location: Salt about page.
+      - source_id: SRC-017
+        quote: Patent record names Roey Eliyahu and Omer Sadika as inventors.
+        location: Patent record.
+    analyst_interpretation: Inconsistency may be benign but is material enough to request formation and IP assignment documents.
+    limitations: Public snippets can be stale or incomplete; company records are needed.
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: [FC-006]
+      table_ids: [T-017, T-018, T-020, T-021]
+      figure_ids: [F-008, F-009, F-010]
+      risk_ids: [R-002, R-008]
+  - evidence_claim_id: EC-017
+    claim: Salt publishes leadership/about materials that identify current leadership and company positioning at a high level.
+    evidence_summary: Public company pages provide leadership context but not full org chart or board materials.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-006, SRC-019]
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: Public leadership page identifies executive leadership.
+        location: Salt leadership page reviewed in-session.
+    analyst_interpretation: Leadership identification is useful; org and governance diligence remains incomplete.
+    limitations: Public leadership pages can omit board observers, reporting lines, and recent changes.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-018, T-019]
+      figure_ids: [F-009]
+      risk_ids: [R-002, R-007]
+  - evidence_claim_id: EC-018
+    claim: Public searches reviewed for this standard screen did not identify major pending litigation, acquisition, IPO, shutdown, or regulatory-enforcement events for Salt Security.
+    evidence_summary: Negative public-source signal reduces but does not eliminate legal/event risk.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: low
+    source_ids: [SRC-026]
+    quoted_evidence:
+      - source_id: SRC-026
+        quote: Public web searches did not surface major litigation or terminal corporate event evidence in-session.
+        location: Analyst search notes.
+    analyst_interpretation: Absence of evidence is not evidence of absence; counsel docket review is required.
+    limitations: No exhaustive docket, PACER, regulator, or state-court search was completed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids: [T-020, T-021]
+      figure_ids: [F-010]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-019
+    claim: Salt competes in a crowded API-security market with standalone vendors and broader application-security, WAF/gateway, CNAPP, and platform-suite competitors.
+    evidence_summary: Public market and product-category evidence supports significant competitive pressure around API security.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-023, SRC-024]
+    quoted_evidence:
+      - source_id: SRC-023
+        quote: API security and API attack risk are active cybersecurity topics.
+        location: Public market/threat materials reviewed in-session.
+    analyst_interpretation: Category relevance is strong; standalone durability requires win/loss and technical proof.
+    limitations: Competitive set and market share were not verified with paid analyst data or customer survey.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: [FC-001]
+      table_ids: [T-010, T-011, T-012, T-015]
+      figure_ids: [F-006, F-010]
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-020
+    claim: Salt's public go-to-market signals include enterprise customer references, category education, integrations, and direct enterprise-security positioning.
+    evidence_summary: Public pages support qualitative GTM strategy but do not disclose sales productivity.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-012, SRC-020, SRC-021, SRC-022, SRC-023]
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Public customer stories and logos support reference-led enterprise selling.
+        location: Salt customer pages reviewed in-session.
+    analyst_interpretation: GTM evidence is qualitative; sales metrics are required to assess efficiency.
+    limitations: No pipeline, sales-cycle, quota, CAC, or win/loss data is public.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: [FC-004]
+      table_ids: [T-013, T-014, T-015]
+      figure_ids: [F-007]
+      risk_ids: [R-007, R-003]
+  - evidence_claim_id: EC-021
+    claim: No public IPO, acquisition, or shutdown event for Salt Security was identified in the reviewed source set.
+    evidence_summary: Public company continues to present active product, customer, privacy, and subprocessor pages.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: medium
+    source_ids: [SRC-006, SRC-007, SRC-026]
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Salt maintains active public company pages reviewed in-session.
+        location: Company pages.
+    analyst_interpretation: Public evidence supports active-company status but not financing health.
+    limitations: Private acquisition discussions, down-rounds, or restructurings would not necessarily be public.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids: [T-020]
+      figure_ids: [F-010]
+      risk_ids: [R-001, R-008]
+  - evidence_claim_id: EC-022
+    claim: Salt publicly positions itself around an Agentic Security Platform and AI-era API risks.
+    evidence_summary: Public materials show newer product narrative around agentic security.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-011]
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Agentic Security Platform.
+        location: Salt product or announcement material reviewed in-session.
+    analyst_interpretation: Positioning could be timely, but adoption and technical differentiation are unproven publicly.
+    limitations: Public messaging does not prove SKU revenue, feature maturity, model quality, or customer demand.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: [FC-005]
+      table_ids: [T-004, T-006, T-011, T-016]
+      figure_ids: [F-001, F-004, F-008]
+      risk_ids: [R-003, R-006, R-005]
+  - evidence_claim_id: EC-023
+    claim: Salt's broader patent, trademark, copyright, open-source, and invention-assignment estate is not fully verifiable from the limited public patent records reviewed.
+    evidence_summary: Public records identify at least one relevant patent record, but not the complete IP estate.
+    evidence_type: patent_or_trademark_record
+    verification_status: not_publicly_verifiable
+    confidence: medium
+    source_ids: [SRC-017, SRC-018]
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: US9853996B2 public patent record.
+        location: Justia patent page reviewed in-session.
+    analyst_interpretation: IP diligence must obtain full schedules and assignments.
+    limitations: Public patent searches in this session were not exhaustive.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: [FC-006]
+      table_ids: [T-017, T-018, T-020, T-021]
+      figure_ids: [F-008, F-010]
+      risk_ids: [R-002, R-008]
+  - evidence_claim_id: EC-024
+    claim: Salt's public employee-growth claim is 250%, but exact current headcount, function mix, location mix, attrition, and productivity are not public.
+    evidence_summary: Series D announcement includes growth percentage but not denominator or current organization data.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-002, SRC-027]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: 250% employee growth.
+        location: Series D announcement.
+    analyst_interpretation: Headcount growth needs payroll and productivity data to assess burn and execution risk.
+    limitations: Public social-profile data can be stale or approximate.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: [FC-003]
+      table_ids: [T-003, T-019]
+      figure_ids: [F-004, F-011]
+      risk_ids: [R-007]
+  - evidence_claim_id: EC-025
+    claim: Public subprocessor disclosures indicate Salt depends on third-party cloud, AI, database, analytics, services, and affiliated processors.
+    evidence_summary: Supplier exposure is visible through the subprocessor list.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-016]
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: Listed subprocessors include AWS, Microsoft Azure OpenAI, MongoDB Atlas, SingleStore, Sisense, Sec4U, Salt Canada, and Salt Ltd.
+        location: Salt subprocessor page.
+    analyst_interpretation: These vendors should be assessed for data, continuity, cost, and regulatory risk.
+    limitations: Public list does not disclose volumes, terms, controls, or actual data categories.
+    associations:
+      chapter_id: III
+      section_id: III.E
+      founder_claim_ids: [FC-007]
+      table_ids: [T-009, T-020, T-021]
+      figure_ids: [F-003, F-010]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-026
+    claim: Salt's privacy and subprocessor materials create specific AI, data-transfer, customer-data, and retention diligence issues.
+    evidence_summary: Privacy policy and subprocessor list show legal obligations and third-party data-processing dependencies.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-015, SRC-016]
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Privacy policy addresses customer data, transfers, retention, and privacy-rights concepts.
+        location: Salt privacy policy.
+      - source_id: SRC-016
+        quote: Microsoft Azure OpenAI is listed as a subprocessor.
+        location: Salt subprocessor page.
+    analyst_interpretation: AI and customer-data handling should be audited before investment or acquisition.
+    limitations: Public policy does not prove control effectiveness or customer-contract compliance.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: [FC-007]
+      table_ids: [T-004, T-006, T-009, T-020, T-021]
+      figure_ids: [F-003, F-008, F-010]
+      risk_ids: [R-005]
+
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: market_database
+    reliability_notes: Independent market database; useful for historical valuation/date but not current valuation.
+    archive_url: null
+  - source_id: SRC-002
+    title: Salt Security Extends API Security Leadership with $140M Series D Financing at $1.4B Valuation
+    url: https://www.prnewswire.com/news-releases/salt-security-extends-api-security-leadership-with-140-million-series-d-financing-at-1-4-billion-valuation-301482598.html
+    publisher: PRNewswire / Salt Security
+    author: null
+    publication_date: 2022-02-10
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company announcement distributed through PRNewswire; strong for what company announced, not audited financial proof.
+    archive_url: null
+  - source_id: SRC-003
+    title: Salt Security Raises $70 Million Series C to Combat API Security Threats
+    url: https://salt.security/press-releases/salt-security-raises-70-million-series-c-to-combat-api-security-threats
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company financing announcement; terms beyond headline amount/lead are not independently verified here.
+    archive_url: null
+  - source_id: SRC-004
+    title: Salt Security raises $30M Series B to protect APIs
+    url: https://techcrunch.com/2020/12/10/salt-security-raises-30m-series-b-to-protect-apis/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2020-12-10
+    accessed_date: 2026-05-16
+    source_type: independent_news
+    reliability_notes: Independent technology news coverage; good for public financing milestone, not legal terms.
+    archive_url: null
+  - source_id: SRC-005
+    title: Salt Security raises $20M Series A to help companies prevent API attacks
+    url: https://techcrunch.com/2020/06/16/salt-security-raises-20m-series-a-to-help-companies-prevent-api-attacks/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2020-06-16
+    accessed_date: 2026-05-16
+    source_type: independent_news
+    reliability_notes: Independent technology news coverage; good for public financing milestone, not legal terms.
+    archive_url: null
+  - source_id: SRC-006
+    title: About Salt Security
+    url: https://salt.security/about
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-controlled profile page; useful for current company narrative.
+    archive_url: null
+  - source_id: SRC-007
+    title: Salt Security Platform
+    url: https://salt.security/platform
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page; product scope evidence but not efficacy proof.
+    archive_url: null
+  - source_id: SRC-008
+    title: Salt API Discovery
+    url: https://salt.security/products/api-discovery
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page; validates public product positioning.
+    archive_url: null
+  - source_id: SRC-009
+    title: Salt API Posture Management
+    url: https://salt.security/products/api-posture-management
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page; validates public product positioning.
+    archive_url: null
+  - source_id: SRC-010
+    title: Salt API Threat Protection
+    url: https://salt.security/products/api-threat-protection
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product page; validates public positioning but not independent detection performance.
+    archive_url: null
+  - source_id: SRC-011
+    title: Salt Agentic Security Platform
+    url: https://salt.security/agentic-security-platform
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company product/positioning page; requires validation of feature maturity and adoption.
+    archive_url: null
+  - source_id: SRC-012
+    title: Salt Security Customers
+    url: https://salt.security/customers
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-curated customer evidence; customer references and contracts needed.
+    archive_url: null
+  - source_id: SRC-013
+    title: Salt Security customer case studies
+    url: https://salt.security/resources/case-studies
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: customer_or_partner_source
+    reliability_notes: Company-hosted case-study index; use for leads, not revenue proof.
+    archive_url: null
+  - source_id: SRC-014
+    title: Salt Security customer resources and stories
+    url: https://salt.security/resources
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-hosted resource library; customer claims need direct reference checks.
+    archive_url: null
+  - source_id: SRC-015
+    title: Salt Security Privacy Policy
+    url: https://salt.security/privacy-policy
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company legal policy; implementation and contractual variants require document review.
+    archive_url: null
+  - source_id: SRC-016
+    title: Salt Security Subprocessors
+    url: https://salt.security/subprocessors
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company legal disclosure; strong lead for vendor diligence, not a contract-term substitute.
+    archive_url: null
+  - source_id: SRC-017
+    title: US9853996B2 patent record
+    url: https://patents.google.com/patent/US9853996B2/en
+    publisher: Google Patents
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: patent_or_trademark_record
+    reliability_notes: Public patent record; useful for inventor/assignee history and IP provenance.
+    archive_url: null
+  - source_id: SRC-018
+    title: Patent US9853996B2
+    url: https://patents.justia.com/patent/9853996
+    publisher: Justia Patents
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: patent_or_trademark_record
+    reliability_notes: Public patent-record mirror; corroborates patent details but not complete IP estate.
+    archive_url: null
+  - source_id: SRC-019
+    title: Salt Security Leadership
+    url: https://salt.security/leadership
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company-controlled leadership page; current org and board details require confirmation.
+    archive_url: null
+  - source_id: SRC-020
+    title: Salt Security GitHub Connect public material
+    url: https://salt.security/resources
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Public product/integration material reviewed as a signal; specific URL may resolve within Salt resource library.
+    archive_url: null
+  - source_id: SRC-021
+    title: Salt Security Databricks connector public material
+    url: https://salt.security/resources
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Public product/integration material reviewed as a signal; validate current availability with management.
+    archive_url: null
+  - source_id: SRC-022
+    title: Salt Security Netlify connector public material
+    url: https://salt.security/resources
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Public product/integration material reviewed as a signal; validate current availability with management.
+    archive_url: null
+  - source_id: SRC-023
+    title: Salt Security API security threat research and blog resources
+    url: https://salt.security/blog
+    publisher: Salt Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: primary_company_source
+    reliability_notes: Company thought leadership; useful for category positioning, not independent market share.
+    archive_url: null
+  - source_id: SRC-024
+    title: Gartner Peer Insights API Protection vendor page for Salt Security
+    url: https://www.gartner.com/reviews/market/application-programming-interface-api-protection/vendor/salt-security
+    publisher: Gartner Peer Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: review_site
+    reliability_notes: Public review/market page can indicate category presence; not a substitute for paid analyst reports or customer calls.
+    archive_url: null
+  - source_id: SRC-025
+    title: Crunchbase company profile for Salt Security
+    url: https://www.crunchbase.com/organization/salt-security
+    publisher: Crunchbase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: market_database
+    reliability_notes: Secondary profile useful for cross-checking founder/funding snippets; may be stale or incomplete.
+    archive_url: null
+  - source_id: SRC-026
+    title: Public negative-search notes for Salt Security legal and corporate-event checks
+    url: null
+    publisher: Analyst search notes
+    author: GitHub Copilot
+    publication_date: 2026-05-16
+    accessed_date: 2026-05-16
+    source_type: other
+    reliability_notes: Internal public-search notes from this diligence run; absence of evidence is low-confidence without docket/regulator searches.
+    archive_url: null
+  - source_id: SRC-027
+    title: LinkedIn company profile for Salt Security
+    url: https://www.linkedin.com/company/salt-security/
+    publisher: LinkedIn
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-16
+    source_type: social_or_professional_profile
+    reliability_notes: Social profile may provide approximate employee and geography signals; not authoritative payroll data.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Financial opacity and stale unicorn valuation
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Salt's $1.4B valuation is verified historically, but current ARR, growth, margin, burn, cash, debt, customer concentration, and valuation marks are not public.
+    impacted_chapter_ids: [I, V, VII]
+    impacted_section_ids: [I.A, I.B, I.C, V.D, VII.E]
+    evidence_claim_ids: [EC-001, EC-002, EC-006, EC-007]
+    mitigation_or_diligence_request: Request audited financials, ARR bridge, retention cohorts, cash/burn/debt, cap table, preference stack, and latest valuation materials.
+  - risk_id: R-002
+    risk_title: Founder and IP provenance inconsistency
+    risk_category: legal
+    severity: high
+    likelihood: medium
+    description: Public founder/founding narratives and Secful patent records require direct reconciliation through incorporation, founder, invention-assignment, and separation documents.
+    impacted_chapter_ids: [VI, VII, VIII]
+    impacted_section_ids: [VI.A, VII.C, VIII.D]
+    evidence_claim_ids: [EC-015, EC-016, EC-023]
+    mitigation_or_diligence_request: Obtain formation records, founder agreements, IP assignments, Secful asset-transfer documents, release agreements, and full patent/trademark/open-source schedules.
+  - risk_id: R-003
+    risk_title: Competitive compression from specialist and platform vendors
+    risk_category: market
+    severity: high
+    likelihood: medium
+    description: API security is important but crowded; broader security platforms can bundle API features, potentially pressuring standalone pricing and renewal priority.
+    impacted_chapter_ids: [II, IV, V]
+    impacted_section_ids: [II.A, IV.A, V.C]
+    evidence_claim_ids: [EC-008, EC-009, EC-019, EC-020, EC-022]
+    mitigation_or_diligence_request: Review win/loss, competitive pricing, displacement data, customer budget owner interviews, and product benchmark results.
+  - risk_id: R-004
+    risk_title: Customer-logo evidence does not prove revenue quality
+    risk_category: customer
+    severity: medium
+    likelihood: medium
+    description: Public customer logos and case studies support credibility but do not disclose ARR, renewal status, deployment breadth, churn, concentration, or referenceability.
+    impacted_chapter_ids: [III, V]
+    impacted_section_ids: [III.A, III.C, III.D, V.B]
+    evidence_claim_ids: [EC-011, EC-012]
+    mitigation_or_diligence_request: Conduct customer references and reconcile to signed contracts, renewal schedules, deployment telemetry, NRR/GRR, and support records.
+  - risk_id: R-005
+    risk_title: Privacy, AI, cloud, and subprocessor dependency risk
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Salt lists cloud, AI, database, analytics, services, and affiliate subprocessors; API-security data flows can trigger stringent customer, privacy, transfer, and AI governance obligations.
+    impacted_chapter_ids: [II, III, VIII]
+    impacted_section_ids: [II.A, III.E, VIII.F, VIII.G]
+    evidence_claim_ids: [EC-013, EC-014, EC-025, EC-026]
+    mitigation_or_diligence_request: Review DPA/SCCs, SOC 2/ISO, DPIAs, vendor contracts, AI-service terms, data-flow diagrams, retention controls, and incident history.
+  - risk_id: R-006
+    risk_title: Product efficacy and deployment coverage not independently proven
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: Public product pages describe discovery and behavioral protection, but independent efficacy, precision/recall, false positives, deployment friction, and customer outcomes are not public.
+    impacted_chapter_ids: [II, IV, VI]
+    impacted_section_ids: [II.A, IV.A, VI.B]
+    evidence_claim_ids: [EC-008, EC-009, EC-010, EC-022]
+    mitigation_or_diligence_request: Perform technical diligence with live demos, customer telemetry, incident samples, red-team results, model governance, and architecture review.
+  - risk_id: R-007
+    risk_title: GTM efficiency and headcount productivity unknown
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Public growth percentages do not reveal sales productivity, CAC payback, quota attainment, rep ramp, marketing ROI, or employee retention.
+    impacted_chapter_ids: [I, V, VII]
+    impacted_section_ids: [I.B, V.A, V.D, VII.B, VII.G]
+    evidence_claim_ids: [EC-006, EC-020, EC-024]
+    mitigation_or_diligence_request: Request pipeline, quota, win/loss, CAC payback, marketing ROI, rep roster, headcount history, attrition, and compensation data.
+  - risk_id: R-008
+    risk_title: Legal docket, IP estate, insurance, and contracts not exhaustively verified
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: No major public litigation was found in the reviewed source set, but exhaustive docket, contract, insurance, IP, and regulatory diligence was not performed.
+    impacted_chapter_ids: [VII, VIII]
+    impacted_section_ids: [VII.F, VIII.A, VIII.B, VIII.D, VIII.E, VIII.F, VIII.G]
+    evidence_claim_ids: [EC-018, EC-021, EC-023]
+    mitigation_or_diligence_request: Have counsel perform docket/regulator searches and review litigation schedules, contracts, insurance policies, IP schedules, and privacy/regulatory records.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, ARR/MRR, revenue by product/customer, margins, cash, debt, burn, runway, and forecast variance.
+    why_it_matters: Required to re-underwrite the historical unicorn valuation and financing risk.
+    suggested_source_or_request: Management financial data room and board packages.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, liquidation preferences, option pool, investor rights, debt, SAFEs/convertibles, and 409A valuation history.
+    why_it_matters: Determines ownership, dilution, downside protection, and valuation reset risk.
+    suggested_source_or_request: Corporate counsel and CFO cap table export plus financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Customer ARR, concentration, deployment scope, renewal schedule, churn, NRR/GRR, support history, and referenceability.
+    why_it_matters: Public logos do not prove revenue quality or retention.
+    suggested_source_or_request: CRM/contracts export and customer reference calls.
+    priority: high
+  - gap_id: G-004
+    chapter_id: II
+    section_id: II.A
+    missing_information: Independent product-efficacy evidence, deployment coverage, precision/recall, false positives, incident outcomes, and model governance.
+    why_it_matters: Product claims drive differentiation and renewal value.
+    suggested_source_or_request: CTO/CISO technical data room, red-team results, telemetry, and customer security reviews.
+    priority: high
+  - gap_id: G-005
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Founder agreements, invention assignments, Secful asset-transfer chain, patent/trademark schedules, open-source BOM, and founder release documents.
+    why_it_matters: Public founder/IP provenance is not fully consistent and can affect ownership.
+    suggested_source_or_request: Legal data room and counsel memo.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: DPA/SCCs, DPIAs, transfer-impact assessments, SOC 2/ISO, privacy incidents, AI vendor terms, and customer audit findings.
+    why_it_matters: API-security vendors may process sensitive customer data and now list AI subprocessors.
+    suggested_source_or_request: Privacy/legal/security team evidence pack.
+    priority: high
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.D
+    missing_information: Sales productivity, quota attainment, CAC payback, win/loss, partner pipeline, discounting, and marketing ROI.
+    why_it_matters: Growth claims cannot be valued without efficiency metrics.
+    suggested_source_or_request: CRO/CMO operating metrics and CRM exports.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Headcount by function/location, attrition, compensation, equity grants, and hiring plan.
+    why_it_matters: Employee-growth claims may imply burn and execution risk.
+    suggested_source_or_request: HRIS/payroll/equity plan export.
+    priority: medium
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, ARR bridge, revenue by product/customer, margins, cash, debt, burn, runway, forecast variance, and board KPI packs for FY2021-present.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide Series A-D financing documents, current cap table, preference stack, option pool, debt/SAFE/convertible instruments, and latest valuation materials.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.C
+    request: Provide customer ARR/concentration, renewal schedules, NRR/GRR, churn/downsells, deployment scope, and referenceable customer list.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: II
+    section_id: II.A
+    request: Provide product architecture, deployment modes, API coverage metrics, detection benchmarks, false-positive/false-negative data, model governance, and incident postmortems.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide incorporation records, founder agreements, founder departures/releases, invention assignments, Secful asset transfers, patent/trademark schedules, and open-source BOM.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-006
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide DPA/SCCs, SOC 2/ISO evidence, DPIAs, transfer-impact assessments, privacy incident logs, AI-service terms, and subprocessor contracts.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.D
+    request: Provide sales productivity metrics including quota attainment, sales cycle, pipeline conversion, CAC payback, win/loss, discounting, partner contribution, and marketing ROI.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide headcount by function/location, attrition, hiring plan, compensation bands, commission plans, option ledger, and retention grants.
+    requested_from: company
+    priority: medium
+  - request_id: Q-009
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide counsel-prepared litigation, threatened-claims, regulatory correspondence, insurance policies, and claims schedule.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-010
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide competitive win/loss data, displacement patterns, price comparisons, buyer budget ownership, and third-party product benchmark evidence.
+    requested_from: company
+    priority: medium
+
+limitations:
+  - limitation_id: L-001
+    description: This is a public-source diligence report and does not include management interviews, customer references, supplier calls, paid databases, legal docket searches, code review, SOC 2 review, or private data-room materials.
+    affected_chapter_ids: [I, II, III, IV, V, VI, VII, VIII]
+    affected_section_ids: [I.A, I.B, I.C, I.D, II.A, III.A, III.B, III.C, III.D, III.E, IV.A, V.A, V.B, V.C, V.D, V.E, VI.A, VI.B, VII.A, VII.B, VII.C, VII.D, VII.E, VII.F, VII.G, VIII.A, VIII.B, VIII.C, VIII.D, VIII.E, VIII.F, VIII.G]
+  - limitation_id: L-002
+    description: Company press releases and product pages are primary for what Salt claims, but they are not audited financial, technical, legal, or customer evidence.
+    affected_chapter_ids: [I, II, III, V, VI]
+    affected_section_ids: [I.A, I.C, II.A, III.A, V.A, VI.B]
+  - limitation_id: L-003
+    description: Negative litigation, acquisition, IPO, shutdown, and regulatory findings are low-confidence because exhaustive docket, regulator, and corporate-record searches were not completed.
+    affected_chapter_ids: [VIII]
+    affected_section_ids: [VIII.A, VIII.B, VIII.C, VIII.G]
+  - limitation_id: L-004
+    description: Founder and IP provenance findings are based on public-source inconsistencies and patent records; they require company and counsel documents before any conclusion.
+    affected_chapter_ids: [VI, VII, VIII]
+    affected_section_ids: [VI.A, VII.C, VIII.D]
+  - limitation_id: L-005
+    description: Several Salt resource-library URLs are cited as public evidence leads for integration/customer materials; exact current page paths may change and should be re-verified during data-room diligence.
+    affected_chapter_ids: [II, III, V, VI]
+    affected_section_ids: [II.A, III.A, III.B, V.A, VI.B]
