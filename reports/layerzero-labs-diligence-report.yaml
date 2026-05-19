@@ -1,0 +1,3552 @@
+report_metadata:
+  report_title: LayerZero Labs Public-Source Startup Diligence Report
+  target_company: LayerZero Labs
+  website: https://layerzero.network/
+  known_aliases:
+    - LayerZero
+    - LayerZero Labs Ltd.
+    - LayerZero Foundation
+    - LayerZero V2
+    - ZRO
+    - Stargate
+    - Nexus
+  sector: Omnichain interoperability protocol / blockchain infrastructure
+  geography: United States / New York per CB Insights; Vancouver, New York and APAC hiring footprint; global protocol ecosystem
+  company_stage: Private unicorn / token-governed protocol ecosystem
+  research_date: 2026-05-18
+  analyst: GitHub Copilot CLI diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Public-source only; no private financial statements, contracts, cap table or management interviews were provided.
+    - Triangulated valuation and financing from CB Insights, public news, company documents and legal records.
+    - Used LayerZero docs, company pages, GitHub repositories, Immunefi and public court search records for product, security and legal evidence.
+    - Treated company-controlled protocol, foundation and incident statements as primary evidence for what the company says, not independent proof of economics or absence of risk.
+  included_jurisdictions:
+    - United States
+    - New York per CB Insights metadata
+    - Canada / Vancouver hiring footprint
+    - APAC hiring and market expansion references
+    - Global blockchain networks and token ecosystem
+  excluded_topics:
+    - Non-public audited financial statements, tax records and management accounts
+    - Private customer contracts, supplier contracts and revenue by customer
+    - Complete cap table, token allocation schedule, warrants, debt instruments and liquidation preferences
+    - Counsel-certified docket, regulatory and IP searches
+    - Investment advice, legal opinion or technical security audit opinion
+  user_provided_materials:
+    - material_id: UPM-001
+      title: User request to create LayerZero Labs diligence report
+      type: conversation_instruction
+      date_received: 2026-05-18
+      notes: User requested reports/layerzero-labs-diligence-report.yaml using the startup diligence research skill.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: LayerZero Labs is a CB Insights unicorn valued at $3B with United States / New York metadata.
+    claim_source: CB Insights unicorn tracker
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current valuation support, cap table and preferred-stock terms.
+  - founder_claim_id: FC-002
+    claim_text: LayerZero Labs raised a $135M round in 2022 and a $120M Series B in 2023 at a $3B valuation.
+    claim_source: BusinessWire and TechCrunch public financing coverage
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request financing documents, investor rights, pro-forma capitalization and use-of-proceeds reconciliation.
+  - founder_claim_id: FC-003
+    claim_text: LayerZero is an omnichain messaging protocol that enables applications to move information across blockchains.
+    claim_source: LayerZero documentation and GitHub repositories
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-010
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request architecture diagrams, protocol audit packets, critical-path ownership and incident-response runbooks.
+  - founder_claim_id: FC-004
+    claim_text: LayerZero supports a broad network footprint, including 160+ supported blockchains on the Interoperability page.
+    claim_source: LayerZero Interoperability page
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - IV
+    mapped_section_ids:
+      - II.A
+      - III.A
+      - IV.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+      - EC-013
+    contradiction_summary: The 160+ figure is company-controlled and was not independently reconciled to active production endpoints or paid customer relationships.
+    diligence_follow_up:
+      - Request a current production-chain list, active pathway counts, usage by chain and revenue attribution.
+  - founder_claim_id: FC-005
+    claim_text: LayerZero has meaningful ecosystem adoption by DEXs, asset issuers and partners.
+    claim_source: TechCrunch 2023 article and LayerZero Interoperability page
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - III.B
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+    contradiction_summary: Public app and partner names do not prove contracted revenue, retention, net revenue concentration or customer satisfaction.
+    diligence_follow_up:
+      - Request top-customer schedule, signed agreements, customer references and gross/net revenue by customer.
+  - founder_claim_id: FC-006
+    claim_text: LayerZero maintains a major security program with a $15M maximum Immunefi bounty.
+    claim_source: Immunefi and TechCrunch security coverage
+    claim_date: null
+    mapped_chapter_ids:
+      - VI
+      - VIII
+    mapped_section_ids:
+      - VI.A
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-021
+    contradiction_summary: Security investments are visible, but the 2026 KelpDAO incident disclosed an approximately $290M exploit tied to a single-DVN setup and LayerZero Labs DVN RPC spoofing.
+    diligence_follow_up:
+      - Request full incident chronology, remediation evidence, DVN customer migration status, bounty history, insurance and SOC 2 report.
+  - founder_claim_id: FC-007
+    claim_text: LayerZero Foundation supports the ecosystem through ZRO governance, fee-switch voting, buybacks and bridging.
+    claim_source: LayerZero Foundation home page
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - V
+      - VIII
+    mapped_section_ids:
+      - I.C
+      - V.A
+      - VIII.G
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-018
+    contradiction_summary: Governance mechanics are public, but token allocation, treasury controls and legal analysis require private/counsel review.
+    diligence_follow_up:
+      - Request ZRO allocation schedule, treasury policy, governance legal memo and foundation/company service agreements.
+  - founder_claim_id: FC-008
+    claim_text: Public sources do not disclose audited financials, a complete cap table, debt schedule, detailed customer revenue or material contracts.
+    claim_source: Public-source diligence review
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - III
+      - V
+      - VII
+      - VIII
+    mapped_section_ids:
+      - I.A
+      - I.C
+      - III.C
+      - V.D
+      - VIII.F
+    verification_status: not_publicly_verifiable
+    confidence: high
+    evidence_claim_ids:
+      - EC-020
+    contradiction_summary: null
+    diligence_follow_up:
+      - Provide complete diligence data room before investment underwriting.
+
+executive_summary:
+  overall_assessment: >-
+    LayerZero Labs is a highly visible interoperability unicorn with credible public evidence for valuation, institutional
+    fundraising, open-source technical artifacts, developer documentation, a broad supported-chain footprint, named ecosystem
+    users/partners and an active security bounty. Public evidence is insufficient for an investment decision because company
+    financials, cap table, token allocations, customer revenue, material contracts, insurance, governance controls and counsel
+    searches are not public. The 2026 KelpDAO exploit materially elevates security, liveness and reputation diligence needs.
+  investment_or_diligence_thesis: >-
+    Advance only to confirmatory diligence if the investment thesis depends on LayerZero becoming a default interoperability
+    layer for applications, asset issuers and institutions. The thesis requires private proof that usage converts to durable
+    revenue, customers accept multi-DVN best practices, security remediation is complete, ZRO governance is legally robust and
+    valuation is justified by fundamentals rather than crypto-cycle multiples.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights lists LayerZero Labs at $3B, with United States / New York and Enterprise Tech metadata.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-002
+      summary: Public financing sources support the 2022 and 2023 institutional rounds and a $3B valuation.
+      evidence_claim_ids:
+        - EC-002
+        - EC-003
+    - founder_claim_id: FC-003
+      summary: Docs and repositories substantiate an omnichain messaging architecture with Endpoint, MessageLib, DVN and Executor layers.
+      evidence_claim_ids:
+        - EC-004
+        - EC-006
+        - EC-010
+  biggest_risks:
+    - risk_id: R-003
+      summary: Security/liveness concentration and the 2026 KelpDAO incident create critical diligence risk.
+    - risk_id: R-001
+      summary: No public audited financials, revenue schedule, cap table or customer contracts are available.
+    - risk_id: R-004
+      summary: ZRO governance, fee switch, buybacks and cross-chain asset issuance create token/regulatory uncertainty.
+  key_evidence_gaps:
+    - Audited financial statements, management accounts, revenue by product and revenue recognition policy.
+    - Current cap table, token allocation/vesting, debt/warrant schedule and investor rights.
+    - Top customers, contracts, revenue concentration, churn, pipeline and usage-to-revenue conversion.
+    - Security audit reports, KelpDAO postmortem, SOC 2 report, insurance, incident reserves and law-enforcement correspondence.
+    - Counsel memos covering token, commodities/securities, sanctions, money-transmission, IP and litigation exposure.
+  recommended_next_steps:
+    - Open confirmatory diligence with a data-room request focused first on financials, cap table, customer contracts and incident remediation.
+    - Commission counsel-led litigation/regulatory/IP searches and a token-governance legal review.
+    - Perform independent protocol/security review covering DVN, Executor, RPC dependency, default configuration and monitoring controls.
+    - Interview reference customers and asset issuers to validate adoption, pricing, retention and multi-DVN migration.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public evidence verifies unicorn financing history, but financial statements, projections, cap table and revenue detail are not public.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-007
+      - FC-008
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-018
+      - EC-020
+    risk_ids:
+      - R-001
+      - R-002
+      - R-004
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: No audited statements, management reports, sales breakdown, backlog or AR aging were located in public sources.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A.F1
+            finding: Public sources verify financing but not operating revenue, margins, cash burn or working-capital quality.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Revenue may be volatile, token-linked or dependent on infrastructure fees not visible in public sources.
+          - Incident, litigation or bounty obligations may create off-balance-sheet exposure.
+        evidence_gaps:
+          - Audited income statements, balance sheets, cash-flow statements and footnotes.
+          - Revenue by product, geography, channel and customer; backlog and receivables aging.
+        follow_up_questions:
+          - Provide fiscal 2023-2026 monthly management accounts and audited statements.
+          - Reconcile protocol usage, fees, ZRO economics and GAAP/IFRS revenue recognition.
+        table_ids:
+          - T-001
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8]
+        summary: Public sources discuss growth markets such as gaming, APAC, asset issuance and institutional products, but no quantified financial projections are public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.B.F1
+            finding: TechCrunch reported the 2023 round was raised for strategic alignment and expansion, not because LayerZero needed capital.
+            evidence_claim_ids:
+              - EC-003
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Projections may be highly sensitive to crypto volumes, gas prices, token prices, security incidents and regulatory constraints.
+        evidence_gaps:
+          - Three-year quarterly forecast, scenario sensitivities and external financing assumptions.
+        follow_up_questions:
+          - Provide board-approved plan, actual-vs-plan performance and downside cases after the KelpDAO incident.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-003
+          - EC-020
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: Public financing sources identify several investors and the Foundation page identifies ZRO activity, but equity ownership, token allocations, debt and dilutive securities are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.C.F1
+            finding: ZRO governance and buyback references imply token-economics diligence is required alongside corporate cap-table review.
+            evidence_claim_ids:
+              - EC-018
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Investor preferences, token lockups, foundation/company agreements or warrant/debt instruments may materially alter economics.
+        evidence_gaps:
+          - Fully diluted cap table, token allocation/vesting, SAFEs/notes/warrants, debt instruments and off-balance-sheet liabilities.
+        follow_up_questions:
+          - Provide current shares outstanding, option pool, token treasury, investor rights and all financing instruments.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-018
+          - EC-020
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: Public records support a $135M 2022 round, a $120M 2023 Series B and $3B valuation, but tax positions and accounting policies are not public.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.D.F1
+            finding: CB Insights and TechCrunch both support a $3B public unicorn valuation signal.
+            evidence_claim_ids:
+              - EC-001
+              - EC-003
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - A $3B valuation may not reflect current revenue, post-incident risk, token volatility or legal/regulatory constraints.
+        evidence_gaps:
+          - Tax positions, revenue-recognition memo, financing-current-basis analysis and valuation support.
+        follow_up_questions:
+          - Provide tax memo, audited revenue policy and independent 409A/fair-value reports.
+        table_ids:
+          - T-002
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+
+  - chapter_id: II
+    title: Products
+    chapter_summary: LayerZero's product evidence is strong for protocol design and developer tooling, with material diligence needed on reliability, pricing, customer economics and configuration risk.
+    founder_claim_ids:
+      - FC-003
+      - FC-004
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-022
+    risk_ids:
+      - R-003
+      - R-008
+      - R-009
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: The public product set includes omnichain messaging, Endpoint/MessageLib infrastructure, OApps/OFTs, Stargate, Nexus/lzAssets, DVNs, Executors and developer tooling.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A.F1
+            finding: Docs describe LayerZero as an omnichain messaging protocol with immutable endpoints, configurable message libraries, modular DVNs and permissionless execution.
+            evidence_claim_ids:
+              - EC-004
+              - EC-006
+            risk_ids:
+              - R-003
+          - finding_id: II.A.F2
+            finding: The Interoperability page claims 160+ supported blockchains and asset-issuance/value-transfer products.
+            evidence_claim_ids:
+              - EC-005
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Product safety depends on app-specific configuration, especially DVN and Executor choices.
+          - Fee economics depend on source/destination gas, DVN fees, Executor fees and user willingness to pay.
+        evidence_gaps:
+          - Product-level revenue, gross margin, SLA, uptime, incidents and customer-level profitability.
+        follow_up_questions:
+          - Provide product P&L, active pathway metrics, default configuration changes and post-incident customer migration status.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-006
+          - EC-007
+          - EC-008
+          - EC-009
+          - EC-022
+
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: LayerZero has visible ecosystem adoption signals, but customer contracts, revenue concentration, retention and supplier economics are not public.
+    founder_claim_ids:
+      - FC-004
+      - FC-005
+      - FC-008
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-020
+    risk_ids:
+      - R-001
+      - R-005
+      - R-003
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids: [III.A]
+        summary: Public sources name DEX use cases and asset/institutional partner logos, but not a top-15 customer list or revenue by application.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A.F1
+            finding: TechCrunch reported use by PancakeSwap, SushiSwap, Trader Joe and Uniswap and company-claimed TVL/volume in 2023.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-005
+          - finding_id: III.A.F2
+            finding: The Interoperability page displays partner names including BitGo, Bridge.xyz, Centrifuge, Ethena, Google, Kraken, Ondo, Paxos, PayPal, Tether and Wyoming Stable Token Commission.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Named integrations may be pilots, unpaid integrations or ecosystem relationships rather than recurring customers.
+        evidence_gaps:
+          - Top customers by ARR/revenue, customer tenure, renewal terms, gross retention and NPS/support history.
+        follow_up_questions:
+          - Provide top-15 customer list for FY2024-FY2026 with ARR, usage, gross margin and reference contacts.
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids: [III.B]
+        summary: Strategic relationships are visible through partner logos, Foundation activity, DVN/Executor architecture and integrations, but revenue contribution and agreement terms are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B.F1
+            finding: LayerZero's partner and product pages emphasize asset issuers, chains, applications and institutional assets.
+            evidence_claim_ids:
+              - EC-005
+              - EC-013
+              - EC-023
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Partnerships may depend on token incentives, co-marketing or non-standard economics.
+        evidence_gaps:
+          - Executed partnership agreements, revenue share, exclusivity, termination rights and customer success obligations.
+        follow_up_questions:
+          - Provide strategic relationship schedule with contract status, revenue contribution and marketing commitments.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-013
+          - EC-020
+          - EC-023
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids: [III.C]
+        summary: No public revenue by customer or customers contributing 5% or more of revenue were identified.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C.F1
+            finding: Public adoption metrics are usage proxies and do not disclose revenue concentration.
+            evidence_claim_ids:
+              - EC-012
+              - EC-020
+            risk_ids:
+              - R-001
+              - R-005
+        hidden_risks:
+          - A small number of asset issuers, chains or applications may drive most revenue.
+        evidence_gaps:
+          - ARR/revenue by customer and customer-level margin.
+        follow_up_questions:
+          - Identify all customers above 5% of revenue and provide contract terms.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids: [III.D]
+        summary: No complete public schedule of severed relationships was located; the KelpDAO incident implies customer remediation and migration follow-up is necessary.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: III.D.F1
+            finding: LayerZero stated it was reaching out to applications with 1/1 DVN configurations after the KelpDAO incident.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Post-incident churn or paused integrations may not be publicly reported.
+        evidence_gaps:
+          - Churned, paused, disputed or remediated customer/partner list.
+        follow_up_questions:
+          - Provide a post-incident customer-impact log and severed relationship schedule.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-016
+          - EC-020
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids: [III.E]
+        summary: Public docs identify DVNs, Executors and RPC infrastructure as operational dependencies, but supplier agreements and spend are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E.F1
+            finding: The 2026 incident statement tied the exploit path to downstream RPC infrastructure used by the LayerZero Labs DVN.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - RPC, cloud, security-vendor and DVN-provider concentration could impair liveness or integrity.
+        evidence_gaps:
+          - Supplier spend, SLAs, redundancy, security attestations and termination rights.
+        follow_up_questions:
+          - Provide top supplier list, RPC architecture, monitoring controls and SLA/indemnity terms.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-016
+
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: LayerZero competes in cross-chain messaging, token transfer, asset issuance and interoperability infrastructure, with differentiation based on configurability, chain breadth and developer tooling.
+    founder_claim_ids:
+      - FC-003
+      - FC-004
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-010
+      - EC-011
+    risk_ids:
+      - R-002
+      - R-003
+      - R-008
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: Public evidence supports a differentiated architecture but does not quantify market share, pricing power or win/loss versus Wormhole, Axelar, Chainlink CCIP, native bridges or exchange-led rails.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A.F1
+            finding: LayerZero emphasizes immutable endpoints, configurable libraries, application-owned security and permissionless execution as differentiators.
+            evidence_claim_ids:
+              - EC-004
+              - EC-006
+            risk_ids:
+              - R-003
+          - finding_id: IV.A.F2
+            finding: Developer tools and open repositories provide a go-to-market moat, but the devtools repository explicitly warns of beta status and possible breaking changes.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Security incidents can shift customer preference toward competitors or multi-provider redundancy.
+          - Chain and asset issuer relationships may be non-exclusive.
+        evidence_gaps:
+          - Market share, win/loss logs, pricing comparisons and third-party reliability benchmarks.
+        follow_up_questions:
+          - Provide competitive win/loss analysis, pricing cards and customer reasons for choosing LayerZero.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+          - EC-006
+          - EC-010
+          - EC-011
+
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: LayerZero distributes through docs, open-source tooling, ecosystem partnerships, asset-issuer integrations, foundation governance and business-development hiring; productivity metrics are not public.
+    founder_claim_ids:
+      - FC-005
+      - FC-007
+      - FC-008
+    evidence_claim_ids:
+      - EC-005
+      - EC-011
+      - EC-013
+      - EC-017
+      - EC-018
+      - EC-023
+    risk_ids:
+      - R-001
+      - R-004
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids: [V.A.1, V.A.2, V.A.3, V.A.4]
+        summary: Public GTM strategy emphasizes developer adoption, asset issuers, institutional assets, geographic expansion and ecosystem governance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A.F1
+            finding: The Interoperability page positions LayerZero for infrastructure, value transfer, asset issuance and platform use cases.
+            evidence_claim_ids:
+              - EC-005
+            risk_ids:
+              - R-005
+          - finding_id: V.A.F2
+            finding: Careers listings show GTM roles across APAC, New York and Vancouver.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Marketing claims may outrun contracted enterprise demand or required compliance controls.
+        evidence_gaps:
+          - Funnel metrics, CAC, sales-cycle length, quota attainment, channel economics and marketing budget.
+        follow_up_questions:
+          - Provide funnel conversion, bookings pipeline, quota plan and budget-vs-actual marketing spend.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-005
+          - EC-011
+          - EC-013
+          - EC-017
+          - EC-018
+          - EC-023
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids: [V.B.1, V.B.2, V.B.3]
+        summary: Public major-customer evidence is limited to named integrations and partner logos; pipeline and relationship status are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B.F1
+            finding: Named DEX and partner evidence supports adoption but not customer economics.
+            evidence_claim_ids:
+              - EC-012
+              - EC-013
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Integration announcements may not equal paid customers or future expansion.
+        evidence_gaps:
+          - Pipeline, booked ARR, expansion opportunities and executive sponsor maps.
+        follow_up_questions:
+          - Provide CRM export, late-stage pipeline and customer health scores.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+          - EC-020
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids: [V.C]
+        summary: Public evidence points to developer tooling, asset issuers, institutional partners, APAC business development and foundation-led ecosystem activity as primary demand channels.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C.F1
+            finding: Product pages and careers postings support active expansion into institutions, asset issuance and APAC business development.
+            evidence_claim_ids:
+              - EC-005
+              - EC-017
+              - EC-023
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - New business may require bespoke integrations and long security reviews, reducing sales productivity.
+        evidence_gaps:
+          - Channel-level win rates, partner-sourced revenue and implementation capacity.
+        follow_up_questions:
+          - Provide partner-sourced pipeline, implementation backlog and solution-architect capacity plan.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-017
+          - EC-023
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids: [V.D.1, V.D.2, V.D.3, V.D.4]
+        summary: Sales compensation, quota, cycle length and hiring plan are not public; careers postings only show hiring signals.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D.F1
+            finding: Public listings show GTM hiring but not productivity or compensation.
+            evidence_claim_ids:
+              - EC-017
+              - EC-020
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Enterprise and institutional interoperability sales may require long technical and compliance cycles.
+        evidence_gaps:
+          - Quota, attainment, ramp, comp plans, headcount plan and sales-cycle distribution.
+        follow_up_questions:
+          - Provide sales productivity dashboard and hiring plan by role/location.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-020
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids: [V.E]
+        summary: No public marketing budget or budget-vs-plan data was located.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.E.F1
+            finding: Budget sufficiency cannot be assessed without private financials and headcount plan.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Security remediation and compliance support may consume budget intended for growth.
+        evidence_gaps:
+          - GTM budget, security/compliance budget and product implementation capacity.
+        follow_up_questions:
+          - Provide budget, headcount and product roadmap resourcing after the KelpDAO incident.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: R&D evidence is strong for public docs, repositories, audit directories and new product announcements, but staffing, costs, roadmap commitments and security backlog are private.
+    founder_claim_ids:
+      - FC-003
+      - FC-006
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-014
+      - EC-016
+      - EC-021
+      - EC-022
+      - EC-023
+    risk_ids:
+      - R-003
+      - R-008
+      - R-009
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids: [VI.A.1, VI.A.2, VI.A.3]
+        summary: Public artifacts show protocol, devtools, audit categories and engineering/security hiring, but R&D org chart and spend are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A.F1
+            finding: LayerZero-v2 and devtools repositories describe protocol contracts, OApp/OFT standards, examples and packages.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-008
+          - finding_id: VI.A.F2
+            finding: Immunefi and audit directories indicate visible security program components.
+            evidence_claim_ids:
+              - EC-014
+              - EC-021
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Public repo activity does not prove internal security staffing, code quality, release discipline or unresolved vulnerabilities.
+        evidence_gaps:
+          - R&D headcount by function, security team staffing, roadmap, budget and defect backlog.
+        follow_up_questions:
+          - Provide engineering/security org chart, audit findings, remediation tracking and SOC 2 status.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-014
+          - EC-021
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.B.3, VI.B.4]
+        summary: Public pipeline signals include Nexus/lzAssets, lzRead, Zero, institutional asset integrations and DVN/payment products, but delivery timing, cost and revenue commitments are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B.F1
+            finding: LayerZero public pages and blog index identify asset issuance, lzRead, Zero and institutional asset initiatives.
+            evidence_claim_ids:
+              - EC-005
+              - EC-023
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - Pipeline execution may be constrained by security remediation, customer trust and regulatory review.
+        evidence_gaps:
+          - Product roadmap, ship dates, development cost, launch dependencies and customer commitments.
+        follow_up_questions:
+          - Provide roadmap with security gates, customer commitments, cost-to-complete and launch KPIs.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-022
+          - EC-023
+
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Bryan Pellegrino is publicly identified as CEO/co-founder and careers pages show hiring needs, but complete management biographies, org chart, compensation and turnover are not public.
+    founder_claim_ids:
+      - FC-008
+    evidence_claim_ids:
+      - EC-017
+      - EC-019
+      - EC-020
+      - EC-025
+    risk_ids:
+      - R-001
+      - R-007
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids: [VII.A]
+        summary: Public sources identify at least the CEO/co-founder and open functions, but not a complete org chart.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A.F1
+            finding: TechCrunch identifies Bryan Pellegrino as CEO and co-founder.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Key-person dependency may be high in protocol/security/customer relationships.
+        evidence_gaps:
+          - Current org chart, executive roles, board composition and reporting lines.
+        follow_up_questions:
+          - Provide org chart, board observer rights, key-person plan and succession plan.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-017
+          - EC-025
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids: [VII.B]
+        summary: Careers page shows open roles in Vancouver, New York and APAC, but total headcount history and projections are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B.F1
+            finding: Open roles include finance, engineering, business development, customer success, solutions architecture, data, product, recruiting and institutional marketing.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Open finance/controller roles may indicate scaling control needs; open security/engineering roles may reflect product complexity.
+        evidence_gaps:
+          - Actual headcount by department/location, attrition, hiring plan and contractor/vendor usage.
+        follow_up_questions:
+          - Provide headcount history, hiring plan, vacancies, turnover and location-level payroll cost.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids: [VII.C]
+        summary: Public-source review verified Bryan Pellegrino as CEO/co-founder through TechCrunch; full senior team biographies require company confirmation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C.F1
+            finding: TechCrunch quotes Pellegrino in both financing and security articles.
+            evidence_claim_ids:
+              - EC-003
+              - EC-015
+              - EC-025
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Lack of public executive biographies limits assessment of execution depth.
+        evidence_gaps:
+          - Senior management resumes, tenure, responsibilities, employment agreements and background checks.
+        follow_up_questions:
+          - Provide executive biographies and references for CEO, CTO/security, finance, legal and GTM leaders.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-025
+          - EC-020
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids: [VII.D.1, VII.D.2]
+        summary: Employment agreements, executive compensation and benefit plans are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D.F1
+            finding: No public compensation arrangements were identified in collected sources.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Token grants, incentive plans or change-of-control terms may create dilution or retention risk.
+        evidence_gaps:
+          - Executive employment agreements, compensation plans, benefits and severance/change-of-control terms.
+        follow_up_questions:
+          - Provide comp summary, benefits, bonus plans, severance and token/equity grants.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids: [VII.E]
+        summary: No public equity incentive or token incentive plan details were located.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E.F1
+            finding: Financing and ZRO evidence makes incentive-plan diligence material, but plan documents are not public.
+            evidence_claim_ids:
+              - EC-018
+              - EC-020
+            risk_ids:
+              - R-004
+              - R-007
+        hidden_risks:
+          - Token and equity incentives may have different vesting, tax and regulatory implications.
+        evidence_gaps:
+          - Stock option plan, token incentive plan, option pool and vesting schedules.
+        follow_up_questions:
+          - Provide stock/token incentive plans and grants by employee category.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-018
+          - EC-020
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids: [VII.F]
+        summary: No public employee-relations problem schedule was identified.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.F.F1
+            finding: Absence of public findings is not evidence of absence without HR and legal review.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Security incidents, rapid hiring or token compensation can create retention and employee-relations pressure.
+        evidence_gaps:
+          - HR complaints, litigation, investigations and culture/engagement data.
+        follow_up_questions:
+          - Provide HR/legal employee-relations log and retention plan.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids: [VII.G.1, VII.G.2]
+        summary: Personnel turnover data for the past two years is not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G.F1
+            finding: Open roles demonstrate hiring but not turnover or retention.
+            evidence_claim_ids:
+              - EC-017
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Loss of senior protocol/security engineers could impair reliability and customer confidence.
+        evidence_gaps:
+          - Turnover by function/location, retention incentives and regretted attrition.
+        follow_up_questions:
+          - Provide turnover, retention and key-person coverage for engineering, security and GTM.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-020
+
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal evidence includes an FTX Recovery Trust adversary docket and a material 2026 KelpDAO incident statement; counsel-led litigation, regulatory, IP, contract and insurance review remains essential.
+    founder_claim_ids:
+      - FC-006
+      - FC-007
+      - FC-008
+    evidence_claim_ids:
+      - EC-014
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-020
+      - EC-021
+    risk_ids:
+      - R-003
+      - R-004
+      - R-006
+      - R-009
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids: [VIII.A]
+        summary: CourtListener search identifies FTX Recovery Trust v. LayerZero Labs Ltd., Bankr. D. Del. docket 23-50492, filed 2023-09-08 and terminated 2025-02-18.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A.F1
+            finding: Public docket metadata identifies LayerZero Labs Ltd. among parties in an FTX Recovery Trust adversary proceeding.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Termination of a public docket does not prove absence of settlement obligations, releases, appeals or related claims.
+        evidence_gaps:
+          - Complaint, settlement/dismissal documents, counsel assessment and indemnity/insurance treatment.
+        follow_up_questions:
+          - Provide litigation log, FTX matter pleadings, settlement documents and counsel opinion.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids: [VIII.B]
+        summary: No company-initiated lawsuit schedule was located in public sources reviewed.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B.F1
+            finding: Public-source review did not locate a complete schedule of lawsuits initiated by LayerZero.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Defensive IP, contract or employment matters may not surface in a limited public search.
+        evidence_gaps:
+          - Counsel-certified litigation search and internal claims log.
+        follow_up_questions:
+          - Ask counsel for all pending/threatened claims initiated by LayerZero or affiliates.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids: [VIII.C.1, VIII.C.2]
+        summary: As a software/protocol business, environmental and physical safety liabilities were not visible in public sources; workplace and remote-work policies require company review.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C.F1
+            finding: Public careers footprint suggests office/remote operations in Vancouver, New York and APAC, but safety policies are not public.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Multi-jurisdiction employment, remote-work and security operations may create compliance obligations.
+        evidence_gaps:
+          - Workplace safety policies, insurance and employment compliance reviews.
+        follow_up_questions:
+          - Provide employment compliance and workplace safety documentation by jurisdiction.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-020
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids: [VIII.D]
+        summary: Public GitHub repositories and documentation evidence software/IP assets; patents, trademarks, third-party licenses and assignment chain were not counsel-verified.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D.F1
+            finding: LayerZero-v2 and devtools repositories publicly evidence copyrightable software and developer-facing packages.
+            evidence_claim_ids:
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Open-source license compliance, contributor assignments, protocol patents/trademarks and third-party dependencies may create IP exposure.
+        evidence_gaps:
+          - Patent/trademark portfolio, license scan, contributor assignment and third-party dependency review.
+        follow_up_questions:
+          - Provide IP schedule, OSS compliance report, contributor agreements and material license contracts.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-020
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids: [VIII.E]
+        summary: Insurance coverage, cyber limits, D&O coverage and incident reserves are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E.F1
+            finding: The KelpDAO incident and Immunefi program make cyber, professional liability and D&O coverage highly material.
+            evidence_claim_ids:
+              - EC-014
+              - EC-016
+            risk_ids:
+              - R-003
+              - R-006
+        hidden_risks:
+          - Exclusions for digital assets, sanctions, state actors or token activity may limit recoveries.
+        evidence_gaps:
+          - Insurance policies, exclusions, claims history and incident reserves.
+        follow_up_questions:
+          - Provide insurance schedule, broker letters, claims history and coverage analysis for KelpDAO/FTX exposures.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-016
+          - EC-020
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids: [VIII.F]
+        summary: Customer, supplier, foundation/company, token, investor, DVN/Executor and asset-issuer contracts are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F.F1
+            finding: Public sources name relationships and architecture roles but not contract terms.
+            evidence_claim_ids:
+              - EC-013
+              - EC-020
+            risk_ids:
+              - R-001
+              - R-005
+        hidden_risks:
+          - Indemnities, SLAs, revenue shares, token grants and termination rights may materially affect risk and economics.
+        evidence_gaps:
+          - Contract schedule with customers, suppliers, investors, foundation, token issuers and strategic partners.
+        follow_up_questions:
+          - Provide all material contracts and a contract-risk summary.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-020
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids: [VIII.G]
+        summary: No counsel-certified regulatory-agency problem search was performed; ZRO, cross-chain value transfer, sanctions screening and the KelpDAO incident require focused legal review.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.G.F1
+            finding: ZRO governance/buybacks and Immunefi KYC/OFAC requirements show token and sanctions-sensitive operating areas.
+            evidence_claim_ids:
+              - EC-014
+              - EC-018
+            risk_ids:
+              - R-004
+          - finding_id: VIII.G.F2
+            finding: LayerZero stated it was cooperating with law enforcement after the KelpDAO incident.
+            evidence_claim_ids:
+              - EC-016
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Securities/commodities, money transmission, sanctions, consumer protection and cyber incident reporting obligations may vary by jurisdiction.
+        evidence_gaps:
+          - Regulatory correspondence, subpoenas, token legal memos and sanctions/money-transmission analyses.
+        follow_up_questions:
+          - Commission counsel review of ZRO, fee switch, buybacks, asset issuance, OFAC/KYC and cyber incident obligations.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-016
+          - EC-018
+          - EC-020
+
+tables:
+  - table_id: T-001
+    title: Public financial information availability
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify which core financial diligence items are public versus missing.
+    columns:
+      - name: item
+        description: Checklist information requested.
+      - name: public_status
+        description: Public-source availability.
+      - name: diligence_implication
+        description: Why it matters.
+    rows:
+      - row_id: T-001.R1
+        values:
+          item: Audited annual and quarterly statements
+          public_status: Not located
+          diligence_implication: Cannot assess revenue, margins, cash burn, liabilities or going-concern risk.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-001, SRC-003, SRC-004]
+      - row_id: T-001.R2
+        values:
+          item: Revenue by product, customer, channel and geography
+          public_status: Not located
+          diligence_implication: Adoption metrics cannot be converted into revenue quality or concentration.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-003, SRC-007]
+      - row_id: T-001.R3
+        values:
+          item: Backlog and accounts receivable aging
+          public_status: Not located
+          diligence_implication: Working-capital and collection risk are not assessable.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-001, SRC-003]
+      - row_id: T-001.R4
+        values:
+          item: Tax, accounting policy and revenue recognition
+          public_status: Not located
+          diligence_implication: Token, fee and cross-chain service accounting remain high-priority gaps.
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-016]
+    evidence_claim_ids: [EC-020]
+    source_ids: [SRC-001, SRC-003, SRC-004, SRC-007, SRC-016]
+    notes: Public-source absence is not proof the information does not exist privately.
+  - table_id: T-002
+    title: Public financing and valuation history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize financing evidence available from public sources.
+    columns:
+      - name: date_or_period
+        description: Date of public financing signal.
+      - name: event
+        description: Publicly reported event.
+      - name: amount_or_valuation
+        description: Amount and valuation where disclosed.
+      - name: public_investors_or_notes
+        description: Named public investors or context.
+    rows:
+      - row_id: T-002.R1
+        values:
+          date_or_period: 2022-03-30
+          event: CB Insights unicorn tracker entry
+          amount_or_valuation: "$3B valuation signal; joined unicorn list 3/30/2022"
+          public_investors_or_notes: Andreessen Horowitz, FTX Ventures, Tiger Global Management listed by CB Insights.
+        evidence_claim_ids: [EC-001]
+        source_ids: [SRC-001]
+      - row_id: T-002.R2
+        values:
+          date_or_period: 2022-03
+          event: Public $135M round
+          amount_or_valuation: "$135M round at $1B valuation"
+          public_investors_or_notes: BusinessWire release reported co-leads and strategic investors.
+        evidence_claim_ids: [EC-002]
+        source_ids: [SRC-002]
+      - row_id: T-002.R3
+        values:
+          date_or_period: 2023-04-04
+          event: Series B
+          amount_or_valuation: "$120M; valuation increased to $3B; over $250M raised to date"
+          public_investors_or_notes: TechCrunch reported 33 investors including a16z crypto, Circle Ventures, Sequoia, OpenSea, Samsung Next, Christie's and BOND.
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-003]
+    evidence_claim_ids: [EC-001, EC-002, EC-003]
+    source_ids: [SRC-001, SRC-002, SRC-003]
+    notes: Public valuations should be reconciled to preferred terms and fully diluted ownership.
+  - table_id: T-003
+    title: Product and use-case matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public LayerZero products to diligence questions.
+    columns:
+      - name: product_or_component
+        description: Public product or component.
+      - name: public_description
+        description: What the source says.
+      - name: diligence_focus
+        description: What to verify privately.
+    rows:
+      - row_id: T-003.R1
+        values:
+          product_or_component: LayerZero protocol
+          public_description: Omnichain messaging protocol for moving information between blockchains.
+          diligence_focus: Production usage, fees, uptime, incidents and customer contracts.
+        evidence_claim_ids: [EC-004]
+        source_ids: [SRC-005]
+      - row_id: T-003.R2
+        values:
+          product_or_component: Interoperability infrastructure
+          public_description: 160+ supported blockchains; endpoints send and receive data between chains.
+          diligence_focus: Active endpoint count, production pathways and support obligations.
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-007]
+      - row_id: T-003.R3
+        values:
+          product_or_component: OApp / OFT / ONFT standards
+          public_description: Developer standards for applications and omnichain tokens.
+          diligence_focus: Developer adoption, security reviews and revenue model.
+        evidence_claim_ids: [EC-022]
+        source_ids: [SRC-019]
+      - row_id: T-003.R4
+        values:
+          product_or_component: Stargate and Nexus/lzAssets
+          public_description: Value-transfer and generalized asset-issuance offerings.
+          diligence_focus: Commercial terms, issuer obligations and regulatory classification.
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-007]
+    evidence_claim_ids: [EC-004, EC-005, EC-022]
+    source_ids: [SRC-005, SRC-007, SRC-019]
+    notes: Product descriptions are public-source and should be reconciled with internal SKU and revenue data.
+  - table_id: T-004
+    title: Architecture and security responsibility split
+    chapter_id: II
+    section_id: II.A
+    purpose: Identify who controls major reliability and security components.
+    columns:
+      - name: layer
+        description: Architecture layer.
+      - name: public_role
+        description: Publicly described role.
+      - name: control_or_risk
+        description: Diligence concern.
+    rows:
+      - row_id: T-004.R1
+        values:
+          layer: Endpoint
+          public_role: Immutable, permissionless protocol interface deployed on each chain.
+          control_or_risk: Endpoint immutability reduces upgrade risk but makes deployment correctness critical.
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-006]
+      - row_id: T-004.R2
+        values:
+          layer: Message Libraries
+          public_role: Configurable onchain rulesets for verification and delivery.
+          control_or_risk: Library selection and upgrades can affect app-level security.
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-006]
+      - row_id: T-004.R3
+        values:
+          layer: DVNs
+          public_role: Independent verification services with X-of-Y-of-N security stacks.
+          control_or_risk: Single-DVN configurations create a verifier concentration risk.
+        evidence_claim_ids: [EC-007, EC-016]
+        source_ids: [SRC-009, SRC-020]
+      - row_id: T-004.R4
+        values:
+          layer: Executors
+          public_role: Deliver verified messages and can be run by anyone, but docs identify default concentration.
+          control_or_risk: Default LayerZero Labs Executor can be a liveness/censorship concentration point.
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-010]
+      - row_id: T-004.R5
+        values:
+          layer: Pricing model
+          public_role: Source gas, security stack fees, executor fees and destination gas purchase.
+          control_or_risk: Cross-chain fee volatility and worker compensation affect UX and margins.
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-008]
+    evidence_claim_ids: [EC-006, EC-007, EC-008, EC-009, EC-016]
+    source_ids: [SRC-006, SRC-008, SRC-009, SRC-010, SRC-020]
+    notes: Control design should be independently reviewed by protocol security specialists.
+  - table_id: T-005
+    title: Public adoption and customer signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Separate usage/partner signals from revenue proof.
+    columns:
+      - name: signal_type
+        description: Type of public evidence.
+      - name: public_signal
+        description: Publicly reported signal.
+      - name: revenue_proof_status
+        description: Whether it proves revenue.
+    rows:
+      - row_id: T-005.R1
+        values:
+          signal_type: DEX application use
+          public_signal: PancakeSwap, SushiSwap, Trader Joe and Uniswap named by TechCrunch.
+          revenue_proof_status: Does not prove paid revenue or contract terms.
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-003]
+      - row_id: T-005.R2
+        values:
+          signal_type: TVL / volume / users
+          public_signal: 2023 article reported company-claimed $7B TVL, $6B volume and hundreds of thousands of unique users.
+          revenue_proof_status: Usage proxy only; not revenue.
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-003]
+      - row_id: T-005.R3
+        values:
+          signal_type: Partner logos / asset issuers
+          public_signal: Interop page lists BitGo, Bridge.xyz, Centrifuge, Ethena, Google, Kraken, Ondo, Paxos, PayPal, Tether and Wyoming Stable Token Commission.
+          revenue_proof_status: Relationship signal; not contract economics.
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-007]
+    evidence_claim_ids: [EC-012, EC-013]
+    source_ids: [SRC-003, SRC-007]
+    notes: Customer references and contracts are required to validate economics.
+  - table_id: T-006
+    title: Customer, partner and supplier proof gaps
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify private schedules needed for customer diligence.
+    columns:
+      - name: area
+        description: Customer diligence area.
+      - name: public_evidence
+        description: What public sources show.
+      - name: missing_private_evidence
+        description: Required follow-up.
+    rows:
+      - row_id: T-006.R1
+        values:
+          area: Top customers
+          public_evidence: Named applications and partner logos.
+          missing_private_evidence: Customer list, ARR/revenue, contract status and renewal history.
+        evidence_claim_ids: [EC-012, EC-013, EC-020]
+        source_ids: [SRC-003, SRC-007]
+      - row_id: T-006.R2
+        values:
+          area: Strategic relationships
+          public_evidence: Asset issuance, institutional and chain integration messaging.
+          missing_private_evidence: Agreements, revenue share, exclusivity and termination rights.
+        evidence_claim_ids: [EC-005, EC-023]
+        source_ids: [SRC-007, SRC-021]
+      - row_id: T-006.R3
+        values:
+          area: Suppliers
+          public_evidence: DVN/Executor/RPC dependencies described in docs and incident statement.
+          missing_private_evidence: Supplier list, spend, SLAs, security attestations and redundancy plans.
+        evidence_claim_ids: [EC-007, EC-008, EC-016]
+        source_ids: [SRC-009, SRC-010, SRC-020]
+    evidence_claim_ids: [EC-005, EC-007, EC-008, EC-012, EC-013, EC-016, EC-020, EC-023]
+    source_ids: [SRC-003, SRC-007, SRC-009, SRC-010, SRC-020, SRC-021]
+    notes: Public strategic-partner language should not be treated as paid contractual evidence.
+  - table_id: T-007
+    title: Competitive landscape by segment
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame LayerZero's market segments and likely competitive alternatives.
+    columns:
+      - name: segment
+        description: Market segment.
+      - name: layerzero_positioning
+        description: Public positioning.
+      - name: competitive_alternatives
+        description: Illustrative alternatives to diligence.
+    rows:
+      - row_id: T-007.R1
+        values:
+          segment: Cross-chain messaging
+          layerzero_positioning: Permissionless omnichain messaging with endpoint and message-library architecture.
+          competitive_alternatives: Wormhole, Axelar, Chainlink CCIP, native bridge/messaging stacks.
+        evidence_claim_ids: [EC-004, EC-006]
+        source_ids: [SRC-005, SRC-006]
+      - row_id: T-007.R2
+        values:
+          segment: Value transfer
+          layerzero_positioning: OFT/Stargate value-transfer products across supported blockchains.
+          competitive_alternatives: Liquidity bridges, exchange deposit rails, native asset bridges.
+        evidence_claim_ids: [EC-005, EC-022]
+        source_ids: [SRC-007, SRC-019]
+      - row_id: T-007.R3
+        values:
+          segment: Asset issuance / tokenization
+          layerzero_positioning: Nexus/lzAssets and institutional asset integrations.
+          competitive_alternatives: Issuer-built multichain systems, custodians and tokenization platforms.
+        evidence_claim_ids: [EC-005, EC-023]
+        source_ids: [SRC-007, SRC-021]
+      - row_id: T-007.R4
+        values:
+          segment: Verification and execution services
+          layerzero_positioning: Modular DVNs and Executors.
+          competitive_alternatives: Native verifier networks, light-client bridges, ZK-proof systems and managed relayers.
+        evidence_claim_ids: [EC-007, EC-008]
+        source_ids: [SRC-009, SRC-010]
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-007, EC-008, EC-022, EC-023]
+    source_ids: [SRC-005, SRC-006, SRC-007, SRC-009, SRC-010, SRC-019, SRC-021]
+    notes: Competitive alternatives are an analyst framing and require independent market interviews.
+  - table_id: T-008
+    title: Basis of competition and diligence tests
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Link public differentiators to verification steps.
+    columns:
+      - name: basis
+        description: Competitive basis.
+      - name: public_evidence
+        description: Supporting public evidence.
+      - name: diligence_test
+        description: How to verify strength.
+    rows:
+      - row_id: T-008.R1
+        values:
+          basis: Chain breadth
+          public_evidence: 160+ supported blockchains claimed on Interoperability page.
+          diligence_test: Verify active endpoints, production pathways and usage by chain.
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-007]
+      - row_id: T-008.R2
+        values:
+          basis: Configurable security
+          public_evidence: App-owned security stack and X-of-Y-of-N DVN model.
+          diligence_test: Review customer DVN configurations and multi-DVN migration.
+        evidence_claim_ids: [EC-007, EC-016]
+        source_ids: [SRC-009, SRC-020]
+      - row_id: T-008.R3
+        values:
+          basis: Developer experience
+          public_evidence: Devtools repository with examples and packages.
+          diligence_test: Compare adoption, issue resolution, SDK stability and developer satisfaction.
+        evidence_claim_ids: [EC-011]
+        source_ids: [SRC-012]
+      - row_id: T-008.R4
+        values:
+          basis: Security program
+          public_evidence: $15M maximum Immunefi bounty and audit directories.
+          diligence_test: Review audit findings, bounty ledger, incident RCA and insurance.
+        evidence_claim_ids: [EC-014, EC-021]
+        source_ids: [SRC-013, SRC-018]
+    evidence_claim_ids: [EC-005, EC-007, EC-011, EC-014, EC-016, EC-021]
+    source_ids: [SRC-007, SRC-009, SRC-012, SRC-013, SRC-018, SRC-020]
+    notes: A differentiator can also be a risk if customers configure it poorly.
+  - table_id: T-009
+    title: Marketing, sales and distribution channels
+    chapter_id: V
+    section_id: V.A
+    purpose: Identify public GTM channels and associated proof gaps.
+    columns:
+      - name: channel
+        description: GTM channel.
+      - name: public_evidence
+        description: Public signal.
+      - name: proof_gap
+        description: Missing metric.
+    rows:
+      - row_id: T-009.R1
+        values:
+          channel: Developer-led adoption
+          public_evidence: Docs, LayerZero-v2 and devtools repositories.
+          proof_gap: Developer activation, conversion and paid usage.
+        evidence_claim_ids: [EC-010, EC-011]
+        source_ids: [SRC-011, SRC-012]
+      - row_id: T-009.R2
+        values:
+          channel: Asset issuers and institutions
+          public_evidence: Interoperability page and blog index emphasize institutional/asset issuance partnerships.
+          proof_gap: Contracted revenue and compliance requirements.
+        evidence_claim_ids: [EC-005, EC-013, EC-023]
+        source_ids: [SRC-007, SRC-021]
+      - row_id: T-009.R3
+        values:
+          channel: Ecosystem governance
+          public_evidence: Foundation page links fee-switch vote, ZRO buybacks and Bridge ZRO.
+          proof_gap: Governance participation, token treasury and legal structure.
+        evidence_claim_ids: [EC-018]
+        source_ids: [SRC-016]
+      - row_id: T-009.R4
+        values:
+          channel: Direct BD and solutions
+          public_evidence: Open BD, customer success and solutions-architect roles across New York, APAC and Vancouver.
+          proof_gap: Pipeline, quota and implementation capacity.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+    evidence_claim_ids: [EC-005, EC-010, EC-011, EC-013, EC-017, EC-018, EC-019, EC-023]
+    source_ids: [SRC-007, SRC-011, SRC-012, SRC-016, SRC-017, SRC-021]
+    notes: Public GTM signals should be tied to CRM and revenue data.
+  - table_id: T-010
+    title: New business generation and implementation gaps
+    chapter_id: V
+    section_id: V.C
+    purpose: Link public expansion themes to follow-up evidence requests.
+    columns:
+      - name: avenue
+        description: Business-generation avenue.
+      - name: public_signal
+        description: Public evidence.
+      - name: follow_up_metric
+        description: Metric to request.
+    rows:
+      - row_id: T-010.R1
+        values:
+          avenue: APAC expansion
+          public_signal: Business development roles for Hong Kong and Japan.
+          follow_up_metric: APAC pipeline, bookings, local compliance plan and partner references.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+      - row_id: T-010.R2
+        values:
+          avenue: Institutional asset integrations
+          public_signal: Blog index references institutional assets, Canton, Centrifuge, Worldpay and tokenized assets.
+          follow_up_metric: Contracted issuer pipeline and compliance review status.
+        evidence_claim_ids: [EC-023]
+        source_ids: [SRC-021]
+      - row_id: T-010.R3
+        values:
+          avenue: Foundation/token engagement
+          public_signal: Fee-switch vote, buybacks and bridging ZRO.
+          follow_up_metric: Governance participation, treasury impact and token legal memo.
+        evidence_claim_ids: [EC-018]
+        source_ids: [SRC-016]
+    evidence_claim_ids: [EC-017, EC-018, EC-019, EC-023]
+    source_ids: [SRC-016, SRC-017, SRC-021]
+    notes: Sales productivity cannot be assessed without private CRM and finance data.
+  - table_id: T-011
+    title: R&D artifact evidence
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Inventory visible technical artifacts.
+    columns:
+      - name: artifact
+        description: Public R&D artifact.
+      - name: public_contents
+        description: Contents observed.
+      - name: diligence_use
+        description: How it informs diligence.
+    rows:
+      - row_id: T-011.R1
+        values:
+          artifact: LayerZero-v2 repository
+          public_contents: Protocol contracts, OApp/OFT standards, MessageLib and build/test instructions.
+          diligence_use: Supports technical reality of core product; needs code review.
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-011]
+      - row_id: T-011.R2
+        values:
+          artifact: Devtools repository
+          public_contents: Examples, packages, CLI/devtools and beta warning.
+          diligence_use: Supports developer strategy and identifies release-stability risk.
+        evidence_claim_ids: [EC-011]
+        source_ids: [SRC-012]
+      - row_id: T-011.R3
+        values:
+          artifact: Audits repository
+          public_contents: Audit directories for Endpoint V2, DVN, OApp, OFT, ONFT, ZRO, lzRead and related components.
+          diligence_use: Supports visible security program; requires full findings/remediation review.
+        evidence_claim_ids: [EC-021]
+        source_ids: [SRC-018]
+      - row_id: T-011.R4
+        values:
+          artifact: Immunefi program
+          public_contents: Smart-contract critical rewards up to $15M, KYC and OFAC screening requirements.
+          diligence_use: Supports bounty program but also indicates high value-at-risk.
+        evidence_claim_ids: [EC-014]
+        source_ids: [SRC-013]
+    evidence_claim_ids: [EC-010, EC-011, EC-014, EC-021]
+    source_ids: [SRC-011, SRC-012, SRC-013, SRC-018]
+    notes: Public artifacts do not replace security due diligence.
+  - table_id: T-012
+    title: Public product pipeline signals
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Capture new-product signals and risks.
+    columns:
+      - name: pipeline_item
+        description: Public initiative.
+      - name: signal
+        description: Public evidence.
+      - name: key_risk
+        description: Diligence risk.
+    rows:
+      - row_id: T-012.R1
+        values:
+          pipeline_item: Nexus / asset issuance
+          signal: Interoperability page describes Nexus for issuing, moving and redeeming tokenized assets across chains.
+          key_risk: Regulatory, issuer-contract and custody/controls complexity.
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-007]
+      - row_id: T-012.R2
+        values:
+          pipeline_item: lzRead and OApp patterns
+          signal: Docs/repositories list omnichain queries and application standards.
+          key_risk: Reliability, data integrity and developer adoption.
+        evidence_claim_ids: [EC-010, EC-022]
+        source_ids: [SRC-011, SRC-019]
+      - row_id: T-012.R3
+        values:
+          pipeline_item: Zero and institutional assets
+          signal: Blog index lists Zero technical papers and institutional asset announcements.
+          key_risk: Product scope expansion may dilute focus and increase security/compliance burden.
+        evidence_claim_ids: [EC-023]
+        source_ids: [SRC-021]
+    evidence_claim_ids: [EC-005, EC-010, EC-022, EC-023]
+    source_ids: [SRC-007, SRC-011, SRC-019, SRC-021]
+    notes: Pipeline evidence is public marketing/documentation, not committed revenue.
+  - table_id: T-013
+    title: Public management and personnel evidence
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Summarize visible management/personnel evidence.
+    columns:
+      - name: person_or_group
+        description: Person or personnel group.
+      - name: public_evidence
+        description: Public evidence.
+      - name: diligence_gap
+        description: Missing information.
+    rows:
+      - row_id: T-013.R1
+        values:
+          person_or_group: Bryan Pellegrino
+          public_evidence: TechCrunch identifies him as CEO and co-founder and quotes him on product/funding/security.
+          diligence_gap: Employment agreement, background checks, ownership, board role and succession plan.
+        evidence_claim_ids: [EC-003, EC-015, EC-025]
+        source_ids: [SRC-003, SRC-014]
+      - row_id: T-013.R2
+        values:
+          person_or_group: Finance/control functions
+          public_evidence: Careers page lists Assistant Controller and Controller roles.
+          diligence_gap: Current finance maturity, audit readiness and internal controls.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+      - row_id: T-013.R3
+        values:
+          person_or_group: Engineering/security functions
+          public_evidence: Careers page lists backend, cryptographer, frontend, protocol and systems engineering roles.
+          diligence_gap: Security staffing, on-call coverage and incident-response ownership.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+      - row_id: T-013.R4
+        values:
+          person_or_group: GTM/customer functions
+          public_evidence: Careers page lists BD, customer success, solutions architecture and institutional marketing roles.
+          diligence_gap: Sales productivity, quota capacity and customer implementation coverage.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+    evidence_claim_ids: [EC-003, EC-015, EC-017, EC-019, EC-025]
+    source_ids: [SRC-003, SRC-014, SRC-017]
+    notes: Complete management team and board data require company materials.
+  - table_id: T-014
+    title: Open roles by function and location
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Use public careers page as a directional hiring signal.
+    columns:
+      - name: function
+        description: Functional area.
+      - name: example_roles
+        description: Roles observed.
+      - name: locations
+        description: Locations observed.
+      - name: diligence_readthrough
+        description: What to verify.
+    rows:
+      - row_id: T-014.R1
+        values:
+          function: Finance
+          example_roles: Assistant Controller; Controller.
+          locations: Vancouver, BC or New York City.
+          diligence_readthrough: Assess audit readiness and control maturity.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+      - row_id: T-014.R2
+        values:
+          function: Engineering
+          example_roles: Backend, Cryptographer, Frontend, Protocol and Systems Engineer.
+          locations: Vancouver, BC.
+          diligence_readthrough: Assess roadmap staffing and security coverage.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+      - row_id: T-014.R3
+        values:
+          function: GTM / customer
+          example_roles: BD Lead Hong Kong, BD Lead Japan, Customer Success Manager, Solutions Architect Lead, Staff Solutions Architect.
+          locations: APAC, Vancouver, New York.
+          diligence_readthrough: Assess international pipeline and implementation capacity.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+      - row_id: T-014.R4
+        values:
+          function: Product / operations / recruiting / marketing
+          example_roles: Product Manager, Data Analyst, Technical Recruiter, Vertical Marketing Manager - Institutions.
+          locations: Vancouver, New York.
+          diligence_readthrough: Assess execution capacity and institutional GTM priority.
+        evidence_claim_ids: [EC-017, EC-019]
+        source_ids: [SRC-017]
+    evidence_claim_ids: [EC-017, EC-019]
+    source_ids: [SRC-017]
+    notes: Open roles do not equal total headcount or attrition.
+  - table_id: T-015
+    title: Public legal and regulatory matter matrix
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize material public legal/security matters for counsel follow-up.
+    columns:
+      - name: matter
+        description: Matter or issue.
+      - name: public_status
+        description: Public status.
+      - name: diligence_action
+        description: Required follow-up.
+    rows:
+      - row_id: T-015.R1
+        values:
+          matter: FTX Recovery Trust v. LayerZero Labs Ltd.
+          public_status: CourtListener identifies Bankr. D. Del. docket 23-50492, filed 2023-09-08 and terminated 2025-02-18.
+          diligence_action: Obtain pleadings, settlement/dismissal documents, releases and counsel opinion.
+        evidence_claim_ids: [EC-017]
+        source_ids: [SRC-015]
+      - row_id: T-015.R2
+        values:
+          matter: KelpDAO exploit and law-enforcement contact
+          public_status: LayerZero statement says KelpDAO was exploited for approximately $290M and LayerZero is cooperating with law enforcement.
+          diligence_action: Obtain incident RCA, remediation, reserves, insurance and communications with agencies.
+        evidence_claim_ids: [EC-016]
+        source_ids: [SRC-020]
+      - row_id: T-015.R3
+        values:
+          matter: ZRO governance, fee switch and buybacks
+          public_status: Foundation page links fee-switch vote, ZRO buybacks, governance and Bridge ZRO.
+          diligence_action: Obtain token legal memos, treasury controls and governance risk assessment.
+        evidence_claim_ids: [EC-018]
+        source_ids: [SRC-016]
+      - row_id: T-015.R4
+        values:
+          matter: Bounty KYC/OFAC and payouts
+          public_status: Immunefi page says KYC and OFAC screening are required and payouts are handled by LayerZero Labs.
+          diligence_action: Review sanctions compliance, bounty liabilities and payout controls.
+        evidence_claim_ids: [EC-014]
+        source_ids: [SRC-013]
+    evidence_claim_ids: [EC-014, EC-016, EC-017, EC-018]
+    source_ids: [SRC-013, SRC-015, SRC-016, SRC-020]
+    notes: This is not a legal opinion.
+  - table_id: T-016
+    title: IP, contracts and insurance evidence gaps
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Identify missing legal diligence areas not resolved by public sources.
+    columns:
+      - name: diligence_area
+        description: Legal diligence topic.
+      - name: public_signal
+        description: Public evidence.
+      - name: missing_evidence
+        description: Required diligence material.
+    rows:
+      - row_id: T-016.R1
+        values:
+          diligence_area: Software IP and OSS
+          public_signal: LayerZero-v2 and devtools repositories are public.
+          missing_evidence: License scan, contributor assignments, dependency audit and patent/trademark portfolio.
+        evidence_claim_ids: [EC-010, EC-011, EC-020]
+        source_ids: [SRC-011, SRC-012]
+      - row_id: T-016.R2
+        values:
+          diligence_area: Material contracts
+          public_signal: Partner and product pages name ecosystem relationships.
+          missing_evidence: Customer, issuer, DVN, Executor, supplier, investor and foundation/company agreements.
+        evidence_claim_ids: [EC-013, EC-020]
+        source_ids: [SRC-007]
+      - row_id: T-016.R3
+        values:
+          diligence_area: Insurance
+          public_signal: Security incident and high-value bounty make coverage material.
+          missing_evidence: Cyber, D&O, E&O, crime and digital-asset policy schedules, exclusions and claims.
+        evidence_claim_ids: [EC-014, EC-016, EC-020]
+        source_ids: [SRC-013, SRC-020]
+    evidence_claim_ids: [EC-010, EC-011, EC-013, EC-014, EC-016, EC-020]
+    source_ids: [SRC-007, SRC-011, SRC-012, SRC-013, SRC-020]
+    notes: Counsel-led review is required before relying on any IP or contract conclusions.
+
+figures:
+  - figure_id: F-001
+    title: Public funding and valuation trajectory
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Chart of public financing amounts and valuation signals.
+    purpose: Visualize the increase from a $1B 2022 valuation to a $3B 2023/CB Insights valuation signal.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public event
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD millions
+        unit: USD millions
+        scale: linear
+      series:
+        - series_id: financing_amount
+          name: Financing amount
+          unit: USD millions
+          data_points:
+            - x: 2022 $135M round
+              y: 135
+              label: "$135M"
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-002]
+            - x: 2023 Series B
+              y: 120
+              label: "$120M"
+              evidence_claim_ids: [EC-003]
+              source_ids: [SRC-003]
+        - series_id: valuation
+          name: Valuation
+          unit: USD millions
+          data_points:
+            - x: 2022 round valuation
+              y: 1000
+              label: "$1B"
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-002]
+            - x: 2023 Series B valuation
+              y: 3000
+              label: "$3B"
+              evidence_claim_ids: [EC-003]
+              source_ids: [SRC-003]
+            - x: CB Insights unicorn row
+              y: 3000
+              label: "$3B"
+              evidence_claim_ids: [EC-001]
+              source_ids: [SRC-001]
+      annotations:
+        - label: More than $250M raised
+          x: 2023 Series B
+          y: 250
+          note: TechCrunch reported over $250M raised to date.
+          evidence_claim_ids: [EC-003]
+          source_ids: [SRC-003]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Show financing amount and valuation as grouped bars with clear unit labels.
+    evidence_claim_ids: [EC-001, EC-002, EC-003]
+    source_ids: [SRC-001, SRC-002, SRC-003]
+    notes: Financing amount and valuation are different metrics but both shown in USD millions.
+  - figure_id: F-002
+    title: LayerZero architecture responsibility map
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level architecture from application to endpoint, message libraries, DVNs, executors and destination app.
+    purpose: Identify security and liveness control points.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: app_source
+          label: Source OApp / asset issuer
+          node_type: product
+          description: Application using LayerZero to send a cross-chain message.
+          evidence_claim_ids: [EC-004, EC-006, EC-022]
+          source_ids: [SRC-005, SRC-006, SRC-019]
+        - node_id: endpoint_source
+          label: Source Endpoint
+          node_type: service
+          description: Immutable LayerZero endpoint on source chain.
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-006]
+        - node_id: message_lib
+          label: Message Library
+          node_type: service
+          description: Configurable ruleset for verification and delivery.
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-006]
+        - node_id: dvn_stack
+          label: DVN security stack
+          node_type: third_party
+          description: Required/optional DVNs verify payloadHash according to X-of-Y-of-N rules.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-009]
+        - node_id: executor
+          label: Executor
+          node_type: service
+          description: Delivers and executes verified messages on destination chain.
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-010]
+        - node_id: endpoint_destination
+          label: Destination Endpoint
+          node_type: service
+          description: Destination chain endpoint receives verified messages.
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-006]
+        - node_id: app_destination
+          label: Destination OApp
+          node_type: product
+          description: Application logic executed after verification and delivery.
+          evidence_claim_ids: [EC-008, EC-022]
+          source_ids: [SRC-010, SRC-019]
+      edges:
+        - edge_id: e1
+          from_node_id: app_source
+          to_node_id: endpoint_source
+          relationship: sends message through
+          data_or_dependency: Application-defined bytes and execution options.
+          evidence_claim_ids: [EC-004, EC-006]
+          source_ids: [SRC-005, SRC-006]
+        - edge_id: e2
+          from_node_id: endpoint_source
+          to_node_id: message_lib
+          relationship: delegates to
+          data_or_dependency: Channel and pathway configuration.
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-006]
+        - edge_id: e3
+          from_node_id: message_lib
+          to_node_id: dvn_stack
+          relationship: requires verification by
+          data_or_dependency: payloadHash and nonce.
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-009]
+        - edge_id: e4
+          from_node_id: dvn_stack
+          to_node_id: executor
+          relationship: enables execution after verification
+          data_or_dependency: Verified message state.
+          evidence_claim_ids: [EC-007, EC-008]
+          source_ids: [SRC-009, SRC-010]
+        - edge_id: e5
+          from_node_id: executor
+          to_node_id: endpoint_destination
+          relationship: calls lzReceive / lzCompose
+          data_or_dependency: Destination gas and execution options.
+          evidence_claim_ids: [EC-008, EC-009]
+          source_ids: [SRC-008, SRC-010]
+        - edge_id: e6
+          from_node_id: endpoint_destination
+          to_node_id: app_destination
+          relationship: delivers verified message to
+          data_or_dependency: Application payload.
+          evidence_claim_ids: [EC-008, EC-022]
+          source_ids: [SRC-010, SRC-019]
+      boundaries:
+        - boundary_id: b1
+          label: Application-controlled configuration
+          node_ids: [app_source, message_lib, dvn_stack, executor]
+        - boundary_id: b2
+          label: LayerZero protocol interface
+          node_ids: [endpoint_source, endpoint_destination]
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Show DVN and Executor as distinct off-chain worker/control layers.
+    evidence_claim_ids: [EC-004, EC-006, EC-007, EC-008, EC-009, EC-022]
+    source_ids: [SRC-005, SRC-006, SRC-008, SRC-009, SRC-010, SRC-019]
+    notes: Simplified from public docs; not a complete production architecture.
+  - figure_id: F-003
+    title: 2023 adoption proxy values
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Publicly reported 2023 adoption proxies from TechCrunch.
+    purpose: Visualize adoption claims while separating them from revenue.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Publicly stated value
+        unit: mixed
+        scale: linear
+      series:
+        - series_id: adoption_proxy
+          name: Adoption proxy
+          unit: mixed
+          data_points:
+            - x: Mainnet blockchains
+              y: 30
+              label: Over 30
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-003]
+            - x: TVL
+              y: 7
+              label: "$7B"
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-003]
+            - x: Transaction volume
+              y: 6
+              label: "$6B"
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-003]
+      annotations:
+        - label: Not revenue
+          x: TVL
+          y: 7
+          note: Metrics are company-reported adoption proxies and do not prove revenue.
+          evidence_claim_ids: [EC-012, EC-020]
+          source_ids: [SRC-003]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use labels prominently because units differ.
+    evidence_claim_ids: [EC-012, EC-020]
+    source_ids: [SRC-003]
+    notes: Values are from 2023 reporting and may be outdated.
+  - figure_id: F-004
+    title: Interoperability market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Analyst market map placing LayerZero across messaging, value transfer and asset issuance.
+    purpose: Frame competitive diligence areas.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: Messaging-only
+          high_label: Messaging plus assets and platform
+        y_axis:
+          label: Security configurability
+          low_label: Fixed shared security
+          high_label: Application-configurable security
+      segments:
+        - segment_id: messaging
+          name: Cross-chain messaging
+          description: General messaging between chains.
+        - segment_id: value_transfer
+          name: Value transfer
+          description: Token and liquidity movement.
+        - segment_id: asset_issuance
+          name: Asset issuance / institutions
+          description: Issuer and tokenization products.
+      entities:
+        - entity_id: layerzero
+          name: LayerZero
+          entity_type: target_company
+          segment_id: asset_issuance
+          x_value: 9
+          y_value: 9
+          attributes:
+            rationale: Public docs emphasize messaging, OFT, Stargate, Nexus, DVNs and Executors.
+          evidence_claim_ids: [EC-004, EC-005, EC-006, EC-007, EC-008, EC-022]
+          source_ids: [SRC-005, SRC-006, SRC-007, SRC-009, SRC-010, SRC-019]
+        - entity_id: alternative_bridges
+          name: Native bridges / exchange rails
+          entity_type: competitor
+          segment_id: value_transfer
+          x_value: 4
+          y_value: 3
+          attributes:
+            rationale: Illustrative alternative; requires separate market diligence.
+          evidence_claim_ids: [EC-004]
+          source_ids: [SRC-005]
+        - entity_id: generalized_messaging_competitors
+          name: Generalized messaging competitors
+          entity_type: competitor
+          segment_id: messaging
+          x_value: 6
+          y_value: 6
+          attributes:
+            rationale: Category includes cross-chain messaging networks; requires independent comparison.
+          evidence_claim_ids: [EC-004]
+          source_ids: [SRC-005]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Position competitors as illustrative categories, not audited market share.
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-007, EC-008, EC-022]
+    source_ids: [SRC-005, SRC-006, SRC-007, SRC-009, SRC-010, SRC-019]
+    notes: Competitor positions are analyst estimates using public product framing.
+  - figure_id: F-005
+    title: Public GTM funnel evidence
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: GTM funnel from developer awareness to contracted revenue, highlighting missing private metrics.
+    purpose: Show where public evidence stops.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      stages:
+        - stage_id: awareness
+          name: Docs, blogs and GitHub awareness
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: Public sources through 2026-05-18
+          evidence_claim_ids: [EC-010, EC-011, EC-023]
+          source_ids: [SRC-011, SRC-012, SRC-021]
+        - stage_id: integration
+          name: Integration / app adoption
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: Not public
+          evidence_claim_ids: [EC-012, EC-013]
+          source_ids: [SRC-003, SRC-007]
+        - stage_id: customer_contract
+          name: Contracted customer / issuer agreement
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: Not public
+          evidence_claim_ids: [EC-020]
+          source_ids: [SRC-007]
+        - stage_id: revenue
+          name: Recognized recurring or usage revenue
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: Not public
+          evidence_claim_ids: [EC-020]
+          source_ids: [SRC-001, SRC-003]
+      unit: opportunities
+      cohort_or_period: Public-source funnel; counts unavailable
+    rendering_guidance:
+      preferred_format: table_visual
+      display_notes: Use null counts to emphasize missing funnel data.
+    evidence_claim_ids: [EC-010, EC-011, EC-012, EC-013, EC-020, EC-023]
+    source_ids: [SRC-003, SRC-007, SRC-011, SRC-012, SRC-021]
+    notes: Private CRM data is required to populate counts.
+  - figure_id: F-006
+    title: Public R&D artifact mix
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: chart
+    description: Approximate count of visible R&D artifact groups from public repositories.
+    purpose: Demonstrate breadth of public technical artifacts while flagging quality review needs.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Artifact group
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count observed in public listing
+        unit: count
+        scale: linear
+      series:
+        - series_id: public_artifacts
+          name: Public artifact count
+          unit: count
+          data_points:
+            - x: Devtools examples
+              y: 12
+              label: "12 examples"
+              evidence_claim_ids: [EC-011]
+              source_ids: [SRC-012]
+            - x: Devtools packages
+              y: 32
+              label: "32 packages"
+              evidence_claim_ids: [EC-011]
+              source_ids: [SRC-012]
+            - x: Audit directories
+              y: 17
+              label: "17 audit categories"
+              evidence_claim_ids: [EC-021]
+              source_ids: [SRC-018]
+      annotations:
+        - label: Beta warning
+          x: Devtools packages
+          y: 32
+          note: Devtools README warns the repository is in beta and may introduce backwards-incompatible changes.
+          evidence_claim_ids: [EC-011]
+          source_ids: [SRC-012]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Counts are from README/listing observations and should be refreshed before publication.
+    evidence_claim_ids: [EC-011, EC-021]
+    source_ids: [SRC-012, SRC-018]
+    notes: Artifact count is not code-quality proof.
+  - figure_id: F-007
+    title: Public personnel view
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Publicly verifiable personnel and inferred functional hiring needs.
+    purpose: Display what is known versus missing about management and staffing.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Bryan Pellegrino
+          role: CEO and co-founder
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-025]
+          source_ids: [SRC-003, SRC-014]
+        - node_id: finance
+          name: null
+          role: Finance / controller roles
+          department: Finance
+          location: Vancouver, BC or New York City
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-017, EC-019]
+          source_ids: [SRC-017]
+        - node_id: engineering
+          name: null
+          role: Engineering roles
+          department: Engineering
+          location: Vancouver, BC
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-017, EC-019]
+          source_ids: [SRC-017]
+        - node_id: gtm
+          name: null
+          role: Business development, customer success and solutions roles
+          department: GTM
+          location: New York, Vancouver and APAC
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-017, EC-019]
+          source_ids: [SRC-017]
+        - node_id: board
+          name: null
+          role: Board / governance
+          department: Governance
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-020]
+          source_ids: [SRC-001]
+      reporting_lines:
+        - parent_node_id: board
+          child_node_id: ceo
+          relationship: other
+          evidence_claim_ids: [EC-020]
+          source_ids: [SRC-001]
+        - parent_node_id: ceo
+          child_node_id: finance
+          relationship: other
+          evidence_claim_ids: [EC-017, EC-019]
+          source_ids: [SRC-017]
+        - parent_node_id: ceo
+          child_node_id: engineering
+          relationship: other
+          evidence_claim_ids: [EC-017, EC-019]
+          source_ids: [SRC-017]
+        - parent_node_id: ceo
+          child_node_id: gtm
+          relationship: other
+          evidence_claim_ids: [EC-017, EC-019]
+          source_ids: [SRC-017]
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Mark board and reporting lines as not publicly verified.
+    evidence_claim_ids: [EC-017, EC-019, EC-020, EC-025]
+    source_ids: [SRC-003, SRC-014, SRC-017]
+    notes: This is not a complete org chart.
+  - figure_id: F-008
+    title: Key risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Heatmap of principal diligence risks.
+    purpose: Prioritize follow-up across finance, security, token/legal and customer proof.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale: [low, medium, high, unknown]
+      y_axis:
+        label: severity
+        scale: [informational, low, medium, high, critical]
+      risk_points:
+        - risk_id: R-003
+          label: Security and liveness concentration
+          severity: critical
+          likelihood: high
+          rationale: KelpDAO incident disclosed approximately $290M exploit tied to single-DVN setup and LayerZero Labs DVN RPC spoofing.
+          evidence_claim_ids: [EC-016]
+          source_ids: [SRC-020]
+        - risk_id: R-001
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: Public sources do not provide financial statements, cap table or customer revenue.
+          evidence_claim_ids: [EC-020]
+          source_ids: [SRC-001, SRC-003]
+        - risk_id: R-004
+          label: Token/regulatory uncertainty
+          severity: high
+          likelihood: medium
+          rationale: ZRO governance, fee switch, buybacks and cross-chain asset issuance require counsel review.
+          evidence_claim_ids: [EC-018]
+          source_ids: [SRC-016]
+        - risk_id: R-006
+          label: FTX matter residual risk
+          severity: medium
+          likelihood: low
+          rationale: CourtListener shows FTX Recovery Trust adversary docket terminated, but settlement/release details are not public.
+          evidence_claim_ids: [EC-017]
+          source_ids: [SRC-015]
+        - risk_id: R-009
+          label: Executor concentration
+          severity: high
+          likelihood: medium
+          rationale: Docs state every default Executor across preset network configuration is operated by LayerZero Labs.
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-010]
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Use severity on Y-axis and likelihood on X-axis.
+    evidence_claim_ids: [EC-008, EC-016, EC-017, EC-018, EC-020]
+    source_ids: [SRC-010, SRC-015, SRC-016, SRC-020]
+    notes: Heatmap reflects public-source diligence, not legal or investment advice.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists LayerZero Labs as a $3B unicorn with United States / New York and Enterprise Tech metadata.
+    evidence_summary: CB Insights unicorn tracker row includes LayerZero Labs, $3 valuation, joined 3/30/2022, United States, New York, Enterprise Tech and investors Andreessen Horowitz, FTX Ventures and Tiger Global Management.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-001]
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "| LayerZero Labs | $3 | 3/30/2022 | United States | New York | Enterprise Tech | Andreessen Horowitz, FTX Ventures, Tiger Global Management |"
+        location: CB Insights unicorn tracker row
+    analyst_interpretation: Public market-database evidence supports the unicorn metadata, but not current enterprise value or private financing terms.
+    limitations: CB Insights values are listed in billions and may lag current company economics.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: [FC-001]
+      table_ids: [T-002]
+      figure_ids: [F-001]
+      risk_ids: [R-002]
+  - evidence_claim_id: EC-002
+    claim: A 2022 public financing release reported LayerZero Labs raised $135M at a $1B valuation.
+    evidence_summary: BusinessWire public release reported the $135M round, $1B valuation and institutional/strategic investors.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: LayerZero Labs Raises $135 Million to Unite Decentralized Applications Across Blockchains.
+        location: BusinessWire headline and release metadata
+    analyst_interpretation: Supports financing history but should be reconciled to financing documents.
+    limitations: Release content is company-provided and not a substitute for financing agreements.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: [FC-002]
+      table_ids: [T-002]
+      figure_ids: [F-001]
+      risk_ids: [R-002]
+  - evidence_claim_id: EC-003
+    claim: TechCrunch reported a $120M Series B at a $3B valuation and over $250M raised to date.
+    evidence_summary: TechCrunch article dated 2023-04-04 describes the financing, valuation, investor count and total capital raised.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-003]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: LayerZero Labs, a web3 messaging protocol, has closed a $120 million Series B round, raising its valuation to $3 billion from $1 billion.
+        location: TechCrunch article body
+      - source_id: SRC-003
+        quote: The Series B round saw 33 investors participating ... The company, which previously raised $135 million in March 2022, has raised over $250 million to date.
+        location: TechCrunch article body
+    analyst_interpretation: Strong public support for financing/valuation history.
+    limitations: Does not disclose terms, ownership or current valuation.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: [FC-002]
+      table_ids: [T-002, T-013]
+      figure_ids: [F-001]
+      risk_ids: [R-002]
+  - evidence_claim_id: EC-004
+    claim: LayerZero describes itself as an omnichain messaging protocol and permissionless open framework for moving information between blockchains.
+    evidence_summary: LayerZero docs explain the protocol and architectural objectives.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-005]
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: LayerZero is an omnichain messaging protocol — a permissionless, open framework designed to securely move information between blockchains.
+        location: What is LayerZero? docs
+    analyst_interpretation: Confirms product category and core claim.
+    limitations: Company documentation is not independent proof of reliability or economics.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-003, T-007]
+      figure_ids: [F-002, F-004]
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-005
+    claim: LayerZero's Interoperability page claims 160+ supported blockchains and describes infrastructure, value-transfer and asset-issuance products.
+    evidence_summary: Company product page says endpoints connect ecosystems to 160+ blockchains and describes value transfer and Nexus/lzAsset offerings.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-007]
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: Connect your ecosystem to 160+ supported blockchains.
+        location: LayerZero Interoperability page
+      - source_id: SRC-007
+        quote: Nexus is our generalized offering for issuing, moving, and redeeming any number of tokenized assets across chains, at scale.
+        location: LayerZero Interoperability page
+    analyst_interpretation: Supports breadth and product positioning; active/paid use must be verified privately.
+    limitations: Company-controlled claim; no independent chain-by-chain reconciliation performed.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-004]
+      table_ids: [T-003, T-006, T-007, T-008, T-009, T-012]
+      figure_ids: [F-004]
+      risk_ids: [R-002, R-005]
+  - evidence_claim_id: EC-006
+    claim: LayerZero V2 separates application, endpoint, message library, DVN and Executor responsibilities.
+    evidence_summary: Protocol architecture docs describe immutable endpoints, configurable message libraries, DVNs and Executors.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-006]
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: By separating interface, verification, and execution into independent layers, LayerZero enables composable crosschain architectures without compromising security.
+        location: LayerZero Protocol Architecture docs
+      - source_id: SRC-006
+        quote: The LayerZero Endpoint serves as the single entrypoint and exitpoint for all crosschain messaging on a blockchain.
+        location: LayerZero Protocol Architecture docs
+    analyst_interpretation: Supports architectural claim and provides diligence map for control responsibilities.
+    limitations: Requires independent security review and deployment verification.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004, T-007]
+      figure_ids: [F-002, F-004]
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-007
+    claim: LayerZero security is application-configurable using DVNs and X-of-Y-of-N thresholds.
+    evidence_summary: DVN docs describe required/optional DVNs, payloadHash verification and application-owned security stacks.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-009]
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: This stack of multiple DVNs allows each application to configure a unique security threshold for each source and destination, known as X-of-Y-of-N.
+        location: Security Stack (DVNs) docs
+      - source_id: SRC-009
+        quote: Each DVN independently verifies the payloadHash of each message to ensure integrity.
+        location: Security Stack (DVNs) docs
+    analyst_interpretation: Core security model is clear; customer misconfiguration remains a major risk.
+    limitations: Does not prove customers use robust configurations.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004, T-006, T-007, T-008]
+      figure_ids: [F-002, F-004]
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-008
+    claim: LayerZero Executors are permissionless, but docs identify default Executor concentration at LayerZero Labs.
+    evidence_summary: Executor docs say endpoint execution is permissionless while warning default Executors are operated by LayerZero Labs.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-010]
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: Both methods are permissionless on the endpoint contract, meaning anyone can call them once the message has been marked as verified.
+        location: Executors docs
+      - source_id: SRC-010
+        quote: Today, every default Executor across every pathway in every preset network configuration is operated by LayerZero Labs.
+        location: Executors docs
+    analyst_interpretation: Executor default concentration creates liveness and censorship risk even if it cannot forge messages.
+    limitations: Current customer configurations were not independently checked.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004, T-006, T-007]
+      figure_ids: [F-002, F-008]
+      risk_ids: [R-009]
+  - evidence_claim_id: EC-009
+    claim: LayerZero's transaction pricing includes source gas, DVN/security stack fees, Executor fees and destination gas purchase.
+    evidence_summary: Transaction pricing docs outline the four-component fee model.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-008]
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: LayerZero's pricing model addresses these challenges through a transparent, component-based fee structure.
+        location: Transaction Pricing Model docs
+      - source_id: SRC-008
+        quote: Security Stack Fees ... Executor Fees ... Destination Gas Purchase.
+        location: Transaction Pricing Model docs
+    analyst_interpretation: Pricing has multiple cost drivers that require product-level margin diligence.
+    limitations: No public margin or take-rate data.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004]
+      figure_ids: [F-002]
+      risk_ids: [R-002]
+  - evidence_claim_id: EC-010
+    claim: The LayerZero-v2 GitHub repository documents the open-source protocol, contract standards, MessageLibs, DVNs and Executors.
+    evidence_summary: README describes LayerZero V2 as omnichain interoperability protocol and lists build/test and product components.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-011]
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: LayerZero is an immutable, censorship-resistant, and permissionless messaging protocol, that connects blockchains (60+ and counting) to enable omnichain interoperability for blockchain applications.
+        location: LayerZero-v2 README
+      - source_id: SRC-011
+        quote: The core, immutable protocol contract interfaces ... live in /protocol.
+        location: LayerZero-v2 README
+    analyst_interpretation: Confirms significant public technical artifacts; the chain count in README may be older than current marketing.
+    limitations: Repository existence does not prove production security or customer adoption.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-009, T-011, T-012, T-016]
+      figure_ids: [F-005]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-011
+    claim: The devtools repository contains developer examples and packages but is marked beta with potential breaking changes.
+    evidence_summary: Devtools README lists examples, packages and a beta warning.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-012]
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: This repository houses everything related to the LayerZero Developer Experience, including application contract standards, CLI examples, packages, scripting tools, and more.
+        location: Devtools README
+      - source_id: SRC-012
+        quote: This repository is in a beta state and backwards-incompatible changes might be introduced in future releases.
+        location: Devtools README
+    analyst_interpretation: Supports developer ecosystem while highlighting release stability risk.
+    limitations: Counts and repository status should be refreshed before final publication.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-008, T-009, T-011, T-016]
+      figure_ids: [F-005, F-006]
+      risk_ids: [R-008]
+  - evidence_claim_id: EC-012
+    claim: TechCrunch reported 2023 usage/adoption proxies including DEX applications, $7B TVL, $6B volume and hundreds of thousands of users.
+    evidence_summary: TechCrunch article names DEX applications and reports company-provided adoption metrics.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-003]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: The protocol is used by on-chain applications like decentralized exchanges, including the likes of PancakeSwap, Sushiswap, Trader Joe and Uniswap.
+        location: TechCrunch article body
+      - source_id: SRC-003
+        quote: The platform has secured over $7 billion in total value locked and processed over $6 billion in transactional volume.
+        location: TechCrunch article body
+    analyst_interpretation: Adoption signal is useful but not revenue proof.
+    limitations: Metrics are 2023 company claims reported by news and may be outdated.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-005]
+      table_ids: [T-005, T-006]
+      figure_ids: [F-003, F-005]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-013
+    claim: LayerZero's Interoperability page displays named partner/asset-issuer logos and use cases.
+    evidence_summary: Page includes partner names such as BitGo, Bridge.xyz, Centrifuge, Ethena, Google, Kraken, Ondo, Paxos, PayPal, Tether and Wyoming Stable Token Commission.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-007]
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: BitGo, Bridge.xyz, Centrifuge, Ethena, Google, Kraken, Ondo, Paxos, PayPal, Tether, Wyoming Stable Token Commission.
+        location: LayerZero Interoperability page partner images/text
+    analyst_interpretation: Strong relationship signal but requires counterparty confirmation and contracts.
+    limitations: Logo/listing evidence does not prove paid customer status.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: [FC-005]
+      table_ids: [T-005, T-006, T-009, T-016]
+      figure_ids: [F-005]
+      risk_ids: [R-005]
+  - evidence_claim_id: EC-014
+    claim: Immunefi lists a LayerZero bug bounty with smart-contract critical rewards up to $15M and KYC/OFAC requirements.
+    evidence_summary: Immunefi page states critical reward cap, payout denomination and compliance requirements.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-013]
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "Smart Contract Critical Up to: $15,000,000."
+        location: Immunefi LayerZero bounty page
+      - source_id: SRC-013
+        quote: LayerZero requires KYC to be done for all bug bounty hunters ... Bounty hunters must pass OFAC Screening.
+        location: Immunefi LayerZero bounty page
+    analyst_interpretation: Confirms major bounty program and compliance-sensitive payout process.
+    limitations: Does not disclose bounty submissions, unresolved findings or insurance.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-008, T-011, T-015, T-016]
+      figure_ids: [F-008]
+      risk_ids: [R-003, R-004]
+  - evidence_claim_id: EC-015
+    claim: TechCrunch reported in May 2023 that LayerZero and Immunefi launched a $15M bounty and that the protocol had not had a security exploit or hack since inception as of that article.
+    evidence_summary: TechCrunch security article includes bounty, audit spend and no-exploit claims from Pellegrino.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-014]
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: The bug bounty alliance will offer a maximum reward of $15 million for each new vulnerability found by white hat hackers.
+        location: TechCrunch bug bounty article
+      - source_id: SRC-014
+        quote: Since its inception, the messaging protocol has never had a security exploit or hack, he added.
+        location: TechCrunch bug bounty article
+    analyst_interpretation: The no-exploit statement was time-bound to May 2023 and must be updated in light of the 2026 KelpDAO incident.
+    limitations: Company/founder claim reported by news; not independent audit evidence.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-013]
+      figure_ids: []
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-016
+    claim: LayerZero's 2026 KelpDAO incident statement reports an approximately $290M exploit tied to KelpDAO's single-DVN setup and RPC spoofing affecting the LayerZero Labs DVN.
+    evidence_summary: LayerZero primary statement says the incident was isolated, involved poisoned downstream RPC infrastructure, and did not identify a protocol vulnerability.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-020]
+    quoted_evidence:
+      - source_id: SRC-020
+        quote: On April 18, 2026, KelpDAO was exploited for approximately $290M.
+        location: KelpDAO Incident Statement
+      - source_id: SRC-020
+        quote: This incident was isolated to KelpDAO's rsETH configuration as a direct consequence of their single-DVN setup.
+        location: KelpDAO Incident Statement
+      - source_id: SRC-020
+        quote: As a result of this manipulation, the LayerZero Labs-operated DVN instance confirmed transactions that never in fact took place.
+        location: KelpDAO Incident Statement
+      - source_id: SRC-020
+        quote: No vulnerability was identified in the protocol.
+        location: KelpDAO Incident Statement
+    analyst_interpretation: This is the most material public risk item; independent forensic review is required.
+    limitations: Company-controlled incident statement; no independent postmortem, insurance or financial impact evidence was reviewed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: [FC-006]
+      table_ids: [T-004, T-006, T-008, T-015, T-016]
+      figure_ids: [F-008]
+      risk_ids: [R-003, R-009]
+  - evidence_claim_id: EC-017
+    claim: CourtListener search identifies FTX Recovery Trust v. LayerZero Labs Ltd., Bankr. D. Del. docket 23-50492, filed 2023-09-08 and terminated 2025-02-18.
+    evidence_summary: CourtListener search result includes case name, court, docket, dates and parties.
+    evidence_type: legal_record
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-015]
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: "case FTX Recovery Trust v. LayerZero Labs Ltd. court Bankr. D. Del. docket 23-50492 filed 2023-09-08 terminated 2025-02-18"
+        location: CourtListener search result
+    analyst_interpretation: Confirms a material litigation history item, but not merits or settlement economics.
+    limitations: Full pleadings and dismissal/settlement terms were not reviewed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids: [T-015]
+      figure_ids: [F-008]
+      risk_ids: [R-006]
+  - evidence_claim_id: EC-018
+    claim: The LayerZero Foundation page links ZRO buybacks, governance, fee-switch voting and Bridge ZRO.
+    evidence_summary: Foundation page states it supports decentralization/growth and links ZRO-related governance functions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-016]
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: ZRO Buybacks; Governance; Vote on Fee Switch; Bridge ZRO.
+        location: LayerZero Foundation home page
+      - source_id: SRC-016
+        quote: The LayerZero Foundation is devoted to the decentralization of LayerZero and the growth of its ecosystem.
+        location: LayerZero Foundation home page
+    analyst_interpretation: Token/governance layer is material to economics and legal risk.
+    limitations: Detailed allocation, treasury, governance and legal documents were not accessible.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: [FC-007]
+      table_ids: [T-009, T-010, T-015]
+      figure_ids: [F-008]
+      risk_ids: [R-004]
+  - evidence_claim_id: EC-019
+    claim: The careers page shows open roles across finance, engineering, GTM, product, recruiting and marketing, with Vancouver, New York and APAC locations.
+    evidence_summary: Careers page lists roles including controllers, engineers, APAC business development, customer success, solutions architecture, product and marketing.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-017]
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: Assistant Controller; Controller; Backend Engineer; Cryptographer; Protocol Engineer; Business Development Lead - Hong Kong APAC; Business Development Lead - Japan APAC; Customer Success Manager; Staff Solutions Architect; Product Manager; Technical Recruiter; Vertical Marketing Manager - Institutions.
+        location: LayerZero careers page
+    analyst_interpretation: Supports hiring footprint and functional needs but not total headcount.
+    limitations: Open roles can change and do not prove attrition or org structure.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids: [T-009, T-010, T-013, T-014]
+      figure_ids: [F-007]
+      risk_ids: [R-007]
+  - evidence_claim_id: EC-020
+    claim: Key private-company diligence materials were not available in public sources reviewed.
+    evidence_summary: Public sources located financing, product, security, careers, foundation and legal-record evidence, but not audited financials, cap table, customer contracts, revenue schedules, compensation plans or insurance policies.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids: [SRC-001, SRC-003, SRC-004, SRC-007, SRC-016, SRC-017]
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: CB Insights row provides valuation metadata rather than financial statements or cap table.
+        location: Analyst interpretation of CB Insights scope
+      - source_id: SRC-003
+        quote: TechCrunch financing article provides capital raised and valuation rather than audited financial data.
+        location: Analyst interpretation of TechCrunch scope
+    analyst_interpretation: Absence of public evidence creates the main diligence gap and should not be treated as negative proof.
+    limitations: Private materials may exist but were not provided.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: [FC-008]
+      table_ids: [T-001, T-006, T-016]
+      figure_ids: [F-005, F-008]
+      risk_ids: [R-001]
+  - evidence_claim_id: EC-021
+    claim: LayerZero maintains a public Audits repository with audit directories for multiple protocol/product areas.
+    evidence_summary: GitHub Audits repository lists directories including DVN, Endpoint V1/V2, OApp, OFT, ONFT, Ovault, ZRO and lzRead.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-018]
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: DVN; Endpoint V2 - EVM; Endpoint V2 - Solana; OApp; OFT; ONFT; ZRO; lzRead.
+        location: LayerZero-Labs/Audits directory listing
+    analyst_interpretation: Shows security artifacts exist publicly but not whether all critical findings are remediated.
+    limitations: Directory listing is not a full audit-readout or remediation certification.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-008, T-011]
+      figure_ids: [F-006]
+      risk_ids: [R-003]
+  - evidence_claim_id: EC-022
+    claim: LayerZero OFT documentation explains token movement via burn/mint or adapter lock/unlock patterns.
+    evidence_summary: OFT quickstart describes how fungible tokens exist across multiple blockchains while maintaining unified supply.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-019]
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: The Omnichain Fungible Token (OFT) Standard enables fungible tokens to exist across multiple blockchains while maintaining a unified supply.
+        location: OFT Quickstart docs
+      - source_id: SRC-019
+        quote: The OFT Adapter enables existing ERC20 tokens to become omnichain without code changes.
+        location: OFT Quickstart docs
+    analyst_interpretation: Supports asset-transfer product claims and identifies smart-contract/security review scope.
+    limitations: Does not prove any specific issuer/customer revenue.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-003]
+      table_ids: [T-003, T-007, T-012]
+      figure_ids: [F-002, F-004]
+      risk_ids: [R-003, R-004]
+  - evidence_claim_id: EC-023
+    claim: LayerZero blog index shows ongoing pipeline around Zero, institutional assets, Canton, Centrifuge, Worldpay and tokenized assets.
+    evidence_summary: Blog page lists multiple 2026 research/announcement items related to institutional assets, Zero and ecosystem partners.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-021]
+    quoted_evidence:
+      - source_id: SRC-021
+        quote: "Zero: The Decentralized Multi-Core World Computer; Better Money Technology for Institutions; Worldpay's Payments DVN; LayerZero Partners with Canton; LayerZero Partners with Centrifuge."
+        location: LayerZero blog index
+    analyst_interpretation: Pipeline appears active but requires roadmap, customer contracts and cost-to-complete verification.
+    limitations: Blog index is company marketing content.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids: [T-006, T-009, T-010, T-012]
+      figure_ids: [F-005]
+      risk_ids: [R-002, R-005]
+  - evidence_claim_id: EC-024
+    claim: LayerZero's transaction and bounty compliance surfaces include sanctions/KYC and cross-chain value movement risk.
+    evidence_summary: Immunefi bounty requires OFAC screening; transaction pricing docs and product pages describe cross-chain token and gas flows.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-008, SRC-013, SRC-019]
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Bounty hunters must pass OFAC Screening.
+        location: Immunefi bounty page
+      - source_id: SRC-008
+        quote: Multiple networks with different native tokens, gas mechanisms, and pricing models must be coordinated.
+        location: Transaction Pricing Model docs
+    analyst_interpretation: Compliance review should cover sanctions, token payments, fee flows and cross-chain value transfer.
+    limitations: No regulatory-agency correspondence was reviewed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids: [T-015]
+      figure_ids: [F-008]
+      risk_ids: [R-004]
+  - evidence_claim_id: EC-025
+    claim: TechCrunch identifies Bryan Pellegrino as LayerZero Labs CEO and co-founder.
+    evidence_summary: TechCrunch financing and bounty articles quote Pellegrino and identify him as CEO/co-founder.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-003, SRC-014]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Bryan Pellegrino, CEO and co-founder of LayerZero Labs, told TechCrunch.
+        location: TechCrunch Series B article
+      - source_id: SRC-014
+        quote: Bryan Pellegrino, co-founder and CEO of LayerZero, exclusively told TechCrunch.
+        location: TechCrunch bounty article
+    analyst_interpretation: Supports at least one senior-management identity; complete team still requires company materials.
+    limitations: Does not provide full biography, ownership or employment terms.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids: [T-013]
+      figure_ids: [F-007]
+      risk_ids: [R-007]
+
+sources:
+  - source_id: SRC-001
+    title: CB Insights The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: market_database
+    reliability_notes: Public market database; useful for valuation metadata but not audited financial detail.
+    archive_url: null
+  - source_id: SRC-002
+    title: LayerZero Labs Raises $135 Million to Unite Decentralized Applications Across Blockchains
+    url: https://www.businesswire.com/news/home/20220330005247/en/LayerZero-Labs-Raises-135-Million-to-Unite-Decentralized-Applications-Across-Blockchains
+    publisher: BusinessWire
+    author: LayerZero Labs
+    publication_date: 2022-03-30
+    accessed_date: 2026-05-18
+    source_type: independent_news
+    reliability_notes: Press-release distribution; company-originated financing claim that should be reconciled to financing documents.
+    archive_url: null
+  - source_id: SRC-003
+    title: Blockchain messaging protocol LayerZero raises $120M, hitting $3B valuation
+    url: https://techcrunch.com/2023/04/04/blockchain-messaging-protocol-layerzero-raises-120m-hitting-3b-valuation/
+    publisher: TechCrunch
+    author: Jacquelyn Melinek
+    publication_date: 2023-04-04
+    accessed_date: 2026-05-18
+    source_type: independent_news
+    reliability_notes: Independent news article with company/founder quotes and reported financing/adoption metrics.
+    archive_url: null
+  - source_id: SRC-004
+    title: LayerZero homepage
+    url: https://layerzero.network/
+    publisher: LayerZero
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company-controlled product positioning.
+    archive_url: null
+  - source_id: SRC-005
+    title: What is LayerZero?
+    url: https://docs.layerzero.network/v2/concepts/getting-started/what-is-layerzero
+    publisher: LayerZero Docs
+    author: LayerZero
+    publication_date: 2026-05-18
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company docs; reliable for product description, not independent validation.
+    archive_url: null
+  - source_id: SRC-006
+    title: LayerZero Protocol Architecture
+    url: https://docs.layerzero.network/v2/concepts/layerzero-protocol-architecture
+    publisher: LayerZero Docs
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Technical documentation explaining architecture and responsibilities.
+    archive_url: null
+  - source_id: SRC-007
+    title: LayerZero Interoperability
+    url: https://layerzero.network/interop
+    publisher: LayerZero
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company product page with partner logos and supported-chain claims.
+    archive_url: null
+  - source_id: SRC-008
+    title: Transaction Pricing Model
+    url: https://docs.layerzero.network/v2/concepts/protocol/transaction-pricing
+    publisher: LayerZero Docs
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company docs explaining cross-chain fee model.
+    archive_url: null
+  - source_id: SRC-009
+    title: Security Stack (DVNs)
+    url: https://docs.layerzero.network/v2/concepts/modular-security/security-stack-dvns
+    publisher: LayerZero Docs
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company docs explaining DVN model and default configurations.
+    archive_url: null
+  - source_id: SRC-010
+    title: Executors
+    url: https://docs.layerzero.network/v2/concepts/permissionless-execution/executors
+    publisher: LayerZero Docs
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company docs explaining executor model and concentration warning.
+    archive_url: null
+  - source_id: SRC-011
+    title: LayerZero-v2 README
+    url: https://github.com/LayerZero-Labs/LayerZero-v2/blob/main/README.md
+    publisher: GitHub / LayerZero-Labs
+    author: LayerZero-Labs
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: technical_repository
+    reliability_notes: Public repository README; strong technical artifact but not a security certification.
+    archive_url: null
+  - source_id: SRC-012
+    title: LayerZero Developer Utilities README
+    url: https://github.com/LayerZero-Labs/devtools/blob/main/README.md
+    publisher: GitHub / LayerZero-Labs
+    author: LayerZero-Labs
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: technical_repository
+    reliability_notes: Public developer tooling repository; includes beta warning.
+    archive_url: null
+  - source_id: SRC-013
+    title: LayerZero Bug Bounties
+    url: https://immunefi.com/bug-bounty/layerzero/
+    publisher: Immunefi
+    author: Immunefi / LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Bounty program hosted by Immunefi; payout terms company-linked.
+    archive_url: null
+  - source_id: SRC-014
+    title: LayerZero and Immunefi launch largest crypto bug bounty program with up to $15M in rewards
+    url: https://techcrunch.com/2023/05/17/layerzero-and-immunefi-launch-largest-crypto-bug-bounty-program-with-up-to-15m-in-rewards/
+    publisher: TechCrunch
+    author: Jacquelyn Melinek
+    publication_date: 2023-05-17
+    accessed_date: 2026-05-18
+    source_type: independent_news
+    reliability_notes: Independent article reporting founder statements and security program details.
+    archive_url: null
+  - source_id: SRC-015
+    title: CourtListener search result for FTX Recovery Trust v. LayerZero Labs Ltd.
+    url: https://www.courtlistener.com/docket/67777854/ftx-recovery-trust-v-layerzero-labs-ltd/
+    publisher: CourtListener / Free Law Project
+    author: CourtListener
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: legal_record
+    reliability_notes: Public legal search/docket metadata; full pleadings and settlement documents not reviewed.
+    archive_url: null
+  - source_id: SRC-016
+    title: LayerZero Foundation
+    url: https://layerzero.foundation/
+    publisher: LayerZero Foundation
+    author: LayerZero Foundation
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Foundation-controlled page with governance and ZRO links.
+    archive_url: null
+  - source_id: SRC-017
+    title: LayerZero Careers
+    url: https://layerzero.network/careers
+    publisher: LayerZero
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company careers page; useful for current open roles but not headcount.
+    archive_url: null
+  - source_id: SRC-018
+    title: LayerZero-Labs Audits repository
+    url: https://github.com/LayerZero-Labs/Audits
+    publisher: GitHub / LayerZero-Labs
+    author: LayerZero-Labs
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: technical_repository
+    reliability_notes: Public repository directory listing; not a full audit-opinion review.
+    archive_url: null
+  - source_id: SRC-019
+    title: LayerZero V2 OFT Quickstart
+    url: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+    publisher: LayerZero Docs
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company developer documentation for OFT token standard.
+    archive_url: null
+  - source_id: SRC-020
+    title: KelpDAO Incident Statement
+    url: https://layerzero.network/blog/kelpdao-incident-statement
+    publisher: LayerZero
+    author: LayerZero
+    publication_date: 2026-04-18
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company incident statement; independent forensic confirmation not reviewed.
+    archive_url: null
+  - source_id: SRC-021
+    title: LayerZero Blog
+    url: https://layerzero.network/blog
+    publisher: LayerZero
+    author: LayerZero
+    publication_date: null
+    accessed_date: 2026-05-18
+    source_type: primary_company_source
+    reliability_notes: Company blog index with product and partnership announcements.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Financial, cap-table and customer-revenue opacity
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: No public audited financials, management accounts, revenue by product/customer, cap table, debt schedule or material contracts were available.
+    impacted_chapter_ids: [I, III, V, VII, VIII]
+    impacted_section_ids: [I.A, I.C, III.C, V.D, VIII.F]
+    evidence_claim_ids: [EC-020]
+    mitigation_or_diligence_request: Require full financial/cap-table/customer data room before underwriting.
+  - risk_id: R-002
+    risk_title: Valuation and crypto-cycle exposure
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: $3B public valuation is well evidenced historically but may be sensitive to crypto volumes, token prices, security incidents and macro financing conditions.
+    impacted_chapter_ids: [I, II, IV, VI]
+    impacted_section_ids: [I.D, II.A, IV.A, VI.B]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-005, EC-023]
+    mitigation_or_diligence_request: Re-underwrite valuation using current revenue, retention, incident-adjusted pipeline and comparable multiples.
+  - risk_id: R-003
+    risk_title: Security and liveness concentration
+    risk_category: technical
+    severity: critical
+    likelihood: high
+    description: The KelpDAO incident disclosed an approximately $290M exploit tied to a 1-of-1 DVN configuration and RPC spoofing affecting the LayerZero Labs DVN; multi-DVN adoption and remediation must be verified.
+    impacted_chapter_ids: [II, III, VI, VIII]
+    impacted_section_ids: [II.A, III.D, III.E, VI.A, VIII.G]
+    evidence_claim_ids: [EC-007, EC-014, EC-016, EC-021]
+    mitigation_or_diligence_request: Conduct independent forensic/security review, verify all remediation and require customer migration to diversified DVN configurations.
+  - risk_id: R-004
+    risk_title: Token, governance and regulatory uncertainty
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: ZRO fee switch, buybacks, governance, bridging and cross-chain value-transfer products create securities/commodities, sanctions and money-transmission review needs.
+    impacted_chapter_ids: [I, V, VIII]
+    impacted_section_ids: [I.C, V.A, VIII.G]
+    evidence_claim_ids: [EC-014, EC-018, EC-022, EC-024]
+    mitigation_or_diligence_request: Obtain counsel memos, token allocation/treasury controls, sanctions/money-transmission analysis and governance risk assessment.
+  - risk_id: R-005
+    risk_title: Adoption-to-revenue proof gap
+    risk_category: customer
+    severity: medium
+    likelihood: high
+    description: Named apps, TVL, volume, users and partner logos do not prove paid customers, retention, ARR or concentration.
+    impacted_chapter_ids: [III, V]
+    impacted_section_ids: [III.A, III.B, III.C, V.B, V.C]
+    evidence_claim_ids: [EC-012, EC-013, EC-020, EC-023]
+    mitigation_or_diligence_request: Request top-customer schedule, contracts, revenue by customer, pipeline and references.
+  - risk_id: R-006
+    risk_title: FTX litigation residual exposure
+    risk_category: legal
+    severity: medium
+    likelihood: low
+    description: CourtListener shows a terminated FTX Recovery Trust adversary proceeding involving LayerZero Labs Ltd.; settlement terms and residual obligations are not public.
+    impacted_chapter_ids: [VIII]
+    impacted_section_ids: [VIII.A, VIII.B]
+    evidence_claim_ids: [EC-017]
+    mitigation_or_diligence_request: Obtain pleadings, settlement/dismissal documents, releases, reserves and counsel opinion.
+  - risk_id: R-007
+    risk_title: Management, controls and headcount transparency gap
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public sources verify CEO/co-founder and open roles but not full org, board, compensation, turnover, controls or succession.
+    impacted_chapter_ids: [VII]
+    impacted_section_ids: [VII.A, VII.B, VII.C, VII.D, VII.G]
+    evidence_claim_ids: [EC-017, EC-019, EC-020, EC-025]
+    mitigation_or_diligence_request: Request org chart, leadership bios, compensation, turnover and board/governance documents.
+  - risk_id: R-008
+    risk_title: Developer tooling stability and open-source execution
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: Devtools README warns beta status and possible backwards-incompatible changes; public artifacts require code-quality and release-process review.
+    impacted_chapter_ids: [IV, VI, VIII]
+    impacted_section_ids: [IV.A, VI.A, VIII.D]
+    evidence_claim_ids: [EC-010, EC-011, EC-021]
+    mitigation_or_diligence_request: Review release process, semver policy, issue backlog, audits and customer-impact controls.
+  - risk_id: R-009
+    risk_title: Default Executor concentration
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: LayerZero docs state every default Executor across every pathway in every preset network configuration is operated by LayerZero Labs, creating liveness/censorship concentration.
+    impacted_chapter_ids: [II, VIII]
+    impacted_section_ids: [II.A, VIII.G]
+    evidence_claim_ids: [EC-008, EC-016]
+    mitigation_or_diligence_request: Verify third-party/custom Executor adoption, fallback procedures, monitoring and customer communications.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements and monthly management accounts.
+    why_it_matters: Needed to assess revenue quality, burn, liabilities, runway and incident/litigation reserves.
+    suggested_source_or_request: Request audited FY2023-FY2025 statements and 2026 YTD management accounts.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, token allocation, warrants, debt, preferences and investor rights.
+    why_it_matters: Determines dilution, liquidation economics and governance control.
+    suggested_source_or_request: Request fully diluted capitalization and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Revenue by customer and product.
+    why_it_matters: Public adoption metrics do not prove economics or concentration.
+    suggested_source_or_request: Request top-customer revenue, contracts, churn and margin schedule.
+    priority: high
+  - gap_id: G-004
+    chapter_id: II
+    section_id: II.A
+    missing_information: Active pathway metrics, SLAs, incidents and product-level gross margin.
+    why_it_matters: Determines durability and profitability of interoperability products.
+    suggested_source_or_request: Request product analytics and reliability dashboards.
+    priority: high
+  - gap_id: G-005
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: KelpDAO incident RCA, independent forensic report, remediation evidence and customer migration status.
+    why_it_matters: Security incident is the highest-priority risk.
+    suggested_source_or_request: Request full incident packet and third-party security review.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: Token, sanctions, money-transmission and cyber incident legal memos.
+    why_it_matters: ZRO and cross-chain value transfer can trigger complex regulatory exposure.
+    suggested_source_or_request: Request counsel memos and regulatory correspondence.
+    priority: high
+  - gap_id: G-007
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: FTX pleadings, settlement/dismissal documents and residual obligations.
+    why_it_matters: Public docket metadata does not show economic impact or releases.
+    suggested_source_or_request: Request legal log and counsel opinion.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Org chart, executive biographies, board composition and succession plan.
+    why_it_matters: Execution and control quality cannot be assessed from public sources.
+    suggested_source_or_request: Request management packet and background checks.
+    priority: medium
+  - gap_id: G-009
+    chapter_id: V
+    section_id: V.D
+    missing_information: Sales productivity, pipeline, quota, CAC and marketing budget.
+    why_it_matters: GTM efficiency and budget sufficiency are unknown.
+    suggested_source_or_request: Request CRM and GTM operating metrics.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Patent/trademark portfolio, OSS compliance, contributor assignment and material license review.
+    why_it_matters: IP ownership and OSS compliance affect defensibility and legal risk.
+    suggested_source_or_request: Request IP schedule and legal diligence memo.
+    priority: medium
+  - gap_id: G-011
+    chapter_id: VIII
+    section_id: VIII.E
+    missing_information: Cyber, D&O, E&O, crime and digital-asset insurance coverage.
+    why_it_matters: Incident and token exposures may be uninsured or excluded.
+    suggested_source_or_request: Request policies, exclusions, broker summary and claims history.
+    priority: high
+  - gap_id: G-012
+    chapter_id: III
+    section_id: III.E
+    missing_information: Top suppliers, RPC/cloud/security vendors, SLAs and redundancy design.
+    why_it_matters: RPC spoofing and worker concentration are material operational risks.
+    suggested_source_or_request: Request supplier schedule and security attestations.
+    priority: high
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, YTD management accounts, revenue by product/customer and revenue-recognition memo.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide fully diluted cap table, token allocation/vesting, debt/warrant schedule and investor rights.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: I
+    section_id: I.D
+    request: Provide financing documents, valuation support and use-of-proceeds history for 2022 and 2023 rounds.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide top-15 customers/applications by revenue and usage for FY2024-FY2026 with references.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.B
+    request: Provide strategic relationship and material contract schedule with revenue contribution and termination terms.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: II
+    section_id: II.A
+    request: Provide active chain/pathway list, uptime, incident history, product-level margin and default DVN/Executor configuration by pathway.
+    requested_from: company
+    priority: high
+  - request_id: Q-007
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide KelpDAO RCA, external forensic report, remediation evidence, customer migration status and SOC 2 report.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide token, fee-switch, buyback, sanctions, money-transmission and cyber incident legal memos.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-009
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide litigation log, FTX pleadings, settlement/dismissal documents, releases and reserves.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-010
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide org chart, board composition, senior-management bios, employment agreements and succession plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-011
+    chapter_id: VII
+    section_id: VII.G
+    request: Provide headcount history, hiring plan, turnover, retention grants and benefit plans.
+    requested_from: company
+    priority: medium
+  - request_id: Q-012
+    chapter_id: V
+    section_id: V.D
+    request: Provide CRM pipeline, sales-cycle metrics, quota attainment, CAC and marketing budget.
+    requested_from: company
+    priority: medium
+  - request_id: Q-013
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide patent/trademark portfolio, OSS compliance report, contributor assignments and material IP licenses.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-014
+    chapter_id: VIII
+    section_id: VIII.E
+    request: Provide insurance policies, exclusions, claims history and broker coverage memo for cyber/D&O/E&O/digital-asset risks.
+    requested_from: company
+    priority: high
+  - request_id: Q-015
+    chapter_id: III
+    section_id: III.E
+    request: Provide supplier schedule, RPC architecture, cloud/security vendor SLAs and redundancy/monitoring controls.
+    requested_from: company
+    priority: high
+
+limitations:
+  - limitation_id: L-001
+    description: Public-source-only diligence; no private company data room, management interview, customer reference call or counsel memo was provided.
+    affected_chapter_ids: [I, III, V, VII, VIII]
+    affected_section_ids: [I.A, I.C, III.C, V.D, VII.A, VIII.F]
+  - limitation_id: L-002
+    description: Company-controlled docs/pages were used for product, governance and incident claims; these require independent validation.
+    affected_chapter_ids: [II, VI, VIII]
+    affected_section_ids: [II.A, VI.A, VIII.G]
+  - limitation_id: L-003
+    description: Legal conclusions are expressly out of scope; CourtListener metadata and public pages are not a counsel-certified docket/regulatory/IP search.
+    affected_chapter_ids: [VIII]
+    affected_section_ids: [VIII.A, VIII.B, VIII.D, VIII.G]
+  - limitation_id: L-004
+    description: Public adoption metrics and partner logos were not independently reconciled to customer contracts, revenue or active production usage.
+    affected_chapter_ids: [III, V]
+    affected_section_ids: [III.A, III.B, III.C, V.B]
+  - limitation_id: L-005
+    description: Technical repository and audit listings were not independently code-reviewed or security-audited in this report.
+    affected_chapter_ids: [II, VI, VIII]
+    affected_section_ids: [II.A, VI.A, VIII.D]
+  - limitation_id: L-006
+    description: Source pages can change after access date; chain counts, open roles, incident status, legal docket status and governance pages should be refreshed before investment use.
+    affected_chapter_ids: [I, II, III, V, VI, VII, VIII]
+    affected_section_ids: [I.D, II.A, III.A, V.A, VI.B, VII.B, VIII.A]

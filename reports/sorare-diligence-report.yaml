@@ -1,0 +1,2512 @@
+report_metadata:
+  report_title: Sorare Public-Source Startup Diligence Report
+  target_company: Sorare
+  website: https://sorare.com/
+  known_aliases:
+    - Sorare
+    - Sorare SAS
+    - "Sorare: NBA"
+    - Sorare MLB
+  sector: NFT fantasy sports, digital collectibles and sports gaming
+  geography: France / Paris and New York operations / global users
+  company_stage: Private unicorn
+  research_date: 2026-05-19
+  analyst: GitHub Copilot CLI diligence agent
+  report_version: "1.0"
+  currency: USD unless otherwise noted
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Public-source diligence using reputable unicorn-list, news, partner, regulator and company-owned sources.
+    - Treated company-owned sources as evidence of public claims and product availability, not independent verification of economics.
+    - Used public regulatory materials for UK and French gambling/JONUM exposure; no legal opinion was available.
+    - No private data room, management interview, customer reference, cap table or audited financial records were provided.
+  included_jurisdictions:
+    - France
+    - United Kingdom
+    - United States
+    - Global digital-asset and sports-fantasy markets referenced in public sources
+  excluded_topics:
+    - Private financial statements, cash/debt, cap table, token/NFT custody contracts, license agreements and customer-level transaction data.
+    - Counsel-certified litigation, trademark, consumer-protection, AML and gambling-regulatory searches.
+    - Private security architecture, wallet-key management, incident history and third-party audit reports.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Workflow request for random unicorn diligence reports
+      type: workflow_request
+      date_received: 2026-05-19
+      notes: No founder responses, pitch deck, financial model, customer files or data-room documents were supplied.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Sorare is an uncovered private unicorn with a latest public valuation of approximately $4.3B.
+    claim_source: CB Insights unicorn list and TechCrunch financing coverage
+    claim_date: 2021-09-21
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-001, EC-002]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current valuation support and the full capitalization table because public valuation evidence is from 2021.
+  - founder_claim_id: FC-002
+    claim_text: Sorare operates a fantasy sports platform using digital player cards/NFTs across football, NBA and MLB products.
+    claim_source: Sorare website, TechCrunch and NBPA
+    claim_date: null
+    mapped_chapter_ids: [II, III]
+    mapped_section_ids: [II.A, III.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-003, EC-008, EC-009, EC-010]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate active users, paid users, retention, wallet custody and sport-level gross merchandise value from internal data.
+  - founder_claim_id: FC-003
+    claim_text: Sorare has major sports-league and club licensing relationships.
+    claim_source: TechCrunch, CNBC and NBPA
+    claim_date: null
+    mapped_chapter_ids: [III, VIII]
+    mapped_section_ids: [III.A, VIII.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-004, EC-005, EC-008, EC-010]
+    contradiction_summary: Public sources verify important relationships but not contract economics, renewal rights or termination clauses.
+    diligence_follow_up:
+      - Request executed league, club and athlete/IP license agreements, economics, exclusivity, minimum guarantees and renewal calendars.
+  - founder_claim_id: FC-004
+    claim_text: Sorare monetizes through card issuance and marketplace transaction activity.
+    claim_source: TechCrunch and CNBC
+    claim_date: null
+    mapped_chapter_ids: [I, V]
+    mapped_section_ids: [I.A, V.A]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-003, EC-006]
+    contradiction_summary: Public sources describe monetization mechanics but do not disclose revenue, gross margin, CAC, payback or take-rate.
+    diligence_follow_up:
+      - Request revenue by product, new-card issuance economics, secondary-market fees, paid-user cohorts and take-rate history.
+  - founder_claim_id: FC-005
+    claim_text: Sorare has millions of users and global reach.
+    claim_source: CNBC and NBPA
+    claim_date: null
+    mapped_chapter_ids: [III, V]
+    mapped_section_ids: [III.A, V.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-005, EC-006, EC-008]
+    contradiction_summary: Public user counts are not equivalent to active paid users; CNBC also reports 87% of players did not spend money.
+    diligence_follow_up:
+      - Request MAU, DAU, paid conversion, cohorts, retention, ARPPU, whale concentration and geographic compliance by jurisdiction.
+  - founder_claim_id: FC-006
+    claim_text: Sorare faces material gambling, digital-asset and consumer-protection regulatory scrutiny.
+    claim_source: UK Gambling Commission, CNBC and ANJ materials
+    claim_date: null
+    mapped_chapter_ids: [VIII]
+    mapped_section_ids: [VIII.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-007, EC-011, EC-012]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request legal memos, correspondence with regulators, geographic restrictions, KYC/AML policies, age-gating and responsible-play controls.
+  - founder_claim_id: FC-007
+    claim_text: Sorare's financial statements, current valuation, cap table, current license liabilities and litigation status are not publicly verifiable.
+    claim_source: Public-source diligence review
+    claim_date: null
+    mapped_chapter_ids: [I, VIII]
+    mapped_section_ids: [I.A, VIII.B]
+    verification_status: not_publicly_verifiable
+    confidence: high
+    evidence_claim_ids: [EC-013]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Provide a full diligence data room before any investment underwriting.
+
+executive_summary:
+  overall_assessment: >-
+    Sorare is a credible private unicorn candidate: CB Insights lists the company at $4.3B, TechCrunch reported a $680M
+    Series B led by SoftBank Vision Fund 2 at the same valuation, and independent/partner sources verify meaningful sports
+    IP relationships with the Premier League, NBA/NBPA and a broad football-club ecosystem. The investability question is
+    unresolved because the public record is much stronger on brand partnerships and historical financing than on current
+    revenue quality, retention, paid-user concentration, cash runway, license liabilities, regulatory clearance or wallet/
+    blockchain risk controls.
+  investment_or_diligence_thesis: >-
+    Advance only to confirmatory diligence if private data proves durable paid-user economics and regulatory compliance after
+    the NFT/crypto downturn. Upside depends on Sorare converting scarce sports IP, fantasy gameplay and digital ownership
+    into recurring entertainment revenue; the main underwriting risks are gambling/JONUM regulation, license-renewal cost,
+    heavy-spender concentration, digital-asset volatility and a stale 2021 valuation anchor.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Public unicorn and financing sources support the $4.3B 2021 valuation.
+      evidence_claim_ids: [EC-001, EC-002]
+    - founder_claim_id: FC-003
+      summary: Multiple public sources verify important sports-league and club licensing relationships.
+      evidence_claim_ids: [EC-004, EC-005, EC-008, EC-010]
+    - founder_claim_id: FC-006
+      summary: UK and French regulatory scrutiny/framework obligations are well documented in public sources.
+      evidence_claim_ids: [EC-007, EC-011, EC-012]
+  biggest_risks:
+    - risk_id: R-003
+      summary: Gambling/JONUM and digital-asset regulation could alter product design, access or economics.
+    - risk_id: R-002
+      summary: 2021 valuation may not reflect post-crypto-winter NFT-market conditions.
+    - risk_id: R-004
+      summary: Sports IP license dependence creates renewal, minimum-guarantee and concentration risk.
+  key_evidence_gaps:
+    - Audited financials, monthly management accounts, cash runway, debt, tax and current valuation support.
+    - Cap table, investor rights, option pool, warrants and league equity/warrant economics.
+    - Revenue by product, sport, geography, fee type and cohort; paid-user conversion and whale concentration.
+    - License agreements, renewal calendars, minimum guarantees, exclusivity and termination rights.
+    - UKGC, ANJ and other regulator correspondence; legal opinions on gambling, consumer protection, AML and digital assets.
+    - Wallet custody, blockchain migration, security audits, incident history and insurance.
+  recommended_next_steps:
+    - Start with legal/regulatory diligence before relying on unrestricted global product availability.
+    - Run revenue-quality diligence focused on paid-user cohorts, repeat spend, take-rate, refund/fraud and concentration.
+    - Review all material sports IP licenses and model renewal/minimum-guarantee downside.
+    - Re-underwrite valuation using current paid GMV/revenue and post-2021 NFT market comparables.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Sorare's 2021 $4.3B valuation and $680M Series B are public, but revenue, profitability, cash runway, cap table and current valuation support are private.
+    founder_claim_ids: [FC-001, FC-004, FC-007]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-006, EC-013]
+    risk_ids: [R-001, R-002, R-005]
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids: [I.A]
+        summary: Public sources disclose historical trading-volume and monetization mechanics, but not audited statements, revenue, gross margin, cash, debt or cohort economics.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: TechCrunch reported Sorare generated revenue by issuing new cards, while CNBC later reported transaction volume and high free-user share; neither source discloses revenue quality.
+            evidence_claim_ids: [EC-003, EC-006]
+            risk_ids: [R-001, R-005]
+        hidden_risks:
+          - Revenue may be concentrated in new card issuance, marketplace fees or high-spending collectors rather than broad recurring spend.
+          - Public GMV/card-exchange metrics can overstate net revenue and cash conversion.
+        evidence_gaps:
+          - Audited financials, ARR/revenue by stream, gross margin, take-rate, paid-user cohorts, refund/fraud, cash and debt.
+        follow_up_questions:
+          - Provide monthly financials, revenue bridge from GMV to net revenue, paid-user cohorts and gross-margin reconciliation.
+        table_ids: [T-001, T-003]
+        figure_ids: [F-001]
+        evidence_claim_ids: [EC-002, EC-003, EC-006, EC-013]
+      - section_id: I.B
+        title: Capitalization, valuation and financing terms
+        checklist_question_ids: [I.B, I.C]
+        summary: The public valuation anchor is strong for 2021, but cap table, liquidation preferences, option pool, warrants and current mark are not public.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.B-F1
+            finding: CB Insights and TechCrunch align on a $4.3B unicorn valuation; CNBC later described the same valuation as Sorare's last investor valuation.
+            evidence_claim_ids: [EC-001, EC-002, EC-005]
+            risk_ids: [R-002]
+        hidden_risks:
+          - Sports-league equity warrants, liquidation preferences or structured terms could materially dilute common equity.
+        evidence_gaps:
+          - Full cap table, current 409A or board-approved valuation, preferences, warrants, SAFE/convertible instruments and debt.
+        follow_up_questions:
+          - Provide financing documents, pro forma cap table, investor-rights agreements and all league/shareholder warrant terms.
+        table_ids: [T-002]
+        figure_ids: [F-002]
+        evidence_claim_ids: [EC-001, EC-002, EC-005, EC-013]
+
+  - chapter_id: II
+    title: Products
+    chapter_summary: Sorare offers football, NBA and MLB fantasy products using scarce digital player cards and real-world performance scoring, but product economics and security controls require private validation.
+    founder_claim_ids: [FC-002, FC-004]
+    evidence_claim_ids: [EC-003, EC-008, EC-009, EC-010]
+    risk_ids: [R-006, R-003]
+    sections:
+      - section_id: II.A
+        title: Product and SKU matrix
+        checklist_question_ids: [II.A]
+        summary: Public sources support football, NBA and MLB product availability, lineup gameplay and rewards, with NFTs/digital collectibles central to the paid-card proposition.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Sorare's site markets football, NBA and MLB products; NBPA verifies an officially licensed NBA fantasy game; Wikipedia summarizes MLB and football availability.
+            evidence_claim_ids: [EC-008, EC-009, EC-010]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Product engagement may be seasonal and sport-specific; public pages do not prove retention or repeat spend.
+        evidence_gaps:
+          - Product-level MAU, paid conversion, retention, support tickets, outages and roadmap.
+        follow_up_questions:
+          - Provide product KPI pack by sport, card scarcity tier, geography and user cohort.
+        table_ids: [T-004]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-003, EC-008, EC-009, EC-010]
+      - section_id: II.B
+        title: Pricing, rewards and wallet experience
+        checklist_question_ids: [II.B]
+        summary: Public evidence shows card purchases, transactions, free-to-play modes and rewards, but fee schedules, wallet risk controls and card-liquidity protections are not fully public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.B-F1
+            finding: CNBC reported 87% of players did not spend money while Sorare relied on big-spending power users and took a cut of transactions.
+            evidence_claim_ids: [EC-006]
+            risk_ids: [R-005]
+        hidden_risks:
+          - A small payer base can create revenue volatility, consumer-protection scrutiny and marketplace-liquidity pressure.
+        evidence_gaps:
+          - Fee schedule history, wallet custody model, chargeback/fraud data, card liquidity, refund policy and responsible-play settings.
+        follow_up_questions:
+          - Provide fee/take-rate history, wallet custody documentation, fraud metrics and responsible-play controls by jurisdiction.
+        table_ids: [T-005]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-009, EC-012]
+
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Sorare has public evidence of millions of registered users and major sports partners, but paid-user quality, spender concentration, churn and contract economics are private.
+    founder_claim_ids: [FC-003, FC-005]
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-008]
+    risk_ids: [R-004, R-005, R-008]
+    sections:
+      - section_id: III.A
+        title: Users, customers and strategic partners
+        checklist_question_ids: [III.A, III.B]
+        summary: TechCrunch reported 600,000 registered users and 150,000 monthly active buyers/team composers in 2021; NBPA reported two million registered users in 2022; CNBC reported three million users in 2023.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public user-count anchors show growth from 600,000 registered users in 2021 to three million worldwide users in 2023.
+            evidence_claim_ids: [EC-004, EC-005, EC-008]
+            risk_ids: [R-008]
+        hidden_risks:
+          - Registered-user growth does not prove paid conversion, retention or responsible-play compliance.
+        evidence_gaps:
+          - Active paid users, cohorts, churn, ARPPU, geographic restrictions, customer support and complaints.
+        follow_up_questions:
+          - Provide monthly active, paid active, retention, spend distribution and responsible-play intervention data.
+        table_ids: [T-006]
+        figure_ids: [F-004]
+        evidence_claim_ids: [EC-004, EC-005, EC-006, EC-008]
+      - section_id: III.B
+        title: Supplier, data and platform dependencies
+        checklist_question_ids: [III.C, III.D]
+        summary: Product delivery depends on sports IP licensors, sports data/scoring, marketplace/payment rails, blockchain infrastructure and consumer trust in digital collectibles.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public sources verify dependence on licensed sports IP and blockchain-backed collectible cards, but supplier contracts and SLAs are not public.
+            evidence_claim_ids: [EC-003, EC-005, EC-008, EC-010]
+            risk_ids: [R-004, R-006]
+        hidden_risks:
+          - Loss of a major league license or blockchain/wallet incident could impair product appeal and user trust.
+        evidence_gaps:
+          - Vendor contracts, data-provider agreements, payment processor terms, custody arrangements and incident history.
+        follow_up_questions:
+          - Provide supplier/vendor schedule, SLA history, data-provider contracts, wallet/custody documentation and payment-processor terms.
+        table_ids: [T-007]
+        figure_ids: []
+        evidence_claim_ids: [EC-003, EC-005, EC-008, EC-010]
+
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Sorare competes across fantasy sports, sports betting-adjacent entertainment, digital collectibles and NFT marketplaces; sports IP breadth is a differentiator but not a permanent moat without renewals.
+    founder_claim_ids: [FC-002, FC-003]
+    evidence_claim_ids: [EC-003, EC-004, EC-005, EC-008]
+    risk_ids: [R-004, R-007]
+    sections:
+      - section_id: IV.A
+        title: Competitor landscape
+        checklist_question_ids: [IV.A]
+        summary: Public evidence supports Sorare's differentiated sports-license portfolio, but competition includes fantasy sports incumbents, sports betting operators, collectibles platforms and blockchain games.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: TechCrunch viewed Sorare's 180 football organization partnerships as a barrier to entry, but CNBC highlights market pressure from the broader NFT downturn.
+            evidence_claim_ids: [EC-004, EC-006]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Fantasy/betting incumbents can outspend on user acquisition and license guarantees if regulation permits.
+        evidence_gaps:
+          - Win/loss data, user-overlap analysis, license-bid history and competitive CAC.
+        follow_up_questions:
+          - Provide competitor win/loss, CAC by channel, license-bid history and user-overlap analysis.
+        table_ids: [T-008]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-004, EC-006, EC-008]
+      - section_id: IV.B
+        title: Basis of competition and defensibility
+        checklist_question_ids: [IV.B]
+        summary: Defensibility appears to rest on league/club licenses, community liquidity, gameplay design and brand, but each factor requires private measurement.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.B-F1
+            finding: Public sources verify licenses and broad user claims but not renewal economics, liquidity depth, take-rate durability or switching costs.
+            evidence_claim_ids: [EC-005, EC-008, EC-013]
+            risk_ids: [R-004, R-007]
+        hidden_risks:
+          - If free-to-play users dominate engagement, monetization defensibility may be weaker than brand awareness suggests.
+        evidence_gaps:
+          - License renewal costs, market liquidity, cohort retention, card resale depth and user switching behavior.
+        follow_up_questions:
+          - Provide renewal calendars, license economics, marketplace liquidity metrics and retention by acquisition cohort.
+        table_ids: [T-009]
+        figure_ids: []
+        evidence_claim_ids: [EC-005, EC-006, EC-013]
+
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Sorare distributes through league partnerships, star investors/ambassadors, owned product channels and marketplace virality; paid marketing efficiency and channel mix are not public.
+    founder_claim_ids: [FC-004, FC-005]
+    evidence_claim_ids: [EC-005, EC-006, EC-008, EC-009]
+    risk_ids: [R-005, R-007, R-003]
+    sections:
+      - section_id: V.A
+        title: Distribution and monetization channels
+        checklist_question_ids: [V.A]
+        summary: Public sources show major license-led distribution and marketplace monetization, but CAC, sales efficiency and channel-level payback are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: TechCrunch reported planned U.S. expansion and marketing investment after the Series B; CNBC showed the Premier League deal expanded product distribution despite NFT market weakness.
+            evidence_claim_ids: [EC-002, EC-005]
+            risk_ids: [R-007]
+        hidden_risks:
+          - License announcements can create reach without profitable paid conversion.
+        evidence_gaps:
+          - CAC, payback, channel mix, partnership minimum guarantees and league activation ROI.
+        follow_up_questions:
+          - Provide CAC/payback by channel, license activation spend, partner referral economics and marketing budget-to-actuals.
+        table_ids: [T-010]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-002, EC-005, EC-006, EC-009]
+      - section_id: V.B
+        title: Public marketing and community signals
+        checklist_question_ids: [V.B]
+        summary: Sorare has public owned-channel, partner and ambassador signals, but community health and paid conversion are not independently verified.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: NBPA notes Sorare backers include major investors and athletes, while Sorare's site highlights partners/investors and social/community channels.
+            evidence_claim_ids: [EC-008, EC-009]
+            risk_ids: [R-005]
+        hidden_risks:
+          - Ambassador marketing may be costly or less effective if NFT sentiment remains weak.
+        evidence_gaps:
+          - Influencer/ambassador agreements, community moderation, creator-program economics and complaint rates.
+        follow_up_questions:
+          - Provide ambassador/creator contracts, community metrics, complaint logs and conversion data from partner launches.
+        table_ids: [T-011]
+        figure_ids: []
+        evidence_claim_ids: [EC-008, EC-009]
+
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public product materials show active gameplay updates and a blockchain-based collectible architecture, but internal R&D staffing, roadmap delivery and security posture are not public.
+    founder_claim_ids: [FC-002]
+    evidence_claim_ids: [EC-003, EC-009, EC-010, EC-015]
+    risk_ids: [R-006, R-003]
+    sections:
+      - section_id: VI.A
+        title: Product roadmap and release activity
+        checklist_question_ids: [VI.A]
+        summary: Sorare's public site and blog show active football, NBA and MLB product surfaces and recent gameplay/news posts; internal roadmap and budget remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Sorare's public site lists football, MLB and NBA fantasy products, and its blog index showed current football, NBA and MLB news posts.
+            evidence_claim_ids: [EC-009, EC-015]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Product roadmap may be driven by regulatory redesign rather than pure growth features.
+        evidence_gaps:
+          - Engineering roadmap, delivery metrics, R&D budget, incident history and dependency upgrades.
+        follow_up_questions:
+          - Provide R&D roadmap, release calendar, incident history, security audits and engineering headcount by function.
+        table_ids: [T-012]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-009, EC-015]
+      - section_id: VI.B
+        title: Technical architecture and security dependencies
+        checklist_question_ids: [VI.B]
+        summary: Sorare's model depends on scarce digital collectibles, wallets, blockchain settlement and sports-data scoring; detailed controls are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: TechCrunch described Ethereum-registered cards, while secondary sources describe later infrastructure changes; primary private architecture is needed.
+            evidence_claim_ids: [EC-003, EC-010]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Wallet, bridge, marketplace or scoring-data incidents could trigger financial loss, user distrust and regulatory scrutiny.
+        evidence_gaps:
+          - SOC reports, penetration tests, key-management architecture, wallet/custody controls, data-provider SLAs and incident logs.
+        follow_up_questions:
+          - Provide security audit reports, wallet custody design, chain-migration risk assessment, incident runbooks and insurance coverage.
+        table_ids: [T-013]
+        figure_ids: []
+        evidence_claim_ids: [EC-003, EC-010, EC-013]
+
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public sources verify founders/executive leadership signals and Paris/New York operations, but headcount, turnover, compensation and org depth are private.
+    founder_claim_ids: [FC-002, FC-005]
+    evidence_claim_ids: [EC-008, EC-010, EC-013]
+    risk_ids: [R-009]
+    sections:
+      - section_id: VII.A
+        title: Senior management and governance
+        checklist_question_ids: [VII.A]
+        summary: Public sources identify Nicolas Julia as co-founder/CEO and Wikipedia identifies Nicolas Julia and Adrien Montfort as developers/founders; board and governance rights are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: NBPA quotes Nicolas Julia as co-founder and CEO; Wikipedia names Nicolas Julia and Adrien Montfort as the developers.
+            evidence_claim_ids: [EC-008, EC-010]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Investor, league or athlete-shareholder governance rights could affect strategic control.
+        evidence_gaps:
+          - Board minutes, governance documents, management bios, succession planning and related-party transactions.
+        follow_up_questions:
+          - Provide org chart, board/investor rights, management KPIs, compensation plans and related-party disclosures.
+        table_ids: [T-014]
+        figure_ids: [F-008]
+        evidence_claim_ids: [EC-008, EC-010, EC-013]
+      - section_id: VII.B
+        title: Headcount, hiring and personnel controls
+        checklist_question_ids: [VII.B]
+        summary: Public sources support Paris and New York operations, but headcount by function, attrition and employee obligations are not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: NBPA states Sorare is based in Paris and New York; no reliable public headcount or turnover dataset was verified in this diligence pass.
+            evidence_claim_ids: [EC-008, EC-013]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Compliance, trust-and-safety and security staffing may be insufficient for regulated global operations.
+        evidence_gaps:
+          - HRIS export, headcount plan, attrition, contractor/IP assignments, option grants and compliance staffing.
+        follow_up_questions:
+          - Provide HRIS export, hiring plan, turnover data, employee invention assignments and compliance/security org design.
+        table_ids: [T-015]
+        figure_ids: []
+        evidence_claim_ids: [EC-008, EC-013]
+
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Sorare has material public regulatory exposure around gambling/JONUM and digital collectibles; litigation, IP records and license contracts need counsel-led diligence.
+    founder_claim_ids: [FC-003, FC-006, FC-007]
+    evidence_claim_ids: [EC-007, EC-011, EC-012, EC-013]
+    risk_ids: [R-003, R-004, R-006, R-010]
+    sections:
+      - section_id: VIII.A
+        title: Regulatory, consumer-protection and gambling matters
+        checklist_question_ids: [VIII.A, VIII.D]
+        summary: The UK Gambling Commission issued a 2021 consumer notice and said it was carrying out enquiries; CNBC reported French ANJ-driven product changes, and ANJ materials describe the JONUM framework and obligations.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: UKGC stated Sorare.com was not licensed by the Gambling Commission and was under enquiries to establish whether an operating license was required.
+            evidence_claim_ids: [EC-011]
+            risk_ids: [R-003]
+          - finding_id: VIII.A-F2
+            finding: ANJ materials define JONUM and impose declaration, adult-access, advertising, moderation and AML-related obligations for covered operators.
+            evidence_claim_ids: [EC-012]
+            risk_ids: [R-003]
+        hidden_risks:
+          - Additional jurisdictions may classify paid fantasy NFT mechanics as gambling, digital-asset services or consumer-credit/payment products.
+        evidence_gaps:
+          - Regulator correspondence, legal opinions, jurisdiction matrix, KYC/AML files, age-gating controls and sanctions screening.
+        follow_up_questions:
+          - Provide all regulatory correspondence, legal opinions and compliance controls for UK, France, EU, U.S. and key operating markets.
+        table_ids: [T-016]
+        figure_ids: [F-009]
+        evidence_claim_ids: [EC-007, EC-011, EC-012]
+      - section_id: VIII.B
+        title: IP, licenses, lawsuits and contractual matters
+        checklist_question_ids: [VIII.B, VIII.C, VIII.E]
+        summary: Public evidence verifies major IP licenses, but contract terms, infringement exposure, pending lawsuits and trademark/patent status were not fully verified.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Premier League, NBA/NBPA and football-club/licensor relationships are public; license economics and renewal risk are private.
+            evidence_claim_ids: [EC-004, EC-005, EC-008]
+            risk_ids: [R-004, R-010]
+        hidden_risks:
+          - Minimum guarantees, exclusivity restrictions, data rights or athlete-image disputes could materially affect economics.
+        evidence_gaps:
+          - Executed licenses, IP ownership schedules, trademark/patent searches, dispute docket searches and open claims.
+        follow_up_questions:
+          - Have counsel review all material licenses, IP records, open disputes, insurance and consumer terms.
+        table_ids: [T-017, T-018]
+        figure_ids: []
+        evidence_claim_ids: [EC-004, EC-005, EC-008, EC-013]
+
+tables:
+  - table_id: T-001
+    title: Public funding and transaction-volume history
+    chapter_id: I
+    section_id: I.A
+    purpose: Summarize public financing and GMV/card-exchange anchors.
+    columns:
+      - name: item
+        description: Event or metric
+      - name: public_evidence
+        description: Publicly reported value
+      - name: diligence_need
+        description: Private evidence required
+    rows:
+      - row_id: T-001-R1
+        values:
+          item: "2021 Series B"
+          public_evidence: "$680M led by SoftBank Vision Fund 2 at $4.3B valuation"
+          diligence_need: Financing documents, valuation model and cap table
+        evidence_claim_ids: [EC-002]
+        source_ids: [SRC-002]
+      - row_id: T-001-R2
+        values:
+          item: "2021 card trading volume"
+          public_evidence: "$150M traded since January 2021; 51x sales growth Q2 2020 to Q2 2021"
+          diligence_need: Reconcile GMV to revenue and cash receipts
+        evidence_claim_ids: [EC-004]
+        source_ids: [SRC-002]
+      - row_id: T-001-R3
+        values:
+          item: "2022 card exchanges"
+          public_evidence: "$500M card exchanges in 2022, almost doubling from $270M in 2021"
+          diligence_need: Net revenue, fees, refunds and paid-user concentration
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-003]
+    evidence_claim_ids: [EC-002, EC-004, EC-006]
+    source_ids: [SRC-002, SRC-003]
+    notes: GMV/card-exchange values are not revenue.
+
+  - table_id: T-002
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.B
+    purpose: Identify public stakeholders and cap-table caveats.
+    columns:
+      - name: stakeholder
+        description: Publicly named investor or holder category
+      - name: public_position
+        description: Reported role
+      - name: caveat
+        description: Diligence caveat
+    rows:
+      - row_id: T-002-R1
+        values:
+          stakeholder: SoftBank Vision Fund 2
+          public_position: Led the $680M Series B
+          caveat: Share class, preference and ownership percentage not public
+        evidence_claim_ids: [EC-002]
+        source_ids: [SRC-002]
+      - row_id: T-002-R2
+        values:
+          stakeholder: Benchmark, Accel and other venture investors
+          public_position: CB Insights and NBPA list Benchmark/Accel/SoftBank among investors
+          caveat: Full cap table and pro-rata rights not public
+        evidence_claim_ids: [EC-001, EC-008]
+        source_ids: [SRC-001, SRC-004]
+      - row_id: T-002-R3
+        values:
+          stakeholder: Premier League
+          public_position: CNBC reported equity warrants as part of the Premier League deal
+          caveat: Warrant strike, vesting, dilution and performance conditions not public
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-003]
+    evidence_claim_ids: [EC-001, EC-002, EC-005, EC-008]
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-004]
+    notes: Public evidence is insufficient to calculate fully diluted ownership.
+
+  - table_id: T-003
+    title: Public revenue and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate verified public operating signals from private revenue-quality questions.
+    columns:
+      - name: metric
+        description: Operating metric
+      - name: signal
+        description: Public evidence
+      - name: verification_status
+        description: Verification status
+      - name: follow_up
+        description: Diligence request
+    rows:
+      - row_id: T-003-R1
+        values:
+          metric: Revenue model
+          signal: New-card issuance and transaction cuts are publicly described
+          verification_status: partially_verified
+          follow_up: Revenue by stream, take-rate and gross margin
+        evidence_claim_ids: [EC-003, EC-006]
+        source_ids: [SRC-002, SRC-003]
+      - row_id: T-003-R2
+        values:
+          metric: Paid conversion
+          signal: CNBC reported 87% of players did not spend money
+          verification_status: partially_verified
+          follow_up: Paid-user cohorts and payer concentration
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-003]
+      - row_id: T-003-R3
+        values:
+          metric: Cash runway
+          signal: Not publicly disclosed
+          verification_status: not_publicly_verifiable
+          follow_up: Cash, debt, burn and runway schedule
+        evidence_claim_ids: [EC-013]
+        source_ids: []
+    evidence_claim_ids: [EC-003, EC-006, EC-013]
+    source_ids: [SRC-002, SRC-003]
+    notes: Public GMV should not be treated as revenue without reconciliation.
+
+  - table_id: T-004
+    title: Product and sports matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map publicly visible product lines to evidence and gaps.
+    columns:
+      - name: product
+        description: Sorare product
+      - name: audience
+        description: Target users
+      - name: public_evidence
+        description: Evidence summary
+      - name: verification_status
+        description: Verification status
+    rows:
+      - row_id: T-004-R1
+        values:
+          product: Fantasy football / soccer
+          audience: Global football fans and collectors
+          public_evidence: TechCrunch described fantasy football NFT cards and 180 football organization partnerships
+          verification_status: verified
+        evidence_claim_ids: [EC-003, EC-004]
+        source_ids: [SRC-002]
+      - row_id: T-004-R2
+        values:
+          product: Sorare NBA
+          audience: Basketball fans
+          public_evidence: NBPA announced official NFT fantasy partnership with NBA/NBPA
+          verification_status: verified
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-004]
+      - row_id: T-004-R3
+        values:
+          product: Sorare MLB
+          audience: Baseball fans
+          public_evidence: Sorare site links Fantasy MLB; Wikipedia summarizes MLB launch and partnership
+          verification_status: partially_verified
+        evidence_claim_ids: [EC-009, EC-010]
+        source_ids: [SRC-005, SRC-006]
+    evidence_claim_ids: [EC-003, EC-004, EC-008, EC-009, EC-010]
+    source_ids: [SRC-002, SRC-004, SRC-005, SRC-006]
+    notes: Product-level revenue and retention are not public.
+
+  - table_id: T-005
+    title: Pricing, card and rewards mechanics
+    chapter_id: II
+    section_id: II.B
+    purpose: Highlight monetization and consumer-protection questions.
+    columns:
+      - name: mechanic
+        description: Public mechanic
+      - name: evidence
+        description: Public evidence
+      - name: risk_or_gap
+        description: Diligence concern
+    rows:
+      - row_id: T-005-R1
+        values:
+          mechanic: New card issuance
+          evidence: TechCrunch says Sorare generated revenue by issuing new cards
+          risk_or_gap: Requires supply, pricing and revenue-recognition policy
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-002]
+      - row_id: T-005-R2
+        values:
+          mechanic: Transaction fees/cuts
+          evidence: CNBC says Sorare takes an unspecified cut of transactions
+          risk_or_gap: Requires fee schedule and marketplace liquidity data
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-003]
+      - row_id: T-005-R3
+        values:
+          mechanic: Rewards and ETH/cash language
+          evidence: Sorare site markets rewards including cash or ETH
+          risk_or_gap: Requires jurisdiction-specific consumer-protection and responsible-play analysis
+        evidence_claim_ids: [EC-009, EC-012]
+        source_ids: [SRC-005, SRC-008]
+    evidence_claim_ids: [EC-003, EC-006, EC-009, EC-012]
+    source_ids: [SRC-002, SRC-003, SRC-005, SRC-008]
+    notes: Reward mechanics should be reviewed by counsel in each jurisdiction.
+
+  - table_id: T-006
+    title: Public users and strategic relationships
+    chapter_id: III
+    section_id: III.A
+    purpose: Track public adoption and partnership anchors.
+    columns:
+      - name: relationship_or_metric
+        description: User or partner item
+      - name: public_evidence
+        description: Evidence summary
+      - name: gap
+        description: Diligence gap
+    rows:
+      - row_id: T-006-R1
+        values:
+          relationship_or_metric: Football organizations
+          public_evidence: 180 football organizations, including Real Madrid, Liverpool and Juventus
+          gap: Contract economics and renewal rights
+        evidence_claim_ids: [EC-004]
+        source_ids: [SRC-002]
+      - row_id: T-006-R2
+        values:
+          relationship_or_metric: Premier League
+          public_evidence: Four-year official player-card license and equity warrants
+          gap: Commercial terms, warrants and renewal economics
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-003]
+      - row_id: T-006-R3
+        values:
+          relationship_or_metric: NBA/NBPA
+          public_evidence: Multi-year official NFT fantasy partner with NBA logo rights
+          gap: Minimum guarantees and product performance
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-004]
+      - row_id: T-006-R4
+        values:
+          relationship_or_metric: Users
+          public_evidence: 600,000 registered users in 2021; two million in 2022; three million in 2023
+          gap: Active paid cohorts and churn
+        evidence_claim_ids: [EC-004, EC-005, EC-008]
+        source_ids: [SRC-002, SRC-003, SRC-004]
+    evidence_claim_ids: [EC-004, EC-005, EC-008]
+    source_ids: [SRC-002, SRC-003, SRC-004]
+    notes: Registered users are not equivalent to active paying users.
+
+  - table_id: T-007
+    title: Supplier and infrastructure dependencies
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify major dependency categories from public evidence.
+    columns:
+      - name: dependency
+        description: Dependency category
+      - name: role
+        description: Role in product
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_request
+        description: Private request
+    rows:
+      - row_id: T-007-R1
+        values:
+          dependency: Sports IP licensors
+          role: Official cards, logos and athlete/team rights
+          public_evidence: Premier League and NBA/NBPA agreements; football clubs
+          diligence_request: Executed licenses and renewal calendar
+        evidence_claim_ids: [EC-004, EC-005, EC-008]
+        source_ids: [SRC-002, SRC-003, SRC-004]
+      - row_id: T-007-R2
+        values:
+          dependency: Blockchain and wallet infrastructure
+          role: Scarcity, ownership, settlement and transfers
+          public_evidence: Ethereum NFT model described publicly; secondary sources describe later infrastructure changes
+          diligence_request: Architecture, custody, security audits and incident logs
+        evidence_claim_ids: [EC-003, EC-010]
+        source_ids: [SRC-002, SRC-006]
+      - row_id: T-007-R3
+        values:
+          dependency: Sports data/scoring
+          role: Real-world performance scoring
+          public_evidence: Public summaries describe real-world performance-based scoring
+          diligence_request: Data-provider contracts and SLA history
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-006]
+    evidence_claim_ids: [EC-003, EC-004, EC-005, EC-008, EC-010]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-006]
+    notes: Supplier concentration cannot be quantified publicly.
+
+  - table_id: T-008
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame Sorare against adjacent competition.
+    columns:
+      - name: competitor
+        description: Competitor or category
+      - name: segment
+        description: Market segment
+      - name: overlap
+        description: Product overlap
+      - name: sorare_differentiator
+        description: Public differentiator
+    rows:
+      - row_id: T-008-R1
+        values:
+          competitor: DraftKings / FanDuel
+          segment: Fantasy sports and betting-adjacent entertainment
+          overlap: Compete for sports-fan gaming time and wallet
+          sorare_differentiator: NFT/card ownership and licensed collectibles
+        evidence_claim_ids: [EC-003, EC-005]
+        source_ids: [SRC-002, SRC-003]
+      - row_id: T-008-R2
+        values:
+          competitor: Dapper Labs / NBA Top Shot
+          segment: Sports NFT collectibles
+          overlap: Compete for digital sports collectible spend
+          sorare_differentiator: Fantasy gameplay across multiple sports
+        evidence_claim_ids: [EC-003, EC-008]
+        source_ids: [SRC-002, SRC-004]
+      - row_id: T-008-R3
+        values:
+          competitor: Generic NFT marketplaces
+          segment: Digital-asset trading
+          overlap: Compete for collectible liquidity and user attention
+          sorare_differentiator: Official sports licenses and performance-based gameplay
+        evidence_claim_ids: [EC-004, EC-006]
+        source_ids: [SRC-002, SRC-003]
+    evidence_claim_ids: [EC-003, EC-004, EC-005, EC-006, EC-008]
+    source_ids: [SRC-002, SRC-003, SRC-004]
+    notes: Competitor revenue/funding comparisons require additional market databases.
+
+  - table_id: T-009
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.B
+    purpose: Structure defensibility questions.
+    columns:
+      - name: axis
+        description: Competitive axis
+      - name: sorare_position
+        description: Public position
+      - name: diligence_caveat
+        description: Caveat
+    rows:
+      - row_id: T-009-R1
+        values:
+          axis: Sports IP
+          sorare_position: Strong public evidence of major licenses
+          diligence_caveat: Renewal terms and guarantees are private
+        evidence_claim_ids: [EC-004, EC-005, EC-008]
+        source_ids: [SRC-002, SRC-003, SRC-004]
+      - row_id: T-009-R2
+        values:
+          axis: Marketplace liquidity
+          sorare_position: Large historical card-exchange volumes reported
+          diligence_caveat: Current volume, spread and paid-user concentration are private
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-003]
+      - row_id: T-009-R3
+        values:
+          axis: Regulatory adaptability
+          sorare_position: Product changes and JONUM framework are public
+          diligence_caveat: Ongoing compliance evidence and UK status need counsel review
+        evidence_claim_ids: [EC-007, EC-011, EC-012]
+        source_ids: [SRC-003, SRC-007, SRC-008]
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-007, EC-008, EC-011, EC-012]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-007, SRC-008]
+    notes: Scores are qualitative public-source diligence judgments.
+
+  - table_id: T-010
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public GTM channels.
+    columns:
+      - name: channel
+        description: Channel
+      - name: evidence
+        description: Public evidence
+      - name: gap
+        description: Private data needed
+    rows:
+      - row_id: T-010-R1
+        values:
+          channel: League/club partnerships
+          evidence: Premier League, NBA/NBPA and football-club relationships
+          gap: Partner attribution, revenue and cost by launch
+        evidence_claim_ids: [EC-004, EC-005, EC-008]
+        source_ids: [SRC-002, SRC-003, SRC-004]
+      - row_id: T-010-R2
+        values:
+          channel: Product marketplaces
+          evidence: Sorare site links football, MLB and NBA markets
+          gap: Conversion, take-rate and liquidity by marketplace
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-005]
+      - row_id: T-010-R3
+        values:
+          channel: Ambassadors/investors
+          evidence: NBPA and CNBC identify athlete/star backers and shareholders
+          gap: Contractual obligations and conversion impact
+        evidence_claim_ids: [EC-005, EC-008]
+        source_ids: [SRC-003, SRC-004]
+    evidence_claim_ids: [EC-004, EC-005, EC-008, EC-009]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-005]
+    notes: No CAC/payback data was public.
+
+  - table_id: T-011
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.B
+    purpose: Capture visible marketing and community signals.
+    columns:
+      - name: signal
+        description: Public signal
+      - name: evidence
+        description: Evidence summary
+      - name: diligence_question
+        description: Follow-up question
+    rows:
+      - row_id: T-011-R1
+        values:
+          signal: Owned product/community channels
+          evidence: Sorare site links community, blog, FAQ, game rules and markets
+          diligence_question: What conversion and retention come from each owned channel?
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-005]
+      - row_id: T-011-R2
+        values:
+          signal: Product news cadence
+          evidence: Blog index showed recent football, NBA and MLB update posts
+          diligence_question: How do releases affect paid conversion and churn?
+        evidence_claim_ids: [EC-015]
+        source_ids: [SRC-010]
+      - row_id: T-011-R3
+        values:
+          signal: Star/shareholder credibility
+          evidence: CNBC and NBPA cite athlete shareholders/backers including Messi, Serena Williams and Kylian Mbappe
+          diligence_question: What are economics and obligations of ambassador deals?
+        evidence_claim_ids: [EC-005, EC-008]
+        source_ids: [SRC-003, SRC-004]
+    evidence_claim_ids: [EC-005, EC-008, EC-009, EC-015]
+    source_ids: [SRC-003, SRC-004, SRC-005, SRC-010]
+    notes: Public marketing signals do not establish efficient growth.
+
+  - table_id: T-012
+    title: Public product and R&D pipeline
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Identify visible release activity and private roadmap gaps.
+    columns:
+      - name: initiative
+        description: Initiative
+      - name: public_status
+        description: Public status
+      - name: diligence_need
+        description: Request
+    rows:
+      - row_id: T-012-R1
+        values:
+          initiative: Multi-sport product expansion
+          public_status: Football, NBA and MLB surfaces are public
+          diligence_need: Product-level engagement and roadmap
+        evidence_claim_ids: [EC-008, EC-009, EC-010]
+        source_ids: [SRC-004, SRC-005, SRC-006]
+      - row_id: T-012-R2
+        values:
+          initiative: Gameplay updates
+          public_status: Blog index shows ongoing football, NBA and MLB news/update posts
+          diligence_need: Release success metrics and QA/incident logs
+        evidence_claim_ids: [EC-015]
+        source_ids: [SRC-010]
+      - row_id: T-012-R3
+        values:
+          initiative: Regulatory product changes
+          public_status: CNBC reported French ANJ-driven changes emphasizing free-to-play elements
+          diligence_need: Compliance roadmap and product-impact analysis
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-003]
+    evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-015]
+    source_ids: [SRC-003, SRC-004, SRC-005, SRC-006, SRC-010]
+    notes: Internal engineering roadmap was not public.
+
+  - table_id: T-013
+    title: Technical architecture and security diligence matrix
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Convert public architecture signals into diligence requests.
+    columns:
+      - name: domain
+        description: Technology domain
+      - name: public_signal
+        description: Public signal
+      - name: required_private_evidence
+        description: Required evidence
+    rows:
+      - row_id: T-013-R1
+        values:
+          domain: NFT/card ownership
+          public_signal: TechCrunch described unique cards on Ethereum
+          required_private_evidence: Smart-contract audits, chain-migration and custody controls
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-002]
+      - row_id: T-013-R2
+        values:
+          domain: Sports scoring data
+          public_signal: Public summaries describe real-world performance-based scoring
+          required_private_evidence: Data-provider contracts, SLAs and dispute processes
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-006]
+      - row_id: T-013-R3
+        values:
+          domain: User wallet/payments
+          public_signal: Public materials imply ETH/cash rewards and marketplaces
+          required_private_evidence: KYC/AML, custody, fraud, chargeback and sanctions controls
+        evidence_claim_ids: [EC-009, EC-012]
+        source_ids: [SRC-005, SRC-008]
+    evidence_claim_ids: [EC-003, EC-009, EC-010, EC-012]
+    source_ids: [SRC-002, SRC-005, SRC-006, SRC-008]
+    notes: Security posture requires direct technical diligence.
+
+  - table_id: T-014
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.A
+    purpose: List public management and governance signals.
+    columns:
+      - name: person_or_group
+        description: Person or group
+      - name: public_role
+        description: Public role
+      - name: source
+        description: Evidence source
+      - name: gap
+        description: Diligence gap
+    rows:
+      - row_id: T-014-R1
+        values:
+          person_or_group: Nicolas Julia
+          public_role: Co-founder and CEO
+          source: NBPA partnership announcement
+          gap: Employment terms, succession and board role
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-004]
+      - row_id: T-014-R2
+        values:
+          person_or_group: Adrien Montfort
+          public_role: Co-developer/founder per secondary source
+          source: Wikipedia
+          gap: Current role, equity and IP assignment
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-006]
+      - row_id: T-014-R3
+        values:
+          person_or_group: Board/investor governance
+          public_role: Not publicly disclosed in detail
+          source: Public-source review
+          gap: Board composition, veto rights and related-party transactions
+        evidence_claim_ids: [EC-013]
+        source_ids: []
+    evidence_claim_ids: [EC-008, EC-010, EC-013]
+    source_ids: [SRC-004, SRC-006]
+    notes: Roster is not a complete management list.
+
+  - table_id: T-015
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Summarize public personnel data and gaps.
+    columns:
+      - name: area
+        description: Personnel area
+      - name: public_signal
+        description: Public signal
+      - name: diligence_gap
+        description: Diligence gap
+    rows:
+      - row_id: T-015-R1
+        values:
+          area: Locations
+          public_signal: NBPA describes Paris and New York operations
+          diligence_gap: Entity structure, employment counts and local compliance
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-004]
+      - row_id: T-015-R2
+        values:
+          area: Compliance/trust and safety
+          public_signal: Regulatory framework requires age-gating, moderation and AML controls in covered contexts
+          diligence_gap: Staffing, policies and audit evidence
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-008]
+      - row_id: T-015-R3
+        values:
+          area: Turnover
+          public_signal: Not publicly verifiable
+          diligence_gap: HRIS, attrition, critical-role succession and contractor agreements
+        evidence_claim_ids: [EC-013]
+        source_ids: []
+    evidence_claim_ids: [EC-008, EC-012, EC-013]
+    source_ids: [SRC-004, SRC-008]
+    notes: Public headcount data was not reliable enough for quantitative underwriting.
+
+  - table_id: T-016
+    title: Regulatory and agency-action summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize public regulatory matters and obligations.
+    columns:
+      - name: jurisdiction
+        description: Jurisdiction
+      - name: public_matter
+        description: Public regulatory matter
+      - name: status_or_requirement
+        description: Status or requirement
+      - name: diligence_need
+        description: Diligence request
+    rows:
+      - row_id: T-016-R1
+        values:
+          jurisdiction: United Kingdom
+          public_matter: UKGC consumer information notice
+          status_or_requirement: UKGC said Sorare.com was not licensed and enquiries were ongoing
+          diligence_need: Counsel memo, current status and operating restrictions
+        evidence_claim_ids: [EC-011]
+        source_ids: [SRC-007]
+      - row_id: T-016-R2
+        values:
+          jurisdiction: France
+          public_matter: ANJ / JONUM framework
+          status_or_requirement: Declaration, adult access, advertising, moderation and AML-related obligations for covered JONUM operators
+          diligence_need: Declaration filings, compliance controls and legal analysis
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-008]
+      - row_id: T-016-R3
+        values:
+          jurisdiction: France
+          public_matter: Product changes after ANJ action
+          status_or_requirement: CNBC reported changes including stronger free-to-play elements
+          diligence_need: Confirm implementation and business impact
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-003]
+    evidence_claim_ids: [EC-007, EC-011, EC-012]
+    source_ids: [SRC-003, SRC-007, SRC-008]
+    notes: This is not a legal opinion.
+
+  - table_id: T-017
+    title: Material IP and license assets
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Track material public IP/license assets and caveats.
+    columns:
+      - name: asset
+        description: Asset or license
+      - name: public_status
+        description: Public status
+      - name: diligence_caveat
+        description: Caveat
+    rows:
+      - row_id: T-017-R1
+        values:
+          asset: Football club/league licenses
+          public_status: TechCrunch reported 180 football organization partnerships; CNBC reported Premier League deal
+          diligence_caveat: Terms, exclusivity and minimum guarantees private
+        evidence_claim_ids: [EC-004, EC-005]
+        source_ids: [SRC-002, SRC-003]
+      - row_id: T-017-R2
+        values:
+          asset: NBA/NBPA rights
+          public_status: Official NFT Fantasy Partner with NBA logo rights
+          diligence_caveat: Contract economics and renewal rights private
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-004]
+      - row_id: T-017-R3
+        values:
+          asset: Sorare brand/trademarks
+          public_status: Not fully searched in this public-source pass
+          diligence_caveat: Counsel should run trademark, domain and infringement searches
+        evidence_claim_ids: [EC-013]
+        source_ids: []
+    evidence_claim_ids: [EC-004, EC-005, EC-008, EC-013]
+    source_ids: [SRC-002, SRC-003, SRC-004]
+    notes: Executed contracts are required for legal diligence.
+
+  - table_id: T-018
+    title: Lawsuits and disputes summary
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Document public lawsuit visibility and required counsel searches.
+    columns:
+      - name: category
+        description: Matter category
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_request
+        description: Required follow-up
+    rows:
+      - row_id: T-018-R1
+        values:
+          category: Pending lawsuits against company
+          public_evidence: Not publicly verified in this pass
+          diligence_request: Counsel-certified litigation search in France, UK, U.S. and key markets
+        evidence_claim_ids: [EC-013]
+        source_ids: []
+      - row_id: T-018-R2
+        values:
+          category: Pending lawsuits initiated by company
+          public_evidence: Not publicly verified in this pass
+          diligence_request: Counsel-certified docket and IP enforcement search
+        evidence_claim_ids: [EC-013]
+        source_ids: []
+      - row_id: T-018-R3
+        values:
+          category: Regulatory disputes
+          public_evidence: UKGC inquiry and French/JONUM regulatory framework are public
+          diligence_request: Current regulator correspondence and legal opinions
+        evidence_claim_ids: [EC-011, EC-012]
+        source_ids: [SRC-007, SRC-008]
+    evidence_claim_ids: [EC-011, EC-012, EC-013]
+    source_ids: [SRC-007, SRC-008]
+    notes: Lack of public docket evidence is not evidence of no claims.
+
+figures:
+  - figure_id: F-001
+    title: Funding and commercial milestone timeline
+    chapter_id: I
+    section_id: I.A
+    figure_type: timeline
+    description: Publicly sourced milestones from Series B through major sports partnerships and regulatory developments.
+    purpose: Show valuation, partnership and regulatory context chronologically.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2021-09-21
+      end_date: 2026-02-07
+      ordering: chronological
+      events:
+        - event_id: F-001-E1
+          date: 2021-09-21
+          label: "$680M Series B at $4.3B valuation"
+          description: TechCrunch reported the Series B led by SoftBank Vision Fund 2.
+          category: financing
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-002]
+        - event_id: F-001-E2
+          date: 2022-09-07
+          label: NBA/NBPA partnership
+          description: NBPA announced Sorare as official NFT fantasy partner of the NBA.
+          category: partnership
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-004]
+        - event_id: F-001-E3
+          date: 2023-01-30
+          label: Premier League agreement
+          description: CNBC reported a four-year official player-card license.
+          category: partnership
+          evidence_claim_ids: [EC-005]
+          source_ids: [SRC-003]
+        - event_id: F-001-E4
+          date: 2026-02-07
+          label: French JONUM framework effective
+          description: ANJ states Decree No. 2026-60 entered into force on February 7, 2026.
+          category: regulation
+          evidence_claim_ids: [EC-012]
+          source_ids: [SRC-008]
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Use a horizontal timeline with financing, partnership and regulation colors.
+    evidence_claim_ids: [EC-002, EC-005, EC-008, EC-012]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-008]
+    notes: Timeline does not include private events.
+
+  - figure_id: F-002
+    title: Public valuation and transaction-volume anchors
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: Bar chart comparing public valuation and marketplace/card-exchange anchors.
+    purpose: Separate valuation from GMV-style activity metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD millions
+        unit: USD millions
+        scale: linear
+      series:
+        - series_id: valuation-and-volume
+          name: Public anchors
+          unit: USD millions
+          data_points:
+            - x: 2021 valuation
+              y: 4300
+              label: "$4.3B valuation"
+              evidence_claim_ids: [EC-001, EC-002]
+              source_ids: [SRC-001, SRC-002]
+            - x: 2021 card trading
+              y: 150
+              label: "$150M since Jan. 2021"
+              evidence_claim_ids: [EC-004]
+              source_ids: [SRC-002]
+            - x: 2022 card exchanges
+              y: 500
+              label: "$500M 2022 exchanges"
+              evidence_claim_ids: [EC-006]
+              source_ids: [SRC-003]
+      annotations:
+        - label: Not revenue
+          x: 2022 card exchanges
+          y: 500
+          note: Card exchanges/GMV require reconciliation to net revenue and cash.
+          evidence_claim_ids: [EC-006, EC-013]
+          source_ids: [SRC-003]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Distinguish valuation from transaction volume using color or annotation.
+    evidence_claim_ids: [EC-001, EC-002, EC-004, EC-006]
+    source_ids: [SRC-001, SRC-002, SRC-003]
+    notes: Values are public-source anchors only.
+
+  - figure_id: F-003
+    title: Sorare product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Conceptual public-source architecture for fantasy sports products, licenses, data and blockchain-backed cards.
+    purpose: Show where diligence must validate contracts, data and technical controls.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user
+          label: Managers / users
+          node_type: user
+          description: Users build lineups and transact with cards.
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-005]
+        - node_id: sorare-app
+          label: Sorare fantasy app
+          node_type: product
+          description: Football, NBA and MLB fantasy surfaces.
+          evidence_claim_ids: [EC-008, EC-009]
+          source_ids: [SRC-004, SRC-005]
+        - node_id: licenses
+          label: Sports IP licenses
+          node_type: third_party
+          description: League, club, player and logo rights.
+          evidence_claim_ids: [EC-004, EC-005, EC-008]
+          source_ids: [SRC-002, SRC-003, SRC-004]
+        - node_id: blockchain
+          label: Blockchain / wallet layer
+          node_type: infrastructure
+          description: Public sources describe NFT/digital-card ownership and transactions.
+          evidence_claim_ids: [EC-003, EC-010]
+          source_ids: [SRC-002, SRC-006]
+        - node_id: marketplace
+          label: Card market and rewards
+          node_type: service
+          description: New card issuance, player transactions and rewards.
+          evidence_claim_ids: [EC-003, EC-006, EC-009]
+          source_ids: [SRC-002, SRC-003, SRC-005]
+      edges:
+        - edge_id: edge-1
+          from_node_id: user
+          to_node_id: sorare-app
+          relationship: plays
+          data_or_dependency: Lineups, cards and contests
+          evidence_claim_ids: [EC-009]
+          source_ids: [SRC-005]
+        - edge_id: edge-2
+          from_node_id: licenses
+          to_node_id: sorare-app
+          relationship: licenses content
+          data_or_dependency: Names, logos, player cards and official branding
+          evidence_claim_ids: [EC-004, EC-005, EC-008]
+          source_ids: [SRC-002, SRC-003, SRC-004]
+        - edge_id: edge-3
+          from_node_id: sorare-app
+          to_node_id: blockchain
+          relationship: records ownership
+          data_or_dependency: Digital cards and wallet transactions
+          evidence_claim_ids: [EC-003]
+          source_ids: [SRC-002]
+        - edge_id: edge-4
+          from_node_id: sorare-app
+          to_node_id: marketplace
+          relationship: monetizes
+          data_or_dependency: New cards, transaction cuts and rewards
+          evidence_claim_ids: [EC-003, EC-006, EC-009]
+          source_ids: [SRC-002, SRC-003, SRC-005]
+      boundaries:
+        - boundary_id: boundary-sorare
+          label: Sorare-controlled product layer
+          node_ids: [sorare-app, marketplace]
+        - boundary_id: boundary-third-party
+          label: Third-party dependencies
+          node_ids: [licenses, blockchain]
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render dependencies outside Sorare boundary.
+    evidence_claim_ids: [EC-003, EC-004, EC-005, EC-006, EC-008, EC-009, EC-010]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-005, SRC-006]
+    notes: This is a public-source conceptual architecture, not a system diagram from management.
+
+  - figure_id: F-004
+    title: Public registered-user growth anchors
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Registered-user figures reported publicly in 2021, 2022 and 2023.
+    purpose: Show growth anchors while flagging paid-user uncertainty.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Year
+        unit: year
+        scale: time
+      y_axis:
+        label: Registered users
+        unit: users
+        scale: linear
+      series:
+        - series_id: users
+          name: Public registered users
+          unit: users
+          data_points:
+            - x: 2021
+              y: 600000
+              label: 600,000 registered users
+              evidence_claim_ids: [EC-004]
+              source_ids: [SRC-002]
+            - x: 2022
+              y: 2000000
+              label: 2 million registered users
+              evidence_claim_ids: [EC-008]
+              source_ids: [SRC-004]
+            - x: 2023
+              y: 3000000
+              label: 3 million users worldwide
+              evidence_claim_ids: [EC-005]
+              source_ids: [SRC-003]
+      annotations:
+        - label: Paid-user gap
+          x: 2023
+          y: 3000000
+          note: CNBC reported 87% of players did not spend money.
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-003]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Annotate that figures are registered/global users, not paid active users.
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-008]
+    source_ids: [SRC-002, SRC-003, SRC-004]
+    notes: Public user figures are not independently audited.
+
+  - figure_id: F-005
+    title: Sports fantasy and collectibles market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map of Sorare and adjacent competitors/categories.
+    purpose: Show competition across fantasy gameplay and digital-asset ownership.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Digital ownership intensity
+          low_label: Traditional fantasy
+          high_label: NFT/digital ownership
+        y_axis:
+          label: Official sports IP breadth
+          low_label: Generic content
+          high_label: Major official licenses
+      segments:
+        - segment_id: fantasy
+          name: Fantasy sports
+          description: Sports gameplay and lineups
+        - segment_id: collectibles
+          name: Digital collectibles
+          description: NFT or collectible marketplaces
+      entities:
+        - entity_id: sorare
+          name: Sorare
+          entity_type: target_company
+          segment_id: collectibles
+          x_value: high
+          y_value: high
+          attributes:
+            note: Official sports IP and NFT fantasy products
+          evidence_claim_ids: [EC-004, EC-005, EC-008]
+          source_ids: [SRC-002, SRC-003, SRC-004]
+        - entity_id: dfs
+          name: DraftKings / FanDuel
+          entity_type: competitor
+          segment_id: fantasy
+          x_value: low
+          y_value: medium
+          attributes:
+            note: Traditional daily fantasy and betting-adjacent competitors
+          evidence_claim_ids: [EC-003]
+          source_ids: [SRC-002]
+        - entity_id: nft-marketplaces
+          name: NFT marketplaces
+          entity_type: competitor
+          segment_id: collectibles
+          x_value: high
+          y_value: low
+          attributes:
+            note: Compete for collectible liquidity but lack Sorare-specific official sports gameplay
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-003]
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Use a 2x2 map; positions are qualitative diligence judgments.
+    evidence_claim_ids: [EC-003, EC-004, EC-005, EC-006, EC-008]
+    source_ids: [SRC-002, SRC-003, SRC-004]
+    notes: Competitor placement is public-source analyst judgment.
+
+  - figure_id: F-006
+    title: Public GTM channel mix by evidence strength
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Bar chart scoring relative public evidence strength of Sorare's visible GTM channels.
+    purpose: Highlight where public evidence exists and where ROI data is missing.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Evidence strength score
+        unit: qualitative score
+        scale: linear
+      series:
+        - series_id: channel-evidence
+          name: Public evidence strength
+          unit: score
+          data_points:
+            - x: League partnerships
+              y: 5
+              label: Strong evidence
+              evidence_claim_ids: [EC-004, EC-005, EC-008]
+              source_ids: [SRC-002, SRC-003, SRC-004]
+            - x: Owned marketplaces
+              y: 4
+              label: Visible product surfaces
+              evidence_claim_ids: [EC-009]
+              source_ids: [SRC-005]
+            - x: Ambassadors/community
+              y: 3
+              label: Public backer/community signals
+              evidence_claim_ids: [EC-005, EC-008, EC-009]
+              source_ids: [SRC-003, SRC-004, SRC-005]
+      annotations:
+        - label: ROI missing
+          x: League partnerships
+          y: 5
+          note: Public evidence does not disclose CAC, payback or partner minimum guarantees.
+          evidence_claim_ids: [EC-013]
+          source_ids: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Clearly label scores as qualitative public-evidence scores, not channel spend.
+    evidence_claim_ids: [EC-004, EC-005, EC-008, EC-009, EC-013]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-005]
+    notes: No public channel-spend data was found.
+
+  - figure_id: F-007
+    title: Product/R&D public roadmap timeline
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: timeline
+    description: Publicly visible product expansion and update signals.
+    purpose: Show that product surfaces are active while marking private R&D gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2021-09-21
+      end_date: 2026-05-18
+      ordering: chronological
+      events:
+        - event_id: F-007-E1
+          date: 2021-09-21
+          label: Football NFT/fantasy product scaled
+          description: TechCrunch described the fantasy football NFT game and 180 football organization partnerships.
+          category: product
+          evidence_claim_ids: [EC-003, EC-004]
+          source_ids: [SRC-002]
+        - event_id: F-007-E2
+          date: 2022-09-07
+          label: NBA product announced
+          description: NBA/NBPA announced a free-to-play digital collectible fantasy basketball game.
+          category: product
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-004]
+        - event_id: F-007-E3
+          date: 2026-05-18
+          label: Ongoing football/NBA/MLB updates
+          description: Sorare blog index showed recent posts across football, NBA and MLB.
+          category: release_activity
+          evidence_claim_ids: [EC-015]
+          source_ids: [SRC-010]
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Distinguish verified product launches from blog-index update signals.
+    evidence_claim_ids: [EC-003, EC-004, EC-008, EC-015]
+    source_ids: [SRC-002, SRC-004, SRC-010]
+    notes: Internal roadmap was unavailable.
+
+  - figure_id: F-008
+    title: Public management and governance org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Minimal public org/governance chart from available public sources.
+    purpose: Show verified leadership signals and governance gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Nicolas Julia
+          role: Co-founder and CEO
+          department: Executive
+          location: Paris / New York operations
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-004]
+        - node_id: cofounder
+          name: Adrien Montfort
+          role: Co-founder / developer
+          department: Executive / product
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-006]
+        - node_id: board
+          name: null
+          role: Board and investor governance
+          department: Governance
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-013]
+          source_ids: []
+      reporting_lines:
+        - parent_node_id: board
+          child_node_id: ceo
+          relationship: other
+          evidence_claim_ids: [EC-013]
+          source_ids: []
+        - parent_node_id: ceo
+          child_node_id: cofounder
+          relationship: other
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-006]
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Mark board node as unverified/private.
+    evidence_claim_ids: [EC-008, EC-010, EC-013]
+    source_ids: [SRC-004, SRC-006]
+    notes: Not a complete org chart.
+
+  - figure_id: F-009
+    title: Sorare diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Heatmap of the report risk register.
+    purpose: Prioritize legal/regulatory, valuation and license diligence.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale: [low, medium, high, unknown]
+      y_axis:
+        label: severity
+        scale: [informational, low, medium, high, critical]
+      risk_points:
+        - risk_id: R-003
+          label: Regulatory classification
+          severity: high
+          likelihood: high
+          rationale: UKGC and ANJ materials show active regulatory classification and compliance exposure.
+          evidence_claim_ids: [EC-007, EC-011, EC-012]
+          source_ids: [SRC-003, SRC-007, SRC-008]
+        - risk_id: R-002
+          label: Stale valuation/NFT cycle
+          severity: high
+          likelihood: medium
+          rationale: 2021 valuation is public while CNBC reports material NFT market declines.
+          evidence_claim_ids: [EC-002, EC-006]
+          source_ids: [SRC-002, SRC-003]
+        - risk_id: R-004
+          label: License dependence
+          severity: high
+          likelihood: medium
+          rationale: Product differentiation relies on sports IP contracts whose economics and renewals are private.
+          evidence_claim_ids: [EC-004, EC-005, EC-008]
+          source_ids: [SRC-002, SRC-003, SRC-004]
+        - risk_id: R-005
+          label: Paid-user concentration
+          severity: medium
+          likelihood: high
+          rationale: CNBC reported most users did not spend money, increasing concentration concern.
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-003]
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use severity on y-axis and likelihood on x-axis.
+    evidence_claim_ids: [EC-002, EC-004, EC-005, EC-006, EC-007, EC-008, EC-011, EC-012]
+    source_ids: [SRC-002, SRC-003, SRC-004, SRC-007, SRC-008]
+    notes: Heatmap reflects public-source diligence priority, not legal advice.
+
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Sorare as a $4.30B unicorn in France / Saint Mande, in Media & Entertainment, with Benchmark, Accel and SoftBank Group listed as investors.
+    evidence_summary: The CB Insights unicorn table row for Sorare includes valuation, date joined, geography, sector and investors.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-001]
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "Sorare $4.30 9/21/2021 France Saint Mande Media & Entertainment Benchmark, Accel, SoftBank Group"
+        location: "CB Insights table row captured in /tmp/gh-aw/agent/fallback-research/www-cbinsights-com-research-unicorn-companies.txt"
+    analyst_interpretation: Supports unicorn-status screening and latest public list valuation, not current fair value.
+    limitations: CB Insights is a market database and does not disclose primary financing documents.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: [FC-001]
+      table_ids: [T-002]
+      figure_ids: [F-002]
+      risk_ids: [R-002]
+
+  - evidence_claim_id: EC-002
+    claim: TechCrunch reported Sorare raised a $680M Series B led by SoftBank Vision Fund 2 at a $4.3B valuation.
+    evidence_summary: TechCrunch's 2021 funding article details round size, lead investor, valuation and participants.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "SoftBank's Vision Fund 2 has led a $680 million Series B round, which values the company at $4.3 billion."
+        location: "TechCrunch article lines 144-145"
+    analyst_interpretation: Strong independent support for the 2021 valuation and financing round.
+    limitations: Does not verify current valuation, preferences or ownership.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: [FC-001]
+      table_ids: [T-001, T-002]
+      figure_ids: [F-001, F-002]
+      risk_ids: [R-002]
+
+  - evidence_claim_id: EC-003
+    claim: Sorare's core product uses fantasy sports digital cards/NFTs, and TechCrunch reported revenue from issuing new cards.
+    evidence_summary: TechCrunch described NFT cards on Ethereum, player transactions and new-card revenue.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "Each digital card is registered as a unique token on the Ethereum blockchain."
+        location: "TechCrunch article lines 146-147"
+      - source_id: SRC-002
+        quote: "Sorare generates revenue by issuing new cards on the platform."
+        location: "TechCrunch article line 154"
+    analyst_interpretation: Supports product and monetization mechanics, but not revenue scale.
+    limitations: Product architecture may have changed since 2021.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-002, FC-004]
+      table_ids: [T-003, T-004, T-005, T-013]
+      figure_ids: [F-003, F-007]
+      risk_ids: [R-006]
+
+  - evidence_claim_id: EC-004
+    claim: TechCrunch reported 180 football organization partnerships, $150M card trading since January 2021, 600,000 registered users, 150,000 monthly active buyers/team composers and 51x sales growth between Q2 2020 and Q2 2021.
+    evidence_summary: The 2021 TechCrunch article includes partnership, trading-volume, user and growth metrics.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-002]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "partnered with 180 football organizations"
+        location: "TechCrunch article line 148"
+      - source_id: SRC-002
+        quote: "There are currently 600,000 registered users and 150,000 users who are buying a card or composing a team every month. Sales have grown by 51x..."
+        location: "TechCrunch article lines 204-205"
+    analyst_interpretation: Supports early adoption and IP breadth, but not current paid retention.
+    limitations: Historical 2021 figures may be stale.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-003, FC-005]
+      table_ids: [T-006, T-017]
+      figure_ids: [F-004, F-005]
+      risk_ids: [R-004, R-008]
+
+  - evidence_claim_id: EC-005
+    claim: CNBC reported a four-year Premier League licensing agreement, 3 million worldwide users, equity warrants for the Premier League and last investor valuation of $4.3B.
+    evidence_summary: CNBC's 2023 article covers the Premier League deal, user count, warrant component and valuation/backer context.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-003]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "Sorare, the $4.3 billion fantasy soccer game, has signed a four-year deal with the Premier League..."
+        location: "CNBC article lines 12-13"
+      - source_id: SRC-003
+        quote: "Paris-based startup Sorare, which has 3 million users worldwide..."
+        location: "CNBC article line 16"
+      - source_id: SRC-003
+        quote: "the Premier League has purchased equity warrants in Sorare"
+        location: "CNBC article lines 24-25"
+    analyst_interpretation: Verifies a material license and user-count claim while raising contract/warrant diligence needs.
+    limitations: CNBC says financial terms were not shared by Julia.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-003, FC-005]
+      table_ids: [T-002, T-006, T-010, T-017]
+      figure_ids: [F-001, F-004, F-005, F-006]
+      risk_ids: [R-004, R-008]
+
+  - evidence_claim_id: EC-006
+    claim: CNBC reported NFT market declines, Sorare 2022 card exchanges of $500M, 87% of users not spending money, and an unspecified transaction cut.
+    evidence_summary: CNBC describes market context and Sorare usage/monetization signals.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-003]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "Overall NFT sales plunged 78% in December to $678.2 million from $3.1 billion a year ago."
+        location: "CNBC article lines 30-32"
+      - source_id: SRC-003
+        quote: "Total exchanges of cards on the platform amounted to $500 million last year..."
+        location: "CNBC article lines 34-35"
+      - source_id: SRC-003
+        quote: "Some 87% of Sorare players 'don't even spend money on the platform'"
+        location: "CNBC article lines 36-39"
+    analyst_interpretation: Shows current-cycle and monetization concerns that require cohort-level private data.
+    limitations: CNBC's metrics are public claims/third-party data, not audited company financials.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: [FC-004, FC-005]
+      table_ids: [T-001, T-003, T-005, T-009]
+      figure_ids: [F-002, F-004, F-005]
+      risk_ids: [R-002, R-005]
+
+  - evidence_claim_id: EC-007
+    claim: CNBC reported UK Gambling Commission investigation and French ANJ-driven product changes, including stronger free-to-play elements.
+    evidence_summary: CNBC summarizes regulatory scrutiny and required product changes.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-003]
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "The U.K. Gambling Commission is investigating the firm..."
+        location: "CNBC article lines 60-63"
+      - source_id: SRC-003
+        quote: "the startup committed to making some changes to its platform after action taken by the French National Gambling Authority"
+        location: "CNBC article lines 66-67"
+    analyst_interpretation: Confirms regulatory exposure that could affect product mechanics and economics.
+    limitations: CNBC did not provide a final UKGC outcome.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-016]
+      figure_ids: [F-009]
+      risk_ids: [R-003]
+
+  - evidence_claim_id: EC-008
+    claim: NBPA announced an NBA/NBPA multi-year Sorare partnership, official NFT fantasy partner rights, two million registered users across 185 countries, and Paris/New York operations.
+    evidence_summary: NBPA press release verifies NBA/NBPA partnership and company background.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-004]
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: "multi-year partnership that makes Sorare the Official NFT Fantasy Partner of the NBA"
+        location: "NBPA release line 6"
+      - source_id: SRC-004
+        quote: "two million registered users across 185 countries"
+        location: "NBPA release line 16"
+      - source_id: SRC-004
+        quote: "Based in Paris and New York"
+        location: "NBPA release line 34"
+    analyst_interpretation: Strong partner evidence for U.S. sports expansion and international reach.
+    limitations: Partner release does not disclose economics.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: [FC-002, FC-003, FC-005]
+      table_ids: [T-004, T-006, T-010, T-014, T-015, T-017]
+      figure_ids: [F-001, F-003, F-004, F-005, F-006, F-008]
+      risk_ids: [R-004, R-008, R-009]
+
+  - evidence_claim_id: EC-009
+    claim: Sorare's public site markets football, NBA and MLB products, lineup gameplay, rewards, markets, game rules and policy links.
+    evidence_summary: The Sorare homepage/terms-rendered page shows product navigation, gameplay copy, rewards and policy links.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids: [SRC-005, SRC-009]
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: "Fantasy Football, Fantasy MLB, Fantasy NBA"
+        location: "Sorare site lines 136-138"
+      - source_id: SRC-005
+        quote: "Build your 5-player lineups. When they shine on the field, you earn rewards!"
+        location: "Sorare site lines 24-27"
+    analyst_interpretation: Verifies product availability and current marketing claims as of the crawl.
+    limitations: Site rendering was partial and company-controlled.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: [FC-002]
+      table_ids: [T-004, T-005, T-010, T-011, T-012, T-013]
+      figure_ids: [F-003, F-006, F-007]
+      risk_ids: [R-006]
+
+  - evidence_claim_id: EC-010
+    claim: Secondary public summaries identify Nicolas Julia and Adrien Montfort as Sorare developers/founders, summarize football/basketball/baseball products, and describe blockchain infrastructure changes.
+    evidence_summary: Wikipedia provides a secondary overview of founders, sports products, MLB/NBA/Premier League partnerships and technical infrastructure.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: low
+    source_ids: [SRC-006]
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: "It was developed in 2018 by Nicolas Julia and Adrien Montfort."
+        location: "Wikipedia lines 18-19"
+      - source_id: SRC-006
+        quote: "As of 2026, there are three sports in Sorare: football, basketball, and baseball."
+        location: "Wikipedia line 18"
+    analyst_interpretation: Useful for low-confidence context where stronger primary sources were not accessible.
+    limitations: Wikipedia is secondary and can change; primary confirmation is required.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: [FC-002]
+      table_ids: [T-004, T-007, T-012, T-013, T-014]
+      figure_ids: [F-003, F-007, F-008]
+      risk_ids: [R-006, R-009]
+
+  - evidence_claim_id: EC-011
+    claim: The UK Gambling Commission issued a 2021 notice stating Sorare.com was not licensed and that it was carrying out enquiries into whether an operating license was required.
+    evidence_summary: UKGC public notice provides direct regulatory evidence.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-007]
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: "Sorare.com is not licensed by the Gambling Commission."
+        location: "UKGC notice"
+      - source_id: SRC-007
+        quote: "The Gambling Commission is currently carrying out enquiries into the company to establish whether Sorare.com requires an operating licence..."
+        location: "UKGC notice"
+    analyst_interpretation: Strong evidence of regulatory classification risk in Great Britain.
+    limitations: Notice does not state final disposition.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-016, T-018]
+      figure_ids: [F-009]
+      risk_ids: [R-003]
+
+  - evidence_claim_id: EC-012
+    claim: ANJ materials describe the JONUM framework for monetizable digital objects, including declaration, adult-access, advertising, moderation, data and AML-related obligations.
+    evidence_summary: ANJ JONUM page describes the French framework and obligations for covered operators.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids: [SRC-008]
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: "L'entreprise qui souhaite proposer au public une offre de JONUM doit realiser une declaration prealable aupres de l'Autorite nationale des jeux."
+        location: "ANJ page line 180 / 277"
+      - source_id: SRC-008
+        quote: "Seules les personnes majeures peuvent acceder aux JONUM."
+        location: "ANJ page line 237"
+      - source_id: SRC-008
+        quote: "Les entreprises de JONUM sont assujetties au dispositif national de lutte contre le blanchiment..."
+        location: "ANJ page lines 343-349"
+    analyst_interpretation: Confirms French compliance obligations relevant to paid fantasy NFT products.
+    limitations: Requires counsel to determine whether/how each Sorare product is covered.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: [FC-006]
+      table_ids: [T-005, T-009, T-013, T-015, T-016, T-018]
+      figure_ids: [F-001, F-009]
+      risk_ids: [R-003]
+
+  - evidence_claim_id: EC-013
+    claim: Public sources do not disclose audited financials, cap table, cash runway, complete legal docket, full license economics, detailed headcount or current valuation support.
+    evidence_summary: Public diligence found credible operating/financing signals but no private records required for underwriting.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids: []
+    quoted_evidence: []
+    analyst_interpretation: Absence of public data creates diligence gaps, not negative proof.
+    limitations: Requires company, counsel, accountant and investor data-room materials.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: [FC-007]
+      table_ids: [T-003, T-014, T-015, T-017, T-018]
+      figure_ids: [F-006, F-008]
+      risk_ids: [R-001, R-009, R-010]
+
+  - evidence_claim_id: EC-014
+    claim: Sports IP licenses are central to Sorare's differentiation and create renewal/minimum-guarantee diligence risk.
+    evidence_summary: TechCrunch, CNBC and NBPA each verify important sports IP relationships.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-002, SRC-003, SRC-004]
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "It creates a barrier to entry for other companies in the space."
+        location: "TechCrunch article line 148"
+      - source_id: SRC-003
+        quote: "Players ... will be able to purchase and use official Premier League-licensed NFTs"
+        location: "CNBC article lines 12-15"
+      - source_id: SRC-004
+        quote: "Sorare will have the rights to utilize official NBA league and team logos across its products."
+        location: "NBPA release line 8"
+    analyst_interpretation: Licenses are a likely moat but also a concentration and renewal-cost risk.
+    limitations: Contract terms are private.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.B
+      founder_claim_ids: [FC-003]
+      table_ids: [T-006, T-007, T-017]
+      figure_ids: [F-005, F-009]
+      risk_ids: [R-004]
+
+  - evidence_claim_id: EC-015
+    claim: Sorare's public blog index showed recent football, NBA and MLB product-update posts in May 2026, indicating visible product activity.
+    evidence_summary: The fetched Sorare blog index listed multiple recent product/news posts across sports.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [SRC-010]
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: "Sorare Set Squads: Play Together, Climb Higher"
+        location: "Sorare blog index lines 8-15"
+      - source_id: SRC-010
+        quote: "MLB Double Up"
+        location: "Sorare blog index lines 107-123"
+    analyst_interpretation: Supports active product surface but not release quality or revenue impact.
+    limitations: Blog index content is company-controlled and partial.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: [FC-002]
+      table_ids: [T-011, T-012]
+      figure_ids: [F-007]
+      risk_ids: [R-006]
+
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: market_database
+    reliability_notes: Reputable market database for unicorn screening; primary financing documents still required.
+    archive_url: null
+  - source_id: SRC-002
+    title: Sorare raises $680 million for its fantasy sports NFT game
+    url: https://techcrunch.com/2021/09/20/sorare-raises-680-million-for-its-fantasy-sports-nft-game/
+    publisher: TechCrunch
+    author: Romain Dillet
+    publication_date: 2021-09-21
+    accessed_date: 2026-05-19
+    source_type: independent_news
+    reliability_notes: Independent startup-news coverage with detailed financing and product metrics.
+    archive_url: null
+  - source_id: SRC-003
+    title: Premier League signs deal with NFT-based fantasy soccer game despite crypto downturn
+    url: https://www.cnbc.com/2023/01/30/premier-league-signs-deal-with-nft-based-fantasy-soccer-game-sorare.html
+    publisher: CNBC
+    author: Ryan Browne
+    publication_date: 2023-01-30
+    accessed_date: 2026-05-19
+    source_type: independent_news
+    reliability_notes: Independent business-news source; includes direct executive comments and third-party market data.
+    archive_url: null
+  - source_id: SRC-004
+    title: NBA and NBPA Team up with Sorare to Launch Free-to-Play Fantasy Basketball Game
+    url: https://www.nbpa.com/news/nba-and-nbpa-team-up-with-sorare-to-launch-free-to-play-fantasy-basketball-game
+    publisher: National Basketball Players Association
+    author: null
+    publication_date: 2022-09-07
+    accessed_date: 2026-05-19
+    source_type: customer_or_partner_source
+    reliability_notes: Primary partner announcement for NBA/NBPA relationship and company background.
+    archive_url: null
+  - source_id: SRC-005
+    title: Sorare homepage / product navigation
+    url: https://sorare.com/
+    publisher: Sorare
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-controlled product source; verifies public claims but not independent economics.
+    archive_url: null
+  - source_id: SRC-006
+    title: Sorare
+    url: https://en.wikipedia.org/wiki/Sorare
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: other
+    reliability_notes: Secondary source used for contextual facts where primary sources were unavailable; lower confidence.
+    archive_url: null
+  - source_id: SRC-007
+    title: "Consumer information notice: Sorare.com"
+    url: https://www.gamblingcommission.gov.uk/news/article/consumer-information-notice-sorare-com
+    publisher: UK Gambling Commission
+    author: null
+    publication_date: 2021-10-08
+    accessed_date: 2026-05-19
+    source_type: regulatory_filing
+    reliability_notes: Direct regulator notice; current status still requires counsel confirmation.
+    archive_url: null
+  - source_id: SRC-008
+    title: Jeux a objets numeriques monetisables (JONUM)
+    url: https://anj.fr/jeux-objets-numeriques-monetisables-jonum
+    publisher: Autorite Nationale des Jeux
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: regulatory_filing
+    reliability_notes: Direct French regulator framework page; translation/coverage should be reviewed by counsel.
+    archive_url: null
+  - source_id: SRC-009
+    title: Sorare terms and policy navigation
+    url: https://sorare.com/terms-and-conditions
+    publisher: Sorare
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-controlled public terms/policy surface; fetched page rendered product navigation more than full legal text.
+    archive_url: null
+  - source_id: SRC-010
+    title: Sorare blog index
+    url: https://sorare.com/blog/football
+    publisher: Sorare
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-controlled release/news index; useful for activity signal only.
+    archive_url: null
+
+risk_register:
+  - risk_id: R-001
+    risk_title: Financial statements and unit economics are not public
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Public evidence supports historical funding and GMV signals but not revenue, margin, cash runway, debt, retention or payback.
+    impacted_chapter_ids: [I]
+    impacted_section_ids: [I.A, I.B]
+    evidence_claim_ids: [EC-003, EC-006, EC-013]
+    mitigation_or_diligence_request: Require audited financials, KPI pack, GMV-to-revenue bridge, cash/debt and cohort economics.
+  - risk_id: R-002
+    risk_title: Stale valuation and NFT-market compression
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: The $4.3B valuation is from 2021; CNBC later documented substantial NFT-market declines.
+    impacted_chapter_ids: [I, IV]
+    impacted_section_ids: [I.B, IV.A]
+    evidence_claim_ids: [EC-001, EC-002, EC-006]
+    mitigation_or_diligence_request: Re-underwrite valuation using current net revenue, paid user retention, cash runway and market comps.
+  - risk_id: R-003
+    risk_title: Gambling, JONUM and consumer-protection regulation
+    risk_category: regulatory
+    severity: high
+    likelihood: high
+    description: UKGC and ANJ evidence shows meaningful classification and compliance exposure that could constrain product design or market access.
+    impacted_chapter_ids: [II, V, VIII]
+    impacted_section_ids: [II.B, V.A, VIII.A]
+    evidence_claim_ids: [EC-007, EC-011, EC-012]
+    mitigation_or_diligence_request: Obtain legal opinions, regulatory correspondence, jurisdiction matrix, age-gating/KYC/AML and responsible-play evidence.
+  - risk_id: R-004
+    risk_title: Sports IP license dependence
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: Product differentiation depends on league, club and player rights; economics and renewal terms are private.
+    impacted_chapter_ids: [III, IV, VIII]
+    impacted_section_ids: [III.A, IV.B, VIII.B]
+    evidence_claim_ids: [EC-004, EC-005, EC-008, EC-014]
+    mitigation_or_diligence_request: Review all material IP licenses, exclusivity, minimum guarantees, renewals, termination rights and warrants.
+  - risk_id: R-005
+    risk_title: Paid-user and spender concentration
+    risk_category: customer
+    severity: medium
+    likelihood: high
+    description: CNBC reported 87% of users did not spend money, implying revenue may depend on a concentrated payer base.
+    impacted_chapter_ids: [I, III, V]
+    impacted_section_ids: [I.A, III.A, V.A]
+    evidence_claim_ids: [EC-006]
+    mitigation_or_diligence_request: Request paid-user cohorts, whale concentration, retention, responsible-play interventions and ARPPU distribution.
+  - risk_id: R-006
+    risk_title: Blockchain, wallet and data integrity dependencies
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: NFT/card ownership, wallet, marketplace and scoring dependencies require security and controls diligence.
+    impacted_chapter_ids: [II, III, VI, VIII]
+    impacted_section_ids: [II.A, III.B, VI.B, VIII.A]
+    evidence_claim_ids: [EC-003, EC-009, EC-010, EC-012]
+    mitigation_or_diligence_request: Review security audits, wallet custody, chain-migration, sports data SLAs, incident logs and insurance.
+  - risk_id: R-007
+    risk_title: Competitive pressure from fantasy, betting and collectible platforms
+    risk_category: market
+    severity: medium
+    likelihood: medium
+    description: Sorare competes for sports-fan time/spend against well-funded fantasy, betting, game and NFT-marketplace players.
+    impacted_chapter_ids: [IV, V]
+    impacted_section_ids: [IV.A, V.A]
+    evidence_claim_ids: [EC-004, EC-006]
+    mitigation_or_diligence_request: Request win/loss, CAC, paid retention, license-bid history and competitive pricing analysis.
+  - risk_id: R-008
+    risk_title: Registered users may overstate active paying demand
+    risk_category: customer
+    severity: medium
+    likelihood: high
+    description: Public registered-user counts are large, but active paid conversion and retention are not public.
+    impacted_chapter_ids: [III]
+    impacted_section_ids: [III.A]
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-008]
+    mitigation_or_diligence_request: Request DAU/MAU, paid active users, churn, cohort retention and spend distribution.
+  - risk_id: R-009
+    risk_title: Management depth and headcount controls not verified
+    risk_category: team
+    severity: medium
+    likelihood: unknown
+    description: Public sources verify limited leadership signals but not full org depth, turnover, compliance staffing or succession.
+    impacted_chapter_ids: [VII]
+    impacted_section_ids: [VII.A, VII.B]
+    evidence_claim_ids: [EC-008, EC-010, EC-013]
+    mitigation_or_diligence_request: Request HRIS, org chart, attrition, compensation, compliance staffing and board materials.
+  - risk_id: R-010
+    risk_title: Litigation, IP and contract docket gaps
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: Public research did not complete counsel-grade litigation, IP or contract review.
+    impacted_chapter_ids: [VIII]
+    impacted_section_ids: [VIII.B]
+    evidence_claim_ids: [EC-013, EC-014]
+    mitigation_or_diligence_request: Have counsel conduct docket, IP, license, consumer-terms and insurance review.
+
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financials, revenue by stream, GMV-to-revenue bridge, gross margin, cash, debt and runway.
+    why_it_matters: Public GMV/card-exchange signals cannot support valuation without net revenue and cash economics.
+    suggested_source_or_request: CFO data room and auditor workpapers.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Full cap table, preferences, warrants, option pool, league equity rights and current valuation support.
+    why_it_matters: Investor and partner economics could change common-equity value and dilution.
+    suggested_source_or_request: Financing documents, shareholder register and warrant schedules.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Paid-user cohorts, retention, active users, churn, spender concentration and responsible-play interventions.
+    why_it_matters: Registered-user counts do not prove durable monetization.
+    suggested_source_or_request: Product analytics warehouse export and cohort dashboards.
+    priority: high
+  - gap_id: G-004
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: UKGC, ANJ and other regulator correspondence plus legal opinions by jurisdiction.
+    why_it_matters: Regulatory classification could require product changes, licensing, fines or market restrictions.
+    suggested_source_or_request: Counsel files and compliance/legal data room.
+    priority: high
+  - gap_id: G-005
+    chapter_id: VIII
+    section_id: VIII.B
+    missing_information: Executed league/club/player licenses, minimum guarantees, exclusivity, renewals and termination rights.
+    why_it_matters: Sports IP is core to product differentiation and economics.
+    suggested_source_or_request: Legal/contracts schedule and all material agreements.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Security audits, wallet/custody controls, incident history, chain-migration plan and insurance.
+    why_it_matters: Digital-asset and wallet failures could cause customer loss and regulatory scrutiny.
+    suggested_source_or_request: CTO/security packet and insurance policies.
+    priority: high
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.A
+    missing_information: CAC, payback, channel mix, league activation ROI and partner-launch conversion.
+    why_it_matters: Public partnerships may be expensive without profitable acquisition.
+    suggested_source_or_request: Marketing analytics and partnership P&Ls.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: HRIS, headcount by function, attrition, compliance staffing and contractor/IP assignment files.
+    why_it_matters: Execution and compliance capacity cannot be judged from public leadership mentions.
+    suggested_source_or_request: HR data room and legal employment files.
+    priority: medium
+  - gap_id: G-009
+    chapter_id: IV
+    section_id: IV.B
+    missing_information: Win/loss data, license-bid history, user switching costs and competitive CAC.
+    why_it_matters: Differentiation may erode if licenses become expensive or incumbents replicate the model.
+    suggested_source_or_request: Strategy and sales/partnership analysis.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: II
+    section_id: II.B
+    missing_information: Fee/take-rate schedule, reward economics, refund policies, chargebacks and fraud losses.
+    why_it_matters: Monetization and consumer-protection exposure depend on actual card/reward economics.
+    suggested_source_or_request: Product finance, risk and trust/safety dashboards.
+    priority: high
+
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide monthly financial statements, KPI deck, revenue recognition memo, GMV-to-revenue reconciliation and cash/debt runway.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Provide the full cap table, financing documents, option pool, investor rights, warrants and current valuation support.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide DAU/MAU, paid users, cohorts, churn, ARPPU, whale concentration, geography and responsible-play interventions.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide all UKGC, ANJ, EU, U.S. and other regulator correspondence plus jurisdiction-by-jurisdiction legal opinions.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-005
+    chapter_id: VIII
+    section_id: VIII.B
+    request: Provide all material league, club, player, data-provider and ambassador/license agreements with economics and renewal dates.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-006
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide smart-contract audits, wallet/key-management documentation, penetration tests, incident logs, SOC reports and insurance.
+    requested_from: company
+    priority: high
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.A
+    request: Provide CAC/payback by channel, license activation ROI, marketing budget-to-actuals and creator/ambassador economics.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide org chart, board materials, governance rights, succession plan, management incentives and related-party disclosures.
+    requested_from: company
+    priority: medium
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide HRIS export, headcount plan, attrition, compliance staffing, contractor list and invention assignment coverage.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: IV
+    section_id: IV.B
+    request: Provide competitive win/loss, license-bid history, user-overlap analysis and competitive CAC.
+    requested_from: company
+    priority: medium
+  - request_id: Q-011
+    chapter_id: II
+    section_id: II.B
+    request: Provide fee schedule, reward design memos, refund policy, chargeback/fraud history and responsible-play feature metrics.
+    requested_from: company
+    priority: high
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.B
+    request: Have counsel produce docket, IP/trademark, consumer-terms, privacy, AML and sanctions diligence memos.
+    requested_from: counsel
+    priority: high
+
+limitations:
+  - limitation_id: L-001
+    description: Public-source diligence only; no management interview, customer references, data room, audited financials or legal opinion were available.
+    affected_chapter_ids: [I, III, V, VII, VIII]
+    affected_section_ids: [I.A, I.B, III.A, V.A, VII.A, VIII.A]
+  - limitation_id: L-002
+    description: Several potentially useful sources, including Guardian and MLB pages, were inaccessible through the available fetch path and were not used as factual support.
+    affected_chapter_ids: [III, VIII]
+    affected_section_ids: [III.A, VIII.B]
+  - limitation_id: L-003
+    description: Wikipedia was used only as lower-confidence secondary context where primary evidence was limited.
+    affected_chapter_ids: [II, VI, VII]
+    affected_section_ids: [II.A, VI.B, VII.A]
+  - limitation_id: L-004
+    description: Regulatory analysis is not legal advice; counsel must confirm current UKGC, ANJ, EU, U.S. and other jurisdictional status.
+    affected_chapter_ids: [II, V, VIII]
+    affected_section_ids: [II.B, V.A, VIII.A]
+  - limitation_id: L-005
+    description: Public user, volume and valuation figures may be stale or unaudited and should not be treated as current financial performance.
+    affected_chapter_ids: [I, III, IV]
+    affected_section_ids: [I.A, I.B, III.A, IV.A]
