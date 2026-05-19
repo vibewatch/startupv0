@@ -1,0 +1,2269 @@
+report_metadata:
+  report_title: Red Ventures Startup Diligence Report
+  target_company: Red Ventures
+  website: https://www.redventures.com/
+  known_aliases:
+    - RV
+  sector: Digital media, consumer marketplaces, financial services lead generation and portfolio operations
+  geography: Fort Mill, South Carolina / United States; global portfolio operations
+  company_stage: Private unicorn / mature portfolio operating company
+  research_date: 2026-05-19
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built an existing-report exclusion list from reports/*-diligence-report.yaml and selected only uncovered slugs.
+    - Used CB Insights Global Unicorn Club as the primary market database for current private-unicorn status and latest known valuation.
+    - Reviewed public company-owned pages and independent third-party reporting available for Red Ventures.
+    - Marked audited financials, contracts, cap table, customer concentration, security reports, HRIS, legal docket detail and board materials as not_publicly_verifiable where not public.
+  included_jurisdictions:
+    - United States
+    - United Kingdom
+    - Singapore
+    - Global markets referenced by public materials
+  excluded_topics:
+    - No private data room, founder interview, customer calls, confidential security reports or paid databases were available.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Workflow request for three random uncovered unicorn diligence reports
+      type: workflow_request
+      date_received: 2026-05-19
+      notes: No founder deck or private materials were provided.
+founder_claims:
+  - founder_claim_id: FC-RED-001
+    claim_text: Red Ventures is an uncovered private unicorn valued at approximately $1B.
+    claim_source: CB Insights Global Unicorn Club
+    claim_date: 2015-01-07
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a1
+      - EC-RED-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current valuation support, financials and cap table.
+  - founder_claim_id: FC-RED-002
+    claim_text: Red Ventures operates a diversified portfolio across U.S. businesses, a healthcare JV and European strategic investments.
+    claim_source: Red Ventures homepage
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - IV
+    mapped_section_ids:
+      - II.A
+      - IV.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a2
+      - EC-RED-002
+      - EC-RED-003
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate asset ownership, P&Ls and capital allocation.
+  - founder_claim_id: FC-RED-003
+    claim_text: Red Ventures has large audience/customer reach, including Bankrate helping over 100M people a year.
+    claim_source: Red Ventures homepage
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a3
+      - EC-RED-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm traffic, conversion, partner revenue and compliance.
+  - founder_claim_id: FC-RED-004
+    claim_text: Red Ventures has founder-led continuity and a broad workforce/leadership platform.
+    claim_source: Red Ventures about and leadership pages
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a4
+      - EC-RED-005
+      - EC-RED-006
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request HRIS, succession, retention and shared-services model.
+  - founder_claim_id: FC-RED-005
+    claim_text: Red Ventures has sufficient editorial, AI and regulated-vertical governance for its consumer advice assets.
+    claim_source: Independent news and company portfolio pages
+    claim_date: null
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.A
+    verification_status: inconclusive
+    confidence: medium
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-007
+    contradiction_summary: null
+    diligence_follow_up:
+      - Review AI/editorial policies, compliance audits and legal matters.
+executive_summary:
+  overall_assessment: "Red Ventures is a mature private unicorn operating a diversified consumer-media and marketplace portfolio. Public evidence supports portfolio breadth, audience scale and founder-led leadership, but the most important diligence items are private: asset-level profitability, debt/leverage, partner concentration, platform/SEO dependence, regulated-vertical compliance and editorial/AI governance."
+  investment_or_diligence_thesis: Proceed only with deep financial and legal diligence. The public portfolio has meaningful assets, but valuation reliance requires asset-by-asset revenue quality, traffic durability, compliance and governance validation.
+  strongest_verified_claims:
+    - founder_claim_id: FC-RED-001
+      summary: CB Insights lists Red Ventures as a $1B private unicorn.
+      evidence_claim_ids: *a1
+    - founder_claim_id: FC-RED-002
+      summary: Company sources verify a diversified portfolio including Bankrate, Allconnect, RV EDU, Lonely Planet, Sage Home Loans and The Points Guy.
+      evidence_claim_ids: *a2
+    - founder_claim_id: FC-RED-003
+      summary: Bankrate is described as helping over 100M people per year.
+      evidence_claim_ids: *a3
+    - founder_claim_id: FC-RED-004
+      summary: Leadership page verifies Ric Elias as co-founder and CEO.
+      evidence_claim_ids: *a4
+  biggest_risks:
+    - risk_id: R-RED-001
+      summary: Private financial and leverage profile
+    - risk_id: R-RED-002
+      summary: Valuation and ownership opacity
+    - risk_id: R-RED-003
+      summary: Traffic monetization and partner concentration
+    - risk_id: R-RED-004
+      summary: Portfolio complexity and capital allocation
+  key_evidence_gaps:
+    - Audited consolidated and asset-level financials, debt, cash and cap table.
+    - Traffic source mix, SEO sensitivity, conversion, partner revenue concentration and customer economics.
+    - Compliance audits across financial, mortgage, education and consumer-advice verticals.
+    - AI/editorial policies, corrections history, legal claims and insurance.
+    - Org chart, succession, retention and shared-service cost allocation.
+  recommended_next_steps:
+    - Start with asset-level P&L, debt/covenants and traffic/partner concentration.
+    - Run counsel review of regulated lead generation and editorial/AI governance.
+    - Validate shared-services cost allocations and leadership succession.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Red Ventures has a long-standing CB Insights unicorn valuation anchor but financial statements, debt, cap table and asset-level profitability are private.
+    founder_claim_ids:
+      - FC-RED-001
+    evidence_claim_ids:
+      - EC-RED-001
+      - EC-RED-008
+    risk_ids:
+      - R-RED-001
+      - R-RED-002
+    sections:
+      - section_id: I.A
+        title: Public valuation and private financial records
+        checklist_question_ids:
+          - I.A
+        summary: CB Insights verifies the public unicorn valuation anchor; core financial materials require private diligence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Unicorn status is public; current financial quality is not.
+            evidence_claim_ids: &a5
+              - EC-RED-001
+              - EC-RED-008
+            risk_ids:
+              - R-RED-001
+              - R-RED-002
+        hidden_risks:
+          - "Primary diligence risks: R-RED-001, R-RED-002."
+        evidence_gaps:
+          - Audited financials, lender materials, cap table, portfolio P&Ls and cash/debt.
+        follow_up_questions:
+          - Provide audited statements, debt schedule, asset-level P&Ls and cap table.
+        table_ids:
+          - T-RED-I-1
+          - T-RED-I-2
+        figure_ids:
+          - F-RED-I-1
+        evidence_claim_ids: *a5
+  - chapter_id: II
+    title: Products
+    chapter_summary: Red Ventures is an operating platform and portfolio of consumer, financial, education, home, travel and media businesses rather than a single-product software company.
+    founder_claim_ids:
+      - FC-RED-002
+    evidence_claim_ids:
+      - EC-RED-002
+      - EC-RED-003
+    risk_ids:
+      - R-RED-004
+    sections:
+      - section_id: II.A
+        title: Portfolio products and operating platform
+        checklist_question_ids:
+          - II.A
+        summary: Company pages verify the portfolio and shared-resource model; asset-level economics and ownership are private.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: The product is a diversified portfolio platform with complex asset-level diligence.
+            evidence_claim_ids: &a6
+              - EC-RED-002
+              - EC-RED-003
+            risk_ids:
+              - R-RED-004
+        hidden_risks:
+          - "Primary diligence risks: R-RED-004."
+        evidence_gaps:
+          - Asset ownership, P&Ls, shared-service allocations and product roadmaps.
+        follow_up_questions:
+          - Provide portfolio legal structure, P&Ls, product KPIs and shared-service cost allocation.
+        table_ids:
+          - T-RED-II-1
+          - T-RED-II-2
+        figure_ids:
+          - F-RED-II-1
+        evidence_claim_ids: *a6
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public customer/audience signal is strongest at Bankrate, but partner, advertiser, lender and lead-buyer concentration are private.
+    founder_claim_ids:
+      - FC-RED-003
+    evidence_claim_ids:
+      - EC-RED-004
+      - EC-RED-008
+    risk_ids:
+      - R-RED-003
+    sections:
+      - section_id: III.A
+        title: Audience, partners and customer economics
+        checklist_question_ids:
+          - III.A
+        summary: Bankrate audience scale is public; monetization partners, conversion and concentration are not.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Audience scale must be converted into verified economics.
+            evidence_claim_ids: &a7
+              - EC-RED-004
+              - EC-RED-008
+            risk_ids:
+              - R-RED-003
+        hidden_risks:
+          - "Primary diligence risks: R-RED-003."
+        evidence_gaps:
+          - Partner/customer concentration, revenue by vertical, traffic sources and conversion cohorts.
+        follow_up_questions:
+          - Provide top-partner revenue, contracts, traffic mix, conversion and retention data.
+        table_ids:
+          - T-RED-III-1
+          - T-RED-III-2
+        figure_ids:
+          - F-RED-III-1
+        evidence_claim_ids: *a7
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Red Ventures competes across consumer advice, affiliate marketplaces, digital media, travel and vertical lead generation.
+    founder_claim_ids:
+      - FC-RED-002
+    evidence_claim_ids:
+      - EC-RED-002
+      - EC-RED-003
+      - EC-RED-004
+    risk_ids:
+      - R-RED-005
+    sections:
+      - section_id: IV.A
+        title: Competitive position across vertical marketplaces
+        checklist_question_ids:
+          - IV.A
+        summary: Portfolio breadth diversifies exposure but creates competition with SEO publishers, fintech marketplaces and travel/education brands.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Search/platform dependence is a major competitive variable.
+            evidence_claim_ids: &a8
+              - EC-RED-002
+              - EC-RED-003
+              - EC-RED-004
+            risk_ids:
+              - R-RED-005
+        hidden_risks:
+          - "Primary diligence risks: R-RED-005."
+        evidence_gaps:
+          - Market share, traffic rankings, SEO dependence, win/loss and partner economics.
+        follow_up_questions:
+          - Provide traffic analytics, SEO sensitivity, market-share and competitor benchmarks.
+        table_ids:
+          - T-RED-IV-1
+          - T-RED-IV-2
+        figure_ids:
+          - F-RED-IV-1
+        evidence_claim_ids: *a8
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Distribution appears driven by owned consumer brands, SEO/content, comparison marketplaces and partner monetization.
+    founder_claim_ids:
+      - FC-RED-003
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-008
+    risk_ids:
+      - R-RED-003
+      - R-RED-005
+    sections:
+      - section_id: V.A
+        title: Distribution channels and monetization
+        checklist_question_ids:
+          - V.A
+        summary: Public portfolio pages show consumer brands and advice/marketplace models; channel economics are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Distribution quality depends on traffic durability and partner monetization.
+            evidence_claim_ids: &a9
+              - EC-RED-003
+              - EC-RED-004
+              - EC-RED-008
+            risk_ids:
+              - R-RED-003
+              - R-RED-005
+        hidden_risks:
+          - "Primary diligence risks: R-RED-003, R-RED-005."
+        evidence_gaps:
+          - Traffic mix, paid/organic split, partner contracts, funnel conversion and compliance audits.
+        follow_up_questions:
+          - Provide channel attribution, conversion cohorts, CAC/payback and partner contract economics.
+        table_ids:
+          - T-RED-V-1
+          - T-RED-V-2
+        figure_ids:
+          - F-RED-V-1
+        evidence_claim_ids: *a9
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: R&D is best understood as data, analytics, SEO, content, marketplace technology and shared operating capabilities across the portfolio.
+    founder_claim_ids:
+      - FC-RED-002
+    evidence_claim_ids:
+      - EC-RED-002
+      - EC-RED-005
+    risk_ids:
+      - R-RED-004
+      - R-RED-005
+    sections:
+      - section_id: VI.A
+        title: Technology, data and shared-services platform
+        checklist_question_ids:
+          - VI.A
+        summary: Company materials cite central teams and shared resources; specific tech stack, data systems and roadmap are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Operating-platform R&D must be validated by asset-level productivity and governance.
+            evidence_claim_ids: &a10
+              - EC-RED-002
+              - EC-RED-005
+            risk_ids:
+              - R-RED-004
+              - R-RED-005
+        hidden_risks:
+          - "Primary diligence risks: R-RED-004, R-RED-005."
+        evidence_gaps:
+          - Architecture, data governance, experimentation platform, AI/content tooling and roadmap.
+        follow_up_questions:
+          - Provide tech architecture, roadmap, data governance, experimentation metrics and AI tooling policies.
+        table_ids:
+          - T-RED-VI-1
+          - T-RED-VI-2
+        figure_ids:
+          - F-RED-VI-1
+        evidence_claim_ids: *a10
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Red Ventures has public founder/CEO continuity, a leadership roster and employee development claims, but HR metrics and succession are private.
+    founder_claim_ids:
+      - FC-RED-004
+    evidence_claim_ids:
+      - EC-RED-005
+      - EC-RED-006
+    risk_ids:
+      - R-RED-007
+    sections:
+      - section_id: VII.A
+        title: Leadership, culture and workforce
+        checklist_question_ids:
+          - VII.A
+        summary: Public sources verify Ric Elias as co-founder/CEO and describe thousands of employees plus training programs; retention and org design need private validation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Leadership continuity is visible; personnel risk remains private.
+            evidence_claim_ids: &a11
+              - EC-RED-005
+              - EC-RED-006
+            risk_ids:
+              - R-RED-007
+        hidden_risks:
+          - "Primary diligence risks: R-RED-007."
+        evidence_gaps:
+          - Org chart, attrition, compensation, succession, shared-service staffing and employee-relations matters.
+        follow_up_questions:
+          - Provide HRIS, org chart, succession plan, retention data and leadership agreements.
+        table_ids:
+          - T-RED-VII-1
+          - T-RED-VII-2
+        figure_ids:
+          - F-RED-VII-1
+        evidence_claim_ids: *a11
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public sources identify AI-content/editorial risk and regulated vertical exposure; litigation, compliance and IP records require counsel diligence.
+    founder_claim_ids:
+      - FC-RED-005
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-007
+    risk_ids:
+      - R-RED-006
+      - R-RED-008
+    sections:
+      - section_id: VIII.A
+        title: Editorial, regulatory and legal exposure
+        checklist_question_ids:
+          - VIII.A
+        summary: The CNET AI-corrections incident is a concrete public governance risk signal; regulated financial, education and mortgage verticals heighten compliance diligence needs.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Legal diligence should focus on consumer advice, lead generation and AI/editorial controls.
+            evidence_claim_ids: &a12
+              - EC-RED-003
+              - EC-RED-004
+              - EC-RED-007
+            risk_ids:
+              - R-RED-006
+              - R-RED-008
+        hidden_risks:
+          - "Primary diligence risks: R-RED-006, R-RED-008."
+        evidence_gaps:
+          - Litigation schedule, regulator correspondence, editorial QA, AI content policies, partner compliance and insurance.
+        follow_up_questions:
+          - Provide counsel memo, complaints/regulatory logs, AI/editorial policy and compliance audits.
+        table_ids:
+          - T-RED-VIII-1
+          - T-RED-VIII-2
+        figure_ids:
+          - F-RED-VIII-1
+        evidence_claim_ids: *a12
+tables:
+  - table_id: T-RED-I-1
+    title: Public valuation and investor snapshot
+    chapter_id: I
+    section_id: I.A
+    purpose: Summarize CB Insights valuation data.
+    columns:
+      - name: date
+        description: Date
+      - name: event
+        description: Event
+      - name: amount_or_valuation
+        description: Amount or valuation
+      - name: investors
+        description: Investors
+      - name: status
+        description: Status
+    rows:
+      - row_id: RED-I-1-R1
+        values:
+          date: 2015-01-07
+          event: CB Insights unicorn entry
+          amount_or_valuation: $1B valuation
+          investors: Silver Lake Partners; General Atlantic
+          status: verified
+        evidence_claim_ids:
+          - EC-RED-001
+        source_ids:
+          - SRC-RED-001
+    evidence_claim_ids:
+      - EC-RED-001
+    source_ids:
+      - SRC-RED-001
+    notes: Current ownership and debt economics are not public.
+  - table_id: T-RED-I-2
+    title: Financial diligence gap matrix
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify private financial records needed.
+    columns:
+      - name: topic
+        description: Topic
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: RED-I-2-R1
+        values:
+          topic: Portfolio revenue/EBITDA
+          public_signal: Not disclosed
+          request: Asset-level P&Ls and consolidated audited financials
+          priority: high
+        evidence_claim_ids:
+          - EC-RED-008
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-I-2-R2
+        values:
+          topic: Debt/covenants
+          public_signal: Not disclosed
+          request: Debt agreements, covenant compliance and maturity schedule
+          priority: high
+        evidence_claim_ids:
+          - EC-RED-008
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-I-2-R3
+        values:
+          topic: Cap table
+          public_signal: Investors listed by CB Insights
+          request: Ownership, preferences and secondary transactions
+          priority: high
+        evidence_claim_ids:
+          - EC-RED-001
+        source_ids:
+          - SRC-RED-001
+    evidence_claim_ids:
+      - EC-RED-008
+      - EC-RED-001
+    source_ids:
+      - SRC-RED-001
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-II-1
+    title: Portfolio product matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Summarize public portfolio brands and roles.
+    columns:
+      - name: business
+        description: Business
+      - name: vertical
+        description: Vertical
+      - name: public_description
+        description: Public description
+      - name: diligence_question
+        description: Diligence question
+    rows:
+      - row_id: RED-II-1-R1
+        values:
+          business: Bankrate
+          vertical: Financial decisions
+          public_description: Helps over 100M people/year compare rates and options
+          diligence_question: Revenue, compliance and partner concentration
+        evidence_claim_ids:
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-II-1-R2
+        values:
+          business: Allconnect
+          vertical: Home services
+          public_description: Platform for movers to transfer/start internet, energy and other services
+          diligence_question: Partner economics and conversion
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-II-1-R3
+        values:
+          business: Lonely Planet / The Points Guy
+          vertical: Travel/media
+          public_description: Travel inspiration/utility and points/rewards content
+          diligence_question: Traffic monetization and brand health
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-II-1-R4
+        values:
+          business: Sage Home Loans / RV EDU
+          vertical: Mortgage and education
+          public_description: Mortgage simplicity and education/upskilling advice
+          diligence_question: Regulatory compliance and unit economics
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-II-2
+    title: Operating platform and ownership gaps
+    chapter_id: II
+    section_id: II.A
+    purpose: Frame portfolio-platform diligence.
+    columns:
+      - name: area
+        description: Area
+      - name: public_signal
+        description: Public signal
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: RED-II-2-R1
+        values:
+          area: Shared services
+          public_signal: Central teams and shared resources claimed
+          risk: Cost allocation and accountability unclear
+          request: Transfer-pricing and shared-service allocation model
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+      - row_id: RED-II-2-R2
+        values:
+          area: Asset ownership
+          public_signal: Portfolio brands listed
+          risk: Ownership percentages and debt at asset level unknown
+          request: Entity chart and asset-level capitalization
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-005
+    source_ids:
+      - SRC-RED-002
+      - SRC-RED-003
+    notes: null
+  - table_id: T-RED-III-1
+    title: Public audience and customer signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize visible audience/customer evidence.
+    columns:
+      - name: asset
+        description: Asset
+      - name: public_signal
+        description: Public signal
+      - name: economic_gap
+        description: Economic gap
+      - name: status
+        description: Status
+    rows:
+      - row_id: RED-III-1-R1
+        values:
+          asset: Bankrate
+          public_signal: Over 100M people/year compare rates and options
+          economic_gap: Revenue per visitor, conversion and partner concentration
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-III-1-R2
+        values:
+          asset: The Points Guy
+          public_signal: Leading consumer brand in points and rewards space
+          economic_gap: Traffic, affiliate economics and advertiser concentration
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-III-2
+    title: Partner and supplier dependency matrix
+    chapter_id: III
+    section_id: III.A
+    purpose: Capture likely dependencies needing private review.
+    columns:
+      - name: dependency
+        description: Dependency
+      - name: role
+        description: Role
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+    rows:
+      - row_id: RED-III-2-R1
+        values:
+          dependency: Financial-services partners
+          role: Offers/affiliate monetization
+          public_signal: Bankrate comparison platform
+          request: Top partner revenue and contracts
+        evidence_claim_ids:
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-III-2-R2
+        values:
+          dependency: Search/platform traffic
+          role: Consumer acquisition
+          public_signal: Digital advice and media portfolio
+          request: Traffic source mix and platform sensitivity
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-IV-1
+    title: Competitive comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare Red Ventures verticals to relevant competitors.
+    columns:
+      - name: competitor_type
+        description: Competitor type
+      - name: overlap
+        description: Overlap
+      - name: rv_signal
+        description: Red Ventures signal
+      - name: risk
+        description: Risk
+    rows:
+      - row_id: RED-IV-1-R1
+        values:
+          competitor_type: Financial comparison marketplaces
+          overlap: Rates/cards/loans consumer acquisition
+          rv_signal: Bankrate audience scale
+          risk: Partner pricing and SEO competition
+        evidence_claim_ids:
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-IV-1-R2
+        values:
+          competitor_type: Travel media and rewards brands
+          overlap: Travel advice and affiliate commerce
+          rv_signal: Lonely Planet and The Points Guy listed
+          risk: Traffic and advertiser cyclicality
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-IV-1-R3
+        values:
+          competitor_type: Education/home services lead-gen
+          overlap: Lead acquisition and partner marketplaces
+          rv_signal: RV EDU, Allconnect and RV Home listed
+          risk: Compliance and CAC inflation
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-IV-2
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Assess public competitive axes.
+    columns:
+      - name: axis
+        description: Axis
+      - name: rv_position
+        description: Red Ventures position
+      - name: diligence_question
+        description: Diligence question
+      - name: evidence_strength
+        description: Evidence strength
+    rows:
+      - row_id: RED-IV-2-R1
+        values:
+          axis: Audience reach
+          rv_position: Bankrate over 100M people/year claim
+          diligence_question: Traffic quality and conversion durability
+          evidence_strength: medium
+        evidence_claim_ids:
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-IV-2-R2
+        values:
+          axis: Portfolio breadth
+          rv_position: Seven U.S. businesses, healthcare JV, Europe investments
+          diligence_question: Capital allocation and focus
+          evidence_strength: high
+        evidence_claim_ids:
+          - EC-RED-002
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-IV-2-R3
+        values:
+          axis: Content trust
+          rv_position: CNET AI correction incident creates cautionary signal
+          diligence_question: Editorial governance and brand impact
+          evidence_strength: high
+        evidence_claim_ids:
+          - EC-RED-007
+        source_ids:
+          - SRC-RED-005
+    evidence_claim_ids:
+      - EC-RED-002
+      - EC-RED-004
+      - EC-RED-007
+    source_ids:
+      - SRC-RED-002
+      - SRC-RED-005
+    notes: null
+  - table_id: T-RED-V-1
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize observable distribution.
+    columns:
+      - name: channel
+        description: Channel
+      - name: public_evidence
+        description: Public evidence
+      - name: commercial_question
+        description: Commercial question
+      - name: status
+        description: Status
+    rows:
+      - row_id: RED-V-1-R1
+        values:
+          channel: Owned consumer brands
+          public_evidence: Portfolio brands listed publicly
+          commercial_question: Traffic, conversion and brand health
+          status: verified
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-V-1-R2
+        values:
+          channel: Comparison marketplaces
+          public_evidence: Bankrate rate-comparison description
+          commercial_question: Partner take-rate and compliance
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-V-1-R3
+        values:
+          channel: Shared operating platform
+          public_evidence: Central teams and shared resources claimed
+          commercial_question: Cost allocation and productivity
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-005
+    source_ids:
+      - SRC-RED-002
+      - SRC-RED-003
+    notes: null
+  - table_id: T-RED-V-2
+    title: Marketing and compliance signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Identify GTM risks.
+    columns:
+      - name: signal
+        description: Signal
+      - name: evidence
+        description: Evidence
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: RED-V-2-R1
+        values:
+          signal: SEO/content reach
+          evidence: Large consumer advice/media portfolio
+          risk: Search algorithm changes
+          request: Traffic source and SEO sensitivity analysis
+        evidence_claim_ids:
+          - EC-RED-003
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-V-2-R2
+        values:
+          signal: AI content experimentation
+          evidence: CNET AI corrections report
+          risk: Brand trust and compliance
+          request: Editorial QA and AI policy
+        evidence_claim_ids:
+          - EC-RED-007
+        source_ids:
+          - SRC-RED-005
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-007
+    source_ids:
+      - SRC-RED-002
+      - SRC-RED-005
+    notes: null
+  - table_id: T-RED-VI-1
+    title: Technology and shared-services R&D signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture public R&D-like capabilities.
+    columns:
+      - name: capability
+        description: Capability
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_test
+        description: Diligence test
+      - name: risk
+        description: Risk
+    rows:
+      - row_id: RED-VI-1-R1
+        values:
+          capability: Central teams/shared resources
+          public_evidence: About page claims scale advantages
+          diligence_test: Asset-level productivity and allocation review
+          risk: Cost opacity
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+      - row_id: RED-VI-1-R2
+        values:
+          capability: Data/analytics upskilling
+          public_evidence: 200+ employees up-skilled in data & analytics in 2024
+          diligence_test: Impact on product metrics and retention
+          risk: Training does not equal durable moat
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+    evidence_claim_ids:
+      - EC-RED-005
+    source_ids:
+      - SRC-RED-003
+    notes: null
+  - table_id: T-RED-VI-2
+    title: AI/data governance diligence gaps
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture technology governance requests.
+    columns:
+      - name: area
+        description: Area
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: RED-VI-2-R1
+        values:
+          area: AI content tools
+          public_signal: Independent reporting on CNET AI-written stories
+          request: AI content policy, QA and audit logs
+          priority: high
+        evidence_claim_ids:
+          - EC-RED-007
+        source_ids:
+          - SRC-RED-005
+      - row_id: RED-VI-2-R2
+        values:
+          area: Experimentation/SEO data platform
+          public_signal: Not disclosed
+          request: Architecture, data governance and platform dependency map
+          priority: medium
+        evidence_claim_ids:
+          - EC-RED-008
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-007
+      - EC-RED-008
+    source_ids:
+      - SRC-RED-005
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-VII-1
+    title: Leadership and workforce signals
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Summarize public management evidence.
+    columns:
+      - name: person_or_signal
+        description: Person or signal
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_caveat
+        description: Caveat
+      - name: status
+        description: Status
+    rows:
+      - row_id: RED-VII-1-R1
+        values:
+          person_or_signal: Ric Elias
+          public_evidence: Listed as Co-Founder & CEO
+          diligence_caveat: Succession and ownership private
+          status: verified
+        evidence_claim_ids:
+          - EC-RED-006
+        source_ids:
+          - SRC-RED-004
+      - row_id: RED-VII-1-R2
+        values:
+          person_or_signal: Dan Feldstein
+          public_evidence: Listed as co-founder in leadership page narrative
+          diligence_caveat: Current role and economics require confirmation
+          status: verified
+        evidence_claim_ids:
+          - EC-RED-006
+        source_ids:
+          - SRC-RED-004
+      - row_id: RED-VII-1-R3
+        values:
+          person_or_signal: Portfolio workforce
+          public_evidence: Portfolio employs thousands globally
+          diligence_caveat: Exact headcount/function/attrition private
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+    evidence_claim_ids:
+      - EC-RED-005
+      - EC-RED-006
+    source_ids:
+      - SRC-RED-003
+      - SRC-RED-004
+    notes: null
+  - table_id: T-RED-VII-2
+    title: Training and HR diligence matrix
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Frame people diligence requests.
+    columns:
+      - name: topic
+        description: Topic
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: RED-VII-2-R1
+        values:
+          topic: Learning platform
+          public_signal: 10,000 on-demand courses
+          request: Usage, cost and retention impact
+          priority: medium
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+      - row_id: RED-VII-2-R2
+        values:
+          topic: Data & analytics upskilling
+          public_signal: 200+ employees up-skilled in 2024
+          request: Program completion and productivity outcomes
+          priority: medium
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+      - row_id: RED-VII-2-R3
+        values:
+          topic: Leadership training
+          public_signal: 90% of RV Leaders completed management training
+          request: Leader list, retention and succession metrics
+          priority: medium
+        evidence_claim_ids:
+          - EC-RED-005
+        source_ids:
+          - SRC-RED-003
+    evidence_claim_ids:
+      - EC-RED-005
+    source_ids:
+      - SRC-RED-003
+    notes: null
+  - table_id: T-RED-VIII-1
+    title: Legal/regulatory matter summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize key legal and compliance areas.
+    columns:
+      - name: area
+        description: Area
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Status
+      - name: request
+        description: Request
+    rows:
+      - row_id: RED-VIII-1-R1
+        values:
+          area: Financial-services lead generation/comparison
+          public_evidence: Bankrate and Sage Home Loans public portfolio assets
+          status: partially_verified
+          request: Compliance audits, regulator correspondence and partner terms
+        evidence_claim_ids:
+          - EC-RED-003
+          - EC-RED-004
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-VIII-1-R2
+        values:
+          area: Education/home services lead generation
+          public_evidence: RV EDU, Allconnect and RV Home Client Services listed
+          status: partially_verified
+          request: Consumer compliance, complaints and partner contracts
+        evidence_claim_ids:
+          - EC-RED-003
+        source_ids:
+          - SRC-RED-002
+      - row_id: RED-VIII-1-R3
+        values:
+          area: Pending litigation
+          public_evidence: No docket source reviewed in this public-source sweep
+          status: not_publicly_verifiable
+          request: Counsel litigation schedule and docket searches
+        evidence_claim_ids:
+          - EC-RED-008
+        source_ids:
+          - SRC-RED-002
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-008
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - table_id: T-RED-VIII-2
+    title: AI/editorial governance risk log
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize the public CNET incident and controls to request.
+    columns:
+      - name: issue
+        description: Issue
+      - name: public_evidence
+        description: Public evidence
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: RED-VIII-2-R1
+        values:
+          issue: AI-written article errors
+          public_evidence: The Verge reported 41 corrections among 77 AI-written stories
+          risk: Brand trust, regulatory and SEO quality risk
+          request: AI policy, QA workflow and corrections history
+        evidence_claim_ids:
+          - EC-RED-007
+        source_ids:
+          - SRC-RED-005
+      - row_id: RED-VIII-2-R2
+        values:
+          issue: Originality/copy risk
+          public_evidence: The Verge reported some correction notes said phrases were not entirely original
+          risk: Copyright/reputational exposure
+          request: Plagiarism controls, legal review and insurance
+        evidence_claim_ids:
+          - EC-RED-007
+        source_ids:
+          - SRC-RED-005
+    evidence_claim_ids:
+      - EC-RED-007
+    source_ids:
+      - SRC-RED-005
+    notes: null
+figures:
+  - figure_id: F-RED-I-1
+    title: Red Ventures public valuation anchor
+    chapter_id: I
+    section_id: I.A
+    figure_type: chart
+    description: Single public valuation anchor with missing financials annotated.
+    purpose: Frame valuation diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD billions
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Latest known valuation
+          unit: USD billions
+          data_points:
+            - x: CB Insights valuation
+              y: 1
+              label: $1B valuation
+              evidence_claim_ids:
+                - EC-RED-001
+              source_ids:
+                - SRC-RED-001
+            - x: Audited EBITDA disclosed
+              y: null
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-RED-008
+              source_ids:
+                - SRC-RED-002
+      annotations:
+        - label: Long-dated valuation
+          x: CB Insights valuation
+          y: 1
+          note: 2015 unicorn entry may be stale versus current asset/debt mix.
+          evidence_claim_ids:
+            - EC-RED-001
+          source_ids:
+            - SRC-RED-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-001
+      - EC-RED-008
+    source_ids:
+      - SRC-RED-001
+      - SRC-RED-002
+    notes: null
+  - figure_id: F-RED-II-1
+    title: Red Ventures portfolio architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Conceptual operating-platform map from public portfolio descriptions.
+    purpose: Show asset and shared-service diligence areas.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: rv
+          label: Red Ventures operating platform
+          node_type: service
+          description: Central teams and shared resources
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+        - node_id: finance
+          label: Financial decision assets
+          node_type: product
+          description: Bankrate, Sage Home Loans
+          evidence_claim_ids:
+            - EC-RED-003
+            - EC-RED-004
+          source_ids:
+            - SRC-RED-002
+        - node_id: home_edu
+          label: Home and education assets
+          node_type: product
+          description: Allconnect, RV EDU, RV Home Client Services
+          evidence_claim_ids:
+            - EC-RED-003
+          source_ids:
+            - SRC-RED-002
+        - node_id: travel
+          label: Travel/media assets
+          node_type: product
+          description: Lonely Planet, The Points Guy
+          evidence_claim_ids:
+            - EC-RED-003
+          source_ids:
+            - SRC-RED-002
+      edges:
+        - edge_id: e1
+          from_node_id: rv
+          to_node_id: finance
+          relationship: supports
+          data_or_dependency: shared operations and capital
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+        - edge_id: e2
+          from_node_id: rv
+          to_node_id: home_edu
+          relationship: supports
+          data_or_dependency: shared operations and capital
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+        - edge_id: e3
+          from_node_id: rv
+          to_node_id: travel
+          relationship: supports
+          data_or_dependency: shared operations and capital
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+      boundaries:
+        - boundary_id: b1
+          label: Asset-level P&L and compliance diligence
+          node_ids:
+            - finance
+            - home_edu
+            - travel
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-005
+    source_ids:
+      - SRC-RED-002
+      - SRC-RED-003
+    notes: null
+  - figure_id: F-RED-III-1
+    title: Red Ventures audience signal chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Chart visible audience and undisclosed customer economics.
+    purpose: Separate audience scale from monetization evidence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer/audience signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: people/year or disclosed count
+        scale: linear
+      series:
+        - series_id: audience
+          name: Public signals
+          unit: count
+          data_points:
+            - x: Bankrate annual audience
+              y: 100000000
+              label: Over 100M people/year
+              evidence_claim_ids:
+                - EC-RED-004
+              source_ids:
+                - SRC-RED-002
+            - x: Portfolio brands reviewed
+              y: 7
+              label: Seven listed brands in reviewed portfolio
+              evidence_claim_ids:
+                - EC-RED-003
+              source_ids:
+                - SRC-RED-002
+            - x: Top partner revenue disclosed
+              y: null
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-RED-008
+              source_ids:
+                - SRC-RED-002
+      annotations:
+        - label: Monetization gap
+          x: Bankrate annual audience
+          y: 100000000
+          note: Audience count does not disclose revenue, conversion or concentration.
+          evidence_claim_ids:
+            - EC-RED-004
+          source_ids:
+            - SRC-RED-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-008
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - figure_id: F-RED-IV-1
+    title: Portfolio competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative market map by vertical focus and platform dependence.
+    purpose: Position Red Ventures assets versus competitors.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Vertical specialization
+          low_label: Horizontal media
+          high_label: Vertical marketplace
+        y_axis:
+          label: Platform dependence
+          low_label: Direct/brand
+          high_label: Search/affiliate dependent
+      segments:
+        - segment_id: finance
+          name: Financial marketplaces
+          description: Bankrate/Sage-like financial assets
+        - segment_id: travel
+          name: Travel/media
+          description: Travel content and rewards brands
+        - segment_id: home_edu
+          name: Home/education lead-gen
+          description: Home services and education advice
+      entities:
+        - entity_id: bankrate
+          name: Bankrate
+          entity_type: target_company
+          segment_id: finance
+          x_value: 8
+          y_value: 7
+          attributes:
+            note: Large public audience claim
+          evidence_claim_ids:
+            - EC-RED-004
+          source_ids:
+            - SRC-RED-002
+        - entity_id: tpg_lp
+          name: TPG / Lonely Planet
+          entity_type: target_company
+          segment_id: travel
+          x_value: 6
+          y_value: 7
+          attributes:
+            note: Travel content and rewards
+          evidence_claim_ids:
+            - EC-RED-003
+          source_ids:
+            - SRC-RED-002
+        - entity_id: seo_publishers
+          name: SEO/affiliate publishers
+          entity_type: competitor
+          segment_id: finance
+          x_value: 6
+          y_value: 9
+          attributes:
+            note: Search-exposed competition
+          evidence_claim_ids:
+            - EC-RED-004
+          source_ids:
+            - SRC-RED-002
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - figure_id: F-RED-V-1
+    title: Observable distribution mix
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Bar chart of public distribution surfaces and missing channel data.
+    purpose: Highlight search/brand/marketplace diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Distribution surface
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public item count
+        unit: items
+        scale: linear
+      series:
+        - series_id: distribution
+          name: Public distribution surfaces
+          unit: items
+          data_points:
+            - x: Portfolio brands listed
+              y: 7
+              label: Seven brands listed in reviewed homepage
+              evidence_claim_ids:
+                - EC-RED-003
+              source_ids:
+                - SRC-RED-002
+            - x: Audience metric disclosed
+              y: 1
+              label: Bankrate over 100M people/year
+              evidence_claim_ids:
+                - EC-RED-004
+              source_ids:
+                - SRC-RED-002
+            - x: Traffic-source mix disclosed
+              y: 0
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-RED-008
+              source_ids:
+                - SRC-RED-002
+      annotations:
+        - label: Traffic durability gap
+          x: Traffic-source mix disclosed
+          y: 0
+          note: Request traffic mix, SEO sensitivity and paid acquisition economics.
+          evidence_claim_ids:
+            - EC-RED-008
+          source_ids:
+            - SRC-RED-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-008
+    source_ids:
+      - SRC-RED-002
+    notes: null
+  - figure_id: F-RED-VI-1
+    title: Shared operating capabilities map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Map central teams and portfolio assets from public claims.
+    purpose: Organize technology/R&D diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: central
+          label: Central teams
+          node_type: service
+          description: Shared resources and data/analytics upskilling
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+        - node_id: portfolio
+          label: Portfolio businesses
+          node_type: product
+          description: Seven U.S. businesses, healthcare JV, Europe investments
+          evidence_claim_ids:
+            - EC-RED-002
+          source_ids:
+            - SRC-RED-002
+        - node_id: content_ai
+          label: Content/AI tooling
+          node_type: service
+          description: AI content governance issue identified at CNET
+          evidence_claim_ids:
+            - EC-RED-007
+          source_ids:
+            - SRC-RED-005
+      edges:
+        - edge_id: e1
+          from_node_id: central
+          to_node_id: portfolio
+          relationship: supports
+          data_or_dependency: people, data, analytics and shared resources
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+        - edge_id: e2
+          from_node_id: content_ai
+          to_node_id: portfolio
+          relationship: requires governance for
+          data_or_dependency: content production and QA
+          evidence_claim_ids:
+            - EC-RED-007
+          source_ids:
+            - SRC-RED-005
+      boundaries:
+        - boundary_id: b1
+          label: Shared service controls to verify
+          node_ids:
+            - central
+            - content_ai
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-002
+      - EC-RED-005
+      - EC-RED-007
+    source_ids:
+      - SRC-RED-002
+      - SRC-RED-003
+      - SRC-RED-005
+    notes: null
+  - figure_id: F-RED-VII-1
+    title: Public workforce and training signal chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: chart
+    description: Chart people-development metrics from public About page.
+    purpose: Show public HR anchors and private gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: People signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count or percent
+        unit: mixed
+        scale: linear
+      series:
+        - series_id: people
+          name: Public people signals
+          unit: mixed
+          data_points:
+            - x: On-demand courses
+              y: 10000
+              label: 10,000 courses
+              evidence_claim_ids:
+                - EC-RED-005
+              source_ids:
+                - SRC-RED-003
+            - x: Data/analytics upskilled employees
+              y: 200
+              label: 200+ in 2024
+              evidence_claim_ids:
+                - EC-RED-005
+              source_ids:
+                - SRC-RED-003
+            - x: Leaders trained percent
+              y: 90
+              label: 90% of RV leaders
+              evidence_claim_ids:
+                - EC-RED-005
+              source_ids:
+                - SRC-RED-003
+            - x: Exact headcount disclosed
+              y: null
+              label: Thousands only
+              evidence_claim_ids:
+                - EC-RED-005
+              source_ids:
+                - SRC-RED-003
+      annotations:
+        - label: Metric mix
+          x: Leaders trained percent
+          y: 90
+          note: Percent and counts need HRIS validation.
+          evidence_claim_ids:
+            - EC-RED-005
+          source_ids:
+            - SRC-RED-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-005
+    source_ids:
+      - SRC-RED-003
+    notes: null
+  - figure_id: F-RED-VIII-1
+    title: Red Ventures risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Risk heatmap spanning financial, SEO/platform, portfolio, people and regulatory/editorial risks.
+    purpose: Prioritize legal and financial diligence.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-RED-001
+          label: Private financial and leverage profile
+          severity: high
+          likelihood: unknown
+          rationale: Audited financials, asset-level contribution, cash, debt and EBITDA quality are not public.
+          evidence_claim_ids: &a13
+            - EC-RED-008
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-002
+          label: Valuation and ownership opacity
+          severity: medium
+          likelihood: unknown
+          rationale: CB Insights valuation does not disclose current ownership, preferences, debt or secondary transactions.
+          evidence_claim_ids: &a14
+            - EC-RED-001
+            - EC-RED-008
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-003
+          label: Traffic monetization and partner concentration
+          severity: high
+          likelihood: unknown
+          rationale: Audience scale does not reveal advertiser, lender, affiliate or partner concentration or conversion durability.
+          evidence_claim_ids: &a15
+            - EC-RED-004
+            - EC-RED-008
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-004
+          label: Portfolio complexity and capital allocation
+          severity: medium
+          likelihood: medium
+          rationale: Diverse portfolio requires shared services, governance and capital allocation discipline.
+          evidence_claim_ids: &a16
+            - EC-RED-002
+            - EC-RED-003
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-005
+          label: Competitive SEO and platform dependence
+          severity: high
+          likelihood: high
+          rationale: Digital media and marketplace assets can depend on search, affiliate networks and platform algorithms.
+          evidence_claim_ids: &a17
+            - EC-RED-002
+            - EC-RED-004
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-006
+          label: Editorial and AI-governance reputation risk
+          severity: medium
+          likelihood: medium
+          rationale: The CNET AI-corrections episode indicates governance risk when using automation in consumer advice content.
+          evidence_claim_ids: &a18
+            - EC-RED-007
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-007
+          label: Key-person and shared-services risk
+          severity: medium
+          likelihood: unknown
+          rationale: Public culture emphasizes central teams and leadership; succession, retention and allocation are private.
+          evidence_claim_ids: &a19
+            - EC-RED-005
+            - EC-RED-006
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+        - risk_id: R-RED-008
+          label: Regulatory/compliance exposure in financial and consumer verticals
+          severity: high
+          likelihood: unknown
+          rationale: Bankrate, mortgage, education and consumer advice assets may face advertising, lead-gen and financial-services compliance risks.
+          evidence_claim_ids: &a20
+            - EC-RED-003
+            - EC-RED-004
+            - EC-RED-007
+          source_ids:
+            - SRC-RED-001
+            - SRC-RED-002
+            - SRC-RED-005
+    rendering_guidance:
+      preferred_format: table_visual
+      display_notes: null
+    evidence_claim_ids:
+      - EC-RED-008
+      - EC-RED-001
+      - EC-RED-008
+      - EC-RED-004
+      - EC-RED-008
+      - EC-RED-002
+      - EC-RED-003
+      - EC-RED-002
+      - EC-RED-004
+      - EC-RED-007
+      - EC-RED-005
+      - EC-RED-006
+      - EC-RED-003
+      - EC-RED-004
+      - EC-RED-007
+    source_ids:
+      - SRC-RED-001
+      - SRC-RED-002
+      - SRC-RED-005
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-RED-001
+    claim: CB Insights lists Red Ventures as a $1B United States media-and-entertainment private unicorn that joined on 2015-01-07.
+    evidence_summary: This supports unicorn eligibility and latest public valuation anchor but not current economics.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-RED-001
+    quoted_evidence:
+      - source_id: SRC-RED-001
+        quote: Red Ventures | $1 | 1/7/2015 | United States | Fort Mill | Media & Entertainment | Silver Lake Partners; General Atlantic
+        location: CB Insights unicorn table row
+    analyst_interpretation: This supports unicorn eligibility and latest public valuation anchor but not current economics.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-I-1
+      figure_ids:
+        - F-RED-I-1
+      risk_ids:
+        - R-RED-001
+        - R-RED-002
+  - evidence_claim_id: EC-RED-002
+    claim: Red Ventures describes a global portfolio spanning seven U.S. businesses, a healthcare joint venture and strategic investments in Europe.
+    evidence_summary: The company-owned source supports a diversified portfolio model, but revenue and profitability by asset are private.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-RED-002
+    quoted_evidence:
+      - source_id: SRC-RED-002
+        quote: Our footprint spans seven U.S. businesses, a joint venture in healthcare, and strategic investments in Europe.
+        location: Red Ventures homepage
+    analyst_interpretation: The company-owned source supports a diversified portfolio model, but revenue and profitability by asset are private.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-II-1
+      figure_ids:
+        - F-RED-II-1
+      risk_ids:
+        - R-RED-004
+  - evidence_claim_id: EC-RED-003
+    claim: Red Ventures lists portfolio brands including Allconnect, Bankrate, RV EDU, RV Home Client Services, Lonely Planet, Sage Home Loans and The Points Guy.
+    evidence_summary: Public portfolio evidence supports diversification but not asset-level contribution, ownership or margins.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-RED-002
+    quoted_evidence:
+      - source_id: SRC-RED-002
+        quote: Allconnect; Bankrate; RV EDU; RV Home Client Services; Lonely Planet; Sage Home Loans; The Points Guy
+        location: Red Ventures homepage portfolio navigation
+    analyst_interpretation: Public portfolio evidence supports diversification but not asset-level contribution, ownership or margins.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-II-1
+      figure_ids:
+        - F-RED-II-1
+      risk_ids:
+        - R-RED-004
+  - evidence_claim_id: EC-RED-004
+    claim: Red Ventures says Bankrate helps over 100 million people a year compare rates, understand options and act with confidence.
+    evidence_summary: This is a large audience signal but not a revenue, conversion or profitability metric.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-RED-002
+    quoted_evidence:
+      - source_id: SRC-RED-002
+        quote: helping over 100 million people a year compare real rates, understand their options, and act with confidence
+        location: Red Ventures homepage Bankrate description
+    analyst_interpretation: This is a large audience signal but not a revenue, conversion or profitability metric.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-III-1
+      figure_ids:
+        - F-RED-III-1
+      risk_ids:
+        - R-RED-003
+  - evidence_claim_id: EC-RED-005
+    claim: Red Ventures states its portfolio employs thousands of people and that central teams/shared resources accelerate portfolio companies.
+    evidence_summary: This supports the operating-platform thesis but creates complexity around shared costs and talent allocation.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-RED-003
+    quoted_evidence:
+      - source_id: SRC-RED-003
+        quote: Our portfolio employs thousands of people around the world... central teams and shared resources unlock key advantages
+        location: About RV page
+    analyst_interpretation: This supports the operating-platform thesis but creates complexity around shared costs and talent allocation.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-VII-1
+      figure_ids:
+        - F-RED-VII-1
+      risk_ids:
+        - R-RED-007
+  - evidence_claim_id: EC-RED-006
+    claim: The Red Ventures leadership page says Ric Elias and Dan Feldstein co-founded Red Ventures in 2000 and lists Ric Elias as Co-Founder & CEO.
+    evidence_summary: Leadership continuity is public, but governance, ownership, succession and retention details are private.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-RED-004
+    quoted_evidence:
+      - source_id: SRC-RED-004
+        quote: Red Ventures was co-founded by Ric Elias and Dan Feldstein in 2000... Ric Elias Co-Founder & CEO
+        location: Leadership page
+    analyst_interpretation: Leadership continuity is public, but governance, ownership, succession and retention details are private.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-VII-1
+      figure_ids:
+        - F-RED-VII-1
+      risk_ids:
+        - R-RED-007
+  - evidence_claim_id: EC-RED-007
+    claim: The Verge reported CNET issued corrections on 41 of 77 AI-written stories and paused AI-tool use for the moment after scrutiny.
+    evidence_summary: This creates a historical editorial, reputational and AI-governance risk signal for Red Ventures media assets.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-RED-005
+    quoted_evidence:
+      - source_id: SRC-RED-005
+        quote: CNET issued corrections on 41 of the 77 stories the outlet published that were written using an AI tool.
+        location: The Verge article
+    analyst_interpretation: This creates a historical editorial, reputational and AI-governance risk signal for Red Ventures media assets.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-VIII-2
+      figure_ids:
+        - F-RED-VIII-1
+      risk_ids:
+        - R-RED-006
+        - R-RED-008
+  - evidence_claim_id: EC-RED-008
+    claim: Public audited financial statements, asset-level revenue, debt, cap table, customer concentration and transaction documents were not available in reviewed public sources.
+    evidence_summary: Financial and portfolio-quality diligence depends on private materials.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-RED-001
+      - SRC-RED-002
+    quoted_evidence: []
+    analyst_interpretation: Financial and portfolio-quality diligence depends on private materials.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-RED-I-2
+      figure_ids: []
+      risk_ids:
+        - R-RED-001
+        - R-RED-002
+        - R-RED-003
+sources:
+  - source_id: SRC-RED-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: market_database
+    reliability_notes: Public market database used for private-unicorn status and valuation.
+    archive_url: null
+  - source_id: SRC-RED-002
+    title: Red Ventures homepage
+    url: https://www.redventures.com/
+    publisher: Red Ventures
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-owned source for portfolio and business descriptions.
+    archive_url: null
+  - source_id: SRC-RED-003
+    title: About RV
+    url: https://www.redventures.com/about/
+    publisher: Red Ventures
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-owned source for culture, employee and learning-program claims.
+    archive_url: null
+  - source_id: SRC-RED-004
+    title: Leadership | Red Ventures
+    url: https://www.redventures.com/about/leadership
+    publisher: Red Ventures
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-owned source for leadership roster and co-founder/CEO claims.
+    archive_url: null
+  - source_id: SRC-RED-005
+    title: CNET found errors in more than half of its AI-written stories
+    url: https://www.theverge.com/2023/1/25/23571082/cnet-ai-written-stories-errors-red-ventures
+    publisher: The Verge
+    author: null
+    publication_date: 2023-01-25
+    accessed_date: 2026-05-19
+    source_type: independent_news
+    reliability_notes: Independent reporting on a historical media-quality and AI-content incident involving CNET under Red Ventures.
+    archive_url: null
+risk_register:
+  - risk_id: R-RED-001
+    risk_title: Private financial and leverage profile
+    risk_category: financial
+    severity: high
+    likelihood: unknown
+    description: Audited financials, asset-level contribution, cash, debt and EBITDA quality are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+    evidence_claim_ids: *a13
+    mitigation_or_diligence_request: Request audited financials, lender materials, asset-level P&Ls, cash/debt and covenant compliance.
+  - risk_id: R-RED-002
+    risk_title: Valuation and ownership opacity
+    risk_category: financing
+    severity: medium
+    likelihood: unknown
+    description: CB Insights valuation does not disclose current ownership, preferences, debt or secondary transactions.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+    evidence_claim_ids: *a14
+    mitigation_or_diligence_request: Request cap table, financing documents, debt agreements, option plan and transaction history.
+  - risk_id: R-RED-003
+    risk_title: Traffic monetization and partner concentration
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: Audience scale does not reveal advertiser, lender, affiliate or partner concentration or conversion durability.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - V.A
+    evidence_claim_ids: *a15
+    mitigation_or_diligence_request: Request revenue by partner/channel, traffic sources, conversion cohorts and compliance reviews.
+  - risk_id: R-RED-004
+    risk_title: Portfolio complexity and capital allocation
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Diverse portfolio requires shared services, governance and capital allocation discipline.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.A
+    evidence_claim_ids: *a16
+    mitigation_or_diligence_request: Review portfolio P&Ls, transfer pricing, shared-service allocations and capital-allocation process.
+  - risk_id: R-RED-005
+    risk_title: Competitive SEO and platform dependence
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: Digital media and marketplace assets can depend on search, affiliate networks and platform algorithms.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+    evidence_claim_ids: *a17
+    mitigation_or_diligence_request: Review traffic mix, SEO exposure, partner terms and downside scenarios.
+  - risk_id: R-RED-006
+    risk_title: Editorial and AI-governance reputation risk
+    risk_category: reputational
+    severity: medium
+    likelihood: medium
+    description: The CNET AI-corrections episode indicates governance risk when using automation in consumer advice content.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+    evidence_claim_ids: *a18
+    mitigation_or_diligence_request: Request AI content policy, editorial QA, corrections history and compliance/audit process.
+  - risk_id: R-RED-007
+    risk_title: Key-person and shared-services risk
+    risk_category: team
+    severity: medium
+    likelihood: unknown
+    description: Public culture emphasizes central teams and leadership; succession, retention and allocation are private.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+    evidence_claim_ids: *a19
+    mitigation_or_diligence_request: Request org chart, succession plan, retention metrics and shared-service staffing model.
+  - risk_id: R-RED-008
+    risk_title: Regulatory/compliance exposure in financial and consumer verticals
+    risk_category: regulatory
+    severity: high
+    likelihood: unknown
+    description: Bankrate, mortgage, education and consumer advice assets may face advertising, lead-gen and financial-services compliance risks.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+    evidence_claim_ids: *a20
+    mitigation_or_diligence_request: Have counsel review compliance policies, complaints, audits, regulator correspondence and partner contracts.
+diligence_gaps:
+  - gap_id: G-RED-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, KPI pack, cash/debt, forecast model and cap table.
+    why_it_matters: Required to underwrite valuation, runway, dilution and revenue quality.
+    suggested_source_or_request: Company CFO, board materials, accountants and financing counsel.
+    priority: high
+  - gap_id: G-RED-002
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top-customer or top-partner concentration, contracts, retention and reference calls.
+    why_it_matters: Public traction claims do not prove durable, diversified revenue.
+    suggested_source_or_request: Customer master, contracts, renewal cohorts and reference list.
+    priority: high
+  - gap_id: G-RED-003
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Legal docket, compliance audits, security reports, IP/data rights and incident history.
+    why_it_matters: Legal, regulatory, privacy and security issues can materially impair enterprise value.
+    suggested_source_or_request: Company counsel, security team, privacy counsel and insurance broker.
+    priority: high
+follow_up_requests:
+  - request_id: Q-RED-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, monthly KPI pack, cash/debt, forecast model, cap table and financing documents.
+    requested_from: company
+    priority: high
+  - request_id: Q-RED-002
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer/partner concentration, contracts, retention cohorts and permission for reference calls.
+    requested_from: company
+    priority: high
+  - request_id: Q-RED-003
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide counsel-prepared litigation/compliance schedule, security reports, IP/data-rights materials and incident history.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-RED-001
+    description: This is a public-source diligence snapshot. No founder interview, private data room, customer calls, audited financials, legal docket search, paid database export or confidential security reports were available.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - II.A
+      - III.A
+      - IV.A
+      - V.A
+      - VI.A
+      - VII.A
+      - VIII.A
+  - limitation_id: L-RED-002
+    description: Company-published claims are treated as evidence of public assertion unless independently corroborated; financial and customer claims require direct verification.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+    affected_section_ids:
+      - I.A
+      - III.A
+      - V.A

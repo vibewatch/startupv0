@@ -1,0 +1,2230 @@
+report_metadata:
+  report_title: Cognition AI Startup Diligence Report
+  target_company: Cognition AI
+  website: https://cognition.ai/
+  known_aliases:
+    - Cognition
+    - Devin
+  sector: Enterprise AI software engineering agents
+  geography: San Francisco, California / United States
+  company_stage: Private unicorn / growth-stage AI company
+  research_date: 2026-05-19
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built an existing-report exclusion list from reports/*-diligence-report.yaml and selected only uncovered slugs.
+    - Used CB Insights Global Unicorn Club as the primary market database for current private-unicorn status and latest known valuation.
+    - Reviewed public company-owned pages and independent third-party reporting available for Cognition AI.
+    - Marked audited financials, contracts, cap table, customer concentration, security reports, HRIS, legal docket detail and board materials as not_publicly_verifiable where not public.
+  included_jurisdictions:
+    - United States
+    - United Kingdom
+    - Singapore
+    - Global markets referenced by public materials
+  excluded_topics:
+    - No private data room, founder interview, customer calls, confidential security reports or paid databases were available.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Workflow request for three random uncovered unicorn diligence reports
+      type: workflow_request
+      date_received: 2026-05-19
+      notes: No founder deck or private materials were provided.
+founder_claims:
+  - founder_claim_id: FC-COG-001
+    claim_text: Cognition AI is an uncovered private unicorn valued at approximately $9.8B.
+    claim_source: CB Insights Global Unicorn Club
+    claim_date: 2024-04-24
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a1
+      - EC-COG-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request cap table and financing documents.
+  - founder_claim_id: FC-COG-002
+    claim_text: Devin can plan, write, test and ship production code using developer tools.
+    claim_source: Cognition homepage and Devin launch blog
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a2
+      - EC-COG-002
+      - EC-COG-006
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate with product telemetry and security review.
+  - founder_claim_id: FC-COG-003
+    claim_text: Devin has enterprise customer traction including a named Nubank migration case.
+    claim_source: Devin customer story
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a3
+      - EC-COG-005
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm contract value, renewal and customer reference.
+  - founder_claim_id: FC-COG-004
+    claim_text: Cognition disclosed a $21M Series A led by Founders Fund.
+    claim_source: Cognition Devin launch blog
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a4
+      - EC-COG-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm proceeds, preferences and runway.
+  - founder_claim_id: FC-COG-005
+    claim_text: Cognition has the team capacity to support leading enterprises and technology companies.
+    claim_source: Cognition homepage
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.A
+    verification_status: inconclusive
+    confidence: low
+    evidence_claim_ids:
+      - EC-COG-008
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request org chart, headcount and leadership materials.
+  - founder_claim_id: FC-COG-006
+    claim_text: Cognition security controls are sufficient for codebase access and autonomous workflow use.
+    claim_source: Public Devin security documentation capture
+    claim_date: null
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.A
+    verification_status: inconclusive
+    confidence: low
+    evidence_claim_ids:
+      - EC-COG-006
+      - EC-COG-009
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request SOC reports, pentest, isolation architecture and incident logs.
+executive_summary:
+  overall_assessment: Cognition AI is a credible, high-profile AI software-engineering unicorn with strong valuation and product-positioning signals, but public evidence is much thinner than the valuation implies. The diligence center of gravity is revenue quality, customer repeatability, security controls for source-code access, and durable technical differentiation.
+  investment_or_diligence_thesis: Proceed only to confirmatory diligence. Public sources support unicorn status, Devin capability claims and a named enterprise use case; investment reliance requires private financial, customer, security, legal and technical validation.
+  strongest_verified_claims:
+    - founder_claim_id: FC-COG-001
+      summary: CB Insights lists Cognition AI at $9.8B.
+      evidence_claim_ids: *a1
+    - founder_claim_id: FC-COG-002
+      summary: Cognition publicly describes Devin as an autonomous software-engineering agent.
+      evidence_claim_ids: *a2
+    - founder_claim_id: FC-COG-003
+      summary: The Devin launch blog reports a measurable SWE-bench result.
+      evidence_claim_ids: *a3
+    - founder_claim_id: FC-COG-004
+      summary: A Nubank case study provides a named customer proof point.
+      evidence_claim_ids: *a4
+  biggest_risks:
+    - risk_id: R-COG-001
+      summary: Revenue quality and burn are private
+    - risk_id: R-COG-002
+      summary: Valuation/cap-table opacity
+    - risk_id: R-COG-003
+      summary: Customer concentration and repeatability unknown
+    - risk_id: R-COG-004
+      summary: Competitive pressure in AI coding agents
+  key_evidence_gaps:
+    - Audited financials, ARR, burn, runway and cap table.
+    - Top-customer ARR, retention, ACV, NRR/GRR and renewal data.
+    - Security architecture, SOC reports, data retention, incident logs and subprocessors.
+    - Independent benchmark reproduction and production reliability metrics.
+    - Leadership roster, board, hiring plan and retention data.
+  recommended_next_steps:
+    - Start with security and data-access diligence because Devin touches code and tools.
+    - Reconcile valuation with cap table, preferences, cash, burn and ARR quality.
+    - Conduct customer references and technical bakeoffs against coding-agent alternatives.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Cognition has a strong public valuation signal and a disclosed early financing, but revenue quality, runway, cap table and unit economics are private.
+    founder_claim_ids:
+      - FC-COG-001
+      - FC-COG-004
+    evidence_claim_ids:
+      - EC-COG-001
+      - EC-COG-004
+      - EC-COG-007
+    risk_ids:
+      - R-COG-001
+      - R-COG-002
+    sections:
+      - section_id: I.A
+        title: Public financing, valuation and financial gaps
+        checklist_question_ids:
+          - I.A
+        summary: CB Insights and Cognition sources establish public valuation and financing anchors, while operating financials remain unavailable.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public sources support unicorn status but not financial quality.
+            evidence_claim_ids: &a5
+              - EC-COG-001
+              - EC-COG-004
+              - EC-COG-007
+            risk_ids:
+              - R-COG-001
+              - R-COG-002
+        hidden_risks:
+          - "Primary diligence risks: R-COG-001, R-COG-002."
+        evidence_gaps:
+          - Audited financials, ARR, gross margin, cash, debt, burn, forecasts and cap table.
+        follow_up_questions:
+          - Provide audited statements, KPI pack, board plan, financing documents and cap table.
+        table_ids:
+          - T-COG-I-1
+          - T-COG-I-2
+        figure_ids:
+          - F-COG-I-1
+        evidence_claim_ids: *a5
+  - chapter_id: II
+    title: Products
+    chapter_summary: Devin is positioned as an autonomous software-engineering agent with broad tool access and production-code workflows.
+    founder_claim_ids:
+      - FC-COG-002
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-006
+    risk_ids:
+      - R-COG-004
+      - R-COG-006
+    sections:
+      - section_id: II.A
+        title: Product capabilities and packaging
+        checklist_question_ids:
+          - II.A
+        summary: Public materials describe Devin planning, writing, testing and shipping code with developer-tool access; pricing and SKU economics are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Product capability claims are visible; commercial packaging needs diligence.
+            evidence_claim_ids: &a6
+              - EC-COG-002
+              - EC-COG-006
+            risk_ids:
+              - R-COG-004
+              - R-COG-006
+        hidden_risks:
+          - "Primary diligence risks: R-COG-004, R-COG-006."
+        evidence_gaps:
+          - Public SKU list, pricing, margins, support SLAs and roadmap.
+        follow_up_questions:
+          - Provide product analytics, SKU/pricing schedule, roadmap and support metrics.
+        table_ids:
+          - T-COG-II-1
+          - T-COG-II-2
+        figure_ids:
+          - F-COG-II-1
+        evidence_claim_ids: *a6
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: A named Nubank customer story is compelling, but customer concentration, ACV, retention and contract terms are private.
+    founder_claim_ids:
+      - FC-COG-003
+    evidence_claim_ids:
+      - EC-COG-005
+      - EC-COG-007
+    risk_ids:
+      - R-COG-003
+    sections:
+      - section_id: III.A
+        title: Named customers, use cases and supplier dependencies
+        checklist_question_ids:
+          - III.A
+        summary: The public customer evidence centers on a major migration use case; customer economics and concentration are not disclosed.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Named logo evidence exists but repeatability is not public.
+            evidence_claim_ids: &a7
+              - EC-COG-005
+              - EC-COG-007
+            risk_ids:
+              - R-COG-003
+        hidden_risks:
+          - "Primary diligence risks: R-COG-003."
+        evidence_gaps:
+          - Top customers, ACV, NRR/GRR, churn, implementation effort, cloud/model dependencies.
+        follow_up_questions:
+          - Provide top-20 customer schedule, contracts, cohort retention and supplier spend.
+        table_ids:
+          - T-COG-III-1
+          - T-COG-III-2
+        figure_ids:
+          - F-COG-III-1
+        evidence_claim_ids: *a7
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Cognition competes in a crowded AI coding-agent market where incumbents own developer workflows and distribution.
+    founder_claim_ids:
+      - FC-COG-002
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-003
+    risk_ids:
+      - R-COG-004
+    sections:
+      - section_id: IV.A
+        title: Competitive positioning
+        checklist_question_ids:
+          - IV.A
+        summary: Devin differentiates through autonomous workflow claims and benchmark performance, but competitive durability is unverified.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Technical differentiation must be validated against fast-moving competitors.
+            evidence_claim_ids: &a8
+              - EC-COG-002
+              - EC-COG-003
+            risk_ids:
+              - R-COG-004
+        hidden_risks:
+          - "Primary diligence risks: R-COG-004."
+        evidence_gaps:
+          - Win/loss data, competitive pricing, customer switching costs and product benchmarks.
+        follow_up_questions:
+          - Provide competitive win/loss, renewal reasons and technical comparison against coding-agent alternatives.
+        table_ids:
+          - T-COG-IV-1
+          - T-COG-IV-2
+        figure_ids:
+          - F-COG-IV-1
+        evidence_claim_ids: *a8
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Public distribution is enterprise-led around Devin and customer stories; funnel metrics and sales efficiency are private.
+    founder_claim_ids:
+      - FC-COG-003
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-005
+      - EC-COG-007
+    risk_ids:
+      - R-COG-001
+      - R-COG-003
+    sections:
+      - section_id: V.A
+        title: GTM motion and public demand signals
+        checklist_question_ids:
+          - V.A
+        summary: Public sources emphasize enterprise deployments and waitlist/contact motions, but pipeline, CAC and conversion are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: GTM appears enterprise-led but efficiency is not public.
+            evidence_claim_ids: &a9
+              - EC-COG-002
+              - EC-COG-005
+              - EC-COG-007
+            risk_ids:
+              - R-COG-001
+              - R-COG-003
+        hidden_risks:
+          - "Primary diligence risks: R-COG-001, R-COG-003."
+        evidence_gaps:
+          - Pipeline, sales cycle, CAC, payback, partner contribution and channel mix.
+        follow_up_questions:
+          - Provide sales funnel, pipeline conversion, CAC/payback and bookings history.
+        table_ids:
+          - T-COG-V-1
+          - T-COG-V-2
+        figure_ids:
+          - F-COG-V-1
+        evidence_claim_ids: *a9
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: The company emphasizes reasoning, long-term planning and benchmarked AI-agent performance; model and evaluation details remain limited.
+    founder_claim_ids:
+      - FC-COG-002
+    evidence_claim_ids:
+      - EC-COG-003
+      - EC-COG-006
+    risk_ids:
+      - R-COG-005
+      - R-COG-006
+    sections:
+      - section_id: VI.A
+        title: Technical roadmap, evaluation and R&D controls
+        checklist_question_ids:
+          - VI.A
+        summary: Public benchmark and tool-access disclosures support technical ambition while leaving model, data, safety and cost details private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: R&D quality is promising but hard to verify from public sources alone.
+            evidence_claim_ids: &a10
+              - EC-COG-003
+              - EC-COG-006
+            risk_ids:
+              - R-COG-005
+              - R-COG-006
+        hidden_risks:
+          - "Primary diligence risks: R-COG-005, R-COG-006."
+        evidence_gaps:
+          - Evaluation suite, model/data provenance, compute spend, release governance and security reviews.
+        follow_up_questions:
+          - Provide eval harness, model cards, data provenance, compute budget and release-gating evidence.
+        table_ids:
+          - T-COG-VI-1
+          - T-COG-VI-2
+        figure_ids:
+          - F-COG-VI-1
+        evidence_claim_ids: *a10
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Cognition publicly describes a small interdisciplinary AI team but detailed leadership, headcount and retention data are not available in reviewed sources.
+    founder_claim_ids:
+      - FC-COG-005
+    evidence_claim_ids:
+      - EC-COG-008
+    risk_ids:
+      - R-COG-007
+    sections:
+      - section_id: VII.A
+        title: Leadership, headcount and retention
+        checklist_question_ids:
+          - VII.A
+        summary: The public team surface is sparse relative to valuation, increasing reliance on private management diligence.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: People diligence is a major evidence gap.
+            evidence_claim_ids: &a11
+              - EC-COG-008
+            risk_ids:
+              - R-COG-007
+        hidden_risks:
+          - "Primary diligence risks: R-COG-007."
+        evidence_gaps:
+          - Full leadership roster, board, headcount by function, attrition, compensation and hiring plan.
+        follow_up_questions:
+          - Provide org chart, executive agreements, references, board list and HR metrics.
+        table_ids:
+          - T-COG-VII-1
+          - T-COG-VII-2
+        figure_ids:
+          - F-COG-VII-1
+        evidence_claim_ids: *a11
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: No public lawsuits were identified from reviewed sources, but AI code generation, source-code access and security controls create material legal diligence needs.
+    founder_claim_ids:
+      - FC-COG-006
+    evidence_claim_ids:
+      - EC-COG-006
+      - EC-COG-009
+    risk_ids:
+      - R-COG-006
+      - R-COG-008
+    sections:
+      - section_id: VIII.A
+        title: Security, IP and legal exposure
+        checklist_question_ids:
+          - VIII.A
+        summary: Devin workflow claims imply sensitive code/data access; security documentation in the captured source was not substantive.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Legal and security exposure must be tested before relying on production-code automation.
+            evidence_claim_ids: &a12
+              - EC-COG-006
+              - EC-COG-009
+            risk_ids:
+              - R-COG-006
+              - R-COG-008
+        hidden_risks:
+          - "Primary diligence risks: R-COG-006, R-COG-008."
+        evidence_gaps:
+          - Litigation search, IP assignments, OSS/SBOM, customer terms, SOC reports, pentest and incident logs.
+        follow_up_questions:
+          - Provide legal docket, IP/OSS materials, customer terms, SOC reports and incident history.
+        table_ids:
+          - T-COG-VIII-1
+          - T-COG-VIII-2
+        figure_ids:
+          - F-COG-VIII-1
+        evidence_claim_ids: *a12
+tables:
+  - table_id: T-COG-I-1
+    title: Public financing and valuation anchors
+    chapter_id: I
+    section_id: I.A
+    purpose: Summarize externally visible capital and valuation signals.
+    columns:
+      - name: date
+        description: Date
+      - name: event
+        description: Event
+      - name: amount_or_valuation
+        description: Amount or valuation
+      - name: investors
+        description: Investors
+      - name: status
+        description: Verification status
+    rows:
+      - row_id: COG-I-1-R1
+        values:
+          date: 2024-03
+          event: Series A disclosed in Devin launch blog
+          amount_or_valuation: $21M raised
+          investors: Founders Fund led; named angels/advisors also cited
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-COG-004
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-I-1-R2
+        values:
+          date: 2024-04-24
+          event: CB Insights unicorn entry
+          amount_or_valuation: $9.8B valuation
+          investors: Founders Fund; Khosla Ventures listed by CB Insights
+          status: verified
+        evidence_claim_ids:
+          - EC-COG-001
+        source_ids:
+          - SRC-COG-001
+    evidence_claim_ids:
+      - EC-COG-001
+      - EC-COG-004
+    source_ids:
+      - SRC-COG-001
+      - SRC-COG-003
+    notes: Cap-table economics, proceeds and preferences are not public.
+  - table_id: T-COG-I-2
+    title: Financial-quality diligence gap matrix
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify private records needed to underwrite the public valuation.
+    columns:
+      - name: topic
+        description: Topic
+      - name: public_signal
+        description: Public signal
+      - name: diligence_request
+        description: Diligence request
+      - name: status
+        description: Verification status
+    rows:
+      - row_id: COG-I-2-R1
+        values:
+          topic: Revenue/ARR
+          public_signal: No audited revenue or ARR found
+          diligence_request: ARR bridge, billings, revenue-recognition memo
+          status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-COG-007
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-I-2-R2
+        values:
+          topic: Runway and burn
+          public_signal: Not disclosed
+          diligence_request: Cash, debt, burn, forecast and board plan
+          status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-COG-007
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-I-2-R3
+        values:
+          topic: Ownership economics
+          public_signal: Investors named publicly
+          diligence_request: Fully diluted cap table and liquidation stack
+          status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-COG-001
+          - EC-COG-004
+        source_ids:
+          - SRC-COG-001
+          - SRC-COG-003
+    evidence_claim_ids:
+      - EC-COG-007
+    source_ids:
+      - SRC-COG-001
+      - SRC-COG-002
+    notes: null
+  - table_id: T-COG-II-1
+    title: Product capability matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map Devin public product claims to diligence checks.
+    columns:
+      - name: capability
+        description: Capability
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_test
+        description: Diligence test
+      - name: status
+        description: Status
+    rows:
+      - row_id: COG-II-1-R1
+        values:
+          capability: Plan/write/test/ship code
+          public_evidence: Company homepage states Devin does this on its own
+          diligence_test: Live customer workflow review and telemetry
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-COG-002
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-II-1-R2
+        values:
+          capability: Developer-tool access
+          public_evidence: Blog cites shell, editor and browser in sandbox
+          diligence_test: Security architecture and audit logs
+          status: verified
+        evidence_claim_ids:
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-II-1-R3
+        values:
+          capability: Human collaboration
+          public_evidence: Blog states progress reporting and feedback loops
+          diligence_test: Admin controls and approval workflows
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-003
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-006
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+  - table_id: T-COG-II-2
+    title: Packaging and pricing diligence requests
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture commercial product gaps.
+    columns:
+      - name: item
+        description: Item
+      - name: public_status
+        description: Public status
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: COG-II-2-R1
+        values:
+          item: Pricing tiers
+          public_status: Not found in reviewed sources
+          risk: Enterprise discounting and margin unknown
+          request: Price book and discount history
+        evidence_claim_ids:
+          - EC-COG-007
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-II-2-R2
+        values:
+          item: SLA/support
+          public_status: Not public in reviewed sources
+          risk: Support burden may be high for production-code workflows
+          request: Support tickets, SLA, escalation metrics
+        evidence_claim_ids:
+          - EC-COG-007
+        source_ids:
+          - SRC-COG-002
+    evidence_claim_ids:
+      - EC-COG-007
+    source_ids:
+      - SRC-COG-002
+    notes: null
+  - table_id: T-COG-III-1
+    title: Public customer and use-case evidence
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize named customer evidence available publicly.
+    columns:
+      - name: customer
+        description: Customer
+      - name: use_case
+        description: Use case
+      - name: public_outcome
+        description: Public outcome
+      - name: gap
+        description: Gap
+    rows:
+      - row_id: COG-III-1-R1
+        values:
+          customer: Nubank
+          use_case: Core ETL monolith refactor to sub-modules
+          public_outcome: Company-hosted story cites 8-12x efficiency and over 20x cost savings
+          gap: Contract value, renewal and independent reference
+        evidence_claim_ids:
+          - EC-COG-005
+        source_ids:
+          - SRC-COG-004
+      - row_id: COG-III-1-R2
+        values:
+          customer: Large institutions
+          use_case: Production-code workflows
+          public_outcome: Homepage says deployed at some of the largest and most complex institutions
+          gap: Customer names, count and concentration
+        evidence_claim_ids:
+          - EC-COG-002
+        source_ids:
+          - SRC-COG-002
+    evidence_claim_ids:
+      - EC-COG-005
+      - EC-COG-002
+    source_ids:
+      - SRC-COG-004
+      - SRC-COG-002
+    notes: null
+  - table_id: T-COG-III-2
+    title: Supplier and dependency diligence
+    chapter_id: III
+    section_id: III.A
+    purpose: Frame dependencies implied by product architecture.
+    columns:
+      - name: dependency
+        description: Dependency
+      - name: role
+        description: Role
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_need
+        description: Diligence need
+    rows:
+      - row_id: COG-III-2-R1
+        values:
+          dependency: Customer source-code repositories
+          role: Input context and work surface
+          public_evidence: Devin works inside customer codebase
+          diligence_need: Data access, retention and isolation controls
+        evidence_claim_ids:
+          - EC-COG-002
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-002
+          - SRC-COG-003
+      - row_id: COG-III-2-R2
+        values:
+          dependency: Compute/model infrastructure
+          role: Agent execution and inference
+          public_evidence: Not disclosed
+          diligence_need: Cloud/model vendor spend and continuity plan
+        evidence_claim_ids:
+          - EC-COG-007
+        source_ids:
+          - SRC-COG-002
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-006
+      - EC-COG-007
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+  - table_id: T-COG-IV-1
+    title: Competitive comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare Cognition against major AI software-development alternatives.
+    columns:
+      - name: competitor
+        description: Competitor
+      - name: segment
+        description: Segment
+      - name: overlap
+        description: Product overlap
+      - name: target_differentiator
+        description: Cognition differentiator
+      - name: diligence_caveat
+        description: Caveat
+    rows:
+      - row_id: COG-IV-1-R1
+        values:
+          competitor: GitHub Copilot / coding assistants
+          segment: IDE and developer workflow AI
+          overlap: Code generation and developer productivity
+          target_differentiator: Autonomous agent positioning
+          diligence_caveat: Distribution advantage favors incumbents
+        evidence_claim_ids:
+          - EC-COG-002
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-IV-1-R2
+        values:
+          competitor: OpenAI / Anthropic coding agents
+          segment: Foundation-model platforms
+          overlap: Agentic code tasks and tool use
+          target_differentiator: Focused Devin product and benchmark claims
+          diligence_caveat: Model/platform competition evolves quickly
+        evidence_claim_ids:
+          - EC-COG-003
+        source_ids:
+          - SRC-COG-003
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-003
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+  - table_id: T-COG-IV-2
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Score public evidence on key competitive axes.
+    columns:
+      - name: axis
+        description: Axis
+      - name: cognition_signal
+        description: Cognition signal
+      - name: competitor_pressure
+        description: Competitor pressure
+      - name: evidence_strength
+        description: Evidence strength
+    rows:
+      - row_id: COG-IV-2-R1
+        values:
+          axis: Autonomy
+          cognition_signal: Plans and executes complex tasks requiring thousands of decisions
+          competitor_pressure: Other agents converging
+          evidence_strength: medium
+        evidence_claim_ids:
+          - EC-COG-003
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-IV-2-R2
+        values:
+          axis: Enterprise trust
+          cognition_signal: Claims large institution deployment
+          competitor_pressure: Incumbents have procurement trust
+          evidence_strength: low-medium
+        evidence_claim_ids:
+          - EC-COG-002
+        source_ids:
+          - SRC-COG-002
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-003
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+  - table_id: T-COG-V-1
+    title: Distribution and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Identify observable routes to market.
+    columns:
+      - name: channel
+        description: Channel
+      - name: public_evidence
+        description: Public evidence
+      - name: commercial_question
+        description: Commercial question
+      - name: status
+        description: Status
+    rows:
+      - row_id: COG-V-1-R1
+        values:
+          channel: Enterprise direct sales
+          public_evidence: Homepage references largest and complex institutions
+          commercial_question: Quota capacity, pipeline and ACV
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-COG-002
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-V-1-R2
+        values:
+          channel: Customer-story marketing
+          public_evidence: Nubank case study
+          commercial_question: Conversion from proof points to bookings
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-COG-005
+        source_ids:
+          - SRC-COG-004
+      - row_id: COG-V-1-R3
+        values:
+          channel: Waitlist/contact
+          public_evidence: Blog says join waitlist or get in touch
+          commercial_question: Lead volume and conversion
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-COG-003
+        source_ids:
+          - SRC-COG-003
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-003
+      - EC-COG-005
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+      - SRC-COG-004
+    notes: null
+  - table_id: T-COG-V-2
+    title: Marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Capture public demand-generation evidence.
+    columns:
+      - name: signal
+        description: Signal
+      - name: evidence
+        description: Evidence
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: COG-V-2-R1
+        values:
+          signal: Benchmark launch
+          evidence: SWE-bench 13.86% claim
+          risk: Benchmark may overstate production value
+          request: Pipeline attribution by launch campaign
+        evidence_claim_ids:
+          - EC-COG-003
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-V-2-R2
+        values:
+          signal: Named logo case study
+          evidence: Nubank story
+          risk: May not represent repeatable ACV
+          request: Case-study conversion and reference permissions
+        evidence_claim_ids:
+          - EC-COG-005
+        source_ids:
+          - SRC-COG-004
+    evidence_claim_ids:
+      - EC-COG-003
+      - EC-COG-005
+    source_ids:
+      - SRC-COG-003
+      - SRC-COG-004
+    notes: null
+  - table_id: T-COG-VI-1
+    title: R&D and evaluation signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Summarize public technical proof points.
+    columns:
+      - name: signal
+        description: Signal
+      - name: public_metric
+        description: Public metric
+      - name: source
+        description: Source
+      - name: diligence_test
+        description: Diligence test
+    rows:
+      - row_id: COG-VI-1-R1
+        values:
+          signal: SWE-bench completion
+          public_metric: 13.86% end-to-end on random 25% subset
+          source: Cognition blog
+          diligence_test: Reproduce against current benchmark and customer tasks
+        evidence_claim_ids:
+          - EC-COG-003
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-VI-1-R2
+        values:
+          signal: Fine-tuned customer workflow
+          public_metric: Task completion doubled and task speed improved 4x in Nubank story
+          source: Devin customer story
+          diligence_test: Review eval set and deployment telemetry
+        evidence_claim_ids:
+          - EC-COG-005
+        source_ids:
+          - SRC-COG-004
+    evidence_claim_ids:
+      - EC-COG-003
+      - EC-COG-005
+    source_ids:
+      - SRC-COG-003
+      - SRC-COG-004
+    notes: null
+  - table_id: T-COG-VI-2
+    title: R&D governance gap matrix
+    chapter_id: VI
+    section_id: VI.A
+    purpose: List controls required for agentic coding diligence.
+    columns:
+      - name: area
+        description: Area
+      - name: public_status
+        description: Public status
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: COG-VI-2-R1
+        values:
+          area: Model/data provenance
+          public_status: Not disclosed
+          risk: IP and compliance exposure
+          request: Training/eval data lineage and model cards
+        evidence_claim_ids:
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-VI-2-R2
+        values:
+          area: Release gating
+          public_status: Not disclosed
+          risk: Unsafe autonomous changes
+          request: Safety tests, approval workflows and rollback policy
+        evidence_claim_ids:
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-003
+    evidence_claim_ids:
+      - EC-COG-006
+    source_ids:
+      - SRC-COG-003
+    notes: null
+  - table_id: T-COG-VII-1
+    title: Public management and role signals
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Record people evidence from public pages.
+    columns:
+      - name: role_or_group
+        description: Role or group
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_caveat
+        description: Diligence caveat
+      - name: status
+        description: Status
+    rows:
+      - row_id: COG-VII-1-R1
+        values:
+          role_or_group: Interdisciplinary AI team
+          public_evidence: Homepage describes team of interdisciplinary makers
+          diligence_caveat: No full roster or retention data in reviewed source
+          status: inconclusive
+        evidence_claim_ids:
+          - EC-COG-008
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-VII-1-R2
+        values:
+          role_or_group: Enterprise support team
+          public_evidence: Homepage invites candidates to support leading enterprises and tech companies
+          diligence_caveat: Support scale and coverage unknown
+          status: inconclusive
+        evidence_claim_ids:
+          - EC-COG-008
+        source_ids:
+          - SRC-COG-002
+    evidence_claim_ids:
+      - EC-COG-008
+    source_ids:
+      - SRC-COG-002
+    notes: null
+  - table_id: T-COG-VII-2
+    title: Headcount and hiring diligence gaps
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Frame people data needed for valuation diligence.
+    columns:
+      - name: topic
+        description: Topic
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: COG-VII-2-R1
+        values:
+          topic: Headcount by function
+          public_signal: Not disclosed in reviewed sources
+          request: HRIS export and hiring plan
+          priority: high
+        evidence_claim_ids:
+          - EC-COG-008
+        source_ids:
+          - SRC-COG-002
+      - row_id: COG-VII-2-R2
+        values:
+          topic: Executive retention
+          public_signal: Not disclosed
+          request: Employment agreements, equity vesting and retention plan
+          priority: high
+        evidence_claim_ids:
+          - EC-COG-008
+        source_ids:
+          - SRC-COG-002
+    evidence_claim_ids:
+      - EC-COG-008
+    source_ids:
+      - SRC-COG-002
+    notes: null
+  - table_id: T-COG-VIII-1
+    title: Legal/IP matter summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize public legal findings and missing records.
+    columns:
+      - name: matter
+        description: Matter
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Status
+      - name: diligence_request
+        description: Diligence request
+    rows:
+      - row_id: COG-VIII-1-R1
+        values:
+          matter: Pending lawsuits
+          public_evidence: No specific lawsuit source reviewed in this public-source sweep
+          status: not_publicly_verifiable
+          diligence_request: Counsel litigation schedule and docket search
+        evidence_claim_ids:
+          - EC-COG-009
+        source_ids:
+          - SRC-COG-005
+      - row_id: COG-VIII-1-R2
+        values:
+          matter: AI-generated code IP
+          public_evidence: Product writes and fixes code inside customer workflows
+          status: partially_verified
+          diligence_request: Customer terms, indemnity, OSS and IP policy
+        evidence_claim_ids:
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-003
+    evidence_claim_ids:
+      - EC-COG-006
+      - EC-COG-009
+    source_ids:
+      - SRC-COG-003
+      - SRC-COG-005
+    notes: null
+  - table_id: T-COG-VIII-2
+    title: Security and compliance diligence matrix
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Identify controls needed because Devin handles code and tools.
+    columns:
+      - name: control_area
+        description: Control area
+      - name: public_signal
+        description: Public signal
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: COG-VIII-2-R1
+        values:
+          control_area: Sandbox and tool isolation
+          public_signal: Blog mentions sandboxed compute with shell/editor/browser
+          risk: Code or secret exposure if isolation fails
+          request: Architecture, pentest and logging evidence
+        evidence_claim_ids:
+          - EC-COG-006
+        source_ids:
+          - SRC-COG-003
+      - row_id: COG-VIII-2-R2
+        values:
+          control_area: Security attestations
+          public_signal: Fetched security page did not provide substantive controls
+          risk: Enterprise procurement blocker
+          request: SOC reports, ISO certificate and incident history
+        evidence_claim_ids:
+          - EC-COG-009
+        source_ids:
+          - SRC-COG-005
+    evidence_claim_ids:
+      - EC-COG-006
+      - EC-COG-009
+    source_ids:
+      - SRC-COG-003
+      - SRC-COG-005
+    notes: null
+figures:
+  - figure_id: F-COG-I-1
+    title: Cognition public valuation trajectory
+    chapter_id: I
+    section_id: I.A
+    figure_type: chart
+    description: Line/bar view of public financing and valuation anchors.
+    purpose: Frame valuation jump and cap-table diligence request.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD billions
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation/raised capital anchors
+          unit: USD billions
+          data_points:
+            - x: Series A disclosed
+              y: 0.021
+              label: $21M Series A
+              evidence_claim_ids:
+                - EC-COG-004
+              source_ids:
+                - SRC-COG-003
+            - x: CB Insights valuation
+              y: 9.8
+              label: $9.8B valuation
+              evidence_claim_ids:
+                - EC-COG-001
+              source_ids:
+                - SRC-COG-001
+      annotations:
+        - label: Cap table private
+          x: CB Insights valuation
+          y: 9.8
+          note: Public valuation does not disclose preferences, ownership or secondary pricing.
+          evidence_claim_ids:
+            - EC-COG-001
+          source_ids:
+            - SRC-COG-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-001
+      - EC-COG-004
+    source_ids:
+      - SRC-COG-001
+      - SRC-COG-003
+    notes: null
+  - figure_id: F-COG-II-1
+    title: Devin product workflow architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Conceptual product workflow based on public descriptions.
+    purpose: Show sensitive handoffs requiring technical/security diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user
+          label: Engineer / reviewer
+          node_type: user
+          description: Human provides goals and feedback
+          evidence_claim_ids:
+            - EC-COG-006
+          source_ids:
+            - SRC-COG-003
+        - node_id: agent
+          label: Devin agent
+          node_type: service
+          description: Plans, writes, tests and ships code
+          evidence_claim_ids:
+            - EC-COG-002
+          source_ids:
+            - SRC-COG-002
+        - node_id: tools
+          label: Sandbox tools
+          node_type: infrastructure
+          description: Shell, editor and browser in sandbox
+          evidence_claim_ids:
+            - EC-COG-006
+          source_ids:
+            - SRC-COG-003
+        - node_id: repo
+          label: Customer codebase
+          node_type: database
+          description: Repository context and code changes
+          evidence_claim_ids:
+            - EC-COG-002
+          source_ids:
+            - SRC-COG-002
+      edges:
+        - edge_id: e1
+          from_node_id: user
+          to_node_id: agent
+          relationship: prompts/reviews
+          data_or_dependency: task goals and feedback
+          evidence_claim_ids:
+            - EC-COG-006
+          source_ids:
+            - SRC-COG-003
+        - edge_id: e2
+          from_node_id: agent
+          to_node_id: tools
+          relationship: uses
+          data_or_dependency: execution environment
+          evidence_claim_ids:
+            - EC-COG-006
+          source_ids:
+            - SRC-COG-003
+        - edge_id: e3
+          from_node_id: tools
+          to_node_id: repo
+          relationship: reads/writes/tests
+          data_or_dependency: source code and test results
+          evidence_claim_ids:
+            - EC-COG-002
+          source_ids:
+            - SRC-COG-002
+      boundaries:
+        - boundary_id: b1
+          label: Customer-controlled environment to verify
+          node_ids:
+            - repo
+            - tools
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-006
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+  - figure_id: F-COG-III-1
+    title: Public customer proof-point chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Bar chart of public customer evidence counts and disclosed use-case metrics.
+    purpose: Separate named proof points from undisclosed customer concentration.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public customer evidence
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count or multiple
+        unit: mixed
+        scale: linear
+      series:
+        - series_id: customer_signals
+          name: Public signals
+          unit: mixed
+          data_points:
+            - x: Named customer stories reviewed
+              y: 1
+              label: Nubank named story
+              evidence_claim_ids:
+                - EC-COG-005
+              source_ids:
+                - SRC-COG-004
+            - x: Efficiency multiple cited
+              y: 12
+              label: Up to 12x engineering-hours improvement
+              evidence_claim_ids:
+                - EC-COG-005
+              source_ids:
+                - SRC-COG-004
+            - x: Top customer concentration disclosed
+              y: null
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-COG-007
+              source_ids:
+                - SRC-COG-002
+      annotations:
+        - label: Concentration gap
+          x: Top customer concentration disclosed
+          y: null
+          note: Top-account ARR and renewal data require private schedules.
+          evidence_claim_ids:
+            - EC-COG-007
+          source_ids:
+            - SRC-COG-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-005
+      - EC-COG-007
+    source_ids:
+      - SRC-COG-004
+      - SRC-COG-002
+    notes: null
+  - figure_id: F-COG-IV-1
+    title: AI coding-agent competitive map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative market map using public positioning.
+    purpose: Place Cognition among incumbent assistants and AI-agent platforms.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Workflow autonomy
+          low_label: Assistive
+          high_label: Autonomous
+        y_axis:
+          label: Distribution control
+          low_label: Niche/startup
+          high_label: Incumbent platform
+      segments:
+        - segment_id: assistants
+          name: Coding assistants
+          description: IDE-integrated copilots and assistants
+        - segment_id: agents
+          name: Autonomous agents
+          description: Agents that plan and execute multi-step engineering work
+      entities:
+        - entity_id: cognition
+          name: Cognition Devin
+          entity_type: target_company
+          segment_id: agents
+          x_value: 8
+          y_value: 4
+          attributes:
+            note: Autonomous positioning
+          evidence_claim_ids:
+            - EC-COG-002
+            - EC-COG-003
+          source_ids:
+            - SRC-COG-002
+            - SRC-COG-003
+        - entity_id: incumbents
+          name: Developer-platform incumbents
+          entity_type: competitor
+          segment_id: assistants
+          x_value: 5
+          y_value: 9
+          attributes:
+            note: Distribution advantage
+          evidence_claim_ids:
+            - EC-COG-002
+          source_ids:
+            - SRC-COG-002
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-003
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+  - figure_id: F-COG-V-1
+    title: Observable GTM signal mix
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Bar chart of visible GTM signals from reviewed public sources.
+    purpose: Highlight that public GTM evidence is sparse and enterprise-led.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Signal type
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public item count
+        unit: items
+        scale: linear
+      series:
+        - series_id: gtm
+          name: Reviewed public GTM signals
+          unit: items
+          data_points:
+            - x: Homepage enterprise claim
+              y: 1
+              label: Large institutions claim
+              evidence_claim_ids:
+                - EC-COG-002
+              source_ids:
+                - SRC-COG-002
+            - x: Named case study
+              y: 1
+              label: Nubank story
+              evidence_claim_ids:
+                - EC-COG-005
+              source_ids:
+                - SRC-COG-004
+            - x: Pricing pages found
+              y: 0
+              label: No public pricing found
+              evidence_claim_ids:
+                - EC-COG-007
+              source_ids:
+                - SRC-COG-002
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-002
+      - EC-COG-005
+      - EC-COG-007
+    source_ids:
+      - SRC-COG-002
+      - SRC-COG-004
+    notes: null
+  - figure_id: F-COG-VI-1
+    title: R&D evaluation and workflow map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Technical evidence map from benchmark to customer deployment.
+    purpose: Show where independent validation is needed.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: bench
+          label: SWE-bench evaluation
+          node_type: other
+          description: 13.86% public result
+          evidence_claim_ids:
+            - EC-COG-003
+          source_ids:
+            - SRC-COG-003
+        - node_id: customer_eval
+          label: Customer eval set
+          node_type: other
+          description: Nubank fine-tuning/evaluation set
+          evidence_claim_ids:
+            - EC-COG-005
+          source_ids:
+            - SRC-COG-004
+        - node_id: prod
+          label: Production workflow
+          node_type: service
+          description: Autonomous code changes reviewed by humans
+          evidence_claim_ids:
+            - EC-COG-002
+            - EC-COG-005
+          source_ids:
+            - SRC-COG-002
+            - SRC-COG-004
+      edges:
+        - edge_id: e1
+          from_node_id: bench
+          to_node_id: prod
+          relationship: supports but does not prove
+          data_or_dependency: benchmark generalization
+          evidence_claim_ids:
+            - EC-COG-003
+          source_ids:
+            - SRC-COG-003
+        - edge_id: e2
+          from_node_id: customer_eval
+          to_node_id: prod
+          relationship: fine-tunes/evaluates
+          data_or_dependency: customer task examples
+          evidence_claim_ids:
+            - EC-COG-005
+          source_ids:
+            - SRC-COG-004
+      boundaries:
+        - boundary_id: b1
+          label: Independent validation required
+          node_ids:
+            - bench
+            - customer_eval
+            - prod
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-003
+      - EC-COG-005
+    source_ids:
+      - SRC-COG-003
+      - SRC-COG-004
+    notes: null
+  - figure_id: F-COG-VII-1
+    title: Public people disclosure chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: chart
+    description: Chart of people-related public disclosure anchors.
+    purpose: Show scarcity of public HR data.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: People disclosure
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Publicly disclosed count
+        unit: items
+        scale: linear
+      series:
+        - series_id: people
+          name: Reviewed people signals
+          unit: items
+          data_points:
+            - x: Team description
+              y: 1
+              label: Interdisciplinary makers
+              evidence_claim_ids:
+                - EC-COG-008
+              source_ids:
+                - SRC-COG-002
+            - x: Full leadership roster
+              y: 0
+              label: Not found in reviewed sources
+              evidence_claim_ids:
+                - EC-COG-008
+              source_ids:
+                - SRC-COG-002
+            - x: Headcount by function
+              y: 0
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-COG-008
+              source_ids:
+                - SRC-COG-002
+      annotations:
+        - label: HR diligence gap
+          x: Headcount by function
+          y: 0
+          note: Request HRIS and org chart.
+          evidence_claim_ids:
+            - EC-COG-008
+          source_ids:
+            - SRC-COG-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-008
+    source_ids:
+      - SRC-COG-002
+    notes: null
+  - figure_id: F-COG-VIII-1
+    title: Cognition risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Risk heatmap across financial, technical, security and legal diligence priorities.
+    purpose: Prioritize confirmatory diligence before investment reliance.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-COG-001
+          label: Revenue quality and burn are private
+          severity: high
+          likelihood: unknown
+          rationale: No audited financials, ARR bridge, gross margin, cash, debt or burn data were publicly available.
+          evidence_claim_ids: &a13
+            - EC-COG-007
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-002
+          label: Valuation/cap-table opacity
+          severity: high
+          likelihood: medium
+          rationale: The public valuation is large relative to limited public financing economics and ownership detail.
+          evidence_claim_ids: &a14
+            - EC-COG-001
+            - EC-COG-004
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-003
+          label: Customer concentration and repeatability unknown
+          severity: high
+          likelihood: unknown
+          rationale: Named customer evidence is limited and does not disclose ACV, retention, concentration or deployment breadth.
+          evidence_claim_ids: &a15
+            - EC-COG-005
+            - EC-COG-007
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-004
+          label: Competitive pressure in AI coding agents
+          severity: high
+          likelihood: high
+          rationale: AI coding is intensely competitive against well-funded labs, incumbents and developer-platform distribution.
+          evidence_claim_ids: &a16
+            - EC-COG-002
+            - EC-COG-003
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-005
+          label: Benchmark-to-production gap
+          severity: medium
+          likelihood: medium
+          rationale: SWE-bench and demos may not predict reliability, security and maintainability in enterprise production codebases.
+          evidence_claim_ids: &a17
+            - EC-COG-003
+            - EC-COG-005
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-006
+          label: Code/data security exposure
+          severity: critical
+          likelihood: unknown
+          rationale: Autonomous agents with codebase/tool access can create IP, data-leakage, auditability and change-control exposure.
+          evidence_claim_ids: &a18
+            - EC-COG-006
+            - EC-COG-009
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-007
+          label: Key-person and hiring risk
+          severity: medium
+          likelihood: unknown
+          rationale: Public team disclosure is thin for a company valued near $10B.
+          evidence_claim_ids: &a19
+            - EC-COG-008
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+        - risk_id: R-COG-008
+          label: Regulatory/IP responsibility for generated code
+          severity: medium
+          likelihood: medium
+          rationale: Use of AI-generated code may raise IP provenance, OSS license and customer liability questions.
+          evidence_claim_ids: &a20
+            - EC-COG-006
+          source_ids:
+            - SRC-COG-001
+            - SRC-COG-002
+            - SRC-COG-003
+    rendering_guidance:
+      preferred_format: table_visual
+      display_notes: null
+    evidence_claim_ids:
+      - EC-COG-007
+      - EC-COG-001
+      - EC-COG-004
+      - EC-COG-005
+      - EC-COG-007
+      - EC-COG-002
+      - EC-COG-003
+      - EC-COG-003
+      - EC-COG-005
+      - EC-COG-006
+      - EC-COG-009
+      - EC-COG-008
+      - EC-COG-006
+    source_ids:
+      - SRC-COG-001
+      - SRC-COG-002
+      - SRC-COG-003
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-COG-001
+    claim: CB Insights lists Cognition AI as a $9.8B United States enterprise-tech private unicorn that joined on 2024-04-24.
+    evidence_summary: This supports current unicorn eligibility and the latest known public valuation anchor, but not cap-table economics or secondary pricing.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-COG-001
+    quoted_evidence:
+      - source_id: SRC-COG-001
+        quote: Cognition AI | $9.8 | 4/24/2024 | United States | San Francisco | Enterprise Tech | Founders Fund; Khosla Ventures
+        location: CB Insights unicorn table row
+    analyst_interpretation: This supports current unicorn eligibility and the latest known public valuation anchor, but not cap-table economics or secondary pricing.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-I-1
+      figure_ids:
+        - F-COG-I-1
+      risk_ids:
+        - R-COG-001
+        - R-COG-002
+  - evidence_claim_id: EC-COG-002
+    claim: Cognition states that Devin plans, writes, tests and ships production code and is deployed at large, complex institutions.
+    evidence_summary: Company positioning supports an autonomous software-engineering-agent product thesis; production deployment claims need customer contract and security validation.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-COG-002
+    quoted_evidence:
+      - source_id: SRC-COG-002
+        quote: Devin plans, writes, tests, and ships production code on its own... deployed at some of the largest and most complex institutions in the world.
+        location: Cognition homepage
+    analyst_interpretation: Company positioning supports an autonomous software-engineering-agent product thesis; production deployment claims need customer contract and security validation.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-II-1
+      figure_ids:
+        - F-COG-II-1
+      risk_ids:
+        - R-COG-004
+  - evidence_claim_id: EC-COG-003
+    claim: Cognition reported Devin resolved 13.86% of SWE-bench issues end-to-end on a random 25% subset, versus a prior 1.96% state of the art.
+    evidence_summary: Benchmark claim is a measurable technical signal but is company-published and should be validated against independent benchmarks and customer outcomes.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-COG-003
+    quoted_evidence:
+      - source_id: SRC-COG-003
+        quote: Devin correctly resolves 13.86%* of the issues end-to-end, far exceeding the previous state-of-the-art of 1.96%.
+        location: Introducing Devin blog
+    analyst_interpretation: Benchmark claim is a measurable technical signal but is company-published and should be validated against independent benchmarks and customer outcomes.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-VI-1
+      figure_ids:
+        - F-COG-VI-1
+      risk_ids:
+        - R-COG-005
+  - evidence_claim_id: EC-COG-004
+    claim: Cognition disclosed a $21M Series A led by Founders Fund in the Devin announcement.
+    evidence_summary: The financing amount and lead investor are public, but current ownership, preferences and runway remain private.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-COG-003
+    quoted_evidence:
+      - source_id: SRC-COG-003
+        quote: We are well funded, including a $21 million Series A led by Founders Fund.
+        location: Introducing Devin blog
+    analyst_interpretation: The financing amount and lead investor are public, but current ownership, preferences and runway remain private.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-I-1
+      figure_ids:
+        - F-COG-I-1
+      risk_ids:
+        - R-COG-002
+  - evidence_claim_id: EC-COG-005
+    claim: A company-hosted Nubank story says Devin helped a multi-million-line ETL migration produce 8-12x engineering-time efficiency and over 20x cost savings.
+    evidence_summary: This is a strong named-customer use case but remains company-hosted; diligence should confirm deployment scope, contract value, renewal and reference quality.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-COG-004
+    quoted_evidence:
+      - source_id: SRC-COG-004
+        quote: engineers were able to delegate Devin... achieve a 12x efficiency improvement... and over 20x cost savings.
+        location: Devin/Nubank customer story
+    analyst_interpretation: This is a strong named-customer use case but remains company-hosted; diligence should confirm deployment scope, contract value, renewal and reference quality.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-III-1
+      figure_ids:
+        - F-COG-III-1
+      risk_ids:
+        - R-COG-003
+  - evidence_claim_id: EC-COG-006
+    claim: Cognition says Devin has shell, code editor and browser tools in a sandboxed compute environment and can collaborate with users.
+    evidence_summary: The product exposes deep codebase and tool access, making security boundaries, auditability and customer controls key diligence areas.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-COG-003
+    quoted_evidence:
+      - source_id: SRC-COG-003
+        quote: common developer tools including the shell, code editor, and browser within a sandboxed compute environment
+        location: Introducing Devin blog
+    analyst_interpretation: The product exposes deep codebase and tool access, making security boundaries, auditability and customer controls key diligence areas.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-VIII-2
+      figure_ids:
+        - F-COG-VIII-1
+      risk_ids:
+        - R-COG-006
+  - evidence_claim_id: EC-COG-007
+    claim: Public pricing, audited revenue, gross margin, cash, debt, churn and customer concentration were not found in public sources reviewed.
+    evidence_summary: Core financial quality and repeatability cannot be assessed without private schedules.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-COG-001
+      - SRC-COG-002
+    quoted_evidence: []
+    analyst_interpretation: Core financial quality and repeatability cannot be assessed without private schedules.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-I-2
+      figure_ids: []
+      risk_ids:
+        - R-COG-001
+        - R-COG-003
+  - evidence_claim_id: EC-COG-008
+    claim: Public management and headcount detail available from the reviewed Cognition pages is sparse compared with the valuation scale.
+    evidence_summary: Team diligence should verify founders, executive bench, board, retention, hiring plan and key-person dependencies.
+    evidence_type: primary_company_source
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-COG-002
+    quoted_evidence:
+      - source_id: SRC-COG-002
+        quote: Cognition is a team of interdisciplinary makers who love working on the hardest problems in AI.
+        location: Cognition homepage
+    analyst_interpretation: Team diligence should verify founders, executive bench, board, retention, hiring plan and key-person dependencies.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-VII-1
+        - T-COG-VII-2
+      figure_ids:
+        - F-COG-VII-1
+      risk_ids:
+        - R-COG-007
+  - evidence_claim_id: EC-COG-009
+    claim: The fetched Devin security URL did not provide detailed controls in the captured public artifact.
+    evidence_summary: Security diligence remains high priority because Devin may touch source code, developer tools and production workflows.
+    evidence_type: primary_company_source
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-COG-005
+    quoted_evidence:
+      - source_id: SRC-COG-005
+        quote: Page Not Found
+        location: Devin Docs captured security URL
+    analyst_interpretation: Security diligence remains high priority because Devin may touch source code, developer tools and production workflows.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-COG-VIII-2
+      figure_ids:
+        - F-COG-VIII-1
+      risk_ids:
+        - R-COG-006
+sources:
+  - source_id: SRC-COG-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: market_database
+    reliability_notes: Public market database used for private-unicorn status, valuation, geography and listed investors.
+    archive_url: null
+  - source_id: SRC-COG-002
+    title: Cognition homepage
+    url: https://cognition.ai/
+    publisher: Cognition
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-owned product and positioning source.
+    archive_url: null
+  - source_id: SRC-COG-003
+    title: Introducing Devin, the first AI software engineer
+    url: https://cognition.ai/blog/introducing-devin
+    publisher: Cognition
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company blog with product, benchmark and funding statements; benchmark details are company-published.
+    archive_url: null
+  - source_id: SRC-COG-004
+    title: Devin customer story - Nubank refactor
+    url: https://devin.ai/
+    publisher: Devin / Cognition
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: customer_or_partner_source
+    reliability_notes: Company-hosted customer story; operational outcomes should be confirmed directly with the customer.
+    archive_url: null
+  - source_id: SRC-COG-005
+    title: Devin security documentation
+    url: https://docs.devin.ai/security
+    publisher: Devin Docs
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Fetch returned a navigation/page-not-found surface; security-detail availability remains a diligence gap.
+    archive_url: null
+risk_register:
+  - risk_id: R-COG-001
+    risk_title: Revenue quality and burn are private
+    risk_category: financial
+    severity: high
+    likelihood: unknown
+    description: No audited financials, ARR bridge, gross margin, cash, debt or burn data were publicly available.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+    evidence_claim_ids: *a13
+    mitigation_or_diligence_request: Request audited financials, KPI pack, bank statements, burn forecast and revenue-recognition policy.
+  - risk_id: R-COG-002
+    risk_title: Valuation/cap-table opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: The public valuation is large relative to limited public financing economics and ownership detail.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+    evidence_claim_ids: *a14
+    mitigation_or_diligence_request: Request current cap table, financing documents, preference stack, secondaries, debt and 409A history.
+  - risk_id: R-COG-003
+    risk_title: Customer concentration and repeatability unknown
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: Named customer evidence is limited and does not disclose ACV, retention, concentration or deployment breadth.
+    impacted_chapter_ids:
+      - III
+    impacted_section_ids:
+      - III.A
+    evidence_claim_ids: *a15
+    mitigation_or_diligence_request: Request top-customer schedule, contracts, renewals, NRR/GRR and reference calls.
+  - risk_id: R-COG-004
+    risk_title: Competitive pressure in AI coding agents
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: AI coding is intensely competitive against well-funded labs, incumbents and developer-platform distribution.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+    evidence_claim_ids: *a16
+    mitigation_or_diligence_request: Run technical bakeoffs, win/loss diligence and pricing comparison against incumbent IDE and agent platforms.
+  - risk_id: R-COG-005
+    risk_title: Benchmark-to-production gap
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: SWE-bench and demos may not predict reliability, security and maintainability in enterprise production codebases.
+    impacted_chapter_ids:
+      - VI
+    impacted_section_ids:
+      - VI.A
+    evidence_claim_ids: *a17
+    mitigation_or_diligence_request: Review eval methodology, production telemetry, incident logs and customer outcome data.
+  - risk_id: R-COG-006
+    risk_title: Code/data security exposure
+    risk_category: security
+    severity: critical
+    likelihood: unknown
+    description: Autonomous agents with codebase/tool access can create IP, data-leakage, auditability and change-control exposure.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.A
+    evidence_claim_ids: *a18
+    mitigation_or_diligence_request: Obtain SOC reports, architecture, isolation model, logs, pentest, subprocessors, data-retention policy and incident history.
+  - risk_id: R-COG-007
+    risk_title: Key-person and hiring risk
+    risk_category: team
+    severity: medium
+    likelihood: unknown
+    description: Public team disclosure is thin for a company valued near $10B.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+    evidence_claim_ids: *a19
+    mitigation_or_diligence_request: Request org chart, executive agreements, board minutes, attrition and recruiting plan.
+  - risk_id: R-COG-008
+    risk_title: Regulatory/IP responsibility for generated code
+    risk_category: legal
+    severity: medium
+    likelihood: medium
+    description: Use of AI-generated code may raise IP provenance, OSS license and customer liability questions.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+    evidence_claim_ids: *a20
+    mitigation_or_diligence_request: Have counsel review IP assignments, OSS policy, model/data provenance, indemnities and customer terms.
+diligence_gaps:
+  - gap_id: G-COG-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, KPI pack, cash/debt, forecast model and cap table.
+    why_it_matters: Required to underwrite valuation, runway, dilution and revenue quality.
+    suggested_source_or_request: Company CFO, board materials, accountants and financing counsel.
+    priority: high
+  - gap_id: G-COG-002
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top-customer or top-partner concentration, contracts, retention and reference calls.
+    why_it_matters: Public traction claims do not prove durable, diversified revenue.
+    suggested_source_or_request: Customer master, contracts, renewal cohorts and reference list.
+    priority: high
+  - gap_id: G-COG-003
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Legal docket, compliance audits, security reports, IP/data rights and incident history.
+    why_it_matters: Legal, regulatory, privacy and security issues can materially impair enterprise value.
+    suggested_source_or_request: Company counsel, security team, privacy counsel and insurance broker.
+    priority: high
+follow_up_requests:
+  - request_id: Q-COG-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, monthly KPI pack, cash/debt, forecast model, cap table and financing documents.
+    requested_from: company
+    priority: high
+  - request_id: Q-COG-002
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer/partner concentration, contracts, retention cohorts and permission for reference calls.
+    requested_from: company
+    priority: high
+  - request_id: Q-COG-003
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide counsel-prepared litigation/compliance schedule, security reports, IP/data-rights materials and incident history.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-COG-001
+    description: This is a public-source diligence snapshot. No founder interview, private data room, customer calls, audited financials, legal docket search, paid database export or confidential security reports were available.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - II.A
+      - III.A
+      - IV.A
+      - V.A
+      - VI.A
+      - VII.A
+      - VIII.A
+  - limitation_id: L-COG-002
+    description: Company-published claims are treated as evidence of public assertion unless independently corroborated; financial and customer claims require direct verification.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+    affected_section_ids:
+      - I.A
+      - III.A
+      - V.A
