@@ -1,0 +1,2238 @@
+report_metadata:
+  report_title: PatSnap Startup Diligence Report
+  target_company: PatSnap
+  website: https://www.patsnap.com/
+  known_aliases:
+    - Patsnap
+    - PatSnap Eureka
+  sector: Enterprise innovation intelligence, IP analytics and AI agents
+  geography: London, United Kingdom / Singapore / global enterprise markets
+  company_stage: Private unicorn / growth-stage enterprise software company
+  research_date: 2026-05-19
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built an existing-report exclusion list from reports/*-diligence-report.yaml and selected only uncovered slugs.
+    - Used CB Insights Global Unicorn Club as the primary market database for current private-unicorn status and latest known valuation.
+    - Reviewed public company-owned pages and independent third-party reporting available for PatSnap.
+    - Marked audited financials, contracts, cap table, customer concentration, security reports, HRIS, legal docket detail and board materials as not_publicly_verifiable where not public.
+  included_jurisdictions:
+    - United States
+    - United Kingdom
+    - Singapore
+    - Global markets referenced by public materials
+  excluded_topics:
+    - No private data room, founder interview, customer calls, confidential security reports or paid databases were available.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Workflow request for three random uncovered unicorn diligence reports
+      type: workflow_request
+      date_received: 2026-05-19
+      notes: No founder deck or private materials were provided.
+founder_claims:
+  - founder_claim_id: FC-PAT-001
+    claim_text: PatSnap is an uncovered private unicorn valued at approximately $1B.
+    claim_source: CB Insights Global Unicorn Club
+    claim_date: 2021-03-16
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a1
+      - EC-PAT-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request financing records and cap table.
+  - founder_claim_id: FC-PAT-002
+    claim_text: PatSnap provides a broad AI and data platform for innovation, IP, engineering and life-sciences workflows.
+    claim_source: PatSnap about page
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a2
+      - EC-PAT-002
+      - EC-PAT-003
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate product-level revenue, data rights and roadmap.
+  - founder_claim_id: FC-PAT-003
+    claim_text: PatSnap has broad customer traction, including 18,000+ innovators and named customer stories.
+    claim_source: PatSnap about and customer pages
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a3
+      - EC-PAT-004
+      - EC-PAT-005
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm paying customer count, ARR concentration and retention.
+  - founder_claim_id: FC-PAT-004
+    claim_text: PatSnap operates across at least London and Singapore public office locations.
+    claim_source: PatSnap about page
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a4
+      - EC-PAT-007
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm entity chart, employee distribution and local compliance.
+  - founder_claim_id: FC-PAT-005
+    claim_text: PatSnap maintains enterprise security and privacy controls suitable for sensitive customer innovation data.
+    claim_source: PatSnap trust page
+    claim_date: null
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-PAT-006
+    contradiction_summary: null
+    diligence_follow_up:
+      - Review SOC/ISO reports, exceptions, data licenses and AI governance.
+executive_summary:
+  overall_assessment: PatSnap appears to be a mature enterprise innovation-intelligence unicorn with public evidence of a broad product suite, large structured-data corpus, named customer stories and visible trust posture. The key diligence issue is whether these public claims translate into high-quality recurring revenue, defensible data rights and efficient multi-product operations.
+  investment_or_diligence_thesis: Proceed to confirmatory diligence focused on revenue quality, data licensing, customer concentration, AI governance and cross-border compliance. Public evidence supports product breadth and customer proof, but financial, legal and operational records are private.
+  strongest_verified_claims:
+    - founder_claim_id: FC-PAT-001
+      summary: CB Insights lists PatSnap as a $1B private unicorn.
+      evidence_claim_ids: *a1
+    - founder_claim_id: FC-PAT-002
+      summary: Company sources describe a broad product matrix across AI agents, IP analytics and domain data products.
+      evidence_claim_ids: *a2
+    - founder_claim_id: FC-PAT-003
+      summary: PatSnap claims more than 2B structured data points and more than 18,000 innovators.
+      evidence_claim_ids: *a3
+    - founder_claim_id: FC-PAT-004
+      summary: Public customer stories include Canon, Grab, Gowling WLG and universities.
+      evidence_claim_ids: *a4
+  biggest_risks:
+    - risk_id: R-PAT-001
+      summary: Financial quality private
+    - risk_id: R-PAT-002
+      summary: Cap-table and valuation opacity
+    - risk_id: R-PAT-003
+      summary: Customer concentration and ROI proof unknown
+    - risk_id: R-PAT-004
+      summary: Broad product-surface complexity
+  key_evidence_gaps:
+    - Audited financials, ARR, gross margin, burn and cap table.
+    - Definition and monetization of 18,000 innovators claim.
+    - Data licensing, model governance and AI-training controls.
+    - Top-customer concentration, retention and contract economics.
+    - SOC/ISO report contents, incidents, subprocessors and privacy assessments.
+  recommended_next_steps:
+    - Validate ARR quality and product-level gross margin.
+    - Audit data rights and AI governance before underwriting defensibility.
+    - Conduct customer references across IP, life-sciences and law-firm segments.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: PatSnap has a $1B CB Insights valuation anchor but operating financials, cap table and current runway are private.
+    founder_claim_ids:
+      - FC-PAT-001
+    evidence_claim_ids:
+      - EC-PAT-001
+      - EC-PAT-008
+    risk_ids:
+      - R-PAT-001
+      - R-PAT-002
+    sections:
+      - section_id: I.A
+        title: Public valuation and financial gaps
+        checklist_question_ids:
+          - I.A
+        summary: Public sources verify unicorn status, while revenue quality and financing economics require private records.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Valuation is visible; financial quality is not.
+            evidence_claim_ids: &a5
+              - EC-PAT-001
+              - EC-PAT-008
+            risk_ids:
+              - R-PAT-001
+              - R-PAT-002
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-001, R-PAT-002."
+        evidence_gaps:
+          - Audited financials, ARR, gross margin, cash, debt, cap table and forecast.
+        follow_up_questions:
+          - Provide audited statements, KPI pack, cap table and financing documents.
+        table_ids:
+          - T-PAT-I-1
+          - T-PAT-I-2
+        figure_ids:
+          - F-PAT-I-1
+        evidence_claim_ids: *a5
+  - chapter_id: II
+    title: Products
+    chapter_summary: PatSnap operates a broad innovation-intelligence platform spanning AI agents, patent analytics, biopharma, chemical data, APIs and services.
+    founder_claim_ids:
+      - FC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+    risk_ids:
+      - R-PAT-004
+      - R-PAT-006
+    sections:
+      - section_id: II.A
+        title: Product suite and data assets
+        checklist_question_ids:
+          - II.A
+        summary: Company pages verify a broad product catalog and large structured dataset claims, but pricing and product economics are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Product breadth is clear; monetization and data rights require validation.
+            evidence_claim_ids: &a6
+              - EC-PAT-002
+              - EC-PAT-003
+            risk_ids:
+              - R-PAT-004
+              - R-PAT-006
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-004, R-PAT-006."
+        evidence_gaps:
+          - Pricing, usage, product-level ARR, data licenses and roadmap.
+        follow_up_questions:
+          - Provide SKU/pricing book, product P&L, data rights schedule and roadmap.
+        table_ids:
+          - T-PAT-II-1
+          - T-PAT-II-2
+        figure_ids:
+          - F-PAT-II-1
+        evidence_claim_ids: *a6
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: PatSnap publishes named customer stories and a large customer-count claim, but retention and concentration remain private.
+    founder_claim_ids:
+      - FC-PAT-003
+    evidence_claim_ids:
+      - EC-PAT-004
+      - EC-PAT-005
+    risk_ids:
+      - R-PAT-003
+    sections:
+      - section_id: III.A
+        title: Customers, use cases and supplier dependencies
+        checklist_question_ids:
+          - III.A
+        summary: Named customer stories span tech, research, law firms and life sciences; contract value and renewal data are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Customer logos support traction but do not prove revenue quality.
+            evidence_claim_ids: &a7
+              - EC-PAT-004
+              - EC-PAT-005
+            risk_ids:
+              - R-PAT-003
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-003."
+        evidence_gaps:
+          - Top-customer ARR, concentration, churn, NRR/GRR and independent references.
+        follow_up_questions:
+          - Provide customer master, top contracts, renewal cohorts and reference contacts.
+        table_ids:
+          - T-PAT-III-1
+          - T-PAT-III-2
+        figure_ids:
+          - F-PAT-III-1
+        evidence_claim_ids: *a7
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: PatSnap competes across IP intelligence, scientific/life-sciences intelligence, legal data and horizontal AI research tools.
+    founder_claim_ids:
+      - FC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+    risk_ids:
+      - R-PAT-005
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape and differentiation
+        checklist_question_ids:
+          - IV.A
+        summary: PatSnap differentiates through structured IP/science/litigation data and AI-agent workflows; market share and win rates are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Competitive position rests on data breadth, workflow depth and trust.
+            evidence_claim_ids: &a8
+              - EC-PAT-002
+              - EC-PAT-003
+            risk_ids:
+              - R-PAT-005
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-005."
+        evidence_gaps:
+          - Win/loss, pricing, switching costs, data coverage quality and market share.
+        follow_up_questions:
+          - Provide competitor win/loss, churn reasons and data-coverage benchmarks.
+        table_ids:
+          - T-PAT-IV-1
+          - T-PAT-IV-2
+        figure_ids:
+          - F-PAT-IV-1
+        evidence_claim_ids: *a8
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Public GTM signals include demos, product-led trial links, customer stories and industry solutions; funnel metrics are private.
+    founder_claim_ids:
+      - FC-PAT-003
+    evidence_claim_ids:
+      - EC-PAT-003
+      - EC-PAT-004
+      - EC-PAT-005
+    risk_ids:
+      - R-PAT-003
+      - R-PAT-005
+    sections:
+      - section_id: V.A
+        title: GTM motion and marketing signals
+        checklist_question_ids:
+          - V.A
+        summary: PatSnap uses product pages, customer stories, demos and trial links; pipeline conversion and CAC are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public GTM breadth needs conversion and efficiency validation.
+            evidence_claim_ids: &a9
+              - EC-PAT-003
+              - EC-PAT-004
+              - EC-PAT-005
+            risk_ids:
+              - R-PAT-003
+              - R-PAT-005
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-003, R-PAT-005."
+        evidence_gaps:
+          - Bookings funnel, CAC/payback, channel mix, sales-cycle length and partner contribution.
+        follow_up_questions:
+          - Provide funnel metrics, sales efficiency, channel attribution and renewal pipeline.
+        table_ids:
+          - T-PAT-V-1
+          - T-PAT-V-2
+        figure_ids:
+          - F-PAT-V-1
+        evidence_claim_ids: *a9
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: PatSnap R&D centers on structured innovation data, AI agents and domain-specific search; data rights and AI governance are key diligence topics.
+    founder_claim_ids:
+      - FC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+      - EC-PAT-006
+    risk_ids:
+      - R-PAT-004
+      - R-PAT-006
+    sections:
+      - section_id: VI.A
+        title: Data, AI and roadmap controls
+        checklist_question_ids:
+          - VI.A
+        summary: Public sources show AI and data-scale claims; model, data-rights, accuracy and roadmap evidence remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: R&D defensibility depends on data quality, rights and workflow adoption.
+            evidence_claim_ids: &a10
+              - EC-PAT-002
+              - EC-PAT-003
+              - EC-PAT-006
+            risk_ids:
+              - R-PAT-004
+              - R-PAT-006
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-004, R-PAT-006."
+        evidence_gaps:
+          - Data license inventory, AI governance, model evals, roadmap and compute/vendor spend.
+        follow_up_questions:
+          - Provide data-rights schedule, model governance, eval metrics and roadmap.
+        table_ids:
+          - T-PAT-VI-1
+          - T-PAT-VI-2
+        figure_ids:
+          - F-PAT-VI-1
+        evidence_claim_ids: *a10
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: PatSnap discloses London and Singapore footprint and hiring surfaces, but leadership depth, headcount and retention metrics are private.
+    founder_claim_ids:
+      - FC-PAT-004
+    evidence_claim_ids:
+      - EC-PAT-007
+    risk_ids:
+      - R-PAT-007
+    sections:
+      - section_id: VII.A
+        title: Organization, footprint and hiring
+        checklist_question_ids:
+          - VII.A
+        summary: Public office signals support cross-border operations; HR and leadership evidence is limited in the reviewed materials.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: People and jurisdictional diligence are evidence gaps.
+            evidence_claim_ids: &a11
+              - EC-PAT-007
+            risk_ids:
+              - R-PAT-007
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-007."
+        evidence_gaps:
+          - Full org chart, board, headcount by function/jurisdiction, attrition and compensation.
+        follow_up_questions:
+          - Provide HRIS export, leadership roster, board list, entity chart and retention plan.
+        table_ids:
+          - T-PAT-VII-1
+          - T-PAT-VII-2
+        figure_ids:
+          - F-PAT-VII-1
+        evidence_claim_ids: *a11
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public trust claims are positive, but data licensing, privacy, AI training, IP ownership and litigation need counsel-led diligence.
+    founder_claim_ids:
+      - FC-PAT-005
+    evidence_claim_ids:
+      - EC-PAT-006
+      - EC-PAT-007
+    risk_ids:
+      - R-PAT-006
+      - R-PAT-008
+      - R-PAT-007
+    sections:
+      - section_id: VIII.A
+        title: Security, privacy, IP and legal exposure
+        checklist_question_ids:
+          - VIII.A
+        summary: PatSnap publishes SOC/ISO/privacy claims; underlying reports, data licenses and legal matters remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Trust posture is visible but must be independently reviewed.
+            evidence_claim_ids: &a12
+              - EC-PAT-006
+              - EC-PAT-007
+            risk_ids:
+              - R-PAT-006
+              - R-PAT-008
+              - R-PAT-007
+        hidden_risks:
+          - "Primary diligence risks: R-PAT-006, R-PAT-008, R-PAT-007."
+        evidence_gaps:
+          - SOC/ISO reports, data licenses, privacy assessments, litigation schedule, IP assignments and subprocessors.
+        follow_up_questions:
+          - Provide legal docket, SOC reports, data licensing, DPIAs, OSS/SBOM and incident history.
+        table_ids:
+          - T-PAT-VIII-1
+          - T-PAT-VIII-2
+        figure_ids:
+          - F-PAT-VIII-1
+        evidence_claim_ids: *a12
+tables:
+  - table_id: T-PAT-I-1
+    title: Public valuation and investor snapshot
+    chapter_id: I
+    section_id: I.A
+    purpose: Summarize public unicorn-list valuation data.
+    columns:
+      - name: date
+        description: Date
+      - name: event
+        description: Event
+      - name: amount_or_valuation
+        description: Amount or valuation
+      - name: investors
+        description: Investors
+      - name: status
+        description: Status
+    rows:
+      - row_id: PAT-I-1-R1
+        values:
+          date: 2021-03-16
+          event: CB Insights unicorn entry
+          amount_or_valuation: $1B valuation
+          investors: Sequoia Capital China; Shunwei Capital Partners; Qualgro
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-001
+        source_ids:
+          - SRC-PAT-001
+    evidence_claim_ids:
+      - EC-PAT-001
+    source_ids:
+      - SRC-PAT-001
+    notes: CB Insights was used as the valuation source; financing documents were unavailable.
+  - table_id: T-PAT-I-2
+    title: Financial diligence gap matrix
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify missing financial records.
+    columns:
+      - name: topic
+        description: Topic
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: PAT-I-2-R1
+        values:
+          topic: ARR/revenue
+          public_signal: Not disclosed
+          request: ARR bridge, revenue by product, billings and retention
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-008
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-I-2-R2
+        values:
+          topic: Cash/burn/debt
+          public_signal: Not disclosed
+          request: Bank statements, debt schedule, burn forecast
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-008
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-I-2-R3
+        values:
+          topic: Cap table
+          public_signal: Investors listed by CB Insights
+          request: Fully diluted cap table and preferences
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-001
+        source_ids:
+          - SRC-PAT-001
+    evidence_claim_ids:
+      - EC-PAT-008
+      - EC-PAT-001
+    source_ids:
+      - SRC-PAT-001
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-II-1
+    title: Product/SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map product surface from company sources.
+    columns:
+      - name: product
+        description: Product
+      - name: audience
+        description: Audience
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Status
+    rows:
+      - row_id: PAT-II-1-R1
+        values:
+          product: PatSnap Eureka / AI agents
+          audience: IP, engineering, life sciences, materials teams
+          public_evidence: AI agents listed in navigation
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-II-1-R2
+        values:
+          product: Analytics
+          audience: IP intelligence teams
+          public_evidence: Analytics IP Intelligence listed
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-II-1-R3
+        values:
+          product: Synapse/Bio/Chemical
+          audience: Biopharma and R&D teams
+          public_evidence: Biopharma, biosequence and chemical search products listed
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-II-1-R4
+        values:
+          product: Open Platform / API / MCP
+          audience: Enterprise integrations
+          public_evidence: Open Platform API, MCP and integration listed
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-003
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-II-2
+    title: Pricing and product-economics gaps
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture missing monetization evidence.
+    columns:
+      - name: item
+        description: Item
+      - name: public_status
+        description: Public status
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: PAT-II-2-R1
+        values:
+          item: Published price book
+          public_status: Pricing navigation exists but detailed pricing not captured
+          risk: Discounting and seat economics unknown
+          request: Current price book and discount history
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-II-2-R2
+        values:
+          item: Product-level gross margin
+          public_status: Not public
+          risk: Data and AI costs may vary materially by product
+          request: Product P&L and COGS detail
+        evidence_claim_ids:
+          - EC-PAT-008
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-003
+      - EC-PAT-008
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-III-1
+    title: Public customers and use cases
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize named customer stories.
+    columns:
+      - name: customer
+        description: Customer
+      - name: industry
+        description: Industry
+      - name: use_case
+        description: Use case
+      - name: gap
+        description: Gap
+    rows:
+      - row_id: PAT-III-1-R1
+        values:
+          customer: Canon Inc.
+          industry: Tech
+          use_case: Global patent/literature coverage and AI integration
+          gap: Contract value and renewal not public
+        evidence_claim_ids:
+          - EC-PAT-005
+        source_ids:
+          - SRC-PAT-003
+      - row_id: PAT-III-1-R2
+        values:
+          customer: Grab Patent Office
+          industry: Tech
+          use_case: Competitive intelligence, patent valuation and investment evaluation
+          gap: Deployment scope not public
+        evidence_claim_ids:
+          - EC-PAT-005
+        source_ids:
+          - SRC-PAT-003
+      - row_id: PAT-III-1-R3
+        values:
+          customer: Gowling WLG
+          industry: Law firms
+          use_case: Expanded patent searching as a service
+          gap: Revenue impact not public
+        evidence_claim_ids:
+          - EC-PAT-005
+        source_ids:
+          - SRC-PAT-003
+      - row_id: PAT-III-1-R4
+        values:
+          customer: National University of Singapore
+          industry: Research
+          use_case: Manual research cost reduction
+          gap: Methodology not public
+        evidence_claim_ids:
+          - EC-PAT-005
+        source_ids:
+          - SRC-PAT-003
+    evidence_claim_ids:
+      - EC-PAT-005
+    source_ids:
+      - SRC-PAT-003
+    notes: null
+  - table_id: T-PAT-III-2
+    title: Customer and supplier diligence matrix
+    chapter_id: III
+    section_id: III.A
+    purpose: Frame dependencies and concentration checks.
+    columns:
+      - name: area
+        description: Area
+      - name: public_signal
+        description: Public signal
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: PAT-III-2-R1
+        values:
+          area: Customer count
+          public_signal: More than 18,000 innovators worldwide
+          risk: Innovators may not equal paying accounts or ARR
+          request: Customer master and ARR by account
+        evidence_claim_ids:
+          - EC-PAT-004
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-III-2-R2
+        values:
+          area: Data suppliers/licenses
+          public_signal: 2B structured data points across domains
+          risk: Rights, freshness and cost exposure
+          request: Data licensing and supplier concentration schedule
+        evidence_claim_ids:
+          - EC-PAT-002
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-004
+      - EC-PAT-002
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-IV-1
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare PatSnap to relevant alternatives.
+    columns:
+      - name: competitor
+        description: Competitor
+      - name: segment
+        description: Segment
+      - name: overlap
+        description: Overlap
+      - name: patSnap_differentiator
+        description: PatSnap differentiator
+      - name: caveat
+        description: Caveat
+    rows:
+      - row_id: PAT-IV-1-R1
+        values:
+          competitor: Clarivate / Derwent
+          segment: Patent and IP intelligence
+          overlap: Patent search and analytics
+          patSnap_differentiator: AI-native product and workflow breadth
+          caveat: Incumbent data/customer base
+        evidence_claim_ids:
+          - EC-PAT-002
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-IV-1-R2
+        values:
+          competitor: LexisNexis / Questel
+          segment: IP/legal data
+          overlap: Patent/legal research
+          patSnap_differentiator: Integrated innovation-intelligence positioning
+          caveat: Legal-data breadth and trust matter
+        evidence_claim_ids:
+          - EC-PAT-002
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-IV-1-R3
+        values:
+          competitor: Horizontal AI research tools
+          segment: AI search/research
+          overlap: Research synthesis
+          patSnap_differentiator: Structured patent/science/litigation corpus
+          caveat: AI commoditization risk
+        evidence_claim_ids:
+          - EC-PAT-002
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-IV-2
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Score axes supported by public evidence.
+    columns:
+      - name: axis
+        description: Axis
+      - name: patSnap_signal
+        description: PatSnap signal
+      - name: diligence_question
+        description: Diligence question
+      - name: evidence_strength
+        description: Evidence strength
+    rows:
+      - row_id: PAT-IV-2-R1
+        values:
+          axis: Data breadth
+          patSnap_signal: 2B structured data points claimed
+          diligence_question: Coverage quality and rights
+          evidence_strength: medium
+        evidence_claim_ids:
+          - EC-PAT-002
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-IV-2-R2
+        values:
+          axis: Enterprise trust
+          patSnap_signal: SOC/ISO/privacy claims
+          diligence_question: Exceptions and customer audits
+          evidence_strength: medium
+        evidence_claim_ids:
+          - EC-PAT-006
+        source_ids:
+          - SRC-PAT-004
+      - row_id: PAT-IV-2-R3
+        values:
+          axis: Customer proof
+          patSnap_signal: Named stories and 18,000 innovators claim
+          diligence_question: ARR concentration and retention
+          evidence_strength: medium
+        evidence_claim_ids:
+          - EC-PAT-004
+          - EC-PAT-005
+        source_ids:
+          - SRC-PAT-002
+          - SRC-PAT-003
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-004
+      - EC-PAT-005
+      - EC-PAT-006
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-003
+      - SRC-PAT-004
+    notes: null
+  - table_id: T-PAT-V-1
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize observable GTM paths.
+    columns:
+      - name: channel
+        description: Channel
+      - name: public_evidence
+        description: Public evidence
+      - name: gap
+        description: Gap
+      - name: status
+        description: Status
+    rows:
+      - row_id: PAT-V-1-R1
+        values:
+          channel: Demo-led enterprise sales
+          public_evidence: Book a demo calls to action
+          gap: Conversion and CAC
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-V-1-R2
+        values:
+          channel: Product-led trial
+          public_evidence: Try PatSnap Eureka link
+          gap: Activation and paid conversion
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-V-1-R3
+        values:
+          channel: Customer stories
+          public_evidence: Customer archive across industries
+          gap: Reference conversion and attribution
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-PAT-005
+        source_ids:
+          - SRC-PAT-003
+    evidence_claim_ids:
+      - EC-PAT-003
+      - EC-PAT-005
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-003
+    notes: null
+  - table_id: T-PAT-V-2
+    title: Marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Capture public marketing evidence.
+    columns:
+      - name: signal
+        description: Signal
+      - name: evidence
+        description: Evidence
+      - name: risk
+        description: Risk
+      - name: request
+        description: Request
+    rows:
+      - row_id: PAT-V-2-R1
+        values:
+          signal: Industry solution breadth
+          evidence: Law firms, life sciences, high tech and other solution links
+          risk: Spread may dilute focus
+          request: Bookings by segment
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-V-2-R2
+        values:
+          signal: ROI claim
+          evidence: 75% faster at 25% less cost
+          risk: Methodology not disclosed
+          request: ROI study and sample size
+        evidence_claim_ids:
+          - EC-PAT-004
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-003
+      - EC-PAT-004
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-VI-1
+    title: R&D asset and pipeline signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Summarize public R&D/data assets.
+    columns:
+      - name: asset
+        description: Asset
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_test
+        description: Diligence test
+      - name: risk
+        description: Risk
+    rows:
+      - row_id: PAT-VI-1-R1
+        values:
+          asset: Structured innovation dataset
+          public_evidence: 2B data points claim
+          diligence_test: Coverage/freshness audit
+          risk: Data quality and rights
+        evidence_claim_ids:
+          - EC-PAT-002
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-VI-1-R2
+        values:
+          asset: AI agents by domain
+          public_evidence: IP, engineering, life-sciences and materials agents listed
+          diligence_test: Usage, accuracy and evals by domain
+          risk: AI reliability
+        evidence_claim_ids:
+          - EC-PAT-003
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-VI-2
+    title: AI/data governance diligence gaps
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Identify controls to review.
+    columns:
+      - name: area
+        description: Area
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: PAT-VI-2-R1
+        values:
+          area: Customer data in AI training
+          public_signal: Trust page says customer data is never used for AI training
+          request: Technical controls and policy evidence
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-006
+        source_ids:
+          - SRC-PAT-004
+      - row_id: PAT-VI-2-R2
+        values:
+          area: Data licensing
+          public_signal: Large corpus claimed
+          request: Licenses, renewal terms and usage rights
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-002
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-006
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-004
+    notes: null
+  - table_id: T-PAT-VII-1
+    title: Public footprint and organization signals
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Summarize jurisdiction and people signals.
+    columns:
+      - name: signal
+        description: Signal
+      - name: public_evidence
+        description: Public evidence
+      - name: diligence_caveat
+        description: Caveat
+      - name: status
+        description: Status
+    rows:
+      - row_id: PAT-VII-1-R1
+        values:
+          signal: London
+          public_evidence: London office address listed
+          diligence_caveat: UK entity, employees and contracts require confirmation
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-007
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-VII-1-R2
+        values:
+          signal: Singapore
+          public_evidence: Singapore office address listed
+          diligence_caveat: Singapore entity, employment and data transfer obligations require review
+          status: verified
+        evidence_claim_ids:
+          - EC-PAT-007
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-007
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-VII-2
+    title: Headcount and hiring gaps
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Capture missing HR evidence.
+    columns:
+      - name: topic
+        description: Topic
+      - name: public_signal
+        description: Public signal
+      - name: request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: PAT-VII-2-R1
+        values:
+          topic: Headcount by function
+          public_signal: Not disclosed in reviewed sources
+          request: HRIS and org chart
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-007
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-VII-2-R2
+        values:
+          topic: Leadership and retention
+          public_signal: Not fully captured in reviewed sources
+          request: Leadership roster, attrition and compensation
+          priority: high
+        evidence_claim_ids:
+          - EC-PAT-007
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-007
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-VIII-1
+    title: Legal/IP/regulatory matters summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize public legal posture and missing records.
+    columns:
+      - name: matter
+        description: Matter
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Status
+      - name: request
+        description: Request
+    rows:
+      - row_id: PAT-VIII-1-R1
+        values:
+          matter: Pending litigation
+          public_evidence: No docket source reviewed in this public-source sweep
+          status: not_publicly_verifiable
+          request: Counsel schedule and docket searches
+        evidence_claim_ids:
+          - EC-PAT-008
+        source_ids:
+          - SRC-PAT-002
+      - row_id: PAT-VIII-1-R2
+        values:
+          matter: Data/IP rights
+          public_evidence: 2B data points and AI/data products claimed
+          status: partially_verified
+          request: Data licenses, IP assignments and customer terms
+        evidence_claim_ids:
+          - EC-PAT-002
+        source_ids:
+          - SRC-PAT-002
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-008
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - table_id: T-PAT-VIII-2
+    title: Security and privacy controls
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Summarize public trust claims.
+    columns:
+      - name: control
+        description: Control
+      - name: public_evidence
+        description: Public evidence
+      - name: verification_status
+        description: Verification status
+      - name: diligence_request
+        description: Diligence request
+    rows:
+      - row_id: PAT-VIII-2-R1
+        values:
+          control: SOC 2 Type 1
+          public_evidence: Trust page states SOC 2 Type 1
+          verification_status: partially_verified
+          diligence_request: SOC report and exceptions
+        evidence_claim_ids:
+          - EC-PAT-006
+        source_ids:
+          - SRC-PAT-004
+      - row_id: PAT-VIII-2-R2
+        values:
+          control: ISO27001
+          public_evidence: Trust page states ISO 27001:2022
+          verification_status: partially_verified
+          diligence_request: Certificate and audit scope
+        evidence_claim_ids:
+          - EC-PAT-006
+        source_ids:
+          - SRC-PAT-004
+      - row_id: PAT-VIII-2-R3
+        values:
+          control: AI training/privacy
+          public_evidence: Trust page says customer data never used for AI training; GDPR/CCPA claims
+          verification_status: partially_verified
+          diligence_request: Policy, controls, DPIA and subprocessors
+        evidence_claim_ids:
+          - EC-PAT-006
+        source_ids:
+          - SRC-PAT-004
+    evidence_claim_ids:
+      - EC-PAT-006
+    source_ids:
+      - SRC-PAT-004
+    notes: null
+figures:
+  - figure_id: F-PAT-I-1
+    title: PatSnap public valuation anchor
+    chapter_id: I
+    section_id: I.A
+    figure_type: chart
+    description: Single public valuation anchor with private financing gaps annotated.
+    purpose: Frame valuation diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD billions
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Latest known valuation
+          unit: USD billions
+          data_points:
+            - x: CB Insights valuation
+              y: 1
+              label: $1B valuation
+              evidence_claim_ids:
+                - EC-PAT-001
+              source_ids:
+                - SRC-PAT-001
+            - x: Audited revenue disclosed
+              y: null
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-PAT-008
+              source_ids:
+                - SRC-PAT-002
+      annotations:
+        - label: Private economics
+          x: CB Insights valuation
+          y: 1
+          note: Cap table, preferences and current trading price not public.
+          evidence_claim_ids:
+            - EC-PAT-001
+          source_ids:
+            - SRC-PAT-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-001
+      - EC-PAT-008
+    source_ids:
+      - SRC-PAT-001
+      - SRC-PAT-002
+    notes: null
+  - figure_id: F-PAT-II-1
+    title: PatSnap innovation-intelligence architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Conceptual architecture based on public product and data claims.
+    purpose: Show product/data/control diligence areas.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: data
+          label: 2B structured data points
+          node_type: database
+          description: Patents, science, litigation and tech sectors
+          evidence_claim_ids:
+            - EC-PAT-002
+          source_ids:
+            - SRC-PAT-002
+        - node_id: ai
+          label: Eureka AI agents
+          node_type: model
+          description: Domain agents for IP, engineering, life sciences and materials
+          evidence_claim_ids:
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-002
+        - node_id: apps
+          label: Analytics/Synapse/Bio/Chemical
+          node_type: product
+          description: Domain applications
+          evidence_claim_ids:
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-002
+        - node_id: customers
+          label: Enterprise users
+          node_type: user
+          description: Innovation, IP, legal and R&D teams
+          evidence_claim_ids:
+            - EC-PAT-005
+          source_ids:
+            - SRC-PAT-003
+      edges:
+        - edge_id: e1
+          from_node_id: data
+          to_node_id: ai
+          relationship: powers
+          data_or_dependency: structured data and models
+          evidence_claim_ids:
+            - EC-PAT-002
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-002
+        - edge_id: e2
+          from_node_id: ai
+          to_node_id: apps
+          relationship: embedded in
+          data_or_dependency: AI workflows
+          evidence_claim_ids:
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-002
+        - edge_id: e3
+          from_node_id: apps
+          to_node_id: customers
+          relationship: supports
+          data_or_dependency: search, analytics and decision workflows
+          evidence_claim_ids:
+            - EC-PAT-005
+          source_ids:
+            - SRC-PAT-003
+      boundaries:
+        - boundary_id: b1
+          label: Data rights and AI governance to verify
+          node_ids:
+            - data
+            - ai
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+      - EC-PAT-005
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-003
+    notes: null
+  - figure_id: F-PAT-III-1
+    title: PatSnap public customer signal chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Chart public customer-count and named-story signals.
+    purpose: Contrast scale claim with concentration gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: count
+        scale: linear
+      series:
+        - series_id: customers
+          name: Public customer signals
+          unit: count
+          data_points:
+            - x: Innovators claimed
+              y: 18000
+              label: More than 18,000 innovators
+              evidence_claim_ids:
+                - EC-PAT-004
+              source_ids:
+                - SRC-PAT-002
+            - x: Named stories reviewed
+              y: 6
+              label: Six named examples in reviewed page
+              evidence_claim_ids:
+                - EC-PAT-005
+              source_ids:
+                - SRC-PAT-003
+            - x: Top-customer ARR disclosed
+              y: null
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-PAT-008
+              source_ids:
+                - SRC-PAT-002
+      annotations:
+        - label: Definition gap
+          x: Innovators claimed
+          y: 18000
+          note: Innovators may not equal paying customers or ARR.
+          evidence_claim_ids:
+            - EC-PAT-004
+          source_ids:
+            - SRC-PAT-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-004
+      - EC-PAT-005
+      - EC-PAT-008
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-003
+    notes: null
+  - figure_id: F-PAT-IV-1
+    title: Innovation-intelligence competitive map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map of data specialization and AI workflow depth.
+    purpose: Position PatSnap against IP incumbents and horizontal AI tools.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Domain data specialization
+          low_label: Horizontal
+          high_label: Specialized
+        y_axis:
+          label: AI workflow depth
+          low_label: Search-only
+          high_label: Agentic workflow
+      segments:
+        - segment_id: ip
+          name: IP/legal intelligence
+          description: Patent and legal data platforms
+        - segment_id: ai
+          name: AI research tools
+          description: General AI research/search products
+      entities:
+        - entity_id: patsnap
+          name: PatSnap
+          entity_type: target_company
+          segment_id: ip
+          x_value: 8
+          y_value: 7
+          attributes:
+            note: 2B data points plus AI agents
+          evidence_claim_ids:
+            - EC-PAT-002
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-002
+        - entity_id: incumbents
+          name: IP/legal incumbents
+          entity_type: competitor
+          segment_id: ip
+          x_value: 9
+          y_value: 4
+          attributes:
+            note: Data depth and established workflows
+          evidence_claim_ids:
+            - EC-PAT-002
+          source_ids:
+            - SRC-PAT-002
+        - entity_id: horizontal_ai
+          name: Horizontal AI search tools
+          entity_type: competitor
+          segment_id: ai
+          x_value: 3
+          y_value: 7
+          attributes:
+            note: AI workflow pressure
+          evidence_claim_ids:
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-002
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-003
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - figure_id: F-PAT-V-1
+    title: Observable GTM channel mix
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Bar chart of public GTM surfaces found in reviewed sources.
+    purpose: Show demo/trial/customer-story reliance.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: GTM surface
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Observed public items
+        unit: items
+        scale: linear
+      series:
+        - series_id: gtm
+          name: Public GTM signals
+          unit: items
+          data_points:
+            - x: Demo CTA
+              y: 1
+              label: Book a demo
+              evidence_claim_ids:
+                - EC-PAT-003
+              source_ids:
+                - SRC-PAT-002
+            - x: Trial CTA
+              y: 1
+              label: Try PatSnap Eureka
+              evidence_claim_ids:
+                - EC-PAT-003
+              source_ids:
+                - SRC-PAT-002
+            - x: Named customer examples
+              y: 6
+              label: Reviewed named stories
+              evidence_claim_ids:
+                - EC-PAT-005
+              source_ids:
+                - SRC-PAT-003
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-003
+      - EC-PAT-005
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-003
+    notes: null
+  - figure_id: F-PAT-VI-1
+    title: PatSnap R&D/data governance map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Map data, AI and compliance controls requiring diligence.
+    purpose: Organize R&D and AI governance review.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: licensed_data
+          label: Licensed/public data corpus
+          node_type: database
+          description: Patent/science/litigation/tech data
+          evidence_claim_ids:
+            - EC-PAT-002
+          source_ids:
+            - SRC-PAT-002
+        - node_id: llm
+          label: Proprietary LLM/AI agents
+          node_type: model
+          description: Customer data not used for training per trust page
+          evidence_claim_ids:
+            - EC-PAT-006
+          source_ids:
+            - SRC-PAT-004
+        - node_id: controls
+          label: Security/privacy controls
+          node_type: service
+          description: SOC/ISO/encryption/privacy claims
+          evidence_claim_ids:
+            - EC-PAT-006
+          source_ids:
+            - SRC-PAT-004
+      edges:
+        - edge_id: e1
+          from_node_id: licensed_data
+          to_node_id: llm
+          relationship: retrieves/contextualizes
+          data_or_dependency: innovation data
+          evidence_claim_ids:
+            - EC-PAT-002
+          source_ids:
+            - SRC-PAT-002
+        - edge_id: e2
+          from_node_id: controls
+          to_node_id: llm
+          relationship: governs
+          data_or_dependency: privacy and training controls
+          evidence_claim_ids:
+            - EC-PAT-006
+          source_ids:
+            - SRC-PAT-004
+      boundaries:
+        - boundary_id: b1
+          label: Counsel and security review
+          node_ids:
+            - licensed_data
+            - llm
+            - controls
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-002
+      - EC-PAT-006
+    source_ids:
+      - SRC-PAT-002
+      - SRC-PAT-004
+    notes: null
+  - figure_id: F-PAT-VII-1
+    title: Public footprint and HR disclosure chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: chart
+    description: Chart public footprint and missing HR data.
+    purpose: Show organization evidence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: People/footprint signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: count
+        scale: linear
+      series:
+        - series_id: people
+          name: Public people signals
+          unit: count
+          data_points:
+            - x: Public offices reviewed
+              y: 2
+              label: London and Singapore
+              evidence_claim_ids:
+                - EC-PAT-007
+              source_ids:
+                - SRC-PAT-002
+            - x: Headcount by function disclosed
+              y: 0
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-PAT-007
+              source_ids:
+                - SRC-PAT-002
+            - x: Attrition disclosed
+              y: 0
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-PAT-007
+              source_ids:
+                - SRC-PAT-002
+      annotations:
+        - label: Cross-border HR gap
+          x: Public offices reviewed
+          y: 2
+          note: Entity chart and employee distribution needed.
+          evidence_claim_ids:
+            - EC-PAT-007
+          source_ids:
+            - SRC-PAT-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-007
+    source_ids:
+      - SRC-PAT-002
+    notes: null
+  - figure_id: F-PAT-VIII-1
+    title: PatSnap risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Risk heatmap across financial, customer, data, security and cross-border diligence.
+    purpose: Prioritize diligence requests.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-PAT-001
+          label: Financial quality private
+          severity: high
+          likelihood: unknown
+          rationale: No audited financials, ARR, gross margin, cash, debt, burn or forecast model were public.
+          evidence_claim_ids: &a13
+            - EC-PAT-008
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-002
+          label: Cap-table and valuation opacity
+          severity: medium
+          likelihood: unknown
+          rationale: The $1B valuation anchor does not disclose current shares, liquidation preferences, debt or secondary transactions.
+          evidence_claim_ids: &a14
+            - EC-PAT-001
+            - EC-PAT-008
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-003
+          label: Customer concentration and ROI proof unknown
+          severity: high
+          likelihood: unknown
+          rationale: 18,000 innovator and ROI claims are company-published and do not reveal ARR concentration, retention or methodology.
+          evidence_claim_ids: &a15
+            - EC-PAT-004
+            - EC-PAT-005
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-004
+          label: Broad product-surface complexity
+          severity: medium
+          likelihood: medium
+          rationale: Multiple AI agents, data products and professional services may increase roadmap, support and margin complexity.
+          evidence_claim_ids: &a16
+            - EC-PAT-002
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-005
+          label: Competitive pressure in IP/R&D intelligence
+          severity: medium
+          likelihood: high
+          rationale: PatSnap competes with established patent, legal, scientific and AI-search platforms.
+          evidence_claim_ids: &a17
+            - EC-PAT-002
+            - EC-PAT-003
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-006
+          label: Data rights, privacy and AI governance
+          severity: high
+          likelihood: medium
+          rationale: Large patent/science/litigation datasets plus AI features require rights, privacy, security and AI-training controls.
+          evidence_claim_ids: &a18
+            - EC-PAT-002
+            - EC-PAT-006
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-007
+          label: Cross-border operational complexity
+          severity: medium
+          likelihood: medium
+          rationale: Public London and Singapore footprint implies multi-jurisdiction employment, privacy and contracting considerations.
+          evidence_claim_ids: &a19
+            - EC-PAT-007
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+        - risk_id: R-PAT-008
+          label: Security attestations not independently reviewed
+          severity: medium
+          likelihood: unknown
+          rationale: Public trust claims were reviewed, but actual SOC/ISO reports and exceptions were unavailable.
+          evidence_claim_ids: &a20
+            - EC-PAT-006
+          source_ids:
+            - SRC-PAT-001
+            - SRC-PAT-002
+            - SRC-PAT-004
+    rendering_guidance:
+      preferred_format: table_visual
+      display_notes: null
+    evidence_claim_ids:
+      - EC-PAT-008
+      - EC-PAT-001
+      - EC-PAT-008
+      - EC-PAT-004
+      - EC-PAT-005
+      - EC-PAT-002
+      - EC-PAT-003
+      - EC-PAT-002
+      - EC-PAT-003
+      - EC-PAT-002
+      - EC-PAT-006
+      - EC-PAT-007
+      - EC-PAT-006
+    source_ids:
+      - SRC-PAT-001
+      - SRC-PAT-002
+      - SRC-PAT-004
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-PAT-001
+    claim: CB Insights lists PatSnap as a $1B United Kingdom enterprise-tech private unicorn that joined on 2021-03-16.
+    evidence_summary: This supports unicorn eligibility and latest public valuation but not current financing economics.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-PAT-001
+    quoted_evidence:
+      - source_id: SRC-PAT-001
+        quote: PatSnap | $1 | 3/16/2021 | United Kingdom | London | Enterprise Tech | Sequoia Capital China; Shunwei Capital Partners; Qualgro
+        location: CB Insights unicorn table row
+    analyst_interpretation: This supports unicorn eligibility and latest public valuation but not current financing economics.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-I-1
+      figure_ids:
+        - F-PAT-I-1
+      risk_ids:
+        - R-PAT-001
+        - R-PAT-002
+  - evidence_claim_id: EC-PAT-002
+    claim: PatSnap says it provides access to more than 2B structured data points across patents, science, litigation and tech sectors.
+    evidence_summary: The data-scale claim supports product breadth but should be validated for coverage quality, rights and freshness.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-PAT-002
+    quoted_evidence:
+      - source_id: SRC-PAT-002
+        quote: Access to over 2,000,000,000 structured data points around patents, science, litigation, and tech sectors
+        location: PatSnap about page
+    analyst_interpretation: The data-scale claim supports product breadth but should be validated for coverage quality, rights and freshness.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-II-1
+      figure_ids:
+        - F-PAT-II-1
+      risk_ids:
+        - R-PAT-004
+        - R-PAT-006
+  - evidence_claim_id: EC-PAT-003
+    claim: PatSnap markets AI-agent products, Analytics, Synapse, Bio, Chemical, Open Platform/API/MCP and Professional Services.
+    evidence_summary: The product matrix is broad across IP, R&D and life-sciences intelligence; product-level revenue mix and pricing are not public.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-PAT-002
+    quoted_evidence:
+      - source_id: SRC-PAT-002
+        quote: PatSnap Eureka Platform; Agents for IP; Agents for Engineering; Agents for Life Sciences; Agents for Materials; Analytics; Synapse; Bio; Chemical; Open Platform; Professional Services
+        location: PatSnap navigation/about page
+    analyst_interpretation: The product matrix is broad across IP, R&D and life-sciences intelligence; product-level revenue mix and pricing are not public.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-II-1
+      figure_ids:
+        - F-PAT-II-1
+      risk_ids:
+        - R-PAT-004
+  - evidence_claim_id: EC-PAT-004
+    claim: PatSnap says it is trusted by more than 18,000 innovators worldwide and claims 75% faster innovation at 25% less cost.
+    evidence_summary: The customer-count and ROI claims are company-published and require customer, cohort and methodology validation.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-PAT-002
+    quoted_evidence:
+      - source_id: SRC-PAT-002
+        quote: Innovate 75% faster at 25% less cost... Trusted by more than 18,000 innovators worldwide
+        location: PatSnap about page
+    analyst_interpretation: The customer-count and ROI claims are company-published and require customer, cohort and methodology validation.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-III-1
+      figure_ids:
+        - F-PAT-III-1
+      risk_ids:
+        - R-PAT-003
+  - evidence_claim_id: EC-PAT-005
+    claim: PatSnap publishes customer stories including Canon, BCS, Grab, Gowling WLG, National University of Singapore and City University of London.
+    evidence_summary: Named customers support market traction, but contract value, renewal and concentration are not public.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-PAT-003
+    quoted_evidence:
+      - source_id: SRC-PAT-003
+        quote: Canon Inc.; Biotech Connection Singapore; Grab Patent Office; Gowling WLG; National University of Singapore; City University of London
+        location: PatSnap customer page
+    analyst_interpretation: Named customers support market traction, but contract value, renewal and concentration are not public.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-III-1
+      figure_ids:
+        - F-PAT-III-1
+      risk_ids:
+        - R-PAT-003
+  - evidence_claim_id: EC-PAT-006
+    claim: PatSnap states SOC 2 Type 1, ISO27001, encryption, GDPR/CCPA compliance and no customer-data use for AI training.
+    evidence_summary: Security posture is publicly asserted, but underlying reports, exceptions and subprocessors require review.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-PAT-004
+    quoted_evidence:
+      - source_id: SRC-PAT-004
+        quote: SOC 2 Type 1; ISO27001; TLS 1.2+ & AES-256 encryption; Data privacy laws; Your data remains yours--never used for AI training
+        location: PatSnap trust page
+    analyst_interpretation: Security posture is publicly asserted, but underlying reports, exceptions and subprocessors require review.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-VIII-2
+      figure_ids:
+        - F-PAT-VIII-1
+      risk_ids:
+        - R-PAT-006
+        - R-PAT-008
+  - evidence_claim_id: EC-PAT-007
+    claim: PatSnap lists Singapore and London office addresses on its about page.
+    evidence_summary: The footprint supports cross-border operations and data/privacy diligence across jurisdictions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-PAT-002
+    quoted_evidence:
+      - source_id: SRC-PAT-002
+        quote: Singapore... London
+        location: PatSnap about page offices section
+    analyst_interpretation: The footprint supports cross-border operations and data/privacy diligence across jurisdictions.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-VII-1
+      figure_ids:
+        - F-PAT-VII-1
+      risk_ids:
+        - R-PAT-007
+  - evidence_claim_id: EC-PAT-008
+    claim: Public financial statements, ARR, gross margin, cash, debt, churn and cap table were not available in reviewed public sources.
+    evidence_summary: Financial quality cannot be assessed from public evidence alone.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-PAT-001
+      - SRC-PAT-002
+    quoted_evidence: []
+    analyst_interpretation: Financial quality cannot be assessed from public evidence alone.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-PAT-I-2
+      figure_ids: []
+      risk_ids:
+        - R-PAT-001
+        - R-PAT-002
+sources:
+  - source_id: SRC-PAT-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: market_database
+    reliability_notes: Public market database used for private-unicorn status and latest known valuation.
+    archive_url: null
+  - source_id: SRC-PAT-002
+    title: About Us
+    url: https://www.patsnap.com/about-us/
+    publisher: PatSnap
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company-owned source for product, data-scale, investor and office claims.
+    archive_url: null
+  - source_id: SRC-PAT-003
+    title: Customers Archive
+    url: https://www.patsnap.com/customers/
+    publisher: PatSnap
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: customer_or_partner_source
+    reliability_notes: Company-hosted customer stories; individual customer outcomes should be confirmed with references.
+    archive_url: null
+  - source_id: SRC-PAT-004
+    title: PatSnap Trust Center
+    url: https://www.patsnap.com/trust-center
+    publisher: PatSnap
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-19
+    source_type: primary_company_source
+    reliability_notes: Company trust page for public compliance and security claims; underlying reports were not reviewed.
+    archive_url: null
+risk_register:
+  - risk_id: R-PAT-001
+    risk_title: Financial quality private
+    risk_category: financial
+    severity: high
+    likelihood: unknown
+    description: No audited financials, ARR, gross margin, cash, debt, burn or forecast model were public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+    evidence_claim_ids: *a13
+    mitigation_or_diligence_request: Request audited statements, KPI pack, revenue-recognition memo, cash/debt and forecast model.
+  - risk_id: R-PAT-002
+    risk_title: Cap-table and valuation opacity
+    risk_category: financing
+    severity: medium
+    likelihood: unknown
+    description: The $1B valuation anchor does not disclose current shares, liquidation preferences, debt or secondary transactions.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+    evidence_claim_ids: *a14
+    mitigation_or_diligence_request: Request full cap table, financing documents, option plan, debt and 409A history.
+  - risk_id: R-PAT-003
+    risk_title: Customer concentration and ROI proof unknown
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: 18,000 innovator and ROI claims are company-published and do not reveal ARR concentration, retention or methodology.
+    impacted_chapter_ids:
+      - III
+    impacted_section_ids:
+      - III.A
+    evidence_claim_ids: *a15
+    mitigation_or_diligence_request: Request top-customer schedule, cohort retention, ROI methodology and reference calls.
+  - risk_id: R-PAT-004
+    risk_title: Broad product-surface complexity
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: Multiple AI agents, data products and professional services may increase roadmap, support and margin complexity.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.A
+    evidence_claim_ids: *a16
+    mitigation_or_diligence_request: Review product-level ARR, gross margin, roadmap, support burden and usage analytics.
+  - risk_id: R-PAT-005
+    risk_title: Competitive pressure in IP/R&D intelligence
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: PatSnap competes with established patent, legal, scientific and AI-search platforms.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+    evidence_claim_ids: *a17
+    mitigation_or_diligence_request: Run win/loss, pricing comparison and customer switching-cost analysis.
+  - risk_id: R-PAT-006
+    risk_title: Data rights, privacy and AI governance
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Large patent/science/litigation datasets plus AI features require rights, privacy, security and AI-training controls.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VIII.A
+    evidence_claim_ids: *a18
+    mitigation_or_diligence_request: Review data licenses, privacy assessments, AI governance, SOC/ISO reports, subprocessors and incident logs.
+  - risk_id: R-PAT-007
+    risk_title: Cross-border operational complexity
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Public London and Singapore footprint implies multi-jurisdiction employment, privacy and contracting considerations.
+    impacted_chapter_ids:
+      - VII
+      - VIII
+    impacted_section_ids:
+      - VII.A
+      - VIII.A
+    evidence_claim_ids: *a19
+    mitigation_or_diligence_request: Request entity chart, employment policies, transfer mechanisms and local counsel memos.
+  - risk_id: R-PAT-008
+    risk_title: Security attestations not independently reviewed
+    risk_category: security
+    severity: medium
+    likelihood: unknown
+    description: Public trust claims were reviewed, but actual SOC/ISO reports and exceptions were unavailable.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+    evidence_claim_ids: *a20
+    mitigation_or_diligence_request: Obtain SOC 2, ISO certificate, pentest, vulnerability management evidence and exceptions.
+diligence_gaps:
+  - gap_id: G-PAT-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, KPI pack, cash/debt, forecast model and cap table.
+    why_it_matters: Required to underwrite valuation, runway, dilution and revenue quality.
+    suggested_source_or_request: Company CFO, board materials, accountants and financing counsel.
+    priority: high
+  - gap_id: G-PAT-002
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top-customer or top-partner concentration, contracts, retention and reference calls.
+    why_it_matters: Public traction claims do not prove durable, diversified revenue.
+    suggested_source_or_request: Customer master, contracts, renewal cohorts and reference list.
+    priority: high
+  - gap_id: G-PAT-003
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Legal docket, compliance audits, security reports, IP/data rights and incident history.
+    why_it_matters: Legal, regulatory, privacy and security issues can materially impair enterprise value.
+    suggested_source_or_request: Company counsel, security team, privacy counsel and insurance broker.
+    priority: high
+follow_up_requests:
+  - request_id: Q-PAT-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, monthly KPI pack, cash/debt, forecast model, cap table and financing documents.
+    requested_from: company
+    priority: high
+  - request_id: Q-PAT-002
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer/partner concentration, contracts, retention cohorts and permission for reference calls.
+    requested_from: company
+    priority: high
+  - request_id: Q-PAT-003
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide counsel-prepared litigation/compliance schedule, security reports, IP/data-rights materials and incident history.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-PAT-001
+    description: This is a public-source diligence snapshot. No founder interview, private data room, customer calls, audited financials, legal docket search, paid database export or confidential security reports were available.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - II.A
+      - III.A
+      - IV.A
+      - V.A
+      - VI.A
+      - VII.A
+      - VIII.A
+  - limitation_id: L-PAT-002
+    description: Company-published claims are treated as evidence of public assertion unless independently corroborated; financial and customer claims require direct verification.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+    affected_section_ids:
+      - I.A
+      - III.A
+      - V.A
