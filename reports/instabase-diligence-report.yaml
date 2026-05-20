@@ -1,0 +1,1497 @@
+report_metadata:
+  report_title: "Instabase Startup Diligence Research Report"
+  target_company: "Instabase"
+  website: "https://instabase.com/"
+  known_aliases: ["Instabase, Inc.", "AI Hub"]
+  sector: "Enterprise AI / intelligent document processing"
+  geography: "United States; public headquarters/profile in San Francisco with hubs in San Francisco, New York, London, and Bangalore/Bengaluru"
+  company_stage: "Private unicorn; venture-backed Series D"
+  research_date: "2026-05-20"
+  analyst: "GitHub Copilot diligence agent"
+  report_version: "1.0"
+  currency: "USD"
+  time_zone: "America/Los_Angeles"
+
+research_scope:
+  diligence_depth: deep_diligence
+  source_strategy:
+    - "Public-source-only diligence using company pages, customer case studies, SEC EDGAR, CB Insights, Forge, Business Wire, analyst databases, market research pages, and public legal-record mirrors."
+    - "Eligibility screen: create the report only if public evidence supports private-unicorn status and no credible public IPO, acquisition, or shutdown evidence is found."
+    - "Treat company and analyst claims as evidence-backed but unaudited; flag gaps where nonpublic data-room materials are required."
+  included_jurisdictions: ["United States", "United Kingdom", "European Union", "Turkey", "India"]
+  excluded_topics: ["Nonpublic data-room materials", "Private interviews", "Paid databases not publicly accessible", "GitHub/private repository review", "Confidential customer contracts"]
+  user_provided_materials: []
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: "Instabase is a private, venture-backed unicorn with valuation evidence at or above $1B."
+    claim_source: "Public market databases and financing disclosures; not user-provided."
+    claim_date: null
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.C]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-001, EC-002, EC-003]
+    contradiction_summary: "Valuation sources vary: CB Insights shows $1.24B at unicorn entry; Forge shows 2023 $2B and 2025 $1.24B post-money, implying valuation compression."
+    diligence_follow_up: ["Request current cap table, latest preferred-stock financing documents, option pool, SAFEs/notes, debt, liquidation stack, and 409A valuation."]
+  - founder_claim_id: FC-002
+    claim_text: "AI Hub can automate complex document-heavy enterprise workflows with auditability and governed controls."
+    claim_source: "Instabase AI Hub product page."
+    claim_date: null
+    mapped_chapter_ids: [II, VI]
+    mapped_section_ids: [II.A, VI.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-005, EC-016]
+    contradiction_summary: "Feature availability is public, but independent accuracy, throughput, and cost benchmarks are not public."
+    diligence_follow_up: ["Request benchmark packs by document type, error taxonomy, model evaluation methodology, and representative customer before/after logs."]
+  - founder_claim_id: FC-003
+    claim_text: "Instabase has material enterprise traction with regulated financial-services, insurance, government, and large-enterprise customers."
+    claim_source: "Company page, Business Wire announcement, and customer case studies."
+    claim_date: null
+    mapped_chapter_ids: [III, V]
+    mapped_section_ids: [III.A, V.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+    contradiction_summary: "Named customer stories support usage, but revenue concentration, renewal rates, and customer-level ARR are not public."
+    diligence_follow_up: ["Request top-20 customer ARR, contract terms, renewal dates, NRR/GRR, production status, and customer-reference calls."]
+  - founder_claim_id: FC-004
+    claim_text: "Instabase maintains a security and compliance posture appropriate for regulated customers."
+    claim_source: "Instabase trust page."
+    claim_date: null
+    mapped_chapter_ids: [II, VIII]
+    mapped_section_ids: [II.A, VIII.G]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-006, EC-019]
+    contradiction_summary: "Public certifications are positive; report scope did not include confidential audit report review or incident history."
+    diligence_follow_up: ["Request SOC 2 Type II report, HIPAA attestation scope, pen-test summary, DPA, subprocessor list, incident log, and model-provider data handling terms."]
+  - founder_claim_id: FC-005
+    claim_text: "Instabase is investing in AI Hub, agentic automation, and governed enterprise AI workflows."
+    claim_source: "Product page, Series D announcement, and hiring page."
+    claim_date: null
+    mapped_chapter_ids: [VI]
+    mapped_section_ids: [VI.A, VI.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-002, EC-016, EC-018]
+    contradiction_summary: "Public roadmap signals are strong, but R&D spend, delivery dates, and defect history are not disclosed."
+    diligence_follow_up: ["Request product roadmap, release burndown, R&D budget, model vendor dependency map, and top unresolved technical risks."]
+  - founder_claim_id: FC-006
+    claim_text: "Instabase remains private with no credible public evidence of IPO, acquisition, or shutdown."
+    claim_source: "Forge IPO page, SEC EDGAR profile, active company/jobs pages, and public searches."
+    claim_date: "2026-05-20"
+    mapped_chapter_ids: [I, VIII]
+    mapped_section_ids: [I.D, VIII.F]
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids: [EC-001, EC-021]
+    contradiction_summary: "No reviewed source showed an IPO, acquisition, or shutdown; absence of public evidence cannot prove no confidential transaction discussions."
+    diligence_follow_up: ["Confirm with company counsel whether any pending M&A, IPO registration, tender offer, insolvency, or shutdown proceedings exist."]
+
+executive_summary:
+  overall_assessment: >-
+    Eligible for report creation: public sources support Instabase as an active private unicorn in enterprise AI/document automation, with CB Insights and Forge valuation evidence above $1B and no credible public IPO, acquisition, or shutdown evidence found. Diligence should proceed with caution because financial quality, cap table terms, customer concentration, security scope, and legal/IP details are largely nonpublic.
+  investment_or_diligence_thesis: >-
+    Instabase has credible public evidence of regulated-enterprise adoption in document-heavy workflows and a large market tailwind, but the investment case hinges on validating ARR quality, 2025 valuation reset terms, gross margin/services intensity, customer concentration, and AI/privacy controls.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: "Private-unicorn eligibility is supported by CB Insights $1.24B row, Forge $1.24B Series D valuation, and SEC no-ticker/no-exchange profile."
+      evidence_claim_ids: [EC-001]
+    - founder_claim_id: FC-003
+      summary: "Named customer evidence spans Rocket Mortgage, AXA, USPTO/Satsyil, İşbank/Maxitech, NatWest/University of Edinburgh, and Business Wire traction claims."
+      evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+    - founder_claim_id: FC-002
+      summary: "AI Hub public product materials describe workflow automation, 160+ language/handwriting support, audit trails, human review, and governed releases."
+      evidence_claim_ids: [EC-005, EC-016]
+  biggest_risks:
+    - risk_id: R-001
+      summary: "Financial statements, ARR quality, cash, burn, margins, and retention are not publicly verifiable."
+    - risk_id: R-002
+      summary: "Forge data imply a valuation reset from $2B in 2023 to $1.24B in 2025; share-class terms must be reviewed."
+    - risk_id: R-003
+      summary: "Public logo traction does not disclose revenue concentration, renewal risk, production status, or contract economics."
+    - risk_id: R-004
+      summary: "Sensitive regulated document processing creates privacy, security, AI governance, and subprocessor risk."
+  key_evidence_gaps:
+    - "Audited financial statements, ARR bridge, cash/burn/runway, debt, gross margins, retention, and current cap table."
+    - "Customer-level ARR, top-10 concentration, renewal calendar, churn/expansion, and production status."
+    - "Independent product benchmarks by document type, STP rate, error rates, latency, uptime, and model-cost data."
+    - "SOC 2 report contents, DPA, subprocessors, third-party LLM terms, incident log, and cyber/tech E&O policies."
+    - "Docket/complaint details for Instabase v. Manufacturers and Traders Trust Company."
+  recommended_next_steps:
+    - "Request financial, cap table, customer, security, technical, HR, and legal data-room packs before valuation reliance."
+    - "Validate no IPO/acquisition/shutdown event with company counsel and corporate records."
+    - "Run customer-reference calls for at least three named customers and one non-reference customer."
+    - "Review Series C/D terms to understand the 2023-to-2025 valuation reset and preference stack."
+    - "Conduct technical/security diligence on AI accuracy, model/subprocessor data use, SOC/HIPAA scope, and production incident history."
+
+chapters:
+  - chapter_id: I
+    title: "Financial Information"
+    chapter_summary: >-
+      Instabase clears the private-unicorn screen on public evidence, with CB Insights and Forge showing valuation above $1B and Business Wire confirming a 2025 $100M Series D. The diligence issue is quality of financials: public sources do not disclose audited statements, margins, cash, burn, retention, or current cap table, and Forge implies valuation compression from 2023 to 2025.
+    founder_claim_ids: [FC-001, FC-006]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-021]
+    risk_ids: [R-001, R-002, R-007]
+    sections:
+      - section_id: I.A
+        title: "Annual and quarterly financial information for the past three years"
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: "No audited annual or quarterly financial statements are public. Sacra and GetLatka provide directional ARR/revenue estimates, but these are not a substitute for company financials."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.A-1
+            finding: "Sacra estimates $46M ARR in 2023 and about 45 enterprise customers; GetLatka estimates $40.8M in 2024 and $50M in 2025."
+            evidence_claim_ids: [EC-004]
+            risk_ids: [R-001]
+        hidden_risks: ["Services-heavy enterprise deployments could make ARR quality materially different from pure-SaaS multiples.", "Revenue may be concentrated in a small number of regulated enterprise accounts."]
+        evidence_gaps: ["Audited P&L, balance sheet, cash flow, revenue recognition policy, deferred revenue, billings, backlog, ARR bridge, margin split, burn, runway, and debt schedule."]
+        follow_up_questions: ["Provide audited or reviewed financial statements for 2023-2025 and monthly 2025-2026 management accounts."]
+        table_ids: [T-002]
+        figure_ids: [F-001]
+        evidence_claim_ids: [EC-004]
+      - section_id: I.C
+        title: "Capital Structure"
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: "Public financing evidence includes SEC Form Ds in 2015 and 2017, CB Insights unicorn entry in 2019, Forge Series C/D round data, and Business Wire's 2025 Series D announcement. Current cap table, preferences, debt, and option pool are not public."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-1
+            finding: "SEC primary filings confirm $3.75M sold in 2015 and $23.17M sold in 2017 private offerings signed by Anant Bhardwaj."
+            evidence_claim_ids: [EC-003]
+            risk_ids: []
+          - finding_id: I.C-2
+            finding: "Forge reports a 2023 $2B valuation and a 2025 $1.24B Series D post-money valuation, creating a down-round/structure diligence issue."
+            evidence_claim_ids: [EC-001, EC-002]
+            risk_ids: [R-002]
+        hidden_risks: ["Preferred-stock preferences, anti-dilution protections, warrants, debt, and option pool could materially affect common-equity value."]
+        evidence_gaps: ["Current cap table, fully diluted share count, securities by class, option grants, SAFEs/notes, debt, warrants, liquidation stack, 409A, and tender/secondary activity."]
+        follow_up_questions: ["Provide complete cap table and all financing documents from Seed through Series D."]
+        table_ids: [T-001]
+        figure_ids: [F-001, F-002]
+        evidence_claim_ids: [EC-001, EC-002, EC-003]
+      - section_id: I.D
+        title: "Other financial information"
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: "No public evidence of IPO, acquisition, or shutdown was found; Forge states Instabase has not officially endorsed an IPO plan, and SEC EDGAR shows no ticker or exchange for Instabase. Active company/product/jobs pages support ongoing private operations."
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.D-1
+            finding: "No credible public IPO/acquisition/shutdown evidence was found in reviewed sources; active jobs and product pages point to ongoing operations."
+            evidence_claim_ids: [EC-021]
+            risk_ids: []
+        hidden_risks: ["Private M&A discussions, confidential IPO preparation, or liquidity constraints would not necessarily be public."]
+        evidence_gaps: ["Legal counsel confirmation of no pending IPO registration, M&A agreement, insolvency, shutdown, or material financing default."]
+        follow_up_questions: ["Confirm with management/counsel all material financings, secondary transactions, tender offers, IPO/M&A preparations, and any solvency concerns."]
+        table_ids: [T-001]
+        figure_ids: []
+        evidence_claim_ids: [EC-021]
+  - chapter_id: II
+    title: "Products"
+    chapter_summary: "Instabase AI Hub is publicly positioned as an enterprise document-workflow automation platform for unstructured data, combining extraction, cross-document validation, no-code/natural-language configuration, governed release workflows, audit trails, human-in-the-loop review, enterprise SSO/VPC deployment, and compliance controls."
+    founder_claim_ids: [FC-002, FC-004]
+    evidence_claim_ids: [EC-005, EC-006, EC-016]
+    risk_ids: [R-004, R-006]
+    sections:
+      - section_id: II.A
+        title: "Description of each product"
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: "The principal public product is AI Hub Automate, aimed at document packets such as loan applications, insurance claims, and trade-finance deals. It claims 160+ language/handwriting support, no-code workflow configuration, accuracy benchmarks, governed releases, deterministic checks, source-linked references, human review, SSO, encryption, and customer VPC deployment."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-1
+            finding: "Public product page states AI Hub applies context understanding, cross-document validation, multi-step business logic, and auditability beyond field extraction."
+            evidence_claim_ids: [EC-005]
+            risk_ids: [R-006]
+          - finding_id: II.A-2
+            finding: "Trust/product pages state SOC 2 Type II, HIPAA, GDPR/CCPA design, SSO, encryption, and virtual-private-cloud deployment options."
+            evidence_claim_ids: [EC-006]
+            risk_ids: [R-004]
+        hidden_risks: ["Product claims must be validated by document-type benchmarks; LLM hallucination or extraction errors can create material customer harm.", "Third-party model/vendor dependencies and data-use terms are not fully visible publicly."]
+        evidence_gaps: ["Independent accuracy by document type, latency, cost per page, deployment architectures, model vendor list, data-retention rules, uptime/SLA history, and customer-specific controls."]
+        follow_up_questions: ["Provide technical architecture, benchmark methodology, model provider dependencies, security audit reports, and production SLA/error history."]
+        table_ids: [T-003, T-004]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-005, EC-006, EC-016]
+  - chapter_id: III
+    title: "Customer Information"
+    chapter_summary: "Public evidence shows named enterprise references across mortgage, insurance, banking, public sector, and research. Customer proof is strong qualitatively, but revenue concentration, production status, renewal history, and customer-level ARR are not public."
+    founder_claim_ids: [FC-003, FC-004]
+    evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+    risk_ids: [R-003, R-004, R-006]
+    sections:
+      - section_id: III.A
+        title: "Top customers by application"
+        checklist_question_ids: [III.A]
+        summary: "Public customer stories include Rocket Mortgage for mortgage applications, AXA UK for commercial-insurance submissions, USPTO/Satsyil for patent-oath signature extraction, İşbank for money orders, and NatWest/University of Edinburgh for bank-statement research data."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-1
+            finding: "Rocket, AXA, USPTO, İşbank, and NatWest references demonstrate broad regulated-document use cases."
+            evidence_claim_ids: [EC-008, EC-009, EC-010, EC-011, EC-012]
+            risk_ids: [R-003]
+          - finding_id: III.A-2
+            finding: "Quantified public outcomes include Rocket 25% lower turn times and 2.5x faster close rate; İşbank classification and extraction improvements."
+            evidence_claim_ids: [EC-008, EC-011]
+            risk_ids: [R-006]
+        hidden_risks: ["Named cases may be selected success stories and may not represent average deployment economics.", "If a small number of large accounts drive ARR, one renewal loss could be material."]
+        evidence_gaps: ["Top customer list, ARR by customer, ACV, contract length, deployment status, renewal dates, churn, expansion, support tickets, and reference-call access."]
+        follow_up_questions: ["Provide top-20 customer schedule with ARR, use case, go-live date, renewal date, NPS/reference status, and expansion pipeline."]
+        table_ids: [T-005]
+        figure_ids: [F-004]
+        evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+      - section_id: III.B
+        title: "Strategic relationships"
+        checklist_question_ids: [III.B]
+        summary: "Public strategic relationships include Maxitech-facilitated İşbank deployment, Satsyil/USPTO public-sector workflow, and NatWest/University of Edinburgh research collaboration. Investors include QIA, Greylock, NEA, a16z, Index, Spark, Tribe, SC Ventures, and others."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-1
+            finding: "Business Wire states customer base more than doubled since last funding and names AXA, Uber, and NatWest; company page lists strategic investors."
+            evidence_claim_ids: [EC-007]
+            risk_ids: [R-003]
+        hidden_risks: ["Partner-led channels may rely on nonpublic referral economics or services-heavy implementation."]
+        evidence_gaps: ["Partner agreements, referral/reseller terms, implementation partners, customer data-processing agreements, and strategic-investor commercial relationships."]
+        follow_up_questions: ["Provide partner pipeline contribution, reseller/referral terms, and any related-party customer/investor transactions."]
+        table_ids: [T-006]
+        figure_ids: [F-004]
+        evidence_claim_ids: [EC-007, EC-010, EC-012]
+      - section_id: III.C
+        title: "Revenue by customer"
+        checklist_question_ids: [III.C]
+        summary: "Revenue by customer is not public. Sacra estimates about 45 enterprise customers and average contract value over $1M, but this is analyst-estimated and not audited."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: ["Customer concentration and renewal cliffs are likely material in enterprise software but cannot be quantified publicly."]
+        evidence_gaps: ["ARR by customer, top-10 concentration, NRR/GRR, backlog, renewal calendar, usage by customer, and accounts receivable aging."]
+        follow_up_questions: ["Provide anonymized and named customer concentration analysis under NDA."]
+        table_ids: [T-006]
+        figure_ids: []
+        evidence_claim_ids: [EC-004, EC-007]
+  - chapter_id: IV
+    title: "Competition"
+    chapter_summary: "Instabase operates in intelligent document processing, document AI, RPA-adjacent automation, and enterprise agentic AI. Market growth is strong, but competition includes RPA incumbents, IDP specialists, hyperscalers, and general LLM platforms."
+    founder_claim_ids: []
+    evidence_claim_ids: [EC-013, EC-014]
+    risk_ids: [R-005]
+    sections:
+      - section_id: IV.A
+        title: "Competitive landscape by market segment"
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: "Precedence Research reports rapid IDP market growth and BFSI share, while Sacra identifies RPA and startup competitors. Instabase differentiates publicly around complex document packets, regulated-enterprise controls, and auditability, but independent win-rate and benchmark evidence is nonpublic."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-1
+            finding: "Precedence estimates global IDP market of $3.22B in 2025 growing to $43.92B in 2034."
+            evidence_claim_ids: [EC-013]
+            risk_ids: []
+          - finding_id: IV.A-2
+            finding: "Sacra identifies Hyperscience, Rossum, Docugami, UiPath, and Automation Anywhere as relevant competitors/substitutes."
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-005]
+        hidden_risks: ["LLM platforms may commoditize extraction capabilities or reduce willingness to pay for proprietary IDP layers.", "Large incumbents may bundle document AI into broader automation suites."]
+        evidence_gaps: ["Win/loss by competitor, pricing comparisons, benchmark accuracy/cost by use case, switching costs, and differentiated IP evidence."]
+        follow_up_questions: ["Provide competitive battlecards, win/loss data, pricing concessions, and independent benchmark results."]
+        table_ids: [T-007, T-008]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-013, EC-014]
+  - chapter_id: V
+    title: "Marketing, Sales, and Distribution"
+    chapter_summary: "Public evidence shows enterprise go-to-market centered on regulated document-heavy workflows, named customer proof, investor credibility, and open sales/solutions roles. Detailed pipeline, pricing, CAC, quota attainment, and partner economics are not public."
+    founder_claim_ids: [FC-003]
+    evidence_claim_ids: [EC-007, EC-015, EC-018]
+    risk_ids: [R-003, R-005, R-008]
+    sections:
+      - section_id: V.A
+        title: "Marketing and sales strategy"
+        checklist_question_ids: [V.A.1, V.A.2]
+        summary: "Company messaging emphasizes AI Hub for complex enterprise document workflows. Open roles in sales engineering, solutions, product marketing, and field-facing functions indicate active enterprise expansion, but no public bookings pipeline or sales productivity data exists."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-1
+            finding: "Business Wire states customer base more than doubled since prior funding; jobs page shows hiring in customer-facing and product roles."
+            evidence_claim_ids: [EC-007, EC-018]
+            risk_ids: [R-008]
+        hidden_risks: ["Enterprise sales cycles can be long and services-heavy; public customer logos may mask high CAC or slow implementations."]
+        evidence_gaps: ["Pipeline, bookings, CAC, sales cycle, win rate, quota attainment, implementation effort, partner contribution, and price-discounting data."]
+        follow_up_questions: ["Provide CRM export, FY2025/FY2026 pipeline, cohort win rates, CAC payback, quota attainment, and implementation utilization."]
+        table_ids: [T-009, T-010]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-007, EC-018]
+      - section_id: V.B
+        title: "Major customers and revenue concentration"
+        checklist_question_ids: [V.B]
+        summary: "Named customers create strong marketing proof, but revenue concentration is not public and must be validated before relying on growth claims."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: ["Top-customer concentration, one-off services revenue, or pilot-to-production slippage could materially alter growth quality."]
+        evidence_gaps: ["Customer-level ARR, logo count by product, active users, usage volume, retention, expansion, churn, and renewals."]
+        follow_up_questions: ["Provide top-customer revenue and renewal calendar and permit customer-reference calls."]
+        table_ids: [T-009]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+  - chapter_id: VI
+    title: "Research and Development"
+    chapter_summary: "Instabase's R&D story is now centered on AI Hub, agentic/AI-native workflows, context-aware document understanding, governed releases, and enterprise controls. Public product claims are directionally credible but need technical diligence on accuracy, cost, model dependencies, data use, and roadmap execution."
+    founder_claim_ids: [FC-002, FC-005]
+    evidence_claim_ids: [EC-005, EC-016, EC-018]
+    risk_ids: [R-004, R-006, R-009]
+    sections:
+      - section_id: VI.A
+        title: "R&D organization and roadmap"
+        checklist_question_ids: [VI.A.1, VI.A.2]
+        summary: "Open engineering/product/security roles and AI Hub product messaging indicate continued R&D investment. Public sources do not disclose R&D spend, release velocity, roadmap dates, defect backlog, or model vendor dependency."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-1
+            finding: "Jobs page lists product/engineering/security/compliance roles, supporting active product and platform investment."
+            evidence_claim_ids: [EC-018]
+            risk_ids: [R-009]
+        hidden_risks: ["AI feature velocity may depend on third-party models, cloud GPU economics, or scarce enterprise AI engineering talent."]
+        evidence_gaps: ["R&D budget, roadmap, release burndown, model/vendor list, patent inventory, defect backlog, security engineering capacity, and infra cost by workload."]
+        follow_up_questions: ["Provide roadmap, model architecture, R&D staffing plan, patent/trade secret register, and defect/security backlog."]
+        table_ids: [T-011, T-012]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-016, EC-018]
+      - section_id: VI.B
+        title: "Technology validation"
+        checklist_question_ids: [VI.B]
+        summary: "Public AI Hub materials describe accuracy benchmarks, source-linked references, deterministic checks, and human review. Independent results, methodology, and negative cases are not public."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-1
+            finding: "Product page states AI Hub includes accuracy benchmarks before production release and audit trails after deployment."
+            evidence_claim_ids: [EC-005, EC-016]
+            risk_ids: [R-006]
+        hidden_risks: ["Benchmark sets may not match production documents; model drift and prompt changes could affect regulated workflows."]
+        evidence_gaps: ["Golden datasets, benchmark reports, model evaluation cards, test coverage, red-team results, uptime/SLA, and incident retrospectives."]
+        follow_up_questions: ["Run diligence benchmark on representative customer documents and review production incident history."]
+        table_ids: [T-012]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-005, EC-016]
+  - chapter_id: VII
+    title: "Management, Personnel, and Compensation"
+    chapter_summary: "Public pages identify CEO/founder Anant Bhardwaj and other executives including Helen Lee, Jake Shay, Sheetal Khandal, and Sushil Prabhu. Hiring activity suggests continued operations and expansion, but board composition, turnover, compensation, option pool, and org health are nonpublic."
+    founder_claim_ids: []
+    evidence_claim_ids: [EC-017, EC-018]
+    risk_ids: [R-008, R-009]
+    sections:
+      - section_id: VII.A
+        title: "Management and personnel"
+        checklist_question_ids: [VII.A.1, VII.A.2, VII.A.3]
+        summary: "Company page and jobs page provide public leadership and hiring signals. Diligence still needs board minutes, employment agreements, option schedules, turnover, key-person dependencies, and compensation benchmarking."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-1
+            finding: "Company page identifies executive leadership; jobs page shows active hiring across security/compliance, engineering, sales, solutions, finance, and marketing."
+            evidence_claim_ids: [EC-017, EC-018]
+            risk_ids: [R-008, R-009]
+        hidden_risks: ["Founder/key-person dependency and enterprise AI talent retention risk are not assessable from public data."]
+        evidence_gaps: ["Org chart, headcount by function/location, attrition, compensation bands, option pool, board/investor rights, employment agreements, and key-person insurance."]
+        follow_up_questions: ["Provide board and org materials, HR metrics, compensation plan, option pool, attrition, employee relations claims, and key-person succession plan."]
+        table_ids: [T-013, T-014]
+        figure_ids: [F-008, F-009]
+        evidence_claim_ids: [EC-017, EC-018]
+  - chapter_id: VIII
+    title: "Legal and Related Matters"
+    chapter_summary: "Public legal diligence supports private-company status and identifies security/privacy posture claims plus one public docket-title flag. Material legal diligence remains incomplete without contracts, IP assignments, data-processing terms, insurance, litigation files, regulatory correspondence, and security audit reports."
+    founder_claim_ids: [FC-004, FC-006]
+    evidence_claim_ids: [EC-006, EC-019, EC-020, EC-021]
+    risk_ids: [R-004, R-010]
+    sections:
+      - section_id: VIII.A
+        title: "Litigation and disputes"
+        checklist_question_ids: [VIII.A.1, VIII.A.2, VIII.A.3]
+        summary: "PacerMonitor shows a 2026 W.D.N.Y. docket titled Instabase, Inc. v. Manufacturers and Traders Trust Company. The complaint and merits were not publicly verified in this research pass, so this is a diligence flag rather than a finding of liability."
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-1
+            finding: "A docket title exists for Instabase, Inc. v. Manufacturers and Traders Trust Company in W.D.N.Y.; details remain unverified."
+            evidence_claim_ids: [EC-020]
+            risk_ids: [R-010]
+        hidden_risks: ["Contract disputes with regulated customers could indicate receivables, implementation, data, or performance issues."]
+        evidence_gaps: ["Complaint, answer, docket sheet, settlement posture, material litigation schedule, threatened claims, and legal reserves."]
+        follow_up_questions: ["Provide all litigation and threatened-claim schedules, including the M&T docket materials and reserves."]
+        table_ids: [T-015]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-020]
+      - section_id: VIII.F
+        title: "Corporate records and private-company status"
+        checklist_question_ids: [VIII.F]
+        summary: "SEC EDGAR company facts for Instabase CIK 0001651900 show no ticker/exchange and only early Form D notices in reviewed recent filings; public evidence did not show IPO, acquisition, or shutdown."
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F-1
+            finding: "SEC no-ticker/no-exchange profile and Forge statement that no IPO plan has been officially endorsed support private-company status."
+            evidence_claim_ids: [EC-001, EC-021]
+            risk_ids: []
+        hidden_risks: ["Confidential registrations or M&A negotiations would not be visible unless publicly announced or filed."
+        ]
+        evidence_gaps: ["Corporate charter/bylaws, board consents, stock ledger, option plan, investor rights, voting agreements, and counsel certificate."
+        ]
+        follow_up_questions: ["Request corporate minute book, charter, bylaws, consents, and counsel confirmation of no material transaction or insolvency event."
+        ]
+        table_ids: [T-015]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-021]
+      - section_id: VIII.G
+        title: "Security, privacy, compliance, and IP"
+        checklist_question_ids: [VIII.G]
+        summary: "Trust page claims SOC 2 Type II, HIPAA support, GDPR/CCPA design, DPO, third-party pen tests, SSO, encryption, DPA availability, and security self-assessment. These claims need confidential audit, DPA, subprocessor, incident, and IP assignment review."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-1
+            finding: "Trust page describes security/compliance controls relevant to regulated customers, but not the detailed audit report scope."
+            evidence_claim_ids: [EC-006, EC-019]
+            risk_ids: [R-004]
+        hidden_risks: ["AI vendors and subprocessors may create data-use, cross-border transfer, retention, breach, or model-training risks."]
+        evidence_gaps: ["SOC 2 report, HIPAA attestation, DPIAs, DPA, subprocessor list, incident log, privacy notices, IP assignments, open-source inventory, and cyber insurance."]
+        follow_up_questions: ["Review SOC 2 report, DPAs, subprocessors, AI/model vendor terms, security incidents, and complete IP chain-of-title."
+        ]
+        table_ids: [T-016]
+        figure_ids: [F-010]
+        evidence_claim_ids: [EC-006, EC-019]
+
+tables:
+  - table_id: T-001
+    chapter_id: I
+    title: "Funding and valuation evidence"
+    description: "Public financing and valuation indicators relevant to private-unicorn eligibility."
+    source_ids: [S-001, S-002, S-003, S-004]
+    columns: [Item, Date, Amount_or_valuation, Public_evidence, Diligence_note]
+    rows:
+      - {Item: "CB Insights unicorn row", Date: "2019-10-21", Amount_or_valuation: "$1.24B", Public_evidence: "Lists Instabase as unicorn, United States/San Francisco, Enterprise Tech.", Diligence_note: "Supports minimum $1B private valuation screen."}
+      - {Item: "Series D", Date: "2025-01", Amount_or_valuation: "$100M raise; Forge $1.24B post-money", Public_evidence: "Business Wire raise led by QIA; Forge valuation page.", Diligence_note: "Need terms and share class economics."}
+      - {Item: "Series C", Date: "2023-06", Amount_or_valuation: "Forge $2.0B valuation", Public_evidence: "Forge page.", Diligence_note: "Compare to 2025 reset."}
+      - {Item: "SEC Form D", Date: "2017", Amount_or_valuation: "$23.17M sold", Public_evidence: "SEC primary filing XML.", Diligence_note: "Confirms earlier private financing."}
+  - table_id: T-002
+    chapter_id: I
+    title: "Public financial estimate matrix"
+    description: "Unaudited third-party metrics and what must be verified."
+    source_ids: [S-009, S-010]
+    columns: [Metric, Public_value, Source, Reliability, Verification_needed]
+    rows:
+      - {Metric: "ARR estimate", Public_value: "$46M ARR in 2023", Source: "Sacra", Reliability: "Medium-low", Verification_needed: "ARR bridge and recognized revenue reconciliation."}
+      - {Metric: "Revenue estimate", Public_value: "$40.8M 2024; $50M 2025", Source: "GetLatka", Reliability: "Low-medium", Verification_needed: "Audited revenue, bookings, deferred revenue."}
+      - {Metric: "Enterprise customers", Public_value: "~45 and ACV >$1M", Source: "Sacra", Reliability: "Medium-low", Verification_needed: "Customer list, ARR concentration, renewal schedule."}
+      - {Metric: "Customer base growth", Public_value: "More than doubled since last funding", Source: "Business Wire", Reliability: "Medium", Verification_needed: "Logo definition, production vs pilot count."}
+  - table_id: T-003
+    chapter_id: II
+    title: "AI Hub public product capabilities"
+    description: "Capabilities claimed publicly by Instabase."
+    source_ids: [S-005]
+    columns: [Capability, Public_claim, Diligence_test]
+    rows:
+      - {Capability: "Document understanding", Public_claim: "Context-aware extraction and cross-document validation.", Diligence_test: "Run representative document benchmark."}
+      - {Capability: "Languages/handwriting", Public_claim: "160+ languages and handwriting support.", Diligence_test: "Test low-quality scans and multilingual edge cases."}
+      - {Capability: "Governance", Public_claim: "Benchmarking, governed releases, audit trails, human review.", Diligence_test: "Review release controls and audit logs."}
+      - {Capability: "Deployment", Public_claim: "Enterprise SSO/encryption/customer VPC options.", Diligence_test: "Review architecture and controls."}
+  - table_id: T-004
+    chapter_id: II
+    title: "Product risk-control mapping"
+    description: "Where product claims need technical validation."
+    source_ids: [S-005, S-006]
+    columns: [Risk_area, Public_control, Residual_diligence_gap]
+    rows:
+      - {Risk_area: "Accuracy", Public_control: "Benchmarks and deterministic checks.", Residual_diligence_gap: "Benchmark methodology and production error history."}
+      - {Risk_area: "Privacy", Public_control: "Encryption, SSO, compliance posture.", Residual_diligence_gap: "DPA, subprocessor, model training terms."}
+      - {Risk_area: "Auditability", Public_control: "Source-linked references and audit trails.", Residual_diligence_gap: "Regulator/customer acceptance and immutable log design."}
+      - {Risk_area: "Scalability", Public_control: "Enterprise workflow positioning.", Residual_diligence_gap: "Throughput, latency, cost-per-page, uptime."}
+  - table_id: T-005
+    chapter_id: III
+    title: "Named customer case-study evidence"
+    description: "Public customer references and diligence implications."
+    source_ids: [S-007, S-011, S-012, S-013, S-014, S-015]
+    columns: [Customer_or_program, Segment, Public_outcome, Diligence_implication]
+    rows:
+      - {Customer_or_program: "Rocket Mortgage", Segment: "Mortgage", Public_outcome: "1.5M documents processed; 25% lower turn times; 2.5x faster close rate.", Diligence_implication: "Validate production scale, renewal, and ARR."}
+      - {Customer_or_program: "AXA UK", Segment: "Insurance", Public_outcome: "Commercial submission automation story.", Diligence_implication: "Validate live use, ROI, and contract term."}
+      - {Customer_or_program: "USPTO/Satsyil", Segment: "Public sector/IP", Public_outcome: "Signature extraction from patent oaths/declarations.", Diligence_implication: "Assess public-sector procurement and data rules."}
+      - {Customer_or_program: "İşbank", Segment: "Banking", Public_outcome: "Money-order classification and extraction improvements.", Diligence_implication: "Verify banking regulatory and localization requirements."}
+      - {Customer_or_program: "NatWest/University of Edinburgh", Segment: "Banking/research", Public_outcome: "Bank-statement data extraction collaboration.", Diligence_implication: "Clarify whether research, pilot, or commercial production."}
+  - table_id: T-006
+    chapter_id: III
+    title: "Customer diligence request matrix"
+    description: "Customer information unavailable publicly but necessary for diligence."
+    source_ids: [S-007, S-009]
+    columns: [Information_needed, Why_it_matters, Public_status, Follow_up]
+    rows:
+      - {Information_needed: "ARR by customer", Why_it_matters: "Concentration and quality of revenue.", Public_status: "Not public", Follow_up: "Top-20 ARR schedule."}
+      - {Information_needed: "Renewal calendar", Why_it_matters: "Churn and expansion risk.", Public_status: "Not public", Follow_up: "Contract and renewal dates."}
+      - {Information_needed: "Production status", Why_it_matters: "Pilots may not equal recurring revenue.", Public_status: "Not public", Follow_up: "Go-live dates and usage logs."}
+      - {Information_needed: "Reference calls", Why_it_matters: "Validate ROI and satisfaction.", Public_status: "Selective stories only", Follow_up: "Reference and non-reference customers."}
+  - table_id: T-007
+    chapter_id: IV
+    title: "Competitive set"
+    description: "Publicly identified competitors and substitutes."
+    source_ids: [S-009, S-016]
+    columns: [Category, Examples, Competitive_pressure]
+    rows:
+      - {Category: "IDP specialists", Examples: "Hyperscience, Rossum, Docugami", Competitive_pressure: "Accuracy, workflow depth, implementation speed."}
+      - {Category: "RPA/automation suites", Examples: "UiPath, Automation Anywhere", Competitive_pressure: "Bundled automation and enterprise distribution."}
+      - {Category: "Hyperscalers/document AI", Examples: "Cloud AI/OCR platforms", Competitive_pressure: "Pricing pressure and native cloud integration."}
+      - {Category: "General LLM platforms", Examples: "Enterprise LLM/application platforms", Competitive_pressure: "Feature commoditization and custom-build alternatives."}
+  - table_id: T-008
+    chapter_id: IV
+    title: "Market sizing indicators"
+    description: "Public market growth indicators for intelligent document processing."
+    source_ids: [S-016]
+    columns: [Market_indicator, Public_value, Implication, Diligence_caveat]
+    rows:
+      - {Market_indicator: "Global IDP 2025", Public_value: "$3.22B", Implication: "Existing category scale.", Diligence_caveat: "Source methodology not independently audited."}
+      - {Market_indicator: "Global IDP 2034", Public_value: "$43.92B", Implication: "Large growth tailwind.", Diligence_caveat: "Forecast risk and category definition risk."}
+      - {Market_indicator: "CAGR", Public_value: "33.65%", Implication: "Fast-growing automation demand.", Diligence_caveat: "Growth may attract intense competition."}
+      - {Market_indicator: "BFSI share", Public_value: "~32% 2024", Implication: "Relevant to Instabase regulated-customer stories.", Diligence_caveat: "Segment share not Instabase-specific."}
+  - table_id: T-009
+    chapter_id: V
+    title: "Go-to-market public evidence"
+    description: "Public signals relevant to marketing/sales/distribution."
+    source_ids: [S-007, S-017, S-018]
+    columns: [Signal, Evidence, Interpretation, Diligence_gap]
+    rows:
+      - {Signal: "Customer logos", Evidence: "AXA, Uber, NatWest named in Series D announcement.", Interpretation: "Enterprise credibility.", Diligence_gap: "ARR and contract status."}
+      - {Signal: "Case studies", Evidence: "Rocket, AXA, USPTO, İşbank, NatWest stories.", Interpretation: "Verticalized proof points.", Diligence_gap: "Selection bias and live usage."}
+      - {Signal: "Hiring", Evidence: "Sales engineering/solutions/product marketing roles.", Interpretation: "Active GTM investment.", Diligence_gap: "Quota attainment and CAC."}
+      - {Signal: "Investors", Evidence: "QIA, Greylock, NEA, a16z, Index, Spark, Tribe, SC Ventures.", Interpretation: "Financing/network support.", Diligence_gap: "Related-party commercial terms."}
+  - table_id: T-010
+    chapter_id: V
+    title: "Sales metric gaps"
+    description: "Operational GTM metrics required for investment diligence."
+    source_ids: [S-007]
+    columns: [Metric, Public_availability, Why_needed, Request]
+    rows:
+      - {Metric: "Bookings/pipeline", Public_availability: "Not public", Why_needed: "Growth visibility.", Request: "CRM export and forecast history."}
+      - {Metric: "CAC/payback", Public_availability: "Not public", Why_needed: "Sales efficiency.", Request: "Sales and marketing spend by cohort."}
+      - {Metric: "Implementation effort", Public_availability: "Not public", Why_needed: "Margin and scalability.", Request: "Services hours by deployment."}
+      - {Metric: "Pricing/discounts", Public_availability: "Not public", Why_needed: "Competitive pressure.", Request: "Deal desk and price-book data."}
+  - table_id: T-011
+    chapter_id: VI
+    title: "R&D and product investment signals"
+    description: "Public indicators of technical investment."
+    source_ids: [S-005, S-018]
+    columns: [Signal, Public_evidence, Diligence_interpretation]
+    rows:
+      - {Signal: "AI Hub positioning", Public_evidence: "Agentic/context-aware document workflow automation.", Diligence_interpretation: "R&D focus on AI-native workflows."}
+      - {Signal: "Engineering hiring", Public_evidence: "Open engineering and product roles.", Diligence_interpretation: "Continuing build-out."}
+      - {Signal: "Security/compliance roles", Public_evidence: "Security/compliance openings.", Diligence_interpretation: "Regulated-enterprise requirements likely important."}
+      - {Signal: "Governed release claims", Public_evidence: "Benchmarks before releases and audit trails.", Diligence_interpretation: "Controls architecture should be reviewed."}
+  - table_id: T-012
+    chapter_id: VI
+    title: "Technical diligence tests"
+    description: "Recommended verification tests for AI Hub."
+    source_ids: [S-005, S-006]
+    columns: [Test_area, Test, Success_evidence]
+    rows:
+      - {Test_area: "Accuracy", Test: "Blind benchmark on representative customer document packets.", Success_evidence: "Precision/recall, exception rate, STP rate."}
+      - {Test_area: "Traceability", Test: "Review citations/source links and audit logs.", Success_evidence: "Immutable trace from output to source document."}
+      - {Test_area: "Data governance", Test: "Review model and subprocessor data-use terms.", Success_evidence: "No unauthorized training/retention; compliant transfers."}
+      - {Test_area: "Scale/cost", Test: "Measure latency and cost per page at volume.", Success_evidence: "SLA, margin, and infra-cost targets met."}
+  - table_id: T-013
+    chapter_id: VII
+    title: "Public leadership evidence"
+    description: "Management identified on public company materials."
+    source_ids: [S-017]
+    columns: [Leader, Public_role, Diligence_focus]
+    rows:
+      - {Leader: "Anant Bhardwaj", Public_role: "Founder/CEO", Diligence_focus: "Key-person dependence, board role, founder equity."}
+      - {Leader: "Helen Lee", Public_role: "Executive listed on company page", Diligence_focus: "Function scope, tenure, compensation."}
+      - {Leader: "Jake Shay", Public_role: "Executive listed on company page", Diligence_focus: "Function scope, tenure, compensation."}
+      - {Leader: "Sheetal Khandal", Public_role: "Executive listed on company page", Diligence_focus: "Function scope, tenure, compensation."}
+      - {Leader: "Sushil Prabhu", Public_role: "Executive listed on company page", Diligence_focus: "Function scope, tenure, compensation."}
+  - table_id: T-014
+    chapter_id: VII
+    title: "Hiring and HR diligence gaps"
+    description: "Open roles and missing HR information."
+    source_ids: [S-018]
+    columns: [Area, Public_signal, Diligence_gap]
+    rows:
+      - {Area: "Security/compliance", Public_signal: "Open role(s) visible", Diligence_gap: "Current team capacity and backlog."}
+      - {Area: "Engineering/product", Public_signal: "Open role(s) visible", Diligence_gap: "R&D roadmap staffing and attrition."}
+      - {Area: "Sales/solutions", Public_signal: "Open role(s) visible", Diligence_gap: "Quota coverage and implementation capacity."}
+      - {Area: "Finance/marketing", Public_signal: "Open role(s) visible", Diligence_gap: "Operating maturity and reporting controls."}
+  - table_id: T-015
+    chapter_id: VIII
+    title: "Legal-status evidence"
+    description: "Public legal/corporate status indicators."
+    source_ids: [S-002, S-004, S-019]
+    columns: [Topic, Public_evidence, Diligence_conclusion, Gap]
+    rows:
+      - {Topic: "IPO status", Public_evidence: "Forge states no officially endorsed IPO plan.", Diligence_conclusion: "No public IPO evidence found.", Gap: "Counsel confirmation."}
+      - {Topic: "SEC status", Public_evidence: "EDGAR profile shows no ticker/exchange.", Diligence_conclusion: "Supports private-company status.", Gap: "Corporate records."}
+      - {Topic: "Early financings", Public_evidence: "Form D filings in 2015 and 2017.", Diligence_conclusion: "Private offering history.", Gap: "Full financing documents."}
+      - {Topic: "Litigation flag", Public_evidence: "PacerMonitor docket title against M&T Bank.", Diligence_conclusion: "Flag only; merits unknown.", Gap: "Complaint/docket materials."}
+  - table_id: T-016
+    chapter_id: VIII
+    title: "Security/privacy diligence checklist"
+    description: "Public trust claims and nonpublic materials needed."
+    source_ids: [S-006]
+    columns: [Area, Public_claim, Required_document]
+    rows:
+      - {Area: "SOC 2", Public_claim: "SOC 2 Type II", Required_document: "Full report and carveouts."}
+      - {Area: "HIPAA", Public_claim: "HIPAA support", Required_document: "BAA template and scope."}
+      - {Area: "Privacy", Public_claim: "GDPR/CCPA design and DPO", Required_document: "DPA, DPIAs, transfer impact assessments."}
+      - {Area: "Security testing", Public_claim: "Third-party pen tests", Required_document: "Latest executive summaries and remediation evidence."}
+      - {Area: "Subprocessors/model vendors", Public_claim: "Not fully detailed publicly", Required_document: "Complete subprocessor/model-provider list and data-use terms."}
+figures:
+  - figure_id: F-001
+    title: "Public valuation timeline and reset"
+    chapter_id: I
+    figure_type: chart
+    description: "Chart of public valuation datapoints used for eligibility and financing-risk assessment."
+    purpose: "Show Instabase remains above $1B while public sources imply compression from 2023 to 2025."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: bar
+      x_axis: {label: "Datapoint", unit: null, scale: categorical}
+      y_axis: {label: "Valuation", unit: "USD billions", scale: linear}
+      series:
+        - series_id: valuation
+          name: "Public valuation"
+          unit: "USD billions"
+          data_points:
+            - {x: "2019 CB Insights", y: 1.24, label: "$1.24B unicorn row", evidence_claim_ids: [EC-001], source_ids: [S-001]}
+            - {x: "2023 Forge", y: 2.0, label: "$2.0B Series C valuation", evidence_claim_ids: [EC-002], source_ids: [S-002]}
+            - {x: "2025 Forge", y: 1.24, label: "$1.24B Series D post-money", evidence_claim_ids: [EC-002], source_ids: [S-002]}
+      annotations:
+        - {label: "Valuation reset", x: "2025 Forge", y: 1.24, note: "Review Series D terms and preference stack.", evidence_claim_ids: [EC-002], source_ids: [S-002]}
+    rendering_guidance: {preferred_format: chart_spec, display_notes: "Bar chart with labels on each datapoint."}
+    evidence_claim_ids: [EC-001, EC-002]
+    source_ids: [S-001, S-002]
+    notes: "Valuation datapoints are public/third-party and unaudited."
+  - figure_id: F-002
+    title: "Public financing and status timeline"
+    chapter_id: I
+    figure_type: timeline
+    description: "Timeline of public financing/status evidence."
+    purpose: "Support private-unicorn eligibility and identify missing cap-table records."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      start_date: "2015-10"
+      end_date: "2026-05-20"
+      ordering: chronological
+      events:
+        - {event_id: EVT-001, date: "2015", label: "SEC Form D", description: "$3.75M sold in private offering.", category: financing, evidence_claim_ids: [EC-003], source_ids: [S-004]}
+        - {event_id: EVT-002, date: "2017", label: "SEC Form D", description: "$23.17M sold in private offering.", category: financing, evidence_claim_ids: [EC-003], source_ids: [S-004]}
+        - {event_id: EVT-003, date: "2019-10-21", label: "CB Insights unicorn row", description: "Instabase listed at $1.24B valuation.", category: valuation, evidence_claim_ids: [EC-001], source_ids: [S-001]}
+        - {event_id: EVT-004, date: "2025-01", label: "Series D", description: "$100M round announced; Forge shows $1.24B post-money.", category: financing, evidence_claim_ids: [EC-002], source_ids: [S-002, S-003]}
+        - {event_id: EVT-005, date: "2026-05-20", label: "Private status check", description: "No reviewed public evidence of IPO, acquisition, or shutdown.", category: status, evidence_claim_ids: [EC-021], source_ids: [S-002, S-004, S-018]}
+    rendering_guidance: {preferred_format: markdown, display_notes: "Horizontal chronological timeline."}
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-021]
+    source_ids: [S-001, S-002, S-003, S-004, S-018]
+    notes: null
+  - figure_id: F-003
+    title: "AI Hub workflow control architecture"
+    chapter_id: II
+    figure_type: architecture_diagram
+    description: "Publicly described product components and control points."
+    purpose: "Frame technical/security diligence tests for AI Hub."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - {node_id: n1, label: "Enterprise documents", node_type: user, description: "Loan, insurance, bank, patent, or other document packets.", evidence_claim_ids: [EC-005], source_ids: [S-005]}
+        - {node_id: n2, label: "AI Hub Automate", node_type: product, description: "Context-aware workflow automation and extraction.", evidence_claim_ids: [EC-005], source_ids: [S-005]}
+        - {node_id: n3, label: "Validation checks", node_type: service, description: "Cross-document validation and deterministic business rules.", evidence_claim_ids: [EC-005], source_ids: [S-005]}
+        - {node_id: n4, label: "Human review", node_type: user, description: "Review path for exceptions and approvals.", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {node_id: n5, label: "Audit trail / governed release", node_type: database, description: "Source-linked references, benchmarks, and release controls.", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+      edges:
+        - {edge_id: e1, from_node_id: n1, to_node_id: n2, relationship: "input", data_or_dependency: "Customer documents", evidence_claim_ids: [EC-005], source_ids: [S-005]}
+        - {edge_id: e2, from_node_id: n2, to_node_id: n3, relationship: "validates", data_or_dependency: "Fields and business logic", evidence_claim_ids: [EC-005], source_ids: [S-005]}
+        - {edge_id: e3, from_node_id: n3, to_node_id: n4, relationship: "routes exceptions", data_or_dependency: "Low confidence or policy exceptions", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {edge_id: e4, from_node_id: n2, to_node_id: n5, relationship: "logs", data_or_dependency: "Evidence, output, release history", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+      boundaries:
+        - {boundary_id: b1, label: "Customer-controlled / governed environment", node_ids: [n1, n2, n3, n4, n5]}
+    rendering_guidance: {preferred_format: mermaid, display_notes: "Use architecture boxes with control boundary."}
+    evidence_claim_ids: [EC-005, EC-016]
+    source_ids: [S-005]
+    notes: "Architecture is inferred from public product descriptions, not verified by system design documents."
+  - figure_id: F-004
+    title: "Named customer evidence by segment"
+    chapter_id: III
+    figure_type: chart
+    description: "Distribution of public case-study references by customer segment."
+    purpose: "Show breadth of public customer proof while noting selection bias."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: bar
+      x_axis: {label: "Segment", unit: null, scale: categorical}
+      y_axis: {label: "Named public examples", unit: "count", scale: linear}
+      series:
+        - series_id: public_examples
+          name: "Public examples"
+          unit: count
+          data_points:
+            - {x: "Mortgage", y: 1, label: "Rocket Mortgage", evidence_claim_ids: [EC-008], source_ids: [S-011]}
+            - {x: "Insurance", y: 1, label: "AXA UK", evidence_claim_ids: [EC-009], source_ids: [S-012]}
+            - {x: "Public/IP", y: 1, label: "USPTO/Satsyil", evidence_claim_ids: [EC-010], source_ids: [S-013]}
+            - {x: "Banking", y: 2, label: "İşbank; NatWest/Edinburgh", evidence_claim_ids: [EC-011, EC-012], source_ids: [S-014, S-015]}
+      annotations:
+        - {label: "Concentration unknown", x: null, y: null, note: "Case-study count is not revenue concentration.", evidence_claim_ids: [EC-007], source_ids: [S-003]}
+    rendering_guidance: {preferred_format: chart_spec, display_notes: "Bar chart by vertical."}
+    evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+    source_ids: [S-003, S-011, S-012, S-013, S-014, S-015]
+    notes: "Counts only public examples reviewed."
+  - figure_id: F-005
+    title: "IDP market-growth forecast"
+    chapter_id: IV
+    figure_type: chart
+    description: "Precedence Research IDP market growth forecast."
+    purpose: "Illustrate market tailwind and competitive attractiveness."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: line
+      x_axis: {label: "Year", unit: null, scale: time}
+      y_axis: {label: "Global IDP market size", unit: "USD billions", scale: linear}
+      series:
+        - series_id: idp_market
+          name: "Global IDP market"
+          unit: "USD billions"
+          data_points:
+            - {x: "2025", y: 3.22, label: "$3.22B", evidence_claim_ids: [EC-013], source_ids: [S-016]}
+            - {x: "2034", y: 43.92, label: "$43.92B", evidence_claim_ids: [EC-013], source_ids: [S-016]}
+      annotations:
+        - {label: "Forecast CAGR", x: null, y: null, note: "33.65% CAGR cited by Precedence Research.", evidence_claim_ids: [EC-013], source_ids: [S-016]}
+    rendering_guidance: {preferred_format: chart_spec, display_notes: "Line chart with caveat annotation."}
+    evidence_claim_ids: [EC-013]
+    source_ids: [S-016]
+    notes: "Third-party market forecast; not company-specific."
+  - figure_id: F-006
+    title: "Enterprise sales diligence funnel"
+    chapter_id: V
+    figure_type: funnel
+    description: "GTM diligence funnel from public interest to production and renewal."
+    purpose: "Map where nonpublic GTM metrics are required."
+    spec_schema_ref: "figure_spec_shapes.funnel"
+    spec:
+      stages:
+        - {stage_id: f1, name: "Public proof / logos", metric_name: "Named examples", metric_value: "AXA, Uber, NatWest, Rocket, USPTO, İşbank", conversion_to_next: null, evidence_claim_ids: [EC-007, EC-008], source_ids: [S-003, S-011]}
+        - {stage_id: f2, name: "Qualified pipeline", metric_name: "Pipeline", metric_value: "Not public", conversion_to_next: null, evidence_claim_ids: [EC-007], source_ids: [S-003]}
+        - {stage_id: f3, name: "Production go-live", metric_name: "Production customers", metric_value: "Not public", conversion_to_next: null, evidence_claim_ids: [EC-008], source_ids: [S-011]}
+        - {stage_id: f4, name: "Renewal/expansion", metric_name: "NRR/GRR", metric_value: "Not public", conversion_to_next: null, evidence_claim_ids: [EC-004], source_ids: [S-009, S-010]}
+      leakage_points:
+        - {stage_id: f2, risk_id: R-008, description: "Long regulated-enterprise sales cycles and implementation dependencies.", evidence_claim_ids: [EC-018], source_ids: [S-018]}
+    rendering_guidance: {preferred_format: mermaid, display_notes: "Funnel with public vs nonpublic metric labels."}
+    evidence_claim_ids: [EC-007, EC-018]
+    source_ids: [S-003, S-018]
+    notes: null
+  - figure_id: F-007
+    title: "AI product validation loop"
+    chapter_id: VI
+    figure_type: architecture_diagram
+    description: "R&D validation loop inferred from AI Hub public controls."
+    purpose: "Structure technical diligence on benchmarks, releases, incidents, and drift."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - {node_id: r1, label: "Representative documents", node_type: database, description: "Golden datasets and customer samples needed for diligence.", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {node_id: r2, label: "Model/workflow configuration", node_type: model, description: "AI Hub no-code/natural-language setup.", evidence_claim_ids: [EC-005], source_ids: [S-005]}
+        - {node_id: r3, label: "Benchmark before release", node_type: service, description: "Publicly claimed accuracy benchmarking.", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {node_id: r4, label: "Production release", node_type: product, description: "Governed workflow deployment.", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {node_id: r5, label: "Audit/incident feedback", node_type: database, description: "Audit trails and production error review.", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+      edges:
+        - {edge_id: re1, from_node_id: r1, to_node_id: r2, relationship: "configures/tests", data_or_dependency: "Training/evaluation examples", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {edge_id: re2, from_node_id: r2, to_node_id: r3, relationship: "benchmarked", data_or_dependency: "Accuracy and exceptions", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {edge_id: re3, from_node_id: r3, to_node_id: r4, relationship: "release gate", data_or_dependency: "Approval threshold", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+        - {edge_id: re4, from_node_id: r4, to_node_id: r5, relationship: "monitored", data_or_dependency: "Audit logs and incidents", evidence_claim_ids: [EC-016], source_ids: [S-005]}
+    rendering_guidance: {preferred_format: mermaid, display_notes: "Loop diagram with benchmark gate."}
+    evidence_claim_ids: [EC-005, EC-016]
+    source_ids: [S-005]
+    notes: "Requires validation against internal engineering materials."
+  - figure_id: F-008
+    title: "Public leadership map"
+    chapter_id: VII
+    figure_type: org_chart
+    description: "Leadership names visible on public company pages."
+    purpose: "Identify key people for management diligence."
+    spec_schema_ref: "figure_spec_shapes.org_chart"
+    spec:
+      people_or_roles:
+        - {node_id: p1, name: "Anant Bhardwaj", role: "Founder/CEO", department: "Executive", location: null, is_publicly_verified: true, evidence_claim_ids: [EC-017], source_ids: [S-017]}
+        - {node_id: p2, name: "Helen Lee", role: "Executive leadership", department: null, location: null, is_publicly_verified: true, evidence_claim_ids: [EC-017], source_ids: [S-017]}
+        - {node_id: p3, name: "Jake Shay", role: "Executive leadership", department: null, location: null, is_publicly_verified: true, evidence_claim_ids: [EC-017], source_ids: [S-017]}
+        - {node_id: p4, name: "Sheetal Khandal", role: "Executive leadership", department: null, location: null, is_publicly_verified: true, evidence_claim_ids: [EC-017], source_ids: [S-017]}
+        - {node_id: p5, name: "Sushil Prabhu", role: "Executive leadership", department: null, location: null, is_publicly_verified: true, evidence_claim_ids: [EC-017], source_ids: [S-017]}
+      reporting_lines: []
+    rendering_guidance: {preferred_format: mermaid, display_notes: "Do not infer reporting lines beyond public evidence."}
+    evidence_claim_ids: [EC-017]
+    source_ids: [S-017]
+    notes: "Exact reporting lines, board roles, and compensation not public."
+  - figure_id: F-009
+    title: "Open-role functional coverage"
+    chapter_id: VII
+    figure_type: chart
+    description: "Public jobs page signals continued hiring across functions."
+    purpose: "Support active-operations assessment and identify HR diligence gaps."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: bar
+      x_axis: {label: "Function", unit: null, scale: categorical}
+      y_axis: {label: "Public signal count", unit: "qualitative count", scale: linear}
+      series:
+        - series_id: roles
+          name: "Open-role categories observed"
+          unit: "qualitative count"
+          data_points:
+            - {x: "Engineering/Product", y: 1, label: "Open roles observed", evidence_claim_ids: [EC-018], source_ids: [S-018]}
+            - {x: "Security/Compliance", y: 1, label: "Open roles observed", evidence_claim_ids: [EC-018], source_ids: [S-018]}
+            - {x: "Sales/Solutions", y: 1, label: "Open roles observed", evidence_claim_ids: [EC-018], source_ids: [S-018]}
+            - {x: "Finance/Marketing", y: 1, label: "Open roles observed", evidence_claim_ids: [EC-018], source_ids: [S-018]}
+      annotations:
+        - {label: "Qualitative", x: null, y: null, note: "Counts represent categories, not exact headcount.", evidence_claim_ids: [EC-018], source_ids: [S-018]}
+    rendering_guidance: {preferred_format: chart_spec, display_notes: "Bar chart by function category."}
+    evidence_claim_ids: [EC-018]
+    source_ids: [S-018]
+    notes: "Open roles can change quickly; validate current requisitions."
+  - figure_id: F-010
+    title: "Legal, privacy, and security risk heatmap"
+    chapter_id: VIII
+    figure_type: risk_heatmap
+    description: "Risk heatmap for legal/security/compliance diligence."
+    purpose: "Prioritize legal review before reliance on public claims."
+    spec_schema_ref: "figure_spec_shapes.risk_heatmap"
+    spec:
+      x_axis: {label: likelihood, scale: [low, medium, high, unknown]}
+      y_axis: {label: severity, scale: [informational, low, medium, high, critical]}
+      risk_points:
+        - {risk_id: R-004, label: "Privacy/security/AI governance", severity: high, likelihood: medium, rationale: "Processes sensitive regulated documents; public controls need report-level verification.", evidence_claim_ids: [EC-006, EC-019], source_ids: [S-006]}
+        - {risk_id: R-010, label: "Litigation flag", severity: medium, likelihood: unknown, rationale: "Docket title found but merits not reviewed.", evidence_claim_ids: [EC-020], source_ids: [S-019]}
+        - {risk_id: R-007, label: "Private-status uncertainty", severity: medium, likelihood: low, rationale: "No public IPO/acquisition/shutdown evidence, but confidential actions could exist.", evidence_claim_ids: [EC-021], source_ids: [S-002, S-004, S-018]}
+    rendering_guidance: {preferred_format: chart_spec, display_notes: "Likelihood/severity grid."}
+    evidence_claim_ids: [EC-006, EC-019, EC-020, EC-021]
+    source_ids: [S-006, S-019, S-002, S-004, S-018]
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: "Instabase is publicly listed as a private unicorn at $1.24B valuation and no reviewed public source shows a completed IPO, acquisition, or shutdown."
+    evidence_summary: "CB Insights unicorn list names Instabase with $1.24B valuation and unicorn date 2019-10-21; Forge shows 2025 $1.24B private-company valuation context."
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids: [S-001, S-002]
+    quoted_evidence:
+      - {source_id: S-001, quote: "Instabase ... $1.24B ... 10/21/2019 ... United States ... San Francisco ... Enterprise Tech", location: "CB Insights unicorn companies row"}
+      - {source_id: S-002, quote: "Instabase ... Valuation: $1.24B ... Funding Round: Series D", location: "Forge Instabase IPO/private-market page"}
+    analyst_interpretation: "Eligibility screen is satisfied on public evidence, subject to confirmation no confidential transaction exists."
+    limitations: "CB Insights and Forge are public/market data sources, not company-audited financial records."
+    associations: {chapter_id: I, section_id: I.C, founder_claim_ids: [FC-001, FC-006], table_ids: [T-001], figure_ids: [F-001, F-002], risk_ids: [R-002, R-007]}
+  - evidence_claim_id: EC-002
+    claim: "Instabase announced a $100M Series D in January 2025 led by Qatar Investment Authority, with Forge indicating $1.24B post-money valuation."
+    evidence_summary: "Business Wire reports the raise and investor syndicate; Forge supplies round/valuation metadata."
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: high
+    source_ids: [S-002, S-003]
+    quoted_evidence:
+      - {source_id: S-003, quote: "Instabase Announces $100M Series D", location: "Business Wire headline"}
+      - {source_id: S-003, quote: "The round was led by Qatar Investment Authority (QIA)", location: "Business Wire release body"}
+      - {source_id: S-002, quote: "Funding Round: Series D ... Valuation: $1.24B", location: "Forge page"}
+    analyst_interpretation: "Financing confirms active late-stage private financing, but terms and investor protections remain key diligence."
+    limitations: "Public announcement omits liquidation preference, anti-dilution, debt, and fully diluted ownership."
+    associations: {chapter_id: I, section_id: I.C, founder_claim_ids: [FC-001], table_ids: [T-001], figure_ids: [F-001, F-002], risk_ids: [R-002]}
+  - evidence_claim_id: EC-003
+    claim: "SEC Form D filings confirm earlier Instabase private securities offerings in 2015 and 2017."
+    evidence_summary: "SEC XML filings show $3,750,007 sold in 2015 and $23,168,934 sold in 2017, signed by Anant Bhardwaj."
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids: [S-004]
+    quoted_evidence:
+      - {source_id: S-004, quote: "totalAmountSold 3750007 ... signatureName Anant Bhardwaj", location: "2015 Form D XML"}
+      - {source_id: S-004, quote: "totalAmountSold 23168934", location: "2017 Form D XML"}
+    analyst_interpretation: "SEC primary filings substantiate early venture financing but not current ownership."
+    limitations: "Form D notices do not disclose valuation, cap table, or detailed terms."
+    associations: {chapter_id: I, section_id: I.C, founder_claim_ids: [FC-001], table_ids: [T-001], figure_ids: [F-002], risk_ids: []}
+  - evidence_claim_id: EC-004
+    claim: "Public revenue/ARR information is limited to unaudited analyst estimates."
+    evidence_summary: "Sacra estimates 2023 ARR and enterprise customers; GetLatka estimates 2024/2025 revenue."
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: low
+    source_ids: [S-009, S-010]
+    quoted_evidence:
+      - {source_id: S-009, quote: "Instabase reached $46M in ARR in 2023", location: "Sacra company page"}
+      - {source_id: S-010, quote: "Instabase revenue is $50M", location: "GetLatka company profile"}
+    analyst_interpretation: "Useful directional signal only; financial diligence must rely on company records."
+    limitations: "Third-party estimates may be stale, modeled, or inconsistent with GAAP revenue."
+    associations: {chapter_id: I, section_id: I.A, founder_claim_ids: [], table_ids: [T-002], figure_ids: [F-006], risk_ids: [R-001, R-003]}
+  - evidence_claim_id: EC-005
+    claim: "Instabase AI Hub publicly claims context-aware automation for complex document workflows, including cross-document validation and support for 160+ languages and handwriting."
+    evidence_summary: "AI Hub product page describes Automate for document packets, language/handwriting support, and workflow logic."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-005]
+    quoted_evidence:
+      - {source_id: S-005, quote: "Automate document workflows with AI", location: "AI Hub product page"}
+      - {source_id: S-005, quote: "160+ languages and handwriting", location: "AI Hub product page"}
+    analyst_interpretation: "Feature claims are plausible public product positioning but require benchmark and customer validation."
+    limitations: "No independent accuracy, latency, or cost-per-page benchmarks were public."
+    associations: {chapter_id: II, section_id: II.A, founder_claim_ids: [FC-002, FC-005], table_ids: [T-003, T-004], figure_ids: [F-003, F-007], risk_ids: [R-006]}
+  - evidence_claim_id: EC-006
+    claim: "Instabase publicly claims enterprise security/compliance controls including SOC 2 Type II, HIPAA support, GDPR/CCPA design, SSO, encryption, and customer VPC deployment options."
+    evidence_summary: "Trust and product pages describe security posture and regulated-enterprise controls."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-006]
+    quoted_evidence:
+      - {source_id: S-006, quote: "SOC 2 Type II", location: "Trust page"}
+      - {source_id: S-006, quote: "HIPAA", location: "Trust page"}
+      - {source_id: S-006, quote: "GDPR" , location: "Trust page"}
+    analyst_interpretation: "Security posture is directionally strong for public screening but requires report-level review."
+    limitations: "No confidential SOC 2 report, DPA, subprocessor list, or incident log was reviewed."
+    associations: {chapter_id: VIII, section_id: VIII.G, founder_claim_ids: [FC-004], table_ids: [T-004, T-016], figure_ids: [F-010], risk_ids: [R-004]}
+  - evidence_claim_id: EC-007
+    claim: "Business Wire states Instabase customer base more than doubled since its last funding and names customers including AXA, Uber, and NatWest."
+    evidence_summary: "The 2025 Series D announcement includes traction and customer references."
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-003]
+    quoted_evidence:
+      - {source_id: S-003, quote: "customer base more than doubled", location: "Business Wire release body"}
+      - {source_id: S-003, quote: "customers such as AXA, Uber, and NatWest", location: "Business Wire release body"}
+    analyst_interpretation: "Publicly useful growth signal, but logo/customer-base definitions are unspecified."
+    limitations: "Does not disclose ARR, retention, customer concentration, or production status."
+    associations: {chapter_id: III, section_id: III.A, founder_claim_ids: [FC-003], table_ids: [T-005, T-009], figure_ids: [F-004, F-006], risk_ids: [R-003]}
+  - evidence_claim_id: EC-008
+    claim: "Rocket Mortgage public case study reports Instabase processing more than 1.5M documents, reducing turn times by 25%, and achieving a 2.5x faster close rate."
+    evidence_summary: "Instabase customer story provides quantified mortgage workflow results."
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-011]
+    quoted_evidence:
+      - {source_id: S-011, quote: "1.5M documents", location: "Rocket Mortgage customer story"}
+      - {source_id: S-011, quote: "25% reduction in turn times" , location: "Rocket Mortgage customer story"}
+      - {source_id: S-011, quote: "2.5x faster close rate", location: "Rocket Mortgage customer story"}
+    analyst_interpretation: "Strong quantified case-study evidence, subject to renewal and production verification."
+    limitations: "Vendor-authored case study; no contract value or independent audit."
+    associations: {chapter_id: III, section_id: III.A, founder_claim_ids: [FC-003], table_ids: [T-005], figure_ids: [F-004, F-006], risk_ids: [R-003, R-006]}
+  - evidence_claim_id: EC-009
+    claim: "AXA UK public case study supports insurance-submission automation use."
+    evidence_summary: "Instabase customer story describes AXA UK commercial-insurance workflow automation."
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-012]
+    quoted_evidence:
+      - {source_id: S-012, quote: "AXA UK", location: "Instabase customer story"}
+      - {source_id: S-012, quote: "commercial submissions", location: "Instabase customer story"}
+    analyst_interpretation: "Supports regulated insurance traction, pending customer reference call."
+    limitations: "No ARR, production status, renewal, or independent ROI verification public."
+    associations: {chapter_id: III, section_id: III.A, founder_claim_ids: [FC-003], table_ids: [T-005], figure_ids: [F-004], risk_ids: [R-003]}
+  - evidence_claim_id: EC-010
+    claim: "USPTO/Satsyil public story supports public-sector/IP document workflow use."
+    evidence_summary: "Instabase story describes signature extraction from patent oaths/declarations."
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-013]
+    quoted_evidence:
+      - {source_id: S-013, quote: "USPTO", location: "Instabase customer story"}
+      - {source_id: S-013, quote: "patent oaths and declarations", location: "Instabase customer story"}
+    analyst_interpretation: "Provides public-sector workflow proof point but needs procurement/contract validation."
+    limitations: "Case-study source is company-controlled; commercial terms not public."
+    associations: {chapter_id: III, section_id: III.A, founder_claim_ids: [FC-003], table_ids: [T-005], figure_ids: [F-004], risk_ids: [R-003]}
+  - evidence_claim_id: EC-011
+    claim: "İşbank/Maxitech public story supports Turkish banking document-classification and extraction use."
+    evidence_summary: "Instabase case study describes money-order processing with classification and extraction improvements."
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-014]
+    quoted_evidence:
+      - {source_id: S-014, quote: "İşbank", location: "Instabase customer story"}
+      - {source_id: S-014, quote: "money orders", location: "Instabase customer story"}
+    analyst_interpretation: "Supports international banking use case; review data residency and partner terms."
+    limitations: "Contract economics and regulatory approvals not public."
+    associations: {chapter_id: III, section_id: III.A, founder_claim_ids: [FC-003], table_ids: [T-005], figure_ids: [F-004], risk_ids: [R-003, R-004]}
+  - evidence_claim_id: EC-012
+    claim: "NatWest/University of Edinburgh public story supports bank-statement data extraction collaboration."
+    evidence_summary: "Instabase story describes collaborative analysis using bank statement data extraction."
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-015]
+    quoted_evidence:
+      - {source_id: S-015, quote: "NatWest", location: "Instabase customer story"}
+      - {source_id: S-015, quote: "University of Edinburgh", location: "Instabase customer story"}
+    analyst_interpretation: "Supports financial-services relevance but may be research/collaboration rather than recurring production ARR."
+    limitations: "Production status and commercial terms not public."
+    associations: {chapter_id: III, section_id: III.B, founder_claim_ids: [FC-003], table_ids: [T-005], figure_ids: [F-004], risk_ids: [R-003]}
+  - evidence_claim_id: EC-013
+    claim: "The intelligent document processing market has strong public growth forecasts, with Precedence Research estimating $3.22B in 2025 and $43.92B by 2034."
+    evidence_summary: "Market forecast indicates large tailwind and competitive attractiveness."
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-016]
+    quoted_evidence:
+      - {source_id: S-016, quote: "$3.22 billion in 2025", location: "Precedence Research market page"}
+      - {source_id: S-016, quote: "$43.92 billion by 2034", location: "Precedence Research market page"}
+      - {source_id: S-016, quote: "CAGR of 33.65%", location: "Precedence Research market page"}
+    analyst_interpretation: "Large market helps diligence thesis but does not validate Instabase share or economics."
+    limitations: "Forecast methodology and market definition may vary by analyst."
+    associations: {chapter_id: IV, section_id: IV.A, founder_claim_ids: [], table_ids: [T-008], figure_ids: [F-005], risk_ids: [R-005]}
+  - evidence_claim_id: EC-014
+    claim: "Public analyst pages identify IDP/RPA competitors and substitutes including Hyperscience, Rossum, Docugami, UiPath, and Automation Anywhere."
+    evidence_summary: "Sacra competitor discussion identifies overlapping categories and named competitors."
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-009]
+    quoted_evidence:
+      - {source_id: S-009, quote: "Hyperscience", location: "Sacra competitor discussion"}
+      - {source_id: S-009, quote: "Rossum", location: "Sacra competitor discussion"}
+      - {source_id: S-009, quote: "UiPath", location: "Sacra competitor discussion"}
+    analyst_interpretation: "Competition is broad and includes specialists and bundled automation platforms."
+    limitations: "Competitor list may not capture hyperscaler and general-LLM substitution fully."
+    associations: {chapter_id: IV, section_id: IV.A, founder_claim_ids: [], table_ids: [T-007], figure_ids: [F-005], risk_ids: [R-005]}
+  - evidence_claim_id: EC-015
+    claim: "Instabase publicly lists prominent venture and strategic investors and enterprise customer categories that support go-to-market credibility."
+    evidence_summary: "Company page and Series D release list investors and named customers."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-003, S-017]
+    quoted_evidence:
+      - {source_id: S-003, quote: "Greylock, NEA, Andreessen Horowitz, Index Ventures", location: "Business Wire investor list"}
+      - {source_id: S-017, quote: "Investors", location: "Company page"}
+    analyst_interpretation: "Investor syndicate is strong, but diligence needs rights, pro rata, and related-party checks."
+    limitations: "Investor presence does not prove current performance."
+    associations: {chapter_id: V, section_id: V.A, founder_claim_ids: [], table_ids: [T-009], figure_ids: [F-006], risk_ids: [R-002, R-008]}
+  - evidence_claim_id: EC-016
+    claim: "AI Hub product materials emphasize governed releases, benchmarks, source-linked references, deterministic checks, human review, and audit trails."
+    evidence_summary: "Public product page describes governance and review features relevant to regulated enterprise workflows."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-005]
+    quoted_evidence:
+      - {source_id: S-005, quote: "Run accuracy benchmarks before releasing", location: "AI Hub product page"}
+      - {source_id: S-005, quote: "review and audit", location: "AI Hub product page"}
+    analyst_interpretation: "Important differentiated controls, but implementation quality must be tested."
+    limitations: "Public product materials do not show benchmark datasets or audit-log design."
+    associations: {chapter_id: VI, section_id: VI.B, founder_claim_ids: [FC-002, FC-005], table_ids: [T-003, T-012], figure_ids: [F-003, F-007], risk_ids: [R-006]}
+  - evidence_claim_id: EC-017
+    claim: "Public company materials identify Anant Bhardwaj and other Instabase leaders."
+    evidence_summary: "Company page lists leadership, including founder/CEO and several executives."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-017]
+    quoted_evidence:
+      - {source_id: S-017, quote: "Anant Bhardwaj", location: "Company leadership page"}
+      - {source_id: S-017, quote: "Helen Lee", location: "Company leadership page"}
+      - {source_id: S-017, quote: "Jake Shay", location: "Company leadership page"}
+    analyst_interpretation: "Leadership presence supports operating status; org/board diligence remains needed."
+    limitations: "Public profile does not show board control, compensation, turnover, or org depth."
+    associations: {chapter_id: VII, section_id: VII.A, founder_claim_ids: [], table_ids: [T-013], figure_ids: [F-008], risk_ids: [R-009]}
+  - evidence_claim_id: EC-018
+    claim: "Instabase careers page shows active hiring across functions, supporting active private-company operations."
+    evidence_summary: "Jobs page lists open roles in security/compliance, engineering, sales/solutions, finance, and marketing-related functions."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-018]
+    quoted_evidence:
+      - {source_id: S-018, quote: "Open positions", location: "Careers/jobs page"}
+      - {source_id: S-018, quote: "Security", location: "Careers/jobs page"}
+      - {source_id: S-018, quote: "Solutions", location: "Careers/jobs page"}
+    analyst_interpretation: "Hiring signals ongoing operations and investment, but requisitions are not headcount or financial health evidence."
+    limitations: "Open roles can change and do not disclose attrition, compensation, or hiring success."
+    associations: {chapter_id: VII, section_id: VII.A, founder_claim_ids: [FC-005, FC-006], table_ids: [T-011, T-014], figure_ids: [F-009], risk_ids: [R-008, R-009]}
+  - evidence_claim_id: EC-019
+    claim: "Instabase trust materials claim privacy governance including DPO, GDPR/CCPA design, DPAs, and third-party penetration tests."
+    evidence_summary: "Trust page describes privacy/security governance controls relevant to regulated customers."
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: [S-006]
+    quoted_evidence:
+      - {source_id: S-006, quote: "Data Protection Officer", location: "Trust page"}
+      - {source_id: S-006, quote: "third-party penetration testing", location: "Trust page"}
+      - {source_id: S-006, quote: "Data Processing Addendum", location: "Trust page"}
+    analyst_interpretation: "Positive control signal; full security/privacy diligence remains essential."
+    limitations: "Public page does not provide audit reports, incident history, or subprocessor/model-provider terms."
+    associations: {chapter_id: VIII, section_id: VIII.G, founder_claim_ids: [FC-004], table_ids: [T-016], figure_ids: [F-010], risk_ids: [R-004]}
+  - evidence_claim_id: EC-020
+    claim: "A public docket-title source shows Instabase, Inc. v. Manufacturers and Traders Trust Company in W.D.N.Y.; merits are not verified."
+    evidence_summary: "PacerMonitor title indicates a legal dispute flag requiring docket review."
+    evidence_type: legal_record
+    verification_status: partially_verified
+    confidence: low
+    source_ids: [S-019]
+    quoted_evidence:
+      - {source_id: S-019, quote: "Instabase, Inc. v. Manufacturers and Traders Trust Company", location: "PacerMonitor docket title"}
+      - {source_id: S-019, quote: "nywdce-26-00281", location: "PacerMonitor docket identifier"}
+    analyst_interpretation: "Treat as a legal diligence flag only until pleadings and docket sheet are reviewed."
+    limitations: "Complaint, claims, counterclaims, and status were not accessed."
+    associations: {chapter_id: VIII, section_id: VIII.A, founder_claim_ids: [], table_ids: [T-015], figure_ids: [F-010], risk_ids: [R-010]}
+  - evidence_claim_id: EC-021
+    claim: "No credible public evidence of completed IPO, acquisition, or shutdown was found; reviewed sources support active private-company status."
+    evidence_summary: "Forge states Instabase has not officially endorsed an IPO plan; SEC profile shows no ticker/exchange; active product/jobs/company pages remain live."
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: high
+    source_ids: [S-002, S-004, S-005, S-018]
+    quoted_evidence:
+      - {source_id: S-002, quote: "Instabase has not officially endorsed a plan to participate in an IPO", location: "Forge IPO page"}
+      - {source_id: S-004, quote: "tickers: [] ... exchanges: []", location: "SEC submissions JSON"}
+      - {source_id: S-018, quote: "Open positions", location: "Careers/jobs page"}
+    analyst_interpretation: "Public eligibility condition is met, but counsel should confirm no confidential transaction or shutdown plan."
+    limitations: "Absence of public evidence is not proof of absence of confidential corporate actions."
+    associations: {chapter_id: VIII, section_id: VIII.F, founder_claim_ids: [FC-006], table_ids: [T-015], figure_ids: [F-002, F-010], risk_ids: [R-007]}
+
+sources:
+  - source_id: S-001
+    title: "The Complete List Of Unicorn Companies"
+    url: "https://www.cbinsights.com/research-unicorn-companies"
+    publisher: "CB Insights"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: market_database
+    reliability_notes: "Public unicorn database; useful for eligibility screening but not a primary company financial record."
+    archive_url: null
+  - source_id: S-002
+    title: "Instabase IPO / private-market company page"
+    url: "https://forgeglobal.com/instabase_ipo/"
+    publisher: "Forge Global"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: market_database
+    reliability_notes: "Private-market data and IPO-context page; not company-audited."
+    archive_url: null
+  - source_id: S-003
+    title: "Instabase Announces $100M Series D"
+    url: "https://www.businesswire.com/news/home/20250114713907/en/Instabase-Announces-%24100M-Series-D"
+    publisher: "Business Wire"
+    author: "Instabase"
+    publication_date: "2025-01-14"
+    accessed_date: "2026-05-20"
+    source_type: independent_news
+    reliability_notes: "Company press release distributed through Business Wire; strong for announcement facts, weaker for unaudited traction claims."
+    archive_url: null
+  - source_id: S-004
+    title: "Instabase SEC EDGAR submissions and Form D filings, CIK 0001651900"
+    url: "https://data.sec.gov/submissions/CIK0001651900.json"
+    publisher: "U.S. Securities and Exchange Commission"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: regulatory_filing
+    reliability_notes: "Primary regulatory filing data; limited to filed notices and profile fields."
+    archive_url: null
+  - source_id: S-005
+    title: "AI Hub product page"
+    url: "https://instabase.com/product/ai-hub/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: primary_company_source
+    reliability_notes: "Company-controlled product marketing; requires independent technical validation."
+    archive_url: null
+  - source_id: S-006
+    title: "Instabase Trust"
+    url: "https://instabase.com/trust/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: primary_company_source
+    reliability_notes: "Company trust page; detailed audit reports not publicly reviewed."
+    archive_url: null
+  - source_id: S-007
+    title: "Instabase company and customer overview"
+    url: "https://instabase.com/company/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: primary_company_source
+    reliability_notes: "Company-controlled; useful for leadership, investor, and customer claims."
+    archive_url: null
+  - source_id: S-009
+    title: "Instabase company analysis"
+    url: "https://sacra.com/c/instabase/"
+    publisher: "Sacra"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: analyst_estimate
+    reliability_notes: "Analyst-estimate page; useful directional data but not audited."
+    archive_url: null
+  - source_id: S-010
+    title: "Instabase revenue and company profile"
+    url: "https://getlatka.com/companies/instabase.com"
+    publisher: "GetLatka"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: analyst_estimate
+    reliability_notes: "Startup revenue database estimate; must be reconciled to company financials."
+    archive_url: null
+  - source_id: S-011
+    title: "Rocket Mortgage customer story"
+    url: "https://instabase.com/customer-stories/rocket-mortgage/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: customer_or_partner_source
+    reliability_notes: "Vendor-published customer story with quantified outcomes; needs customer reference validation."
+    archive_url: null
+  - source_id: S-012
+    title: "AXA UK customer story"
+    url: "https://instabase.com/customer-stories/axa/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: customer_or_partner_source
+    reliability_notes: "Vendor-published case study; commercial terms not public."
+    archive_url: null
+  - source_id: S-013
+    title: "Satsyil / USPTO customer story"
+    url: "https://instabase.com/customer-stories/satsyil/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: customer_or_partner_source
+    reliability_notes: "Vendor-published public-sector/IP workflow story; contract details not public."
+    archive_url: null
+  - source_id: S-014
+    title: "İşbank / Maxitech customer story"
+    url: "https://instabase.com/customer-stories/isbank/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: customer_or_partner_source
+    reliability_notes: "Vendor-published banking case study; needs contract and regulatory validation."
+    archive_url: null
+  - source_id: S-015
+    title: "NatWest and University of Edinburgh customer story"
+    url: "https://instabase.com/customer-stories/natwest/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: customer_or_partner_source
+    reliability_notes: "Vendor-published collaboration story; determine whether research or commercial production."
+    archive_url: null
+  - source_id: S-016
+    title: "Intelligent Document Processing Market Size and Forecast"
+    url: "https://www.precedenceresearch.com/intelligent-document-processing-market"
+    publisher: "Precedence Research"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: analyst_estimate
+    reliability_notes: "Market forecast; methodology not independently audited for this report."
+    archive_url: null
+  - source_id: S-017
+    title: "Instabase company page"
+    url: "https://instabase.com/company/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: primary_company_source
+    reliability_notes: "Company-controlled source for leadership, investors, hubs, and customers."
+    archive_url: null
+  - source_id: S-018
+    title: "Instabase careers / jobs page"
+    url: "https://instabase.com/careers/"
+    publisher: "Instabase"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-20"
+    source_type: primary_company_source
+    reliability_notes: "Open roles indicate active operations but change over time and do not equal actual hiring."
+    archive_url: null
+  - source_id: S-019
+    title: "Instabase, Inc. v. Manufacturers and Traders Trust Company docket title"
+    url: "https://www.pacermonitor.com/"
+    publisher: "PacerMonitor"
+    author: null
+    publication_date: "2026"
+    accessed_date: "2026-05-20"
+    source_type: legal_record
+    reliability_notes: "Docket-title source only; pleadings and full docket were not reviewed."
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: "Financial opacity and unverified revenue quality"
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: "Audited financials, ARR bridge, margins, burn, cash, debt, and retention are not public; analyst estimates are insufficient for valuation reliance."
+    impacted_chapter_ids: [I]
+    impacted_section_ids: [I.A]
+    evidence_claim_ids: [EC-004]
+    mitigation_or_diligence_request: "Request audited/reviewed financial statements, management accounts, ARR bridge, revenue-recognition memo, deferred revenue, billings, gross-margin breakdown, cash/burn/runway, and debt schedule."
+  - risk_id: R-002
+    risk_title: "Valuation compression and preference-stack risk"
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: "Forge public data imply a reset from $2B in 2023 to $1.24B in 2025; downside protections may change common-equity economics."
+    impacted_chapter_ids: [I, V]
+    impacted_section_ids: [I.C, V.A]
+    evidence_claim_ids: [EC-001, EC-002]
+    mitigation_or_diligence_request: "Review Series C/D financing documents, liquidation preferences, anti-dilution, warrants, debt, option pool, and 409A."
+  - risk_id: R-003
+    risk_title: "Customer concentration and contract-quality risk"
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: "Public customer logos and case studies do not disclose customer-level ARR, production status, renewal timing, or revenue concentration."
+    impacted_chapter_ids: [III, V]
+    impacted_section_ids: [III.A, III.C, V.B]
+    evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-011, EC-012]
+    mitigation_or_diligence_request: "Request top-20 customer schedule, contracts, renewal calendar, NRR/GRR, churn/expansion, implementation status, and reference calls."
+  - risk_id: R-004
+    risk_title: "Sensitive-data, privacy, security, and AI governance exposure"
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: "Instabase processes regulated enterprise documents; public controls need verification against SOC reports, DPAs, subprocessors, model-provider terms, and incidents."
+    impacted_chapter_ids: [II, III, VIII]
+    impacted_section_ids: [II.A, III.A, VIII.G]
+    evidence_claim_ids: [EC-006, EC-019]
+    mitigation_or_diligence_request: "Review SOC 2, HIPAA/BAA scope, DPA, subprocessors, model terms, incident log, cyber insurance, and security remediation evidence."
+  - risk_id: R-005
+    risk_title: "Competition and commoditization risk"
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: "IDP growth attracts specialists, RPA suites, hyperscalers, and LLM platforms; extraction features may commoditize."
+    impacted_chapter_ids: [IV]
+    impacted_section_ids: [IV.A]
+    evidence_claim_ids: [EC-013, EC-014]
+    mitigation_or_diligence_request: "Analyze win/loss, product differentiation, pricing trends, customer switching costs, and independent benchmark data."
+  - risk_id: R-006
+    risk_title: "AI accuracy, drift, and workflow liability risk"
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: "Public product controls are positive but unverified; document-processing errors in lending, insurance, banking, or public-sector workflows may cause costly failures."
+    impacted_chapter_ids: [II, III, VI]
+    impacted_section_ids: [II.A, III.A, VI.B]
+    evidence_claim_ids: [EC-005, EC-016]
+    mitigation_or_diligence_request: "Run blinded benchmarks, review golden datasets, exception workflows, model-change controls, human review, audit logs, and incident reports."
+  - risk_id: R-007
+    risk_title: "Private-status evidence is public-source limited"
+    risk_category: legal
+    severity: medium
+    likelihood: low
+    description: "No public IPO/acquisition/shutdown evidence was found, but confidential transactions or preparations may not be visible."
+    impacted_chapter_ids: [I, VIII]
+    impacted_section_ids: [I.D, VIII.F]
+    evidence_claim_ids: [EC-001, EC-021]
+    mitigation_or_diligence_request: "Obtain counsel certificate and management representation on IPO/M&A, solvency, tender offers, and material corporate actions."
+  - risk_id: R-008
+    risk_title: "Enterprise GTM scalability and implementation burden"
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: "Enterprise document automation may require long sales cycles and heavy implementation/support; public hiring and customer stories do not show CAC or services margin."
+    impacted_chapter_ids: [V, VII]
+    impacted_section_ids: [V.A, VII.A]
+    evidence_claim_ids: [EC-007, EC-018]
+    mitigation_or_diligence_request: "Review pipeline, CAC payback, implementation hours, services gross margin, quota attainment, sales cycle, and partner channel economics."
+  - risk_id: R-009
+    risk_title: "Talent, founder, and R&D execution risk"
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: "AI-native enterprise product execution requires scarce technical talent; public leadership/hiring evidence does not reveal attrition, org depth, compensation, or roadmap risk."
+    impacted_chapter_ids: [VI, VII]
+    impacted_section_ids: [VI.A, VII.A]
+    evidence_claim_ids: [EC-017, EC-018]
+    mitigation_or_diligence_request: "Request org chart, headcount plan, attrition, compensation, option pool, key-person plan, R&D roadmap, and engineering metrics."
+  - risk_id: R-010
+    risk_title: "Unverified litigation docket flag"
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: "A PacerMonitor docket title indicates litigation involving M&T Bank, but pleadings and merits were not reviewed."
+    impacted_chapter_ids: [VIII]
+    impacted_section_ids: [VIII.A]
+    evidence_claim_ids: [EC-020]
+    mitigation_or_diligence_request: "Obtain full docket, pleadings, settlement correspondence, reserves, insurance notices, and counsel assessment."
+
+diligence_gaps:
+  - {gap_id: G-001, chapter_id: I, section_id: I.A, missing_information: "Audited/reviewed financial statements and monthly management accounts", why_it_matters: "Validates revenue, margins, burn, cash, and runway.", suggested_source_or_request: "Company CFO/accountant data-room pack.", priority: high}
+  - {gap_id: G-002, chapter_id: I, section_id: I.C, missing_information: "Current cap table and financing documents", why_it_matters: "Determines ownership, dilution, and preference-stack economics.", suggested_source_or_request: "Company counsel and finance.", priority: high}
+  - {gap_id: G-003, chapter_id: III, section_id: III.C, missing_information: "ARR by customer, top-10 concentration, and renewal calendar", why_it_matters: "Assesses customer concentration and retention risk.", suggested_source_or_request: "Customer/revenue schedule under NDA.", priority: high}
+  - {gap_id: G-004, chapter_id: II, section_id: II.A, missing_information: "Independent product accuracy, latency, and cost benchmarks", why_it_matters: "Validates product differentiation and deployment economics.", suggested_source_or_request: "Technical benchmark pack and diligence test.", priority: high}
+  - {gap_id: G-005, chapter_id: VIII, section_id: VIII.G, missing_information: "SOC 2 report, DPA, subprocessors, model-vendor terms, incident log", why_it_matters: "Critical for regulated-document AI processing.", suggested_source_or_request: "Security/privacy data room.", priority: high}
+  - {gap_id: G-006, chapter_id: V, section_id: V.A, missing_information: "Pipeline, CAC, sales cycle, quota attainment, and implementation effort", why_it_matters: "Assesses scalability and capital efficiency.", suggested_source_or_request: "CRM, finance, and services reports.", priority: high}
+  - {gap_id: G-007, chapter_id: VI, section_id: VI.A, missing_information: "R&D roadmap, model dependency map, defect backlog, and infrastructure cost", why_it_matters: "Assesses execution and margin risk.", suggested_source_or_request: "CTO/product data-room pack.", priority: medium}
+  - {gap_id: G-008, chapter_id: VII, section_id: VII.A, missing_information: "Org chart, compensation, option pool, attrition, and key-person plan", why_it_matters: "Assesses team durability and retention.", suggested_source_or_request: "HR/legal materials.", priority: medium}
+  - {gap_id: G-009, chapter_id: VIII, section_id: VIII.A, missing_information: "Full docket and pleadings for Instabase v. M&T", why_it_matters: "Determines litigation exposure and contract/receivable implications.", suggested_source_or_request: "Outside counsel docket download.", priority: medium}
+  - {gap_id: G-010, chapter_id: VIII, section_id: VIII.F, missing_information: "Counsel confirmation of no IPO/acquisition/shutdown or insolvency event", why_it_matters: "Confirms eligibility and private-company status.", suggested_source_or_request: "Company counsel certificate and board minutes.", priority: high}
+
+follow_up_requests:
+  - {request_id: Q-001, chapter_id: I, section_id: I.A, request: "Provide audited/reviewed 2023-2025 financial statements and monthly 2025-2026 management accounts.", requested_from: company, priority: high}
+  - {request_id: Q-002, chapter_id: I, section_id: I.C, request: "Provide current cap table, fully diluted share count, all financing documents, option plan, debt, warrants, SAFEs/notes, and 409A reports.", requested_from: counsel, priority: high}
+  - {request_id: Q-003, chapter_id: III, section_id: III.C, request: "Provide top-20 customer ARR, contract term, renewal date, production status, support tickets, and reference-call availability.", requested_from: company, priority: high}
+  - {request_id: Q-004, chapter_id: II, section_id: II.A, request: "Provide product benchmark reports by document type, including precision/recall, STP rate, exception rate, latency, and cost per page.", requested_from: company, priority: high}
+  - {request_id: Q-005, chapter_id: VIII, section_id: VIII.G, request: "Provide SOC 2 Type II report, HIPAA/BAA scope, DPA, subprocessor list, model-provider data terms, incident log, and cyber insurance.", requested_from: company, priority: high}
+  - {request_id: Q-006, chapter_id: V, section_id: V.A, request: "Provide CRM pipeline, bookings history, win/loss analysis, sales-cycle duration, CAC/payback, quota attainment, pricing/discount data, and implementation utilization.", requested_from: company, priority: high}
+  - {request_id: Q-007, chapter_id: VI, section_id: VI.A, request: "Provide R&D roadmap, architecture docs, model dependency map, patent/trade secret register, defect backlog, and production incident history.", requested_from: company, priority: medium}
+  - {request_id: Q-008, chapter_id: VII, section_id: VII.A, request: "Provide org chart, board composition, employment agreements, compensation bands, option grants, attrition metrics, and key-person succession plan.", requested_from: company, priority: medium}
+  - {request_id: Q-009, chapter_id: VIII, section_id: VIII.A, request: "Provide full docket, pleadings, reserves, insurance correspondence, and counsel assessment for Instabase v. M&T.", requested_from: counsel, priority: medium}
+  - {request_id: Q-010, chapter_id: VIII, section_id: VIII.F, request: "Provide counsel certificate and management representation confirming no completed or pending IPO, acquisition, shutdown, insolvency, or material financing default.", requested_from: counsel, priority: high}
+  - {request_id: Q-011, chapter_id: IV, section_id: IV.A, request: "Provide competitive win/loss, price comparisons, benchmark comparisons, and customer switching-cost analysis.", requested_from: company, priority: medium}
+  - {request_id: Q-012, chapter_id: III, section_id: III.A, request: "Arrange reference calls with Rocket Mortgage, AXA, one banking customer, and one non-reference or churned customer.", requested_from: customer, priority: high}
+
+limitations:
+  - limitation_id: L-001
+    description: "This report uses public sources only; no confidential data room, interviews, customer calls, or paid-database materials were reviewed."
+    affected_chapter_ids: [I, II, III, IV, V, VI, VII, VIII]
+    affected_section_ids: [I.A, I.C, II.A, III.A, IV.A, V.A, VI.A, VII.A, VIII.G]
+  - limitation_id: L-002
+    description: "Company-controlled product, trust, and customer-story pages may present selected favorable facts and omit negative cases."
+    affected_chapter_ids: [II, III, V, VI, VII, VIII]
+    affected_section_ids: [II.A, III.A, V.A, VI.B, VII.A, VIII.G]
+  - limitation_id: L-003
+    description: "Market and revenue estimates from analyst/database pages are unaudited and may use undisclosed methodologies."
+    affected_chapter_ids: [I, IV]
+    affected_section_ids: [I.A, IV.A]
+  - limitation_id: L-004
+    description: "The legal docket flag was identified only at title level; pleadings, docket sheet, and merits were not reviewed."
+    affected_chapter_ids: [VIII]
+    affected_section_ids: [VIII.A]
+  - limitation_id: L-005
+    description: "Absence of public IPO/acquisition/shutdown evidence cannot rule out confidential corporate transactions or preparations."
+    affected_chapter_ids: [I, VIII]
+    affected_section_ids: [I.D, VIII.F]
+  - limitation_id: L-006
+    description: "Careers-page hiring signals are time-sensitive and do not prove headcount growth, attrition, or financial health."
+    affected_chapter_ids: [V, VII]
+    affected_section_ids: [V.A, VII.A]
