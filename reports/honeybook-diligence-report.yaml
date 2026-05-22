@@ -1,0 +1,5157 @@
+report_metadata:
+  report_title: HoneyBook Startup Diligence Report
+  target_company: HoneyBook
+  website: https://www.honeybook.com/
+  known_aliases:
+    - HoneyBook
+    - HoneyBook, Inc.
+    - HoneyBook.com
+    - HYBK
+  sector: AI-enabled CRM, clientflow, payments and business-management software for independent businesses
+  geography: United States and Canada focus; San Francisco and Tel Aviv operating footprint in public sources
+  company_stage: Private unicorn / growth-stage SaaS and fintech-adjacent SMB platform
+  research_date: 2026-05-21
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD unless otherwise noted
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used startup-diligence-research workflow at standard depth with public-source research only.
+    - Prioritized company-owned pages, pricing, about, reviews, alternatives, careers, trust, privacy, terms and newsroom materials.
+    - Corroborated financing/valuation/ARR claims with independent news where available.
+    - Searched public web, review/complaint and legal/IP/security indicators for hidden risks; treated absence of search hits as inconclusive, not exculpatory.
+    - Marked financial, customer, legal, personnel, supplier and contract items not available publicly as not_publicly_verifiable.
+  included_jurisdictions:
+    - United States
+    - California
+    - Israel operating footprint where public sources mention Tel Aviv
+    - Canada market references where company positioning applies
+  excluded_topics:
+    - No private data room, audited financial statements, customer reference calls, cap table, board materials, legal docket memorandum, SOC reports, HRIS or contracts were available.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: User request for single HoneyBook diligence report and CB Insights-style unicorn row
+      type: workflow_request
+      date_received: 2026-05-21
+      notes: User requested exactly reports/honeybook-diligence-report.yaml with standard-depth report and no other repository edits.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: HoneyBook is a private unicorn with an approximately $2.4B valuation.
+    claim_source: CB Insights unicorn row and public financing coverage
+    claim_date: 2021-11-03
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.B
+      - I.C
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-016
+      - EC-026
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current cap table, financing documents, liquidation preferences and latest 409A/fair-value support.
+  - founder_claim_id: FC-002
+    claim_text: HoneyBook operates an active all-in-one clientflow/CRM platform for independent businesses.
+    claim_source: HoneyBook website, about and pricing pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - V
+      - VI
+    mapped_section_ids:
+      - II.A
+      - V.A
+      - VI.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-016
+      - EC-022
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate active paid customer count, uptime, roadmap, product analytics and retention.
+  - founder_claim_id: FC-003
+    claim_text: HoneyBook has reached approximately $140M ARR while retaining the 2021 $2.4B valuation reference point.
+    claim_source: TechCrunch 2025 ARR coverage
+    claim_date: 2025-03-27
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+      - I.B
+      - I.D
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-004
+      - EC-019
+    contradiction_summary: ARR is reported by secondary news, but audited revenue, retention and margin are not public.
+    diligence_follow_up:
+      - Request ARR waterfall, recognized revenue, billings, NRR/GRR, churn, gross margin and cash burn.
+  - founder_claim_id: FC-004
+    claim_text: HoneyBook serves 100,000+ small businesses and has strong public satisfaction signals.
+    claim_source: HoneyBook about, alternatives and reviews pages
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-020
+    contradiction_summary: Aggregate customer/review claims are public, but active paid customers, revenue concentration and churn are not public.
+    diligence_follow_up:
+      - Request customer cohort files, top-customer revenue, support ticket exports and independent reference calls.
+  - founder_claim_id: FC-005
+    claim_text: HoneyBook AI features materially improve bookings, lead quality and time savings.
+    claim_source: HoneyBook Fine.dev acquisition announcement and alternatives page
+    claim_date: 2025-09-30
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-023
+    contradiction_summary: Performance uplift claims are company-published and require cohort/methodology validation.
+    diligence_follow_up:
+      - Request AI usage cohorts, A/B methodology, model/vendor contracts, IP assignments and AI governance artifacts.
+  - founder_claim_id: FC-006
+    claim_text: HoneyBook has public security, privacy and legal controls suitable for a SaaS/payments workflow product.
+    claim_source: HoneyBook Trust Center, Privacy Policy and Terms of Service
+    claim_date: 2026-03-10
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.F
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-025
+    contradiction_summary: Public policies exist, but independent audits, incident logs, insurance and regulatory correspondence are not public.
+    diligence_follow_up:
+      - Request SOC reports, pen tests, incident logs, subprocessors, DPA/MSA templates, insurance and regulator correspondence.
+executive_summary:
+  overall_assessment: HoneyBook appears to be an active private growth-stage/unicorn company. Public evidence supports the $2.4B valuation history, current operating status, active product/pricing pages, large customer/review claims, $140M ARR news coverage and AI/product investment. However, the core underwrite remains unresolved because financial statements, retention, concentration, cap table, contracts, security audits, legal/IP schedules and HR records are private.
+  investment_or_diligence_thesis: Proceed to confirmatory diligence only if management can substantiate revenue quality, retention, efficient acquisition, clean cap table, AI/product defensibility, payments/privacy/security compliance and legal/IP cleanliness. The public case is credible for company existence and traction, but not sufficient for valuation reliance.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Multiple public sources support HoneyBook's 2021 $2.4B valuation/unicorn status.
+      evidence_claim_ids:
+        - EC-001
+        - EC-003
+        - EC-026
+    - founder_claim_id: FC-002
+      summary: HoneyBook publicly operates a live product with pricing and active company/careers pages.
+      evidence_claim_ids:
+        - EC-005
+        - EC-006
+        - EC-016
+    - founder_claim_id: FC-003
+      summary: TechCrunch reported approximately $140M ARR in 2025, materially improving the public financial screen.
+      evidence_claim_ids:
+        - EC-004
+  biggest_risks:
+    - risk_id: R-001
+      summary: Financial quality, retention, unit economics and cash runway are not public.
+    - risk_id: R-002
+      summary: Valuation and cap-table economics depend on private financing terms.
+    - risk_id: R-003
+      summary: SMB churn, concentration and complaint/support patterns are unresolved.
+    - risk_id: R-006
+      summary: Privacy, security, AI and payments surfaces require independent control evidence.
+  key_evidence_gaps:
+    - Audited financials, ARR waterfall, retention cohorts, gross margin, CAC/payback, cash/debt and forecast model.
+    - Cap table, preference stack, debt/SAFE/note instruments, option pool, side letters and 409A history.
+    - Top-customer ARR/contracts, churn, NRR/GRR, support tickets, refunds, chargebacks and reference calls.
+    - Product analytics, AI evaluation methodology, roadmap, model/vendor contracts and security/privacy audit evidence.
+    - Counsel-run litigation/regulatory/IP searches, material contracts, insurance, HRIS, compensation/equity and turnover records.
+  recommended_next_steps:
+    - Run finance/revenue-quality diligence before relying on the $2.4B valuation or $140M ARR reports.
+    - Request customer-level retention/concentration data and complete reference calls, including churned customers.
+    - Conduct counsel/security review of privacy, AI, payments, IP, contracts, insurance and regulatory matters.
+    - Benchmark HoneyBook against direct vertical and horizontal competitors using win/loss, pricing and customer interviews.
+    - Validate HR, leadership, compensation/equity and Fine.dev retention/integration risks.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: HoneyBook has strong public financing and ARR signals, including a $2.4B valuation and 2025 $140M ARR coverage, but audited financials, retention, margins, cash/debt, cap table and forecast details remain private.
+    founder_claim_ids:
+      - FC-001
+      - FC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-016
+      - EC-019
+      - EC-026
+    risk_ids:
+      - R-001
+      - R-002
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: No audited statements or quarterly financial packages are public. Public evidence includes ARR, bookings and transaction-volume signals that frame but do not close revenue-quality diligence.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public sources disclose ARR/bookings/transaction signals but not recognized revenue, gross margin, AR aging, deferred revenue, cash or debt.
+            evidence_claim_ids:
+              - EC-004
+              - EC-019
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Revenue quality, cash burn, chargebacks/refunds and accounting policy risks could be hidden in private statements.
+        evidence_gaps:
+          - Audited financial statements, trial balances, revenue schedules, AR aging, deferred revenue, cash/debt and tax records.
+        follow_up_questions:
+          - Provide audited annual and quarterly financials for 2023-2026 YTD, KPI pack, AR/deferred revenue and management commentary.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-019
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: The 2025 ARR article allows a valuation-to-ARR framing, but management projections, budget-to-actuals and valuation bridge are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: A $140M ARR data point implies a roughly 17x ARR valuation multiple against $2.4B, but no forward model is public.
+            evidence_claim_ids:
+              - EC-004
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - A high headline valuation may mask slower growth, weaker retention or lower margins than public ARR alone implies.
+        evidence_gaps:
+          - Forecast model, board plan, budget-to-actuals, pipeline assumptions, churn/expansion assumptions and valuation support.
+        follow_up_questions:
+          - Provide the current board-approved forecast, valuation bridge, budget-to-actuals, retention assumptions and downside case.
+        table_ids: []
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-004
+          - EC-019
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Funding history and investor roster are public, but share counts, preference stack, side letters, debt, option pool and current ownership are not.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public funding coverage supports Series D/E milestones and named investors; cap-table economics remain private.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-003
+              - EC-026
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Liquidation preferences, down-round anti-dilution, side letters or debt covenants could materially alter common-equity value.
+        evidence_gaps:
+          - Fully diluted cap table, financing documents, investor rights, board approvals, debt/SAFE/note schedules and option plan.
+        follow_up_questions:
+          - Provide pro forma cap table, charter/investor-rights documents, all financing instruments, side letters and latest 409A.
+        table_ids:
+          - T-001
+          - T-003
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-016
+          - EC-026
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Other financial items such as debt, liens, payment reserves, insurance claims, tax exposure and off-balance-sheet obligations are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.D-F1
+            finding: No public source provided debt, liens, chargeback reserves, tax exposure or off-balance-sheet obligations.
+            evidence_claim_ids:
+              - EC-019
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-007
+        hidden_risks:
+          - Payments volume and SMB refunds/chargebacks may create reserve needs not visible in public metrics.
+        evidence_gaps:
+          - Debt, liens, tax audits, payment-processor reserves, off-balance-sheet commitments and insurance claims.
+        follow_up_questions:
+          - Provide debt/lien schedule, tax matters, processor reserve/chargeback reports and off-balance-sheet commitments.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-019
+          - EC-025
+  - chapter_id: II
+    title: Products
+    chapter_summary: HoneyBook publicly presents an active AI-enabled clientflow platform with subscription tiers and workflows across leads, proposals, contracts, invoices, payments, scheduling and automation. Product economics, reliability and roadmap proof require private diligence.
+    founder_claim_ids:
+      - FC-002
+      - FC-005
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-009
+      - EC-010
+      - EC-021
+      - EC-023
+    risk_ids:
+      - R-004
+      - R-005
+      - R-006
+      - R-007
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public pages support a live product suite and pricing architecture. The principal diligence gaps are active usage by module, uptime/incidents, AI efficacy, data rights, payment/funds-flow dependencies and roadmap execution.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: HoneyBook markets a current all-in-one platform for independent businesses with CRM/clientflow workflows.
+            evidence_claim_ids:
+              - EC-005
+            risk_ids:
+              - R-004
+          - finding_id: II.A-F2
+            finding: Public pricing confirms three plan tiers, but realized ARPA and discounting are private.
+            evidence_claim_ids:
+              - EC-006
+            risk_ids:
+              - R-001
+              - R-004
+          - finding_id: II.A-F3
+            finding: AI/productivity claims are company-published and require cohort validation.
+            evidence_claim_ids:
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-005
+              - R-006
+        hidden_risks:
+          - Competitive overlap, AI/data-rights exposure, payment compliance and support-burden risks could emerge from product usage detail not public.
+        evidence_gaps:
+          - Product analytics, module adoption, incident history, roadmap, AI evaluation methodology, payment processor contracts and technical architecture.
+        follow_up_questions:
+          - Provide product analytics by module, uptime/incidents, roadmap, AI governance pack, payment/funds-flow diagram and gross-margin by product line.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+          - F-004
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-009
+          - EC-010
+          - EC-023
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: HoneyBook has broad public customer-scale and review signals, but top-customer ARR, retention, churn, severed relationships, strategic-account contracts and supplier dependencies are not public.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-020
+    risk_ids:
+      - R-003
+      - R-009
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: The public record supports aggregate customer/review scale, not a named top-customer list by application or ARR.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Company pages claim 100,000+ businesses and 20,000+ reviews/testimonials.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+            risk_ids:
+              - R-003
+          - finding_id: III.A-F2
+            finding: BBB complaint volume is a useful but incomplete customer-service risk signal.
+            evidence_claim_ids:
+              - EC-015
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - SMB customer breadth may hide high churn or support-intensive customer segments.
+        evidence_gaps:
+          - Named top customers by ARR/application, customer contracts, cohort retention and reference-call list.
+        follow_up_questions:
+          - Provide top 25 customers by ARR/application, contracts, renewal dates, NPS/CSAT and reference contacts.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-015
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public strategic relationships are strongest for financing/investor and Fine.dev/R&D signals; revenue-bearing partnerships are not publicly detailed.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Fine.dev acquihire is public; commercial partnerships and channel agreements remain private.
+            evidence_claim_ids:
+              - EC-010
+              - EC-020
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Strategic integrations or payment partnerships may include revenue share, exclusivity or termination risk not visible publicly.
+        evidence_gaps:
+          - Partnership agreements, integration partner list, channel economics and termination rights.
+        follow_up_questions:
+          - Provide all material partnership, channel, integration and payment-provider agreements with revenue impact.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-020
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue concentration cannot be determined from public customer counts or reviews. Public aggregate scale should not be used as a proxy for ARR quality.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Top-customer ARR, NRR/GRR and churn cohorts are not publicly verifiable.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - A high-volume SMB model can still suffer from churn, refunds, disputes or paid-to-free conversion issues.
+        evidence_gaps:
+          - Customer-level ARR, active paid customer definitions, churn/expansion cohorts, refunds and disputes.
+        follow_up_questions:
+          - Provide anonymized customer-level ARR, cohort retention, churn reasons, refunds and dispute data.
+        table_ids: []
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-020
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No public list of severed customer, partner or supplier relationships was found; absence cannot be verified.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Public testimonials and complaint sources do not disclose lost accounts or terminated partnerships.
+            evidence_claim_ids:
+              - EC-020
+              - EC-015
+            risk_ids:
+              - R-003
+              - R-009
+        hidden_risks:
+          - Material lost accounts or terminated processor/vendor relationships could be hidden.
+        evidence_gaps:
+          - Lost-account schedule, terminated partnership log, churn reasons, refunds and disputes.
+        follow_up_questions:
+          - Provide list of material customer/partner/supplier terminations in the last 24 months and reasons.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+          - EC-015
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: The public record does not identify top suppliers by spend or critical dependency; trust/terms imply technology and payments dependencies requiring private review.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Cloud, model, payment, data and support suppliers are not disclosed at diligence level.
+            evidence_claim_ids:
+              - EC-012
+              - EC-025
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Single-vendor cloud/model/payment dependency or processor reserve rights may materially affect operations.
+        evidence_gaps:
+          - Top supplier schedule, processor contracts, cloud spend, model/API vendors, SLAs and termination rights.
+        follow_up_questions:
+          - Provide top suppliers by spend and operational criticality, including cloud, AI/model, payments and security vendors.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-012
+          - EC-025
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: HoneyBook competes in a broad SMB workflow market against vertical CRMs and horizontal tools across CRM, scheduling, proposals, e-signature, accounting, payments and AI. Public comparison pages support the competitor map but are biased.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-006
+      - EC-021
+      - EC-022
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: The competitive set is broad and crowded, with risk from suites that can bundle adjacent functionality or own core workflow records.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: HoneyBook names competitors across Dubsado, HubSpot, PandaDoc, DocuSign, Calendly/Acuity, FreshBooks/QuickBooks/Xero, Stripe/Square and general AI tools.
+            evidence_claim_ids:
+              - EC-021
+            risk_ids:
+              - R-004
+          - finding_id: IV.A-F2
+            finding: List pricing confirms HoneyBook monetizes as a subscription, but competitor discounting and attach rates require benchmarking.
+            evidence_claim_ids:
+              - EC-006
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Entrenched horizontal suites and specialist vertical tools can compress SMB pricing or reduce switching friction.
+        evidence_gaps:
+          - Independent win/loss, retention by competitor source, price realization and feature adoption versus alternatives.
+        follow_up_questions:
+          - Provide win/loss analysis, competitor switching data, feature adoption and pricing-discount benchmark by segment.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-006
+          - EC-021
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: HoneyBook shows public product-led and inbound GTM signals through pricing, reviews/testimonials, alternatives/content and recruiting, but CAC, quota attainment, channel mix, pipeline conversion and marketing budget are private.
+    founder_claim_ids:
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-015
+      - EC-022
+    risk_ids:
+      - R-001
+      - R-003
+      - R-004
+      - R-009
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public evidence points to a self-serve/product-led SMB GTM motion supported by testimonials, alternatives content and pricing pages.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public pricing and owned content support a product-led/inbound motion.
+            evidence_claim_ids:
+              - EC-006
+              - EC-022
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Marketing efficiency may weaken if paid acquisition, content rankings or referral loops deteriorate.
+        evidence_gaps:
+          - Channel-level CAC, conversion, LTV, payback, marketing spend and attribution.
+        follow_up_questions:
+          - Provide channel mix, spend, CAC/payback, conversion funnel and attribution model by cohort.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-006
+          - EC-022
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major-customer contribution and customer-reference quality cannot be validated publicly despite aggregate review and customer-count claims.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Public reviews/testimonials do not disclose major-customer revenue concentration.
+            evidence_claim_ids:
+              - EC-008
+              - EC-020
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - A small number of high-value customers or cohorts may carry outsized ARR, churn or support risk.
+        evidence_gaps:
+          - Major customers, ARR contribution, contract dates, expansion/churn and reference-call permissions.
+        follow_up_questions:
+          - Provide top-account list and independent references, including canceled or downgraded accounts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-020
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Owned content, alternatives pages, reviews, referrals/testimonials and self-serve pricing are visible public acquisition avenues; partner/channel productivity is private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public marketing pages and review volume are visible acquisition assets, but channel weights are not public.
+            evidence_claim_ids:
+              - EC-008
+              - EC-022
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Reliance on SEO, reviews or referrals could create volatility if rankings/reputation change.
+        evidence_gaps:
+          - New-business mix by channel, funnel conversion, sales-assist motion and paid-media efficiency.
+        follow_up_questions:
+          - Provide new ARR by acquisition source, funnel stage, conversion rate and customer segment.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-022
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales force productivity, quota capacity, pipeline coverage and conversion are not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D-F1
+            finding: No public source discloses quota attainment, sales headcount productivity, CAC or payback.
+            evidence_claim_ids:
+              - EC-022
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - A self-serve-looking product could still rely on costly sales/support motions to convert or retain customers.
+        evidence_gaps:
+          - Sales headcount, quota model, attainment, pipeline conversion, CAC, payback and sales-assist contribution.
+        follow_up_questions:
+          - Provide sales productivity model and last eight quarters of funnel/conversion/quota data.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Current and projected marketing budget, paid-channel mix and efficiency targets are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Public pages show marketing assets but not budget sufficiency or ROI.
+            evidence_claim_ids:
+              - EC-022
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Underinvestment or inefficient acquisition could impair growth required to support valuation.
+        evidence_gaps:
+          - Marketing budget, paid media plan, experiments, hiring plan and projected CAC/payback.
+        follow_up_questions:
+          - Provide current and projected marketing budget with channel ROI and sensitivity cases.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public signals indicate AI/product investment through HoneyBook AI messaging, the Fine.dev acquihire and open technical roles. Detailed R&D org, spend, roadmap, technical debt and product pipeline remain private.
+    founder_claim_ids:
+      - FC-002
+      - FC-005
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-023
+    risk_ids:
+      - R-005
+      - R-006
+      - R-008
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: HoneyBook has public technical/data hiring and AI signals, but a full R&D org chart, resource allocation and technical operating model are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Open roles and company materials support ongoing product/R&D investment.
+            evidence_claim_ids:
+              - EC-011
+              - EC-023
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Key-person dependency, technical debt or vendor/model dependency could be hidden.
+        evidence_gaps:
+          - Engineering org chart, roadmap owners, R&D budget, technical debt register, vendor dependencies and incident history.
+        follow_up_questions:
+          - Provide R&D org chart, budget, roadmap ownership, vendor/model inventory and technical debt/incident registers.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-011
+          - EC-023
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: AI is the most visible pipeline area; Fine.dev indicates acquihire-led acceleration, but release dates, economics, model risk and go/no-go criteria are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Fine.dev acquisition and AI efficacy claims show a public AI pipeline signal.
+            evidence_claim_ids:
+              - EC-010
+              - EC-023
+            risk_ids:
+              - R-005
+              - R-006
+        hidden_risks:
+          - AI claims may not persist across cohorts or may create data-rights, privacy and quality risks.
+        evidence_gaps:
+          - Product roadmap, AI evaluation methodology, data-rights analysis, launch dates, R&D milestones and unit-economic impact.
+        follow_up_questions:
+          - Provide product roadmap, AI governance/evaluation pack, Fine.dev integration plan and product economics by new feature.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public evidence identifies founder/CEO and hiring/benefit signals, plus a 2021 headcount anchor, but current org chart, management biographies, compensation, equity plan, employee relations and turnover data are private.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-011
+      - EC-024
+    risk_ids:
+      - R-008
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: A full organization chart is not public. Public sources identify founder/CEO leadership and recruiting footprint but not reporting lines.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public sources support an active management/recruiting presence but not full reporting lines.
+            evidence_claim_ids:
+              - EC-011
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Unseen key-person dependency or management gaps could affect execution.
+        evidence_gaps:
+          - Current org chart, reporting lines, vacancies and key-person succession plan.
+        follow_up_questions:
+          - Provide current org chart by function/location, reporting lines and key-person retention plans.
+        table_ids: []
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: A 2021 employee count and current role postings are public; historical/projected headcount by function and location is private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: TechCrunch reported 103 employees in 2021 and current job pages show ongoing hiring signals.
+            evidence_claim_ids:
+              - EC-011
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Hiring freezes, attrition spikes or role concentration in critical functions may be hidden.
+        evidence_gaps:
+          - Historical/projected headcount by function/location, open requisitions, attrition, regretted turnover and hiring plan.
+        follow_up_questions:
+          - Provide HRIS exports for 2021-2026 YTD and projected headcount by function/location.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public profiles identify Oz Alon as co-founder/CEO and company materials reference founder history, but complete senior management biographies and board/advisor roles require management confirmation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public profile evidence identifies Oz Alon as co-founder/CEO; full executive roster remains private.
+            evidence_claim_ids:
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Unverified executive departures or gaps could affect continuity.
+        evidence_gaps:
+          - Management bios, board/advisor roster, employment agreements, background checks and reference checks.
+        follow_up_questions:
+          - Provide senior management biographies, board/advisor list, employment agreements and reference-call access.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-024
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation arrangements are not public beyond careers-page benefit language.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Public careers page references competitive pay/equity and benefits, not actual compensation arrangements.
+            evidence_claim_ids:
+              - EC-011
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Undisclosed compensation, severance or bonus obligations could affect cash burn and retention.
+        evidence_gaps:
+          - Executive compensation, bonus plans, severance, change-in-control agreements and benefits costs.
+        follow_up_questions:
+          - Provide compensation census, executive agreements, bonus/severance/change-in-control arrangements and benefits costs.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Equity-plan details, option pool, grants and vesting schedules are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Public benefits mention equity but do not disclose stock-plan terms.
+            evidence_claim_ids:
+              - EC-011
+              - EC-024
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Option-pool refresh needs and retention grants could create dilution.
+        evidence_gaps:
+          - Equity plan, grant ledger, option pool, 409A history and vesting/change-in-control terms.
+        follow_up_questions:
+          - Provide equity incentive plan, grant ledger, option pool and 409A valuation history.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No public employee-relations issue list was identified, but absence is not verifiable from public sources.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Careers pages are positive recruiting materials and do not disclose employee claims or relations issues.
+            evidence_claim_ids:
+              - EC-011
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Pending claims, investigations or cultural/attrition issues may not be public.
+        evidence_gaps:
+          - Employee claims, HR investigations, settlement agreements, hotline reports and culture survey outputs.
+        follow_up_questions:
+          - Provide employee-relations claims, settlements, investigations and engagement/exit-survey data.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover and regretted attrition are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Open roles do not reveal turnover, regretted attrition or backfill versus growth hiring.
+            evidence_claim_ids:
+              - EC-011
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - High attrition in engineering, GTM or support could undermine execution and customer service.
+        evidence_gaps:
+          - Monthly headcount, hires, departures, regretted attrition, open roles and retention programs.
+        follow_up_questions:
+          - Provide turnover cohorts and regretted attrition by function/location for the last 36 months.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal-policy, trust and complaint sources identify privacy/security/terms obligations and BBB complaint themes. Public searches did not surface obvious lawsuits or security incidents, but litigation, IP, insurance, contracts and regulatory matters require counsel-run diligence.
+    founder_claim_ids:
+      - FC-006
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-017
+      - EC-018
+      - EC-025
+    risk_ids:
+      - R-005
+      - R-006
+      - R-007
+      - R-009
+      - R-010
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Public search did not identify clear pending lawsuits against HoneyBook, but absence cannot be verified without counsel-run docket and arbitration/claims review.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No exact public lawsuit search hits were found in this pass; this is not proof of no litigation.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Private arbitration, demand letters, settlements or sealed matters may be undisclosed.
+        evidence_gaps:
+          - Counsel-run docket search, litigation schedule, demand letters, settlements and insurance claims.
+        follow_up_questions:
+          - Counsel to provide litigation docket search memo and company litigation/claims schedule.
+        table_ids:
+          - T-019
+        figure_ids:
+          - F-011
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No public list of lawsuits initiated by HoneyBook was identified; this requires counsel/company confirmation.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Public search did not identify initiated litigation in this pass.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP, collections or contract enforcement matters may not appear in broad web search.
+        evidence_gaps:
+          - Company-initiated litigation schedule, collections matters and IP enforcement records.
+        follow_up_questions:
+          - Provide schedule of all active/threatened claims initiated by HoneyBook.
+        table_ids:
+          - T-020
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: As a software company, environmental/employee-safety exposure appears limited in public sources, but office, remote-work and employee-safety records are not public.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public company materials do not disclose environmental or workplace-safety liabilities.
+            evidence_claim_ids:
+              - EC-011
+              - EC-025
+            risk_ids:
+              - R-008
+              - R-010
+        hidden_risks:
+          - Office leases, workplace claims or remote-work safety issues could be private.
+        evidence_gaps:
+          - OSHA/workplace records, office leases, insurance claims and employee-safety policies.
+        follow_up_questions:
+          - Provide workplace-safety incidents, insurance claims and office/lease compliance records.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+          - EC-025
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Public snippets suggest HoneyBook-related trademarks, but no complete official IP inventory, patent portfolio, assignments or licenses were verified.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Trademark snippets indicate brand assets, but ownership/status/encumbrances require official searches.
+            evidence_claim_ids:
+              - EC-018
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - IP assignments from founders/employees/Fine.dev or open-source/model-license issues could be unresolved.
+        evidence_gaps:
+          - USPTO/TSDR searches, patent search, IP assignment records, open-source inventory, model/vendor licenses and Fine.dev IP transfer docs.
+        follow_up_questions:
+          - Counsel to provide IP schedule covering patents, trademarks, copyrights, open-source/model licenses and assignments.
+        table_ids:
+          - T-021
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-018
+          - EC-023
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage, claim history and coverage adequacy are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Public sources do not disclose insurance policies or claims.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-006
+              - R-007
+              - R-010
+        hidden_risks:
+          - Cyber, E&O, D&O, EPLI or payment-risk exclusions may be material.
+        evidence_gaps:
+          - Insurance policies, limits, exclusions, claims history and broker summaries.
+        follow_up_questions:
+          - Provide complete insurance schedule, policies, claims history and broker adequacy memo.
+        table_ids:
+          - T-022
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-025
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material customer, vendor, payment-processor, AI/model, data-processing and partnership contracts are not public; terms of service are only the public default.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Terms disclose public legal provisions but not negotiated MSAs, DPAs, vendor contracts or processor terms.
+            evidence_claim_ids:
+              - EC-014
+              - EC-025
+            risk_ids:
+              - R-006
+              - R-007
+              - R-010
+        hidden_risks:
+          - Processor reserve rights, data-use restrictions, indemnities, MFNs, termination rights or AI vendor terms may create hidden exposure.
+        evidence_gaps:
+          - Material contract schedule, MSAs, DPAs, vendor/processor agreements, AI/model contracts and partnership agreements.
+        follow_up_questions:
+          - Provide all material customer/vendor/processor/AI contracts and summary of unusual terms.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+          - EC-025
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Public research did not identify regulatory enforcement actions, but privacy, AI, payments and consumer/SMB billing issues create regulatory surfaces requiring specialist review.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Trust/privacy/terms pages evidence compliance controls and obligations but not enforcement history.
+            evidence_claim_ids:
+              - EC-012
+              - EC-013
+              - EC-014
+              - EC-025
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Regulatory correspondence, consumer complaints, privacy requests or payments audits may not be public.
+        evidence_gaps:
+          - Regulatory correspondence, privacy request logs, processor audits, PCI scope, money-transmission analysis and AI compliance review.
+        follow_up_questions:
+          - Counsel/security to review privacy, AI, payments, consumer protection and data-security compliance records.
+        table_ids: []
+        figure_ids:
+          - F-012
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+          - EC-014
+          - EC-025
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.C
+    purpose: Summarize public financing milestones and valuation anchors.
+    columns:
+      - name: date
+        description: Announcement date
+      - name: round_or_event
+        description: Round or financing event
+      - name: amount
+        description: Public amount
+      - name: valuation_or_metric
+        description: Public valuation or related metric
+      - name: lead_and_participants
+        description: Named lead and participants
+      - name: verification_status
+        description: Diligence classification
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2021-05-04
+          round_or_event: Series D
+          amount: $155M
+          valuation_or_metric: $1B+ valuation; $248M raised since 2013; >$3B platform bookings
+          lead_and_participants: Durable led; Tiger, Battery, Zeev, 01 Advisors, Norwest, Citi participated
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-005
+      - row_id: T-001-R2
+        values:
+          date: 2021-11-03
+          round_or_event: Series E
+          amount: $250M
+          valuation_or_metric: $2.4B valuation; $1.8B booked in 2021; $5B since launch; $498M total raised per Reuters
+          lead_and_participants: Tiger Global led; Durable, Norwest, Citi, OurCrowd participated
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-001-R3
+        values:
+          date: 2025-03-27
+          round_or_event: ARR/valuation analysis
+          amount: No new round disclosed
+          valuation_or_metric: $140M ARR; $2.4B valuation reference (~17x ARR)
+          lead_and_participants: TechCrunch analysis
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: null
+  - table_id: T-002
+    title: Public revenue, bookings and financial-quality signal matrix
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate publicly observed financial signals from unresolved financial diligence items.
+    columns:
+      - name: metric
+        description: Metric or diligence item
+      - name: public_signal
+        description: Observed public signal
+      - name: what_it_does_not_verify
+        description: Remaining diligence gap
+      - name: verification_status
+        description: Diligence status
+    rows:
+      - row_id: T-002-R1
+        values:
+          metric: ARR
+          public_signal: $140M ARR reported by TechCrunch in 2025
+          what_it_does_not_verify: Recognized revenue, retention, gross margin, billings, churn or cash burn
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-019
+        source_ids:
+          - SRC-008
+      - row_id: T-002-R2
+        values:
+          metric: Bookings/transactions
+          public_signal: $1.8B booked in 2021, $5B since launch, and >$13B transactions since 2013 across public company/news sources
+          what_it_does_not_verify: Net revenue, take rate, payment costs, refunds/chargebacks or revenue recognition
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+          - EC-019
+        source_ids:
+          - SRC-006
+          - SRC-009
+      - row_id: T-002-R3
+        values:
+          metric: Financial statements
+          public_signal: No audited annual/quarterly financial package found publicly
+          what_it_does_not_verify: All core GAAP/IFRS financial diligence
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-001
+          - SRC-008
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-010
+      - EC-019
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-009
+    notes: null
+  - table_id: T-003
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Record public investor ownership signals and private cap-table requests.
+    columns:
+      - name: stakeholder_or_instrument
+        description: Investor, holder or instrument category
+      - name: public_position
+        description: Public evidence
+      - name: diligence_caveat
+        description: What remains private
+      - name: priority
+        description: Diligence priority
+    rows:
+      - row_id: T-003-R1
+        values:
+          stakeholder_or_instrument: Series E investors
+          public_position: Tiger Global led; Durable, Norwest, Citi, OurCrowd participated
+          diligence_caveat: Ownership %, preference, pro rata, side letters and board rights not public
+          priority: high
+        evidence_claim_ids:
+          - EC-003
+          - EC-026
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-003-R2
+        values:
+          stakeholder_or_instrument: Series D and earlier investors
+          public_position: Durable, Tiger, Battery, Zeev, 01 Advisors, Norwest, Citi, plus CB row references Norwest/Hillsven/Aleph
+          diligence_caveat: Current fully diluted ownership and historical conversions not public
+          priority: high
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-026
+        source_ids:
+          - SRC-001
+          - SRC-005
+      - row_id: T-003-R3
+        values:
+          stakeholder_or_instrument: Founders/employees/options
+          public_position: Company recruiting pages mention equity; leadership/founder profiles public
+          diligence_caveat: Option pool, grants, exercises, repurchases and 409A not public
+          priority: high
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+          - EC-026
+        source_ids:
+          - SRC-010
+          - SRC-020
+      - row_id: T-003-R4
+        values:
+          stakeholder_or_instrument: Debt, SAFEs, notes, liens
+          public_position: No public schedule identified
+          diligence_caveat: Debt/liens/side instruments require data-room disclosure
+          priority: high
+        evidence_claim_ids:
+          - EC-019
+          - EC-026
+        source_ids:
+          - SRC-018
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-011
+      - EC-024
+      - EC-026
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-010
+      - SRC-020
+    notes: null
+  - table_id: T-004
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product modules to value proposition and evidence quality.
+    columns:
+      - name: product_area
+        description: Product/module area
+      - name: target_user
+        description: Intended audience
+      - name: public_features
+        description: Publicly described features
+      - name: diligence_request
+        description: Private validation needed
+      - name: verification_status
+        description: Status
+    rows:
+      - row_id: T-004-R1
+        values:
+          product_area: Clientflow / CRM
+          target_user: Independent businesses and SMB service providers
+          public_features: Lead capture, client management, proposals/contracts and workflow management
+          diligence_request: Module adoption, active paid customers and retention by segment
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-002
+          - SRC-004
+      - row_id: T-004-R2
+        values:
+          product_area: Invoicing and payments
+          target_user: SMB sellers and clients
+          public_features: Invoices, online payments and on-time/early invoice performance claims
+          diligence_request: Processor agreements, take rate, chargebacks, refunds and PCI/payment compliance
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-025
+        source_ids:
+          - SRC-015
+          - SRC-013
+      - row_id: T-004-R3
+        values:
+          product_area: AI / automation
+          target_user: Independent business operators
+          public_features: AI productivity and booking/lead-quality claims; Fine.dev AI talent acquisition
+          diligence_request: AI efficacy, model/data rights, evaluation methodology and vendor/model dependencies
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+          - SRC-015
+    evidence_claim_ids:
+      - EC-005
+      - EC-009
+      - EC-010
+      - EC-023
+      - EC-025
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-009
+      - SRC-015
+    notes: null
+  - table_id: T-005
+    title: Public pricing and packaging comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Record public pricing tiers and monetization diligence caveats.
+    columns:
+      - name: tier
+        description: Public tier
+      - name: monthly_price
+        description: Public monthly list price
+      - name: positioning
+        description: Public positioning
+      - name: unverified_economics
+        description: Private economics to verify
+    rows:
+      - row_id: T-005-R1
+        values:
+          tier: Starter
+          monthly_price: $29/month
+          positioning: Entry package for small businesses getting started
+          unverified_economics: Gross margin, discounting, churn and support load
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+      - row_id: T-005-R2
+        values:
+          tier: Essentials
+          monthly_price: $49/month
+          positioning: Middle package for more complete business management
+          unverified_economics: Upgrade rate, feature adoption and retention
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+      - row_id: T-005-R3
+        values:
+          tier: Premium
+          monthly_price: $109/month
+          positioning: Higher package for larger/more advanced workflows
+          unverified_economics: ARPA, expansion, annual discounts and sales-assist cost
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+    source_ids:
+      - SRC-003
+    notes: null
+  - table_id: T-006
+    title: Public customer and review signal summary
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize customer-scale evidence and what remains unverified.
+    columns:
+      - name: signal
+        description: Customer signal
+      - name: public_evidence
+        description: Evidence observed
+      - name: risk_or_gap
+        description: Diligence caveat
+      - name: verification_status
+        description: Status
+    rows:
+      - row_id: T-006-R1
+        values:
+          signal: Customer count
+          public_evidence: 100,000+ small/independent businesses claimed by HoneyBook
+          risk_or_gap: Active paid customer definition and cohort count not public
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-015
+      - row_id: T-006-R2
+        values:
+          signal: Review volume
+          public_evidence: 4.8 rating and 20,000+ reviews/testimonials claimed on company page
+          risk_or_gap: Selection bias and independent review distribution need validation
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-014
+      - row_id: T-006-R3
+        values:
+          signal: Complaints
+          public_evidence: BBB lists 19 complaints in 3 years and 4 in 12 months
+          risk_or_gap: Complaint root causes and resolutions need support-ticket review
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-016
+      - row_id: T-006-R4
+        values:
+          signal: Top-customer revenue
+          public_evidence: Not publicly disclosed
+          risk_or_gap: Concentration, NRR/GRR and contract terms unknown
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-014
+          - SRC-015
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-020
+    source_ids:
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnership signals
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify relationship types that may affect revenue, product or operations.
+    columns:
+      - name: relationship
+        description: Relationship or partner type
+      - name: public_signal
+        description: Public evidence
+      - name: diligence_gap
+        description: Private information needed
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: T-007-R1
+        values:
+          relationship: Fine.dev founding team
+          public_signal: 2025 acquihire to accelerate AI innovation
+          diligence_gap: Purchase terms, retention, IP transfer and integration plan
+          priority: high
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+      - row_id: T-007-R2
+        values:
+          relationship: Investors
+          public_signal: Tiger, Durable, Norwest, Citi, OurCrowd and others named publicly
+          diligence_gap: Investor rights, board rights and side letters
+          priority: high
+        evidence_claim_ids:
+          - EC-026
+        source_ids:
+          - SRC-005
+          - SRC-006
+      - row_id: T-007-R3
+        values:
+          relationship: Revenue/channel partnerships
+          public_signal: No revenue-bearing strategic partnership schedule public
+          diligence_gap: Channel agreements, integration partners and rev-share economics
+          priority: medium
+        evidence_claim_ids:
+          - EC-020
+          - EC-022
+        source_ids:
+          - SRC-015
+    evidence_claim_ids:
+      - EC-010
+      - EC-020
+      - EC-022
+      - EC-023
+      - EC-026
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-009
+      - SRC-015
+    notes: null
+  - table_id: T-008
+    title: Top supplier and infrastructure dependency diligence matrix
+    chapter_id: III
+    section_id: III.E
+    purpose: Frame supplier diligence where public evidence is thin.
+    columns:
+      - name: supplier_category
+        description: Supplier/dependency category
+      - name: public_evidence
+        description: Public signal
+      - name: potential_risk
+        description: Risk
+      - name: diligence_request
+        description: Request
+    rows:
+      - row_id: T-008-R1
+        values:
+          supplier_category: Cloud/infrastructure
+          public_evidence: No named cloud supplier found publicly
+          potential_risk: Operational dependency, uptime and cost concentration
+          diligence_request: Cloud contracts, architecture, spend and SLAs
+        evidence_claim_ids:
+          - EC-012
+          - EC-025
+        source_ids:
+          - SRC-011
+      - row_id: T-008-R2
+        values:
+          supplier_category: Payment processors
+          public_evidence: Payments are productized, but processor contracts not public
+          potential_risk: Reserve rights, chargebacks, PCI scope and funds-flow compliance
+          diligence_request: Processor agreements, reserves, chargeback history and funds-flow memo
+        evidence_claim_ids:
+          - EC-009
+          - EC-025
+        source_ids:
+          - SRC-013
+          - SRC-015
+      - row_id: T-008-R3
+        values:
+          supplier_category: AI/model vendors
+          public_evidence: AI features and Fine.dev acquisition public; model/vendor stack not disclosed
+          potential_risk: Data rights, model reliability, cost and vendor lock-in
+          diligence_request: Model/vendor inventory, data-use rights and AI governance reviews
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-012
+      - EC-023
+      - EC-025
+    source_ids:
+      - SRC-009
+      - SRC-011
+      - SRC-013
+      - SRC-015
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Organize public competitor set by workflow segment and threat type.
+    columns:
+      - name: competitor_or_category
+        description: Competitor/category
+      - name: segment
+        description: Primary overlap
+      - name: public_overlap
+        description: Overlap with HoneyBook
+      - name: honeybook_differentiator_to_test
+        description: Differentiator requiring validation
+    rows:
+      - row_id: T-009-R1
+        values:
+          competitor_or_category: Dubsado / 17hats-style vertical SMB suites
+          segment: Independent-business CRM/workflow
+          public_overlap: Direct all-in-one workflow alternatives
+          honeybook_differentiator_to_test: Ease of use, automation depth, customer support and retention
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-015
+      - row_id: T-009-R2
+        values:
+          competitor_or_category: HubSpot / broad CRM suites
+          segment: CRM and marketing automation
+          public_overlap: CRM, pipeline, marketing and customer records
+          honeybook_differentiator_to_test: Vertical workflow fit and simpler SMB setup
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-015
+      - row_id: T-009-R3
+        values:
+          competitor_or_category: PandaDoc / DocuSign / Proposify
+          segment: Proposals, documents and e-signature
+          public_overlap: Contracts/proposals and signing workflows
+          honeybook_differentiator_to_test: Integrated invoice/payment/clientflow bundle
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-015
+      - row_id: T-009-R4
+        values:
+          competitor_or_category: QuickBooks / Xero / FreshBooks / Stripe / Square
+          segment: Accounting and payments
+          public_overlap: Invoices, payments, bookkeeping/payment workflows
+          honeybook_differentiator_to_test: Front-office workflow plus payments rather than finance-only system
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-015
+      - row_id: T-009-R5
+        values:
+          competitor_or_category: ChatGPT / Gemini and AI assistants
+          segment: AI productivity
+          public_overlap: Drafting, automation and assistant workflows
+          honeybook_differentiator_to_test: Workflow-specific AI grounded in clientflow data
+        evidence_claim_ids:
+          - EC-021
+          - EC-023
+        source_ids:
+          - SRC-015
+          - SRC-009
+    evidence_claim_ids:
+      - EC-021
+      - EC-023
+    source_ids:
+      - SRC-015
+      - SRC-009
+    notes: null
+  - table_id: T-010
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Rate HoneyBook against major competition axes using public evidence and diligence caveats.
+    columns:
+      - name: axis
+        description: Competition axis
+      - name: public_honeybook_position
+        description: Observed public position
+      - name: main_competitive_pressure
+        description: Threat
+      - name: diligence_test
+        description: Private validation needed
+    rows:
+      - row_id: T-010-R1
+        values:
+          axis: Workflow breadth
+          public_honeybook_position: Broad clientflow bundle
+          main_competitive_pressure: Suites can bundle adjacent functions
+          diligence_test: Feature adoption and daily/weekly active workflows
+        evidence_claim_ids:
+          - EC-005
+          - EC-021
+        source_ids:
+          - SRC-002
+          - SRC-015
+      - row_id: T-010-R2
+        values:
+          axis: Price/value
+          public_honeybook_position: $29-$109/month public tiers
+          main_competitive_pressure: Low-cost specialists and bundled accounting/payment tools
+          diligence_test: Net price realization, discounts and willingness-to-pay
+        evidence_claim_ids:
+          - EC-006
+          - EC-021
+        source_ids:
+          - SRC-003
+          - SRC-015
+      - row_id: T-010-R3
+        values:
+          axis: AI differentiation
+          public_honeybook_position: AI claims and Fine.dev acquisition
+          main_competitive_pressure: Generic AI tools and fast feature replication
+          diligence_test: Controlled AI uplift and proprietary data advantage
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-010
+      - EC-021
+      - EC-023
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-009
+      - SRC-015
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize visible GTM channels and missing productivity metrics.
+    columns:
+      - name: channel
+        description: Channel/motion
+      - name: public_evidence
+        description: Evidence
+      - name: unverified_metric
+        description: Missing metric
+      - name: risk
+    rows:
+      - row_id: T-011-R1
+        values:
+          channel: Self-serve subscription
+          public_evidence: Pricing tiers publicly listed
+          unverified_metric: Website conversion, paid mix, churn and payback
+          risk: CAC/payback hidden
+        evidence_claim_ids:
+          - EC-006
+          - EC-022
+        source_ids:
+          - SRC-003
+      - row_id: T-011-R2
+        values:
+          channel: Reviews/testimonials/social proof
+          public_evidence: 4.8 rating and 20,000+ reviews claimed
+          unverified_metric: Review-source distribution and referral conversion
+          risk: Selection/reputation risk
+        evidence_claim_ids:
+          - EC-008
+          - EC-022
+        source_ids:
+          - SRC-014
+      - row_id: T-011-R3
+        values:
+          channel: Content/alternatives SEO
+          public_evidence: Alternatives/comparison content names competitors and value claims
+          unverified_metric: Organic traffic, ranking durability and conversion
+          risk: SEO volatility
+        evidence_claim_ids:
+          - EC-009
+          - EC-021
+          - EC-022
+        source_ids:
+          - SRC-015
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-009
+      - EC-021
+      - EC-022
+    source_ids:
+      - SRC-003
+      - SRC-014
+      - SRC-015
+    notes: null
+  - table_id: T-012
+    title: Public marketing signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Catalog observed public marketing assets and use as a diligence request index.
+    columns:
+      - name: marketing_asset
+        description: Asset
+      - name: observed_signal
+        description: Public signal
+      - name: diligence_question
+        description: Question to answer
+    rows:
+      - row_id: T-012-R1
+        values:
+          marketing_asset: Homepage/category positioning
+          observed_signal: AI-powered business/clientflow platform positioning
+          diligence_question: Which segments and messages convert paid users most efficiently?
+        evidence_claim_ids:
+          - EC-005
+          - EC-022
+        source_ids:
+          - SRC-002
+      - row_id: T-012-R2
+        values:
+          marketing_asset: Customer reviews/testimonials
+          observed_signal: 20,000+ reviews and 4.8 rating claimed
+          diligence_question: How do reviews correlate with referrals, conversion and churn?
+        evidence_claim_ids:
+          - EC-008
+          - EC-022
+        source_ids:
+          - SRC-014
+      - row_id: T-012-R3
+        values:
+          marketing_asset: Competitor alternatives content
+          observed_signal: Comparison pages across CRM, proposal, scheduling, payments and AI
+          diligence_question: What organic traffic and paid conversion come from comparison pages?
+        evidence_claim_ids:
+          - EC-021
+          - EC-022
+        source_ids:
+          - SRC-015
+    evidence_claim_ids:
+      - EC-005
+      - EC-008
+      - EC-021
+      - EC-022
+    source_ids:
+      - SRC-002
+      - SRC-014
+      - SRC-015
+    notes: null
+  - table_id: T-013
+    title: Sales productivity and marketing-budget gap ledger
+    chapter_id: V
+    section_id: V.D
+    purpose: Identify GTM metrics required to underwrite growth.
+    columns:
+      - name: metric
+        description: Metric
+      - name: public_status
+        description: Public status
+      - name: why_it_matters
+        description: Reason
+      - name: request_priority
+        description: Priority
+    rows:
+      - row_id: T-013-R1
+        values:
+          metric: CAC and payback
+          public_status: Not disclosed
+          why_it_matters: Determines efficient growth and valuation support
+          request_priority: high
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-003
+          - SRC-014
+      - row_id: T-013-R2
+        values:
+          metric: Quota attainment and pipeline conversion
+          public_status: Not disclosed
+          why_it_matters: Tests sales-assist productivity and forecast realism
+          request_priority: high
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-010
+      - row_id: T-013-R3
+        values:
+          metric: Marketing budget and channel ROI
+          public_status: Not disclosed
+          why_it_matters: Tests ability to scale 100k+ customer base without margin deterioration
+          request_priority: high
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-015
+    evidence_claim_ids:
+      - EC-022
+    source_ids:
+      - SRC-003
+      - SRC-010
+      - SRC-014
+      - SRC-015
+    notes: null
+  - table_id: T-014
+    title: R&D organization and hiring signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture public R&D/team signals and the private org diligence required.
+    columns:
+      - name: signal
+        description: Signal
+      - name: public_evidence
+        description: Evidence
+      - name: interpretation
+        description: Interpretation
+      - name: diligence_gap
+        description: Gap
+    rows:
+      - row_id: T-014-R1
+        values:
+          signal: AI investment
+          public_evidence: Fine.dev acquihire and AI claims
+          interpretation: AI is a visible product/R&D priority
+          diligence_gap: Roadmap, evaluation methodology and retention terms
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+      - row_id: T-014-R2
+        values:
+          signal: Technical/data hiring
+          public_evidence: Public job-board/careers openings
+          interpretation: Ongoing technical execution needs
+          diligence_gap: Actual engineering headcount and budget
+        evidence_claim_ids:
+          - EC-011
+          - EC-023
+        source_ids:
+          - SRC-010
+          - SRC-019
+      - row_id: T-014-R3
+        values:
+          signal: Security controls
+          public_evidence: Trust center references SDLC and access controls
+          interpretation: Security process exists publicly
+          diligence_gap: SOC reports, pen tests and incident history
+        evidence_claim_ids:
+          - EC-012
+          - EC-023
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-023
+    source_ids:
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-019
+    notes: null
+  - table_id: T-015
+    title: Public product and research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: List visible roadmap/pipeline evidence and validation requests.
+    columns:
+      - name: pipeline_item
+        description: Item
+      - name: public_status
+        description: Public status
+      - name: expected_impact
+        description: Potential impact
+      - name: validation_needed
+        description: Private validation
+    rows:
+      - row_id: T-015-R1
+        values:
+          pipeline_item: AI clientflow features
+          public_status: Company claims AI improves bookings, lead profitability and time saved
+          expected_impact: Higher customer value, retention and upsell
+          validation_needed: A/B tests, cohorts and model-quality metrics
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+        source_ids:
+          - SRC-009
+          - SRC-015
+      - row_id: T-015-R2
+        values:
+          pipeline_item: Fine.dev integration
+          public_status: 2025 acquihire announced
+          expected_impact: Accelerated AI/product development
+          validation_needed: Purchase terms, employee retention and integration plan
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+      - row_id: T-015-R3
+        values:
+          pipeline_item: Security/privacy improvements
+          public_status: Trust/privacy/terms pages active
+          expected_impact: Enterprise readiness and regulatory resilience
+          validation_needed: Compliance roadmap and audit evidence
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+          - EC-014
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-023
+    source_ids:
+      - SRC-009
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-015
+    notes: null
+  - table_id: T-016
+    title: Senior management roster from public sources
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Record public leadership signals and gaps in management diligence.
+    columns:
+      - name: person_or_role
+        description: Person/role
+      - name: public_evidence
+        description: Evidence
+      - name: diligence_status
+        description: Status
+      - name: follow_up
+        description: Follow-up
+    rows:
+      - row_id: T-016-R1
+        values:
+          person_or_role: Oz Alon, Co-Founder and CEO
+          public_evidence: Forbes Councils profile and company/founder context identify Oz Alon as co-founder/CEO
+          diligence_status: partially_verified
+          follow_up: Confirm current title, employment agreement, equity, board role and reference checks
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-020
+          - SRC-004
+      - row_id: T-016-R2
+        values:
+          person_or_role: Other founders/senior executives
+          public_evidence: Company history indicates founder-led origin but complete current executive roster not public in this research artifact
+          diligence_status: not_publicly_verifiable
+          follow_up: Request current management bios, board/advisors and succession plan
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-004
+      - row_id: T-016-R3
+        values:
+          person_or_role: Fine.dev founding team
+          public_evidence: Acquired/acquihired team announced in 2025
+          diligence_status: partially_verified
+          follow_up: Verify retained personnel, IP assignment and earnout/retention terms
+        evidence_claim_ids:
+          - EC-010
+          - EC-023
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-010
+      - EC-023
+      - EC-024
+    source_ids:
+      - SRC-004
+      - SRC-009
+      - SRC-020
+    notes: null
+  - table_id: T-017
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Show public workforce anchors and private HRIS requests.
+    columns:
+      - name: period_or_signal
+        description: Period/signal
+      - name: public_evidence
+        description: Evidence
+      - name: interpretation
+        description: Interpretation
+      - name: gap
+    rows:
+      - row_id: T-017-R1
+        values:
+          period_or_signal: May 2021
+          public_evidence: TechCrunch reported 103 employees, with San Francisco and Tel Aviv locations
+          interpretation: Historical scale anchor at Series D
+          gap: Function/location split and subsequent growth/attrition
+        evidence_claim_ids:
+          - EC-002
+          - EC-024
+        source_ids:
+          - SRC-005
+      - row_id: T-017-R2
+        values:
+          period_or_signal: Current careers snapshot
+          public_evidence: Careers/Greenhouse pages show open roles in San Francisco and Tel Aviv and benefits
+          interpretation: Current operating/hiring signal
+          gap: Filled headcount, paused reqs and attrition not visible
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+        source_ids:
+          - SRC-010
+          - SRC-019
+      - row_id: T-017-R3
+        values:
+          period_or_signal: Projected headcount
+          public_evidence: Not public
+          interpretation: Cannot assess hiring plan against forecast
+          gap: Board plan and budgeted headcount by function/location
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-010
+    evidence_claim_ids:
+      - EC-002
+      - EC-011
+      - EC-024
+    source_ids:
+      - SRC-005
+      - SRC-010
+      - SRC-019
+    notes: null
+  - table_id: T-018
+    title: Compensation, equity, employee-relations and turnover gap ledger
+    chapter_id: VII
+    section_id: VII.D
+    purpose: Aggregate private personnel diligence requests across compensation and employee matters.
+    columns:
+      - name: area
+        description: Personnel area
+      - name: public_signal
+        description: Public signal
+      - name: unverified_information
+        description: Missing information
+      - name: risk
+    rows:
+      - row_id: T-018-R1
+        values:
+          area: Compensation/benefits
+          public_signal: Careers page mentions competitive pay/equity and benefits
+          unverified_information: Compensation census, bonus/severance/change-in-control arrangements
+          risk: Cash burn and retention obligations
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+        source_ids:
+          - SRC-010
+      - row_id: T-018-R2
+        values:
+          area: Equity plans
+          public_signal: Equity mentioned in benefits
+          unverified_information: Option pool, grants, vesting, 409A and refresh plan
+          risk: Dilution and retention risk
+        evidence_claim_ids:
+          - EC-011
+          - EC-024
+          - EC-026
+        source_ids:
+          - SRC-010
+          - SRC-001
+      - row_id: T-018-R3
+        values:
+          area: Employee relations/turnover
+          public_signal: No public employee-relations or turnover schedule
+          unverified_information: Claims, investigations, exits, regretted attrition and engagement data
+          risk: Execution, culture and legal exposure
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-010
+          - SRC-019
+    evidence_claim_ids:
+      - EC-011
+      - EC-024
+      - EC-026
+    source_ids:
+      - SRC-010
+      - SRC-019
+      - SRC-001
+    notes: null
+  - table_id: T-019
+    title: Pending lawsuits against HoneyBook public-search summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Document public-search result and counsel follow-up for claims against company.
+    columns:
+      - name: case_or_issue
+        description: Case/issue
+      - name: public_result
+        description: Public result
+      - name: status
+        description: Status
+      - name: required_follow_up
+        description: Follow-up
+    rows:
+      - row_id: T-019-R1
+        values:
+          case_or_issue: Civil litigation against HoneyBook, Inc.
+          public_result: No exact relevant public result identified in this research pass
+          status: inconclusive
+          required_follow_up: Counsel docket search across federal/state courts and arbitration/settlement schedule
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-018
+      - row_id: T-019-R2
+        values:
+          case_or_issue: Security incident/breach litigation
+          public_result: No HoneyBook-specific breach result surfaced in public search pass
+          status: inconclusive
+          required_follow_up: Security incident log, cyber insurance claims and regulator notifications
+        evidence_claim_ids:
+          - EC-017
+          - EC-025
+        source_ids:
+          - SRC-018
+          - SRC-011
+      - row_id: T-019-R3
+        values:
+          case_or_issue: Consumer/customer complaints
+          public_result: BBB complaints exist but are not litigation records
+          status: verified complaint signal
+          required_follow_up: Complaint files, support tickets, refunds and resolutions
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-016
+    evidence_claim_ids:
+      - EC-015
+      - EC-017
+      - EC-025
+    source_ids:
+      - SRC-016
+      - SRC-018
+      - SRC-011
+    notes: null
+  - table_id: T-020
+    title: Pending lawsuits initiated by HoneyBook public-search summary
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Document public-search result for company-initiated litigation.
+    columns:
+      - name: matter_type
+        description: Matter type
+      - name: public_result
+        description: Public result
+      - name: status
+        description: Status
+      - name: required_follow_up
+        description: Follow-up
+    rows:
+      - row_id: T-020-R1
+        values:
+          matter_type: IP enforcement
+          public_result: No clear public initiated IP litigation found in this pass
+          status: inconclusive
+          required_follow_up: Counsel IP/litigation search and enforcement schedule
+        evidence_claim_ids:
+          - EC-017
+          - EC-018
+        source_ids:
+          - SRC-018
+      - row_id: T-020-R2
+        values:
+          matter_type: Customer/vendor collections or contract claims
+          public_result: No public schedule found
+          status: not_publicly_verifiable
+          required_follow_up: Company schedule of initiated claims and settlements
+        evidence_claim_ids:
+          - EC-017
+          - EC-025
+        source_ids:
+          - SRC-018
+    evidence_claim_ids:
+      - EC-017
+      - EC-018
+      - EC-025
+    source_ids:
+      - SRC-018
+    notes: null
+  - table_id: T-021
+    title: Material IP, privacy/security and regulatory artifact summary
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Capture legal/IP/compliance public artifacts and limitations.
+    columns:
+      - name: artifact
+        description: Artifact
+      - name: public_evidence
+        description: Evidence
+      - name: diligence_status
+        description: Status
+      - name: risk
+    rows:
+      - row_id: T-021-R1
+        values:
+          artifact: Trademarks/brand IP
+          public_evidence: Search snippets reference HoneyBook/HYBK/HB trademark records
+          diligence_status: inconclusive
+          risk: Need official ownership/status/assignment verification
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-018
+      - row_id: T-021-R2
+        values:
+          artifact: Security controls
+          public_evidence: Trust center references encryption at rest, SDLC, access approvals and incident testing
+          diligence_status: partially_verified
+          risk: Self-reported controls need audit support
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-011
+      - row_id: T-021-R3
+        values:
+          artifact: Privacy policy
+          public_evidence: Privacy policy effective March 10, 2026
+          diligence_status: verified
+          risk: Actual processing, DSR and subprocessors not verified
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-012
+      - row_id: T-021-R4
+        values:
+          artifact: Regulatory actions
+          public_evidence: No clear public enforcement result found in this pass
+          diligence_status: inconclusive
+          risk: Requires regulator/counsel search and company correspondence
+        evidence_claim_ids:
+          - EC-017
+          - EC-025
+        source_ids:
+          - SRC-018
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-017
+      - EC-018
+      - EC-025
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-018
+    notes: null
+  - table_id: T-022
+    title: Insurance, material contracts and regulatory exposure ledger
+    chapter_id: VIII
+    section_id: VIII.E
+    purpose: List non-public legal/commercial records required for closing diligence.
+    columns:
+      - name: exposure_area
+        description: Area
+      - name: public_signal
+        description: Public signal
+      - name: missing_records
+        description: Records needed
+      - name: priority
+    rows:
+      - row_id: T-022-R1
+        values:
+          exposure_area: Insurance
+          public_signal: No policy schedule public
+          missing_records: D&O, cyber, E&O, EPLI, general liability policies and claims
+          priority: high
+        evidence_claim_ids:
+          - EC-025
+        source_ids:
+          - SRC-011
+          - SRC-018
+      - row_id: T-022-R2
+        values:
+          exposure_area: Material contracts
+          public_signal: Public terms only; negotiated contracts private
+          missing_records: MSAs, DPAs, processor, cloud, AI/model, partnership and vendor contracts
+          priority: high
+        evidence_claim_ids:
+          - EC-014
+          - EC-025
+        source_ids:
+          - SRC-013
+      - row_id: T-022-R3
+        values:
+          exposure_area: Regulatory/payment/privacy
+          public_signal: Trust/privacy/terms pages active; no enforcement found publicly
+          missing_records: Regulatory correspondence, PCI scope, money-transmission analysis, DSR logs and audits
+          priority: high
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+          - EC-017
+          - EC-025
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-018
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-017
+      - EC-025
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-018
+    notes: null
+figures:
+  - figure_id: F-001
+    title: HoneyBook public financing timeline
+    chapter_id: I
+    section_id: I.C
+    figure_type: timeline
+    description: Chronological view of public financing and operating-status milestones.
+    purpose: Show valuation and financing milestones plus current operating signals.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E1
+          date: "2013"
+          label: Company founding period
+          description: HoneyBook company history begins in 2013 per public company/about and funding coverage.
+          category: company
+          evidence_claim_ids:
+            - EC-002
+            - EC-007
+          source_ids:
+            - SRC-004
+            - SRC-005
+        - event_id: F-001-E2
+          date: 2021-05-04
+          label: $155M Series D
+          description: Series D at $1B+ valuation, with 103 employees and >$3B platform bookings reported.
+          category: financing
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-005
+        - event_id: F-001-E3
+          date: 2021-11-03
+          label: $250M Series E
+          description: Series E at $2.4B valuation and $5B booked since launch reported.
+          category: financing
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-006
+            - SRC-007
+        - event_id: F-001-E4
+          date: 2025-03-27
+          label: $140M ARR coverage
+          description: TechCrunch reported HoneyBook at $140M ARR and discussed the $2.4B valuation.
+          category: financial_signal
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-008
+        - event_id: F-001-E5
+          date: 2025-09-30
+          label: Fine.dev acquisition announced
+          description: HoneyBook announced Fine.dev acquihire to accelerate AI innovation.
+          category: corporate_development
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-009
+      start_date: "2013"
+      end_date: 2025-09-30
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render as horizontal timeline with financing events highlighted.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-010
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+    notes: null
+  - figure_id: F-002
+    title: Public valuation and ARR trajectory
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: Chart of public valuation and ARR data points.
+    purpose: Frame valuation support and missing forecast diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Year/event
+        unit: null
+        scale: time
+      y_axis:
+        label: USD millions
+        unit: USD millions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation
+          unit: USD millions
+          data_points:
+            - x: 2021-05-04
+              y: 1000
+              label: Series D $1B+ floor
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-005
+            - x: 2021-11-03
+              y: 2400
+              label: Series E $2.4B
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-006
+                - SRC-007
+            - x: 2025-03-27
+              y: 2400
+              label: Valuation reference in 2025 coverage
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-008
+        - series_id: arr
+          name: Reported ARR
+          unit: USD millions
+          data_points:
+            - x: 2021-11-03
+              y: null
+              label: ARR doubled but exact amount not public
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-006
+            - x: 2025-03-27
+              y: 140
+              label: $140M ARR reported
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: Approximate multiple
+          x: 2025-03-27
+          y: 2400
+          note: $2.4B / $140M ARR ≈ 17x; needs retention/margin support.
+          evidence_claim_ids:
+            - EC-004
+            - EC-019
+          source_ids:
+            - SRC-008
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Plot valuation and ARR as separate series; show null ARR point as missing-data marker.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-019
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: null
+  - figure_id: F-003
+    title: HoneyBook product/dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level public product architecture inferred from marketed modules and legal/trust surfaces.
+    purpose: Show product modules and dependency areas requiring validation.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user
+          label: Independent business user
+          node_type: user
+          description: Small business operator using HoneyBook workflows.
+          evidence_claim_ids:
+            - EC-005
+            - EC-007
+          source_ids:
+            - SRC-002
+            - SRC-015
+        - node_id: crm
+          label: Clientflow / CRM workspace
+          node_type: product
+          description: Lead/client records, workflow orchestration and automation.
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+        - node_id: docs
+          label: Proposals, contracts and scheduling
+          node_type: service
+          description: Document and scheduling workflows marketed as part of suite.
+          evidence_claim_ids:
+            - EC-005
+            - EC-021
+          source_ids:
+            - SRC-002
+            - SRC-015
+        - node_id: payments
+          label: Invoices and payments
+          node_type: service
+          description: Invoice/payment functionality and payment-performance claims.
+          evidence_claim_ids:
+            - EC-009
+            - EC-025
+          source_ids:
+            - SRC-015
+            - SRC-013
+        - node_id: ai
+          label: AI assistant / automation
+          node_type: model
+          description: AI features and Fine.dev acceleration signal.
+          evidence_claim_ids:
+            - EC-010
+            - EC-023
+          source_ids:
+            - SRC-009
+        - node_id: trust
+          label: Trust, privacy and compliance controls
+          node_type: service
+          description: Encryption, SDLC, privacy and terms obligations.
+          evidence_claim_ids:
+            - EC-012
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-011
+            - SRC-012
+            - SRC-013
+      edges:
+        - edge_id: e1
+          from_node_id: user
+          to_node_id: crm
+          relationship: uses
+          data_or_dependency: Client and workflow data
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+        - edge_id: e2
+          from_node_id: crm
+          to_node_id: docs
+          relationship: orchestrates
+          data_or_dependency: Proposals, contracts and scheduling workflows
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+        - edge_id: e3
+          from_node_id: crm
+          to_node_id: payments
+          relationship: connects to
+          data_or_dependency: Invoice and payment data
+          evidence_claim_ids:
+            - EC-009
+            - EC-025
+          source_ids:
+            - SRC-015
+            - SRC-013
+        - edge_id: e4
+          from_node_id: crm
+          to_node_id: ai
+          relationship: augmented by
+          data_or_dependency: Workflow/client data subject to AI governance
+          evidence_claim_ids:
+            - EC-010
+            - EC-023
+          source_ids:
+            - SRC-009
+        - edge_id: e5
+          from_node_id: crm
+          to_node_id: trust
+          relationship: governed by
+          data_or_dependency: Security/privacy controls
+          evidence_claim_ids:
+            - EC-012
+            - EC-013
+          source_ids:
+            - SRC-011
+            - SRC-012
+      boundaries:
+        - boundary_id: b1
+          label: HoneyBook public platform boundary
+          node_ids:
+            - crm
+            - docs
+            - payments
+            - ai
+            - trust
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render as architecture diagram with risk callouts on payments and AI.
+    evidence_claim_ids:
+      - EC-005
+      - EC-009
+      - EC-010
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-023
+      - EC-025
+    source_ids:
+      - SRC-002
+      - SRC-009
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-015
+    notes: null
+  - figure_id: F-004
+    title: HoneyBook public monthly list-price ladder
+    chapter_id: II
+    section_id: II.A
+    figure_type: chart
+    description: Bar chart of current public monthly list prices by plan.
+    purpose: Visualize pricing architecture and monetization spread.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Plan
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Monthly list price
+        unit: USD/month
+        scale: linear
+      series:
+        - series_id: price
+          name: Monthly price
+          unit: USD/month
+          data_points:
+            - x: Starter
+              y: 29
+              label: Starter $29/mo
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-003
+            - x: Essentials
+              y: 49
+              label: Essentials $49/mo
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-003
+            - x: Premium
+              y: 109
+              label: Premium $109/mo
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-003
+      annotations:
+        - label: Economics gap
+          x: null
+          y: null
+          note: Discounting, annual mix, payment revenue and churn are not public.
+          evidence_claim_ids:
+            - EC-006
+            - EC-019
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Simple three-bar plan-price chart.
+    evidence_claim_ids:
+      - EC-006
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-005
+    title: Customer signal and concentration bar chart
+    chapter_id: III
+    section_id: III.C
+    figure_type: chart
+    description: Bar chart contrasts public aggregate customer/review counts with undisclosed concentration metrics.
+    purpose: Demonstrate that aggregate scale is public while top-account economics are not.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer diligence signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count or percentage where public
+        unit: mixed
+        scale: linear
+      series:
+        - series_id: public_customer_signals
+          name: Public signal
+          unit: count_or_percent
+          data_points:
+            - x: Businesses served
+              y: 100000
+              label: 100,000+ businesses claimed
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-015
+            - x: Reviews
+              y: 20000
+              label: 20,000+ reviews claimed
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-014
+            - x: BBB complaints 3y
+              y: 19
+              label: 19 BBB complaints in 3 years
+              evidence_claim_ids:
+                - EC-015
+              source_ids:
+                - SRC-016
+            - x: Top customer ARR share
+              y: null
+              label: Not publicly disclosed
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-014
+                - SRC-015
+      annotations:
+        - label: Concentration unknown
+          x: Top customer ARR share
+          y: null
+          note: Top-account ARR and churn cohorts require private data room.
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-014
+            - SRC-015
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use labels to show null/missing private concentration bar.
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-020
+    source_ids:
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    notes: null
+  - figure_id: F-006
+    title: HoneyBook competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Two-axis market map positioning HoneyBook among public competitor categories.
+    purpose: Visualize category breadth and competitive pressure.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Workflow breadth
+          low_label: Single-purpose tool
+          high_label: All-in-one suite
+        y_axis:
+          label: Vertical fit for independent services businesses
+          low_label: Horizontal/general
+          high_label: Vertical SMB workflow
+      segments:
+        - segment_id: suite
+          name: SMB workflow suites
+          description: All-in-one independent-business platforms
+        - segment_id: horizontal
+          name: Horizontal SaaS
+          description: CRM/docs/scheduling/accounting/payment tools
+        - segment_id: ai
+          name: General AI assistants
+          description: Broad AI productivity tools
+      entities:
+        - entity_id: honeybook
+          name: HoneyBook
+          entity_type: target_company
+          segment_id: suite
+          x_value: 8
+          y_value: 8
+          attributes:
+            public_pricing: $29-$109/month
+            evidence: Company positioning
+          evidence_claim_ids:
+            - EC-005
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - entity_id: dubsado
+          name: Dubsado / 17hats-like tools
+          entity_type: competitor
+          segment_id: suite
+          x_value: 7
+          y_value: 8
+          attributes:
+            threat: Direct vertical-suite alternative
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-015
+        - entity_id: hubspot
+          name: HubSpot
+          entity_type: competitor
+          segment_id: horizontal
+          x_value: 8
+          y_value: 4
+          attributes:
+            threat: Broad CRM suite
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-015
+        - entity_id: payments_accounting
+          name: QuickBooks / Stripe / Square / Xero
+          entity_type: competitor
+          segment_id: horizontal
+          x_value: 6
+          y_value: 5
+          attributes:
+            threat: Own finance/payment workflows
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-015
+        - entity_id: ai_assistants
+          name: ChatGPT / Gemini
+          entity_type: competitor
+          segment_id: ai
+          x_value: 5
+          y_value: 2
+          attributes:
+            threat: Generic automation substitute
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-015
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as 2x2 scatter-style map.
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-021
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-015
+    notes: null
+  - figure_id: F-007
+    title: Public GTM funnel and missing productivity metrics
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: GTM funnel using publicly visible stages and marking undisclosed counts.
+    purpose: Show known public acquisition assets and private conversion gaps.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      stages:
+        - stage_id: awareness
+          name: Awareness via SEO/content/reviews
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: current public pages
+          evidence_claim_ids:
+            - EC-008
+            - EC-022
+          source_ids:
+            - SRC-014
+            - SRC-015
+        - stage_id: pricing_visit
+          name: Pricing / plan evaluation
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: current public pricing
+          evidence_claim_ids:
+            - EC-006
+            - EC-022
+          source_ids:
+            - SRC-003
+        - stage_id: trial_or_signup
+          name: Signup / activation
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: not public
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-003
+        - stage_id: paid_customer
+          name: Paid customer / retained account
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: not public
+          evidence_claim_ids:
+            - EC-020
+            - EC-022
+          source_ids:
+            - SRC-014
+            - SRC-015
+      unit: customers
+      cohort_or_period: Public-source snapshot; counts and conversion rates require data room.
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render as funnel with all counts marked private/not disclosed.
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-020
+      - EC-022
+    source_ids:
+      - SRC-003
+      - SRC-014
+      - SRC-015
+    notes: null
+  - figure_id: F-008
+    title: R&D and AI operating model map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: org_chart
+    description: Publicly inferred R&D/product roles and AI workstreams.
+    purpose: Show visible R&D focus areas and missing organization data.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Oz Alon
+          role: Co-Founder and CEO
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-020
+        - node_id: product_ai
+          name: null
+          role: AI/product leadership
+          department: Product/R&D
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-010
+            - EC-023
+          source_ids:
+            - SRC-009
+        - node_id: fine_dev
+          name: null
+          role: Fine.dev founding team
+          department: AI/R&D
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-009
+        - node_id: data_science
+          name: null
+          role: Data/engineering roles
+          department: R&D
+          location: Tel Aviv / San Francisco signals
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-011
+            - EC-023
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - node_id: security
+          name: null
+          role: Security/compliance controls
+          department: Security/Compliance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-011
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: product_ai
+          relationship: other
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-020
+        - parent_node_id: product_ai
+          child_node_id: fine_dev
+          relationship: other
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-009
+        - parent_node_id: product_ai
+          child_node_id: data_science
+          relationship: other
+          evidence_claim_ids:
+            - EC-011
+            - EC-023
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: security
+          relationship: other
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use dotted/other relationships for inferred reporting lines requiring management confirmation.
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-023
+      - EC-024
+    source_ids:
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-019
+      - SRC-020
+    notes: null
+  - figure_id: F-009
+    title: Public management and personnel org snapshot
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Personnel snapshot from public leadership and hiring sources.
+    purpose: Display what is verified publicly versus private org-chart gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: oz
+          name: Oz Alon
+          role: Co-Founder and CEO
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-020
+        - node_id: founders_exec
+          name: null
+          role: Other founders / senior executives
+          department: Executive
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-004
+        - node_id: gtm_roles
+          name: null
+          role: Go-to-market roles
+          department: Sales/Marketing/CS
+          location: San Francisco / Tel Aviv signals
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - node_id: rd_roles
+          name: null
+          role: Product, engineering and data roles
+          department: R&D
+          location: San Francisco / Tel Aviv signals
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-011
+            - EC-023
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - node_id: support_ops
+          name: null
+          role: Operations/support functions
+          department: Operations
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-010
+      reporting_lines:
+        - parent_node_id: oz
+          child_node_id: founders_exec
+          relationship: other
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-020
+        - parent_node_id: founders_exec
+          child_node_id: gtm_roles
+          relationship: other
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        - parent_node_id: founders_exec
+          child_node_id: rd_roles
+          relationship: other
+          evidence_claim_ids:
+            - EC-011
+            - EC-023
+          source_ids:
+            - SRC-010
+            - SRC-019
+        - parent_node_id: founders_exec
+          child_node_id: support_ops
+          relationship: other
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-010
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Mark unknown nodes as unverified; replace with management-provided org chart in data room.
+    evidence_claim_ids:
+      - EC-011
+      - EC-023
+      - EC-024
+    source_ids:
+      - SRC-004
+      - SRC-010
+      - SRC-019
+      - SRC-020
+    notes: null
+  - figure_id: F-010
+    title: Public headcount and hiring anchor chart
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Chart of public headcount/hiring anchors and missing current headcount.
+    purpose: Visualize workforce-scale evidence and private HRIS gap.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Workforce signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: people_or_roles
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public count
+          unit: people_or_roles
+          data_points:
+            - x: 2021 employees
+              y: 103
+              label: 103 employees reported in May 2021
+              evidence_claim_ids:
+                - EC-002
+                - EC-024
+              source_ids:
+                - SRC-005
+            - x: Current total headcount
+              y: null
+              label: Not publicly disclosed
+              evidence_claim_ids:
+                - EC-024
+              source_ids:
+                - SRC-010
+                - SRC-019
+            - x: Open roles
+              y: null
+              label: Open roles observed but count varies by snapshot
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-010
+                - SRC-019
+      annotations:
+        - label: HRIS required
+          x: Current total headcount
+          y: null
+          note: Function/location split, attrition and budgeted headcount require HRIS export.
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-010
+            - SRC-019
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Show missing current headcount/open role bars as null/private.
+    evidence_claim_ids:
+      - EC-002
+      - EC-011
+      - EC-024
+    source_ids:
+      - SRC-005
+      - SRC-010
+      - SRC-019
+    notes: null
+  - figure_id: F-011
+    title: Legal, IP and regulatory public-source timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Timeline of public legal/compliance artifacts and issue-spotting searches.
+    purpose: Show dated compliance/legal artifacts and unresolved litigation/IP gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-011-E1
+          date: 2021-11-03
+          label: Series E financing public
+          description: Funding announcement creates securities/corporate-document diligence anchor.
+          category: financing_legal
+          evidence_claim_ids:
+            - EC-003
+            - EC-026
+          source_ids:
+            - SRC-006
+            - SRC-007
+        - event_id: F-011-E2
+          date: 2025-09-30
+          label: Fine.dev acquisition announced
+          description: Acquihire creates IP assignment, employment and integration diligence needs.
+          category: corporate_development
+          evidence_claim_ids:
+            - EC-010
+            - EC-023
+          source_ids:
+            - SRC-009
+        - event_id: F-011-E3
+          date: 2026-03-10
+          label: Privacy policy effective date
+          description: Privacy policy provides current public privacy/legal disclosure anchor.
+          category: privacy
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-012
+        - event_id: F-011-E4
+          date: 2026-05-21
+          label: Public legal/security/IP searches
+          description: No obvious lawsuit/security incident found; IP snippets inconclusive.
+          category: research_gap
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-018
+      start_date: 2021-11-03
+      end_date: 2026-05-21
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use caution styling on inconclusive search events.
+    evidence_claim_ids:
+      - EC-003
+      - EC-010
+      - EC-013
+      - EC-017
+      - EC-018
+      - EC-023
+      - EC-026
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-012
+      - SRC-018
+    notes: null
+  - figure_id: F-012
+    title: HoneyBook diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk heatmap covering the full risk register.
+    purpose: Prioritize follow-up across financial, customer, product, legal/regulatory and team risks.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Unaudited financial quality and revenue efficiency
+          severity: high
+          likelihood: medium
+          rationale: Public sources provide ARR, funding and platform volume signals but not audited revenue, gross margin, retention, CAC, burn or cash/debt.
+          evidence_claim_ids:
+            - EC-004
+            - EC-019
+            - EC-022
+          source_ids:
+            - SRC-008
+            - SRC-001
+            - SRC-005
+            - SRC-006
+            - SRC-003
+            - SRC-014
+            - SRC-015
+            - SRC-010
+        - risk_id: R-002
+          label: Valuation and preference-stack opacity
+          severity: high
+          likelihood: medium
+          rationale: The $2.4B valuation is public, but current valuation, dilution, liquidation preferences, side letters, debt and option-pool economics are not public.
+          evidence_claim_ids:
+            - EC-001
+            - EC-003
+            - EC-004
+            - EC-026
+          source_ids:
+            - SRC-001
+            - SRC-006
+            - SRC-007
+            - SRC-008
+            - SRC-005
+        - risk_id: R-003
+          label: SMB customer churn and concentration unknown
+          severity: high
+          likelihood: medium
+          rationale: HoneyBook claims a large SMB base, but top-customer revenue, cohort churn, NRR and support/dispute patterns are not public.
+          evidence_claim_ids:
+            - EC-007
+            - EC-008
+            - EC-015
+            - EC-020
+          source_ids:
+            - SRC-004
+            - SRC-015
+            - SRC-014
+            - SRC-016
+        - risk_id: R-004
+          label: Crowded horizontal/vertical SMB software competition
+          severity: medium
+          likelihood: high
+          rationale: HoneyBook overlaps with CRM, proposals, scheduling, e-signature, accounting, payments and AI tools, creating pricing and bundling pressure.
+          evidence_claim_ids:
+            - EC-005
+            - EC-006
+            - EC-021
+            - EC-022
+          source_ids:
+            - SRC-002
+            - SRC-004
+            - SRC-003
+            - SRC-015
+            - SRC-014
+            - SRC-010
+        - risk_id: R-005
+          label: AI product defensibility and product-liability exposure
+          severity: medium
+          likelihood: medium
+          rationale: AI usage/performance claims and Fine.dev acquihire create upside but require validation of data rights, model quality, safety, reliability and differentiation.
+          evidence_claim_ids:
+            - EC-009
+            - EC-010
+            - EC-018
+            - EC-023
+          source_ids:
+            - SRC-015
+            - SRC-009
+            - SRC-018
+            - SRC-004
+            - SRC-010
+            - SRC-019
+        - risk_id: R-006
+          label: Privacy, security and data-governance obligations
+          severity: high
+          likelihood: medium
+          rationale: The platform handles client, invoice, payment and potentially AI/meeting-recording data; public controls are self-reported and need independent validation.
+          evidence_claim_ids:
+            - EC-012
+            - EC-013
+            - EC-014
+            - EC-025
+          source_ids:
+            - SRC-011
+            - SRC-012
+            - SRC-013
+        - risk_id: R-007
+          label: Payments, chargeback and financial-services compliance exposure
+          severity: medium
+          likelihood: medium
+          rationale: Invoices and payments are core product flows; public terms and trust pages do not disclose processor contracts, chargebacks, funds-flow or compliance audits.
+          evidence_claim_ids:
+            - EC-012
+            - EC-013
+            - EC-014
+            - EC-025
+          source_ids:
+            - SRC-011
+            - SRC-012
+            - SRC-013
+        - risk_id: R-008
+          label: Workforce retention and compensation opacity
+          severity: medium
+          likelihood: medium
+          rationale: Public careers and old headcount points do not disclose current headcount, attrition, compensation commitments, option liabilities or employee-relations issues.
+          evidence_claim_ids:
+            - EC-011
+            - EC-024
+          source_ids:
+            - SRC-010
+            - SRC-019
+            - SRC-005
+            - SRC-020
+        - risk_id: R-009
+          label: Customer-service, billing and reputation complaints
+          severity: medium
+          likelihood: medium
+          rationale: BBB complaint categories point to product/service, billing, support and sales issues that could affect retention in a high-volume SMB base.
+          evidence_claim_ids:
+            - EC-015
+            - EC-020
+          source_ids:
+            - SRC-016
+            - SRC-014
+            - SRC-015
+        - risk_id: R-010
+          label: Legal absence cannot be proven by public search
+          severity: medium
+          likelihood: unknown
+          rationale: Public searches did not surface clear lawsuits or breaches, but private arbitration, demand letters, regulatory correspondence and insurance claims are not public.
+          evidence_claim_ids:
+            - EC-017
+            - EC-025
+          source_ids:
+            - SRC-018
+            - SRC-011
+            - SRC-012
+            - SRC-013
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render high-severity risks with priority labels and link back to risk register.
+    evidence_claim_ids:
+      - EC-004
+      - EC-019
+      - EC-022
+      - EC-001
+      - EC-003
+      - EC-026
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-020
+      - EC-005
+      - EC-006
+      - EC-021
+      - EC-009
+      - EC-010
+      - EC-018
+      - EC-023
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-025
+      - EC-011
+      - EC-024
+      - EC-017
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-008
+      - SRC-009
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-018
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: HoneyBook is publicly listed as a U.S. unicorn with a $2.40B valuation and May 2021 unicorn entry date.
+    evidence_summary: The supplied CB Insights row identifies HoneyBook, slug honeybook, United States/San Francisco, Enterprise Tech, $2.40B valuation, joined 2021-05-04, and investors including Norwest Venture Partners, Hillsven Capital and Aleph.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "HoneyBook row: valuation $2.40B; country United States; city San Francisco; industry Enterprise Tech; joined 2021-05-04."
+        location: null
+      - source_id: SRC-007
+        quote: Reuters reported HoneyBook was valued at $2.4B after its latest funding round.
+        location: null
+    analyst_interpretation: Public database and news evidence support the valuation/status screen, while ownership economics and liquidation preferences remain private.
+    limitations: CB Insights row and news coverage do not replace financing documents, cap table or board approvals.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-003
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-002
+    claim: HoneyBook announced a $155M Series D in May 2021 at a valuation above $1B.
+    evidence_summary: TechCrunch reported Durable Capital Partners led the $155M Series D, with Tiger Global, Battery, Zeev Ventures, 01 Advisors, Norwest and Citi participating; it also reported $248M raised since 2013, 103 employees, San Francisco/Tel Aviv locations and more than $3B booked through the platform.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: TechCrunch reported a $155M Series D at a $1B+ valuation, $248M raised since 2013, 103 employees and more than $3B booked through the platform.
+        location: null
+    analyst_interpretation: The round establishes an external financing milestone and operational traction signals but does not reveal current balance sheet, dilution or unit economics.
+    limitations: Single-news-source details should be reconciled to primary financing records.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-003
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-003
+    claim: HoneyBook announced a $250M Series E in November 2021 at a $2.4B valuation.
+    evidence_summary: HoneyBook and Reuters reported a Tiger Global-led $250M round, a $2.4B valuation, participation by Durable, Norwest, Citi and OurCrowd, doubled ARR since early 2021, doubled subscribers in 12 months, $1.8B booked in 2021 and $5B booked since launch.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: HoneyBook announced a $250M Series E led by Tiger Global at a $2.4B valuation.
+        location: null
+      - source_id: SRC-007
+        quote: Reuters reported total funds raised since inception of approximately $498M.
+        location: null
+    analyst_interpretation: The Series E is the strongest public financing support for unicorn status; diligence must verify terms, preference stack and current valuation marks.
+    limitations: Company announcement metrics are unaudited and do not include cohort retention or revenue quality.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+        - FC-003
+      table_ids:
+        - T-001
+        - T-002
+        - T-003
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-004
+    claim: A 2025 TechCrunch article reported HoneyBook at approximately $140M ARR while still associated with the $2.4B valuation.
+    evidence_summary: TechCrunch framed HoneyBook as a $140M ARR business and analyzed whether that revenue scale finally justified the 2021 $2.4B valuation, implying roughly 17x ARR.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: TechCrunch headline referenced HoneyBook's $140M in ARR and its $2.4B ZIRP-era valuation.
+        location: null
+    analyst_interpretation: The ARR data point materially improves financial screening but is not audited; margin, retention, bookings conversion and cash burn remain unknown.
+    limitations: TechCrunch article is a secondary source; company financial exports and auditor workpapers are required.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-005
+    claim: HoneyBook publicly markets an active AI-powered clientflow/CRM platform for independent businesses in the United States and Canada.
+    evidence_summary: HoneyBook company pages describe an all-in-one business platform/CRM for small businesses, with workflows for leads, proposals, contracts, invoices, payments, scheduling, automation and AI support.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: HoneyBook homepage publicly markets an active platform for independent businesses.
+        location: null
+      - source_id: SRC-004
+        quote: Company about page positions HoneyBook around helping independent businesses manage clientflow.
+        location: null
+    analyst_interpretation: Live product and company pages support current operations and category positioning.
+    limitations: Public marketing does not establish product reliability, adoption depth or enterprise readiness.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-004
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+        - R-005
+  - evidence_claim_id: EC-006
+    claim: HoneyBook lists public subscription tiers of Starter at $29/month, Essentials at $49/month and Premium at $109/month.
+    evidence_summary: The pricing page presents three primary monthly plans and highlights plan differentiation for small businesses.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Pricing page lists Starter $29/mo, Essentials $49/mo and Premium $109/mo.
+        location: null
+    analyst_interpretation: Public list prices validate monetization packaging but not discounts, gross margin, customer mix or ARPA.
+    limitations: Enterprise/annual discounts, payment revenue share and churn are not public.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-001
+        - R-004
+  - evidence_claim_id: EC-007
+    claim: HoneyBook states that it was founded in 2013 and serves 100,000+ independent businesses.
+    evidence_summary: Company about/alternatives pages present founding history and scale claims including 100,000+ businesses using HoneyBook.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: HoneyBook about page presents company history dating to 2013.
+        location: null
+      - source_id: SRC-015
+        quote: HoneyBook alternatives page references 100,000+ small businesses.
+        location: null
+    analyst_interpretation: The scale claim is important but company-published; diligence should reconcile active paid customers versus historical signups/free users.
+    limitations: No cohort, active paid customer, churn or retention definition was public.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-008
+    claim: HoneyBook publicly claims a 4.8 rating and more than 20,000 reviews/testimonials.
+    evidence_summary: The reviews page states a 4.8 rating based on 20,000+ reviews and includes member testimonials and case-study snippets.
+    evidence_type: review_site
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: HoneyBook Reviews and Testimonials page states 4.8 rating and 20,000+ reviews.
+        location: null
+    analyst_interpretation: Review volume supports market presence but may be curated and does not verify revenue concentration or retention.
+    limitations: Needs independent app-store/G2/Capterra extracts and churn cohorts.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-003
+        - R-009
+  - evidence_claim_id: EC-009
+    claim: HoneyBook claims users save 20 hours per week, 90% of invoices are paid on time or early, and 28M+ client relationships have been managed.
+    evidence_summary: HoneyBook alternatives page cites productivity/payment outcomes and client-relationship scale, alongside comparisons with CRM, proposal, scheduling, e-signature, accounting, payment and AI competitors.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Alternatives page cites 20 hours/week saved, 90% invoices paid on time or early, and 28M+ client relationships.
+        location: null
+    analyst_interpretation: These are useful customer-value claims but require methodology, sample definition and cohort proof before underwriting.
+    limitations: No raw cohort, methodology or independent validation was public.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-004
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+        - R-005
+  - evidence_claim_id: EC-010
+    claim: HoneyBook announced the Fine.dev founding-team acquihire and AI performance claims in 2025.
+    evidence_summary: HoneyBook announced it acquired Fine.dev to accelerate AI innovation and claimed AI users see 2.5x more booked projects, 2.3x more profitable leads, save 20+ hours/week, plus 28M+ relationships and more than $13B transactions since 2013.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: Fine.dev release cites 2.5x more booked projects, 2.3x more profitable leads, 20+ hours/week saved and >$13B transactions since 2013.
+        location: null
+    analyst_interpretation: The acquisition is a concrete R&D/corporate-development signal; uplift claims should be validated with controlled cohort analyses.
+    limitations: No purchase terms, retention terms, AI safety reviews or raw performance data were public.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-005
+        - R-006
+  - evidence_claim_id: EC-011
+    claim: HoneyBook has public hiring signals in Tel Aviv and San Francisco and advertises employee benefits including equity and hybrid workspaces.
+    evidence_summary: The careers page and job-board searches show open roles and describe benefits including competitive pay/equity, hybrid workspaces, medical benefits, open PTO, parental leave and professional development.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-010
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: Careers page lists roles/locations and benefits including competitive pay/equity and hybrid workspaces.
+        location: null
+    analyst_interpretation: Hiring pages support active operations but do not reveal actual headcount, attrition or compensation liabilities.
+    limitations: Open job postings are snapshots and may not reflect filled, paused or internal roles.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-017
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-012
+    claim: HoneyBook publicly describes trust controls including encryption at rest, SDLC practices, access approvals and incident testing.
+    evidence_summary: The trust center presents security and compliance controls relevant to SaaS, payments and customer data handling.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Trust center references encryption at rest, SDLC controls, access approvals and incident testing.
+        location: null
+    analyst_interpretation: Public trust controls are positive but require SOC 2, penetration tests, vendor risk reports and incident logs.
+    limitations: Self-reported controls are not equivalent to independent audit evidence.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-021
+      figure_ids:
+        - F-012
+      risk_ids:
+        - R-006
+        - R-007
+  - evidence_claim_id: EC-013
+    claim: HoneyBook privacy terms are active and disclose user-data processing obligations with a policy effective March 10, 2026.
+    evidence_summary: The privacy policy describes personal information handling, rights and related processing disclosures; it is dated effective March 10, 2026.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Privacy policy effective March 10, 2026.
+        location: null
+    analyst_interpretation: Privacy disclosures are current, but actual compliance and data-flow maps must be tested by counsel/security diligence.
+    limitations: No DPIAs, subprocessors list, DSR logs or regulatory correspondence were available.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-021
+        - T-022
+      figure_ids:
+        - F-012
+      risk_ids:
+        - R-006
+        - R-007
+  - evidence_claim_id: EC-014
+    claim: HoneyBook terms include dispute-resolution and user-compliance provisions, including arbitration/class-waiver and AI/meeting-recording responsibilities.
+    evidence_summary: The public terms include arbitration/class waiver language and place compliance obligations on users for AI features and meeting recording where applicable.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Terms include arbitration/class waiver and AI/meeting recording user compliance obligations.
+        location: null
+    analyst_interpretation: Terms mitigate some consumer/class exposure but do not eliminate regulatory, privacy, chargeback or enterprise-contract risks.
+    limitations: Enterprise MSAs, DPA terms and dispute history are private.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-022
+      figure_ids:
+        - F-012
+      risk_ids:
+        - R-006
+        - R-007
+        - R-010
+  - evidence_claim_id: EC-015
+    claim: BBB records show HoneyBook is not BBB accredited and had 19 complaints over three years and 4 over the last 12 months.
+    evidence_summary: The BBB complaints page lists complaint volume and categories, with product/service, billing, customer-service and sales/advertising themes.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: BBB complaints page lists 19 complaints in the last 3 years and 4 in the last 12 months.
+        location: null
+    analyst_interpretation: Complaint volume is not alarming at claimed scale but flags payments/billing/product-service process areas for customer-support diligence.
+    limitations: BBB does not capture all complaints and complaint details require case-level review.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-016
+    claim: Public research supports HoneyBook being active and apparently private, with no obvious public IPO, acquisition or shutdown signal found.
+    evidence_summary: Company website, pricing, careers, 2025 ARR coverage and 2025 Fine.dev announcement are current operating signals; web searches for IPO/acquisition/shutdown did not surface an exit or cessation event.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: Public web searches showed IPO tracker/pre-IPO pages and current company/news pages, not evidence of IPO, acquisition or shutdown.
+        location: null
+      - source_id: SRC-009
+        quote: 2025 company announcement evidences continued corporate activity.
+        location: null
+    analyst_interpretation: The weight of public evidence indicates HoneyBook remains operating and private, but legal certainty requires company confirmation and cap-table review.
+    limitations: Search results are not comprehensive corporate registry or securities-law diligence.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+        - FC-002
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-017
+    claim: Public legal/security searches did not surface specific HoneyBook litigation or breach results, but absence is not verified.
+    evidence_summary: Exact searches for HoneyBook, Inc. lawsuit/security incident and CourtListener-style references did not identify clear relevant results in the public research pass.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: No exact DuckDuckGo/CourtListener results were identified for HoneyBook, Inc. lawsuit or security incident searches during the public-source pass.
+        location: null
+    analyst_interpretation: This lowers issue-spotting concern but cannot support a no-litigation/no-breach conclusion.
+    limitations: Requires counsel-run docket, regulator, arbitration, insurance-claim and incident-record searches.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-019
+        - T-020
+      figure_ids:
+        - F-011
+      risk_ids:
+        - R-007
+        - R-010
+  - evidence_claim_id: EC-018
+    claim: Public IP/trademark snippets suggest HoneyBook-related marks exist, but a full official IP inventory was not verified.
+    evidence_summary: Trademark-oriented search snippets referenced HYBK/HB and HoneyBook Inc. records, while primary pages were partially inaccessible; no patent portfolio was verified in public research.
+    evidence_type: patent_or_trademark_record
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: Public trademark-search snippets showed HoneyBook/HYBK/HB related records; primary record pages were not fully accessible in the research pass.
+        location: null
+    analyst_interpretation: Brand IP likely exists, but ownership, status, assignments, licenses and encumbrances need counsel verification.
+    limitations: Do not rely on snippets for IP ownership; run USPTO/TSDR and assignment searches.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids:
+        - T-021
+      figure_ids:
+        - F-011
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-019
+    claim: Audited financial statements, gross margin, cash/debt, AR aging, budget-to-actuals, cohort retention and current forecast model are not public.
+    evidence_summary: Public sources provide financing, valuation, ARR and bookings/transaction signals but not the underlying accounting package required for financial diligence.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-006
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Public ARR coverage does not include audited statements, gross margin, cash/debt or retention cohorts.
+        location: null
+    analyst_interpretation: Revenue-quality diligence cannot be closed from public sources.
+    limitations: Requires management data room and accountant/auditor access.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-002
+      figure_ids: []
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-020
+    claim: Top-customer ARR, revenue concentration, renewal status and severed relationships are not publicly verifiable.
+    evidence_summary: Public pages show aggregate customer/review/relationship claims and testimonials, but not named top-account revenue, contract terms, churn, NRR, disputes or lost relationships.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-014
+      - SRC-015
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Reviews page provides aggregate review/testimonial claims, not top-account ARR or renewal schedules.
+        location: null
+    analyst_interpretation: The likely SMB customer base may reduce single-logo concentration but raises churn, support and payment-dispute diligence needs.
+    limitations: Requires customer cohort exports, top-account schedule and reference calls.
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-003
+        - R-009
+  - evidence_claim_id: EC-021
+    claim: HoneyBook competes across CRM, proposal, e-signature, scheduling, accounting, payments and AI assistant categories.
+    evidence_summary: Company alternatives page names or compares against Dubsado, HubSpot, Proposify, PandaDoc, Calendly, Acuity, DocuSign, FreshBooks, QuickBooks, Stripe, Square, Xero, ChatGPT and Gemini.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Alternatives page compares HoneyBook with Dubsado, HubSpot, Proposify, PandaDoc, Calendly, Acuity, DocuSign, FreshBooks, QuickBooks, Stripe, Square, Xero, ChatGPT and Gemini.
+        location: null
+    analyst_interpretation: The breadth of substitutes confirms a fragmented but highly competitive wedge across SMB workflows.
+    limitations: Company-owned competitor framing should be checked against independent win/loss and buyer references.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-022
+    claim: Public GTM evidence shows self-serve pricing, owned content, reviews/testimonials and partner-like ecosystem signals, but not CAC, quota attainment or channel mix.
+    evidence_summary: Pricing/reviews/alternatives/careers pages show public inbound/product-led motions and recruiting for go-to-market roles; paid spend, pipeline conversion and sales productivity are private.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-014
+      - SRC-015
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Public pricing page supports self-serve/package-led acquisition.
+        location: null
+      - source_id: SRC-014
+        quote: Reviews/testimonials support owned social-proof marketing.
+        location: null
+    analyst_interpretation: The GTM model appears SMB/product-led with content and reviews, but efficiency cannot be underwritten without funnel and spend data.
+    limitations: Requires channel-level CAC, pipeline, conversion, quota and marketing-budget data.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-002
+        - FC-004
+      table_ids:
+        - T-011
+        - T-012
+        - T-013
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-001
+        - R-003
+        - R-004
+  - evidence_claim_id: EC-023
+    claim: HoneyBook has public AI/R&D signals, but detailed roadmap, engineering budget and technical debt are private.
+    evidence_summary: AI launch history, Fine.dev acquisition and open technical/data roles indicate product/R&D investment; roadmap dates, model architecture, security reviews and budget are not public.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+      - SRC-009
+      - SRC-010
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: HoneyBook said Fine.dev would supercharge AI innovation.
+        location: null
+      - source_id: SRC-019
+        quote: Public job board showed technical/data openings during research.
+        location: null
+    analyst_interpretation: AI is a meaningful product vector and risk surface; diligence should test defensibility, data rights, evaluation methodology and model/vendor dependencies.
+    limitations: No architecture docs, roadmap or AI risk assessment were public.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-014
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-005
+        - R-006
+  - evidence_claim_id: EC-024
+    claim: Full organization chart, current headcount by function/location, turnover, compensation and equity plans are not public.
+    evidence_summary: Public sources include 103 employees in May 2021, founder/CEO profile and current open roles, but not HRIS exports, compensation arrangements, option plan, employee relations records or attrition data.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-010
+      - SRC-019
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: TechCrunch reported 103 employees in 2021.
+        location: null
+      - source_id: SRC-010
+        quote: Careers page lists benefits and open roles, not HRIS headcount or attrition.
+        location: null
+    analyst_interpretation: Team scale appears compatible with an active growth company, but workforce liabilities and retention cannot be evaluated publicly.
+    limitations: Requires HRIS, offer letters, equity plan, severance/claims records and turnover cohorts.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+        - T-017
+        - T-018
+      figure_ids:
+        - F-009
+        - F-010
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-025
+    claim: Insurance policies, material contracts, regulatory correspondence and payment/AI/privacy compliance records are not public.
+    evidence_summary: Public trust, privacy and terms pages identify control and legal obligations, but enterprise contracts, insurance, chargeback exposure, payments/compliance audits and regulator correspondence are private.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-011
+      - SRC-012
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Public terms disclose user-facing legal provisions, not material customer/vendor contracts or insurance coverage.
+        location: null
+    analyst_interpretation: Legal/regulatory diligence remains open despite useful public legal-policy signals.
+    limitations: Requires counsel review of contracts, policies, insurance, payment-processor terms and regulatory records.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.E
+      founder_claim_ids: []
+      table_ids:
+        - T-022
+      figure_ids:
+        - F-012
+      risk_ids:
+        - R-006
+        - R-007
+        - R-010
+  - evidence_claim_id: EC-026
+    claim: Public records identify several investors, but ownership percentages, preference stack, debt and option pool are private.
+    evidence_summary: Funding articles and the unicorn row name Tiger Global, Durable Capital, Norwest, Citi, OurCrowd, Battery, Zeev, 01 Advisors, Hillsven and Aleph, but not security terms or current ownership.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Series E announcement names Tiger Global, Durable, Norwest, Citi and OurCrowd.
+        location: null
+      - source_id: SRC-005
+        quote: Series D coverage names Durable, Tiger, Battery, Zeev, 01 Advisors, Norwest and Citi.
+        location: null
+    analyst_interpretation: Investor roster is credible; cap-table economics are a major diligence gap before valuation reliance.
+    limitations: Requires fully diluted cap table, SAFEs/notes/debt, side letters and option plan documents.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-002
+sources:
+  - source_id: SRC-001
+    title: CB Insights unicorn-list row for HoneyBook supplied in diligence context
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights / user-provided context
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: market_database
+    reliability_notes: Market-database row supplied with the diligence assignment; useful for screening valuation/status but not a substitute for primary financing documents.
+    archive_url: null
+  - source_id: SRC-002
+    title: HoneyBook homepage
+    url: https://www.honeybook.com/
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company-owned marketing source; reliable for current public positioning but not independently audited.
+    archive_url: null
+  - source_id: SRC-003
+    title: HoneyBook pricing page
+    url: https://www.honeybook.com/pricing
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company-owned pricing source; reliable for listed public packages but not for realized discounts, ACV or revenue mix.
+    archive_url: null
+  - source_id: SRC-004
+    title: About HoneyBook
+    url: https://www.honeybook.com/company/about
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company-owned about page; reliable for public mission/history statements but not independently audited.
+    archive_url: null
+  - source_id: SRC-005
+    title: HoneyBook raises $155M at $1B+ valuation to help SMBs, freelancers manage their businesses
+    url: https://techcrunch.com/2021/05/04/honeybook-raises-155m-at-1b-valuation-to-help-smbs-freelancers-manage-their-businesses/
+    publisher: TechCrunch
+    author: Mary Ann Azevedo
+    publication_date: 2021-05-04
+    accessed_date: 2026-05-21
+    source_type: independent_news
+    reliability_notes: Independent venture-funding coverage; financing details still require primary documents.
+    archive_url: null
+  - source_id: SRC-006
+    title: HoneyBook raises $250M Series E as independent workforce continues exponential rise
+    url: https://news.honeybook.com/news/honeybook-raises-250m-series-e-as-independent-workforce-continues-exponential-rise
+    publisher: HoneyBook Newsroom
+    author: null
+    publication_date: 2021-11-03
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company funding announcement; corroborated by independent news but underlying term sheet/cap table are private.
+    archive_url: null
+  - source_id: SRC-007
+    title: HoneyBook valued at $2.4 bln after latest funding round
+    url: https://www.reuters.com/technology/honeybook-valued-24-bln-after-latest-funding-round-2021-11-03/
+    publisher: Reuters
+    author: null
+    publication_date: 2021-11-03
+    accessed_date: 2026-05-21
+    source_type: independent_news
+    reliability_notes: Independent news coverage of financing and total funds raised; article access may be gated.
+    archive_url: null
+  - source_id: SRC-008
+    title: Why HoneyBook's $140M in ARR may finally justify its $2.4B ZIRP-era valuation
+    url: https://techcrunch.com/2025/03/27/why-honeybooks-140m-in-arr-may-finally-justify-its-2-4b-zirp-era-valuation/
+    publisher: TechCrunch
+    author: Julie Bort
+    publication_date: 2025-03-27
+    accessed_date: 2026-05-21
+    source_type: independent_news
+    reliability_notes: Independent news/analysis source for current ARR and valuation context; not a substitute for audited revenue schedules.
+    archive_url: null
+  - source_id: SRC-009
+    title: HoneyBook acquires Fine.dev to supercharge AI innovation
+    url: https://news.honeybook.com/news/honeybook-acquires-fine-dev-to-supercharge-ai-innovation
+    publisher: HoneyBook Newsroom / Business Wire
+    author: null
+    publication_date: 2025-09-30
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company acquisition announcement; reliable for the public statement but performance uplift claims require cohort validation.
+    archive_url: null
+  - source_id: SRC-010
+    title: Careers at HoneyBook
+    url: https://www.honeybook.com/company/careers
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company recruiting page; reliable for public hiring/benefit statements but not full HRIS headcount.
+    archive_url: null
+  - source_id: SRC-011
+    title: HoneyBook Trust Center
+    url: https://trust.honeybook.com/
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company trust/security self-assessment; should be supplemented with SOC reports, pen tests and incident logs.
+    archive_url: null
+  - source_id: SRC-012
+    title: HoneyBook Privacy Policy
+    url: https://www.honeybook.com/legal/privacy
+    publisher: HoneyBook
+    author: null
+    publication_date: 2026-03-10
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Current company legal policy reviewed as public source; counsel should verify compliance practices.
+    archive_url: null
+  - source_id: SRC-013
+    title: HoneyBook Terms of Service
+    url: https://www.honeybook.com/legal/terms-of-service
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Current company terms; reliable for user-facing legal provisions but not for enterprise MSAs or negotiated contracts.
+    archive_url: null
+  - source_id: SRC-014
+    title: HoneyBook Reviews and Testimonials
+    url: https://www.honeybook.com/reviews
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company-owned testimonial/review landing page; useful for public review volume but subject to selection bias.
+    archive_url: null
+  - source_id: SRC-015
+    title: "HoneyBook Alternatives: Compare Features & How We Stack Up"
+    url: https://www.honeybook.com/alternatives
+    publisher: HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company-owned competitive page; useful for named competitor set and self-reported usage metrics but biased.
+    archive_url: null
+  - source_id: SRC-016
+    title: HoneyBook, Inc. BBB Complaints
+    url: https://www.bbb.org/us/ca/san-francisco/profile/records-management/honeybook-inc-1116-878229/complaints
+    publisher: Better Business Bureau
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: review_site
+    reliability_notes: Third-party complaint listing; useful for pattern screening, not comprehensive litigation or customer-satisfaction diligence.
+    archive_url: null
+  - source_id: SRC-017
+    title: Public web searches for HoneyBook private/IPO/acquisition/shutdown status
+    url: null
+    publisher: DuckDuckGo / public web search
+    author: null
+    publication_date: 2026-05-21
+    accessed_date: 2026-05-21
+    source_type: other
+    reliability_notes: Search-log evidence supports absence of obvious IPO/acquisition/shutdown signals in public results, but cannot prove absence.
+    archive_url: null
+  - source_id: SRC-018
+    title: Public legal, security incident and IP/trademark web searches for HoneyBook, Inc.
+    url: null
+    publisher: DuckDuckGo, CourtListener search pages and public trademark snippets
+    author: null
+    publication_date: 2026-05-21
+    accessed_date: 2026-05-21
+    source_type: other
+    reliability_notes: Search-log evidence is suitable for issue spotting only; definitive legal/IP conclusions require counsel-run database searches.
+    archive_url: null
+  - source_id: SRC-019
+    title: HoneyBook Greenhouse job board
+    url: https://job-boards.greenhouse.io/honeybook
+    publisher: Greenhouse / HoneyBook
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: social_or_professional_profile
+    reliability_notes: Recruiting-system source for public open roles; not a complete workforce roster.
+    archive_url: null
+  - source_id: SRC-020
+    title: Oz Alon profile, Co-Founder and CEO of HoneyBook
+    url: https://councils.forbes.com/profile/Oz-Alon-Co-Founder-CEO-HoneyBook/46300a11-3321-4aae-9cd4-899d91435d30
+    publisher: Forbes Councils
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: social_or_professional_profile
+    reliability_notes: Professional-profile source for leadership identification; verify with management biographies and board consents.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Unaudited financial quality and revenue efficiency
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Public sources provide ARR, funding and platform volume signals but not audited revenue, gross margin, retention, CAC, burn or cash/debt.
+    impacted_chapter_ids:
+      - I
+      - V
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - I.D
+      - V.D
+      - V.E
+    evidence_claim_ids:
+      - EC-004
+      - EC-019
+      - EC-022
+    mitigation_or_diligence_request: Request audited financials, KPI pack, cohort retention, cash/debt schedule, forecast model, CAC/payback and board-approved budget-to-actuals.
+  - risk_id: R-002
+    risk_title: Valuation and preference-stack opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: The $2.4B valuation is public, but current valuation, dilution, liquidation preferences, side letters, debt and option-pool economics are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.B
+      - I.C
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-026
+    mitigation_or_diligence_request: Review primary financing documents, pro forma cap table, option pool, preferences, debt and current 409A/fair-value marks.
+  - risk_id: R-003
+    risk_title: SMB customer churn and concentration unknown
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: HoneyBook claims a large SMB base, but top-customer revenue, cohort churn, NRR and support/dispute patterns are not public.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - III.D
+      - V.B
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-015
+      - EC-020
+    mitigation_or_diligence_request: Request ARR by customer/cohort, logo and revenue retention, cancellations, refunds, disputes and independent customer references.
+  - risk_id: R-004
+    risk_title: Crowded horizontal/vertical SMB software competition
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: HoneyBook overlaps with CRM, proposals, scheduling, e-signature, accounting, payments and AI tools, creating pricing and bundling pressure.
+    impacted_chapter_ids:
+      - II
+      - IV
+      - V
+    impacted_section_ids:
+      - II.A
+      - IV.A
+      - V.A
+      - V.C
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-021
+      - EC-022
+    mitigation_or_diligence_request: Perform win/loss calls, competitor price benchmarking, customer switching-cost analysis and product-adoption depth review.
+  - risk_id: R-005
+    risk_title: AI product defensibility and product-liability exposure
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: AI usage/performance claims and Fine.dev acquihire create upside but require validation of data rights, model quality, safety, reliability and differentiation.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VI.B
+      - VIII.D
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-018
+      - EC-023
+    mitigation_or_diligence_request: Review AI roadmap, evaluation data, model/vendor contracts, data-use consents, IP assignments and AI incident/complaint logs.
+  - risk_id: R-006
+    risk_title: Privacy, security and data-governance obligations
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: The platform handles client, invoice, payment and potentially AI/meeting-recording data; public controls are self-reported and need independent validation.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VI.A
+      - VIII.G
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-025
+    mitigation_or_diligence_request: Request SOC 2, pen tests, subprocessors, data maps, DPA templates, DSR logs, incident history and AI governance artifacts.
+  - risk_id: R-007
+    risk_title: Payments, chargeback and financial-services compliance exposure
+    risk_category: regulatory
+    severity: medium
+    likelihood: medium
+    description: Invoices and payments are core product flows; public terms and trust pages do not disclose processor contracts, chargebacks, funds-flow or compliance audits.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.F
+      - VIII.G
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-025
+    mitigation_or_diligence_request: Review processor agreements, funds-flow diagrams, chargeback/refund history, PCI scope, money-transmission analysis and compliance exams.
+  - risk_id: R-008
+    risk_title: Workforce retention and compensation opacity
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public careers and old headcount points do not disclose current headcount, attrition, compensation commitments, option liabilities or employee-relations issues.
+    impacted_chapter_ids:
+      - VII
+      - VI
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+      - VI.A
+    evidence_claim_ids:
+      - EC-011
+      - EC-024
+    mitigation_or_diligence_request: Request HRIS export, org chart, compensation bands, option plan, employee claims, turnover cohorts and key-person retention agreements.
+  - risk_id: R-009
+    risk_title: Customer-service, billing and reputation complaints
+    risk_category: reputational
+    severity: medium
+    likelihood: medium
+    description: BBB complaint categories point to product/service, billing, support and sales issues that could affect retention in a high-volume SMB base.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.D
+      - V.B
+    evidence_claim_ids:
+      - EC-015
+      - EC-020
+    mitigation_or_diligence_request: Analyze support tickets, refunds, dispute categories, complaint resolution SLAs and churn reasons by cohort.
+  - risk_id: R-010
+    risk_title: Legal absence cannot be proven by public search
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: Public searches did not surface clear lawsuits or breaches, but private arbitration, demand letters, regulatory correspondence and insurance claims are not public.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.E
+      - VIII.F
+      - VIII.G
+    evidence_claim_ids:
+      - EC-017
+      - EC-025
+    mitigation_or_diligence_request: Counsel should run docket/regulatory searches and request litigation, claims, settlement, insurance and regulatory correspondence schedules.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, KPI pack, gross margin, cash/debt, AR/deferred revenue and tax records.
+    why_it_matters: Required to validate ARR quality, profitability, runway and valuation support.
+    suggested_source_or_request: Finance data room and accountant/auditor interviews.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Fully diluted cap table, preferences, debt, side letters and option pool.
+    why_it_matters: Determines true ownership economics and downside protection.
+    suggested_source_or_request: Company counsel and CFO cap-table package.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Customer-level ARR, NRR/GRR, churn, refunds and top-customer concentration.
+    why_it_matters: Tests durability of SMB revenue base and concentration risk.
+    suggested_source_or_request: Billing/customer data exports and reference calls.
+    priority: high
+  - gap_id: G-004
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Independent win/loss and competitor switching data.
+    why_it_matters: Company comparison pages are biased and do not prove defensibility.
+    suggested_source_or_request: Customer calls, CRM loss reasons and third-party market benchmarking.
+    priority: medium
+  - gap_id: G-005
+    chapter_id: V
+    section_id: V.D
+    missing_information: CAC, payback, channel mix, quota attainment and pipeline conversion.
+    why_it_matters: Growth efficiency is central to justifying the valuation.
+    suggested_source_or_request: GTM KPI pack, CRM exports and marketing attribution data.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: AI evaluation methodology, model/vendor contracts, roadmap and Fine.dev integration terms.
+    why_it_matters: AI claims influence product differentiation and regulatory/IP risk.
+    suggested_source_or_request: Product/R&D roadmap and AI governance data room.
+    priority: high
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Current HRIS, org chart, headcount plan, attrition and compensation/equity records.
+    why_it_matters: Validates execution capacity, retention and dilution/cash obligations.
+    suggested_source_or_request: HRIS export and people-ops data room.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Counsel-run litigation, arbitration, demand-letter and settlement schedule.
+    why_it_matters: Public search cannot prove absence of claims.
+    suggested_source_or_request: Outside counsel memo and company legal schedule.
+    priority: high
+  - gap_id: G-009
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Official IP inventory, assignments, open-source/model licenses and Fine.dev transfer documents.
+    why_it_matters: AI/product strategy depends on clean IP and data rights.
+    suggested_source_or_request: Counsel IP schedule and TSDR/assignment searches.
+    priority: high
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: SOC reports, pen tests, subprocessors, incident logs, PCI scope, DSR logs and regulatory correspondence.
+    why_it_matters: Privacy/security/payments controls are critical for SaaS/payments workflows.
+    suggested_source_or_request: Security/counsel compliance data room.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited annual financials, quarterly management accounts and KPI pack for 2023-2026 YTD.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide full cap table, financing documents, side letters, debt/SAFE/note schedule and 409A history.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide product analytics by module, uptime/incident history, roadmap and payment/AI architecture diagrams.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide top 25 customers by ARR/application, contracts, renewal dates and approved customer-reference list.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.E
+    request: Provide top suppliers by spend/criticality, including cloud, processor, AI/model and security vendors.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide win/loss analysis, competitor switching data and price-discount benchmarking.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.D
+    request: Provide channel-level CAC/payback, conversion funnel, quota model, attainment and marketing budget/ROI.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide AI governance/evaluation pack, model/vendor contracts, Fine.dev integration plan and product roadmap.
+    requested_from: company
+    priority: high
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide HRIS export, current org chart, compensation/equity plan, attrition, employee-relations claims and retention plans.
+    requested_from: company
+    priority: high
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Counsel to provide litigation/regulatory/IP search memo and all claims, settlements, insurance and regulatory correspondence schedules.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-011
+    chapter_id: VIII
+    section_id: VIII.F
+    request: Provide all material MSAs, DPAs, payment processor, cloud, AI/model, vendor and partnership contracts.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide SOC 2, pen tests, subprocessors, data maps, DSR logs, PCI/payment compliance and incident history.
+    requested_from: company
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: No private data room, management interview, audited financial statements, customer calls, legal memo, SOC report or cap table was available.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - III.C
+      - V.D
+      - VI.B
+      - VII.B
+      - VIII.A
+  - limitation_id: L-002
+    description: Company-owned sources verify that claims were publicly made but do not independently validate underlying metrics, customer outcomes, AI uplift or controls.
+    affected_chapter_ids:
+      - II
+      - III
+      - V
+      - VI
+      - VIII
+    affected_section_ids:
+      - II.A
+      - III.A
+      - V.A
+      - VI.B
+      - VIII.G
+  - limitation_id: L-003
+    description: Public search results are issue-spotting tools only; they cannot prove absence of litigation, regulatory actions, breaches, liens, IP defects or private complaints.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.E
+      - VIII.G
+  - limitation_id: L-004
+    description: Public pricing and ARR references do not disclose realized discounts, expansion, churn, gross margin, support burden, payment take rate or cash burn.
+    affected_chapter_ids:
+      - I
+      - II
+      - V
+    affected_section_ids:
+      - I.A
+      - I.B
+      - II.A
+      - V.D
+  - limitation_id: L-005
+    description: Some public web pages and search artifacts may change over time or be access-controlled; accessed dates and source notes should be preserved for audit trail.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.C
+      - II.A
+      - III.A
+      - IV.A
+      - V.A
+      - VI.B
+      - VII.B
+      - VIII.A

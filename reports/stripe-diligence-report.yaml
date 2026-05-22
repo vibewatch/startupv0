@@ -1,0 +1,2771 @@
+# Evidence-backed public-source diligence report. Generated for startupv0 static site.
+
+report_metadata:
+  report_title: Stripe Startup Diligence Report
+  target_company: Stripe
+  website: https://stripe.com/
+  known_aliases:
+    - Stripe, Inc.
+    - Stripe Payments Company
+    - Link by Stripe
+  sector: Financial infrastructure and payments
+  geography: United States / global
+  company_stage: Private late-stage unicorn
+  research_date: 2026-05-21
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD unless otherwise noted
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Public-source diligence for Stripe used company-owned pages, public unicorn lists, regulatory
+      or legal pages where available, and category competitor sources.
+    - No private data room, management interview, customer reference call, audited financial
+      statement or counsel letter was available.
+    - Company-published metrics are treated as public claims and not as audited operating results.
+  included_jurisdictions:
+    - United States
+    - Publicly disclosed global operating footprint
+  excluded_topics:
+    - Private financials
+    - Cap table
+    - Customer contracts
+    - Employee records
+    - Non-public legal matters
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Workflow request for random unicorn diligence reports
+      type: workflow_request
+      date_received: 2026-05-21
+      notes: No pitch deck or private data-room materials were supplied.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Stripe is a private financial-services unicorn with a latest public CB Insights
+      valuation of $159B.
+    claim_source: CB Insights unicorn list
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current financing documents and cap table.
+  - founder_claim_id: FC-002
+    claim_text: Businesses on Stripe generated $1.9T in 2025.
+    claim_source: Stripe annual letter
+    claim_date: "2025"
+    mapped_chapter_ids:
+      - I
+      - III
+    mapped_section_ids:
+      - I.B
+      - III.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-002
+    contradiction_summary: Public evidence supports the statement only at headline level; private
+      operating records are required for underwriting.
+    diligence_follow_up:
+      - Reconcile processing volume to revenue, take rate and margins.
+  - founder_claim_id: FC-003
+    claim_text: Stripe offers a broad payments and financial-infrastructure product suite with public
+      standard card pricing.
+    claim_source: Stripe product and pricing pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - II.B
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-004
+      - EC-009
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate product-level attach, margin and support costs.
+  - founder_claim_id: FC-004
+    claim_text: Stripe serves millions of businesses and has visible enterprise customer proof.
+    claim_source: Stripe customer pages
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+      - EC-014
+    contradiction_summary: Public evidence supports the statement only at headline level; private
+      operating records are required for underwriting.
+    diligence_follow_up:
+      - Request top-customer concentration and references.
+  - founder_claim_id: FC-005
+    claim_text: Stripe has a material regulated, privacy-sensitive operating footprint.
+    claim_source: Stripe licenses and privacy pages
+    claim_date: null
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.A
+      - VIII.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request legal, regulatory and privacy diligence artifacts.
+executive_summary:
+  overall_assessment: Stripe is one of the strongest public-signal private fintechs, with massive
+    processing volume, product breadth and customer proof, but its $159B private valuation cannot be
+    underwritten without private financial, customer, regulatory and cap-table records.
+  investment_or_diligence_thesis: The bull case is that Stripe remains a default
+    financial-infrastructure layer for internet commerce. The diligence burden is proving durable
+    net revenue, margins, compliance scalability and concentration resilience behind the public
+    volume metrics.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights lists Stripe at a $159B valuation.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-003
+      summary: Stripe publicly discloses broad products and standard card pricing.
+      evidence_claim_ids:
+        - EC-004
+        - EC-009
+    - founder_claim_id: FC-005
+      summary: Stripe publishes license-authority and privacy disclosures.
+      evidence_claim_ids:
+        - EC-006
+        - EC-007
+  biggest_risks:
+    - risk_id: R-001
+      summary: Valuation and financial opacity
+    - risk_id: R-002
+      summary: Regulatory and privacy exposure
+    - risk_id: R-003
+      summary: Customer and volume concentration opacity
+    - risk_id: R-004
+      summary: Competitive pricing pressure
+    - risk_id: R-005
+      summary: Platform reliability and security expectations
+  key_evidence_gaps:
+    - Audited financial statements, cash, debt, margins, take rate and product P&Ls.
+    - Current cap table, liquidation preferences, financing documents and secondary pricing.
+    - Top merchant concentration, churn, net revenue retention and contract economics.
+    - Regulatory exams, privacy/security incidents, license status and counsel letters.
+    - Technical architecture, product-quality metrics, IP schedule and open-source review.
+  recommended_next_steps:
+    - Start with audited financials, cap table and top-customer schedule before underwriting
+      valuation.
+    - Run legal/regulatory diligence across licenses, privacy, money movement and financial partners.
+    - Benchmark enterprise pricing, authorization rates, fraud losses and competitor win/loss.
+    - Review product-level P&Ls, roadmap, incident history and security reports.
+    - Conduct customer and partner references across enterprise, platform and SMB cohorts.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public sources support extraordinary processing scale and a $159B valuation anchor,
+      but core financial quality remains private.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-010
+    risk_ids:
+      - R-001
+    sections:
+      - section_id: I.A
+        title: Public financial information and valuation anchors
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+        summary: CB Insights lists Stripe at a $159B valuation, while company sources publish volume metrics
+          rather than audited financial statements.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I-A-public-signal
+            finding: CB Insights lists Stripe at a $159B valuation, while company sources publish volume metrics
+              rather than audited financial statements.
+            evidence_claim_ids: &a1
+              - EC-001
+              - EC-002
+              - EC-010
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - See R-001; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Audited financials, revenue, margins, cash, debt and current cap table are not public.
+        follow_up_questions:
+          - Provide audited financial statements, KPI pack, debt schedule and financing documents.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids: *a1
+      - section_id: I.B
+        title: Operating metrics, projections and runway
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+        summary: Stripe publishes payments volume, uptime and Billing scale anchors, but revenue conversion,
+          forecast and runway remain not publicly verifiable.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I-B-public-signal
+            finding: Stripe publishes payments volume, uptime and Billing scale anchors, but revenue conversion,
+              forecast and runway remain not publicly verifiable.
+            evidence_claim_ids: &a2
+              - EC-002
+              - EC-003
+              - EC-010
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - See R-001; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Net take rate, cost of acceptance, product-level P&L and cash runway are private.
+        follow_up_questions:
+          - Provide monthly KPIs, forecast model, gross-margin bridge and board-approved plan.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a2
+  - chapter_id: II
+    title: Products
+    chapter_summary: Stripe has a broad public product suite, with list pricing visible for standard
+      cards and custom pricing visible at a high level.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-009
+      - EC-013
+    risk_ids:
+      - R-004
+      - R-007
+    sections:
+      - section_id: II.A
+        title: Product suite and architecture
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+        summary: Public materials show a broad product suite across payments, billing, Connect, money
+          management and fraud/risk tools.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II-A-public-signal
+            finding: Public materials show a broad product suite across payments, billing, Connect, money
+              management and fraud/risk tools.
+            evidence_claim_ids: &a3
+              - EC-009
+              - EC-013
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - See R-007; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Product-level attach rates, revenue, uptime by service and support burden are private.
+        follow_up_questions:
+          - Provide product P&Ls, attach rates, roadmap and support metrics.
+        table_ids:
+          - T-003
+        figure_ids:
+          - F-002
+        evidence_claim_ids: *a3
+      - section_id: II.B
+        title: Pricing and unit economics
+        checklist_question_ids:
+          - II.B.1
+          - II.B.2
+          - II.B.3
+        summary: Standard card pricing is public, but enterprise discounts, costs, fraud losses and product
+          margins are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II-B-public-signal
+            finding: Standard card pricing is public, but enterprise discounts, costs, fraud losses and product
+              margins are private.
+            evidence_claim_ids: &a4
+              - EC-004
+              - EC-010
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - See R-004; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Custom price book and net revenue by cohort are not public.
+        follow_up_questions:
+          - Provide pricing waterfall, network-cost bridge, fraud loss history and cohort margins.
+        table_ids:
+          - T-004
+        figure_ids: []
+        evidence_claim_ids: *a4
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Customer pages and scale claims show strong public demand signals, but merchant
+      concentration and retention are private.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-014
+    risk_ids:
+      - R-003
+      - R-006
+    sections:
+      - section_id: III.A
+        title: Customer logos, scale and concentration
+        checklist_question_ids:
+          - III.A.1
+          - III.A.2
+          - III.A.3
+        summary: Stripe publishes customer stories and millions-of-businesses claims, but no top-customer
+          schedule or churn data.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III-A-public-signal
+            finding: Stripe publishes customer stories and millions-of-businesses claims, but no top-customer
+              schedule or churn data.
+            evidence_claim_ids: &a5
+              - EC-003
+              - EC-005
+              - EC-014
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - See R-003; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Top merchant volume, ARR, churn, NRR and contract terms are not public.
+        follow_up_questions:
+          - Provide top-customer schedule, customer contracts and reference permissions.
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a5
+      - section_id: III.B
+        title: Strategic partners and dependencies
+        checklist_question_ids:
+          - III.B.1
+          - III.B.2
+          - III.B.3
+        summary: Stripe depends on financial partners, payment networks and integration partners that are
+          only partially visible publicly.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III-B-public-signal
+            finding: Stripe depends on financial partners, payment networks and integration partners that are
+              only partially visible publicly.
+            evidence_claim_ids: &a6
+              - EC-007
+              - EC-013
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - See R-006; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Partner contracts, SLAs and concentration exposures are private.
+        follow_up_questions:
+          - Provide partner agreements, partner revenue and operational dependency map.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids: *a6
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Stripe competes in a crowded payments market against enterprise acquirers, wallets,
+      POS platforms and online processors.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-011
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+          - IV.A.3
+        summary: Public competitor sources show material overlap across enterprise acquiring, wallets, SMB
+          commerce and online processing.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV-A-public-signal
+            finding: Public competitor sources show material overlap across enterprise acquiring, wallets, SMB
+              commerce and online processing.
+            evidence_claim_ids: &a7
+              - EC-011
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - See R-004; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Win/loss data and customer-switching analysis are private.
+        follow_up_questions:
+          - Provide win/loss analysis, competitor displacement data and pricing benchmarks.
+        table_ids:
+          - T-007
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a7
+      - section_id: IV.B
+        title: Basis of competition
+        checklist_question_ids:
+          - IV.B.1
+          - IV.B.2
+          - IV.B.3
+        summary: Stripe appears to compete on developer breadth, reliability, global footprint and
+          compliance, but relative economics require private benchmarks.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV-B-public-signal
+            finding: Stripe appears to compete on developer breadth, reliability, global footprint and
+              compliance, but relative economics require private benchmarks.
+            evidence_claim_ids: &a8
+              - EC-004
+              - EC-006
+              - EC-009
+              - EC-011
+              - EC-013
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - See R-004; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Feature parity, authorization rates and gross margins versus competitors are private.
+        follow_up_questions:
+          - Benchmark authorization, fraud, pricing, uptime and implementation timelines.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids: *a8
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Public GTM signals include self-serve flows, contact-sales flows, customer stories,
+      annual letters and partner calls to action.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-005
+      - EC-015
+    risk_ids:
+      - R-006
+    sections:
+      - section_id: V.A
+        title: Distribution channels and sales motions
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+        summary: Stripe uses visible self-serve, enterprise sales and partner motions, but channel mix and
+          sales efficiency are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V-A-public-signal
+            finding: Stripe uses visible self-serve, enterprise sales and partner motions, but channel mix and
+              sales efficiency are private.
+            evidence_claim_ids: &a9
+              - EC-004
+              - EC-015
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - See R-006; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - CAC, payback, sales cycle and quota attainment are not public.
+        follow_up_questions:
+          - Provide CAC, channel mix, sales productivity and funnel conversion by segment.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a9
+      - section_id: V.B
+        title: Marketing and demand-generation signals
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Annual letters, customer stories and product pages are strong owned-channel signals, but
+          pipeline attribution is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V-B-public-signal
+            finding: Annual letters, customer stories and product pages are strong owned-channel signals, but
+              pipeline attribution is not public.
+            evidence_claim_ids: &a10
+              - EC-002
+              - EC-005
+              - EC-008
+              - EC-015
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - See R-006; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Marketing ROI and lead-source attribution are private.
+        follow_up_questions:
+          - Provide pipeline source, campaign ROI and customer-reference conversion data.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids: *a10
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Stripe public materials show continued product breadth and internet-economy themes;
+      engineering quality needs private validation.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-009
+      - EC-016
+    risk_ids:
+      - R-005
+      - R-007
+    sections:
+      - section_id: VI.A
+        title: R&D roadmap and platform stack
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public roadmap themes and product listings imply a complex platform stack across APIs,
+          risk, compliance and money movement.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI-A-public-signal
+            finding: Public roadmap themes and product listings imply a complex platform stack across APIs,
+              risk, compliance and money movement.
+            evidence_claim_ids: &a11
+              - EC-002
+              - EC-003
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-005
+              - R-007
+        hidden_risks:
+          - See R-005; public sources do not expose the underlying private records.
+          - See R-007; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Architecture, incident history and product-quality metrics are not public.
+        follow_up_questions:
+          - Provide architecture, roadmap, product-quality metrics and incident history.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a11
+      - section_id: VI.B
+        title: IP and technical defensibility
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+        summary: Public materials support product breadth and compliance footprint but not a full IP or
+          open-source ownership review.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VI-B-public-signal
+            finding: Public materials support product breadth and compliance footprint but not a full IP or
+              open-source ownership review.
+            evidence_claim_ids: &a12
+              - EC-006
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-005
+              - R-007
+        hidden_risks:
+          - See R-005; public sources do not expose the underlying private records.
+          - See R-007; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Patent/trademark schedule, OSS scans and employee invention assignments are private.
+        follow_up_questions:
+          - Provide IP schedule, OSS report, security artifacts and invention-assignment evidence.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids: *a12
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Stripe has a public executive roster and global office footprint, but headcount,
+      attrition and compensation are private.
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-008
+      - EC-012
+    risk_ids:
+      - R-008
+    sections:
+      - section_id: VII.A
+        title: Management roster and governance
+        checklist_question_ids:
+          - VII.A.1
+          - VII.A.2
+          - VII.A.3
+        summary: Stripe publicly identifies cofounder leadership and senior executives across core
+          functions.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: VII-A-public-signal
+            finding: Stripe publicly identifies cofounder leadership and senior executives across core
+              functions.
+            evidence_claim_ids: &a13
+              - EC-012
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - See R-008; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Board materials, succession and executive retention are private.
+        follow_up_questions:
+          - Provide org chart, board pack, succession plan and executive retention data.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a13
+      - section_id: VII.B
+        title: Headcount and hiring signals
+        checklist_question_ids:
+          - VII.B.1
+          - VII.B.2
+          - VII.B.3
+        summary: Public sources identify dual headquarters and global offices but not headcount, attrition
+          or hiring plan.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII-B-public-signal
+            finding: Public sources identify dual headquarters and global offices but not headcount, attrition
+              or hiring plan.
+            evidence_claim_ids: &a14
+              - EC-008
+              - EC-010
+              - EC-012
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - See R-008; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Headcount by function, attrition and compensation are private.
+        follow_up_questions:
+          - Provide HRIS export, hiring plan, attrition analysis and compensation/equity schedule.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids: *a14
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Stripe has visible licenses and privacy disclosures, but legal, regulatory, IP and
+      security diligence remains essential.
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+      - EC-016
+    risk_ids:
+      - R-002
+      - R-005
+      - R-006
+    sections:
+      - section_id: VIII.A
+        title: Regulatory, privacy and partner obligations
+        checklist_question_ids:
+          - VIII.A.1
+          - VIII.A.2
+          - VIII.A.3
+        summary: Public sources show broad license authorities and detailed privacy disclosures, but exam
+          outcomes and incidents are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII-A-public-signal
+            finding: Public sources show broad license authorities and detailed privacy disclosures, but exam
+              outcomes and incidents are private.
+            evidence_claim_ids: &a15
+              - EC-006
+              - EC-007
+              - EC-013
+            risk_ids:
+              - R-002
+              - R-006
+        hidden_risks:
+          - See R-002; public sources do not expose the underlying private records.
+          - See R-006; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Regulatory correspondence, privacy assessments and incident history are private.
+        follow_up_questions:
+          - Provide license matrix, exam results, privacy impact assessments and incident log.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a15
+      - section_id: VIII.B
+        title: Litigation, IP and compliance follow-up
+        checklist_question_ids:
+          - VIII.B.1
+          - VIII.B.2
+          - VIII.B.3
+        summary: Public sources do not provide a complete litigation, regulatory-action or IP schedule.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII-B-public-signal
+            finding: Public sources do not provide a complete litigation, regulatory-action or IP schedule.
+            evidence_claim_ids: &a16
+              - EC-013
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - See R-002; public sources do not expose the underlying private records.
+          - See R-005; public sources do not expose the underlying private records.
+        evidence_gaps:
+          - Counsel letters, litigation schedule, regulatory actions and IP schedule are private.
+        follow_up_questions:
+          - Provide counsel letters, litigation/regulatory schedule and IP/open-source diligence
+            package.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids: *a16
+tables:
+  - table_id: T-001
+    title: Public valuation and financing snapshot
+    chapter_id: I
+    section_id: I.A
+    purpose: Frames the public valuation anchor and missing underwriting data.
+    columns:
+      - name: item
+        description: item
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-001-R1
+        values:
+          item: Latest CB Insights valuation
+          public_signal: $159B
+          verification_status: verified against CB Insights list
+          diligence_need: Financing documents, fully diluted cap table and valuation support.
+        evidence_claim_ids:
+          - EC-001
+          - EC-010
+        source_ids:
+          - SRC-001
+      - row_id: T-001-R2
+        values:
+          item: Public company status
+          public_signal: Private unicorn; no public IPO filing reviewed
+          verification_status: partially verified
+          diligence_need: Current securities, tender offers, secondary sales and IPO-readiness materials.
+        evidence_claim_ids:
+          - EC-001
+          - EC-010
+        source_ids:
+          - SRC-001
+      - row_id: T-001-R3
+        values:
+          item: Audited financials
+          public_signal: Not publicly disclosed
+          verification_status: not publicly verifiable
+          diligence_need: Audited income statement, balance sheet, cash flow, revenue recognition memo.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+          - SRC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: ""
+  - table_id: T-002
+    title: Public operating metrics and financial diligence needs
+    chapter_id: I
+    section_id: I.B
+    purpose: Separates company-published scale from private financial quality.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: underwriting_gap
+        description: underwriting gap
+    rows:
+      - row_id: T-002-R1
+        values:
+          metric: Payments volume
+          public_signal: $1.9T in 2025 and 1.6% of global GDP
+          underwriting_gap: Net take rate, gross margin and revenue conversion.
+        evidence_claim_ids:
+          - EC-002
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: T-002-R2
+        values:
+          metric: Platform reliability
+          public_signal: 99.999% historical uptime
+          underwriting_gap: Incident history, SLA credits and resilience costs.
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: T-002-R3
+        values:
+          metric: Subscriptions managed
+          public_signal: 200M+ active subscriptions managed on Stripe Billing
+          underwriting_gap: Billing revenue, retention and product-level margin.
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: ""
+  - table_id: T-003
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Maps the public product suite to diligence workstreams.
+    columns:
+      - name: product_area
+        description: product area
+      - name: audience
+        description: audience
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-003-R1
+        values:
+          product_area: Payments and checkout
+          audience: Online and platform merchants
+          public_evidence: Payments, Checkout, Elements, payment methods, Link and Radar are publicly listed.
+          diligence_need: Product-level gross margin, auth rates and fraud losses.
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-003
+          - SRC-008
+      - row_id: T-003-R2
+        values:
+          product_area: Revenue operations
+          audience: Recurring and usage-based businesses
+          public_evidence: Billing, subscriptions, invoicing, tax and revenue recognition are publicly listed.
+          diligence_need: Attach rates and retention by product.
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+        source_ids:
+          - SRC-003
+          - SRC-008
+      - row_id: T-003-R3
+        values:
+          product_area: Platforms and money management
+          audience: Marketplaces, SaaS platforms and global sellers
+          public_evidence: Connect, Treasury, payouts, capital and crypto products are publicly listed.
+          diligence_need: Partner contracts, licensing and balance-sheet exposure.
+        evidence_claim_ids:
+          - EC-009
+          - EC-013
+        source_ids:
+          - SRC-006
+          - SRC-008
+    evidence_claim_ids:
+      - EC-003
+      - EC-009
+      - EC-013
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-008
+    notes: ""
+  - table_id: T-004
+    title: Pricing and unit-economics visibility
+    chapter_id: II
+    section_id: II.B
+    purpose: Shows public list pricing and private economics needed for underwriting.
+    columns:
+      - name: pricing_item
+        description: pricing item
+      - name: public_terms
+        description: public terms
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-004-R1
+        values:
+          pricing_item: Standard US domestic cards
+          public_terms: 2.9% plus $0.30 per successful transaction
+          diligence_need: Network costs, interchange pass-through, fraud losses and discounts.
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-004-R2
+        values:
+          pricing_item: Large-volume/custom accounts
+          public_terms: Custom pricing available for large volume or unique business models
+          diligence_need: Enterprise price book, concessions and gross margin by cohort.
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-004-R3
+        values:
+          pricing_item: Product bundles
+          public_terms: Multiple products public, bundle economics private
+          diligence_need: Attach rates, cross-sell revenue and support cost.
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+        source_ids:
+          - SRC-003
+          - SRC-008
+    evidence_claim_ids:
+      - EC-004
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-008
+    notes: ""
+  - table_id: T-005
+    title: Public customer and use-case signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Captures visible customer proof while flagging concentration gaps.
+    columns:
+      - name: customer_signal
+        description: customer signal
+      - name: use_case
+        description: use case
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-005-R1
+        values:
+          customer_signal: Millions of businesses
+          use_case: Payments platform behind millions of businesses
+          diligence_need: Active merchant count, GMV distribution and churn.
+        evidence_claim_ids:
+          - EC-005
+          - EC-014
+        source_ids:
+          - SRC-005
+      - row_id: T-005-R2
+        values:
+          customer_signal: Hertz and URBN examples
+          use_case: Enterprise and retail operating examples on Stripe about page
+          diligence_need: Contract value, product usage and renewal terms.
+        evidence_claim_ids:
+          - EC-003
+          - EC-014
+        source_ids:
+          - SRC-003
+      - row_id: T-005-R3
+        values:
+          customer_signal: Postmates outcome claim
+          use_case: Stripe customer page cites a $70M increase in Postmates annual revenue
+          diligence_need: Attribution methodology and current customer status.
+        evidence_claim_ids:
+          - EC-005
+          - EC-014
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-005
+    notes: ""
+  - table_id: T-006
+    title: Strategic partners and dependency map
+    chapter_id: III
+    section_id: III.B
+    purpose: Identifies partner categories that can affect operations and compliance.
+    columns:
+      - name: partner_type
+        description: partner type
+      - name: public_evidence
+        description: public evidence
+      - name: risk
+        description: risk
+    rows:
+      - row_id: T-006-R1
+        values:
+          partner_type: Financial partners
+          public_evidence: Privacy policy defines banks, acquirers, intermediaries, payout providers and card
+            networks as financial partners.
+          risk: Partner outages, contract changes and regulatory oversight.
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+        source_ids:
+          - SRC-007
+      - row_id: T-006-R2
+        values:
+          partner_type: Developers and platform partners
+          public_evidence: Partner calls to action and developer resources are public.
+          risk: Integration quality and partner-sourced pipeline not disclosed.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-008
+      - row_id: T-006-R3
+        values:
+          partner_type: Cloud and infrastructure suppliers
+          public_evidence: Not publicly itemized in reviewed sources
+          risk: Supplier concentration and incident response require private diligence.
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-003
+      - SRC-007
+      - SRC-008
+    notes: ""
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Places Stripe against public category competitors.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: overlap
+        description: overlap
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-007-R1
+        values:
+          competitor: Adyen
+          segment: Global acquiring and enterprise payments
+          overlap: Enterprise payments, platforms and payment methods
+          diligence_need: Win/loss and pricing benchmarks.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-009
+      - row_id: T-007-R2
+        values:
+          competitor: PayPal/Braintree
+          segment: Wallet, checkout and merchant processing
+          overlap: Checkout, marketplace and merchant payment flows
+          diligence_need: Wallet conversion and merchant switching data.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+      - row_id: T-007-R3
+        values:
+          competitor: Block/Square
+          segment: SMB commerce and POS
+          overlap: Merchant acquiring, terminal and business tools
+          diligence_need: SMB share and offline/online bundle comparison.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-011
+      - row_id: T-007-R4
+        values:
+          competitor: Checkout.com
+          segment: Global enterprise payments
+          overlap: Online acquiring and enterprise payments
+          diligence_need: Enterprise account overlap and pricing concessions.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-011
+    source_ids:
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    notes: ""
+  - table_id: T-008
+    title: Basis of competition scoring
+    chapter_id: IV
+    section_id: IV.B
+    purpose: Qualitative public-source scoring; requires private benchmarking.
+    columns:
+      - name: axis
+        description: axis
+      - name: stripe_public_position
+        description: stripe public position
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T-008-R1
+        values:
+          axis: Developer breadth
+          stripe_public_position: Broad API-led product suite
+          diligence_caveat: Developer NPS and implementation time not public.
+        evidence_claim_ids:
+          - EC-009
+          - EC-011
+        source_ids:
+          - SRC-003
+          - SRC-008
+      - row_id: T-008-R2
+        values:
+          axis: Enterprise economics
+          stripe_public_position: Custom pricing offered for large volume
+          diligence_caveat: Discounting and gross margin private.
+        evidence_claim_ids:
+          - EC-004
+          - EC-011
+        source_ids:
+          - SRC-004
+      - row_id: T-008-R3
+        values:
+          axis: Compliance footprint
+          stripe_public_position: Broad license-authority table and privacy disclosures
+          diligence_caveat: Exam outcomes and remediation history private.
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+          - EC-013
+        source_ids:
+          - SRC-006
+          - SRC-007
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-011
+      - EC-013
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: ""
+  - table_id: T-009
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Identifies public channels without assuming conversion efficiency.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-009-R1
+        values:
+          channel: Self-serve signup and developer docs
+          public_evidence: Get-started and dashboard registration flows are visible.
+          gap: Activation, conversion and support cost.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-003
+          - SRC-008
+      - row_id: T-009-R2
+        values:
+          channel: Direct enterprise sales
+          public_evidence: Contact-sales calls to action and custom pricing are public.
+          gap: Quota attainment, sales cycle and discount approvals.
+        evidence_claim_ids:
+          - EC-004
+          - EC-015
+        source_ids:
+          - SRC-004
+          - SRC-008
+      - row_id: T-009-R3
+        values:
+          channel: Partner ecosystem
+          public_evidence: Become-a-partner calls to action are public.
+          gap: Partner-sourced revenue and partner obligations.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-004
+      - EC-015
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-008
+    notes: ""
+  - table_id: T-010
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.B
+    purpose: Shows owned-channel signals that should be linked to pipeline data.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-010-R1
+        values:
+          signal: Annual letter
+          public_evidence: 2025 letter frames internet-economy themes and $1.9T scale.
+          diligence_need: Audience reach and influence on pipeline.
+        evidence_claim_ids:
+          - EC-002
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-010-R2
+        values:
+          signal: Customer stories
+          public_evidence: Customer page publishes examples and outcomes.
+          diligence_need: Reference quality and current usage.
+        evidence_claim_ids:
+          - EC-005
+          - EC-014
+        source_ids:
+          - SRC-005
+      - row_id: T-010-R3
+        values:
+          signal: Newsroom and product pages
+          public_evidence: Fast facts, product navigation and contact flows are public.
+          diligence_need: Channel attribution and CAC by segment.
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-015
+        source_ids:
+          - SRC-003
+          - SRC-008
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+    notes: ""
+  - table_id: T-011
+    title: R&D and product roadmap signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Tracks public product and technology areas requiring deeper diligence.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public signal
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-011-R1
+        values:
+          area: Agentic commerce and global-by-default businesses
+          public_signal: Annual-letter themes
+          diligence_need: Roadmap, beta customers and product-market fit.
+        evidence_claim_ids:
+          - EC-002
+          - EC-016
+        source_ids:
+          - SRC-002
+      - row_id: T-011-R2
+        values:
+          area: Payments reliability and fraud tooling
+          public_signal: 99.999% uptime and Radar product listing
+          diligence_need: Incident history and model performance.
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+          - EC-016
+        source_ids:
+          - SRC-003
+          - SRC-008
+      - row_id: T-011-R3
+        values:
+          area: Billing, tax and revenue automation
+          public_signal: Billing, subscriptions, tax and revenue recognition products listed
+          diligence_need: Product quality, attach rates and support costs.
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+        source_ids:
+          - SRC-003
+          - SRC-008
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-009
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-008
+    notes: ""
+  - table_id: T-012
+    title: Technology and IP defensibility diligence
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Summarizes public defensibility signals and missing artifacts.
+    columns:
+      - name: defensibility_area
+        description: defensibility area
+      - name: public_signal
+        description: public signal
+      - name: private_request
+        description: private request
+    rows:
+      - row_id: T-012-R1
+        values:
+          defensibility_area: Developer platform and APIs
+          public_signal: Broad public product suite
+          private_request: Architecture, API usage, SDK adoption and incident backlog.
+        evidence_claim_ids:
+          - EC-009
+          - EC-016
+        source_ids:
+          - SRC-003
+          - SRC-008
+      - row_id: T-012-R2
+        values:
+          defensibility_area: Licenses and compliance infrastructure
+          public_signal: State license-authority table
+          private_request: License status, audits, controls and remediation.
+        evidence_claim_ids:
+          - EC-006
+          - EC-013
+        source_ids:
+          - SRC-006
+      - row_id: T-012-R3
+        values:
+          defensibility_area: Intellectual property
+          public_signal: No complete public IP schedule reviewed
+          private_request: Patent, trademark, software ownership and open-source schedules.
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-009
+      - EC-013
+      - EC-016
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-008
+    notes: ""
+  - table_id: T-013
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Lists public leadership and role coverage.
+    columns:
+      - name: name
+        description: name
+      - name: role
+        description: role
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-013-R1
+        values:
+          name: Patrick Collison
+          role: Cofounder and CEO
+          diligence_need: Succession, retention and board role.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-008
+      - row_id: T-013-R2
+        values:
+          name: John Collison
+          role: Cofounder and President
+          diligence_need: Operating responsibilities and succession plan.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-008
+      - row_id: T-013-R3
+        values:
+          name: Will Gaybrick, Trish Walsh, Eileen O'Mara, Jeff Titterton, Steffan Tomlinson, Rob McIntosh
+          role: Public executive roles across technology/business, legal, revenue, marketing, finance and
+            people
+          diligence_need: Retention, compensation and functional KPI ownership.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-012
+    source_ids:
+      - SRC-008
+    notes: ""
+  - table_id: T-014
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Captures public organization signals and missing HR metrics.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_need
+        description: diligence need
+    rows:
+      - row_id: T-014-R1
+        values:
+          signal: Dual headquarters and global offices
+          public_evidence: San Francisco and Dublin headquarters; offices in London, Paris, Singapore, Tokyo
+            and other locations
+          diligence_need: Headcount by geography and function.
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-014-R2
+        values:
+          signal: Leadership breadth
+          public_evidence: Named executives across core functions
+          diligence_need: Attrition, spans/layers and succession.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-008
+      - row_id: T-014-R3
+        values:
+          signal: Employee count
+          public_evidence: Not disclosed in reviewed public sources
+          diligence_need: HRIS export, hiring plan and compensation/equity schedule.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-008
+      - EC-010
+      - EC-012
+    source_ids:
+      - SRC-008
+    notes: ""
+  - table_id: T-015
+    title: Legal, regulatory and privacy matter matrix
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Surfaces legal areas that require counsel confirmation.
+    columns:
+      - name: matter
+        description: matter
+      - name: public_signal
+        description: public signal
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-015-R1
+        values:
+          matter: Money-transmission licenses
+          public_signal: Stripe Payments Company license-authority table
+          diligence_request: Current license status, exams and enforcement history.
+        evidence_claim_ids:
+          - EC-006
+          - EC-013
+        source_ids:
+          - SRC-006
+      - row_id: T-015-R2
+        values:
+          matter: Privacy and transaction data
+          public_signal: Privacy policy defines personal data and transaction data
+          diligence_request: DPIAs, data map, subprocessors and incidents.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-015-R3
+        values:
+          matter: Financial partners
+          public_signal: Privacy policy identifies banks, acquirers, payout providers and card networks as
+            partner categories
+          diligence_request: Partner contracts, obligations and concentration.
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+    source_ids:
+      - SRC-006
+      - SRC-007
+    notes: ""
+  - table_id: T-016
+    title: Litigation, IP and regulatory follow-up schedule
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Documents items that cannot be resolved from public sources alone.
+    columns:
+      - name: diligence_area
+        description: diligence area
+      - name: public_status
+        description: public status
+      - name: request
+        description: request
+    rows:
+      - row_id: T-016-R1
+        values:
+          diligence_area: Pending litigation and disputes
+          public_status: No complete docket search or counsel letter available in public materials reviewed
+          request: Counsel letter and litigation schedule.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-006
+          - SRC-007
+      - row_id: T-016-R2
+        values:
+          diligence_area: Regulatory exams and complaints
+          public_status: License authorities are public; exam outcomes are not
+          request: Regulatory correspondence, complaint logs and remediation status.
+        evidence_claim_ids:
+          - EC-006
+          - EC-013
+        source_ids:
+          - SRC-006
+      - row_id: T-016-R3
+        values:
+          diligence_area: IP and software ownership
+          public_status: No complete public IP/open-source schedule reviewed
+          request: Patent/trademark schedule, OSS scans, employee assignment agreements.
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-003
+          - SRC-008
+    evidence_claim_ids:
+      - EC-006
+      - EC-013
+      - EC-016
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: ""
+figures:
+  - figure_id: F-001
+    title: Public valuation anchor
+    chapter_id: I
+    section_id: I.A
+    figure_type: chart
+    description: Only the public CB Insights valuation anchor is charted; underlying financing terms are
+      private.
+    evidence_claim_ids:
+      - EC-001
+      - EC-010
+    source_ids:
+      - SRC-001
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Valuation source
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Valuation ($B)
+        unit: null
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation
+          unit: $B
+          data_points:
+            - x: CB Insights latest
+              y: 159
+              label: $159B
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Private terms gap
+          x: CB Insights latest
+          y: 159
+          note: Cap table, preferences and recent secondary pricing require private documents.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+  - figure_id: F-002
+    title: Stripe product dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product architecture inferred from Stripe product pages and privacy disclosures.
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-009
+      - EC-013
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-007
+      - SRC-008
+    spec:
+      nodes:
+        - node_id: business
+          label: Business users
+          node_type: user
+          description: Merchants and platforms using Stripe services
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - node_id: stripe
+          label: Stripe platform
+          node_type: service
+          description: Payments, Billing, Connect, Radar and financial tools
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+            - SRC-008
+        - node_id: partners
+          label: Financial partners
+          node_type: third_party
+          description: Banks, acquirers, payout providers, card networks and intermediaries
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - node_id: customers
+          label: End customers
+          node_type: user
+          description: Buyers and payees whose transaction data may be processed
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+      edges:
+        - edge_id: E1
+          from_node_id: business
+          to_node_id: stripe
+          relationship: integrates with
+          data_or_dependency: APIs, hosted checkout and product workflows
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+        - edge_id: E2
+          from_node_id: stripe
+          to_node_id: partners
+          relationship: depends on
+          data_or_dependency: Payment processing, payouts and financial services
+          evidence_claim_ids:
+            - EC-007
+            - EC-013
+          source_ids:
+            - SRC-007
+        - edge_id: E3
+          from_node_id: customers
+          to_node_id: stripe
+          relationship: transaction data processed by
+          data_or_dependency: Personal and transaction data
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+  - figure_id: F-003
+    title: Selected public scale anchors
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Different public metrics use different units; the chart is a numeric evidence map, not
+      an economic model.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-008
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Published numeric anchor
+        unit: null
+        scale: linear
+      series:
+        - series_id: scale
+          name: Public scale metric
+          unit: mixed
+          data_points:
+            - x: 2025 volume ($B)
+              y: 1900
+              label: $1.9T
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: Billing subscriptions (M)
+              y: 200
+              label: 200M+
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-003
+            - x: Currencies/methods
+              y: 135
+              label: 135+
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-003
+            - x: Countries available
+              y: 50
+              label: 50+
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: Concentration not disclosed
+          x: 2025 volume ($B)
+          y: 1900
+          note: Top-customer share and take rate require private records.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-005
+  - figure_id: F-004
+    title: Payments market positioning map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative market map based on public product breadth and integration complexity.
+    evidence_claim_ids:
+      - EC-009
+      - EC-011
+      - EC-013
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: Narrow
+          high_label: Broad
+        y_axis:
+          label: Regulatory and integration intensity
+          low_label: Low
+          high_label: High
+      segments:
+        - segment_id: enterprise
+          name: Enterprise payments
+          description: Global acquiring, large merchant and platform payments
+        - segment_id: smb
+          name: SMB commerce
+          description: Point-of-sale and small business merchant tools
+        - segment_id: wallet
+          name: Wallet and checkout
+          description: Consumer checkout and wallet-led networks
+      entities:
+        - entity_id: stripe
+          name: Stripe
+          entity_type: target_company
+          segment_id: enterprise
+          x_value: 9
+          y_value: 9
+          attributes:
+            note: Broad API suite and licensed money movement
+          evidence_claim_ids:
+            - EC-009
+            - EC-013
+          source_ids:
+            - SRC-003
+            - SRC-006
+        - entity_id: adyen
+          name: Adyen
+          entity_type: competitor
+          segment_id: enterprise
+          x_value: 8
+          y_value: 8
+          attributes:
+            note: Global acquiring competitor
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-009
+        - entity_id: paypal
+          name: PayPal/Braintree
+          entity_type: competitor
+          segment_id: wallet
+          x_value: 7
+          y_value: 7
+          attributes:
+            note: Wallet and merchant processing competitor
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        - entity_id: square
+          name: Block/Square
+          entity_type: competitor
+          segment_id: smb
+          x_value: 6
+          y_value: 6
+          attributes:
+            note: SMB commerce and POS competitor
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-011
+  - figure_id: F-005
+    title: Public GTM evidence completeness
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Scores whether a public signal exists for each channel; it is not a conversion-rate chart.
+    evidence_claim_ids:
+      - EC-004
+      - EC-015
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-008
+    spec:
+      chart_type: bar
+      x_axis:
+        label: GTM channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public evidence score (0-2)
+        unit: null
+        scale: linear
+      series:
+        - series_id: gtm
+          name: Evidence score
+          unit: score
+          data_points:
+            - x: Self-serve
+              y: 2
+              label: visible flows
+              evidence_claim_ids:
+                - EC-015
+              source_ids:
+                - SRC-003
+            - x: Direct sales
+              y: 2
+              label: contact sales/custom pricing
+              evidence_claim_ids:
+                - EC-004
+                - EC-015
+              source_ids:
+                - SRC-004
+                - SRC-008
+            - x: Partners
+              y: 1
+              label: partner CTA
+              evidence_claim_ids:
+                - EC-015
+              source_ids:
+                - SRC-008
+            - x: Conversion data
+              y: 0
+              label: private
+              evidence_claim_ids:
+                - EC-015
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: CAC private
+          x: Conversion data
+          y: 0
+          note: CAC, channel mix and sales productivity are not public.
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-008
+  - figure_id: F-006
+    title: R&D and platform defensibility stack
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Public defensibility stack requiring technical validation.
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-016
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    spec:
+      nodes:
+        - node_id: apis
+          label: Developer APIs and SDKs
+          node_type: service
+          description: Public developer-facing product surface
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+        - node_id: risk
+          label: Fraud, risk and uptime systems
+          node_type: service
+          description: Radar and reliability claims
+          evidence_claim_ids:
+            - EC-003
+            - EC-009
+          source_ids:
+            - SRC-003
+            - SRC-008
+        - node_id: compliance
+          label: Licensing and compliance layer
+          node_type: service
+          description: License-authority footprint and privacy controls
+          evidence_claim_ids:
+            - EC-006
+            - EC-007
+          source_ids:
+            - SRC-006
+            - SRC-007
+        - node_id: products
+          label: Payments and financial products
+          node_type: product
+          description: Payments, Billing, Connect, Treasury, Capital and related products
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-008
+      edges:
+        - edge_id: E1
+          from_node_id: apis
+          to_node_id: products
+          relationship: exposes
+          data_or_dependency: Developer integrations drive product adoption
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+        - edge_id: E2
+          from_node_id: risk
+          to_node_id: products
+          relationship: protects
+          data_or_dependency: Fraud and uptime controls underpin payments reliability
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: E3
+          from_node_id: compliance
+          to_node_id: products
+          relationship: enables
+          data_or_dependency: Licenses and privacy controls enable regulated services
+          evidence_claim_ids:
+            - EC-006
+            - EC-007
+          source_ids:
+            - SRC-006
+            - SRC-007
+  - figure_id: F-007
+    title: Public leadership map
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Public executive-role map from Stripe newsroom information.
+    evidence_claim_ids:
+      - EC-012
+    source_ids:
+      - SRC-008
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Patrick Collison
+          role: Cofounder and CEO
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - node_id: president
+          name: John Collison
+          role: Cofounder and President
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - node_id: techbiz
+          name: Will Gaybrick
+          role: President, Technology and Business
+          department: Technology and business
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - node_id: legal
+          name: Trish Walsh
+          role: General Counsel
+          department: Legal
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - node_id: finance
+          name: Steffan Tomlinson
+          role: Chief Financial Officer
+          department: Finance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: president
+          relationship: other
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - parent_node_id: ceo
+          child_node_id: techbiz
+          relationship: other
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - parent_node_id: ceo
+          child_node_id: legal
+          relationship: other
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - parent_node_id: ceo
+          child_node_id: finance
+          relationship: other
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+  - figure_id: F-008
+    title: Stripe diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Risk heatmap based on the public-source diligence risk register.
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+      - EC-007
+      - EC-010
+      - EC-013
+      - EC-014
+      - EC-016
+    source_ids:
+      - SRC-001
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Valuation and financial opacity
+          severity: high
+          likelihood: high
+          rationale: Stripe has exceptional public scale and a $159B valuation anchor, but audited revenue,
+            margins, take rate, cash, debt and preferences are not public.
+          evidence_claim_ids: &a17
+            - EC-001
+            - EC-002
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-001
+            - SRC-002
+            - SRC-003
+        - risk_id: R-002
+          label: Regulatory and privacy exposure
+          severity: high
+          likelihood: medium
+          rationale: Money movement, transaction data, financial partners and global availability create
+            regulatory, privacy and operational compliance risk.
+          evidence_claim_ids: &a18
+            - EC-006
+            - EC-007
+            - EC-013
+          source_ids:
+            - SRC-006
+            - SRC-007
+            - SRC-006
+            - SRC-007
+            - SRC-008
+        - risk_id: R-003
+          label: Customer and volume concentration opacity
+          severity: high
+          likelihood: medium
+          rationale: Public volume and customer stories do not reveal the largest merchants, take rate,
+            renewal terms or churn.
+          evidence_claim_ids: &a19
+            - EC-005
+            - EC-014
+          source_ids:
+            - SRC-005
+            - SRC-005
+        - risk_id: R-004
+          label: Competitive pricing pressure
+          severity: medium
+          likelihood: high
+          rationale: Competitors overlap across enterprise acquiring, SMB commerce, wallets and platform
+            payments, pressuring fees and switching economics.
+          evidence_claim_ids: &a20
+            - EC-004
+            - EC-011
+          source_ids:
+            - SRC-004
+            - SRC-009
+            - SRC-010
+            - SRC-011
+            - SRC-012
+        - risk_id: R-005
+          label: Platform reliability and security expectations
+          severity: high
+          likelihood: medium
+          rationale: High transaction volume and financial infrastructure breadth make uptime, fraud, security
+            and incident management material.
+          evidence_claim_ids: &a21
+            - EC-003
+            - EC-007
+            - EC-016
+          source_ids:
+            - SRC-003
+            - SRC-007
+            - SRC-003
+            - SRC-008
+        - risk_id: R-006
+          label: Global execution complexity
+          severity: medium
+          likelihood: medium
+          rationale: Global products depend on financial partners, local compliance and country-specific
+            economics that are only partially visible publicly.
+          evidence_claim_ids: &a22
+            - EC-007
+            - EC-013
+            - EC-015
+          source_ids:
+            - SRC-007
+            - SRC-006
+            - SRC-007
+            - SRC-008
+            - SRC-002
+            - SRC-003
+            - SRC-005
+            - SRC-008
+        - risk_id: R-007
+          label: Product breadth and integration burden
+          severity: medium
+          likelihood: medium
+          rationale: A broad product suite can deepen customer lock-in but increases roadmap, support and
+            integration obligations.
+          evidence_claim_ids: &a23
+            - EC-009
+            - EC-016
+          source_ids:
+            - SRC-003
+            - SRC-008
+            - SRC-003
+            - SRC-008
+        - risk_id: R-008
+          label: Management and succession opacity
+          severity: medium
+          likelihood: low
+          rationale: Public leadership roster is strong, but board dynamics, executive retention, succession
+            and compensation are not public.
+          evidence_claim_ids: &a24
+            - EC-012
+          source_ids:
+            - SRC-008
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Stripe as a United States financial-services unicorn in San Francisco with
+      a $159B valuation and selected investors including Khosla Ventures, Lowercase Capital and
+      CapitalG.
+    evidence_summary: The CB Insights unicorn table provides the latest public valuation anchor used in this report.
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    limitations: CB Insights is a market database; round terms, fully diluted ownership and secondary
+      activity are not disclosed.
+  - evidence_claim_id: EC-002
+    claim: Stripe says businesses on Stripe generated $1.9T in 2025, equivalent to 1.6% of global GDP.
+    evidence_summary: Stripe annual-letter page publishes the processing-volume claim.
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    limitations: Company-published volume is not reconciled to audited revenue, net take rate or margins.
+  - evidence_claim_id: EC-003
+    claim: Stripe publishes platform scale anchors including 135+ currencies and payment methods, $1.9T
+      processed in 2025, 99.999% historical uptime and 200M+ active subscriptions managed on Stripe
+      Billing.
+    evidence_summary: Stripe about page includes these operating metrics.
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    limitations: Underlying calculations and audit support were not public.
+  - evidence_claim_id: EC-004
+    claim: Stripe lists standard US domestic card pricing at 2.9% plus $0.30 per successful transaction
+      and offers custom pricing for large volume or unique business models.
+    evidence_summary: Stripe pricing page discloses standard and custom pricing constructs.
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    limitations: Discount schedules, cost of acceptance, fraud losses and enterprise contract terms are private.
+  - evidence_claim_id: EC-005
+    claim: Stripe describes itself as the payments platform behind millions of businesses and publishes
+      customer examples and outcomes.
+    evidence_summary: Stripe customer page states the platform supports millions of businesses and lists
+      public customer stories.
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+    limitations: Customer ARR, processing share and concentration are not disclosed.
+  - evidence_claim_id: EC-006
+    claim: Stripe Payments Company publishes a broad state and territory license-authority table for
+      money-transmission services.
+    evidence_summary: The public license page lists authorities across US states and territories.
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    limitations: License status, exam findings and remediation history require legal diligence.
+  - evidence_claim_id: EC-007
+    claim: Stripe privacy disclosures define personal data, transaction data, end customers,
+      representatives, visitors and financial partners.
+    evidence_summary: The privacy policy describes data categories and service-provider relationships.
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+    limitations: Security incidents, DPIAs, retention schedules and customer obligations were not public.
+  - evidence_claim_id: EC-008
+    claim: Stripe newsroom information states Stripe builds economic infrastructure for the internet,
+      has dual headquarters in San Francisco and Dublin, and operates offices around the world.
+    evidence_summary: The newsroom information page provides mission, headquarters and fast facts.
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    limitations: Employee count, attrition and org-level productivity were not public.
+  - evidence_claim_id: EC-009
+    claim: Stripe publicly lists a deep product suite spanning payments, billing, invoicing, tax,
+      treasury, payouts, capital, crypto, Connect and developer resources.
+    evidence_summary: Stripe product navigation and about page show breadth across payments and money movement.
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+      - SRC-008
+    limitations: Product-level revenue, attach rates and contribution margin are not disclosed.
+  - evidence_claim_id: EC-010
+    claim: Public sources did not disclose audited financial statements, detailed revenue, gross margin,
+      cash, debt, cap table or liquidation preferences for Stripe.
+    evidence_summary: The reviewed public sources provide scale and valuation claims but no
+      private-company financial statements or security terms.
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    limitations: Requires company data room, financing documents and auditor materials.
+  - evidence_claim_id: EC-011
+    claim: Public competitor sources show Stripe operates in a crowded payments and
+      financial-infrastructure market with global acquirers, wallet networks and merchant platforms.
+    evidence_summary: Adyen, PayPal/Braintree, Square and Checkout.com public sites show overlapping
+      payments capabilities.
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    limitations: Relative win rates, pricing concessions and merchant churn require private data.
+  - evidence_claim_id: EC-012
+    claim: Stripe leadership is publicly identified with Patrick Collison as Cofounder and CEO, John
+      Collison as Cofounder and President, and named executives across technology, revenue, legal,
+      marketing, finance and people.
+    evidence_summary: Stripe newsroom information page lists leadership roles.
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    limitations: Board dynamics, succession plan and executive retention are private.
+  - evidence_claim_id: EC-013
+    claim: Stripe availability and operating footprint are global, but public sources do not provide
+      country-level profitability, licensing constraints or regulatory exam outcomes.
+    evidence_summary: Company materials identify 50+ countries available to businesses and many
+      financial partners, while legal outcomes are not fully disclosed.
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    limitations: Requires legal matrix, regulatory correspondence and market-by-market P&L.
+  - evidence_claim_id: EC-014
+    claim: Public customer stories and platform claims do not disclose the largest merchants, processing
+      concentration, renewal terms, churn or net revenue retention.
+    evidence_summary: Customer pages provide logos and narratives but not concentration or contract economics.
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-005
+    limitations: Requires top-customer schedule, contracts and reference calls.
+  - evidence_claim_id: EC-015
+    claim: Public materials show direct sales, self-serve signup, customer stories, annual letters and
+      partner programs as GTM signals.
+    evidence_summary: Company pages include get-started flows, contact-sales flows, customer stories and
+      partner calls to action.
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+    limitations: CAC, channel mix, quota attainment and sales-cycle data are private.
+  - evidence_claim_id: EC-016
+    claim: Public sources do not disclose a complete IP schedule, source-code escrow, open-source
+      exposure or product-quality incident log.
+    evidence_summary: Reviewed public sources describe product capabilities and uptime but not private
+      technical diligence artifacts.
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-003
+      - SRC-008
+    limitations: Requires engineering architecture, patent/trademark schedule, security reports and
+      incident history.
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    publisher: CB Insights
+    url: https://www.cbinsights.com/research-unicorn-companies
+    source_type: market_database
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Public unicorn list used for status, location, industry, valuation and selected investors.
+  - source_id: SRC-002
+    title: Stripe's 2025 annual letter
+    publisher: Stripe
+    url: https://stripe.com/annual-updates/2025
+    source_type: primary_company_source
+    published_date: "2025"
+    accessed_date: 2026-05-21
+    notes: Company annual letter landing page with payments-volume claim.
+  - source_id: SRC-003
+    title: Stripe | Financial Infrastructure to Grow Your Revenue
+    publisher: Stripe
+    url: https://stripe.com/about
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Company product and scale page with currency, volume, uptime and Billing metrics.
+  - source_id: SRC-004
+    title: Stripe pricing
+    publisher: Stripe
+    url: https://stripe.com/pricing
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Public pricing page for standard domestic card and custom pricing disclosures.
+  - source_id: SRC-005
+    title: Stripe customers
+    publisher: Stripe
+    url: https://stripe.com/customers
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Company customer page with public customer and platform positioning claims.
+  - source_id: SRC-006
+    title: Stripe Payments Company Licenses
+    publisher: Stripe
+    url: https://stripe.com/legal/spc/licenses
+    source_type: regulatory_filing
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Company legal page listing state and territorial money-transmission authorities.
+  - source_id: SRC-007
+    title: Stripe Privacy Policy
+    publisher: Stripe
+    url: https://stripe.com/privacy
+    source_type: primary_company_source
+    published_date: 2026-04-28
+    accessed_date: 2026-05-21
+    notes: Privacy policy describing personal data, transaction data and financial partners.
+  - source_id: SRC-008
+    title: Stripe newsroom information and assets
+    publisher: Stripe
+    url: https://stripe.com/newsroom/information
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Company fast facts, headquarters and leadership roster.
+  - source_id: SRC-009
+    title: Adyen platform
+    publisher: Adyen
+    url: https://www.adyen.com/
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Competitor category source.
+  - source_id: SRC-010
+    title: PayPal Braintree
+    publisher: PayPal
+    url: https://www.braintreepayments.com/
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Competitor category source.
+  - source_id: SRC-011
+    title: Square for businesses
+    publisher: Block / Square
+    url: https://squareup.com/
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Competitor category source.
+  - source_id: SRC-012
+    title: Checkout.com payments platform
+    publisher: Checkout.com
+    url: https://www.checkout.com/
+    source_type: primary_company_source
+    published_date: null
+    accessed_date: 2026-05-21
+    notes: Competitor category source.
+risk_register:
+  - risk_id: R-001
+    risk_title: Valuation and financial opacity
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Stripe has exceptional public scale and a $159B valuation anchor, but audited revenue,
+      margins, take rate, cash, debt and preferences are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+    evidence_claim_ids: *a17
+    mitigation_or_diligence_request: Request audited financials, KPI bridge, cap table, debt schedule and financing documents.
+  - risk_id: R-002
+    risk_title: Regulatory and privacy exposure
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Money movement, transaction data, financial partners and global availability create
+      regulatory, privacy and operational compliance risk.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.B
+    evidence_claim_ids: *a18
+    mitigation_or_diligence_request: Request license matrix, exam history, privacy/security reports,
+      incident log and counsel letters.
+  - risk_id: R-003
+    risk_title: Customer and volume concentration opacity
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Public volume and customer stories do not reveal the largest merchants, take rate,
+      renewal terms or churn.
+    impacted_chapter_ids:
+      - III
+    impacted_section_ids:
+      - III.A
+    evidence_claim_ids: *a19
+    mitigation_or_diligence_request: Request top-merchant schedule, processor share, churn, NRR and reference permissions.
+  - risk_id: R-004
+    risk_title: Competitive pricing pressure
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Competitors overlap across enterprise acquiring, SMB commerce, wallets and platform
+      payments, pressuring fees and switching economics.
+    impacted_chapter_ids:
+      - IV
+      - II
+    impacted_section_ids:
+      - IV.A
+      - II.B
+    evidence_claim_ids: *a20
+    mitigation_or_diligence_request: Benchmark win/loss, pricing concessions, network costs, gross retention and feature gaps.
+  - risk_id: R-005
+    risk_title: Platform reliability and security expectations
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: High transaction volume and financial infrastructure breadth make uptime, fraud,
+      security and incident management material.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VIII.A
+    evidence_claim_ids: *a21
+    mitigation_or_diligence_request: Review architecture, SOC reports, penetration tests, incident register and resilience metrics.
+  - risk_id: R-006
+    risk_title: Global execution complexity
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Global products depend on financial partners, local compliance and country-specific
+      economics that are only partially visible publicly.
+    impacted_chapter_ids:
+      - III
+      - V
+      - VIII
+    impacted_section_ids:
+      - III.B
+      - V.A
+      - VIII.A
+    evidence_claim_ids: *a22
+    mitigation_or_diligence_request: Request market-level P&L, partner contracts, operational KPIs and regulatory correspondence.
+  - risk_id: R-007
+    risk_title: Product breadth and integration burden
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: A broad product suite can deepen customer lock-in but increases roadmap, support and
+      integration obligations.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.A
+    evidence_claim_ids: *a23
+    mitigation_or_diligence_request: Review product P&Ls, roadmap, support burden, incident backlog and integration quality.
+  - risk_id: R-008
+    risk_title: Management and succession opacity
+    risk_category: team
+    severity: medium
+    likelihood: low
+    description: Public leadership roster is strong, but board dynamics, executive retention, succession
+      and compensation are not public.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+    evidence_claim_ids: *a24
+    mitigation_or_diligence_request: Request board materials, org chart, HRIS, attrition and executive compensation details.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financials, KPI pack, cap table and financing terms
+    why_it_matters: The public valuation requires financial-quality support.
+    suggested_source_or_request: Request from company management, investors and auditors.
+    priority: high
+  - gap_id: G-002
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top-customer schedule, churn and merchant concentration
+    why_it_matters: Processing volume may be concentrated or lower-margin than headline scale implies.
+    suggested_source_or_request: Request customer schedule and reference calls.
+    priority: high
+  - gap_id: G-003
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Regulatory exams, privacy/security artifacts and counsel letters
+    why_it_matters: Regulated money movement and transaction data create high-severity legal risk.
+    suggested_source_or_request: Request from counsel and compliance leadership.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, KPI bridge, cash/debt schedule, cap table and
+      financing documents.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: III
+    section_id: III.A
+    request: Provide top merchants by volume and revenue, churn/NRR and customer reference permissions.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide regulatory correspondence, license matrix, privacy/security reports and incident
+      register.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-004
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide architecture, IP schedule, OSS review, security reports and product-quality metrics.
+    requested_from: engineering
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: This report relies only on public sources; no private financials, customer contracts,
+      management interviews, legal/security artifacts or data-room materials were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - VIII
+    affected_section_ids:
+      - I.A
+      - III.A
+      - VIII.A
+  - limitation_id: L-002
+    description: Company-published operating metrics were not independently audited for this report and
+      should be treated as diligence leads.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+    affected_section_ids:
+      - I.B
+      - III.A
+      - V.B

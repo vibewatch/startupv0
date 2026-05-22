@@ -1,0 +1,5273 @@
+report_metadata:
+  report_title: Supabase Startup Diligence Research Report
+  target_company: Supabase
+  website: https://supabase.com
+  known_aliases:
+    - Supabase, Inc.
+    - supabase/supabase
+  sector: Enterprise Tech / Developer Tools / Open Source Databases
+  geography: United States / San Francisco Bay Area; globally distributed
+  company_stage: Private unicorn / late-stage venture-backed
+  research_date: 2026-05-21
+  analyst: GitHub Copilot CLI
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - "Public company sources: website, pricing, docs, blogs, careers and customer stories"
+    - "Technical sources: GitHub API/repository metadata"
+    - "Third-party and directory sources: YC, LinkedIn, news/search snippets and public search results"
+    - "Legal/regulatory surface scan: DPA, trademark search snippets, lawsuit/status/regulatory searches"
+  included_jurisdictions:
+    - United States
+    - Global public web
+    - EU/UK privacy context via public DPA
+    - AWS regions listed by Supabase docs
+  excluded_topics:
+    - No paywalled bypasses
+    - No private data room access
+    - No non-public personal contact details
+    - No gh CLI usage
+  user_provided_materials:
+    - material_id: UPM-001
+      title: CB Insights unicorn tracker selection for Supabase
+      type: user_context
+      date_received: 2026-05-21
+      notes: "User supplied tracker facts: slug supabase, valuation $5B, United States/San Francisco, Enterprise Tech; treated as untrusted and verified against public sources where possible."
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Supabase is a unicorn with latest valuation around $5B.
+    claim_source: User-provided CB Insights tracker and public Supabase Series E announcement
+    claim_date: 2026-05-21
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+    contradiction_summary: null
+    diligence_follow_up:
+      - Obtain Series E financing documents, fully diluted capitalization and post-money/pre-money definitions.
+  - founder_claim_id: FC-002
+    claim_text: Supabase is still private and eligible for startup unicorn diligence.
+    claim_source: Public eligibility screen
+    claim_date: 2026-05-21
+    mapped_chapter_ids:
+      - I
+      - VII
+    mapped_section_ids:
+      - I.C
+      - VII.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-004
+      - EC-012
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm no pending acquisition, IPO filing or control transaction in board minutes.
+  - founder_claim_id: FC-003
+    claim_text: Supabase is a Postgres developer platform, not only a hosted database.
+    claim_source: Company/YC positioning
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+    mapped_section_ids:
+      - II.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-006
+    contradiction_summary: null
+    diligence_follow_up:
+      - Quantify revenue and gross margin by product module.
+  - founder_claim_id: FC-004
+    claim_text: Supabase was in YC Summer 2020 and remains active.
+    claim_source: Y Combinator public profile
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.C
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm corporate history and equity issuances from formation documents.
+  - founder_claim_id: FC-005
+    claim_text: Supabase monetizes through SaaS plans and custom enterprise pricing.
+    claim_source: Company pricing page
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - II
+    mapped_section_ids:
+      - I.B
+      - II.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-005
+    contradiction_summary: null
+    diligence_follow_up:
+      - Reconcile public pricing to actual ACV, discounting, support cost and usage overage revenue.
+executive_summary:
+  overall_assessment: "Supabase is eligible for a private-unicorn diligence report: public evidence verifies active/private status and a company-announced $100M Series E at a $5B pre-money valuation. Product, developer-community and open-source traction are strong, while audited financials, cap table, revenue quality, customer concentration, legal schedules and enterprise contract economics remain the core diligence gaps."
+  investment_or_diligence_thesis: The diligence thesis is a high-growth, developer-led Postgres platform with substantial open-source/community distribution and expanding enterprise packaging; the investment case depends on whether community adoption converts into durable paid ARR with healthy infrastructure margins and manageable reliability/privacy obligations.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Latest public valuation around $5B is verified by Supabase Series E announcement and independent news snippet.
+      evidence_claim_ids:
+        - EC-002
+    - founder_claim_id: FC-002
+      summary: Private-company eligibility is supported by YC Active and LinkedIn Privately Held evidence.
+      evidence_claim_ids:
+        - EC-004
+        - EC-012
+    - founder_claim_id: FC-003
+      summary: Product positioning as a Postgres developer platform is supported by YC, LinkedIn and Supabase materials.
+      evidence_claim_ids:
+        - EC-006
+  biggest_risks:
+    - risk_id: R-001
+      summary: Financial quality and valuation step-up cannot be underwritten without private ARR/burn/cap-table evidence.
+    - risk_id: R-006
+      summary: Customer concentration and logo-to-revenue quality are not public.
+    - risk_id: R-009
+      summary: Shared-responsibility and customer misconfiguration risk can create product, support and reputational exposure.
+  key_evidence_gaps:
+    - Audited financial statements, ARR bridge, gross margin, burn, runway and debt instruments.
+    - Fully diluted cap table, option pool, secondary sale terms and investor rights.
+    - Top-customer revenue, contracts, renewal/churn cohorts and independent references.
+    - Security reports, incident history, SOC/ISO evidence, subprocessors and litigation/regulatory schedules.
+  recommended_next_steps:
+    - Open financial/cap-table data room and reconcile $5B valuation to ARR, NRR, burn and gross margin.
+    - Run technical architecture and reliability review focused on Postgres scale, RLS defaults, incidents and cloud dependencies.
+    - Conduct counsel-led litigation/IP/privacy diligence including USPTO/TSDR, dockets, DPA/subprocessor review and insurance.
+    - Perform customer diligence with top accounts, churned accounts and enterprise pipeline conversion cohorts.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Funding and valuation are strongly evidenced; operating financials and capital structure remain private.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-005
+    evidence_claim_ids:
+      - EC-024
+      - EC-005
+      - EC-004
+      - EC-002
+      - EC-003
+    risk_ids:
+      - R-001
+      - R-002
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Public sources verify funding and pricing signals but not audited financials, management accounts, backlog or AR aging.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.A-FIND-1
+            finding: Public sources verify funding and pricing signals but not audited financials, management accounts, backlog or AR aging.
+            evidence_claim_ids: &a1
+              - EC-024
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - Valuation step-up and financial quality opacity
+          - Usage-based pricing and gross-margin sensitivity
+        evidence_gaps:
+          - Private data-room evidence required for checklist I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Annual and quarterly financial information for the past three years.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids: *a1
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Pricing mechanics and growth signals are visible; projections, business predictability and external financing assumptions are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-FIND-1
+            finding: Pricing mechanics and growth signals are visible; projections, business predictability and external financing assumptions are private.
+            evidence_claim_ids: &a2
+              - EC-005
+              - EC-024
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Usage-based pricing and gross-margin sensitivity
+        evidence_gaps:
+          - Private data-room evidence required for checklist I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Financial Projections.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public eligibility suggests a privately held company; shareholder, option, warrant, debt and off-balance-sheet schedules are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.C-FIND-1
+            finding: Public eligibility suggests a privately held company; shareholder, option, warrant, debt and off-balance-sheet schedules are not public.
+            evidence_claim_ids: &a3
+              - EC-004
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Valuation step-up and financial quality opacity
+        evidence_gaps:
+          - Private data-room evidence required for checklist I.C.1, I.C.2, I.C.3, I.C.4, I.C.5 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Capital Structure.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a3
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: "Funding history is the strongest public financial evidence: $200M Series D snippet at $2B and company-announced $100M Series E at $5B pre-money."
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-FIND-1
+            finding: "Funding history is the strongest public financial evidence: $200M Series D snippet at $2B and company-announced $100M Series E at $5B pre-money."
+            evidence_claim_ids: &a4
+              - EC-002
+              - EC-003
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Valuation step-up and financial quality opacity
+        evidence_gaps:
+          - Private data-room evidence required for checklist I.D.1, I.D.2, I.D.3 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Other financial information.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids: *a4
+  - chapter_id: II
+    title: Products
+    chapter_summary: Product scope and pricing are public; margins, roadmap economics and production performance need company data.
+    founder_claim_ids:
+      - FC-003
+      - FC-005
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-016
+    risk_ids:
+      - R-002
+      - R-003
+      - R-009
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Supabase is publicly positioned as a Postgres development platform with database, auth, APIs, realtime, storage and edge functions; production-readiness guidance shows mature controls and customer responsibilities.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-FIND-1
+            finding: Supabase is publicly positioned as a Postgres development platform with database, auth, APIs, realtime, storage and edge functions; production-readiness guidance shows mature controls and customer responsibilities.
+            evidence_claim_ids: &a5
+              - EC-005
+              - EC-006
+              - EC-016
+            risk_ids:
+              - R-002
+              - R-003
+              - R-009
+        hidden_risks:
+          - Usage-based pricing and gross-margin sensitivity
+          - Technical roadmap complexity around Postgres storage and scale
+          - Shared-responsibility misconfiguration risk
+        evidence_gaps:
+          - Private data-room evidence required for checklist II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Description of each product.
+        table_ids:
+          - T-004
+          - T-005
+          - T-006
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a5
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Customer logos and cases are public; concentration, contracts, churn and supplier economics are not.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-024
+      - EC-017
+    risk_ids:
+      - R-006
+      - R-010
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Company-owned customer stories identify a broad set of logos and use cases, but top-15 customer revenue is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-FIND-1
+            finding: Company-owned customer stories identify a broad set of logos and use cases, but top-15 customer revenue is not public.
+            evidence_claim_ids: &a6
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Customer concentration and reference quality are unknown
+        evidence_gaps:
+          - Private data-room evidence required for checklist III.A where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Top customers by application.
+        table_ids:
+          - T-007
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a6
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public case studies and investor/customer ecosystem evidence indicate strategic relationships; contractual economics remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-FIND-1
+            finding: Public case studies and investor/customer ecosystem evidence indicate strategic relationships; contractual economics remain private.
+            evidence_claim_ids: &a7
+              - EC-010
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Customer concentration and reference quality are unknown
+        evidence_gaps:
+          - Private data-room evidence required for checklist III.B where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Strategic relationships.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids: *a7
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: No public customer revenue concentration, ARR contribution or 5% customer disclosure was found.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-FIND-1
+            finding: No public customer revenue concentration, ARR contribution or 5% customer disclosure was found.
+            evidence_claim_ids: &a8
+              - EC-024
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Customer concentration and reference quality are unknown
+        evidence_gaps:
+          - Private data-room evidence required for checklist III.C where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Revenue by customer.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No public evidence of severed major customer or supplier relationships was found; requires management certification.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-FIND-1
+            finding: No public evidence of severed major customer or supplier relationships was found; requires management certification.
+            evidence_claim_ids: &a9
+              - EC-024
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Customer concentration and reference quality are unknown
+        evidence_gaps:
+          - Private data-room evidence required for checklist III.D where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Significant relationships severed within the last two years.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a9
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: AWS-region documentation indicates a material cloud infrastructure dependency; supplier spend and contract terms are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-FIND-1
+            finding: AWS-region documentation indicates a material cloud infrastructure dependency; supplier spend and contract terms are private.
+            evidence_claim_ids: &a10
+              - EC-017
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Cloud-region and infrastructure dependency
+        evidence_gaps:
+          - Private data-room evidence required for checklist III.E where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Top suppliers.
+        table_ids:
+          - T-009
+        figure_ids: []
+        evidence_claim_ids: *a10
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Competitive position is credible but crowded; win/loss and market share are not public.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-025
+    risk_ids:
+      - R-005
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Supabase competes in developer backend/database platforms against cloud, open-source and Firebase-like alternatives; positioning rests on Postgres/open-source/developer experience.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-FIND-1
+            finding: Supabase competes in developer backend/database platforms against cloud, open-source and Firebase-like alternatives; positioning rests on Postgres/open-source/developer experience.
+            evidence_claim_ids: &a11
+              - EC-025
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Developer-community claims may not convert into paid revenue
+        evidence_gaps:
+          - Private data-room evidence required for checklist IV.A.1, IV.A.2 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Competitive landscape by market segment.
+        table_ids:
+          - T-010
+          - T-011
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a11
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: GTM appears product-led and community-driven; CAC, conversion and sales productivity are not public.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-008
+      - EC-026
+      - EC-009
+      - EC-010
+      - EC-024
+    risk_ids:
+      - R-005
+      - R-006
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: "Marketing signal is developer-led: free tier, open-source repo, docs, customer stories, community and launch/blog content."
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-FIND-1
+            finding: "Marketing signal is developer-led: free tier, open-source repo, docs, customer stories, community and launch/blog content."
+            evidence_claim_ids: &a12
+              - EC-008
+              - EC-026
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Developer-community claims may not convert into paid revenue
+        evidence_gaps:
+          - Private data-room evidence required for checklist V.A.1, V.A.2, V.A.3, V.A.4 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Strategy and implementation.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a12
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major-customer trends are visible only through selected customer stories; pipeline and expansion metrics are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-FIND-1
+            finding: Major-customer trends are visible only through selected customer stories; pipeline and expansion metrics are private.
+            evidence_claim_ids: &a13
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Customer concentration and reference quality are unknown
+        evidence_gaps:
+          - Private data-room evidence required for checklist V.B.1, V.B.2, V.B.3 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Major Customers.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a13
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Principal new-business avenues appear to be PLG/free tier, GitHub/community, docs/blog/customer stories and enterprise sales.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-FIND-1
+            finding: Principal new-business avenues appear to be PLG/free tier, GitHub/community, docs/blog/customer stories and enterprise sales.
+            evidence_claim_ids: &a14
+              - EC-026
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Developer-community claims may not convert into paid revenue
+        evidence_gaps:
+          - Private data-room evidence required for checklist V.C where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Principal avenues for generating new business.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids: *a14
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales compensation, quotas, cycle length and salesforce productivity are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-FIND-1
+            finding: Sales compensation, quotas, cycle length and salesforce productivity are not public.
+            evidence_claim_ids: &a15
+              - EC-024
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Developer-community claims may not convert into paid revenue
+        evidence_gaps:
+          - Private data-room evidence required for checklist V.D.1, V.D.2, V.D.3, V.D.4 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Sales force productivity model.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a15
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Marketing budget sufficiency cannot be assessed publicly beyond fundraising and hiring signals.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-FIND-1
+            finding: Marketing budget sufficiency cannot be assessed publicly beyond fundraising and hiring signals.
+            evidence_claim_ids: &a16
+              - EC-024
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Developer-community claims may not convert into paid revenue
+        evidence_gaps:
+          - Private data-room evidence required for checklist V.E where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Ability to implement marketing plan with current and projected budgets.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: R&D and open-source activity are strong; roadmap delivery risk needs engineering diligence.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-007
+      - EC-023
+      - EC-014
+    risk_ids:
+      - R-004
+      - R-003
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Open-source repositories, verified GitHub organization, public contributors and careers claims show a large technical organization and community.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-FIND-1
+            finding: Open-source repositories, verified GitHub organization, public contributors and careers claims show a large technical organization and community.
+            evidence_claim_ids: &a17
+              - EC-007
+              - EC-023
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Open-source governance and issue backlog
+        evidence_gaps:
+          - Private data-room evidence required for checklist VI.A.1, VI.A.2, VI.A.3 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Description of R&D organization.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a17
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public R&D agenda includes Oriole/Postgres storage work, scale and open-source initiatives; budget/timing milestones are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-FIND-1
+            finding: Public R&D agenda includes Oriole/Postgres storage work, scale and open-source initiatives; budget/timing milestones are private.
+            evidence_claim_ids: &a18
+              - EC-014
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Technical roadmap complexity around Postgres storage and scale
+        evidence_gaps:
+          - Private data-room evidence required for checklist VI.B.1, VI.B.2, VI.B.3, VI.B.4 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to New Product Pipeline.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a18
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Founder, remote and headcount signals are public; full HR, compensation and turnover data are private.
+    founder_claim_ids:
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-013
+      - EC-011
+      - EC-012
+      - EC-001
+      - EC-027
+      - EC-024
+    risk_ids:
+      - R-008
+      - R-007
+      - R-001
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: The company is distributed/remote with public founder evidence; complete org chart reporting lines are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-FIND-1
+            finding: The company is distributed/remote with public founder evidence; complete org chart reporting lines are private.
+            evidence_claim_ids: &a19
+              - EC-013
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Remote global operating compliance
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.A where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Organization Chart.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids: *a19
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public headcount anchors include 280+ team members, 55+ countries and 357 LinkedIn employees; function/location breakout is private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-FIND-1
+            finding: Public headcount anchors include 280+ team members, 55+ countries and 357 LinkedIn employees; function/location breakout is private.
+            evidence_claim_ids: &a20
+              - EC-011
+              - EC-012
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Rapid distributed hiring and people-process scaling
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.B where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Historical and projected headcount by function and location.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a20
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: YC verifies founders Paul Copplestone and Ant Wilson; complete senior-management biographies and tenure should be collected.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-FIND-1
+            finding: YC verifies founders Paul Copplestone and Ant Wilson; complete senior-management biographies and tenure should be collected.
+            evidence_claim_ids: &a21
+              - EC-001
+              - EC-027
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Rapid distributed hiring and people-process scaling
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.C where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Senior management biographies.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a21
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Employment agreements, benefits cost and executive compensation are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-FIND-1
+            finding: Employment agreements, benefits cost and executive compensation are not public.
+            evidence_claim_ids: &a22
+              - EC-027
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Rapid distributed hiring and people-process scaling
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.D.1, VII.D.2 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Compensation arrangements.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a22
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Employee secondary statement indicates equity liquidity practices, but stock-plan terms and dilution are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-FIND-1
+            finding: Employee secondary statement indicates equity liquidity practices, but stock-plan terms and dilution are private.
+            evidence_claim_ids: &a23
+              - EC-027
+            risk_ids:
+              - R-001
+              - R-007
+        hidden_risks:
+          - Valuation step-up and financial quality opacity
+          - Rapid distributed hiring and people-process scaling
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.E where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Incentive stock plans.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No public employee-relations problems were identified in this standard screen.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-FIND-1
+            finding: No public employee-relations problems were identified in this standard screen.
+            evidence_claim_ids: &a24
+              - EC-024
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Rapid distributed hiring and people-process scaling
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.F where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Significant employee relations problems, past or present.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a24
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Public turnover rates are not available; rapid distributed growth warrants retention diligence.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.G-FIND-1
+            finding: Public turnover rates are not available; rapid distributed growth warrants retention diligence.
+            evidence_claim_ids: &a25
+              - EC-027
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Rapid distributed hiring and people-process scaling
+        evidence_gaps:
+          - Private data-room evidence required for checklist VII.G.1, VII.G.2 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Personnel Turnover.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids: *a25
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal terms and IP snippets exist; litigation, insurance, contracts and regulatory history need counsel review.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-019
+      - EC-020
+      - EC-024
+      - EC-021
+      - EC-018
+      - EC-015
+      - EC-022
+    risk_ids:
+      - R-012
+      - R-008
+      - R-013
+      - R-014
+      - R-011
+      - R-009
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Public web search did not surface a clear pending lawsuit against Supabase, but this is inconclusive without docket searches.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-FIND-1
+            finding: Public web search did not surface a clear pending lawsuit against Supabase, but this is inconclusive without docket searches.
+            evidence_claim_ids: &a26
+              - EC-019
+            risk_ids:
+              - R-012
+        hidden_risks:
+          - Litigation search incompleteness
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.A where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Pending lawsuits against the Company.
+        table_ids:
+          - T-019
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a26
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Public web search did not surface clear plaintiff-side litigation by Supabase, but counsel confirmation is required.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-FIND-1
+            finding: Public web search did not surface clear plaintiff-side litigation by Supabase, but counsel confirmation is required.
+            evidence_claim_ids: &a27
+              - EC-020
+            risk_ids:
+              - R-012
+        hidden_risks:
+          - Litigation search incompleteness
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.B where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Pending lawsuits initiated by Company.
+        table_ids:
+          - T-020
+        figure_ids: []
+        evidence_claim_ids: *a27
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: No environmental or workplace-safety liabilities are public; remote/software profile lowers but does not eliminate employment-safety compliance needs.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-FIND-1
+            finding: No environmental or workplace-safety liabilities are public; remote/software profile lowers but does not eliminate employment-safety compliance needs.
+            evidence_claim_ids: &a28
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Remote global operating compliance
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.C.1, VIII.C.2 where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Environmental and employee safety issues and liabilities.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a28
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Trademark snippets show Supabase-related records; official trademark and open-source IP chain require counsel review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-FIND-1
+            finding: Trademark snippets show Supabase-related records; official trademark and open-source IP chain require counsel review.
+            evidence_claim_ids: &a29
+              - EC-021
+            risk_ids:
+              - R-013
+        hidden_risks:
+          - Trademark chain and brand protection
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.D where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Material patents, copyrights, licenses, and trademarks.
+        table_ids:
+          - T-021
+        figure_ids: []
+        evidence_claim_ids: *a29
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance limits, exclusions, cyber coverage and claims history are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-FIND-1
+            finding: Insurance limits, exclusions, cyber coverage and claims history are not public.
+            evidence_claim_ids: &a30
+              - EC-024
+            risk_ids:
+              - R-014
+        hidden_risks:
+          - Reliability/SLA exposure
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.E where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Insurance coverage and material exposures.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a30
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material customer, cloud, investor, acquisition and employment contracts are not public; DPA provides only standard public legal terms.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.F-FIND-1
+            finding: Material customer, cloud, investor, acquisition and employment contracts are not public; DPA provides only standard public legal terms.
+            evidence_claim_ids: &a31
+              - EC-018
+            risk_ids:
+              - R-011
+        hidden_risks:
+          - Privacy and data-processing obligations
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.F where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a31
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Public docs/DPA/status materials verify privacy, shared-responsibility and operational obligations; agency-action history remains unverified by comprehensive regulator search.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-FIND-1
+            finding: Public docs/DPA/status materials verify privacy, shared-responsibility and operational obligations; agency-action history remains unverified by comprehensive regulator search.
+            evidence_claim_ids: &a32
+              - EC-015
+              - EC-018
+              - EC-022
+            risk_ids:
+              - R-009
+              - R-011
+              - R-014
+        hidden_risks:
+          - Shared-responsibility misconfiguration risk
+          - Privacy and data-processing obligations
+          - Reliability/SLA exposure
+        evidence_gaps:
+          - Private data-room evidence required for checklist VIII.G where public sources are silent.
+        follow_up_questions:
+          - Provide company-certified materials responsive to Regulatory agency problems.
+        table_ids:
+          - T-022
+        figure_ids:
+          - F-010
+          - F-011
+        evidence_claim_ids: *a32
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize externally observable financing trajectory.
+    columns:
+      - name: date
+        description: date
+      - name: round
+        description: round
+      - name: amount
+        description: amount
+      - name: valuation
+        description: valuation
+      - name: lead_or_participants
+        description: lead_or_participants
+      - name: verification
+        description: verification
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2025-04-22
+          round: Series D
+          amount: $200M
+          valuation: $2B
+          lead_or_participants: Not fetched; Fortune/Yahoo snippet only
+          verification: partially_verified
+          evidence_claim_ids: &a33
+            - EC-003
+          source_ids: &a34
+            - SRC-016
+        evidence_claim_ids: *a33
+        source_ids: *a34
+      - row_id: T-001-R2
+        values:
+          date: 2025-10-03
+          round: Series E
+          amount: $100M
+          valuation: $5B pre-money
+          lead_or_participants: Accel and Peak XV led; Figma joined; YC, Coatue, Felicis, Craft, Square Peg existing investors
+          verification: verified
+          evidence_claim_ids: &a35
+            - EC-002
+          source_ids: &a36
+            - SRC-002
+            - SRC-015
+        evidence_claim_ids: *a35
+        source_ids: *a36
+      - row_id: T-001-R3
+        values:
+          date: pre-2025
+          round: Prior rounds
+          amount: Not itemized publicly in this screen
+          valuation: not_publicly_verifiable
+          lead_or_participants: YC and other existing investors referenced
+          verification: not_publicly_verifiable
+          evidence_claim_ids: &a37
+            - EC-024
+          source_ids: &a38
+            - SRC-002
+        evidence_claim_ids: *a37
+        source_ids: *a38
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-024
+    source_ids:
+      - SRC-002
+      - SRC-015
+      - SRC-016
+    notes: null
+  - table_id: T-002
+    title: Public capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Frame known stakeholders and missing cap-table details.
+    columns:
+      - name: stakeholder
+        description: stakeholder
+      - name: public_position
+        description: public_position
+      - name: evidence
+        description: evidence
+      - name: diligence_caveat
+        description: diligence_caveat
+    rows:
+      - row_id: T-002-R1
+        values:
+          stakeholder: Accel / Peak XV
+          public_position: Series E lead investors
+          evidence: Company Series E blog
+          diligence_caveat: Share class, liquidation preference, board rights and ownership percent private
+          evidence_claim_ids: &a39
+            - EC-002
+          source_ids: &a40
+            - SRC-002
+        evidence_claim_ids: *a39
+        source_ids: *a40
+      - row_id: T-002-R2
+        values:
+          stakeholder: Figma
+          public_position: Joined Series E
+          evidence: Company Series E blog
+          diligence_caveat: Strategic rights or commercial agreements unknown
+          evidence_claim_ids: &a41
+            - EC-002
+          source_ids: &a42
+            - SRC-002
+        evidence_claim_ids: *a41
+        source_ids: *a42
+      - row_id: T-002-R3
+        values:
+          stakeholder: Employees
+          public_position: Eligible for recurring secondary sale of 25% of vested stock per round per company blog
+          evidence: Company Series E blog
+          diligence_caveat: Plan documents, option pool and tender terms private
+          evidence_claim_ids: &a43
+            - EC-002
+          source_ids: &a44
+            - SRC-002
+        evidence_claim_ids: *a43
+        source_ids: *a44
+      - row_id: T-002-R4
+        values:
+          stakeholder: Public market investors
+          public_position: None observed
+          evidence: LinkedIn Privately Held; YC Active
+          diligence_caveat: Confirm no confidential IPO/acquisition process
+          evidence_claim_ids: &a45
+            - EC-004
+          source_ids: &a46
+            - SRC-001
+            - SRC-008
+        evidence_claim_ids: *a45
+        source_ids: *a46
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-008
+    notes: null
+  - table_id: T-003
+    title: Public revenue, ARR and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate observable monetization signals from private financial metrics.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public_signal
+      - name: verification_status
+        description: verification_status
+      - name: private_request
+        description: private_request
+    rows:
+      - row_id: T-003-R1
+        values:
+          metric: ARR / revenue
+          public_signal: Not disclosed in public sources reviewed
+          verification_status: not_publicly_verifiable
+          private_request: Audited financials, ARR by month and revenue recognition memo
+          evidence_claim_ids: &a47
+            - EC-024
+          source_ids: &a48
+            - SRC-002
+            - SRC-003
+        evidence_claim_ids: *a47
+        source_ids: *a48
+      - row_id: T-003-R2
+        values:
+          metric: Pricing
+          public_signal: Free, Pro $25+, Team $599+, Enterprise custom
+          verification_status: verified
+          private_request: Actual ACV, discounting and overage revenue by cohort
+          evidence_claim_ids: &a49
+            - EC-005
+          source_ids: &a50
+            - SRC-003
+        evidence_claim_ids: *a49
+        source_ids: *a50
+      - row_id: T-003-R3
+        values:
+          metric: Gross margin / COGS
+          public_signal: Compute and egress pricing exposed publicly; realized COGS not disclosed
+          verification_status: not_publicly_verifiable
+          private_request: Cloud spend, support cost, gross margin by product and customer
+          evidence_claim_ids: &a51
+            - EC-005
+            - EC-024
+          source_ids: &a52
+            - SRC-003
+        evidence_claim_ids: *a51
+        source_ids: *a52
+      - row_id: T-003-R4
+        values:
+          metric: Backlog / AR aging
+          public_signal: No public disclosure
+          verification_status: not_publicly_verifiable
+          private_request: Backlog, deferred revenue and AR aging schedules
+          evidence_claim_ids: &a53
+            - EC-024
+          source_ids: &a54
+            - SRC-004
+        evidence_claim_ids: *a53
+        source_ids: *a54
+    evidence_claim_ids:
+      - EC-005
+      - EC-024
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-004
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product components to buyer/use-case evidence.
+    columns:
+      - name: product_or_module
+        description: product_or_module
+      - name: audience
+        description: audience
+      - name: public_features
+        description: public_features
+      - name: evidence_status
+        description: evidence_status
+    rows:
+      - row_id: T-004-R1
+        values:
+          product_or_module: Postgres database platform
+          audience: Developers / teams
+          public_features: Dedicated/isolated Postgres clusters and database setup
+          evidence_status: verified
+          evidence_claim_ids: &a55
+            - EC-006
+          source_ids: &a56
+            - SRC-001
+            - SRC-008
+        evidence_claim_ids: *a55
+        source_ids: *a56
+      - row_id: T-004-R2
+        values:
+          product_or_module: Authentication and user management
+          audience: App developers
+          public_features: Authentication, RLS guidance, MFA/production controls
+          evidence_status: verified
+          evidence_claim_ids: &a57
+            - EC-006
+            - EC-016
+          source_ids: &a58
+            - SRC-001
+            - SRC-012
+        evidence_claim_ids: *a57
+        source_ids: *a58
+      - row_id: T-004-R3
+        values:
+          product_or_module: Realtime, APIs, Storage, Edge Functions
+          audience: Web/mobile/AI apps
+          public_features: Realtime subscriptions/streams, instant APIs, storage and edge functions
+          evidence_status: verified
+          evidence_claim_ids: &a59
+            - EC-006
+            - EC-009
+          source_ids: &a60
+            - SRC-008
+            - SRC-009
+        evidence_claim_ids: *a59
+        source_ids: *a60
+      - row_id: T-004-R4
+        values:
+          product_or_module: Enterprise platform features
+          audience: Enterprise teams
+          public_features: SSO, SLAs, 24x7x365 support, compliance and custom security questionnaires
+          evidence_status: verified
+          evidence_claim_ids: &a61
+            - EC-005
+          source_ids: &a62
+            - SRC-003
+        evidence_claim_ids: *a61
+        source_ids: *a62
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-016
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-008
+      - SRC-012
+    notes: null
+  - table_id: T-005
+    title: Pricing and packaging comparison across tiers
+    chapter_id: II
+    section_id: II.A
+    purpose: Assess monetization ladder and enterprise upsell.
+    columns:
+      - name: tier
+        description: tier
+      - name: monthly_price
+        description: monthly_price
+      - name: included_or_highlighted_features
+        description: included_or_highlighted_features
+      - name: diligence_note
+        description: diligence_note
+    rows:
+      - row_id: T-005-R1
+        values:
+          tier: Free
+          monthly_price: $0
+          included_or_highlighted_features: 50k MAU, 500MB database, 5GB egress, community support
+          diligence_note: PLG acquisition; cost of free users must be measured
+          evidence_claim_ids: &a63
+            - EC-005
+          source_ids: &a64
+            - SRC-003
+        evidence_claim_ids: *a63
+        source_ids: *a64
+      - row_id: T-005-R2
+        values:
+          tier: Pro
+          monthly_price: From $25
+          included_or_highlighted_features: 100k MAU, 8GB disk, 250GB egress, email support, 7-day backups/logs
+          diligence_note: Usage overages can drive ARPU and bill shock risk
+          evidence_claim_ids: &a65
+            - EC-005
+          source_ids: &a66
+            - SRC-003
+        evidence_claim_ids: *a65
+        source_ids: *a66
+      - row_id: T-005-R3
+        values:
+          tier: Team
+          monthly_price: From $599
+          included_or_highlighted_features: SOC2/ISO, SSO, priority support, 14-day backups, 28-day logs, HIPAA add-on
+          diligence_note: Compliance monetization signal; attach rate not public
+          evidence_claim_ids: &a67
+            - EC-005
+          source_ids: &a68
+            - SRC-003
+        evidence_claim_ids: *a67
+        source_ids: *a68
+      - row_id: T-005-R4
+        values:
+          tier: Enterprise
+          monthly_price: Custom
+          included_or_highlighted_features: Designated support, uptime SLAs, BYO cloud, 24x7x365 support, private Slack
+          diligence_note: Enterprise contract terms and SLA credit exposure private
+          evidence_claim_ids: &a69
+            - EC-005
+          source_ids: &a70
+            - SRC-003
+        evidence_claim_ids: *a69
+        source_ids: *a70
+    evidence_claim_ids:
+      - EC-005
+    source_ids:
+      - SRC-003
+    notes: null
+  - table_id: T-006
+    title: Product maturity and production-readiness controls
+    chapter_id: II
+    section_id: II.A
+    purpose: Identify technical controls and user-side responsibilities.
+    columns:
+      - name: control_area
+        description: control_area
+      - name: public_guidance
+        description: public_guidance
+      - name: risk_if_weak
+        description: risk_if_weak
+      - name: verification
+        description: verification
+    rows:
+      - row_id: T-006-R1
+        values:
+          control_area: Data access
+          public_guidance: Enable RLS and policies
+          risk_if_weak: Customer data exposure through misconfiguration
+          verification: verified
+          evidence_claim_ids: &a71
+            - EC-015
+            - EC-016
+          source_ids: &a72
+            - SRC-011
+            - SRC-012
+        evidence_claim_ids: *a71
+        source_ids: *a72
+      - row_id: T-006-R2
+        values:
+          control_area: Network/security
+          public_guidance: SSL enforcement, network restrictions, MFA
+          risk_if_weak: Unauthorized access or weak account controls
+          verification: verified
+          evidence_claim_ids: &a73
+            - EC-016
+          source_ids: &a74
+            - SRC-012
+        evidence_claim_ids: *a73
+        source_ids: *a74
+      - row_id: T-006-R3
+        values:
+          control_area: Performance
+          public_guidance: Indexes, load testing, resources
+          risk_if_weak: Production outage or degraded application performance
+          verification: verified
+          evidence_claim_ids: &a75
+            - EC-016
+          source_ids: &a76
+            - SRC-012
+        evidence_claim_ids: *a75
+        source_ids: *a76
+      - row_id: T-006-R4
+        values:
+          control_area: Shared responsibility
+          public_guidance: Customer responsible for data/schema/access/security controls
+          risk_if_weak: Support/reputation risk despite customer fault
+          verification: verified
+          evidence_claim_ids: &a77
+            - EC-015
+          source_ids: &a78
+            - SRC-011
+        evidence_claim_ids: *a77
+        source_ids: *a78
+    evidence_claim_ids:
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-011
+      - SRC-012
+    notes: null
+  - table_id: T-007
+    title: Publicly known customers and case studies
+    chapter_id: III
+    section_id: III.A
+    purpose: Capture named public users and disclosed outcomes.
+    columns:
+      - name: customer
+        description: customer
+      - name: use_case_or_outcome
+        description: use_case_or_outcome
+      - name: source_quality
+        description: source_quality
+      - name: revenue_verified
+        description: revenue_verified
+    rows:
+      - row_id: T-007-R1
+        values:
+          customer: Udio
+          use_case_or_outcome: AI music platform scaling/support collaboration
+          source_quality: Supabase/customer-story snippet
+          revenue_verified: No
+          evidence_claim_ids: &a79
+            - EC-010
+          source_ids: &a80
+            - SRC-017
+        evidence_claim_ids: *a79
+        source_ids: *a80
+      - row_id: T-007-R2
+        values:
+          customer: eXp Realty
+          use_case_or_outcome: 2,000+ non-technical employees build production software; replacing millions in SaaS contracts per snippet
+          source_quality: Supabase/customer-story snippet
+          revenue_verified: No
+          evidence_claim_ids: &a81
+            - EC-010
+          source_ids: &a82
+            - SRC-018
+        evidence_claim_ids: *a81
+        source_ids: *a82
+      - row_id: T-007-R3
+        values:
+          customer: Kayhan Space
+          use_case_or_outcome: Satcat space-operator tooling; 8x developer-speed improvement per snippet
+          source_quality: Supabase/customer-story snippet
+          revenue_verified: No
+          evidence_claim_ids: &a83
+            - EC-010
+          source_ids: &a84
+            - SRC-019
+        evidence_claim_ids: *a83
+        source_ids: *a84
+      - row_id: T-007-R4
+        values:
+          customer: Phoenix Energy
+          use_case_or_outcome: Full-stack migration from MongoDB ahead of deadline with zero downtime per snippet
+          source_quality: Supabase/customer-story snippet
+          revenue_verified: No
+          evidence_claim_ids: &a85
+            - EC-010
+          source_ids: &a86
+            - SRC-020
+        evidence_claim_ids: *a85
+        source_ids: *a86
+      - row_id: T-007-R5
+        values:
+          customer: Other listed logos
+          use_case_or_outcome: Chatbase, Brevo, GovSignals, Rally, Deriv, Resend and others on customer index
+          source_quality: Company marketing index
+          revenue_verified: No
+          evidence_claim_ids: &a87
+            - EC-009
+          source_ids: &a88
+            - SRC-004
+        evidence_claim_ids: *a87
+        source_ids: *a88
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-004
+      - SRC-017
+      - SRC-018
+      - SRC-019
+      - SRC-020
+    notes: null
+  - table_id: T-008
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify ecosystem parties with potential strategic value.
+    columns:
+      - name: relationship
+        description: relationship
+      - name: nature
+        description: nature
+      - name: public_evidence
+        description: public_evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-008-R1
+        values:
+          relationship: Figma
+          nature: Series E strategic/financial investor
+          public_evidence: Figma joined Series E
+          gap: Commercial terms or product integration not disclosed
+          evidence_claim_ids: &a89
+            - EC-002
+          source_ids: &a90
+            - SRC-002
+        evidence_claim_ids: *a89
+        source_ids: *a90
+      - row_id: T-008-R2
+        values:
+          relationship: Open-source communities
+          nature: Postgres, PostgREST, pgvector, Deno, Phoenix/imgproxy ecosystem alignment
+          public_evidence: 100k stars blog credits communities/tools
+          gap: Sponsorship/maintainer contracts not fully public
+          evidence_claim_ids: &a91
+            - EC-008
+          source_ids: &a92
+            - SRC-009
+        evidence_claim_ids: *a91
+        source_ids: *a92
+      - row_id: T-008-R3
+        values:
+          relationship: YC / Accel / Peak XV / existing investors
+          nature: Capital and network
+          public_evidence: Series E blog and YC profile
+          gap: Governance rights and investor support not public
+          evidence_claim_ids: &a93
+            - EC-001
+            - EC-002
+          source_ids: &a94
+            - SRC-001
+            - SRC-002
+        evidence_claim_ids: *a93
+        source_ids: *a94
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-008
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-009
+    notes: null
+  - table_id: T-009
+    title: Top supplier / infrastructure dependency snapshot
+    chapter_id: III
+    section_id: III.E
+    purpose: Structure known infrastructure dependencies.
+    columns:
+      - name: supplier_or_dependency
+        description: supplier_or_dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public_evidence
+      - name: concentration_risk
+        description: concentration_risk
+    rows:
+      - row_id: T-009-R1
+        values:
+          supplier_or_dependency: AWS regions
+          role: Project deployment regions
+          public_evidence: Docs list AWS regions and one primary region per project
+          concentration_risk: High if cloud terms/outages/data residency not managed
+          evidence_claim_ids: &a95
+            - EC-017
+          source_ids: &a96
+            - SRC-013
+        evidence_claim_ids: *a95
+        source_ids: *a96
+      - row_id: T-009-R2
+        values:
+          supplier_or_dependency: OAuth/SAML/SMTP/SMS/external APIs
+          role: Customer integrations
+          public_evidence: Shared responsibility docs reference these third-party services
+          concentration_risk: Customer integration outages can affect projects
+          evidence_claim_ids: &a97
+            - EC-015
+          source_ids: &a98
+            - SRC-011
+        evidence_claim_ids: *a97
+        source_ids: *a98
+      - row_id: T-009-R3
+        values:
+          supplier_or_dependency: Open-source components
+          role: Platform foundation
+          public_evidence: Postgres, PostgREST, pgvector, Deno and Phoenix cited by company blog
+          concentration_risk: License/security/maintainer risk; open-source governance required
+          evidence_claim_ids: &a99
+            - EC-008
+          source_ids: &a100
+            - SRC-009
+        evidence_claim_ids: *a99
+        source_ids: *a100
+    evidence_claim_ids:
+      - EC-015
+      - EC-017
+    source_ids:
+      - SRC-011
+      - SRC-013
+    notes: null
+  - table_id: T-010
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare Supabase with major platform alternatives.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: product_overlap
+        description: product_overlap
+      - name: supabase_differentiator
+        description: supabase_differentiator
+      - name: evidence_basis
+        description: evidence_basis
+    rows:
+      - row_id: T-010-R1
+        values:
+          competitor: Firebase / Google Cloud
+          segment: Backend-as-a-service
+          product_overlap: Auth, database, functions, storage
+          supabase_differentiator: Open-source and Postgres-first positioning
+          evidence_basis: Supabase product/GitHub/pricing evidence; competitor details analyst judgment
+          evidence_claim_ids: &a101
+            - EC-025
+          source_ids: &a102
+            - SRC-003
+            - SRC-005
+            - SRC-009
+        evidence_claim_ids: *a101
+        source_ids: *a102
+      - row_id: T-010-R2
+        values:
+          competitor: Neon
+          segment: Serverless Postgres
+          product_overlap: Managed Postgres developer database
+          supabase_differentiator: Broader app-backend suite and community
+          evidence_basis: Analyst market comparison
+          evidence_claim_ids: &a103
+            - EC-025
+          source_ids: &a104
+            - SRC-003
+            - SRC-009
+        evidence_claim_ids: *a103
+        source_ids: *a104
+      - row_id: T-010-R3
+        values:
+          competitor: PlanetScale / cloud databases
+          segment: Developer databases
+          product_overlap: Managed database workflows
+          supabase_differentiator: Postgres app platform vs database-only
+          evidence_basis: Analyst market comparison
+          evidence_claim_ids: &a105
+            - EC-025
+          source_ids: &a106
+            - SRC-003
+            - SRC-009
+        evidence_claim_ids: *a105
+        source_ids: *a106
+      - row_id: T-010-R4
+        values:
+          competitor: AWS/GCP/Azure native services
+          segment: Hyperscale cloud
+          product_overlap: Databases, auth, storage, functions
+          supabase_differentiator: Integrated developer experience and open-source community
+          evidence_basis: Supabase docs/pricing plus analyst judgment
+          evidence_claim_ids: &a107
+            - EC-025
+          source_ids: &a108
+            - SRC-003
+            - SRC-011
+        evidence_claim_ids: *a107
+        source_ids: *a108
+    evidence_claim_ids:
+      - EC-025
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-009
+    notes: null
+  - table_id: T-011
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Rate competition dimensions from public evidence.
+    columns:
+      - name: axis
+        description: axis
+      - name: supabase_position
+        description: supabase_position
+      - name: risk_or_gap
+        description: risk_or_gap
+      - name: evidence
+        description: evidence
+    rows:
+      - row_id: T-011-R1
+        values:
+          axis: Developer experience
+          supabase_position: Strong public signal from GitHub/community and product-led packaging
+          risk_or_gap: Needs paid conversion evidence
+          evidence: 102k+ stars; free tier; docs/blog
+          evidence_claim_ids: &a109
+            - EC-007
+            - EC-026
+          source_ids: &a110
+            - SRC-003
+            - SRC-005
+            - SRC-009
+        evidence_claim_ids: *a109
+        source_ids: *a110
+      - row_id: T-011-R2
+        values:
+          axis: Enterprise readiness
+          supabase_position: Improving with Team/Enterprise, SOC2/ISO mention and support tiers
+          risk_or_gap: Enterprise NRR/SLA outcomes private
+          evidence: Pricing page
+          evidence_claim_ids: &a111
+            - EC-005
+          source_ids: &a112
+            - SRC-003
+        evidence_claim_ids: *a111
+        source_ids: *a112
+      - row_id: T-011-R3
+        values:
+          axis: Technical defensibility
+          supabase_position: Open-source Postgres alignment plus Oriole R&D
+          risk_or_gap: Open source also lowers switching barriers
+          evidence: Oriole and product principles
+          evidence_claim_ids: &a113
+            - EC-014
+            - EC-025
+          source_ids: &a114
+            - SRC-010
+            - SRC-009
+        evidence_claim_ids: *a113
+        source_ids: *a114
+      - row_id: T-011-R4
+        values:
+          axis: Scale/reliability
+          supabase_position: Production checklist and status page support maturity
+          risk_or_gap: Incident history not public
+          evidence: Docs/status snippet
+          evidence_claim_ids: &a115
+            - EC-016
+            - EC-022
+          source_ids: &a116
+            - SRC-012
+            - SRC-023
+        evidence_claim_ids: *a115
+        source_ids: *a116
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-014
+      - EC-016
+      - EC-022
+      - EC-025
+      - EC-026
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-009
+      - SRC-010
+      - SRC-012
+      - SRC-023
+    notes: null
+  - table_id: T-012
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.C
+    purpose: Assess how Supabase appears to generate demand.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public_evidence
+      - name: likely_role
+        description: likely_role
+      - name: missing_metric
+        description: missing_metric
+    rows:
+      - row_id: T-012-R1
+        values:
+          channel: Free tier / PLG
+          public_evidence: Free plan with MAU/database limits
+          likely_role: Acquisition and activation
+          missing_metric: Free-to-paid conversion
+          evidence_claim_ids: &a117
+            - EC-005
+            - EC-026
+          source_ids: &a118
+            - SRC-003
+        evidence_claim_ids: *a117
+        source_ids: *a118
+      - row_id: T-012-R2
+        values:
+          channel: Open-source GitHub
+          public_evidence: 102,786 stars and Apache-2.0 repo
+          likely_role: Developer trust and adoption
+          missing_metric: GitHub-to-signup conversion
+          evidence_claim_ids: &a119
+            - EC-007
+            - EC-026
+          source_ids: &a120
+            - SRC-005
+        evidence_claim_ids: *a119
+        source_ids: *a120
+      - row_id: T-012-R3
+        values:
+          channel: Community/content
+          public_evidence: 540k+ community and 100k-star blog; docs/blog
+          likely_role: Education and retention
+          missing_metric: Content attribution/CAC
+          evidence_claim_ids: &a121
+            - EC-008
+            - EC-011
+            - EC-026
+          source_ids: &a122
+            - SRC-007
+            - SRC-009
+        evidence_claim_ids: *a121
+        source_ids: *a122
+      - row_id: T-012-R4
+        values:
+          channel: Enterprise sales
+          public_evidence: Enterprise custom plan, designated support, SLAs, private Slack
+          likely_role: Large ACV expansion
+          missing_metric: Quota, sales cycle, pipeline coverage
+          evidence_claim_ids: &a123
+            - EC-005
+          source_ids: &a124
+            - SRC-003
+        evidence_claim_ids: *a123
+        source_ids: *a124
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-026
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-007
+      - SRC-009
+    notes: null
+  - table_id: T-013
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Convert public signals into diligence hypotheses.
+    columns:
+      - name: signal
+        description: signal
+      - name: observed_value
+        description: observed_value
+      - name: source
+        description: source
+      - name: diligence_interpretation
+        description: diligence_interpretation
+    rows:
+      - row_id: T-013-R1
+        values:
+          signal: GitHub stars
+          observed_value: 102,786 via API; 100,000 milestone blog
+          source: GitHub API / company blog
+          diligence_interpretation: Strong developer awareness; not revenue proof
+          evidence_claim_ids: &a125
+            - EC-007
+            - EC-008
+          source_ids: &a126
+            - SRC-005
+            - SRC-009
+        evidence_claim_ids: *a125
+        source_ids: *a126
+      - row_id: T-013-R2
+        values:
+          signal: Developers building
+          observed_value: 8 million company-reported
+          source: 100k stars blog
+          diligence_interpretation: Large top-of-funnel claim; require methodology
+          evidence_claim_ids: &a127
+            - EC-008
+          source_ids: &a128
+            - SRC-009
+        evidence_claim_ids: *a127
+        source_ids: *a128
+      - row_id: T-013-R3
+        values:
+          signal: Community members
+          observed_value: 540,000+
+          source: Careers page
+          diligence_interpretation: Community-led distribution; require active-member definition
+          evidence_claim_ids: &a129
+            - EC-011
+          source_ids: &a130
+            - SRC-007
+        evidence_claim_ids: *a129
+        source_ids: *a130
+      - row_id: T-013-R4
+        values:
+          signal: Customer stories
+          observed_value: Multiple named case studies
+          source: Customer index
+          diligence_interpretation: Logo/story evidence; validate references independently
+          evidence_claim_ids: &a131
+            - EC-009
+          source_ids: &a132
+            - SRC-004
+        evidence_claim_ids: *a131
+        source_ids: *a132
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-011
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-007
+      - SRC-009
+    notes: null
+  - table_id: T-014
+    title: Key R&D personnel and organization signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Summarize public R&D capacity signals without personal private data.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public_signal
+      - name: evidence_status
+        description: evidence_status
+      - name: diligence_need
+        description: diligence_need
+    rows:
+      - row_id: T-014-R1
+        values:
+          area: Founders
+          public_signal: Paul Copplestone and Ant Wilson listed as active founders by YC
+          evidence_status: verified
+          diligence_need: Full executive bios and technical leadership roles
+          evidence_claim_ids: &a133
+            - EC-001
+            - EC-027
+          source_ids: &a134
+            - SRC-001
+        evidence_claim_ids: *a133
+        source_ids: *a134
+      - row_id: T-014-R2
+        values:
+          area: Open-source org
+          public_signal: Verified GitHub org with 151 public repos and 10,127 followers
+          evidence_status: verified
+          diligence_need: Maintainer assignments and security-response process
+          evidence_claim_ids: &a135
+            - EC-023
+          source_ids: &a136
+            - SRC-006
+        evidence_claim_ids: *a135
+        source_ids: *a136
+      - row_id: T-014-R3
+        values:
+          area: Contributors
+          public_signal: Careers page claims 1,500+ contributors
+          evidence_status: verified
+          diligence_need: Contributor license and governance controls
+          evidence_claim_ids: &a137
+            - EC-011
+          source_ids: &a138
+            - SRC-007
+        evidence_claim_ids: *a137
+        source_ids: *a138
+      - row_id: T-014-R4
+        values:
+          area: Distributed team
+          public_signal: 280+ team members in 55+ countries
+          evidence_status: verified
+          diligence_need: Function-level R&D headcount and hiring plan
+          evidence_claim_ids: &a139
+            - EC-011
+          source_ids: &a140
+            - SRC-007
+        evidence_claim_ids: *a139
+        source_ids: *a140
+    evidence_claim_ids:
+      - EC-001
+      - EC-011
+      - EC-023
+      - EC-027
+    source_ids:
+      - SRC-001
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-015
+    title: Public product / research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Track public roadmap and R&D initiatives.
+    columns:
+      - name: initiative
+        description: initiative
+      - name: status
+        description: status
+      - name: public_goal
+        description: public_goal
+      - name: risk
+        description: risk
+    rows:
+      - row_id: T-015-R1
+        values:
+          initiative: OrioleDB / pluggable storage
+          status: Team joined Supabase in 2024
+          public_goal: Faster storage, pluggable storage, decoupled storage/compute
+          risk: Deep database engineering integration risk
+          evidence_claim_ids: &a141
+            - EC-014
+          source_ids: &a142
+            - SRC-010
+        evidence_claim_ids: *a141
+        source_ids: *a142
+      - row_id: T-015-R2
+        values:
+          initiative: Multigres
+          status: Mentioned in Series E hiring/open-source initiatives
+          public_goal: Scale Postgres to petabytes / Vitess-for-Postgres ambition
+          risk: Source page not fully fetched; milestones private
+          evidence_claim_ids: &a143
+            - EC-002
+          source_ids: &a144
+            - SRC-002
+        evidence_claim_ids: *a143
+        source_ids: *a144
+      - row_id: T-015-R3
+        values:
+          initiative: Platform production controls
+          status: Public docs available
+          public_goal: RLS, SSL, network restrictions, MFA, load testing
+          risk: Customer misconfiguration risk
+          evidence_claim_ids: &a145
+            - EC-016
+          source_ids: &a146
+            - SRC-012
+        evidence_claim_ids: *a145
+        source_ids: *a146
+      - row_id: T-015-R4
+        values:
+          initiative: Core open-source platform
+          status: Active public repo pushed 2026-05-21
+          public_goal: Postgres development platform
+          risk: High open issue/support burden
+          evidence_claim_ids: &a147
+            - EC-007
+          source_ids: &a148
+            - SRC-005
+        evidence_claim_ids: *a147
+        source_ids: *a148
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+      - EC-014
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-010
+      - SRC-012
+    notes: null
+  - table_id: T-016
+    title: Senior management roster snapshot
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Capture publicly verified senior leaders and missing org chart items.
+    columns:
+      - name: name_or_role
+        description: name_or_role
+      - name: public_role
+        description: public_role
+      - name: source
+        description: source
+      - name: caveat
+        description: caveat
+    rows:
+      - row_id: T-016-R1
+        values:
+          name_or_role: Paul Copplestone
+          public_role: Active founder
+          source: YC profile
+          caveat: Full biography, equity and employment terms private
+          evidence_claim_ids: &a149
+            - EC-001
+            - EC-027
+          source_ids: &a150
+            - SRC-001
+        evidence_claim_ids: *a149
+        source_ids: *a150
+      - row_id: T-016-R2
+        values:
+          name_or_role: Ant Wilson
+          public_role: Active founder
+          source: YC profile
+          caveat: Full biography, equity and employment terms private
+          evidence_claim_ids: &a151
+            - EC-001
+            - EC-027
+          source_ids: &a152
+            - SRC-001
+        evidence_claim_ids: *a151
+        source_ids: *a152
+      - row_id: T-016-R3
+        values:
+          name_or_role: Oriole team / technical leaders
+          public_role: Joined Supabase for storage-engine R&D
+          source: Company blog
+          caveat: Named reporting lines and retention terms not public
+          evidence_claim_ids: &a153
+            - EC-014
+          source_ids: &a154
+            - SRC-010
+        evidence_claim_ids: *a153
+        source_ids: *a154
+      - row_id: T-016-R4
+        values:
+          name_or_role: Board / executives beyond founders
+          public_role: Not fully disclosed in reviewed public sources
+          source: Public gap
+          caveat: Request board deck, org chart and executive bios
+          evidence_claim_ids: &a155
+            - EC-027
+          source_ids: &a156
+            - SRC-001
+            - SRC-007
+            - SRC-008
+        evidence_claim_ids: *a155
+        source_ids: *a156
+    evidence_claim_ids:
+      - EC-001
+      - EC-014
+      - EC-027
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-008
+      - SRC-010
+    notes: null
+  - table_id: T-017
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Compare public people-count anchors.
+    columns:
+      - name: source
+        description: source
+      - name: headcount_or_signal
+        description: headcount_or_signal
+      - name: geography
+        description: geography
+      - name: interpretation
+        description: interpretation
+    rows:
+      - row_id: T-017-R1
+        values:
+          source: Careers page
+          headcount_or_signal: 280+ team members
+          geography: 55+ countries
+          interpretation: Company hiring page anchor; likely current marketing metric
+          evidence_claim_ids: &a157
+            - EC-011
+            - EC-013
+          source_ids: &a158
+            - SRC-007
+        evidence_claim_ids: *a157
+        source_ids: *a158
+      - row_id: T-017-R2
+        values:
+          source: LinkedIn
+          headcount_or_signal: 201-500 company size; 357 discoverable employees
+          geography: Global / US primary
+          interpretation: Profile-based employee count can include alumni/lag
+          evidence_claim_ids: &a159
+            - EC-012
+          source_ids: &a160
+            - SRC-008
+        evidence_claim_ids: *a159
+        source_ids: *a160
+      - row_id: T-017-R3
+        values:
+          source: Series E blog
+          headcount_or_signal: 100% distributed, 37 countries, over 30 ex-founders
+          geography: 37 countries
+          interpretation: Talent positioning and seniority signal
+          evidence_claim_ids: &a161
+            - EC-002
+            - EC-013
+          source_ids: &a162
+            - SRC-002
+        evidence_claim_ids: *a161
+        source_ids: *a162
+      - row_id: T-017-R4
+        values:
+          source: Private request
+          headcount_or_signal: Function, location and hiring-plan data unavailable
+          geography: not_publicly_verifiable
+          interpretation: Need HRIS and budget
+          evidence_claim_ids: &a163
+            - EC-027
+          source_ids: &a164
+            - SRC-007
+            - SRC-008
+        evidence_claim_ids: *a163
+        source_ids: *a164
+    evidence_claim_ids:
+      - EC-002
+      - EC-011
+      - EC-012
+      - EC-013
+      - EC-027
+    source_ids:
+      - SRC-002
+      - SRC-007
+      - SRC-008
+    notes: null
+  - table_id: T-018
+    title: Departures / turnover signals
+    chapter_id: VII
+    section_id: VII.G
+    purpose: Document whether turnover evidence is public.
+    columns:
+      - name: category
+        description: category
+      - name: public_evidence
+        description: public_evidence
+      - name: verification_status
+        description: verification_status
+      - name: follow_up
+        description: follow_up
+    rows:
+      - row_id: T-018-R1
+        values:
+          category: Founder departures
+          public_evidence: YC lists active founders Paul Copplestone and Ant Wilson
+          verification_status: verified
+          follow_up: Confirm founder vesting, roles and key-person plans
+          evidence_claim_ids: &a165
+            - EC-001
+            - EC-027
+          source_ids: &a166
+            - SRC-001
+        evidence_claim_ids: *a165
+        source_ids: *a166
+      - row_id: T-018-R2
+        values:
+          category: Executive turnover
+          public_evidence: No comprehensive public turnover schedule found
+          verification_status: not_publicly_verifiable
+          follow_up: Provide two-year executive and R&D attrition by month/function
+          evidence_claim_ids: &a167
+            - EC-027
+          source_ids: &a168
+            - SRC-007
+            - SRC-008
+        evidence_claim_ids: *a167
+        source_ids: *a168
+      - row_id: T-018-R3
+        values:
+          category: Employee relations
+          public_evidence: No material public issue identified in standard screen
+          verification_status: unverified
+          follow_up: Provide complaints, investigations and employment claims schedule
+          evidence_claim_ids: &a169
+            - EC-024
+          source_ids: &a170
+            - SRC-022
+        evidence_claim_ids: *a169
+        source_ids: *a170
+    evidence_claim_ids:
+      - EC-001
+      - EC-024
+      - EC-027
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-008
+      - SRC-022
+    notes: null
+  - table_id: T-019
+    title: Pending lawsuits against company
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Record public litigation findings and limitations.
+    columns:
+      - name: case
+        description: case
+      - name: court_or_source
+        description: court_or_source
+      - name: status
+        description: status
+      - name: diligence_action
+        description: diligence_action
+    rows:
+      - row_id: T-019-R1
+        values:
+          case: No clear pending lawsuit surfaced in public web search
+          court_or_source: DuckDuckGo lawsuit search
+          status: inconclusive
+          diligence_action: Run PACER/state/international docket search
+          evidence_claim_ids: &a171
+            - EC-019
+          source_ids: &a172
+            - SRC-022
+        evidence_claim_ids: *a171
+        source_ids: *a172
+      - row_id: T-019-R2
+        values:
+          case: India network-blocking articles/snippets
+          court_or_source: Search snippets, not direct legal docket
+          status: reputational/regulatory signal only
+          diligence_action: Ask counsel for any takedown/blocking notices and jurisdictional responses
+          evidence_claim_ids: &a173
+            - EC-019
+          source_ids: &a174
+            - SRC-022
+        evidence_claim_ids: *a173
+        source_ids: *a174
+    evidence_claim_ids:
+      - EC-019
+    source_ids:
+      - SRC-022
+    notes: null
+  - table_id: T-020
+    title: Pending lawsuits initiated by company
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Record public plaintiff-side litigation findings.
+    columns:
+      - name: matter
+        description: matter
+      - name: public_evidence
+        description: public_evidence
+      - name: status
+        description: status
+      - name: diligence_action
+        description: diligence_action
+    rows:
+      - row_id: T-020-R1
+        values:
+          matter: Supabase as plaintiff
+          public_evidence: No clear public result found in standard search
+          status: inconclusive
+          diligence_action: Counsel docket search and IP-enforcement schedule
+          evidence_claim_ids: &a175
+            - EC-020
+          source_ids: &a176
+            - SRC-022
+        evidence_claim_ids: *a175
+        source_ids: *a176
+      - row_id: T-020-R2
+        values:
+          matter: Open-source/IP enforcement
+          public_evidence: No public enforcement action identified
+          status: not_publicly_verifiable
+          diligence_action: Request cease-and-desist, infringement and trademark-opposition history
+          evidence_claim_ids: &a177
+            - EC-020
+            - EC-021
+          source_ids: &a178
+            - SRC-021
+            - SRC-022
+        evidence_claim_ids: *a177
+        source_ids: *a178
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+    source_ids:
+      - SRC-021
+      - SRC-022
+    notes: null
+  - table_id: T-021
+    title: Material IP assets
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Summarize public IP/licensing signals.
+    columns:
+      - name: asset
+        description: asset
+      - name: jurisdiction_or_license
+        description: jurisdiction_or_license
+      - name: status
+        description: status
+      - name: risk_or_request
+        description: risk_or_request
+    rows:
+      - row_id: T-021-R1
+        values:
+          asset: supabase/supabase source code
+          jurisdiction_or_license: Apache-2.0
+          status: verified via GitHub API
+          risk_or_request: Review third-party dependency notices and contributor agreements
+          evidence_claim_ids: &a179
+            - EC-007
+          source_ids: &a180
+            - SRC-005
+        evidence_claim_ids: *a179
+        source_ids: *a180
+      - row_id: T-021-R2
+        values:
+          asset: SUPABASE word/design trademarks
+          jurisdiction_or_license: USPTO-related snippets
+          status: partially_verified
+          risk_or_request: Review official TSDR ownership/assignments/oppositions
+          evidence_claim_ids: &a181
+            - EC-021
+          source_ids: &a182
+            - SRC-021
+        evidence_claim_ids: *a181
+        source_ids: *a182
+      - row_id: T-021-R3
+        values:
+          asset: OrioleDB/storage-engine IP
+          jurisdiction_or_license: Open-source/company acquisition context
+          status: partially_verified
+          risk_or_request: Review acquisition documents, invention assignments, patents and licenses
+          evidence_claim_ids: &a183
+            - EC-014
+          source_ids: &a184
+            - SRC-010
+        evidence_claim_ids: *a183
+        source_ids: *a184
+    evidence_claim_ids:
+      - EC-007
+      - EC-014
+      - EC-021
+    source_ids:
+      - SRC-005
+      - SRC-010
+      - SRC-021
+    notes: null
+  - table_id: T-022
+    title: Regulatory, contracts and operational legal matters
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Map legal/compliance documents and gaps.
+    columns:
+      - name: matter
+        description: matter
+      - name: public_evidence
+        description: public_evidence
+      - name: verification
+        description: verification
+      - name: private_request
+        description: private_request
+    rows:
+      - row_id: T-022-R1
+        values:
+          matter: DPA/privacy roles
+          public_evidence: DPA covers database/tooling services and continuous processing
+          verification: verified
+          private_request: Signed customer DPAs, subprocessors, TIAs and breach log
+          evidence_claim_ids: &a185
+            - EC-018
+          source_ids: &a186
+            - SRC-014
+        evidence_claim_ids: *a185
+        source_ids: *a186
+      - row_id: T-022-R2
+        values:
+          matter: Shared responsibility/security
+          public_evidence: Docs assign customer responsibility for data/access/security controls
+          verification: verified
+          private_request: Security questionnaires, SOC/ISO reports, customer incident tickets
+          evidence_claim_ids: &a187
+            - EC-015
+          source_ids: &a188
+            - SRC-011
+        evidence_claim_ids: *a187
+        source_ids: *a188
+      - row_id: T-022-R3
+        values:
+          matter: Status/incidents/SLA
+          public_evidence: Public status page surfaced by search
+          verification: verified
+          private_request: Incident export, postmortems, SLA credits and enterprise SLAs
+          evidence_claim_ids: &a189
+            - EC-022
+          source_ids: &a190
+            - SRC-023
+        evidence_claim_ids: *a189
+        source_ids: *a190
+      - row_id: T-022-R4
+        values:
+          matter: Insurance/contracts
+          public_evidence: No limits/contracts public beyond standard legal docs
+          verification: not_publicly_verifiable
+          private_request: Cyber/E&O/D&O policies, cloud/customer/material contracts
+          evidence_claim_ids: &a191
+            - EC-024
+          source_ids: &a192
+            - SRC-014
+        evidence_claim_ids: *a191
+        source_ids: *a192
+    evidence_claim_ids:
+      - EC-015
+      - EC-018
+      - EC-022
+      - EC-024
+    source_ids:
+      - SRC-011
+      - SRC-014
+      - SRC-023
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Supabase funding timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Publicly observed funding and eligibility events.
+    purpose: Visualize known financing path and gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F1-E1
+          date: "2020"
+          label: YC Summer 2020
+          description: YC profile lists Supabase as S20 active company.
+          category: company
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+        - event_id: F1-E2
+          date: 2025-04-22
+          label: Series D snippet
+          description: Reported $200M Series D at $2B valuation.
+          category: funding
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-016
+        - event_id: F1-E3
+          date: 2025-10-03
+          label: Series E
+          description: Company announced $100M at $5B pre-money.
+          category: funding
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+      start_date: 2020-01-01
+      end_date: 2026-05-21
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-016
+    notes: null
+  - figure_id: F-002
+    title: Public valuation trajectory chart
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Shows priced public valuation anchors and undisclosed earlier periods.
+    purpose: Highlight sharp valuation step-up and data-room needs.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Round/date
+        unit: null
+        scale: time
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public reported valuation
+          unit: USD billions
+          data_points:
+            - x: 2025-04-22
+              y: 2
+              label: Series D snippet
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-016
+            - x: 2025-10-03
+              y: 5
+              label: Series E pre-money
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+      annotations:
+        - label: Financials unavailable
+          x: 2026-05-21
+          y: null
+          note: ARR, burn, cap table and debt require private records.
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-002
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-024
+    source_ids:
+      - SRC-002
+      - SRC-016
+    notes: null
+  - figure_id: F-003
+    title: Product and responsibility architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Logical product architecture from public positioning and documentation.
+    purpose: Show Supabase modules, AWS region dependency and customer responsibility boundary.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: customer_app
+          label: Customer app
+          node_type: user
+          description: Web/mobile/AI application built by customer
+          evidence_claim_ids:
+            - EC-006
+            - EC-015
+          source_ids:
+            - SRC-001
+            - SRC-011
+        - node_id: supabase_platform
+          label: Supabase platform
+          node_type: service
+          description: Postgres development platform
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-001
+            - SRC-008
+        - node_id: postgres
+          label: Dedicated Postgres database
+          node_type: database
+          description: Isolated Postgres cluster/project
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-001
+        - node_id: auth_api_realtime
+          label: Auth / APIs / Realtime / Storage / Edge
+          node_type: service
+          description: Application backend modules
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-008
+        - node_id: aws_region
+          label: AWS primary region
+          node_type: infrastructure
+          description: Project deployed to one primary region
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-013
+      edges:
+        - edge_id: e1
+          from_node_id: customer_app
+          to_node_id: supabase_platform
+          relationship: uses
+          data_or_dependency: Application calls platform services
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-001
+        - edge_id: e2
+          from_node_id: supabase_platform
+          to_node_id: postgres
+          relationship: provisions
+          data_or_dependency: Dedicated database
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-001
+        - edge_id: e3
+          from_node_id: supabase_platform
+          to_node_id: auth_api_realtime
+          relationship: bundles
+          data_or_dependency: Backend services
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-008
+        - edge_id: e4
+          from_node_id: postgres
+          to_node_id: aws_region
+          relationship: runs in
+          data_or_dependency: Region/infrastructure
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-013
+      boundaries:
+        - boundary_id: b1
+          label: Customer responsibility
+          node_ids:
+            - customer_app
+        - boundary_id: b2
+          label: Supabase managed service
+          node_ids:
+            - supabase_platform
+            - postgres
+            - auth_api_realtime
+            - aws_region
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-015
+      - EC-017
+    source_ids:
+      - SRC-001
+      - SRC-008
+      - SRC-011
+      - SRC-013
+    notes: null
+  - figure_id: F-004
+    title: Customer evidence bar chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Compares public customer evidence strength by category.
+    purpose: Make clear that logos/use cases are public but revenue weight is not.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Customer/evidence category
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed revenue weight
+        unit: percent
+        scale: linear
+      series:
+        - series_id: customer_weight
+          name: Publicly disclosed revenue weight
+          unit: percent
+          data_points:
+            - x: Udio
+              y: null
+              label: No revenue weight disclosed
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-017
+            - x: eXp Realty
+              y: null
+              label: No revenue weight disclosed
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-018
+            - x: Kayhan Space
+              y: null
+              label: No revenue weight disclosed
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-019
+            - x: Customer index
+              y: null
+              label: Many logos, no revenue shares
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: Concentration gap
+          x: null
+          y: null
+          note: Top-customer revenue is not publicly verifiable.
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-024
+    source_ids:
+      - SRC-004
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    notes: null
+  - figure_id: F-005
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Positions Supabase among backend/database alternatives.
+    purpose: Summarize analyst judgment based on public product and GTM evidence.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Platform breadth
+          low_label: Database-only
+          high_label: Full backend platform
+        y_axis:
+          label: Open-source/Postgres alignment
+          low_label: Closed/proprietary
+          high_label: Open/Postgres-aligned
+      segments:
+        - segment_id: backend
+          name: Backend platforms
+          description: Integrated app-backend services
+        - segment_id: database
+          name: Developer databases
+          description: Managed database-focused offerings
+        - segment_id: cloud
+          name: Hyperscale cloud
+          description: Native cloud primitives
+      entities:
+        - entity_id: supabase
+          name: Supabase
+          entity_type: target_company
+          segment_id: backend
+          x_value: 8
+          y_value: 9
+          attributes:
+            rationale: Postgres platform, open-source repo, broad backend modules
+          evidence_claim_ids:
+            - EC-006
+            - EC-025
+          source_ids:
+            - SRC-001
+            - SRC-005
+            - SRC-009
+        - entity_id: firebase
+          name: Firebase
+          entity_type: competitor
+          segment_id: backend
+          x_value: 8
+          y_value: 3
+          attributes:
+            rationale: Backend platform alternative
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-003
+        - entity_id: neon
+          name: Neon
+          entity_type: competitor
+          segment_id: database
+          x_value: 5
+          y_value: 8
+          attributes:
+            rationale: Serverless Postgres competitor
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-003
+        - entity_id: clouds
+          name: AWS/GCP/Azure
+          entity_type: competitor
+          segment_id: cloud
+          x_value: 9
+          y_value: 4
+          attributes:
+            rationale: Native cloud services overlap
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: other
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-025
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-005
+      - SRC-009
+      - SRC-011
+    notes: null
+  - figure_id: F-006
+    title: GTM signal bar chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Quantifies available public top-of-funnel/community anchors.
+    purpose: Show scale of community signals while flagging lack of conversion data.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Observed count
+        unit: count
+        scale: linear
+      series:
+        - series_id: gtm_signals
+          name: Public signal counts
+          unit: count
+          data_points:
+            - x: GitHub stars
+              y: 102786
+              label: GitHub API
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-005
+            - x: Community members
+              y: 540000
+              label: Careers page
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-007
+            - x: Developers building
+              y: 8000000
+              label: Company blog claim
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-009
+            - x: Paid conversion
+              y: null
+              label: Not disclosed
+              evidence_claim_ids:
+                - EC-024
+              source_ids:
+                - SRC-003
+      annotations:
+        - label: Conversion missing
+          x: Paid conversion
+          y: null
+          note: Request free-to-paid conversion, CAC and NRR.
+          evidence_claim_ids:
+            - EC-026
+          source_ids:
+            - SRC-003
+            - SRC-009
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-026
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-009
+    notes: null
+  - figure_id: F-007
+    title: R&D organization map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: org_chart
+    description: Public R&D/community organization map without private reporting lines.
+    purpose: Show verified roles and missing reporting detail.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: founders
+          name: Paul Copplestone / Ant Wilson
+          role: Founders
+          department: Leadership
+          location: Distributed
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+        - node_id: core_team
+          name: null
+          role: Supabase team members
+          department: Engineering/Product/GTm
+          location: 55+ countries
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-011
+            - EC-013
+          source_ids:
+            - SRC-007
+        - node_id: oriole
+          name: null
+          role: Oriole/Postgres storage R&D team
+          department: R&D
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-010
+        - node_id: contributors
+          name: null
+          role: Open-source contributors
+          department: Community
+          location: Global
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-011
+            - EC-023
+          source_ids:
+            - SRC-006
+            - SRC-007
+      reporting_lines:
+        - parent_node_id: founders
+          child_node_id: core_team
+          relationship: other
+          evidence_claim_ids:
+            - EC-027
+          source_ids:
+            - SRC-001
+            - SRC-007
+        - parent_node_id: core_team
+          child_node_id: oriole
+          relationship: other
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-010
+        - parent_node_id: core_team
+          child_node_id: contributors
+          relationship: other
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-007
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-011
+      - EC-014
+      - EC-023
+      - EC-027
+    source_ids:
+      - SRC-001
+      - SRC-006
+      - SRC-007
+      - SRC-010
+    notes: null
+  - figure_id: F-008
+    title: Public headcount trend anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Compares public employee-count anchors observed during research.
+    purpose: Show people-scale evidence and count discrepancies.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Source anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: People count
+        unit: employees
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public headcount anchors
+          unit: employees
+          data_points:
+            - x: Careers 280+
+              y: 280
+              label: Minimum team members
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-007
+            - x: LinkedIn visible
+              y: 357
+              label: Discoverable employees
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-008
+            - x: Company size upper
+              y: 500
+              label: LinkedIn 201-500 range upper
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: HRIS needed
+          x: null
+          y: null
+          note: Function/location/turnover not public.
+          evidence_claim_ids:
+            - EC-027
+          source_ids:
+            - SRC-007
+            - SRC-008
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-027
+    source_ids:
+      - SRC-007
+      - SRC-008
+    notes: null
+  - figure_id: F-009
+    title: Legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Timeline of public legal/compliance/IP-relevant events and gaps.
+    purpose: Show known public legal artifacts and diligence gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F9-E1
+          date: 2024-04-15
+          label: Oriole joins Supabase
+          description: Acquisition/team-joining event with IP assignment diligence implications.
+          category: IP/R&D
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-010
+        - event_id: F9-E2
+          date: 2025-08-05
+          label: DPA version
+          description: Public DPA version date.
+          category: privacy
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-014
+        - event_id: F9-E3
+          date: 2026-05-21
+          label: Lawsuit search inconclusive
+          description: No clear pending lawsuit surfaced in public web search.
+          category: litigation
+          evidence_claim_ids:
+            - EC-019
+            - EC-020
+          source_ids:
+            - SRC-022
+        - event_id: F9-E4
+          date: 2026-05-21
+          label: Trademark search snippets
+          description: Supabase-related trademark records identified by search.
+          category: IP
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-021
+      start_date: 2024-01-01
+      end_date: 2026-05-21
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-014
+      - EC-018
+      - EC-019
+      - EC-020
+      - EC-021
+    source_ids:
+      - SRC-010
+      - SRC-014
+      - SRC-021
+      - SRC-022
+    notes: null
+  - figure_id: F-010
+    title: Legal and operating risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Maps risk register severity and likelihood.
+    purpose: Prioritize follow-up across legal, financial, product and operational risk.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Valuation step-up and financial quality opacity
+          severity: high
+          likelihood: medium
+          rationale: Latest public $5B pre-money valuation follows a reported $2B Series D within months, while audited financials, ARR, burn and debt are not public.
+          evidence_claim_ids: &a193
+            - EC-002
+            - EC-003
+            - EC-024
+          source_ids:
+            - SRC-002
+            - SRC-015
+            - SRC-016
+            - SRC-003
+        - risk_id: R-002
+          label: Usage-based pricing and gross-margin sensitivity
+          severity: medium
+          likelihood: medium
+          rationale: Pricing exposes Supabase to infrastructure cost, support and egress variability; realized margins are not public.
+          evidence_claim_ids: &a194
+            - EC-005
+            - EC-024
+          source_ids:
+            - SRC-003
+            - SRC-002
+            - SRC-004
+        - risk_id: R-003
+          label: Technical roadmap complexity around Postgres storage and scale
+          severity: high
+          likelihood: medium
+          rationale: Oriole/pluggable-storage and decoupled compute/storage ambitions are strategically valuable but carry integration and reliability risk.
+          evidence_claim_ids: &a195
+            - EC-006
+            - EC-014
+            - EC-016
+          source_ids:
+            - SRC-001
+            - SRC-008
+            - SRC-009
+            - SRC-010
+        - risk_id: R-004
+          label: Open-source governance and issue backlog
+          severity: medium
+          likelihood: medium
+          rationale: Large public repo traction and open issues imply community scale and support burden.
+          evidence_claim_ids: &a196
+            - EC-007
+            - EC-023
+          source_ids:
+            - SRC-005
+            - SRC-006
+        - risk_id: R-005
+          label: Developer-community claims may not convert into paid revenue
+          severity: medium
+          likelihood: medium
+          rationale: Stars, community members and developer counts are strong top-of-funnel signals but not proof of paid conversion or retention.
+          evidence_claim_ids: &a197
+            - EC-008
+            - EC-025
+            - EC-026
+          source_ids:
+            - SRC-009
+            - SRC-003
+            - SRC-005
+            - SRC-004
+        - risk_id: R-006
+          label: Customer concentration and reference quality are unknown
+          severity: high
+          likelihood: unknown
+          rationale: Customer logos and case studies are public, but revenue concentration, contract terms, churn and implementation satisfaction are not.
+          evidence_claim_ids: &a198
+            - EC-009
+            - EC-010
+          source_ids:
+            - SRC-004
+            - SRC-017
+            - SRC-018
+            - SRC-019
+        - risk_id: R-007
+          label: Rapid distributed hiring and people-process scaling
+          severity: medium
+          likelihood: medium
+          rationale: Public headcount signals range from 280+ team members to 357 visible LinkedIn employees across many countries.
+          evidence_claim_ids: &a199
+            - EC-011
+            - EC-012
+            - EC-027
+          source_ids:
+            - SRC-007
+            - SRC-008
+            - SRC-001
+        - risk_id: R-008
+          label: Remote global operating compliance
+          severity: medium
+          likelihood: medium
+          rationale: 100% distributed workforce with no offices creates employment law, tax, security and coordination diligence requirements.
+          evidence_claim_ids: &a200
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-007
+        - risk_id: R-009
+          label: Shared-responsibility misconfiguration risk
+          severity: high
+          likelihood: medium
+          rationale: Customers retain responsibility for data, RLS, secrets, access management and production readiness; customer mistakes can become reputational or support incidents.
+          evidence_claim_ids: &a201
+            - EC-015
+            - EC-016
+          source_ids:
+            - SRC-011
+            - SRC-012
+        - risk_id: R-010
+          label: Cloud-region and infrastructure dependency
+          severity: medium
+          likelihood: medium
+          rationale: Supabase projects use AWS regions and one primary region per project, creating dependency on underlying cloud availability and data-residency design.
+          evidence_claim_ids: &a202
+            - EC-017
+          source_ids:
+            - SRC-013
+        - risk_id: R-011
+          label: Privacy and data-processing obligations
+          severity: medium
+          likelihood: medium
+          rationale: DPA shows continuous processing of customer and end-user data for database/tooling services, requiring privacy controls and subprocessor governance.
+          evidence_claim_ids: &a203
+            - EC-014
+            - EC-018
+          source_ids:
+            - SRC-010
+            - SRC-014
+        - risk_id: R-012
+          label: Litigation search incompleteness
+          severity: medium
+          likelihood: unknown
+          rationale: No clear public lawsuits were surfaced, but public web search is not a substitute for docket and counsel confirmation.
+          evidence_claim_ids: &a204
+            - EC-019
+            - EC-020
+          source_ids:
+            - SRC-022
+        - risk_id: R-013
+          label: Trademark chain and brand protection
+          severity: low
+          likelihood: medium
+          rationale: Public search shows Supabase-related trademark records, including potentially prior records; ownership/assignment should be verified.
+          evidence_claim_ids: &a205
+            - EC-021
+          source_ids:
+            - SRC-021
+        - risk_id: R-014
+          label: Reliability/SLA exposure
+          severity: medium
+          likelihood: medium
+          rationale: A public status page exists, but incident history and enterprise SLA economics are not public.
+          evidence_claim_ids: &a206
+            - EC-022
+          source_ids:
+            - SRC-023
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-024
+      - EC-005
+      - EC-006
+      - EC-014
+      - EC-016
+      - EC-007
+      - EC-023
+      - EC-008
+      - EC-025
+      - EC-026
+      - EC-009
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-027
+      - EC-013
+      - EC-015
+      - EC-017
+      - EC-018
+      - EC-019
+      - EC-020
+      - EC-021
+      - EC-022
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-011
+      - SRC-014
+      - SRC-022
+      - SRC-023
+    notes: null
+  - figure_id: F-011
+    title: Regulatory and responsibility control map
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: architecture_diagram
+    description: Shows privacy/security responsibility interfaces among customer, Supabase and suppliers.
+    purpose: Clarify legal/control responsibilities for regulatory diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: customer
+          label: Customer/controller
+          node_type: user
+          description: Defines covered data and application controls
+          evidence_claim_ids:
+            - EC-014
+            - EC-015
+          source_ids:
+            - SRC-011
+            - SRC-014
+        - node_id: supabase
+          label: Supabase/service provider
+          node_type: service
+          description: Provides database and tooling services
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-014
+        - node_id: subprocessors
+          label: Subprocessors/cloud
+          node_type: third_party
+          description: Referenced by DPA and infrastructure docs
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-013
+            - SRC-014
+        - node_id: status
+          label: Status/SLA process
+          node_type: service
+          description: Public incident updates and enterprise SLA implications
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-023
+      edges:
+        - edge_id: re1
+          from_node_id: customer
+          to_node_id: supabase
+          relationship: submits data to services
+          data_or_dependency: Covered Data
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-014
+        - edge_id: re2
+          from_node_id: supabase
+          to_node_id: subprocessors
+          relationship: depends on
+          data_or_dependency: Infrastructure/processing support
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-013
+            - SRC-014
+        - edge_id: re3
+          from_node_id: supabase
+          to_node_id: status
+          relationship: reports incidents through
+          data_or_dependency: Operational status
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-023
+      boundaries:
+        - boundary_id: rb1
+          label: Customer controls
+          node_ids:
+            - customer
+        - boundary_id: rb2
+          label: Supabase and suppliers
+          node_ids:
+            - supabase
+            - subprocessors
+            - status
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-017
+      - EC-018
+      - EC-022
+    source_ids:
+      - SRC-011
+      - SRC-013
+      - SRC-014
+      - SRC-023
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: Supabase is listed by Y Combinator as an active Summer 2020 company in developer tools/open source/databases in the San Francisco Bay Area.
+    evidence_summary: "YC profile: “Supabase”, “Summer 2020”, “Active”, sector tags and San Francisco Bay Area."
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "YC profile: “Supabase”, “Summer 2020”, “Active”, sector tags and San Francisco Bay Area."
+        location: null
+    analyst_interpretation: Supports eligibility and founder/team/company profile.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-007
+      risk_ids: []
+  - evidence_claim_id: EC-002
+    claim: Supabase announced a $100M Series E at a $5B pre-money valuation led by Accel and Peak XV with existing investors including YC, Coatue, Felicis, Craft and Square Peg; Figma joined the round.
+    evidence_summary: "Supabase blog: “We raised $100M at a $5B pre-money valuation”; TechCrunch snippet: “raised a fresh $100 million Series E at a $5 billion valuation”."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "Supabase blog: “We raised $100M at a $5B pre-money valuation”; TechCrunch snippet: “raised a fresh $100 million Series E at a $5 billion valuation”."
+        location: null
+      - source_id: SRC-015
+        quote: "Supabase blog: “We raised $100M at a $5B pre-money valuation”; TechCrunch snippet: “raised a fresh $100 million Series E at a $5 billion valuation”."
+        location: null
+    analyst_interpretation: Verifies latest public valuation and unicorn status, though full round documents are private.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-003
+    claim: A public news snippet reports Supabase raised a $200M Series D at a $2B valuation in April 2025.
+    evidence_summary: "Search snippet: “$200 million Series D valuing the company at $2 billion”."
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: "Search snippet: “$200 million Series D valuing the company at $2 billion”."
+        location: null
+    analyst_interpretation: Useful funding trajectory datapoint; original article was inaccessible through fetch path.
+    limitations: Article body was not fetched because access returned 451.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-004
+    claim: Supabase has not been shown by public research to have IPO’d, been acquired, or shut down; YC lists it active and LinkedIn lists it privately held.
+    evidence_summary: YC says “Active”; LinkedIn says “Privately Held”; company posted Series E announcement in 2025.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-008
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: YC says “Active”; LinkedIn says “Privately Held”; company posted Series E announcement in 2025.
+        location: null
+      - source_id: SRC-008
+        quote: YC says “Active”; LinkedIn says “Privately Held”; company posted Series E announcement in 2025.
+        location: null
+    analyst_interpretation: Eligibility screen passes for private-unicorn report.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids: []
+  - evidence_claim_id: EC-005
+    claim: Supabase pricing includes Free, Pro from $25/month, Team from $599/month, and Enterprise custom pricing with usage-based compute and add-ons.
+    evidence_summary: "Pricing page: Free $0, Pro from $25/month, Team from $599/month, Enterprise Custom; compute add-ons listed to 64 cores/256GB RAM."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "Pricing page: Free $0, Pro from $25/month, Team from $599/month, Enterprise Custom; compute add-ons listed to 64 cores/256GB RAM."
+        location: null
+    analyst_interpretation: Shows monetization and packaging but not realized ARPU or gross margin.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-005
+      figure_ids: []
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-006
+    claim: Supabase’s public product positioning is a Postgres development platform with database, auth, instant APIs, realtime, storage and edge functions.
+    evidence_summary: "YC: isolated Postgres clusters with instant setup, auth, RLS, realtime streams, auto-generating APIs and web interface; LinkedIn: Postgres platform with Database, Authentication, instant APIs and realtime subscriptions."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-008
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "YC: isolated Postgres clusters with instant setup, auth, RLS, realtime streams, auto-generating APIs and web interface; LinkedIn: Postgres platform with Database, Authentication, instant APIs and realtime subscriptions."
+        location: null
+      - source_id: SRC-008
+        quote: "YC: isolated Postgres clusters with instant setup, auth, RLS, realtime streams, auto-generating APIs and web interface; LinkedIn: Postgres platform with Database, Authentication, instant APIs and realtime subscriptions."
+        location: null
+    analyst_interpretation: Supports product matrix and architecture.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-007
+    claim: Supabase’s public GitHub repository is Apache-2.0 licensed and had 102,786 stars, 12,494 forks, 1,046 open issues, and a 2026-05-21 push during research.
+    evidence_summary: GitHub API observed description, Apache-2.0 license, 102,786 stargazers, 12,494 forks, 1,046 open issues, pushed_at 2026-05-21.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: GitHub API observed description, Apache-2.0 license, 102,786 stargazers, 12,494 forks, 1,046 open issues, pushed_at 2026-05-21.
+        location: null
+    analyst_interpretation: Open-source traction is strong, but stars are not revenue.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-008
+    claim: Supabase blog claimed it reached 100,000 GitHub stars and eight million developers building with Supabase in April 2026.
+    evidence_summary: "Blog: “We hit 100,000 GitHub stars” and “today, we have eight million developers building with Supabase.”"
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: "Blog: “We hit 100,000 GitHub stars” and “today, we have eight million developers building with Supabase.”"
+        location: null
+    analyst_interpretation: Stars cross-check with GitHub API; developer count is company-reported and needs methodology.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids:
+        - T-013
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-009
+    claim: Supabase’s company customer-story index lists customers including Chatbase, Brevo, eXp Realty, GovSignals, Kayhan Space, Phoenix Energy, Rally, Udio, Deriv, Resend and others.
+    evidence_summary: Customer index displays named customer stories and logo cards.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Customer index displays named customer stories and logo cards.
+        location: null
+    analyst_interpretation: Customer presence is verified as marketing evidence; revenue, contract size and retention are not public.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-010
+    claim: Search snippets for Supabase customer stories cite use cases at Udio, eXp Realty, Kayhan Space and Phoenix Energy with scaling, enterprise innovation, developer speed and migration claims.
+    evidence_summary: Snippets mention Udio support collaboration, eXp 2,000+ non-technical employees, Kayhan 8x developer speed, Phoenix zero-downtime MongoDB migration.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-017
+      - SRC-018
+      - SRC-019
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: Snippets mention Udio support collaboration, eXp 2,000+ non-technical employees, Kayhan 8x developer speed, Phoenix zero-downtime MongoDB migration.
+        location: null
+      - source_id: SRC-018
+        quote: Snippets mention Udio support collaboration, eXp 2,000+ non-technical employees, Kayhan 8x developer speed, Phoenix zero-downtime MongoDB migration.
+        location: null
+    analyst_interpretation: Evidence is case-study marketing and snippets; independent customer reference calls are required.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-011
+    claim: Supabase careers page states the company has 280+ team members in 55+ countries, $500M raised, 540,000+ community members and 1,500+ contributors.
+    evidence_summary: "Careers page: “280+ team members”, “55+ countries”, “$500M raised”, “540,000+ community members”, “1,500+ Contributors”."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: "Careers page: “280+ team members”, “55+ countries”, “$500M raised”, “540,000+ community members”, “1,500+ Contributors”."
+        location: null
+    analyst_interpretation: Useful people and community scale evidence; detailed HR roster remains private.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-017
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-012
+    claim: LinkedIn lists Supabase as privately held, founded in 2020, in IT Services and IT Consulting, with company size 201-500 and 357 discoverable employees.
+    evidence_summary: "LinkedIn public profile: “Privately Held”, “Founded 2020”, “201-500 employees”, “Discover all 357 employees”."
+    evidence_type: social_or_professional_profile
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: "LinkedIn public profile: “Privately Held”, “Founded 2020”, “201-500 employees”, “Discover all 357 employees”."
+        location: null
+    analyst_interpretation: LinkedIn employee counts are self/profile-based and may lag actual headcount.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-017
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-013
+    claim: Supabase is 100% remote/distributed with no offices according to YC, Careers and Series E materials.
+    evidence_summary: "YC: “We are 100% remote”; Series E: “100% distributed, with no offices, spread across 37 countries”; Careers: fully remote / born-remote."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "YC: “We are 100% remote”; Series E: “100% distributed, with no offices, spread across 37 countries”; Careers: fully remote / born-remote."
+        location: null
+      - source_id: SRC-002
+        quote: "YC: “We are 100% remote”; Series E: “100% distributed, with no offices, spread across 37 countries”; Careers: fully remote / born-remote."
+        location: null
+    analyst_interpretation: Distributed model broadens hiring and creates compliance/coordination diligence needs.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+        - T-017
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-014
+    claim: Supabase acquired or brought in the Oriole team to work on a faster Postgres storage engine, pluggable storage, and decoupled storage/compute.
+    evidence_summary: "Blog: “The Oriole team are joining Supabase” to “Build a faster storage engine”, “Help develop pluggable storage”, and “Work on decoupled storage and compute”."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: "Blog: “The Oriole team are joining Supabase” to “Build a faster storage engine”, “Help develop pluggable storage”, and “Work on decoupled storage and compute”."
+        location: null
+    analyst_interpretation: R&D roadmap is credible, but budget, milestones and integration risk require private plans.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-015
+    claim: "Supabase docs define a shared responsibility model: customers remain responsible for account access, data, access management, database schema and security controls; Supabase handles infrastructure responsibilities."
+    evidence_summary: "Docs: “Running databases is a shared responsibility”; customers are responsible for account, access management, data and applying security controls."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: "Docs: “Running databases is a shared responsibility”; customers are responsible for account, access management, data and applying security controls."
+        location: null
+    analyst_interpretation: Creates support/reputation risk if customers misconfigure production systems.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-022
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-016
+    claim: Supabase production documentation recommends RLS, SSL enforcement, network restrictions, MFA, load testing, indexes and availability preparation before production.
+    evidence_summary: Production checklist includes RLS, SSL Enforcement, Network Restrictions, MFA, indexes, load testing and availability guidance.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Production checklist includes RLS, SSL Enforcement, Network Restrictions, MFA, indexes, load testing and availability guidance.
+        location: null
+    analyst_interpretation: Highlights product maturity controls and user-side operational burden.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-017
+    claim: Supabase projects are deployed to one primary region; docs list general and exact AWS regions across Americas, Europe, APAC and other AWS geographies.
+    evidence_summary: "Docs: “Each Supabase project is deployed to one primary region”; exact AWS regions include us-west-1, us-east-1, eu-west-1, ap-southeast-1 and others."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: "Docs: “Each Supabase project is deployed to one primary region”; exact AWS regions include us-west-1, us-east-1, eu-west-1, ap-southeast-1 and others."
+        location: null
+    analyst_interpretation: Confirms material cloud infrastructure dependency and data-residency considerations.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.E
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-018
+    claim: Supabase’s DPA states services involve database/tooling services for web and mobile applications and covered data processing can be continuous for storage, deletion, rectification, analysis, transfer and aggregation.
+    evidence_summary: "DPA: purpose is “database and tooling services”; frequency “Continuous”; nature includes “Storage, deletion, rectification, analysis, transfer, aggregation”."
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: "DPA: purpose is “database and tooling services”; frequency “Continuous”; nature includes “Storage, deletion, rectification, analysis, transfer, aggregation”."
+        location: null
+    analyst_interpretation: Legal terms are public, but negotiated enterprise terms and subprocessors require data-room review.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-022
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-011
+  - evidence_claim_id: EC-019
+    claim: Public search did not identify a clear pending lawsuit against Supabase, but the search was not a comprehensive docket review.
+    evidence_summary: DuckDuckGo lawsuit search surfaced no clear company lawsuit; results were unrelated or about India network blocking.
+    evidence_type: legal_record
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-022
+        quote: DuckDuckGo lawsuit search surfaced no clear company lawsuit; results were unrelated or about India network blocking.
+        location: null
+    analyst_interpretation: Requires PACER/state court and counsel litigation schedules.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-019
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-012
+  - evidence_claim_id: EC-020
+    claim: Public search did not identify clear lawsuits initiated by Supabase; this remains not publicly verifiable without docket searches and counsel confirmation.
+    evidence_summary: No clear plaintiff-side Supabase docket was found in public search result snippets.
+    evidence_type: legal_record
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-022
+        quote: No clear plaintiff-side Supabase docket was found in public search result snippets.
+        location: null
+    analyst_interpretation: Requires legal diligence.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-020
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-012
+  - evidence_claim_id: EC-021
+    claim: Public trademark search snippets identify Supabase-related trademark records, including a Supabase, Inc. registration and a prior SUPABASE record.
+    evidence_summary: Search snippets identified “Supabase, Inc. Trademark Registration” and “SUPABASE - Miproform Limited Trademark Registration”.
+    evidence_type: patent_or_trademark_record
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-021
+    quoted_evidence:
+      - source_id: SRC-021
+        quote: Search snippets identified “Supabase, Inc. Trademark Registration” and “SUPABASE - Miproform Limited Trademark Registration”.
+        location: null
+    analyst_interpretation: Official USPTO TSDR and assignment chain should be reviewed by counsel.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids:
+        - T-021
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-013
+  - evidence_claim_id: EC-022
+    claim: Supabase has a public status page surfaced in search results with incident update subscriptions.
+    evidence_summary: "Search snippet: “Supabase Status” and subscription to updates when incidents are created or resolved."
+    evidence_type: other
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-023
+    quoted_evidence:
+      - source_id: SRC-023
+        quote: "Search snippet: “Supabase Status” and subscription to updates when incidents are created or resolved."
+        location: null
+    analyst_interpretation: Uptime SLA performance, incident count and enterprise credits are not captured in snippets.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-022
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-014
+  - evidence_claim_id: EC-023
+    claim: Supabase’s public GitHub organization is verified, US-located, and had 151 public repositories and 10,127 followers during research.
+    evidence_summary: "GitHub org API: is_verified true, location United States of America, public_repos 151, followers 10,127."
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: "GitHub org API: is_verified true, location United States of America, public_repos 151, followers 10,127."
+        location: null
+    analyst_interpretation: Supports open-source operating footprint but not commercial conversion.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-024
+    claim: Revenue, ARR, gross margin, churn, customer concentration, backlog, AR aging, debt, option pool and cap table details are not public.
+    evidence_summary: Public sources disclose funding/pricing/customer logos, not audited financials or customer-level revenue.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Public sources disclose funding/pricing/customer logos, not audited financials or customer-level revenue.
+        location: null
+      - source_id: SRC-003
+        quote: Public sources disclose funding/pricing/customer logos, not audited financials or customer-level revenue.
+        location: null
+    analyst_interpretation: Core financial diligence must come from company data room.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-025
+    claim: Supabase competes across developer database/backend platforms where the basis of competition includes open-source Postgres alignment, breadth of backend services, pricing, compliance, scale and developer experience.
+    evidence_summary: Pricing, GitHub traction and company positioning support competition dimensions; competitor details are analyst-compiled from public market knowledge.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Pricing, GitHub traction and company positioning support competition dimensions; competitor details are analyst-compiled from public market knowledge.
+        location: null
+      - source_id: SRC-005
+        quote: Pricing, GitHub traction and company positioning support competition dimensions; competitor details are analyst-compiled from public market knowledge.
+        location: null
+    analyst_interpretation: Competitor revenue/win-loss evidence is not public.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-010
+        - T-011
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-026
+    claim: Supabase’s marketing and distribution motion is strongly product-led and developer-community-led, supported by free tier, public docs, open source GitHub traction, customer stories and community claims.
+    evidence_summary: Evidence includes Free plan, customer stories, 100k+ GitHub stars, 540k+ community members and eight-million-developer claim.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: high
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-007
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Evidence includes Free plan, customer stories, 100k+ GitHub stars, 540k+ community members and eight-million-developer claim.
+        location: null
+      - source_id: SRC-004
+        quote: Evidence includes Free plan, customer stories, 100k+ GitHub stars, 540k+ community members and eight-million-developer claim.
+        location: null
+    analyst_interpretation: Paid sales productivity and CAC are not public.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids: []
+      table_ids:
+        - T-012
+        - T-013
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-027
+    claim: Management details publicly verify founders Paul Copplestone and Ant Wilson through YC; a complete executive roster, board, compensation and turnover history are not public.
+    evidence_summary: YC lists active founders; Careers and LinkedIn provide company-level hiring signals but not full leadership biographies or compensation.
+    evidence_type: social_or_professional_profile
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: YC lists active founders; Careers and LinkedIn provide company-level hiring signals but not full leadership biographies or compensation.
+        location: null
+      - source_id: SRC-007
+        quote: YC lists active founders; Careers and LinkedIn provide company-level hiring signals but not full leadership biographies or compensation.
+        location: null
+    analyst_interpretation: Requires HR and board materials.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+        - T-018
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-007
+        - R-008
+sources:
+  - source_id: SRC-001
+    title: "Y Combinator company profile: Supabase"
+    url: https://www.ycombinator.com/companies/supabase
+    publisher: Y Combinator
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: market_database
+    reliability_notes: Primary accelerator directory page; confirms active status, S20 batch, founders, sector tags, San Francisco Bay Area, and product description.
+    archive_url: null
+  - source_id: SRC-002
+    title: Supabase Series E
+    url: https://supabase.com/blog/supabase-series-e
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company-authored funding announcement; high reliability for company claim, valuation and use-of-proceeds; valuation still requires investor/legal confirmation.
+    archive_url: null
+  - source_id: SRC-003
+    title: Pricing & Fees | Supabase
+    url: https://supabase.com/pricing
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company pricing page; plans and limits can change, but useful for current monetization mechanics.
+    archive_url: null
+  - source_id: SRC-004
+    title: Customer Stories | Supabase
+    url: https://supabase.com/customers
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company customer-story index; logos are marketing evidence, not revenue proof.
+    archive_url: null
+  - source_id: SRC-005
+    title: GitHub API repository metadata for supabase/supabase
+    url: https://api.github.com/repos/supabase/supabase
+    publisher: GitHub
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: technical_repository
+    reliability_notes: "Public GitHub API observed during research: description, Apache-2.0 license, 102,786 stars, 12,494 forks, 1,046 open issues, pushed 2026-05-21."
+    archive_url: null
+  - source_id: SRC-006
+    title: GitHub API organization metadata for Supabase
+    url: https://api.github.com/orgs/supabase
+    publisher: GitHub
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: technical_repository
+    reliability_notes: "Public GitHub API observed during research: verified organization, United States location, 151 public repositories, 10,127 followers."
+    archive_url: null
+  - source_id: SRC-007
+    title: Careers | Supabase
+    url: https://supabase.com/careers
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company recruiting page; confirms distributed team, team-size and fundraising marketing claims.
+    archive_url: null
+  - source_id: SRC-008
+    title: Supabase | LinkedIn company profile
+    url: https://www.linkedin.com/company/supabase/
+    publisher: LinkedIn
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: social_or_professional_profile
+    reliability_notes: Public LinkedIn profile fetched through r.jina.ai; confirms privately held status, 201-500 company size, 357 visible employees, founded 2020.
+    archive_url: null
+  - source_id: SRC-009
+    title: 100,000 GitHub stars
+    url: https://supabase.com/blog/100000-github-stars
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company blog; confirms 100,000-star milestone, eight million developer claim, open-source positioning, and core open-source dependencies.
+    archive_url: null
+  - source_id: SRC-010
+    title: Oriole joins Supabase
+    url: https://supabase.com/blog/supabase-acquires-oriole
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company blog; confirms Oriole team acquisition/joining and Postgres storage-engine R&D agenda.
+    archive_url: null
+  - source_id: SRC-011
+    title: Shared Responsibility Model | Supabase Docs
+    url: https://supabase.com/docs/guides/platform/shared-responsibility-model
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Documentation; identifies boundaries between Supabase and customer security/operations responsibilities.
+    archive_url: null
+  - source_id: SRC-012
+    title: Production Checklist | Supabase Docs
+    url: https://supabase.com/docs/guides/platform/going-into-prod
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Documentation; describes security, performance and availability checklist for production users.
+    archive_url: null
+  - source_id: SRC-013
+    title: Available regions | Supabase Docs
+    url: https://supabase.com/docs/guides/platform/regions
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Documentation; lists project deployment to one primary region and AWS region choices.
+    archive_url: null
+  - source_id: SRC-014
+    title: Supabase DPA (August 5, 2025)
+    url: https://supabase.com/downloads/docs/Supabase+DPA+250805.pdf
+    publisher: Supabase
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: primary_company_source
+    reliability_notes: Company legal document; sets data-processing roles, covered data, transfer frequency, subprocessors reference and retention concept.
+    archive_url: null
+  - source_id: SRC-015
+    title: "TechCrunch coverage: Supabase $5B valuation"
+    url: https://techcrunch.com/2025/10/03/supabase-nabs-5b-valuation-four-months-after-hitting-2b/
+    publisher: TechCrunch
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: independent_news
+    reliability_notes: Search-result snippet observed via DuckDuckGo/Jina said Supabase raised $100M Series E at $5B valuation led by Accel and Peak XV. Article itself returned 451 through fetch path.
+    archive_url: null
+  - source_id: SRC-016
+    title: "Fortune/Yahoo coverage: Supabase Series D"
+    url: https://finance.yahoo.com/news/exclusive-supabase-raises-200-million-112154867.html
+    publisher: Yahoo Finance / Fortune
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: independent_news
+    reliability_notes: Search-result snippet observed via DuckDuckGo/Jina said Supabase raised $200M Series D at $2B valuation. Article fetch returned 451 through fetch path.
+    archive_url: null
+  - source_id: SRC-017
+    title: Udio | Supabase Customer Stories search result
+    url: https://supabase.com/customers/udio
+    publisher: Supabase / DuckDuckGo snippet
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: customer_or_partner_source
+    reliability_notes: Search-result snippet described Udio collaboration with Supabase support on scaling and query performance.
+    archive_url: null
+  - source_id: SRC-018
+    title: eXp Realty | Supabase Customer Stories search result
+    url: https://supabase.com/customers/exprealty
+    publisher: Supabase / DuckDuckGo snippet
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: customer_or_partner_source
+    reliability_notes: Search-result snippet stated eXp Realty enabled 2,000+ non-technical employees and replaced millions in SaaS contracts with Supabase-backed solutions.
+    archive_url: null
+  - source_id: SRC-019
+    title: Kayhan Space | Supabase Customer Stories search result
+    url: https://supabase.com/customers/kayhanspace
+    publisher: Supabase / DuckDuckGo snippet
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: customer_or_partner_source
+    reliability_notes: Search-result snippet described Kayhan Space Satcat and an 8x developer-speed improvement after moving to Supabase.
+    archive_url: null
+  - source_id: SRC-020
+    title: Phoenix Energy | Supabase Customer Stories search result
+    url: https://supabase.com/customers/phoenix-energy
+    publisher: Supabase / DuckDuckGo snippet
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: customer_or_partner_source
+    reliability_notes: Search-result snippet stated Phoenix Energy migrated from MongoDB to Supabase ahead of deadline with zero downtime.
+    archive_url: null
+  - source_id: SRC-021
+    title: DuckDuckGo search results for Supabase USPTO trademark
+    url: https://duckduckgo.com/html/?q=Supabase%20trademark%20USPTO
+    publisher: DuckDuckGo / USPTO.report snippets
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: patent_or_trademark_record
+    reliability_notes: Search results identified Supabase, Inc. trademark registration and a prior SUPABASE trademark record; requires counsel confirmation from official USPTO TSDR.
+    archive_url: null
+  - source_id: SRC-022
+    title: DuckDuckGo search results for Supabase lawsuits
+    url: https://duckduckgo.com/html/?q=Supabase%20lawsuit%20court
+    publisher: DuckDuckGo
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: legal_record
+    reliability_notes: Search did not surface a clear pending company lawsuit; results included unrelated/state-court links and articles about India network blocking. Not a docket search substitute.
+    archive_url: null
+  - source_id: SRC-023
+    title: DuckDuckGo search results for Supabase status incidents
+    url: https://duckduckgo.com/html/?q=Supabase%20status%20incidents%20outage
+    publisher: DuckDuckGo / Supabase Status snippets
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-21
+    source_type: other
+    reliability_notes: Search results confirmed a public Supabase status page and incident-update mechanism; detailed uptime history requires status export.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Valuation step-up and financial quality opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: Latest public $5B pre-money valuation follows a reported $2B Series D within months, while audited financials, ARR, burn and debt are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.D
+    evidence_claim_ids: *a193
+    mitigation_or_diligence_request: Request audited financial statements, board packages, ARR bridge, burn, runway, debt, option pool and round documents.
+  - risk_id: R-002
+    risk_title: Usage-based pricing and gross-margin sensitivity
+    risk_category: financial
+    severity: medium
+    likelihood: medium
+    description: Pricing exposes Supabase to infrastructure cost, support and egress variability; realized margins are not public.
+    impacted_chapter_ids:
+      - I
+      - II
+    impacted_section_ids:
+      - I.B
+      - II.A
+    evidence_claim_ids: *a194
+    mitigation_or_diligence_request: Request gross margin by product/tier, cloud COGS, egress exposure and pricing cohorts.
+  - risk_id: R-003
+    risk_title: Technical roadmap complexity around Postgres storage and scale
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: Oriole/pluggable-storage and decoupled compute/storage ambitions are strategically valuable but carry integration and reliability risk.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a195
+    mitigation_or_diligence_request: Request R&D roadmap, incident history, architecture review, migration plans and performance benchmarks.
+  - risk_id: R-004
+    risk_title: Open-source governance and issue backlog
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: Large public repo traction and open issues imply community scale and support burden.
+    impacted_chapter_ids:
+      - VI
+    impacted_section_ids:
+      - VI.A
+    evidence_claim_ids: *a196
+    mitigation_or_diligence_request: Review maintainer coverage, security response SLAs, contributor license controls and backlog aging.
+  - risk_id: R-005
+    risk_title: Developer-community claims may not convert into paid revenue
+    risk_category: market
+    severity: medium
+    likelihood: medium
+    description: Stars, community members and developer counts are strong top-of-funnel signals but not proof of paid conversion or retention.
+    impacted_chapter_ids:
+      - V
+      - IV
+    impacted_section_ids:
+      - V.A
+      - IV.A
+    evidence_claim_ids: *a197
+    mitigation_or_diligence_request: "Request funnel metrics: free-to-paid conversion, activation, NRR, churn, CAC and cohort retention."
+  - risk_id: R-006
+    risk_title: Customer concentration and reference quality are unknown
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: Customer logos and case studies are public, but revenue concentration, contract terms, churn and implementation satisfaction are not.
+    impacted_chapter_ids:
+      - III
+    impacted_section_ids:
+      - III.A
+      - III.C
+    evidence_claim_ids: *a198
+    mitigation_or_diligence_request: Request top-25 customer revenue schedule, contracts, renewals, churn cohorts and independent reference calls.
+  - risk_id: R-007
+    risk_title: Rapid distributed hiring and people-process scaling
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public headcount signals range from 280+ team members to 357 visible LinkedIn employees across many countries.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.B
+      - VII.G
+    evidence_claim_ids: *a199
+    mitigation_or_diligence_request: Request HRIS export, attrition, regretted loss, offer acceptance, compensation bands and country-by-country employer-of-record setup.
+  - risk_id: R-008
+    risk_title: Remote global operating compliance
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: 100% distributed workforce with no offices creates employment law, tax, security and coordination diligence requirements.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+    evidence_claim_ids: *a200
+    mitigation_or_diligence_request: Review EOR/PEO arrangements, tax nexus, security training, device management and travel/offsite policies.
+  - risk_id: R-009
+    risk_title: Shared-responsibility misconfiguration risk
+    risk_category: product
+    severity: high
+    likelihood: medium
+    description: Customers retain responsibility for data, RLS, secrets, access management and production readiness; customer mistakes can become reputational or support incidents.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.G
+    evidence_claim_ids: *a201
+    mitigation_or_diligence_request: Review security-advisor adoption, default configurations, education, support tickets and incident root causes.
+  - risk_id: R-010
+    risk_title: Cloud-region and infrastructure dependency
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Supabase projects use AWS regions and one primary region per project, creating dependency on underlying cloud availability and data-residency design.
+    impacted_chapter_ids:
+      - III
+    impacted_section_ids:
+      - III.E
+    evidence_claim_ids: *a202
+    mitigation_or_diligence_request: Request supplier agreements, cloud spend, credits, redundancy architecture and customer data-residency commitments.
+  - risk_id: R-011
+    risk_title: Privacy and data-processing obligations
+    risk_category: regulatory
+    severity: medium
+    likelihood: medium
+    description: DPA shows continuous processing of customer and end-user data for database/tooling services, requiring privacy controls and subprocessor governance.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.G
+    evidence_claim_ids: *a203
+    mitigation_or_diligence_request: Request SOC/ISO reports, DPA signatures, BAA flow, subprocessors, DPIAs, transfer-impact assessment and breach history.
+  - risk_id: R-012
+    risk_title: Litigation search incompleteness
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: No clear public lawsuits were surfaced, but public web search is not a substitute for docket and counsel confirmation.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.B
+    evidence_claim_ids: *a204
+    mitigation_or_diligence_request: Have counsel run PACER/state/international docket searches and obtain litigation schedule.
+  - risk_id: R-013
+    risk_title: Trademark chain and brand protection
+    risk_category: legal
+    severity: low
+    likelihood: medium
+    description: Public search shows Supabase-related trademark records, including potentially prior records; ownership/assignment should be verified.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.D
+    evidence_claim_ids: *a205
+    mitigation_or_diligence_request: Review USPTO/WIPO/TSDR status, assignments, oppositions and open-source trademark policy.
+  - risk_id: R-014
+    risk_title: Reliability/SLA exposure
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: A public status page exists, but incident history and enterprise SLA economics are not public.
+    impacted_chapter_ids:
+      - VIII
+      - III
+    impacted_section_ids:
+      - VIII.G
+      - III.E
+    evidence_claim_ids: *a206
+    mitigation_or_diligence_request: Request status history export, SLA credits, incident postmortems and enterprise support metrics.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Company-certified materials for Annual and quarterly financial information for the past three years
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for I.A plus management certification.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Company-certified materials for Financial Projections
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for I.B plus management certification.
+    priority: medium
+  - gap_id: G-003
+    chapter_id: I
+    section_id: I.C
+    missing_information: Company-certified materials for Capital Structure
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for I.C plus management certification.
+    priority: high
+  - gap_id: G-004
+    chapter_id: I
+    section_id: I.D
+    missing_information: Company-certified materials for Other financial information
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for I.D plus management certification.
+    priority: medium
+  - gap_id: G-005
+    chapter_id: II
+    section_id: II.A
+    missing_information: Company-certified materials for Description of each product
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for II.A plus management certification.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: III
+    section_id: III.A
+    missing_information: Company-certified materials for Top customers by application
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for III.A plus management certification.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: III
+    section_id: III.B
+    missing_information: Company-certified materials for Strategic relationships
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for III.B plus management certification.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: III
+    section_id: III.C
+    missing_information: Company-certified materials for Revenue by customer
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for III.C plus management certification.
+    priority: high
+  - gap_id: G-009
+    chapter_id: III
+    section_id: III.D
+    missing_information: Company-certified materials for Significant relationships severed within the last two years
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for III.D plus management certification.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: III
+    section_id: III.E
+    missing_information: Company-certified materials for Top suppliers
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for III.E plus management certification.
+    priority: medium
+  - gap_id: G-011
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Company-certified materials for Competitive landscape by market segment
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for IV.A plus management certification.
+    priority: medium
+  - gap_id: G-012
+    chapter_id: V
+    section_id: V.A
+    missing_information: Company-certified materials for Strategy and implementation
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for V.A plus management certification.
+    priority: medium
+  - gap_id: G-013
+    chapter_id: V
+    section_id: V.B
+    missing_information: Company-certified materials for Major Customers
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for V.B plus management certification.
+    priority: medium
+  - gap_id: G-014
+    chapter_id: V
+    section_id: V.C
+    missing_information: Company-certified materials for Principal avenues for generating new business
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for V.C plus management certification.
+    priority: medium
+  - gap_id: G-015
+    chapter_id: V
+    section_id: V.D
+    missing_information: Company-certified materials for Sales force productivity model
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for V.D plus management certification.
+    priority: medium
+  - gap_id: G-016
+    chapter_id: V
+    section_id: V.E
+    missing_information: Company-certified materials for Ability to implement marketing plan with current and projected budgets
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for V.E plus management certification.
+    priority: medium
+  - gap_id: G-017
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Company-certified materials for Description of R&D organization
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VI.A plus management certification.
+    priority: medium
+  - gap_id: G-018
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Company-certified materials for New Product Pipeline
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VI.B plus management certification.
+    priority: medium
+  - gap_id: G-019
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Company-certified materials for Organization Chart
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.A plus management certification.
+    priority: medium
+  - gap_id: G-020
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Company-certified materials for Historical and projected headcount by function and location
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.B plus management certification.
+    priority: medium
+  - gap_id: G-021
+    chapter_id: VII
+    section_id: VII.C
+    missing_information: Company-certified materials for Senior management biographies
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.C plus management certification.
+    priority: medium
+  - gap_id: G-022
+    chapter_id: VII
+    section_id: VII.D
+    missing_information: Company-certified materials for Compensation arrangements
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.D plus management certification.
+    priority: medium
+  - gap_id: G-023
+    chapter_id: VII
+    section_id: VII.E
+    missing_information: Company-certified materials for Incentive stock plans
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.E plus management certification.
+    priority: medium
+  - gap_id: G-024
+    chapter_id: VII
+    section_id: VII.F
+    missing_information: Company-certified materials for Significant employee relations problems, past or present
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.F plus management certification.
+    priority: medium
+  - gap_id: G-025
+    chapter_id: VII
+    section_id: VII.G
+    missing_information: Company-certified materials for Personnel Turnover
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VII.G plus management certification.
+    priority: medium
+  - gap_id: G-026
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Company-certified materials for Pending lawsuits against the Company
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.A plus management certification.
+    priority: high
+  - gap_id: G-027
+    chapter_id: VIII
+    section_id: VIII.B
+    missing_information: Company-certified materials for Pending lawsuits initiated by Company
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.B plus management certification.
+    priority: medium
+  - gap_id: G-028
+    chapter_id: VIII
+    section_id: VIII.C
+    missing_information: Company-certified materials for Environmental and employee safety issues and liabilities
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.C plus management certification.
+    priority: medium
+  - gap_id: G-029
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Company-certified materials for Material patents, copyrights, licenses, and trademarks
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.D plus management certification.
+    priority: medium
+  - gap_id: G-030
+    chapter_id: VIII
+    section_id: VIII.E
+    missing_information: Company-certified materials for Insurance coverage and material exposures
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.E plus management certification.
+    priority: medium
+  - gap_id: G-031
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Company-certified materials for Material contracts
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.F plus management certification.
+    priority: medium
+  - gap_id: G-032
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: Company-certified materials for Regulatory agency problems
+    why_it_matters: Public sources cannot verify private operating, financial, legal or contractual details at audit-grade reliability.
+    suggested_source_or_request: Request data-room package for VIII.G plus management certification.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Request data-room package for I.A plus management certification.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Request data-room package for I.B plus management certification.
+    requested_from: accountant
+    priority: medium
+  - request_id: Q-003
+    chapter_id: I
+    section_id: I.C
+    request: Request data-room package for I.C plus management certification.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-004
+    chapter_id: I
+    section_id: I.D
+    request: Request data-room package for I.D plus management certification.
+    requested_from: accountant
+    priority: medium
+  - request_id: Q-005
+    chapter_id: II
+    section_id: II.A
+    request: Request data-room package for II.A plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: III
+    section_id: III.A
+    request: Request data-room package for III.A plus management certification.
+    requested_from: customer
+    priority: medium
+  - request_id: Q-007
+    chapter_id: III
+    section_id: III.B
+    request: Request data-room package for III.B plus management certification.
+    requested_from: customer
+    priority: medium
+  - request_id: Q-008
+    chapter_id: III
+    section_id: III.C
+    request: Request data-room package for III.C plus management certification.
+    requested_from: customer
+    priority: high
+  - request_id: Q-009
+    chapter_id: III
+    section_id: III.D
+    request: Request data-room package for III.D plus management certification.
+    requested_from: customer
+    priority: medium
+  - request_id: Q-010
+    chapter_id: III
+    section_id: III.E
+    request: Request data-room package for III.E plus management certification.
+    requested_from: customer
+    priority: medium
+  - request_id: Q-011
+    chapter_id: IV
+    section_id: IV.A
+    request: Request data-room package for IV.A plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-012
+    chapter_id: V
+    section_id: V.A
+    request: Request data-room package for V.A plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-013
+    chapter_id: V
+    section_id: V.B
+    request: Request data-room package for V.B plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-014
+    chapter_id: V
+    section_id: V.C
+    request: Request data-room package for V.C plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-015
+    chapter_id: V
+    section_id: V.D
+    request: Request data-room package for V.D plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-016
+    chapter_id: V
+    section_id: V.E
+    request: Request data-room package for V.E plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-017
+    chapter_id: VI
+    section_id: VI.A
+    request: Request data-room package for VI.A plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-018
+    chapter_id: VI
+    section_id: VI.B
+    request: Request data-room package for VI.B plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-019
+    chapter_id: VII
+    section_id: VII.A
+    request: Request data-room package for VII.A plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-020
+    chapter_id: VII
+    section_id: VII.B
+    request: Request data-room package for VII.B plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-021
+    chapter_id: VII
+    section_id: VII.C
+    request: Request data-room package for VII.C plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-022
+    chapter_id: VII
+    section_id: VII.D
+    request: Request data-room package for VII.D plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-023
+    chapter_id: VII
+    section_id: VII.E
+    request: Request data-room package for VII.E plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-024
+    chapter_id: VII
+    section_id: VII.F
+    request: Request data-room package for VII.F plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-025
+    chapter_id: VII
+    section_id: VII.G
+    request: Request data-room package for VII.G plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-026
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Request data-room package for VIII.A plus management certification.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-027
+    chapter_id: VIII
+    section_id: VIII.B
+    request: Request data-room package for VIII.B plus management certification.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-028
+    chapter_id: VIII
+    section_id: VIII.C
+    request: Request data-room package for VIII.C plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-029
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Request data-room package for VIII.D plus management certification.
+    requested_from: counsel
+    priority: medium
+  - request_id: Q-030
+    chapter_id: VIII
+    section_id: VIII.E
+    request: Request data-room package for VIII.E plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-031
+    chapter_id: VIII
+    section_id: VIII.F
+    request: Request data-room package for VIII.F plus management certification.
+    requested_from: company
+    priority: medium
+  - request_id: Q-032
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Request data-room package for VIII.G plus management certification.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Research used public internet evidence only; no private data room, management interviews, customer calls, counsel memo or audited financials were available.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - I.D
+      - II.A
+      - III.A
+      - III.B
+      - III.C
+      - III.D
+      - III.E
+      - IV.A
+      - V.A
+      - V.B
+      - V.C
+      - V.D
+      - V.E
+      - VI.A
+      - VI.B
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-002
+    description: Some third-party news articles were available only as reputable search-result snippets or blocked by access/geography during fetch; these are marked partially verified or limited.
+    affected_chapter_ids:
+      - I
+      - III
+      - VIII
+    affected_section_ids:
+      - I.D
+      - III.A
+      - VIII.A
+      - VIII.D
+  - limitation_id: L-003
+    description: No private personal phone numbers, home addresses, personal emails or non-public contact details were collected or included.
+    affected_chapter_ids:
+      - VII
+    affected_section_ids:
+      - VII.A
+      - VII.C
