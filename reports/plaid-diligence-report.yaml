@@ -1,0 +1,2614 @@
+report_metadata:
+  report_title: "Plaid Startup Diligence Report"
+  target_company: "Plaid"
+  website: "https://plaid.com/"
+  known_aliases:
+    - "Plaid Inc."
+    - "Plaid"
+  sector: "Financial technology / open banking data infrastructure"
+  geography: "United States / global"
+  company_stage: "Private late-stage unicorn"
+  research_date: "2026-05-23"
+  analyst: "GitHub Copilot diligence agent"
+  report_version: "1.0"
+  currency: "USD unless otherwise noted"
+  time_zone: "UTC"
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - "Public-source diligence using company-owned pages, public financial/news references, public legal/regulatory records, competitor pages, and public patent/search mirrors."
+    - "No private data room, management interview, customer reference call, audited financial statement, cap table, board deck, security report, or counsel letter was available."
+    - "Company-published metrics are treated as management/public claims, not audited operating results."
+  included_jurisdictions:
+    - "United States"
+    - "Publicly disclosed global operating footprint"
+    - "Open-banking regulatory context where publicly relevant"
+  excluded_topics:
+    - "Non-public financial statements and management accounts"
+    - "Private customer contracts, churn cohorts, and reference calls"
+    - "Private cap table, debt, SAFE/note, option, and liquidation-preference schedules"
+    - "Non-public employee records, compensation, incident history, and board materials"
+  user_provided_materials:
+    - material_id: "UPM-001"
+      title: "Selected unicorn-list seed evidence for Plaid"
+      type: "workflow_request"
+      date_received: "2026-05-23"
+      notes: "Seed listed Plaid, slug plaid, US$13.4B valuation in April 2021, financial technology, United States, from Wikipedia list of unicorn startup companies."
+
+founder_claims:
+  - founder_claim_id: "FC-001"
+    claim_text: "Plaid appears on a public unicorn list at a US$13.4B valuation dated April 2021."
+    claim_source: "User-provided unicorn-list seed evidence"
+    claim_date: "2021-04"
+    mapped_chapter_ids: ["I"]
+    mapped_section_ids: ["I.D"]
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids: ["EC-001", "EC-005"]
+    contradiction_summary: "The April 2021 valuation is verified as a public list anchor; current fair value and more recent secondary pricing require separate diligence."
+    diligence_follow_up:
+      - "Request current capitalization table, financing documents, and secondary transaction support."
+  - founder_claim_id: "FC-002"
+    claim_text: "Plaid is eligible for private-company unicorn diligence because it is private, not IPO'd, not acquired, and not shut down based on public evidence reviewed."
+    claim_source: "Eligibility screen from public sources"
+    claim_date: "2026-05-23"
+    mapped_chapter_ids: ["I", "VIII"]
+    mapped_section_ids: ["I.C", "VIII.F"]
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-003", "EC-004"]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Confirm corporate standing, subsidiaries, and current ownership directly with company counsel."
+  - founder_claim_id: "FC-003"
+    claim_text: "Plaid offers a broad API product suite for financial data, verification, payments, identity, and related use cases."
+    claim_source: "Plaid product and developer pages"
+    claim_date: null
+    mapped_chapter_ids: ["II", "VI"]
+    mapped_section_ids: ["II.A", "VI.B"]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-025"]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request product-level revenue, margin, usage, roadmap, uptime, and support metrics."
+  - founder_claim_id: "FC-004"
+    claim_text: "Plaid works with over 7,000 fintech partners and has visible customer proof."
+    claim_source: "Plaid company and customer pages"
+    claim_date: null
+    mapped_chapter_ids: ["III", "V"]
+    mapped_section_ids: ["III.A", "V.B"]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+    contradiction_summary: "Public pages support logo/customer proof but do not disclose top-customer revenue, concentration, churn, or contract quality."
+    diligence_follow_up:
+      - "Request top-customer schedule, cohort retention, churn, NRR, and reference permissions."
+  - founder_claim_id: "FC-005"
+    claim_text: "Plaid operates in a privacy-sensitive, regulated open-banking environment."
+    claim_source: "Public legal, privacy, settlement, and Federal Register sources"
+    claim_date: null
+    mapped_chapter_ids: ["VIII"]
+    mapped_section_ids: ["VIII.G"]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: ["EC-014", "EC-016", "EC-017", "EC-019"]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request regulatory exams, privacy/security audits, consent-flow testing, complaints, and counsel letters."
+
+executive_summary:
+  overall_assessment: "Plaid is publicly eligible for private unicorn diligence: public sources show a private US fintech with an April 2021 US$13.4B unicorn valuation anchor and a terminated Visa acquisition, while official pages show active products, customers, hiring, and status pages."
+  investment_or_diligence_thesis: "Plaid's diligence case rests on whether a large open-banking network can convert broad API/customer adoption into durable, compliant, profitable revenue despite valuation reset risk, regulatory scrutiny, bank/network dependencies, and intense competition."
+  strongest_verified_claims:
+    - founder_claim_id: "FC-001"
+      summary: "Wikipedia's unicorn list and Plaid Inc. page support the US$13.4B April 2021 valuation anchor."
+      evidence_claim_ids: ["EC-001", "EC-005"]
+    - founder_claim_id: "FC-002"
+      summary: "Public evidence reviewed supports private-company eligibility and shows the Visa acquisition was abandoned."
+      evidence_claim_ids: ["EC-002", "EC-003", "EC-004"]
+    - founder_claim_id: "FC-003"
+      summary: "Plaid's own product and docs pages show a broad API suite."
+      evidence_claim_ids: ["EC-008", "EC-009"]
+  biggest_risks:
+    - risk_id: "R-001"
+      summary: "Financial quality and valuation opacity"
+    - risk_id: "R-007"
+      summary: "Regulatory, privacy, and legal exposure"
+    - risk_id: "R-003"
+      summary: "Customer concentration, churn, and revenue predictability opacity"
+  key_evidence_gaps:
+    - "Audited financials, monthly KPI pack, cash, debt, revenue recognition, gross margin, product P&L, and cash runway."
+    - "Current cap table, preference stack, financing documents, secondary pricing, warrants, options, SAFEs, notes, and debt."
+    - "Top-customer revenue, churn, NRR, contract terms, bank/partner dependencies, and supplier concentration."
+    - "Regulatory exams, privacy/security incident history, consent-flow audits, pending litigation schedules, and counsel letters."
+    - "Technical architecture, uptime/incident history, roadmap, IP ownership schedule, and open-source/license review."
+  recommended_next_steps:
+    - "Verify current capitalization, valuation support, and runway before underwriting the April 2021 valuation anchor."
+    - "Run regulatory/privacy/security legal diligence across consent flows, data retention, CFPB 1033 impacts, and settlement compliance."
+    - "Obtain customer concentration, churn, cohort retention, and customer-reference evidence before relying on public logo proof."
+    - "Benchmark Plaid's pricing, coverage, reliability, and win/loss against Yodlee, MX, Tink, Stripe Financial Connections, and bank-owned rails."
+    - "Review product-level P&Ls, partner agreements, status/incident logs, security reports, patent assignments, and employment/IP agreements."
+
+chapters:
+  - chapter_id: "I"
+    title: "Financial Information"
+    chapter_summary: "Public sources verify major valuation and financing anchors, but audited financial quality, runway, cap table, debt, and projections are not publicly verifiable."
+    founder_claim_ids: ["FC-001", "FC-002"]
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-005", "EC-006", "EC-022", "EC-023"]
+    risk_ids: ["R-001", "R-002", "R-010"]
+    sections:
+      - section_id: "I.A"
+        title: "Annual and quarterly financial information for the past three years"
+        checklist_question_ids: ["I.A.1", "I.A.2", "I.A.3", "I.A.4", "I.A.5", "I.A.6"]
+        summary: "Plaid is private; public sources do not provide audited income statements, balance sheets, cash flows, backlog, AR aging, or management reports."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "I.A.1"
+            finding: "A stale public revenue anchor appears on Plaid's Wikipedia page, but audited financial statements and the last three years of financials were not publicly available."
+            evidence_claim_ids: ["EC-006", "EC-022"]
+            risk_ids: ["R-001"]
+        hidden_risks:
+          - "Financial quality, revenue recognition, cash burn, gross margin, AR aging, backlog, and product profitability cannot be underwritten from public sources."
+        evidence_gaps:
+          - "Audited financial statements, monthly management accounts, revenue by product/channel/geography, backlog, AR aging, and tax schedules."
+        follow_up_questions:
+          - "Provide audited annual financials and monthly management accounts for the last three fiscal years and YTD."
+        table_ids: ["T-002"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-006", "EC-022"]
+      - section_id: "I.B"
+        title: "Financial Projections"
+        checklist_question_ids: ["I.B.1", "I.B.2", "I.B.3", "I.B.4", "I.B.5", "I.B.6", "I.B.7", "I.B.8"]
+        summary: "Public product, pricing, and customer signals support a growth narrative, but forecasts, unit economics, financing assumptions, and predictability are private."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "I.B.1"
+            finding: "Plaid publishes pricing tiers and customer scale signals, but public evidence does not disclose forecasted revenue, margin, cash burn, or capital expenditure assumptions."
+            evidence_claim_ids: ["EC-007", "EC-010", "EC-023"]
+            risk_ids: ["R-001", "R-002"]
+        hidden_risks:
+          - "Forecasts may be sensitive to bank-access rules, pricing compression, contract renewals, enterprise discounts, and compliance spend."
+        evidence_gaps:
+          - "Board-approved three-year plan, scenario cases, CAC/payback, gross-margin bridge, product-level forecasts, and financing assumptions."
+        follow_up_questions:
+          - "Provide the current board plan with sensitivity cases for pricing, bank-connectivity costs, customer churn, and CFPB 1033 implementation."
+        table_ids: ["T-004"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-007", "EC-010", "EC-023"]
+      - section_id: "I.C"
+        title: "Capital Structure"
+        checklist_question_ids: ["I.C.1", "I.C.2", "I.C.3", "I.C.4", "I.C.5"]
+        summary: "Public records support private-company status and funding events, but shares outstanding, option pool, debt, preferences, warrants, and off-balance-sheet liabilities are not public."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "I.C.1"
+            finding: "Public evidence reviewed indicates Plaid remains private, but the detailed ownership stack is not publicly verifiable."
+            evidence_claim_ids: ["EC-002", "EC-003", "EC-004", "EC-022"]
+            risk_ids: ["R-010"]
+        hidden_risks:
+          - "Multiple late-stage rounds, strategic investors, employee share sales, and potential preferences can create cap-table complexity."
+        evidence_gaps:
+          - "Current fully diluted capitalization, option/warrant/SAFE/note schedules, debt agreements, liquidation preferences, ROFR/co-sale rights, and secondary transactions."
+        follow_up_questions:
+          - "Provide the current cap table, investor rights agreements, debt schedule, and all financing/secondary transaction documents."
+        table_ids: ["T-003"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-002", "EC-003", "EC-004", "EC-022"]
+      - section_id: "I.D"
+        title: "Other financial information"
+        checklist_question_ids: ["I.D.1", "I.D.2", "I.D.3"]
+        summary: "Financing-history anchors are public, including the April 2021 Series D valuation, but accounting policies and tax positions are private."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "I.D.1"
+            finding: "Public sources list Plaid's April 2021 Series D at US$425M and US$13.4B valuation; later public valuation signals should be reconciled with company records."
+            evidence_claim_ids: ["EC-001", "EC-005"]
+            risk_ids: ["R-001", "R-010"]
+        hidden_risks:
+          - "A seed valuation list can lag current private-market pricing and does not evidence liquidation preference, participation rights, debt, or runway."
+        evidence_gaps:
+          - "Tax positions, revenue-recognition policies, debt covenants, and current valuation support."
+        follow_up_questions:
+          - "Reconcile the April 2021 valuation anchor to current 409A, secondary, and primary financing records."
+        table_ids: ["T-001"]
+        figure_ids: ["F-001", "F-002"]
+        evidence_claim_ids: ["EC-001", "EC-005"]
+
+  - chapter_id: "II"
+    title: "Products"
+    chapter_summary: "Plaid's public product and developer materials show a broad financial-data API platform, but product-level economics, roadmap certainty, quality metrics, and profitability are private."
+    founder_claim_ids: ["FC-003"]
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-010", "EC-011", "EC-012", "EC-025", "EC-028"]
+    risk_ids: ["R-004", "R-005", "R-006"]
+    sections:
+      - section_id: "II.A"
+        title: "Description of each product"
+        checklist_question_ids: ["II.A.1", "II.A.2", "II.A.3", "II.A.4", "II.A.5", "II.A.6"]
+        summary: "Public pages show products such as Auth, Transactions, Identity, Balance, Transfer, Investments, Liabilities, Assets, Income, Signal, Layer, Link, and Consumer Report."
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: "II.A.1"
+            finding: "Plaid's public product catalog and docs evidence product breadth across account verification, financial data, payments, identity, credit, fraud, and consumer-permission workflows."
+            evidence_claim_ids: ["EC-008", "EC-009", "EC-025"]
+            risk_ids: ["R-005", "R-006"]
+          - finding_id: "II.A.2"
+            finding: "Pricing tiers are public at a packaging level, but product-level cost structure, margins, discounts, and profitability are not publicly verifiable."
+            evidence_claim_ids: ["EC-010", "EC-023"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "Breadth may mask uneven product maturity, implementation complexity, bank-coverage gaps, or support burden."
+          - "Open-banking standards and bank APIs could commoditize parts of the data-access layer."
+        evidence_gaps:
+          - "Product P&Ls, attach rates, retention by product, uptime by API, bank-coverage quality, roadmap, and support-ticket metrics."
+        follow_up_questions:
+          - "Provide product-level revenue, gross margin, usage, uptime, incident, roadmap, and competitive win/loss data."
+        table_ids: ["T-005", "T-006"]
+        figure_ids: ["F-003"]
+        evidence_claim_ids: ["EC-008", "EC-009", "EC-010", "EC-025", "EC-028"]
+
+  - chapter_id: "III"
+    title: "Customer Information"
+    chapter_summary: "Public customer pages and a company claim of over 7,000 fintech partners evidence market adoption, but top-customer revenue, churn, NRR, and partner concentration are not public."
+    founder_claim_ids: ["FC-004"]
+    evidence_claim_ids: ["EC-007", "EC-013", "EC-020", "EC-021", "EC-024"]
+    risk_ids: ["R-002", "R-003", "R-011"]
+    sections:
+      - section_id: "III.A"
+        title: "Top customers by application"
+        checklist_question_ids: ["III.A"]
+        summary: "Plaid publishes selected customer stories and logo proof, but not a top-15 customer schedule by revenue or application."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "III.A.1"
+            finding: "Plaid publicly claims over 7,000 fintech partners and shows selected customer proof including Chime and brands featured in its customer-story page."
+            evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+            risk_ids: ["R-003"]
+        hidden_risks:
+          - "Revenue could be concentrated in a small number of enterprise fintechs, lenders, banks, or platform accounts despite broad logo count."
+        evidence_gaps:
+          - "Top 15 customers by revenue/volume/application for the last two fiscal years and YTD."
+        follow_up_questions:
+          - "Provide top-customer schedule, product ownership, purchase timing, revenue, gross margin, and reference contacts."
+        table_ids: ["T-007"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+      - section_id: "III.B"
+        title: "Strategic relationships"
+        checklist_question_ids: ["III.B"]
+        summary: "Public sources identify customer, bank/connectivity, and historical strategic-investor/acquisition relationships, but economics and obligations are private."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "III.B.1"
+            finding: "Visa announced a planned US$5.3B acquisition in 2020 and CNBC reported the deal was abandoned in 2021 after DOJ concerns, evidencing strategic importance and antitrust sensitivity."
+            evidence_claim_ids: ["EC-003", "EC-004", "EC-024"]
+            risk_ids: ["R-007", "R-011"]
+        hidden_risks:
+          - "Bank, data-provider, payment-network, and API-standard relationships may create dependency, pricing, and access risks."
+        evidence_gaps:
+          - "Partner contracts, revenue share, data-access SLAs, termination rights, bank-coverage commitments, and marketing agreements."
+        follow_up_questions:
+          - "Provide strategic partnership agreements and economics for banks, networks, processors, and ecosystem partners."
+        table_ids: ["T-008"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-003", "EC-004", "EC-024"]
+      - section_id: "III.C"
+        title: "Revenue by customer"
+        checklist_question_ids: ["III.C"]
+        summary: "No public source reviewed discloses customer revenue concentration or any customer accounting for 5% or more of revenue."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "III.C.1"
+            finding: "Public customer evidence supports adoption but not revenue-by-customer or concentration."
+            evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+            risk_ids: ["R-002", "R-003"]
+        hidden_risks:
+          - "A few high-volume fintech, lending, or payment customers could drive a disproportionate share of revenue and gross profit."
+        evidence_gaps:
+          - "Revenue by customer, volume by customer, churn, NRR, renewal dates, and contract minimums."
+        follow_up_questions:
+          - "Identify any customer or partner above 5% of revenue and provide contract terms, renewal risk, and margin."
+        table_ids: ["T-010"]
+        figure_ids: ["F-004"]
+        evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+      - section_id: "III.D"
+        title: "Significant relationships severed within the last two years"
+        checklist_question_ids: ["III.D"]
+        summary: "Public sources reviewed did not provide a reliable list of severed customer, partner, or supplier relationships within the last two years."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "III.D.1"
+            finding: "Plaid publishes customer and status pages, but severed relationships and lost accounts are not publicly disclosed."
+            evidence_claim_ids: ["EC-013", "EC-020", "EC-021"]
+            risk_ids: ["R-002", "R-011"]
+        hidden_risks:
+          - "Lost bank connections, customer churn, or partner disputes could materially impair revenue and reliability without appearing in public pages."
+        evidence_gaps:
+          - "Lost-customer schedule, severed partner/supplier list, win/loss analysis, and churn bridge."
+        follow_up_questions:
+          - "Provide all material customer, partner, and supplier terminations or non-renewals for the past 24 months."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-013", "EC-020", "EC-021"]
+      - section_id: "III.E"
+        title: "Top suppliers"
+        checklist_question_ids: ["III.E"]
+        summary: "Public sources show reliance on bank/data connections and public API infrastructure, but top suppliers, cloud vendors, processors, and purchase amounts are not public."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "III.E.1"
+            finding: "Plaid's status and docs pages show an API-centric service model, but supplier concentration and purchase commitments are not public."
+            evidence_claim_ids: ["EC-009", "EC-020", "EC-028"]
+            risk_ids: ["R-011"]
+        hidden_risks:
+          - "Cloud, data-provider, bank-connectivity, monitoring, and compliance-vendor dependencies may create concentration and outage risk."
+        evidence_gaps:
+          - "Top suppliers by spend, cloud/provider contracts, bank-connection SLAs, incident dependencies, and business continuity plans."
+        follow_up_questions:
+          - "Provide top suppliers, annual spend, SLAs, termination rights, redundancy plans, and supplier-security reviews."
+        table_ids: ["T-009"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-009", "EC-020", "EC-028"]
+
+  - chapter_id: "IV"
+    title: "Competition"
+    chapter_summary: "Plaid competes in open banking and financial-data connectivity against data aggregators, bank/network-backed platforms, and embedded fintech/payments players."
+    founder_claim_ids: ["FC-003"]
+    evidence_claim_ids: ["EC-008", "EC-010", "EC-014", "EC-016", "EC-029"]
+    risk_ids: ["R-004", "R-006", "R-007"]
+    sections:
+      - section_id: "IV.A"
+        title: "Competitive landscape by market segment"
+        checklist_question_ids: ["IV.A.1", "IV.A.2"]
+        summary: "Public competitor pages show multiple alternatives in secure financial-data connectivity and open banking; private win/loss, coverage, reliability, and price benchmarks are required."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "IV.A.1"
+            finding: "Yodlee, MX, Tink, and Stripe Financial Connections publicly position around connected financial data, open finance, or open banking, overlapping with parts of Plaid's product suite."
+            evidence_claim_ids: ["EC-014", "EC-029"]
+            risk_ids: ["R-004"]
+          - finding_id: "IV.A.2"
+            finding: "The Federal Register final rule on personal financial data rights may increase standardization, which can be an opportunity and a pricing/commoditization risk."
+            evidence_claim_ids: ["EC-016", "EC-029"]
+            risk_ids: ["R-004", "R-007"]
+        hidden_risks:
+          - "Bank-owned rails, network-backed platforms, and standardized open-banking APIs could reduce Plaid's technical differentiation or pricing power."
+        evidence_gaps:
+          - "Win/loss data, competitive pricing, coverage by institution, authorization success rates, uptime comparisons, and customer switching costs."
+        follow_up_questions:
+          - "Provide competitor displacement analysis, price benchmarks, coverage/latency comparisons, and renewal-loss reasons."
+        table_ids: ["T-011", "T-012"]
+        figure_ids: ["F-005"]
+        evidence_claim_ids: ["EC-014", "EC-016", "EC-029"]
+
+  - chapter_id: "V"
+    title: "Marketing, Sales, and Distribution"
+    chapter_summary: "Public pages evidence self-serve developer onboarding, enterprise sales, customer stories, and industry/use-case segmentation, but channel economics and sales productivity are private."
+    founder_claim_ids: ["FC-004"]
+    evidence_claim_ids: ["EC-006", "EC-007", "EC-010", "EC-013", "EC-015", "EC-030"]
+    risk_ids: ["R-002", "R-003", "R-004"]
+    sections:
+      - section_id: "V.A"
+        title: "Strategy and implementation"
+        checklist_question_ids: ["V.A.1", "V.A.2", "V.A.3", "V.A.4"]
+        summary: "Plaid publicly presents a GTM mix of developer resources, pricing/contact-sales flows, use-case pages, industry pages, and customer stories."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "V.A.1"
+            finding: "Public pages evidence a combination of self-serve developer entry, pay-as-you-go pricing, sales contact paths, use cases, and customer proof."
+            evidence_claim_ids: ["EC-007", "EC-010", "EC-013", "EC-030"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "Enterprise sales cycles, discounts, implementation load, and compliance reviews may make growth less efficient than public funnel signals imply."
+        evidence_gaps:
+          - "CAC by channel, payback, win rate, sales cycle, quota attainment, funnel conversion, and marketing budget."
+        follow_up_questions:
+          - "Provide GTM dashboard, CAC/payback, sales productivity, pipeline, and marketing plan performance."
+        table_ids: ["T-013"]
+        figure_ids: ["F-006"]
+        evidence_claim_ids: ["EC-007", "EC-010", "EC-013", "EC-030"]
+      - section_id: "V.B"
+        title: "Major Customers"
+        checklist_question_ids: ["V.B.1", "V.B.2", "V.B.3"]
+        summary: "Major-customer status and pipeline are not public beyond selected logos and public customer stories."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "V.B.1"
+            finding: "Customer stories provide qualitative proof, but not relationship status, growth plan, pipeline, or renewal risk."
+            evidence_claim_ids: ["EC-013", "EC-021"]
+            risk_ids: ["R-002", "R-003"]
+        hidden_risks:
+          - "Logo visibility can overstate revenue durability if major accounts are usage-based, price-sensitive, or multi-home with competitors."
+        evidence_gaps:
+          - "Major-customer health scores, pipeline, renewal calendar, expansion plan, and reference-call notes."
+        follow_up_questions:
+          - "Provide top-account plans, pipeline by stage, expansion/churn bridge, and reference access."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-013", "EC-021"]
+      - section_id: "V.C"
+        title: "Principal avenues for generating new business"
+        checklist_question_ids: ["V.C"]
+        summary: "Public evidence indicates developer documentation, API keys, pricing pages, industry/use-case content, and enterprise contact forms as acquisition avenues."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "V.C.1"
+            finding: "Plaid's docs page offers developer resources and API-key signup, while pricing and customer pages support self-serve and sales-led entry."
+            evidence_claim_ids: ["EC-009", "EC-010", "EC-013", "EC-030"]
+            risk_ids: ["R-004"]
+        hidden_risks:
+          - "Self-serve developer activity may not convert to meaningful revenue without enterprise sales, compliance reviews, and bank-coverage quality."
+        evidence_gaps:
+          - "Lead source attribution, conversion rates, developer activation, sales-qualified pipeline, and partner-sourced revenue."
+        follow_up_questions:
+          - "Provide funnel metrics from developer signup through live API volume and paid conversion."
+        table_ids: ["T-014"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-009", "EC-010", "EC-013", "EC-030"]
+      - section_id: "V.D"
+        title: "Sales force productivity model"
+        checklist_question_ids: ["V.D.1", "V.D.2", "V.D.3", "V.D.4"]
+        summary: "Sales compensation, quotas, cycle length, sales productivity, and new-hire plan are not publicly disclosed."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "V.D.1"
+            finding: "Careers pages show sales and customer-facing roles, but productivity model details are not public."
+            evidence_claim_ids: ["EC-015", "EC-030"]
+            risk_ids: ["R-002"]
+        hidden_risks:
+          - "Long enterprise sales cycles and specialized implementation resources could pressure CAC payback."
+        evidence_gaps:
+          - "Quota, attainment, ramp, sales cycle, compensation, pipeline generation, and headcount plan."
+        follow_up_questions:
+          - "Provide sales productivity model by segment and geography."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-015", "EC-030"]
+      - section_id: "V.E"
+        title: "Ability to implement marketing plan with current and projected budgets"
+        checklist_question_ids: ["V.E"]
+        summary: "Public materials do not disclose marketing budgets, budget sufficiency, or projected spend against plan."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "V.E.1"
+            finding: "Public GTM assets are visible, but spend levels and plan attainment are not."
+            evidence_claim_ids: ["EC-013", "EC-030"]
+            risk_ids: ["R-001", "R-002"]
+        hidden_risks:
+          - "Regulatory education, enterprise compliance support, and competitive positioning may require higher spend than public materials imply."
+        evidence_gaps:
+          - "Marketing budget, channel ROI, campaign plan, brand metrics, and budget-to-plan variance."
+        follow_up_questions:
+          - "Provide marketing budget, campaign ROI, and projected spend by channel."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-013", "EC-030"]
+
+  - chapter_id: "VI"
+    title: "Research and Development"
+    chapter_summary: "Plaid's public product catalog, docs, status page, and engineering hiring suggest active R&D, but private roadmap, staffing, costs, quality metrics, and technical architecture are needed."
+    founder_claim_ids: ["FC-003"]
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-015", "EC-020", "EC-025", "EC-028"]
+    risk_ids: ["R-005", "R-006", "R-011"]
+    sections:
+      - section_id: "VI.A"
+        title: "Description of R&D organization"
+        checklist_question_ids: ["VI.A.1", "VI.A.2", "VI.A.3"]
+        summary: "Public pages show API products, developer documentation, engineering roles, and public status tooling, but the R&D org structure and spend are private."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "VI.A.1"
+            finding: "Plaid careers pages show engineering roles and public docs/status pages show an API platform, supporting active technical operations."
+            evidence_claim_ids: ["EC-009", "EC-015", "EC-020", "EC-028"]
+            risk_ids: ["R-005", "R-011"]
+        hidden_risks:
+          - "R&D capacity may be consumed by maintenance, compliance, bank-connection changes, and incident remediation rather than new products."
+        evidence_gaps:
+          - "R&D org chart, spend, roadmap ownership, incident retrospectives, quality metrics, and security architecture."
+        follow_up_questions:
+          - "Provide R&D headcount by function/location, roadmap, release metrics, and incident postmortems."
+        table_ids: ["T-015"]
+        figure_ids: ["F-007"]
+        evidence_claim_ids: ["EC-009", "EC-015", "EC-020", "EC-028"]
+      - section_id: "VI.B"
+        title: "New Product Pipeline"
+        checklist_question_ids: ["VI.B.1", "VI.B.2", "VI.B.3", "VI.B.4"]
+        summary: "Public product pages surface newer or expanded products such as Layer, Consumer Report, App Directory, and Permissions Manager, but timing, cost, and expected revenue are private."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "VI.B.1"
+            finding: "Plaid's product navigation identifies pipeline-relevant offerings around identity capture, consumer reports, app insights, and permissions management."
+            evidence_claim_ids: ["EC-008", "EC-025"]
+            risk_ids: ["R-005", "R-006"]
+        hidden_risks:
+          - "New-product economics may depend on regulatory acceptance, customer adoption, data coverage, and integration complexity."
+        evidence_gaps:
+          - "Roadmap timing, development cost, launch criteria, beta customers, product-market fit, and cannibalization analysis."
+        follow_up_questions:
+          - "Provide roadmap, product investment cases, beta customer feedback, and launch risk register."
+        table_ids: ["T-016"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-008", "EC-025"]
+
+  - chapter_id: "VII"
+    title: "Management and Personnel"
+    chapter_summary: "Public sources identify founders/key leaders, a broad global footprint, careers/hiring signals, and employee-count anchors, but org chart, compensation, retention, and turnover are private."
+    founder_claim_ids: ["FC-002"]
+    evidence_claim_ids: ["EC-002", "EC-015", "EC-026"]
+    risk_ids: ["R-009", "R-010"]
+    sections:
+      - section_id: "VII.A"
+        title: "Organization Chart"
+        checklist_question_ids: ["VII.A"]
+        summary: "A complete organization chart is not publicly available; public sources identify selected key people and hiring teams."
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: "VII.A.1"
+            finding: "Wikipedia lists Zach Perret as CEO and Jean-Denis Greze as CTO; careers pages show hiring across functions and locations."
+            evidence_claim_ids: ["EC-002", "EC-015", "EC-026"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Key-person concentration, succession depth, and span-of-control issues are not visible publicly."
+        evidence_gaps:
+          - "Current org chart, executive team, reporting lines, board observers, and succession plan."
+        follow_up_questions:
+          - "Provide current org chart, senior leadership roster, board composition, and key-person succession plans."
+        table_ids: []
+        figure_ids: ["F-008"]
+        evidence_claim_ids: ["EC-002", "EC-015", "EC-026"]
+      - section_id: "VII.B"
+        title: "Historical and projected headcount by function and location"
+        checklist_question_ids: ["VII.B"]
+        summary: "Public sources provide limited headcount and hiring-location anchors, but historical/projected headcount by function and geography is not public."
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: "VII.B.1"
+            finding: "Wikipedia lists 1,200 employees, and Plaid careers pages list open roles across locations including San Francisco, New York City, London, Raleigh, and remote United States."
+            evidence_claim_ids: ["EC-002", "EC-015"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Hiring plans may imply cash burn and operational complexity not visible in public materials."
+        evidence_gaps:
+          - "Historical and projected headcount by function/location, attrition, hiring plan, and workforce cost."
+        follow_up_questions:
+          - "Provide headcount history, plan, open requisitions, location mix, and payroll cost forecast."
+        table_ids: ["T-018"]
+        figure_ids: ["F-009"]
+        evidence_claim_ids: ["EC-002", "EC-015"]
+      - section_id: "VII.C"
+        title: "Senior management biographies"
+        checklist_question_ids: ["VII.C"]
+        summary: "Public sources identify founders and selected key people; full management biographies and tenure details require company materials."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "VII.C.1"
+            finding: "Public sources list Zach Perret and William Hockey as founders and Zach Perret as CEO."
+            evidence_claim_ids: ["EC-001", "EC-002", "EC-026"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Public biographies may omit departures, functional gaps, prior regulatory issues, or leadership churn."
+        evidence_gaps:
+          - "Full executive biographies, tenure, prior roles, references, background checks, and board materials."
+        follow_up_questions:
+          - "Provide biographies and reference permissions for the executive team and critical technical leaders."
+        table_ids: ["T-017"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-001", "EC-002", "EC-026"]
+      - section_id: "VII.D"
+        title: "Compensation arrangements"
+        checklist_question_ids: ["VII.D.1", "VII.D.2"]
+        summary: "Executive employment agreements, compensation, benefits, severance, and retention arrangements are not publicly disclosed."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VII.D.1"
+            finding: "Plaid careers pages describe employee benefits at a high level, but individual compensation arrangements are private."
+            evidence_claim_ids: ["EC-015"]
+            risk_ids: ["R-009", "R-010"]
+        hidden_risks:
+          - "Retention grants, severance, change-of-control terms, and compensation obligations could be material."
+        evidence_gaps:
+          - "Employment agreements, compensation schedules, benefit plans, severance terms, and change-of-control arrangements."
+        follow_up_questions:
+          - "Provide employment agreements and benefit/retention plan summaries for executives and key employees."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-015"]
+      - section_id: "VII.E"
+        title: "Incentive stock plans"
+        checklist_question_ids: ["VII.E"]
+        summary: "Option and equity incentive plans are not public; financing and employee share-sale signals make this a required diligence item."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VII.E.1"
+            finding: "Public funding history does not disclose option pool size, exercise prices, vesting, or refresh policy."
+            evidence_claim_ids: ["EC-005", "EC-022"]
+            risk_ids: ["R-010", "R-009"]
+        hidden_risks:
+          - "Underwater options, secondary programs, or refresh needs could affect retention and dilution."
+        evidence_gaps:
+          - "Equity incentive plan, option pool, grant schedule, vesting, exercise prices, 409A history, and repurchase/secondary policies."
+        follow_up_questions:
+          - "Provide current equity plan, option ledger, 409A valuations, and secondary/repurchase history."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-005", "EC-022"]
+      - section_id: "VII.F"
+        title: "Significant employee relations problems, past or present"
+        checklist_question_ids: ["VII.F"]
+        summary: "No comprehensive public employee-relations record was reviewed; lawsuits, complaints, and internal investigations require private disclosure."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VII.F.1"
+            finding: "Public careers materials are positive employer-facing materials and do not evidence absence of employee-relations issues."
+            evidence_claim_ids: ["EC-015"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Non-public labor, discrimination, harassment, whistleblower, or compliance complaints could affect operations and reputation."
+        evidence_gaps:
+          - "Employee-relations matters, investigations, HR complaints, litigation, and settlement agreements."
+        follow_up_questions:
+          - "Provide HR/legal schedule of employee-relations matters and settlements for the past three years."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-015"]
+      - section_id: "VII.G"
+        title: "Personnel Turnover"
+        checklist_question_ids: ["VII.G.1", "VII.G.2"]
+        summary: "Turnover rates, regretted attrition, and retention-plan effectiveness are not public."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VII.G.1"
+            finding: "Public hiring signals do not disclose attrition, retention, or turnover by function."
+            evidence_claim_ids: ["EC-015"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Turnover in engineering, bank partnerships, compliance, or enterprise sales could impair execution."
+        evidence_gaps:
+          - "Attrition, regretted turnover, retention cohorts, exit-interview themes, and retention-plan metrics."
+        follow_up_questions:
+          - "Provide two-year turnover data by function/location and retention-plan outcomes."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-015"]
+
+  - chapter_id: "VIII"
+    title: "Legal and Related Matters"
+    chapter_summary: "Public legal/regulatory evidence highlights a terminated antitrust-sensitive Visa deal, a consumer privacy settlement website, CFPB 1033 rulemaking, public privacy terms, and public patent assignments; private counsel review is essential."
+    founder_claim_ids: ["FC-002", "FC-005"]
+    evidence_claim_ids: ["EC-003", "EC-004", "EC-014", "EC-016", "EC-017", "EC-018", "EC-019", "EC-027"]
+    risk_ids: ["R-007", "R-008", "R-011"]
+    sections:
+      - section_id: "VIII.A"
+        title: "Pending lawsuits against the Company"
+        checklist_question_ids: ["VIII.A"]
+        summary: "Public settlement information shows historical privacy litigation allegations denied by Plaid; a complete pending-litigation schedule is not publicly verifiable."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "VIII.A.1"
+            finding: "The Plaid settlement website describes allegations over data collection and login credentials and states Plaid denied wrongdoing."
+            evidence_claim_ids: ["EC-017", "EC-027"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Pending or threatened matters may not be visible without docket/counsel searches and company disclosure."
+        evidence_gaps:
+          - "Pending litigation schedule, claims, damages, reserves, counsel assessments, insurance coverage, and settlement obligations."
+        follow_up_questions:
+          - "Provide counsel-prepared litigation schedule and loss contingency analysis."
+        table_ids: ["T-019"]
+        figure_ids: ["F-010"]
+        evidence_claim_ids: ["EC-017", "EC-027"]
+      - section_id: "VIII.B"
+        title: "Pending lawsuits initiated by Company"
+        checklist_question_ids: ["VIII.B"]
+        summary: "No comprehensive public list of Plaid-initiated pending lawsuits was verified."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VIII.B.1"
+            finding: "Public legal sources reviewed for this report do not provide a complete schedule of company-initiated litigation."
+            evidence_claim_ids: ["EC-027"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Offensive IP, contract, or data-access disputes may indicate dependency or defensibility issues."
+        evidence_gaps:
+          - "Company-initiated litigation schedule, arbitration matters, demand letters, and settlement terms."
+        follow_up_questions:
+          - "Provide all pending or threatened claims initiated by Plaid and related legal budgets."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-027"]
+      - section_id: "VIII.C"
+        title: "Environmental and employee safety issues and liabilities"
+        checklist_question_ids: ["VIII.C.1", "VIII.C.2"]
+        summary: "As a software/API company, public sources did not reveal material environmental liabilities, but office safety and employment compliance are not publicly verifiable."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VIII.C.1"
+            finding: "Public company/careers sources show office and remote work locations but not safety programs or liabilities."
+            evidence_claim_ids: ["EC-015", "EC-026"]
+            risk_ids: ["R-009"]
+        hidden_risks:
+          - "Office, remote-work, and international employment compliance issues require HR/legal review."
+        evidence_gaps:
+          - "OSHA/workplace-safety records, employment compliance policies, remote-work compliance, and facilities obligations."
+        follow_up_questions:
+          - "Provide workplace safety, employment compliance, and facilities liability schedules."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-015", "EC-026"]
+      - section_id: "VIII.D"
+        title: "Material patents, copyrights, licenses, and trademarks"
+        checklist_question_ids: ["VIII.D"]
+        summary: "Justia lists patents assigned to Plaid Inc.; complete IP ownership, trademarks, copyrights, open-source licenses, and assignments require legal diligence."
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: "VIII.D.1"
+            finding: "Justia lists patents assigned to Plaid Inc., including secure permissioning and account-access technologies."
+            evidence_claim_ids: ["EC-018"]
+            risk_ids: ["R-008", "R-006"]
+        hidden_risks:
+          - "Patent assignment gaps, open-source obligations, third-party data/API licenses, and employee/contractor IP assignment gaps could affect defensibility."
+        evidence_gaps:
+          - "Full IP schedule, assignments, prosecution status, trademarks, copyrights, open-source scan, and third-party licenses."
+        follow_up_questions:
+          - "Provide IP schedule, invention assignments, open-source/license scan, trademark schedule, and data/API license obligations."
+        table_ids: ["T-020"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-018"]
+      - section_id: "VIII.E"
+        title: "Insurance coverage and material exposures"
+        checklist_question_ids: ["VIII.E"]
+        summary: "Insurance coverage, cyber/privacy limits, retention, exclusions, and claims history are not public."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VIII.E.1"
+            finding: "Public legal and security sources evidence privacy/security exposure, but not insurance coverage."
+            evidence_claim_ids: ["EC-011", "EC-017", "EC-019"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "Cyber, E&O, D&O, privacy, and regulatory exclusions may leave material uninsured exposure."
+        evidence_gaps:
+          - "Insurance policies, limits, exclusions, claims history, and adequacy analysis."
+        follow_up_questions:
+          - "Provide insurance schedule, policies, claims history, and broker adequacy memo."
+        table_ids: ["T-021"]
+        figure_ids: []
+        evidence_claim_ids: ["EC-011", "EC-017", "EC-019"]
+      - section_id: "VIII.F"
+        title: "Material contracts"
+        checklist_question_ids: ["VIII.F"]
+        summary: "Material customer, bank, data-provider, cloud, processor, and partner contracts are not public."
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: "VIII.F.1"
+            finding: "Plaid's public model depends on API, customer, financial-institution, and partner relationships, but material contract terms are private."
+            evidence_claim_ids: ["EC-007", "EC-009", "EC-020", "EC-024"]
+            risk_ids: ["R-011", "R-007"]
+        hidden_risks:
+          - "Termination rights, exclusivity, data-use restrictions, indemnities, pricing resets, and SLAs could materially affect revenue and reliability."
+        evidence_gaps:
+          - "Material contracts, amendments, SLAs, termination notices, indemnities, exclusivity, and change-of-control provisions."
+        follow_up_questions:
+          - "Provide top material contracts and a contract-risk summary by revenue, dependency, and termination rights."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: ["EC-007", "EC-009", "EC-020", "EC-024"]
+      - section_id: "VIII.G"
+        title: "Regulatory agency problems"
+        checklist_question_ids: ["VIII.G"]
+        summary: "Public sources show antitrust scrutiny of the Visa deal, privacy litigation allegations/settlement, public privacy terms, and CFPB data-rights rulemaking relevant to Plaid's business."
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: "VIII.G.1"
+            finding: "CNBC reported the Visa takeover was abandoned after DOJ antitrust concerns; Federal Register 1033 rulemaking requires consumer data availability to consumers and authorized third parties."
+            evidence_claim_ids: ["EC-004", "EC-016"]
+            risk_ids: ["R-007", "R-004"]
+          - finding_id: "VIII.G.2"
+            finding: "Plaid's legal/privacy pages and settlement website evidence material privacy and consent-flow diligence requirements."
+            evidence_claim_ids: ["EC-017", "EC-019"]
+            risk_ids: ["R-007"]
+        hidden_risks:
+          - "CFPB 1033 implementation, privacy obligations, bank-access rules, consent-flow design, data retention, and enforcement exposure can materially affect growth and margins."
+        evidence_gaps:
+          - "Regulatory exams, enforcement inquiries, complaints, consent-flow audits, data-retention maps, and remediation plans."
+        follow_up_questions:
+          - "Provide regulatory exam history, agency correspondence, privacy/security audits, consent-flow test results, and 1033 compliance plan."
+        table_ids: ["T-019", "T-021"]
+        figure_ids: ["F-011"]
+        evidence_claim_ids: ["EC-004", "EC-016", "EC-017", "EC-019"]
+
+tables:
+  - table_id: "T-001"
+    title: "Public funding and valuation history"
+    chapter_id: "I"
+    section_id: "I.D"
+    purpose: "Summarize public financing and valuation anchors; private financing documents required for underwriting."
+    columns:
+      - {name: "date", description: "Public date"}
+      - {name: "event", description: "Financing or transaction event"}
+      - {name: "amount", description: "Public amount"}
+      - {name: "valuation_or_consideration", description: "Public valuation or consideration"}
+      - {name: "verification", description: "Status"}
+    rows:
+      - row_id: "T-001-R1"
+        values: {date: "2018-12-11", event: "Series C", amount: "US$250M", valuation_or_consideration: "US$2.65B", verification: "Partially verified from public secondary sources"}
+        evidence_claim_ids: ["EC-005"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-001-R2"
+        values: {date: "2020-01-13", event: "Visa announced planned acquisition", amount: "N/A", valuation_or_consideration: "US$5.3B purchase consideration", verification: "Verified announcement; transaction later abandoned"}
+        evidence_claim_ids: ["EC-003", "EC-004"]
+        source_ids: ["SRC-012", "SRC-013"]
+      - row_id: "T-001-R3"
+        values: {date: "2021-04-07", event: "Series D", amount: "US$425M", valuation_or_consideration: "US$13.4B", verification: "Verified as public unicorn-list and company-page/Wikipedia anchor"}
+        evidence_claim_ids: ["EC-001", "EC-005"]
+        source_ids: ["SRC-001", "SRC-002"]
+      - row_id: "T-001-R4"
+        values: {date: "Current", event: "Current fully diluted cap table", amount: "Not public", valuation_or_consideration: "Not publicly verifiable", verification: "Diligence gap"}
+        evidence_claim_ids: ["EC-022"]
+        source_ids: ["SRC-001", "SRC-002"]
+    evidence_claim_ids: ["EC-001", "EC-003", "EC-004", "EC-005", "EC-022"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-012", "SRC-013"]
+    notes: "Later private-market marks or employee share sales should be reconciled to current company records before relying on any single valuation anchor."
+  - table_id: "T-002"
+    title: "Public financial information and data-room request"
+    chapter_id: "I"
+    section_id: "I.A"
+    purpose: "Identify what is public versus private for financial quality."
+    columns:
+      - {name: "item", description: "Financial item"}
+      - {name: "public_evidence", description: "Public signal"}
+      - {name: "verification", description: "Verification status"}
+      - {name: "diligence_request", description: "Private material required"}
+    rows:
+      - row_id: "T-002-R1"
+        values: {item: "Revenue", public_evidence: "Wikipedia lists a stale 2020 revenue figure; not audited in source reviewed.", verification: "partially_verified", diligence_request: "Audited revenue, revenue recognition memo, ARR/API-volume bridge."}
+        evidence_claim_ids: ["EC-006"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-002-R2"
+        values: {item: "Gross margin/product P&L", public_evidence: "No public product-level P&L found.", verification: "not_publicly_verifiable", diligence_request: "Product P&L and cost-of-service by API/product."}
+        evidence_claim_ids: ["EC-022", "EC-023"]
+        source_ids: ["SRC-004", "SRC-006"]
+      - row_id: "T-002-R3"
+        values: {item: "Cash, debt, runway", public_evidence: "No public cash/debt/runway schedule found.", verification: "not_publicly_verifiable", diligence_request: "Cash, debt, bank lines, burn, runway, covenant schedules."}
+        evidence_claim_ids: ["EC-022"]
+        source_ids: ["SRC-002"]
+    evidence_claim_ids: ["EC-006", "EC-022", "EC-023"]
+    source_ids: ["SRC-002", "SRC-004", "SRC-006"]
+    notes: "Private financial data is mandatory before valuation reliance."
+  - table_id: "T-003"
+    title: "Capital structure and ownership snapshot"
+    chapter_id: "I"
+    section_id: "I.C"
+    purpose: "Separate public eligibility evidence from private cap-table diligence."
+    columns:
+      - {name: "stakeholder_or_instrument", description: "Stakeholder or instrument"}
+      - {name: "public_position", description: "Publicly known signal"}
+      - {name: "diligence_caveat", description: "Required caveat"}
+    rows:
+      - row_id: "T-003-R1"
+        values: {stakeholder_or_instrument: "Common and preferred stock", public_position: "Plaid is described as private; detailed holders not public.", diligence_caveat: "Request full cap table and stock ledger."}
+        evidence_claim_ids: ["EC-002", "EC-022"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-003-R2"
+        values: {stakeholder_or_instrument: "Strategic investor/transaction history", public_position: "Visa planned acquisition for US$5.3B but later abandoned.", diligence_caveat: "Confirm any residual strategic rights or commercial agreements."}
+        evidence_claim_ids: ["EC-003", "EC-004"]
+        source_ids: ["SRC-012", "SRC-013"]
+      - row_id: "T-003-R3"
+        values: {stakeholder_or_instrument: "Options/warrants/debt", public_position: "Not publicly disclosed.", diligence_caveat: "Request option ledger, warrants, notes, SAFEs, debt, preferences."}
+        evidence_claim_ids: ["EC-022"]
+        source_ids: ["SRC-002"]
+    evidence_claim_ids: ["EC-002", "EC-003", "EC-004", "EC-022"]
+    source_ids: ["SRC-002", "SRC-012", "SRC-013"]
+    notes: null
+  - table_id: "T-004"
+    title: "Financial projection and unit-economic diligence map"
+    chapter_id: "I"
+    section_id: "I.B"
+    purpose: "Map public growth signals to private forecast requirements."
+    columns:
+      - {name: "driver", description: "Forecast driver"}
+      - {name: "public_signal", description: "Observed public evidence"}
+      - {name: "status", description: "Verification"}
+      - {name: "request", description: "Needed diligence"}
+    rows:
+      - row_id: "T-004-R1"
+        values: {driver: "Customer scale", public_signal: "Over 7,000 fintech partners claimed by Plaid.", status: "partially_verified", request: "Revenue by partner, churn, NRR, and cohort usage."}
+        evidence_claim_ids: ["EC-007", "EC-021"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-004-R2"
+        values: {driver: "Pricing", public_signal: "Pay as You Go and Growth tiers disclosed; custom economics not public.", status: "partially_verified", request: "Net price book, discounts, minimums, and gross-margin bridge."}
+        evidence_claim_ids: ["EC-010", "EC-023"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-004-R3"
+        values: {driver: "Regulatory cost", public_signal: "Federal Register 1033 rule changes data-access obligations.", status: "verified", request: "1033 compliance cost and product impact forecast."}
+        evidence_claim_ids: ["EC-016"]
+        source_ids: ["SRC-014"]
+    evidence_claim_ids: ["EC-007", "EC-010", "EC-016", "EC-021", "EC-023"]
+    source_ids: ["SRC-003", "SRC-006", "SRC-014"]
+    notes: null
+  - table_id: "T-005"
+    title: "Product / SKU matrix"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Summarize public products and primary diligence questions."
+    columns:
+      - {name: "product", description: "Product or product family"}
+      - {name: "public_description", description: "Publicly described capability"}
+      - {name: "audience", description: "Likely buyer/user"}
+      - {name: "diligence_focus", description: "Follow-up focus"}
+    rows:
+      - row_id: "T-005-R1"
+        values: {product: "Auth / Balance / Identity", public_description: "Account/routing verification, balances, and bank account-holder information.", audience: "Fintech apps, lenders, payments companies", diligence_focus: "Conversion, coverage, false positives, pricing, and support cost."}
+        evidence_claim_ids: ["EC-008", "EC-009"]
+        source_ids: ["SRC-004", "SRC-005"]
+      - row_id: "T-005-R2"
+        values: {product: "Transactions / Investments / Liabilities / Assets / Income", public_description: "Categorized transactions, investment/credit/mortgage data, asset and income products.", audience: "PFM, lending, wealth, credit underwriting", diligence_focus: "Data quality, latency, bank coverage, regulatory constraints."}
+        evidence_claim_ids: ["EC-008", "EC-009"]
+        source_ids: ["SRC-004", "SRC-005"]
+      - row_id: "T-005-R3"
+        values: {product: "Transfer / Signal", public_description: "Payment processing and ACH risk platform.", audience: "Payments and money movement customers", diligence_focus: "Risk losses, return rates, compliance, bank sponsorship."}
+        evidence_claim_ids: ["EC-008", "EC-009"]
+        source_ids: ["SRC-004", "SRC-005"]
+      - row_id: "T-005-R4"
+        values: {product: "Layer / Link / Consumer Report / Permissions Manager", public_description: "Identity/bank capture, app connection flow, consumer reporting, and permissions management.", audience: "Developers, lenders, compliance teams", diligence_focus: "Adoption, roadmap maturity, consent compliance, product-market fit."}
+        evidence_claim_ids: ["EC-008", "EC-025"]
+        source_ids: ["SRC-004"]
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-025"]
+    source_ids: ["SRC-004", "SRC-005"]
+    notes: "Public catalog does not reveal product-level ARR, margin, or retention."
+  - table_id: "T-006"
+    title: "Pricing and unit-economics visibility"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Map public packaging to economic diligence needs."
+    columns:
+      - {name: "tier_or_topic", description: "Pricing tier/topic"}
+      - {name: "public_signal", description: "Publicly visible detail"}
+      - {name: "verification", description: "Status"}
+      - {name: "risk_or_request", description: "Diligence point"}
+    rows:
+      - row_id: "T-006-R1"
+        values: {tier_or_topic: "Pay as You Go", public_signal: "Month-to-month plan with unlimited usage and pay for what you use.", verification: "verified", risk_or_request: "Validate unit economics and developer-to-paid conversion."}
+        evidence_claim_ids: ["EC-010"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-006-R2"
+        values: {tier_or_topic: "Growth", public_signal: "12-month commitment, discounted product rates, support package, account management.", verification: "verified", risk_or_request: "Validate discounting, minimums, churn, and support cost."}
+        evidence_claim_ids: ["EC-010"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-006-R3"
+        values: {tier_or_topic: "Enterprise/custom", public_signal: "Custom economics not fully public.", verification: "not_publicly_verifiable", risk_or_request: "Request price book, volume tiers, SLAs, and gross-margin bridge."}
+        evidence_claim_ids: ["EC-010", "EC-023"]
+        source_ids: ["SRC-006"]
+    evidence_claim_ids: ["EC-010", "EC-023"]
+    source_ids: ["SRC-006"]
+    notes: null
+  - table_id: "T-007"
+    title: "Public customer and logo proof"
+    chapter_id: "III"
+    section_id: "III.A"
+    purpose: "Summarize public customer proof without overstating revenue concentration."
+    columns:
+      - {name: "customer_or_logo_signal", description: "Public customer signal"}
+      - {name: "source_context", description: "Source context"}
+      - {name: "verified_fact", description: "What is actually verified"}
+      - {name: "gap", description: "Missing diligence"}
+    rows:
+      - row_id: "T-007-R1"
+        values: {customer_or_logo_signal: "Over 7,000 fintech partners", source_context: "Plaid company page", verified_fact: "Company-published partner-count claim.", gap: "Revenue, churn, NRR, and active-paid partner definition."}
+        evidence_claim_ids: ["EC-007", "EC-021"]
+        source_ids: ["SRC-003"]
+      - row_id: "T-007-R2"
+        values: {customer_or_logo_signal: "Chime quote", source_context: "Plaid customer-story page", verified_fact: "Public customer testimonial on data quality/security/coverage.", gap: "Contract, spend, product usage, renewal status."}
+        evidence_claim_ids: ["EC-013", "EC-021"]
+        source_ids: ["SRC-007"]
+      - row_id: "T-007-R3"
+        values: {customer_or_logo_signal: "H&R Block, Gemini, GoFundMe, HealthEquity imagery", source_context: "Plaid customer-story page", verified_fact: "Brands featured in Powered by Plaid campaign imagery.", gap: "Revenue, tenure, use case, and reference permissions."}
+        evidence_claim_ids: ["EC-013", "EC-021"]
+        source_ids: ["SRC-007"]
+    evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+    source_ids: ["SRC-003", "SRC-007"]
+    notes: "Public logos are not evidence of concentration, ARR, or retention."
+  - table_id: "T-008"
+    title: "Strategic relationships and partner exposure"
+    chapter_id: "III"
+    section_id: "III.B"
+    purpose: "Identify strategic relationships and contract diligence needs."
+    columns:
+      - {name: "relationship", description: "Relationship"}
+      - {name: "public_evidence", description: "Public evidence"}
+      - {name: "diligence_gap", description: "Gap"}
+    rows:
+      - row_id: "T-008-R1"
+        values: {relationship: "Visa proposed acquisition", public_evidence: "Visa announced US$5.3B acquisition; CNBC reported abandonment after DOJ concerns.", diligence_gap: "Residual commercial, investor, or network rights."}
+        evidence_claim_ids: ["EC-003", "EC-004"]
+        source_ids: ["SRC-012", "SRC-013"]
+      - row_id: "T-008-R2"
+        values: {relationship: "Financial-institution connectivity", public_evidence: "Plaid docs and consumer pages describe bank/account connection workflows.", diligence_gap: "Bank contracts, SLAs, data-access rights, termination risk."}
+        evidence_claim_ids: ["EC-009", "EC-012", "EC-024"]
+        source_ids: ["SRC-005", "SRC-009"]
+      - row_id: "T-008-R3"
+        values: {relationship: "Customer/application ecosystem", public_evidence: "Over 7,000 fintech partners claimed publicly.", diligence_gap: "Active paid accounts, partner concentration, revenue share."}
+        evidence_claim_ids: ["EC-007", "EC-021"]
+        source_ids: ["SRC-003"]
+    evidence_claim_ids: ["EC-003", "EC-004", "EC-007", "EC-009", "EC-012", "EC-021", "EC-024"]
+    source_ids: ["SRC-003", "SRC-005", "SRC-009", "SRC-012", "SRC-013"]
+    notes: null
+  - table_id: "T-009"
+    title: "Top supplier and operational dependency map"
+    chapter_id: "III"
+    section_id: "III.E"
+    purpose: "Highlight public dependency categories and private supplier diligence."
+    columns:
+      - {name: "dependency", description: "Dependency category"}
+      - {name: "public_signal", description: "Public evidence"}
+      - {name: "risk", description: "Risk"}
+      - {name: "request", description: "Required information"}
+    rows:
+      - row_id: "T-009-R1"
+        values: {dependency: "Financial institution connectivity", public_signal: "Docs and consumer pages show account-linking model.", risk: "Access, reliability, pricing, regulatory and bank-policy changes.", request: "Bank/data-provider agreements and SLAs."}
+        evidence_claim_ids: ["EC-009", "EC-012", "EC-024"]
+        source_ids: ["SRC-005", "SRC-009"]
+      - row_id: "T-009-R2"
+        values: {dependency: "API infrastructure/status operations", public_signal: "Public status page reports system status and incidents API.", risk: "Outages and incident transparency.", request: "Incident logs, cloud contracts, SRE metrics."}
+        evidence_claim_ids: ["EC-020", "EC-028"]
+        source_ids: ["SRC-021"]
+      - row_id: "T-009-R3"
+        values: {dependency: "Cloud and security vendors", public_signal: "Not publicly disclosed.", risk: "Supplier concentration and cyber/privacy controls.", request: "Top vendor list, spend, SLAs, BCP/DR."}
+        evidence_claim_ids: ["EC-022", "EC-028"]
+        source_ids: ["SRC-008", "SRC-021"]
+    evidence_claim_ids: ["EC-009", "EC-012", "EC-020", "EC-022", "EC-024", "EC-028"]
+    source_ids: ["SRC-005", "SRC-008", "SRC-009", "SRC-021"]
+    notes: null
+  - table_id: "T-010"
+    title: "Customer concentration and churn diligence matrix"
+    chapter_id: "III"
+    section_id: "III.C"
+    purpose: "Make the absence of public concentration data explicit."
+    columns:
+      - {name: "metric", description: "Customer metric"}
+      - {name: "public_status", description: "Public status"}
+      - {name: "diligence_priority", description: "Priority"}
+      - {name: "request", description: "Private request"}
+    rows:
+      - row_id: "T-010-R1"
+        values: {metric: "Top customer revenue concentration", public_status: "Not public", diligence_priority: "high", request: "Top 20 customer revenue and gross margin."}
+        evidence_claim_ids: ["EC-021"]
+        source_ids: ["SRC-003", "SRC-007"]
+      - row_id: "T-010-R2"
+        values: {metric: "Churn / NRR", public_status: "Not public", diligence_priority: "high", request: "Logo churn, revenue churn, NRR, GRR by cohort."}
+        evidence_claim_ids: ["EC-021"]
+        source_ids: ["SRC-003", "SRC-007"]
+      - row_id: "T-010-R3"
+        values: {metric: "Customer contract terms", public_status: "Not public", diligence_priority: "high", request: "MSAs, SLAs, minimums, termination rights, pricing resets."}
+        evidence_claim_ids: ["EC-021", "EC-024"]
+        source_ids: ["SRC-003", "SRC-007"]
+    evidence_claim_ids: ["EC-021", "EC-024"]
+    source_ids: ["SRC-003", "SRC-007"]
+    notes: null
+  - table_id: "T-011"
+    title: "Competitor comparison matrix"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Frame public competitive alternatives."
+    columns:
+      - {name: "competitor", description: "Competitor"}
+      - {name: "segment", description: "Segment"}
+      - {name: "public_positioning", description: "Public source positioning"}
+      - {name: "Plaid_overlap", description: "Overlap with Plaid"}
+    rows:
+      - row_id: "T-011-R1"
+        values: {competitor: "Envestnet Yodlee", segment: "Connected financial data / open banking", public_positioning: "Connected financial data and finance insights.", Plaid_overlap: "Data aggregation, enrichment, open banking."}
+        evidence_claim_ids: ["EC-014", "EC-029"]
+        source_ids: ["SRC-017"]
+      - row_id: "T-011-R2"
+        values: {competitor: "MX", segment: "Open finance", public_positioning: "Open finance resources and data connectivity.", Plaid_overlap: "Financial data access and insights."}
+        evidence_claim_ids: ["EC-014", "EC-029"]
+        source_ids: ["SRC-018"]
+      - row_id: "T-011-R3"
+        values: {competitor: "Tink", segment: "European open banking", public_positioning: "European open banking platform with connections.", Plaid_overlap: "Open-banking connectivity and account data."}
+        evidence_claim_ids: ["EC-014", "EC-029"]
+        source_ids: ["SRC-019"]
+      - row_id: "T-011-R4"
+        values: {competitor: "Stripe Financial Connections", segment: "Embedded open banking / payments platform", public_positioning: "Secure open banking platform.", Plaid_overlap: "Financial account linking and data for fintech/payments."}
+        evidence_claim_ids: ["EC-014", "EC-029"]
+        source_ids: ["SRC-020"]
+    evidence_claim_ids: ["EC-014", "EC-029"]
+    source_ids: ["SRC-017", "SRC-018", "SRC-019", "SRC-020"]
+    notes: "Private win/loss and pricing benchmarks are required."
+  - table_id: "T-012"
+    title: "Basis-of-competition scoring"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Translate public evidence into diligence hypotheses."
+    columns:
+      - {name: "axis", description: "Competition axis"}
+      - {name: "Plaid_public_position", description: "Public position"}
+      - {name: "competitor_pressure", description: "Pressure"}
+      - {name: "diligence_request", description: "Needed evidence"}
+    rows:
+      - row_id: "T-012-R1"
+        values: {axis: "Coverage and data quality", Plaid_public_position: "Plaid customer quote highlights data quality/security/coverage.", competitor_pressure: "High from other open-banking/data platforms.", diligence_request: "Institution coverage, success rates, latency, defect rates."}
+        evidence_claim_ids: ["EC-013", "EC-014"]
+        source_ids: ["SRC-007", "SRC-017", "SRC-018", "SRC-019", "SRC-020"]
+      - row_id: "T-012-R2"
+        values: {axis: "Price", Plaid_public_position: "Public tiers include pay-as-you-go and discounts for commitments.", competitor_pressure: "High where APIs commoditize.", diligence_request: "Net pricing, discounts, win/loss pricing."}
+        evidence_claim_ids: ["EC-010", "EC-029"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-012-R3"
+        values: {axis: "Regulatory readiness", Plaid_public_position: "Privacy/legal pages and permissioning products visible.", competitor_pressure: "High under 1033 rulemaking.", diligence_request: "Compliance roadmap, consent audit, regulator correspondence."}
+        evidence_claim_ids: ["EC-016", "EC-019", "EC-025"]
+        source_ids: ["SRC-010", "SRC-014", "SRC-004"]
+    evidence_claim_ids: ["EC-010", "EC-013", "EC-014", "EC-016", "EC-019", "EC-025", "EC-029"]
+    source_ids: ["SRC-004", "SRC-006", "SRC-007", "SRC-010", "SRC-014", "SRC-017", "SRC-018", "SRC-019", "SRC-020"]
+    notes: null
+  - table_id: "T-013"
+    title: "Distribution channels and GTM motions"
+    chapter_id: "V"
+    section_id: "V.A"
+    purpose: "Summarize public GTM channels."
+    columns:
+      - {name: "channel", description: "Channel"}
+      - {name: "public_evidence", description: "Public evidence"}
+      - {name: "gap", description: "Missing data"}
+    rows:
+      - row_id: "T-013-R1"
+        values: {channel: "Developer self-serve", public_evidence: "Docs page includes guides, resources, references, and API-key signup.", gap: "Activation, conversion, API usage, and paid conversion."}
+        evidence_claim_ids: ["EC-009", "EC-030"]
+        source_ids: ["SRC-005"]
+      - row_id: "T-013-R2"
+        values: {channel: "Pricing-led / pay-as-you-go", public_evidence: "Pricing page publishes Pay as You Go tier.", gap: "Usage economics, cohorts, CAC, support cost."}
+        evidence_claim_ids: ["EC-010", "EC-030"]
+        source_ids: ["SRC-006"]
+      - row_id: "T-013-R3"
+        values: {channel: "Enterprise sales / account management", public_evidence: "Growth tier references account management and sales contact paths.", gap: "Sales cycle, quota attainment, enterprise discounts."}
+        evidence_claim_ids: ["EC-010", "EC-015", "EC-030"]
+        source_ids: ["SRC-006", "SRC-011"]
+      - row_id: "T-013-R4"
+        values: {channel: "Customer proof / industry use cases", public_evidence: "Customer stories and industry/use-case navigation.", gap: "Attribution and campaign ROI."}
+        evidence_claim_ids: ["EC-007", "EC-013", "EC-030"]
+        source_ids: ["SRC-003", "SRC-007"]
+    evidence_claim_ids: ["EC-007", "EC-009", "EC-010", "EC-013", "EC-015", "EC-030"]
+    source_ids: ["SRC-003", "SRC-005", "SRC-006", "SRC-007", "SRC-011"]
+    notes: null
+  - table_id: "T-014"
+    title: "Public marketing signal and budget gaps"
+    chapter_id: "V"
+    section_id: "V.C"
+    purpose: "Identify public marketing signals and data-room needs."
+    columns:
+      - {name: "signal", description: "Public signal"}
+      - {name: "observed_fact", description: "Observed fact"}
+      - {name: "not_public", description: "Missing metric"}
+    rows:
+      - row_id: "T-014-R1"
+        values: {signal: "Customer stories", observed_fact: "Plaid publishes customer success stories and featured brands.", not_public: "Lead attribution, ARR influenced, campaign ROI."}
+        evidence_claim_ids: ["EC-013", "EC-030"]
+        source_ids: ["SRC-007"]
+      - row_id: "T-014-R2"
+        values: {signal: "Use-case/industry navigation", observed_fact: "Company/product pages segment by use case and industry.", not_public: "Pipeline by segment and conversion."}
+        evidence_claim_ids: ["EC-008", "EC-030"]
+        source_ids: ["SRC-003", "SRC-004"]
+      - row_id: "T-014-R3"
+        values: {signal: "Careers and sales roles", observed_fact: "Careers page lists customer/sales roles across locations.", not_public: "Sales capacity, ramp, quota, productivity."}
+        evidence_claim_ids: ["EC-015", "EC-030"]
+        source_ids: ["SRC-011"]
+    evidence_claim_ids: ["EC-008", "EC-013", "EC-015", "EC-030"]
+    source_ids: ["SRC-003", "SRC-004", "SRC-007", "SRC-011"]
+    notes: null
+  - table_id: "T-015"
+    title: "Public R&D personnel and organization signals"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    purpose: "Summarize public R&D/personnel signals."
+    columns:
+      - {name: "signal", description: "Signal"}
+      - {name: "public_evidence", description: "Public evidence"}
+      - {name: "diligence_need", description: "Needed evidence"}
+    rows:
+      - row_id: "T-015-R1"
+        values: {signal: "CTO/key technical leadership", public_evidence: "Wikipedia lists Jean-Denis Greze as CTO.", diligence_need: "Confirm current leadership, reporting lines, and technical ownership."}
+        evidence_claim_ids: ["EC-002", "EC-026"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-015-R2"
+        values: {signal: "Engineering hiring", public_evidence: "Careers page includes engineering roles such as Engineering Manager - Europe and Staff Software Engineer - Europe.", diligence_need: "R&D headcount plan and budget."}
+        evidence_claim_ids: ["EC-015", "EC-028"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-015-R3"
+        values: {signal: "API operations", public_evidence: "Status page references production/sandbox APIs and incident/status API.", diligence_need: "SRE metrics, incident postmortems, uptime by product."}
+        evidence_claim_ids: ["EC-020", "EC-028"]
+        source_ids: ["SRC-021"]
+    evidence_claim_ids: ["EC-002", "EC-015", "EC-020", "EC-026", "EC-028"]
+    source_ids: ["SRC-002", "SRC-011", "SRC-021"]
+    notes: null
+  - table_id: "T-016"
+    title: "Public product and R&D pipeline"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    purpose: "Frame newer product areas and private roadmap requests."
+    columns:
+      - {name: "project_or_product", description: "Project/product"}
+      - {name: "public_status", description: "Public status"}
+      - {name: "risk", description: "Product risk"}
+      - {name: "request", description: "Diligence request"}
+    rows:
+      - row_id: "T-016-R1"
+        values: {project_or_product: "Layer", public_status: "Product navigation describes capture of identity, contact, and bank info in one click.", risk: "Adoption and privacy/consent execution.", request: "Roadmap, beta metrics, conversion, compliance review."}
+        evidence_claim_ids: ["EC-025"]
+        source_ids: ["SRC-004"]
+      - row_id: "T-016-R2"
+        values: {project_or_product: "Consumer Report / Check", public_status: "Product navigation references income, underwriting, and consumer report products.", risk: "Regulatory, data quality, and lender adoption.", request: "FCRA/compliance review, revenue, customer pilots."}
+        evidence_claim_ids: ["EC-008", "EC-025"]
+        source_ids: ["SRC-004"]
+      - row_id: "T-016-R3"
+        values: {project_or_product: "Permissions Manager / App Directory", public_status: "Product navigation references consumer connection visibility/control and app insights.", risk: "Compliance cost and monetization.", request: "Usage, attach, regulatory roadmap, product P&L."}
+        evidence_claim_ids: ["EC-025"]
+        source_ids: ["SRC-004"]
+    evidence_claim_ids: ["EC-008", "EC-025"]
+    source_ids: ["SRC-004"]
+    notes: null
+  - table_id: "T-017"
+    title: "Senior management roster"
+    chapter_id: "VII"
+    section_id: "VII.C"
+    purpose: "Summarize public management evidence and gaps."
+    columns:
+      - {name: "person", description: "Person"}
+      - {name: "role_or_public_link", description: "Role/public evidence"}
+      - {name: "verification", description: "Status"}
+      - {name: "diligence_gap", description: "Gap"}
+    rows:
+      - row_id: "T-017-R1"
+        values: {person: "Zach Perret", role_or_public_link: "Founder and CEO listed in public sources.", verification: "verified public identity/role", diligence_gap: "Employment agreement, references, succession, equity."}
+        evidence_claim_ids: ["EC-001", "EC-002", "EC-026"]
+        source_ids: ["SRC-001", "SRC-002"]
+      - row_id: "T-017-R2"
+        values: {person: "William Hockey", role_or_public_link: "Founder listed in public sources.", verification: "verified public founder identity", diligence_gap: "Current role/ownership and any ongoing obligations."}
+        evidence_claim_ids: ["EC-001", "EC-002", "EC-026"]
+        source_ids: ["SRC-001", "SRC-002"]
+      - row_id: "T-017-R3"
+        values: {person: "Jean-Denis Greze", role_or_public_link: "CTO listed by Wikipedia.", verification: "partially_verified", diligence_gap: "Confirm current role, tenure, and reporting lines."}
+        evidence_claim_ids: ["EC-002", "EC-026"]
+        source_ids: ["SRC-002"]
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-026"]
+    source_ids: ["SRC-001", "SRC-002"]
+    notes: "Use company-provided management roster for final verification."
+  - table_id: "T-018"
+    title: "Headcount and hiring signals"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    purpose: "Summarize public staffing anchors."
+    columns:
+      - {name: "signal", description: "Signal"}
+      - {name: "public_evidence", description: "Public evidence"}
+      - {name: "diligence_gap", description: "Gap"}
+    rows:
+      - row_id: "T-018-R1"
+        values: {signal: "Employee count", public_evidence: "Wikipedia lists 1,200 employees.", diligence_gap: "Current headcount, contractors, and payroll cost."}
+        evidence_claim_ids: ["EC-002", "EC-026"]
+        source_ids: ["SRC-002"]
+      - row_id: "T-018-R2"
+        values: {signal: "Hiring locations", public_evidence: "Careers page lists roles in San Francisco, New York City, London, Raleigh, and remote United States.", diligence_gap: "Headcount by function/location and workforce plan."}
+        evidence_claim_ids: ["EC-015"]
+        source_ids: ["SRC-011"]
+      - row_id: "T-018-R3"
+        values: {signal: "Benefits/open roles", public_evidence: "Careers page references competitive pay, health benefits, home-office stipends, daycare support, and commuting benefits.", diligence_gap: "Retention cost, offer acceptance, attrition, and compensation benchmarking."}
+        evidence_claim_ids: ["EC-015"]
+        source_ids: ["SRC-011"]
+    evidence_claim_ids: ["EC-002", "EC-015", "EC-026"]
+    source_ids: ["SRC-002", "SRC-011"]
+    notes: null
+  - table_id: "T-019"
+    title: "Legal and regulatory matter summary"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    purpose: "Summarize material public legal/regulatory matters."
+    columns:
+      - {name: "matter", description: "Matter"}
+      - {name: "date_or_period", description: "Date/period"}
+      - {name: "public_status", description: "Public status"}
+      - {name: "diligence_need", description: "Needed diligence"}
+    rows:
+      - row_id: "T-019-R1"
+        values: {matter: "Visa acquisition antitrust review", date_or_period: "2020-2021", public_status: "Acquisition announced then abandoned after DOJ concerns.", diligence_need: "Confirm no residual restrictions, rights, or unresolved regulatory matters."}
+        evidence_claim_ids: ["EC-003", "EC-004"]
+        source_ids: ["SRC-012", "SRC-013"]
+      - row_id: "T-019-R2"
+        values: {matter: "Plaid Inc. Privacy Litigation settlement website", date_or_period: "Class period 2013-2021; website update 2023", public_status: "Website describes allegations and Plaid denial of wrongdoing.", diligence_need: "Settlement obligations, releases, insurance, compliance remediation."}
+        evidence_claim_ids: ["EC-017", "EC-027"]
+        source_ids: ["SRC-015"]
+      - row_id: "T-019-R3"
+        values: {matter: "CFPB personal financial data rights rule", date_or_period: "2024 final rule", public_status: "Federal Register API describes final rule requiring secure data availability to consumers and authorized third parties.", diligence_need: "1033 compliance roadmap, costs, contracts, and rule-change exposure."}
+        evidence_claim_ids: ["EC-016"]
+        source_ids: ["SRC-014"]
+    evidence_claim_ids: ["EC-003", "EC-004", "EC-016", "EC-017", "EC-027"]
+    source_ids: ["SRC-012", "SRC-013", "SRC-014", "SRC-015"]
+    notes: "Not a complete litigation docket search."
+  - table_id: "T-020"
+    title: "Public IP asset snapshot"
+    chapter_id: "VIII"
+    section_id: "VIII.D"
+    purpose: "Summarize public patent signal and private IP requests."
+    columns:
+      - {name: "asset", description: "Asset"}
+      - {name: "public_signal", description: "Public signal"}
+      - {name: "verification", description: "Status"}
+      - {name: "diligence_request", description: "Request"}
+    rows:
+      - row_id: "T-020-R1"
+        values: {asset: "Secure permissioning / deauthorization patent publication", public_signal: "Justia lists a Plaid-assigned patent publication for secure permissioning and deauthorization.", verification: "partially_verified", diligence_request: "Patent prosecution, assignments, encumbrances, and freedom-to-operate."}
+        evidence_claim_ids: ["EC-018"]
+        source_ids: ["SRC-016"]
+      - row_id: "T-020-R2"
+        values: {asset: "Privacy/security aggregation technologies", public_signal: "Justia abstracts include privacy/security account-data aggregation themes.", verification: "partially_verified", diligence_request: "Full patent family and claims review."}
+        evidence_claim_ids: ["EC-018"]
+        source_ids: ["SRC-016"]
+      - row_id: "T-020-R3"
+        values: {asset: "Trademarks, copyrights, open-source", public_signal: "Not comprehensively verified in public research.", verification: "not_publicly_verifiable", diligence_request: "Trademark schedule, copyright inventory, open-source scan."}
+        evidence_claim_ids: ["EC-018", "EC-022"]
+        source_ids: ["SRC-016"]
+    evidence_claim_ids: ["EC-018", "EC-022"]
+    source_ids: ["SRC-016"]
+    notes: null
+  - table_id: "T-021"
+    title: "Insurance, material contracts, and exposure gaps"
+    chapter_id: "VIII"
+    section_id: "VIII.E"
+    purpose: "Capture non-public legal/contract items required for diligence."
+    columns:
+      - {name: "topic", description: "Topic"}
+      - {name: "public_signal", description: "Public signal"}
+      - {name: "exposure", description: "Exposure"}
+      - {name: "request", description: "Diligence request"}
+    rows:
+      - row_id: "T-021-R1"
+        values: {topic: "Cyber/privacy insurance", public_signal: "Privacy/security exposure visible from public sources.", exposure: "Coverage adequacy and exclusions unknown.", request: "Cyber, E&O, D&O, privacy policy schedule and claims history."}
+        evidence_claim_ids: ["EC-011", "EC-017", "EC-019"]
+        source_ids: ["SRC-008", "SRC-010", "SRC-015"]
+      - row_id: "T-021-R2"
+        values: {topic: "Material customer/partner contracts", public_signal: "Customer/partner scale visible but contracts private.", exposure: "SLA, indemnity, termination, pricing reset, data-use restrictions.", request: "Top contracts and material terms summary."}
+        evidence_claim_ids: ["EC-007", "EC-021", "EC-024"]
+        source_ids: ["SRC-003", "SRC-007"]
+      - row_id: "T-021-R3"
+        values: {topic: "Regulatory/compliance obligations", public_signal: "Federal Register 1033 rule and Plaid privacy terms are public.", exposure: "Implementation cost, consent-flow, data-retention, complaint, and enforcement risk.", request: "Regulatory correspondence, audits, and compliance roadmap."}
+        evidence_claim_ids: ["EC-016", "EC-019"]
+        source_ids: ["SRC-010", "SRC-014"]
+    evidence_claim_ids: ["EC-007", "EC-011", "EC-016", "EC-017", "EC-019", "EC-021", "EC-024"]
+    source_ids: ["SRC-003", "SRC-007", "SRC-008", "SRC-010", "SRC-014", "SRC-015"]
+    notes: null
+
+figures:
+  - figure_id: "F-001"
+    title: "Plaid public financing and transaction timeline"
+    chapter_id: "I"
+    section_id: "I.D"
+    figure_type: "timeline"
+    description: "Timeline of public financing and transaction anchors relevant to private-company eligibility and valuation diligence."
+    purpose: "Show that Plaid has continued as a private company after the abandoned Visa deal."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      events:
+        - event_id: "F-001-E1"
+          date: "2018-12-11"
+          label: "Series C"
+          description: "Public source lists US$250M Series C at US$2.65B valuation."
+          category: "funding"
+          evidence_claim_ids: ["EC-005"]
+          source_ids: ["SRC-002"]
+        - event_id: "F-001-E2"
+          date: "2020-01-13"
+          label: "Visa acquisition announced"
+          description: "Visa announced planned acquisition of Plaid for US$5.3B consideration."
+          category: "transaction"
+          evidence_claim_ids: ["EC-003"]
+          source_ids: ["SRC-012"]
+        - event_id: "F-001-E3"
+          date: "2021-01-12"
+          label: "Visa takeover abandoned"
+          description: "CNBC reported Visa abandoned the takeover after DOJ raised antitrust concerns."
+          category: "legal"
+          evidence_claim_ids: ["EC-004"]
+          source_ids: ["SRC-013"]
+        - event_id: "F-001-E4"
+          date: "2021-04-07"
+          label: "Series D"
+          description: "Public sources list US$425M Series D at US$13.4B valuation."
+          category: "funding"
+          evidence_claim_ids: ["EC-001", "EC-005"]
+          source_ids: ["SRC-001", "SRC-002"]
+      start_date: "2018-12-11"
+      end_date: "2021-04-07"
+      ordering: "chronological"
+    rendering_guidance: {preferred_format: "mermaid", display_notes: "Show as dated timeline with funding and legal markers."}
+    evidence_claim_ids: ["EC-001", "EC-003", "EC-004", "EC-005"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-012", "SRC-013"]
+    notes: null
+  - figure_id: "F-002"
+    title: "Public valuation trajectory anchors"
+    chapter_id: "I"
+    section_id: "I.D"
+    figure_type: "chart"
+    description: "Line chart of public valuation or transaction consideration anchors."
+    purpose: "Visualize valuation sensitivity and why current valuation must be independently verified."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "line"
+      x_axis: {label: "Date", unit: null, scale: "time"}
+      y_axis: {label: "Public valuation / consideration", unit: "USD billions", scale: "linear"}
+      series:
+        - series_id: "public-valuation"
+          name: "Public anchor"
+          unit: "USD billions"
+          data_points:
+            - {x: "2018-12-11", y: 2.65, label: "Series C valuation", evidence_claim_ids: ["EC-005"], source_ids: ["SRC-002"]}
+            - {x: "2020-01-13", y: 5.3, label: "Visa announced consideration", evidence_claim_ids: ["EC-003"], source_ids: ["SRC-012"]}
+            - {x: "2021-04-07", y: 13.4, label: "Series D valuation", evidence_claim_ids: ["EC-001", "EC-005"], source_ids: ["SRC-001", "SRC-002"]}
+      annotations:
+        - {label: "Current cap table not public", x: "2026-05-23", y: null, note: "Request current valuation, 409A, and secondary support.", evidence_claim_ids: ["EC-022"], source_ids: ["SRC-002"]}
+    rendering_guidance: {preferred_format: "chart_spec", display_notes: "Plot dated valuation points; annotate current gap."}
+    evidence_claim_ids: ["EC-001", "EC-003", "EC-005", "EC-022"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-012"]
+    notes: "Transaction consideration is not identical to valuation but useful as a public anchor."
+  - figure_id: "F-003"
+    title: "Plaid product/dependency architecture"
+    chapter_id: "II"
+    section_id: "II.A"
+    figure_type: "architecture_diagram"
+    description: "High-level public product architecture inferred from Plaid product, docs, consumer, and status pages."
+    purpose: "Show core user, app, Plaid API, product, financial institution, and compliance boundaries."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - {node_id: "user", label: "Consumer / end user", node_type: "user", description: "Consumer authorizes financial data sharing.", evidence_claim_ids: ["EC-012"], source_ids: ["SRC-009"]}
+        - {node_id: "app", label: "Customer app / fintech partner", node_type: "user", description: "Plaid customer integrates Link/API.", evidence_claim_ids: ["EC-007", "EC-009"], source_ids: ["SRC-003", "SRC-005"]}
+        - {node_id: "link", label: "Plaid Link / Layer / permissions", node_type: "service", description: "Connection and consent flows.", evidence_claim_ids: ["EC-008", "EC-012", "EC-025"], source_ids: ["SRC-004", "SRC-009"]}
+        - {node_id: "api", label: "Plaid APIs", node_type: "service", description: "Auth, Transactions, Identity, Balance, Transfer, Investments, Liabilities, Assets, Income, Signal.", evidence_claim_ids: ["EC-008", "EC-009"], source_ids: ["SRC-004", "SRC-005"]}
+        - {node_id: "fi", label: "Financial institutions / data sources", node_type: "third_party", description: "Bank and account connectivity dependencies.", evidence_claim_ids: ["EC-009", "EC-024"], source_ids: ["SRC-005"]}
+        - {node_id: "status", label: "Operational status / incidents", node_type: "infrastructure", description: "Public status page and incidents API.", evidence_claim_ids: ["EC-020", "EC-028"], source_ids: ["SRC-021"]}
+      edges:
+        - {edge_id: "edge-1", from_node_id: "user", to_node_id: "link", relationship: "authorizes", data_or_dependency: "Consent and account selection", evidence_claim_ids: ["EC-012"], source_ids: ["SRC-009"]}
+        - {edge_id: "edge-2", from_node_id: "app", to_node_id: "api", relationship: "integrates", data_or_dependency: "Developer API calls", evidence_claim_ids: ["EC-009"], source_ids: ["SRC-005"]}
+        - {edge_id: "edge-3", from_node_id: "api", to_node_id: "fi", relationship: "connects to", data_or_dependency: "Financial account data and payment/risk workflows", evidence_claim_ids: ["EC-008", "EC-009", "EC-024"], source_ids: ["SRC-004", "SRC-005"]}
+        - {edge_id: "edge-4", from_node_id: "api", to_node_id: "status", relationship: "monitored by", data_or_dependency: "API status and incidents", evidence_claim_ids: ["EC-020", "EC-028"], source_ids: ["SRC-021"]}
+      boundaries:
+        - {boundary_id: "consumer-boundary", label: "Consumer consent boundary", node_ids: ["user", "link"]}
+        - {boundary_id: "plaid-boundary", label: "Plaid platform boundary", node_ids: ["link", "api", "status"]}
+        - {boundary_id: "third-party-boundary", label: "Third-party dependency boundary", node_ids: ["app", "fi"]}
+    rendering_guidance: {preferred_format: "mermaid", display_notes: "Render as left-to-right dependency diagram."}
+    evidence_claim_ids: ["EC-007", "EC-008", "EC-009", "EC-012", "EC-020", "EC-024", "EC-025", "EC-028"]
+    source_ids: ["SRC-003", "SRC-004", "SRC-005", "SRC-009", "SRC-021"]
+    notes: "Architecture is inferred from public product/docs pages, not a private system diagram."
+  - figure_id: "F-004"
+    title: "Customer concentration visibility chart"
+    chapter_id: "III"
+    section_id: "III.C"
+    figure_type: "chart"
+    description: "Bar chart showing public visibility of customer count versus missing concentration/churn metrics."
+    purpose: "Prevent public logo count from being mistaken for revenue-quality evidence."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis: {label: "Customer metric", unit: null, scale: "categorical"}
+      y_axis: {label: "Publicly disclosed value or visibility score", unit: "count / score", scale: "linear"}
+      series:
+        - series_id: "customer-visibility"
+          name: "Public visibility"
+          unit: "mixed"
+          data_points:
+            - {x: "Fintech partners", y: 7000, label: "Company claim: over 7,000", evidence_claim_ids: ["EC-007"], source_ids: ["SRC-003"]}
+            - {x: "Top customer revenue", y: 0, label: "Not public", evidence_claim_ids: ["EC-021"], source_ids: ["SRC-003", "SRC-007"]}
+            - {x: "Churn / NRR", y: 0, label: "Not public", evidence_claim_ids: ["EC-021"], source_ids: ["SRC-003", "SRC-007"]}
+      annotations:
+        - {label: "Revenue concentration gap", x: "Top customer revenue", y: 0, note: "Request top customer revenue and renewal schedule.", evidence_claim_ids: ["EC-021"], source_ids: ["SRC-003", "SRC-007"]}
+    rendering_guidance: {preferred_format: "chart_spec", display_notes: "Use different styling for disclosed count vs zero/not-public bars."}
+    evidence_claim_ids: ["EC-007", "EC-021"]
+    source_ids: ["SRC-003", "SRC-007"]
+    notes: "Zero bars indicate no public metric, not zero concentration or churn."
+  - figure_id: "F-005"
+    title: "Open-banking competitive market map"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    figure_type: "market_map"
+    description: "Market map positioning Plaid and public competitors by platform breadth and open-banking/data-connectivity focus."
+    purpose: "Frame where private win/loss and price evidence is required."
+    spec_schema_ref: "figure_spec_shapes.market_map"
+    spec:
+      dimensions:
+        x_axis: {label: "Open-banking/data-connectivity focus", low_label: "Adjacency", high_label: "Core focus"}
+        y_axis: {label: "Platform breadth", low_label: "Narrower product", high_label: "Broad platform"}
+      segments:
+        - {segment_id: "data-aggregation", name: "Financial data aggregation", description: "Account data, enrichment, identity, and open finance"}
+        - {segment_id: "payments-platform", name: "Payments / embedded finance", description: "Payments platforms adding financial connections"}
+        - {segment_id: "regional-open-banking", name: "Regional open banking", description: "Open-banking platforms with regional strengths"}
+      entities:
+        - {entity_id: "plaid", name: "Plaid", entity_type: "target_company", segment_id: "data-aggregation", x_value: 9, y_value: 8, attributes: {public_basis: "Broad product/docs catalog"}, evidence_claim_ids: ["EC-008", "EC-009"], source_ids: ["SRC-004", "SRC-005"]}
+        - {entity_id: "yodlee", name: "Envestnet Yodlee", entity_type: "competitor", segment_id: "data-aggregation", x_value: 8, y_value: 7, attributes: {public_basis: "Connected financial data"}, evidence_claim_ids: ["EC-014"], source_ids: ["SRC-017"]}
+        - {entity_id: "mx", name: "MX", entity_type: "competitor", segment_id: "data-aggregation", x_value: 8, y_value: 6, attributes: {public_basis: "Open finance"}, evidence_claim_ids: ["EC-014"], source_ids: ["SRC-018"]}
+        - {entity_id: "tink", name: "Tink", entity_type: "competitor", segment_id: "regional-open-banking", x_value: 9, y_value: 6, attributes: {public_basis: "European open banking platform"}, evidence_claim_ids: ["EC-014"], source_ids: ["SRC-019"]}
+        - {entity_id: "stripe-fc", name: "Stripe Financial Connections", entity_type: "competitor", segment_id: "payments-platform", x_value: 6, y_value: 9, attributes: {public_basis: "Secure open banking platform within Stripe"}, evidence_claim_ids: ["EC-014"], source_ids: ["SRC-020"]}
+    rendering_guidance: {preferred_format: "chart_spec", display_notes: "Show Plaid as target highlight; competitor points as public-positioning estimates."}
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-014"]
+    source_ids: ["SRC-004", "SRC-005", "SRC-017", "SRC-018", "SRC-019", "SRC-020"]
+    notes: "Coordinates are analyst judgments from public positioning, not measured market share."
+  - figure_id: "F-006"
+    title: "Public GTM channel visibility"
+    chapter_id: "V"
+    section_id: "V.A"
+    figure_type: "chart"
+    description: "Bar chart scoring public visibility of Plaid GTM channels."
+    purpose: "Show public channel evidence and the absence of quantified channel mix."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis: {label: "GTM channel", unit: null, scale: "categorical"}
+      y_axis: {label: "Public evidence visibility score", unit: "0-3", scale: "linear"}
+      series:
+        - series_id: "gtm-visibility"
+          name: "Visibility score"
+          unit: "score"
+          data_points:
+            - {x: "Developer docs/API keys", y: 3, label: "High visibility", evidence_claim_ids: ["EC-009", "EC-030"], source_ids: ["SRC-005"]}
+            - {x: "Pay-as-you-go pricing", y: 2, label: "Tier visibility", evidence_claim_ids: ["EC-010", "EC-030"], source_ids: ["SRC-006"]}
+            - {x: "Enterprise sales", y: 2, label: "Contact/account management visible", evidence_claim_ids: ["EC-010", "EC-015", "EC-030"], source_ids: ["SRC-006", "SRC-011"]}
+            - {x: "Customer stories", y: 3, label: "Customer proof visible", evidence_claim_ids: ["EC-013", "EC-030"], source_ids: ["SRC-007"]}
+            - {x: "Channel mix/CAC", y: 0, label: "Not public", evidence_claim_ids: ["EC-030"], source_ids: ["SRC-003", "SRC-006", "SRC-007"]}
+      annotations:
+        - {label: "CAC gap", x: "Channel mix/CAC", y: 0, note: "Request funnel conversion, CAC, payback and channel mix.", evidence_claim_ids: ["EC-030"], source_ids: ["SRC-006"]}
+    rendering_guidance: {preferred_format: "chart_spec", display_notes: "Use evidence score bars; zero indicates metric not public."}
+    evidence_claim_ids: ["EC-009", "EC-010", "EC-013", "EC-015", "EC-030"]
+    source_ids: ["SRC-005", "SRC-006", "SRC-007", "SRC-011"]
+    notes: "Scores are analyst-created visibility scores, not channel weights."
+  - figure_id: "F-007"
+    title: "Public R&D portfolio map"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    figure_type: "architecture_diagram"
+    description: "Map of product-development areas inferred from public product/docs/careers sources."
+    purpose: "Organize R&D diligence around platform, data, payments/risk, consent/compliance, and operations."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        - {node_id: "platform", label: "API platform and docs", node_type: "service", description: "Developer docs and API references.", evidence_claim_ids: ["EC-009"], source_ids: ["SRC-005"]}
+        - {node_id: "data", label: "Data products", node_type: "product", description: "Transactions, investments, liabilities, assets, income.", evidence_claim_ids: ["EC-008", "EC-009"], source_ids: ["SRC-004", "SRC-005"]}
+        - {node_id: "verification", label: "Verification and identity", node_type: "product", description: "Auth, Identity, Balance, Layer.", evidence_claim_ids: ["EC-008", "EC-025"], source_ids: ["SRC-004"]}
+        - {node_id: "payments-risk", label: "Payments and risk", node_type: "product", description: "Transfer and Signal.", evidence_claim_ids: ["EC-008", "EC-009"], source_ids: ["SRC-004", "SRC-005"]}
+        - {node_id: "ops", label: "Reliability/status operations", node_type: "infrastructure", description: "Status page and incidents API.", evidence_claim_ids: ["EC-020", "EC-028"], source_ids: ["SRC-021"]}
+        - {node_id: "talent", label: "Engineering talent", node_type: "other", description: "Engineering roles visible on careers page.", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+      edges:
+        - {edge_id: "F7-E1", from_node_id: "talent", to_node_id: "platform", relationship: "builds", data_or_dependency: "Engineering capacity", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+        - {edge_id: "F7-E2", from_node_id: "platform", to_node_id: "data", relationship: "exposes", data_or_dependency: "API products", evidence_claim_ids: ["EC-008", "EC-009"], source_ids: ["SRC-004", "SRC-005"]}
+        - {edge_id: "F7-E3", from_node_id: "platform", to_node_id: "payments-risk", relationship: "exposes", data_or_dependency: "Payment/risk products", evidence_claim_ids: ["EC-008"], source_ids: ["SRC-004"]}
+        - {edge_id: "F7-E4", from_node_id: "ops", to_node_id: "platform", relationship: "monitors", data_or_dependency: "Status and incidents", evidence_claim_ids: ["EC-020"], source_ids: ["SRC-021"]}
+      boundaries:
+        - {boundary_id: "r-and-d", label: "R&D and product portfolio", node_ids: ["platform", "data", "verification", "payments-risk"]}
+        - {boundary_id: "operations", label: "Operations and talent", node_ids: ["ops", "talent"]}
+    rendering_guidance: {preferred_format: "mermaid", display_notes: "Render as portfolio/dependency map."}
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-015", "EC-020", "EC-025", "EC-028"]
+    source_ids: ["SRC-004", "SRC-005", "SRC-011", "SRC-021"]
+    notes: "Not a complete internal R&D org chart."
+  - figure_id: "F-008"
+    title: "Public leadership org chart"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    figure_type: "org_chart"
+    description: "Org chart with public leadership anchors only."
+    purpose: "Show that public leadership evidence is incomplete and requires company confirmation."
+    spec_schema_ref: "figure_spec_shapes.org_chart"
+    spec:
+      people_or_roles:
+        - {node_id: "ceo", name: "Zach Perret", role: "CEO / Co-founder", department: "Executive", location: "San Francisco (public HQ)", is_publicly_verified: true, evidence_claim_ids: ["EC-002", "EC-026"], source_ids: ["SRC-002"]}
+        - {node_id: "cto", name: "Jean-Denis Greze", role: "CTO", department: "Technology", location: null, is_publicly_verified: true, evidence_claim_ids: ["EC-002", "EC-026"], source_ids: ["SRC-002"]}
+        - {node_id: "founder", name: "William Hockey", role: "Co-founder", department: "Founding team", location: null, is_publicly_verified: true, evidence_claim_ids: ["EC-001", "EC-002", "EC-026"], source_ids: ["SRC-001", "SRC-002"]}
+        - {node_id: "sales", name: null, role: "Sales / customer roles", department: "GTM", location: "SF, NYC, Raleigh, Remote US", is_publicly_verified: true, evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+        - {node_id: "engineering", name: null, role: "Engineering roles", department: "R&D", location: "London and other locations", is_publicly_verified: true, evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+      reporting_lines:
+        - {parent_node_id: "ceo", child_node_id: "cto", relationship: "reports_to", evidence_claim_ids: ["EC-026"], source_ids: ["SRC-002"]}
+        - {parent_node_id: "ceo", child_node_id: "sales", relationship: "other", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+        - {parent_node_id: "cto", child_node_id: "engineering", relationship: "other", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+    rendering_guidance: {preferred_format: "mermaid", display_notes: "Use dashed or caveat styling for inferred reporting lines."}
+    evidence_claim_ids: ["EC-001", "EC-002", "EC-015", "EC-026"]
+    source_ids: ["SRC-001", "SRC-002", "SRC-011"]
+    notes: "Reporting lines beyond named roles are inferred and must be confirmed."
+  - figure_id: "F-009"
+    title: "Public headcount anchors and hiring signal"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    figure_type: "chart"
+    description: "Chart of public employee-count anchor and hiring visibility."
+    purpose: "Show limited public headcount evidence."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis: {label: "Headcount signal", unit: null, scale: "categorical"}
+      y_axis: {label: "Value / visibility score", unit: "count or score", scale: "linear"}
+      series:
+        - series_id: "headcount-signals"
+          name: "Public signals"
+          unit: "mixed"
+          data_points:
+            - {x: "Employees listed", y: 1200, label: "Wikipedia employee-count anchor", evidence_claim_ids: ["EC-002", "EC-026"], source_ids: ["SRC-002"]}
+            - {x: "Open role visibility", y: 3, label: "Careers page has role/location visibility", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+            - {x: "Turnover data", y: 0, label: "Not public", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+      annotations:
+        - {label: "Turnover gap", x: "Turnover data", y: 0, note: "Request attrition and retention by function/location.", evidence_claim_ids: ["EC-015"], source_ids: ["SRC-011"]}
+    rendering_guidance: {preferred_format: "chart_spec", display_notes: "Use mixed-unit caveat in caption."}
+    evidence_claim_ids: ["EC-002", "EC-015", "EC-026"]
+    source_ids: ["SRC-002", "SRC-011"]
+    notes: "Open-role visibility score is analyst-created; not a count of roles."
+  - figure_id: "F-010"
+    title: "Legal and regulatory timeline"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    figure_type: "timeline"
+    description: "Public legal, regulatory, and transaction-related timeline."
+    purpose: "Organize legal/regulatory diligence follow-up."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      events:
+        - event_id: "F-010-E1"
+          date: "2020-01-13"
+          label: "Visa acquisition announced"
+          description: "Visa announced plan to acquire Plaid for US$5.3B."
+          category: "transaction"
+          evidence_claim_ids: ["EC-003"]
+          source_ids: ["SRC-012"]
+        - event_id: "F-010-E2"
+          date: "2021-01-12"
+          label: "Visa takeover abandoned"
+          description: "CNBC reported Visa abandoned takeover after DOJ antitrust concerns."
+          category: "legal"
+          evidence_claim_ids: ["EC-004"]
+          source_ids: ["SRC-013"]
+        - event_id: "F-010-E3"
+          date: "2023-10-18"
+          label: "Privacy settlement website update"
+          description: "Settlement website update stated second pro rata distribution was not economically feasible and described allegations/denial."
+          category: "privacy"
+          evidence_claim_ids: ["EC-017"]
+          source_ids: ["SRC-015"]
+        - event_id: "F-010-E4"
+          date: "2024-11-18"
+          label: "CFPB 1033 final rule publication"
+          description: "Federal Register API lists final rule on personal financial data rights."
+          category: "regulatory"
+          evidence_claim_ids: ["EC-016"]
+          source_ids: ["SRC-014"]
+      start_date: "2020-01-13"
+      end_date: "2024-11-18"
+      ordering: "chronological"
+    rendering_guidance: {preferred_format: "mermaid", display_notes: "Use regulatory/legal color tones."}
+    evidence_claim_ids: ["EC-003", "EC-004", "EC-016", "EC-017"]
+    source_ids: ["SRC-012", "SRC-013", "SRC-014", "SRC-015"]
+    notes: "Not a complete docket timeline."
+  - figure_id: "F-011"
+    title: "Risk heatmap"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    figure_type: "risk_heatmap"
+    description: "Heatmap of primary diligence risks across financial, customer, product, technical, legal, team, financing, and operational categories."
+    purpose: "Prioritize follow-up requests."
+    spec_schema_ref: "figure_spec_shapes.risk_heatmap"
+    spec:
+      x_axis: {label: "likelihood", scale: ["low", "medium", "high", "unknown"]}
+      y_axis: {label: "severity", scale: ["informational", "low", "medium", "high", "critical"]}
+      risk_points:
+        - {risk_id: "R-001", label: "Financial quality opacity", severity: "high", likelihood: "high", rationale: "Private audited financials unavailable.", evidence_claim_ids: ["EC-006", "EC-022"], source_ids: ["SRC-002"]}
+        - {risk_id: "R-003", label: "Customer concentration/churn", severity: "high", likelihood: "unknown", rationale: "Public logos do not disclose revenue concentration or churn.", evidence_claim_ids: ["EC-021"], source_ids: ["SRC-003", "SRC-007"]}
+        - {risk_id: "R-004", label: "Competition/pricing pressure", severity: "high", likelihood: "medium", rationale: "Public competitor overlap and open-banking standardization.", evidence_claim_ids: ["EC-014", "EC-016", "EC-029"], source_ids: ["SRC-014", "SRC-017", "SRC-018", "SRC-019", "SRC-020"]}
+        - {risk_id: "R-007", label: "Regulatory/privacy/legal", severity: "critical", likelihood: "medium", rationale: "Privacy settlement allegations, CFPB 1033 rule, and public legal terms.", evidence_claim_ids: ["EC-016", "EC-017", "EC-019"], source_ids: ["SRC-010", "SRC-014", "SRC-015"]}
+        - {risk_id: "R-010", label: "Financing/cap-table complexity", severity: "high", likelihood: "unknown", rationale: "Late-stage financing and private cap table not public.", evidence_claim_ids: ["EC-005", "EC-022"], source_ids: ["SRC-002"]}
+        - {risk_id: "R-011", label: "Operational dependencies", severity: "high", likelihood: "medium", rationale: "Bank/API/status dependencies visible; supplier contracts private.", evidence_claim_ids: ["EC-020", "EC-024", "EC-028"], source_ids: ["SRC-005", "SRC-021"]}
+    rendering_guidance: {preferred_format: "chart_spec", display_notes: "Render critical/high risks prominently."}
+    evidence_claim_ids: ["EC-006", "EC-014", "EC-016", "EC-017", "EC-019", "EC-020", "EC-021", "EC-022", "EC-024", "EC-028", "EC-029"]
+    source_ids: ["SRC-002", "SRC-003", "SRC-005", "SRC-007", "SRC-010", "SRC-014", "SRC-015", "SRC-017", "SRC-018", "SRC-019", "SRC-020", "SRC-021"]
+    notes: null
+
+evidence_claims:
+  - evidence_claim_id: "EC-001"
+    claim: "Plaid appears on Wikipedia's unicorn startup list at a US$13.4B valuation dated April 2021, in financial technology, United States, with Zach Perret and William Hockey listed as founders."
+    evidence_summary: "Wikipedia unicorn list row shows Plaid 13.4 April 2021 Financial technology United States Zach Perret, William Hockey."
+    evidence_type: "market_database"
+    verification_status: verified
+    confidence: medium
+    source_ids: ["SRC-001"]
+    quoted_evidence:
+      - source_id: "SRC-001"
+        quote: "Plaid 13.4 April 2021 Financial technology United States Zach Perret, William Hockey"
+        location: "List table row"
+    analyst_interpretation: "This verifies the seed valuation/date/sector/country at a public-list level, not current fair value."
+    limitations: "Wikipedia is secondary and can lag current private-market pricing."
+    associations: {chapter_id: "I", section_id: "I.D", founder_claim_ids: ["FC-001"], table_ids: ["T-001", "T-017"], figure_ids: ["F-001", "F-002", "F-008"], risk_ids: ["R-001", "R-010"]}
+  - evidence_claim_id: "EC-002"
+    claim: "Plaid Inc. is publicly described as a private financial technology company founded in May 2013 and headquartered in San Francisco, with Zach Perret as CEO and Jean-Denis Greze as CTO."
+    evidence_summary: "Plaid Inc. Wikipedia infobox lists company type Private, founded May 2013, founders Zach Perret and William Hockey, headquarters San Francisco, and key people Zach Perret and Jean-Denis Greze."
+    evidence_type: "other"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-002"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "Company type Private ... Founded May 2013 ... Founders Zach Perret, William Hockey ... Headquarters San Francisco ... Key people Zach Perret (CEO), Jean-Denis Greze (CTO)."
+        location: "Plaid Inc. page infobox"
+    analyst_interpretation: "Supports eligibility and management roster at public-source level; company confirmation is required."
+    limitations: "Secondary-source content and current roles should be verified with company records."
+    associations: {chapter_id: "VII", section_id: "VII.C", founder_claim_ids: ["FC-002"], table_ids: ["T-003", "T-017", "T-018"], figure_ids: ["F-008", "F-009", "F-011"], risk_ids: ["R-009", "R-010"]}
+  - evidence_claim_id: "EC-003"
+    claim: "Visa announced in January 2020 that it would acquire Plaid for US$5.3B."
+    evidence_summary: "Visa press release states total purchase consideration of US$5.3B to acquire Plaid."
+    evidence_type: "independent_news"
+    verification_status: verified
+    confidence: high
+    source_ids: ["SRC-012"]
+    quoted_evidence:
+      - source_id: "SRC-012"
+        quote: "Visa will pay total purchase consideration of $5.3 billion to acquire Plaid."
+        location: "Visa press release"
+    analyst_interpretation: "The announcement is a valuation/strategic anchor but was not consummated."
+    limitations: "Announced deal terms do not establish current valuation or ownership."
+    associations: {chapter_id: "I", section_id: "I.C", founder_claim_ids: ["FC-002"], table_ids: ["T-001", "T-003", "T-008", "T-019"], figure_ids: ["F-001", "F-002", "F-010"], risk_ids: ["R-007", "R-010"]}
+  - evidence_claim_id: "EC-004"
+    claim: "Visa abandoned the Plaid takeover after DOJ antitrust concerns, supporting that Plaid was not acquired by Visa."
+    evidence_summary: "CNBC reports Visa abandoned the takeover and says DOJ described merger termination as a victory for consumers and small businesses."
+    evidence_type: "independent_news"
+    verification_status: verified
+    confidence: high
+    source_ids: ["SRC-013"]
+    quoted_evidence:
+      - source_id: "SRC-013"
+        quote: "Visa abandons takeover of Plaid after DOJ raises antitrust concerns."
+        location: "Article title"
+      - source_id: "SRC-013"
+        quote: "The DOJ said ... termination of the merger was 'a victory for American consumers and small businesses.'"
+        location: "CNBC article body"
+    analyst_interpretation: "This is strong public evidence that the Visa acquisition did not close."
+    limitations: "Does not exclude all possible non-public ownership changes; company confirmation still required."
+    associations: {chapter_id: "VIII", section_id: "VIII.G", founder_claim_ids: ["FC-002"], table_ids: ["T-001", "T-003", "T-008", "T-019"], figure_ids: ["F-001", "F-010", "F-011"], risk_ids: ["R-007", "R-010"]}
+  - evidence_claim_id: "EC-005"
+    claim: "Public funding chronology lists a US$250M Series C at US$2.65B valuation in 2018 and a US$425M Series D at US$13.4B valuation in April 2021."
+    evidence_summary: "Plaid Inc. Wikipedia funding section includes Series C and Series D amounts and valuations."
+    evidence_type: "market_database"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-002"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "On December 11, 2018, the company announced a $250 million Series C round with a valuation of $2.65 billion."
+        location: "Funding section"
+      - source_id: "SRC-002"
+        quote: "On April 7, 2021, Plaid raised a $425 million Series D at a valuation of $13.4 billion."
+        location: "Funding section"
+    analyst_interpretation: "Useful public financing anchors, but current capitalization and preference stack require company documents."
+    limitations: "Secondary-source summary; original financing documents not public."
+    associations: {chapter_id: "I", section_id: "I.D", founder_claim_ids: ["FC-001"], table_ids: ["T-001", "T-003"], figure_ids: ["F-001", "F-002", "F-011"], risk_ids: ["R-001", "R-010"]}
+  - evidence_claim_id: "EC-006"
+    claim: "Plaid's detailed financial statements are not publicly available; only limited/stale public financial anchors were found."
+    evidence_summary: "Public sources identify private-company status and selected stale figures, but no audited statements, cash flows, balance sheets, AR aging, or management reports were found in reviewed public sources."
+    evidence_type: "other"
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids: ["SRC-002"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "Company type Private"
+        location: "Plaid Inc. page infobox"
+    analyst_interpretation: "Core financial quality requires a private data room."
+    limitations: "Absence of public evidence is not evidence of absence; private records may exist."
+    associations: {chapter_id: "I", section_id: "I.A", founder_claim_ids: [], table_ids: ["T-002"], figure_ids: ["F-011"], risk_ids: ["R-001"]}
+  - evidence_claim_id: "EC-007"
+    claim: "Plaid publicly states it works with over 7,000 fintech partners."
+    evidence_summary: "Plaid company page customer section states the company works with over 7,000 fintech partners."
+    evidence_type: "primary_company_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-003"]
+    quoted_evidence:
+      - source_id: "SRC-003"
+        quote: "We work with over 7,000 fintech partners."
+        location: "Our customers section"
+    analyst_interpretation: "Supports broad adoption but not active customer definition, revenue, or churn."
+    limitations: "Company claim; not audited."
+    associations: {chapter_id: "III", section_id: "III.A", founder_claim_ids: ["FC-004"], table_ids: ["T-004", "T-007", "T-008", "T-013", "T-021"], figure_ids: ["F-004"], risk_ids: ["R-002", "R-003"]}
+  - evidence_claim_id: "EC-008"
+    claim: "Plaid's public product catalog includes Auth, Signal, Identity, Balance, Transfer, Investments, Transactions, Liabilities, Assets, Income, Layer, Link, Consumer Report, and other products."
+    evidence_summary: "Plaid products page navigation and product descriptions list multiple product lines."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: high
+    source_ids: ["SRC-004"]
+    quoted_evidence:
+      - source_id: "SRC-004"
+        quote: "Auth Verified account & routing numbers; Signal Complete ACH risk platform; Identity Bank account-holder information; Balance Real-time balance checks; Transfer Payment processing."
+        location: "Product navigation"
+      - source_id: "SRC-004"
+        quote: "Transactions Up to 24 months of categorized data; Investments Retirement, brokerage, & crypto data; Liabilities Credit card and mortgage data."
+        location: "Product navigation"
+    analyst_interpretation: "Strong evidence of product breadth, not product economics."
+    limitations: "Public catalog does not validate revenue, margin, or maturity."
+    associations: {chapter_id: "II", section_id: "II.A", founder_claim_ids: ["FC-003"], table_ids: ["T-005", "T-012", "T-014", "T-016"], figure_ids: ["F-003", "F-005", "F-007"], risk_ids: ["R-005", "R-006"]}
+  - evidence_claim_id: "EC-009"
+    claim: "Plaid developer docs provide guides, resources, and API references for building with Plaid."
+    evidence_summary: "Plaid docs page says developers can find guides, resources, and references to build with Plaid and includes Get API Keys."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: high
+    source_ids: ["SRC-005"]
+    quoted_evidence:
+      - source_id: "SRC-005"
+        quote: "Here you'll find guides, resources, and references to build with Plaid."
+        location: "Docs home"
+      - source_id: "SRC-005"
+        quote: "Get API Keys"
+        location: "Docs navigation"
+    analyst_interpretation: "Supports developer-led GTM and API product maturity at public documentation level."
+    limitations: "Docs do not disclose reliability, usage, or economics."
+    associations: {chapter_id: "II", section_id: "II.A", founder_claim_ids: ["FC-003"], table_ids: ["T-005", "T-008", "T-009", "T-013", "T-015"], figure_ids: ["F-003", "F-005", "F-006", "F-007"], risk_ids: ["R-005", "R-011"]}
+  - evidence_claim_id: "EC-010"
+    claim: "Plaid's pricing page publicly discloses Pay as You Go and Growth packaging but not full enterprise/custom economics."
+    evidence_summary: "Pricing page describes Pay as You Go and Growth tiers, including unlimited usage and a 12-month commitment with discounts/support/account management."
+    evidence_type: "primary_company_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-006"]
+    quoted_evidence:
+      - source_id: "SRC-006"
+        quote: "Pay as You Go ... Start with our month-to-month plan: unlimited usage, no commitments upfront—only pay for what you use."
+        location: "Pricing page"
+      - source_id: "SRC-006"
+        quote: "Growth ... Scale with a 12-month commitment: access discounts, platform support package, and account management."
+        location: "Pricing page"
+    analyst_interpretation: "Public packaging supports GTM analysis but not unit economics or enterprise discounts."
+    limitations: "Custom pricing and net revenue are private."
+    associations: {chapter_id: "II", section_id: "II.A", founder_claim_ids: ["FC-003"], table_ids: ["T-004", "T-006", "T-012", "T-013"], figure_ids: ["F-006"], risk_ids: ["R-004", "R-001"]}
+  - evidence_claim_id: "EC-011"
+    claim: "Plaid publicly says it uses encrypted APIs and advanced security features including encryption and 24/7 monitoring."
+    evidence_summary: "Plaid safety/security page states Plaid uses encrypted APIs and keeps data safe with encryption and 24/7 monitoring."
+    evidence_type: "primary_company_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-008"]
+    quoted_evidence:
+      - source_id: "SRC-008"
+        quote: "Plaid uses encrypted APIs to connect your financial accounts to the apps and services you want to use."
+        location: "Safety page"
+      - source_id: "SRC-008"
+        quote: "advanced security features like encryption and 24/7 monitoring."
+        location: "Safety page"
+    analyst_interpretation: "Security claims are relevant but must be validated via SOC reports, pentests, and incident history."
+    limitations: "Company claim; no audit report reviewed."
+    associations: {chapter_id: "VIII", section_id: "VIII.E", founder_claim_ids: ["FC-005"], table_ids: ["T-021"], figure_ids: ["F-011"], risk_ids: ["R-007", "R-005"]}
+  - evidence_claim_id: "EC-012"
+    claim: "Plaid publicly says consumers can control sharing and that it does not share financial-institution usernames/passwords with apps."
+    evidence_summary: "Plaid how-it-works page describes consumer control and states Plaid does not share username/password with apps."
+    evidence_type: "primary_company_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-009"]
+    quoted_evidence:
+      - source_id: "SRC-009"
+        quote: "Plaid provides the tools to easily delete your data from our systems as well as connect, manage and disconnect your fintech apps."
+        location: "How it works"
+      - source_id: "SRC-009"
+        quote: "we don’t share the username and password for your financial institution with your apps."
+        location: "How it works"
+    analyst_interpretation: "Supports consumer-permission narrative; compliance design needs audit."
+    limitations: "Does not prove all historical flows or third-party compliance."
+    associations: {chapter_id: "II", section_id: "II.A", founder_claim_ids: ["FC-005"], table_ids: ["T-008", "T-009"], figure_ids: ["F-003"], risk_ids: ["R-007", "R-011"]}
+  - evidence_claim_id: "EC-013"
+    claim: "Plaid publishes customer stories and selected customer/logo proof including a Chime quote and featured brands."
+    evidence_summary: "Customer stories page includes Chime quote and imagery featuring H&R Block, Gemini, GoFundMe, and HealthEquity."
+    evidence_type: "customer_or_partner_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-007"]
+    quoted_evidence:
+      - source_id: "SRC-007"
+        quote: "Plaid emerged as the gold standard for data quality, security, and coverage. Zach Smith, SVP Product at Chime."
+        location: "Customer stories page"
+      - source_id: "SRC-007"
+        quote: "H&R Block, Gemini, GoFundMe, and HealthEquity featured in the Powered by Plaid campaign."
+        location: "Customer stories page image alt text"
+    analyst_interpretation: "Public logo proof supports adoption but not revenue or retention."
+    limitations: "Customer pages are marketing materials."
+    associations: {chapter_id: "III", section_id: "III.A", founder_claim_ids: ["FC-004"], table_ids: ["T-007", "T-010", "T-013", "T-014"], figure_ids: ["F-004", "F-006"], risk_ids: ["R-002", "R-003"]}
+  - evidence_claim_id: "EC-014"
+    claim: "Public competitor pages show overlap in connected financial data, open finance, European open banking, and secure open-banking connections."
+    evidence_summary: "Yodlee, MX, Tink, and Stripe Financial Connections pages each publicly position around connected financial data/open finance/open banking."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: medium
+    source_ids: ["SRC-017", "SRC-018", "SRC-019", "SRC-020"]
+    quoted_evidence:
+      - source_id: "SRC-017"
+        quote: "Fuel Innovation with Secure, Connected Financial Data"
+        location: "Yodlee page title"
+      - source_id: "SRC-018"
+        quote: "Open Finance | MX Resources"
+        location: "MX page title"
+      - source_id: "SRC-019"
+        quote: "Tink | European open banking platform | 6000 connections"
+        location: "Tink page title"
+      - source_id: "SRC-020"
+        quote: "Stripe Financial Connections | Secure Open Banking Platform"
+        location: "Stripe page title"
+    analyst_interpretation: "Competitive overlap is real at positioning level; private win/loss and pricing data is needed."
+    limitations: "Competitor pages are marketing materials and do not quantify market share."
+    associations: {chapter_id: "IV", section_id: "IV.A", founder_claim_ids: [], table_ids: ["T-011", "T-012"], figure_ids: ["F-005", "F-011"], risk_ids: ["R-004", "R-006"]}
+  - evidence_claim_id: "EC-015"
+    claim: "Plaid careers page shows ongoing hiring across functions and locations including San Francisco, New York City, London, Raleigh, and remote United States."
+    evidence_summary: "Careers page lists roles, locations, and benefits/open roles signals."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: medium
+    source_ids: ["SRC-011"]
+    quoted_evidence:
+      - source_id: "SRC-011"
+        quote: "Your next big career move starts here Find a role Teams Locations ... San Francisco HQ ... New York City Office ... London Office ... Remote United States."
+        location: "Careers page"
+      - source_id: "SRC-011"
+        quote: "Vibrant offices in SF, NYC, and Raleigh-Durham ... Competitive pay, comprehensive health benefits."
+        location: "Careers page"
+    analyst_interpretation: "Shows active hiring/hiring footprint but not headcount plan, attrition, or compensation."
+    limitations: "Careers pages change frequently and are not audited."
+    associations: {chapter_id: "VII", section_id: "VII.B", founder_claim_ids: [], table_ids: ["T-014", "T-015", "T-018"], figure_ids: ["F-006", "F-007", "F-008", "F-009"], risk_ids: ["R-009", "R-001"]}
+  - evidence_claim_id: "EC-016"
+    claim: "Federal Register records describe the CFPB final rule on personal financial data rights requiring financial service providers to make consumer data available to consumers and authorized third parties in a secure and reliable manner."
+    evidence_summary: "Federal Register API result for document 2024-25079 summarizes the final rule."
+    evidence_type: "regulatory_filing"
+    verification_status: verified
+    confidence: high
+    source_ids: ["SRC-014"]
+    quoted_evidence:
+      - source_id: "SRC-014"
+        quote: "The final rule requires banks, credit unions, and other financial service providers to make consumers' data available upon request to consumers and authorized third parties in a secure and reliable manner."
+        location: "Federal Register API abstract for 2024-25079"
+    analyst_interpretation: "Directly relevant to Plaid's open-banking opportunity and compliance/regulatory risk."
+    limitations: "Implementation details and legal challenges require counsel review."
+    associations: {chapter_id: "VIII", section_id: "VIII.G", founder_claim_ids: ["FC-005"], table_ids: ["T-004", "T-012", "T-019", "T-021"], figure_ids: ["F-010", "F-011"], risk_ids: ["R-004", "R-007"]}
+  - evidence_claim_id: "EC-017"
+    claim: "The Plaid settlement website describes privacy litigation allegations involving data collection and login credentials and states Plaid denies wrongdoing."
+    evidence_summary: "Settlement website describes allegations that Plaid obtained more data than needed and obtained login credentials through Plaid Link with bank-like look and feel; it states Plaid denies allegations and wrongdoing."
+    evidence_type: "legal_record"
+    verification_status: verified
+    confidence: high
+    source_ids: ["SRC-015"]
+    quoted_evidence:
+      - source_id: "SRC-015"
+        quote: "The allegations include that Plaid: (1) obtained more financial data than was needed by a user's app, and (2) obtained log-in credentials ... through its user interface, known as 'Plaid Link,' which had the look and feel of the user's own bank account login screen."
+        location: "Settlement website"
+      - source_id: "SRC-015"
+        quote: "Plaid denies these allegations and any wrongdoing."
+        location: "Settlement website"
+    analyst_interpretation: "Material historical privacy/legal risk; current controls and settlement obligations must be diligence-tested."
+    limitations: "Settlement website is not a full docket or counsel memo."
+    associations: {chapter_id: "VIII", section_id: "VIII.A", founder_claim_ids: ["FC-005"], table_ids: ["T-019", "T-021"], figure_ids: ["F-010", "F-011"], risk_ids: ["R-007"]}
+  - evidence_claim_id: "EC-018"
+    claim: "Justia lists patents assigned to Plaid Inc., including secure permissioning and account-access technologies."
+    evidence_summary: "Justia patents page lists patents assigned to Plaid Inc. and abstracts related to secure authorization/deauthorization and account-data aggregation privacy/security."
+    evidence_type: "patent_or_trademark_record"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-016"]
+    quoted_evidence:
+      - source_id: "SRC-016"
+        quote: "Patents Assigned to Plaid Inc."
+        location: "Justia patents page title"
+      - source_id: "SRC-016"
+        quote: "SECURE PERMISSIONING OF ACCESS TO USER ACCOUNTS, INCLUDING SECURE DEAUTHORIZATION OF ACCESS TO USER ACCOUNTS."
+        location: "Justia patents listing"
+    analyst_interpretation: "Evidence of public patent assets, but full IP ownership and enforceability need counsel review."
+    limitations: "Justia is a public mirror; verify with USPTO assignments and company schedules."
+    associations: {chapter_id: "VIII", section_id: "VIII.D", founder_claim_ids: [], table_ids: ["T-020"], figure_ids: ["F-011"], risk_ids: ["R-006", "R-008"]}
+  - evidence_claim_id: "EC-019"
+    claim: "Plaid publishes legal/privacy policies that describe how financial companies share personal information and legal/service restrictions."
+    evidence_summary: "Plaid legal page includes privacy and security policies and a federal privacy notice."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: medium
+    source_ids: ["SRC-010"]
+    quoted_evidence:
+      - source_id: "SRC-010"
+        quote: "WHAT DOES PLAID DO WITH YOUR PERSONAL INFORMATION? Why? Financial companies choose how they share your personal information."
+        location: "Plaid legal/privacy page"
+    analyst_interpretation: "Public privacy terms evidence regulated data handling; counsel must review implementation against terms."
+    limitations: "Terms do not prove operational compliance."
+    associations: {chapter_id: "VIII", section_id: "VIII.G", founder_claim_ids: ["FC-005"], table_ids: ["T-012", "T-021"], figure_ids: ["F-011"], risk_ids: ["R-007"]}
+  - evidence_claim_id: "EC-020"
+    claim: "Plaid has a public status page showing system status and API/incident visibility."
+    evidence_summary: "Status page says it shows Plaid system status and can be retrieved over API; at access it stated fully operational and not aware of issues."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: medium
+    source_ids: ["SRC-021"]
+    quoted_evidence:
+      - source_id: "SRC-021"
+        quote: "This page shows Plaid system status and can be retrieved over API."
+        location: "Status page"
+      - source_id: "SRC-021"
+        quote: "We’re fully operational We’re not aware of any issues affecting our systems."
+        location: "Status page"
+    analyst_interpretation: "Supports operational maturity signal, not historical uptime or incident completeness."
+    limitations: "Point-in-time status does not replace incident logs and SLA reporting."
+    associations: {chapter_id: "VI", section_id: "VI.A", founder_claim_ids: [], table_ids: ["T-009", "T-015"], figure_ids: ["F-003", "F-007", "F-011"], risk_ids: ["R-005", "R-011"]}
+  - evidence_claim_id: "EC-021"
+    claim: "Public customer proof does not disclose top-customer revenue concentration, churn, NRR, or contract quality."
+    evidence_summary: "Company and customer pages disclose partner-count/logo proof but not revenue or churn metrics."
+    evidence_type: "other"
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids: ["SRC-003", "SRC-007"]
+    quoted_evidence:
+      - source_id: "SRC-003"
+        quote: "We work with over 7,000 fintech partners."
+        location: "Company page"
+      - source_id: "SRC-007"
+        quote: "Customer Success Stories"
+        location: "Customer-stories page title"
+    analyst_interpretation: "Customer diligence must rely on private schedules and reference checks."
+    limitations: "Absence of public disclosure is not evidence of poor concentration or churn."
+    associations: {chapter_id: "III", section_id: "III.C", founder_claim_ids: ["FC-004"], table_ids: ["T-007", "T-010", "T-021"], figure_ids: ["F-004", "F-011"], risk_ids: ["R-002", "R-003"]}
+  - evidence_claim_id: "EC-022"
+    claim: "Plaid's current cap table, debt, option pool, warrants, SAFEs/notes, cash runway, and off-balance-sheet liabilities are not publicly verifiable."
+    evidence_summary: "Reviewed public sources provide private-company/funding anchors but not underlying stock/debt/option schedules."
+    evidence_type: "other"
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids: ["SRC-001", "SRC-002"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "Company type Private"
+        location: "Plaid Inc. page infobox"
+    analyst_interpretation: "Cap-table and financing diligence must come from the company."
+    limitations: "Private records may materially differ from public summaries."
+    associations: {chapter_id: "I", section_id: "I.C", founder_claim_ids: [], table_ids: ["T-001", "T-002", "T-003", "T-020"], figure_ids: ["F-002", "F-011"], risk_ids: ["R-001", "R-010"]}
+  - evidence_claim_id: "EC-023"
+    claim: "Public pricing and product information does not disclose Plaid's unit economics, product margins, or forecast predictability."
+    evidence_summary: "Pricing/product pages show packaging and features but not costs, margins, usage-based net revenue, or forecast assumptions."
+    evidence_type: "other"
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids: ["SRC-004", "SRC-006"]
+    quoted_evidence:
+      - source_id: "SRC-006"
+        quote: "Pay as You Go ... only pay for what you use."
+        location: "Pricing page"
+      - source_id: "SRC-004"
+        quote: "Plaid products - Financial APIs & connections for fintech"
+        location: "Products page title"
+    analyst_interpretation: "Unit economics and forecasts are key private diligence items."
+    limitations: "No private pricing waterfall reviewed."
+    associations: {chapter_id: "I", section_id: "I.B", founder_claim_ids: [], table_ids: ["T-002", "T-004", "T-006"], figure_ids: [], risk_ids: ["R-001", "R-002", "R-004"]}
+  - evidence_claim_id: "EC-024"
+    claim: "Plaid's business model depends on financial-institution, customer, and partner connectivity relationships whose contract economics and SLAs are private."
+    evidence_summary: "Plaid public pages and docs show a data/API connection model; strategic and material contract terms are not public."
+    evidence_type: "other"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-005", "SRC-009", "SRC-012", "SRC-013"]
+    quoted_evidence:
+      - source_id: "SRC-009"
+        quote: "Plaid uses encrypted APIs to connect your financial accounts to the apps and services you want to use."
+        location: "How it works / safety content"
+      - source_id: "SRC-013"
+        quote: "Visa abandons takeover of Plaid after DOJ raises antitrust concerns."
+        location: "CNBC article title"
+    analyst_interpretation: "Contracts, SLAs, and data-access rights are operationally material."
+    limitations: "Public evidence does not identify full partner universe."
+    associations: {chapter_id: "III", section_id: "III.B", founder_claim_ids: [], table_ids: ["T-008", "T-009", "T-010", "T-021"], figure_ids: ["F-003", "F-011"], risk_ids: ["R-007", "R-011"]}
+  - evidence_claim_id: "EC-025"
+    claim: "Plaid's product navigation references newer compliance/identity/consumer-permission products such as Layer, Consumer Report, App Directory, and Permissions Manager."
+    evidence_summary: "Product page navigation includes Layer, Consumer Report, App Directory, and Permissions Manager descriptions."
+    evidence_type: "primary_company_source"
+    verification_status: verified
+    confidence: medium
+    source_ids: ["SRC-004"]
+    quoted_evidence:
+      - source_id: "SRC-004"
+        quote: "Layer Capture identity, contact, and bank info in a single click."
+        location: "Product navigation"
+      - source_id: "SRC-004"
+        quote: "Permissions Manager Consumer connection visibility and control; App Directory App insights to help manage risk and compliance."
+        location: "Product navigation"
+    analyst_interpretation: "Suggests active product development around identity, compliance, and consumer permissions."
+    limitations: "Roadmap timing, adoption, and revenue not public."
+    associations: {chapter_id: "VI", section_id: "VI.B", founder_claim_ids: ["FC-003"], table_ids: ["T-005", "T-012", "T-016"], figure_ids: ["F-003", "F-007"], risk_ids: ["R-005", "R-006", "R-007"]}
+  - evidence_claim_id: "EC-026"
+    claim: "Public management and headcount evidence is limited to selected leaders, founders, employee-count anchors, and careers-page hiring signals."
+    evidence_summary: "Plaid Inc. page lists founders/key people and employees; careers page lists roles/locations."
+    evidence_type: "social_or_professional_profile"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-002", "SRC-011"]
+    quoted_evidence:
+      - source_id: "SRC-002"
+        quote: "Founders Zach Perret, William Hockey ... Key people Zach Perret (CEO), Jean-Denis Greze (CTO) ... Number of employees 1,200."
+        location: "Plaid Inc. page infobox"
+      - source_id: "SRC-011"
+        quote: "Find a role Teams Locations ... San Francisco HQ ... New York City Office ... London Office."
+        location: "Careers page"
+    analyst_interpretation: "Public personnel evidence is enough for initial mapping but not team diligence."
+    limitations: "Requires company roster, HR metrics, and references."
+    associations: {chapter_id: "VII", section_id: "VII.A", founder_claim_ids: ["FC-002"], table_ids: ["T-015", "T-017", "T-018"], figure_ids: ["F-008", "F-009"], risk_ids: ["R-009"]}
+  - evidence_claim_id: "EC-027"
+    claim: "A complete schedule of pending litigation, company-initiated litigation, counsel assessments, reserves, and threatened claims is not publicly verifiable from sources reviewed."
+    evidence_summary: "Public settlement and legal pages provide only partial legal history and policy context."
+    evidence_type: "legal_record"
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids: ["SRC-010", "SRC-015"]
+    quoted_evidence:
+      - source_id: "SRC-015"
+        quote: "Home | Plaid Inc. Privacy Litigation"
+        location: "Settlement website title"
+    analyst_interpretation: "Legal diligence requires company counsel schedule."
+    limitations: "This was not a comprehensive court docket search."
+    associations: {chapter_id: "VIII", section_id: "VIII.A", founder_claim_ids: [], table_ids: ["T-019"], figure_ids: ["F-010"], risk_ids: ["R-007"]}
+  - evidence_claim_id: "EC-028"
+    claim: "Public status and product docs provide operational maturity signals but do not disclose full uptime, incident, support, or quality metrics."
+    evidence_summary: "Status page shows public system status and incidents API; docs/product pages show API products."
+    evidence_type: "primary_company_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-005", "SRC-021"]
+    quoted_evidence:
+      - source_id: "SRC-021"
+        quote: "This page shows Plaid system status and can be retrieved over API."
+        location: "Status page"
+    analyst_interpretation: "Operational maturity requires private SLA and incident review."
+    limitations: "Point-in-time public status is insufficient for reliability underwriting."
+    associations: {chapter_id: "VI", section_id: "VI.A", founder_claim_ids: [], table_ids: ["T-009", "T-015"], figure_ids: ["F-003", "F-007", "F-011"], risk_ids: ["R-005", "R-011"]}
+  - evidence_claim_id: "EC-029"
+    claim: "Plaid faces pricing and commoditization pressure from competitors and open-banking standardization."
+    evidence_summary: "Competitor pages show overlapping positioning, and Federal Register rulemaking may standardize consumer data access."
+    evidence_type: "analyst_estimate"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-014", "SRC-017", "SRC-018", "SRC-019", "SRC-020"]
+    quoted_evidence:
+      - source_id: "SRC-014"
+        quote: "make consumers' data available upon request to consumers and authorized third parties in a secure and reliable manner."
+        location: "Federal Register API abstract"
+      - source_id: "SRC-020"
+        quote: "Stripe Financial Connections | Secure Open Banking Platform"
+        location: "Stripe page title"
+    analyst_interpretation: "Standardized access can grow the market while reducing differentiation and pricing power."
+    limitations: "Actual pricing pressure needs win/loss and contract data."
+    associations: {chapter_id: "IV", section_id: "IV.A", founder_claim_ids: [], table_ids: ["T-011", "T-012"], figure_ids: ["F-005", "F-011"], risk_ids: ["R-004", "R-006", "R-007"]}
+  - evidence_claim_id: "EC-030"
+    claim: "Plaid's public GTM motion includes developer docs/API keys, pricing packages, customer stories, industry/use-case navigation, and sales/hiring signals, but CAC/channel mix are not public."
+    evidence_summary: "Docs, pricing, customer, company, and careers pages together evidence multiple GTM motions."
+    evidence_type: "primary_company_source"
+    verification_status: partially_verified
+    confidence: medium
+    source_ids: ["SRC-003", "SRC-005", "SRC-006", "SRC-007", "SRC-011"]
+    quoted_evidence:
+      - source_id: "SRC-005"
+        quote: "Get API Keys"
+        location: "Docs navigation"
+      - source_id: "SRC-006"
+        quote: "Pay as You Go ... Growth ... 12-month commitment."
+        location: "Pricing page"
+      - source_id: "SRC-007"
+        quote: "Customer Success Stories"
+        location: "Customer-stories page title"
+    analyst_interpretation: "Public GTM footprint is strong, but economic productivity is private."
+    limitations: "No sales funnel or CAC data reviewed."
+    associations: {chapter_id: "V", section_id: "V.A", founder_claim_ids: ["FC-004"], table_ids: ["T-013", "T-014"], figure_ids: ["F-006"], risk_ids: ["R-002", "R-004"]}
+
+sources:
+  - source_id: "SRC-001"
+    title: "List of unicorn startup companies"
+    url: "https://r.jina.ai/http://en.wikipedia.org/wiki/List_of_unicorn_startup_companies"
+    publisher: "Wikipedia"
+    author: null
+    publication_date: "2016-12-18"
+    accessed_date: "2026-05-23"
+    source_type: "market_database"
+    reliability_notes: "Secondary public list; useful for seed eligibility and valuation anchor, not authoritative current cap table."
+    archive_url: null
+  - source_id: "SRC-002"
+    title: "Plaid Inc."
+    url: "https://r.jina.ai/http://en.wikipedia.org/wiki/Plaid_Inc."
+    publisher: "Wikipedia"
+    author: null
+    publication_date: "2017-05-31"
+    accessed_date: "2026-05-23"
+    source_type: "other"
+    reliability_notes: "Secondary source; used for public company summary, founders, funding anchors, and eligibility cross-check."
+    archive_url: null
+  - source_id: "SRC-003"
+    title: "About us - our mission | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/company/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Company source; not audited."
+    archive_url: null
+  - source_id: "SRC-004"
+    title: "Plaid products - Financial APIs & connections for fintech | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/products/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Company product source."
+    archive_url: null
+  - source_id: "SRC-005"
+    title: "Plaid Docs"
+    url: "https://r.jina.ai/http://plaid.com/docs/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Developer documentation; useful for product/API signals."
+    archive_url: null
+  - source_id: "SRC-006"
+    title: "Pricing - United States & Canada | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/pricing/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Public pricing packaging; not a net price book."
+    archive_url: null
+  - source_id: "SRC-007"
+    title: "Customer Success Stories | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/customer-stories/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "customer_or_partner_source"
+    reliability_notes: "Company marketing/customer proof; does not evidence revenue concentration."
+    archive_url: null
+  - source_id: "SRC-008"
+    title: "Consumer trust - Plaid safety & security | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/safety/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Company security claims; audit reports not reviewed."
+    archive_url: null
+  - source_id: "SRC-009"
+    title: "Plaid helps you link your financial institutions | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/how-it-works-for-consumers/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Company consumer education page."
+    archive_url: null
+  - source_id: "SRC-010"
+    title: "Privacy and security policies | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/legal/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Company legal terms and privacy notice; implementation not verified."
+    archive_url: null
+  - source_id: "SRC-011"
+    title: "Plaid Careers: Explore jobs | Plaid"
+    url: "https://r.jina.ai/http://plaid.com/careers/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Point-in-time hiring signal; roles change frequently."
+    archive_url: null
+  - source_id: "SRC-012"
+    title: "Visa To Acquire Plaid"
+    url: "https://r.jina.ai/http://usa.visa.com/about-visa/newsroom/press-releases.releaseId.16856.html"
+    publisher: "Visa"
+    author: null
+    publication_date: "2020-01-13"
+    accessed_date: "2026-05-23"
+    source_type: "independent_news"
+    reliability_notes: "Primary transaction announcement by acquirer; deal did not close."
+    archive_url: null
+  - source_id: "SRC-013"
+    title: "Visa abandons takeover of Plaid after DOJ raises antitrust concerns"
+    url: "https://r.jina.ai/http://www.cnbc.com/2021/01/12/visa-abandons-takeover-of-plaid-after-doj-raises-antitrust-concerns.html"
+    publisher: "CNBC"
+    author: null
+    publication_date: "2021-01-12"
+    accessed_date: "2026-05-23"
+    source_type: "independent_news"
+    reliability_notes: "Independent news report supporting acquisition termination."
+    archive_url: null
+  - source_id: "SRC-014"
+    title: "Federal Register API result: Required Rulemaking on Personal Financial Data Rights"
+    url: "https://r.jina.ai/http://www.federalregister.gov/api/v1/documents?conditions%5Bterm%5D=Personal%20Financial%20Data%20Rights&per_page=5"
+    publisher: "Federal Register"
+    author: "Consumer Financial Protection Bureau"
+    publication_date: "2024-11-18"
+    accessed_date: "2026-05-23"
+    source_type: "regulatory_filing"
+    reliability_notes: "Federal Register API summary for CFPB final rule document 2024-25079."
+    archive_url: null
+  - source_id: "SRC-015"
+    title: "Home | Plaid Inc. Privacy Litigation"
+    url: "https://r.jina.ai/http://www.plaidsettlement.com/"
+    publisher: "Plaid Inc. Privacy Litigation settlement administrator"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "legal_record"
+    reliability_notes: "Settlement website; not a complete court docket."
+    archive_url: null
+  - source_id: "SRC-016"
+    title: "Patents Assigned to Plaid Inc."
+    url: "https://r.jina.ai/http://patents.justia.com/assignee/plaid-inc"
+    publisher: "Justia Patents"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "patent_or_trademark_record"
+    reliability_notes: "Public patent mirror; verify with USPTO and company IP schedule."
+    archive_url: null
+  - source_id: "SRC-017"
+    title: "Fuel Innovation with Secure, Connected Financial Data"
+    url: "https://r.jina.ai/http://www.yodlee.com/"
+    publisher: "Envestnet Yodlee"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor marketing source."
+    archive_url: null
+  - source_id: "SRC-018"
+    title: "Open Finance | MX Resources"
+    url: "https://r.jina.ai/http://www.mx.com/open-finance/"
+    publisher: "MX"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor marketing/source page."
+    archive_url: null
+  - source_id: "SRC-019"
+    title: "Tink | European open banking platform | 6000 connections"
+    url: "https://r.jina.ai/http://tink.com/"
+    publisher: "Tink"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor marketing/source page."
+    archive_url: null
+  - source_id: "SRC-020"
+    title: "Stripe Financial Connections | Secure Open Banking Platform"
+    url: "https://r.jina.ai/http://stripe.com/financial-connections"
+    publisher: "Stripe"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor marketing/source page."
+    archive_url: null
+  - source_id: "SRC-021"
+    title: "Plaid Status"
+    url: "https://r.jina.ai/http://status.plaid.com/"
+    publisher: "Plaid"
+    author: null
+    publication_date: null
+    accessed_date: "2026-05-23"
+    source_type: "primary_company_source"
+    reliability_notes: "Point-in-time public status page; not full incident history."
+    archive_url: null
+
+risk_register:
+  - risk_id: "R-001"
+    risk_title: "Financial quality opacity"
+    risk_category: "financial"
+    severity: "high"
+    likelihood: "high"
+    description: "Audited financials, cash, debt, margins, revenue recognition, backlog, AR aging, product P&Ls, and runway are not public."
+    impacted_chapter_ids: ["I", "V"]
+    impacted_section_ids: ["I.A", "I.B", "V.E"]
+    evidence_claim_ids: ["EC-006", "EC-022", "EC-023"]
+    mitigation_or_diligence_request: "Request audited financials, monthly KPI pack, product P&Ls, cash/debt/runway, tax/accounting memos, and board plan."
+  - risk_id: "R-002"
+    risk_title: "Revenue predictability and churn opacity"
+    risk_category: "financial"
+    severity: "high"
+    likelihood: "unknown"
+    description: "Public partner count and customer stories do not disclose churn, NRR, renewal calendar, contract minimums, or usage volatility."
+    impacted_chapter_ids: ["I", "III", "V"]
+    impacted_section_ids: ["I.B", "III.C", "V.B"]
+    evidence_claim_ids: ["EC-007", "EC-013", "EC-021", "EC-023"]
+    mitigation_or_diligence_request: "Request cohort revenue, NRR/GRR, churn bridge, renewal calendar, minimum commitments, and API-volume volatility."
+  - risk_id: "R-003"
+    risk_title: "Customer concentration opacity"
+    risk_category: "customer"
+    severity: "high"
+    likelihood: "unknown"
+    description: "Customer logos and 7,000 partner claim do not rule out revenue or gross-profit concentration."
+    impacted_chapter_ids: ["III", "V"]
+    impacted_section_ids: ["III.A", "III.C", "V.B"]
+    evidence_claim_ids: ["EC-007", "EC-013", "EC-021"]
+    mitigation_or_diligence_request: "Request top-customer revenue/gross margin, use case, product, region, and contract terms."
+  - risk_id: "R-004"
+    risk_title: "Market competition and pricing pressure"
+    risk_category: "market"
+    severity: "high"
+    likelihood: "medium"
+    description: "Yodlee, MX, Tink, Stripe Financial Connections, and open-banking standardization create competitive and commoditization pressure."
+    impacted_chapter_ids: ["II", "IV", "V"]
+    impacted_section_ids: ["II.A", "IV.A", "V.A"]
+    evidence_claim_ids: ["EC-010", "EC-014", "EC-016", "EC-029", "EC-030"]
+    mitigation_or_diligence_request: "Benchmark win/loss, net pricing, coverage, reliability, authorization rates, and customer switching."
+  - risk_id: "R-005"
+    risk_title: "Product maturity and reliability"
+    risk_category: "product"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Public product breadth and status page do not disclose product maturity, uptime history, incident root causes, or support burden."
+    impacted_chapter_ids: ["II", "VI"]
+    impacted_section_ids: ["II.A", "VI.A", "VI.B"]
+    evidence_claim_ids: ["EC-008", "EC-009", "EC-020", "EC-025", "EC-028"]
+    mitigation_or_diligence_request: "Request product maturity scorecards, uptime/incident logs, support metrics, roadmap, and customer escalations."
+  - risk_id: "R-006"
+    risk_title: "Technical defensibility and IP durability"
+    risk_category: "technical"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Public patents and product breadth suggest IP activity, but defensibility, freedom-to-operate, and open-source exposure are not verified."
+    impacted_chapter_ids: ["II", "IV", "VI", "VIII"]
+    impacted_section_ids: ["II.A", "IV.A", "VI.B", "VIII.D"]
+    evidence_claim_ids: ["EC-008", "EC-014", "EC-018", "EC-025", "EC-029"]
+    mitigation_or_diligence_request: "Conduct patent, trade secret, assignment, open-source, and technical architecture review."
+  - risk_id: "R-007"
+    risk_title: "Regulatory, privacy, and legal exposure"
+    risk_category: "regulatory"
+    severity: "critical"
+    likelihood: "medium"
+    description: "Plaid handles sensitive financial data; public sources show prior privacy litigation allegations/settlement, public privacy terms, CFPB 1033 rulemaking, and antitrust sensitivity."
+    impacted_chapter_ids: ["I", "III", "IV", "VIII"]
+    impacted_section_ids: ["I.C", "III.B", "IV.A", "VIII.A", "VIII.G"]
+    evidence_claim_ids: ["EC-004", "EC-016", "EC-017", "EC-019", "EC-024"]
+    mitigation_or_diligence_request: "Request counsel letters, regulatory correspondence, consent audits, data-retention maps, complaints, insurance, and 1033 compliance plan."
+  - risk_id: "R-008"
+    risk_title: "IP ownership and licensing gaps"
+    risk_category: "legal"
+    severity: "medium"
+    likelihood: "unknown"
+    description: "Public patent listings do not verify complete IP ownership, assignments, open-source licenses, data licenses, or encumbrances."
+    impacted_chapter_ids: ["VIII"]
+    impacted_section_ids: ["VIII.D"]
+    evidence_claim_ids: ["EC-018", "EC-022"]
+    mitigation_or_diligence_request: "Request full IP schedule, assignments, open-source scan, license obligations, and encumbrance review."
+  - risk_id: "R-009"
+    risk_title: "Founder/team credibility, hiring, and turnover opacity"
+    risk_category: "team"
+    severity: "medium"
+    likelihood: "unknown"
+    description: "Public sources identify selected leaders and hiring signals but not full leadership depth, attrition, employee relations, compensation, or succession."
+    impacted_chapter_ids: ["VII", "VIII"]
+    impacted_section_ids: ["VII.A", "VII.B", "VII.C", "VII.D", "VII.F", "VII.G", "VIII.C"]
+    evidence_claim_ids: ["EC-002", "EC-015", "EC-026"]
+    mitigation_or_diligence_request: "Request management roster, org chart, attrition, compensation, employee-relations schedule, and references."
+  - risk_id: "R-010"
+    risk_title: "Financing runway and cap-table complexity"
+    risk_category: "financing"
+    severity: "high"
+    likelihood: "unknown"
+    description: "Late-stage financings and valuation anchors do not disclose current runway, preferences, dilution, employee equity, debt, or secondary transactions."
+    impacted_chapter_ids: ["I", "VII"]
+    impacted_section_ids: ["I.C", "I.D", "VII.E"]
+    evidence_claim_ids: ["EC-001", "EC-005", "EC-022"]
+    mitigation_or_diligence_request: "Request cap table, financing documents, 409A valuations, option ledger, debt, and runway model."
+  - risk_id: "R-011"
+    risk_title: "Operational dependencies on banks, data sources, APIs, and infrastructure"
+    risk_category: "operational"
+    severity: "high"
+    likelihood: "medium"
+    description: "Plaid's API model depends on financial institutions, customer integrations, status/reliability operations, and undisclosed suppliers."
+    impacted_chapter_ids: ["III", "VI", "VIII"]
+    impacted_section_ids: ["III.B", "III.E", "VI.A", "VIII.F"]
+    evidence_claim_ids: ["EC-009", "EC-020", "EC-024", "EC-028"]
+    mitigation_or_diligence_request: "Request dependency map, top supplier contracts, bank/data-access SLAs, incident logs, and BCP/DR plans."
+  - risk_id: "R-012"
+    risk_title: "Reputational and security expectations"
+    risk_category: "reputational"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Sensitive financial data, privacy allegations, and company security claims create high trust expectations requiring independent validation."
+    impacted_chapter_ids: ["II", "VIII"]
+    impacted_section_ids: ["II.A", "VIII.E", "VIII.G"]
+    evidence_claim_ids: ["EC-011", "EC-012", "EC-017", "EC-019"]
+    mitigation_or_diligence_request: "Request SOC/security reports, incident history, privacy audits, data subject requests metrics, and security roadmap."
+
+diligence_gaps:
+  - {gap_id: "G-001", chapter_id: "I", section_id: "I.A", missing_information: "Audited financial statements and monthly management accounts.", why_it_matters: "Required to assess financial quality, margins, cash burn, and revenue recognition.", suggested_source_or_request: "Company CFO/controller data room.", priority: "high"}
+  - {gap_id: "G-002", chapter_id: "I", section_id: "I.C", missing_information: "Current cap table, preferences, options, warrants, SAFEs/notes, and debt.", why_it_matters: "Required to understand ownership, dilution, and downside protection.", suggested_source_or_request: "Company counsel and finance team.", priority: "high"}
+  - {gap_id: "G-003", chapter_id: "I", section_id: "I.B", missing_information: "Three-year forecast, scenario model, CAC/payback, and product margins.", why_it_matters: "Required to underwrite revenue predictability and runway.", suggested_source_or_request: "Board-approved plan and KPI pack.", priority: "high"}
+  - {gap_id: "G-004", chapter_id: "II", section_id: "II.A", missing_information: "Product-level revenue, margin, attach, uptime, support burden, and roadmap.", why_it_matters: "Public product breadth does not prove maturity or profitability.", suggested_source_or_request: "Product and engineering data room.", priority: "high"}
+  - {gap_id: "G-005", chapter_id: "III", section_id: "III.A", missing_information: "Top 15 customers by revenue/volume/application for two fiscal years and YTD.", why_it_matters: "Determines concentration, retention, and customer quality.", suggested_source_or_request: "Sales/finance customer schedule.", priority: "high"}
+  - {gap_id: "G-006", chapter_id: "III", section_id: "III.C", missing_information: "Churn, NRR, GRR, renewal calendar, and contract minimums.", why_it_matters: "Required to assess predictability of usage-based revenue.", suggested_source_or_request: "Customer success and finance cohort reports.", priority: "high"}
+  - {gap_id: "G-007", chapter_id: "III", section_id: "III.E", missing_information: "Top suppliers, bank/data-access agreements, cloud contracts, and SLAs.", why_it_matters: "Operational dependencies can impair reliability and gross margin.", suggested_source_or_request: "Legal/procurement/vendor data room.", priority: "high"}
+  - {gap_id: "G-008", chapter_id: "IV", section_id: "IV.A", missing_information: "Win/loss, pricing benchmarks, coverage, authorization rates, and competitor displacement data.", why_it_matters: "Required to quantify market position and pricing pressure.", suggested_source_or_request: "Sales ops, product, and customer-reference workstream.", priority: "medium"}
+  - {gap_id: "G-009", chapter_id: "V", section_id: "V.A", missing_information: "CAC, sales productivity, pipeline conversion, quota attainment, and channel mix.", why_it_matters: "Required to evaluate GTM scalability.", suggested_source_or_request: "GTM dashboard and sales ops data.", priority: "high"}
+  - {gap_id: "G-010", chapter_id: "VI", section_id: "VI.A", missing_information: "R&D org chart, engineering spend, incident history, architecture, and security reports.", why_it_matters: "Required to assess technical maturity and operating risk.", suggested_source_or_request: "Engineering/security data room.", priority: "high"}
+  - {gap_id: "G-011", chapter_id: "VII", section_id: "VII.B", missing_information: "Headcount history/plan, attrition, compensation, and retention data.", why_it_matters: "Required to assess execution capacity and cash burn.", suggested_source_or_request: "HR data room.", priority: "medium"}
+  - {gap_id: "G-012", chapter_id: "VIII", section_id: "VIII.G", missing_information: "Regulatory correspondence, privacy/security audits, consent-flow tests, and 1033 compliance roadmap.", why_it_matters: "Regulatory/privacy risk is central to Plaid's business model.", suggested_source_or_request: "General counsel, privacy, compliance, and security teams.", priority: "high"}
+  - {gap_id: "G-013", chapter_id: "VIII", section_id: "VIII.D", missing_information: "IP schedule, assignments, open-source scan, trademarks, copyrights, and data licenses.", why_it_matters: "Required to validate technical defensibility and ownership.", suggested_source_or_request: "IP counsel and engineering legal review.", priority: "medium"}
+  - {gap_id: "G-014", chapter_id: "VIII", section_id: "VIII.E", missing_information: "Insurance coverage, exclusions, claims history, and adequacy memo.", why_it_matters: "Material privacy/cyber/legal exposure may be uninsured or underinsured.", suggested_source_or_request: "Insurance broker and legal data room.", priority: "medium"}
+
+follow_up_requests:
+  - {request_id: "Q-001", chapter_id: "I", section_id: "I.A", request: "Provide audited annual financial statements, monthly management accounts, revenue recognition memo, AR aging, backlog, and product/channel/geography revenue.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-002", chapter_id: "I", section_id: "I.C", request: "Provide current fully diluted cap table, stock ledger, financing documents, preferences, option/warrant/SAFE/note schedules, debt, and 409A valuations.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-003", chapter_id: "I", section_id: "I.B", request: "Provide board-approved three-year plan, forecast sensitivities, unit-economics model, CAC/payback, gross-margin bridge, and runway model.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-004", chapter_id: "II", section_id: "II.A", request: "Provide product-level revenue, gross margin, usage, attach, uptime, support tickets, roadmap, release history, and customer escalations.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-005", chapter_id: "III", section_id: "III.A", request: "Provide top-customer schedule by revenue/volume/product/application with contracts and reference permissions.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-006", chapter_id: "III", section_id: "III.C", request: "Provide churn, NRR/GRR, renewal calendar, contract minimums, price changes, and customer health scores.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-007", chapter_id: "III", section_id: "III.E", request: "Provide top suppliers, cloud/data/bank/API agreements, SLAs, spend, termination rights, and redundancy plans.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-008", chapter_id: "IV", section_id: "IV.A", request: "Provide win/loss analysis, pricing benchmark, coverage comparison, and competitor displacement by segment.", requested_from: "company", priority: "medium"}
+  - {request_id: "Q-009", chapter_id: "V", section_id: "V.D", request: "Provide GTM funnel, CAC, payback, quota, attainment, sales cycle, lead-source attribution, and hiring plan.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-010", chapter_id: "VI", section_id: "VI.A", request: "Provide architecture diagrams, incident history, SRE metrics, security reports, R&D org chart, and product investment cases.", requested_from: "company", priority: "high"}
+  - {request_id: "Q-011", chapter_id: "VII", section_id: "VII.B", request: "Provide headcount history/plan by function/location, attrition, retention, compensation, employee-relations matters, and key-person succession plans.", requested_from: "company", priority: "medium"}
+  - {request_id: "Q-012", chapter_id: "VIII", section_id: "VIII.G", request: "Provide regulatory correspondence, privacy/security audits, consent-flow tests, data-retention map, consumer complaints, and CFPB 1033 compliance plan.", requested_from: "counsel", priority: "high"}
+  - {request_id: "Q-013", chapter_id: "VIII", section_id: "VIII.D", request: "Provide IP schedule, patent/trademark assignments, open-source scan, data licenses, and freedom-to-operate analysis.", requested_from: "counsel", priority: "medium"}
+  - {request_id: "Q-014", chapter_id: "VIII", section_id: "VIII.E", request: "Provide insurance policies, claims history, cyber/privacy/E&O/D&O limits, exclusions, and broker adequacy analysis.", requested_from: "company", priority: "medium"}
+
+limitations:
+  - limitation_id: "L-001"
+    description: "This report is based solely on public sources fetched through r.jina.ai mirrors and public URLs; no private data room or management interviews were available."
+    affected_chapter_ids: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"]
+    affected_section_ids: ["I.A", "I.B", "I.C", "I.D", "II.A", "III.A", "III.B", "III.C", "III.D", "III.E", "IV.A", "V.A", "V.B", "V.C", "V.D", "V.E", "VI.A", "VI.B", "VII.A", "VII.B", "VII.C", "VII.D", "VII.E", "VII.F", "VII.G", "VIII.A", "VIII.B", "VIII.C", "VIII.D", "VIII.E", "VIII.F", "VIII.G"]
+  - limitation_id: "L-002"
+    description: "The US$13.4B valuation is a public April 2021 anchor from the unicorn-list seed/Wikipedia sources; current valuation, preference stack, and fair value are not publicly verifiable."
+    affected_chapter_ids: ["I"]
+    affected_section_ids: ["I.C", "I.D"]
+  - limitation_id: "L-003"
+    description: "Company pages are treated as unverified public claims unless corroborated; financial/customer/legal conclusions requiring private records are marked not_publicly_verifiable."
+    affected_chapter_ids: ["I", "II", "III", "V", "VI", "VII", "VIII"]
+    affected_section_ids: ["I.A", "I.B", "II.A", "III.A", "III.C", "V.A", "V.B", "VI.A", "VII.B", "VIII.E", "VIII.F"]
+  - limitation_id: "L-004"
+    description: "This was not a comprehensive court docket, corporate registry, sanctions, IP prosecution, or lien search; legal and IP schedules require counsel verification."
+    affected_chapter_ids: ["VIII"]
+    affected_section_ids: ["VIII.A", "VIII.B", "VIII.D", "VIII.E", "VIII.F", "VIII.G"]
+  - limitation_id: "L-005"
+    description: "Several source pages are dynamic or secondary, and public web mirrors can be stale; use source-linked findings as a diligence lead list rather than definitive private-company records."
+    affected_chapter_ids: ["I", "III", "IV", "VII", "VIII"]
+    affected_section_ids: ["I.D", "III.A", "IV.A", "VII.C", "VIII.A", "VIII.D"]
