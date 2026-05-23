@@ -17,6 +17,8 @@ env:
 network:
   allowed:
     - defaults
+    - chrome
+    - github
     # Search & read-through fetch proxy
     - duckduckgo.com           # html.duckduckgo.com search endpoint
     - archive.org              # Internet Archive (covers wayback-api.archive.org)
@@ -87,6 +89,7 @@ network:
     - delltechnologiescapital.com
     - ecosia.org
     - globenewswire.com
+    - bing.com
 
 engine:
   id: copilot
