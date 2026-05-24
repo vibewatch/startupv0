@@ -1,0 +1,5249 @@
+# yaml-language-server: $schema=../.agents/skills/startup-diligence-research/assets/report-schema.yaml
+report_metadata:
+  report_title: "Startup Diligence Research Report: BlaBlaCar / Comuto"
+  target_company: BlaBlaCar
+  website: https://www.blablacar.com/
+  known_aliases:
+    - Comuto
+    - Comuto SA
+    - Covoiturage
+    - BlaBlaCar Bus
+    - BlaBlaCar Daily
+  sector: Mobility marketplace / ridesharing / multimodal travel
+  geography: Headquartered in Paris, France; public footprint across 21 countries
+  company_stage: Private late-stage / unicorn
+  research_date: 2026-05-24
+  analyst: GitHub Copilot CLI diligence agent
+  report_version: "1.0"
+  currency: EUR and USD as reported
+  time_zone: Europe/Paris
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Public-source standard diligence using company pages, newsroom, legal pages, app metadata, jobs, market databases
+      and independent press.
+    - Private financial, cap-table, legal, HR and contract documents were unavailable; those gaps are marked
+      not_publicly_verifiable.
+    - Some company pages required public reader/cached access because direct requests were blocked; re-fetch before
+      investment reliance.
+  included_jurisdictions:
+    - France
+    - United Kingdom
+    - European Union
+    - India
+    - Brazil
+    - Mexico
+    - Ukraine
+    - Poland
+    - Public global footprint references
+  excluded_topics:
+    - No paid legal docket search
+    - No paid IP/trademark register search
+    - No interviews
+    - No private data-room review
+  user_provided_materials:
+    - material_id: UPM-001
+      title: "Unicorn candidate row: BlaBlaCar $2B Private 2015-09-16 Ridesharing Comuto"
+      type: user_prompt
+      date_received: 2026-05-24
+      notes: Used only as a claim to verify.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: User-provided row says BlaBlaCar/Comuto is a private ridesharing unicorn dated 2015-09-16 with peak
+      valuation $2.0B.
+    claim_source: User-provided candidate row
+    claim_date: 2026-05-24
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-023
+      - EC-026
+    contradiction_summary: Public evidence verifies identity and unicorn status, but Forbes reports $1.6B and this review
+      did not corroborate $2.0B.
+    diligence_follow_up:
+      - Request original $2.0B valuation source and cap table/financing docs.
+  - founder_claim_id: FC-002
+    claim_text: BlaBlaCar was founded by Frédéric Mazzella, Nicolas Brusson and Francis Nappez.
+    claim_source: Forbes financing report
+    claim_date: 2015-09-16
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.C
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current biographies and roles.
+  - founder_claim_id: FC-003
+    claim_text: BlaBlaCar operates a large multimodal travel marketplace spanning carpooling, bus and train/daily commute products.
+    claim_source: BlaBlaCar public pages/newsroom
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - V
+    mapped_section_ids:
+      - II.A
+      - III.B
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-024
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request audited active-user, passenger, GMV and revenue definitions.
+  - founder_claim_id: FC-004
+    claim_text: BlaBlaCar has been profitable since April 2022 with €195M 2022 revenue and over €250M 2023 revenue.
+    claim_source: TechCrunch 2024 report
+    claim_date: 2024-04-03
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.A
+      - I.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-006
+      - EC-025
+    contradiction_summary: null
+    diligence_follow_up:
+      - Obtain audited statements and management accounts.
+  - founder_claim_id: FC-005
+    claim_text: India became BlaBlaCar largest carpooling market in 2025, with nearly 20M expected passengers and mobile-led
+      growth.
+    claim_source: BlaBlaCar newsroom
+    claim_date: 2025-09-18
+    mapped_chapter_ids:
+      - V
+    mapped_section_ids:
+      - V.A
+      - V.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-010
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate India booking, take-rate, safety and regulatory metrics.
+executive_summary:
+  overall_assessment: BlaBlaCar appears to be a scaled, durable late-stage mobility marketplace with strong public
+    evidence of brand, funding history, multimodal breadth and recent revenue/profitability momentum. It is not
+    investment-underwritable from public sources alone because financials, unit economics, cap table, debt terms,
+    contracts, legal records and HR data are private.
+  investment_or_diligence_thesis: The positive thesis is an asset-light travel marketplace with network liquidity,
+    affordability positioning and expanding multimodal supply. The counter-thesis is that aggregate scale may hide
+    SKU/geography margin dispersion, transport/regulatory complexity, trust/safety exposure and
+    valuation/capital-structure uncertainty.
+  strongest_verified_claims:
+    - founder_claim_id: FC-002
+      summary: Founder identities and 2015 unicorn financing are independently supported by Forbes.
+      evidence_claim_ids:
+        - EC-002
+    - founder_claim_id: FC-003
+      summary: Company-controlled sources show large marketplace scale and multimodal breadth.
+      evidence_claim_ids:
+        - EC-007
+        - EC-008
+        - EC-009
+        - EC-024
+    - founder_claim_id: FC-004
+      summary: Recent revenue/profitability anchors are reported by TechCrunch but require financial-statement validation.
+      evidence_claim_ids:
+        - EC-006
+        - EC-025
+  biggest_risks:
+    - risk_id: R-001
+      summary: Detailed financial statements and unit economics are private.
+    - risk_id: R-004
+      summary: Multimodal integrations and acquisitions may strain execution or margins.
+    - risk_id: R-005
+      summary: Trust, safety, transport liability and insurance exposures require claims/legal review.
+    - risk_id: R-007
+      summary: Privacy, security and AI governance need technical diligence.
+    - risk_id: R-010
+      summary: The $2B valuation claim is not corroborated by reviewed public sources.
+  key_evidence_gaps:
+    - Audited financial statements, GMV, gross margin, CAC, retention and revenue recognition.
+    - Current cap table, option pool, credit facility covenants and liquidation preference stack.
+    - Revenue/GMV by product, route, geography, operator and acquisition channel.
+    - Litigation, regulatory, IP, insurance and material-contract schedules.
+    - Security, privacy, AI/model governance and HR retention/compensation data.
+  recommended_next_steps:
+    - Do not rely on the $2B valuation claim until source documents are provided.
+    - Open a management data-room request covering high-priority follow-ups.
+    - Commission counsel-led legal/regulatory/IP searches in key jurisdictions.
+    - Build a product/geography unit-economics model separating carpool, bus, rail and daily commute.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public financing, revenue and profitability signals are positive, but audited statements, projections,
+      cap table, debt terms and accounting/tax details are private.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-023
+      - EC-025
+      - EC-026
+    risk_ids:
+      - R-001
+      - R-002
+      - R-010
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Only high-level 2022/2023 revenue and profitability are public; statements, AR aging and backlog are not.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Only high-level 2022/2023 revenue and profitability are public; statements, AR aging and backlog are not.
+            evidence_claim_ids:
+              - EC-006
+              - EC-025
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - R-001
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-002
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-006
+          - EC-025
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public growth drivers exist in India and multimodal expansion, but forecasts, assumptions and financing plans
+          are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public growth drivers exist in India and multimodal expansion, but forecasts, assumptions and financing plans
+              are not public.
+            evidence_claim_ids:
+              - EC-009
+              - EC-010
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-003
+              - R-004
+        hidden_risks:
+          - R-001
+          - R-003
+          - R-004
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-002
+          - T-003
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+          - EC-025
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Funding history and a credit facility are public; share count, preferences, option pool, covenants and
+          off-balance-sheet liabilities are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Funding history and a credit facility are public; share count, preferences, option pool, covenants and
+              off-balance-sheet liabilities are private.
+            evidence_claim_ids:
+              - EC-001
+              - EC-006
+              - EC-026
+            risk_ids:
+              - R-002
+              - R-010
+        hidden_risks:
+          - R-002
+          - R-010
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-001
+          - T-003
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids:
+          - EC-001
+          - EC-006
+          - EC-026
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Financing history is reconstructible from public news; tax, accounting-policy and investor-basis details are
+          not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Financing history is reconstructible from public news; tax, accounting-policy and investor-basis details are
+              not public.
+            evidence_claim_ids:
+              - EC-002
+              - EC-003
+              - EC-004
+              - EC-005
+              - EC-006
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-010
+        hidden_risks:
+          - R-001
+          - R-010
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-001
+          - T-003
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-005
+          - EC-006
+          - EC-025
+  - chapter_id: II
+    title: Products
+    chapter_summary: Public evidence supports carpooling, bus, train-ticket and daily-commute products; SKU economics and
+      market share are private.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-007
+      - EC-009
+      - EC-012
+      - EC-013
+      - EC-016
+      - EC-020
+      - EC-024
+    risk_ids:
+      - R-004
+      - R-005
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: BlaBlaCar publicly describes a multimodal marketplace, but growth rates, market share, cost structure and
+          profitability by product remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: BlaBlaCar publicly describes a multimodal marketplace, but growth rates, market share, cost structure and
+              profitability by product remain private.
+            evidence_claim_ids:
+              - EC-007
+              - EC-009
+              - EC-012
+              - EC-013
+              - EC-016
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - R-004
+          - R-005
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-007
+          - EC-009
+          - EC-012
+          - EC-013
+          - EC-016
+          - EC-024
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public aggregate usage and partner scale are strong, while named top customers, revenue concentration,
+      suppliers and severed relationships are not public.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-019
+      - EC-021
+      - EC-027
+    risk_ids:
+      - R-006
+      - R-003
+      - R-004
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Named top customers are not public; aggregate member/passenger metrics should be replaced with route, cohort
+          and operator data in diligence.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Named top customers are not public; aggregate member/passenger metrics should be replaced with route, cohort
+              and operator data in diligence.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-027
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-006
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-027
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public strategic relationships include bus operators, mobility partners, Busfor/Ouibus, rail ticketing and AXA;
+          contract economics are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public strategic relationships include bus operators, mobility partners, Busfor/Ouibus, rail ticketing and AXA;
+              contract economics are private.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-009
+              - EC-019
+              - EC-021
+            risk_ids:
+              - R-003
+              - R-004
+              - R-006
+        hidden_risks:
+          - R-003
+          - R-004
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-007
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-009
+          - EC-019
+          - EC-021
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer/operator/geography and any 5%+ concentration are not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Revenue by customer/operator/geography and any 5%+ concentration are not publicly verifiable.
+            evidence_claim_ids:
+              - EC-027
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-006
+          - T-007
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-027
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No severed relationships were identified in reviewed sources, but this is not publicly clearable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: No severed relationships were identified in reviewed sources, but this is not publicly clearable.
+            evidence_claim_ids:
+              - EC-027
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-027
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Top suppliers and purchase amounts are not public; likely categories include operators, app stores, payments,
+          ticketing and data vendors.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Top suppliers and purchase amounts are not public; likely categories include operators, app stores, payments,
+              ticketing and data vendors.
+            evidence_claim_ids:
+              - EC-015
+              - EC-016
+              - EC-027
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - R-006
+          - R-007
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+          - EC-027
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: BlaBlaCar competes across carpooling, bus/rail ticketing, ride-hailing, rental/sharing and
+      informal/private-car substitutes; market-share data is not public.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-012
+      - EC-030
+    risk_ids:
+      - R-008
+      - R-006
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: BlaBlaCar’s public strengths are liquidity, trust, affordability and multimodal breadth; route-level share and
+          elasticity need private/third-party data.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: BlaBlaCar’s public strengths are liquidity, trust, affordability and multimodal breadth; route-level share and
+              elasticity need private/third-party data.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-009
+              - EC-012
+              - EC-030
+            risk_ids:
+              - R-008
+              - R-006
+        hidden_risks:
+          - R-008
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-009
+          - EC-012
+          - EC-030
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: GTM appears mobile-led, localized and partner-supported; CAC, channel ROI, sales productivity and
+      pipeline are private.
+    founder_claim_ids:
+      - FC-003
+      - FC-005
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+      - EC-016
+      - EC-031
+    risk_ids:
+      - R-003
+      - R-006
+      - R-008
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public GTM signals include mobile app distribution, localized countries, partners, PR, sustainability and
+          affordability positioning.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public GTM signals include mobile app distribution, localized countries, partners, PR, sustainability and
+              affordability positioning.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-010
+              - EC-011
+              - EC-016
+              - EC-031
+            risk_ids:
+              - R-003
+              - R-006
+        hidden_risks:
+          - R-003
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-010
+          - EC-011
+          - EC-016
+          - EC-031
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major customer status, trends and pipeline are not public; analyze operators/markets/cohorts instead.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Major customer status, trends and pipeline are not public; analyze operators/markets/cohorts instead.
+            evidence_claim_ids:
+              - EC-027
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-006
+          - T-007
+        figure_ids:
+          - F-004
+          - F-006
+        evidence_claim_ids:
+          - EC-027
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public avenues include mobile acquisition, country localization, partner supply, train/bus cross-sell and India
+          growth.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public avenues include mobile acquisition, country localization, partner supply, train/bus cross-sell and India
+              growth.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-003
+              - R-004
+              - R-006
+        hidden_risks:
+          - R-003
+          - R-004
+          - R-006
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+          - EC-011
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales compensation, quota, sales cycle and new-hire productivity are not public; partner/account-management
+          productivity should be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Sales compensation, quota, sales cycle and new-hire productivity are not public; partner/account-management
+              productivity should be requested.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-011
+          - T-016
+        figure_ids:
+          - F-006
+          - F-009
+        evidence_claim_ids:
+          - EC-017
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Budget sufficiency cannot be verified publicly despite profitability and credit-facility signals.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Budget sufficiency cannot be verified publicly despite profitability and credit-facility signals.
+            evidence_claim_ids:
+              - EC-006
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - R-001
+          - R-002
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-002
+          - T-011
+          - T-012
+        figure_ids:
+          - F-002
+          - F-006
+        evidence_claim_ids:
+          - EC-006
+          - EC-025
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public evidence shows ongoing app, engineering/data, multimodal integration and AI/ML activity;
+      architecture, security and development-cost details are private.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-009
+      - EC-016
+      - EC-017
+      - EC-020
+      - EC-022
+      - EC-024
+    risk_ids:
+      - R-004
+      - R-007
+      - R-009
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Engineering/data hiring and reported AI/ML use cases indicate active R&D; key personnel, architecture and
+          security evidence are incomplete publicly.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Engineering/data hiring and reported AI/ML use cases indicate active R&D; key personnel, architecture and
+              security evidence are incomplete publicly.
+            evidence_claim_ids:
+              - EC-016
+              - EC-017
+              - EC-022
+            risk_ids:
+              - R-007
+              - R-009
+        hidden_risks:
+          - R-007
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+          - EC-022
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Pipeline signals include bus acquisitions, daily commuting, train ticketing and AI/ML; costs and ROI are not
+          public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Pipeline signals include bus acquisitions, daily commuting, train ticketing and AI/ML; costs and ROI are not
+              public.
+            evidence_claim_ids:
+              - EC-009
+              - EC-018
+              - EC-019
+              - EC-020
+              - EC-022
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-007
+        hidden_risks:
+          - R-004
+          - R-007
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+          - F-003
+        evidence_claim_ids:
+          - EC-009
+          - EC-018
+          - EC-019
+          - EC-020
+          - EC-022
+          - EC-024
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Founders and workforce scale are public; formal org chart, biographies, compensation, incentive plans
+      and turnover are private.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+      - EC-008
+      - EC-017
+      - EC-022
+      - EC-029
+    risk_ids:
+      - R-009
+      - R-010
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: A formal org chart is not public; an inferred map can be built from founders, a reported CTO and job teams.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: A formal org chart is not public; an inferred map can be built from founders, a reported CTO and job teams.
+            evidence_claim_ids:
+              - EC-002
+              - EC-017
+              - EC-022
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-015
+          - T-016
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-002
+          - EC-017
+          - EC-022
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public sources disclose 800 employees and workforce composition, but not historical/projected headcount by
+          function and location.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public sources disclose 800 employees and workforce composition, but not historical/projected headcount by
+              function and location.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-017
+              - EC-029
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-017
+          - EC-029
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Founder identities are verified; current management biographies and tenure/age/service details are incomplete
+          publicly.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Founder identities are verified; current management biographies and tenure/age/service details are incomplete
+              publicly.
+            evidence_claim_ids:
+              - EC-002
+              - EC-022
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-002
+          - EC-022
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Executive agreements, benefits and compensation summaries are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Executive agreements, benefits and compensation summaries are not public.
+            evidence_claim_ids:
+              - EC-029
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-029
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Option pool and incentive stock plan details are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Option pool and incentive stock plan details are not public.
+            evidence_claim_ids:
+              - EC-026
+              - EC-029
+            risk_ids:
+              - R-010
+              - R-009
+        hidden_risks:
+          - R-010
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-003
+          - T-017
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-026
+          - EC-029
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No significant employee-relations problems were found in reviewed public sources, but this cannot be cleared
+          publicly.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: No significant employee-relations problems were found in reviewed public sources, but this cannot be cleared
+              publicly.
+            evidence_claim_ids:
+              - EC-029
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-029
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Two-year turnover and retention/benefit plans are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Two-year turnover and retention/benefit plans are not public.
+            evidence_claim_ids:
+              - EC-008
+              - EC-029
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - R-009
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-016
+          - T-017
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-008
+          - EC-029
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public terms and privacy pages clarify platform/data roles, but litigation, IP, regulatory history,
+      insurance and contracts require counsel/data-room review.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-021
+      - EC-028
+      - EC-031
+    risk_ids:
+      - R-003
+      - R-005
+      - R-007
+      - R-011
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: No pending lawsuits were verified in this public review; comprehensive legal-record searches were not
+          performed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No pending lawsuits were verified in this public review; comprehensive legal-record searches were not
+              performed.
+            evidence_claim_ids:
+              - EC-028
+            risk_ids:
+              - R-011
+        hidden_risks:
+          - R-011
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-018
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-028
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No company-initiated lawsuits were verified publicly; IP/commercial enforcement searches were not performed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: No company-initiated lawsuits were verified publicly; IP/commercial enforcement searches were not performed.
+            evidence_claim_ids:
+              - EC-028
+            risk_ids:
+              - R-011
+        hidden_risks:
+          - R-011
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-019
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-028
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Impact claims are public but methodology, safety incident rates, claims and workplace safety records are not.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Impact claims are public but methodology, safety incident rates, claims and workplace safety records are not.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-031
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - R-003
+          - R-005
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-031
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Brand/app/data assets are visible, but no IP register or assignment search was completed.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Brand/app/data assets are visible, but no IP register or assignment search was completed.
+            evidence_claim_ids:
+              - EC-016
+              - EC-022
+              - EC-028
+            risk_ids:
+              - R-011
+              - R-007
+        hidden_risks:
+          - R-011
+          - R-007
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-020
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-016
+          - EC-022
+          - EC-028
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: AXA partnership is public, but insurance policies, coverage limits and claims history are private.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: AXA partnership is public, but insurance policies, coverage limits and claims history are private.
+            evidence_claim_ids:
+              - EC-021
+              - EC-028
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - R-005
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-022
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-021
+          - EC-028
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Public terms allocate user/operator roles; executed material contracts, DPAs and SLAs are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public terms allocate user/operator roles; executed material contracts, DPAs and SLAs are private.
+            evidence_claim_ids:
+              - EC-009
+              - EC-013
+              - EC-014
+              - EC-027
+            risk_ids:
+              - R-004
+              - R-005
+              - R-011
+        hidden_risks:
+          - R-004
+          - R-005
+          - R-011
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-022
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-009
+          - EC-013
+          - EC-014
+          - EC-027
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: No agency problems were verified publicly, but transport/privacy operations require regulator searches.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: No agency problems were verified publicly, but transport/privacy operations require regulator searches.
+            evidence_claim_ids:
+              - EC-014
+              - EC-015
+              - EC-028
+            risk_ids:
+              - R-003
+              - R-007
+              - R-011
+        hidden_risks:
+          - R-003
+          - R-007
+          - R-011
+        evidence_gaps:
+          - not_publicly_verifiable private diligence item remains open
+        follow_up_questions:
+          - Request company data-room evidence for this checklist item.
+        table_ids:
+          - T-021
+          - T-022
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+          - EC-028
+tables:
+  - table_id: T-001
+    title: Public financing history
+    chapter_id: I
+    section_id: I.D
+    purpose: Financing and valuation anchors.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: 2012 round
+          Public evidence: $10M Accel-led round/rebrand
+          Diligence read: Early institutional backing
+          Status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: r2
+        values:
+          Topic: 2014 round
+          Public evidence: $100M from Index/Accel/ISAI/Lead Edge
+          Diligence read: Growth financing
+          Status: verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: r3
+        values:
+          Topic: 2015 round
+          Public evidence: $200M at $1.6B valuation
+          Diligence read: Verifies unicorn, not $2B
+          Status: verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-023
+        source_ids:
+          - SRC-002
+          - SRC-023
+      - row_id: r4
+        values:
+          Topic: 2021/2024 capital
+          Public evidence: $115M round and €100M credit facility
+          Diligence read: Capital access and debt terms need review
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+        source_ids:
+          - SRC-005
+          - SRC-006
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+    notes: null
+  - table_id: T-002
+    title: Public financial-performance signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Public vs private financial evidence.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Revenue
+          Public evidence: 2022 €195M; 2023 >€250M
+          Diligence read: Scale/growth anchor only
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: r2
+        values:
+          Topic: Profitability
+          Public evidence: Profitable since April 2022
+          Diligence read: EBITDA/FCF unknown
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: r3
+        values:
+          Topic: Statements and KPIs
+          Public evidence: No audited statements, CAC, retention, AR or backlog public
+          Diligence read: Primary financial gap
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-025
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-006
+      - EC-025
+    source_ids:
+      - SRC-006
+    notes: null
+  - table_id: T-003
+    title: Capital structure public snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Ownership/debt gaps.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Funding total
+          Public evidence: CB says $687.3M raised
+          Diligence read: Reconcile to financing docs
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+      - row_id: r2
+        values:
+          Topic: Valuation
+          Public evidence: Forbes $1.6B vs user row $2B
+          Diligence read: Exact peak valuation not corroborated
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-023
+        source_ids:
+          - SRC-002
+          - SRC-023
+      - row_id: r3
+        values:
+          Topic: Debt/cap table
+          Public evidence: €100M facility; no cap table or covenants public
+          Diligence read: Waterfall and covenant risk
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-006
+          - EC-026
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-006
+      - EC-023
+      - EC-026
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-006
+      - SRC-023
+    notes: null
+  - table_id: T-004
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map products.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Carpooling
+          Public evidence: Active members, reviewed profiles, IDs checked
+          Diligence read: Core marketplace/trust loop
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-012
+        source_ids:
+          - SRC-007
+          - SRC-012
+      - row_id: r2
+        values:
+          Topic: Bus
+          Public evidence: 6,000 operators; cheap/flexible tickets
+          Diligence read: Partner supply and refund exposure
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+        source_ids:
+          - SRC-007
+          - SRC-013
+      - row_id: r3
+        values:
+          Topic: Train/daily commute
+          Public evidence: France train launch and Klaxit acquisition
+          Diligence read: Multimodal integration risk
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-020
+        source_ids:
+          - SRC-009
+          - SRC-020
+    evidence_claim_ids:
+      - EC-007
+      - EC-009
+      - EC-012
+      - EC-013
+      - EC-020
+      - EC-024
+    source_ids:
+      - SRC-007
+      - SRC-009
+      - SRC-012
+      - SRC-013
+      - SRC-020
+    notes: null
+  - table_id: T-005
+    title: Pricing and commercial-positioning signals
+    chapter_id: II
+    section_id: II.A
+    purpose: Public pricing/positioning.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Affordability
+          Public evidence: Carpool/bus pages emphasize low/cheap prices
+          Diligence read: Strong consumer value prop; fee elasticity unknown
+          Status: verified
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+        source_ids:
+          - SRC-012
+          - SRC-013
+      - row_id: r2
+        values:
+          Topic: Train/bus commissions
+          Public evidence: Ticketing products visible; terms not public
+          Diligence read: Take rate and refunds unknown
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-009
+          - EC-013
+          - EC-014
+        source_ids:
+          - SRC-009
+          - SRC-013
+          - SRC-014
+      - row_id: r3
+        values:
+          Topic: Insurance adjacency
+          Public evidence: AXA partnership history
+          Diligence read: Ancillary revenue/regulatory topic
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-021
+    evidence_claim_ids:
+      - EC-009
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-021
+    source_ids:
+      - SRC-009
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-021
+    notes: null
+  - table_id: T-006
+    title: Public customer and usage signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Substitute aggregate marketplace metrics for unavailable top-customer data.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Active members
+          Public evidence: 29M active members/year
+          Diligence read: Large community; monetized share unknown
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: r2
+        values:
+          Topic: Passengers
+          Public evidence: 92M passengers in 2024; 100M carpool/bus passengers on about page
+          Diligence read: Definitions need reconciliation
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+        source_ids:
+          - SRC-007
+          - SRC-008
+      - row_id: r3
+        values:
+          Topic: Top customers
+          Public evidence: Not disclosed
+          Diligence read: Need partner/operator/geography concentration
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-027
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-027
+    source_ids:
+      - SRC-007
+      - SRC-008
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships
+    chapter_id: III
+    section_id: III.B
+    purpose: Partner network evidence.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Mobility partners
+          Public evidence: 7,500 mobility partners; 6,000 bus operators
+          Diligence read: Supply breadth; concentration unknown
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+        source_ids:
+          - SRC-007
+          - SRC-008
+      - row_id: r2
+        values:
+          Topic: Busfor/Ouibus
+          Public evidence: Bus acquisitions
+          Diligence read: Integration and regional risk
+          Status: verified
+        evidence_claim_ids:
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-018
+          - SRC-019
+      - row_id: r3
+        values:
+          Topic: AXA/Rail
+          Public evidence: Insurance partnership and France train tickets
+          Diligence read: Partner contract terms needed
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-021
+        source_ids:
+          - SRC-009
+          - SRC-021
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-018
+      - EC-019
+      - EC-021
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-018
+      - SRC-019
+      - SRC-021
+    notes: null
+  - table_id: T-008
+    title: Supplier and platform dependencies
+    chapter_id: III
+    section_id: III.E
+    purpose: Supplier categories.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Operators/partners
+          Public evidence: Bus operators and mobility partners disclosed
+          Diligence read: Top contracts and SLAs required
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-027
+        source_ids:
+          - SRC-007
+          - SRC-008
+      - row_id: r2
+        values:
+          Topic: App stores/payments/data
+          Public evidence: App listing and privacy data categories
+          Diligence read: Platform, processor and security dependencies
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+        source_ids:
+          - SRC-015
+          - SRC-016
+      - row_id: r3
+        values:
+          Topic: Rail/bus ticketing systems
+          Public evidence: Bus and train booking products
+          Diligence read: Integration uptime and refunds
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-013
+        source_ids:
+          - SRC-009
+          - SRC-013
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-013
+      - EC-015
+      - EC-016
+      - EC-027
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-013
+      - SRC-015
+      - SRC-016
+    notes: null
+  - table_id: T-009
+    title: Competitive landscape by segment
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Competition map.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Carpooling
+          Public evidence: Large active member/passenger footprint
+          Diligence read: Route-level share/liquidity needed
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+        source_ids:
+          - SRC-007
+          - SRC-008
+      - row_id: r2
+        values:
+          Topic: Bus/rail
+          Public evidence: Bus operators, Busfor/Ouibus, train tickets
+          Diligence read: Competes with operators/OTAs
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-009
+          - SRC-018
+          - SRC-019
+      - row_id: r3
+        values:
+          Topic: Mobility alternatives
+          Public evidence: CB alternatives include Getaround, Blacklane, Cabify, inDrive, Turo
+          Diligence read: Broad substitute competition
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-030
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-018
+      - EC-019
+      - EC-030
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-018
+      - SRC-019
+    notes: null
+  - table_id: T-010
+    title: Basis of competition
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Qualitative competitive factors.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Liquidity
+          Public evidence: 29M members, 92M passengers, 843k meeting points
+          Diligence read: Likely strength; route density private
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-007
+          - SRC-008
+          - SRC-009
+      - row_id: r2
+        values:
+          Topic: Trust
+          Public evidence: Reviewed profiles, IDs checked, legal allocation, insurance history
+          Diligence read: Core differentiator; incidents private
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-012
+          - EC-014
+          - EC-021
+        source_ids:
+          - SRC-012
+          - SRC-014
+          - SRC-021
+      - row_id: r3
+        values:
+          Topic: Multimodal breadth
+          Public evidence: Carpool, bus and train in one app
+          Diligence read: Convenience vs integration complexity
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-024
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-012
+      - EC-014
+      - EC-021
+      - EC-024
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-012
+      - SRC-014
+      - SRC-021
+    notes: null
+  - table_id: T-011
+    title: GTM and distribution channels
+    chapter_id: V
+    section_id: V.A
+    purpose: Distribution channels.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Mobile app
+          Public evidence: App listing; India 95% mobile share
+          Diligence read: Primary consumer channel
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-010
+          - EC-016
+        source_ids:
+          - SRC-010
+          - SRC-016
+      - row_id: r2
+        values:
+          Topic: Localized web/countries
+          Public evidence: Country selector and 21-country claim
+          Diligence read: International distribution
+          Status: verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-011
+        source_ids:
+          - SRC-007
+          - SRC-011
+      - row_id: r3
+        values:
+          Topic: Partner supply/PR
+          Public evidence: Mobility partners; India/train/sustainability news
+          Diligence read: Inventory and brand activation
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+        source_ids:
+          - SRC-008
+          - SRC-009
+          - SRC-010
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+      - EC-016
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-016
+    notes: null
+  - table_id: T-012
+    title: Marketing and reputation signals
+    chapter_id: V
+    section_id: V.A
+    purpose: Public marketing proof points.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Sustainability
+          Public evidence: CO2 avoided and 92M passengers
+          Diligence read: Marketing asset; methodology needed
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+          - EC-031
+        source_ids:
+          - SRC-008
+      - row_id: r2
+        values:
+          Topic: Affordability
+          Public evidence: Driver savings and cheap trips/tickets
+          Diligence read: Strong positioning; pricing elasticity unknown
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-012
+          - EC-013
+        source_ids:
+          - SRC-007
+          - SRC-012
+          - SRC-013
+      - row_id: r3
+        values:
+          Topic: India growth/app ratings
+          Public evidence: ~50% YoY India; high App Store ratings
+          Diligence read: Demand and quality signals
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-010
+          - EC-016
+        source_ids:
+          - SRC-010
+          - SRC-016
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-012
+      - EC-013
+      - EC-016
+      - EC-031
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-010
+      - SRC-012
+      - SRC-013
+      - SRC-016
+    notes: null
+  - table_id: T-013
+    title: R&D organization signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Technical organization indicators.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Engineering/Data hiring
+          Public evidence: Lever shows Engineering and Data roles
+          Diligence read: Active tech org
+          Status: verified
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-017
+      - row_id: r2
+        values:
+          Topic: AI/ML
+          Public evidence: Reported matching/fraud/personalization/ChatGPT
+          Diligence read: Source URL revalidation needed
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-022
+      - row_id: r3
+        values:
+          Topic: Mobile release cadence
+          Public evidence: App version 6.13.0 dated 2026-05-18
+          Diligence read: Ongoing app maintenance
+          Status: verified
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-016
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+      - EC-022
+    source_ids:
+      - SRC-016
+      - SRC-017
+      - SRC-022
+    notes: null
+  - table_id: T-014
+    title: New-product and acquisition pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Roadmap/product additions.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Bus expansion
+          Public evidence: Ouibus and Busfor acquisitions
+          Diligence read: Integration and regional risk
+          Status: verified
+        evidence_claim_ids:
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-018
+          - SRC-019
+      - row_id: r2
+        values:
+          Topic: Daily commuting
+          Public evidence: Klaxit acquisition
+          Diligence read: Different usage/subsidy dynamics
+          Status: verified
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-020
+      - row_id: r3
+        values:
+          Topic: Train and AI
+          Public evidence: France train tickets and AI/ML article
+          Diligence read: Partner/model governance risk
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+          - EC-022
+        source_ids:
+          - SRC-009
+          - SRC-022
+    evidence_claim_ids:
+      - EC-009
+      - EC-018
+      - EC-019
+      - EC-020
+      - EC-022
+      - EC-024
+    source_ids:
+      - SRC-009
+      - SRC-018
+      - SRC-019
+      - SRC-020
+      - SRC-022
+    notes: null
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Public leadership roster.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Frédéric Mazzella
+          Public evidence: Forbes founder list
+          Diligence read: Current role/equity needed
+          Status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: r2
+        values:
+          Topic: Nicolas Brusson
+          Public evidence: Forbes founder list; CEO context in public coverage
+          Diligence read: Agreement/succession needed
+          Status: verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+        source_ids:
+          - SRC-002
+          - SRC-006
+      - row_id: r3
+        values:
+          Topic: Francis Nappez / Nicolas Salvy
+          Public evidence: Founder list; CTO named in lower-confidence AI article
+          Diligence read: Revalidate current roles
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-022
+        source_ids:
+          - SRC-002
+          - SRC-022
+    evidence_claim_ids:
+      - EC-002
+      - EC-006
+      - EC-022
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-022
+    notes: null
+  - table_id: T-016
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Workforce scale/locations.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Employees
+          Public evidence: 800 employees
+          Diligence read: Scale signal
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: r2
+        values:
+          Topic: Composition
+          Public evidence: 44% women; 33% remote; 52 nationalities
+          Diligence read: Distributed workforce
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: r3
+        values:
+          Topic: Open jobs
+          Public evidence: Kyiv, Paris, São Paulo, Warsaw; many functions
+          Diligence read: Active hiring; total plan unknown
+          Status: verified
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-017
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-017
+      - EC-029
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-017
+    notes: null
+  - table_id: T-017
+    title: People-risk public gap map
+    chapter_id: VII
+    section_id: VII.F
+    purpose: People diligence gaps.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Turnover
+          Public evidence: No turnover metrics public
+          Diligence read: Retention risk unknown
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-029
+        source_ids:
+          - SRC-008
+          - SRC-017
+      - row_id: r2
+        values:
+          Topic: Compensation/equity
+          Public evidence: No agreements, benefits or option plan public
+          Diligence read: Dilution/retention unknown
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-026
+          - EC-029
+        source_ids:
+          - SRC-001
+          - SRC-017
+      - row_id: r3
+        values:
+          Topic: Employee relations
+          Public evidence: No issues found in reviewed public sources
+          Diligence read: Not a legal clearance
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-029
+        source_ids:
+          - SRC-008
+          - SRC-017
+    evidence_claim_ids:
+      - EC-026
+      - EC-029
+    source_ids:
+      - SRC-001
+      - SRC-008
+      - SRC-017
+    notes: null
+  - table_id: T-018
+    title: Pending lawsuits against company
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Litigation gap table.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Civil/consumer claims
+          Public evidence: No comprehensive docket search; sources do not list suits
+          Diligence read: Cannot clear from public sources
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-028
+        source_ids:
+          - SRC-014
+          - SRC-015
+      - row_id: r2
+        values:
+          Topic: Transport claims
+          Public evidence: Terms allocate transport contract roles
+          Diligence read: Claims/incident history private
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-014
+          - EC-028
+        source_ids:
+          - SRC-014
+    evidence_claim_ids:
+      - EC-014
+      - EC-028
+    source_ids:
+      - SRC-014
+      - SRC-015
+    notes: null
+  - table_id: T-019
+    title: Pending lawsuits initiated by company
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Company-initiated litigation gap table.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: IP enforcement
+          Public evidence: No public IP suits identified in reviewed sources
+          Diligence read: Register/docket search required
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-028
+        source_ids:
+          - SRC-014
+      - row_id: r2
+        values:
+          Topic: Commercial disputes
+          Public evidence: No partner/operator suits identified publicly
+          Diligence read: Company schedule required
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-028
+        source_ids:
+          - SRC-014
+    evidence_claim_ids:
+      - EC-028
+    source_ids:
+      - SRC-014
+    notes: null
+  - table_id: T-020
+    title: IP and intangible assets
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: IP/assets map.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Brand/app
+          Public evidence: App listing identifies BlaBlaCar/Comuto
+          Diligence read: Trademark/domain/app ownership needed
+          Status: verified
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-016
+      - row_id: r2
+        values:
+          Topic: Data/models
+          Public evidence: AI/ML article describes matching/fraud/personalization
+          Diligence read: Trade-secret/data rights needed
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-022
+      - row_id: r3
+        values:
+          Topic: Acquired assets
+          Public evidence: Ouibus, Busfor, Klaxit acquisitions
+          Diligence read: IP assignment schedules needed
+          Status: verified
+        evidence_claim_ids:
+          - EC-018
+          - EC-019
+          - EC-020
+        source_ids:
+          - SRC-018
+          - SRC-019
+          - SRC-020
+    evidence_claim_ids:
+      - EC-016
+      - EC-018
+      - EC-019
+      - EC-020
+      - EC-022
+      - EC-028
+    source_ids:
+      - SRC-016
+      - SRC-018
+      - SRC-019
+      - SRC-020
+      - SRC-022
+    notes: null
+  - table_id: T-021
+    title: Regulatory, environmental and safety map
+    chapter_id: VIII
+    section_id: VIII.C
+    purpose: Regulatory/safety exposures.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: Transport/platform
+          Public evidence: Terms state platform not party to transport contracts
+          Diligence read: Local regulation still relevant
+          Status: verified
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-014
+      - row_id: r2
+        values:
+          Topic: Privacy/data
+          Public evidence: Multiple controllers and personal data categories
+          Diligence read: GDPR/local compliance risk
+          Status: verified
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-015
+      - row_id: r3
+        values:
+          Topic: Green claims/geography
+          Public evidence: CO2 avoided, 21 countries, India growth
+          Diligence read: Methodology and local compliance required
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-007
+          - EC-010
+          - EC-031
+        source_ids:
+          - SRC-007
+          - SRC-010
+    evidence_claim_ids:
+      - EC-007
+      - EC-010
+      - EC-014
+      - EC-015
+      - EC-031
+    source_ids:
+      - SRC-007
+      - SRC-010
+      - SRC-014
+      - SRC-015
+    notes: null
+  - table_id: T-022
+    title: Insurance and material contracts
+    chapter_id: VIII
+    section_id: VIII.E
+    purpose: Insurance/contracts map.
+    columns:
+      - name: Topic
+        description: Topic
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence read
+        description: Diligence read
+      - name: Status
+        description: Status
+    rows:
+      - row_id: r1
+        values:
+          Topic: User/operator terms
+          Public evidence: Terms govern users, drivers and bus operators
+          Diligence read: Enforceability and contract variants needed
+          Status: verified
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-014
+      - row_id: r2
+        values:
+          Topic: Operator/rail/payment/DPAs
+          Public evidence: Products and privacy page imply material contracts
+          Diligence read: Top contracts private
+          Status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-009
+          - EC-013
+          - EC-015
+          - EC-027
+        source_ids:
+          - SRC-009
+          - SRC-013
+          - SRC-015
+      - row_id: r3
+        values:
+          Topic: Insurance
+          Public evidence: AXA partnership history
+          Diligence read: Coverage and claims private
+          Status: partially_verified
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-021
+    evidence_claim_ids:
+      - EC-009
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-021
+      - EC-027
+    source_ids:
+      - SRC-009
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-021
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Financing and expansion timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Public financing and major expansion milestones.
+    purpose: Show growth chronology.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: e1
+          date: 2012-01-19
+          label: $10M round/rebrand
+          description: Accel-led $10M round as Comuto rebranded.
+          category: financing
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - event_id: e2
+          date: 2014-07-02
+          label: $100M round
+          description: Growth financing by Index/Accel/ISAI/Lead Edge.
+          category: financing
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-004
+        - event_id: e3
+          date: 2015-09-16
+          label: $200M at $1.6B
+          description: Forbes unicorn financing report.
+          category: financing
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - event_id: e4
+          date: 2021-04-20
+          label: $115M round
+          description: All-in-one travel app financing.
+          category: financing
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - event_id: e5
+          date: 2024-04-03
+          label: €100M credit facility
+          description: Credit facility and revenue/profitability anchors.
+          category: financing
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+      start_date: 2012-01-19
+      end_date: 2024-04-03
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+    notes: null
+  - figure_id: F-002
+    title: Public financing and revenue anchors
+    chapter_id: I
+    section_id: I.A
+    figure_type: chart
+    description: Bar chart of reported financing and revenue anchors.
+    purpose: Visualize scale without implying comparability.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Year
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Amount
+        unit: millions as reported
+        scale: linear
+      series:
+        - series_id: financing
+          name: Financing/credit
+          unit: USD/EUR millions
+          data_points:
+            - x: "2012"
+              y: 10
+              label: $10M
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-003
+            - x: "2014"
+              y: 100
+              label: $100M
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: "2015"
+              y: 200
+              label: $200M
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: "2021"
+              y: 115
+              label: $115M
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-005
+            - x: "2024"
+              y: 108
+              label: $108M facility
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+        - series_id: revenue
+          name: Revenue
+          unit: EUR millions
+          data_points:
+            - x: "2022"
+              y: 195
+              label: €195M
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+            - x: "2023"
+              y: 250
+              label: ">€250M floor"
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+      annotations:
+        - label: Valuation caveat
+          x: "2015"
+          y: 1600
+          note: Forbes says $1.6B; user row $2B not corroborated.
+          evidence_claim_ids:
+            - EC-002
+            - EC-023
+          source_ids:
+            - SRC-002
+            - SRC-023
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-023
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-023
+    notes: null
+  - figure_id: F-003
+    title: Product architecture map
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Conceptual architecture from public products and legal pages.
+    purpose: Show users, products, partners and data boundary.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: app
+          label: BlaBlaCar app/web
+          node_type: product
+          description: Search/book/publish trips.
+          evidence_claim_ids:
+            - EC-016
+            - EC-024
+          source_ids:
+            - SRC-016
+            - SRC-007
+        - node_id: users
+          label: Drivers/passengers
+          node_type: user
+          description: Marketplace participants.
+          evidence_claim_ids:
+            - EC-012
+            - EC-014
+          source_ids:
+            - SRC-012
+            - SRC-014
+        - node_id: bus
+          label: Bus operators
+          node_type: third_party
+          description: Bus ticket supply.
+          evidence_claim_ids:
+            - EC-007
+            - EC-013
+          source_ids:
+            - SRC-007
+            - SRC-013
+        - node_id: rail
+          label: Rail tickets
+          node_type: third_party
+          description: France train inventory.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-009
+        - node_id: data
+          label: Payments/profile/messages data
+          node_type: database
+          description: Personal and transaction data.
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-015
+        - node_id: ml
+          label: Matching/fraud ML
+          node_type: model
+          description: Reported AI/ML layer.
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-022
+      edges:
+        - edge_id: e1
+          from_node_id: users
+          to_node_id: app
+          relationship: publish/book rides
+          data_or_dependency: Profiles, listings, messages
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-012
+        - edge_id: e2
+          from_node_id: app
+          to_node_id: bus
+          relationship: book tickets
+          data_or_dependency: Schedules, tickets, refunds
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-013
+            - SRC-014
+        - edge_id: e3
+          from_node_id: app
+          to_node_id: rail
+          relationship: book train tickets
+          data_or_dependency: Rail inventory
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-009
+        - edge_id: e4
+          from_node_id: app
+          to_node_id: data
+          relationship: process data
+          data_or_dependency: Profiles/transactions/messages
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-015
+        - edge_id: e5
+          from_node_id: app
+          to_node_id: ml
+          relationship: optimize matching/fraud
+          data_or_dependency: Marketplace data
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-022
+      boundaries:
+        - boundary_id: platform
+          label: Comuto/BlaBlaCar platform
+          node_ids:
+            - app
+            - data
+            - ml
+        - boundary_id: third_party
+          label: Users and transport providers
+          node_ids:
+            - users
+            - bus
+            - rail
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-009
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-022
+      - EC-024
+    source_ids:
+      - SRC-009
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-022
+    notes: null
+  - figure_id: F-004
+    title: Customer and partner disclosure chart
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Aggregate usage/partner metrics versus missing concentration data.
+    purpose: Show public scale and concentration gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Disclosure
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: count
+        scale: linear
+      series:
+        - series_id: counts
+          name: Public counts
+          unit: count
+          data_points:
+            - x: Active members/year
+              y: 29000000
+              label: 29M
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-007
+            - x: 2024 passengers
+              y: 92000000
+              label: 92M
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+            - x: Mobility partners
+              y: 7500
+              label: 7,500
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+            - x: Bus operators
+              y: 6000
+              label: 6,000
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-007
+        - series_id: missing
+          name: Missing concentration
+          unit: not disclosed
+          data_points:
+            - x: Top customers
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-027
+              source_ids:
+                - SRC-008
+            - x: Top operator share
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-027
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: Concentration gap
+          x: Top customers
+          y: null
+          note: Aggregate metrics do not disclose revenue concentration.
+          evidence_claim_ids:
+            - EC-027
+          source_ids:
+            - SRC-008
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-027
+    source_ids:
+      - SRC-007
+      - SRC-008
+    notes: null
+  - figure_id: F-005
+    title: Mobility market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map of mobility competitors/substitutes.
+    purpose: Frame competitive arena.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Asset intensity
+          low_label: asset-light
+          high_label: asset-heavy
+        y_axis:
+          label: Mode breadth
+          low_label: single mode
+          high_label: multimodal
+      segments:
+        - segment_id: carpool
+          name: Carpool/shared rides
+          description: Private-car shared supply.
+        - segment_id: busrail
+          name: Bus/rail ticketing
+          description: Scheduled transport.
+        - segment_id: rentalhail
+          name: Ride-hail/rental/sharing
+          description: Substitute mobility.
+      entities:
+        - entity_id: blablacar
+          name: BlaBlaCar
+          entity_type: target_company
+          segment_id: carpool
+          x_value: 2
+          y_value: 8
+          attributes:
+            basis: carpool, bus, train, daily commute
+          evidence_claim_ids:
+            - EC-007
+            - EC-009
+            - EC-024
+          source_ids:
+            - SRC-007
+            - SRC-009
+        - entity_id: getaround
+          name: Getaround
+          entity_type: competitor
+          segment_id: rentalhail
+          x_value: 4
+          y_value: 2
+          attributes:
+            basis: CB alternative
+          evidence_claim_ids:
+            - EC-030
+          source_ids:
+            - SRC-001
+        - entity_id: cabify
+          name: Cabify / inDrive / Blacklane / Turo
+          entity_type: competitor
+          segment_id: rentalhail
+          x_value: 5
+          y_value: 3
+          attributes:
+            basis: CB alternatives
+          evidence_claim_ids:
+            - EC-030
+          source_ids:
+            - SRC-001
+        - entity_id: operators
+          name: Bus/rail operators and OTAs
+          entity_type: competitor
+          segment_id: busrail
+          x_value: 7
+          y_value: 5
+          attributes:
+            basis: ticketing substitutes/partners
+          evidence_claim_ids:
+            - EC-009
+            - EC-013
+            - EC-030
+          source_ids:
+            - SRC-009
+            - SRC-013
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-007
+      - EC-009
+      - EC-013
+      - EC-024
+      - EC-030
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-009
+      - SRC-013
+    notes: Qualitative scores only.
+  - figure_id: F-006
+    title: GTM signal chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Selected public GTM signals.
+    purpose: Visualize distribution and growth claims.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: percent or count as labeled
+        scale: linear
+      series:
+        - series_id: counts
+          name: Count signals
+          unit: count/millions
+          data_points:
+            - x: Countries
+              y: 21
+              label: "21"
+              evidence_claim_ids:
+                - EC-007
+                - EC-011
+              source_ids:
+                - SRC-007
+                - SRC-011
+            - x: Active members M
+              y: 29
+              label: 29M
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-007
+            - x: India expected passengers M
+              y: 20
+              label: ~20M
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-010
+        - series_id: percent
+          name: Percentage signals
+          unit: percent
+          data_points:
+            - x: India mobile
+              y: 95
+              label: 95%
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-010
+            - x: India YoY growth
+              y: 50
+              label: ~50%
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-010
+            - x: LatAm/Asia trips
+              y: 41
+              label: 41%
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+      annotations:
+        - label: Mixed units
+          x: null
+          y: null
+          note: Use labels; do not compare percentages to counts.
+          evidence_claim_ids:
+            - EC-007
+            - EC-008
+            - EC-010
+          source_ids:
+            - SRC-007
+            - SRC-008
+            - SRC-010
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-010
+      - SRC-011
+    notes: null
+  - figure_id: F-007
+    title: Product and R&D pipeline timeline
+    chapter_id: VI
+    section_id: VI.B
+    figure_type: timeline
+    description: Public product additions and AI/ML signals.
+    purpose: Show roadmap/integration burden.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: e1
+          date: 2018-11-12
+          label: Ouibus
+          description: Bus acquisition.
+          category: acquisition
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-018
+        - event_id: e2
+          date: 2019-09-25
+          label: Busfor
+          description: Bus-ticketing acquisition.
+          category: acquisition
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-019
+        - event_id: e3
+          date: 2023-04-27
+          label: Klaxit
+          description: Daily commute carpooling acquisition.
+          category: acquisition
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-020
+        - event_id: e4
+          date: 2025-07-01
+          label: France trains
+          description: Train tickets in app.
+          category: product
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-009
+        - event_id: e5
+          date: 2026-05-20
+          label: AI/ML article
+          description: ChatGPT and ML use cases reported.
+          category: technology
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-022
+      start_date: 2018-11-12
+      end_date: 2026-05-20
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-009
+      - EC-018
+      - EC-019
+      - EC-020
+      - EC-022
+    source_ids:
+      - SRC-009
+      - SRC-018
+      - SRC-019
+      - SRC-020
+      - SRC-022
+    notes: null
+  - figure_id: F-008
+    title: Public organization map
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Inferred public org/function map.
+    purpose: Show verified people and functional gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Nicolas Brusson
+          role: Co-founder / CEO
+          department: Executive
+          location: Paris / not public
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-002
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-006
+        - node_id: mazzella
+          name: Frédéric Mazzella
+          role: Co-founder
+          department: Founding team
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - node_id: nappez
+          name: Francis Nappez
+          role: Co-founder
+          department: Founding team
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - node_id: cto
+          name: Nicolas Salvy
+          role: CTO reported by AI article
+          department: Technology
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-022
+        - node_id: engdata
+          name: null
+          role: Engineering and Data teams
+          department: Technology
+          location: Kyiv/Paris/São Paulo/Warsaw jobs
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-017
+        - node_id: growth
+          name: null
+          role: Product, Growth and Local Marketplace teams
+          department: Product/Growth
+          location: multiple
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-017
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: cto
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-022
+        - parent_node_id: cto
+          child_node_id: engdata
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-017
+            - EC-022
+          source_ids:
+            - SRC-017
+            - SRC-022
+        - parent_node_id: ceo
+          child_node_id: growth
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-017
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-002
+      - EC-006
+      - EC-017
+      - EC-022
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-017
+      - SRC-022
+    notes: Not a formal org chart.
+  - figure_id: F-009
+    title: Workforce metrics chart
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public workforce metrics and missing people data.
+    purpose: Highlight scale/composition and gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: count or percent
+        scale: linear
+      series:
+        - series_id: counts
+          name: Count metrics
+          unit: count
+          data_points:
+            - x: Employees
+              y: 800
+              label: "800"
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-007
+            - x: Nationalities
+              y: 52
+              label: "52"
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+        - series_id: pct
+          name: Percent metrics
+          unit: percent
+          data_points:
+            - x: Women workforce
+              y: 44
+              label: 44%
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+            - x: Fully remote
+              y: 33
+              label: 33%
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+        - series_id: missing
+          name: Missing
+          unit: not disclosed
+          data_points:
+            - x: Turnover
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-029
+              source_ids:
+                - SRC-008
+                - SRC-017
+            - x: Comp plan
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-029
+              source_ids:
+                - SRC-017
+      annotations:
+        - label: HRIS required
+          x: null
+          y: null
+          note: Public data does not disclose turnover or compensation.
+          evidence_claim_ids:
+            - EC-029
+          source_ids:
+            - SRC-008
+            - SRC-017
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-029
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-017
+    notes: null
+  - figure_id: F-010
+    title: Key diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Principal diligence risks from public-source review.
+    purpose: Prioritize follow-up.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Financial statements private
+          severity: high
+          likelihood: high
+          rationale: Only high-level revenue/profitability public.
+          evidence_claim_ids:
+            - EC-006
+            - EC-025
+          source_ids:
+            - SRC-006
+        - risk_id: R-003
+          label: Regulatory complexity
+          severity: high
+          likelihood: medium
+          rationale: 21 countries and India growth.
+          evidence_claim_ids:
+            - EC-007
+            - EC-010
+          source_ids:
+            - SRC-007
+            - SRC-010
+        - risk_id: R-004
+          label: Multimodal integration
+          severity: high
+          likelihood: medium
+          rationale: Bus/train/commute products.
+          evidence_claim_ids:
+            - EC-009
+            - EC-018
+            - EC-020
+          source_ids:
+            - SRC-009
+            - SRC-018
+            - SRC-020
+        - risk_id: R-005
+          label: Trust/safety/insurance
+          severity: high
+          likelihood: medium
+          rationale: Transport marketplace and AXA history.
+          evidence_claim_ids:
+            - EC-012
+            - EC-014
+            - EC-021
+          source_ids:
+            - SRC-012
+            - SRC-014
+            - SRC-021
+        - risk_id: R-007
+          label: Privacy/data/AI
+          severity: high
+          likelihood: medium
+          rationale: Controllers, personal data and AI/ML claims.
+          evidence_claim_ids:
+            - EC-015
+            - EC-022
+          source_ids:
+            - SRC-015
+            - SRC-022
+        - risk_id: R-010
+          label: Valuation/cap table
+          severity: medium
+          likelihood: medium
+          rationale: $2B not corroborated; cap table private.
+          evidence_claim_ids:
+            - EC-002
+            - EC-023
+            - EC-026
+          source_ids:
+            - SRC-002
+            - SRC-023
+        - risk_id: R-011
+          label: Legal clearance incomplete
+          severity: medium
+          likelihood: unknown
+          rationale: No comprehensive docket/IP/regulator search.
+          evidence_claim_ids:
+            - EC-028
+          source_ids:
+            - SRC-014
+            - SRC-015
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: Use source-linked labels and visibly mark non-public gaps.
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-009
+      - EC-010
+      - EC-012
+      - EC-014
+      - EC-015
+      - EC-018
+      - EC-020
+      - EC-021
+      - EC-022
+      - EC-023
+      - EC-025
+      - EC-026
+      - EC-028
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-009
+      - SRC-010
+      - SRC-012
+      - SRC-014
+      - SRC-015
+      - SRC-018
+      - SRC-020
+      - SRC-021
+      - SRC-022
+      - SRC-023
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights profile says Comuto/BlaBlaCar was founded in 2006 in Paris, formerly Covoiturage, alive, and raised
+      $687.3M.
+    evidence_summary: Identity, founding, HQ and funding baseline.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Founded 2006; total raised $687.3M; HQ Paris; former name Covoiturage.
+        location: null
+    analyst_interpretation: Identity, founding, HQ and funding baseline.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-003
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-002
+    claim: Forbes reported BlaBlaCar raised $200M at a $1.6B valuation on 2015-09-16 and named Frédéric Mazzella, Nicolas
+      Brusson and Francis Nappez as founders.
+    evidence_summary: Verifies unicorn status and founder identities; contradicts exact $2B claim.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Raised $200 million at $1.6 billion valuation; founders Mazzella, Brusson and Nappez.
+        location: null
+    analyst_interpretation: Verifies unicorn status and founder identities; contradicts exact $2B claim.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+        - FC-002
+      table_ids:
+        - T-001
+        - T-003
+        - T-015
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-003
+    claim: TechCrunch reported Accel led a $10M 2012 round as Comuto rebranded to BlaBlaCar.
+    evidence_summary: Early institutional financing and rebrand evidence.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Accel Partners leads $10M round in Comuto as it rebrands to BlaBlaCar.
+        location: null
+    analyst_interpretation: Early institutional financing and rebrand evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: TechCrunch reported a $100M 2014 round from Index, Accel, ISAI and Lead Edge.
+    evidence_summary: Major pre-unicorn financing evidence.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: BlaBlaCar raises $100 million from Index, Accel, ISAI and Lead Edge.
+        location: null
+    analyst_interpretation: Major pre-unicorn financing evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-003
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids: []
+  - evidence_claim_id: EC-005
+    claim: TechCrunch reported a $115M 2021 round led by VNV Global to build an all-in-one travel app.
+    evidence_summary: Later financing and multimodal strategy evidence.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Funding led by VNV Global for an all-in-one travel app.
+        location: null
+    analyst_interpretation: Later financing and multimodal strategy evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-014
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-006
+    claim: TechCrunch reported a €100M/$108M revolving credit facility, profitability since April 2022, 2022 revenue of
+      €195M and 2023 revenue over €250M.
+    evidence_summary: Best public recent financial-performance anchor.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Profitable since April 2022; revenue €195M in 2022 and over €250M in 2023; €100M credit facility.
+        location: null
+    analyst_interpretation: Best public recent financial-performance anchor.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-007
+    claim: BlaBlaCar about page discloses 29M active members per year, 21 countries, 100M carpool/bus passengers, 800
+      employees, 6,000 bus operators and impact metrics.
+    evidence_summary: Company scale, employee and partner metrics.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: 29M active members/year; 21 countries; 100M passengers; 800 employees; 6,000 bus operators.
+        location: null
+    analyst_interpretation: Company scale, employee and partner metrics.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-006
+        - T-011
+        - T-016
+      figure_ids:
+        - F-003
+        - F-004
+        - F-006
+        - F-009
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-008
+    claim: BlaBlaCar 2024 sustainability disclosure reports 92M passengers, 7,500 mobility partners, 41% trips in
+      LatAm/Asia, 44% women workforce, 33% fully remote and 52 nationalities.
+    evidence_summary: 2024 operating, partner and workforce metrics.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: 92M passengers; 7,500 mobility partners; 41% trips LatAm/Asia; 44% women; 33% remote; 52 nationalities.
+        location: null
+    analyst_interpretation: 2024 operating, partner and workforce metrics.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-006
+        - T-007
+        - T-016
+        - T-017
+      figure_ids:
+        - F-004
+        - F-009
+      risk_ids:
+        - R-003
+        - R-009
+  - evidence_claim_id: EC-009
+    claim: BlaBlaCar launched France train tickets in-app, citing 350 stations in 200 cities, 270 bus destinations and 843k
+      meeting points.
+    evidence_summary: Multimodal product expansion evidence.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: Train tickets in France; 350 stations/200 cities; 270 bus destinations; 843k meeting points.
+        location: null
+    analyst_interpretation: Multimodal product expansion evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-005
+        - T-014
+      figure_ids:
+        - F-003
+        - F-007
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-010
+    claim: BlaBlaCar says India became its largest carpooling market with 2M passengers in August 2025, nearly 20M expected
+      in 2025, 95% mobile and ~50% YoY growth.
+    evidence_summary: Rapid India growth evidence.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: India largest carpooling market; 2M passengers in August; nearly 20M expected; 95% mobile; 50% YoY growth.
+        location: null
+    analyst_interpretation: Rapid India growth evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-011
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-003
+        - R-006
+  - evidence_claim_id: EC-011
+    claim: Company country pages corroborate broad multi-country distribution.
+    evidence_summary: Geographic footprint signal.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Country selector listed multiple operating countries and languages.
+        location: null
+    analyst_interpretation: Geographic footprint signal.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-012
+    claim: Carpool page emphasizes low prices, reviewed profiles, IDs checked, easy booking/publishing and cancellation.
+    evidence_summary: Product feature and trust-positioning evidence.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Reviewed profiles, IDs checked, easy booking, publishing rides and cancellation options.
+        location: null
+    analyst_interpretation: Product feature and trust-positioning evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-005
+        - T-010
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-013
+    claim: Bus page positions BlaBlaCar as a cheap, flexible bus-ticket marketplace.
+    evidence_summary: Bus SKU positioning evidence.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Cheap tickets, flexible tickets, bus routes and luggage allowance.
+        location: null
+    analyst_interpretation: Bus SKU positioning evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-005
+        - T-008
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+        - R-005
+  - evidence_claim_id: EC-014
+    claim: Terms identify Comuto SA as platform operator and state BlaBlaCar is not party to user/bus operator transport
+      contracts.
+    evidence_summary: Legal/platform role allocation evidence.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Comuto SA platform connects drivers/passengers and books bus tickets; not party to user/bus operator contracts.
+        location: null
+    analyst_interpretation: Legal/platform role allocation evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids: []
+      table_ids:
+        - T-021
+        - T-022
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-005
+        - R-011
+  - evidence_claim_id: EC-015
+    claim: Privacy policy identifies Comuto SA/local controllers and data categories including profile, transaction,
+      messaging and identity-related data.
+    evidence_summary: Privacy/data-risk evidence.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Comuto SA data controller; Comuto Pro for Bus; local controllers Brazil/Mexico/Ukraine/Poland; personal data
+          categories.
+        location: null
+    analyst_interpretation: Privacy/data-risk evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-021
+        - T-022
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-007
+        - R-011
+  - evidence_claim_id: EC-016
+    claim: "Apple metadata identifies “BlaBlaCar: Carpooling and Bus,” seller Comuto, version 6.13.0 and high UK/US ratings."
+    evidence_summary: App distribution and brand quality signal.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: "trackName BlaBlaCar: Carpooling and Bus; seller Comuto; rating around 4.66 UK / 4.69 US."
+        location: null
+    analyst_interpretation: App distribution and brand quality signal.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-006
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids: []
+  - evidence_claim_id: EC-017
+    claim: Lever postings show open jobs in Kyiv, Paris, São Paulo and Warsaw across Engineering, Data, Finance, Legal,
+      Product, Growth and marketplace teams.
+    evidence_summary: Hiring/function footprint evidence.
+    evidence_type: social_or_professional_profile
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: Open jobs across Kyiv, Paris, São Paulo, Warsaw and teams including Data, Engineering, Finance, Legal, People,
+          Marketing, Product and Growth.
+        location: null
+    analyst_interpretation: Hiring/function footprint evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-013
+        - T-016
+      figure_ids:
+        - F-008
+        - F-009
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-018
+    claim: TechCrunch reported BlaBlaCar acquired Ouibus in 2018.
+    evidence_summary: Bus expansion by acquisition.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: BlaBlaCar is buying Ouibus; coverage cited 65M users and 22 countries.
+        location: null
+    analyst_interpretation: Bus expansion by acquisition.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-001
+        - F-007
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-019
+    claim: TechCrunch reported BlaBlaCar acquired Busfor, a bus-ticketing platform with thousands of carriers and
+      Russia/Ukraine/Poland exposure.
+    evidence_summary: Bus supply/geography expansion evidence.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: Busfor acquisition; thousands of bus carriers; Russia, Ukraine and Poland exposure.
+        location: null
+    analyst_interpretation: Bus supply/geography expansion evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-007
+        - T-008
+        - T-014
+      figure_ids:
+        - F-004
+        - F-007
+      risk_ids:
+        - R-003
+        - R-004
+  - evidence_claim_id: EC-020
+    claim: TechCrunch reported BlaBlaCar acquired Klaxit to add short-distance/daily commuting carpooling.
+    evidence_summary: Daily commute product expansion evidence.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-020
+        quote: Klaxit acquisition to add short-distance carpooling and merge product in 2024.
+        location: null
+    analyst_interpretation: Daily commute product expansion evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-021
+    claim: TechCrunch reported BlaBlaCar partnered with AXA to offer car insurance.
+    evidence_summary: Insurance partnership/trust adjacency evidence.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-021
+    quoted_evidence:
+      - source_id: SRC-021
+        quote: AXA insurance product and lower-premium claim for active drivers.
+        location: null
+    analyst_interpretation: Insurance partnership/trust adjacency evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.E
+      founder_claim_ids: []
+      table_ids:
+        - T-020
+        - T-022
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-022
+    claim: Spanish article reported ChatGPT integration and ML for matching, fraud, personalization, localization and Boost,
+      with +30% acceptance uplift.
+    evidence_summary: Lower-confidence technology roadmap signal.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: low
+    source_ids:
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-022
+        quote: ChatGPT integration; ML for matching/fraud/personalization/localization; Boost acceptance +30%.
+        location: null
+    analyst_interpretation: Lower-confidence technology roadmap signal.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-004
+        - R-007
+  - evidence_claim_id: EC-023
+    claim: User row claims BlaBlaCar is a $2B private ridesharing unicorn dated 2015-09-16.
+    evidence_summary: Starting claim to test, not corroborating evidence.
+    evidence_type: user_provided_document
+    verification_status: unverified
+    confidence: low
+    source_ids:
+      - SRC-023
+    quoted_evidence:
+      - source_id: SRC-023
+        quote: BlaBlaCar $2B Private 2015-09-16 Ridesharing Comuto.
+        location: null
+    analyst_interpretation: Starting claim to test, not corroborating evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-003
+      figure_ids: []
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-024
+    claim: Public sources support a product portfolio spanning carpooling, bus, French train tickets and daily commuting.
+    evidence_summary: Triangulated product breadth.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+      - SRC-009
+      - SRC-012
+      - SRC-013
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: Company/product/acquisition sources describe carpool, bus, train and daily commute products.
+        location: null
+    analyst_interpretation: Triangulated product breadth.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-004
+        - T-005
+        - T-014
+      figure_ids:
+        - F-003
+        - F-007
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-025
+    claim: Public sources do not disclose audited statements, detailed unit economics, CAC, retention, AR aging or backlog.
+    evidence_summary: Primary financial diligence gap.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Only high-level revenue/profitability figures were public; detailed statements were not.
+        location: null
+    analyst_interpretation: Primary financial diligence gap.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+      figure_ids: []
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-026
+    claim: Public sources do not disclose current share count, ownership percentages, option schedules, liquidation
+      preferences or facility covenants.
+    evidence_summary: Primary capital-structure gap.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Credit facility disclosed without covenants, maturity, draw status or security package.
+        location: null
+    analyst_interpretation: Primary capital-structure gap.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-003
+      figure_ids: []
+      risk_ids:
+        - R-002
+        - R-010
+  - evidence_claim_id: EC-027
+    claim: Public sources do not identify top customers, customer revenue concentration, top suppliers, supplier purchase
+      amounts or severed relationships.
+    evidence_summary: Primary customer/supplier concentration gap.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Aggregate passengers and partners disclosed, not named customer or partner revenue concentration.
+        location: null
+    analyst_interpretation: Primary customer/supplier concentration gap.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-007
+        - T-008
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-028
+    claim: Public sources reviewed do not provide comprehensive litigation, regulatory agency, IP portfolio or insurance
+      claims records.
+    evidence_summary: Legal clearance gap.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-014
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Terms and privacy pages do not list litigation, claims, IP portfolio or agency matters.
+        location: null
+    analyst_interpretation: Legal clearance gap.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-018
+        - T-019
+        - T-020
+        - T-021
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-011
+  - evidence_claim_id: EC-029
+    claim: Public workforce disclosures show distributed scale, but turnover, compensation, option plans and formal org
+      reporting lines are not public.
+    evidence_summary: People diligence gap.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: 44% women, 33% fully remote, 52 nationalities; jobs across multiple locations.
+        location: null
+    analyst_interpretation: People diligence gap.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+        - T-017
+      figure_ids:
+        - F-008
+        - F-009
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-030
+    claim: Competition spans ride-hailing, rental/sharing, bus, train and multimodal travel; CB alternatives include
+      Getaround, Blacklane, Cabify, inDrive and Turo.
+    evidence_summary: Competitive landscape evidence.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Alternatives listed included Getaround, Blacklane, Cabify, inDrive and Turo.
+        location: null
+    analyst_interpretation: Competitive landscape evidence.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-031
+    claim: Company impact claims include CO2 avoided and driver savings, but methodology and counterfactuals require review.
+    evidence_summary: Environmental/green-claims diligence item.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: 2.5M tonnes CO2 avoided and €540M driver savings; 92M passengers in 2024.
+        location: null
+    analyst_interpretation: Environmental/green-claims diligence item.
+    limitations: Public evidence only; validate against company records before reliance.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-021
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-003
+sources:
+  - source_id: SRC-001
+    title: BlaBlaCar company profile
+    url: https://www.cbinsights.com/company/blablacar
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: market_database
+    reliability_notes: Market database; profile fields can be estimated or dynamic.
+    archive_url: null
+  - source_id: SRC-002
+    title: BlaBlaCar raises $200M at $1.6B valuation
+    url: https://www.forbes.com/sites/ryanmac/2015/09/16/blablacar-raises-200-million-at-1-6-billion-valuation/
+    publisher: Forbes
+    author: null
+    publication_date: 2015-09-16
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Independent financing report.
+    archive_url: null
+  - source_id: SRC-003
+    title: Accel leads $10M round as Comuto rebrands to BlaBlaCar
+    url: https://techcrunch.com/2012/01/19/accel-partners-leads-10m-round-in-comuto-as-it-rebrands-car-sharing-service-to-blablacar/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2012-01-19
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Independent early funding coverage.
+    archive_url: null
+  - source_id: SRC-004
+    title: BlaBlaCar raises $100M from Index, Accel, ISAI and Lead Edge
+    url: https://techcrunch.com/2014/07/02/blablacar-raises-100-million-from-index-accel-isai-and-lead-edge/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2014-07-02
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Independent growth-round coverage.
+    archive_url: null
+  - source_id: SRC-005
+    title: BlaBlaCar raises $115M to build all-in-one travel app
+    url: https://techcrunch.com/2021/04/20/blablacar-raises-115-million-to-build-all-in-one-travel-app/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2021-04-20
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Independent financing and product strategy coverage.
+    archive_url: null
+  - source_id: SRC-006
+    title: BlaBlaCar secures €100M revolving credit facility
+    url: https://techcrunch.com/2024/04/03/blablacar-secures-108-million-credit-facility/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2024-04-03
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Independent coverage citing revenue and profitability figures.
+    archive_url: null
+  - source_id: SRC-007
+    title: About BlaBlaCar
+    url: https://www.blablacar.com/about-us
+    publisher: BlaBlaCar
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company-controlled scale and impact metrics.
+    archive_url: null
+  - source_id: SRC-008
+    title: Our commitment to more sustainable travel in 2024
+    url: https://blog.blablacar.com/newsroom/news-list/our-commitment-to-more-sustainable-travel-in-2024
+    publisher: BlaBlaCar Newsroom
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company newsroom/sustainability disclosure.
+    archive_url: null
+  - source_id: SRC-009
+    title: BlaBlaCar launches train tickets in France
+    url: https://blog.blablacar.com/newsroom/news-list/blablacar-launches-train-tickets-in-france
+    publisher: BlaBlaCar Newsroom
+    author: null
+    publication_date: 2025-07-01
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company product launch.
+    archive_url: null
+  - source_id: SRC-010
+    title: India becomes BlaBlaCar largest carpooling market
+    url: https://blog.blablacar.com/newsroom/news-list/india-becomes-blablacars-largest-carpooling-market
+    publisher: BlaBlaCar Newsroom
+    author: null
+    publication_date: 2025-09-18
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company-controlled country growth claim.
+    archive_url: null
+  - source_id: SRC-011
+    title: BlaBlaCar countries and languages
+    url: https://www.blablacar.com/countries
+    publisher: BlaBlaCar
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company country selector.
+    archive_url: null
+  - source_id: SRC-012
+    title: BlaBlaCar carpooling product page
+    url: https://www.blablacar.co.uk/carpool
+    publisher: BlaBlaCar
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company product page.
+    archive_url: null
+  - source_id: SRC-013
+    title: BlaBlaCar bus product page
+    url: https://www.blablacar.co.uk/bus
+    publisher: BlaBlaCar
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Company product page.
+    archive_url: null
+  - source_id: SRC-014
+    title: BlaBlaCar UK Terms and Conditions
+    url: https://www.blablacar.co.uk/terms-and-conditions
+    publisher: BlaBlaCar
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Legal terms; jurisdiction-specific terms may differ.
+    archive_url: null
+  - source_id: SRC-015
+    title: BlaBlaCar UK Privacy Policy
+    url: https://www.blablacar.co.uk/privacy-policy
+    publisher: BlaBlaCar
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: primary_company_source
+    reliability_notes: Privacy page; no security audit evidence.
+    archive_url: null
+  - source_id: SRC-016
+    title: Apple App Store lookup id 341329033
+    url: https://itunes.apple.com/lookup?id=341329033&country=gb
+    publisher: Apple App Store / iTunes API
+    author: null
+    publication_date: 2026-05-18
+    accessed_date: 2026-05-24
+    source_type: review_site
+    reliability_notes: Storefront metadata varies by country.
+    archive_url: null
+  - source_id: SRC-017
+    title: BlaBlaCar public job postings
+    url: https://jobs.lever.co/blablacar
+    publisher: BlaBlaCar / Lever
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-24
+    source_type: social_or_professional_profile
+    reliability_notes: Point-in-time recruiting snapshot.
+    archive_url: null
+  - source_id: SRC-018
+    title: BlaBlaCar is buying Ouibus
+    url: https://techcrunch.com/2018/11/12/blablacar-is-buying-ouibus/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2018-11-12
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Acquisition terms not fully public.
+    archive_url: null
+  - source_id: SRC-019
+    title: BlaBlaCar snaps up Busfor
+    url: https://techcrunch.com/2019/09/25/blablacar-snaps-up-bus-ticketing-platform-busfor/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2019-09-25
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Bus-ticketing acquisition coverage.
+    archive_url: null
+  - source_id: SRC-020
+    title: BlaBlaCar acquires Klaxit
+    url: https://techcrunch.com/2023/04/27/blablacar-acquires-klaxit-to-add-short-distance-carpooling/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2023-04-27
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Short-distance commuting acquisition coverage.
+    archive_url: null
+  - source_id: SRC-021
+    title: BlaBlaCar partners with AXA
+    url: https://techcrunch.com/2018/06/28/blablacar-partners-with-axa-to-offer-car-insurance/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2018-06-28
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Insurance partnership coverage; current status unverified.
+    archive_url: null
+  - source_id: SRC-022
+    title: BlaBlaCar ChatGPT and ML article
+    url: null
+    publisher: MuyPymes
+    author: null
+    publication_date: 2026-05-20
+    accessed_date: 2026-05-24
+    source_type: independent_news
+    reliability_notes: Spanish article captured in notes; URL should be re-fetched.
+    archive_url: null
+  - source_id: SRC-023
+    title: User-provided unicorn candidate row
+    url: null
+    publisher: User prompt
+    author: null
+    publication_date: 2026-05-24
+    accessed_date: 2026-05-24
+    source_type: user_provided_document
+    reliability_notes: Starting claim only; not public corroboration.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Detailed financial statements and unit economics are private
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Only high-level revenue/profitability is public; audited statements, margins, CAC and retention are not.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+    evidence_claim_ids:
+      - EC-006
+      - EC-025
+    mitigation_or_diligence_request: Request audited statements, management accounts and KPI cohorts.
+  - risk_id: R-002
+    risk_title: Debt facility terms unknown
+    risk_category: financing
+    severity: medium
+    likelihood: medium
+    description: €100M facility public, but covenants/draw status/maturity/security are not.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+    evidence_claim_ids:
+      - EC-006
+      - EC-026
+    mitigation_or_diligence_request: Request facility agreement and covenant certificates.
+  - risk_id: R-003
+    risk_title: Multi-country regulatory complexity
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: 21-country footprint, local controllers and India growth create transport/privacy/tax/labor complexity.
+    impacted_chapter_ids:
+      - I
+      - V
+      - VIII
+    impacted_section_ids:
+      - I.B
+      - V.A
+      - VIII.G
+    evidence_claim_ids:
+      - EC-007
+      - EC-010
+      - EC-011
+      - EC-015
+    mitigation_or_diligence_request: Request local counsel memos and compliance matrix.
+  - risk_id: R-004
+    risk_title: Multimodal integration risk
+    risk_category: product
+    severity: high
+    likelihood: medium
+    description: Bus, train and daily-commute products add integration, refund and partner complexity.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids:
+      - EC-009
+      - EC-018
+      - EC-019
+      - EC-020
+      - EC-024
+    mitigation_or_diligence_request: Request product P&Ls, integration KPIs and incident logs.
+  - risk_id: R-005
+    risk_title: Trust, safety and insurance exposure
+    risk_category: legal
+    severity: high
+    likelihood: medium
+    description: Marketplace transportation involves driver/passenger safety, operator service and insurance issues.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.E
+      - VIII.F
+    evidence_claim_ids:
+      - EC-012
+      - EC-014
+      - EC-021
+    mitigation_or_diligence_request: Request claims runs, incident metrics and insurance policies.
+  - risk_id: R-006
+    risk_title: Marketplace liquidity/concentration opaque
+    risk_category: market
+    severity: high
+    likelihood: medium
+    description: Aggregate passengers are public but route density, repeat use and operator/geography concentration are not.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-027
+    mitigation_or_diligence_request: Request route-level cohorts and partner concentration.
+  - risk_id: R-007
+    risk_title: Privacy, security and AI governance risk
+    risk_category: legal
+    severity: high
+    likelihood: medium
+    description: Multiple data controllers and rich profile/transaction/messaging data; AI/ML use cases reported.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VIII.G
+    evidence_claim_ids:
+      - EC-015
+      - EC-022
+    mitigation_or_diligence_request: Request SOC/security reports, DPIAs and model inventory.
+  - risk_id: R-008
+    risk_title: Broad substitute competition
+    risk_category: market
+    severity: medium
+    likelihood: medium
+    description: BlaBlaCar competes with carpooling, bus/rail, ride-hailing, rental/sharing and OTAs.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+    evidence_claim_ids:
+      - EC-030
+    mitigation_or_diligence_request: Request market-share, route-density and elasticity data.
+  - risk_id: R-009
+    risk_title: Distributed workforce execution/retention risk
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: 800 employees and distributed hiring are public; turnover/compensation are not.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.B
+      - VII.D
+      - VII.G
+    evidence_claim_ids:
+      - EC-008
+      - EC-017
+      - EC-029
+    mitigation_or_diligence_request: Request HRIS, turnover, compensation and equity plan.
+  - risk_id: R-010
+    risk_title: Valuation and cap-table uncertainty
+    risk_category: financing
+    severity: medium
+    likelihood: medium
+    description: $2B user-row valuation not corroborated; cap table and preferences private.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-023
+      - EC-026
+    mitigation_or_diligence_request: Request original valuation source, cap table and waterfall.
+  - risk_id: R-011
+    risk_title: Legal/IP/regulatory clearance incomplete
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: No comprehensive docket, IP register or regulator search was performed.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.G
+    evidence_claim_ids:
+      - EC-028
+    mitigation_or_diligence_request: Commission counsel-led searches.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, management accounts, GMV, gross margin, CAC, retention, AR aging and backlog.
+    why_it_matters: Required for revenue quality, profitability and working-capital underwriting.
+    suggested_source_or_request: Request FY2022-FY2025 audit reports and monthly accounts.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, option/warrant/note schedule, waterfall and credit facility terms.
+    why_it_matters: Ownership, dilution and debt covenants drive value and downside risk.
+    suggested_source_or_request: Request financing docs, cap table and facility agreement.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: SKU-level P&L, take rate, refund/cancellation and incident metrics.
+    why_it_matters: Carpool, bus, rail and commute products have different risks.
+    suggested_source_or_request: Request product P&L and cohort dashboards.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.C
+    missing_information: Customer/operator/partner concentration and revenue by geography/channel.
+    why_it_matters: Aggregate passengers may hide concentration.
+    suggested_source_or_request: Request revenue cube and top contracts.
+    priority: high
+  - gap_id: G-005
+    chapter_id: V
+    section_id: V.A
+    missing_information: CAC, LTV, conversion funnel, traffic mix and marketing ROI.
+    why_it_matters: Public marketing signals do not prove profitable growth.
+    suggested_source_or_request: Request marketing dashboard and budget.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Architecture, security reports, model inventory, DPIAs and AI governance.
+    why_it_matters: Data/ML systems are mission-critical and legally sensitive.
+    suggested_source_or_request: Request technical/security diligence pack.
+    priority: high
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Headcount history/plan, turnover, comp, benefits and equity plan.
+    why_it_matters: Execution and dilution risk are not public.
+    suggested_source_or_request: Request HRIS and compensation/equity plan.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Litigation schedule and legal docket/regulator/IP searches.
+    why_it_matters: Public review cannot clear liabilities.
+    suggested_source_or_request: Commission legal diligence.
+    priority: high
+  - gap_id: G-009
+    chapter_id: VIII
+    section_id: VIII.E
+    missing_information: Insurance policies, claims runs and safety incident history.
+    why_it_matters: Transport marketplace exposure depends on coverage and claims.
+    suggested_source_or_request: Request insurance pack and incident logs.
+    priority: high
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Material contracts, DPAs, operator/rail agreements, payment terms and SLAs.
+    why_it_matters: Contracts determine margins, indemnities and data obligations.
+    suggested_source_or_request: Request material-contract schedule and top contracts.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide FY2022-FY2025 audited financials, management accounts, KPI definitions and revenue-recognition memo.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide cap table, financing documents, option/warrant/note schedules and liquidation-preference waterfall.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: I
+    section_id: I.C
+    request: Provide the €100M credit facility agreement, covenant certificates and draw schedule.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: II
+    section_id: II.A
+    request: Provide product-level P&L, take rate, GMV, cancellations, refunds, incidents and roadmap business cases.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.B
+    request: Provide top partner/operator contracts, revenue/GMV concentration, SLAs and renewal dates.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: V
+    section_id: V.A
+    request: Provide CAC/LTV, funnel conversion, traffic mix, marketing budget and channel ROI.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide architecture, data-flow maps, security reports, DPIAs, processor list and model inventory.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide HRIS, turnover, compensation bands, executive agreements and equity incentive plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-009
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide litigation/disputes/claims/regulator schedule and authorize legal searches.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.E
+    request: Provide insurance policies, claims runs, broker letters and trust/safety incident metrics.
+    requested_from: company
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Private company; most checklist-required financial, cap-table, HR, legal and contract documents were not public.
+    affected_chapter_ids:
+      - I
+      - III
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.C
+      - VII.D
+      - VIII.A
+      - VIII.F
+  - limitation_id: L-002
+    description: Some pages were accessed via reader/cached text because direct requests were blocked; source content should
+      be re-fetched before reliance.
+    affected_chapter_ids:
+      - II
+      - V
+      - VIII
+    affected_section_ids:
+      - II.A
+      - V.A
+      - VIII.F
+  - limitation_id: L-003
+    description: No management, customer, supplier, employee, operator or counsel interviews were conducted.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - II.A
+      - III.A
+      - IV.A
+      - V.A
+      - VI.A
+      - VII.C
+      - VIII.A
+  - limitation_id: L-004
+    description: No comprehensive court docket, regulator, patent, trademark or domain search was completed.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.G
+  - limitation_id: L-005
+    description: Company-controlled metrics are treated as partially verified unless independently corroborated; definitions
+      may vary by period/source.
+    affected_chapter_ids:
+      - II
+      - III
+      - V
+    affected_section_ids:
+      - II.A
+      - III.A
+      - V.A
