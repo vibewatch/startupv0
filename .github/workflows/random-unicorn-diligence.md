@@ -90,6 +90,8 @@ network:
     - ecosia.org
     - globenewswire.com
     - bing.com
+    - hackernews.firebaseio.com
+    - hn.algolia.com    
 
 engine:
   id: copilot
