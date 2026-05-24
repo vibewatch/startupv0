@@ -1,0 +1,879 @@
+report_metadata:
+  report_title: Magic Eden Public-Source Startup Diligence Report
+  target_company: Magic Eden
+  website: https://magiceden.io/
+  known_aliases:
+    - Magic Eden
+    - Magic Eden Marketplace
+    - Magic Eden Wallet
+    - MagicEden
+    - ME token ecosystem
+  sector: NFT marketplace, crypto trading, wallet and digital collectibles infrastructure
+  geography: United States / San Francisco with global crypto users
+  company_stage: Private unicorn / growth-stage web3 marketplace
+  research_date: 2026-05-23
+  analyst: GitHub Copilot CLI diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Public-source diligence using company, help-center, legal, investor, market-database, regulator, market-report and legal-search sources.
+    - Treated Magic Eden-authored product, fee, token, API and service-status materials as evidence of public claims, not proof of audited revenue or unit economics.
+    - Used CB Insights and independent financing coverage to verify unicorn eligibility, valuation and investor signals.
+    - Used DappRadar and SEC NFT enforcement materials to frame market-cycle and regulatory risk rather than to provide legal advice.
+    - Used absence of public audited financials, cap table, customer revenue schedules and private contracts as explicit diligence gaps.
+  included_jurisdictions:
+    - United States
+    - California
+    - Global NFT and crypto marketplace jurisdictions referenced by public sources
+  excluded_topics:
+    - No private financial statements, management accounts, cap table, board materials, tax files, debt schedules or contracts were available.
+    - No management, customer, creator, regulator, supplier, counsel, auditor or investor interviews were performed.
+    - No paid litigation, corporate-registry, blockchain-forensics, sanctions, security-audit or complete trademark-clearance work was performed.
+    - Dynamic or blocked pages were excluded unless source text was accessible through direct or reader-based retrieval during public-source research.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: User request for Magic Eden diligence report
+      type: prompt_instruction
+      date_received: 2026-05-23
+      notes: User requested exactly one detailed, evidence-backed YAML diligence report at reports/magic-eden-diligence-report.yaml with validation and no commit.
+
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Magic Eden is a private unicorn with a public valuation signal of approximately $1.6B.
+    claim_source: CB Insights unicorn list and Series B financing coverage
+    claim_date: 2022-06-21
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.B, I.C, I.D]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-001, EC-011]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current valuation support, 409A materials, financing documents, liquidation preferences and a fully diluted cap table.
+  - founder_claim_id: FC-002
+    claim_text: Magic Eden was founded in 2021, remains active, and has publicly reported total funding of about $170.28M.
+    claim_source: CB Insights company profile
+    claim_date: null
+    mapped_chapter_ids: [I, VII]
+    mapped_section_ids: [I.C, I.D, VII.B]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-002]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm legal entities, good-standing certificates, actual cash raised, cash balance and any secondary or token-related financings.
+  - founder_claim_id: FC-003
+    claim_text: Public company materials identify Jack Lu, Sidney/Sydney Zhang, Zhuoxun Yin and Zhuojie Zhou as Magic Eden founders.
+    claim_source: Magic Eden company/about materials
+    claim_date: null
+    mapped_chapter_ids: [VII]
+    mapped_section_ids: [VII.A, VII.C]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-003]
+    contradiction_summary: Public spelling varies between Sidney and Sydney Zhang in secondary sources; diligence should confirm official legal names and current roles.
+    diligence_follow_up:
+      - Request founder equity, vesting, employment agreements, board seats, current roles and management succession plan.
+  - founder_claim_id: FC-004
+    claim_text: Magic Eden offers marketplace, wallet, API/developer and multi-chain crypto/NFT product surfaces rather than a single-chain NFT exchange only.
+    claim_source: Magic Eden website, help center and developer documentation
+    claim_date: null
+    mapped_chapter_ids: [II, VI]
+    mapped_section_ids: [II.A, VI.A, VI.B]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-010, EC-014, EC-025]
+    contradiction_summary: Public pages support product breadth, but architecture, uptime, user adoption, revenue by product and security controls are not public.
+    diligence_follow_up:
+      - Request product P&L, chain-level GMV, active wallets, API usage, incident history, security reports and roadmap milestones.
+  - founder_claim_id: FC-005
+    claim_text: Magic Eden publicly describes a 0% listing fee, 2% transaction fee and optional creator-royalty approach.
+    claim_source: Magic Eden Help Center fee and royalties pages
+    claim_date: null
+    mapped_chapter_ids: [I, II, V]
+    mapped_section_ids: [I.A, II.A, V.A]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-004, EC-005]
+    contradiction_summary: Public fee rules do not disclose actual take-rate, rebates, promotional discounts, creator incentives or net revenue.
+    diligence_follow_up:
+      - Provide realized take-rate by chain, marketplace rebates, creator payouts, wash-trading adjustments and revenue-recognition policies.
+  - founder_claim_id: FC-006
+    claim_text: Magic Eden is positioning around crypto entertainment and the ME token ecosystem in addition to NFT marketplace activity.
+    claim_source: Magic Eden public site, token pages and third-party asset listings
+    claim_date: null
+    mapped_chapter_ids: [II, V, VIII]
+    mapped_section_ids: [II.A, V.A, VIII.G]
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: [EC-014, EC-015]
+    contradiction_summary: Token/public-market listings verify ecosystem visibility but do not prove issuer economics, token allocation, regulatory status or company revenue capture.
+    diligence_follow_up:
+      - Request token allocation, treasury, issuer/entity structure, legal memoranda, exchange/listing agreements and revenue-token relationship analysis.
+  - founder_claim_id: FC-007
+    claim_text: Magic Eden has publicly announced material service changes, including Bitcoin-services discontinuation and Magic Eden Wallet end-of-support/shutdown dates.
+    claim_source: Magic Eden Help Center service-change articles
+    claim_date: null
+    mapped_chapter_ids: [II, VI, VIII]
+    mapped_section_ids: [II.A, VI.B, VIII.F]
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: [EC-006, EC-007, EC-025]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request rationale, migration metrics, user notices, refund/claims process, support-load data, contract impacts and roadmap reprioritization memos.
+  - founder_claim_id: FC-008
+    claim_text: Magic Eden's audited financials, cap table, customer concentration, material contracts and insurance are not publicly verifiable from available sources.
+    claim_source: Public-source diligence review
+    claim_date: null
+    mapped_chapter_ids: [I, III, VIII]
+    mapped_section_ids: [I.A, I.C, III.C, VIII.E, VIII.F]
+    verification_status: not_publicly_verifiable
+    confidence: high
+    evidence_claim_ids: [EC-022, EC-023]
+    contradiction_summary: null
+    diligence_follow_up:
+      - Require a full data room before underwriting valuation, revenue durability, concentration risk, legal exposure or downside protection.
+
+executive_summary:
+  overall_assessment: >-
+    Magic Eden qualifies for a public-source startup diligence report: CB Insights identifies it as a San Francisco unicorn valued at about $1.6B, public company/investor materials support its founder and product claims, and help-center/legal materials show an active marketplace/wallet/token ecosystem. The diligence posture is promising but high-risk because public evidence is thin on current revenue, cash runway, cap table, customer concentration, contracts, security controls and token economics, while NFT market cyclicality, regulatory uncertainty and product wind-downs are material.
+  investment_or_diligence_thesis: >-
+    Advance only to confirmatory diligence if Magic Eden can show durable transaction revenue and wallet/token economics after the NFT downturn. Upside depends on aggregating crypto-entertainment demand across marketplace, wallet, token and API surfaces; underwriting should focus on realized take-rate, active paying users, creator/collector retention, token regulatory posture, service reliability and competition from larger marketplaces and chain-native wallets.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights and financing coverage support a $1.6B unicorn valuation signal in 2022.
+      evidence_claim_ids: [EC-001, EC-011]
+    - founder_claim_id: FC-003
+      summary: Magic Eden public materials identify the founding team.
+      evidence_claim_ids: [EC-003]
+    - founder_claim_id: FC-005
+      summary: Magic Eden Help Center materials disclose the public fee/royalty structure.
+      evidence_claim_ids: [EC-004, EC-005]
+  biggest_risks:
+    - risk_id: R-001
+      summary: Current financial statements, cash runway, cap table and revenue quality are not public.
+    - risk_id: R-002
+      summary: The $1.6B valuation was set during a much stronger NFT cycle and may be stale.
+    - risk_id: R-003
+      summary: NFT and token-related activity creates securities, consumer-protection, sanctions, AML and market-conduct risk.
+    - risk_id: R-004
+      summary: Public service wind-downs create reliability, roadmap and customer-trust risk.
+  key_evidence_gaps:
+    - Audited financials, monthly management accounts, cash, debt, burn, revenue recognition and tax positions.
+    - Current cap table, token treasury/allocation, investor rights, option pool, warrants and financing terms.
+    - Revenue by marketplace, wallet, token, API, chain, geography and customer cohort; active paying users and retention.
+    - Creator/collection concentration, royalty economics, creator contracts and marketplace incentive costs.
+    - Security architecture, custody/key-management model, incident history, insurance and third-party audit reports.
+    - Legal memos and regulator correspondence covering NFTs, token activity, sanctions/AML, consumer protection, privacy and arbitration.
+  recommended_next_steps:
+    - Start with a data-room request for financials, cap table, token economics, chain-level GMV, realized take-rate and cash runway.
+    - Run legal/regulatory diligence on NFT/token classification, marketplace operations, wallet support obligations and consumer disclosures.
+    - Validate retention and concentration through wallet cohorts, creator/collection GMV, repeat buyers, paid conversion and support tickets.
+    - Review product/engineering reliability through incident logs, roadmap gates, API uptime, wallet migration metrics and security audits.
+    - Benchmark current valuation against post-2022 NFT marketplace volume, competitors and revenue multiples.
+
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Magic Eden has strong public funding and unicorn evidence, but current revenue, profitability, cash runway, cap table, tax and financial projections are not public.
+    founder_claim_ids: [FC-001, FC-002, FC-005, FC-008]
+    evidence_claim_ids: [EC-001, EC-002, EC-004, EC-005, EC-011, EC-012, EC-022]
+    risk_ids: [R-001, R-002, R-006]
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: Public materials disclose fee mechanics but not audited statements, revenue, gross margin, cash, burn, backlog or receivables.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: The 2% transaction-fee model is public, but realized revenue and take-rate by product/channel are not.
+            evidence_claim_ids: [EC-004, EC-005, EC-022]
+            risk_ids: [R-001, R-006]
+        hidden_risks:
+          - Public GMV or transaction volume could overstate net revenue if rebates, incentives, wash trading or royalties materially affect economics.
+          - Revenue may be concentrated in a small number of collections, chains or high-spending wallets.
+        evidence_gaps:
+          - Audited financials, revenue bridge from GMV to net revenue, cash runway, debt, customer/collection concentration and receivables aging.
+        follow_up_questions:
+          - Provide monthly financials for 2023-2026, management KPI packs and a revenue-recognition memo by product.
+        table_ids: [T-001]
+        figure_ids: [F-001]
+        evidence_claim_ids: [EC-004, EC-005, EC-022]
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8]
+        summary: Public sources do not disclose forecasts; scenario work must stress NFT cycle recovery, token economics, take-rate pressure and support costs.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F1
+            finding: DappRadar market reports indicate NFT volumes are cyclical and competitive, so any forecast should include downside market-volume scenarios.
+            evidence_claim_ids: [EC-016, EC-017]
+            risk_ids: [R-002, R-006]
+        hidden_risks:
+          - Projections anchored to 2021-2022 activity could materially overstate steady-state demand.
+        evidence_gaps:
+          - Three-year financial model, scenario assumptions, CAC/payback, working-capital, capital expenditure and financing assumptions.
+        follow_up_questions:
+          - Provide board-approved projections with base/downside cases tied to chain-level GMV, active wallets and realized take-rate.
+        table_ids: [T-002]
+        figure_ids: []
+        evidence_claim_ids: [EC-001, EC-011, EC-016, EC-017, EC-022]
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: Funding and investor names are public, but current ownership, liquidation preferences, option pool, warrants, debt and token treasury are not.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.C-F1
+            finding: CB Insights identifies Sequoia, Lightspeed and Paradigm among investors, but not the current fully diluted cap table.
+            evidence_claim_ids: [EC-001, EC-012, EC-022]
+            risk_ids: [R-001]
+        hidden_risks:
+          - Structured preferences, secondary transactions or token allocations may materially change economics for new investors.
+        evidence_gaps:
+          - Cap table, SAFEs/convertibles, debt, token treasury, option grants, board approvals and investor side letters.
+        follow_up_questions:
+          - Provide pro forma ownership, token/equity reconciliation and all financing agreements.
+        table_ids: [T-002]
+        figure_ids: []
+        evidence_claim_ids: [EC-001, EC-002, EC-011, EC-012, EC-022]
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: Public documents do not disclose tax positions, accounting policies, financing terms, or treatment of token/wallet/marketplace revenue.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public evidence is sufficient for financing history headline checks but insufficient for revenue-recognition or tax diligence.
+            evidence_claim_ids: [EC-002, EC-011, EC-022]
+            risk_ids: [R-001, R-003]
+        hidden_risks:
+          - Token-related accounting, creator royalties, marketplace fees and international customer activity may create complex tax/accounting treatment.
+        evidence_gaps:
+          - Tax schedules, NOLs, revenue-recognition memo, token accounting, wallet liabilities and audit adjustments.
+        follow_up_questions:
+          - Provide accounting policies, tax filings and auditor correspondence.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-002, EC-011, EC-022]
+  - chapter_id: II
+    title: Products
+    chapter_summary: Magic Eden publicly operates marketplace, wallet, token/trading and developer surfaces; the public record also shows service wind-downs that require product durability diligence.
+    founder_claim_ids: [FC-004, FC-005, FC-006, FC-007]
+    evidence_claim_ids: [EC-004, EC-005, EC-006, EC-007, EC-010, EC-014, EC-015, EC-025]
+    risk_ids: [R-003, R-004, R-005, R-006]
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: Public sources support product breadth across marketplace, wallet/API and token positioning, but not profitability, active usage or chain-level retention.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Magic Eden's public materials and help center evidence a multi-product crypto/NFT platform with disclosed fees and service lifecycle changes.
+            evidence_claim_ids: [EC-004, EC-006, EC-007, EC-010, EC-014, EC-025]
+            risk_ids: [R-004, R-005]
+        hidden_risks:
+          - Product breadth can mask weak economics in individual surfaces if wallet, token or API usage does not convert into retained marketplace revenue.
+          - Wind-downs may indicate shifting strategy, high maintenance costs or insufficient adoption in discontinued services.
+        evidence_gaps:
+          - Product-level revenue, active wallets, API calls, chain mix, support tickets, incidents, roadmap and security test results.
+        follow_up_questions:
+          - Provide product KPI dashboard by marketplace, wallet, API, token and chain for the last 24 months.
+        table_ids: [T-003, T-004]
+        figure_ids: [F-002]
+        evidence_claim_ids: [EC-004, EC-005, EC-006, EC-007, EC-010, EC-014, EC-015, EC-025]
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public materials describe a consumer/creator/developer marketplace, but top customers, paid-user cohorts, creator concentration, supplier dependencies and revenue concentration are not public.
+    founder_claim_ids: [FC-004, FC-005, FC-008]
+    evidence_claim_ids: [EC-004, EC-005, EC-009, EC-010, EC-023]
+    risk_ids: [R-005, R-007, R-011]
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids: [III.A]
+        summary: Public sources do not identify top customers; Magic Eden likely serves collectors, creators, traders, API developers and wallet users across applications.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public sources disclose product surfaces and data collection but not top customers or cohort-level paid conversion.
+            evidence_claim_ids: [EC-009, EC-010, EC-023]
+            risk_ids: [R-007, R-011]
+        hidden_risks:
+          - A small number of whales, creators or collections could account for a disproportionate share of GMV and fees.
+        evidence_gaps:
+          - Top wallets/customers by GMV, net revenue, geography, chain, collection and cohort.
+        follow_up_questions:
+          - Provide anonymized top-customer/collection concentration and cohort retention for the last eight quarters.
+        table_ids: [T-005]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-009, EC-010, EC-023]
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids: [III.B]
+        summary: Public investor and product evidence points to strategic ecosystem relationships, but economic terms and exclusivity are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public investor sources identify marquee web3 investors, while product materials imply integrations and developer dependencies.
+            evidence_claim_ids: [EC-012, EC-010]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Chain, collection, API and wallet partnerships may include minimum commitments or termination rights that are not visible publicly.
+        evidence_gaps:
+          - Partner contracts, economics, exclusivity, termination rights and co-marketing commitments.
+        follow_up_questions:
+          - Provide partnership list, executed agreements and partner-by-partner economics.
+        table_ids: [T-006]
+        figure_ids: []
+        evidence_claim_ids: [EC-010, EC-012]
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids: [III.C]
+        summary: Revenue by customer or wallet is not public; concentration must be tested against marketplace, wallet and token cohorts.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: No public source located a customer accounting for 5% or more of revenue or a customer revenue schedule.
+            evidence_claim_ids: [EC-023]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Fee revenue could decline rapidly if a few high-volume wallets, creators or collections migrate to competitors.
+        evidence_gaps:
+          - Customer and wallet concentration, retention, churn, gross-to-net revenue and collection-level revenue.
+        follow_up_questions:
+          - Provide revenue concentration and churn analyses by wallet, creator, collection and chain.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-023]
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids: [III.D]
+        summary: Service discontinuation evidence suggests product/relationship changes, but severed customer, creator, supplier or partner relationships are not fully public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Help Center articles document discontinued services and wallet shutdown milestones, which may affect users and ecosystem relationships.
+            evidence_claim_ids: [EC-006, EC-007, EC-025]
+            risk_ids: [R-004]
+        hidden_risks:
+          - Discontinuations may trigger support costs, reputational damage, user attrition or contractual obligations.
+        evidence_gaps:
+          - Relationship termination log, user migration metrics, refunds/claims and support backlog.
+        follow_up_questions:
+          - Provide all material service retirement decision memos and customer/partner impact analyses.
+        table_ids: [T-006]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-007, EC-025]
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids: [III.E]
+        summary: Public materials do not disclose suppliers; likely dependencies include blockchains, RPC/indexing providers, cloud hosting, analytics, wallet infrastructure and compliance vendors.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Public API/wallet/product evidence points to technical dependencies, but suppliers and purchase amounts are not public.
+            evidence_claim_ids: [EC-010, EC-025]
+            risk_ids: [R-005]
+        hidden_risks:
+          - Supplier outages or terms changes could impair marketplace, wallet or API reliability.
+        evidence_gaps:
+          - Supplier list, spend by vendor, SLAs, uptime, termination rights and security attestations.
+        follow_up_questions:
+          - Provide top supplier schedule, SLAs and incident/postmortem history.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-010, EC-025]
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Magic Eden competes in a volatile NFT marketplace and wallet/token ecosystem where volumes, take-rates and creator loyalty can shift quickly.
+    founder_claim_ids: [FC-001, FC-004, FC-005]
+    evidence_claim_ids: [EC-004, EC-005, EC-016, EC-017]
+    risk_ids: [R-002, R-006, R-008]
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: Public evidence supports Magic Eden's marketplace role and fee positioning, but independent market reports show NFT activity is cyclical and competition remains intense.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: A 2% marketplace transaction fee and optional royalties must be evaluated against competitor fee pressure and post-downturn NFT demand.
+            evidence_claim_ids: [EC-004, EC-005, EC-016, EC-017]
+            risk_ids: [R-002, R-006]
+        hidden_risks:
+          - Competitors may use zero-fee campaigns, incentives, token rewards or creator exclusives to compress take-rate.
+          - Chain-native marketplaces and wallets may disintermediate Magic Eden's discovery and transaction surfaces.
+        evidence_gaps:
+          - Current market share by chain, active listings, creator retention, bidder liquidity, organic versus incentive-driven GMV and competitor win/loss data.
+        follow_up_questions:
+          - Provide market-share and cohort benchmarks versus OpenSea, Blur, Tensor, OKX, chain-native wallets and other marketplaces.
+        table_ids: [T-007, T-008]
+        figure_ids: [F-004]
+        evidence_claim_ids: [EC-004, EC-005, EC-016, EC-017]
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Magic Eden's go-to-market appears community, creator, collection, wallet and token-led; public sources do not disclose CAC, paid conversion, sales productivity or marketing ROI.
+    founder_claim_ids: [FC-004, FC-005, FC-006, FC-008]
+    evidence_claim_ids: [EC-004, EC-005, EC-010, EC-014, EC-015, EC-023]
+    risk_ids: [R-002, R-006, R-007, R-008]
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids: [V.A.1, V.A.2, V.A.3, V.A.4]
+        summary: Public positioning emphasizes marketplace/wallet/token breadth and disclosed fees; marketing efficiency and budget adequacy are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Magic Eden can market multiple surfaces to the same crypto user, but public evidence does not show whether cross-sell drives profitable retention.
+            evidence_claim_ids: [EC-004, EC-010, EC-014, EC-015]
+            risk_ids: [R-006, R-007]
+        hidden_risks:
+          - Token campaigns or marketplace incentives may create short-lived activity rather than durable organic demand.
+        evidence_gaps:
+          - CAC, paid/organic mix, creator acquisition cost, wallet-to-marketplace conversion, token campaign ROI and marketing budget by geography.
+        follow_up_questions:
+          - Provide marketing funnel, cohort conversion and channel-level ROI by collection, chain and user segment.
+        table_ids: [T-009]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-004, EC-010, EC-014, EC-015, EC-023]
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids: [V.B.1, V.B.2, V.B.3]
+        summary: Public sources do not disclose major customer status or pipeline; collector/creator relationships must be validated privately.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.B-F1
+            finding: No public source reviewed disclosed major-customer revenue, pipeline or development plans.
+            evidence_claim_ids: [EC-023]
+            risk_ids: [R-007]
+        hidden_risks:
+          - Customer pipeline may be highly sensitive to NFT floor prices, chain incentives and creator exclusivity.
+        evidence_gaps:
+          - Pipeline, customer health scores, top creator agreements and churn reasons.
+        follow_up_questions:
+          - Provide top 25 creator/collection/customer relationship review and pipeline conversion report.
+        table_ids: [T-010]
+        figure_ids: []
+        evidence_claim_ids: [EC-023]
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids: [V.C]
+        summary: New business likely comes from collections, chain integrations, wallet acquisition, API/developers, token ecosystem and secondary-market trading.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public product evidence supports multiple acquisition channels, but not conversion or monetization by channel.
+            evidence_claim_ids: [EC-010, EC-014, EC-015]
+            risk_ids: [R-006]
+        hidden_risks:
+          - Channel expansion could increase support, compliance and engineering costs faster than revenue.
+        evidence_gaps:
+          - Channel-level funnel and ROI metrics.
+        follow_up_questions:
+          - Provide channel attribution, activation rates and repeat-purchase cohorts.
+        table_ids: [T-010]
+        figure_ids: []
+        evidence_claim_ids: [EC-010, EC-014, EC-015]
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids: [V.D.1, V.D.2, V.D.3, V.D.4]
+        summary: Sales compensation, quotas, cycle length and hiring plan are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Public sources do not identify an enterprise sales productivity model.
+            evidence_claim_ids: [EC-023]
+            risk_ids: [R-001]
+        hidden_risks:
+          - If creator/enterprise deals are high-touch, marketplace economics could be less scalable than public fee mechanics imply.
+        evidence_gaps:
+          - Sales org roster, quota, compensation, pipeline, win/loss and creator success staffing.
+        follow_up_questions:
+          - Provide sales and creator-success productivity metrics.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-023]
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids: [V.E]
+        summary: Budget sufficiency is not public and depends on post-downturn growth targets, incentive spend, engineering support and compliance costs.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Public valuation/funding evidence cannot substitute for current cash runway or budget capacity.
+            evidence_claim_ids: [EC-001, EC-002, EC-022]
+            risk_ids: [R-001, R-002]
+        hidden_risks:
+          - Marketing commitments may be constrained if fundraising conditions tighten or token/marketplace volumes weaken.
+        evidence_gaps:
+          - Budget, burn, runway, incentive liabilities and campaign-level ROI.
+        follow_up_questions:
+          - Provide marketing budget and cash runway under base/downside NFT market scenarios.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-001, EC-002, EC-022]
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public API/developer and wallet/product evidence show technical breadth, while service discontinuations require diligence into roadmap discipline, security and reliability.
+    founder_claim_ids: [FC-004, FC-007]
+    evidence_claim_ids: [EC-006, EC-007, EC-010, EC-025]
+    risk_ids: [R-004, R-005, R-011]
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids: [VI.A.1, VI.A.2, VI.A.3]
+        summary: Public sources show developer/API surfaces but do not disclose engineering org design, staffing, security ownership or R&D budget.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public developer materials indicate API/data surfaces, but no public architecture, security attestation or R&D budget was found.
+            evidence_claim_ids: [EC-010, EC-022]
+            risk_ids: [R-005]
+        hidden_risks:
+          - API, wallet and marketplace systems may have materially different reliability, compliance and security requirements.
+        evidence_gaps:
+          - Engineering org chart, roadmap, security program, incident logs, R&D spend and third-party audits.
+        follow_up_questions:
+          - Provide architecture diagrams, system boundaries, audit reports, on-call metrics and engineering roadmap.
+        table_ids: [T-011]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-010, EC-022]
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.B.3, VI.B.4]
+        summary: Wallet/token/API product expansion is visible, but public shutdown notices show roadmap changes and product lifecycle risk.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Bitcoin service discontinuation and wallet shutdown milestones show that Magic Eden actively sunsets products or services.
+            evidence_claim_ids: [EC-006, EC-007, EC-025]
+            risk_ids: [R-004]
+        hidden_risks:
+          - Product deprecations can impose migration, support, legal and reputational costs not captured in public product pages.
+        evidence_gaps:
+          - Product pipeline, launch gates, expected development cost, support burden, migration plans and customer success metrics.
+        follow_up_questions:
+          - Provide roadmap, killed-project list, migration playbooks and postmortems for recent service retirements.
+        table_ids: [T-012]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-007, EC-025]
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Founder identity and company activity are public, but current organization chart, headcount by function/location, compensation, retention and employee-relations history are not.
+    founder_claim_ids: [FC-002, FC-003]
+    evidence_claim_ids: [EC-002, EC-003, EC-013]
+    risk_ids: [R-009]
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids: [VII.A]
+        summary: Public sources verify founders and broad company profile; current reporting lines and leadership coverage require data-room diligence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Magic Eden identifies its founders publicly, but current executive ownership by product and function is not fully public.
+            evidence_claim_ids: [EC-003, EC-013]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Founder or key-executive departures could affect product, partnerships, token strategy and fundraising.
+        evidence_gaps:
+          - Current org chart, board composition, executive employment agreements and succession plan.
+        follow_up_questions:
+          - Provide current org chart, board materials and executive/key-person agreements.
+        table_ids: [T-013]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-003, EC-013]
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids: [VII.B]
+        summary: LinkedIn/public profiles provide directional activity, but verified headcount by function, location, attrition and hiring plan are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: LinkedIn-style public profile evidence is a directional signal only and should be reconciled to HRIS/payroll.
+            evidence_claim_ids: [EC-013]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Engineering, compliance or support understaffing could impair wallet, API and service migration obligations.
+        evidence_gaps:
+          - HRIS export, function/location headcount, attrition, hiring plan and contractor/vendor usage.
+        follow_up_questions:
+          - Provide monthly headcount and attrition by function/location for 2023-2026.
+        table_ids: [T-014]
+        figure_ids: []
+        evidence_claim_ids: [EC-013, EC-022]
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids: [VII.C]
+        summary: Founder names are public, but biographies, current responsibilities and tenure for the broader senior team require confirmation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public founder attribution does not establish current management roles, employment terms or board governance.
+            evidence_claim_ids: [EC-003]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Governance gaps may be amplified by token, marketplace and wallet regulatory complexity.
+        evidence_gaps:
+          - Executive biographies, offer letters, board minutes, conflicts disclosures and retention grants.
+        follow_up_questions:
+          - Provide management bios, reporting lines and board observer/advisor arrangements.
+        table_ids: [T-013]
+        figure_ids: []
+        evidence_claim_ids: [EC-003]
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids: [VII.D.1, VII.D.2]
+        summary: Compensation, benefits and executive employment arrangements are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: No public source reviewed disclosed compensation or benefits arrangements.
+            evidence_claim_ids: [EC-022]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Token/equity incentives may create regulatory, accounting or retention complexity.
+        evidence_gaps:
+          - Compensation plans, bonus plans, benefits, token/equity grant policies and severance/change-in-control terms.
+        follow_up_questions:
+          - Provide compensation plan, option/token grant ledger and executive employment agreements.
+        table_ids: [T-014]
+        figure_ids: []
+        evidence_claim_ids: [EC-022]
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids: [VII.E]
+        summary: Equity, option and token incentive plans are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Public financing evidence does not disclose option pools, vesting, token grants or dilution.
+            evidence_claim_ids: [EC-001, EC-022]
+            risk_ids: [R-001, R-009]
+        hidden_risks:
+          - Token grants or option repricing may create undisclosed dilution and retention costs.
+        evidence_gaps:
+          - Option plan, grant ledger, token incentive plan and 409A/valuation support.
+        follow_up_questions:
+          - Provide stock/token incentive plan documents and fully diluted ownership reconciliation.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-001, EC-022]
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids: [VII.F]
+        summary: No public-source employee-relations schedule was available; absence of evidence is not evidence of absence.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public review did not locate a verified employee-relations schedule.
+            evidence_claim_ids: [EC-022]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Remote/global crypto operations may face contractor, compensation, compliance or employee-relations issues not visible publicly.
+        evidence_gaps:
+          - HR complaint, settlement, arbitration, contractor classification and employment litigation schedules.
+        follow_up_questions:
+          - Provide HR legal schedule and all employment settlement/arbitration matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-022]
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids: [VII.G.1, VII.G.2]
+        summary: Public sources do not disclose turnover; retention should be tested against crypto-market cyclicality and product wind-downs.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Turnover data is unavailable publicly.
+            evidence_claim_ids: [EC-022]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Departures in wallet/security/compliance teams could affect service retirement, incident response and regulatory readiness.
+        evidence_gaps:
+          - Monthly attrition, regretted loss, hiring plan and retention program data.
+        follow_up_questions:
+          - Provide turnover and retention metrics by function/location.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-022]
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal terms, privacy disclosures, NFT enforcement precedents and limited legal searches show material legal/regulatory risk; actual matters, contracts, insurance and counsel analyses are not public.
+    founder_claim_ids: [FC-006, FC-007, FC-008]
+    evidence_claim_ids: [EC-008, EC-009, EC-018, EC-019, EC-020, EC-021, EC-024, EC-025]
+    risk_ids: [R-003, R-004, R-005, R-008, R-010, R-011]
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids: [VIII.A]
+        summary: Exact public CourtListener searches did not identify a conclusive Magic Eden litigation schedule; this is incomplete without counsel confirmation.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Public legal-search evidence is limited and cannot replace a counsel-certified litigation schedule.
+            evidence_claim_ids: [EC-020]
+            risk_ids: [R-010]
+        hidden_risks:
+          - Consumer, IP, employment, marketplace, token or wallet disputes may exist outside searched public sources or under related entities.
+        evidence_gaps:
+          - Counsel litigation schedule, threatened claims, arbitration matters, demand letters and settlement agreements.
+        follow_up_questions:
+          - Provide pending/threatened claims, arbitration matters, government inquiries and counsel letters.
+        table_ids: [T-015]
+        figure_ids: [F-008]
+        evidence_claim_ids: [EC-020]
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids: [VIII.B]
+        summary: Public sources reviewed did not establish a verified list of actions initiated by Magic Eden.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: No conclusive public list of Magic Eden-initiated litigation was identified.
+            evidence_claim_ids: [EC-020]
+            risk_ids: [R-010]
+        hidden_risks:
+          - IP, fraud or contract enforcement actions may be filed under affiliated entities or in arbitral forums.
+        evidence_gaps:
+          - Company-initiated litigation and arbitration schedule.
+        follow_up_questions:
+          - Provide docket list and budgets for all claims initiated by the company or affiliates.
+        table_ids: [T-016]
+        figure_ids: []
+        evidence_claim_ids: [EC-020]
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids: [VIII.C.1, VIII.C.2]
+        summary: No material environmental exposure was identified in public sources for a software/marketplace company, but employment safety and remote-work policies were not reviewed.
+        verification_status: inconclusive
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public review did not locate environmental liabilities, but this was not a specialized search.
+            evidence_claim_ids: [EC-022]
+            risk_ids: [R-009]
+        hidden_risks:
+          - Remote/global employment and contractor safety/compliance obligations may not be visible publicly.
+        evidence_gaps:
+          - EHS policies, employment classifications and workplace/remote-work compliance records.
+        follow_up_questions:
+          - Provide employment compliance and workplace safety policies.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-022]
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids: [VIII.D]
+        summary: Brand/IP and creator-rights diligence is material because marketplace value depends on collection listings, creator relationships, brand trust and token/wallet marks.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Public trademark-search and marketplace evidence require follow-up on owned marks, licensed content, takedown policies and creator IP rights.
+            evidence_claim_ids: [EC-005, EC-021]
+            risk_ids: [R-008]
+        hidden_risks:
+          - NFT listings may involve unauthorized IP, creator royalty disputes, counterfeit collections or brand misuse.
+        evidence_gaps:
+          - Trademark schedule, licenses, takedown history, creator agreements, open-source software review and IP indemnities.
+        follow_up_questions:
+          - Provide IP portfolio, creator terms, takedown statistics and infringement/demand-letter history.
+        table_ids: [T-016]
+        figure_ids: []
+        evidence_claim_ids: [EC-005, EC-021]
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids: [VIII.E]
+        summary: Insurance coverage is not public and should be tested against marketplace, wallet, privacy, cyber, director/officer and token-related exposures.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Public legal and privacy terms identify risk categories but not insurance limits or exclusions.
+            evidence_claim_ids: [EC-008, EC-009, EC-024]
+            risk_ids: [R-005, R-011]
+        hidden_risks:
+          - Cyber, E&O, D&O or crime policies may exclude digital assets, tokens, wallet losses or regulatory claims.
+        evidence_gaps:
+          - Insurance policies, limits, exclusions, claim history and broker summaries.
+        follow_up_questions:
+          - Provide all insurance policies and broker loss-run summaries.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-008, EC-009, EC-024]
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids: [VIII.F]
+        summary: Terms of service and help-center notices are public; material partner, creator, chain, exchange/listing, wallet, API, supplier and customer contracts are not.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public service notices can affect contractual obligations, but executed contracts and termination economics are not public.
+            evidence_claim_ids: [EC-006, EC-007, EC-024, EC-025]
+            risk_ids: [R-004, R-010]
+        hidden_risks:
+          - Product wind-downs may conflict with partner commitments, user promises, token/airdrop expectations or support obligations.
+        evidence_gaps:
+          - Material contracts, termination rights, service commitments, creator agreements, exchange/listing agreements and vendor SLAs.
+        follow_up_questions:
+          - Provide material contract schedule and all agreements tied to wallet, token, marketplace, API, creators and suppliers.
+        table_ids: [T-015]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-007, EC-024, EC-025]
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids: [VIII.G]
+        summary: Magic Eden's NFT/token/wallet activities should be reviewed against SEC NFT enforcement precedents, consumer-protection, privacy, sanctions/AML and marketplace rules.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: SEC NFT enforcement orders against Impact Theory and Stoner Cats are not Magic Eden matters but demonstrate regulator theories relevant to NFT/token diligence.
+            evidence_claim_ids: [EC-018, EC-019]
+            risk_ids: [R-003]
+        hidden_risks:
+          - ME token activity, royalty programs, wallet functionality or marketplace promotions could attract regulatory scrutiny depending on facts and jurisdictions.
+        evidence_gaps:
+          - Legal opinions, regulator correspondence, compliance policies, sanctions/AML controls, geographic restrictions and token issuer analysis.
+        follow_up_questions:
+          - Provide counsel memos and all regulator correspondence concerning NFTs, tokens, wallet, marketplace operations and user disclosures.
+        table_ids: [T-015]
+        figure_ids: []
+        evidence_claim_ids: [EC-008, EC-014, EC-015, EC-018, EC-019]
