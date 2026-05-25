@@ -1,0 +1,5100 @@
+report_metadata:
+  report_title: Netlify Public-Source Startup Diligence Report
+  target_company: Netlify
+  website: https://www.netlify.com/
+  known_aliases:
+    - Netlify, Inc.
+    - MakerLoop, Inc.
+    - Jamstack pioneer
+  sector: Enterprise Tech; developer tools; modern web deployment; Jamstack/composable web; AI-native app platform
+  geography: United States; headquartered in San Francisco with remote-first global team across 14+ countries
+  company_stage: Late-stage private unicorn / Series D
+  research_date: 2026-05-25
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - "Used public evidence only: company pages, company press releases/blog/product/pricing/security/legal pages, SEC EDGAR Form D records, CB Insights public unicorn list, GitHub repository metadata, CourtListener public search and competitor public product/pricing pages."
+    - Prioritized primary company and regulatory sources for factual claims; treated vendor-published customer stories as partially verified until confirmed by customer contracts and reference calls.
+    - Marked private financial, cap-table, customer, sales, HR, supplier, legal, insurance and contract data as not_publicly_verifiable rather than inferring it.
+    - Excluded paid databases, private interviews, data-room documents, PACER paid docket review and non-public customer/supplier/counsel confirmations.
+  included_jurisdictions:
+    - United States
+    - California
+    - Delaware corporate/regulatory records where public
+    - Global SaaS/developer-tools market context
+  excluded_topics:
+    - No private financial statements, capitalization records, customer contracts, supplier agreements, board materials, insurance policies, audit reports or HR records were reviewed.
+    - No legal advice or exhaustive litigation/IP/regulatory search was performed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User request
+      type: prompt_argument
+      date_received: 2026-05-25
+      notes: User requested exactly one public-source YAML diligence report for Netlify at reports/netlify-diligence-report.yaml.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Netlify is a late-stage private unicorn in Enterprise Tech with a $2B valuation marker from the November 2021 Series D.
+    claim_source: CB Insights unicorn list and Netlify Series D press release
+    claim_date: 2021-11-17
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-034
+    contradiction_summary: Current private-market fair value is not publicly verifiable and may differ materially from the 2021 financing mark.
+    diligence_follow_up:
+      - Request fully diluted cap table, liquidation preferences, option pool, debt, SAFEs/convertibles, secondary transactions and latest 409A/fair-value support.
+  - founder_claim_id: FC-002
+    claim_text: Netlify was founded by Mathias Biilmann and Christian Bach and is headquartered in San Francisco with a global team.
+    claim_source: Netlify About, Careers and SEC Form D issuer history
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.A
+      - VII.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+      - EC-030
+      - EC-035
+    contradiction_summary: About page says founded 2014 while Careers says founded 2015; clarify incorporation, launch and operating-start dates.
+    diligence_follow_up:
+      - Request incorporation records, founder equity history, board minutes and current officer/director roster.
+  - founder_claim_id: FC-003
+    claim_text: Netlify offers a broad modern web platform spanning deploys, previews, functions, edge, observability, storage, AI Gateway and Agent Runners.
+    claim_source: Netlify homepage, product pages and product blog
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.A
+      - VI.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-022
+      - EC-023
+      - EC-024
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request module-level ARR, attach rates, usage, gross margin, uptime/SLA history, roadmap and deprecation history.
+  - founder_claim_id: FC-004
+    claim_text: Netlify has large-scale adoption, publicly claiming 10M+ developers, 60M+ apps deployed and 99.99% uptime.
+    claim_source: Netlify homepage
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - III
+      - V
+    mapped_section_ids:
+      - I.D
+      - III.A
+      - V.A
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-006
+    contradiction_summary: Definitions of developer, app and uptime measurement window are not public.
+    diligence_follow_up:
+      - Reconcile public aggregate metrics to active developers, paid accounts, production apps, churn and SLA credits.
+  - founder_claim_id: FC-005
+    claim_text: Netlify uses a freemium/self-serve plus Enterprise go-to-market with credit-based pricing and enterprise controls.
+    claim_source: Netlify Pricing page
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - II
+      - V
+    mapped_section_ids:
+      - I.B
+      - II.A
+      - V.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-008
+      - EC-029
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request pricing waterfall, discount schedule, conversion funnel, credit utilization, overage margin and Enterprise renewal cohorts.
+  - founder_claim_id: FC-006
+    claim_text: Netlify maintains enterprise security and compliance controls, including encryption, DDoS mitigation, WAF/rate limiting, ISO 27001, SOC 2 Type 2 and PCI DSS.
+    claim_source: Netlify Security and ISO press release
+    claim_date: null
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.C
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-029
+    contradiction_summary: Controls are vendor-stated; audit reports and exception testing were not reviewed.
+    diligence_follow_up:
+      - Review current SOC 2 Type 2, ISO certificate/scope, PCI AOC, pen-test reports, incident log, BC/DR test results and customer security addenda.
+  - founder_claim_id: FC-007
+    claim_text: Netlify has meaningful enterprise/customer proof through named logos and case studies.
+    claim_source: Netlify Customers page and press releases
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-019
+      - EC-032
+    contradiction_summary: Customer logos and outcomes are vendor-published and do not verify active contract value or retention.
+    diligence_follow_up:
+      - Request top-25 ARR schedule, logo-rights proof, renewal dates, NRR, churn/loss analysis and reference calls.
+  - founder_claim_id: FC-008
+    claim_text: Netlify expanded product capability through acquisitions of Quirrel, Gatsby and Stackbit.
+    claim_source: Netlify acquisition press releases
+    claim_date: null
+    mapped_chapter_ids:
+      - VI
+      - VIII
+    mapped_section_ids:
+      - VI.A
+      - VI.B
+      - VIII.F
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-017
+      - EC-018
+      - EC-019
+    contradiction_summary: null
+    diligence_follow_up:
+      - Review acquisition agreements, purchase accounting, IP assignment, open-source obligations, retention and integration KPI performance.
+  - founder_claim_id: FC-009
+    claim_text: Netlify operates a remote-first distributed team across 14+ countries and offers equity/benefits.
+    claim_source: Netlify Careers page and leadership release
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.B
+      - VII.D
+      - VII.E
+      - VII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+    contradiction_summary: Current headcount and attrition are not public; careers page showed only a talent-community posting during review.
+    diligence_follow_up:
+      - Request headcount by function/location, attrition, comp bands, option plan, remote-work compliance analysis and hiring plan.
+  - founder_claim_id: FC-010
+    claim_text: No obvious public CourtListener opinion litigation surfaced for Netlify in this review.
+    claim_source: CourtListener search API
+    claim_date: 2026-05-25
+    mapped_chapter_ids:
+      - VIII
+    mapped_section_ids:
+      - VIII.A
+      - VIII.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-025
+    contradiction_summary: This is not a comprehensive docket, arbitration, demand-letter or international search.
+    diligence_follow_up:
+      - Request counsel litigation schedule, regulatory correspondence, IP claims, employment disputes and insurance notices.
+executive_summary:
+  overall_assessment: "Netlify is a credible late-stage developer-platform unicorn with strong public evidence of adoption, enterprise positioning, security posture and product expansion. The investability question is dominated by private diligence gaps: current financial quality, cap table/preferences, customer concentration, AI/database economics and legal/contract exposure."
+  investment_or_diligence_thesis: "Proceed as a high-interest but data-room-dependent opportunity: public evidence supports category relevance and scale, but the 2021 $2B valuation and current growth/margin profile cannot be underwritten without private financial, customer, cap-table and technical diligence."
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Series D $105M at $2B and CB Insights $2B unicorn entry are corroborated by primary and market-database sources.
+      evidence_claim_ids:
+        - EC-001
+        - EC-002
+    - founder_claim_id: FC-003
+      summary: Product breadth is strongly evidenced across deploys, previews, functions, edge, observability, AI Gateway, Agent Runners and Database.
+      evidence_claim_ids:
+        - EC-013
+        - EC-014
+        - EC-015
+        - EC-016
+    - founder_claim_id: FC-004
+      summary: Netlify publicly claims 10M+ developers, 60M+ apps and 99.99% uptime.
+      evidence_claim_ids:
+        - EC-006
+    - founder_claim_id: FC-006
+      summary: Security/compliance posture is supported by public TLS/AES/DDoS/WAF claims and ISO/SOC/PCI announcements.
+      evidence_claim_ids:
+        - EC-009
+        - EC-010
+  biggest_risks:
+    - risk_id: R-001
+      summary: No public operating financials, ARR, margin or runway data.
+    - risk_id: R-002
+      summary: 2021 valuation may be stale and cap-table preferences are unknown.
+    - risk_id: R-004
+      summary: AI Gateway, Agent Runners and Database create execution, cost and dependency risk.
+    - risk_id: R-003
+      summary: Direct competition from Vercel and Cloudflare is intense.
+  key_evidence_gaps:
+    - Audited/management financials, ARR, gross margin, cash runway and revenue-recognition policies.
+    - Fully diluted cap table, liquidation preferences, debt and option plan.
+    - Customer ARR concentration, renewals, churn/loss and logo verification.
+    - Module-level economics and vendor agreements for AI Gateway, Agent Runners and Database.
+    - Material contracts, IP portfolio, insurance policies and counsel litigation/regulatory schedules.
+  recommended_next_steps:
+    - Open finance/cap-table data room before valuation work.
+    - Run customer-reference and revenue-quality diligence on top accounts.
+    - Perform technical/security review of AI, database, edge and build infrastructure plus vendor dependencies.
+    - Benchmark win/loss and pricing against Vercel, Cloudflare and hyperscaler alternatives.
+    - Obtain counsel disclosure schedules, IP/OSS review and insurance coverage analysis.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public evidence confirms substantial venture financing and usage scale, but essentially all operating financial statements, current valuation support, cap table, revenue quality and working-capital schedules are private.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+      - FC-005
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-008
+      - EC-031
+      - EC-034
+    risk_ids:
+      - R-001
+      - R-002
+      - R-009
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: No income statements, balance sheets, cash-flow statements, footnotes, planned-vs-actuals, backlog or AR aging schedules were public; public financial evidence is limited to financing and aggregate operating metrics.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A-F1
+            finding: No public audited or management financial statements were located.
+            evidence_claim_ids:
+              - EC-031
+            risk_ids:
+              - R-001
+          - finding_id: I.A-F2
+            finding: Public operating evidence consists of adoption/reliability metrics rather than revenue or cash-flow data.
+            evidence_claim_ids:
+              - EC-006
+              - EC-031
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - ARR, gross margin, burn, runway, backlog and receivables could diverge materially from public adoption narrative.
+        evidence_gaps:
+          - Audited annual financial statements, monthly management accounts, ARR bridge, bookings/backlog, AR aging, deferred revenue, gross margin and cash runway.
+        follow_up_questions:
+          - Provide last 36 months of financial statements, management reports and board packages; reconcile public usage metrics to paid revenue.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+          - EC-031
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Growth drivers are partially visible in AI, database and enterprise packaging, but no quarterly three-year forecast, capital expenditure plan, financing plan or sensitivity analysis is public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Pricing, Enterprise controls and AI/fullstack platform expansion are visible public growth drivers.
+            evidence_claim_ids:
+              - EC-008
+              - EC-014
+              - EC-015
+              - EC-016
+              - EC-029
+            risk_ids:
+              - R-004
+              - R-009
+          - finding_id: I.B-F2
+            finding: Projection assumptions for international operations, capital expenditure, working capital and external financing remain private.
+            evidence_claim_ids:
+              - EC-031
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Credit-based usage and AI inference costs may introduce forecast volatility and margin pressure.
+        evidence_gaps:
+          - Three-year forecast by product/customer/channel, pricing assumptions, model-provider cost assumptions, cloud COGS, capex/working-capital schedule and financing plan.
+        follow_up_questions:
+          - Provide base/upside/downside model including AI Gateway, Database, Enterprise and self-serve cohorts.
+        table_ids:
+          - T-002
+          - T-004
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-008
+          - EC-014
+          - EC-015
+          - EC-016
+          - EC-031
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Financing events are corroborated by company releases, CB Insights and SEC Form D records, but current fully diluted capitalization, preferences, debt and off-balance-sheet obligations are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Series D $105M at $2B and CB Insights $2B unicorn entry are mutually consistent.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+            risk_ids:
+              - R-002
+          - finding_id: I.C-F2
+            finding: SEC EDGAR confirms Form D activity and private-company submissions without public tickers.
+            evidence_claim_ids:
+              - EC-003
+              - EC-034
+            risk_ids: []
+        hidden_risks:
+          - 2021 valuation may be stale; liquidation preferences or debt could materially alter common-equity value.
+        evidence_gaps:
+          - Current cap table, shareholder list, option/warrant/note schedule, debt instruments, bank lines, SAFEs, side letters and off-balance-sheet liabilities.
+        follow_up_questions:
+          - Request fully diluted cap table with preference stack and reconcile all Form D amounts to board-approved financings.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-034
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Historic financing releases and SEC filings form a partial financing-history trail; tax positions, revenue recognition policies and accounting policies are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public financing history includes 2018 $30M, 2020 $53M, 2021 $105M and SEC Form D offering markers.
+            evidence_claim_ids:
+              - EC-002
+              - EC-004
+              - EC-005
+              - EC-034
+            risk_ids: []
+          - finding_id: I.D-F2
+            finding: Revenue recognition and tax/NOL positions cannot be assessed from public materials.
+            evidence_claim_ids:
+              - EC-031
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Usage credits, enterprise contracts and AI/model pass-throughs could create revenue-recognition complexity.
+        evidence_gaps:
+          - Accounting policy memo, revenue-recognition analysis, tax returns, NOL schedules and financing-history workbook.
+        follow_up_questions:
+          - Request audit letters and accounting-policy memo for credits, overages, marketplace usage, enterprise minimums and AI pass-through costs.
+        table_ids:
+          - T-001
+          - T-002
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-002
+          - EC-004
+          - EC-005
+          - EC-006
+          - EC-031
+  - chapter_id: II
+    title: Products
+    chapter_summary: Netlify has evolved from Jamstack/static hosting into a broad build/deploy/fullstack/AI platform with a credit-based self-serve model and enterprise controls. Product-market fit is strongly evidenced publicly, while module economics are private.
+    founder_claim_ids:
+      - FC-003
+      - FC-005
+    evidence_claim_ids:
+      - EC-008
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-029
+    risk_ids:
+      - R-004
+      - R-009
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public product evidence covers core deploy/build workflow, deploy previews, functions, edge network, observability, storage/database, AI Gateway and Agent Runners. Customers span web apps, marketing sites, SaaS, ecommerce and internal tools.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Platform primitives span deploy, previews, functions, storage, observability, edge network, AI Gateway and Agent Runners.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-004
+          - finding_id: II.A-F2
+            finding: Pricing exposes usage-meter cost points and tiered packaging across Free, Personal, Pro and Enterprise.
+            evidence_claim_ids:
+              - EC-008
+              - EC-029
+            risk_ids:
+              - R-009
+          - finding_id: II.A-F3
+            finding: Database and AI capabilities suggest active repositioning around agent-native fullstack apps.
+            evidence_claim_ids:
+              - EC-014
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - New AI/database products could increase complexity, COGS, support burden and security review requirements.
+        evidence_gaps:
+          - ARR/gross margin by product, attach rates, churn by module, roadmap milestones, uptime by product and product-support burden.
+        follow_up_questions:
+          - Provide module-level P&L, usage telemetry, incident history and roadmap dependency map.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-008
+          - EC-013
+          - EC-014
+          - EC-015
+          - EC-016
+          - EC-029
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Netlify has substantial public customer proof through logos and case studies, but all customer revenue, concentration, contract duration, churn and top-supplier data require non-public schedules.
+    founder_claim_ids:
+      - FC-004
+      - FC-007
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-032
+      - EC-033
+    risk_ids:
+      - R-005
+      - R-006
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Named logos indicate enterprise and open-source penetration across marketing, ecommerce, documentation, gaming and SaaS applications, but top-15 customer revenue schedules are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Customer page lists recognizable enterprise and developer-community logos.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-005
+          - finding_id: III.A-F2
+            finding: Case-study headlines support value themes such as speed, cost savings, bandwidth optimization and collaboration.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Logo garden may include inactive, low-revenue or non-commercial relationships.
+        evidence_gaps:
+          - Top-15 customers by ARR/application for last two fiscal years and YTD, contract dates, renewal status and owner.
+        follow_up_questions:
+          - Directly confirm top logos and obtain customer-reference calls.
+        table_ids:
+          - T-005
+          - T-006
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+          - EC-032
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public materials indicate ecosystem relationships with cloud/model/database providers and web frameworks, but strategic-revenue contribution and marketing agreements are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: AI Gateway references OpenAI, Anthropic and Google model access; Database references a Neon-powered database partnership.
+            evidence_claim_ids:
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+          - finding_id: III.B-F2
+            finding: Netlify integrates with major frameworks and developer tools across homepage/docs navigation.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids: []
+        hidden_risks:
+          - Dependence on model/database partners may affect availability, cost and product roadmap.
+        evidence_gaps:
+          - Partner contracts, revenue shares, reseller/referral agreements, data-processing terms and termination rights.
+        follow_up_questions:
+          - Request partner and technology-alliance contract schedule with economics.
+        table_ids:
+          - T-005
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-015
+          - EC-016
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: No customer-level revenue contribution, customers over 5% of revenue or concentration data are public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public customer evidence is logo/case-study based, not contract-value based.
+            evidence_claim_ids:
+              - EC-032
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Enterprise concentration could be masked by large developer adoption metrics.
+        evidence_gaps:
+          - ARR by customer, NRR/GRR, churn/loss list, discounting by customer, bad debt and renewal pipeline.
+        follow_up_questions:
+          - Request customer revenue waterfall and concentration analysis.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-032
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No public evidence was found identifying severed material customer, partner or supplier relationships in the last two years.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Public sources reviewed did not disclose material relationship terminations.
+            evidence_claim_ids:
+              - EC-032
+            risk_ids: []
+        hidden_risks:
+          - Lost logos, partner churn or vendor disputes may not be publicly visible.
+        evidence_gaps:
+          - Lost-customer reports, win/loss analysis, partner termination notices and supplier dispute logs.
+        follow_up_questions:
+          - Ask management for all material customer/partner/supplier losses in the last 24 months.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-032
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Netlify discloses use of globally distributed data-center partners, major cloud providers, model providers and Neon relationship, but does not disclose top supplier spend or contract terms.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Security materials refer to data-center partners and major cloud providers without naming spend or commitments.
+            evidence_claim_ids:
+              - EC-033
+            risk_ids:
+              - R-006
+          - finding_id: III.E-F2
+            finding: AI Gateway and Database create additional model-provider and Neon dependency diligence areas.
+            evidence_claim_ids:
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+              - R-006
+        hidden_risks:
+          - Infrastructure, model-provider and database cost escalation could compress gross margin.
+        evidence_gaps:
+          - Top supplier list by spend, cloud commits, data-center agreements, model-provider agreements, Neon terms, subprocessor list and business-continuity plans.
+        follow_up_questions:
+          - Request vendor concentration and margin sensitivity analysis.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+          - EC-033
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Netlify competes in a crowded developer-platform and edge-deployment market against Vercel, Cloudflare Pages/Workers, hyperscalers, GitHub Pages/Actions and legacy CMS/DXP stacks. Differentiation now rests on integrated workflow, previews, enterprise controls and AI-agent/fullstack primitives.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-027
+      - EC-028
+      - EC-008
+      - EC-013
+    risk_ids:
+      - R-003
+      - R-009
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Netlify has clear public differentiation around end-to-end workflow, previews and new AI/database features, but Vercel and Cloudflare offer strong price/performance and ecosystem alternatives.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Vercel and Netlify both pursue developer-first freemium-to-enterprise deployment workflows.
+            evidence_claim_ids:
+              - EC-027
+              - EC-008
+            risk_ids:
+              - R-003
+          - finding_id: IV.A-F2
+            finding: Cloudflare Pages competes on edge network scale, free collaboration and Workers integration.
+            evidence_claim_ids:
+              - EC-028
+            risk_ids:
+              - R-003
+          - finding_id: IV.A-F3
+            finding: Netlify seeks differentiation through integrated platform primitives, AI Gateway, Agent Runners and Database branches.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Competitors with larger clouds or faster AI bundling could pressure price, margins and developer mindshare.
+        evidence_gaps:
+          - Win/loss by segment, competitive displacement data, customer switching costs, benchmark performance and price-sensitivity analysis.
+        follow_up_questions:
+          - Request sales win/loss study and cohort churn by competitive reason.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-027
+          - EC-028
+          - EC-013
+          - EC-014
+          - EC-015
+          - EC-016
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Netlify’s public GTM blends bottom-up developer adoption, self-serve credit plans, Enterprise procurement/security packaging, agency/integration ecosystem and case-study marketing. Pipeline, sales productivity and budget sufficiency are private.
+    founder_claim_ids:
+      - FC-004
+      - FC-005
+      - FC-007
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-029
+    risk_ids:
+      - R-003
+      - R-005
+      - R-009
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public positioning emphasizes developers shipping modern web apps quickly, with one platform from prototype to enterprise production. Distribution is web/self-serve, sales-led Enterprise, integrations, docs/community and customer stories.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Free/Personal/Pro/Enterprise pricing supports bottom-up adoption and expansion.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-009
+          - finding_id: V.A-F2
+            finding: Enterprise controls such as SSO/SCIM/log drains/SOC 2 support procurement motion.
+            evidence_claim_ids:
+              - EC-029
+            risk_ids:
+              - R-009
+          - finding_id: V.A-F3
+            finding: Customer stories and developer metrics are prominent marketing proof points.
+            evidence_claim_ids:
+              - EC-006
+              - EC-011
+              - EC-012
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Usage-credit complexity and competitor free tiers may create conversion friction.
+        evidence_gaps:
+          - Pipeline by channel, CAC, payback, PQL/MQL conversion, partner-sourced revenue, brand-spend ROI and international channel performance.
+        follow_up_questions:
+          - Request funnel dashboard from visitor/developer to paid team to Enterprise renewal.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+          - EC-011
+          - EC-012
+          - EC-029
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major customer relationship trends are directionally supported by logos and case studies but not by renewal, expansion or pipeline data.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Public case studies indicate cross-sell relevance for enterprises and open-source communities.
+            evidence_claim_ids:
+              - EC-011
+              - EC-012
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Reference customers may not represent current pipeline quality or renewal health.
+        evidence_gaps:
+          - Account plans, renewal risk, expansion pipeline, customer health scores and reference-call notes.
+        follow_up_questions:
+          - Conduct reference checks for largest ARR customers and recent wins/losses.
+        table_ids:
+          - T-005
+          - T-010
+        figure_ids:
+          - F-003
+          - F-005
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+          - EC-032
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: New business appears to originate from developer self-serve adoption, Git/framework integrations, docs/community, partner agencies and Enterprise sales/contact forms.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public materials show sign-up, deploy-from-Git/CLI, templates/integrations, docs and contact-sales motions.
+            evidence_claim_ids:
+              - EC-006
+              - EC-008
+              - EC-013
+            risk_ids: []
+        hidden_risks:
+          - Bottom-up usage may not convert economically if free/credit limits and support costs are poorly calibrated.
+        evidence_gaps:
+          - Channel mix, cohort conversion, inbound/outbound split, sales capacity and partner economics.
+        follow_up_questions:
+          - Request new ARR by channel and self-serve-to-enterprise conversion cohorts.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+          - EC-013
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: No public data was found on sales compensation, quota, sales cycle, rep productivity, hiring plan or pipeline coverage.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Enterprise plan and contact-sales motion are visible, but sales-force economics are not.
+            evidence_claim_ids:
+              - EC-029
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Enterprise growth could require higher CAC and longer cycles than developer adoption suggests.
+        evidence_gaps:
+          - Sales org roster, quota capacity, attainment, ramp, compensation plans, pipeline by stage and hiring plan.
+        follow_up_questions:
+          - Request current sales productivity model and last-eight-quarter cohort performance.
+        table_ids:
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-029
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Ability to fund marketing plan cannot be determined publicly; strong developer mindshare lowers some acquisition costs but AI/fullstack repositioning may require renewed market education.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: V.E-F1
+            finding: 10M+ developers and customer proof create efficient brand assets, but budget sufficiency is private.
+            evidence_claim_ids:
+              - EC-006
+              - EC-011
+            risk_ids:
+              - R-001
+              - R-003
+        hidden_risks:
+          - Marketing efficiency may deteriorate if competitors bid up developer attention or if category narrative shifts to AI-native app platforms.
+        evidence_gaps:
+          - Marketing budget, CAC/payback, campaign ROI, competitive share-of-voice and planned hiring/budget by channel.
+        follow_up_questions:
+          - Request marketing plan, budget and attribution model.
+        table_ids:
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: R&D output is visibly active through AI Agent Runners, AI Gateway, Netlify Database, acquisitions and public repositories. However, product costs, critical dependencies, model/provider risk and roadmap feasibility need private technical diligence.
+    founder_claim_ids:
+      - FC-003
+      - FC-008
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-019
+      - EC-022
+      - EC-023
+      - EC-024
+    risk_ids:
+      - R-004
+      - R-008
+      - R-010
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public evidence shows ongoing platform development across core build/deploy infrastructure, serverless functions, database, AI and acquisitions. Key personnel are partially visible through founder, CTO/engineering media references and leadership releases, but current R&D org chart is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Acquisitions expanded R&D surface into scheduling, content/data orchestration and visual editing.
+            evidence_claim_ids:
+              - EC-017
+              - EC-018
+              - EC-019
+            risk_ids:
+              - R-008
+          - finding_id: VI.A-F2
+            finding: Public repositories show ongoing developer-tooling surface area and issue load.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Open-source obligations, inherited IP and repository issue backlog may create execution drag.
+        evidence_gaps:
+          - R&D headcount by product, roadmap, bug/security backlog, open-source compliance, architecture diagrams and incident root-cause reports.
+        follow_up_questions:
+          - Perform technical architecture review and open-source/IP audit.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-017
+          - EC-018
+          - EC-019
+          - EC-022
+          - EC-023
+          - EC-024
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: New public product pipeline emphasizes agent-native development, AI Gateway and integrated Postgres database branches. Timing and adoption are visible at launch level, but cost of development and critical-dependency risk require diligence.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Agent Runners, AI Gateway and Database are current AI/fullstack product bets.
+            evidence_claim_ids:
+              - EC-014
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+          - finding_id: VI.B-F2
+            finding: Database branch workflow and AI Gateway provider access create differentiation but also dependency and COGS risk.
+            evidence_claim_ids:
+              - EC-015
+              - EC-016
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - AI inference/model-provider costs, database operating costs and production-agent liability could surprise.
+        evidence_gaps:
+          - Product adoption by cohort, model/provider contracts, database SLA/COGS, security reviews, roadmap milestones and AI safety controls.
+        follow_up_questions:
+          - Request product P&L and risk register for Agent Runners, AI Gateway and Database.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+          - EC-016
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public materials support a founder-led, remote-first, global organization with executive hiring and benefits/equity claims. Current org chart, headcount, turnover, compensation and incentive plans remain private.
+    founder_claim_ids:
+      - FC-002
+      - FC-009
+    evidence_claim_ids:
+      - EC-007
+      - EC-020
+      - EC-021
+      - EC-030
+      - EC-035
+    risk_ids:
+      - R-007
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Only a partial public org can be inferred from founder roles and a 2022 leadership release; no current signed org chart is public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public leadership evidence includes CEO/co-founder Matt/Mathias Biilmann, co-founder Christian Bach and several 2022 executive hires.
+            evidence_claim_ids:
+              - EC-007
+              - EC-021
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Executive roles may have changed since public releases; missing current reporting lines obscure execution capacity.
+        evidence_gaps:
+          - Current org chart, leadership roster, board/observer list, reporting lines and vacancies.
+        follow_up_questions:
+          - Request current organization chart and leadership biographies.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-007
+          - EC-021
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Careers page states remote-first distributed operations across 14+ countries; 2022 release stated 200 employees, but current function/location history and projections are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Netlify publicly claims remote-first and fully distributed operations across 14+ countries.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+          - finding_id: VII.B-F2
+            finding: 2022 release said Netlify had grown to 200 employees.
+            evidence_claim_ids:
+              - EC-021
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Remote global employment can introduce payroll, tax, compliance and culture/coordination risks.
+        evidence_gaps:
+          - Headcount by function/location over three years, hiring plan, contractors/EORs, compliance review and attrition.
+        follow_up_questions:
+          - Request headcount roll-forward and projected hiring plan by product/GTM function.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-020
+          - EC-021
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Founder biographies are partially supported by Netlify About and SEC related-person records; current executive biographies beyond 2022 release require refresh.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: About page names Mathias Biilmann as co-founder/CEO and Christian Bach as co-founder/Chief Strategy and Creative Officer.
+            evidence_claim_ids:
+              - EC-007
+            risk_ids: []
+          - finding_id: VII.C-F2
+            finding: Founding date/alias history has a minor public inconsistency that should be clarified.
+            evidence_claim_ids:
+              - EC-030
+              - EC-035
+            risk_ids: []
+        hidden_risks:
+          - Founder narrative discrepancies can create avoidable diligence friction if not explained.
+        evidence_gaps:
+          - Current management bios, employment history, tenure, roles, ages where appropriate/public, board memberships and references.
+        follow_up_questions:
+          - Clarify 2014 vs 2015 founding date and MakerLoop alias history.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-007
+          - EC-030
+          - EC-035
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Public careers page discloses benefits themes including equity, reimbursements, unlimited vacation, healthcare and parental leave; executive compensation and employment agreements are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Careers page states equity for every employee and broad benefits.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Compensation competitiveness and remote-location compliance cannot be assessed publicly.
+        evidence_gaps:
+          - Executive employment agreements, severance/change-of-control terms, benefits plans, comp bands and payroll compliance.
+        follow_up_questions:
+          - Request compensation/benefits plan documents and executive agreements.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Employee equity is publicly claimed, but option plan size, strike prices, refresh policy, vesting, option pool and exercise windows are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Careers page says Netlify offers equity to every employee.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Underwater options after a 2021 valuation peak could impair retention if not refreshed.
+        evidence_gaps:
+          - Equity plan, grant ledger, option pool, refresh policy, exercise windows, 409A history and tender/secondary programs.
+        follow_up_questions:
+          - Request full incentive stock plan and grant ledger.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+          - EC-034
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No public employee-relations disputes were identified in this review, but this area is not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public careers materials emphasize inclusivity and psychological safety, but no HR dispute schedule is public.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Remote/global workforce can mask localized compliance, classification or culture issues.
+        evidence_gaps:
+          - HR complaints, investigations, employment litigation, severance agreements and DEI/engagement survey trends.
+        follow_up_questions:
+          - Request counsel/HR schedule of employment claims and investigations.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover data for the last two years is not public; benefits and equity claims provide only partial retention evidence.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Public benefits/equity claims cannot substitute for attrition, regretted-loss or engagement data.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Post-2021 valuation reset, remote hiring and AI strategy shifts could affect retention.
+        evidence_gaps:
+          - Monthly attrition by function/location, regretted attrition, offer acceptance, engagement surveys and retention program results.
+        follow_up_questions:
+          - Request two-year attrition and retention dashboard.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal diligence found no CourtListener opinion hits and did find security/compliance and website terms evidence. However, litigation schedules, material contracts, IP registrations, insurance and regulatory correspondence remain private.
+    founder_claim_ids:
+      - FC-006
+      - FC-008
+      - FC-010
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-025
+      - EC-026
+    risk_ids:
+      - R-006
+      - R-010
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: CourtListener opinion searches for Netlify/Netlify Inc returned zero results, but this is not a comprehensive litigation search.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No CourtListener opinion search results surfaced for Netlify queries.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Unfiled claims, arbitration, state dockets, IP office disputes or sealed matters may not appear in CourtListener.
+        evidence_gaps:
+          - Counsel litigation schedule, threatened claims, arbitration, IP disputes, employment disputes and insurance notices.
+        follow_up_questions:
+          - Request legal disclosure schedule and outside counsel representation letter.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-025
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No public CourtListener opinion evidence identified Netlify as plaintiff in this limited search.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Public opinion search did not surface Netlify-initiated litigation.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Collections, IP enforcement or vendor/customer disputes could exist outside searched records.
+        evidence_gaps:
+          - Litigation/claims schedule for affirmative claims, collections, IP enforcement and settlement agreements.
+        follow_up_questions:
+          - Request company-initiated dispute schedule from counsel.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-025
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: As a remote-first software platform, public environmental/safety exposure appears primarily office/remote-work and cloud/data-center related; detailed policies are private.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Remote-first distributed model is public; cloud/data-center partners are referenced in security materials.
+            evidence_claim_ids:
+              - EC-020
+              - EC-033
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Data-center supplier sustainability, remote-work ergonomics and international employment safety obligations are not public.
+        evidence_gaps:
+          - Workplace safety policies, remote-work compliance, environmental/vendor ESG questionnaires and office lease exposure.
+        follow_up_questions:
+          - Request EHS/remote-work policy and supplier ESG risk assessment.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-020
+          - EC-033
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Public terms assert Netlify IP ownership for website/software; acquisitions and open-source repositories create IP/license diligence needs. No comprehensive patent/trademark review was completed.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Terms of Use reserve Netlify website/software IP rights.
+            evidence_claim_ids:
+              - EC-026
+            risk_ids:
+              - R-010
+          - finding_id: VIII.D-F2
+            finding: Acquisitions of Gatsby/Quirrel/Stackbit and public repos create assignment/open-source review requirements.
+            evidence_claim_ids:
+              - EC-017
+              - EC-018
+              - EC-019
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Unassigned acquired IP, open-source license non-compliance or trademark conflicts could affect product rights.
+        evidence_gaps:
+          - Patent/trademark portfolio, copyright assignments, invention assignments, OSS SBOM, acquisition IP schedules and license compliance report.
+        follow_up_questions:
+          - Run IP chain-of-title and open-source compliance review.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-017
+          - EC-018
+          - EC-019
+          - EC-026
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: No public insurance policies, coverage amounts, exclusions or claims history were found.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Insurance coverage is a data-room-only item based on public-source review.
+            evidence_claim_ids:
+              - EC-025
+              - EC-026
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - Cyber, E&O, D&O and technology errors coverage may be material for enterprise deployment platform risk.
+        evidence_gaps:
+          - Cyber/E&O/D&O/general liability policies, loss runs, exclusions and pending notices.
+        follow_up_questions:
+          - Request insurance binder, policies and claims history.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-025
+          - EC-026
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Public terms reference self-serve and enterprise subscription agreements, but material customer, supplier, partner, acquisition and financing contracts are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Website Terms point to self-serve and Enterprise subscription agreements for services.
+            evidence_claim_ids:
+              - EC-026
+            risk_ids:
+              - R-010
+          - finding_id: VIII.F-F2
+            finding: Acquisition releases confirm deals but not terms.
+            evidence_claim_ids:
+              - EC-017
+              - EC-018
+              - EC-019
+            risk_ids:
+              - R-008
+              - R-010
+        hidden_risks:
+          - Enterprise SLAs, data-processing terms, model-provider agreements, cloud commitments and acquisition obligations could create hidden liabilities.
+        evidence_gaps:
+          - Top customer MSAs/order forms, supplier contracts, partner agreements, acquisition agreements, financing documents, DPAs and SLAs.
+        follow_up_questions:
+          - Request material-contract schedule and sample Enterprise MSA/order forms.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-017
+          - EC-018
+          - EC-019
+          - EC-026
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Public evidence shows security/compliance commitments and no obvious regulatory-problem disclosure; underlying audit exceptions and regulatory correspondence are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: ISO 27001/SOC 2/PCI claims support enterprise compliance posture.
+            evidence_claim_ids:
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-006
+          - finding_id: VIII.G-F2
+            finding: Public security page describes GDPR/CCPA commitment but not regulatory correspondence.
+            evidence_claim_ids:
+              - EC-009
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - A security incident or audit exception could affect enterprise trust and renewal risk.
+        evidence_gaps:
+          - Regulatory correspondence, privacy/security incident log, audit exceptions, DPIAs, DPAs and compliance roadmaps.
+        follow_up_questions:
+          - Request compliance audit reports, privacy incident register and regulatory correspondence schedule.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+tables:
+  - table_id: T-001
+    title: Public financing and valuation evidence
+    chapter_id: I
+    section_id: I.C
+    purpose: Summarize public financing markers, regulatory evidence and valuation support.
+    columns:
+      - name: Date
+        description: Financing or public-record date
+      - name: Event
+        description: Round or filing
+      - name: Amount
+        description: Public amount
+      - name: Public valuation
+        description: Valuation if disclosed
+      - name: Evidence quality
+        description: How much diligence weight to place on it
+    rows:
+      - row_id: T-001-R1
+        values:
+          Date: 2018-10-09
+          Event: Company-announced $30M round led by Kleiner Perkins
+          Amount: $30M
+          Public valuation: Not disclosed
+          Evidence quality: Company press release; historical financing marker
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-001-R2
+        values:
+          Date: 2020-03-04
+          Event: Series C led by EQT Ventures
+          Amount: $53M; $97M raised to date
+          Public valuation: Not disclosed
+          Evidence quality: Company press release; includes growth but not absolute revenue
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-001-R3
+        values:
+          Date: 2021-11-17
+          Event: Series D led by Bessemer Venture Partners
+          Amount: $105M; $212M raised to date
+          Public valuation: $2B
+          Evidence quality: Company press release and CB Insights corroborate unicorn mark
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-001-R4
+        values:
+          Date: 2021-06-14
+          Event: SEC Form D filing 0001672598-21-000003
+          Amount: $62,774,916 total offering/sold
+          Public valuation: Not disclosed
+          Evidence quality: Regulatory filing confirms exempt offering but not full cap table
+        evidence_claim_ids:
+          - EC-027
+          - EC-034
+        source_ids:
+          - SRC-027
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+      - EC-005
+      - EC-034
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+      - SRC-005
+      - SRC-027
+    notes: Form D dates and announced rounds do not always map one-to-one; reconcile to company financing ledger.
+  - table_id: T-002
+    title: Public financial proxies and missing financial statements
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate visible scale indicators from unavailable core finance schedules.
+    columns:
+      - name: Category
+        description: Financial diligence area
+      - name: Public evidence
+        description: What is publicly known
+      - name: Diligence interpretation
+        description: How to use it
+      - name: Missing data
+        description: Private information to request
+    rows:
+      - row_id: T-002-R1
+        values:
+          Category: Revenue growth
+          Public evidence: 2020 release said customer base and revenue tripled YoY
+          Diligence interpretation: Directional historic growth, no absolute ARR
+          Missing data: ARR, bookings, NRR/GRR and cohort revenue
+        evidence_claim_ids:
+          - EC-004
+          - EC-031
+        source_ids:
+          - SRC-004
+      - row_id: T-002-R2
+        values:
+          Category: Adoption scale
+          Public evidence: 10M+ developers and 60M+ apps deployed
+          Diligence interpretation: Large top-of-funnel and platform scale; definitions unknown
+          Missing data: Active developers, paid teams, production apps, conversion
+        evidence_claim_ids:
+          - EC-006
+          - EC-031
+        source_ids:
+          - SRC-006
+      - row_id: T-002-R3
+        values:
+          Category: Reliability
+          Public evidence: 99.99% uptime claim
+          Diligence interpretation: Supports enterprise posture; needs SLA/incident reconciliation
+          Missing data: Uptime by product, SLA credits, incidents
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: T-002-R4
+        values:
+          Category: Accounting/tax
+          Public evidence: No public financial statements, revenue policy or NOL schedules
+          Diligence interpretation: Cannot underwrite quality of earnings publicly
+          Missing data: Audits, management accounts, tax returns and NOLs
+        evidence_claim_ids:
+          - EC-031
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-031
+    source_ids:
+      - SRC-004
+      - SRC-006
+      - SRC-003
+    notes: null
+  - table_id: T-003
+    title: Netlify product portfolio mapped to diligence questions
+    chapter_id: II
+    section_id: II.A
+    purpose: Map product modules to applications, economics questions and public evidence.
+    columns:
+      - name: Product area
+        description: Published module or capability
+      - name: Applications
+        description: Typical use cases
+      - name: Public evidence
+        description: Primary public support
+      - name: Diligence questions
+        description: Private follow-up
+    rows:
+      - row_id: T-003-R1
+        values:
+          Product area: Core deploy/build platform
+          Applications: Marketing sites, web apps, docs, ecommerce, internal apps
+          Public evidence: Deploy from Git/CLI, previews, rollback, edge network
+          Diligence questions: ARR by plan, build minutes, support cost, SLA history
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-006
+      - row_id: T-003-R2
+        values:
+          Product area: Functions and edge
+          Applications: APIs, serverless backend, edge personalization
+          Public evidence: Functions, Edge network and scheduled-functions acquisition evidence
+          Diligence questions: Runtime costs, latency, incidents, roadmap
+        evidence_claim_ids:
+          - EC-013
+          - EC-018
+        source_ids:
+          - SRC-006
+          - SRC-013
+      - row_id: T-003-R3
+        values:
+          Product area: AI Gateway and Agent Runners
+          Applications: AI app prototyping, code/content updates, model access
+          Public evidence: OpenAI/Anthropic/Google access and production-infra agent workflow
+          Diligence questions: Model contracts, token gross margin, AI safety, adoption
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+        source_ids:
+          - SRC-016
+          - SRC-017
+      - row_id: T-003-R4
+        values:
+          Product area: Netlify Database
+          Applications: Postgres-backed fullstack apps with preview branches
+          Public evidence: Deploy Previews paired with database branches
+          Diligence questions: Neon economics, database COGS, reliability, data security
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-015
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-006
+      - SRC-013
+      - SRC-015
+      - SRC-016
+      - SRC-017
+    notes: null
+  - table_id: T-004
+    title: Published pricing and usage-meter structure
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture public plan ladder and monetization mechanics.
+    columns:
+      - name: Plan or meter
+        description: Published item
+      - name: Public terms
+        description: Visible terms
+      - name: Diligence concern
+        description: Why it matters
+    rows:
+      - row_id: T-004-R1
+        values:
+          Plan or meter: Free
+          Public terms: 300 credit limit/month; hard monthly limits
+          Diligence concern: Acquisition cost and conversion from free developers
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-004-R2
+        values:
+          Plan or meter: Personal
+          Public terms: 1,000 credits/month; paid add-on credits at $5/500
+          Diligence concern: Individual monetization and seat constraints
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-004-R3
+        values:
+          Plan or meter: Pro
+          Public terms: 3,000 credits/team/month; 3 concurrent builds; members included
+          Diligence concern: Team conversion, overage margin and support load
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-004-R4
+        values:
+          Plan or meter: Enterprise
+          Public terms: Custom credits, Enterprise network tier, SSO/SCIM, log drains, 24/7 support
+          Diligence concern: Sales-led pricing, SLA penalties and discounting
+        evidence_claim_ids:
+          - EC-008
+          - EC-029
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-008
+      - EC-029
+    source_ids:
+      - SRC-008
+    notes: Pricing page may change; verify contracted pricing and grandfathered legacy plans.
+  - table_id: T-005
+    title: Named public customers and application proof
+    chapter_id: III
+    section_id: III.A
+    purpose: Identify publicly named customers/logos and apparent applications.
+    columns:
+      - name: Customer or logo
+        description: Publicly named customer/logo
+      - name: Application signal
+        description: Use case or context
+      - name: Verification level
+        description: Diligence confidence
+      - name: Follow-up
+        description: Private validation
+    rows:
+      - row_id: T-005-R1
+        values:
+          Customer or logo: Meta, Autodesk, Navan, Zscaler, ServiceTitan, Stack Overflow, Figma
+          Application signal: Logo garden for enterprise/developer brands
+          Verification level: Logo published by Netlify; contract status unknown
+          Follow-up: Confirm active contracts, logo rights and ARR
+        evidence_claim_ids:
+          - EC-011
+          - EC-032
+        source_ids:
+          - SRC-011
+      - row_id: T-005-R2
+        values:
+          Customer or logo: Riot Games
+          Application signal: Bandwidth optimization case study
+          Verification level: Vendor-published case study
+          Follow-up: Validate metric baseline and current usage
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-011
+      - row_id: T-005-R3
+        values:
+          Customer or logo: Kubernetes/CNCF
+          Application signal: Open-source documentation/community collaboration for 3000+ contributors
+          Verification level: Vendor-published case study
+          Follow-up: Confirm ongoing relationship and support obligations
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-011
+      - row_id: T-005-R4
+        values:
+          Customer or logo: Twilio, Unilever, Verizon, Peloton and others in releases
+          Application signal: Enterprise proof cited in company press materials
+          Verification level: Company announcement; value undisclosed
+          Follow-up: Map to active revenue and renewal dates
+        evidence_claim_ids:
+          - EC-002
+          - EC-010
+          - EC-017
+        source_ids:
+          - SRC-002
+          - SRC-010
+          - SRC-012
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-032
+    source_ids:
+      - SRC-011
+      - SRC-002
+      - SRC-010
+      - SRC-012
+    notes: null
+  - table_id: T-006
+    title: Customer outcomes, concentration gaps and supplier dependencies
+    chapter_id: III
+    section_id: III.C
+    purpose: Translate public customer outcomes into private diligence asks.
+    columns:
+      - name: Area
+        description: Customer/supplier diligence area
+      - name: Public evidence
+        description: Visible signal
+      - name: Risk
+        description: Hidden-risk interpretation
+      - name: Request
+        description: Diligence request
+    rows:
+      - row_id: T-006-R1
+        values:
+          Area: Case-study outcomes
+          Public evidence: Reduced bandwidth 300%, costs 65%, web projects 30% faster and selected performance metrics
+          Risk: Marketing-selected outcomes may not generalize
+          Request: Underlying baselines and representative cohort performance
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-011
+      - row_id: T-006-R2
+        values:
+          Area: Revenue concentration
+          Public evidence: No revenue-by-customer public schedule
+          Risk: One or a few Enterprise customers may drive disproportionate ARR
+          Request: Top-25 ARR and customers >5% revenue
+        evidence_claim_ids:
+          - EC-032
+        source_ids:
+          - SRC-011
+      - row_id: T-006-R3
+        values:
+          Area: Supplier concentration
+          Public evidence: References to data-center partners, major cloud providers, model providers and Neon relationship
+          Risk: Cloud/model/database COGS and vendor lock-in
+          Request: Top suppliers by spend and contract terms
+        evidence_claim_ids:
+          - EC-015
+          - EC-016
+          - EC-033
+        source_ids:
+          - SRC-009
+          - SRC-015
+          - SRC-017
+      - row_id: T-006-R4
+        values:
+          Area: Severed relationships
+          Public evidence: No public severed-relationship list
+          Risk: Lost strategic accounts may be invisible
+          Request: Lost customer/partner/supplier schedule last 24 months
+        evidence_claim_ids:
+          - EC-032
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-012
+      - EC-015
+      - EC-016
+      - EC-032
+      - EC-033
+    source_ids:
+      - SRC-009
+      - SRC-011
+      - SRC-015
+      - SRC-017
+    notes: null
+  - table_id: T-007
+    title: Competitive landscape by segment
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare Netlify with visible direct competitors.
+    columns:
+      - name: Competitor
+        description: Company/platform
+      - name: Public positioning
+        description: Competitive basis
+      - name: Netlify implication
+        description: Risk or opportunity
+    rows:
+      - row_id: T-007-R1
+        values:
+          Competitor: Vercel
+          Public positioning: Hobby, Pro at $20/month plus usage, Enterprise plan; strong Next.js ecosystem
+          Netlify implication: Direct pressure for frontend developers and enterprise web apps
+        evidence_claim_ids:
+          - EC-027
+        source_ids:
+          - SRC-024
+      - row_id: T-007-R2
+        values:
+          Competitor: Cloudflare Pages/Workers
+          Public positioning: Git-integrated Jamstack deployments, Cloudflare edge, Workers, free unlimited seats, low-cost Workers
+          Netlify implication: Network-scale and free-collaboration pressure; possible COGS benchmark
+        evidence_claim_ids:
+          - EC-028
+        source_ids:
+          - SRC-025
+      - row_id: T-007-R3
+        values:
+          Competitor: Hyperscalers and GitHub
+          Public positioning: Cloud-native build/deploy/serverless and repository-native workflows
+          Netlify implication: Bundling risk and need for differentiated workflow experience
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-006
+      - row_id: T-007-R4
+        values:
+          Competitor: Legacy CMS/DXP and composable vendors
+          Public positioning: Enterprise web/content orchestration and marketer workflows
+          Netlify implication: Stackbit/Gatsby acquisitions address this but integration proof required
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+        source_ids:
+          - SRC-012
+          - SRC-014
+    evidence_claim_ids:
+      - EC-027
+      - EC-028
+      - EC-013
+      - EC-017
+      - EC-019
+    source_ids:
+      - SRC-024
+      - SRC-025
+      - SRC-006
+      - SRC-012
+      - SRC-014
+    notes: null
+  - table_id: T-008
+    title: Basis of competition and Netlify response
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame price, service, technology and distribution dimensions.
+    columns:
+      - name: Dimension
+        description: Competitive dimension
+      - name: Netlify public response
+        description: Visible mitigation
+      - name: Diligence test
+        description: Evidence to request
+    rows:
+      - row_id: T-008-R1
+        values:
+          Dimension: Price/usage
+          Netlify public response: Credit-based self-serve tiers and Enterprise custom pricing
+          Diligence test: Gross margin by meter and discounting
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-008-R2
+        values:
+          Dimension: Developer experience
+          Netlify public response: Deploy previews, one-click rollback, Git/CLI, framework support
+          Diligence test: NPS, activation funnel and time-to-first-deploy
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-006
+      - row_id: T-008-R3
+        values:
+          Dimension: AI-native workflow
+          Netlify public response: Agent Runners and AI Gateway
+          Diligence test: Usage, reliability, model costs and safety controls
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+        source_ids:
+          - SRC-016
+          - SRC-017
+      - row_id: T-008-R4
+        values:
+          Dimension: Network and enterprise controls
+          Netlify public response: 99.99% uptime, Enterprise network tier, SSO/SCIM, compliance
+          Diligence test: SLA credits, incidents, SOC/ISO scope and benchmark latency
+        evidence_claim_ids:
+          - EC-006
+          - EC-010
+          - EC-029
+        source_ids:
+          - SRC-006
+          - SRC-008
+          - SRC-010
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-010
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-029
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-010
+      - SRC-016
+      - SRC-017
+    notes: null
+  - table_id: T-009
+    title: GTM channels and positioning
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public GTM avenues.
+    columns:
+      - name: Channel
+        description: Route to market
+      - name: Public signal
+        description: Evidence
+      - name: Monetization question
+        description: Private diligence issue
+    rows:
+      - row_id: T-009-R1
+        values:
+          Channel: Self-serve developers
+          Public signal: Free signup, deploy from Git/CLI, pricing tiers and developer metrics
+          Monetization question: Activation, conversion, support cost and churn
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+        source_ids:
+          - SRC-006
+          - SRC-008
+      - row_id: T-009-R2
+        values:
+          Channel: Enterprise sales
+          Public signal: Enterprise plan, SSO/SCIM, log drains, 24/7 support, SOC 2
+          Monetization question: Pipeline, ACV, discounting, renewal and SLA credits
+        evidence_claim_ids:
+          - EC-029
+        source_ids:
+          - SRC-008
+      - row_id: T-009-R3
+        values:
+          Channel: Ecosystem/integrations
+          Public signal: Framework/docs/templates, AI Gateway SDK use, Database package
+          Monetization question: Partner-sourced ARR and integration maintenance cost
+        evidence_claim_ids:
+          - EC-013
+          - EC-015
+          - EC-016
+        source_ids:
+          - SRC-006
+          - SRC-015
+          - SRC-017
+      - row_id: T-009-R4
+        values:
+          Channel: Customer proof/content marketing
+          Public signal: Logo garden and case studies
+          Monetization question: Reference quality and current active status
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-013
+      - EC-015
+      - EC-016
+      - EC-029
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-011
+      - SRC-015
+      - SRC-017
+    notes: null
+  - table_id: T-010
+    title: Marketing, pipeline and sales-productivity public gaps
+    chapter_id: V
+    section_id: V.D
+    purpose: Identify private GTM metrics needed to assess plan execution.
+    columns:
+      - name: Metric
+        description: GTM metric
+      - name: Public visibility
+        description: What public sources show
+      - name: Diligence need
+        description: What to request
+    rows:
+      - row_id: T-010-R1
+        values:
+          Metric: Funnel conversion
+          Public visibility: 10M+ developers and pricing ladder visible; conversion not public
+          Diligence need: Visitor-to-signup, deploy, paid, Pro and Enterprise conversion by cohort
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+        source_ids:
+          - SRC-006
+          - SRC-008
+      - row_id: T-010-R2
+        values:
+          Metric: Sales productivity
+          Public visibility: Enterprise contact-sales motion visible; quotas and attainment not public
+          Diligence need: Rep roster, quota capacity, attainment, ramp and CAC payback
+        evidence_claim_ids:
+          - EC-029
+        source_ids:
+          - SRC-008
+      - row_id: T-010-R3
+        values:
+          Metric: Pipeline quality
+          Public visibility: Customer proof and use cases visible; pipeline not public
+          Diligence need: Pipeline by stage, source, ACV, win probability and competitive reason
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-011
+      - row_id: T-010-R4
+        values:
+          Metric: Marketing budget sufficiency
+          Public visibility: No marketing budget or campaign ROI public
+          Diligence need: Budget, CAC, attribution, brand spend and forecast coverage
+        evidence_claim_ids:
+          - EC-031
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-029
+      - EC-031
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-011
+      - SRC-003
+    notes: null
+  - table_id: T-011
+    title: R&D roadmap and acquisition-derived capabilities
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Capture product-development evidence and risks.
+    columns:
+      - name: Date
+        description: Public launch or acquisition date
+      - name: Capability
+        description: R&D output
+      - name: Strategic rationale
+        description: Why it matters
+      - name: Diligence risk
+        description: Private validation
+    rows:
+      - row_id: T-011-R1
+        values:
+          Date: 2022-02-01
+          Capability: Quirrel acquisition / Scheduled Functions
+          Strategic rationale: Extends serverless scheduling and function automation
+          Diligence risk: Integration and open-source maintenance
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-013
+      - row_id: T-011-R2
+        values:
+          Date: 2023-02-01
+          Capability: Gatsby acquisition
+          Strategic rationale: Content/data orchestration and composable architecture ecosystem
+          Diligence risk: Acquisition integration and framework market relevance
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-012
+      - row_id: T-011-R3
+        values:
+          Date: 2023-06-29
+          Capability: Stackbit acquisition
+          Strategic rationale: Visual editing for marketers/non-developers
+          Diligence risk: Product integration and retained customer ARR
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-014
+      - row_id: T-011-R4
+        values:
+          Date: Current
+          Capability: Agent Runners, AI Gateway, Netlify Database
+          Strategic rationale: Agent-native fullstack app development and AI model access
+          Diligence risk: AI/model/provider COGS, safety and adoption
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+          - EC-016
+        source_ids:
+          - SRC-015
+          - SRC-016
+          - SRC-017
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-019
+    source_ids:
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+    notes: null
+  - table_id: T-012
+    title: Selected public repository metrics
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Use GitHub metadata as one R&D ecosystem indicator.
+    columns:
+      - name: Repository
+        description: Public repo
+      - name: Stars
+        description: GitHub stars when accessed
+      - name: Forks
+        description: Forks when accessed
+      - name: Open issues
+        description: Open issues when accessed
+      - name: Interpretation
+        description: Diligence interpretation
+    rows:
+      - row_id: T-012-R1
+        values:
+          Repository: netlify/cli
+          Stars: 1872
+          Forks: 456
+          Open issues: 123
+          Interpretation: High developer-facing surface; issue backlog needs severity review
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-021
+      - row_id: T-012-R2
+        values:
+          Repository: netlify/build
+          Stars: 252
+          Forks: 94
+          Open issues: 86
+          Interpretation: Core build tooling surface; license reported MIT
+        evidence_claim_ids:
+          - EC-023
+        source_ids:
+          - SRC-022
+      - row_id: T-012-R3
+        values:
+          Repository: netlify/functions.netlify.com
+          Stars: 514
+          Forks: 117
+          Open issues: 78
+          Interpretation: Functions documentation/code surface; API license metadata not populated
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-023
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-024
+    source_ids:
+      - SRC-021
+      - SRC-022
+      - SRC-023
+    notes: GitHub counts are point-in-time and not product-quality guarantees.
+  - table_id: T-013
+    title: Public leadership and founder evidence
+    chapter_id: VII
+    section_id: VII.A
+    purpose: List public leadership facts and gaps.
+    columns:
+      - name: Person or role
+        description: Publicly identified leader/role
+      - name: Public evidence
+        description: Source-backed fact
+      - name: Diligence caveat
+        description: What remains unverified
+    rows:
+      - row_id: T-013-R1
+        values:
+          Person or role: Mathias/Matt Biilmann
+          Public evidence: Co-founder and CEO; founder quote in funding releases
+          Diligence caveat: Current employment agreement, equity and board role need company records
+        evidence_claim_ids:
+          - EC-007
+          - EC-002
+        source_ids:
+          - SRC-007
+          - SRC-002
+      - row_id: T-013-R2
+        values:
+          Person or role: Christian Bach
+          Public evidence: Co-founder, Chief Strategy and Creative Officer in About page
+          Diligence caveat: Current authority and compensation unverified
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-013-R3
+        values:
+          Person or role: 2022 executive hires
+          Public evidence: Mark Dorsi CISO, Rachel Tobin VP Legal, Rachel Yaeger VP Talent Acquisition, Amer Ali VP Finance
+          Diligence caveat: Current roles may have changed since 2022
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-019
+      - row_id: T-013-R4
+        values:
+          Person or role: MakerLoop alias
+          Public evidence: SEC records identify MakerLoop, Inc. as prior issuer name
+          Diligence caveat: Corporate reorganization history should be documented
+        evidence_claim_ids:
+          - EC-035
+        source_ids:
+          - SRC-027
+          - SRC-028
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+      - EC-021
+      - EC-035
+    source_ids:
+      - SRC-002
+      - SRC-007
+      - SRC-019
+      - SRC-027
+      - SRC-028
+    notes: null
+  - table_id: T-014
+    title: Public personnel, benefits and headcount signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Summarize public HR evidence and private asks.
+    columns:
+      - name: Area
+        description: Personnel area
+      - name: Public evidence
+        description: Visible fact
+      - name: Diligence ask
+        description: Private follow-up
+    rows:
+      - row_id: T-014-R1
+        values:
+          Area: Headcount scale
+          Public evidence: 2022 release stated 200 employees
+          Diligence ask: Current headcount by function/location and contractor/EOR status
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-019
+      - row_id: T-014-R2
+        values:
+          Area: Geography
+          Public evidence: Careers page says remote-first across 14+ countries
+          Diligence ask: Payroll/tax/employment compliance by country
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-018
+      - row_id: T-014-R3
+        values:
+          Area: Benefits
+          Public evidence: Home-office, internet/mobile/coworking support, unlimited vacation, health benefits and parental leave
+          Diligence ask: Benefits plan documents, costs and compliance
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-018
+      - row_id: T-014-R4
+        values:
+          Area: Equity
+          Public evidence: Careers page says equity to every employee
+          Diligence ask: Option plan, strike prices, pool, 409A history and retention impact
+        evidence_claim_ids:
+          - EC-020
+          - EC-034
+        source_ids:
+          - SRC-018
+          - SRC-002
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+      - EC-034
+    source_ids:
+      - SRC-018
+      - SRC-019
+      - SRC-002
+    notes: null
+  - table_id: T-015
+    title: Public legal, litigation and compliance checks
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Collect public legal/compliance indicators.
+    columns:
+      - name: Area
+        description: Legal/compliance area
+      - name: Public evidence
+        description: Source-backed fact
+      - name: Diligence implication
+        description: Interpretation
+    rows:
+      - row_id: T-015-R1
+        values:
+          Area: Litigation opinions
+          Public evidence: CourtListener searches returned 0 results for Netlify/Netlify Inc
+          Diligence implication: No obvious opinion-level litigation, not comprehensive
+        evidence_claim_ids:
+          - EC-025
+        source_ids:
+          - SRC-020
+      - row_id: T-015-R2
+        values:
+          Area: Security controls
+          Public evidence: TLS 1.2/AES-256, DDoS, WAF, rate limiting, shared responsibility
+          Diligence implication: Review audit reports and incident logs
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-009
+      - row_id: T-015-R3
+        values:
+          Area: Compliance
+          Public evidence: ISO 27001:2017, SOC 2 Type 2 and PCI DSS stated
+          Diligence implication: Verify scope, exceptions and current status
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-010
+      - row_id: T-015-R4
+        values:
+          Area: Privacy/regulatory
+          Public evidence: Security page references GDPR/CCPA commitment
+          Diligence implication: Request regulatory correspondence and privacy incidents
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-025
+    source_ids:
+      - SRC-009
+      - SRC-010
+      - SRC-020
+    notes: CourtListener is not a substitute for full docket/PACER/state/international searches.
+  - table_id: T-016
+    title: Material contracts, IP and insurance diligence gaps
+    chapter_id: VIII
+    section_id: VIII.F
+    purpose: Identify legal documents not available publicly.
+    columns:
+      - name: Area
+        description: Legal diligence area
+      - name: Public evidence
+        description: Visible fact
+      - name: Missing information
+        description: Data-room request
+    rows:
+      - row_id: T-016-R1
+        values:
+          Area: Website/services terms
+          Public evidence: Terms cite self-serve and enterprise subscription agreements and reserve Netlify IP rights
+          Missing information: Executed MSAs, DPAs, order forms, SLA credits and customer side letters
+        evidence_claim_ids:
+          - EC-026
+        source_ids:
+          - SRC-026
+      - row_id: T-016-R2
+        values:
+          Area: Acquisition contracts
+          Public evidence: Gatsby, Quirrel and Stackbit acquisitions announced; terms not disclosed
+          Missing information: Purchase agreements, IP assignment, earnouts, retention and indemnities
+        evidence_claim_ids:
+          - EC-017
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-012
+          - SRC-013
+          - SRC-014
+      - row_id: T-016-R3
+        values:
+          Area: IP portfolio/open source
+          Public evidence: Public repos and acquisition/open-source surfaces; no complete patent/trademark review
+          Missing information: Patent/trademark schedules, OSS SBOM and license compliance report
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-026
+        source_ids:
+          - SRC-021
+          - SRC-022
+          - SRC-023
+          - SRC-026
+      - row_id: T-016-R4
+        values:
+          Area: Insurance
+          Public evidence: No public policy or claims data located
+          Missing information: Cyber, E&O, D&O, general liability policies and loss runs
+        evidence_claim_ids:
+          - EC-025
+        source_ids:
+          - SRC-020
+    evidence_claim_ids:
+      - EC-017
+      - EC-018
+      - EC-019
+      - EC-022
+      - EC-023
+      - EC-024
+      - EC-025
+      - EC-026
+    source_ids:
+      - SRC-012
+      - SRC-013
+      - SRC-014
+      - SRC-020
+      - SRC-021
+      - SRC-022
+      - SRC-023
+      - SRC-026
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding and public scale trajectory
+    chapter_id: I
+    section_id: I.C
+    figure_type: chart
+    description: Bar chart of disclosed financing amounts with key public adoption annotations.
+    purpose: Show that Netlify has substantial venture backing while highlighting gaps between financing and operating-financial disclosure.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public financing/scale event
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Amount or metric
+        unit: USD millions / metric count
+        scale: linear
+      series:
+        - series_id: funding
+          name: Disclosed financing amount
+          unit: USD millions
+          data_points:
+            - x: 2018 round
+              y: 30
+              label: $30M
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-005
+            - x: 2020 Series C
+              y: 53
+              label: $53M
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: 2021 Series D
+              y: 105
+              label: $105M
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+        - series_id: usage
+          name: Public adoption metrics
+          unit: count
+          data_points:
+            - x: 2020 developers
+              y: 800000
+              label: 800k developers
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: 2021 developers
+              y: 2000000
+              label: 2M+ developers
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: Current developers
+              y: 10000000
+              label: 10M+ developers
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+            - x: Current apps
+              y: 60000000
+              label: 60M+ apps
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+      annotations:
+        - label: Unicorn mark
+          x: 2021 Series D
+          y: 105
+          note: Series D valued Netlify at $2B and CB Insights lists same unicorn marker.
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render financing and usage as grouped bars with callout for stale valuation risk.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+      - SRC-005
+      - SRC-006
+    notes: Developer/app counts are company-stated and definition-dependent.
+  - figure_id: F-002
+    title: Netlify platform architecture map
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Conceptual architecture of public Netlify product primitives from inputs to production delivery.
+    purpose: Visualize product breadth and technical diligence boundaries.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user-dev
+          label: Developers / agents / marketers
+          node_type: user
+          description: Users initiate changes through Git, CLI, dashboard, or Agent Runners
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-006
+            - SRC-016
+        - node_id: workflow
+          label: Build and deploy workflow
+          node_type: service
+          description: Git/CLI deploys, builds, Deploy Previews and rollbacks
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-006
+        - node_id: compute
+          label: Functions / Edge / Observability
+          node_type: service
+          description: Serverless functions, edge network and observability tools
+          evidence_claim_ids:
+            - EC-013
+            - EC-018
+          source_ids:
+            - SRC-006
+            - SRC-013
+        - node_id: data
+          label: Netlify Database / Storage
+          node_type: database
+          description: Managed Postgres with isolated branches and storage primitives
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-015
+        - node_id: ai
+          label: AI Gateway / Agent Runners
+          node_type: model
+          description: Model access and AI-agent workflows on production infrastructure
+          evidence_claim_ids:
+            - EC-014
+            - EC-015
+          source_ids:
+            - SRC-016
+            - SRC-017
+        - node_id: edge
+          label: Global edge and enterprise controls
+          node_type: infrastructure
+          description: Edge delivery, security, SSO/SCIM, log drains, support and compliance controls
+          evidence_claim_ids:
+            - EC-009
+            - EC-010
+            - EC-029
+          source_ids:
+            - SRC-008
+            - SRC-009
+            - SRC-010
+      edges:
+        - edge_id: e1
+          from_node_id: user-dev
+          to_node_id: workflow
+          relationship: submits changes
+          data_or_dependency: Git, CLI, dashboard prompts
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-006
+            - SRC-016
+        - edge_id: e2
+          from_node_id: workflow
+          to_node_id: compute
+          relationship: deploys code
+          data_or_dependency: functions and edge execution
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-006
+        - edge_id: e3
+          from_node_id: workflow
+          to_node_id: data
+          relationship: creates previews and branches
+          data_or_dependency: database branch per preview/agent run
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-015
+        - edge_id: e4
+          from_node_id: ai
+          to_node_id: workflow
+          relationship: generates or updates app
+          data_or_dependency: agent-generated code and previews
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-016
+        - edge_id: e5
+          from_node_id: compute
+          to_node_id: edge
+          relationship: served to users
+          data_or_dependency: edge delivery and controls
+          evidence_claim_ids:
+            - EC-009
+            - EC-029
+          source_ids:
+            - SRC-008
+            - SRC-009
+      boundaries:
+        - boundary_id: b1
+          label: Customer application responsibility
+          node_ids:
+            - user-dev
+        - boundary_id: b2
+          label: Netlify platform responsibility
+          node_ids:
+            - workflow
+            - compute
+            - data
+            - ai
+            - edge
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render left-to-right flow from users to edge delivery.
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-029
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-015
+      - SRC-016
+      - SRC-017
+    notes: Architecture is a public-evidence abstraction, not an internal system diagram.
+  - figure_id: F-003
+    title: Selected public customer outcome metrics
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Bar chart of selected case-study outcome metrics cited on Netlify customer page.
+    purpose: Show strength and limitation of vendor-published customer proof.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Case-study outcome
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Reported improvement
+        unit: percent or ratio
+        scale: linear
+      series:
+        - series_id: outcomes
+          name: Selected customer outcome
+          unit: percent_or_ratio
+          data_points:
+            - x: Riot bandwidth reduction
+              y: 300
+              label: 300% bandwidth reduction
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-011
+            - x: Cost reduction
+              y: 65
+              label: 65% reduced costs
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-011
+            - x: Project speed
+              y: 30
+              label: 30% faster web projects
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-011
+            - x: Smashing load time improvement
+              y: 10
+              label: 10x faster / 800ms to 80ms
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-011
+      annotations:
+        - label: Marketing-selection caveat
+          x: null
+          y: null
+          note: Metrics are customer-page case-study claims, not a representative cohort.
+          evidence_claim_ids:
+            - EC-012
+            - EC-032
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use annotations to show validation caveat.
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-032
+    source_ids:
+      - SRC-011
+    notes: Direct customer references needed.
+  - figure_id: F-004
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative market map of deployment/developer platforms by workflow breadth and infrastructure/network scale.
+    purpose: Frame competitive threats from specialist developer platforms and cloud-scale providers.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Workflow breadth
+          low_label: Static/deploy narrow
+          high_label: Fullstack/AI/platform broad
+        y_axis:
+          label: Infrastructure scale
+          low_label: Specialized platform
+          high_label: Global network/cloud scale
+      segments:
+        - segment_id: frontend-platforms
+          name: Frontend/developer platforms
+          description: Developer-focused build/deploy workflows
+        - segment_id: edge-cloud
+          name: Edge/cloud platforms
+          description: Large network/hyperscale infrastructure
+        - segment_id: dxp-cms
+          name: Composable content/DXP
+          description: Enterprise content/marketing workflows
+      entities:
+        - entity_id: netlify
+          name: Netlify
+          entity_type: target_company
+          segment_id: frontend-platforms
+          x_value: 8
+          y_value: 6
+          attributes:
+            rationale: Broad workflow, AI/database products, enterprise controls
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+            - EC-015
+            - EC-016
+          source_ids:
+            - SRC-006
+            - SRC-015
+            - SRC-016
+            - SRC-017
+        - entity_id: vercel
+          name: Vercel
+          entity_type: competitor
+          segment_id: frontend-platforms
+          x_value: 8
+          y_value: 6
+          attributes:
+            rationale: Direct developer/frontend competitor with Pro and Enterprise pricing
+          evidence_claim_ids:
+            - EC-027
+          source_ids:
+            - SRC-024
+        - entity_id: cloudflare
+          name: Cloudflare Pages/Workers
+          entity_type: competitor
+          segment_id: edge-cloud
+          x_value: 7
+          y_value: 9
+          attributes:
+            rationale: JAMstack platform with Cloudflare edge and Workers
+          evidence_claim_ids:
+            - EC-028
+          source_ids:
+            - SRC-025
+        - entity_id: legacy-dxp
+          name: Legacy CMS/DXP/composable vendors
+          entity_type: competitor
+          segment_id: dxp-cms
+          x_value: 6
+          y_value: 4
+          attributes:
+            rationale: Marketing/content workflow competitors partially addressed by Stackbit/Gatsby
+          evidence_claim_ids:
+            - EC-017
+            - EC-019
+          source_ids:
+            - SRC-012
+            - SRC-014
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: 2x2 scatter-style market map.
+    evidence_claim_ids:
+      - EC-027
+      - EC-028
+      - EC-013
+      - EC-017
+      - EC-019
+    source_ids:
+      - SRC-024
+      - SRC-025
+      - SRC-006
+      - SRC-012
+      - SRC-014
+    notes: Qualitative placement by public evidence, not market-share data.
+  - figure_id: F-005
+    title: Developer-to-enterprise GTM funnel
+    chapter_id: V
+    section_id: V.A
+    figure_type: funnel
+    description: Publicly inferred funnel from developer discovery to Enterprise expansion.
+    purpose: Show where private conversion metrics are required.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      unit: users
+      cohort_or_period: Public-source inferred current GTM
+      stages:
+        - stage_id: awareness
+          name: Developer awareness/community
+          order: 1
+          count: 10000000
+          conversion_rate_from_previous: null
+          period: current public metric
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - stage_id: apps
+          name: Apps deployed
+          order: 2
+          count: 60000000
+          conversion_rate_from_previous: null
+          period: current public metric
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - stage_id: self-serve
+          name: Free/Personal/Pro paid teams
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - stage_id: enterprise
+          name: Enterprise accounts
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-019
+            - EC-029
+          source_ids:
+            - SRC-014
+            - SRC-008
+        - stage_id: expansion
+          name: Renewal/expansion/cross-sell
+          order: 5
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-011
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Show null stages as private-data gaps.
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-019
+      - EC-029
+    source_ids:
+      - SRC-006
+      - SRC-008
+      - SRC-011
+      - SRC-014
+    notes: Only awareness/apps have public counts; conversion is private.
+  - figure_id: F-006
+    title: R&D and public repository signal chart
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: chart
+    description: Selected GitHub stars/forks/open issues for public Netlify repositories with product-launch annotations.
+    purpose: Combine repository ecosystem signal with current product bets.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Repository
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: GitHub count
+        scale: linear
+      series:
+        - series_id: stars
+          name: Stars
+          unit: count
+          data_points:
+            - x: netlify/cli
+              y: 1872
+              label: stars
+              evidence_claim_ids:
+                - EC-022
+              source_ids:
+                - SRC-021
+            - x: netlify/build
+              y: 252
+              label: stars
+              evidence_claim_ids:
+                - EC-023
+              source_ids:
+                - SRC-022
+            - x: netlify/functions.netlify.com
+              y: 514
+              label: stars
+              evidence_claim_ids:
+                - EC-024
+              source_ids:
+                - SRC-023
+        - series_id: forks
+          name: Forks
+          unit: count
+          data_points:
+            - x: netlify/cli
+              y: 456
+              label: forks
+              evidence_claim_ids:
+                - EC-022
+              source_ids:
+                - SRC-021
+            - x: netlify/build
+              y: 94
+              label: forks
+              evidence_claim_ids:
+                - EC-023
+              source_ids:
+                - SRC-022
+            - x: netlify/functions.netlify.com
+              y: 117
+              label: forks
+              evidence_claim_ids:
+                - EC-024
+              source_ids:
+                - SRC-023
+        - series_id: issues
+          name: Open issues
+          unit: count
+          data_points:
+            - x: netlify/cli
+              y: 123
+              label: open issues
+              evidence_claim_ids:
+                - EC-022
+              source_ids:
+                - SRC-021
+            - x: netlify/build
+              y: 86
+              label: open issues
+              evidence_claim_ids:
+                - EC-023
+              source_ids:
+                - SRC-022
+            - x: netlify/functions.netlify.com
+              y: 78
+              label: open issues
+              evidence_claim_ids:
+                - EC-024
+              source_ids:
+                - SRC-023
+      annotations:
+        - label: AI/fullstack roadmap
+          x: null
+          y: null
+          note: Agent Runners, AI Gateway and Database are active R&D bets needing module-level P&L.
+          evidence_claim_ids:
+            - EC-014
+            - EC-015
+            - EC-016
+          source_ids:
+            - SRC-015
+            - SRC-016
+            - SRC-017
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Grouped bars by repository.
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-022
+      - EC-023
+      - EC-024
+    source_ids:
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-021
+      - SRC-022
+      - SRC-023
+    notes: GitHub metrics are point-in-time.
+  - figure_id: F-007
+    title: Public organization chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Publicly evidenced leadership and functional nodes.
+    purpose: Show partial management evidence and gaps requiring signed org chart.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Mathias / Matt Biilmann
+          role: Co-founder and CEO
+          department: Executive
+          location: San Francisco/global
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-007
+            - EC-002
+          source_ids:
+            - SRC-007
+            - SRC-002
+        - node_id: cso
+          name: Christian Bach
+          role: Co-founder, Chief Strategy and Creative Officer
+          department: Strategy/Creative
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - node_id: security
+          name: Mark Dorsi
+          role: Chief Information Security Officer (2022 release)
+          department: Security/IT/Compliance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - node_id: legal
+          name: Rachel Tobin
+          role: Vice President of Legal (2022 release)
+          department: Legal
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - node_id: finance
+          name: Amer Ali
+          role: Vice President of Finance (2022 release)
+          department: Finance
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - node_id: talent
+          name: Rachel Yaeger
+          role: Vice President of Talent Acquisition (2022 release)
+          department: People/Talent
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - node_id: global-team
+          name: null
+          role: Remote-first global team across 14+ countries
+          department: Company-wide
+          location: Global
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-018
+      reporting_lines:
+        - parent_node_id: ceo
+          child_node_id: cso
+          relationship: other
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - parent_node_id: ceo
+          child_node_id: security
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: legal
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: finance
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: talent
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-019
+        - parent_node_id: ceo
+          child_node_id: global-team
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-018
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use dashed lines for roles sourced from 2022 release pending refresh.
+    evidence_claim_ids:
+      - EC-007
+      - EC-020
+      - EC-021
+      - EC-030
+      - EC-035
+    source_ids:
+      - SRC-007
+      - SRC-018
+      - SRC-019
+      - SRC-027
+      - SRC-028
+    notes: Reporting lines are inferred from public release context; confirm with current org chart.
+  - figure_id: F-008
+    title: Legal and diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Heatmap of main report risks, emphasizing private-information gaps and legal/compliance unknowns.
+    purpose: Summarize diligence priorities from public-source review.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Financial opacity
+          severity: high
+          likelihood: high
+          rationale: Core financial statements and ARR schedules are not public.
+          evidence_claim_ids:
+            - EC-031
+          source_ids:
+            - SRC-003
+        - risk_id: R-002
+          label: Stale 2021 valuation
+          severity: high
+          likelihood: medium
+          rationale: 2021 $2B mark may not reflect current market and preference stack.
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+            - EC-034
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - risk_id: R-003
+          label: Competitive pressure
+          severity: medium
+          likelihood: high
+          rationale: Vercel and Cloudflare have strong direct positioning.
+          evidence_claim_ids:
+            - EC-027
+            - EC-028
+          source_ids:
+            - SRC-024
+            - SRC-025
+        - risk_id: R-004
+          label: AI/product execution
+          severity: high
+          likelihood: medium
+          rationale: Agent, AI Gateway and Database bets add cost/dependency risk.
+          evidence_claim_ids:
+            - EC-014
+            - EC-015
+            - EC-016
+          source_ids:
+            - SRC-015
+            - SRC-016
+            - SRC-017
+        - risk_id: R-006
+          label: Security/compliance
+          severity: high
+          likelihood: medium
+          rationale: Strong public controls, but audit reports and incidents not reviewed.
+          evidence_claim_ids:
+            - EC-009
+            - EC-010
+          source_ids:
+            - SRC-009
+            - SRC-010
+        - risk_id: R-010
+          label: Legal/IP/contracts
+          severity: medium
+          likelihood: unknown
+          rationale: Material contracts, insurance and IP portfolio are private.
+          evidence_claim_ids:
+            - EC-025
+            - EC-026
+          source_ids:
+            - SRC-020
+            - SRC-026
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Plot severity vs likelihood with labels.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-009
+      - EC-010
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-025
+      - EC-026
+      - EC-031
+      - EC-034
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-009
+      - SRC-010
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-020
+      - SRC-026
+    notes: Risk scoring is public-source analyst judgment.
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Netlify as a United States Enterprise Tech unicorn valued at $2B with a 2021-11-17 unicorn date.
+    evidence_summary: CB Insights public unicorn table row for Netlify shows valuation $2B, date 11/17/2021, United States/San Francisco, Enterprise Tech, and investors Andreessen Horowitz, Kleiner Perkins and EQT Ventures.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Netlify | $2 | 11/17/2021 | United States | San Francisco | Enterprise Tech | Andreessen Horowitz, Kleiner Perkins Caufield & Byers, EQT Ventures
+        location: CB Insights unicorn list row
+    analyst_interpretation: Supports unicorn eligibility and sector/geography classification, but current fair value requires private financing or secondary-market data.
+    limitations: CB Insights values are secondary database claims and may lag current private-market marks.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-002
+    claim: Netlify announced a $105M Series D at a $2B valuation in November 2021 and $212M raised to date.
+    evidence_summary: Netlify press release identifies Bessemer as lead, existing investors, $105M funding, $2B valuation and $212M cumulative funding.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: announced that it has raised $105 million in funding, valuing the company at $2 billion
+        location: Series D release
+      - source_id: SRC-002
+        quote: The company has raised $212 million in funding to date.
+        location: Series D release
+    analyst_interpretation: Company-announced financing corroborates CB Insights unicorn entry, though capitalization details are absent.
+    limitations: No preference stack, option pool, debt, secondary sales or post-money cap table disclosed.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-003
+    claim: SEC EDGAR lists Netlify, Inc. Form D filings and no public-company ticker symbols in the submissions metadata.
+    evidence_summary: The SEC submissions feed for CIK 0001672598 names Netlify, Inc. and recent filings are Form D filings, with an empty ticker list.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "Netlify, Inc.; recent forms: D; tickers: []"
+        location: SEC submissions metadata as accessed by API
+    analyst_interpretation: Supports private-company status and exempt financing activity; does not rule out all corporate transactions.
+    limitations: SEC metadata does not verify current capitalization or all non-U.S. filings.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: Netlify disclosed a $53M Series C in March 2020, $97M raised to date, 800,000 developers and tripled revenue/customer base year over year.
+    evidence_summary: The Series C release describes EQT Ventures leading, existing investor participation, $97M cumulative funding, 800,000 developers, and tripled customer base and revenue.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: raised $53 million in Series C funding
+        location: Series C release
+      - source_id: SRC-004
+        quote: Netlify has raised $97 million to date
+        location: Series C release
+      - source_id: SRC-004
+        quote: Netlify has tripled its customer base and revenue
+        location: Series C release
+    analyst_interpretation: Historic growth proof supports demand momentum through 2020 but does not disclose absolute revenue.
+    limitations: Absolute ARR, gross margin and cohort retention not public.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-005
+    claim: Netlify announced a $30M round led by Kleiner Perkins in October 2018.
+    evidence_summary: The 2018 company release names a $30M raise led by Kleiner Perkins with Andreessen Horowitz and founders of Slack, Yelp, GitHub and Figma participating.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: raised an additional $30 million led by Kleiner Perkins
+        location: 2018 funding release
+    analyst_interpretation: Historic financing marker validates earlier institutional backing.
+    limitations: Round label and valuation are not disclosed in the release.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids: []
+  - evidence_claim_id: EC-006
+    claim: Netlify currently states 10M+ developers, 60M+ apps deployed and 99.99% uptime.
+    evidence_summary: Homepage metric panel lists these adoption and reliability metrics.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: 10M+ developers; 60M+ apps deployed; 99.99% uptime
+        location: Homepage metrics
+    analyst_interpretation: Shows broad top-of-funnel adoption and reliability positioning, subject to definitions of developer/app and measurement period.
+    limitations: No independent audit or active-user definition was public.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-007
+    claim: Netlify describes itself as founded in 2014, headquartered in San Francisco, with a global team; founders are Mathias Biilmann and Christian Bach.
+    evidence_summary: About page gives founding year, headquarters and founder roles.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: Founded in 2014, Netlify is a venture-backed software company headquartered in San Francisco with a global team.
+        location: About page
+      - source_id: SRC-007
+        quote: founded in the summer of 2014 by Mathias Biilmann, co-founder and CEO ... and Christian Bach, co-founder, Chief Strategy and Creative Officer
+        location: Leadership section
+    analyst_interpretation: Founder and headquarters claims are well supported by company materials and SEC filings.
+    limitations: Current officer authority should be verified through board/company records.
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-013
+      figure_ids:
+        - F-007
+      risk_ids: []
+  - evidence_claim_id: EC-008
+    claim: Netlify publishes Free, Personal, Pro and Enterprise tiers with credit-based usage meters.
+    evidence_summary: Pricing page lists plan ladder, included credits and meters for production deploys, compute, bandwidth, web requests, database and support/security features.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Free ... 300 credit limit/month; Personal ... 1,000 credits/month; Pro ... 3,000 credits/month; Enterprise ... Custom
+        location: Pricing page
+      - source_id: SRC-008
+        quote: Production deploys 15 credits each ... Bandwidth 20 credits per GB ... 2 credits per 10k requests
+        location: Pricing page
+    analyst_interpretation: Confirms self-serve monetization mechanics and enterprise packaging.
+    limitations: Actual ARPA, discounting, overage margin, churn and Enterprise contract terms are private.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-004
+      figure_ids: []
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-009
+    claim: Netlify security materials claim TLS 1.2, AES-256, DDoS mitigation, WAF, rate limiting and shared-responsibility controls.
+    evidence_summary: Security page describes encryption, DDoS protections, WAF, traffic rules, rate limiting and shared responsibilities.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: All traffic over our networks is encrypted with a minimum of TLS 1.2 and AES-256
+        location: Security page
+      - source_id: SRC-009
+        quote: Active DDoS mitigation
+        location: Security page
+      - source_id: SRC-009
+        quote: Netlify Web Application Firewall (WAF)
+        location: Security page
+    analyst_interpretation: Supports enterprise-readiness narrative but must be tested against audit reports and incident history.
+    limitations: No SOC report, pen-test summary, incident log or architecture diagram was reviewed.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-010
+    claim: Netlify announced ISO 27001:2017 certification and states it maintains SOC 2 Type 2 and PCI DSS compliance.
+    evidence_summary: 2022 compliance press release says A-LIGN issued ISO 27001 certification and notes SOC 2 Type 2 and PCI DSS.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: achieved the ISO 27001:2017 certification for its Information Security Management System
+        location: ISO press release
+      - source_id: SRC-010
+        quote: maintains compliance in AICPA SOC 2 Type 2 and PCI DSS
+        location: ISO press release
+    analyst_interpretation: Enterprise security posture has meaningful public substantiation.
+    limitations: Certification scope, exceptions, bridge letters and renewal status require data-room review.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-011
+    claim: Netlify publishes named customer logos including Meta, Autodesk, Navan, Zscaler, ServiceTitan, Stack Overflow, Riot Games, Kubernetes and Figma.
+    evidence_summary: Customers page lists logos and a range of customer stories.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Meta ... Autodesk ... Navan ... Zscaler ... ServiceTitan ... Stack Overflow ... Riot Games ... Kubernetes ... Figma
+        location: Customers page logo section
+    analyst_interpretation: Named logos are strong market proof, but commercial relationships, active status and revenue contribution remain unverified.
+    limitations: Logo rights, current contract status and ARR concentration are not public.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-005
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-012
+    claim: Netlify customer stories cite measurable customer outcomes such as Riot bandwidth reduction, Kubernetes contributor collaboration and selected performance/cost improvements.
+    evidence_summary: Customers page includes vendor-published case-study headlines and metrics.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: How Riot Games Reduced Bandwidth Usage by 300% with Netlify
+        location: Customers page
+      - source_id: SRC-011
+        quote: Why Kubernetes prefers Netlify for its 3000+ contributors
+        location: Customers page
+      - source_id: SRC-011
+        quote: Reduced costs by 65%
+        location: Customers page
+      - source_id: SRC-011
+        quote: Delivers web projects 30% faster
+        location: Customers page
+    analyst_interpretation: Useful evidence for value proposition; should be validated through customer interviews and underlying baselines.
+    limitations: Case-study metrics are selected marketing outcomes and not a representative cohort.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-013
+    claim: Netlify positions a broad platform spanning deploys, previews, functions, edge network, storage, observability, AI Gateway and Agent Runners.
+    evidence_summary: Homepage navigation and product sections enumerate platform primitives and use cases for AI apps, marketing sites, SaaS, ecommerce and internal tools.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Agent Runners; Deploy Previews; AI Gateway; Functions; Storage; Observability; Edge network
+        location: Homepage product navigation
+    analyst_interpretation: Indicates product breadth beyond static hosting into fullstack and AI-app workflows.
+    limitations: Product module revenue mix and attach rates are not public.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-014
+    claim: Netlify Agent Runners provide AI-agent workflows running on production infrastructure with previews and auditability.
+    evidence_summary: Agent Runners page states agents can start projects or improve existing ones from prompts, use project context, and review changes with production-matching previews.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-016
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: Start new projects or improve existing ones with agents running on production infrastructure from the first prompt.
+        location: Agent Runners page
+      - source_id: SRC-016
+        quote: Every change is tracked, reversible, and auditable.
+        location: Agent Runners page
+    analyst_interpretation: Supports AI-native product strategy and differentiated workflow claims.
+    limitations: Adoption, pricing, reliability and liability for AI changes are not public.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-015
+    claim: Netlify AI Gateway offers unified access to OpenAI, Anthropic and Google models, usage analytics and no storage of prompts/outputs.
+    evidence_summary: AI Gateway page describes provider access, automatic environment variables, dashboard usage and privacy handling.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: instant access to the latest models from OpenAI, Anthropic, and Google
+        location: AI Gateway page
+      - source_id: SRC-017
+        quote: Prompts and model outputs are never stored.
+        location: AI Gateway page
+    analyst_interpretation: AI Gateway may improve developer conversion and AI app economics, but also adds vendor dependency and model-cost exposure.
+    limitations: Underlying provider contracts, content policies, latency and cost curves are not public.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-016
+    claim: Netlify Database pairs Postgres with Deploy Previews and isolated database branches.
+    evidence_summary: Product blog states Netlify Database is available, uses Postgres, and natively pairs Deploy Previews with isolated database branches; beta users created over 400,000 databases.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: only platform that natively pairs Deploy Previews with completely isolated database branches
+        location: Database blog
+      - source_id: SRC-015
+        quote: We’re sticking to Postgres.
+        location: Database blog
+      - source_id: SRC-015
+        quote: users created over 400,000 databases
+        location: Database blog
+    analyst_interpretation: Expands Netlify into data/storage workflows; branch isolation is relevant to AI-agent safety.
+    limitations: Database gross margin, Neon partnership economics and migration from beta are not public.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-017
+    claim: Netlify acquired Gatsby in February 2023 to advance composable architectures and open-source framework stewardship.
+    evidence_summary: Gatsby release states Gatsby Inc. was acquired, Gatsby had an open-source framework and cloud platform, and Netlify had surpassed 3M+ developers.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Netlify ... has acquired Gatsby Inc.
+        location: Gatsby acquisition release
+      - source_id: SRC-012
+        quote: comes on the heels of surpassing 3M+ developers on the Netlify platform
+        location: Gatsby acquisition release
+    analyst_interpretation: Acquisition broadens content orchestration and framework ecosystem, but integration economics need diligence.
+    limitations: Purchase price, earnouts, retention and post-acquisition performance not disclosed.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-008
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-018
+    claim: Netlify acquired Quirrel in February 2022 to extend serverless scheduling capabilities.
+    evidence_summary: Quirrel release states acquisition of open-source scheduling solution/service and planned Scheduled Functions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: announced the acquisition of Quirrel ... for managing and scheduling the execution of serverless functions and jobs
+        location: Quirrel acquisition release
+    analyst_interpretation: Supports product-expansion thesis in serverless functions.
+    limitations: Commercial impact and integration results not public.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-008
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-019
+    claim: Netlify acquired Stackbit in June 2023 to add visual editing for non-developers.
+    evidence_summary: Stackbit release describes acquisition of visual editing solution and cites more than 4M developers and over 475 Enterprise customers.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: announced the acquisition of visual editing solution Stackbit
+        location: Stackbit acquisition release
+      - source_id: SRC-014
+        quote: With more than 4M developers and over 475 Enterprise customers
+        location: Stackbit acquisition release
+    analyst_interpretation: Supports move from developer-only workflow to marketer/product-manager collaboration.
+    limitations: Current Stackbit product integration, retained customers and ARR impact are not public.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-008
+      table_ids:
+        - T-011
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-020
+    claim: Netlify careers materials claim remote-first/distributed operations across 14+ countries, employee equity and broad benefits.
+    evidence_summary: Careers page describes remote-first global operations, home-office/internet reimbursements, equity, unlimited vacation, health benefits and parental leave.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-018
+        quote: remote-first and fully distributed by design
+        location: Careers page
+      - source_id: SRC-018
+        quote: across 14+ countries
+        location: Careers page
+      - source_id: SRC-018
+        quote: offering equity to every employee
+        location: Careers page
+    analyst_interpretation: Supports team model and compensation proposition; no attrition or headcount by function provided.
+    limitations: Current headcount, open roles, attrition, compensation bands and option-plan details are private.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-009
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-021
+    claim: A 2022 leadership release named executive hires and disclosed 200 employees, $212M funding and three acquisitions.
+    evidence_summary: Leadership release names Mark Dorsi, Rachel Tobin, Rachel Yaeger and Amer Ali; it says Ali helped scale Netlify to 200 employees, $212M funding and three acquisitions.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-019
+        quote: Mark Dorsi joins as Chief Information Security Officer, Rachel Tobin as Vice President of Legal and Rachel Yaeger as Vice President of Talent Acquisition
+        location: Leadership release
+      - source_id: SRC-019
+        quote: grown to 200 employees, raised capital ... $212 million ... completed three acquisitions
+        location: Leadership release
+    analyst_interpretation: Provides partial public org/scale evidence; roles could have changed since 2022.
+    limitations: No current signed org chart or management biographies were reviewed.
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids:
+        - FC-009
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-022
+    claim: GitHub repository netlify/cli showed 1,872 stars, 456 forks and 123 open issues when accessed.
+    evidence_summary: GitHub API metadata for netlify/cli returned point-in-time public repository metrics and MIT license.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-021
+    quoted_evidence:
+      - source_id: SRC-021
+        quote: "stargazers_count: 1872; forks_count: 456; open_issues_count: 123; license: MIT"
+        location: GitHub API response
+    analyst_interpretation: CLI repository health is a useful developer-ecosystem signal, not a commercial adoption proxy by itself.
+    limitations: Counts are point-in-time and can change daily.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids: []
+  - evidence_claim_id: EC-023
+    claim: GitHub repository netlify/build showed 252 stars, 94 forks and 86 open issues when accessed.
+    evidence_summary: GitHub API metadata for netlify/build returned point-in-time public repository metrics and MIT license.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-022
+        quote: "stargazers_count: 252; forks_count: 94; open_issues_count: 86; license: MIT"
+        location: GitHub API response
+    analyst_interpretation: Public build tooling activity shows ongoing open-source surface area but not product quality alone.
+    limitations: Counts are point-in-time and do not indicate severity of issues.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids: []
+  - evidence_claim_id: EC-024
+    claim: GitHub repository netlify/functions.netlify.com showed 514 stars, 117 forks and 78 open issues when accessed.
+    evidence_summary: GitHub API metadata returned public repository metrics; no SPDX license was reported by the API for this repo.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-023
+    quoted_evidence:
+      - source_id: SRC-023
+        quote: "stargazers_count: 514; forks_count: 117; open_issues_count: 78"
+        location: GitHub API response
+    analyst_interpretation: Functions-related developer materials attract public interest and issues; legal/open-source status should be checked for unlicensed assets.
+    limitations: Counts are point-in-time; repo license metadata was not populated in API response.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-025
+    claim: CourtListener opinion search returned zero results for Netlify and Netlify Inc queries in this review.
+    evidence_summary: Public CourtListener API searches for Netlify Inc and Netlify returned count 0.
+    evidence_type: legal_record
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-020
+        quote: "Netlify Inc: 0; Netlify: 0"
+        location: CourtListener API search results as accessed
+    analyst_interpretation: No obvious public opinion-level litigation surfaced, reducing but not eliminating legal risk.
+    limitations: Not a full PACER, state court, arbitration, demand-letter, IP office or international litigation search.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-010
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-026
+    claim: Netlify public Website Terms assert Netlify ownership of website/software IP and govern website disputes in California/San Francisco.
+    evidence_summary: Terms of Use include a temporary-use license, Netlify ownership of website-related software/IP, user-content license/representations, acceptable use and California/San Francisco jurisdiction.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-026
+    quoted_evidence:
+      - source_id: SRC-026
+        quote: Netlify shall own and retain all right, title and interest in and to its Website(s) and related software
+        location: Terms of Use
+      - source_id: SRC-026
+        quote: governed and construed in accordance with the laws of the State of California
+        location: Terms of Use
+    analyst_interpretation: Public terms show baseline IP and venue positions; material MSAs and product-specific contracts remain private.
+    limitations: Terms are not the Enterprise MSA/order form/DPA and do not list patents/trademarks.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-027
+    claim: Vercel competes with Netlify using Hobby, Pro and Enterprise plans, with Pro at $20/month plus usage.
+    evidence_summary: Vercel pricing page says start free, upgrade to Pro for $20/month, and Enterprise includes Pro features plus sales-led terms/add-ons.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-024
+    quoted_evidence:
+      - source_id: SRC-024
+        quote: Start free. Upgrade to Pro for $20/month. Pay only for active compute
+        location: Vercel pricing page
+    analyst_interpretation: Vercel is a direct developer platform competitor with a similar freemium-to-enterprise path and aggressive usage pricing.
+    limitations: Competitor private financials and win/loss rates were not reviewed.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-028
+    claim: Cloudflare Pages competes with Netlify through Git-integrated Jamstack deployments on Cloudflare edge and free/unlimited-seat positioning.
+    evidence_summary: Cloudflare Pages page describes Git integration, collaboration, edge performance, Workers integration, unlimited seats for free and static request/build limits.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-025
+    quoted_evidence:
+      - source_id: SRC-025
+        quote: Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites.
+        location: Cloudflare Pages page
+      - source_id: SRC-025
+        quote: Unlimited seats for free
+        location: Cloudflare Pages page
+    analyst_interpretation: Cloudflare has a scale/network-cost advantage that can pressure Netlify pricing and differentiation.
+    limitations: Cloudflare Pages-specific revenue, retention and enterprise attach not reviewed.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-029
+    claim: Netlify Enterprise packaging includes SSO/SCIM, log drains, 24/7 support, SOC 2 and security controls.
+    evidence_summary: Pricing page lists Enterprise network tier, high-performance builds, SSO & SCIM, log drains, 24/7 dedicated support, audit logs, SOC 2 and security scorecard features.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Enterprise network tier; High-performance builds; SSO & SCIM; Log drains; 24/7 dedicated support
+        location: Pricing page
+      - source_id: SRC-008
+        quote: SOC 2 ... independently audited security controls
+        location: Pricing page
+    analyst_interpretation: Enterprise features directly address compliance/sales motions and procurement requirements.
+    limitations: Enterprise price book, SLA penalties, support staffing and gross margin are private.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-005
+        - FC-006
+      table_ids:
+        - T-009
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-030
+    claim: "Public company materials have a minor founding-year inconsistency: About says 2014 while Careers says founded in 2015."
+    evidence_summary: About page states founded 2014; Careers page says founded in 2015.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: Founded in 2014
+        location: About page
+      - source_id: SRC-018
+        quote: Founded in 2015
+        location: Careers page
+    analyst_interpretation: Likely a distinction between summer 2014 vision/incorporation and 2015 go-to-market, but should be clarified for founder narrative accuracy.
+    limitations: No incorporation documents were reviewed beyond Form D issuer history.
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-013
+      figure_ids:
+        - F-007
+      risk_ids: []
+  - evidence_claim_id: EC-031
+    claim: Annual financial statements, ARR, gross margin, backlog, AR aging and management reporting are not publicly available.
+    evidence_summary: No audited or management financial statements were located in public company/regulatory sources; available data are funding and aggregate adoption metrics.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Netlify has tripled its customer base and revenue
+        location: Series C release
+      - source_id: SRC-006
+        quote: 10M+ developers; 60M+ apps deployed
+        location: Homepage metrics
+    analyst_interpretation: Core financial diligence remains a data-room requirement.
+    limitations: This is a gap claim based on public-source review, not proof of absence in private records.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+      figure_ids: []
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-032
+    claim: Customer-level ARR, concentration, churn and top-15 customer lists are not publicly available.
+    evidence_summary: Public customer evidence consists of logos and case studies, not revenue by customer or contract terms.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Millions of developers and businesses trust Netlify. Discover a few of their projects, use cases and results.
+        location: Customers page
+    analyst_interpretation: Customer diligence must move from logo proof to contract and renewal proof.
+    limitations: Private customer schedules and direct references were unavailable.
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+      figure_ids: []
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-033
+    claim: Top suppliers and cloud/data-center dependencies are not publicly itemized beyond broad references to major cloud and data-center partners.
+    evidence_summary: Security page says Netlify uses globally distributed data center partners and major cloud providers, but does not list spend or contracts.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: Netlify leverages globally-distributed data center partners
+        location: Security page
+      - source_id: SRC-009
+        quote: Netlify deploys only to major cloud providers
+        location: Security page
+    analyst_interpretation: Infrastructure vendor concentration and COGS are material but private.
+    limitations: No vendor contracts, subprocessor list, cloud spend or capacity commitments were reviewed.
+    associations:
+      chapter_id: III
+      section_id: III.E
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+      figure_ids: []
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-034
+    claim: Current shares outstanding, stockholders, option pool, warrants, debt and off-balance-sheet liabilities are not publicly available.
+    evidence_summary: Public filings and releases verify financing events but not capitalization schedules or debt instruments.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-027
+      - SRC-028
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: raised $105 million ... valuing the company at $2 billion
+        location: Series D release
+      - source_id: SRC-027
+        quote: "totalOfferingAmount: 62774916; totalAmountSold: 62774916"
+        location: SEC Form D as accessed
+    analyst_interpretation: Cap-table and liquidation-preference diligence is essential before investment conclusions.
+    limitations: Form D amounts do not map directly to full round economics or current ownership.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids: []
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-035
+    claim: SEC Form D issuer history identifies MakerLoop, Inc. as a prior name for Netlify.
+    evidence_summary: 2016 Form D primary issuer is MakerLoop, Inc.; 2021 filing previous-name list includes MakerLoop, Inc.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-027
+      - SRC-028
+    quoted_evidence:
+      - source_id: SRC-028
+        quote: "entityName: MakerLoop, Inc."
+        location: 2016 Form D
+      - source_id: SRC-027
+        quote: "previousName: MakerLoop, Inc."
+        location: 2021 Form D
+    analyst_interpretation: Supports known-alias list and founder-history follow-up.
+    limitations: Does not by itself verify product launch dates or corporate reorganization details.
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-013
+      figure_ids: []
+      risk_ids: []
+sources:
+  - source_id: SRC-001
+    title: CB Insights Global Unicorn List
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: 2026-05-25
+    accessed_date: 2026-05-25
+    source_type: market_database
+    reliability_notes: Public unicorn-list table; valuation is a secondary-market database entry, not a current audited mark.
+    archive_url: null
+  - source_id: SRC-002
+    title: Netlify raises $105 million to transform development for the modern web
+    url: https://www.netlify.com/press/netlify-raises-usd105-million-to-transform-development-for-the-modern-web
+    publisher: Netlify
+    author: null
+    publication_date: 2021-11-17
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company press release for Series D; reliable for company-announced financing terms but unaudited.
+    archive_url: null
+  - source_id: SRC-003
+    title: SEC EDGAR Netlify, Inc. submissions, CIK 0001672598
+    url: https://data.sec.gov/submissions/CIK0001672598.json
+    publisher: U.S. Securities and Exchange Commission
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: regulatory_filing
+    reliability_notes: Regulatory index confirms Form D filings and absence of public-company tickers in the SEC submissions metadata accessed.
+    archive_url: null
+  - source_id: SRC-004
+    title: Netlify Series C funding release
+    url: https://www.netlify.com/press/after-onboarding-800000-developers-netlify-raises-53m-in-series-c-funding-to-fuel-enterprise-growth
+    publisher: Netlify
+    author: null
+    publication_date: 2020-03-04
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company press release; useful for historic financing and traction claims, not audited financials.
+    archive_url: null
+  - source_id: SRC-005
+    title: Netlify raises $30 million to replace web servers with a global Application Delivery Network
+    url: https://www.netlify.com/press/netlify-raises-usd30-million-to-replace-web-servers-with-a-global-application-delivery-network
+    publisher: Netlify
+    author: null
+    publication_date: 2018-10-09
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company press release; useful for historic financing and positioning.
+    archive_url: null
+  - source_id: SRC-006
+    title: Netlify homepage
+    url: https://www.netlify.com/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Current company marketing page; strong for vendor-stated product and aggregate usage claims, not customer-level proof.
+    archive_url: null
+  - source_id: SRC-007
+    title: Netlify About page
+    url: https://www.netlify.com/about/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company about/newsroom page; reliable for self-described founding, headquarters, founders and press archive, subject to marketing framing.
+    archive_url: null
+  - source_id: SRC-008
+    title: Netlify Pricing page
+    url: https://www.netlify.com/pricing/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Current pricing page; reliable for published self-serve plan structure and usage-meter descriptions.
+    archive_url: null
+  - source_id: SRC-009
+    title: Security at Netlify
+    url: https://www.netlify.com/security/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company security page; vendor-stated controls require SOC/ISO report review for assurance.
+    archive_url: null
+  - source_id: SRC-010
+    title: Netlify bolsters enterprise-level security achieving ISO 27001
+    url: https://www.netlify.com/press/bolsters-enterprise-level-security-achieving-iso-27001
+    publisher: Netlify
+    author: null
+    publication_date: 2022-08-30
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company compliance press release; indicates certifications but not the underlying audit reports.
+    archive_url: null
+  - source_id: SRC-011
+    title: Netlify Customers page
+    url: https://www.netlify.com/customers/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company customer page; logos/case studies should be validated through contracts and direct references.
+    archive_url: null
+  - source_id: SRC-012
+    title: Netlify acquires Gatsby Inc. to advance composable architectures
+    url: https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures
+    publisher: Netlify
+    author: null
+    publication_date: 2023-02-01
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company acquisition release; terms are not disclosed.
+    archive_url: null
+  - source_id: SRC-013
+    title: Netlify announces acquisition of Quirrel
+    url: https://www.netlify.com/press/netlify-announces-acquisition-of-quirrel-to-extend-serverless-functions-capabilities
+    publisher: Netlify
+    author: null
+    publication_date: 2022-02-01
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company acquisition release; terms are not disclosed.
+    archive_url: null
+  - source_id: SRC-014
+    title: Netlify acquires Stackbit
+    url: https://www.netlify.com/press/netlify-acquires-stackbit-to-provide-web-teams-with-a-full-set-of-solutions-across-their-web-stack
+    publisher: Netlify
+    author: null
+    publication_date: 2023-06-29
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company acquisition release; reliable for product rationale, not purchase consideration.
+    archive_url: null
+  - source_id: SRC-015
+    title: Netlify Database is now available
+    url: https://www.netlify.com/blog/netlify-database/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company product blog; reliable for product description but not independent adoption/economics.
+    archive_url: null
+  - source_id: SRC-016
+    title: Netlify Agent Runners
+    url: https://www.netlify.com/platform/agent-runners/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company product page; vendor claim for AI-agent workflow and production-infrastructure positioning.
+    archive_url: null
+  - source_id: SRC-017
+    title: Netlify AI Gateway
+    url: https://www.netlify.com/platform/ai-gateway/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company product page; vendor claim for model access, billing and data-handling controls.
+    archive_url: null
+  - source_id: SRC-018
+    title: Netlify Careers page
+    url: https://www.netlify.com/careers/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company careers page; reliable for public employment proposition and remote-first claims, not headcount records.
+    archive_url: null
+  - source_id: SRC-019
+    title: Netlify expands leadership team
+    url: https://www.netlify.com/press/netlify-expands-leadership-team-to-advance-development-of-the-modern-web
+    publisher: Netlify
+    author: null
+    publication_date: 2022-03-16
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Company leadership release; roles may have changed and should be refreshed through management diligence.
+    archive_url: null
+  - source_id: SRC-020
+    title: CourtListener search API results for Netlify
+    url: https://www.courtlistener.com/api/rest/v4/search/?q=Netlify&type=o
+    publisher: Free Law Project / CourtListener
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: legal_record
+    reliability_notes: Search returned zero opinion results for Netlify queries in this public-source review; not a full litigation search.
+    archive_url: null
+  - source_id: SRC-021
+    title: GitHub API repository metadata for netlify/cli
+    url: https://api.github.com/repos/netlify/cli
+    publisher: GitHub
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: technical_repository
+    reliability_notes: Repository metadata accessed via GitHub API; public popularity and issue counts are point-in-time signals.
+    archive_url: null
+  - source_id: SRC-022
+    title: GitHub API repository metadata for netlify/build
+    url: https://api.github.com/repos/netlify/build
+    publisher: GitHub
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: technical_repository
+    reliability_notes: Repository metadata accessed via GitHub API; public popularity and issue counts are point-in-time signals.
+    archive_url: null
+  - source_id: SRC-023
+    title: GitHub API repository metadata for netlify/functions.netlify.com
+    url: https://api.github.com/repos/netlify/functions.netlify.com
+    publisher: GitHub
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: technical_repository
+    reliability_notes: Repository metadata accessed via GitHub API; public popularity and issue counts are point-in-time signals.
+    archive_url: null
+  - source_id: SRC-024
+    title: Vercel pricing
+    url: https://vercel.com/pricing
+    publisher: Vercel
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Competitor pricing page; relevant for market comparison, not Netlify-specific verification.
+    archive_url: null
+  - source_id: SRC-025
+    title: Cloudflare Pages and Workers pricing pages
+    url: https://pages.cloudflare.com/
+    publisher: Cloudflare
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Competitor product/pricing pages; relevant for market comparison, not Netlify-specific verification.
+    archive_url: null
+  - source_id: SRC-026
+    title: Netlify Website Terms of Use
+    url: https://www.netlify.com/legal/terms-of-use/
+    publisher: Netlify
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-25
+    source_type: primary_company_source
+    reliability_notes: Public legal terms; not a substitute for customer MSAs, DPAs, order forms or counsel disclosure.
+    archive_url: null
+  - source_id: SRC-027
+    title: SEC Form D primary document, Netlify 2021 filing 0001672598-21-000003
+    url: https://www.sec.gov/Archives/edgar/data/1672598/000167259821000003/primary_doc.xml
+    publisher: U.S. Securities and Exchange Commission
+    author: null
+    publication_date: 2021-06-14
+    accessed_date: 2026-05-25
+    source_type: regulatory_filing
+    reliability_notes: Regulatory filing discloses an exempt offering amount; not a full financing history or capitalization table.
+    archive_url: null
+  - source_id: SRC-028
+    title: SEC Form D primary document, MakerLoop 2016 filing 0001672598-16-000001
+    url: https://www.sec.gov/Archives/edgar/data/1672598/000167259816000001/primary_doc.xml
+    publisher: U.S. Securities and Exchange Commission
+    author: null
+    publication_date: 2016-04-20
+    accessed_date: 2026-05-25
+    source_type: regulatory_filing
+    reliability_notes: Regulatory filing identifies prior issuer name MakerLoop, Inc.; does not verify operating-history detail by itself.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Operating financial opacity
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: No public audited financials, ARR, gross margin, cash runway, backlog, AR aging or management reports are available.
+    impacted_chapter_ids:
+      - I
+      - V
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - I.D
+      - V.E
+    evidence_claim_ids:
+      - EC-031
+    mitigation_or_diligence_request: Request full financial data room, QoE-style revenue/gross-margin analysis and cash-runway model.
+  - risk_id: R-002
+    risk_title: Stale unicorn valuation and preference-stack risk
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: The $2B valuation is a 2021 financing marker; current private-market value and common-equity economics may differ due to market changes or preferences.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-034
+    mitigation_or_diligence_request: Review latest 409A, board valuations, cap table, preference stack, debt and secondary transactions.
+  - risk_id: R-003
+    risk_title: Developer-platform competitive pressure
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Vercel, Cloudflare and hyperscalers compete on developer experience, edge scale, free tiers, pricing and integrated workflows.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+      - V.C
+    evidence_claim_ids:
+      - EC-027
+      - EC-028
+    mitigation_or_diligence_request: Request win/loss data, churn by competitor, price benchmark and product differentiation roadmap.
+  - risk_id: R-004
+    risk_title: AI and database product execution risk
+    risk_category: product
+    severity: high
+    likelihood: medium
+    description: Agent Runners, AI Gateway and Netlify Database expand TAM but add model-provider, database, safety, COGS and reliability dependencies.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - III
+    impacted_section_ids:
+      - II.A
+      - VI.B
+      - III.B
+      - III.E
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+    mitigation_or_diligence_request: Review module P&L, adoption cohorts, vendor contracts, AI safety controls, incident logs and roadmap milestones.
+  - risk_id: R-005
+    risk_title: Customer concentration and logo-verification risk
+    risk_category: customer
+    severity: medium
+    likelihood: unknown
+    description: Named logos and case studies are public, but active status, ARR, concentration, renewals and churn are private.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-032
+    mitigation_or_diligence_request: Request customer ARR schedule, references, logo-rights proof, renewal risk and churn/loss reports.
+  - risk_id: R-006
+    risk_title: Security, compliance and infrastructure dependency risk
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: Netlify hosts production apps and claims enterprise controls, but audit reports, incident history and supplier concentration were not reviewed.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.E
+      - VIII.C
+      - VIII.G
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-033
+    mitigation_or_diligence_request: Review SOC/ISO/PCI evidence, incident reports, supplier contracts, BC/DR tests and security architecture.
+  - risk_id: R-007
+    risk_title: Remote global workforce and retention risk
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Remote-first operations across 14+ countries and employee equity can support talent, but headcount, attrition, comp and compliance are private.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.B
+      - VII.D
+      - VII.E
+      - VII.G
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+    mitigation_or_diligence_request: Request headcount, attrition, comp bands, option plan, payroll/tax compliance and engagement survey data.
+  - risk_id: R-008
+    risk_title: Acquisition integration and retained-IP risk
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Gatsby, Quirrel and Stackbit broadened product scope; purchase terms, retention, IP assignments and integration outcomes are not public.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VIII.F
+    evidence_claim_ids:
+      - EC-017
+      - EC-018
+      - EC-019
+    mitigation_or_diligence_request: Review acquisition agreements, retention plans, IP schedules, earnouts and post-close KPI results.
+  - risk_id: R-009
+    risk_title: Credit-based pricing and gross-margin volatility
+    risk_category: financial
+    severity: medium
+    likelihood: high
+    description: Usage credits span deploys, bandwidth, compute, requests and AI/database features, creating possible customer confusion and COGS/margin volatility.
+    impacted_chapter_ids:
+      - I
+      - II
+      - V
+    impacted_section_ids:
+      - I.B
+      - II.A
+      - V.A
+    evidence_claim_ids:
+      - EC-008
+      - EC-029
+    mitigation_or_diligence_request: Request margin by meter, credit utilization, overage revenue, support burden and price-sensitivity analysis.
+  - risk_id: R-010
+    risk_title: Undisclosed legal, IP, contract and insurance exposure
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: CourtListener search found no opinion hits, but material contracts, IP portfolio, insurance, regulatory correspondence and private disputes are not public.
+    impacted_chapter_ids:
+      - VIII
+      - VI
+    impacted_section_ids:
+      - VIII.A
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VI.A
+    evidence_claim_ids:
+      - EC-025
+      - EC-026
+    mitigation_or_diligence_request: Request counsel schedule, IP portfolio, OSS SBOM, material contracts, insurance policies and regulatory correspondence.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, monthly management accounts, ARR/bookings, gross margin, cash runway, backlog and AR aging.
+    why_it_matters: Necessary to validate growth, profitability, working capital and runway behind public adoption metrics.
+    suggested_source_or_request: Company finance data room and auditor/accountant workpapers.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Fully diluted cap table, liquidation preferences, options, warrants, debt, SAFEs and side letters.
+    why_it_matters: Determines investable ownership economics and whether the 2021 valuation is relevant.
+    suggested_source_or_request: Company legal/finance cap-table export and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: ARR, gross margin, usage, uptime and support cost by product module.
+    why_it_matters: Product breadth is visible but economic contribution is not.
+    suggested_source_or_request: Product analytics and finance module P&L.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.C
+    missing_information: Customer ARR concentration, top-25 customer list, churn, renewal dates and active logo rights.
+    why_it_matters: Logo proof cannot substitute for revenue durability.
+    suggested_source_or_request: CRM, billing system and customer contracts.
+    priority: high
+  - gap_id: G-005
+    chapter_id: III
+    section_id: III.E
+    missing_information: Top suppliers by spend, cloud/model/database provider contracts and subprocessor list.
+    why_it_matters: Infrastructure and AI/database dependencies drive margin and compliance risk.
+    suggested_source_or_request: Procurement/vendor-management schedules.
+    priority: high
+  - gap_id: G-006
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Win/loss, churn-by-competitor and benchmark performance/price data.
+    why_it_matters: Direct public competitors are strong; differentiation must be proven by customer decisions.
+    suggested_source_or_request: Sales ops win/loss and product benchmark studies.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.D
+    missing_information: Sales compensation, quotas, attainment, CAC/payback, pipeline and hiring plan.
+    why_it_matters: Enterprise growth cannot be underwritten from public materials.
+    suggested_source_or_request: GTM operating model and CRM reports.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: AI Gateway/Agent Runners/Database adoption, costs, incident data, safety controls and vendor agreements.
+    why_it_matters: New product bets can create upside or hidden cost/security exposure.
+    suggested_source_or_request: Product dashboards, vendor contracts and security reviews.
+    priority: high
+  - gap_id: G-009
+    chapter_id: VII
+    section_id: VII.G
+    missing_information: Two-year attrition, compensation bands, option-plan data, employee relations and remote-work compliance.
+    why_it_matters: Retention and workforce compliance are private but material to execution.
+    suggested_source_or_request: People ops dashboard, HR/legal schedules and option ledger.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Material customer/supplier/acquisition contracts, IP portfolio, insurance policies and litigation/regulatory schedules.
+    why_it_matters: Public legal evidence is thin relative to enterprise SaaS/platform exposure.
+    suggested_source_or_request: Counsel data room, insurance broker, IP counsel and contract repository.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide last 36 months of audited/management financial statements, ARR/bookings bridge, gross margin by product, cash runway and board reporting.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide fully diluted cap table, financing documents, preference stack, option/warrant/debt schedules and latest 409A valuation.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide product-level ARR, attach rates, usage cohorts, support costs, reliability/SLA history and module roadmap.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide top-25 customer ARR schedule, renewal dates, logo rights, churn/loss report and reference-call introductions.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.E
+    request: Provide top supplier spend/contracts, model-provider agreements, Neon/database economics, cloud commitments and subprocessor risk assessments.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide win/loss analysis versus Vercel, Cloudflare and hyperscalers plus price/performance benchmarks.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.D
+    request: Provide sales productivity model including quotas, attainment, ramp, CAC/payback, pipeline coverage and new-hire plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide AI Gateway, Agent Runners and Database product P&Ls, vendor agreements, safety reviews, security assessments and incident history.
+    requested_from: company
+    priority: high
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide current org chart, headcount by function/location, attrition, compensation bands, option ledger and employment compliance review.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide counsel litigation/regulatory schedule, IP portfolio, OSS SBOM, insurance policies, material contracts and acquisition agreements.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: This report uses public sources only; no management interviews, data-room materials, customer references, supplier calls, private financials or legal counsel responses were available.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - I.D
+      - II.A
+      - III.A
+      - III.B
+      - III.C
+      - III.D
+      - III.E
+      - IV.A
+      - V.A
+      - V.B
+      - V.C
+      - V.D
+      - V.E
+      - VI.A
+      - VI.B
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-002
+    description: Company website pages are vendor-controlled and may change; customer logos, case studies and product claims require direct verification.
+    affected_chapter_ids:
+      - II
+      - III
+      - V
+      - VI
+    affected_section_ids:
+      - II.A
+      - III.A
+      - III.C
+      - V.A
+      - V.B
+      - VI.B
+  - limitation_id: L-003
+    description: CourtListener searches are not comprehensive litigation diligence and do not cover all dockets, arbitration, sealed matters, demand letters, state/international records or IP office proceedings.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-004
+    description: Valuation, developer counts, app counts and repository metrics are point-in-time public signals; they do not establish current fair value, active paid usage or revenue quality.
+    affected_chapter_ids:
+      - I
+      - III
+      - VI
+    affected_section_ids:
+      - I.C
+      - I.D
+      - III.A
+      - III.C
+      - VI.A
