@@ -101,6 +101,8 @@ engine:
     - xhigh
     - --autopilot
 
+max-effective-tokens: 100000000
+
 tools:
   web-fetch:
   bash: true
