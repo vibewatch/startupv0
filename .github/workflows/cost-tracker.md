@@ -17,6 +17,10 @@ on:
     branches:
       - main
 
+engine:
+  id: copilot
+  model: gpt-5.4
+    
 permissions:
   actions: read
   contents: read

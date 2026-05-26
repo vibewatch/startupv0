@@ -12,6 +12,10 @@ on:
 
 permissions: read-all
 
+engine:
+  id: copilot
+  model: gpt-5.4
+  
 network:
   allowed:
     - defaults
