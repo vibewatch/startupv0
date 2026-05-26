@@ -102,6 +102,7 @@ engine:
     - --autopilot
 
 max-effective-tokens: 100000000
+max-runs: 200
 
 tools:
   web-fetch:
