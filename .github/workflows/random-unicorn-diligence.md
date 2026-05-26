@@ -15,6 +15,7 @@ env:
   COPILOT_PROVIDER_WIRE_API: responses
 
 network:
+  allowed-input: true
   allowed:
     - defaults
     - chrome
