@@ -1,0 +1,4723 @@
+report_metadata:
+  report_title: Flink Startup Diligence Report
+  target_company: Flink
+  website: https://www.goflink.com/en/
+  known_aliases:
+    - Flink SE
+    - Flink Lebensmittel GmbH
+    - goflink.com
+    - Flink Germany
+    - Flink Nederland
+    - Cajoo (acquired/historical France operation)
+  sector: Consumer & Retail / quick commerce grocery delivery
+  geography: Germany (Berlin HQ) with public Germany and Netherlands focus; France footprint requires confirmation
+  company_stage: Private venture-backed unicorn / growth-stage quick-commerce company
+  research_date: 2026-05-27
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD unless otherwise noted; EUR for Euro-denominated financing reports
+  time_zone: Europe/Berlin
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - "Used public evidence only: CB Insights, app stores, LinkedIn, independent funding/market news and accessible public registry/search pages."
+    - Treated company/app-store claims and news-reported metrics as public signals requiring private verification before investment reliance.
+    - Did not bypass paywalls, private systems or blocked company pages; goflink.com direct fetch returned 403 and is disclosed as a limitation.
+    - Marked financials, cap table, debt, contracts, customer cohorts, legal dockets, insurance, HRIS and IP schedules as not_publicly_verifiable where public evidence was absent.
+  included_jurisdictions:
+    - Germany
+    - Netherlands
+    - France
+    - European Union
+  excluded_topics:
+    - Private data-room contents
+    - Paid databases
+    - Non-public legal dockets
+    - Private customer references
+    - Privileged counsel materials
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Candidate unicorn row for Flink
+      type: user_provided_public_list_extract
+      date_received: 2026-05-27
+      notes: User specified slug=flink, company=Flink, valuation=$1.07B, country=Germany, sector=Consumer & Retail, unicorn-status source=CB Insights Global Unicorn Club.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Flink is a private unicorn listed by CB Insights at $1.07B in Germany/Berlin, Consumer & Retail.
+    claim_source: User candidate row and CB Insights
+    claim_date: 2026-05-27
+    mapped_chapter_ids:
+      - I
+      - VIII
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request current cap table and valuation support.
+  - founder_claim_id: FC-002
+    claim_text: Flink operates a quick-commerce grocery-delivery app for consumers.
+    claim_source: App stores and LinkedIn
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - V
+    mapped_section_ids:
+      - II.A
+      - III.A
+      - V.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate active customers, cohorts and unit economics.
+  - founder_claim_id: FC-003
+    claim_text: Flink has raised substantial institutional financing including 2024 $150M and 2021 $750M rounds.
+    claim_source: Independent public funding coverage
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-020
+    contradiction_summary: Public valuation marks vary and deal terms are private.
+    diligence_follow_up:
+      - Request financing documents, debt terms and preference waterfall.
+  - founder_claim_id: FC-004
+    claim_text: Flink was launched/founded in 2020 by Oliver Merkel, Julian Dames and Christoph Cordes and is Berlin based.
+    claim_source: Tech Funding News and LinkedIn
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.A
+      - VII.C
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-004
+      - EC-007
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request full org chart, officer roster and employment agreements.
+  - founder_claim_id: FC-005
+    claim_text: REWE, Carrefour/Cajoo and Just Eat Takeaway.com are strategically important relationships.
+    claim_source: Public news coverage
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+      - VIII
+    mapped_section_ids:
+      - III.B
+      - III.E
+      - V.C
+      - VIII.F
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-016
+      - EC-018
+    contradiction_summary: Existence is public; economics/current France status are private or ambiguous.
+    diligence_follow_up:
+      - Review contracts, exclusivity, termination rights, rebates and France obligations.
+  - founder_claim_id: FC-006
+    claim_text: Flink is approaching profitability with reported $600M 2024 gross revenues and country-level EBITDA break-even.
+    claim_source: Tech Funding News reporting attributed to Flink
+    claim_date: 2024-09-17
+    mapped_chapter_ids:
+      - I
+      - V
+    mapped_section_ids:
+      - I.A
+      - I.B
+      - V.E
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-006
+      - EC-010
+      - EC-014
+    contradiction_summary: Metrics are unaudited and April 2024 coverage emphasized runway/sector stress.
+    diligence_follow_up:
+      - Request audited financials, market-level P&L and cash runway.
+  - founder_claim_id: FC-007
+    claim_text: Flink maintains consumer apps that process personal, location and financial data.
+    claim_source: Google Play and Apple listings
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VI.B
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-013
+      - EC-017
+    contradiction_summary: Data-safety disclosures are public; detailed compliance/security evidence is private.
+    diligence_follow_up:
+      - Review GDPR package, DPAs, subprocessors, security reports and incident logs.
+executive_summary:
+  overall_assessment: Flink is publicly verifiable as an operating Germany-based quick-commerce unicorn, but investment-grade diligence depends on private financials, cap table/debt terms, customer cohorts, supplier contracts and EU regulatory/labor review.
+  investment_or_diligence_thesis: Upside is survivor consolidation in rapid grocery with app reach, dense hubs and strategic suppliers; downside is a capital-intensive low-margin model with valuation compression, partner dependency and unresolved France/labor/privacy risk.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights lists Flink at $1.07B in Germany/Berlin, Consumer & Retail.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-002
+      summary: Google Play, Apple and LinkedIn verify active consumer grocery-delivery apps and positioning.
+      evidence_claim_ids:
+        - EC-002
+        - EC-003
+        - EC-004
+    - founder_claim_id: FC-004
+      summary: Public reporting supports 2020 launch/founding by Oliver Merkel, Julian Dames and Christoph Cordes.
+      evidence_claim_ids:
+        - EC-007
+  biggest_risks:
+    - risk_id: R-001
+      summary: Audited financials and unit economics are not public
+    - risk_id: R-002
+      summary: Public valuation and financing terms are inconsistent or incomplete
+    - risk_id: R-003
+      summary: Quick-commerce margin/demand pressure remains high
+    - risk_id: R-005
+      summary: Supplier and partner dependency may drive economics
+    - risk_id: R-008
+      summary: Privacy/payment/location data exposure requires GDPR diligence
+  key_evidence_gaps:
+    - Audited financial statements and monthly management accounts
+    - Current cap table, debt/preferred terms and option pool
+    - Customer cohorts, retention, order frequency and CAC/LTV
+    - Top supplier, partner, lease and payment-processor contracts
+    - GDPR/privacy package, litigation, insurance and HR/labor schedules
+  recommended_next_steps:
+    - Open finance/cap-table data room before valuation reliance.
+    - Run customer-cohort and city-level unit-economics diligence.
+    - Review REWE/Carrefour/Just Eat and payment-provider contracts.
+    - Confirm France footprint/exit liabilities and hub lease obligations.
+    - Complete counsel-led GDPR, labor, IP, litigation and insurance review.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public evidence verifies unicorn status and financing history, but audited financials, cap table, debt terms, cash runway and unit economics remain private.
+    founder_claim_ids:
+      - FC-001
+      - FC-003
+      - FC-006
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-006
+      - EC-007
+      - EC-008
+      - EC-010
+      - EC-014
+      - EC-020
+    risk_ids:
+      - R-001
+      - R-002
+      - R-003
+      - R-006
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Only high-level public metrics are available; audited financials, AR aging, backlog and detailed gross profit are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Only high-level public metrics are available; audited financials, AR aging, backlog and detailed gross profit are not public.
+            evidence_claim_ids: &a1
+              - EC-006
+              - EC-014
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Audited financials and unit economics are not public
+        evidence_gaps:
+          - Audited financial statements, AR aging, cash flows and revenue-recognition support.
+        follow_up_questions:
+          - Provide FY2023-FY2025 monthly P&L, balance sheet, cash flow and gross-to-net revenue bridge.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids: *a1
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public projections are limited to reported profitability targets and hub expansion; assumptions are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public projections are limited to reported profitability targets and hub expansion; assumptions are private.
+            evidence_claim_ids: &a2
+              - EC-006
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-003
+        hidden_risks:
+          - Audited financials and unit economics are not public
+          - Quick-commerce margin/demand pressure remains high
+        evidence_gaps:
+          - Three-year model, capex, working capital, cash runway and downside sensitivities.
+        follow_up_questions:
+          - Provide board-approved forecast with market-level contribution margin and cash runway.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public investors and valuation marks are visible, but ownership percentages, option pool, preferred rights and debt terms are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public investors and valuation marks are visible, but ownership percentages, option pool, preferred rights and debt terms are not public.
+            evidence_claim_ids: &a3
+              - EC-001
+              - EC-020
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Public valuation and financing terms are inconsistent or incomplete
+        evidence_gaps:
+          - Current cap table, option/warrant/SAFE/note schedule and debt covenants.
+        follow_up_questions:
+          - Provide fully diluted cap table and all financing documents.
+        table_ids:
+          - T-002
+        figure_ids:
+          - F-002
+        evidence_claim_ids: *a3
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Financing history is publicly traceable; tax positions, accounting policies and transaction terms are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Financing history is publicly traceable; tax positions, accounting policies and transaction terms are private.
+            evidence_claim_ids: &a4
+              - EC-005
+              - EC-007
+              - EC-008
+              - EC-009
+              - EC-001
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Public valuation and financing terms are inconsistent or incomplete
+        evidence_gaps:
+          - Tax positions, accounting policies and basis for each valuation mark.
+        follow_up_questions:
+          - Provide round-by-round financing ledger and tax/accounting memos.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids: *a4
+  - chapter_id: II
+    title: Products
+    chapter_summary: The app and grocery-delivery value proposition are public; roadmap, pricing economics, uptime, security and proprietary technology are private.
+    founder_claim_ids:
+      - FC-002
+      - FC-007
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-013
+      - EC-017
+    risk_ids:
+      - R-004
+      - R-008
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Flink’s public product is an online supermarket app with 2,300+ items, payments and hub-based delivery in minutes.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Flink’s public product is an online supermarket app with 2,300+ items, payments and hub-based delivery in minutes.
+            evidence_claim_ids: &a5
+              - EC-002
+              - EC-003
+              - EC-013
+              - EC-017
+            risk_ids:
+              - R-004
+              - R-008
+        hidden_risks:
+          - Customer cohorts and revenue concentration are not public
+          - Privacy/payment/location data exposure requires GDPR diligence
+        evidence_gaps:
+          - Live SKU margins, product roadmap, uptime, routing technology and security evidence.
+        follow_up_questions:
+          - Provide SKU economics, roadmap, architecture, uptime/incident logs and privacy/security reports.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a5
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Customer evidence is mostly app-store proxy data and public partner references; active customer cohorts, revenue concentration and supplier spend are private.
+    founder_claim_ids:
+      - FC-002
+      - FC-005
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-015
+      - EC-016
+    risk_ids:
+      - R-004
+      - R-005
+      - R-006
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: No top-15 customer list is public for the B2C app; downloads and ratings are only proxies.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: No top-15 customer list is public for the B2C app; downloads and ratings are only proxies.
+            evidence_claim_ids: &a6
+              - EC-015
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Customer cohorts and revenue concentration are not public
+        evidence_gaps:
+          - Active users, order frequency, retention, NPS and revenue by cohort.
+        follow_up_questions:
+          - Provide cohort/order export by city, channel and first-order month.
+        table_ids:
+          - T-006
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a6
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: REWE, Just Eat Takeaway.com, Carrefour/Cajoo and DoorDash relationships are public but economic terms are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: REWE, Just Eat Takeaway.com, Carrefour/Cajoo and DoorDash relationships are public but economic terms are private.
+            evidence_claim_ids: &a7
+              - EC-005
+              - EC-008
+              - EC-009
+              - EC-016
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Supplier and partner dependency may drive economics
+        evidence_gaps:
+          - Partner revenue, exclusivity, rebates, commission and termination rights.
+        follow_up_questions:
+          - Provide executed partner contracts and partner P&L.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids: *a7
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer or cohort is not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Revenue by customer or cohort is not publicly verifiable.
+            evidence_claim_ids: &a8
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Customer cohorts and revenue concentration are not public
+        evidence_gaps:
+          - Revenue by customer/cohort, promo exposure and churn.
+        follow_up_questions:
+          - Provide revenue and contribution margin by cohort, segment, city and channel.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: France exit-cost signals suggest possible severed relationships, but no public schedule exists.
+        verification_status: inconclusive
+        confidence: medium
+        key_findings:
+          - finding_id: III.D-F1
+            finding: France exit-cost signals suggest possible severed relationships, but no public schedule exists.
+            evidence_claim_ids: &a9
+              - EC-018
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - France footprint and exit-cost signals are ambiguous
+        evidence_gaps:
+          - France exit obligations and severed partner/supplier/customer relationships.
+        follow_up_questions:
+          - Provide severed-relationship and country-exit schedule.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a9
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Supplier relationships are central; REWE/Carrefour/large merchants are public but top supplier spend and terms are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Supplier relationships are central; REWE/Carrefour/large merchants are public but top supplier spend and terms are private.
+            evidence_claim_ids: &a10
+              - EC-016
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Supplier and partner dependency may drive economics
+        evidence_gaps:
+          - Top suppliers, purchase amounts, rebates, payment terms and fallback sources.
+        follow_up_questions:
+          - Provide supplier spend and contract schedule for two fiscal years and YTD.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids: *a10
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Flink appears to be a survivor in a stressed rapid-grocery sector where Getir/Gorillas and others exited markets.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-016
+    risk_ids:
+      - R-003
+      - R-007
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Flink competes on delivery speed, hub density, supplier relationships, price and capital endurance amid category consolidation.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Flink competes on delivery speed, hub density, supplier relationships, price and capital endurance amid category consolidation.
+            evidence_claim_ids: &a11
+              - EC-011
+              - EC-012
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-007
+        hidden_risks:
+          - Quick-commerce margin/demand pressure remains high
+          - Local hub regulation and competitor exits signal market fragility
+        evidence_gaps:
+          - City-level market share, win/loss, price benchmarks and regulatory constraints.
+        follow_up_questions:
+          - Commission basket-price/delivery-speed benchmark in core Germany and Netherlands cities.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a11
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: GTM appears app-led with local hubs and Just Eat Takeaway.com partnership; CAC, channel mix, promo dependence and France status are private.
+    founder_claim_ids:
+      - FC-002
+      - FC-005
+      - FC-006
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-015
+      - EC-018
+    risk_ids:
+      - R-003
+      - R-004
+      - R-005
+      - R-006
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Flink markets convenience, broad assortment and minutes delivery through owned apps, local hubs and partner channels.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Flink markets convenience, broad assortment and minutes delivery through owned apps, local hubs and partner channels.
+            evidence_claim_ids: &a12
+              - EC-002
+              - EC-003
+              - EC-004
+              - EC-018
+            risk_ids:
+              - R-004
+              - R-006
+        hidden_risks:
+          - Customer cohorts and revenue concentration are not public
+          - France footprint and exit-cost signals are ambiguous
+        evidence_gaps:
+          - CAC/channel mix, paid media, promo spend, city availability and France status.
+        follow_up_questions:
+          - Provide marketing funnel and city availability matrix.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a12
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major-customer status is not public for the consumer app.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Major-customer status is not public for the consumer app.
+            evidence_claim_ids: &a13
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Customer cohorts and revenue concentration are not public
+        evidence_gaps:
+          - Active customer and cohort data.
+        follow_up_questions:
+          - Provide MAU, orders/customer, churn, NPS and support trends.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a13
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Owned app storefronts, partner channels and hub expansion are public new-business avenues.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Owned app storefronts, partner channels and hub expansion are public new-business avenues.
+            evidence_claim_ids: &a14
+              - EC-005
+              - EC-015
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Supplier and partner dependency may drive economics
+        evidence_gaps:
+          - Channel-level CAC, conversion and customer ownership.
+        follow_up_questions:
+          - Provide channel P&L and attribution by owned app, partner marketplace, referral and paid media.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids: *a14
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Traditional sales-force metrics are not public; growth likely depends on marketing, partnerships and local operations.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Traditional sales-force metrics are not public; growth likely depends on marketing, partnerships and local operations.
+            evidence_claim_ids: &a15
+              - EC-014
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Sales/marketing org plan, incentives and partner-management productivity.
+        follow_up_questions:
+          - Provide GTM headcount, incentives and productivity model.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a15
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Budget adequacy is not public and must be assessed with runway and sector margin pressure.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Budget adequacy is not public and must be assessed with runway and sector margin pressure.
+            evidence_claim_ids: &a16
+              - EC-010
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Quick-commerce margin/demand pressure remains high
+        evidence_gaps:
+          - Budget, CAC payback, promo spend and cash runway.
+        follow_up_questions:
+          - Provide monthly marketing budget and CAC/LTV forecast.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: App maintenance is visible; R&D org, proprietary routing/inventory technology, IP, security and roadmap are private.
+    founder_claim_ids:
+      - FC-007
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-013
+      - EC-017
+      - EC-019
+    risk_ids:
+      - R-008
+      - R-010
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Founder backgrounds and app updates are visible, but engineering org, R&D budget and technical leadership are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Founder backgrounds and app updates are visible, but engineering org, R&D budget and technical leadership are private.
+            evidence_claim_ids: &a17
+              - EC-007
+              - EC-017
+              - EC-014
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - R&D org chart, budget, roadmap owners, security leader and critical systems.
+        follow_up_questions:
+          - Provide product/engineering org chart, budget, roadmap and security documents.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a17
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Visible pipeline includes app maintenance and hub expansion; proprietary systems and partner integrations require private validation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Visible pipeline includes app maintenance and hub expansion; proprietary systems and partner integrations require private validation.
+            evidence_claim_ids: &a18
+              - EC-017
+              - EC-006
+              - EC-019
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Roadmap, capex, system architecture, incident reports and IP assignments.
+        follow_up_questions:
+          - Provide roadmap with dates/costs, architecture and open-source/IP review.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids: *a18
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public sources identify founders and workforce scale signals; formal org chart, C-suite roster, compensation, turnover and worker classification are private.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-007
+      - EC-014
+      - EC-018
+    risk_ids:
+      - R-009
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Only a founder-level org sketch is possible from public evidence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Only a founder-level org sketch is possible from public evidence.
+            evidence_claim_ids: &a19
+              - EC-007
+              - EC-014
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Workforce scale, classification and turnover are not public
+        evidence_gaps:
+          - Full org chart by function/region and board/advisor roles.
+        follow_up_questions:
+          - Provide current org chart, board list and executive bios.
+        table_ids: []
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a19
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public headcount anchors vary from 2,600 LinkedIn employees to 8,900+ reported workforce.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public headcount anchors vary from 2,600 LinkedIn employees to 8,900+ reported workforce.
+            evidence_claim_ids: &a20
+              - EC-004
+              - EC-006
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Workforce scale, classification and turnover are not public
+        evidence_gaps:
+          - HRIS, employee/contractor split, headcount by function/location and hiring plan.
+        follow_up_questions:
+          - Provide 24-month headcount bridge by country/function and contractor classification.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a20
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Founder biographies are public at a basic level; other senior management biographies are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Founder biographies are public at a basic level; other senior management biographies are not public.
+            evidence_claim_ids: &a21
+              - EC-007
+              - EC-014
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Workforce scale, classification and turnover are not public
+        evidence_gaps:
+          - Full management bios, references, tenure, equity and retention arrangements.
+        follow_up_questions:
+          - Provide management biographies, employment agreements and succession plan.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a21
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation and benefits are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Compensation and benefits are not public.
+            evidence_claim_ids: &a22
+              - EC-014
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Executive compensation, severance, benefit plans and retention grants.
+        follow_up_questions:
+          - Provide compensation schedules and employment agreements.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a22
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Equity incentive plan and option pool are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Equity incentive plan and option pool are not public.
+            evidence_claim_ids: &a23
+              - EC-014
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Public valuation and financing terms are inconsistent or incomplete
+        evidence_gaps:
+          - Option plan, grants, vesting and 409A/valuation.
+        follow_up_questions:
+          - Provide option ledger and plan documents.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No employee-relations schedule is public; hub/rider operations create labor and safety diligence needs.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: No employee-relations schedule is public; hub/rider operations create labor and safety diligence needs.
+            evidence_claim_ids: &a24
+              - EC-006
+              - EC-014
+            risk_ids:
+              - R-009
+              - R-010
+        hidden_risks:
+          - Workforce scale, classification and turnover are not public
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Claims, grievances, works council/union matters, safety logs and classification analysis.
+        follow_up_questions:
+          - Provide employee-relations and safety schedule.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a24
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover and retention metrics are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Turnover and retention metrics are not public.
+            evidence_claim_ids: &a25
+              - EC-014
+              - EC-018
+            risk_ids:
+              - R-009
+              - R-006
+        hidden_risks:
+          - Workforce scale, classification and turnover are not public
+          - France footprint and exit-cost signals are ambiguous
+        evidence_gaps:
+          - Attrition by role/country, exit interviews, retention programs and severance costs.
+        follow_up_questions:
+          - Provide 24-month attrition and retention data.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a25
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public evidence shows data/privacy exposure, partner/contract dependencies, local hub regulation and IP/litigation gaps. Counsel/company disclosure is required.
+    founder_claim_ids:
+      - FC-001
+      - FC-005
+      - FC-007
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-011
+      - EC-013
+      - EC-014
+      - EC-019
+    risk_ids:
+      - R-005
+      - R-006
+      - R-007
+      - R-008
+      - R-010
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: No comprehensive public litigation docket was verified; this is not a clean legal conclusion.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No comprehensive public litigation docket was verified; this is not a clean legal conclusion.
+            evidence_claim_ids: &a26
+              - EC-019
+              - EC-014
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Counsel litigation letter and threatened claims.
+        follow_up_questions:
+          - Provide litigation, arbitration and claims schedule by jurisdiction.
+        table_ids:
+          - T-017
+        figure_ids: []
+        evidence_claim_ids: *a26
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No affirmative litigation schedule is public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: No affirmative litigation schedule is public.
+            evidence_claim_ids: &a27
+              - EC-019
+              - EC-014
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Affirmative litigation, collections, IP enforcement and settlements.
+        follow_up_questions:
+          - Provide all claims initiated by Flink or subsidiaries.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a27
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Safety and environmental schedules are not public; local hub regulation creates exposure.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Safety and environmental schedules are not public; local hub regulation creates exposure.
+            evidence_claim_ids: &a28
+              - EC-011
+              - EC-014
+            risk_ids:
+              - R-007
+              - R-010
+        hidden_risks:
+          - Local hub regulation and competitor exits signal market fragility
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Safety logs, permits, zoning, waste and delivery incident records.
+        follow_up_questions:
+          - Provide safety/incident logs, permits and environmental compliance schedule.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a28
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Material IP ownership was not publicly verifiable in accessible register output.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Material IP ownership was not publicly verifiable in accessible register output.
+            evidence_claim_ids: &a29
+              - EC-019
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Trademark/domain schedule, source-code assignments, SBOM and third-party licenses.
+        follow_up_questions:
+          - Provide IP schedule and ownership/assignment evidence.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids: *a29
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance policies and loss history are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Insurance policies and loss history are not public.
+            evidence_claim_ids: &a30
+              - EC-013
+              - EC-014
+            risk_ids:
+              - R-008
+              - R-010
+        hidden_risks:
+          - Privacy/payment/location data exposure requires GDPR diligence
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Insurance policies, deductibles, exclusions and loss runs.
+        follow_up_questions:
+          - Provide insurance binder, policies and five-year claims/loss run.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a30
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: REWE, Carrefour/Cajoo, Just Eat, payment provider, lease and debt contracts are material but private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: REWE, Carrefour/Cajoo, Just Eat, payment provider, lease and debt contracts are material but private.
+            evidence_claim_ids: &a31
+              - EC-005
+              - EC-008
+              - EC-009
+              - EC-016
+              - EC-018
+            risk_ids:
+              - R-005
+              - R-006
+        hidden_risks:
+          - Supplier and partner dependency may drive economics
+          - France footprint and exit-cost signals are ambiguous
+        evidence_gaps:
+          - Material contracts, leases, supplier agreements, debt and change-of-control terms.
+        follow_up_questions:
+          - Provide material-contract schedule and copies.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a31
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Privacy/data, local zoning/dark-store restrictions and country-exit issues are the clearest public regulatory exposure areas.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Privacy/data, local zoning/dark-store restrictions and country-exit issues are the clearest public regulatory exposure areas.
+            evidence_claim_ids: &a32
+              - EC-011
+              - EC-013
+              - EC-019
+            risk_ids:
+              - R-007
+              - R-008
+              - R-010
+        hidden_risks:
+          - Local hub regulation and competitor exits signal market fragility
+          - Privacy/payment/location data exposure requires GDPR diligence
+          - IP, litigation, insurance and material contracts are not publicly verifiable
+        evidence_gaps:
+          - Regulatory correspondence, DPIAs, permits/zoning and compliance audits.
+        follow_up_questions:
+          - Provide regulator correspondence, GDPR compliance pack and permit register.
+        table_ids: []
+        figure_ids:
+          - F-010
+          - F-011
+        evidence_claim_ids: *a32
+tables:
+  - table_id: T-001
+    title: Public funding-round and valuation history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarizes public financing and valuation anchors.
+    columns:
+      - name: date
+        description: date
+      - name: event
+        description: event
+      - name: amount
+        description: amount
+      - name: valuation
+        description: valuation
+      - name: investors_or_partners
+        description: investors or partners
+      - name: status
+        description: status
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2021-06-04
+          event: Series A
+          amount: $240M
+          valuation: Not disclosed
+          investors_or_partners: Prosus, BOND, Mubadala; Rewe partnership
+          status: public report; terms private
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: T-001-R2
+        values:
+          date: 2021-12-10
+          event: Series B
+          amount: $750M
+          valuation: $2.85B post-money reported
+          investors_or_partners: DoorDash-led; Mubadala and others
+          status: public report; cap table private
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-001-R3
+        values:
+          date: 2022-05-16
+          event: Cajoo / Carrefour deal
+          amount: Not disclosed
+          valuation: Over $5B reported
+          investors_or_partners: Carrefour
+          status: historical; current France status unclear
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-009
+      - row_id: T-001-R4
+        values:
+          date: 2024-09-17
+          event: Equity/debt financing
+          amount: $150M
+          valuation: Not disclosed
+          investors_or_partners: BOND, Mubadala, Northzone, REWE, others
+          status: partially verified; debt terms private
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-005
+      - row_id: T-001-R5
+        values:
+          date: 2026-05-27
+          event: CB Insights current row reviewed
+          amount: N/A
+          valuation: $1.07B list value
+          investors_or_partners: Mubadala Capital, Bond, Prosus Ventures
+          status: verified list entry; basis private
+        evidence_claim_ids:
+          - EC-001
+          - EC-020
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-009
+    notes: Valuation marks are not normalized.
+  - table_id: T-002
+    title: Capital structure / ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Identifies public stakeholders and cap-table gaps.
+    columns:
+      - name: stakeholder
+        description: stakeholder
+      - name: public_position
+        description: public position
+      - name: evidence
+        description: evidence
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T-002-R1
+        values:
+          stakeholder: Mubadala Capital
+          public_position: Named investor
+          evidence: CB Insights and funding reports
+          diligence_caveat: Current shares/preferences unknown
+        evidence_claim_ids:
+          - EC-001
+          - EC-005
+          - EC-008
+        source_ids:
+          - SRC-001
+          - SRC-005
+          - SRC-008
+      - row_id: T-002-R2
+        values:
+          stakeholder: BOND
+          public_position: Named investor
+          evidence: CB Insights, Series A and 2024 round
+          diligence_caveat: Rights and ownership unknown
+        evidence_claim_ids:
+          - EC-001
+          - EC-005
+          - EC-008
+        source_ids:
+          - SRC-001
+          - SRC-005
+          - SRC-008
+      - row_id: T-002-R3
+        values:
+          stakeholder: Prosus Ventures
+          public_position: Named investor
+          evidence: CB Insights and Series A
+          diligence_caveat: Current dilution unknown
+        evidence_claim_ids:
+          - EC-001
+          - EC-008
+        source_ids:
+          - SRC-001
+          - SRC-008
+      - row_id: T-002-R4
+        values:
+          stakeholder: DoorDash
+          public_position: Strategic Series B lead
+          evidence: 2021 Series B report
+          diligence_caveat: Ongoing rights/ownership unknown
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-002-R5
+        values:
+          stakeholder: REWE / Carrefour
+          public_position: Partner/investor/shareholder signals
+          evidence: Rewe partnership, REWE investor, Carrefour shareholder history
+          diligence_caveat: Commercial terms and current status private
+        evidence_claim_ids:
+          - EC-005
+          - EC-008
+          - EC-009
+        source_ids:
+          - SRC-005
+          - SRC-008
+          - SRC-009
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-014
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-009
+    notes: null
+  - table_id: T-003
+    title: Public revenue and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separates public financial signals from private diligence needs.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-003-R1
+        values:
+          metric: 2024 gross revenues
+          public_signal: $600M; ~20% growth excluding France exit costs
+          verification_status: partially_verified
+          diligence_request: Audited revenue and gross-to-net bridge
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+      - row_id: T-003-R2
+        values:
+          metric: Average order value
+          public_signal: AOV above $40
+          verification_status: partially_verified
+          diligence_request: Order-level data and margin by basket
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+      - row_id: T-003-R3
+        values:
+          metric: Profitability
+          public_signal: Country-level EBITDA break-even; full profitability target Q2 2025
+          verification_status: partially_verified
+          diligence_request: EBITDA definition and cash runway
+        evidence_claim_ids:
+          - EC-006
+          - EC-010
+        source_ids:
+          - SRC-005
+          - SRC-006
+      - row_id: T-003-R4
+        values:
+          metric: Audited statements / AR / backlog
+          public_signal: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Financial statements, AR aging, cash flows and working capital
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-006
+      - EC-010
+      - EC-014
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-013
+    notes: null
+  - table_id: T-004
+    title: Product / SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Documents the public product offering.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: features
+        description: features
+      - name: status
+        description: status
+    rows:
+      - row_id: T-004-R1
+        values:
+          product: Flink mobile app
+          audience: Urban grocery consumers
+          features: Catalog browsing, ordering, payment, door delivery in minutes
+          status: verified app-store descriptions
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-004-R2
+        values:
+          product: Grocery catalog
+          audience: Weekly/top-up grocery shoppers
+          features: 2,300+ app-store items; LinkedIn says 2,400+ products
+          status: verified public descriptions; live SKUs private
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+          - EC-004
+        source_ids:
+          - SRC-002
+          - SRC-003
+          - SRC-004
+      - row_id: T-004-R3
+        values:
+          product: Hub-based fulfillment
+          audience: Consumers in supported cities
+          features: 146 hubs across 80+ cities reported
+          status: partially verified; economics private
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-006
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+    notes: null
+  - table_id: T-005
+    title: Pricing and payment comparison signals
+    chapter_id: II
+    section_id: II.A
+    purpose: Captures public pricing/payment signals and gaps.
+    columns:
+      - name: item
+        description: item
+      - name: public_signal
+        description: public signal
+      - name: status
+        description: status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-005-R1
+        values:
+          item: Product prices
+          public_signal: App listings claim great/supermarket prices; no live price book accessible
+          status: partially_verified
+          diligence_request: City-level basket-price benchmark
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-005-R2
+        values:
+          item: Delivery fees
+          public_signal: Apple says city delivery fees are in app
+          status: not_publicly_verifiable
+          diligence_request: Fee table, minimums and promo rules
+        evidence_claim_ids:
+          - EC-003
+          - EC-014
+        source_ids:
+          - SRC-003
+      - row_id: T-005-R3
+        values:
+          item: Payment methods
+          public_signal: Credit card, Apple Pay, PayPal, iDEAL publicly listed
+          status: verified
+          diligence_request: Payment processor contracts and chargeback rates
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-006
+    title: Public customer/app traction proxies
+    chapter_id: III
+    section_id: III.A
+    purpose: Uses app-store signals because customer lists/cohorts are private.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_value
+        description: public value
+      - name: source
+        description: source
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T-006-R1
+        values:
+          signal: Android downloads
+          public_value: 1M+
+          source: Google Play
+          diligence_caveat: Cumulative, not active users
+        evidence_claim_ids:
+          - EC-002
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-006-R2
+        values:
+          signal: Android reviews
+          public_value: 36.8K reviews; 4.2 stars
+          source: Google Play
+          diligence_caveat: Not NPS or retention
+        evidence_claim_ids:
+          - EC-002
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-006-R3
+        values:
+          signal: iOS ratings
+          public_value: 70,212 ratings; 4.56 average
+          source: Apple API
+          diligence_caveat: Not revenue or order frequency
+        evidence_claim_ids:
+          - EC-003
+          - EC-015
+        source_ids:
+          - SRC-003
+      - row_id: T-006-R4
+        values:
+          signal: Revenue by customer/cohort
+          public_value: Not public
+          source: Public-source absence
+          diligence_caveat: Need cohort/order export
+        evidence_claim_ids:
+          - EC-014
+          - EC-015
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Lists public relationships relevant to revenue/supply/distribution.
+    columns:
+      - name: partner
+        description: partner
+      - name: relationship
+        description: relationship
+      - name: public_evidence
+        description: public evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-007-R1
+        values:
+          partner: REWE
+          relationship: Supermarket partner and reported 2024 investor
+          public_evidence: Series A and 2024 reports
+          gap: Supplier economics and exclusivity
+        evidence_claim_ids:
+          - EC-005
+          - EC-008
+          - EC-016
+        source_ids:
+          - SRC-005
+          - SRC-008
+      - row_id: T-007-R2
+        values:
+          partner: Just Eat Takeaway.com
+          relationship: Distribution/marketplace partner
+          public_evidence: 2024 funding article
+          gap: Commission and customer ownership
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-005
+      - row_id: T-007-R3
+        values:
+          partner: Carrefour / Cajoo
+          relationship: France acquisition/shareholder/exclusive partner history
+          public_evidence: PYMNTS Cajoo report
+          gap: Current status and exit costs
+        evidence_claim_ids:
+          - EC-009
+          - EC-018
+        source_ids:
+          - SRC-009
+          - SRC-005
+      - row_id: T-007-R4
+        values:
+          partner: DoorDash
+          relationship: Strategic Series B investor
+          public_evidence: 2021 Series B report
+          gap: Current rights and commercial relationship
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-009
+    notes: null
+  - table_id: T-008
+    title: Top supplier / infrastructure dependency
+    chapter_id: III
+    section_id: III.E
+    purpose: Frames supplier and operating dependencies.
+    columns:
+      - name: dependency
+        description: dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: risk
+        description: risk
+    rows:
+      - row_id: T-008-R1
+        values:
+          dependency: Large merchants
+          role: Assortment supply
+          public_evidence: Flink collaborates with and relies on large merchants
+          risk: High margin/concentration risk
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-005
+      - row_id: T-008-R2
+        values:
+          dependency: REWE / Carrefour
+          role: Strategic grocery partners
+          public_evidence: Rewe and Carrefour reports
+          risk: Contracts/current status private
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-016
+        source_ids:
+          - SRC-008
+          - SRC-009
+      - row_id: T-008-R3
+        values:
+          dependency: Payment providers
+          role: Payment acceptance
+          public_evidence: Credit card, Apple Pay, PayPal, iDEAL listed
+          risk: Processor reserves/chargebacks private
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-008-R4
+        values:
+          dependency: Hubs/rider workforce
+          role: Fulfillment and last mile
+          public_evidence: 146 hubs and 8,900+ workforce reported
+          risk: Labor, rent, safety and utilization
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-006
+      - EC-008
+      - EC-009
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+      - SRC-009
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compares Flink with public competitive signals.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: public_signal
+        description: public signal
+      - name: flink_implication
+        description: flink implication
+    rows:
+      - row_id: T-009-R1
+        values:
+          competitor: Getir / Gorillas
+          segment: Rapid grocery
+          public_signal: Exited Netherlands/Germany/UK/US; Gorillas wound down
+          flink_implication: Survivor share opportunity and category fragility
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-010
+          - SRC-011
+      - row_id: T-009-R2
+        values:
+          competitor: REWE / incumbent grocers
+          segment: Supermarket/online grocery
+          public_signal: Partner/investor but also incumbent substitute
+          flink_implication: Supply advantage and pricing leverage risk
+        evidence_claim_ids:
+          - EC-005
+          - EC-008
+          - EC-016
+        source_ids:
+          - SRC-005
+          - SRC-008
+      - row_id: T-009-R3
+        values:
+          competitor: Scheduled online grocers / marketplaces
+          segment: Substitutes
+          public_signal: Not fully researched publicly in this run
+          flink_implication: Need basket-price and delivery-speed benchmark
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-005
+      - EC-008
+      - EC-011
+      - EC-012
+      - EC-014
+      - EC-016
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-010
+      - SRC-011
+      - SRC-013
+    notes: null
+  - table_id: T-010
+    title: Basis of competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Scores public competition axes qualitatively.
+    columns:
+      - name: axis
+        description: axis
+      - name: flink_position
+        description: flink position
+      - name: pressure
+        description: pressure
+      - name: evidence
+        description: evidence
+    rows:
+      - row_id: T-010-R1
+        values:
+          axis: Speed
+          flink_position: Minutes/under-10-minute positioning and hub network
+          pressure: Similar rivals exited markets
+          evidence: App listings, Tech Funding News, NL Times
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+          - EC-011
+        source_ids:
+          - SRC-002
+          - SRC-005
+          - SRC-010
+      - row_id: T-010-R2
+        values:
+          axis: Price/AOV
+          flink_position: Great/supermarket prices; AOV > $40
+          pressure: Inflation and lower demand
+          evidence: App and sector reports
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+          - EC-010
+        source_ids:
+          - SRC-002
+          - SRC-005
+          - SRC-006
+      - row_id: T-010-R3
+        values:
+          axis: Capital endurance
+          flink_position: 2024 runway and $150M round
+          pressure: Sector funding stress
+          evidence: PYMNTS and Tech Funding News
+        evidence_claim_ids:
+          - EC-005
+          - EC-010
+          - EC-012
+        source_ids:
+          - SRC-005
+          - SRC-006
+          - SRC-011
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-006
+      - EC-010
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-006
+      - SRC-010
+      - SRC-011
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Documents public GTM channels.
+    columns:
+      - name: channel
+        description: channel
+      - name: scope
+        description: scope
+      - name: public_evidence
+        description: public evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-011-R1
+        values:
+          channel: Owned mobile apps
+          scope: Germany/Netherlands; France text ambiguous
+          public_evidence: Google Play and Apple listings
+          gap: City availability and cohorts
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+          - EC-018
+        source_ids:
+          - SRC-002
+          - SRC-003
+          - SRC-005
+      - row_id: T-011-R2
+        values:
+          channel: Just Eat Takeaway.com
+          scope: Germany and Netherlands
+          public_evidence: 2024 article
+          gap: Commission and customer ownership
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-005
+      - row_id: T-011-R3
+        values:
+          channel: Local hubs
+          scope: 146 hubs/80+ cities; 30 planned hubs
+          public_evidence: 2024 article
+          gap: Hub-level P&L
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+      - row_id: T-011-R4
+        values:
+          channel: LinkedIn/social/employer reach
+          scope: 81,326 followers
+          public_evidence: LinkedIn
+          gap: Consumer acquisition impact unknown
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+    notes: null
+  - table_id: T-012
+    title: Public marketing signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Summarizes visible reach and gaps.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_value
+        description: public value
+      - name: status
+        description: status
+      - name: request
+        description: request
+    rows:
+      - row_id: T-012-R1
+        values:
+          signal: Google Play storefront
+          public_value: 1M+ downloads; 36.8K reviews; 4.2 stars
+          status: verified proxy
+          request: Map installs to active users
+        evidence_claim_ids:
+          - EC-002
+          - EC-015
+        source_ids:
+          - SRC-002
+      - row_id: T-012-R2
+        values:
+          signal: Apple storefront
+          public_value: 70,212 ratings; 4.56 average
+          status: verified proxy
+          request: Segment by market and cohort
+        evidence_claim_ids:
+          - EC-003
+          - EC-015
+        source_ids:
+          - SRC-003
+      - row_id: T-012-R3
+        values:
+          signal: LinkedIn reach
+          public_value: 81,326 followers
+          status: partially verified
+          request: Separate employer brand vs consumer acquisition
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-012-R4
+        values:
+          signal: France messaging
+          public_value: App France hours vs reported France exit costs
+          status: inconclusive
+          request: Confirm service-area copy and exit obligations
+        evidence_claim_ids:
+          - EC-018
+        source_ids:
+          - SRC-002
+          - SRC-005
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-015
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+    notes: null
+  - table_id: T-013
+    title: Key R&D personnel / leadership
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Records public technology/product leadership signals and gaps.
+    columns:
+      - name: name_or_role
+        description: name or role
+      - name: public_signal
+        description: public signal
+      - name: status
+        description: status
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-013-R1
+        values:
+          name_or_role: Oliver Merkel
+          public_signal: Founder/managing director; Bain grocery/retail background
+          status: verified public report
+          gap: Current formal role and employment terms
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-013-R2
+        values:
+          name_or_role: Julian Dames
+          public_signal: Co-founder; Rocket Internet/Foodora background
+          status: verified public report
+          gap: Current operating role
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-013-R3
+        values:
+          name_or_role: Christoph Cordes
+          public_signal: Co-founder; Rocket Internet/Fashion for Home background
+          status: verified public report
+          gap: Current operating role
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-013-R4
+        values:
+          name_or_role: Engineering/product/security leaders
+          public_signal: Not publicly verified in this review
+          status: not_publicly_verifiable
+          gap: Full product/engineering/security org
+        evidence_claim_ids:
+          - EC-017
+          - EC-014
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-007
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-007
+    notes: null
+  - table_id: T-014
+    title: Public product / R&D pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Distinguishes visible maintenance from private roadmap.
+    columns:
+      - name: item
+        description: item
+      - name: public_status
+        description: public status
+      - name: timing
+        description: timing
+      - name: status
+        description: status
+      - name: request
+        description: request
+    rows:
+      - row_id: T-014-R1
+        values:
+          item: Mobile app maintenance
+          public_status: Android/iOS updated May 19, 2026
+          timing: Current
+          status: verified
+          request: Release history and QA metrics
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-014-R2
+        values:
+          item: Hub expansion
+          public_status: 30 planned new hubs in Germany/Netherlands
+          timing: 12 months from Sep 2024 article
+          status: partially_verified
+          request: Capex, leases and rollout plan
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+      - row_id: T-014-R3
+        values:
+          item: Routing/inventory technology
+          public_status: Implied but not public
+          timing: Not public
+          status: not_publicly_verifiable
+          request: Architecture, KPIs and IP assignments
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+        source_ids:
+          - SRC-002
+          - SRC-012
+    evidence_claim_ids:
+      - EC-006
+      - EC-017
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-012
+    notes: null
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Lists public management people and missing roster data.
+    columns:
+      - name: name
+        description: name
+      - name: role
+        description: role
+      - name: public_background
+        description: public background
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-015-R1
+        values:
+          name: Oliver Merkel
+          role: Founder / managing director
+          public_background: Bain grocery/retail consultant; launched Flink in 2020
+          gap: Current employment/equity/board role
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-015-R2
+        values:
+          name: Julian Dames
+          role: Co-founder
+          public_background: Rocket Internet/Foodora background
+          gap: Current responsibilities and retention
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-015-R3
+        values:
+          name: Christoph Cordes
+          role: Co-founder
+          public_background: Rocket Internet/Fashion for Home background
+          gap: Current responsibilities and retention
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-007
+      - row_id: T-015-R4
+        values:
+          name: Other C-suite/country heads
+          role: Not publicly verified
+          public_background: LinkedIn confirms scale but not authoritative roster
+          gap: Full org chart and bios
+        evidence_claim_ids:
+          - EC-004
+          - EC-014
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-004
+      - EC-007
+      - EC-014
+    source_ids:
+      - SRC-004
+      - SRC-007
+    notes: null
+  - table_id: T-016
+    title: Headcount and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Compares public workforce anchors and turnover gaps.
+    columns:
+      - name: source
+        description: source
+      - name: signal
+        description: signal
+      - name: date
+        description: date
+      - name: interpretation
+        description: interpretation
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-016-R1
+        values:
+          source: Tech Funding News
+          signal: 8,900+ employees
+          date: 2024-09-17
+          interpretation: Company-reported workforce scale
+          gap: Employee/contractor split
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-005
+      - row_id: T-016-R2
+        values:
+          source: LinkedIn
+          signal: 5,001-10,000 company-size band
+          date: 2026-05-27
+          interpretation: Self-reported large-company band
+          gap: HRIS reconciliation
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-016-R3
+        values:
+          source: LinkedIn
+          signal: 2,600 visible employees
+          date: 2026-05-27
+          interpretation: LinkedIn members, not full workforce
+          gap: Rider/hub population
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-016-R4
+        values:
+          source: Public sources
+          signal: Turnover/employee relations not public
+          date: 2026-05-27
+          interpretation: Not verifiable
+          gap: Attrition, safety, works council, classification
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-013
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-014
+    source_ids:
+      - SRC-004
+      - SRC-005
+      - SRC-013
+    notes: null
+  - table_id: T-017
+    title: Litigation and regulatory-action summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Combines public legal visibility, litigation gaps and regulatory signals.
+    columns:
+      - name: area
+        description: area
+      - name: public_status
+        description: public status
+      - name: evidence
+        description: evidence
+      - name: request
+        description: request
+    rows:
+      - row_id: T-017-R1
+        values:
+          area: Lawsuits against Flink
+          public_status: No comprehensive public docket verified
+          evidence: Public-source limitation
+          request: Counsel litigation letter and claims schedule
+        evidence_claim_ids:
+          - EC-019
+          - EC-014
+        source_ids:
+          - SRC-012
+          - SRC-013
+      - row_id: T-017-R2
+        values:
+          area: Lawsuits initiated by Flink
+          public_status: No affirmative litigation schedule public
+          evidence: Public-source limitation
+          request: Claims, collections, IP enforcement and settlements
+        evidence_claim_ids:
+          - EC-019
+          - EC-014
+        source_ids:
+          - SRC-012
+          - SRC-013
+      - row_id: T-017-R3
+        values:
+          area: Privacy/GDPR
+          public_status: Data collection/sharing disclosed
+          evidence: Google Play data safety
+          request: DPIAs, DPAs, subprocessors, breach log
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-002
+      - row_id: T-017-R4
+        values:
+          area: Local hub/dark-store regulation
+          public_status: Dutch municipal restrictions reported
+          evidence: NL Times
+          request: Permits, zoning and enforcement correspondence
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+    evidence_claim_ids:
+      - EC-011
+      - EC-013
+      - EC-014
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-010
+      - SRC-012
+      - SRC-013
+    notes: Not a legal opinion; public dockets are incomplete.
+  - table_id: T-018
+    title: Material IP, contracts and insurance gaps
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Frames material legal asset and contract diligence.
+    columns:
+      - name: asset_or_contract
+        description: asset or contract
+      - name: public_status
+        description: public status
+      - name: evidence
+        description: evidence
+      - name: request
+        description: request
+    rows:
+      - row_id: T-018-R1
+        values:
+          asset_or_contract: Flink trademarks / brand
+          public_status: Not verified in accessible DPMA output
+          evidence: DPMA search page
+          request: Trademark/domain schedule by owner/jurisdiction
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-012
+      - row_id: T-018-R2
+        values:
+          asset_or_contract: Mobile apps / software
+          public_status: Apps public; source code/IP assignments private
+          evidence: App-store updates
+          request: Source-code assignments, SBOM, licenses
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+        source_ids:
+          - SRC-002
+          - SRC-003
+          - SRC-012
+      - row_id: T-018-R3
+        values:
+          asset_or_contract: Supplier/partner contracts
+          public_status: REWE, Carrefour, Just Eat relationships public; terms private
+          evidence: News reports
+          request: Material contracts, exclusivity, SLAs and termination rights
+        evidence_claim_ids:
+          - EC-005
+          - EC-008
+          - EC-009
+          - EC-016
+        source_ids:
+          - SRC-005
+          - SRC-008
+          - SRC-009
+      - row_id: T-018-R4
+        values:
+          asset_or_contract: Insurance and safety
+          public_status: Not public
+          evidence: Large hub/rider operation creates need
+          request: Policies, loss runs and safety incidents
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-005
+          - SRC-013
+    evidence_claim_ids:
+      - EC-005
+      - EC-008
+      - EC-009
+      - EC-014
+      - EC-016
+      - EC-017
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+      - SRC-009
+      - SRC-012
+      - SRC-013
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding and strategic-event timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Major publicly reported financings and strategic events.
+    purpose: Frames financing history and diligence chronology.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E1
+          date: "2020"
+          label: Flink launched
+          description: Founded/launched by Oliver Merkel, Julian Dames and Christoph Cordes.
+          category: formation
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - event_id: F-001-E2
+          date: 2021-06-04
+          label: $240M Series A
+          description: Prosus/BOND/Mubadala-led Series A and Rewe partnership.
+          category: financing
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - event_id: F-001-E3
+          date: 2021-12-10
+          label: $750M Series B
+          description: DoorDash-led Series B at reported $2.85B post-money.
+          category: financing
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - event_id: F-001-E4
+          date: 2022-05-16
+          label: Cajoo / Carrefour
+          description: Acquisition and Carrefour relationship.
+          category: acquisition
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-009
+        - event_id: F-001-E5
+          date: 2024-09-17
+          label: $150M financing
+          description: Reported $115M equity and $35M debt.
+          category: financing
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - event_id: F-001-E6
+          date: 2026-05-27
+          label: CB Insights row reviewed
+          description: Current list row shows $1.07B.
+          category: valuation
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+      start_date: "2020"
+      end_date: 2026-05-27
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-007
+      - EC-008
+      - EC-009
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-007
+      - SRC-008
+      - SRC-009
+    notes: null
+  - figure_id: F-002
+    title: Public valuation marks
+    chapter_id: I
+    section_id: I.C
+    figure_type: chart
+    description: Reported valuation marks are not directly comparable.
+    purpose: Shows valuation-compression/reconciliation risk.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: date
+        unit: null
+        scale: time
+      y_axis:
+        label: valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Reported valuation marks
+          unit: USD billions
+          data_points:
+            - x: 2021-12-10
+              y: 2.85
+              label: Series B post-money
+              evidence_claim_ids:
+                - EC-007
+                - EC-020
+              source_ids:
+                - SRC-007
+            - x: 2022-05-16
+              y: 5
+              label: Cajoo context, floor for over $5B
+              evidence_claim_ids:
+                - EC-009
+                - EC-020
+              source_ids:
+                - SRC-009
+            - x: 2026-05-27
+              y: 1.07
+              label: CB Insights current row
+              evidence_claim_ids:
+                - EC-001
+                - EC-020
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Not normalized
+          x: 2026-05-27
+          y: 1.07
+          note: Request current cap table/debt/preference waterfall.
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-001
+            - SRC-007
+            - SRC-009
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-007
+      - EC-009
+      - EC-020
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-009
+    notes: null
+  - figure_id: F-003
+    title: Product and fulfillment architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Publicly inferred app-to-hub fulfillment architecture.
+    purpose: Shows dependency points.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user
+          label: Consumer
+          node_type: user
+          description: Places app order.
+          evidence_claim_ids:
+            - EC-002
+            - EC-003
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: app
+          label: Flink app
+          node_type: product
+          description: Catalog, ordering, payment.
+          evidence_claim_ids:
+            - EC-002
+            - EC-003
+            - EC-017
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: payment
+          label: Payment providers
+          node_type: third_party
+          description: Credit card, Apple Pay, PayPal, iDEAL.
+          evidence_claim_ids:
+            - EC-002
+            - EC-003
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: hub
+          label: Micro-fulfillment hubs
+          node_type: infrastructure
+          description: 146 hubs in 80+ cities reported.
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-005
+        - node_id: suppliers
+          label: Large merchants / REWE / Carrefour
+          node_type: third_party
+          description: Supply/partner dependencies.
+          evidence_claim_ids:
+            - EC-008
+            - EC-009
+            - EC-016
+          source_ids:
+            - SRC-008
+            - SRC-009
+            - SRC-005
+        - node_id: riders
+          label: Delivery workforce
+          node_type: service
+          description: Last-mile delivery.
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-005
+      edges:
+        - edge_id: E1
+          from_node_id: user
+          to_node_id: app
+          relationship: orders via
+          data_or_dependency: Location/account/order data
+          evidence_claim_ids:
+            - EC-002
+            - EC-013
+          source_ids:
+            - SRC-002
+        - edge_id: E2
+          from_node_id: app
+          to_node_id: payment
+          relationship: uses
+          data_or_dependency: Payment data
+          evidence_claim_ids:
+            - EC-002
+            - EC-013
+          source_ids:
+            - SRC-002
+        - edge_id: E3
+          from_node_id: app
+          to_node_id: hub
+          relationship: routes to
+          data_or_dependency: Inventory and delivery zone
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-005
+        - edge_id: E4
+          from_node_id: suppliers
+          to_node_id: hub
+          relationship: stock
+          data_or_dependency: Assortment contracts
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-005
+        - edge_id: E5
+          from_node_id: hub
+          to_node_id: riders
+          relationship: dispatches
+          data_or_dependency: Pick-pack-deliver workflow
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-005
+      boundaries:
+        - boundary_id: B1
+          label: Flink operated
+          node_ids:
+            - app
+            - hub
+            - riders
+        - boundary_id: B2
+          label: Third-party dependencies
+          node_ids:
+            - payment
+            - suppliers
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-006
+      - EC-008
+      - EC-009
+      - EC-013
+      - EC-016
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+      - SRC-009
+    notes: null
+  - figure_id: F-004
+    title: Customer and partner proxy bars
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Public customer/partner proxy magnitudes and unknown revenue weights.
+    purpose: Highlights cohort and concentration gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: proxy
+        unit: null
+        scale: categorical
+      y_axis:
+        label: public count or unknown
+        unit: count_or_unknown
+        scale: linear
+      series:
+        - series_id: proxy
+          name: Public proxies
+          unit: count_or_unknown
+          data_points:
+            - x: Android downloads
+              y: 1000000
+              label: 1M+
+              evidence_claim_ids:
+                - EC-002
+                - EC-015
+              source_ids:
+                - SRC-002
+            - x: Apple ratings
+              y: 70212
+              label: 70,212
+              evidence_claim_ids:
+                - EC-003
+                - EC-015
+              source_ids:
+                - SRC-003
+            - x: Google reviews
+              y: 36800
+              label: 36.8K
+              evidence_claim_ids:
+                - EC-002
+                - EC-015
+              source_ids:
+                - SRC-002
+            - x: REWE revenue weight
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-016
+              source_ids:
+                - SRC-008
+            - x: Just Eat channel weight
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-005
+      annotations:
+        - label: Revenue concentration gap
+          x: REWE revenue weight
+          y: null
+          note: Request customer cohorts and partner economics.
+          evidence_claim_ids:
+            - EC-014
+            - EC-016
+          source_ids:
+            - SRC-005
+            - SRC-008
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-005
+      - EC-014
+      - EC-015
+      - EC-016
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-008
+    notes: null
+  - figure_id: F-005
+    title: European quick-commerce market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Positioning of Flink versus rapid-grocery and incumbent substitutes.
+    purpose: Shows survivor advantage and category risk.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Delivery speed
+          low_label: Scheduled
+          high_label: Minutes
+        y_axis:
+          label: Visible stress
+          low_label: Lower
+          high_label: Higher
+      segments:
+        - segment_id: rapid
+          name: Rapid grocery
+          description: Minutes-delivery grocers
+        - segment_id: incumbent
+          name: Incumbent grocery
+          description: Supermarkets/online grocery
+        - segment_id: substitute
+          name: Substitutes
+          description: Scheduled marketplaces
+      entities:
+        - entity_id: flink
+          name: Flink
+          entity_type: target_company
+          segment_id: rapid
+          x_value: 9
+          y_value: 7
+          attributes:
+            note: survivor with financing and sector risk
+          evidence_claim_ids:
+            - EC-005
+            - EC-010
+            - EC-011
+          source_ids:
+            - SRC-005
+            - SRC-006
+            - SRC-010
+        - entity_id: getir
+          name: Getir / Gorillas
+          entity_type: competitor
+          segment_id: rapid
+          x_value: 9
+          y_value: 9
+          attributes:
+            note: exited key markets
+          evidence_claim_ids:
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-010
+            - SRC-011
+        - entity_id: rewe
+          name: REWE / supermarkets
+          entity_type: partner
+          segment_id: incumbent
+          x_value: 4
+          y_value: 4
+          attributes:
+            note: partner and substitute
+          evidence_claim_ids:
+            - EC-008
+            - EC-016
+          source_ids:
+            - SRC-008
+        - entity_id: scheduled
+          name: Scheduled online grocers
+          entity_type: competitor
+          segment_id: substitute
+          x_value: 2
+          y_value: 5
+          attributes:
+            note: requires benchmark
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-013
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-008
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-014
+      - EC-016
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-008
+      - SRC-010
+      - SRC-011
+      - SRC-013
+    notes: null
+  - figure_id: F-006
+    title: Public channel-signal mix
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public GTM/channel signal proxies.
+    purpose: Shows visible reach and unknown channel economics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: channel signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: public count or unknown
+        unit: count_or_unknown
+        scale: linear
+      series:
+        - series_id: channels
+          name: Channel signals
+          unit: count_or_unknown
+          data_points:
+            - x: Android app
+              y: 1000000
+              label: 1M+ downloads
+              evidence_claim_ids:
+                - EC-002
+                - EC-015
+              source_ids:
+                - SRC-002
+            - x: iOS app
+              y: 70212
+              label: 70,212 ratings
+              evidence_claim_ids:
+                - EC-003
+                - EC-015
+              source_ids:
+                - SRC-003
+            - x: LinkedIn
+              y: 81326
+              label: 81,326 followers
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: Just Eat partner
+              y: null
+              label: volume unknown
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-005
+      annotations:
+        - label: CAC unknown
+          x: Android app
+          y: 1000000
+          note: No public paid/organic split or CAC.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-013
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-013
+    notes: null
+  - figure_id: F-007
+    title: R&D and operating-system portfolio map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Publicly inferred R&D domains.
+    purpose: Separates visible apps from private logistics systems.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: mobile
+          label: Mobile apps
+          node_type: product
+          description: Android/iOS updated May 2026.
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: catalog
+          label: Catalog/pricing
+          node_type: service
+          description: 2,300+/2,400+ products described.
+          evidence_claim_ids:
+            - EC-002
+            - EC-003
+            - EC-004
+          source_ids:
+            - SRC-002
+            - SRC-003
+            - SRC-004
+        - node_id: routing
+          label: Routing/dispatch
+          node_type: service
+          description: Implied by hub network; implementation private.
+          evidence_claim_ids:
+            - EC-006
+            - EC-017
+          source_ids:
+            - SRC-005
+            - SRC-002
+        - node_id: privacy
+          label: Privacy/data controls
+          node_type: service
+          description: Data safety disclosed; controls private.
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-002
+        - node_id: partner
+          label: Partner integrations
+          node_type: integration
+          description: Just Eat and payment/provider integrations.
+          evidence_claim_ids:
+            - EC-005
+            - EC-016
+          source_ids:
+            - SRC-005
+      edges:
+        - edge_id: R1
+          from_node_id: mobile
+          to_node_id: catalog
+          relationship: presents
+          data_or_dependency: Assortment and price
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - edge_id: R2
+          from_node_id: mobile
+          to_node_id: routing
+          relationship: triggers fulfillment
+          data_or_dependency: Location and order data
+          evidence_claim_ids:
+            - EC-013
+            - EC-017
+          source_ids:
+            - SRC-002
+        - edge_id: R3
+          from_node_id: partner
+          to_node_id: mobile
+          relationship: feeds demand
+          data_or_dependency: Partner attribution unknown
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+      boundaries:
+        - boundary_id: B1
+          label: Publicly visible
+          node_ids:
+            - mobile
+            - catalog
+        - boundary_id: B2
+          label: Private diligence
+          node_ids:
+            - routing
+            - privacy
+            - partner
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+      - EC-013
+      - EC-016
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+    notes: null
+  - figure_id: F-008
+    title: Public management org sketch
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Founder-level public org sketch plus unverified functional roles.
+    purpose: Separates verified names from diligence-only roles.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: oliver
+          name: Oliver Merkel
+          role: Founder / managing director
+          department: Executive
+          location: Berlin
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - node_id: julian
+          name: Julian Dames
+          role: Co-founder
+          department: Executive
+          location: Berlin
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - node_id: christoph
+          name: Christoph Cordes
+          role: Co-founder
+          department: Executive
+          location: Berlin
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - node_id: ops
+          name: null
+          role: Operations / hub leadership
+          department: Operations
+          location: Germany / Netherlands
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-006
+            - EC-014
+          source_ids:
+            - SRC-005
+        - node_id: tech
+          name: null
+          role: Product / engineering leadership
+          department: Product & Engineering
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-017
+            - EC-014
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: legal
+          name: null
+          role: Data protection / legal leadership
+          department: Legal & Compliance
+          location: EU
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-002
+      reporting_lines:
+        - parent_node_id: oliver
+          child_node_id: ops
+          relationship: other
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-005
+        - parent_node_id: oliver
+          child_node_id: tech
+          relationship: other
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-002
+        - parent_node_id: oliver
+          child_node_id: legal
+          relationship: other
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+      - SRC-007
+    notes: null
+  - figure_id: F-009
+    title: Public workforce anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public workforce-scale anchors from news and LinkedIn.
+    purpose: Shows HRIS reconciliation need.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: workforce signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: people
+        unit: people
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public workforce anchors
+          unit: people
+          data_points:
+            - x: 2024 reported workforce
+              y: 8900
+              label: 8,900+
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-005
+            - x: LinkedIn size midpoint
+              y: 7500
+              label: 5,001-10,000 midpoint
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: LinkedIn visible employees
+              y: 2600
+              label: 2,600 visible
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: HRIS needed
+          x: LinkedIn visible employees
+          y: 2600
+          note: Visible LinkedIn members likely understate hub/rider workforce.
+          evidence_claim_ids:
+            - EC-004
+            - EC-014
+          source_ids:
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-014
+    source_ids:
+      - SRC-004
+      - SRC-005
+    notes: null
+  - figure_id: F-010
+    title: Legal, regulatory and footprint timeline
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: timeline
+    description: Events relevant to contracts, privacy, regulation and IP gaps.
+    purpose: Frames legal diligence workstreams.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-010-E1
+          date: 2021-06-04
+          label: Rewe partnership public
+          description: Series A report says Flink partnered with Rewe.
+          category: contract
+          evidence_claim_ids:
+            - EC-008
+            - EC-016
+          source_ids:
+            - SRC-008
+        - event_id: F-010-E2
+          date: 2022-05-16
+          label: Cajoo / Carrefour deal
+          description: Carrefour direct shareholder/exclusive partner reported.
+          category: contract_acquisition
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-009
+        - event_id: F-010-E3
+          date: 2024-04-29
+          label: Dutch municipal pressure / Getir exit
+          description: Municipal restrictions and competitor exit reported.
+          category: regulatory_market
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        - event_id: F-010-E4
+          date: 2024-09-17
+          label: France exit-cost signal
+          description: Growth excludes one-off France market exit costs.
+          category: footprint
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-005
+        - event_id: F-010-E5
+          date: 2026-05-19
+          label: App data-safety update
+          description: Data collection/sharing disclosed in app listing.
+          category: privacy
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-002
+        - event_id: F-010-E6
+          date: 2026-05-27
+          label: IP schedule not verified
+          description: Accessible DPMA search did not provide reliable IP schedule.
+          category: ip_gap
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-012
+      start_date: 2021-06-04
+      end_date: 2026-05-27
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-011
+      - EC-013
+      - EC-016
+      - EC-018
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-012
+    notes: null
+  - figure_id: F-011
+    title: Risk-register heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Heatmap of all diligence risks.
+    purpose: Prioritizes diligence follow-up.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Audited financials and unit economics are not public
+          severity: critical
+          likelihood: high
+          rationale: Public sources do not provide audited financials, cash, burn, gross margin, contribution margin or revenue-recognition support.
+          evidence_claim_ids: &a33
+            - EC-006
+            - EC-010
+            - EC-014
+          source_ids:
+            - SRC-005
+            - SRC-006
+            - SRC-001
+            - SRC-013
+        - risk_id: R-002
+          label: Public valuation and financing terms are inconsistent or incomplete
+          severity: high
+          likelihood: high
+          rationale: Public valuation marks range from $1.07B to over $5B and 2024 debt/equity terms are private.
+          evidence_claim_ids: &a34
+            - EC-001
+            - EC-005
+            - EC-020
+          source_ids:
+            - SRC-001
+            - SRC-005
+            - SRC-007
+            - SRC-009
+        - risk_id: R-003
+          label: Quick-commerce margin/demand pressure remains high
+          severity: high
+          likelihood: high
+          rationale: Sector reporting cites higher costs, lower demand, low margins, high acquisition costs and competitor exits.
+          evidence_claim_ids: &a35
+            - EC-010
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-006
+            - SRC-010
+            - SRC-011
+        - risk_id: R-004
+          label: Customer cohorts and revenue concentration are not public
+          severity: medium
+          likelihood: high
+          rationale: App-store metrics do not disclose active users, retention, order frequency, churn or revenue concentration.
+          evidence_claim_ids: &a36
+            - EC-015
+            - EC-014
+          source_ids:
+            - SRC-002
+            - SRC-003
+            - SRC-001
+            - SRC-005
+            - SRC-013
+        - risk_id: R-005
+          label: Supplier and partner dependency may drive economics
+          severity: high
+          likelihood: medium
+          rationale: REWE, Carrefour/Cajoo, Just Eat and large-merchant dependencies may materially affect margins and control.
+          evidence_claim_ids: &a37
+            - EC-005
+            - EC-008
+            - EC-009
+            - EC-016
+          source_ids:
+            - SRC-005
+            - SRC-008
+            - SRC-009
+        - risk_id: R-006
+          label: France footprint and exit-cost signals are ambiguous
+          severity: medium
+          likelihood: medium
+          rationale: France signals conflict between app copy, historical Cajoo expansion and reported one-off France exit costs.
+          evidence_claim_ids: &a38
+            - EC-018
+            - EC-009
+          source_ids:
+            - SRC-002
+            - SRC-005
+            - SRC-009
+        - risk_id: R-007
+          label: Local hub regulation and competitor exits signal market fragility
+          severity: high
+          likelihood: medium
+          rationale: Municipal restrictions on rapid-delivery distribution points and competitor exits show local market pressure.
+          evidence_claim_ids: &a39
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-010
+            - SRC-011
+        - risk_id: R-008
+          label: Privacy/payment/location data exposure requires GDPR diligence
+          severity: high
+          likelihood: medium
+          rationale: The app handles location, personal and financial data with third-party sharing disclosures.
+          evidence_claim_ids: &a40
+            - EC-013
+          source_ids:
+            - SRC-002
+        - risk_id: R-009
+          label: Workforce scale, classification and turnover are not public
+          severity: medium
+          likelihood: medium
+          rationale: Public workforce signals differ; employee/contractor split, attrition, safety and labor relations are private.
+          evidence_claim_ids: &a41
+            - EC-004
+            - EC-006
+          source_ids:
+            - SRC-004
+            - SRC-005
+        - risk_id: R-010
+          label: IP, litigation, insurance and material contracts are not publicly verifiable
+          severity: medium
+          likelihood: unknown
+          rationale: IP schedule, litigation, regulatory correspondence, insurance and material contracts were not publicly verified.
+          evidence_claim_ids: &a42
+            - EC-019
+            - EC-014
+          source_ids:
+            - SRC-012
+            - SRC-013
+            - SRC-001
+            - SRC-005
+    rendering_guidance:
+      preferred_format: svg
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-010
+      - EC-014
+      - EC-001
+      - EC-005
+      - EC-020
+      - EC-011
+      - EC-012
+      - EC-015
+      - EC-008
+      - EC-009
+      - EC-016
+      - EC-018
+      - EC-013
+      - EC-004
+      - EC-019
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-013
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Flink as a Germany/Berlin Consumer & Retail unicorn at $1.07B.
+    evidence_summary: The CB Insights row shows Flink, $1.07, date 12/1/2021, Germany, Berlin, Consumer & Retail, and investors Mubadala Capital, Bond, Prosus Ventures.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Flink | $1.07 | 12/1/2021 | Germany | Berlin | Consumer & Retail | Mubadala Capital, Bond, Prosus Ventures
+        location: HTML table row
+    analyst_interpretation: Verifies the user-provided unicorn candidate row and latest list source.
+    limitations: Database valuation is not a cap table.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-002
+    claim: Google Play verifies an active Flink Android app and product proposition.
+    evidence_summary: "Listing shows Flink: Groceries in minutes by Flink SE, 4.2 stars, 36.8K reviews, 1M+ downloads, 2,300+ items and delivery in minutes."
+    evidence_type: review_site
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "Flink: Groceries in minutes ... Flink SE ... 4.2 ... 36.8K reviews ... 1M+ Downloads"
+        location: null
+      - source_id: SRC-002
+        quote: Discover 2300+ grocery items at great prices ... Updated on May 19, 2026
+        location: null
+    analyst_interpretation: Confirms operating app/product; app-store metrics are only traction proxies.
+    limitations: Downloads do not equal active customers.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-004
+        - T-005
+        - T-006
+      figure_ids:
+        - F-003
+        - F-004
+        - F-006
+      risk_ids:
+        - R-004
+        - R-008
+  - evidence_claim_id: EC-003
+    claim: Apple App Store API corroborates Flink iOS app activity and seller identity.
+    evidence_summary: The iTunes lookup API identifies seller Flink Lebensmittel GmbH, 70,212 ratings, 4.56166 average rating, version 2026.21.0 and May 19, 2026 release.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: "sellerName : Flink Lebensmittel Gmbh ... averageUserRating : 4.56166 ... userRatingCount : 70212 ... version : 2026.21.0"
+        location: null
+    analyst_interpretation: Corroborates mobile product maintenance and consumer reach.
+    limitations: App rating data is not cohort or revenue data.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-004
+        - T-006
+      figure_ids:
+        - F-003
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-004
+    claim: LinkedIn presents Flink as a private Berlin company founded in 2020 with large workforce/follower signals.
+    evidence_summary: LinkedIn shows Berlin, 81,326 followers, privately held, founded 2020, company size 5,001-10,000 employees and 2,600 visible employees.
+    evidence_type: social_or_professional_profile
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Berlin, Berlin 81,326 followers ... High-quality and fresh groceries delivered to your door in minutes
+        location: null
+      - source_id: SRC-004
+        quote: Company size 5,001-10,000 employees Headquarters Berlin, Berlin Type Privately Held Founded 2020
+        location: null
+    analyst_interpretation: Supports private status, HQ and workforce scale, but not HRIS counts.
+    limitations: LinkedIn data can be self-reported or stale.
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-008
+        - F-009
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-005
+    claim: Flink reportedly raised $150M in 2024, split into $115M equity and $35M debt, with BOND, Mubadala, Northzone, REWE and others.
+    evidence_summary: Tech Funding News reports the financing and Germany/Netherlands focus with Just Eat Takeaway.com partnership.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: has raised $150 million in funding. The round is split into $115 million in equity and $35 million in debt
+        location: null
+      - source_id: SRC-005
+        quote: including BOND, Mubadala ... Northzone ... and supermarket giant REWE
+        location: null
+    analyst_interpretation: Latest public financing signal; legal terms remain private.
+    limitations: No covenants, liquidation preferences or valuation disclosed.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-003
+        - FC-005
+      table_ids:
+        - T-001
+        - T-002
+        - T-007
+        - T-011
+      figure_ids:
+        - F-001
+        - F-006
+      risk_ids:
+        - R-002
+        - R-005
+  - evidence_claim_id: EC-006
+    claim: Flink publicly reported 2024 operating metrics including $600M gross revenue, ~20% growth, AOV above $40, 146 hubs, 80+ cities and 8,900+ workforce.
+    evidence_summary: Tech Funding News attributes operating metrics, EBITDA country break-even and Q2 2025 profitability target to Flink.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: gross revenues of $600 million in 2024 ... approximately 20% year-on-year ... average order value now exceeds $40
+        location: null
+      - source_id: SRC-005
+        quote: EBITDA break-even on a country-by-country basis ... 146 hubs ... more than 80 cities ... workforce has also surpassed 8,900 employees
+        location: null
+    analyst_interpretation: Useful operating anchors but not audited financials.
+    limitations: Gross revenue, EBITDA definition and exit-cost treatment are not public.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-003
+        - T-011
+        - T-016
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-001
+        - R-003
+        - R-006
+        - R-009
+  - evidence_claim_id: EC-007
+    claim: Flink’s 2021 Series B was reported as $750M led by DoorDash at $2.1B pre-money / $2.85B post-money.
+    evidence_summary: Tech Funding News reports Series B amount/valuation, founders and then-current footprint of 140 hubs and 60+ cities.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: secured $750M in a Series B ... DoorDash, valued at $2.1B ($2.85B post-money)
+        location: null
+      - source_id: SRC-007
+        quote: launched in 2020 by Oliver Merkel, Julian Dames, and Christoph Cordes
+        location: null
+    analyst_interpretation: Historical financing and founder evidence.
+    limitations: Historical client/hub figures may be stale.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-003
+        - FC-004
+      table_ids:
+        - T-001
+        - T-013
+        - T-015
+      figure_ids:
+        - F-001
+        - F-002
+        - F-008
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-008
+    claim: Flink’s 2021 Series A was reported as $240M led by Prosus, BOND and Mubadala with Rewe partnership.
+    evidence_summary: PYMNTS reports Series A, Rewe Group partnership, 50+ hubs and delivery in Germany, France and Netherlands.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: raised $240 million in a Series A funding round led by Prosus, BOND and Mubadala Capital
+        location: null
+      - source_id: SRC-008
+        quote: partnered with the Rewe Group supermarket chain
+        location: null
+    analyst_interpretation: Supports early investors and supplier partnership.
+    limitations: Commercial terms are private.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-001
+        - T-007
+        - T-008
+      figure_ids:
+        - F-001
+        - F-003
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-009
+    claim: Flink acquired Cajoo in 2022, bringing Carrefour relationship and France expansion context.
+    evidence_summary: PYMNTS reports Cajoo acquisition, Carrefour direct shareholder/exclusive partner and valuation over $5B.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: will buy its competitor Cajoo from France ... access to the French grocery chain Carrefour
+        location: null
+      - source_id: SRC-009
+        quote: Carrefour will be a direct shareholder and exclusive partner of Flink. The deal has valued Flink at over $5 billion
+        location: null
+    analyst_interpretation: Material partnership/valuation history; current France status requires confirmation.
+    limitations: Current France footprint and contract terms are unknown.
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-001
+        - T-007
+        - T-008
+      figure_ids:
+        - F-001
+        - F-010
+      risk_ids:
+        - R-005
+        - R-006
+  - evidence_claim_id: EC-010
+    claim: April 2024 reporting described runway financing and sector stress.
+    evidence_summary: PYMNTS reported €100M/$106.7M runway financing, potential merger discussions, and grocery-delivery sector higher costs, lower demand, low margins and high acquisition costs.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: receiving another 100 million euros ($106.7 million) from investors to extend its runway
+        location: null
+      - source_id: SRC-006
+        quote: higher costs and lower demand ... low margins, high acquisition costs and competitors
+        location: null
+    analyst_interpretation: Highlights financial and market risk that must be reconciled with profitability claims.
+    limitations: Unnamed-source reporting; terms unconfirmed.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-003
+        - T-010
+      figure_ids:
+        - F-011
+      risk_ids:
+        - R-001
+        - R-003
+  - evidence_claim_id: EC-011
+    claim: Competitor exits leave opportunity but validate category fragility.
+    evidence_summary: NL Times reports Getir/Gorillas leaving Netherlands and other markets, leaving Flink as only rapid grocery deliverer in the country, with municipal and inflation pressures.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: The departure leaves Flink as the only rapid grocery deliverer in the country.
+        location: null
+      - source_id: SRC-010
+        quote: Dutch municipalities started setting limits ... high inflation leading to fewer orders
+        location: null
+    analyst_interpretation: Flink may gain share, but market economics/regulation are challenging.
+    limitations: Netherlands evidence may not fully generalize to Germany.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+        - F-011
+      risk_ids:
+        - R-003
+        - R-007
+  - evidence_claim_id: EC-012
+    claim: Flink was reported as one of the last independent European grocery delivery firms amid consolidation and funding stress.
+    evidence_summary: PYMNTS reported rumored Getir discussions, rival closures and Getir valuation reduction.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Flink is one of the last independent grocery delivery firms standing in Europe
+        location: null
+      - source_id: SRC-011
+        quote: startups struggle to find funding
+        location: null
+    analyst_interpretation: Reinforces market and financing risk; transaction rumor unconfirmed.
+    limitations: Flink declined comment in the article.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-003
+        - R-007
+  - evidence_claim_id: EC-013
+    claim: Google Play data-safety disclosures indicate privacy/payment/location data exposure.
+    evidence_summary: The listing says the app may share financial info/device IDs, collect location/personal info and more, encrypt data in transit and allow deletion requests.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: may share these data types with third parties Financial info and Device or other IDs ... collect ... Location, Personal info and 5 others ... Data is encrypted in transit
+        location: null
+    analyst_interpretation: Creates GDPR, payment and security diligence requirements.
+    limitations: Actual DPIAs, DPAs, subprocessors and incidents are private.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-018
+        - T-020
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-014
+    claim: Core private diligence materials are not publicly verifiable.
+    evidence_summary: Public sources do not disclose audited financials, cap table, debt, contracts, customer cohorts, HRIS, insurance, legal claims or security reports.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Direct fetch returned 403 in this environment; source recorded as an access limitation
+        location: null
+    analyst_interpretation: Absence of public evidence is a diligence gap, not a negative factual finding.
+    limitations: Requires company/counsel/accountant records.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-003
+        - T-017
+        - T-018
+      figure_ids:
+        - F-011
+      risk_ids:
+        - R-001
+        - R-010
+  - evidence_claim_id: EC-015
+    claim: App-store ratings/downloads are public customer-traction proxies, but customer cohorts and revenue concentration are not public.
+    evidence_summary: Google Play shows 1M+ downloads and 36.8K reviews; Apple shows 70,212 ratings.
+    evidence_type: review_site
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: 36.8K reviews ... 1M+ Downloads
+        location: null
+      - source_id: SRC-003
+        quote: "userRatingCount : 70212"
+        location: null
+    analyst_interpretation: Useful proxy only; not active users, retention or revenue.
+    limitations: Cohorts and order-level data private.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-004
+        - F-006
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-016
+    claim: Flink depends on large merchants and partners including REWE, Carrefour/Cajoo history and Just Eat Takeaway.com.
+    evidence_summary: Public reports describe large-merchant collaboration, Rewe partnership, Carrefour relationship and Just Eat Takeaway.com distribution.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: collaborates with large merchants and relies on them for those agreements
+        location: null
+      - source_id: SRC-005
+        quote: Germany and the Netherlands in partnership with Just Eat Takeaway.com
+        location: null
+    analyst_interpretation: Partnerships can improve supply/distribution but create concentration and termination risk.
+    limitations: Contracts and economics are private.
+    associations:
+      chapter_id: III
+      section_id: III.E
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-007
+        - T-008
+        - T-011
+      figure_ids:
+        - F-003
+        - F-004
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-017
+    claim: Flink app maintenance is visible, but roadmap/R&D and proprietary technology are not public.
+    evidence_summary: Android and iOS app listings were updated in May 2026, but no public technical architecture, uptime, patents or roadmap was found.
+    evidence_type: review_site
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Updated on May 19, 2026
+        location: null
+      - source_id: SRC-003
+        quote: "currentVersionReleaseDate : 2026-05-19T09:09:21Z"
+        location: null
+    analyst_interpretation: Visible maintenance does not prove technology defensibility.
+    limitations: Requires technical diligence.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-007
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-018
+    claim: Current France footprint is ambiguous.
+    evidence_summary: Google Play still references France hours, while Tech Funding News says 2024 growth excludes one-off market exit costs in France and older PYMNTS coverage described France expansion via Cajoo.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: "France: Monday to Sunday 8 AM - 12 AM"
+        location: null
+      - source_id: SRC-005
+        quote: excluding one-off market exit costs in France
+        location: null
+    analyst_interpretation: Could be stale app copy, partial exit or completed wind-down; requires direct confirmation.
+    limitations: No company country availability schedule reviewed.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-011
+        - T-012
+      figure_ids:
+        - F-010
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-019
+    claim: Material IP ownership and litigation/regulatory schedules were not publicly verified.
+    evidence_summary: The accessible DPMA search page did not provide a reliable Flink SE IP schedule; public sources did not provide comprehensive litigation, insurance or regulatory schedules.
+    evidence_type: patent_or_trademark_record
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-012
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: DPMAregister | Registerauskunft des Deutschen Patent-und Markenamtes (DPMA)
+        location: null
+    analyst_interpretation: Requires counsel-led IP and legal diligence.
+    limitations: Search interfaces and public dockets are incomplete.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids:
+        - T-017
+        - T-018
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-020
+    claim: Public valuation marks are inconsistent and not directly comparable.
+    evidence_summary: CB Insights lists $1.07B; Series B reporting cites $2.85B post-money; Cajoo reporting cites over $5B.
+    evidence_type: market_database
+    verification_status: inconclusive
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-007
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Flink | $1.07 | 12/1/2021
+        location: null
+      - source_id: SRC-007
+        quote: valued at $2.1B ($2.85B post-money)
+        location: null
+      - source_id: SRC-009
+        quote: valued Flink at over $5 billion
+        location: null
+    analyst_interpretation: Current valuation must be reconciled to latest financing, debt and fully diluted cap table.
+    limitations: Different dates/bases/currencies.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+        - FC-003
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-002
+sources:
+  - source_id: SRC-001
+    title: CB Insights Global Unicorn Club
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: 2026-05-13
+    accessed_date: 2026-05-27
+    source_type: market_database
+    reliability_notes: Directly fetched public unicorn-list HTML; Flink row was present.
+    archive_url: null
+  - source_id: SRC-002
+    title: "Flink: Groceries in minutes - Apps on Google Play"
+    url: https://play.google.com/store/apps/details?id=com.pickery.app&hl=en
+    publisher: Google Play / Flink SE
+    author: null
+    publication_date: 2026-05-19
+    accessed_date: 2026-05-27
+    source_type: review_site
+    reliability_notes: Public app-store listing with product description, downloads, reviews and data-safety disclosure.
+    archive_url: null
+  - source_id: SRC-003
+    title: Apple iTunes Lookup API for Flink app
+    url: https://itunes.apple.com/lookup?bundleId=com.pickery.app&country=de
+    publisher: Apple App Store / Flink Lebensmittel GmbH
+    author: null
+    publication_date: 2026-05-19
+    accessed_date: 2026-05-27
+    source_type: review_site
+    reliability_notes: Public App Store API data for seller, description, ratings, version and update date.
+    archive_url: null
+  - source_id: SRC-004
+    title: Flink LinkedIn company profile
+    url: https://www.linkedin.com/company/goflink/
+    publisher: LinkedIn / Flink
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-27
+    source_type: social_or_professional_profile
+    reliability_notes: Public company profile; self-reported/marketplace data, not audited HR data.
+    archive_url: null
+  - source_id: SRC-005
+    title: Quick commerce unicorn Flink snaps $150M funding, plans to open 30 hubs
+    url: https://techfundingnews.com/quick-commerce-unicorn-flink-snaps-150m-funding-plans-to-open-30-hubs-in-germany-and-the-netherlands/
+    publisher: Tech Funding News
+    author: null
+    publication_date: 2024-09-17
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent startup-news coverage with financing and company-reported operating metrics.
+    archive_url: null
+  - source_id: SRC-006
+    title: "Report: Flink Raising Money from Investors, Discussing Merger With Rivals"
+    url: https://www.pymnts.com/news/investment-tracker/2024/report-flink-raising-money-from-investors-discussing-merger-with-rivals/
+    publisher: PYMNTS
+    author: null
+    publication_date: 2024-04-17
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent news summary citing Bloomberg; Flink did not comment.
+    archive_url: null
+  - source_id: SRC-007
+    title: DoorDash-backed instant grocery startup Flink ropes $750M
+    url: https://techfundingnews.com/doordash-backed-instant-grocery-startup-flink-ropes-750m-what-about-competitors/
+    publisher: Tech Funding News
+    author: null
+    publication_date: 2021-12-10
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent funding article with Series B, valuation, founders and footprint claims.
+    archive_url: null
+  - source_id: SRC-008
+    title: Germany’s Flink Raises $240 Million For Quick Grocery Delivery
+    url: https://www.pymnts.com/news/investment-tracker/2021/germanys-flink-raises-240-million/
+    publisher: PYMNTS
+    author: null
+    publication_date: 2021-06-04
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent news summary of Reuters-reported Series A and Rewe partnership.
+    archive_url: null
+  - source_id: SRC-009
+    title: Germany’s Rapid Delivery App Flink Buys French Rival Cajoo
+    url: https://www.pymnts.com/acquisitions/2022/germanys-rapid-delivery-app-flink-buys-french-rival-cajoo/
+    publisher: PYMNTS
+    author: null
+    publication_date: 2022-05-16
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent coverage of Cajoo acquisition and Carrefour relationship.
+    archive_url: null
+  - source_id: SRC-010
+    title: Rapid delivery service Getir announces exit from Netherlands
+    url: https://nltimes.nl/2024/04/29/rapid-delivery-service-getir-announces-exit-netherlands
+    publisher: NL Times
+    author: null
+    publication_date: 2024-04-29
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent Netherlands article on Getir/Gorillas exits, municipal pressure and Flink remaining.
+    archive_url: null
+  - source_id: SRC-011
+    title: Getir Could Buy Ultrafast Grocery Rival Flink
+    url: https://www.pymnts.com/acquisitions/2023/getir-could-buy-ultrafast-grocery-rival-flink/
+    publisher: PYMNTS
+    author: null
+    publication_date: 2023-05-09
+    accessed_date: 2026-05-27
+    source_type: independent_news
+    reliability_notes: Independent summary of rumored acquisition discussions and sector funding stress.
+    archive_url: null
+  - source_id: SRC-012
+    title: DPMAregister smart-search page for Flink trademark checks
+    url: https://register.dpma.de/DPMAregister/marke/schnellsuche?AKTION=suchen&SEARCHTERM=Flink
+    publisher: German Patent and Trade Mark Office (DPMA)
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-27
+    source_type: patent_or_trademark_record
+    reliability_notes: Public register search was reachable, but this review did not obtain a reliable machine-readable Flink SE IP schedule.
+    archive_url: null
+  - source_id: SRC-013
+    title: Flink public website
+    url: https://www.goflink.com/en/
+    publisher: Flink SE
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-27
+    source_type: primary_company_source
+    reliability_notes: Direct fetch returned 403 in this environment; source recorded as an access limitation, not as primary support for material claims.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Audited financials and unit economics are not public
+    risk_category: financial
+    severity: critical
+    likelihood: high
+    description: Public sources do not provide audited financials, cash, burn, gross margin, contribution margin or revenue-recognition support.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+    evidence_claim_ids: *a33
+    mitigation_or_diligence_request: Require audited/management accounts, revenue bridge, market P&Ls, gross margin and cash runway.
+  - risk_id: R-002
+    risk_title: Public valuation and financing terms are inconsistent or incomplete
+    risk_category: financing
+    severity: high
+    likelihood: high
+    description: Public valuation marks range from $1.07B to over $5B and 2024 debt/equity terms are private.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids: *a34
+    mitigation_or_diligence_request: Obtain cap table, debt documents, liquidation preferences, option pool and latest valuation materials.
+  - risk_id: R-003
+    risk_title: Quick-commerce margin/demand pressure remains high
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: Sector reporting cites higher costs, lower demand, low margins, high acquisition costs and competitor exits.
+    impacted_chapter_ids:
+      - I
+      - IV
+      - V
+    impacted_section_ids:
+      - I.B
+      - IV.A
+      - V.E
+    evidence_claim_ids: *a35
+    mitigation_or_diligence_request: Validate density, AOV, labor, rent, fees, promo spend and sensitivity cases by city.
+  - risk_id: R-004
+    risk_title: Customer cohorts and revenue concentration are not public
+    risk_category: customer
+    severity: medium
+    likelihood: high
+    description: App-store metrics do not disclose active users, retention, order frequency, churn or revenue concentration.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    evidence_claim_ids: *a36
+    mitigation_or_diligence_request: Request cohort data, DAU/MAU, orders/customer, NPS, CAC/LTV and promo dependency.
+  - risk_id: R-005
+    risk_title: Supplier and partner dependency may drive economics
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: REWE, Carrefour/Cajoo, Just Eat and large-merchant dependencies may materially affect margins and control.
+    impacted_chapter_ids:
+      - III
+      - V
+      - VIII
+    impacted_section_ids:
+      - III.B
+      - III.E
+      - V.C
+      - VIII.F
+    evidence_claim_ids: *a37
+    mitigation_or_diligence_request: Review top supplier/distribution contracts, exclusivity, rebates, SLAs, data rights and termination provisions.
+  - risk_id: R-006
+    risk_title: France footprint and exit-cost signals are ambiguous
+    risk_category: market
+    severity: medium
+    likelihood: medium
+    description: France signals conflict between app copy, historical Cajoo expansion and reported one-off France exit costs.
+    impacted_chapter_ids:
+      - I
+      - III
+      - V
+      - VIII
+    impacted_section_ids:
+      - I.A
+      - III.D
+      - V.A
+      - VIII.F
+    evidence_claim_ids: *a38
+    mitigation_or_diligence_request: Confirm current France footprint and all exit, lease, employee and partner liabilities.
+  - risk_id: R-007
+    risk_title: Local hub regulation and competitor exits signal market fragility
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Municipal restrictions on rapid-delivery distribution points and competitor exits show local market pressure.
+    impacted_chapter_ids:
+      - IV
+      - VIII
+    impacted_section_ids:
+      - IV.A
+      - VIII.C
+      - VIII.G
+    evidence_claim_ids: *a39
+    mitigation_or_diligence_request: Review permits, zoning, enforcement correspondence and city-level operating constraints.
+  - risk_id: R-008
+    risk_title: Privacy/payment/location data exposure requires GDPR diligence
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: The app handles location, personal and financial data with third-party sharing disclosures.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.G
+    evidence_claim_ids: *a40
+    mitigation_or_diligence_request: Review DPIAs, Article 30 records, DPAs, subprocessors, breach logs and payment processor agreements.
+  - risk_id: R-009
+    risk_title: Workforce scale, classification and turnover are not public
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public workforce signals differ; employee/contractor split, attrition, safety and labor relations are private.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.B
+      - VII.F
+      - VII.G
+    evidence_claim_ids: *a41
+    mitigation_or_diligence_request: Request HRIS, headcount bridge, contractor analysis, attrition, safety and works-council matters.
+  - risk_id: R-010
+    risk_title: IP, litigation, insurance and material contracts are not publicly verifiable
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: IP schedule, litigation, regulatory correspondence, insurance and material contracts were not publicly verified.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.B
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.E
+      - VIII.F
+    evidence_claim_ids: *a42
+    mitigation_or_diligence_request: Request counsel letter, IP schedule, contracts, insurance policies/loss runs and regulatory correspondence.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financials and monthly management accounts
+    why_it_matters: Public metrics cannot validate revenue quality, margins, burn or runway.
+    suggested_source_or_request: Audited FY2023-FY2025 statements and monthly P&L/cash-flow package.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table and debt/preferred terms
+    why_it_matters: Public valuation marks vary materially.
+    suggested_source_or_request: Fully diluted cap table, financing documents and preference waterfall.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Customer cohorts and revenue concentration
+    why_it_matters: Downloads/ratings do not prove active usage or retention.
+    suggested_source_or_request: Order/customer cohorts by city/channel and CAC/LTV.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.E
+    missing_information: Supplier and partner contracts
+    why_it_matters: REWE/Carrefour/Just Eat dependencies can drive margin and control.
+    suggested_source_or_request: Executed agreements, spend/revenue and termination rights.
+    priority: high
+  - gap_id: G-005
+    chapter_id: V
+    section_id: V.A
+    missing_information: France footprint and exit liabilities
+    why_it_matters: Public sources conflict on current France status.
+    suggested_source_or_request: Country/city availability, exit costs, leases, employee and partner obligations.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: R&D roadmap and IP assignments
+    why_it_matters: Public app updates do not prove technology ownership or defensibility.
+    suggested_source_or_request: Roadmap, architecture, source-code assignments and SBOM.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: HRIS, employee/contractor split and turnover
+    why_it_matters: Large workforce and rider/hub model create labor risk.
+    suggested_source_or_request: Headcount bridge, attrition, classification analysis and safety logs.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: GDPR/privacy package and legal schedules
+    why_it_matters: App processes sensitive location/personal/financial data and public dockets are incomplete.
+    suggested_source_or_request: DPIAs, Article 30 records, DPAs, breach logs, counsel letter and insurance loss runs.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited/reviewed financial statements and monthly management accounts by market.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide fully diluted cap table, debt instruments, option pool and liquidation waterfall.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide product roadmap, SKU margin, live price book, architecture and uptime/incident history.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer/order cohorts, retention, order frequency, CAC/LTV, promo exposure and NPS.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.E
+    request: Provide top supplier and partner contracts including REWE, Carrefour/Cajoo, Just Eat and payment processors.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: IV
+    section_id: IV.A
+    request: Commission city-level basket-price, delivery-speed and availability benchmark.
+    requested_from: other
+    priority: medium
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.A
+    request: Confirm current country/city footprint, especially France, with exit costs and remaining obligations.
+    requested_from: company
+    priority: high
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide R&D roadmap, engineering org/budget, source-code assignments, SBOM and licenses.
+    requested_from: company
+    priority: medium
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide HRIS headcount bridge, contractor classification, attrition, safety and works-council matters.
+    requested_from: company
+    priority: high
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide GDPR compliance pack, counsel litigation letter, insurance policies/loss runs and regulatory correspondence.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: The Flink company website returned 403 from this environment; app stores and LinkedIn were used for company/product evidence instead.
+    affected_chapter_ids:
+      - II
+      - V
+      - VIII
+    affected_section_ids:
+      - II.A
+      - V.A
+      - VIII.F
+  - limitation_id: L-002
+    description: No private financials, cap table, customer data, contracts, HRIS, legal dockets, insurance policies or security/privacy reports were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.A
+      - III.E
+      - VII.B
+      - VIII.A
+      - VIII.G
+  - limitation_id: L-003
+    description: Several operating metrics are company-reported through news outlets and were not audited or independently recalculated.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - III.E
+      - V.E
+      - VII.B
+  - limitation_id: L-004
+    description: Public valuation marks are not normalized for pre/post-money basis, date, currency, debt, preferred terms or fully diluted ownership.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.C
+      - I.D
+  - limitation_id: L-005
+    description: Trademark/IP searches were limited by dynamic public-register interfaces; no legal conclusion is made about IP ownership or infringement.
+    affected_chapter_ids:
+      - VI
+      - VIII
+    affected_section_ids:
+      - VI.B
+      - VIII.D
