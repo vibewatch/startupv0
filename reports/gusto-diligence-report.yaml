@@ -1,0 +1,3136 @@
+report_metadata:
+  report_title: Gusto Public-Source Startup Diligence Report
+  target_company: Gusto
+  website: https://gusto.com/
+  known_aliases:
+    - ZenPayroll
+    - Gusto, Inc.
+  sector: Payroll, benefits, HR software, and SMB financial services
+  geography: United States; San Francisco, California headquarters with U.S. SMB customer focus
+  company_stage: Private venture-backed unicorn
+  research_date: 2026-05-30
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used CB Insights current unicorn list for eligibility and valuation status.
+    - Used Reuters independent reporting for secondary valuation, prior Series E valuation, and historic customer-count
+      signal.
+    - Used Gusto-owned product, about, customer, partner, integration, privacy, and terms pages for product, scale, GTM,
+      legal, and dependency evidence.
+    - Marked financial statements, cap table, customer contracts, security audits, litigation schedules, and regulatory
+      files as not publicly verifiable where public sources did not disclose them.
+  included_jurisdictions:
+    - United States
+  excluded_topics:
+    - Paid legal dockets, private data-room documents, management interviews, customer reference calls, and non-public
+      security audits.
+  user_provided_materials: []
+founder_claims: []
+executive_summary:
+  overall_assessment: Public evidence supports Gusto as a private U.S. payroll/benefits/HR software unicorn with a $10B
+    valuation anchor, large SMB customer-count claims, and broad regulated service scope. The primary diligence concern
+    is that financial quality, customer concentration, retention, regulated money movement, payroll-tax execution,
+    sensitive-data controls, cap table, and partner dependencies are not publicly verifiable.
+  investment_or_diligence_thesis: Gusto has credible public scale signals and a multi-product SMB people-platform
+    position, but an investment decision should be gated on private verification of ARR quality, gross margin,
+    CAC/payback, churn, regulatory compliance controls, data-security posture, and third-party dependency resilience.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights and Reuters support a $10B valuation anchor.
+      evidence_claim_ids:
+        - E1
+        - E2
+    - founder_claim_id: FC-002
+      summary: Gusto publicly offers payroll, benefits, HR, and related fintech/financial-health services.
+      evidence_claim_ids:
+        - E7
+        - E8
+        - E12
+    - founder_claim_id: FC-003
+      summary: Gusto discloses broad SMB scale with historic Reuters >200,000 businesses and company-owned 400,000+ businesses
+        claim.
+      evidence_claim_ids:
+        - E3
+        - E4
+  biggest_risks:
+    - risk_id: R1
+      summary: Financial quality, unit economics, runway, and retention are not public.
+    - risk_id: R3
+      summary: Payroll and tax compliance execution creates regulatory exposure.
+    - risk_id: R5
+      summary: Sensitive employee/payroll data creates privacy and security risk.
+    - risk_id: R6
+      summary: Third-party providers and bank partners are material operational dependencies.
+  key_evidence_gaps:
+    - Audited financial statements, ARR/NRR/GRR, gross margin, CAC/payback, burn, runway, and debt schedule are not
+      public.
+    - Cap table, preferred terms, secondary sale documents, investor rights, and option pool are not public.
+    - Customer-level revenue, top-customer concentration, churn cohorts, reference calls, and contract terms are not
+      public.
+    - Security audit reports, SOC/ISO evidence, incident logs, regulatory notices, litigation schedule, and vendor
+      contracts require private diligence.
+  recommended_next_steps:
+    - Request financial, cap-table, customer, compliance, security, vendor, and legal data-room materials before
+      investment decisions.
+    - Interview management on regulated payroll/tax operations, money movement controls, partner dependencies, and
+      retention economics.
+    - Run customer and partner reference checks across active, expanded, and churned cohorts.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Audited financials, ARR, gross margin, burn, and runway are not public. Public valuation anchors exist
+      at $9.5B-$10B, but capitalization details are private. Payroll tax services create compliance exposure; public
+      sources do not disclose tax notices, grants, or incentives.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E16
+      - E1
+      - E2
+      - E13
+    risk_ids:
+      - R1
+      - R2
+      - R3
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial statements
+        checklist_question_ids: []
+        summary: Audited financials, ARR, gross margin, burn, and runway are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Audited financials, ARR, gross margin, burn, and runway are not public.
+            evidence_claim_ids: &a2
+              - E16
+            risk_ids:
+              - R1
+        hidden_risks:
+          - Financial quality and unit economics not public
+        evidence_gaps: &a1
+          - Provide audited financials, monthly management accounts, ARR bridge, gross margin, CAC/payback, burn, runway, and
+            debt schedule.
+        follow_up_questions: *a1
+        table_ids:
+          - T3
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.B
+        title: Capitalization and financing history
+        checklist_question_ids: []
+        summary: Public valuation anchors exist at $9.5B-$10B, but capitalization details are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public valuation anchors exist at $9.5B-$10B, but capitalization details are private.
+            evidence_claim_ids: &a4
+              - E1
+              - E2
+            risk_ids:
+              - R2
+        hidden_risks:
+          - Cap table and secondary terms opaque
+        evidence_gaps: &a3
+          - Provide cap table, financing documents, preferred terms, secondary sale documents, option pool, and investor rights.
+        follow_up_questions: *a3
+        table_ids:
+          - T1
+          - T2
+        figure_ids:
+          - F1
+          - F2
+        evidence_claim_ids: *a4
+      - section_id: I.C
+        title: Taxes and government funding
+        checklist_question_ids: []
+        summary: Payroll tax services create compliance exposure; public sources do not disclose tax notices, grants, or
+          incentives.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Payroll tax services create compliance exposure; public sources do not disclose tax notices, grants, or
+              incentives.
+            evidence_claim_ids: &a6
+              - E13
+              - E16
+            risk_ids:
+              - R3
+        hidden_risks:
+          - Payroll and tax compliance exposure
+        evidence_gaps: &a5
+          - Provide tax notices, agency correspondence, grants/incentives, tax controls, and remediation history.
+        follow_up_questions: *a5
+        table_ids:
+          - T4
+        figure_ids: []
+        evidence_claim_ids: *a6
+  - chapter_id: II
+    title: Products
+    chapter_summary: Public pages verify payroll, benefits, HR, and fintech/service breadth. Integrations and third-party
+      dependencies are public; architecture, uptime, SOC reports, and incident logs are not. Customer-count and
+      case-study evidence supports demand but not retention, usage cohorts, or expansion.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E7
+      - E8
+      - E12
+      - E11
+      - E14
+      - E15
+      - E3
+      - E4
+      - E9
+    risk_ids:
+      - R4
+      - R5
+      - R6
+      - R7
+    sections:
+      - section_id: II.A
+        title: Products, pricing, and roadmap
+        checklist_question_ids: []
+        summary: Public pages verify payroll, benefits, HR, and fintech/service breadth.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Public pages verify payroll, benefits, HR, and fintech/service breadth.
+            evidence_claim_ids: &a8
+              - E7
+              - E8
+              - E12
+            risk_ids:
+              - R4
+        hidden_risks:
+          - Pricing pressure in payroll/HR platform market
+        evidence_gaps: &a7
+          - Provide product roadmap, revenue by SKU, attach rates, discounting, support cost, and churn by plan.
+        follow_up_questions: *a7
+        table_ids:
+          - T5
+          - T6
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: II.B
+        title: Technology architecture and security
+        checklist_question_ids: []
+        summary: Integrations and third-party dependencies are public; architecture, uptime, SOC reports, and incident logs are
+          not.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.B-F1
+            finding: Integrations and third-party dependencies are public; architecture, uptime, SOC reports, and incident logs are
+              not.
+            evidence_claim_ids: &a10
+              - E11
+              - E14
+              - E15
+            risk_ids:
+              - R5
+              - R6
+        hidden_risks:
+          - Sensitive data privacy and security risk
+          - Third-party money movement and provider dependency
+        evidence_gaps: &a9
+          - Provide architecture diagrams, SOC 2/ISO reports, pen tests, API uptime, incident logs, and vendor SLAs.
+        follow_up_questions: *a9
+        table_ids:
+          - T7
+        figure_ids:
+          - F3
+        evidence_claim_ids: *a10
+      - section_id: II.C
+        title: Product-market fit and usage
+        checklist_question_ids: []
+        summary: Customer-count and case-study evidence supports demand but not retention, usage cohorts, or expansion.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.C-F1
+            finding: Customer-count and case-study evidence supports demand but not retention, usage cohorts, or expansion.
+            evidence_claim_ids: &a12
+              - E3
+              - E4
+              - E9
+            risk_ids:
+              - R7
+        hidden_risks:
+          - Customer concentration and retention not public
+        evidence_gaps: &a11
+          - Provide activation, monthly active employers, cohort retention, NPS, feature adoption, and churn analysis.
+        follow_up_questions: *a11
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a12
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public sources indicate large SMB reach and named stories; customer concentration and retention are
+      private. Partner programs exist for accountants, brokers, and advisors; channel economics are not public. Terms
+      disclose Check, bank partners, carriers, brokers, and third-party providers as dependencies.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E3
+      - E4
+      - E9
+      - E10
+      - E14
+    risk_ids:
+      - R7
+      - R9
+      - R6
+    sections:
+      - section_id: III.A
+        title: Customer base and concentration
+        checklist_question_ids: []
+        summary: Public sources indicate large SMB reach and named stories; customer concentration and retention are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public sources indicate large SMB reach and named stories; customer concentration and retention are private.
+            evidence_claim_ids: &a14
+              - E3
+              - E4
+              - E9
+            risk_ids:
+              - R7
+        hidden_risks:
+          - Customer concentration and retention not public
+        evidence_gaps: &a13
+          - Provide top-customer ARR, customer count bridge, churned customer list, renewals, and reference calls.
+        follow_up_questions: *a13
+        table_ids:
+          - T8
+        figure_ids:
+          - F4
+        evidence_claim_ids: *a14
+      - section_id: III.B
+        title: Contracts, pipeline, and channel partners
+        checklist_question_ids: []
+        summary: Partner programs exist for accountants, brokers, and advisors; channel economics are not public.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Partner programs exist for accountants, brokers, and advisors; channel economics are not public.
+            evidence_claim_ids: &a16
+              - E10
+            risk_ids:
+              - R9
+        hidden_risks:
+          - Partner-channel economics not verifiable
+        evidence_gaps: &a15
+          - Provide partner agreements, pipeline, conversion, sourced ARR, incentives, and termination rights.
+        follow_up_questions: *a15
+        table_ids:
+          - T9
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: III.C
+        title: Suppliers and operational dependencies
+        checklist_question_ids: []
+        summary: Terms disclose Check, bank partners, carriers, brokers, and third-party providers as dependencies.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Terms disclose Check, bank partners, carriers, brokers, and third-party providers as dependencies.
+            evidence_claim_ids: &a18
+              - E14
+            risk_ids:
+              - R6
+        hidden_risks:
+          - Third-party money movement and provider dependency
+        evidence_gaps: &a17
+          - Provide vendor contracts, redundancy plans, SLAs, SOC reports, and contingency playbooks.
+        follow_up_questions: *a17
+        table_ids:
+          - T10
+        figure_ids: []
+        evidence_claim_ids: *a18
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Gusto competes in SMB payroll, benefits, HR, and adjacent fintech; public sources do not quantify TAM
+      or market share. Competitors include incumbents and venture-backed workforce platforms with overlapping
+      payroll/HR/benefits capabilities. Scale, channel programs, and integrations suggest moats but are not sufficient
+      without retention, gross margin, and switching-cost data.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E3
+      - E4
+      - E7
+      - E8
+      - E12
+      - E10
+      - E11
+    risk_ids:
+      - R10
+    sections:
+      - section_id: IV.A
+        title: Market definition and market size
+        checklist_question_ids: []
+        summary: Gusto competes in SMB payroll, benefits, HR, and adjacent fintech; public sources do not quantify TAM or market
+          share.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Gusto competes in SMB payroll, benefits, HR, and adjacent fintech; public sources do not quantify TAM or market
+              share.
+            evidence_claim_ids: &a20
+              - E3
+              - E4
+              - E7
+            risk_ids:
+              - R10
+        hidden_risks:
+          - Competitive differentiation requires private proof
+        evidence_gaps: &a19
+          - Provide TAM/SAM/SOM model, market-share bridge, budget-owner research, and win/loss analysis.
+        follow_up_questions: *a19
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a20
+      - section_id: IV.B
+        title: Competitive landscape
+        checklist_question_ids: []
+        summary: Competitors include incumbents and venture-backed workforce platforms with overlapping payroll/HR/benefits
+          capabilities.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.B-F1
+            finding: Competitors include incumbents and venture-backed workforce platforms with overlapping payroll/HR/benefits
+              capabilities.
+            evidence_claim_ids: &a22
+              - E7
+              - E8
+              - E12
+            risk_ids:
+              - R10
+        hidden_risks:
+          - Competitive differentiation requires private proof
+        evidence_gaps: &a21
+          - Provide competitive win/loss, pricing benchmarks, churn reasons, and replacement analyses.
+        follow_up_questions: *a21
+        table_ids:
+          - T11
+        figure_ids:
+          - F5
+        evidence_claim_ids: *a22
+      - section_id: IV.C
+        title: Differentiation and defensibility
+        checklist_question_ids: []
+        summary: Scale, channel programs, and integrations suggest moats but are not sufficient without retention, gross margin,
+          and switching-cost data.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.C-F1
+            finding: Scale, channel programs, and integrations suggest moats but are not sufficient without retention, gross margin,
+              and switching-cost data.
+            evidence_claim_ids: &a24
+              - E4
+              - E10
+              - E11
+            risk_ids:
+              - R10
+        hidden_risks:
+          - Competitive differentiation requires private proof
+        evidence_gaps: &a23
+          - Provide cohort retention, integration usage, partner NPS, and proprietary data/automation advantages.
+        follow_up_questions: *a23
+        table_ids:
+          - T12
+        figure_ids: []
+        evidence_claim_ids: *a24
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Direct web, partner, and integrations motions are visible; channel mix and CAC are private. Bookings,
+      pipeline coverage, win rates, and sales controls are not publicly verifiable. Customer stories and scale claims
+      support brand but not unbiased customer sentiment or demand efficiency.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E7
+      - E10
+      - E11
+      - E16
+      - E4
+      - E9
+    risk_ids:
+      - R9
+      - R1
+    sections:
+      - section_id: V.A
+        title: Go-to-market model
+        checklist_question_ids: []
+        summary: Direct web, partner, and integrations motions are visible; channel mix and CAC are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Direct web, partner, and integrations motions are visible; channel mix and CAC are private.
+            evidence_claim_ids: &a26
+              - E7
+              - E10
+              - E11
+            risk_ids:
+              - R9
+        hidden_risks:
+          - Partner-channel economics not verifiable
+        evidence_gaps: &a25
+          - Provide CAC by channel, payback, pipeline conversion, partner incentives, and sales productivity.
+        follow_up_questions: *a25
+        table_ids:
+          - T13
+        figure_ids:
+          - F6
+        evidence_claim_ids: *a26
+      - section_id: V.B
+        title: Pipeline, bookings, and revenue operations
+        checklist_question_ids: []
+        summary: Bookings, pipeline coverage, win rates, and sales controls are not publicly verifiable.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Bookings, pipeline coverage, win rates, and sales controls are not publicly verifiable.
+            evidence_claim_ids: &a28
+              - E16
+            risk_ids:
+              - R1
+        hidden_risks:
+          - Financial quality and unit economics not public
+        evidence_gaps: &a27
+          - Provide bookings bridge, pipeline aging, win/loss, discount approvals, and revenue operations controls.
+        follow_up_questions: *a27
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a28
+      - section_id: V.C
+        title: Brand, communications, and demand generation
+        checklist_question_ids: []
+        summary: Customer stories and scale claims support brand but not unbiased customer sentiment or demand efficiency.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Customer stories and scale claims support brand but not unbiased customer sentiment or demand efficiency.
+            evidence_claim_ids: &a30
+              - E4
+              - E9
+              - E10
+            risk_ids:
+              - R9
+        hidden_risks:
+          - Partner-channel economics not verifiable
+        evidence_gaps: &a29
+          - Provide brand metrics, web funnel, paid media spend, CAC, PR calendar, and referenceable customer/churned-customer
+            lists.
+        follow_up_questions: *a29
+        table_ids:
+          - T14
+        figure_ids: []
+        evidence_claim_ids: *a30
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public employee scale and regulated workflow scope imply a sizeable R&D/compliance organization;
+      process quality is private. Public product pages show platform breadth, but patent/trademark schedules and roadmap
+      are not public. Sensitive data and third-party dependencies increase need for reliability and scale evidence.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E5
+      - E12
+      - E8
+      - E11
+      - E14
+      - E15
+    risk_ids:
+      - R5
+      - R4
+      - R6
+    sections:
+      - section_id: VI.A
+        title: R&D organization and process
+        checklist_question_ids: []
+        summary: Public employee scale and regulated workflow scope imply a sizeable R&D/compliance organization; process
+          quality is private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public employee scale and regulated workflow scope imply a sizeable R&D/compliance organization; process
+              quality is private.
+            evidence_claim_ids: &a32
+              - E5
+              - E12
+            risk_ids:
+              - R5
+        hidden_risks:
+          - Sensitive data privacy and security risk
+        evidence_gaps: &a31
+          - Provide engineering org chart, release process, QA, compliance controls, and incident review process.
+        follow_up_questions: *a31
+        table_ids:
+          - T16
+        figure_ids:
+          - F7
+        evidence_claim_ids: *a32
+      - section_id: VI.B
+        title: IP creation, patents, and technical roadmap
+        checklist_question_ids: []
+        summary: Public product pages show platform breadth, but patent/trademark schedules and roadmap are not public.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Public product pages show platform breadth, but patent/trademark schedules and roadmap are not public.
+            evidence_claim_ids: &a34
+              - E8
+              - E11
+              - E12
+            risk_ids:
+              - R4
+        hidden_risks:
+          - Pricing pressure in payroll/HR platform market
+        evidence_gaps: &a33
+          - Provide IP schedule, invention assignments, OSS policy, roadmap, and build-versus-buy analysis.
+        follow_up_questions: *a33
+        table_ids:
+          - T15
+        figure_ids: []
+        evidence_claim_ids: *a34
+      - section_id: VI.C
+        title: Technical debt and scalability
+        checklist_question_ids: []
+        summary: Sensitive data and third-party dependencies increase need for reliability and scale evidence.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.C-F1
+            finding: Sensitive data and third-party dependencies increase need for reliability and scale evidence.
+            evidence_claim_ids: &a36
+              - E11
+              - E14
+              - E15
+            risk_ids:
+              - R5
+              - R6
+        hidden_risks:
+          - Sensitive data privacy and security risk
+          - Third-party money movement and provider dependency
+        evidence_gaps: &a35
+          - Provide uptime, incident logs, API latency, reconciliation metrics, data-retention controls, and security
+            remediation history.
+        follow_up_questions: *a35
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a36
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Founders and investors are publicly visible, but board composition, investor rights, and governance
+      documents are private. Gusto discloses 2,500+ employees; HRIS, attrition, compensation, and function mix are
+      private. Public culture messaging is high level; conduct, engagement, and retention metrics are not public.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E1
+      - E2
+      - E6
+      - E5
+      - E16
+    risk_ids:
+      - R11
+    sections:
+      - section_id: VII.A
+        title: Leadership, board, and governance
+        checklist_question_ids: []
+        summary: Founders and investors are publicly visible, but board composition, investor rights, and governance documents
+          are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Founders and investors are publicly visible, but board composition, investor rights, and governance documents
+              are private.
+            evidence_claim_ids: &a38
+              - E1
+              - E2
+              - E6
+            risk_ids:
+              - R11
+        hidden_risks:
+          - Leadership, headcount, and culture risks require private HR diligence
+        evidence_gaps: &a37
+          - Provide board roster, minutes, investor rights, voting agreements, executive contracts, and succession plan.
+        follow_up_questions: *a37
+        table_ids:
+          - T17
+        figure_ids: []
+        evidence_claim_ids: *a38
+      - section_id: VII.B
+        title: Employees, compensation, and hiring
+        checklist_question_ids: []
+        summary: Gusto discloses 2,500+ employees; HRIS, attrition, compensation, and function mix are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Gusto discloses 2,500+ employees; HRIS, attrition, compensation, and function mix are private.
+            evidence_claim_ids: &a40
+              - E5
+            risk_ids:
+              - R11
+        hidden_risks:
+          - Leadership, headcount, and culture risks require private HR diligence
+        evidence_gaps: &a39
+          - Provide HRIS census, attrition, compensation bands, option grants, key-person retention, and hiring plan.
+        follow_up_questions: *a39
+        table_ids:
+          - T18
+        figure_ids:
+          - F8
+        evidence_claim_ids: *a40
+      - section_id: VII.C
+        title: Culture, conduct, and retention
+        checklist_question_ids: []
+        summary: Public culture messaging is high level; conduct, engagement, and retention metrics are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public culture messaging is high level; conduct, engagement, and retention metrics are not public.
+            evidence_claim_ids: &a42
+              - E5
+              - E16
+            risk_ids:
+              - R11
+        hidden_risks:
+          - Leadership, headcount, and culture risks require private HR diligence
+        evidence_gaps: &a41
+          - Provide engagement surveys, complaints/investigations, attrition by function, and culture-risk remediation.
+        follow_up_questions: *a41
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a42
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Corporate records, investor rights, vendor contracts, and material customer agreements are private.
+      Payroll, tax, benefits, money movement, privacy, and sensitive data create material compliance exposure. Privacy
+      disclosures confirm sensitive data categories; IP ownership and data-processing controls require private
+      diligence.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - E1
+      - E2
+      - E14
+      - E13
+      - E15
+      - E16
+    risk_ids:
+      - R2
+      - R6
+      - R3
+      - R5
+      - R8
+    sections:
+      - section_id: VIII.A
+        title: Corporate records and material contracts
+        checklist_question_ids: []
+        summary: Corporate records, investor rights, vendor contracts, and material customer agreements are private.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Corporate records, investor rights, vendor contracts, and material customer agreements are private.
+            evidence_claim_ids: &a44
+              - E1
+              - E2
+              - E14
+            risk_ids:
+              - R2
+              - R6
+        hidden_risks:
+          - Cap table and secondary terms opaque
+          - Third-party money movement and provider dependency
+        evidence_gaps: &a43
+          - Provide charter, bylaws, board minutes, investor rights, credit agreements, material vendor/customer contracts, and
+            insurance policies.
+        follow_up_questions: *a43
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a44
+      - section_id: VIII.B
+        title: Litigation, disputes, and regulatory compliance
+        checklist_question_ids: []
+        summary: Payroll, tax, benefits, money movement, privacy, and sensitive data create material compliance exposure.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Payroll, tax, benefits, money movement, privacy, and sensitive data create material compliance exposure.
+            evidence_claim_ids: &a46
+              - E13
+              - E14
+              - E15
+              - E16
+            risk_ids:
+              - R3
+              - R5
+              - R6
+              - R8
+        hidden_risks:
+          - Payroll and tax compliance exposure
+          - Sensitive data privacy and security risk
+          - Third-party money movement and provider dependency
+          - Benefits and insurance regulatory dependency
+        evidence_gaps: &a45
+          - Provide litigation schedule, agency inquiries, regulatory exams, complaints, penalties, SOC reports, and
+            remediation history.
+        follow_up_questions: *a45
+        table_ids:
+          - T19
+        figure_ids:
+          - F9
+        evidence_claim_ids: *a46
+      - section_id: VIII.C
+        title: Intellectual property, data rights, and privacy
+        checklist_question_ids: []
+        summary: Privacy disclosures confirm sensitive data categories; IP ownership and data-processing controls require
+          private diligence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Privacy disclosures confirm sensitive data categories; IP ownership and data-processing controls require
+              private diligence.
+            evidence_claim_ids: &a48
+              - E15
+              - E16
+            risk_ids:
+              - R5
+        hidden_risks:
+          - Sensitive data privacy and security risk
+        evidence_gaps: &a47
+          - Provide IP schedule, DPAs, subprocessors, data maps, privacy assessments, incident logs, and open-source compliance
+            records.
+        follow_up_questions: *a47
+        table_ids:
+          - T20
+        figure_ids: []
+        evidence_claim_ids: *a48
+tables:
+  - table_id: T1
+    title: Public funding and valuation history
+    chapter_id: I
+    section_id: I.B
+    purpose: Organize public evidence and diligence requests for Public funding and valuation history.
+    columns:
+      - name: date
+        description: date
+      - name: event
+        description: event
+      - name: amount_or_valuation
+        description: amount or valuation
+      - name: source
+        description: source
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T1-R1
+        values:
+          date: 2015-12-18
+          event: CB Insights unicorn join date
+          amount_or_valuation: $10B current valuation row
+          source: CB Insights
+          verification_status: verified
+          diligence_request: Reconcile CB Insights row to latest 409A, secondary, preferred terms, and cap table.
+        evidence_claim_ids: &a49
+          - E1
+          - E2
+        source_ids: &a50
+          - S1
+          - S2
+      - row_id: T1-R2
+        values:
+          date: "2021"
+          event: Series E
+          amount_or_valuation: $175M funding; $9.5B valuation per Reuters
+          source: Reuters
+          verification_status: verified
+          diligence_request: Provide financing documents, investor list, preference stack, and use of proceeds.
+        evidence_claim_ids: *a49
+        source_ids: *a50
+      - row_id: T1-R3
+        values:
+          date: 2022-07-12
+          event: Secondary share sale
+          amount_or_valuation: $10B valuation per Reuters
+          source: Reuters
+          verification_status: verified
+          diligence_request: Provide tender offer terms, sellers, buyer participation, and post-transaction ownership.
+        evidence_claim_ids: *a49
+        source_ids: *a50
+    evidence_claim_ids: *a49
+    source_ids: *a50
+    notes: null
+  - table_id: T2
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.B
+    purpose: Organize public evidence and diligence requests for Capital structure and ownership snapshot.
+    columns:
+      - name: stakeholder_or_instrument
+        description: stakeholder or instrument
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T2-R1
+        values:
+          stakeholder_or_instrument: General Catalyst Partners / Google Ventures / Kleiner Perkins
+          public_signal: Listed by CB Insights as select investors
+          verification_status: verified
+          diligence_caveat: Ownership percentage, preferred terms, pro rata rights, and board rights are not public.
+        evidence_claim_ids: &a51
+          - E1
+          - E2
+        source_ids: &a52
+          - S1
+          - S2
+      - row_id: T2-R2
+        values:
+          stakeholder_or_instrument: T. Rowe Price / Franklin Templeton / Sands Capital
+          public_signal: Reuters listed as investors in 2022 article
+          verification_status: verified
+          diligence_caveat: Round-by-round share classes and valuation marks require cap table.
+        evidence_claim_ids: *a51
+        source_ids: *a52
+      - row_id: T2-R3
+        values:
+          stakeholder_or_instrument: Employee/current-former holder secondary liquidity
+          public_signal: Reuters reported secondary share sale
+          verification_status: partially_verified
+          diligence_caveat: Tender documents, transfer restrictions, and option pool refresh are not public.
+        evidence_claim_ids: *a51
+        source_ids: *a52
+    evidence_claim_ids: *a51
+    source_ids: *a52
+    notes: null
+  - table_id: T3
+    title: Revenue and unit-economic public signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Organize public evidence and diligence requests for Revenue and unit-economic public signals.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T3-R1
+        values:
+          metric: Revenue / ARR
+          public_signal: Not disclosed in reviewed public sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Provide monthly ARR, recognized revenue, gross margin, CAC, payback, NRR, GRR, churn, and cohort reports.
+        evidence_claim_ids: &a53
+          - E3
+          - E4
+          - E16
+        source_ids: &a54
+          - S2
+          - S4
+      - row_id: T3-R2
+        values:
+          metric: Customer count
+          public_signal: "Reuters: >200,000 businesses in 2022; Gusto: 400,000+ businesses on about page"
+          verification_status: partially_verified
+          diligence_request: Provide active paid-customer definition, segmentation, ARPA, retention, and customer-count bridge.
+        evidence_claim_ids: *a53
+        source_ids: *a54
+      - row_id: T3-R3
+        values:
+          metric: Runway/burn
+          public_signal: Not disclosed in reviewed public sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Provide cash balance, monthly burn, debt, restricted cash, and 24-month plan.
+        evidence_claim_ids: *a53
+        source_ids: *a54
+    evidence_claim_ids: *a53
+    source_ids: *a54
+    notes: null
+  - table_id: T4
+    title: Tax and government-funding diligence matrix
+    chapter_id: I
+    section_id: I.C
+    purpose: Organize public evidence and diligence requests for Tax and government-funding diligence matrix.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public signal
+      - name: risk
+        description: risk
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T4-R1
+        values:
+          area: Payroll tax filings
+          public_signal: Terms describe tax filing services and customer responsibilities
+          risk: Operational errors could create customer/regulatory exposure
+          diligence_request: Provide tax-agency notices, error rates, indemnity claims, and controls testing.
+        evidence_claim_ids: &a55
+          - E13
+          - E16
+        source_ids: &a56
+          - S10
+      - row_id: T4-R2
+        values:
+          area: Government incentives
+          public_signal: Not publicly verifiable
+          risk: Potential compliance clawbacks if incentives exist
+          diligence_request: Provide grants, credits, tax incentives, and compliance certificates.
+        evidence_claim_ids: *a55
+        source_ids: *a56
+      - row_id: T4-R3
+        values:
+          area: Sales/payroll tax compliance
+          public_signal: Terms allocate customer accuracy duties
+          risk: State-by-state compliance complexity
+          diligence_request: Provide compliance calendar and historical notices/fines.
+        evidence_claim_ids: *a55
+        source_ids: *a56
+    evidence_claim_ids: *a55
+    source_ids: *a56
+    notes: null
+  - table_id: T5
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Organize public evidence and diligence requests for Product and SKU matrix.
+    columns:
+      - name: product_area
+        description: product area
+      - name: public_evidence
+        description: public evidence
+      - name: target_user
+        description: target user
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T5-R1
+        values:
+          product_area: Payroll
+          public_evidence: Auto-file payroll taxes; W-2/1099; direct deposit; multi-state payroll
+          target_user: SMBs and employers
+          verification_status: verified
+        evidence_claim_ids: &a57
+          - E7
+          - E8
+          - E12
+        source_ids: &a58
+          - S3
+          - S5
+          - S10
+      - row_id: T5-R2
+        values:
+          product_area: Benefits
+          public_evidence: Health insurance, 401(k), workers comp, HRAs, benefits administration
+          target_user: Employers and employees
+          verification_status: verified
+        evidence_claim_ids: *a57
+        source_ids: *a58
+      - row_id: T5-R3
+        values:
+          product_area: HR/team management
+          public_evidence: Hiring, onboarding, time tracking, PTO, performance management
+          target_user: People operations and owners
+          verification_status: verified
+        evidence_claim_ids: *a57
+        source_ids: *a58
+      - row_id: T5-R4
+        values:
+          product_area: Fintech/financial health
+          public_evidence: Terms mention proprietary benefits, financial health, and financial technology solutions
+          target_user: Employees and employers
+          verification_status: verified
+        evidence_claim_ids: *a57
+        source_ids: *a58
+    evidence_claim_ids: *a57
+    source_ids: *a58
+    notes: null
+  - table_id: T6
+    title: Public plan and pricing comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Organize public evidence and diligence requests for Public plan and pricing comparison.
+    columns:
+      - name: plan
+        description: plan
+      - name: public_features
+        description: public features
+      - name: price_publicly_verified
+        description: price publicly verified
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T6-R1
+        values:
+          plan: Simple
+          public_features: Single-state payroll, W-2s/1099s, basic hiring/onboarding, Gusto-brokered health insurance
+            administration, employee profiles
+          price_publicly_verified: Plan name/features public; exact current quote not verified in fetched page
+          diligence_request: Provide pricing waterfall, discounts, attach rates, and gross margin by plan.
+        evidence_claim_ids: &a59
+          - E8
+        source_ids: &a60
+          - S5
+      - row_id: T6-R2
+        values:
+          plan: Plus
+          public_features: Multi-state payroll, next-day direct deposit, time tracking, advanced hiring/onboarding, PTO,
+            performance reviews
+          price_publicly_verified: Plan name/features public; exact current quote not verified in fetched page
+          diligence_request: Provide plan mix, upgrades/downgrades, and retention by plan.
+        evidence_claim_ids: *a59
+        source_ids: *a60
+      - row_id: T6-R3
+        values:
+          plan: Premium
+          public_features: Scalable payroll/HR, priority support, expert HR resources, scalable benefits administration
+          price_publicly_verified: Not publicly verifiable in reviewed source
+          diligence_request: Provide enterprise contract terms, implementation fees, support cost, and SLA commitments.
+        evidence_claim_ids: *a59
+        source_ids: *a60
+    evidence_claim_ids: *a59
+    source_ids: *a60
+    notes: null
+  - table_id: T7
+    title: Technology and integration dependency matrix
+    chapter_id: II
+    section_id: II.B
+    purpose: Organize public evidence and diligence requests for Technology and integration dependency matrix.
+    columns:
+      - name: component
+        description: component
+      - name: public_signal
+        description: public signal
+      - name: dependency_or_gap
+        description: dependency or gap
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T7-R1
+        values:
+          component: Gusto core platform
+          public_signal: Homepage positions payroll, benefits, HR, and team management in one platform
+          dependency_or_gap: Architecture, uptime, and data model are private
+          verification_status: partially_verified
+        evidence_claim_ids: &a61
+          - E7
+          - E11
+          - E14
+        source_ids: &a62
+          - S3
+          - S8
+          - S10
+      - row_id: T7-R2
+        values:
+          component: App integrations
+          public_signal: Integrations page lists apps/integrations that work with Gusto
+          dependency_or_gap: API volumes, outage impact, partner SLAs not public
+          verification_status: verified
+        evidence_claim_ids: *a61
+        source_ids: *a62
+      - row_id: T7-R3
+        values:
+          component: Check Technologies / bank partners
+          public_signal: Terms disclose third-party providers for payroll and money movement
+          dependency_or_gap: Processing agreements, redundancy, and concentration require private review
+          verification_status: verified
+        evidence_claim_ids: *a61
+        source_ids: *a62
+    evidence_claim_ids: *a61
+    source_ids: *a62
+    notes: null
+  - table_id: T8
+    title: Public customer and case-study signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Organize public evidence and diligence requests for Public customer and case-study signals.
+    columns:
+      - name: customer_or_metric
+        description: customer or metric
+      - name: public_evidence
+        description: public evidence
+      - name: use_case
+        description: use case
+      - name: verification_status
+        description: verification status
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T8-R1
+        values:
+          customer_or_metric: 400,000+ businesses
+          public_evidence: Gusto about page
+          use_case: Payroll, benefits, and team operations
+          verification_status: partially_verified
+          gap: Needs active paid-customer definition and customer-count bridge.
+        evidence_claim_ids: &a63
+          - E4
+          - E9
+        source_ids: &a64
+          - S4
+          - S6
+      - row_id: T8-R2
+        values:
+          customer_or_metric: Betabrand
+          public_evidence: Customer story index says payroll processing time improved 95%
+          use_case: Payroll processing efficiency
+          verification_status: partially_verified
+          gap: Contract size, renewal, and baseline methodology not public.
+        evidence_claim_ids: *a63
+        source_ids: *a64
+      - row_id: T8-R3
+        values:
+          customer_or_metric: Coro
+          public_evidence: Customer story index says Coro uses Gusto to streamline payroll and HR
+          use_case: Payroll/HR operations
+          verification_status: partially_verified
+          gap: No revenue or retention detail.
+        evidence_claim_ids: *a63
+        source_ids: *a64
+      - row_id: T8-R4
+        values:
+          customer_or_metric: Maker Wine
+          public_evidence: Customer story index says Maker Wine uses Gusto to scale and retain talent
+          use_case: Team scaling/retention
+          verification_status: partially_verified
+          gap: No contract terms or cohort data.
+        evidence_claim_ids: *a63
+        source_ids: *a64
+    evidence_claim_ids: *a63
+    source_ids: *a64
+    notes: null
+  - table_id: T9
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Organize public evidence and diligence requests for Strategic relationships and partnerships.
+    columns:
+      - name: partner_type
+        description: partner type
+      - name: public_evidence
+        description: public evidence
+      - name: risk_or_value
+        description: risk or value
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T9-R1
+        values:
+          partner_type: Accountants
+          public_evidence: Partner page lists accountant program
+          risk_or_value: Potential referral/CAC advantage and partner concentration
+          diligence_request: Provide partner-sourced ARR, incentives, churn, and top partner concentration.
+        evidence_claim_ids: &a65
+          - E10
+        source_ids: &a66
+          - S7
+      - row_id: T9-R2
+        values:
+          partner_type: Brokers
+          public_evidence: Partner page lists broker program
+          risk_or_value: Benefits distribution and carrier/broker dependency
+          diligence_request: Provide broker economics, carrier contracts, and compliance controls.
+        evidence_claim_ids: *a65
+        source_ids: *a66
+      - row_id: T9-R3
+        values:
+          partner_type: Financial advisors
+          public_evidence: Partner page lists financial advisor program
+          risk_or_value: Channel expansion beyond payroll
+          diligence_request: Provide partner pipeline conversion and regulatory responsibilities.
+        evidence_claim_ids: *a65
+        source_ids: *a66
+    evidence_claim_ids: *a65
+    source_ids: *a66
+    notes: null
+  - table_id: T10
+    title: Supplier and operational dependency matrix
+    chapter_id: III
+    section_id: III.C
+    purpose: Organize public evidence and diligence requests for Supplier and operational dependency matrix.
+    columns:
+      - name: supplier_or_dependency
+        description: supplier or dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: concentration_risk
+        description: concentration risk
+    rows:
+      - row_id: T10-R1
+        values:
+          supplier_or_dependency: Check Technologies
+          role: Payment processing for payroll services
+          public_evidence: Terms disclose Check as third-party service provider
+          concentration_risk: High until redundancy and contract terms are reviewed.
+        evidence_claim_ids: &a67
+          - E14
+        source_ids: &a68
+          - S10
+      - row_id: T10-R2
+        values:
+          supplier_or_dependency: Bank partners
+          role: Money movement and tax remittances
+          public_evidence: Terms disclose bank partners and third-party providers
+          concentration_risk: Material regulated money-movement dependency.
+        evidence_claim_ids: *a67
+        source_ids: *a68
+      - row_id: T10-R3
+        values:
+          supplier_or_dependency: Insurance carriers/brokers/providers
+          role: Benefits and workers compensation products
+          public_evidence: Terms disclose third-party providers/carriers/brokers
+          concentration_risk: Carrier/broker concentration and compliance exposure require contracts.
+        evidence_claim_ids: *a67
+        source_ids: *a68
+    evidence_claim_ids: *a67
+    source_ids: *a68
+    notes: null
+  - table_id: T11
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.B
+    purpose: Organize public evidence and diligence requests for Competitor comparison matrix.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: product_overlap
+        description: product overlap
+      - name: differentiator_or_pressure
+        description: differentiator or pressure
+      - name: source_basis
+        description: source basis
+    rows:
+      - row_id: T11-R1
+        values:
+          competitor: ADP
+          segment: Payroll/HCM incumbent
+          product_overlap: Payroll, tax, HR, benefits
+          differentiator_or_pressure: Scale, compliance depth, enterprise trust; may pressure pricing
+          source_basis: Analyst competitive inference from Gusto product scope
+        evidence_claim_ids: &a69
+          - E7
+          - E8
+          - E12
+        source_ids: &a70
+          - S3
+          - S5
+          - S10
+      - row_id: T11-R2
+        values:
+          competitor: Paychex
+          segment: Payroll/HCM incumbent
+          product_overlap: SMB payroll, benefits, HR services
+          differentiator_or_pressure: Bundled services and existing SMB channels
+          source_basis: Analyst competitive inference from Gusto product scope
+        evidence_claim_ids: *a69
+        source_ids: *a70
+      - row_id: T11-R3
+        values:
+          competitor: Rippling
+          segment: Workforce management platform
+          product_overlap: Payroll, HR, benefits, IT/workforce workflows
+          differentiator_or_pressure: Platform breadth and IT identity adjacency
+          source_basis: Analyst competitive inference from category
+        evidence_claim_ids: *a69
+        source_ids: *a70
+      - row_id: T11-R4
+        values:
+          competitor: Justworks / QuickBooks Payroll / Deel
+          segment: SMB payroll, PEO, contractor/global payroll
+          product_overlap: Payroll, benefits, compliance, HR
+          differentiator_or_pressure: Vertical/channel specialization and cross-border functionality
+          source_basis: Analyst competitive inference from category
+        evidence_claim_ids: *a69
+        source_ids: *a70
+    evidence_claim_ids: *a69
+    source_ids: *a70
+    notes: null
+  - table_id: T12
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.C
+    purpose: Organize public evidence and diligence requests for Basis-of-competition scoring.
+    columns:
+      - name: axis
+        description: axis
+      - name: gusto_public_position
+        description: gusto public position
+      - name: competitive_question
+        description: competitive question
+      - name: evidence_strength
+        description: evidence strength
+    rows:
+      - row_id: T12-R1
+        values:
+          axis: SMB adoption
+          gusto_public_position: 400,000+ businesses claimed by Gusto
+          competitive_question: How many are paid, active, retained, and profitable?
+          evidence_strength: medium
+        evidence_claim_ids: &a71
+          - E4
+          - E10
+          - E12
+          - E13
+        source_ids: &a72
+          - S4
+          - S7
+          - S10
+      - row_id: T12-R2
+        values:
+          axis: Compliance breadth
+          gusto_public_position: Payroll/tax/benefits/HR service scope disclosed in terms
+          competitive_question: Error rates, regulatory notices, and indemnity history need testing.
+          evidence_strength: medium
+        evidence_claim_ids: *a71
+        source_ids: *a72
+      - row_id: T12-R3
+        values:
+          axis: Channel leverage
+          gusto_public_position: Accountant, broker, advisor partner programs
+          competitive_question: Partner-sourced ARR, incentive costs, and concentration not public.
+          evidence_strength: medium
+        evidence_claim_ids: *a71
+        source_ids: *a72
+    evidence_claim_ids: *a71
+    source_ids: *a72
+    notes: null
+  - table_id: T13
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Organize public evidence and diligence requests for Distribution channels and GTM motions.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public evidence
+      - name: likely_motion
+        description: likely motion
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T13-R1
+        values:
+          channel: Direct self-serve / sales-assisted
+          public_evidence: Homepage CTAs for demo and account creation
+          likely_motion: SMB acquisition and product-led onboarding
+          gap: CAC, conversion, sales cycle, and payback not public.
+        evidence_claim_ids: &a73
+          - E10
+          - E11
+        source_ids: &a74
+          - S7
+          - S8
+      - row_id: T13-R2
+        values:
+          channel: Accountants
+          public_evidence: Partner program for accountants
+          likely_motion: Referral/channel distribution
+          gap: Partner incentives and sourced ARR not public.
+        evidence_claim_ids: *a73
+        source_ids: *a74
+      - row_id: T13-R3
+        values:
+          channel: Brokers/advisors
+          public_evidence: Partner programs for brokers and financial advisors
+          likely_motion: Benefits and advisory channel
+          gap: Carrier economics and regulatory split not public.
+        evidence_claim_ids: *a73
+        source_ids: *a74
+      - row_id: T13-R4
+        values:
+          channel: Integrations ecosystem
+          public_evidence: App integrations page
+          likely_motion: Ecosystem-led retention and acquisition
+          gap: Integration attribution and API usage not public.
+        evidence_claim_ids: *a73
+        source_ids: *a74
+    evidence_claim_ids: *a73
+    source_ids: *a74
+    notes: null
+  - table_id: T14
+    title: Public marketing and brand signals
+    chapter_id: V
+    section_id: V.C
+    purpose: Organize public evidence and diligence requests for Public marketing and brand signals.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_interpretation
+        description: diligence interpretation
+      - name: request
+        description: request
+    rows:
+      - row_id: T14-R1
+        values:
+          signal: Customer-story library
+          public_evidence: Betabrand, Coro, Maker Wine examples
+          diligence_interpretation: Supports SMB proof points but curated
+          request: Provide unbiased reference list and churned-customer sample.
+        evidence_claim_ids: &a75
+          - E4
+          - E5
+          - E9
+          - E10
+        source_ids: &a76
+          - S4
+          - S6
+          - S7
+      - row_id: T14-R2
+        values:
+          signal: Scale claims
+          public_evidence: 400,000+ businesses; 2,500+ employees
+          diligence_interpretation: Signals category scale
+          request: Provide metric definitions and cohort bridge.
+        evidence_claim_ids: *a75
+        source_ids: *a76
+      - row_id: T14-R3
+        values:
+          signal: Partner messaging
+          public_evidence: Accountant/broker/advisor programs
+          diligence_interpretation: Partner ecosystem likely material to CAC
+          request: Provide partner funnel and economics.
+        evidence_claim_ids: *a75
+        source_ids: *a76
+    evidence_claim_ids: *a75
+    source_ids: *a76
+    notes: null
+  - table_id: T15
+    title: R&D and technical pipeline evidence
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Organize public evidence and diligence requests for R&D and technical pipeline evidence.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public signal
+      - name: status
+        description: status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T15-R1
+        values:
+          area: Payroll automation
+          public_signal: Auto-file payroll taxes and plan feature set
+          status: public product capability
+          diligence_request: Provide release roadmap, QA metrics, and tax-engine error rate.
+        evidence_claim_ids: &a77
+          - E8
+          - E11
+          - E12
+        source_ids: &a78
+          - S5
+          - S8
+          - S10
+      - row_id: T15-R2
+        values:
+          area: Integrations/API
+          public_signal: App integrations page
+          status: public ecosystem signal
+          diligence_request: Provide API documentation, uptime, incident history, and partner SLAs.
+        evidence_claim_ids: *a77
+        source_ids: *a78
+      - row_id: T15-R3
+        values:
+          area: Financial-health/fintech services
+          public_signal: Terms mention proprietary benefits, financial health, and fintech solutions
+          status: public contractual scope
+          diligence_request: Provide roadmap, regulatory analysis, and partner dependencies.
+        evidence_claim_ids: *a77
+        source_ids: *a78
+    evidence_claim_ids: *a77
+    source_ids: *a78
+    notes: null
+  - table_id: T16
+    title: Key R&D and operations personnel signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Organize public evidence and diligence requests for Key R&D and operations personnel signals.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: what_it_supports
+        description: what it supports
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T16-R1
+        values:
+          signal: 2,500+ employees
+          public_evidence: Gusto about page
+          what_it_supports: Scaled operating and product organization
+          gap: Function mix, engineering headcount, attrition, and productivity not public.
+        evidence_claim_ids: &a79
+          - E5
+          - E12
+        source_ids: &a80
+          - S4
+          - S10
+      - row_id: T16-R2
+        values:
+          signal: Leadership team disclosed
+          public_evidence: About page introduces leadership section
+          what_it_supports: Public executive presence
+          gap: Full reporting lines, succession, and key-person dependencies not public.
+        evidence_claim_ids: *a79
+        source_ids: *a80
+      - row_id: T16-R3
+        values:
+          signal: Regulated product scope
+          public_evidence: Terms describe payroll, tax, benefits, money movement, and fintech services
+          what_it_supports: Need for compliance/R&D process rigor
+          gap: Controls, audits, and incident history not public.
+        evidence_claim_ids: *a79
+        source_ids: *a80
+    evidence_claim_ids: *a79
+    source_ids: *a80
+    notes: null
+  - table_id: T17
+    title: Management and governance roster
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Organize public evidence and diligence requests for Management and governance roster.
+    columns:
+      - name: person_or_group
+        description: person or group
+      - name: public_role
+        description: public role
+      - name: source
+        description: source
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T17-R1
+        values:
+          person_or_group: Josh Reeves
+          public_role: Co-founder
+          source: Gusto about page
+          diligence_caveat: Current authority, equity, and board role require confirmation.
+        evidence_claim_ids: &a81
+          - E1
+          - E2
+          - E6
+        source_ids: &a82
+          - S1
+          - S2
+          - S4
+      - row_id: T17-R2
+        values:
+          person_or_group: Tomer London
+          public_role: Co-founder
+          source: Gusto about page
+          diligence_caveat: Current role and vesting/equity require confirmation.
+        evidence_claim_ids: *a81
+        source_ids: *a82
+      - row_id: T17-R3
+        values:
+          person_or_group: Edward Kim
+          public_role: Co-founder
+          source: Gusto about page
+          diligence_caveat: Current role and transition history require confirmation.
+        evidence_claim_ids: *a81
+        source_ids: *a82
+      - row_id: T17-R4
+        values:
+          person_or_group: Board / investors
+          public_role: Not fully public in reviewed sources
+          source: CB Insights/Reuters investor references
+          diligence_caveat: Board minutes, investor rights, and governance terms are private.
+        evidence_claim_ids: *a81
+        source_ids: *a82
+    evidence_claim_ids: *a81
+    source_ids: *a82
+    notes: null
+  - table_id: T18
+    title: Headcount, hiring, and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Organize public evidence and diligence requests for Headcount, hiring, and turnover signals.
+    columns:
+      - name: metric_or_signal
+        description: metric or signal
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: request
+        description: request
+    rows:
+      - row_id: T18-R1
+        values:
+          metric_or_signal: 2,500+ employees
+          public_evidence: Gusto about page
+          verification_status: partially_verified
+          request: Provide HRIS census by function/location, attrition, compensation bands, option grants, and contractor count.
+        evidence_claim_ids: &a83
+          - E5
+          - E6
+        source_ids: &a84
+          - S4
+      - row_id: T18-R2
+        values:
+          metric_or_signal: Culture/mission
+          public_evidence: About page says Gusto helps build a future where work empowers a better life
+          verification_status: partially_verified
+          request: Provide engagement surveys, attrition by manager, offer acceptance, and DEI metrics.
+        evidence_claim_ids: *a83
+        source_ids: *a84
+      - row_id: T18-R3
+        values:
+          metric_or_signal: Leadership team
+          public_evidence: Leadership section visible on about page
+          verification_status: partially_verified
+          request: Provide executive agreements, succession plans, and key-person retention packages.
+        evidence_claim_ids: *a83
+        source_ids: *a84
+    evidence_claim_ids: *a83
+    source_ids: *a84
+    notes: null
+  - table_id: T19
+    title: Legal, regulatory, and data-rights matrix
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Organize public evidence and diligence requests for Legal, regulatory, and data-rights matrix.
+    columns:
+      - name: matter
+        description: matter
+      - name: public_evidence
+        description: public evidence
+      - name: risk
+        description: risk
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T19-R1
+        values:
+          matter: Payroll/tax compliance
+          public_evidence: Terms describe tax filings and customer responsibility
+          risk: Errors can affect customers and agencies across jurisdictions
+          diligence_request: Provide agency notices, penalties, SOC reports, compliance policies, and indemnity claims.
+        evidence_claim_ids: &a85
+          - E13
+          - E14
+          - E15
+        source_ids: &a86
+          - S9
+          - S10
+      - row_id: T19-R2
+        values:
+          matter: Money movement
+          public_evidence: Terms disclose Check, bank partners, ACH/NACHA, payroll tax accounts
+          risk: Bank/processor dependency and funds-flow controls
+          diligence_request: Provide partner contracts, reconciliations, segregation controls, and audit findings.
+        evidence_claim_ids: *a85
+        source_ids: *a86
+      - row_id: T19-R3
+        values:
+          matter: Benefits/insurance
+          public_evidence: Terms state Gusto is not an insurer and uses third-party carriers/brokers
+          risk: Licensing, broker, carrier, and customer-disclosure obligations
+          diligence_request: Provide broker licenses, carrier contracts, complaints, and E&O coverage.
+        evidence_claim_ids: *a85
+        source_ids: *a86
+      - row_id: T19-R4
+        values:
+          matter: Privacy/data security
+          public_evidence: Privacy policy covers SSNs, financial, health/benefits, and biometric data categories
+          risk: Sensitive employee data creates breach/regulatory exposure
+          diligence_request: Provide SOC 2, ISO, penetration tests, incident logs, DPIAs, and DPAs.
+        evidence_claim_ids: *a85
+        source_ids: *a86
+    evidence_claim_ids: *a85
+    source_ids: *a86
+    notes: null
+  - table_id: T20
+    title: Public lawsuits, IP, and regulatory-action diligence table
+    chapter_id: VIII
+    section_id: VIII.C
+    purpose: Organize public evidence and diligence requests for Public lawsuits, IP, and regulatory-action diligence table.
+    columns:
+      - name: category
+        description: category
+      - name: public_result
+        description: public result
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T20-R1
+        values:
+          category: Pending lawsuits against company
+          public_result: No comprehensive paid-docket search performed; not publicly verifiable from reviewed sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Counsel to provide litigation schedule, threatened claims, agency inquiries, and reserves.
+        evidence_claim_ids: &a87
+          - E15
+          - E16
+        source_ids: &a88
+          - S9
+          - S10
+      - row_id: T20-R2
+        values:
+          category: Lawsuits initiated by company
+          public_result: Not publicly verifiable from reviewed sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Provide litigation and IP-enforcement schedule.
+        evidence_claim_ids: *a87
+        source_ids: *a88
+      - row_id: T20-R3
+        values:
+          category: Patents/trademarks/copyrights
+          public_result: Trademark/IP ownership not fully verified in this public-source pass
+          verification_status: not_publicly_verifiable
+          diligence_request: Provide IP schedule, assignments, open-source policy, and invention agreements.
+        evidence_claim_ids: *a87
+        source_ids: *a88
+      - row_id: T20-R4
+        values:
+          category: Regulatory/agency actions
+          public_result: No complete agency-action search performed; sensitive payroll/privacy scope warrants counsel review
+          verification_status: not_publicly_verifiable
+          diligence_request: Provide regulator correspondence, audits, notices, complaints, and remediation history.
+        evidence_claim_ids: *a87
+        source_ids: *a88
+    evidence_claim_ids: *a87
+    source_ids: *a88
+    notes: null
+figures:
+  - figure_id: F1
+    title: Funding and valuation timeline
+    chapter_id: I
+    section_id: I.B
+    figure_type: timeline
+    description: Funding and valuation timeline
+    purpose: Visualize funding and valuation timeline for diligence review.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F1-E1
+          date: 2015-12-18
+          label: CB Insights unicorn join date
+          description: CB Insights lists Gusto as having joined the unicorn list.
+          category: valuation
+          evidence_claim_ids:
+            - E1
+          source_ids:
+            - S1
+        - event_id: F1-E2
+          date: "2021"
+          label: Series E at $9.5B
+          description: Reuters reports Gusto was valued at $9.5B after a $175M round.
+          category: financing
+          evidence_claim_ids:
+            - E2
+          source_ids:
+            - S2
+        - event_id: F1-E3
+          date: 2022-07-12
+          label: $10B secondary valuation
+          description: Reuters reports a secondary share sale valued Gusto at $10B.
+          category: secondary
+          evidence_claim_ids:
+            - E2
+          source_ids:
+            - S2
+      start_date: 2015-12-18
+      end_date: 2022-07-12
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - E1
+      - E2
+    source_ids:
+      - S1
+      - S2
+    notes: null
+  - figure_id: F2
+    title: Valuation trajectory chart
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: Valuation trajectory chart
+    purpose: Visualize valuation trajectory chart for diligence review.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Year
+        unit: null
+        scale: time
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation anchors
+          data:
+            - x: "2021"
+              y: 9.5
+              evidence_claim_ids:
+                - E2
+              source_ids:
+                - S2
+            - x: "2022"
+              y: 10
+              evidence_claim_ids:
+                - E2
+              source_ids:
+                - S2
+            - x: "2026"
+              y: 10
+              evidence_claim_ids:
+                - E1
+              source_ids:
+                - S1
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - E1
+      - E2
+    source_ids:
+      - S1
+      - S2
+    notes: null
+  - figure_id: F3
+    title: Product architecture map
+    chapter_id: II
+    section_id: II.B
+    figure_type: architecture_diagram
+    description: Product architecture map
+    purpose: Visualize product architecture map for diligence review.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: employer
+          label: Employer admin
+          node_type: user
+          description: SMB owner/HR/payroll administrator
+          evidence_claim_ids:
+            - E7
+          source_ids:
+            - S3
+        - node_id: gusto
+          label: Gusto people platform
+          node_type: service
+          description: Payroll, benefits, HR, and fintech workflows
+          evidence_claim_ids:
+            - E7
+            - E12
+          source_ids:
+            - S3
+            - S10
+        - node_id: providers
+          label: Third-party providers
+          node_type: third_party
+          description: Check, bank partners, carriers, brokers, and app integrations
+          evidence_claim_ids:
+            - E14
+          source_ids:
+            - S10
+        - node_id: employees
+          label: Employees/contractors
+          node_type: user
+          description: Payees and benefits users
+          evidence_claim_ids:
+            - E12
+          source_ids:
+            - S10
+      edges:
+        - edge_id: edge-1
+          from_node_id: employer
+          to_node_id: gusto
+          relationship: uses platform
+          data_or_dependency: Payroll, HR, benefits data
+          evidence_claim_ids:
+            - E7
+          source_ids:
+            - S3
+        - edge_id: edge-2
+          from_node_id: gusto
+          to_node_id: providers
+          relationship: depends on
+          data_or_dependency: Payment processing, banking, carriers, apps
+          evidence_claim_ids:
+            - E14
+          source_ids:
+            - S10
+        - edge_id: edge-3
+          from_node_id: gusto
+          to_node_id: employees
+          relationship: pays/administers
+          data_or_dependency: Payroll, tax, benefits, HR data
+          evidence_claim_ids:
+            - E12
+          source_ids:
+            - S10
+      boundaries:
+        - boundary_id: public-boundary
+          label: Publicly evidenced components
+          node_ids:
+            - employer
+            - gusto
+            - providers
+            - employees
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - E7
+      - E12
+      - E14
+    source_ids:
+      - S3
+      - S10
+    notes: null
+  - figure_id: F4
+    title: Customer-count public anchors
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Customer-count public anchors
+    purpose: Visualize customer-count public anchors for diligence review.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Source/year
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Business customers
+        unit: count
+        scale: linear
+      series:
+        - series_id: customers
+          name: Public customer-count claims
+          data:
+            - x: Reuters 2022
+              y: 200000
+              note: More than 200,000 businesses
+              evidence_claim_ids:
+                - E3
+              source_ids:
+                - S2
+            - x: Gusto about page 2026
+              y: 400000
+              note: 400,000+ businesses; company-owned claim
+              evidence_claim_ids:
+                - E4
+              source_ids:
+                - S4
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - E3
+      - E4
+    source_ids:
+      - S2
+      - S4
+    notes: null
+  - figure_id: F5
+    title: Competitive positioning market map
+    chapter_id: IV
+    section_id: IV.B
+    figure_type: market_map
+    description: Competitive positioning market map
+    purpose: Visualize competitive positioning market map for diligence review.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      axes:
+        - axis_id: x
+          label: SMB-to-enterprise focus
+          low_label: SMB
+          high_label: Enterprise
+        - axis_id: y
+          label: Platform breadth
+          low_label: Payroll point solution
+          high_label: People/IT/fintech platform
+      entities:
+        - entity_id: gusto
+          label: Gusto
+          entity_type: target_company
+          x: 0.35
+          y: 0.75
+          description: SMB people platform with payroll, benefits, HR, fintech services
+          evidence_claim_ids:
+            - E7
+            - E12
+          source_ids:
+            - S3
+            - S10
+        - entity_id: adp
+          label: ADP
+          entity_type: competitor
+          x: 0.75
+          y: 0.8
+          description: Incumbent HCM/payroll platform
+          evidence_claim_ids:
+            - E7
+          source_ids:
+            - S3
+        - entity_id: rippling
+          label: Rippling
+          entity_type: competitor
+          x: 0.55
+          y: 0.9
+          description: Workforce platform competitor
+          evidence_claim_ids:
+            - E7
+          source_ids:
+            - S3
+        - entity_id: quickbooks
+          label: QuickBooks Payroll
+          entity_type: competitor
+          x: 0.25
+          y: 0.45
+          description: SMB payroll/accounting adjacency
+          evidence_claim_ids:
+            - E7
+          source_ids:
+            - S3
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - E7
+      - E12
+    source_ids:
+      - S3
+      - S10
+    notes: null
+  - figure_id: F6
+    title: GTM channel mix evidence bars
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: GTM channel mix evidence bars
+    purpose: Visualize gtm channel mix evidence bars for diligence review.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public evidence strength
+        unit: 1-3 score
+        scale: linear
+      series:
+        - series_id: gtm
+          name: Evidence score
+          data:
+            - x: Direct website
+              y: 2
+              evidence_claim_ids:
+                - E7
+              source_ids:
+                - S3
+            - x: Accountants
+              y: 2
+              evidence_claim_ids:
+                - E10
+              source_ids:
+                - S7
+            - x: Brokers/advisors
+              y: 2
+              evidence_claim_ids:
+                - E10
+              source_ids:
+                - S7
+            - x: Integrations
+              y: 1
+              evidence_claim_ids:
+                - E11
+              source_ids:
+                - S8
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - E7
+      - E10
+      - E11
+    source_ids:
+      - S3
+      - S7
+      - S8
+    notes: null
+  - figure_id: F7
+    title: R&D and regulated workflow map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: R&D and regulated workflow map
+    purpose: Visualize r&d and regulated workflow map for diligence review.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: tax-engine
+          label: Payroll/tax workflows
+          node_type: service
+          description: Payroll tax filing and payment workflows
+          evidence_claim_ids:
+            - E8
+            - E12
+          source_ids:
+            - S5
+            - S10
+        - node_id: hr-workflows
+          label: HR workflows
+          node_type: service
+          description: Onboarding, PTO, time, performance
+          evidence_claim_ids:
+            - E12
+          source_ids:
+            - S10
+        - node_id: benefits
+          label: Benefits workflows
+          node_type: service
+          description: Benefits, workers comp, HRA, carrier/broker flows
+          evidence_claim_ids:
+            - E12
+            - E14
+          source_ids:
+            - S10
+        - node_id: privacy
+          label: Sensitive data controls
+          node_type: infrastructure
+          description: SSNs, financial, health/benefits, biometric data categories
+          evidence_claim_ids:
+            - E15
+          source_ids:
+            - S9
+      edges:
+        - edge_id: F7-E1
+          from_node_id: tax-engine
+          to_node_id: privacy
+          relationship: requires controls
+          data_or_dependency: Payroll and government identifiers
+          evidence_claim_ids:
+            - E15
+          source_ids:
+            - S9
+        - edge_id: F7-E2
+          from_node_id: benefits
+          to_node_id: privacy
+          relationship: requires controls
+          data_or_dependency: Health and benefits information
+          evidence_claim_ids:
+            - E15
+          source_ids:
+            - S9
+      boundaries:
+        - boundary_id: regulated-workflows
+          label: Regulated workflows
+          node_ids:
+            - tax-engine
+            - hr-workflows
+            - benefits
+            - privacy
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - E8
+      - E12
+      - E15
+    source_ids:
+      - S5
+      - S9
+      - S10
+    notes: null
+  - figure_id: F8
+    title: Management and headcount chart
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Management and headcount chart
+    purpose: Visualize management and headcount chart for diligence review.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public scale anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Count
+        unit: employees/businesses
+        scale: linear
+      series:
+        - series_id: scale
+          name: Gusto disclosed scale metrics
+          data:
+            - x: Employees
+              y: 2500
+              evidence_claim_ids:
+                - E5
+              source_ids:
+                - S4
+            - x: Businesses
+              y: 400000
+              evidence_claim_ids:
+                - E4
+              source_ids:
+                - S4
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - E4
+      - E5
+    source_ids:
+      - S4
+    notes: null
+  - figure_id: F9
+    title: Legal and regulatory risk heatmap
+    chapter_id: VIII
+    section_id: VIII.B
+    figure_type: risk_heatmap
+    description: Legal and regulatory risk heatmap
+    purpose: Visualize legal and regulatory risk heatmap for diligence review.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      risks:
+        - risk_id: R3
+          label: Payroll/tax compliance
+          severity: high
+          likelihood: medium
+          evidence_claim_ids:
+            - E13
+          source_ids:
+            - S10
+        - risk_id: R5
+          label: Privacy/security exposure
+          severity: high
+          likelihood: medium
+          evidence_claim_ids:
+            - E15
+          source_ids:
+            - S9
+        - risk_id: R6
+          label: Third-party money movement
+          severity: high
+          likelihood: medium
+          evidence_claim_ids:
+            - E14
+          source_ids:
+            - S10
+        - risk_id: R8
+          label: Benefits/carrier dependency
+          severity: medium
+          likelihood: medium
+          evidence_claim_ids:
+            - E14
+          source_ids:
+            - S10
+      severity_axis:
+        - low
+        - medium
+        - high
+        - critical
+      likelihood_axis:
+        - low
+        - medium
+        - high
+        - unknown
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - E13
+      - E14
+      - E15
+    source_ids:
+      - S9
+      - S10
+    notes: null
+evidence_claims:
+  - evidence_claim_id: E1
+    claim: CB Insights lists Gusto as a current unicorn valued at $10B.
+    evidence_summary: CB Insights row lists Gusto with valuation $10B, date joined 2015-12-18, United States/San Francisco,
+      Financial Services, and investors including General Catalyst Partners, Google Ventures, and Kleiner Perkins.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - S1
+    quoted_evidence:
+      - source_id: S1
+        quote: CB Insights row lists Gusto with valuation $10B, date joined 2015-12-18, United States/San Francisco, Financial
+          Services, and investors including General Catalyst Partners, Google Ventures, and Kleiner Perkins.
+        location: null
+    analyst_interpretation: CB Insights supports current private-unicorn status and valuation, though it is a market
+      database rather than company filings.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E2
+    claim: Reuters reported Gusto reached a $10B valuation in a secondary share sale.
+    evidence_summary: Reuters reported on 2022-07-12 that Gusto was valued at $10B after a secondary share sale and had last
+      been valued at $9.5B in 2021 after a $175M funding round.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - S2
+    quoted_evidence:
+      - source_id: S2
+        quote: Reuters reported on 2022-07-12 that Gusto was valued at $10B after a secondary share sale and had last been
+          valued at $9.5B in 2021 after a $175M funding round.
+        location: null
+    analyst_interpretation: Independent news corroborates the $10B valuation and prior financing, but not current cap table terms.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E3
+    claim: Reuters reported Gusto served more than 200,000 U.S. businesses in 2022.
+    evidence_summary: Reuters stated Gusto offered payroll management software to more than 200,000 businesses in the United States.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - S2
+    quoted_evidence:
+      - source_id: S2
+        quote: Reuters stated Gusto offered payroll management software to more than 200,000 businesses in the United States.
+        location: null
+    analyst_interpretation: This is a historic customer-count anchor; current customer mix and revenue concentration remain private.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E4
+    claim: Gusto says 400,000+ businesses use the platform.
+    evidence_summary: Gusto about page states 400,000+ businesses run payroll, offer employee benefits, and build teams with Gusto.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - S4
+    quoted_evidence:
+      - source_id: S4
+        quote: Gusto about page states 400,000+ businesses run payroll, offer employee benefits, and build teams with Gusto.
+        location: null
+    analyst_interpretation: Company-owned scale claim indicates broad adoption but needs independent/customer-level validation.
+    limitations: Company-owned metric; no customer list export or methodology was public.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E5
+    claim: Gusto says it has 2,500+ employees.
+    evidence_summary: Gusto about page states 2,500+ employees.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - S4
+    quoted_evidence:
+      - source_id: S4
+        quote: Gusto about page states 2,500+ employees.
+        location: null
+    analyst_interpretation: Employee-count disclosure supports scale but not function, attrition, compensation, or turnover details.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E6
+    claim: Gusto was founded in 2011 as ZenPayroll by Josh Reeves, Tomer London, and Edward Kim.
+    evidence_summary: Gusto about page states the company was founded in 2011 as ZenPayroll by Josh Reeves, Tomer London, and Edward Kim.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S4
+    quoted_evidence:
+      - source_id: S4
+        quote: Gusto about page states the company was founded in 2011 as ZenPayroll by Josh Reeves, Tomer London, and Edward
+          Kim.
+        location: null
+    analyst_interpretation: Founder identities and origin are publicly disclosed on a primary company source.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E7
+    claim: Gusto positions itself as a payroll, benefits, HR, and team-management platform.
+    evidence_summary: Gusto homepage says businesses get payroll, health insurance, 401(k)s, expert HR, and team management
+      tools in one place.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S3
+    quoted_evidence:
+      - source_id: S3
+        quote: Gusto homepage says businesses get payroll, health insurance, 401(k)s, expert HR, and team management tools in
+          one place.
+        location: null
+    analyst_interpretation: Company-owned product positioning supports a multi-product SMB people platform.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E8
+    claim: Gusto payroll includes tax filing and tiered Simple/Plus/Premium plan features.
+    evidence_summary: Gusto payroll page says it automatically files payroll taxes and lists Simple, Plus, and Premium plan
+      capabilities including W-2/1099, multi-state payroll, direct deposit, time tracking, PTO, performance reviews,
+      priority support, and benefits administration.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S5
+    quoted_evidence:
+      - source_id: S5
+        quote: Gusto payroll page says it automatically files payroll taxes and lists Simple, Plus, and Premium plan
+          capabilities including W-2/1099, multi-state payroll, direct deposit, time tracking, PTO, performance reviews,
+          priority support, and benefits administration.
+        location: null
+    analyst_interpretation: Public product page verifies feature breadth, but pricing levels and margins require private data.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E9
+    claim: Gusto publishes customer stories for Betabrand, Coro, and Maker Wine.
+    evidence_summary: Gusto customer stories page lists Betabrand, Coro, and Maker Wine, including Betabrand improving time
+      to process payroll by 95%.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - S6
+    quoted_evidence:
+      - source_id: S6
+        quote: Gusto customer stories page lists Betabrand, Coro, and Maker Wine, including Betabrand improving time to process
+          payroll by 95%.
+        location: null
+    analyst_interpretation: Named customer stories support usage examples but are curated and do not reveal concentration,
+      churn, or contract terms.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E10
+    claim: Gusto operates partner programs for accountants, brokers, and financial advisors.
+    evidence_summary: Gusto partner page says it teams with accountants, brokers, and financial advisors to help small
+      businesses and gives partners tools to build advisory services.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S7
+    quoted_evidence:
+      - source_id: S7
+        quote: Gusto partner page says it teams with accountants, brokers, and financial advisors to help small businesses and
+          gives partners tools to build advisory services.
+        location: null
+    analyst_interpretation: Partner channels appear important to distribution and should be tested for CAC, incentives, and concentration.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E11
+    claim: Gusto offers an app integrations ecosystem.
+    evidence_summary: Gusto integrations page says users can explore apps and integrations that work with Gusto.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S8
+    quoted_evidence:
+      - source_id: S8
+        quote: Gusto integrations page says users can explore apps and integrations that work with Gusto.
+        location: null
+    analyst_interpretation: Integration ecosystem supports product stickiness but dependency quality and API performance are not public.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E12
+    claim: Gusto terms describe payroll, tax filing, contractor payments, HR, benefits, workers compensation, and fintech
+      services.
+    evidence_summary: Gusto terms say services include payroll, payroll tax payments and filings, contractor payments, HR
+      functions, employee onboarding, time and attendance, PTO, performance management, benefits products, workers
+      compensation insurance, HRAs, proprietary benefits, financial health, and financial technology solutions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S10
+    quoted_evidence:
+      - source_id: S10
+        quote: Gusto terms say services include payroll, payroll tax payments and filings, contractor payments, HR functions,
+          employee onboarding, time and attendance, PTO, performance management, benefits products, workers compensation
+          insurance, HRAs, proprietary benefits, financial health, and financial technology solutions.
+        location: null
+    analyst_interpretation: Terms confirm broad regulated service scope beyond simple SaaS.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E13
+    claim: Gusto customers are responsible for legal compliance and accurate payroll/tax information.
+    evidence_summary: Gusto terms state customers must comply with applicable laws including payroll tax, wage and hour,
+      benefits/retirement, AML/CTF, and employment eligibility, and are responsible for accurate wage, employment, and
+      tax information.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S10
+    quoted_evidence:
+      - source_id: S10
+        quote: Gusto terms state customers must comply with applicable laws including payroll tax, wage and hour,
+          benefits/retirement, AML/CTF, and employment eligibility, and are responsible for accurate wage, employment,
+          and tax information.
+        location: null
+    analyst_interpretation: Contract terms shift key compliance responsibilities to customers, but Gusto still faces
+      operational and reputational exposure for service failures.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E14
+    claim: Gusto uses third-party providers, Check Technologies, bank partners, and carriers for parts of service delivery.
+    evidence_summary: Gusto terms say it uses Check Technologies and other third-party providers for Payroll Services, bank
+      partners for money movement and tax remittances, and third-party providers/carriers/brokers for benefits services.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S10
+    quoted_evidence:
+      - source_id: S10
+        quote: Gusto terms say it uses Check Technologies and other third-party providers for Payroll Services, bank partners
+          for money movement and tax remittances, and third-party providers/carriers/brokers for benefits services.
+        location: null
+    analyst_interpretation: Operational dependencies and money-movement partners are material diligence items.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E15
+    claim: Gusto privacy disclosures include sensitive payroll, government identifier, financial, health/benefits, and
+      biometric information categories.
+    evidence_summary: Gusto privacy policy says Personal Information may include name/contact, business information, Social
+      Security Numbers and government identifiers, professional information, financial information, health and benefits
+      information, biometric information, and inferences.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - S9
+    quoted_evidence:
+      - source_id: S9
+        quote: Gusto privacy policy says Personal Information may include name/contact, business information, Social Security
+          Numbers and government identifiers, professional information, financial information, health and benefits
+          information, biometric information, and inferences.
+        location: null
+    analyst_interpretation: The data categories heighten privacy, security, breach, and regulatory compliance exposure.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: E16
+    claim: Audited financials, ARR, gross margin, retention, cap table, customer concentration, churn, litigation dockets,
+      and security audits are not publicly verifiable.
+    evidence_summary: Public sources reviewed did not disclose audited statements, management accounts, ARR/NRR, gross
+      margin, burn, runway, complete cap table, customer-level revenue, churn cohorts, full litigation docket searches,
+      or security audit reports.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - S1
+      - S2
+      - S3
+      - S4
+      - S10
+    quoted_evidence:
+      - source_id: S1
+        quote: Public sources reviewed did not disclose audited statements, management accounts, ARR/NRR, gross margin, burn,
+          runway, complete cap table, customer-level revenue, churn cohorts, full litigation docket searches, or
+          security audit reports.
+        location: null
+    analyst_interpretation: These are private diligence items required before an investment decision.
+    limitations: Absence of public disclosure does not imply absence of records or issues.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+sources:
+  - source_id: S1
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: market_database
+    reliability_notes: Market database row used for current unicorn valuation/status.
+    archive_url: null
+  - source_id: S2
+    title: HR software firm Gusto hits $10 bln valuation in share sale
+    url: https://www.reuters.com/markets/deals/hr-software-firm-gusto-hits-10-bln-valuation-share-sale-2022-07-12/
+    publisher: Reuters
+    author: null
+    publication_date: 2022-07-12
+    accessed_date: 2026-05-30
+    source_type: independent_news
+    reliability_notes: Independent news source for 2022 valuation, prior funding, and customer-count claims.
+    archive_url: null
+  - source_id: S3
+    title: Gusto homepage
+    url: https://gusto.com/
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: primary_company_source
+    reliability_notes: Company-owned marketing source describing product scope; should be corroborated for performance claims.
+    archive_url: null
+  - source_id: S4
+    title: What is Gusto? Our Platform, Team, and Culture
+    url: https://gusto.com/about
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: primary_company_source
+    reliability_notes: Company-owned about page for founding, scale, and employee-count claims.
+    archive_url: null
+  - source_id: S5
+    title: Payroll Software & Services for Small Businesses
+    url: https://gusto.com/product/payroll
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: primary_company_source
+    reliability_notes: Company-owned product page for payroll features and plan positioning.
+    archive_url: null
+  - source_id: S6
+    title: Customer Stories
+    url: https://gusto.com/customers
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: customer_or_partner_source
+    reliability_notes: Company-owned customer story index; useful for named logos but not concentration or contract economics.
+    archive_url: null
+  - source_id: S7
+    title: Partner With Gusto
+    url: https://gusto.com/partners
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: customer_or_partner_source
+    reliability_notes: Company-owned partner page describing accountant, broker, and advisor programs.
+    archive_url: null
+  - source_id: S8
+    title: Gusto App Integrations
+    url: https://gusto.com/product/integrations
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: primary_company_source
+    reliability_notes: Company-owned integrations page; useful for ecosystem signals.
+    archive_url: null
+  - source_id: S9
+    title: Privacy Policy
+    url: https://gusto.com/about/privacy
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: primary_company_source
+    reliability_notes: Company privacy policy disclosing categories of personal information and legal/security uses.
+    archive_url: null
+  - source_id: S10
+    title: Terms and Conditions
+    url: https://gusto.com/about/terms
+    publisher: Gusto
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-30
+    source_type: primary_company_source
+    reliability_notes: Company terms describing service scope, customer responsibilities, money movement, third-party
+      providers, and benefits limitations.
+    archive_url: null
+risk_register:
+  - risk_id: R1
+    risk_title: Financial quality and unit economics not public
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Revenue, ARR, margin, burn, runway, CAC, and retention are not publicly verifiable.
+    impacted_chapter_ids:
+      - I
+      - V
+    impacted_section_ids:
+      - I.A
+      - V.B
+    evidence_claim_ids:
+      - E16
+    mitigation_or_diligence_request: Request audited financials, monthly management accounts, ARR/NRR cohorts, CAC/payback,
+      burn, runway, and debt schedule.
+  - risk_id: R2
+    risk_title: Cap table and secondary terms opaque
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: Public $10B valuation anchors do not disclose liquidation preferences, investor rights, option pool, or
+      tender terms.
+    impacted_chapter_ids:
+      - I
+      - VIII
+    impacted_section_ids:
+      - I.B
+      - VIII.A
+    evidence_claim_ids:
+      - E1
+      - E2
+    mitigation_or_diligence_request: Request complete cap table, financing documents, tender materials, 409A, and investor-rights agreements.
+  - risk_id: R3
+    risk_title: Payroll and tax compliance exposure
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Gusto services include payroll tax filings and money movement across jurisdictions, making error rates and
+      agency notices material.
+    impacted_chapter_ids:
+      - I
+      - VIII
+    impacted_section_ids:
+      - I.C
+      - VIII.B
+    evidence_claim_ids:
+      - E13
+    mitigation_or_diligence_request: Request compliance controls, notices, penalties, tax-agency correspondence, and indemnity claims.
+  - risk_id: R4
+    risk_title: Pricing pressure in payroll/HR platform market
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Incumbents and private platforms overlap with Gusto payroll, benefits, HR, and fintech scope.
+    impacted_chapter_ids:
+      - II
+      - IV
+    impacted_section_ids:
+      - II.A
+      - IV.B
+    evidence_claim_ids:
+      - E7
+      - E8
+      - E12
+    mitigation_or_diligence_request: Request win/loss, competitive pricing benchmarks, discounting, and churn reason analysis.
+  - risk_id: R5
+    risk_title: Sensitive data privacy and security risk
+    risk_category: legal
+    severity: high
+    likelihood: medium
+    description: Privacy policy discloses SSNs, government identifiers, financial, health/benefits, and biometric data categories.
+    impacted_chapter_ids:
+      - II
+      - VI
+      - VIII
+    impacted_section_ids:
+      - II.B
+      - VI.C
+      - VIII.C
+    evidence_claim_ids:
+      - E15
+    mitigation_or_diligence_request: Request SOC 2, ISO, penetration tests, incident logs, data maps, DPAs, and privacy assessments.
+  - risk_id: R6
+    risk_title: Third-party money movement and provider dependency
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: Terms disclose Check Technologies, bank partners, carriers, brokers, and other third-party providers.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.C
+      - VIII.A
+    evidence_claim_ids:
+      - E14
+    mitigation_or_diligence_request: Request vendor contracts, SLAs, redundancy plans, reconciliation controls, and concentration analysis.
+  - risk_id: R7
+    risk_title: Customer concentration and retention not public
+    risk_category: customer
+    severity: high
+    likelihood: high
+    description: Customer-count and case-study evidence does not disclose top-customer ARR, retention, churn, or cohorts.
+    impacted_chapter_ids:
+      - III
+    impacted_section_ids:
+      - III.A
+    evidence_claim_ids:
+      - E3
+      - E4
+      - E9
+    mitigation_or_diligence_request: Request customer export, top-customer contracts, renewal history, churn cohorts, and reference calls.
+  - risk_id: R8
+    risk_title: Benefits and insurance regulatory dependency
+    risk_category: regulatory
+    severity: medium
+    likelihood: medium
+    description: Benefits services rely on third-party carriers/brokers and Gusto disclaims being an insurer/carrier/health plan.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.C
+      - VIII.B
+    evidence_claim_ids:
+      - E14
+    mitigation_or_diligence_request: Request broker licenses, carrier contracts, complaints, E&O coverage, and compliance reviews.
+  - risk_id: R9
+    risk_title: Partner-channel economics not verifiable
+    risk_category: customer
+    severity: medium
+    likelihood: medium
+    description: Partner programs are public but partner-sourced ARR, incentives, churn, and top-partner concentration are not.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.B
+      - V.A
+    evidence_claim_ids:
+      - E10
+    mitigation_or_diligence_request: Request partner agreements, sourced ARR, funnel metrics, incentive schedules, and partner concentration.
+  - risk_id: R10
+    risk_title: Competitive differentiation requires private proof
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Public product breadth alone does not prove defensibility against incumbents and platform competitors.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.B
+      - IV.C
+    evidence_claim_ids:
+      - E7
+      - E8
+      - E12
+    mitigation_or_diligence_request: Request retention, win/loss, switching-cost, product usage, and competitor displacement data.
+  - risk_id: R11
+    risk_title: Leadership, headcount, and culture risks require private HR diligence
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: 2,500+ employees and founder history are public, but attrition, governance, compensation, and conduct
+      records are private.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.C
+    evidence_claim_ids:
+      - E5
+      - E6
+    mitigation_or_diligence_request: Request HRIS census, attrition, compensation, employee relations, board materials, and executive agreements.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, ARR, gross margin, burn, runway, and debt schedule.
+    why_it_matters: Needed to verify valuation support and financial quality.
+    suggested_source_or_request: Request audited statements, management accounts, metrics exports, and board plan.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Cap table, preferred terms, secondary sale documents, option pool, and investor rights.
+    why_it_matters: Needed to understand financing risk and exit waterfall.
+    suggested_source_or_request: Request full capitalization records and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Customer-level ARR, concentration, churn, cohorts, contracts, and reference list.
+    why_it_matters: Needed to evaluate revenue predictability and product-market fit.
+    suggested_source_or_request: Request customer export, top contracts, churned customer list, and reference calls.
+    priority: high
+  - gap_id: G-004
+    chapter_id: VIII
+    section_id: VIII.B
+    missing_information: Regulatory notices, tax-agency correspondence, litigation schedule, security audits, and incident logs.
+    why_it_matters: Needed to evaluate compliance, privacy, and operational risk.
+    suggested_source_or_request: Request counsel schedule, SOC 2/ISO reports, pen tests, DPIAs, notices, and remediation evidence.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, monthly management accounts, ARR bridge, gross margin, CAC/payback, NRR/GRR, churn,
+      burn, runway, and debt schedule.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Provide complete cap table, financing documents, investor rights, secondary sale/tender documents, 409A
+      reports, and option-pool plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer export, top-customer revenue/contracts, renewal/churn cohorts, NPS, and customer reference
+      list including churned customers.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VIII
+    section_id: VIII.B
+    request: Provide payroll/tax compliance notices, regulatory correspondence, litigation schedule, vendor contracts,
+      SOC/ISO reports, incident logs, DPAs, and privacy assessments.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: This report uses public sources only and does not verify private financial statements, contracts, cap
+      table, compliance records, security audits, or customer references.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids: []
+  - limitation_id: L-002
+    description: Company-owned sources are treated as evidence for public claims but not as independent verification of
+      performance, retention, security, or compliance outcomes.
+    affected_chapter_ids:
+      - II
+      - III
+      - V
+      - VII
+      - VIII
+    affected_section_ids: []
