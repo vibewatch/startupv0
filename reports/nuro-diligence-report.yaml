@@ -1,0 +1,4671 @@
+report_metadata:
+  report_title: Nuro Public-Source Unicorn Diligence Report
+  target_company: Nuro
+  website: https://www.nuro.ai/
+  known_aliases:
+    - Nuro, Inc.
+    - Nuro Driver
+    - Nuro Toolkit
+    - R1
+    - R2
+    - R3
+  sector: Autonomous vehicle software, robotics, autonomous delivery and robotaxi technology
+  geography: United States; Mountain View, California headquarters with public operations/tests in multiple states
+  company_stage: Late-stage private autonomous-vehicle unicorn
+  research_date: 2026-05-31
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built an exclusion list from existing reports and selected uncovered private unicorns from public unicorn indexes.
+    - Used company-owned pages, public funding announcements, independent technology press, market databases,
+      legal/regulatory sources, and partner pages.
+    - Treated company marketing claims as partially verified unless independently corroborated; marked private
+      financials and contract economics as not publicly verifiable.
+  included_jurisdictions:
+    - United States
+    - California
+    - Texas
+    - Arizona
+    - Nevada
+  excluded_topics:
+    - No private financial statements, board materials, cap table, customer contracts, employee census, insurance
+      policies, or counsel interviews were available.
+    - No paid database exports, PACER downloads, or private customer reference calls were performed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt selecting three uncovered private unicorn reports
+      type: prompt_argument
+      date_received: 2026-05-31
+      notes: No company-provided materials or founder claim ledger supplied; public claims were inferred from public company
+        and funding sources.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Nuro Driver is an AI-first, vehicle-agnostic L4 autonomy system for licensing.
+    claim_source: Nuro product pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - V
+      - VI
+    mapped_section_ids:
+      - II.A
+      - V.A
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-005
+      - EC-013
+      - EC-016
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request architecture, validation, roadmap and signed licensing contracts.
+  - founder_claim_id: FC-002
+    claim_text: Nuro has more than 1.7M autonomous miles and zero at-fault incidents.
+    claim_source: Nuro homepage and safety pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VIII.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+    contradiction_summary: Metrics are company-reported and require audit.
+    diligence_follow_up:
+      - Request safety logs, crash/near-miss records and third-party audits.
+  - founder_claim_id: FC-003
+    claim_text: Nuro has major partners including Uber, Lucid and NVIDIA.
+    claim_source: Nuro homepage and partner announcements
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.B
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-009
+    contradiction_summary: Forward-looking deployment economics remain private.
+    diligence_follow_up:
+      - Review definitive agreements and milestone payments.
+  - founder_claim_id: FC-004
+    claim_text: Nuro is a private unicorn with significant public funding history.
+    claim_source: TechCrunch, CB Insights and Wikipedia unicorn list
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-025
+    contradiction_summary: Latest $6B valuation is below prior $8.6B valuation.
+    diligence_follow_up:
+      - Request financing docs and cap table.
+executive_summary:
+  overall_assessment: Eligible private unicorn, but diligence should treat Nuro as a pivot story with valuation
+    compression, regulatory/safety dependency, and customer-conversion uncertainty.
+  investment_or_diligence_thesis: Nuro may have valuable L4 autonomy IP and strategic partnerships, but underwriting
+    depends on proving licensing revenue, safety validation, regulatory scalability, and post-layoff talent retention.
+  strongest_verified_claims:
+    - founder_claim_id: FC-004
+      summary: Funding history and private status are well supported by multiple public sources.
+      evidence_claim_ids:
+        - EC-002
+        - EC-003
+        - EC-025
+    - founder_claim_id: FC-001
+      summary: Current licensing product strategy is supported by company and independent reporting.
+      evidence_claim_ids:
+        - EC-005
+        - EC-013
+  biggest_risks:
+    - risk_id: R-001
+      summary: Valuation compression/down round.
+    - risk_id: R-002
+      summary: Business-model pivot execution.
+    - risk_id: R-004
+      summary: Regulatory and safety approval dependency.
+  key_evidence_gaps:
+    - Signed licensing contracts and pipeline economics.
+    - Third-party safety audit and incident data.
+    - Financials, runway, cap table and retention metrics.
+  recommended_next_steps:
+    - Prioritize contract and safety-case diligence.
+    - Review financial runway and cap-table terms.
+    - Interview key technical, regulatory and commercial leaders.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Nuro remains funded and private, but latest public valuation is below the 2021 peak and financial
+      quality is opaque.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-025
+    risk_ids:
+      - R-001
+      - R-003
+      - R-006
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-003
+            risk_ids:
+              - R-001
+              - R-003
+        hidden_risks:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        evidence_gaps:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        follow_up_questions:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-025
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public research did not surface enough detail for underwriting-level verification of financial projections.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.B-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-003
+            risk_ids:
+              - R-001
+              - R-003
+        hidden_risks:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        evidence_gaps:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        follow_up_questions:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-025
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-003
+            risk_ids:
+              - R-001
+              - R-003
+        hidden_risks:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        evidence_gaps:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        follow_up_questions:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-025
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-001
+              - EC-002
+              - EC-003
+            risk_ids:
+              - R-001
+              - R-003
+        hidden_risks:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        evidence_gaps:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        follow_up_questions:
+          - Revenue quality, gross margin, cap-table terms, and runway remain private-record items.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-025
+  - chapter_id: II
+    title: Products
+    chapter_summary: Product strategy is now licensing-oriented around Nuro Driver and Toolkit, with safety claims needing
+      third-party validation.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+    risk_ids:
+      - R-002
+      - R-004
+      - R-005
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-005
+              - EC-006
+              - EC-007
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Product claims may be technically valid but need customer references, uptime, security, and roadmap evidence.
+        evidence_gaps:
+          - Product claims may be technically valid but need customer references, uptime, security, and roadmap evidence.
+        follow_up_questions:
+          - Product claims may be technically valid but need customer references, uptime, security, and roadmap evidence.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+          - EC-007
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Nuro has many named pilots and a major Uber/Lucid program, but revenue concentration and conversion are private.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+    risk_ids:
+      - R-003
+      - R-008
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        evidence_gaps:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        follow_up_questions:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        evidence_gaps:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        follow_up_questions:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        evidence_gaps:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        follow_up_questions:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        table_ids: []
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: Public research did not surface enough detail for underwriting-level verification of significant relationships
+          severed within the last two years.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.D-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        evidence_gaps:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        follow_up_questions:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-008
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        evidence_gaps:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        follow_up_questions:
+          - Named customers and partners may not equal contracted recurring revenue or durable concentration.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-008
+          - EC-009
+          - EC-010
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Nuro competes across AV licensing, robotaxi and delivery robotics against better-capitalized or more
+      scaled players.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+    risk_ids:
+      - R-007
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-011
+              - EC-012
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Incumbents and better-capitalized competitors can compress pricing, distribution, or differentiation.
+        evidence_gaps:
+          - Incumbents and better-capitalized competitors can compress pricing, distribution, or differentiation.
+        follow_up_questions:
+          - Incumbents and better-capitalized competitors can compress pricing, distribution, or differentiation.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: GTM has shifted from retailer pilots to licensing; public data does not disclose pricing, sales cycle
+      or pipeline conversion.
+    founder_claim_ids:
+      - FC-001
+      - FC-003
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+    risk_ids:
+      - R-002
+      - R-008
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        evidence_gaps:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        follow_up_questions:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+          - EC-015
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Public research did not surface enough detail for underwriting-level verification of major customers.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.B-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        evidence_gaps:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        follow_up_questions:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+          - EC-015
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        evidence_gaps:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        follow_up_questions:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        table_ids: []
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+          - EC-015
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Public research did not surface enough detail for underwriting-level verification of sales force productivity
+          model.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        evidence_gaps:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        follow_up_questions:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+          - EC-015
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Public research did not surface enough detail for underwriting-level verification of ability to implement
+          marketing plan with current and projected budgets.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.E-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-013
+              - EC-014
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-008
+        hidden_risks:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        evidence_gaps:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        follow_up_questions:
+          - Public marketing signals do not prove CAC, payback, sales productivity, or conversion.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+          - EC-015
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: The company has meaningful AV R&D assets and founder credibility, but roadmap, validation data and
+      IP/FTO are not public.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-016
+      - EC-018
+    risk_ids:
+      - R-002
+      - R-010
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-016
+              - EC-018
+            risk_ids:
+              - R-002
+              - R-010
+        hidden_risks:
+          - Roadmap, IP ownership, validation quality, and technical debt are not fully visible publicly.
+        evidence_gaps:
+          - Roadmap, IP ownership, validation quality, and technical debt are not fully visible publicly.
+        follow_up_questions:
+          - Roadmap, IP ownership, validation quality, and technical debt are not fully visible publicly.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-016
+          - EC-018
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-016
+              - EC-018
+            risk_ids:
+              - R-002
+              - R-010
+        hidden_risks:
+          - Roadmap, IP ownership, validation quality, and technical debt are not fully visible publicly.
+        evidence_gaps:
+          - Roadmap, IP ownership, validation quality, and technical debt are not fully visible publicly.
+        follow_up_questions:
+          - Roadmap, IP ownership, validation quality, and technical debt are not fully visible publicly.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-016
+          - EC-018
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public people signals show major restructuring around the pivot; current headcount and retention need
+      private HR review.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-017
+      - EC-019
+      - EC-020
+      - EC-021
+    risk_ids:
+      - R-006
+      - R-009
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids: []
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Public research did not surface enough detail for underwriting-level verification of compensation arrangements.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Public research did not surface enough detail for underwriting-level verification of incentive stock plans.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Public research did not surface enough detail for underwriting-level verification of significant employee
+          relations problems, past or present.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Public research did not surface enough detail for underwriting-level verification of personnel turnover.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-017
+              - EC-019
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        evidence_gaps:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        follow_up_questions:
+          - Leadership depth, attrition, incentives, and succession require private HR records.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+          - EC-020
+          - EC-021
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Regulatory approvals are material strengths and dependencies; legal/IP/insurance/permit schedules
+      require counsel review.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-024
+      - EC-025
+    risk_ids:
+      - R-004
+      - R-005
+      - R-010
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Public research did not surface enough detail for underwriting-level verification of pending lawsuits initiated
+          by company.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Public research did not surface enough detail for underwriting-level verification of environmental and employee
+          safety issues and liabilities.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Public research did not surface enough detail for underwriting-level verification of material patents,
+          copyrights, licenses, and trademarks.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Public research did not surface enough detail for underwriting-level verification of insurance coverage and
+          material exposures.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: No reliable public source provides the requested private diligence materials.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Public evidence for Nuro is structured in the linked exhibits; private records are still required for
+          underwriting-level verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Public sources provide directional evidence but not full data-room support.
+            evidence_claim_ids:
+              - EC-022
+              - EC-023
+              - EC-024
+            risk_ids:
+              - R-004
+              - R-005
+        hidden_risks:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        evidence_gaps:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        follow_up_questions:
+          - Legal exposure, indemnities, insurance, and regulatory correspondence require counsel review.
+        table_ids: []
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-022
+          - EC-023
+          - EC-024
+          - EC-025
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize public financing anchors and valuation signals.
+    columns:
+      - name: date
+        description: Announcement date
+      - name: round
+        description: Round or financing type
+      - name: amount
+        description: Amount disclosed
+      - name: valuation
+        description: Valuation disclosed or diligence caveat
+      - name: investors
+        description: Lead or named investors
+      - name: verification_status
+        description: Evidence status
+    rows:
+      - row_id: T-001-R01
+        values:
+          date: "2018"
+          round: Series A
+          amount: $92M
+          valuation: not_publicly_verifiable
+          investors: Greylock and Gaorong reported
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-004
+      - row_id: T-001-R02
+        values:
+          date: 2019-02
+          round: SoftBank financing / Series B
+          amount: $940M
+          valuation: $2.7B reported by secondary sources
+          investors: SoftBank Vision Fund
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-008
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-008
+      - row_id: T-001-R03
+        values:
+          date: 2020-11
+          round: Series C
+          amount: $500M
+          valuation: $5B reported by Wikipedia/secondary sources
+          investors: T. Rowe Price, Fidelity, Baillie Gifford, SoftBank, Greylock
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-009
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-009
+      - row_id: T-001-R04
+        values:
+          date: 2021-11
+          round: Series D
+          amount: $600M
+          valuation: $8.6B
+          investors: Tiger Global, Google and others
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-002
+            - EC-003
+          source_ids:
+            - SRC-007
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+        source_ids:
+          - SRC-007
+      - row_id: T-001-R05
+        values:
+          date: "2025"
+          round: Series E
+          amount: $203M total reported
+          valuation: $6B
+          investors: T. Rowe Price, Fidelity, Tiger Global, Greylock, XN, Nvidia, Uber and others
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-002
+            - EC-003
+          source_ids:
+            - SRC-010
+            - SRC-011
+        evidence_claim_ids:
+          - EC-002
+          - EC-003
+        source_ids:
+          - SRC-010
+          - SRC-011
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-025
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    notes: null
+  - table_id: T-002
+    title: Public financial and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate disclosed financial facts from data-room requests.
+    columns:
+      - name: metric
+        description: Metric
+      - name: public_signal
+        description: Public signal
+      - name: verification_status
+        description: Status
+      - name: diligence_request
+        description: Requested support
+    rows:
+      - row_id: T-002-R01
+        values:
+          metric: Revenue / ARR
+          public_signal: No public revenue by product or customer found.
+          verification_status: not_publicly_verifiable
+          diligence_request: ARR, backlog, customer-level revenue, churn and NRR
+          evidence_claim_ids:
+            - EC-004
+            - EC-010
+          source_ids:
+            - SRC-010
+        evidence_claim_ids:
+          - EC-004
+          - EC-010
+        source_ids:
+          - SRC-010
+      - row_id: T-002-R02
+        values:
+          metric: Runway / burn
+          public_signal: TechCrunch reports pivot, layoffs and runway extension context.
+          verification_status: partially_verified
+          diligence_request: Monthly burn, runway, manufacturing obligations and board plan
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-010
+            - SRC-011
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-010
+          - SRC-011
+      - row_id: T-002-R03
+        values:
+          metric: Unit economics
+          public_signal: Licensing pricing and pilot economics are not public.
+          verification_status: not_publicly_verifiable
+          diligence_request: License fees, take rates, COGS, support and deployment costs
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-001
+            - SRC-012
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-001
+          - SRC-012
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-025
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    notes: null
+  - table_id: T-003
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Capture known investors and unknown ownership terms.
+    columns:
+      - name: stakeholder
+        description: Stakeholder
+      - name: public_position
+        description: Public position
+      - name: diligence_caveat
+        description: Caveat or request
+    rows:
+      - row_id: T-003-R01
+        values:
+          stakeholder: SoftBank / T. Rowe Price / Fidelity / Tiger / Greylock / XN
+          public_position: Named investors in public funding sources.
+          diligence_caveat: Preference stack and ownership percentages not public.
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-008
+            - SRC-009
+            - SRC-010
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-008
+          - SRC-009
+          - SRC-010
+      - row_id: T-003-R02
+        values:
+          stakeholder: Strategic investors / partners
+          public_position: Nvidia and Uber participated or planned investment in 2025.
+          diligence_caveat: Strategic rights, milestones and exclusivity not public.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-011
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-011
+          - SRC-012
+      - row_id: T-003-R03
+        values:
+          stakeholder: Founders and option holders
+          public_position: Founders public; headcount changed materially.
+          diligence_caveat: Founder ownership, option pool and refresh grants not public.
+          evidence_claim_ids:
+            - EC-017
+            - EC-020
+          source_ids:
+            - SRC-004
+            - SRC-011
+        evidence_claim_ids:
+          - EC-017
+          - EC-020
+        source_ids:
+          - SRC-004
+          - SRC-011
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-025
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    notes: null
+  - table_id: T-004
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public products to audiences and evidence.
+    columns:
+      - name: product
+        description: Product or SKU
+      - name: audience
+        description: Target audience
+      - name: key_features
+        description: Key features
+      - name: public_evidence
+        description: Evidence summary
+      - name: verification_status
+        description: Status
+    rows:
+      - row_id: T-004-R01
+        values:
+          product: Nuro Driver
+          audience: Automakers, mobility providers, robotaxi/commercial fleets
+          key_features: L4 autonomy software/hardware system.
+          public_evidence: Nuro homepage/technology pages.
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-005
+            - EC-016
+          source_ids:
+            - SRC-001
+            - SRC-002
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-004-R02
+        values:
+          product: Nuro Toolkit
+          audience: Licensing customers and integration teams
+          key_features: SDK, validation, remote assistance and fleet integration tooling.
+          public_evidence: Technology page.
+          verification_status: partially_verified
+          evidence_claim_ids:
+            - EC-005
+            - EC-016
+          source_ids:
+            - SRC-002
+        evidence_claim_ids:
+          - EC-005
+          - EC-016
+        source_ids:
+          - SRC-002
+      - row_id: T-004-R03
+        values:
+          product: R1/R2/R3 delivery vehicles
+          audience: Historical goods delivery operations
+          key_features: Cargo-only autonomous delivery vehicles.
+          public_evidence: Wikipedia, press releases and NHTSA exemption.
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-004
+            - SRC-013
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-004
+          - SRC-013
+      - row_id: T-004-R04
+        values:
+          product: Uber/Lucid robotaxi integration
+          audience: Ride-hail robotaxi fleet
+          key_features: Nuro Driver integrated into Lucid Gravity for Uber platform.
+          public_evidence: Uber investor release.
+          verification_status: partially_verified
+          evidence_claim_ids:
+            - EC-009
+            - EC-018
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+          - EC-018
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-013
+    notes: null
+  - table_id: T-005
+    title: Pricing and commercial terms
+    chapter_id: II
+    section_id: II.A
+    purpose: Compare public price signals and undisclosed contract economics.
+    columns:
+      - name: item
+        description: Product or term
+      - name: public_price_or_term
+        description: Public price or term
+      - name: diligence_caveat
+        description: Caveat or request
+      - name: verification_status
+        description: Status
+    rows:
+      - row_id: T-005-R01
+        values:
+          item: Licensing fees
+          public_price_or_term: not_publicly_verifiable
+          diligence_caveat: Request pricing model, minimums, implementation fees and support SLA.
+          verification_status: not_publicly_verifiable
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-001
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-001
+      - row_id: T-005-R02
+        values:
+          item: Pilot/deployment economics
+          public_price_or_term: not_publicly_verifiable
+          diligence_caveat: Request paid pilots, production contracts and milestone payments.
+          verification_status: not_publicly_verifiable
+          evidence_claim_ids:
+            - EC-010
+            - EC-015
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-010
+          - EC-015
+        source_ids:
+          - SRC-012
+      - row_id: T-005-R03
+        values:
+          item: Historical delivery services
+          public_price_or_term: Local pilots publicly described, revenue terms not disclosed.
+          diligence_caveat: Request historical unit economics and discontinued obligations.
+          verification_status: partially_verified
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-015
+            - SRC-016
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-015
+          - SRC-016
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-013
+    notes: null
+  - table_id: T-006
+    title: Public customers and case studies
+    chapter_id: III
+    section_id: III.A
+    purpose: List named customers, users, or demand signals.
+    columns:
+      - name: customer
+        description: Customer or user group
+      - name: use_case
+        description: Use case
+      - name: public_evidence
+        description: Evidence
+      - name: verification_status
+        description: Status
+    rows:
+      - row_id: T-006-R01
+        values:
+          customer: Walmart / Kroger
+          use_case: Grocery delivery pilots
+          public_evidence: Public press releases and Wikipedia history.
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-015
+            - SRC-008
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-015
+          - SRC-008
+      - row_id: T-006-R02
+        values:
+          customer: Domino / 7-Eleven / CVS
+          use_case: Food, convenience and prescription delivery pilots.
+          public_evidence: TechCrunch and company releases.
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-016
+            - SRC-018
+            - SRC-019
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-016
+          - SRC-018
+          - SRC-019
+      - row_id: T-006-R03
+        values:
+          customer: FedEx
+          use_case: Logistics test/deployment partnership.
+          public_evidence: TechCrunch described multi-year, multi-phase partnership.
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-017
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-017
+      - row_id: T-006-R04
+        values:
+          customer: Uber / Lucid
+          use_case: Forward-looking robotaxi program.
+          public_evidence: Uber investor release.
+          verification_status: partially_verified
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-012
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify relationships that may drive distribution, supply, or concentration.
+    columns:
+      - name: partner
+        description: Partner
+      - name: nature
+        description: Relationship nature
+      - name: public_evidence
+        description: Evidence
+      - name: gap
+        description: Diligence gap
+    rows:
+      - row_id: T-007-R01
+        values:
+          partner: Uber and Lucid
+          nature: Robotaxi program and strategic investment path
+          public_evidence: 20,000+ vehicle target over six years.
+          gap: Definitive contracts and milestones.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-012
+      - row_id: T-007-R02
+        values:
+          partner: NVIDIA
+          nature: Investor and compute/platform collaborator
+          public_evidence: TechCrunch reported Nvidia investment and technical collaboration.
+          gap: Supply, platform and exclusivity terms.
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-011
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-011
+      - row_id: T-007-R03
+        values:
+          partner: Retail/logistics pilots
+          nature: Historical commercial validation
+          public_evidence: Kroger, Walmart, CVS, Domino, FedEx, 7-Eleven.
+          gap: Pilot conversion to recurring revenue.
+          evidence_claim_ids:
+            - EC-008
+            - EC-014
+          source_ids:
+            - SRC-015
+            - SRC-016
+            - SRC-017
+            - SRC-018
+            - SRC-019
+        evidence_claim_ids:
+          - EC-008
+          - EC-014
+        source_ids:
+          - SRC-015
+          - SRC-016
+          - SRC-017
+          - SRC-018
+          - SRC-019
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-012
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    notes: null
+  - table_id: T-008
+    title: Supplier and infrastructure dependencies
+    chapter_id: III
+    section_id: III.E
+    purpose: Highlight operating dependencies and concentration risk.
+    columns:
+      - name: supplier
+        description: Supplier or dependency
+      - name: role
+        description: Role
+      - name: public_evidence
+        description: Evidence
+      - name: risk_note
+        description: Risk note
+    rows:
+      - row_id: T-008-R01
+        values:
+          supplier: NVIDIA compute stack
+          role: Model training and vehicle compute collaboration.
+          public_evidence: TechCrunch reports use of Nvidia GPUs and Drive AGX Thor platform.
+          risk_note: Compute/platform dependency.
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-011
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-011
+      - row_id: T-008-R02
+        values:
+          supplier: Lucid vehicle platform
+          role: Robotaxi vehicle base for Uber program.
+          public_evidence: Uber/Lucid/Nuro announcement.
+          risk_note: Program depends on Lucid vehicle production and integration.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-012
+      - row_id: T-008-R03
+        values:
+          supplier: Regulatory permits / ODD approvals
+          role: Permission to operate in public-road domains.
+          public_evidence: NHTSA exemption and CA permit.
+          risk_note: Geographic scaling depends on approvals.
+          evidence_claim_ids:
+            - EC-023
+            - EC-024
+          source_ids:
+            - SRC-013
+            - SRC-014
+        evidence_claim_ids:
+          - EC-023
+          - EC-024
+        source_ids:
+          - SRC-013
+          - SRC-014
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-012
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame the competitive set and product overlap.
+    columns:
+      - name: competitor
+        description: Competitor
+      - name: segment
+        description: Segment
+      - name: funding_or_scale
+        description: Public scale signal
+      - name: product_overlap
+        description: Overlap
+      - name: differentiator
+        description: Differentiator
+    rows:
+      - row_id: T-009-R01
+        values:
+          competitor: Wayve
+          segment: AV licensing / end-to-end AI driver
+          funding_or_scale: Large AV startup
+          product_overlap: Licensing autonomy to OEMs and fleets
+          differentiator: Embodied AI / OEM relationships
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+      - row_id: T-009-R02
+        values:
+          competitor: Mobileye
+          segment: ADAS/AV technology supplier
+          funding_or_scale: Public company
+          product_overlap: Automated driving stack for OEMs
+          differentiator: Installed OEM relationships and silicon
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+      - row_id: T-009-R03
+        values:
+          competitor: Waymo
+          segment: Robotaxi
+          funding_or_scale: Alphabet-backed scale
+          product_overlap: Autonomous ride-hail operations
+          differentiator: Operational robotaxi deployments
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-010
+      - row_id: T-009-R04
+        values:
+          competitor: Starship / Serve
+          segment: Delivery robotics
+          funding_or_scale: Starship reports 6M deliveries / 11M miles
+          product_overlap: Autonomous delivery
+          differentiator: Delivery-volume benchmarks
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-020
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-020
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-010
+      - SRC-020
+    notes: null
+  - table_id: T-010
+    title: Basis of competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Summarize major axes of competition.
+    columns:
+      - name: axis
+        description: Axis
+      - name: target_position
+        description: Target position
+      - name: competitor_position
+        description: Competitor position
+      - name: evidence
+        description: Evidence
+    rows:
+      - row_id: T-010-R01
+        values:
+          axis: Licensing readiness
+          target_position: Vehicle-agnostic Nuro Driver claimed license-ready.
+          competitor_position: Wayve/Mobileye also target OEM/fleet technology supply.
+          evidence: Public product page and TechCrunch pivot coverage.
+          evidence_claim_ids:
+            - EC-005
+            - EC-011
+          source_ids:
+            - SRC-001
+            - SRC-010
+        evidence_claim_ids:
+          - EC-005
+          - EC-011
+        source_ids:
+          - SRC-001
+          - SRC-010
+      - row_id: T-010-R02
+        values:
+          axis: Safety validation
+          target_position: 1.7M miles / zero at-fault incidents claimed.
+          competitor_position: Waymo and others have broader public deployments; Starship reports larger delivery miles.
+          evidence: Company-reported and competitor-reported metrics.
+          evidence_claim_ids:
+            - EC-007
+            - EC-012
+          source_ids:
+            - SRC-001
+            - SRC-020
+        evidence_claim_ids:
+          - EC-007
+          - EC-012
+        source_ids:
+          - SRC-001
+          - SRC-020
+      - row_id: T-010-R03
+        values:
+          axis: Commercial traction
+          target_position: Uber/Lucid program and historical pilots.
+          competitor_position: Competitors may have current revenue-generating deployments.
+          evidence: Partner announcements but contract economics private.
+          evidence_claim_ids:
+            - EC-009
+            - EC-010
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+          - EC-010
+        source_ids:
+          - SRC-012
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-010
+      - SRC-020
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Map public go-to-market channels.
+    columns:
+      - name: channel
+        description: Channel
+      - name: region_or_segment
+        description: Region or segment
+      - name: public_evidence
+        description: Evidence
+      - name: gap
+        description: Gap
+    rows:
+      - row_id: T-011-R01
+        values:
+          channel: Direct licensing to OEMs / mobility platforms
+          region_or_segment: Automakers, ride-hail, fleets
+          public_evidence: Nuro licensing pivot and homepage.
+          gap: Pipeline, pricing and close rates not public.
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-010
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-010
+      - row_id: T-011-R02
+        values:
+          channel: Strategic platform partnership
+          region_or_segment: Uber/Lucid robotaxi
+          public_evidence: 20,000+ vehicle target announcement.
+          gap: Milestones and exclusivity.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-012
+      - row_id: T-011-R03
+        values:
+          channel: Historical retailer pilots
+          region_or_segment: Local delivery in select cities
+          public_evidence: Walmart, CVS, Domino, FedEx and other pilots.
+          gap: Conversion and economics.
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-015
+            - SRC-016
+            - SRC-017
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-015
+          - SRC-016
+          - SRC-017
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-010
+      - SRC-012
+      - SRC-015
+    notes: null
+  - table_id: T-012
+    title: Public marketing and sales signals
+    chapter_id: V
+    section_id: V.A
+    purpose: Track demand-generation and commercial proof points.
+    columns:
+      - name: signal
+        description: Signal
+      - name: date_or_period
+        description: Date or period
+      - name: public_evidence
+        description: Evidence
+      - name: diligence_request
+        description: Request
+    rows:
+      - row_id: T-012-R01
+        values:
+          signal: Series E and pivot coverage
+          date_or_period: "2025"
+          public_evidence: TechCrunch covered funding, valuation and licensing pivot.
+          diligence_request: Tie narrative to signed contracts and runway.
+          evidence_claim_ids:
+            - EC-002
+            - EC-013
+          source_ids:
+            - SRC-010
+            - SRC-011
+        evidence_claim_ids:
+          - EC-002
+          - EC-013
+        source_ids:
+          - SRC-010
+          - SRC-011
+      - row_id: T-012-R02
+        values:
+          signal: Uber/Lucid robotaxi announcement
+          date_or_period: 2025-07
+          public_evidence: Uber IR press release.
+          diligence_request: Review definitive agreements and go-live criteria.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-012
+      - row_id: T-012-R03
+        values:
+          signal: Safety by the numbers
+          date_or_period: current
+          public_evidence: Nuro claims 1.7M+ autonomous miles and zero at-fault incidents.
+          diligence_request: Request third-party safety validation.
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-003
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+          - SRC-003
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-010
+      - SRC-012
+      - SRC-015
+    notes: null
+  - table_id: T-013
+    title: R&D capabilities and key technical resources
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Summarize public technical capabilities and personnel signals.
+    columns:
+      - name: capability_or_person
+        description: Capability or person
+      - name: role
+        description: Role
+      - name: public_evidence
+        description: Evidence
+      - name: verification_status
+        description: Status
+    rows:
+      - row_id: T-013-R01
+        values:
+          capability_or_person: Nuro Driver
+          role: Core L4 autonomy stack
+          public_evidence: Software/hardware driver described on technology page.
+          verification_status: partially_verified
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-002
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-002
+      - row_id: T-013-R02
+        values:
+          capability_or_person: Simulation, validation and remote assistance
+          role: Safety case and deployment tooling
+          public_evidence: Technology and safety pages describe validation lifecycle.
+          verification_status: partially_verified
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-002
+            - SRC-003
+        evidence_claim_ids:
+          - EC-016
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-013-R03
+        values:
+          capability_or_person: Founders ex-Google/Waymo
+          role: Technical leadership credibility
+          public_evidence: Wikipedia and press release history.
+          verification_status: verified
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-004
+            - SRC-008
+        evidence_claim_ids:
+          - EC-017
+        source_ids:
+          - SRC-004
+          - SRC-008
+    evidence_claim_ids:
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-011
+      - SRC-012
+    notes: null
+  - table_id: T-014
+    title: Product and research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Track public roadmap and development gaps.
+    columns:
+      - name: project
+        description: Project
+      - name: status
+        description: Status
+      - name: expected_timing
+        description: Expected timing
+      - name: evidence_or_gap
+        description: Evidence or gap
+    rows:
+      - row_id: T-014-R01
+        values:
+          project: Uber/Lucid robotaxi integration
+          status: Announced; prototype on closed circuit per partner release
+          expected_timing: first launch planned next year per announcement
+          evidence_or_gap: Request launch gates, safety case and milestones.
+          evidence_claim_ids:
+            - EC-009
+            - EC-018
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+          - EC-018
+        source_ids:
+          - SRC-012
+      - row_id: T-014-R02
+        values:
+          project: Nuro Driver licensing
+          status: Current strategic focus
+          expected_timing: ongoing through 2027 funding runway signal
+          evidence_or_gap: Request pipeline and product readiness metrics.
+          evidence_claim_ids:
+            - EC-005
+            - EC-013
+          source_ids:
+            - SRC-010
+            - SRC-011
+        evidence_claim_ids:
+          - EC-005
+          - EC-013
+        source_ids:
+          - SRC-010
+          - SRC-011
+      - row_id: T-014-R03
+        values:
+          project: Historical delivery vehicle manufacturing
+          status: De-emphasized / paused through pivot
+          expected_timing: not_publicly_verifiable
+          evidence_or_gap: Request remaining obligations and asset write-downs.
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-010
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-010
+    evidence_claim_ids:
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-011
+      - SRC-012
+    notes: null
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: List public leadership and diligence caveats.
+    columns:
+      - name: name
+        description: Name
+      - name: role
+        description: Role
+      - name: background_or_tenure
+        description: Background or tenure
+      - name: source_note
+        description: Source note
+    rows:
+      - row_id: T-015-R01
+        values:
+          name: Jiajun Zhu
+          role: Co-founder / Co-CEO or CEO in public sources
+          background_or_tenure: Google/Waymo self-driving background
+          source_note: Verify current title and retention.
+          evidence_claim_ids:
+            - EC-017
+            - EC-019
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+        source_ids:
+          - SRC-004
+      - row_id: T-015-R02
+        values:
+          name: Dave Ferguson
+          role: Co-founder / Co-CEO or president in public sources
+          background_or_tenure: Google/Waymo self-driving background
+          source_note: Verify current responsibilities.
+          evidence_claim_ids:
+            - EC-017
+            - EC-019
+          source_ids:
+            - SRC-004
+            - SRC-010
+        evidence_claim_ids:
+          - EC-017
+          - EC-019
+        source_ids:
+          - SRC-004
+          - SRC-010
+      - row_id: T-015-R03
+        values:
+          name: Andrew Chapin
+          role: COO
+          background_or_tenure: Public leadership roster per research brief
+          source_note: Verify operating responsibilities.
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-004
+      - row_id: T-015-R04
+        values:
+          name: Mike Mancini
+          role: CFO
+          background_or_tenure: Public leadership roster per research brief
+          source_note: Verify finance controls.
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-004
+      - row_id: T-015-R05
+        values:
+          name: James Owens
+          role: Chief Legal and Policy Officer
+          background_or_tenure: Public leadership roster per research brief
+          source_note: Verify regulatory ownership.
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-019
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-017
+      - EC-019
+      - EC-020
+      - EC-021
+    source_ids:
+      - SRC-004
+      - SRC-011
+    notes: null
+  - table_id: T-016
+    title: Headcount, hiring, and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Capture public people-scale anchors.
+    columns:
+      - name: period
+        description: Period
+      - name: signal
+        description: Signal
+      - name: function_or_location
+        description: Function or location
+      - name: diligence_caveat
+        description: Caveat
+    rows:
+      - row_id: T-016-R01
+        values:
+          period: Jan 2022
+          signal: More than 1,200 employees reported
+          function_or_location: Company-wide
+          diligence_caveat: Source is secondary; HR census required.
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-004
+      - row_id: T-016-R02
+        values:
+          period: Nov 2022 / May 2023
+          signal: 20% / about 300 layoffs and later 30% / about 340 layoffs reported
+          function_or_location: Company-wide
+          diligence_caveat: Assess retention and morale after pivot.
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-004
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-004
+      - row_id: T-016-R03
+        values:
+          period: "2025"
+          signal: About 700 employees reported by TechCrunch
+          function_or_location: Company-wide
+          diligence_caveat: Current exact headcount not public.
+          evidence_claim_ids:
+            - EC-020
+            - EC-021
+          source_ids:
+            - SRC-011
+        evidence_claim_ids:
+          - EC-020
+          - EC-021
+        source_ids:
+          - SRC-011
+    evidence_claim_ids:
+      - EC-017
+      - EC-019
+      - EC-020
+      - EC-021
+    source_ids:
+      - SRC-004
+      - SRC-011
+    notes: null
+  - table_id: T-017
+    title: Legal, regulatory, and IP matters
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Compile public legal, regulatory, and IP signals.
+    columns:
+      - name: matter
+        description: Matter
+      - name: jurisdiction_or_agency
+        description: Jurisdiction or agency
+      - name: status
+        description: Status
+      - name: evidence
+        description: Evidence
+    rows:
+      - row_id: T-017-R01
+        values:
+          matter: NHTSA temporary exemption for R2X
+          jurisdiction_or_agency: NHTSA / Federal Register
+          status: Granted February 2020
+          evidence: Primary Federal Register notice.
+          evidence_claim_ids:
+            - EC-023
+          source_ids:
+            - SRC-013
+        evidence_claim_ids:
+          - EC-023
+        source_ids:
+          - SRC-013
+      - row_id: T-017-R02
+        values:
+          matter: California DMV deployment permit
+          jurisdiction_or_agency: California DMV
+          status: Announced by company in 2020
+          evidence: Company press release; current permit schedule needed.
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-014
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-014
+      - row_id: T-017-R03
+        values:
+          matter: Material lawsuits
+          jurisdiction_or_agency: Public-source sample
+          status: No material active lawsuit found in reviewed sources
+          evidence: Absence is not conclusive; counsel search required.
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-021
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-021
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-024
+      - EC-025
+    source_ids:
+      - SRC-013
+      - SRC-014
+      - SRC-021
+    notes: null
+  - table_id: T-018
+    title: Material contracts and compliance diligence
+    chapter_id: VIII
+    section_id: VIII.F
+    purpose: Identify contracts, licenses, and compliance artifacts requiring review.
+    columns:
+      - name: item
+        description: Contract or compliance item
+      - name: public_signal
+        description: Public signal
+      - name: diligence_request
+        description: Request
+      - name: priority
+        description: Priority
+    rows:
+      - row_id: T-018-R01
+        values:
+          item: Uber/Lucid robotaxi program
+          public_signal: 20,000+ vehicle target and multi-hundred-million-dollar investment plan.
+          diligence_request: Definitive agreements, milestones, exclusivity and economics.
+          priority: high
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-012
+      - row_id: T-018-R02
+        values:
+          item: Historical retail/logistics pilots
+          public_signal: Multiple named pilots/partnerships.
+          diligence_request: Contract status, conversion, revenue, termination and learnings.
+          priority: high
+          evidence_claim_ids:
+            - EC-008
+            - EC-014
+          source_ids:
+            - SRC-015
+            - SRC-016
+            - SRC-017
+        evidence_claim_ids:
+          - EC-008
+          - EC-014
+        source_ids:
+          - SRC-015
+          - SRC-016
+          - SRC-017
+      - row_id: T-018-R03
+        values:
+          item: Regulatory permits and safety case
+          public_signal: NHTSA exemption and CA deployment permit.
+          diligence_request: Current permit map, ODD limits, regulator correspondence, incident logs.
+          priority: high
+          evidence_claim_ids:
+            - EC-023
+            - EC-024
+          source_ids:
+            - SRC-013
+            - SRC-014
+        evidence_claim_ids:
+          - EC-023
+          - EC-024
+        source_ids:
+          - SRC-013
+          - SRC-014
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-024
+      - EC-025
+    source_ids:
+      - SRC-013
+      - SRC-014
+      - SRC-021
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding and valuation trajectory
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Charts disclosed funding and valuation anchors.
+    purpose: Show valuation compression or expansion and identify missing private terms.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Date
+        unit: null
+        scale: time
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: S1
+          name: Valuation
+          unit: USD billions
+          data_points:
+            - x: "2019"
+              y: 2.7
+              label: SoftBank valuation reported
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-008
+            - x: "2020"
+              y: 5
+              label: Series C post-money reported
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-009
+            - x: "2021"
+              y: 8.6
+              label: Series D
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-007
+            - x: "2025"
+              y: 6
+              label: Series E
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-010
+                - SRC-011
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-025
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    notes: null
+  - figure_id: F-002
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Shows public product modules and key dependencies.
+    purpose: Frame product diligence around architecture, data, and supplier dependencies.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: Automaker / mobility customer
+          node_type: user
+          description: null
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+        - node_id: N2
+          label: Nuro Toolkit
+          node_type: service
+          description: null
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+        - node_id: N3
+          label: Nuro Driver
+          node_type: service
+          description: null
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-002
+        - node_id: N4
+          label: Vehicle platform
+          node_type: product
+          description: null
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+        - node_id: N5
+          label: Safety validation / remote assistance
+          node_type: service
+          description: null
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-003
+        - node_id: N6
+          label: Regulatory permits
+          node_type: other
+          description: null
+          evidence_claim_ids:
+            - EC-023
+          source_ids:
+            - SRC-013
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: integrates_via
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+        - edge_id: E2
+          from_node_id: N2
+          to_node_id: N3
+          relationship: deploys
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+        - edge_id: E3
+          from_node_id: N3
+          to_node_id: N4
+          relationship: controls
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+        - edge_id: E4
+          from_node_id: N3
+          to_node_id: N5
+          relationship: validated_by
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+        - edge_id: E5
+          from_node_id: N4
+          to_node_id: N6
+          relationship: requires
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+      boundaries:
+        - boundary_id: B1
+          label: Publicly observable operating model
+          node_ids:
+            - N1
+            - N2
+            - N3
+            - N4
+            - N5
+            - N6
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-007
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-013
+    notes: null
+  - figure_id: F-003
+    title: Customer and partner concentration proxy
+    chapter_id: III
+    section_id: III.C
+    figure_type: chart
+    description: Uses public non-revenue proxies where revenue concentration is undisclosed.
+    purpose: Make explicit that customer concentration requires private revenue by customer.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public account or partner signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Proxy value
+        unit: public count / vehicles / unknown revenue
+        scale: linear
+      series:
+        - series_id: S1
+          name: Proxy value
+          unit: public count / vehicles / unknown revenue
+          data_points:
+            - x: Historical public partners
+              y: 7
+              label: Walmart, Kroger, Domino, FedEx, CVS, 7-Eleven, Uber/Lucid
+              evidence_claim_ids:
+                - EC-008
+                - EC-009
+              source_ids:
+                - SRC-015
+                - SRC-012
+            - x: Uber/Lucid vehicles target
+              y: 20000
+              label: forward-looking target
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-012
+            - x: Top customer revenue
+              y: null
+              label: not publicly verifiable
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-012
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-012
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    notes: null
+  - figure_id: F-004
+    title: Market positioning map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Places target and competitors on observable market dimensions.
+    purpose: Highlight where public differentiation is strongest and where competition is most direct.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Delivery model
+          low_label: Self-serve / commodity
+          high_label: Enterprise / dedicated
+        y_axis:
+          label: Differentiation
+          low_label: Price-led
+          high_label: Capability-led
+      segments:
+        - segment_id: S1
+          name: Direct competitors
+          description: Publicly visible alternatives in the target market.
+      entities:
+        - entity_id: E1
+          name: Nuro
+          entity_type: target_company
+          segment_id: S1
+          x_value: 7
+          y_value: 7
+          attributes: {}
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-001
+        - entity_id: E2
+          name: Wayve
+          entity_type: competitor
+          segment_id: S1
+          x_value: 8
+          y_value: 7
+          attributes: {}
+          evidence_claim_ids: []
+          source_ids: []
+        - entity_id: E3
+          name: Mobileye
+          entity_type: competitor
+          segment_id: S1
+          x_value: 8
+          y_value: 8
+          attributes: {}
+          evidence_claim_ids: []
+          source_ids: []
+        - entity_id: E4
+          name: Waymo
+          entity_type: competitor
+          segment_id: S1
+          x_value: 9
+          y_value: 9
+          attributes: {}
+          evidence_claim_ids: []
+          source_ids: []
+        - entity_id: E5
+          name: Starship
+          entity_type: competitor
+          segment_id: S1
+          x_value: 3
+          y_value: 6
+          attributes: {}
+          evidence_claim_ids: []
+          source_ids: []
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-010
+      - SRC-020
+    notes: null
+  - figure_id: F-005
+    title: Distribution-channel reach proxy
+    chapter_id: V
+    section_id: V.C
+    figure_type: chart
+    description: Shows public channel reach or funnel anchors.
+    purpose: Separate disclosed distribution scale from revenue conversion gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public proxy
+        unit: public proxy count
+        scale: linear
+      series:
+        - series_id: S1
+          name: Public proxy
+          unit: public proxy count
+          data_points:
+            - x: Historical retailer pilots
+              y: 6
+              label: named pilots
+              evidence_claim_ids:
+                - EC-014
+              source_ids:
+                - SRC-015
+            - x: Licensing channel
+              y: 1
+              label: current core channel
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-010
+            - x: Robotaxi vehicle target
+              y: 20000
+              label: Uber/Lucid target
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-012
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+      - EC-015
+    source_ids:
+      - SRC-001
+      - SRC-010
+      - SRC-012
+      - SRC-015
+    notes: null
+  - figure_id: F-006
+    title: R&D and product portfolio map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: Maps public R&D capabilities to product delivery.
+    purpose: Identify technology areas needing roadmap, IP, and validation diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: Perception/prediction/planning AI
+          node_type: model
+          description: null
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-002
+        - node_id: N2
+          label: Automotive-grade hardware
+          node_type: infrastructure
+          description: null
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-002
+        - node_id: N3
+          label: Simulation and validation
+          node_type: service
+          description: null
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-003
+        - node_id: N4
+          label: Remote assistance and SDK
+          node_type: service
+          description: null
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: runs_on
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+        - edge_id: E2
+          from_node_id: N1
+          to_node_id: N3
+          relationship: validated_by
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+        - edge_id: E3
+          from_node_id: N4
+          to_node_id: N1
+          relationship: integrates
+          data_or_dependency: null
+          evidence_claim_ids: []
+          source_ids: []
+      boundaries:
+        - boundary_id: B1
+          label: Publicly observable operating model
+          node_ids:
+            - N1
+            - N2
+            - N3
+            - N4
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-016
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-011
+      - SRC-012
+    notes: null
+  - figure_id: F-007
+    title: Public leadership org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Shows public management structure where available.
+    purpose: Frame key-person and succession diligence.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: P1
+          name: Jiajun Zhu
+          role: Co-founder / CEO
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-004
+        - node_id: P2
+          name: Dave Ferguson
+          role: Co-founder / president
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-004
+        - node_id: P3
+          name: Andrew Chapin
+          role: COO
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-004
+        - node_id: P4
+          name: Mike Mancini
+          role: CFO
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-004
+        - node_id: P5
+          name: James Owens
+          role: Chief Legal and Policy Officer
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-004
+      reporting_lines:
+        - parent_node_id: P1
+          child_node_id: P2
+          relationship: reports_to
+          evidence_claim_ids: []
+          source_ids: []
+        - parent_node_id: P1
+          child_node_id: P3
+          relationship: reports_to
+          evidence_claim_ids: []
+          source_ids: []
+        - parent_node_id: P1
+          child_node_id: P4
+          relationship: reports_to
+          evidence_claim_ids: []
+          source_ids: []
+        - parent_node_id: P1
+          child_node_id: P5
+          relationship: reports_to
+          evidence_claim_ids: []
+          source_ids: []
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-017
+      - EC-019
+      - EC-020
+      - EC-021
+    source_ids:
+      - SRC-004
+      - SRC-011
+    notes: null
+  - figure_id: F-008
+    title: Headcount trend anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Plots public headcount or hiring anchors.
+    purpose: Show scale/turnover signals and current-headcount gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Date
+        unit: null
+        scale: time
+      y_axis:
+        label: Headcount or role count
+        unit: people/roles
+        scale: linear
+      series:
+        - series_id: S1
+          name: Headcount or role count
+          unit: people/roles
+          data_points:
+            - x: 2022 pre-layoff
+              y: 1200
+              label: ">1,200 public anchor"
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-004
+            - x: 2022 post-layoff approx
+              y: 900
+              label: after about 300 layoffs
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-004
+            - x: "2025"
+              y: 700
+              label: TechCrunch reported about 700
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-011
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-017
+      - EC-019
+      - EC-020
+      - EC-021
+    source_ids:
+      - SRC-004
+      - SRC-011
+    notes: null
+  - figure_id: F-009
+    title: Legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: timeline
+    description: Orders public legal and regulatory events.
+    purpose: Surface unresolved legal/regulatory diligence items.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: EV1
+          date: 2020-02-11
+          label: NHTSA exemption
+          description: Temporary FMVSS exemption for R2X low-speed vehicle.
+          category: regulatory
+          evidence_claim_ids:
+            - EC-023
+          source_ids:
+            - SRC-013
+        - event_id: EV2
+          date: 2020-12-23
+          label: CA DMV deployment permit
+          description: Company announced first CA DMV autonomous deployment permit.
+          category: regulatory
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-014
+        - event_id: EV3
+          date: 2025-07-17
+          label: Uber/Lucid program
+          description: Robotaxi program creates new safety and regulatory milestones.
+          category: contract/regulatory
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-012
+      start_date: 2020-02-11
+      end_date: 2025-07-17
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-024
+      - EC-025
+    source_ids:
+      - SRC-013
+      - SRC-014
+      - SRC-021
+    notes: null
+  - figure_id: F-010
+    title: Risk heatmap
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: risk_heatmap
+    description: Plots top risks by severity and likelihood.
+    purpose: Prioritize follow-up diligence.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Valuation compression/down-round risk
+          severity: high
+          likelihood: high
+          rationale: Public evidence shows valuation falling from $8.6B in 2021 to $6B in 2025 Series E reporting.
+          evidence_claim_ids:
+            - EC-002
+          source_ids: []
+        - risk_id: R-002
+          label: Business-model pivot execution
+          severity: high
+          likelihood: high
+          rationale: Nuro pivoted from owning delivery robots to licensing autonomy to OEMs and mobility providers.
+          evidence_claim_ids:
+            - EC-005
+            - EC-013
+          source_ids: []
+        - risk_id: R-003
+          label: Revenue/customer concentration opacity
+          severity: high
+          likelihood: medium
+          rationale: Named pilots and partners do not disclose contracted recurring revenue or concentration.
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+          source_ids: []
+        - risk_id: R-004
+          label: Regulatory and safety approval dependency
+          severity: high
+          likelihood: medium
+          rationale: Autonomous vehicle deployments require permits, safety cases and operating-domain approvals.
+          evidence_claim_ids:
+            - EC-023
+            - EC-024
+          source_ids: []
+        - risk_id: R-005
+          label: Safety claims are company-reported
+          severity: high
+          likelihood: medium
+          rationale: 1.7M miles and zero at-fault incidents are company claims; third-party audit was not public.
+          evidence_claim_ids:
+            - EC-007
+          source_ids: []
+        - risk_id: R-006
+          label: Capital intensity/runway
+          severity: high
+          likelihood: medium
+          rationale: Prior vehicle-manufacturing strategy, layoffs and runway extensions imply capital pressure.
+          evidence_claim_ids:
+            - EC-020
+            - EC-021
+          source_ids: []
+        - risk_id: R-007
+          label: Competitive pressure
+          severity: high
+          likelihood: high
+          rationale: Wayve, Mobileye, Waymo, Starship and Serve pressure Nuro across licensing, robotaxi and delivery markets.
+          evidence_claim_ids:
+            - EC-011
+            - EC-012
+          source_ids: []
+        - risk_id: R-008
+          label: Strategic partner dependence
+          severity: high
+          likelihood: medium
+          rationale: Uber/Lucid robotaxi program may be a critical go-forward validation and revenue path.
+          evidence_claim_ids:
+            - EC-009
+          source_ids: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-013
+      - EC-008
+      - EC-010
+      - EC-023
+      - EC-024
+      - EC-007
+    source_ids:
+      - SRC-013
+      - SRC-014
+      - SRC-021
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: Nuro, Inc. is a private U.S. autonomous vehicle technology company headquartered in Mountain View, California.
+    evidence_summary: Nuro, Inc. is a private U.S. autonomous vehicle technology company headquartered in Mountain View, California.
+    evidence_type: other
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+      - SRC-021
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Wikipedia identifies Nuro, Inc. as a private autonomous vehicle technology company founded in 2016 by Jiajun Zhu
+          and Dave Ferguson and headquartered in Mountain View.
+        location: null
+      - source_id: SRC-021
+        quote: Nuro public legal terms use Nuro, Inc. and include standard IP and dispute terms.
+        location: null
+    analyst_interpretation: Use Nuro, Inc. as target entity for public-source diligence.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-002
+    claim: Nuro valuation evidence shows $8.6B in 2021 and $6B in 2025 Series E reporting / CB Insights.
+    evidence_summary: Nuro valuation evidence shows $8.6B in 2021 and $6B in 2025 Series E reporting / CB Insights.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: CB Insights lists Nuro at $6B, date joined 2019-02-11, Mountain View, Industrials.
+        location: null
+      - source_id: SRC-006
+        quote: Wikipedia unicorn list row gives Nuro $8.6B in November 2021, Robotics, United States.
+        location: null
+    analyst_interpretation: Latest public valuation signal appears $6B, below 2021 peak.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-003
+    claim: Public funding anchors include $92M Series A, $940M SoftBank financing, $500M Series C, $600M Series D, and $203M
+      Series E.
+    evidence_summary: Public funding anchors include $92M Series A, $940M SoftBank financing, $500M Series C, $600M Series
+      D, and $203M Series E.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+      - SRC-008
+      - SRC-009
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: TechCrunch reported a $600M Series D led by Tiger Global and a post-money valuation around $8.6B.
+        location: null
+      - source_id: SRC-008
+        quote: Nuro announced $940M from SoftBank Vision Fund and said it had raised over $1B to date.
+        location: null
+    analyst_interpretation: Funding history is well reported; economics and preferences remain private.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: Revenue, ARR, gross margin, unit economics, debt and cap-table details are not publicly disclosed.
+    evidence_summary: Revenue, ARR, gross margin, unit economics, debt and cap-table details are not publicly disclosed.
+    evidence_type: independent_news
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: TechCrunch reported a $106M Series E, $2.2B total funding, $6B valuation and a pivot to licensing autonomy tech.
+        location: null
+      - source_id: SRC-011
+        quote: TechCrunch reported the Series E reached $203M, Nvidia and Uber participated, valuation was $6B, and Nuro
+          employed about 700 people.
+        location: null
+    analyst_interpretation: No public source provides underwriting-grade financials.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-005
+    claim: Nuro current product strategy centers on licensing Nuro Driver and Nuro Toolkit rather than only operating owned
+      delivery robots.
+    evidence_summary: Nuro current product strategy centers on licensing Nuro Driver and Nuro Toolkit rather than only
+      operating owned delivery robots.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Nuro says the Nuro Driver is an AI-first self-driving system for automakers and mobility providers, with 1.7M+
+          autonomous miles and zero at-fault incidents.
+        location: null
+      - source_id: SRC-002
+        quote: Technology page says the Nuro Driver is deployed across three US states since 2020 and includes Nuro Toolkit,
+          validation and remote assistance.
+        location: null
+    analyst_interpretation: The licensing pivot is supported by company and independent reports.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-006
+    claim: Nuro historical products included R1/R2/R3 cargo-only delivery vehicles; R2/R2X received regulatory attention.
+    evidence_summary: Nuro historical products included R1/R2/R3 cargo-only delivery vehicles; R2/R2X received regulatory attention.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+      - SRC-009
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Wikipedia identifies Nuro, Inc. as a private autonomous vehicle technology company founded in 2016 by Jiajun Zhu
+          and Dave Ferguson and headquartered in Mountain View.
+        location: null
+      - source_id: SRC-009
+        quote: Nuro announced a $500M Series C led by T. Rowe Price with Fidelity, Baillie Gifford, SoftBank and Greylock.
+        location: null
+    analyst_interpretation: Historical product line is public and relevant to manufacturing legacy risk.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-007
+    claim: Nuro publicly claims 1.7M+ autonomous miles and zero at-fault incidents; this is company-reported.
+    evidence_summary: Nuro publicly claims 1.7M+ autonomous miles and zero at-fault incidents; this is company-reported.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Nuro says the Nuro Driver is an AI-first self-driving system for automakers and mobility providers, with 1.7M+
+          autonomous miles and zero at-fault incidents.
+        location: null
+      - source_id: SRC-002
+        quote: Technology page says the Nuro Driver is deployed across three US states since 2020 and includes Nuro Toolkit,
+          validation and remote assistance.
+        location: null
+    analyst_interpretation: Safety metrics should be audited before underwriting.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-008
+    claim: Nuro has public pilots or partnerships with Walmart, Domino, FedEx, 7-Eleven, CVS, Kroger and others.
+    evidence_summary: Nuro has public pilots or partnerships with Walmart, Domino, FedEx, 7-Eleven, CVS, Kroger and others.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+      - SRC-009
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Nuro announced $940M from SoftBank Vision Fund and said it had raised over $1B to date.
+        location: null
+      - source_id: SRC-009
+        quote: Nuro announced a $500M Series C led by T. Rowe Price with Fidelity, Baillie Gifford, SoftBank and Greylock.
+        location: null
+    analyst_interpretation: Named logos support market interest, not revenue durability.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-009
+    claim: Uber, Lucid and Nuro announced a robotaxi program targeting 20,000+ Lucid vehicles with Nuro Driver over six years.
+    evidence_summary: Uber, Lucid and Nuro announced a robotaxi program targeting 20,000+ Lucid vehicles with Nuro Driver over six years.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Uber, Lucid and Nuro announced a program targeting 20,000+ Lucid vehicles with Nuro Driver over six years and
+          multi-hundred-million-dollar investments.
+        location: null
+    analyst_interpretation: The announcement is forward-looking; definitive terms require diligence.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-010
+    claim: Customer revenue contribution, signed contract value, churn and concentration are not publicly verifiable.
+    evidence_summary: Customer revenue contribution, signed contract value, churn and concentration are not publicly verifiable.
+    evidence_type: customer_or_partner_source
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-012
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Uber, Lucid and Nuro announced a program targeting 20,000+ Lucid vehicles with Nuro Driver over six years and
+          multi-hundred-million-dollar investments.
+        location: null
+      - source_id: SRC-015
+        quote: Walmart Houston grocery-delivery pilot used Nuro R2 and autonomous Priuses.
+        location: null
+    analyst_interpretation: Logo lists and pilots are insufficient for customer-quality underwriting.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-011
+    claim: Nuro licensing strategy competes with Wayve/Mobileye and AV incumbents; delivery benchmarks include Starship.
+    evidence_summary: Nuro licensing strategy competes with Wayve/Mobileye and AV incumbents; delivery benchmarks include Starship.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-010
+      - SRC-020
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: TechCrunch reported a $106M Series E, $2.2B total funding, $6B valuation and a pivot to licensing autonomy tech.
+        location: null
+      - source_id: SRC-020
+        quote: Starship reported 6M deliveries and 11M miles, providing a delivery-robot benchmark.
+        location: null
+    analyst_interpretation: Competitive field spans AV licensing, robotaxi, and delivery robotics.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-012
+    claim: Starship reports larger public delivery-volume and mileage benchmarks than Nuro publicly discloses.
+    evidence_summary: Starship reports larger public delivery-volume and mileage benchmarks than Nuro publicly discloses.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-020
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-020
+        quote: Starship reported 6M deliveries and 11M miles, providing a delivery-robot benchmark.
+        location: null
+      - source_id: SRC-001
+        quote: Nuro says the Nuro Driver is an AI-first self-driving system for automakers and mobility providers, with 1.7M+
+          autonomous miles and zero at-fault incidents.
+        location: null
+    analyst_interpretation: Metrics are not perfectly comparable but expose scale questions.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-013
+    claim: Nuro GTM shifted to licensing automakers, mobility platforms, ride-hail, delivery companies and commercial fleets.
+    evidence_summary: Nuro GTM shifted to licensing automakers, mobility platforms, ride-hail, delivery companies and commercial fleets.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Nuro says the Nuro Driver is an AI-first self-driving system for automakers and mobility providers, with 1.7M+
+          autonomous miles and zero at-fault incidents.
+        location: null
+      - source_id: SRC-010
+        quote: TechCrunch reported a $106M Series E, $2.2B total funding, $6B valuation and a pivot to licensing autonomy tech.
+        location: null
+    analyst_interpretation: GTM change is central to diligence.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-014
+    claim: Historical GTM relied on localized pilots in Houston, Mountain View and other operating domains.
+    evidence_summary: Historical GTM relied on localized pilots in Houston, Mountain View and other operating domains.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-019
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: Walmart Houston grocery-delivery pilot used Nuro R2 and autonomous Priuses.
+        location: null
+      - source_id: SRC-016
+        quote: Select Houston Domino customers could receive pizza via Nuro R2.
+        location: null
+    analyst_interpretation: Pilot footprint supports technology demonstrations but not scaled revenue.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-015
+    claim: Pricing, license fees, minimum commitments, take rates and deployment SLAs are not public.
+    evidence_summary: Pricing, license fees, minimum commitments, take rates and deployment SLAs are not public.
+    evidence_type: primary_company_source
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Nuro says the Nuro Driver is an AI-first self-driving system for automakers and mobility providers, with 1.7M+
+          autonomous miles and zero at-fault incidents.
+        location: null
+      - source_id: SRC-002
+        quote: Technology page says the Nuro Driver is deployed across three US states since 2020 and includes Nuro Toolkit,
+          validation and remote assistance.
+        location: null
+    analyst_interpretation: Commercial model economics require contracts and pipeline data.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-016
+    claim: Nuro R&D stack includes AI driver, automotive-grade hardware, sensors, validation, simulation and remote
+      assistance.
+    evidence_summary: Nuro R&D stack includes AI driver, automotive-grade hardware, sensors, validation, simulation and
+      remote assistance.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Technology page says the Nuro Driver is deployed across three US states since 2020 and includes Nuro Toolkit,
+          validation and remote assistance.
+        location: null
+      - source_id: SRC-012
+        quote: Uber, Lucid and Nuro announced a program targeting 20,000+ Lucid vehicles with Nuro Driver over six years and
+          multi-hundred-million-dollar investments.
+        location: null
+    analyst_interpretation: Technical architecture is described publicly but validation artifacts are private.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-017
+    claim: Founders Dave Ferguson and Jiajun Zhu have Google/Waymo self-driving backgrounds.
+    evidence_summary: Founders Dave Ferguson and Jiajun Zhu have Google/Waymo self-driving backgrounds.
+    evidence_type: other
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Wikipedia identifies Nuro, Inc. as a private autonomous vehicle technology company founded in 2016 by Jiajun Zhu
+          and Dave Ferguson and headquartered in Mountain View.
+        location: null
+      - source_id: SRC-008
+        quote: Nuro announced $940M from SoftBank Vision Fund and said it had raised over $1B to date.
+        location: null
+    analyst_interpretation: Founder credibility is a strength, but retention and succession need review.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-018
+    claim: R&D/commercial validation remains active through platform expansion and Uber/Lucid robotaxi integration.
+    evidence_summary: R&D/commercial validation remains active through platform expansion and Uber/Lucid robotaxi integration.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: TechCrunch reported the Series E reached $203M, Nvidia and Uber participated, valuation was $6B, and Nuro
+          employed about 700 people.
+        location: null
+      - source_id: SRC-012
+        quote: Uber, Lucid and Nuro announced a program targeting 20,000+ Lucid vehicles with Nuro Driver over six years and
+          multi-hundred-million-dollar investments.
+        location: null
+    analyst_interpretation: Public announcements support activity; execution milestones are pending.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-019
+    claim: Public leadership includes co-founders/co-CEOs and operating, finance, legal/policy and engineering leaders.
+    evidence_summary: Public leadership includes co-founders/co-CEOs and operating, finance, legal/policy and engineering leaders.
+    evidence_type: other
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Wikipedia identifies Nuro, Inc. as a private autonomous vehicle technology company founded in 2016 by Jiajun Zhu
+          and Dave Ferguson and headquartered in Mountain View.
+        location: null
+    analyst_interpretation: Leadership roster should be confirmed with current HR records.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-020
+    claim: Public headcount anchors show more than 1,200 employees in 2022, large layoffs in 2022/2023, and about 700
+      employees reported in 2025.
+    evidence_summary: Public headcount anchors show more than 1,200 employees in 2022, large layoffs in 2022/2023, and about
+      700 employees reported in 2025.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Wikipedia identifies Nuro, Inc. as a private autonomous vehicle technology company founded in 2016 by Jiajun Zhu
+          and Dave Ferguson and headquartered in Mountain View.
+        location: null
+      - source_id: SRC-011
+        quote: TechCrunch reported the Series E reached $203M, Nvidia and Uber participated, valuation was $6B, and Nuro
+          employed about 700 people.
+        location: null
+    analyst_interpretation: People scale changed materially through the pivot.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-021
+    claim: Current exact headcount, attrition, option refreshes and hiring plan are not publicly verifiable.
+    evidence_summary: Current exact headcount, attrition, option refreshes and hiring plan are not publicly verifiable.
+    evidence_type: independent_news
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: TechCrunch reported the Series E reached $203M, Nvidia and Uber participated, valuation was $6B, and Nuro
+          employed about 700 people.
+        location: null
+    analyst_interpretation: HR data is required to assess retention after pivot.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.G
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-022
+    claim: Nuro public terms use Nuro, Inc. and standard IP/use restrictions.
+    evidence_summary: Nuro public terms use Nuro, Inc. and standard IP/use restrictions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-021
+    quoted_evidence:
+      - source_id: SRC-021
+        quote: Nuro public legal terms use Nuro, Inc. and include standard IP and dispute terms.
+        location: null
+    analyst_interpretation: Public terms are relevant but enterprise paper likely differs.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-023
+    claim: NHTSA granted Nuro a temporary exemption for the R2X low-speed automated delivery vehicle.
+    evidence_summary: NHTSA granted Nuro a temporary exemption for the R2X low-speed automated delivery vehicle.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: NHTSA granted Nuro a temporary FMVSS exemption for the R2X low-speed automated delivery vehicle.
+        location: null
+    analyst_interpretation: Regulatory exemption is primary-source verified.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-024
+    claim: Nuro received California DMV autonomous vehicle deployment permit according to company announcement.
+    evidence_summary: Nuro received California DMV autonomous vehicle deployment permit according to company announcement.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Nuro announced California DMV deployment permit for deliveries in San Mateo and Santa Clara counties.
+        location: null
+    analyst_interpretation: Permit status and current scope require regulator confirmation.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-025
+    claim: No public evidence reviewed indicates Nuro has IPOed, been acquired, or shut down; sources show active private
+      operations.
+    evidence_summary: No public evidence reviewed indicates Nuro has IPOed, been acquired, or shut down; sources show active
+      private operations.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - SRC-011
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Nuro says the Nuro Driver is an AI-first self-driving system for automakers and mobility providers, with 1.7M+
+          autonomous miles and zero at-fault incidents.
+        location: null
+      - source_id: SRC-004
+        quote: Wikipedia identifies Nuro, Inc. as a private autonomous vehicle technology company founded in 2016 by Jiajun Zhu
+          and Dave Ferguson and headquartered in Mountain View.
+        location: null
+    analyst_interpretation: Eligibility as private unicorn is supported, subject to corporate confirmation.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+sources:
+  - source_id: SRC-001
+    title: Nuro homepage
+    url: https://www.nuro.ai/
+    publisher: Nuro
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company-owned marketing; safety claims need audit.
+    archive_url: null
+  - source_id: SRC-002
+    title: Technology
+    url: https://www.nuro.ai/technology
+    publisher: Nuro
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company technical page.
+    archive_url: null
+  - source_id: SRC-003
+    title: Safety
+    url: https://www.nuro.ai/safety
+    publisher: Nuro
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company-owned safety page; request regulator correspondence.
+    archive_url: null
+  - source_id: SRC-004
+    title: Nuro
+    url: https://en.wikipedia.org/wiki/Nuro
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: other
+    reliability_notes: Secondary source; verify with primary records.
+    archive_url: null
+  - source_id: SRC-005
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: market_database
+    reliability_notes: Private-market database; methodology opaque.
+    archive_url: null
+  - source_id: SRC-006
+    title: List of unicorn startup companies
+    url: https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: market_database
+    reliability_notes: Secondary unicorn index.
+    archive_url: null
+  - source_id: SRC-007
+    title: Nuro lands investment from Google, Tiger Global in new $600 million round
+    url: https://techcrunch.com/2021/11/02/nuro-lands-investment-from-google-tiger-global-in-new-600-million-round/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2021-11-02
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Reputable tech press; valuation source-based.
+    archive_url: null
+  - source_id: SRC-008
+    title: Nuro Raises Close to $1 Billion from the SoftBank Vision Fund
+    url: https://www.globenewswire.com/news-release/2019/02/11/1716644/0/en/nuro-raises-close-to-1-billion-from-the-softbank-vision-fund-to-transform-local-commerce-through-self-driving.html
+    publisher: GlobeNewswire
+    author: null
+    publication_date: 2019-02-11
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company press release.
+    archive_url: null
+  - source_id: SRC-009
+    title: Nuro Announces $500 Million Financing Round
+    url: https://www.globenewswire.com/news-release/2020/11/09/2122658/0/en/nuro-announces-500-million-financing-round.html
+    publisher: GlobeNewswire
+    author: null
+    publication_date: 2020-11-09
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company press release.
+    archive_url: null
+  - source_id: SRC-010
+    title: Nuro's $106M raise backs its shift from delivery robots to licensing autonomy tech
+    url: https://techcrunch.com/2025/04/09/nuros-106m-raise-backs-its-shift-from-delivery-robots-to-licensing-autonomy-tech/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2025-04-09
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press.
+    archive_url: null
+  - source_id: SRC-011
+    title: Nvidia is latest investor to back AV startup Nuro in $203M funding round
+    url: https://techcrunch.com/2025/08/21/nvidia-is-latest-investor-to-back-av-startup-nuro-in-203m-funding-round/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2025-08-21
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press.
+    archive_url: null
+  - source_id: SRC-012
+    title: Lucid, Nuro, and Uber Partner on Next-Generation Autonomous Robotaxi Program
+    url: https://investor.uber.com/news-events/news/press-release-details/2025/Lucid-Nuro-and-Uber-Partner-on-Next-Generation-Autonomous-Robotaxi-Program/default.aspx
+    publisher: Uber Investor Relations
+    author: null
+    publication_date: 2025-07-17
+    accessed_date: 2026-05-31
+    source_type: customer_or_partner_source
+    reliability_notes: Partner press release; forward-looking.
+    archive_url: null
+  - source_id: SRC-013
+    title: "Federal Register: Nuro, Inc.; Grant of Temporary Exemption"
+    url: https://www.govinfo.gov/content/pkg/FR-2020-02-11/html/2020-02668.htm
+    publisher: GovInfo / Federal Register
+    author: null
+    publication_date: 2020-02-11
+    accessed_date: 2026-05-31
+    source_type: regulatory_filing
+    reliability_notes: Primary regulatory record.
+    archive_url: null
+  - source_id: SRC-014
+    title: Nuro Receives the First Ever Autonomous Vehicle Deployment Permit from California DMV
+    url: https://www.globenewswire.com/news-release/2020/12/23/2150236/0/en/nuro-receives-the-first-ever-autonomous-vehicle-deployment-permit-from-california-dmv-to-launch-self-driving-delivery-service-in-the-state.html
+    publisher: GlobeNewswire
+    author: null
+    publication_date: 2020-12-23
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company press release about regulatory action.
+    archive_url: null
+  - source_id: SRC-015
+    title: Nuro brings autonomous delivery service to Walmart customers
+    url: https://www.globenewswire.com/news-release/2019/12/10/1958647/0/en/nuro-brings-autonomous-delivery-service-to-walmart-customers.html
+    publisher: GlobeNewswire
+    author: null
+    publication_date: 2019-12-10
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company press release.
+    archive_url: null
+  - source_id: SRC-016
+    title: Domino's, Nuro to begin autonomous pizza deliveries in Houston
+    url: https://techcrunch.com/2021/04/12/dominos-nuro-to-begin-autonomous-pizza-deliveries-in-houston/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2021-04-12
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press.
+    archive_url: null
+  - source_id: SRC-017
+    title: Autonomous delivery startup Nuro moves into logistics with FedEx
+    url: https://techcrunch.com/2021/06/15/autonomous-delivery-startup-nuro-moves-into-logistics-with-fedex/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2021-06-15
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press.
+    archive_url: null
+  - source_id: SRC-018
+    title: Nuro and 7-Eleven to pilot autonomous delivery service in California
+    url: https://techcrunch.com/2021/12/01/nuro-7-eleven-autonomous-delivery-service-california/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2021-12-01
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press.
+    archive_url: null
+  - source_id: SRC-019
+    title: Nuro self-driving vehicles to deliver prescriptions for CVS Pharmacy
+    url: https://techcrunch.com/2020/05/28/nuros-self-driving-vehicles-to-delivery-prescriptions-for-cvs-pharmacy/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2020-05-28
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press.
+    archive_url: null
+  - source_id: SRC-020
+    title: Starship Technologies raises $90M as sidewalk robots pass 6M deliveries
+    url: https://techcrunch.com/2024/02/05/starship-technologies-raises-90m-as-its-sidewalk-robots-pass-6m-deliveries/
+    publisher: TechCrunch
+    author: null
+    publication_date: 2024-02-05
+    accessed_date: 2026-05-31
+    source_type: independent_news
+    reliability_notes: Independent tech press; competitor company-reported metrics.
+    archive_url: null
+  - source_id: SRC-021
+    title: Nuro terms of use
+    url: https://www.nuro.ai/terms
+    publisher: Nuro
+    author: null
+    publication_date: null
+    accessed_date: 2026-05-31
+    source_type: primary_company_source
+    reliability_notes: Company legal terms.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Valuation compression/down-round risk
+    risk_category: financing
+    severity: high
+    likelihood: high
+    description: Public evidence shows valuation falling from $8.6B in 2021 to $6B in 2025 Series E reporting.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids:
+      - EC-002
+    mitigation_or_diligence_request: Request cap table, liquidation preferences, 409A history and Series E terms.
+  - risk_id: R-002
+    risk_title: Business-model pivot execution
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: Nuro pivoted from owning delivery robots to licensing autonomy to OEMs and mobility providers.
+    impacted_chapter_ids:
+      - II
+      - V
+      - VI
+    impacted_section_ids:
+      - II.A
+      - V.A
+      - VI.B
+    evidence_claim_ids:
+      - EC-005
+      - EC-013
+    mitigation_or_diligence_request: Request signed licensing contracts, pipeline, pricing, launch milestones and partner obligations.
+  - risk_id: R-003
+    risk_title: Revenue/customer concentration opacity
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Named pilots and partners do not disclose contracted recurring revenue or concentration.
+    impacted_chapter_ids:
+      - III
+      - I
+    impacted_section_ids:
+      - III.C
+      - I.A
+    evidence_claim_ids:
+      - EC-008
+      - EC-010
+    mitigation_or_diligence_request: Request ARR/backlog by customer, churn, pilot conversion and top-customer dependency.
+  - risk_id: R-004
+    risk_title: Regulatory and safety approval dependency
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Autonomous vehicle deployments require permits, safety cases and operating-domain approvals.
+    impacted_chapter_ids:
+      - VIII
+      - II
+    impacted_section_ids:
+      - VIII.G
+      - II.A
+    evidence_claim_ids:
+      - EC-023
+      - EC-024
+    mitigation_or_diligence_request: Request permit map, ODD limits, regulator correspondence and safety case.
+  - risk_id: R-005
+    risk_title: Safety claims are company-reported
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: 1.7M miles and zero at-fault incidents are company claims; third-party audit was not public.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.C
+    evidence_claim_ids:
+      - EC-007
+    mitigation_or_diligence_request: Request crash, near-miss, disengagement, insurance and third-party safety audit data.
+  - risk_id: R-006
+    risk_title: Capital intensity/runway
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Prior vehicle-manufacturing strategy, layoffs and runway extensions imply capital pressure.
+    impacted_chapter_ids:
+      - I
+      - VII
+    impacted_section_ids:
+      - I.B
+      - VII.G
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+    mitigation_or_diligence_request: Request burn, runway, manufacturing obligations, vendor commitments and board plan.
+  - risk_id: R-007
+    risk_title: Competitive pressure
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: Wayve, Mobileye, Waymo, Starship and Serve pressure Nuro across licensing, robotaxi and delivery markets.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+    mitigation_or_diligence_request: Request win/loss analysis, technical benchmarks and partner pipeline comparison.
+  - risk_id: R-008
+    risk_title: Strategic partner dependence
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Uber/Lucid robotaxi program may be a critical go-forward validation and revenue path.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.B
+      - V.B
+    evidence_claim_ids:
+      - EC-009
+    mitigation_or_diligence_request: Review definitive agreements, milestones, exclusivity and cancellation penalties.
+  - risk_id: R-009
+    risk_title: Talent retention after layoffs/pivot
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public anchors show >1,200 employees in 2022, layoffs in 2022/2023 and about 700 employees in 2025.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.B
+      - VII.G
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+    mitigation_or_diligence_request: Request attrition, key-person retention, option refreshes and hiring plan.
+  - risk_id: R-010
+    risk_title: IP ownership and FTO not publicly validated
+    risk_category: legal
+    severity: medium
+    likelihood: medium
+    description: Founder patent expertise is public but company patent schedule, assignments and FTO are private.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VIII.D
+    evidence_claim_ids:
+      - EC-016
+      - EC-017
+    mitigation_or_diligence_request: Request patent schedule, invention assignments, open-source SBOM and FTO opinions.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, revenue bridge, gross margin, cash burn, and backlog by customer.
+    why_it_matters: Public funding data cannot prove quality of revenue or runway.
+    suggested_source_or_request: Request audited financials, management accounts, KPI pack, and board-approved plan.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Cap table, liquidation preferences, debt instruments, warrants, and option pool.
+    why_it_matters: Headline valuation can diverge materially from common-equity economics.
+    suggested_source_or_request: Request full capitalization export and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Top customer revenue, churn, renewal status, and contract concentration.
+    why_it_matters: Named customers or partners do not establish durable revenue.
+    suggested_source_or_request: Request customer-level ARR/backlog and signed contract summaries.
+    priority: high
+  - gap_id: G-004
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Product roadmap, validation results, IP assignments, and open-source/SBOM review.
+    why_it_matters: Technical defensibility and execution risk cannot be underwritten from marketing pages.
+    suggested_source_or_request: Request roadmap, architecture review, patent schedule, and security/quality reports.
+    priority: medium
+  - gap_id: G-005
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Current employee census, attrition, compensation, option refreshes, and key-person retention.
+    why_it_matters: Scale-up and retention risk can be hidden in a private company.
+    suggested_source_or_request: Request HR census, regretted-loss metrics, and employment agreements.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Nuro material contracts, indemnities, insurance, compliance reports, and litigation reserve details.
+    why_it_matters: Public legal pages rarely disclose economic exposure or termination rights.
+    suggested_source_or_request: Request counsel memo, contract abstracts, insurance policies, and regulator correspondence.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide Nuro audited financials, monthly management accounts, KPI bridge, and revenue recognition memo.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide cap table, 409A history, financing documents, side letters, debt schedule, warrants, and option plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.C
+    request: Provide top-20 customer revenue, backlog, churn, NRR, contract terms, and termination rights.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide product roadmap, architecture diagrams, validation reports, IP schedule, and open-source compliance review.
+    requested_from: company
+    priority: medium
+  - request_id: Q-005
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide employee census by function/location, attrition, compensation bands, and key-person retention plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: VIII
+    section_id: VIII.F
+    request: Provide material contracts, compliance reports, litigation docket summaries, insurance policies, and counsel
+      risk memo.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Public sources do not disclose Nuro financials, customer contract values, safety audit data, permit
+      schedules, insurance, or IP assignments.
+    affected_chapter_ids:
+      - I
+      - III
+      - VIII
+    affected_section_ids:
+      - I.A
+      - III.C
+      - VIII.F
+  - limitation_id: L-002
+    description: Autonomous vehicle safety and regulatory claims were not independently audited in this public-source run.
+    affected_chapter_ids:
+      - II
+      - VIII
+    affected_section_ids:
+      - II.A
+      - VIII.G
