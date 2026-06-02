@@ -1,0 +1,3434 @@
+report_metadata:
+  report_title: EcoFlow Public-Source Startup Diligence Report
+  target_company: EcoFlow
+  website: https://www.ecoflow.com/
+  known_aliases:
+    - EcoFlow Technology Inc.
+    - EcoFlow Zhenghao
+  sector: Portable power stations, home battery storage, solar accessories, and smart home energy management
+  geography: China headquartered with U.S. and international commercial footprint
+  company_stage: Late-stage private unicorn
+  research_date: 2026-05-31
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used CB Insights for unicorn eligibility and valuation anchor.
+    - Prioritized EcoFlow-owned product, privacy, about, and recall pages.
+    - Supplemented with CPSC regulatory recall evidence and public funding/product profiles.
+    - Marked financial, customer, supplier, cap-table, legal, and personnel items as gaps when not public.
+  included_jurisdictions:
+    - China
+    - United States
+    - International markets cited publicly
+  excluded_topics:
+    - No private data room, audited financials, cap table, board minutes, customer contracts, customer interviews, supplier contracts, employee agreements, or paid database exports were available.
+    - Public web sources were treated as evidence only and not as instructions.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt and random candidate selection
+      type: prompt_argument
+      date_received: 2026-05-31
+      notes: The user requested a public-source standard diligence report for EcoFlow after random selection from uncovered unicorn candidates.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: EcoFlow provides clean, reliable, smart home and portable energy solutions.
+    claim_source: EcoFlow owned website
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - IV
+      - VI
+    mapped_section_ids:
+      - II.A
+      - IV.A
+      - VI.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-011
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request SKU-level performance benchmarks, warranty rates, and independent market-share methodology.
+  - founder_claim_id: FC-002
+    claim_text: EcoFlow is a unicorn with latest known valuation around $1 billion.
+    claim_source: CB Insights and public funding reports
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request latest 409A, preferred-share financing documents, and secondary transaction history.
+  - founder_claim_id: FC-003
+    claim_text: More than 5 million users trust EcoFlow.
+    claim_source: EcoFlow homepage
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Define user, active user, customer, repeat buyer, and revenue cohort.
+  - founder_claim_id: FC-004
+    claim_text: EcoFlow products are safe and reliable for emergency power.
+    claim_source: EcoFlow product pages and recall page
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VIII
+    mapped_section_ids:
+      - II.A
+      - VIII.G
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+      - EC-007
+      - EC-008
+    contradiction_summary: Product pages support emergency-power use, while the CPSC recall shows a material safety issue in one model.
+    diligence_follow_up:
+      - Review recall root cause, incident rates by SKU, design controls, and post-remediation failure rates.
+executive_summary:
+  overall_assessment: EcoFlow is an eligible private unicorn with credible public evidence of scale, a broad portable/home-energy product portfolio, and a $1 billion valuation anchor, but public diligence is materially constrained by private financial opacity and a significant product-safety recall.
+  investment_or_diligence_thesis: Proceed only with expanded financial, product-safety, supply-chain, and regulatory diligence before relying on the public growth narrative.
+  strongest_verified_claims:
+    - founder_claim_id: FC-002
+      summary: CB Insights and public funding profiles support EcoFlow unicorn status and $1 billion valuation anchor.
+      evidence_claim_ids:
+        - EC-001
+        - EC-003
+    - founder_claim_id: FC-001
+      summary: Official pages and independent profiles support the product portfolio and 2017 battery-engineering origin.
+      evidence_claim_ids:
+        - EC-002
+        - EC-005
+  biggest_risks:
+    - risk_id: R-001
+      summary: Delta Max 2000 recall creates safety, warranty, and brand-risk exposure.
+    - risk_id: R-002
+      summary: Audited financial quality and current revenue/margins are not public.
+    - risk_id: R-003
+      summary: Battery supply chain and manufacturing quality risks require private verification.
+  key_evidence_gaps:
+    - Audited financial statements and SKU/channel gross margins.
+    - Recall incident logs, warranty reserves, insurance correspondence, and QA records.
+    - Top customer/channel concentration and supplier contracts.
+  recommended_next_steps:
+    - Request full data-room package before investment reliance.
+    - Commission product-safety and firmware-remediation review.
+    - Validate market-share and user claims with independent data.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public financial evidence supports unicorn status and one 2021 revenue anchor, but transaction-grade financial diligence is unavailable publicly.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-006
+      - EC-010
+    risk_ids:
+      - R-002
+      - R-004
+      - R-007
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Only 2021 revenue was publicly reported; audited annual and quarterly statements, AR aging, backlog, and margin by product/channel are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Only 2021 revenue was publicly reported; audited annual and quarterly statements, AR aging, backlog, and margin by product/channel are not public.
+            evidence_claim_ids:
+              - EC-001
+              - EC-003
+              - EC-006
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting annual and quarterly financial information for the past three years.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+          - EC-006
+          - EC-010
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public sources provide limited direct support for Financial Projections; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public sources provide limited direct support for Financial Projections; private diligence remains required.
+            evidence_claim_ids:
+              - EC-001
+              - EC-003
+              - EC-006
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting financial projections.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+          - EC-006
+          - EC-010
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public sources name investors and a $1B valuation, but ownership percentages, debt, warrants, and preferences are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public sources name investors and a $1B valuation, but ownership percentages, debt, warrants, and preferences are private.
+            evidence_claim_ids:
+              - EC-001
+              - EC-003
+              - EC-006
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting capital structure.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+          - EC-006
+          - EC-010
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Funding history supports unicorn status but requires financing-document verification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Funding history supports unicorn status but requires financing-document verification.
+            evidence_claim_ids:
+              - EC-001
+              - EC-003
+              - EC-006
+            risk_ids:
+              - R-002
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting other financial information.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids:
+          - EC-001
+          - EC-003
+          - EC-006
+          - EC-010
+          - EC-002
+          - EC-007
+  - chapter_id: II
+    title: Products
+    chapter_summary: Product evidence is strong for portfolio existence and use cases; safety and warranty performance need validation.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-007
+    risk_ids:
+      - R-001
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: EcoFlow publicly markets portable power stations, home batteries, solar, and app/firmware-enabled energy products.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: EcoFlow publicly markets portable power stations, home batteries, solar, and app/firmware-enabled energy products.
+            evidence_claim_ids:
+              - EC-002
+              - EC-005
+              - EC-007
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting description of each product.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-002
+          - EC-005
+          - EC-007
+          - EC-011
+          - EC-008
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Aggregate users and market reach are public, but customer concentration and channel economics are private.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-009
+      - EC-010
+    risk_ids:
+      - R-003
+      - R-005
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: EcoFlow discloses aggregate user and market reach, not top customers or revenue by customer.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: EcoFlow discloses aggregate user and market reach, not top customers or revenue by customer.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting top customers by application.
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public sources provide limited direct support for Strategic relationships; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public sources provide limited direct support for Strategic relationships; private diligence remains required.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting strategic relationships.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Public sources provide limited direct support for Revenue by customer; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public sources provide limited direct support for Revenue by customer; private diligence remains required.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting revenue by customer.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: Public sources provide limited direct support for Significant relationships severed within the last two years; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Public sources provide limited direct support for Significant relationships severed within the last two years; private diligence remains required.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting significant relationships severed within the last two years.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Recall materials identify some sales channels, but supplier and purchase concentration remain private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Recall materials identify some sales channels, but supplier and purchase concentration remain private.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting top suppliers.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+          - EC-008
+          - EC-011
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: The company operates in a competitive portable power/home energy market with price, safety, warranty, and brand differentiation risk.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-005
+      - EC-011
+    risk_ids:
+      - R-006
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: EcoFlow competes in crowded portable power and home backup markets; public ranking claims need methodology review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: EcoFlow competes in crowded portable power and home backup markets; public ranking claims need methodology review.
+            evidence_claim_ids:
+              - EC-005
+              - EC-011
+              - EC-004
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting competitive landscape by market segment.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-005
+          - EC-011
+          - EC-004
+          - EC-007
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: GTM signals show direct, marketplace, and international reach, but CAC, channel margin, and retention are not public.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-009
+      - EC-010
+    risk_ids:
+      - R-002
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Direct ecommerce, marketplaces, and international markets are visible, but channel economics are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Direct ecommerce, marketplaces, and international markets are visible, but channel economics are private.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting strategy and implementation.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+          - EC-008
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Public sources provide limited direct support for Major Customers; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Public sources provide limited direct support for Major Customers; private diligence remains required.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting major customers.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public marketing emphasizes users, product specs, and market ranking; CAC, funnel, and retention are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public marketing emphasizes users, product specs, and market ranking; CAC, funnel, and retention are not public.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting principal avenues for generating new business.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+          - EC-011
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Public sources provide limited direct support for Sales force productivity model; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Public sources provide limited direct support for Sales force productivity model; private diligence remains required.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting sales force productivity model.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Public sources provide limited direct support for Ability to implement marketing plan with current and projected budgets; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Public sources provide limited direct support for Ability to implement marketing plan with current and projected budgets; private diligence remains required.
+            evidence_claim_ids:
+              - EC-004
+              - EC-009
+              - EC-010
+            risk_ids:
+              - R-002
+              - R-005
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting ability to implement marketing plan with current and projected budgets.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+          - EC-010
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: R&D narrative centers on battery engineering, firmware, and energy management; private QA/IP records are essential.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-002
+      - EC-005
+      - EC-012
+    risk_ids:
+      - R-003
+      - R-008
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Battery engineering origin and firmware remediation are public; current R&D org and QA process are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Battery engineering origin and firmware remediation are public; current R&D org and QA process are private.
+            evidence_claim_ids:
+              - EC-002
+              - EC-005
+              - EC-012
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting description of r&d organization.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-002
+          - EC-005
+          - EC-012
+          - EC-008
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Product roadmap and IP schedule require private verification despite public product launches.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Product roadmap and IP schedule require private verification despite public product launches.
+            evidence_claim_ids:
+              - EC-002
+              - EC-005
+              - EC-012
+            risk_ids:
+              - R-003
+              - R-008
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting new product pipeline.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-005
+          - EC-012
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public management/personnel evidence is sparse relative to the scale claimed.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-002
+      - EC-008
+      - EC-010
+    risk_ids: []
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Only limited public leadership/org detail was reviewed.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Only limited public leadership/org detail was reviewed.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting organization chart.
+        table_ids: []
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Headcount by function/location and turnover are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Headcount by function/location and turnover are not public.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting historical and projected headcount by function and location.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+          - EC-009
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Founder/leadership evidence is limited to public profiles; employment and succession details are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Founder/leadership evidence is limited to public profiles; employment and succession details are private.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting senior management biographies.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Public sources provide limited direct support for Compensation arrangements; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Public sources provide limited direct support for Compensation arrangements; private diligence remains required.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting compensation arrangements.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Public sources provide limited direct support for Incentive stock plans; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Public sources provide limited direct support for Incentive stock plans; private diligence remains required.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting incentive stock plans.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Public sources provide limited direct support for Significant employee relations problems, past or present; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public sources provide limited direct support for Significant employee relations problems, past or present; private diligence remains required.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting significant employee relations problems, past or present.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Public sources provide limited direct support for Personnel Turnover; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Public sources provide limited direct support for Personnel Turnover; private diligence remains required.
+            evidence_claim_ids:
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids: []
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting personnel turnover.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+          - EC-010
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: The CPSC recall is the principal verified legal/regulatory matter and creates follow-on insurance, warranty, and product-liability diligence needs.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-012
+    risk_ids:
+      - R-001
+      - R-004
+      - R-008
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: No comprehensive litigation docket review was performed; product-safety recall is the main public legal/regulatory matter.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No comprehensive litigation docket review was performed; product-safety recall is the main public legal/regulatory matter.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting pending lawsuits against the company.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Public sources provide limited direct support for Pending lawsuits initiated by Company; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Public sources provide limited direct support for Pending lawsuits initiated by Company; private diligence remains required.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting pending lawsuits initiated by company.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Public sources provide limited direct support for Environmental and employee safety issues and liabilities; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public sources provide limited direct support for Environmental and employee safety issues and liabilities; private diligence remains required.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting environmental and employee safety issues and liabilities.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Patent, trademark, license, and insurance schedules require counsel-provided records.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Patent, trademark, license, and insurance schedules require counsel-provided records.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting material patents, copyrights, licenses, and trademarks.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Public sources provide limited direct support for Insurance coverage and material exposures; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Public sources provide limited direct support for Insurance coverage and material exposures; private diligence remains required.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting insurance coverage and material exposures.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Public sources provide limited direct support for Material contracts; private diligence remains required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public sources provide limited direct support for Material contracts; private diligence remains required.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: CPSC recall is verified and should be treated as a priority diligence item.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: CPSC recall is verified and should be treated as a priority diligence item.
+            evidence_claim_ids:
+              - EC-007
+              - EC-008
+              - EC-012
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - Public evidence may understate contract, concentration, margin, compliance, or execution risks because private records were not available.
+        evidence_gaps:
+          - Request private data-room materials to verify this checklist item.
+        follow_up_questions:
+          - Provide documentation supporting regulatory agency problems.
+        table_ids: []
+        figure_ids:
+          - F-010
+          - F-011
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+          - EC-012
+          - EC-002
+          - EC-001
+          - EC-010
+tables:
+  - table_id: T-001
+    title: Public funding and valuation history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize public capital formation signals.
+    columns:
+      - name: date
+        description: date
+      - name: round_or_event
+        description: round or event
+      - name: amount
+        description: amount
+      - name: post_money_or_valuation
+        description: post money or valuation
+      - name: investors
+        description: investors
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-001-R01
+        values:
+          date: 2021-06-10
+          round_or_event: Series B / unicorn listing
+          amount: over/about $100 million
+          post_money_or_valuation: about or over $1 billion
+          investors: Sequoia China/HongShan, CICC, Hillhouse/GL Ventures per public profiles; CB Insights lists Delian Capital, CICC, Sequoia Capital China
+          verification_status: partially_verified
+        evidence_claim_ids: &a1
+          - EC-001
+          - EC-003
+        source_ids: &a2
+          - SRC-001
+          - SRC-005
+          - SRC-006
+      - row_id: T-001-R02
+        values:
+          date: "2021"
+          round_or_event: Revenue disclosure via PRNewswire-syndicated article
+          amount: $200 million annual revenue
+          post_money_or_valuation: not a valuation event
+          investors: not applicable
+          verification_status: partially_verified
+        evidence_claim_ids: *a1
+        source_ids: *a2
+    evidence_claim_ids: *a1
+    source_ids: *a2
+    notes: null
+  - table_id: T-002
+    title: Capital structure and public financial signals
+    chapter_id: I
+    section_id: I.C
+    purpose: Identify public versus private financial diligence items.
+    columns:
+      - name: item
+        description: item
+      - name: public_signal
+        description: public signal
+      - name: diligence_caveat
+        description: diligence caveat
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-002-R01
+        values:
+          item: Equity ownership
+          public_signal: Named investors only
+          diligence_caveat: No shareholder percentages, liquidation preferences, option pool, or debt schedule public
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: &a3
+          - EC-003
+          - EC-006
+          - EC-010
+        source_ids: &a4
+          - SRC-005
+          - SRC-006
+      - row_id: T-002-R02
+        values:
+          item: Revenue
+          public_signal: 2021 revenue reported at $200 million
+          diligence_caveat: No audited annual or quarterly statements after 2021 public
+          verification_status: partially_verified
+        evidence_claim_ids: *a3
+        source_ids: *a4
+      - row_id: T-002-R03
+        values:
+          item: Backlog and AR aging
+          public_signal: No public evidence found
+          diligence_caveat: Requires management reports and AR schedule
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a3
+        source_ids: *a4
+    evidence_claim_ids: *a3
+    source_ids: *a4
+    notes: null
+  - table_id: T-003
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map publicly described product families.
+    columns:
+      - name: product_family
+        description: product family
+      - name: public_description
+        description: public description
+      - name: target_user
+        description: target user
+      - name: evidence
+        description: evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-003-R01
+        values:
+          product_family: DELTA portable power stations
+          public_description: 1.2kWh class portable emergency power, solar charging, multi-device output
+          target_user: home backup, outdoor, emergency
+          evidence: DELTA page
+          verification_status: verified
+        evidence_claim_ids: &a5
+          - EC-002
+          - EC-005
+        source_ids: &a6
+          - SRC-002
+          - SRC-003
+          - SRC-004
+          - SRC-005
+      - row_id: T-003-R02
+        values:
+          product_family: RIVER portable stations
+          public_description: portable power-station line named in company profile
+          target_user: mobile and outdoor users
+          evidence: Battery-Tech profile
+          verification_status: partially_verified
+        evidence_claim_ids: *a5
+        source_ids: *a6
+      - row_id: T-003-R03
+        values:
+          product_family: OCEAN/OCEAN Pro home battery
+          public_description: home battery with 24kW output, 40kW solar input, smart circuits
+          target_user: home energy management
+          evidence: EcoFlow homepage
+          verification_status: verified
+        evidence_claim_ids: *a5
+        source_ids: *a6
+    evidence_claim_ids: *a5
+    source_ids: *a6
+    notes: null
+  - table_id: T-004
+    title: Pricing and competitor comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Frame pricing/product pressure where public prices were not normalized.
+    columns:
+      - name: company
+        description: company
+      - name: segment
+        description: segment
+      - name: public_basis
+        description: public basis
+      - name: diligence_need
+        description: diligence need
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-004-R01
+        values:
+          company: EcoFlow
+          segment: portable power and home energy
+          public_basis: official product specifications; pricing varies by SKU/channel
+          diligence_need: SKU gross margins, promo cadence, warranty reserve
+          verification_status: partially_verified
+        evidence_claim_ids: &a7
+          - EC-005
+          - EC-011
+        source_ids: &a8
+          - SRC-010
+          - SRC-003
+      - row_id: T-004-R02
+        values:
+          company: Anker / Jackery / Bluetti / Goal Zero
+          segment: portable power competitors
+          public_basis: public comparison search set
+          diligence_need: like-for-like price/performance benchmark
+          verification_status: partially_verified
+        evidence_claim_ids: *a7
+        source_ids: *a8
+      - row_id: T-004-R03
+        values:
+          company: Generac / home battery vendors
+          segment: home backup
+          public_basis: public market overlap
+          diligence_need: installer economics and channel conflict review
+          verification_status: inconclusive
+        evidence_claim_ids: *a7
+        source_ids: *a8
+    evidence_claim_ids: *a7
+    source_ids: *a8
+    notes: null
+  - table_id: T-005
+    title: Public customer and market signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize public demand evidence.
+    columns:
+      - name: signal
+        description: signal
+      - name: value
+        description: value
+      - name: source
+        description: source
+      - name: caveat
+        description: caveat
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-005-R01
+        values:
+          signal: Users
+          value: 5+ million users
+          source: EcoFlow homepage
+          caveat: Self-reported; not customer-level revenue
+          verification_status: partially_verified
+        evidence_claim_ids: &a9
+          - EC-004
+          - EC-009
+          - EC-010
+        source_ids: &a10
+          - SRC-003
+          - SRC-006
+      - row_id: T-005-R02
+        values:
+          signal: Markets
+          value: over 85 markets
+          source: PRNewswire-syndicated article
+          caveat: 2021 disclosure; current geography needs update
+          verification_status: partially_verified
+        evidence_claim_ids: *a9
+        source_ids: *a10
+      - row_id: T-005-R03
+        values:
+          signal: Top customers
+          value: not disclosed
+          source: public web search
+          caveat: Requires top-customer list and channel revenue
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a9
+        source_ids: *a10
+    evidence_claim_ids: *a9
+    source_ids: *a10
+    notes: null
+  - table_id: T-006
+    title: Strategic relationships and suppliers
+    chapter_id: III
+    section_id: III.E
+    purpose: Surface supplier and partner diligence requirements.
+    columns:
+      - name: party_or_category
+        description: party or category
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: risk_or_gap
+        description: risk or gap
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-006-R01
+        values:
+          party_or_category: Cell/electronics suppliers
+          role: battery and electronics inputs
+          public_evidence: not named in public sources reviewed
+          risk_or_gap: supplier concentration and QA unknown
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: &a11
+          - EC-008
+          - EC-011
+        source_ids: &a12
+          - SRC-002
+          - SRC-008
+      - row_id: T-006-R02
+        values:
+          party_or_category: Retail/marketplace channels
+          role: sales distribution
+          public_evidence: Recall page references Costco.com, Amazon.com, EcoFlow.com for affected U.S. units
+          risk_or_gap: channel concentration and terms unknown
+          verification_status: partially_verified
+        evidence_claim_ids: *a11
+        source_ids: *a12
+      - row_id: T-006-R03
+        values:
+          party_or_category: Frost & Sullivan
+          role: market-ranking research cited by EcoFlow
+          public_evidence: EcoFlow about page footnote
+          risk_or_gap: methodology and paid-study status require review
+          verification_status: partially_verified
+        evidence_claim_ids: *a11
+        source_ids: *a12
+    evidence_claim_ids: *a11
+    source_ids: *a12
+    notes: null
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare public positioning.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: overlap
+        description: overlap
+      - name: public_differentiator
+        description: public differentiator
+      - name: diligence_question
+        description: diligence question
+    rows:
+      - row_id: T-007-R01
+        values:
+          competitor: Anker
+          segment: consumer power electronics
+          overlap: portable power stations and chargers
+          public_differentiator: brand/channel scale
+          diligence_question: Can EcoFlow defend margins versus consumer-electronics scale?
+        evidence_claim_ids: &a13
+          - EC-005
+          - EC-011
+        source_ids: &a14
+          - SRC-010
+          - SRC-003
+      - row_id: T-007-R02
+        values:
+          competitor: Jackery
+          segment: portable power stations
+          overlap: camping, home backup, solar generators
+          public_differentiator: category awareness
+          diligence_question: Win/loss and price elasticity?
+        evidence_claim_ids: *a13
+        source_ids: *a14
+      - row_id: T-007-R03
+        values:
+          competitor: Bluetti
+          segment: portable power and home batteries
+          overlap: battery storage and solar kits
+          public_differentiator: broad battery catalog
+          diligence_question: Performance, warranty and channel comparison?
+        evidence_claim_ids: *a13
+        source_ids: *a14
+      - row_id: T-007-R04
+        values:
+          competitor: Generac
+          segment: home backup power
+          overlap: home backup and energy resilience
+          public_differentiator: installer/service network
+          diligence_question: Does EcoFlow need installer channel investment?
+        evidence_claim_ids: *a13
+        source_ids: *a14
+    evidence_claim_ids: *a13
+    source_ids: *a14
+    notes: null
+  - table_id: T-008
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Translate market evidence into diligence axes.
+    columns:
+      - name: axis
+        description: axis
+      - name: ecoflow_public_position
+        description: ecoflow public position
+      - name: risk
+        description: risk
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-008-R01
+        values:
+          axis: Battery performance
+          ecoflow_public_position: public pages emphasize capacity, solar charging, fast backup response
+          risk: benchmarks and warranty data not public
+          verification_status: partially_verified
+        evidence_claim_ids: &a15
+          - EC-004
+          - EC-007
+          - EC-011
+        source_ids: &a16
+          - SRC-002
+          - SRC-003
+          - SRC-007
+          - SRC-008
+      - row_id: T-008-R02
+        values:
+          axis: Brand trust
+          ecoflow_public_position: 5+ million users and No. 1 ranking claim
+          risk: ranking methodology and customer retention not public
+          verification_status: partially_verified
+        evidence_claim_ids: *a15
+        source_ids: *a16
+      - row_id: T-008-R03
+        values:
+          axis: Safety/reliability
+          ecoflow_public_position: firmware recall remedy disclosed
+          risk: recall indicates material safety execution risk
+          verification_status: verified
+        evidence_claim_ids: *a15
+        source_ids: *a16
+    evidence_claim_ids: *a15
+    source_ids: *a16
+    notes: null
+  - table_id: T-009
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Identify route-to-market signals.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public evidence
+      - name: likely_role
+        description: likely role
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-009-R01
+        values:
+          channel: Direct ecommerce
+          public_evidence: EcoFlow.com product and recall pages
+          likely_role: DTC sales and support
+          gap: traffic, conversion, CAC, returns
+        evidence_claim_ids: &a17
+          - EC-008
+          - EC-009
+          - EC-010
+        source_ids: &a18
+          - SRC-006
+          - SRC-008
+      - row_id: T-009-R02
+        values:
+          channel: Online marketplaces/retailers
+          public_evidence: Recall page names Amazon.com and Costco.com for affected units
+          likely_role: high-volume U.S. distribution
+          gap: channel concentration and margin by partner
+        evidence_claim_ids: *a17
+        source_ids: *a18
+      - row_id: T-009-R03
+        values:
+          channel: International markets
+          public_evidence: over 85 markets reported in 2021
+          likely_role: global growth
+          gap: country revenue and regulatory compliance
+        evidence_claim_ids: *a17
+        source_ids: *a18
+    evidence_claim_ids: *a17
+    source_ids: *a18
+    notes: null
+  - table_id: T-010
+    title: Marketing-signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Summarize public marketing claims and diligence follow-up.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_claim
+        description: public claim
+      - name: evidence
+        description: evidence
+      - name: follow_up
+        description: follow up
+    rows:
+      - row_id: T-010-R01
+        values:
+          signal: User base
+          public_claim: 5+ million users
+          evidence: EcoFlow homepage
+          follow_up: Cohort retention and repeat purchase by SKU
+        evidence_claim_ids: &a19
+          - EC-004
+          - EC-009
+          - EC-011
+        source_ids: &a20
+          - SRC-002
+          - SRC-003
+          - SRC-006
+      - row_id: T-010-R02
+        values:
+          signal: Market ranking
+          public_claim: No. 1 smart home energy storage brand by 2024 sales
+          evidence: EcoFlow about page
+          follow_up: Obtain Frost & Sullivan report and methodology
+        evidence_claim_ids: *a19
+        source_ids: *a20
+      - row_id: T-010-R03
+        values:
+          signal: Product awards
+          public_claim: DELTA Pro cited as Kickstarter record and TIME invention in 2021 PR
+          evidence: Techtography/PRNewswire
+          follow_up: Confirm current conversion and product-line profitability
+        evidence_claim_ids: *a19
+        source_ids: *a20
+    evidence_claim_ids: *a19
+    source_ids: *a20
+    notes: null
+  - table_id: T-011
+    title: R&D personnel and technology themes
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Track public R&D capabilities.
+    columns:
+      - name: theme
+        description: theme
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_need
+        description: diligence need
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-011-R01
+        values:
+          theme: Battery engineering origin
+          public_evidence: founded by battery engineers in 2017
+          diligence_need: current engineering headcount and credentials
+          verification_status: verified
+        evidence_claim_ids: &a21
+          - EC-002
+          - EC-008
+          - EC-012
+        source_ids: &a22
+          - SRC-002
+          - SRC-005
+          - SRC-008
+      - row_id: T-011-R02
+        values:
+          theme: Energy-management software
+          public_evidence: Battery-Tech describes app/software and ML energy management
+          diligence_need: software architecture, cybersecurity, firmware QA
+          verification_status: partially_verified
+        evidence_claim_ids: *a21
+        source_ids: *a22
+      - row_id: T-011-R03
+        values:
+          theme: Product safety engineering
+          public_evidence: firmware recall remedy
+          diligence_need: root-cause and validation testing
+          verification_status: verified
+        evidence_claim_ids: *a21
+        source_ids: *a22
+    evidence_claim_ids: *a21
+    source_ids: *a22
+    notes: null
+  - table_id: T-012
+    title: Public product pipeline and IP signals
+    chapter_id: VI
+    section_id: VI.B
+    purpose: List public pipeline and IP diligence items.
+    columns:
+      - name: project_or_asset
+        description: project or asset
+      - name: status
+        description: status
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_gap
+        description: diligence gap
+    rows:
+      - row_id: T-012-R01
+        values:
+          project_or_asset: OCEAN Pro / Smart Home Energy
+          status: publicly marketed
+          public_evidence: EcoFlow homepage specs
+          diligence_gap: roadmap, certifications, installation economics
+        evidence_claim_ids: &a23
+          - EC-005
+          - EC-012
+        source_ids: &a24
+          - SRC-002
+          - SRC-003
+          - SRC-004
+      - row_id: T-012-R02
+        values:
+          project_or_asset: DELTA / RIVER lines
+          status: commercial products
+          public_evidence: official pages and profile
+          diligence_gap: SKU margin, warranty reserve, lifecycle plan
+        evidence_claim_ids: *a23
+        source_ids: *a24
+      - row_id: T-012-R03
+        values:
+          project_or_asset: Patents and trademarks
+          status: not fully enumerated in public record reviewed
+          public_evidence: company about page references patents without complete schedule
+          diligence_gap: patent list, assignments, freedom-to-operate
+        evidence_claim_ids: *a23
+        source_ids: *a24
+    evidence_claim_ids: *a23
+    source_ids: *a24
+    notes: null
+  - table_id: T-013
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Capture public management facts.
+    columns:
+      - name: name_or_role
+        description: name or role
+      - name: public_role
+        description: public role
+      - name: source
+        description: source
+      - name: diligence_gap
+        description: diligence gap
+    rows:
+      - row_id: T-013-R01
+        values:
+          name_or_role: Bruce (Lei) Wang
+          public_role: founder identified by Battery-Tech profile
+          source: Battery-Tech
+          diligence_gap: verify current title, board role, employment agreement
+        evidence_claim_ids: &a25
+          - EC-002
+          - EC-010
+        source_ids: &a26
+          - SRC-002
+          - SRC-005
+      - row_id: T-013-R02
+        values:
+          name_or_role: Battery engineering founding team
+          public_role: company states founded by group of battery engineers
+          source: EcoFlow about page
+          diligence_gap: current leadership roster and retention
+        evidence_claim_ids: *a25
+        source_ids: *a26
+      - row_id: T-013-R03
+        values:
+          name_or_role: U.S./regional leadership
+          public_role: not fully public in reviewed sources
+          source: public sources
+          diligence_gap: regional org chart and compliance owner
+        evidence_claim_ids: *a25
+        source_ids: *a26
+    evidence_claim_ids: *a25
+    source_ids: *a26
+    notes: null
+  - table_id: T-014
+    title: Headcount, hiring, and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Identify personnel data gaps.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: risk
+        description: risk
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-014-R01
+        values:
+          metric: Headcount by function
+          public_signal: not disclosed in reviewed public sources
+          risk: R&D/support scale hard to evaluate
+          diligence_request: historical and projected headcount by geography/function
+        evidence_claim_ids: &a27
+          - EC-008
+          - EC-010
+        source_ids: &a28
+          - SRC-008
+      - row_id: T-014-R02
+        values:
+          metric: Turnover
+          public_signal: not disclosed
+          risk: hardware QA and firmware execution depend on engineering retention
+          diligence_request: voluntary/involuntary attrition and key-person plan
+        evidence_claim_ids: *a27
+        source_ids: *a28
+      - row_id: T-014-R03
+        values:
+          metric: Support capacity
+          public_signal: recall page lists customer-service workflow
+          risk: recall support burden may stress operations
+          diligence_request: support SLA, backlog, warranty staffing
+        evidence_claim_ids: *a27
+        source_ids: *a28
+    evidence_claim_ids: *a27
+    source_ids: *a28
+    notes: null
+  - table_id: T-015
+    title: Pending lawsuits and public legal matters
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Separate public legal findings from gaps.
+    columns:
+      - name: matter
+        description: matter
+      - name: public_status
+        description: public status
+      - name: source
+        description: source
+      - name: diligence_action
+        description: diligence action
+    rows:
+      - row_id: T-015-R01
+        values:
+          matter: Delta Max 2000 CPSC recall
+          public_status: regulatory recall / corrective action
+          source: CPSC and EcoFlow
+          diligence_action: review incident logs, injury/property claims, reserve and insurer correspondence
+        evidence_claim_ids: &a29
+          - EC-007
+          - EC-008
+          - EC-012
+        source_ids: &a30
+          - SRC-007
+          - SRC-008
+      - row_id: T-015-R02
+        values:
+          matter: Pending lawsuits against company
+          public_status: not established from reviewed public sources
+          source: public web search limitations
+          diligence_action: counsel docket search in U.S., China, EU and marketplace jurisdictions
+        evidence_claim_ids: *a29
+        source_ids: *a30
+      - row_id: T-015-R03
+        values:
+          matter: Company-initiated litigation
+          public_status: not established from reviewed public sources
+          source: public web search limitations
+          diligence_action: request litigation schedule from counsel
+        evidence_claim_ids: *a29
+        source_ids: *a30
+    evidence_claim_ids: *a29
+    source_ids: *a30
+    notes: null
+  - table_id: T-016
+    title: IP, regulatory, and insurance summary
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Summarize legal/regulatory diligence.
+    columns:
+      - name: category
+        description: category
+      - name: public_evidence
+        description: public evidence
+      - name: risk
+        description: risk
+      - name: requested_record
+        description: requested record
+    rows:
+      - row_id: T-016-R01
+        values:
+          category: Product safety
+          public_evidence: CPSC recall and official firmware update
+          risk: fire/burn/property-damage exposure
+          requested_record: recall file, corrective action plan, reserves, insurance notices
+        evidence_claim_ids: &a31
+          - EC-007
+          - EC-008
+          - EC-012
+        source_ids: &a32
+          - SRC-007
+          - SRC-008
+          - SRC-009
+      - row_id: T-016-R02
+        values:
+          category: IP
+          public_evidence: product families and patent references but no complete IP schedule
+          risk: ownership/FTO gaps
+          requested_record: patent/trademark assignments and licenses
+        evidence_claim_ids: *a31
+        source_ids: *a32
+      - row_id: T-016-R03
+        values:
+          category: Privacy/security
+          public_evidence: privacy policy public; detailed certifications not public
+          risk: connected-device and app data exposure
+          requested_record: security certifications, DPIAs, incident history
+        evidence_claim_ids: *a31
+        source_ids: *a32
+    evidence_claim_ids: *a31
+    source_ids: *a32
+    notes: null
+figures:
+  - figure_id: F-001
+    title: EcoFlow funding and product timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: EcoFlow funding and product timeline
+    purpose: Place public events in chronological diligence context.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E1
+          date: "2017"
+          label: Founded
+          description: EcoFlow publicly traces origin to battery engineers in 2017.
+          category: null
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - event_id: F-001-E2
+          date: 2021-06-10
+          label: Unicorn financing
+          description: CB Insights lists EcoFlow as a $1B unicorn; public profiles describe over/about $100M Series B.
+          category: null
+          evidence_claim_ids:
+            - EC-001
+            - EC-003
+          source_ids:
+            - SRC-001
+            - SRC-005
+            - SRC-006
+        - event_id: F-001-E3
+          date: 2025-10-09
+          label: CPSC recall
+          description: Delta Max 2000 recall announced.
+          category: null
+          evidence_claim_ids:
+            - EC-007
+            - EC-008
+          source_ids:
+            - SRC-007
+            - SRC-008
+      start_date: "2017"
+      end_date: 2025-10-09
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-007
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-007
+    notes: null
+  - figure_id: F-002
+    title: EcoFlow public valuation/revenue anchors
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Public monetary anchors from 2021; later audited financials are unavailable.
+    purpose: Quantitatively frame public evidence and diligence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Category or date
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: null
+        scale: linear
+      series:
+        - series_id: F-002-S1
+          name: EcoFlow public valuation/revenue anchors
+          unit: null
+          data_points:
+            - x: 2021 revenue
+              y: 200
+              label: USD millions, public PR source
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-006
+            - x: 2021 Series B
+              y: 100
+              label: USD millions raised, approximate
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-005
+                - SRC-006
+            - x: 2021 valuation
+              y: 1000
+              label: USD millions valuation
+              evidence_claim_ids:
+                - EC-001
+                - EC-003
+              source_ids:
+                - SRC-001
+                - SRC-005
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-006
+    notes: null
+  - figure_id: F-003
+    title: EcoFlow public product architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: EcoFlow public product architecture
+    purpose: Show product and operating dependencies visible from public sources.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: consumer
+          label: Consumer/prosumer
+          node_type: user
+          description: Home, outdoor, RV, emergency users
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-003
+        - node_id: portable
+          label: DELTA/RIVER portable stations
+          node_type: product
+          description: Portable battery products
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-004
+            - SRC-005
+        - node_id: home
+          label: OCEAN home battery
+          node_type: product
+          description: Home energy storage and circuit control
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - node_id: app
+          label: App/firmware layer
+          node_type: service
+          description: Monitoring and firmware updates
+          evidence_claim_ids:
+            - EC-008
+            - EC-012
+          source_ids:
+            - SRC-008
+            - SRC-009
+      edges:
+        - edge_id: E1
+          from_node_id: consumer
+          to_node_id: portable
+          relationship: uses
+          data_or_dependency: power storage
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-004
+        - edge_id: E2
+          from_node_id: consumer
+          to_node_id: home
+          relationship: uses
+          data_or_dependency: home backup
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - edge_id: E3
+          from_node_id: app
+          to_node_id: portable
+          relationship: updates
+          data_or_dependency: firmware recall/update path
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+      boundaries:
+        - boundary_id: F-003-B1
+          label: Publicly described platform boundary
+          node_ids:
+            - consumer
+            - portable
+            - home
+            - app
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-008
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-008
+    notes: null
+  - figure_id: F-004
+    title: EcoFlow public customer-signal bars
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Only aggregate user/market signals are public; revenue concentration remains private.
+    purpose: Quantitatively frame public evidence and diligence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Category or date
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: null
+        scale: linear
+      series:
+        - series_id: F-004-S1
+          name: EcoFlow public customer-signal bars
+          unit: null
+          data_points:
+            - x: Users disclosed
+              y: 5
+              label: 5+ million users
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-003
+            - x: Markets disclosed
+              y: 85
+              label: 85+ markets
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-006
+            - x: Top customers disclosed
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-006
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-004
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-003
+      - SRC-006
+    notes: null
+  - figure_id: F-005
+    title: Portable-power competitive map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Portable-power competitive map
+    purpose: Position target and relevant competitors using public product overlap.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: Focused
+          high_label: Broad
+        y_axis:
+          label: Customer segment
+          low_label: Consumer/SMB
+          high_label: Enterprise/infrastructure
+      segments:
+        - segment_id: core
+          name: Core market
+          description: Primary competitive set
+      entities:
+        - entity_id: ecoflow
+          name: EcoFlow
+          entity_type: target_company
+          segment_id: core
+          x_value: 8
+          y_value: 5
+          attributes:
+            position: portable plus home energy
+          evidence_claim_ids:
+            - EC-005
+            - EC-011
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - entity_id: anker
+          name: Anker
+          entity_type: competitor
+          segment_id: core
+          x_value: 7
+          y_value: 4
+          attributes:
+            position: consumer power electronics
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        - entity_id: jackery
+          name: Jackery
+          entity_type: competitor
+          segment_id: core
+          x_value: 5
+          y_value: 3
+          attributes:
+            position: portable power
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+        - entity_id: generac
+          name: Generac
+          entity_type: competitor
+          segment_id: core
+          x_value: 8
+          y_value: 8
+          attributes:
+            position: home backup
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-010
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-011
+    source_ids:
+      - SRC-010
+    notes: null
+  - figure_id: F-006
+    title: EcoFlow GTM public channel evidence
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public channel evidence is qualitative; bars indicate observed channel presence count.
+    purpose: Quantitatively frame public evidence and diligence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Category or date
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: null
+        scale: linear
+      series:
+        - series_id: F-006-S1
+          name: EcoFlow GTM public channel evidence
+          unit: null
+          data_points:
+            - x: Direct
+              y: 1
+              label: EcoFlow.com
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-003
+            - x: Marketplace/retail
+              y: 3
+              label: Costco, Amazon, EcoFlow.com named in recall sales period
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-008
+            - x: International markets
+              y: 85
+              label: 85+ markets cited in 2021
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-006
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-008
+      - EC-009
+    source_ids:
+      - SRC-006
+      - SRC-008
+    notes: null
+  - figure_id: F-007
+    title: EcoFlow R&D and firmware dependency map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: EcoFlow R&D and firmware dependency map
+    purpose: Show product and operating dependencies visible from public sources.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: battery
+          label: Battery engineering
+          node_type: service
+          description: founding and core R&D competence
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+            - SRC-005
+        - node_id: firmware
+          label: Firmware update process
+          node_type: service
+          description: recall remedy path
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - node_id: qa
+          label: Product safety QA
+          node_type: other
+          description: private controls required
+          evidence_claim_ids:
+            - EC-007
+            - EC-012
+          source_ids:
+            - SRC-007
+            - SRC-008
+      edges:
+        - edge_id: E1
+          from_node_id: battery
+          to_node_id: qa
+          relationship: requires
+          data_or_dependency: validation records
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-008
+        - edge_id: E2
+          from_node_id: firmware
+          to_node_id: qa
+          relationship: mitigates
+          data_or_dependency: firmware repair evidence
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+      boundaries:
+        - boundary_id: F-007-B1
+          label: Publicly described platform boundary
+          node_ids:
+            - battery
+            - firmware
+            - qa
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-008
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-008
+    notes: null
+  - figure_id: F-008
+    title: EcoFlow public leadership org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: EcoFlow public leadership org chart
+    purpose: Summarize publicly identified leadership and functional roles.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: founder
+          name: Bruce (Lei) Wang
+          role: Founder / leadership signal from public profile
+          department: Executive
+          location: Shenzhen / global
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-005
+        - node_id: eng
+          name: null
+          role: Battery engineering and product R&D
+          department: R&D
+          location: not fully disclosed
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - node_id: support
+          name: null
+          role: Recall and customer support
+          department: Operations
+          location: United States support workflow public
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+      reporting_lines: []
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-008
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-008
+    notes: Reporting lines are not fully public.
+  - figure_id: F-009
+    title: EcoFlow public headcount evidence gap
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Headcount anchors were not public in reviewed sources.
+    purpose: Quantitatively frame public evidence and diligence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Category or date
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Value
+        unit: null
+        scale: linear
+      series:
+        - series_id: F-009-S1
+          name: EcoFlow public headcount evidence gap
+          unit: null
+          data_points:
+            - x: 2017 founding team
+              y: null
+              label: group of battery engineers; count not disclosed
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: 2021 global markets
+              y: 85
+              label: markets served; not headcount
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-006
+            - x: 2026 headcount
+              y: null
+              label: not publicly disclosed in reviewed sources
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-006
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-009
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: null
+  - figure_id: F-010
+    title: EcoFlow legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: timeline
+    description: EcoFlow legal and regulatory timeline
+    purpose: Place public events in chronological diligence context.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-010-E1
+          date: "2017"
+          label: Company formation period
+          description: Founding origin from official/profile sources.
+          category: null
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+            - SRC-005
+        - event_id: F-010-E2
+          date: 2025-10-09
+          label: CPSC recall announced
+          description: Delta Max 2000 recall for serious burn and fire hazard.
+          category: null
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-007
+        - event_id: F-010-E3
+          date: 2025-10-09
+          label: Firmware remediation published
+          description: EcoFlow publishes firmware repair instructions and unit scope.
+          category: null
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+      start_date: "2017"
+      end_date: 2025-10-09
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+      - EC-008
+    source_ids:
+      - SRC-002
+      - SRC-007
+      - SRC-008
+    notes: null
+  - figure_id: F-011
+    title: EcoFlow risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk severity and likelihood across the diligence register.
+    purpose: Prioritize follow-up diligence.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Delta Max recall and battery safety exposure
+          severity: high
+          likelihood: high
+          rationale: Public CPSC and company recall evidence shows a safety issue in a sold power-station model; broader quality controls require diligence.
+          evidence_claim_ids: &a34
+            - EC-007
+            - EC-008
+          source_ids: &a33
+            - SRC-001
+            - SRC-007
+            - SRC-008
+        - risk_id: R-002
+          label: Hardware revenue and margin cyclicality
+          severity: high
+          likelihood: medium
+          rationale: Consumer hardware and energy-storage sales may be volatile; public financials after 2021 are not audited or current.
+          evidence_claim_ids: &a35
+            - EC-003
+            - EC-010
+          source_ids: *a33
+        - risk_id: R-003
+          label: Battery supply-chain and manufacturing dependency
+          severity: high
+          likelihood: medium
+          rationale: Battery cells, electronics, logistics, and contract manufacturing can create supplier concentration and quality risks.
+          evidence_claim_ids: &a36
+            - EC-002
+            - EC-005
+          source_ids: *a33
+        - risk_id: R-004
+          label: China/U.S. regulatory and IPO uncertainty
+          severity: medium
+          likelihood: medium
+          rationale: Public reports reference possible IPO planning and global operations; export, consumer-safety, data, and listing rules may affect growth.
+          evidence_claim_ids: &a37
+            - EC-001
+            - EC-007
+          source_ids: *a33
+        - risk_id: R-005
+          label: Customer and channel concentration not public
+          severity: medium
+          likelihood: unknown
+          rationale: User counts are public, but revenue concentration by channel, marketplace, distributor, or retailer is not public.
+          evidence_claim_ids: &a38
+            - EC-004
+            - EC-010
+          source_ids: *a33
+        - risk_id: R-006
+          label: Intense price and product competition
+          severity: medium
+          likelihood: high
+          rationale: Portable power and home battery markets include well-funded consumer-electronics and energy competitors.
+          evidence_claim_ids: &a39
+            - EC-005
+            - EC-011
+          source_ids: *a33
+        - risk_id: R-007
+          label: Cap table, debt, and ownership opacity
+          severity: medium
+          likelihood: unknown
+          rationale: Investors and valuation are public, but detailed ownership, debt, liquidation preferences, and option pools are not.
+          evidence_claim_ids: &a40
+            - EC-001
+            - EC-006
+          source_ids: *a33
+        - risk_id: R-008
+          label: Connected-device privacy and firmware execution risk
+          severity: medium
+          likelihood: medium
+          rationale: App-enabled energy products and firmware-based recall remediation create cybersecurity, privacy, and update-compliance exposure.
+          evidence_claim_ids: &a41
+            - EC-008
+            - EC-012
+          source_ids: *a33
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-007
+      - EC-008
+      - EC-010
+    source_ids: *a33
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists EcoFlow as a China/Shenzhen Industrials unicorn at $1 billion valuation with a 2021-06-10 join date.
+    evidence_summary: EcoFlow $1 6/10/2021 China Shenzhen Industrials Delian Capital, China International Capital Corporation, Sequoia Capital China
+    evidence_type: market_database
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: EcoFlow $1 6/10/2021 China Shenzhen Industrials Delian Capital, China International Capital Corporation, Sequoia Capital China
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-004
+        - R-007
+  - evidence_claim_id: EC-002
+    claim: EcoFlow publicly describes itself as founded in 2017 by battery engineers and focused on portable power, solar technology, and smart home energy.
+    evidence_summary: EcoFlow says it was born out of the dream of a group of battery engineers in 2017 and offers portable power, solar technology, and smart home energy solutions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: EcoFlow says it was born out of the dream of a group of battery engineers in 2017 and offers portable power, solar technology, and smart home energy solutions.
+        location: null
+      - source_id: SRC-005
+        quote: EcoFlow says it was born out of the dream of a group of battery engineers in 2017 and offers portable power, solar technology, and smart home energy solutions.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-003
+    claim: Public news/PR sources state EcoFlow reached $200 million annual revenue in 2021 and raised over $100 million Series B at over/about $1 billion valuation.
+    evidence_summary: Article says EcoFlow reached $200 million annual revenue in 2021, raised over $100 million Series B, and served customers in over 85 markets.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Article says EcoFlow reached $200 million annual revenue in 2021, raised over $100 million Series B, and served customers in over 85 markets.
+        location: null
+      - source_id: SRC-006
+        quote: Article says EcoFlow reached $200 million annual revenue in 2021, raised over $100 million Series B, and served customers in over 85 markets.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-004
+    claim: EcoFlow claims more than 5 million users trust the company.
+    evidence_summary: EcoFlow homepage states 5+ million users trust EcoFlow and describes OCEAN Pro home battery specifications.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: EcoFlow homepage states 5+ million users trust EcoFlow and describes OCEAN Pro home battery specifications.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-005
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-005
+    claim: EcoFlow public product pages describe DELTA portable power, OCEAN home battery, solar input, and device-control functionality.
+    evidence_summary: EcoFlow DELTA page describes 1.2kWh capacity, solar charging, powering up to 13 devices, and emergency power in less than 30 milliseconds when in standby.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: EcoFlow DELTA page describes 1.2kWh capacity, solar charging, powering up to 13 devices, and emergency power in less than 30 milliseconds when in standby.
+        location: null
+      - source_id: SRC-003
+        quote: EcoFlow DELTA page describes 1.2kWh capacity, solar charging, powering up to 13 devices, and emergency power in less than 30 milliseconds when in standby.
+        location: null
+      - source_id: SRC-004
+        quote: EcoFlow DELTA page describes 1.2kWh capacity, solar charging, powering up to 13 devices, and emergency power in less than 30 milliseconds when in standby.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-003
+        - T-004
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+        - R-006
+  - evidence_claim_id: EC-006
+    claim: EcoFlow investor names and valuation are public, but detailed cap table, debt, and ownership terms are not publicly disclosed.
+    evidence_summary: Battery-Tech notes detailed ownership and cap table data are not publicly disclosed.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-001
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Battery-Tech notes detailed ownership and cap table data are not publicly disclosed.
+        location: null
+      - source_id: SRC-005
+        quote: Battery-Tech notes detailed ownership and cap table data are not publicly disclosed.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-007
+    claim: CPSC announced a Delta Max 2000 recall for serious burn injury and fire hazard.
+    evidence_summary: CPSC page states EcoFlow Technology recalled Delta Max 2000 power stations due to risk of serious burn injury and fire hazard.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: CPSC page states EcoFlow Technology recalled Delta Max 2000 power stations due to risk of serious burn injury and fire hazard.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+        - T-016
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-008
+    claim: EcoFlow says the Delta Max 2000 recall covers about 25,032 U.S. units and is resolved through a firmware update.
+    evidence_summary: EcoFlow says about 25,032 Delta Max 2000 units sold in the United States between July 2022 and May 2025 are subject to a firmware repair recall.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: EcoFlow says about 25,032 Delta Max 2000 units sold in the United States between July 2022 and May 2025 are subject to a firmware repair recall.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-001
+        - R-008
+  - evidence_claim_id: EC-009
+    claim: Public company/news sources state EcoFlow sells into over 85 markets and has a broad consumer/prosumer footprint.
+    evidence_summary: Article says EcoFlow reached $200 million annual revenue in 2021, raised over $100 million Series B, and served customers in over 85 markets.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Article says EcoFlow reached $200 million annual revenue in 2021, raised over $100 million Series B, and served customers in over 85 markets.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids:
+        - T-005
+        - T-009
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-010
+    claim: Audited financial statements, customer concentration, channel economics, AR aging, and backlog were not public.
+    evidence_summary: No audited statements or customer-level revenue schedules were available from public sources.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-001
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: No audited statements or customer-level revenue schedules were available from public sources.
+        location: null
+      - source_id: SRC-006
+        quote: No audited statements or customer-level revenue schedules were available from public sources.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-002
+        - R-005
+  - evidence_claim_id: EC-011
+    claim: EcoFlow cites Frost & Sullivan research ranking it No. 1 globally among smart home energy storage solution brands by 2024 sales.
+    evidence_summary: EcoFlow says it was born out of the dream of a group of battery engineers in 2017 and offers portable power, solar technology, and smart home energy solutions.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: EcoFlow says it was born out of the dream of a group of battery engineers in 2017 and offers portable power, solar technology, and smart home energy solutions.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-012
+    claim: EcoFlow publishes privacy material, but detailed security certifications, firmware governance, patent schedules, and insurance coverage were not public.
+    evidence_summary: Public privacy and recall pages do not provide a complete security, IP, or insurance file.
+    evidence_type: primary_company_source
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-009
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: Public privacy and recall pages do not provide a complete security, IP, or insurance file.
+        location: null
+      - source_id: SRC-008
+        quote: Public privacy and recall pages do not provide a complete security, IP, or insurance file.
+        location: null
+    analyst_interpretation: Used as public-source evidence; private records are still required for audited diligence.
+    limitations: Public-source evidence does not replace private company records or direct confirmations.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids:
+        - T-012
+        - T-016
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-008
+sources:
+  - source_id: SRC-001
+    title: CB Insights - The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    source_type: market_database
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-002
+    title: EcoFlow About Us
+    url: https://www.ecoflow.com/us/about-us
+    publisher: EcoFlow
+    author: null
+    publication_date: null
+    source_type: primary_company_source
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-003
+    title: EcoFlow US homepage
+    url: https://www.ecoflow.com/us
+    publisher: EcoFlow
+    author: null
+    publication_date: null
+    source_type: primary_company_source
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-004
+    title: EcoFlow DELTA portable power station page
+    url: https://www.ecoflow.com/us/delta-portable-power-station
+    publisher: EcoFlow
+    author: null
+    publication_date: null
+    source_type: primary_company_source
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-005
+    title: "Battery-Tech company profile: EcoFlow Technology Inc."
+    url: https://battery-tech.net/company/ecoflow-technology-inc/
+    publisher: Battery-Tech Network
+    author: null
+    publication_date: null
+    source_type: analyst_estimate
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-006
+    title: EcoFlow triples sales for second consecutive year in 2021
+    url: https://techtography.com/ecoflow-triples-sales-for-the-2nd-consecutive-year-in-2021/
+    publisher: Techtography / PRNewswire
+    author: null
+    publication_date: null
+    source_type: independent_news
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-007
+    title: "CPSC recall: EcoFlow Delta Max 2000"
+    url: https://www.cpsc.gov/Recalls/2026/EcoFlow-Technology-Recalls-Delta-Max-2000-Power-Stations-Due-to-Risk-of-Serious-Burn-Injury-and-Fire-Hazard
+    publisher: U.S. Consumer Product Safety Commission
+    author: null
+    publication_date: null
+    source_type: regulatory_filing
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-008
+    title: EcoFlow recall firmware update page
+    url: https://www.ecoflow.com/us/blog/ecoflow-delta-max-2000-recall-firmware-update
+    publisher: EcoFlow
+    author: null
+    publication_date: null
+    source_type: primary_company_source
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-009
+    title: EcoFlow privacy policy
+    url: https://www.ecoflow.com/us/privacy-policy
+    publisher: EcoFlow
+    author: null
+    publication_date: null
+    source_type: primary_company_source
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+  - source_id: SRC-010
+    title: DuckDuckGo search results for EcoFlow competitors
+    url: https://html.duckduckgo.com/html/?q=EcoFlow%20competitors%20Anker%20Jackery%20Bluetti%20portable%20power%20station
+    publisher: DuckDuckGo
+    author: null
+    publication_date: null
+    source_type: other
+    reliability_notes: Public source fetched during this diligence run; not independently audited.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Delta Max recall and battery safety exposure
+    risk_category: product
+    severity: high
+    likelihood: high
+    description: Public CPSC and company recall evidence shows a safety issue in a sold power-station model; broader quality controls require diligence.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.G
+    evidence_claim_ids: *a34
+    mitigation_or_diligence_request: Request recall root-cause analysis, incident logs, warranty reserves, and product-safety QA records.
+  - risk_id: R-002
+    risk_title: Hardware revenue and margin cyclicality
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Consumer hardware and energy-storage sales may be volatile; public financials after 2021 are not audited or current.
+    impacted_chapter_ids:
+      - I
+      - V
+    impacted_section_ids:
+      - I.A
+      - V.A
+    evidence_claim_ids: *a35
+    mitigation_or_diligence_request: Request audited statements, gross margin by SKU, channel sell-through, warranty costs, and returns.
+  - risk_id: R-003
+    risk_title: Battery supply-chain and manufacturing dependency
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: Battery cells, electronics, logistics, and contract manufacturing can create supplier concentration and quality risks.
+    impacted_chapter_ids:
+      - III
+      - VI
+    impacted_section_ids:
+      - III.E
+      - VI.B
+    evidence_claim_ids: *a36
+    mitigation_or_diligence_request: Request supplier concentration, cell sourcing, manufacturing QA, and contingency plans.
+  - risk_id: R-004
+    risk_title: China/U.S. regulatory and IPO uncertainty
+    risk_category: regulatory
+    severity: medium
+    likelihood: medium
+    description: Public reports reference possible IPO planning and global operations; export, consumer-safety, data, and listing rules may affect growth.
+    impacted_chapter_ids:
+      - I
+      - VIII
+    impacted_section_ids:
+      - I.C
+      - VIII.G
+    evidence_claim_ids: *a37
+    mitigation_or_diligence_request: Request legal memo on listing plans, entity structure, cross-border data, sanctions/export controls, and consumer-safety compliance.
+  - risk_id: R-005
+    risk_title: Customer and channel concentration not public
+    risk_category: customer
+    severity: medium
+    likelihood: unknown
+    description: User counts are public, but revenue concentration by channel, marketplace, distributor, or retailer is not public.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.C
+      - V.B
+    evidence_claim_ids: *a38
+    mitigation_or_diligence_request: Request top-customer/channel revenue, marketplace dependence, distributor terms, and churn/return rates.
+  - risk_id: R-006
+    risk_title: Intense price and product competition
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Portable power and home battery markets include well-funded consumer-electronics and energy competitors.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+    evidence_claim_ids: *a39
+    mitigation_or_diligence_request: Benchmark pricing, battery chemistry, warranty, channel incentives, and product roadmap against Anker, Jackery, Bluetti, Goal Zero, and Generac.
+  - risk_id: R-007
+    risk_title: Cap table, debt, and ownership opacity
+    risk_category: financing
+    severity: medium
+    likelihood: unknown
+    description: Investors and valuation are public, but detailed ownership, debt, liquidation preferences, and option pools are not.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+    evidence_claim_ids: *a40
+    mitigation_or_diligence_request: Request capitalization table, debt schedule, SAFEs/notes, option pool, and investor rights.
+  - risk_id: R-008
+    risk_title: Connected-device privacy and firmware execution risk
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: App-enabled energy products and firmware-based recall remediation create cybersecurity, privacy, and update-compliance exposure.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.B
+      - VIII.C
+    evidence_claim_ids: *a41
+    mitigation_or_diligence_request: Request security certifications, firmware update telemetry, vulnerability disclosure records, and privacy impact assessments.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, management reports, cap table, debt, AR aging, backlog, and revenue by SKU/channel.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide audited financials, full cap table, debt schedule, revenue bridge, gross-margin by SKU/channel, AR aging, and backlog.
+    priority: high
+  - gap_id: G-002
+    chapter_id: II
+    section_id: II.A
+    missing_information: Product reliability, warranty, certification, and gross-margin data by SKU.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide SKU roadmap, reliability metrics, warranty reserve, product certifications, and recall design-control evidence.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Top customers, distributors, marketplaces, churn, repeat purchase, and revenue concentration.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide top customer/channel revenue, marketplace contracts, supplier concentration, churn, and return rates.
+    priority: high
+  - gap_id: G-004
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Win/loss data, price-performance benchmark, market-share methodology, and competitor margin comparison.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide win/loss reports, competitor price tracking, market-share source data, and customer survey evidence.
+    priority: medium
+  - gap_id: G-005
+    chapter_id: V
+    section_id: V.A
+    missing_information: CAC, channel margin, retailer contracts, funnel conversion, promotions, and geographic revenue.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide CAC, funnel, marketing spend, channel contracts, sales productivity, and international expansion plan.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: R&D budget, roadmap, patent assignments, firmware security process, and QA validation.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide R&D budget, current org chart, patent schedule, firmware security controls, and QA test evidence.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Org chart, headcount, compensation, turnover, retention, and key-person plans.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide management bios, org chart, headcount history/projections, compensation plans, and turnover data.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Litigation schedule, recall file, insurance, product-liability reserves, regulatory correspondence, and IP schedule.
+    why_it_matters: This item is needed to convert public-source diligence into transaction-grade diligence.
+    suggested_source_or_request: Provide counsel litigation schedule, CPSC recall correspondence, insurance policies, claims/reserves, IP assignments, and regulatory compliance memos.
+    priority: medium
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, full cap table, debt schedule, revenue bridge, gross-margin by SKU/channel, AR aging, and backlog.
+    requested_from: founder
+    priority: high
+  - request_id: Q-002
+    chapter_id: II
+    section_id: II.A
+    request: Provide SKU roadmap, reliability metrics, warranty reserve, product certifications, and recall design-control evidence.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide top customer/channel revenue, marketplace contracts, supplier concentration, churn, and return rates.
+    requested_from: customer
+    priority: high
+  - request_id: Q-004
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide win/loss reports, competitor price tracking, market-share source data, and customer survey evidence.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: V
+    section_id: V.A
+    request: Provide CAC, funnel, marketing spend, channel contracts, sales productivity, and international expansion plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide R&D budget, current org chart, patent schedule, firmware security controls, and QA test evidence.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide management bios, org chart, headcount history/projections, compensation plans, and turnover data.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide counsel litigation schedule, CPSC recall correspondence, insurance policies, claims/reserves, IP assignments, and regulatory compliance memos.
+    requested_from: counsel
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: No private data-room records, customer calls, supplier confirmations, cap table, audited financials, or board materials were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.A
+      - III.C
+      - VII.B
+      - VIII.F
+  - limitation_id: L-002
+    description: Search-result snippets and company-authored pages were used where official filings or direct registries were unavailable; those sources require independent confirmation.
+    affected_chapter_ids:
+      - I
+      - IV
+      - VIII
+    affected_section_ids:
+      - I.D
+      - IV.A
+      - VIII.G
