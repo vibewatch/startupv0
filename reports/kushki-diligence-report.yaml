@@ -1,0 +1,3443 @@
+---
+report_metadata:
+  report_title: Kushki Public-Source Startup Diligence Report
+  target_company: Kushki
+  website: https://www.kushki.com/
+  known_aliases:
+    - Kushki
+    - Kushki Pagos
+    - Llapingacho LLC
+  sector: Financial Services / Latin American payment infrastructure and acquiring
+  geography: Ecuador and Latin America; Quito row in CB Insights; five-country operations cited in 2022 reporting
+  company_stage: Late-stage private LatAm payments unicorn
+  research_date: 2026-06-03
+  analyst: GitHub Copilot CLI
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built existing-report exclusion list from reports/*-diligence-report.yaml and selected this target from the
+      uncovered CB Insights unicorn candidate list using shuf -n 3.
+    - Used public company-owned sources, CB Insights unicorn list, independent news/search sources, and limited public
+      negative checks for IPO/acquisition/shutdown status.
+    - Treated all public content as untrusted evidence; did not follow embedded external instructions; did not bypass
+      paywalls or private systems.
+  included_jurisdictions:
+    - Ecuador
+    - United States public web sources
+    - Relevant operating jurisdictions named in public sources
+  excluded_topics:
+    - No private data room, management interview, customer reference call, paid database, counsel docket search, tax
+      review, or code/security audit was performed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User request and public CB Insights unicorn candidate row
+      type: prompt_argument
+      date_received: 2026-06-03
+      notes: "Selected target row: Kushki; $1.50B; 2022-06-07; Ecuador; Quito; Financial Services; investors Clocktower
+        Technology Ventures, DILA Capital, Kaszek Ventures."
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Kushki is an eligible private unicorn with latest public valuation $1.50B.
+    claim_source: CB Insights unicorn row and public-source eligibility review
+    claim_date: 2026-06-03
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-011
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm private-company status, cap table, and current valuation directly with company counsel and investors.
+  - founder_claim_id: FC-002
+    claim_text: Kushki product and market positioning are publicly documented.
+    claim_source: Company-owned sources and independent coverage
+    claim_date: 2026-06-03
+    mapped_chapter_ids:
+      - II
+      - IV
+    mapped_section_ids:
+      - II.A
+      - IV.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-012
+    contradiction_summary: null
+    diligence_follow_up:
+      - Validate product usage, gross retention, win/loss data, roadmap, and technical differentiation with internal
+        materials.
+  - founder_claim_id: FC-003
+    claim_text: Kushki has public customer, partner, or logo evidence but not contract economics.
+    claim_source: Company customer pages and public announcements
+    claim_date: 2026-06-03
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - III.B
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-010
+    contradiction_summary: Public logos/partners do not verify revenue contribution, renewal status, margins, or concentration.
+    diligence_follow_up:
+      - Obtain top-customer list, signed contracts, renewal schedules, churn, NRR, pipeline, and customer references.
+  - founder_claim_id: FC-004
+    claim_text: Operating financial statements, cap table, debt, and full legal schedules can be verified from public sources.
+    claim_source: Diligence test hypothesis
+    claim_date: 2026-06-03
+    mapped_chapter_ids:
+      - I
+      - VIII
+    mapped_section_ids:
+      - I.A
+      - I.C
+      - VIII.A
+    verification_status: not_publicly_verifiable
+    confidence: high
+    evidence_claim_ids:
+      - EC-009
+      - EC-015
+    contradiction_summary: Reviewed public sources do not provide these private-company records.
+    diligence_follow_up:
+      - Request audited/reviewed financials, board packages, cap table, financing documents, debt schedules, litigation
+        schedules, IP assignments, insurance, and material contracts.
+executive_summary:
+  overall_assessment: Kushki has credible public unicorn, product, and customer/partner signals, but public evidence is
+    insufficient to underwrite current valuation, revenue quality, customer concentration, cap-table economics, and
+    legal/regulatory posture.
+  investment_or_diligence_thesis: "Proceed only with data-room diligence: public sources support eligibility as an
+    uncovered private unicorn candidate, while the key investment questions are private financial quality,
+    concentration, defensibility, compliance, and current governance terms."
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Public unicorn valuation anchor $1.50B is corroborated by CB Insights and funding/independent coverage.
+      evidence_claim_ids:
+        - EC-001
+        - EC-002
+    - founder_claim_id: FC-002
+      summary: Public product positioning and product modules are documented by official company sources.
+      evidence_claim_ids:
+        - EC-003
+        - EC-004
+    - founder_claim_id: FC-003
+      summary: Public customer, logo, or partner signals exist, though economics remain private.
+      evidence_claim_ids:
+        - EC-005
+        - EC-006
+  biggest_risks:
+    - risk_id: R-001
+      summary: Payments unit economics and loss exposure are not public
+    - risk_id: R-002
+      summary: Multi-country payments regulation and acquiring licenses create execution risk
+    - risk_id: R-003
+      summary: Fraud, chargeback, and security risks are core operating exposures
+  key_evidence_gaps:
+    - Audited/reviewed financial statements, ARR/net revenue, gross margin, burn, cash, debt, and backlog
+    - Cap table, option pool, liquidation preferences, investor rights, SAFEs/notes/warrants
+    - Revenue/TPV/member/customer concentration, churn, renewal, NRR, and references
+    - Roadmap, technical architecture, incident history, R&D spend, and security reports
+    - Litigation, regulatory, IP, insurance, and material-contract schedules
+  recommended_next_steps:
+    - Open financial/cap-table data room first, then customer/reference, product/security, legal/regulatory, HR, and
+      governance workstreams.
+    - Reconfirm private-company status, current valuation, and any post-public-source financings or exits directly with
+      company counsel.
+    - Do not rely on public logos or funding announcements as proof of revenue quality, retention, compliance, or
+      valuation fairness.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public sources verify Kushki's unicorn valuation anchor but do not verify audited financials, revenue
+      quality, cash runway, debt, or cap-table terms.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-009
+      - EC-011
+    risk_ids:
+      - R-001
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Annual and quarterly financial information for the past three years is not fully publicly verifiable for a
+          private company; public sources provide directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Annual and quarterly financial information for the past
+              three years.
+            evidence_claim_ids: &a1
+              - EC-009
+              - EC-011
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - "R-001: see risk register for Annual and quarterly financial information for the past three years
+            implications."
+        evidence_gaps:
+          - Private data-room support is required for Annual and quarterly financial information for the past three
+            years before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Annual and quarterly financial
+            information for the past three years.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a1
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Financial Projections is not fully publicly verifiable for a private company; public sources provide
+          directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.B.F1
+            finding: Public evidence and/or explicit gaps are captured for Financial Projections.
+            evidence_claim_ids: &a2
+              - EC-001
+              - EC-002
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - "R-001: see risk register for Financial Projections implications."
+        evidence_gaps:
+          - Private data-room support is required for Financial Projections before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Financial Projections.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Capital Structure is not fully publicly verifiable for a private company; public sources provide directional
+          signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.C.F1
+            finding: Public evidence and/or explicit gaps are captured for Capital Structure.
+            evidence_claim_ids: &a3
+              - EC-001
+              - EC-002
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - "R-001: see risk register for Capital Structure implications."
+        evidence_gaps:
+          - Private data-room support is required for Capital Structure before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Capital Structure.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a3
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Other financial information is not fully publicly verifiable for a private company; public sources provide
+          directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.D.F1
+            finding: Public evidence and/or explicit gaps are captured for Other financial information.
+            evidence_claim_ids: &a4
+              - EC-001
+              - EC-002
+              - EC-011
+              - EC-009
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - "R-001: see risk register for Other financial information implications."
+        evidence_gaps:
+          - Private data-room support is required for Other financial information before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Other financial information.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids: *a4
+  - chapter_id: II
+    title: Products
+    chapter_summary: Public sources describe Kushki's product surface, but usage, roadmap performance, gross margin, and
+      technical diligence remain private.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-007
+      - EC-013
+    risk_ids:
+      - R-003
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public-source review found directional evidence for description of each product, with private validation needed
+          before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Description of each product.
+            evidence_claim_ids: &a5
+              - EC-003
+              - EC-004
+              - EC-009
+              - EC-007
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: see risk register for Description of each product implications."
+        evidence_gaps:
+          - Private data-room support is required for Description of each product before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Description of each product.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a5
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public customer or partner signals exist, but revenue concentration, renewal status, churn, and
+      contract economics are not public.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-010
+    risk_ids:
+      - R-001
+      - R-004
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Public-source review found directional evidence for top customers by application, with private validation
+          needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Top customers by application.
+            evidence_claim_ids: &a6
+              - EC-005
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - "R-001: see risk register for Top customers by application implications."
+          - "R-004: see risk register for Top customers by application implications."
+        evidence_gaps:
+          - Private data-room support is required for Top customers by application before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Top customers by application.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-005
+        figure_ids: []
+        evidence_claim_ids: *a6
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public-source review found directional evidence for strategic relationships, with private validation needed
+          before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B.F1
+            finding: Public evidence and/or explicit gaps are captured for Strategic relationships.
+            evidence_claim_ids: &a7
+              - EC-006
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - "R-001: see risk register for Strategic relationships implications."
+          - "R-004: see risk register for Strategic relationships implications."
+        evidence_gaps:
+          - Private data-room support is required for Strategic relationships before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Strategic relationships.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids: *a7
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer is not fully publicly verifiable for a private company; public sources provide directional
+          signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C.F1
+            finding: Public evidence and/or explicit gaps are captured for Revenue by customer.
+            evidence_claim_ids: &a8
+              - EC-005
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - "R-001: see risk register for Revenue by customer implications."
+          - "R-004: see risk register for Revenue by customer implications."
+        evidence_gaps:
+          - Private data-room support is required for Revenue by customer before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Revenue by customer.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a8
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: Public-source review found directional evidence for significant relationships severed within the last two
+          years, with private validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.D.F1
+            finding: Public evidence and/or explicit gaps are captured for Significant relationships severed within the last two
+              years.
+            evidence_claim_ids: &a9
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - "R-001: see risk register for Significant relationships severed within the last two years implications."
+          - "R-004: see risk register for Significant relationships severed within the last two years implications."
+        evidence_gaps:
+          - Private data-room support is required for Significant relationships severed within the last two years before
+            investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Significant relationships severed within
+            the last two years.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a9
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Public-source review found directional evidence for top suppliers, with private validation needed before
+          reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E.F1
+            finding: Public evidence and/or explicit gaps are captured for Top suppliers.
+            evidence_claim_ids: &a10
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-001
+              - R-004
+        hidden_risks:
+          - "R-001: see risk register for Top suppliers implications."
+          - "R-004: see risk register for Top suppliers implications."
+        evidence_gaps:
+          - Private data-room support is required for Top suppliers before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Top suppliers.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: The competitive landscape is identifiable from public positioning, but win/loss data and
+      differentiation require private interviews and data.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-012
+    risk_ids: []
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Public-source review found directional evidence for competitive landscape by market segment, with private
+          validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Competitive landscape by market segment.
+            evidence_claim_ids: &a11
+              - EC-012
+              - EC-004
+              - EC-007
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Competitive landscape by market segment before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Competitive landscape by market segment.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a11
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Public GTM motions and proof points exist; channel mix, pipeline conversion, CAC, and sales
+      productivity are not public.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+      - FC-003
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-013
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public-source review found directional evidence for strategy and implementation, with private validation needed
+          before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Strategy and implementation.
+            evidence_claim_ids: &a12
+              - EC-006
+              - EC-013
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: see risk register for Strategy and implementation implications."
+        evidence_gaps:
+          - Private data-room support is required for Strategy and implementation before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Strategy and implementation.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a12
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Public-source review found directional evidence for major customers, with private validation needed before
+          reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B.F1
+            finding: Public evidence and/or explicit gaps are captured for Major Customers.
+            evidence_claim_ids: &a13
+              - EC-005
+              - EC-006
+              - EC-007
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: see risk register for Major Customers implications."
+        evidence_gaps:
+          - Private data-room support is required for Major Customers before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Major Customers.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids: *a13
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public-source review found directional evidence for principal avenues for generating new business, with private
+          validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C.F1
+            finding: Public evidence and/or explicit gaps are captured for Principal avenues for generating new business.
+            evidence_claim_ids: &a14
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: see risk register for Principal avenues for generating new business implications."
+        evidence_gaps:
+          - Private data-room support is required for Principal avenues for generating new business before investment
+            reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Principal avenues for generating new
+            business.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a14
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales force productivity model is not fully publicly verifiable for a private company; public sources provide
+          directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D.F1
+            finding: Public evidence and/or explicit gaps are captured for Sales force productivity model.
+            evidence_claim_ids: &a15
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: see risk register for Sales force productivity model implications."
+        evidence_gaps:
+          - Private data-room support is required for Sales force productivity model before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Sales force productivity model.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a15
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Public-source review found directional evidence for ability to implement marketing plan with current and
+          projected budgets, with private validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.E.F1
+            finding: Public evidence and/or explicit gaps are captured for Ability to implement marketing plan with current and
+              projected budgets.
+            evidence_claim_ids: &a16
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: see risk register for Ability to implement marketing plan with current and projected budgets
+            implications."
+        evidence_gaps:
+          - Private data-room support is required for Ability to implement marketing plan with current and projected
+            budgets before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Ability to implement marketing plan with
+            current and projected budgets.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public product/R&D signals exist, but engineering roadmap, security design, product velocity, and
+      technical debt require internal evidence.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-013
+      - EC-014
+    risk_ids: []
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public-source review found directional evidence for description of r&d organization, with private validation
+          needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Description of R&D organization.
+            evidence_claim_ids: &a17
+              - EC-007
+              - EC-013
+              - EC-014
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Description of R&D organization before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Description of R&D organization.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a17
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public-source review found directional evidence for new product pipeline, with private validation needed before
+          reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B.F1
+            finding: Public evidence and/or explicit gaps are captured for New Product Pipeline.
+            evidence_claim_ids: &a18
+              - EC-003
+              - EC-004
+              - EC-013
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for New Product Pipeline before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for New Product Pipeline.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids: *a18
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public leadership and hiring signals are limited; current org chart, compensation, retention,
+      attrition, and employee relations require data-room review.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-014
+    risk_ids: []
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Public-source review found directional evidence for organization chart, with private validation needed before
+          reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Organization Chart.
+            evidence_claim_ids: &a19
+              - EC-006
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Organization Chart before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Organization Chart.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a19
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public-source review found directional evidence for historical and projected headcount by function and
+          location, with private validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B.F1
+            finding: Public evidence and/or explicit gaps are captured for Historical and projected headcount by function and
+              location.
+            evidence_claim_ids: &a20
+              - EC-006
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Historical and projected headcount by function and location before
+            investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Historical and projected headcount by
+            function and location.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a20
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public-source review found directional evidence for senior management biographies, with private validation
+          needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C.F1
+            finding: Public evidence and/or explicit gaps are captured for Senior management biographies.
+            evidence_claim_ids: &a21
+              - EC-014
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Senior management biographies before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Senior management biographies.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids: *a21
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation arrangements is not fully publicly verifiable for a private company; public sources provide
+          directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D.F1
+            finding: Public evidence and/or explicit gaps are captured for Compensation arrangements.
+            evidence_claim_ids: &a22
+              - EC-006
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Compensation arrangements before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Compensation arrangements.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a22
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Incentive stock plans is not fully publicly verifiable for a private company; public sources provide
+          directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E.F1
+            finding: Public evidence and/or explicit gaps are captured for Incentive stock plans.
+            evidence_claim_ids: &a23
+              - EC-006
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Incentive stock plans before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Incentive stock plans.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Public-source review found directional evidence for significant employee relations problems, past or present,
+          with private validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.F.F1
+            finding: Public evidence and/or explicit gaps are captured for Significant employee relations problems, past or present.
+            evidence_claim_ids: &a24
+              - EC-006
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Significant employee relations problems, past or present before
+            investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Significant employee relations problems,
+            past or present.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a24
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Personnel Turnover is not fully publicly verifiable for a private company; public sources provide directional
+          signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G.F1
+            finding: Public evidence and/or explicit gaps are captured for Personnel Turnover.
+            evidence_claim_ids: &a25
+              - EC-006
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Private data-room support is required for Personnel Turnover before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Personnel Turnover.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a25
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public security/compliance statements exist, but legal, regulatory, IP, insurance, and
+      material-contract diligence are largely private.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-007
+      - EC-015
+    risk_ids:
+      - R-002
+      - R-003
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Pending lawsuits against the Company is not fully publicly verifiable for a private company; public sources
+          provide directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.A.F1
+            finding: Public evidence and/or explicit gaps are captured for Pending lawsuits against the Company.
+            evidence_claim_ids: &a26
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Pending lawsuits against the Company implications."
+          - "R-003: see risk register for Pending lawsuits against the Company implications."
+        evidence_gaps:
+          - Private data-room support is required for Pending lawsuits against the Company before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Pending lawsuits against the Company.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a26
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Pending lawsuits initiated by Company is not fully publicly verifiable for a private company; public sources
+          provide directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.B.F1
+            finding: Public evidence and/or explicit gaps are captured for Pending lawsuits initiated by Company.
+            evidence_claim_ids: &a27
+              - EC-007
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Pending lawsuits initiated by Company implications."
+          - "R-003: see risk register for Pending lawsuits initiated by Company implications."
+        evidence_gaps:
+          - Private data-room support is required for Pending lawsuits initiated by Company before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Pending lawsuits initiated by Company.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a27
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Public-source review found directional evidence for environmental and employee safety issues and liabilities,
+          with private validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C.F1
+            finding: Public evidence and/or explicit gaps are captured for Environmental and employee safety issues and liabilities.
+            evidence_claim_ids: &a28
+              - EC-007
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Environmental and employee safety issues and liabilities implications."
+          - "R-003: see risk register for Environmental and employee safety issues and liabilities implications."
+        evidence_gaps:
+          - Private data-room support is required for Environmental and employee safety issues and liabilities before
+            investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Environmental and employee safety issues
+            and liabilities.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a28
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Public-source review found directional evidence for material patents, copyrights, licenses, and trademarks,
+          with private validation needed before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D.F1
+            finding: Public evidence and/or explicit gaps are captured for Material patents, copyrights, licenses, and trademarks.
+            evidence_claim_ids: &a29
+              - EC-007
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Material patents, copyrights, licenses, and trademarks implications."
+          - "R-003: see risk register for Material patents, copyrights, licenses, and trademarks implications."
+        evidence_gaps:
+          - Private data-room support is required for Material patents, copyrights, licenses, and trademarks before
+            investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Material patents, copyrights, licenses,
+            and trademarks.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids: *a29
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage and material exposures is not fully publicly verifiable for a private company; public
+          sources provide directional signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E.F1
+            finding: Public evidence and/or explicit gaps are captured for Insurance coverage and material exposures.
+            evidence_claim_ids: &a30
+              - EC-007
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Insurance coverage and material exposures implications."
+          - "R-003: see risk register for Insurance coverage and material exposures implications."
+        evidence_gaps:
+          - Private data-room support is required for Insurance coverage and material exposures before investment
+            reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Insurance coverage and material
+            exposures.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a30
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material contracts is not fully publicly verifiable for a private company; public sources provide directional
+          signals and the report lists required data-room follow-up.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F.F1
+            finding: Public evidence and/or explicit gaps are captured for Material contracts.
+            evidence_claim_ids: &a31
+              - EC-007
+              - EC-015
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Material contracts implications."
+          - "R-003: see risk register for Material contracts implications."
+        evidence_gaps:
+          - Private data-room support is required for Material contracts before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Material contracts.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a31
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Public-source review found directional evidence for regulatory agency problems, with private validation needed
+          before reliance.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G.F1
+            finding: Public evidence and/or explicit gaps are captured for Regulatory agency problems.
+            evidence_claim_ids: &a32
+              - EC-001
+              - EC-002
+              - EC-009
+              - EC-010
+              - EC-003
+              - EC-014
+              - EC-015
+              - EC-007
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-002
+              - R-003
+        hidden_risks:
+          - "R-002: see risk register for Regulatory agency problems implications."
+          - "R-003: see risk register for Regulatory agency problems implications."
+        evidence_gaps:
+          - Private data-room support is required for Regulatory agency problems before investment reliance.
+          - Public sources may be stale, self-reported, or incomplete; validate with company management and third
+            parties.
+        follow_up_questions:
+          - Provide source documents, owner, date, and quantitative support for Regulatory agency problems.
+          - Identify any material changes since the latest public source reviewed on 2026-06-03.
+        table_ids: []
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a32
+tables:
+  - table_id: T-001
+    title: Public funding-round and valuation history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize public valuation and financing anchors.
+    columns:
+      - name: date
+        description: date
+      - name: round_or_event
+        description: round or event
+      - name: amount
+        description: amount
+      - name: post_money_valuation
+        description: post money valuation
+      - name: lead_or_participants
+        description: lead or participants
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-001-R01
+        values:
+          date: 2022-06-07
+          round_or_event: CB Insights unicorn row
+          amount: not disclosed in row
+          post_money_valuation: $1.50B
+          lead_or_participants: Clocktower Technology Ventures, DILA Capital, Kaszek Ventures
+          verification_status: verified via public unicorn database
+        evidence_claim_ids: &a33
+          - EC-001
+          - EC-002
+          - EC-011
+        source_ids: &a34
+          - SRC-001
+          - SRC-002
+      - row_id: T-001-R02
+        values:
+          date: 2022-06-07
+          round_or_event: Latest major public financing / unicorn event
+          amount: $100M Series B extension
+          post_money_valuation: $1.50B
+          lead_or_participants: Clocktower Technology Ventures, DILA Capital, Kaszek Ventures
+          verification_status: verified/partially verified by public sources
+        evidence_claim_ids: *a33
+        source_ids: *a34
+      - row_id: T-001-R03
+        values:
+          date: 2026-06-03
+          round_or_event: Current cap table and current valuation
+          amount: not publicly disclosed
+          post_money_valuation: not publicly verifiable
+          lead_or_participants: request data room
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a33
+        source_ids: *a34
+    evidence_claim_ids: *a33
+    source_ids: *a34
+    notes: null
+  - table_id: T-002
+    title: Public financial quality and capital-structure signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate disclosed financial signals from diligence gaps.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-002-R01
+        values:
+          metric: Revenue / ARR / net revenue
+          public_signal: not disclosed in reviewed public sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Audited statements, ARR/net-revenue bridge, cohort retention, and revenue recognition policy
+        evidence_claim_ids: &a35
+          - EC-009
+          - EC-011
+        source_ids: &a36
+          - SRC-001
+          - SRC-002
+      - row_id: T-002-R02
+        values:
+          metric: Cash, burn, runway, debt
+          public_signal: not disclosed in reviewed public sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Cash balance, monthly burn, debt/credit agreements, off-balance-sheet liabilities
+        evidence_claim_ids: *a35
+        source_ids: *a36
+      - row_id: T-002-R03
+        values:
+          metric: Capital structure
+          public_signal: investors named publicly; ownership and preferences not public
+          verification_status: partially_verified
+          diligence_request: Cap table, preferred terms, SAFEs/notes, option pool, warrants, investor rights
+        evidence_claim_ids: *a35
+        source_ids: *a36
+    evidence_claim_ids: *a35
+    source_ids: *a36
+    notes: null
+  - table_id: T-003
+    title: Product / SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product modules to buyer/user segments.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: public_features
+        description: public features
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-003-R01
+        values:
+          product: PayIns
+          audience: Merchants and PSPs collecting payments
+          public_features: Six integrations for online collections under aggregator or gateway model
+          verification_status: verified
+        evidence_claim_ids: &a37
+          - EC-003
+          - EC-004
+        source_ids: &a38
+          - SRC-003
+      - row_id: T-003-R02
+        values:
+          product: PayOuts
+          audience: Merchants paying suppliers, allies, employees, and users
+          public_features: Payout/disbursement capability
+          verification_status: verified
+        evidence_claim_ids: *a37
+        source_ids: *a38
+      - row_id: T-003-R03
+        values:
+          product: Adquirencia / acquiring
+          audience: High-volume merchants and PSPs
+          public_features: Regional acquiring platform and non-bank acquirer positioning
+          verification_status: partially_verified
+        evidence_claim_ids: *a37
+        source_ids: *a38
+      - row_id: T-003-R04
+        values:
+          product: Fraud/security tools
+          audience: Merchants needing fraud prevention and PCI posture
+          public_features: Advanced fraud prevention, security layers, and PCI signals
+          verification_status: partially_verified
+        evidence_claim_ids: *a37
+        source_ids: *a38
+    evidence_claim_ids: *a37
+    source_ids: *a38
+    notes: null
+  - table_id: T-004
+    title: Pricing and packaging visibility
+    chapter_id: II
+    section_id: II.A
+    purpose: Record public pricing where available and private pricing requests where absent.
+    columns:
+      - name: offering
+        description: offering
+      - name: public_price
+        description: public price
+      - name: included_or_request
+        description: included or request
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-004-R01
+        values:
+          offering: API / gateway pricing
+          public_price: Not publicly disclosed in fetched page
+          included_or_request: Request merchant fee schedule, take rate, interchange pass-through, reserves, chargeback fees
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: &a39
+          - EC-004
+          - EC-009
+        source_ids: &a40
+          - SRC-003
+          - SRC-004
+      - row_id: T-004-R02
+        values:
+          offering: Acquiring pricing
+          public_price: Not publicly disclosed in fetched page
+          included_or_request: Request country-by-country MDR, settlement timing, reserve, and FX fees
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a39
+        source_ids: *a40
+      - row_id: T-004-R03
+        values:
+          offering: Payout pricing
+          public_price: Not publicly disclosed in fetched page
+          included_or_request: Request payout fee grid, bank-transfer rails, minimums, and failure costs
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a39
+        source_ids: *a40
+    evidence_claim_ids: *a39
+    source_ids: *a40
+    notes: null
+  - table_id: T-005
+    title: Public customer / logo evidence
+    chapter_id: III
+    section_id: III.A
+    purpose: List public customer evidence without inferring revenue contribution.
+    columns:
+      - name: customer_or_logo
+        description: customer or logo
+      - name: relationship_type
+        description: relationship type
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-005-R01
+        values:
+          customer_or_logo: Rappi
+          relationship_type: Displayed customer logo
+          public_evidence: Official site logo evidence; contract/revenue not public
+          verification_status: partially_verified
+        evidence_claim_ids: &a41
+          - EC-005
+          - EC-010
+        source_ids: &a42
+          - SRC-003
+          - SRC-005
+      - row_id: T-005-R02
+        values:
+          customer_or_logo: Comex
+          relationship_type: Displayed customer logo
+          public_evidence: Official site logo evidence; contract/revenue not public
+          verification_status: partially_verified
+        evidence_claim_ids: *a41
+        source_ids: *a42
+      - row_id: T-005-R03
+        values:
+          customer_or_logo: Terpel
+          relationship_type: Displayed customer logo
+          public_evidence: Official site logo evidence; contract/revenue not public
+          verification_status: partially_verified
+        evidence_claim_ids: *a41
+        source_ids: *a42
+      - row_id: T-005-R04
+        values:
+          customer_or_logo: PayJoy
+          relationship_type: Displayed customer logo
+          public_evidence: Official site logo evidence; contract/revenue not public
+          verification_status: partially_verified
+        evidence_claim_ids: *a41
+        source_ids: *a42
+      - row_id: T-005-R05
+        values:
+          customer_or_logo: BetPlay/Rushbet
+          relationship_type: Gaming/gambling logos
+          public_evidence: Official site logo evidence; sector-specific compliance risk
+          verification_status: partially_verified
+        evidence_claim_ids: *a41
+        source_ids: *a42
+    evidence_claim_ids: *a41
+    source_ids: *a42
+    notes: null
+  - table_id: T-006
+    title: Strategic relationships, suppliers, and dependencies
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify public partners and operational dependencies that require contract review.
+    columns:
+      - name: relationship
+        description: relationship
+      - name: nature
+        description: nature
+      - name: public_evidence
+        description: public evidence
+      - name: gap_or_risk
+        description: gap or risk
+    rows:
+      - row_id: T-006-R01
+        values:
+          relationship: Kaszek Ventures
+          nature: Investor
+          public_evidence: Participated in funding; investor since early 2020 per FinTech Magazine
+          gap_or_risk: contract economics and governance not public
+        evidence_claim_ids: &a43
+          - EC-006
+          - EC-010
+        source_ids: &a44
+          - SRC-002
+          - SRC-003
+          - SRC-004
+      - row_id: T-006-R02
+        values:
+          relationship: Clocktower Ventures / DILA Capital / SoftBank Latin America Fund
+          nature: Investors
+          public_evidence: Funding participants in Series B extension
+          gap_or_risk: contract economics and governance not public
+        evidence_claim_ids: *a43
+        source_ids: *a44
+      - row_id: T-006-R03
+        values:
+          relationship: AWS / PCI ecosystem
+          nature: Infrastructure/compliance signal
+          public_evidence: Official footer displays AWS partner and PCI DSS compliance imagery
+          gap_or_risk: requires verification
+        evidence_claim_ids: *a43
+        source_ids: *a44
+    evidence_claim_ids: *a43
+    source_ids: *a44
+    notes: null
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame direct and adjacent competition based on public product positioning.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: product_overlap
+        description: product overlap
+      - name: differentiator_or_pressure
+        description: differentiator or pressure
+    rows:
+      - row_id: T-007-R01
+        values:
+          competitor: dLocal
+          segment: cross-border/LatAm payments
+          product_overlap: Payments and merchant processing overlap
+          differentiator_or_pressure: Public scale and regional rails
+        evidence_claim_ids: &a45
+          - EC-012
+        source_ids: &a46
+          - SRC-002
+          - SRC-003
+      - row_id: T-007-R02
+        values:
+          competitor: EBANX
+          segment: LatAm payments
+          product_overlap: Pay-in and local payment methods overlap
+          differentiator_or_pressure: Enterprise merchant base
+        evidence_claim_ids: *a45
+        source_ids: *a46
+      - row_id: T-007-R03
+        values:
+          competitor: Mercado Pago
+          segment: regional payments/acquiring
+          product_overlap: Merchant processing and wallet ecosystem overlap
+          differentiator_or_pressure: Consumer/merchant network effects
+        evidence_claim_ids: *a45
+        source_ids: *a46
+      - row_id: T-007-R04
+        values:
+          competitor: Adyen / Stripe
+          segment: global payment processors
+          product_overlap: Enterprise payment processing overlap
+          differentiator_or_pressure: Global platform and developer ecosystem
+        evidence_claim_ids: *a45
+        source_ids: *a46
+    evidence_claim_ids: *a45
+    source_ids: *a46
+    notes: null
+  - table_id: T-008
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Score public strengths and vulnerabilities qualitatively.
+    columns:
+      - name: axis
+        description: axis
+      - name: target_position
+        description: target position
+      - name: competitive_pressure
+        description: competitive pressure
+      - name: evidence_basis
+        description: evidence basis
+    rows:
+      - row_id: T-008-R01
+        values:
+          axis: Product breadth
+          target_position: credible public product suite
+          competitive_pressure: larger suites may bundle adjacent capabilities
+          evidence_basis: official product pages
+        evidence_claim_ids: &a47
+          - EC-004
+          - EC-007
+          - EC-012
+        source_ids: &a48
+          - SRC-003
+          - SRC-004
+          - SRC-006
+      - row_id: T-008-R02
+        values:
+          axis: Trust/compliance
+          target_position: public compliance/security claims exist
+          competitive_pressure: buyers require independent reports and contracts
+          evidence_basis: security/public trust sources
+        evidence_claim_ids: *a47
+        source_ids: *a48
+      - row_id: T-008-R03
+        values:
+          axis: Pricing power
+          target_position: not fully verifiable from public data
+          competitive_pressure: competitive procurement and substitutes
+          evidence_basis: pricing page or pricing gap
+        evidence_claim_ids: *a47
+        source_ids: *a48
+    evidence_claim_ids: *a47
+    source_ids: *a48
+    notes: null
+  - table_id: T-009
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: List public go-to-market channels and gaps.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_signal
+        description: public signal
+      - name: region_or_segment
+        description: region or segment
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-009-R01
+        values:
+          channel: Direct sales / demo motion
+          public_signal: official site asks prospects to get started, request demo, or contact sales
+          region_or_segment: Ecuador
+          gap: pipeline, conversion, CAC, sales cycle not public
+        evidence_claim_ids: &a49
+          - EC-006
+          - EC-013
+        source_ids: &a50
+          - SRC-003
+          - SRC-004
+          - SRC-007
+      - row_id: T-009-R02
+        values:
+          channel: Partner / ecosystem motion
+          public_signal: Kaszek Ventures; Clocktower Ventures / DILA Capital / SoftBank Latin America Fund; AWS / PCI ecosystem
+          region_or_segment: Ecuador and Latin America; Quito row in CB Insights; five-country operations cited in 2022 reporting
+          gap: partner-sourced revenue and contracts not public
+        evidence_claim_ids: *a49
+        source_ids: *a50
+      - row_id: T-009-R03
+        values:
+          channel: Content / product-led education
+          public_signal: public website, docs/blog/events/resources
+          region_or_segment: public web
+          gap: traffic, lead quality, CAC payback not public
+        evidence_claim_ids: *a49
+        source_ids: *a50
+    evidence_claim_ids: *a49
+    source_ids: *a50
+    notes: null
+  - table_id: T-010
+    title: Public marketing and customer-signal summary
+    chapter_id: V
+    section_id: V.B
+    purpose: Summarize public proof points used in GTM claims.
+    columns:
+      - name: signal
+        description: signal
+      - name: evidence
+        description: evidence
+      - name: verification_status
+        description: verification status
+      - name: private_validation_needed
+        description: private validation needed
+    rows:
+      - row_id: T-010-R01
+        values:
+          signal: Named customers/logos
+          evidence: Rappi, Comex, Terpel, PayJoy, BetPlay/Rushbet
+          verification_status: partially_verified
+          private_validation_needed: signed contracts, ARR/TPV by account, reference calls
+        evidence_claim_ids: &a51
+          - EC-005
+          - EC-006
+          - EC-007
+        source_ids: &a52
+          - SRC-001
+          - SRC-003
+          - SRC-006
+      - row_id: T-010-R02
+        values:
+          signal: Funding/investor credibility
+          evidence: Clocktower Technology Ventures, DILA Capital, Kaszek Ventures
+          verification_status: verified
+          private_validation_needed: investor rights, board composition, latest valuation
+        evidence_claim_ids: *a51
+        source_ids: *a52
+      - row_id: T-010-R03
+        values:
+          signal: Product/security trust
+          evidence: official product and security/trust pages
+          verification_status: partially_verified
+          private_validation_needed: third-party reports, pen tests, customer security questionnaires
+        evidence_claim_ids: *a51
+        source_ids: *a52
+    evidence_claim_ids: *a51
+    source_ids: *a52
+    notes: null
+  - table_id: T-011
+    title: Key R&D / product personnel and technical signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Use public leadership, product, and developer signals as proxies for R&D diligence.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-011-R01
+        values:
+          signal: Founder / technical leadership
+          public_evidence: Aron Schwarzkopf (CEO and Co-Founder); Sebastian Castro (Co-Founder); Kaszek / Clocktower / DILA /
+            SoftBank Latin America Fund (Investors)
+          verification_status: partially_verified
+          diligence_request: Current org chart, invention assignments, retention packages
+        evidence_claim_ids: &a53
+          - EC-007
+          - EC-013
+          - EC-014
+        source_ids: &a54
+          - SRC-003
+          - SRC-006
+          - SRC-007
+      - row_id: T-011-R02
+        values:
+          signal: Developer/product resources
+          public_evidence: Docs, API reference, status page, GitHub links
+          verification_status: verified
+          diligence_request: Architecture, roadmap, security design, R&D budget
+        evidence_claim_ids: *a53
+        source_ids: *a54
+      - row_id: T-011-R03
+        values:
+          signal: Technical claims
+          public_evidence: Official site claims high acceptance rates, advanced fraud prevention, more than four security layers,
+            and PCI; FinTech Magazine reports improving acceptance and reducing fraud.
+          verification_status: partially_verified
+          diligence_request: Independent technical validation and incident history
+        evidence_claim_ids: *a53
+        source_ids: *a54
+    evidence_claim_ids: *a53
+    source_ids: *a54
+    notes: null
+  - table_id: T-012
+    title: Public product / research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Capture roadmap-like public product signals without extrapolating unannounced plans.
+    columns:
+      - name: initiative
+        description: initiative
+      - name: public_status
+        description: public status
+      - name: expected_date
+        description: expected date
+      - name: risk_or_gap
+        description: risk or gap
+    rows:
+      - row_id: T-012-R01
+        values:
+          initiative: PayIns
+          public_status: available/marketed publicly
+          expected_date: current public offering
+          risk_or_gap: usage and roadmap depth not public
+        evidence_claim_ids: &a55
+          - EC-003
+          - EC-004
+          - EC-013
+        source_ids: &a56
+          - SRC-003
+      - row_id: T-012-R02
+        values:
+          initiative: Fraud/security tools
+          public_status: available/marketed publicly or public module
+          expected_date: current public offering
+          risk_or_gap: performance and customer adoption not public
+        evidence_claim_ids: *a55
+        source_ids: *a56
+      - row_id: T-012-R03
+        values:
+          initiative: Unannounced roadmap
+          public_status: not publicly disclosed
+          expected_date: not_publicly_verifiable
+          risk_or_gap: request product roadmap, R&D milestones, build-vs-buy dependencies
+        evidence_claim_ids: *a55
+        source_ids: *a56
+    evidence_claim_ids: *a55
+    source_ids: *a56
+    notes: null
+  - table_id: T-013
+    title: Senior management and governance roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Summarize publicly identified leadership/governance signals.
+    columns:
+      - name: name_or_group
+        description: name or group
+      - name: role
+        description: role
+      - name: public_background
+        description: public background
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T-013-R01
+        values:
+          name_or_group: Aron Schwarzkopf
+          role: CEO and Co-Founder
+          public_background: Quoted by FinTech Magazine
+          diligence_caveat: current employment, equity, board rights, inventions, and restrictive covenants require data-room review
+        evidence_claim_ids: &a57
+          - EC-014
+        source_ids: &a58
+          - SRC-002
+          - SRC-004
+      - row_id: T-013-R02
+        values:
+          name_or_group: Sebastian Castro
+          role: Co-Founder
+          public_background: Named by FinTech Magazine as Ecuadorian entrepreneur/founder
+          diligence_caveat: current employment, equity, board rights, inventions, and restrictive covenants require data-room review
+        evidence_claim_ids: *a57
+        source_ids: *a58
+      - row_id: T-013-R03
+        values:
+          name_or_group: Kaszek / Clocktower / DILA / SoftBank Latin America Fund
+          role: Investors
+          public_background: Public financing participants; economic rights not public
+          diligence_caveat: current employment, equity, board rights, inventions, and restrictive covenants require data-room review
+        evidence_claim_ids: *a57
+        source_ids: *a58
+    evidence_claim_ids: *a57
+    source_ids: *a58
+    notes: null
+  - table_id: T-014
+    title: Headcount, hiring, and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Track public workforce signals and private gaps.
+    columns:
+      - name: metric_or_signal
+        description: metric or signal
+      - name: public_value
+        description: public value
+      - name: source_basis
+        description: source basis
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-014-R01
+        values:
+          metric_or_signal: 2022 reported employees
+          public_value: "750"
+          source_basis: employees
+          diligence_request: headcount by function/location, attrition, offers, compensation, contractor mix, employee relations matters
+        evidence_claim_ids: &a59
+          - EC-006
+          - EC-008
+        source_ids: &a60
+          - SRC-002
+          - SRC-007
+      - row_id: T-014-R02
+        values:
+          metric_or_signal: 2026 current headcount
+          public_value: not publicly verified
+          source_basis: not publicly verified from fetched sources
+          diligence_request: headcount by function/location, attrition, offers, compensation, contractor mix, employee relations matters
+        evidence_claim_ids: *a59
+        source_ids: *a60
+    evidence_claim_ids: *a59
+    source_ids: *a60
+    notes: null
+  - table_id: T-015
+    title: Legal, litigation, and regulatory-action public summary
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Separate negative public-source review from legal confirmation.
+    columns:
+      - name: matter_type
+        description: matter type
+      - name: public_finding
+        description: public finding
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-015-R01
+        values:
+          matter_type: Pending lawsuits against company
+          public_finding: no comprehensive litigation schedule available in public sources reviewed
+          verification_status: not_publicly_verifiable
+          diligence_request: counsel litigation search, representation letter, threatened claims
+        evidence_claim_ids: &a61
+          - EC-015
+        source_ids: &a62
+          - SRC-005
+          - SRC-006
+      - row_id: T-015-R02
+        values:
+          matter_type: Company-initiated lawsuits
+          public_finding: not surfaced in reviewed public sources
+          verification_status: not_publicly_verifiable
+          diligence_request: counsel docket search and dispute schedule
+        evidence_claim_ids: *a61
+        source_ids: *a62
+      - row_id: T-015-R03
+        values:
+          matter_type: Regulatory/agency actions
+          public_finding: not comprehensively verifiable from public sources reviewed
+          verification_status: not_publicly_verifiable
+          diligence_request: regulatory correspondence, exams, consent orders, license status
+        evidence_claim_ids: *a61
+        source_ids: *a62
+    evidence_claim_ids: *a61
+    source_ids: *a62
+    notes: null
+  - table_id: T-016
+    title: Material IP, contracts, security, and insurance requests
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: List material legal/IP/compliance records needed before reliance.
+    columns:
+      - name: area
+        description: area
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: request
+        description: request
+    rows:
+      - row_id: T-016-R01
+        values:
+          area: Security/compliance
+          public_evidence: Official site claims high acceptance rates, advanced fraud prevention, more than four security layers,
+            and PCI; FinTech Magazine reports improving acceptance and reducing fraud.
+          verification_status: partially_verified
+          request: SOC/ISO/PCI/HIPAA reports as applicable, pen tests, incident history, subprocessor list
+        evidence_claim_ids: &a63
+          - EC-007
+          - EC-015
+        source_ids: &a64
+          - SRC-003
+          - SRC-006
+      - row_id: T-016-R02
+        values:
+          area: IP ownership
+          public_evidence: no full patent/trademark/copyright/invention assignment schedule in public sources
+          verification_status: not_publicly_verifiable
+          request: patent/trademark schedule, assignments, OSS/SBOM, founder/employee invention agreements
+        evidence_claim_ids: *a63
+        source_ids: *a64
+      - row_id: T-016-R03
+        values:
+          area: Material contracts and insurance
+          public_evidence: not publicly disclosed
+          verification_status: not_publicly_verifiable
+          request: customer, supplier, partner, processor/cloud contracts; insurance binders and claims history
+        evidence_claim_ids: *a63
+        source_ids: *a64
+    evidence_claim_ids: *a63
+    source_ids: *a64
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding and valuation event timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Chronology of public funding and eligibility anchors.
+    purpose: Show known public valuation events and private-data gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: EV-001
+          date: 2022-06-07
+          label: Unicorn/funding valuation event
+          description: Kushki public valuation anchor $1.50B.
+          category: financing
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - event_id: EV-002
+          date: 2026-06-03
+          label: Current public-source diligence
+          description: Current audited financials, cap table, and current valuation not publicly verified.
+          category: diligence_gap
+          evidence_claim_ids:
+            - EC-009
+            - EC-011
+          source_ids:
+            - SRC-001
+      start_date: 2022-06-07
+      end_date: 2026-06-03
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-009
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-002
+    title: Public valuation chart
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Single public valuation anchor with missing current valuation marked.
+    purpose: Chart public valuation evidence and frame data-room request.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Date / event
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly disclosed values
+          unit: USD billions
+          data_points:
+            - x: 2022-06-07
+              y: 1.5
+              label: $1.50B public valuation
+              evidence_claim_ids:
+                - EC-001
+                - EC-002
+              source_ids:
+                - SRC-001
+                - SRC-002
+            - x: 2026-06-03
+              y: null
+              label: Current valuation not public
+              evidence_claim_ids:
+                - EC-009
+                - EC-011
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Data room required
+          x: 2026-06-03
+          y: null
+          note: Current valuation and financing terms require company/investor confirmation.
+          evidence_claim_ids:
+            - EC-009
+            - EC-011
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-009
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-003
+    title: Public product architecture / dependency map
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level public product components and external dependencies.
+    purpose: Map modules, users, and diligence dependencies without implying internal architecture.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: Kushki
+          node_type: service
+          description: Target company platform
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: N2
+          label: PayIns
+          node_type: product
+          description: Six integrations for online collections under aggregator or gateway model
+          evidence_claim_ids: &a65
+            - EC-003
+            - EC-004
+          source_ids: &a66
+            - SRC-003
+        - node_id: N3
+          label: PayOuts
+          node_type: product
+          description: Payout/disbursement capability
+          evidence_claim_ids: &a67
+            - EC-003
+          source_ids: &a68
+            - SRC-003
+        - node_id: N4
+          label: Adquirencia / acquiring
+          node_type: product
+          description: Regional acquiring platform and non-bank acquirer positioning
+          evidence_claim_ids: &a69
+            - EC-003
+            - EC-014
+          source_ids: &a70
+            - SRC-003
+        - node_id: N5
+          label: Fraud/security tools
+          node_type: product
+          description: Advanced fraud prevention, security layers, and PCI signals
+          evidence_claim_ids: &a71
+            - EC-007
+          source_ids: &a72
+            - SRC-003
+            - SRC-004
+        - node_id: N7
+          label: Customers / members / merchants
+          node_type: user
+          description: Publicly described users or buyers
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-003
+        - node_id: N8
+          label: Security/compliance controls
+          node_type: infrastructure
+          description: Controls publicly described but requiring independent validation
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-006
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: offers or integrates
+          data_or_dependency: Six integrations for online collections under aggregator or gateway model
+          evidence_claim_ids: *a65
+          source_ids: *a66
+        - edge_id: E2
+          from_node_id: N1
+          to_node_id: N3
+          relationship: offers or integrates
+          data_or_dependency: Payout/disbursement capability
+          evidence_claim_ids: *a67
+          source_ids: *a68
+        - edge_id: E3
+          from_node_id: N1
+          to_node_id: N4
+          relationship: offers or integrates
+          data_or_dependency: Regional acquiring platform and non-bank acquirer positioning
+          evidence_claim_ids: *a69
+          source_ids: *a70
+        - edge_id: E4
+          from_node_id: N1
+          to_node_id: N5
+          relationship: offers or integrates
+          data_or_dependency: Advanced fraud prevention, security layers, and PCI signals
+          evidence_claim_ids: *a71
+          source_ids: *a72
+      boundaries:
+        - boundary_id: B1
+          label: Publicly described platform
+          node_ids:
+            - N1
+            - N2
+            - N3
+            - N4
+            - N5
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-007
+    source_ids:
+      - SRC-003
+      - SRC-006
+    notes: null
+  - figure_id: F-004
+    title: Customer concentration disclosure chart
+    chapter_id: III
+    section_id: III.C
+    figure_type: chart
+    description: Known public logos have no disclosed revenue share.
+    purpose: Make concentration unknowns visible for diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public customer or partner
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed revenue share
+        unit: "%"
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly disclosed values
+          unit: "%"
+          data_points:
+            - x: Rappi
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-005
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+            - x: Comex
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-005
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+            - x: Terpel
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-005
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+            - x: PayJoy
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-005
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+            - x: BetPlay/Rushbet
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-005
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+      annotations:
+        - label: Revenue concentration gap
+          x: Rappi
+          y: null
+          note: Public logos do not verify revenue contribution or renewal status.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-010
+    source_ids:
+      - SRC-003
+      - SRC-005
+    notes: null
+  - figure_id: F-005
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map of target and competitor segments.
+    purpose: Frame basis of competition for diligence interviews.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: point solution
+          high_label: suite/platform
+        y_axis:
+          label: Regulated / enterprise complexity
+          low_label: lighter workflow
+          high_label: regulated or mission-critical
+      segments:
+        - segment_id: S1
+          name: Target segment
+          description: Target company core market
+        - segment_id: S2
+          name: Direct competitors
+          description: Publicly identified comparable providers
+      entities:
+        - entity_id: E0
+          name: Kushki
+          entity_type: target_company
+          segment_id: S1
+          x_value: 0.7
+          y_value: 0.7
+          attributes:
+            latest_public_valuation: $1.50B
+          evidence_claim_ids:
+            - EC-001
+            - EC-012
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - entity_id: E1
+          name: dLocal
+          entity_type: competitor
+          segment_id: S2
+          x_value: 0.5
+          y_value: 0.5
+          attributes:
+            segment: cross-border/LatAm payments
+            overlap: Payments and merchant processing overlap
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - entity_id: E2
+          name: EBANX
+          entity_type: competitor
+          segment_id: S2
+          x_value: 0.6
+          y_value: 0.7
+          attributes:
+            segment: LatAm payments
+            overlap: Pay-in and local payment methods overlap
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - entity_id: E3
+          name: Mercado Pago
+          entity_type: competitor
+          segment_id: S2
+          x_value: 0.7
+          y_value: 0.5
+          attributes:
+            segment: regional payments/acquiring
+            overlap: Merchant processing and wallet ecosystem overlap
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - entity_id: E4
+          name: Adyen / Stripe
+          entity_type: competitor
+          segment_id: S2
+          x_value: 0.8
+          y_value: 0.7
+          attributes:
+            segment: global payment processors
+            overlap: Enterprise payment processing overlap
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-002
+            - SRC-003
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-006
+    title: GTM channel mix disclosure chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public channels are identifiable but channel weights are not public.
+    purpose: Highlight CAC/channel-mix diligence gap.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed mix
+        unit: "%"
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly disclosed values
+          unit: "%"
+          data_points:
+            - x: Direct sales/demo
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-006
+                - EC-013
+              source_ids:
+                - SRC-003
+                - SRC-004
+            - x: Partners/ecosystem
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-006
+                - EC-013
+              source_ids:
+                - SRC-003
+                - SRC-004
+            - x: Content/docs/resources
+              y: null
+              label: not publicly disclosed
+              evidence_claim_ids:
+                - EC-006
+                - EC-013
+              source_ids:
+                - SRC-003
+                - SRC-004
+      annotations:
+        - label: CAC and pipeline gap
+          x: Direct sales/demo
+          y: null
+          note: Request bookings by channel, CAC, conversion, sales cycle, and pipeline quality.
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-013
+    source_ids:
+      - SRC-003
+      - SRC-004
+    notes: null
+  - figure_id: F-007
+    title: R&D / platform ownership map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: org_chart
+    description: Publicly visible technical/product roles and private org gaps.
+    purpose: Show R&D diligence requests around leadership and ownership.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: P1
+          name: Aron Schwarzkopf
+          role: CEO and Co-Founder
+          department: Leadership / product
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-004
+        - node_id: P2
+          name: Sebastian Castro
+          role: Co-Founder
+          department: Leadership / product
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-004
+        - node_id: P3
+          name: null
+          role: Engineering / product / security organization
+          department: R&D
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-013
+            - EC-015
+          source_ids:
+            - SRC-003
+            - SRC-006
+      reporting_lines:
+        - parent_node_id: P1
+          child_node_id: P3
+          relationship: other
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-008
+    title: Headcount disclosure trend
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Available workforce anchors and undisclosed current headcount.
+    purpose: Avoid inferring current headcount while preserving public anchor points.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Headcount or proxy
+        unit: count
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly disclosed values
+          unit: count
+          data_points:
+            - x: 2022 reported employees
+              y: 750
+              label: employees
+              evidence_claim_ids:
+                - EC-006
+                - EC-008
+              source_ids:
+                - SRC-002
+                - SRC-007
+            - x: 2026 current headcount
+              y: null
+              label: not publicly verified from fetched sources
+              evidence_claim_ids:
+                - EC-006
+                - EC-008
+              source_ids:
+                - SRC-002
+                - SRC-007
+      annotations:
+        - label: Current employee count gap
+          x: 2026 current headcount
+          y: null
+          note: Request headcount by function/location and attrition.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-007
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    source_ids:
+      - SRC-002
+      - SRC-007
+    notes: null
+  - figure_id: F-009
+    title: Legal/regulatory risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk heatmap for full public diligence risk register.
+    purpose: Prioritize follow-up requests across financial, customer, regulatory, and security risks.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Payments unit economics and loss exposure are not public
+          severity: high
+          likelihood: medium
+          rationale: The $1.5B valuation is supported, but net revenue, TPV, take rate, chargebacks, fraud losses, reserves, cash,
+            and runway are not public.
+          evidence_claim_ids: &a73
+            - EC-001
+            - EC-002
+            - EC-009
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-003
+        - risk_id: R-002
+          label: Multi-country payments regulation and acquiring licenses create execution risk
+          severity: high
+          likelihood: high
+          rationale: Kushki operates payments/acquiring across LatAm; license status, regulatory exams, AML/KYC controls,
+            settlement rules, and scheme compliance need counsel-led review.
+          evidence_claim_ids: &a74
+            - EC-003
+            - EC-014
+            - EC-015
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-003
+        - risk_id: R-003
+          label: Fraud, chargeback, and security risks are core operating exposures
+          severity: high
+          likelihood: medium
+          rationale: Kushki markets fraud prevention and PCI posture, but actual loss rates, incidents, security audits, and
+            merchant-risk models are not public.
+          evidence_claim_ids: &a75
+            - EC-007
+            - EC-015
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-003
+        - risk_id: R-004
+          label: Customer, country, and vertical concentration are not disclosed
+          severity: medium
+          likelihood: unknown
+          rationale: Public logos and five-country operations are positive signals, but TPV/revenue by customer, country, and
+            vertical are not public.
+          evidence_claim_ids: &a76
+            - EC-005
+            - EC-006
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-009
+      - EC-010
+      - EC-003
+      - EC-014
+      - EC-015
+      - EC-007
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: Kushki is listed as an uncovered unicorn at a $1.50B valuation.
+    evidence_summary: CB Insights row lists Kushki at $1.50B, joined 6/7/2022, Ecuador/Quito, Financial Services.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "Kushki row: valuation $1.50B; date joined 6/7/2022; country Ecuador; city Quito; Financial Services."
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+        - F-009
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-002
+    claim: Kushki raised $100M in a Series B extension and reached a $1.5B valuation in 2022.
+    evidence_summary: FinTech Magazine reported a $100M extension to Series B, more than doubling valuation to $1.5B, and
+      $186M combined Series B.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Kushki has raised US$100mn in an extension to its Series B round, more than doubling its valuation to US$1.5bn.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+        - F-009
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-003
+    claim: Kushki provides LatAm payment infrastructure across pay-ins, payouts, and acquiring.
+    evidence_summary: Official website lists PayIns, PayOuts, and acquiring as core solution areas.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: PAYINS; PAYOUTS; ADQUIRENCIA; multiple payment methods with an API; acquiring with our own regional platform.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-003
+        - T-012
+      figure_ids:
+        - F-003
+        - F-009
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-004
+    claim: Kushki website lists multiple integration/product options.
+    evidence_summary: Official site lists API, hosted/payment form, JS library, Smartlink, payment button, card-present/POS
+      payments, and e-commerce plugins.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: API, Kajita de pagos, Libreria JS, Smartlink, Boton de pagos, Pagos presenciales, Plugins e-commerce.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-003
+        - T-004
+        - T-008
+        - T-012
+      figure_ids:
+        - F-003
+      risk_ids: []
+  - evidence_claim_id: EC-005
+    claim: Kushki website displays customer logos including Rappi, Comex, Terpel, PayJoy, and others.
+    evidence_summary: Official product page includes customer-logo images for large LatAm brands; revenue or contract status
+      is not disclosed.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Logo images include Comex, Rappi, Terpel, PayJoy, Bepensa, Rushbet, BetPlay, and others.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: Public evidence does not verify private contracts, economics, or current data-room details.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-005
+        - T-010
+      figure_ids:
+        - F-004
+        - F-009
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-006
+    claim: Kushki reported 750 employees and operations in five countries in 2022.
+    evidence_summary: FinTech Magazine reported 750 employees, five countries, and local teams.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Today, the company employs 750 people, operates in 5 countries, and leverages local teams.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-006
+        - T-009
+        - T-010
+        - T-014
+      figure_ids:
+        - F-006
+        - F-008
+        - F-009
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-007
+    claim: Kushki emphasizes acceptance-rate improvement, fraud reduction, and security.
+    evidence_summary: Official site claims high acceptance rates, advanced fraud prevention, more than four security layers,
+      and PCI; FinTech Magazine reports improving acceptance and reducing fraud.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Altas tasas de aceptacion; Prevencion de fraude avanzada; contamos con mas de 4 capas de seguridad; PCI DSS
+          compliance icon.
+        location: null
+      - source_id: SRC-004
+        quote: Altas tasas de aceptacion; Prevencion de fraude avanzada; contamos con mas de 4 capas de seguridad; PCI DSS
+          compliance icon.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: Public evidence does not verify private contracts, economics, or current data-room details.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-008
+        - T-010
+        - T-011
+        - T-016
+      figure_ids:
+        - F-003
+        - F-009
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-008
+    claim: Kushki was founded in 2017 by Ecuadorian entrepreneurs Sebastian Castro and Aron Schwarzkopf.
+    evidence_summary: FinTech Magazine cites founding and mission; source also quotes Aron Schwarzkopf as CEO and co-founder.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Founded in the United States in 2017 by Ecuadorian entrepreneurs Sebastian Castro and Aron Schwarzkopf.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-008
+      risk_ids: []
+  - evidence_claim_id: EC-009
+    claim: Public sources reviewed do not disclose audited financials, net revenue, take rate, gross margin, loss rate,
+      cash, debt, or chargeback exposure.
+    evidence_summary: Funding and product sources discuss platform and valuation but not financial statements or payments unit economics.
+    evidence_type: independent_news
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Public sources disclose funding, products, and customer logos, not audited financials or unit economics.
+        location: null
+      - source_id: SRC-003
+        quote: Public sources disclose funding, products, and customer logos, not audited financials or unit economics.
+        location: null
+    analyst_interpretation: This item requires private data-room materials or direct company confirmation before reliance.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+        - T-004
+      figure_ids:
+        - F-001
+        - F-002
+        - F-009
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-010
+    claim: Kushki customer concentration and payment-volume mix are not publicly verifiable.
+    evidence_summary: Customer logos are displayed, but revenue, TPV, take rate, country/product mix, and top merchant
+      concentration are not public.
+    evidence_type: primary_company_source
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Public website lists logos but does not disclose TPV, revenue by merchant, or concentration.
+        location: null
+    analyst_interpretation: This item requires private data-room materials or direct company confirmation before reliance.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.C
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-005
+        - T-006
+      figure_ids:
+        - F-004
+        - F-009
+      risk_ids:
+        - R-001
+        - R-004
+  - evidence_claim_id: EC-011
+    claim: Kushki appears active and private based on CB Insights, official website, careers/source activity, and no
+      reviewed top-result IPO/acquisition/shutdown evidence.
+    evidence_summary: CB lists Kushki as a unicorn; official site and public search results show active operations and
+      funding, not a public exit.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-005
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Reviewed top search results focused on unicorn funding and current company profile; no IPO/acquisition/shutdown
+          result was found in this public review.
+        location: null
+      - source_id: SRC-003
+        quote: Reviewed top search results focused on unicorn funding and current company profile; no IPO/acquisition/shutdown
+          result was found in this public review.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: Public evidence does not verify private contracts, economics, or current data-room details.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-012
+    claim: Kushki competes in LatAm payments, gateways, processors, acquirers, and PSP infrastructure.
+    evidence_summary: Product claims overlap with payment processing, acquiring, payout, fraud, and acceptance-rate categories.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Kushki payment platform helps businesses reduce cost and complexity of payments online while improving acceptance
+          rates and reducing fraud.
+        location: null
+      - source_id: SRC-002
+        quote: Kushki payment platform helps businesses reduce cost and complexity of payments online while improving acceptance
+          rates and reducing fraud.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-005
+      risk_ids: []
+  - evidence_claim_id: EC-013
+    claim: Kushki uses API, documentation, status, and GitHub resources as developer/distribution signals.
+    evidence_summary: Official site footer links documentation, API reference, status page, support, and GitHub.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Documentacion, Referencia API, Estado del Servicio, Soporte, GitHub are linked publicly.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-011
+        - T-012
+      figure_ids:
+        - F-006
+        - F-007
+      risk_ids: []
+  - evidence_claim_id: EC-014
+    claim: Kushki legal/regulatory diligence is material because it operates payments and acquiring across multiple countries.
+    evidence_summary: Official site describes regional acquiring and payment processing; public sources do not disclose
+      license-by-license standing or regulatory exam results.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Kushki, el adquirente regional no bancario de LATAM; operates in 5 countries.
+        location: null
+      - source_id: SRC-002
+        quote: Kushki, el adquirente regional no bancario de LATAM; operates in 5 countries.
+        location: null
+    analyst_interpretation: Public evidence supports the stated point, subject to source limitations noted in this report.
+    limitations: Public evidence does not verify private contracts, economics, or current data-room details.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-011
+        - T-013
+      figure_ids:
+        - F-007
+        - F-009
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-015
+    claim: Kushki public IP, material contract, insurance, and litigation schedules are not available from reviewed sources.
+    evidence_summary: Public sources did not provide litigation schedule, customer contracts, processor/bank agreements, IP
+      assignments, or insurance coverage.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-003
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Public website and search results do not disclose litigation schedules, IP assignments, processor contracts, or
+          insurance coverage.
+        location: null
+      - source_id: SRC-005
+        quote: Public website and search results do not disclose litigation schedules, IP assignments, processor contracts, or
+          insurance coverage.
+        location: null
+    analyst_interpretation: This item requires private data-room materials or direct company confirmation before reliance.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-015
+        - T-016
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-002
+        - R-003
+sources:
+  - source_id: SRC-001
+    title: CB Insights Complete List of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-03
+    source_type: market_database
+    reliability_notes: Fetched public unicorn list row for Kushki with $1.50B valuation, date joined 6/7/2022, Ecuador,
+      Quito, Financial Services.
+    archive_url: null
+  - source_id: SRC-002
+    title: Kushki hits unicorn status after US$100mn Series B
+    url: https://fintechmagazine.com/digital-payments/kushki-hits-unicorn-status-after-us-100mn-series-b
+    publisher: FinTech Magazine
+    author: null
+    publication_date: 2022-06-08
+    accessed_date: 2026-06-03
+    source_type: independent_news
+    reliability_notes: Independent fintech article citing funding, valuation, investors, founders, headcount, and operating countries.
+    archive_url: null
+  - source_id: SRC-003
+    title: Kushki official product website
+    url: https://www.kushki.com/products
+    publisher: Kushki
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-03
+    source_type: primary_company_source
+    reliability_notes: Official Spanish website describing PayIns, PayOuts, acquiring, integrations, customers/logos,
+      security, docs, API, status, and legal links.
+    archive_url: null
+  - source_id: SRC-004
+    title: Kushki security page
+    url: https://www.kushki.com/seguridad-pagos-kushki
+    publisher: Kushki
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-03
+    source_type: primary_company_source
+    reliability_notes: Official security page/navigation with PCI and fraud-prevention claims.
+    archive_url: null
+  - source_id: SRC-005
+    title: "DuckDuckGo search: Kushki unicorn 100M Series B extension valuation"
+    url: https://html.duckduckgo.com/html/?q=Kushki%20unicorn%20100M%20Series%20B%20extension%20valuation
+    publisher: DuckDuckGo
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-03
+    source_type: other
+    reliability_notes: Search results surfaced Kushki/company and FinTech Magazine unicorn/funding references; no reviewed
+      top-result IPO/acquisition/shutdown evidence.
+    archive_url: null
+  - source_id: SRC-006
+    title: Kushki careers page
+    url: https://www.kushki.com/trabaja-con-nosotros
+    publisher: Kushki
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-03
+    source_type: primary_company_source
+    reliability_notes: Official careers page fetched for ongoing operations signal.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Payments unit economics and loss exposure are not public
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: The $1.5B valuation is supported, but net revenue, TPV, take rate, chargebacks, fraud losses, reserves,
+      cash, and runway are not public.
+    impacted_chapter_ids:
+      - I
+      - III
+    impacted_section_ids:
+      - I.A
+      - I.D
+      - III.C
+    evidence_claim_ids: *a73
+    mitigation_or_diligence_request: Open a focused diligence request covering the underlying data room evidence,
+      responsible executive interviews, and third-party verification before investment reliance.
+  - risk_id: R-002
+    risk_title: Multi-country payments regulation and acquiring licenses create execution risk
+    risk_category: regulatory
+    severity: high
+    likelihood: high
+    description: Kushki operates payments/acquiring across LatAm; license status, regulatory exams, AML/KYC controls,
+      settlement rules, and scheme compliance need counsel-led review.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.G
+    evidence_claim_ids: *a74
+    mitigation_or_diligence_request: Open a focused diligence request covering the underlying data room evidence,
+      responsible executive interviews, and third-party verification before investment reliance.
+  - risk_id: R-003
+    risk_title: Fraud, chargeback, and security risks are core operating exposures
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: Kushki markets fraud prevention and PCI posture, but actual loss rates, incidents, security audits, and
+      merchant-risk models are not public.
+    impacted_chapter_ids:
+      - II
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - VIII.G
+    evidence_claim_ids: *a75
+    mitigation_or_diligence_request: Open a focused diligence request covering the underlying data room evidence,
+      responsible executive interviews, and third-party verification before investment reliance.
+  - risk_id: R-004
+    risk_title: Customer, country, and vertical concentration are not disclosed
+    risk_category: customer
+    severity: medium
+    likelihood: unknown
+    description: Public logos and five-country operations are positive signals, but TPV/revenue by customer, country, and
+      vertical are not public.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.A
+    evidence_claim_ids: *a76
+    mitigation_or_diligence_request: Open a focused diligence request covering the underlying data room evidence,
+      responsible executive interviews, and third-party verification before investment reliance.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited/reviewed financial statements, ARR/net revenue, gross margin, burn, cash, debt, and backlog
+    why_it_matters: Valuation and runway cannot be underwritten from public funding news alone
+    suggested_source_or_request: CFO data-room package
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Cap table, option pool, liquidation preferences, investor rights, SAFEs/notes/warrants
+    why_it_matters: Investor economics and dilution determine downside protection and exit outcomes
+    suggested_source_or_request: Company counsel and finance team
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Revenue/TPV/member/customer concentration, churn, renewal, NRR, and references
+    why_it_matters: Public logos do not prove durable revenue quality
+    suggested_source_or_request: Customer contracts and reference calls
+    priority: high
+  - gap_id: G-004
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Roadmap, technical architecture, incident history, R&D spend, and security reports
+    why_it_matters: Product differentiation and operational risk require non-public evidence
+    suggested_source_or_request: CTO/CISO/product data-room package
+    priority: medium
+  - gap_id: G-005
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Litigation, regulatory, IP, insurance, and material-contract schedules
+    why_it_matters: Public searches are not a legal opinion and miss private disputes or notices
+    suggested_source_or_request: Outside counsel legal diligence
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited/reviewed financials, monthly management accounts, revenue bridge, gross margin, burn, cash,
+      runway, debt, and forecast model.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide fully diluted cap table, financing documents, side letters, debt, SAFEs/notes, warrants, and
+      option-plan details.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.C
+    request: Provide top customers/merchants/members by revenue or volume, contracts, renewal dates, NRR/churn, and
+      reference permissions.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide product roadmap, architecture diagrams, security reports, incident history, pen tests, and R&D hiring plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-005
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide litigation/regulatory/IP/insurance/material-contract schedules and outside-counsel representation letter.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Public-source diligence only; no company data room, customer calls, counsel searches, paid databases,
+      private filings, or management interviews were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.C
+      - VIII.A
+      - VIII.G
+  - limitation_id: L-002
+    description: Some public sources are company-authored or search-result snippets and may be stale or promotional;
+      material claims require primary documents.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - V
+    affected_section_ids:
+      - I.D
+      - II.A
+      - III.A
+      - V.A
+  - limitation_id: L-003
+    description: No conclusion is offered on investment merits, legal compliance, tax status, valuation fairness, or absence
+      of litigation/regulatory matters.
+    affected_chapter_ids:
+      - I
+      - VIII
+    affected_section_ids:
+      - I.D
+      - VIII.A
+      - VIII.G
