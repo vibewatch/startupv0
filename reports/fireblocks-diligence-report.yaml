@@ -1,0 +1,4358 @@
+report_metadata:
+  report_title: Fireblocks Public-Source Startup Diligence Report
+  target_company: Fireblocks
+  website: https://www.fireblocks.com/
+  known_aliases:
+    - Fireblocks Inc.
+    - Fireblocks Trust Company, LLC
+  sector: Institutional digital-asset infrastructure, MPC custody, payments, tokenization and compliance
+  geography: United States / Israel with global institutional footprint
+  company_stage: Late-stage private unicorn
+  research_date: 2026-06-04
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used public company, regulator, customer/partner, developer-doc, market-database and independent business/legal sources only.
+    - Treated company PR and website claims as management claims unless corroborated by regulator, customer/partner or market-database evidence.
+    - Did not use paid databases, private customer calls, data-room materials, source code, confidential materials or user-provided local files.
+  included_jurisdictions:
+    - United States, especially New York DFS context
+    - Israel founding/operating context
+    - Global institutional digital-asset market context
+  excluded_topics:
+    - Private audited financial statements, cap table, board materials and customer contracts.
+    - Non-public security reports, SOC reports, penetration tests, regulator exam findings and legal counsel letters.
+    - Paid database records and private interviews.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt
+      type: prompt_argument
+      date_received: 2026-06-04
+      notes: User requested a Fireblocks-only public-source diligence YAML report.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Fireblocks is led by cyber-security founders with relevant digital-asset security expertise.
+    claim_source: Public founder/company profiles
+    claim_date: null
+    mapped_chapter_ids:
+      - VI
+    mapped_section_ids:
+      - VI.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-005
+      - EC-017
+    contradiction_summary: null
+    diligence_follow_up:
+      - Run founder and executive reference checks; verify legal names, equity, vesting and succession.
+  - founder_claim_id: FC-002
+    claim_text: Fireblocks provides secure digital-asset infrastructure using MPC technology, policy controls and APIs.
+    claim_source: Fireblocks website/developer docs
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - V
+    mapped_section_ids:
+      - II.A
+      - V.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-020
+    contradiction_summary: Public docs support the product claim, but historical StakeHound allegations and lack of audit access mean security effectiveness is not fully verified.
+    diligence_follow_up:
+      - Request SOC 2, pen tests, threat model, incident register and key-management control evidence.
+  - founder_claim_id: FC-003
+    claim_text: Fireblocks serves institutional customers across fintech, payments, banks, asset managers and public-sector digital-asset programs.
+    claim_source: Fireblocks customer pages and PR
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - IV
+    mapped_section_ids:
+      - III.A
+      - IV.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-024
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request customer ARR, retention, contract terms and direct references.
+  - founder_claim_id: FC-004
+    claim_text: Fireblocks is a late-stage private unicorn with an $8B public valuation anchor.
+    claim_source: CB Insights and Series E announcement
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - VI
+    mapped_section_ids:
+      - I.B
+      - I.D
+      - VI.C
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-019
+    contradiction_summary: The $8B valuation is public; current fair value and share-class economics are not public.
+    diligence_follow_up:
+      - Request current cap table, financing terms, recent secondary pricing and valuation support.
+  - founder_claim_id: FC-005
+    claim_text: Fireblocks has a regulated custody/compliance footprint, including NYDFS-licensed Fireblocks Trust Company.
+    claim_source: NYDFS and Fireblocks compliance pages
+    claim_date: null
+    mapped_chapter_ids:
+      - V
+    mapped_section_ids:
+      - V.A
+      - V.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-026
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request jurisdiction/license matrix, regulator correspondence and exam findings.
+executive_summary:
+  overall_assessment: Fireblocks is public-source eligible as a late-stage private unicorn with a credible institutional digital-asset infrastructure platform, strong public investor/customer/regulatory signals, and material private-data gaps. The report supports continued diligence, not a final investment decision.
+  investment_or_diligence_thesis: "Proceed only to data-room diligence: validate ARR quality, valuation support, security controls, legal/regulatory status, cap-table economics and customer references before pricing or committing capital."
+  strongest_verified_claims:
+    - founder_claim_id: FC-004
+      summary: Public $8B unicorn valuation anchor is supported by CB Insights and the 2022 Series E announcement.
+      evidence_claim_ids:
+        - EC-001
+        - EC-002
+    - founder_claim_id: FC-005
+      summary: NYDFS lists Fireblocks Trust Company, LLC as licensed for virtual currency business activity.
+      evidence_claim_ids:
+        - EC-014
+    - founder_claim_id: FC-003
+      summary: Named customers/partners publicly span fintech, payments, bank, asset-manager and public-sector contexts.
+      evidence_claim_ids:
+        - EC-011
+        - EC-012
+  biggest_risks:
+    - risk_id: R-004
+      summary: Security/key-management failure risk is critical and must be independently tested.
+    - risk_id: R-001
+      summary: Current fair value and financial durability are not public.
+    - risk_id: R-003
+      summary: Regulatory obligations are jurisdiction-specific and require license/exam diligence.
+  key_evidence_gaps:
+    - Audited financials, ARR, retention, burn and current valuation support.
+    - Cap table, investor rights and exit waterfall.
+    - Security audit reports, incident register and StakeHound/legal status.
+    - Customer concentration, churn, contract terms and direct references.
+    - Global license map and regulator correspondence.
+  recommended_next_steps:
+    - Open company data room focused on financials, cap table, security, legal and customer metrics.
+    - Run independent technical/security review and counsel diligence before any term sheet.
+    - Conduct customer references across fintech, payments, bank/asset manager and public-sector use cases.
+    - Model downside scenarios and structure valuation/protections based on validated private data.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public sources do not provide audited or quarterly financial statements; only funding announcements and self-reported ARR growth are available. Public rounds show rapid capital formation through an $8B Series E, but share-class terms remain private. No public debt, tax or off-balance-sheet schedules were found; request complete company records. The public valuation anchor is $8B, but current fair value cannot be underwritten without financials and recent transaction data.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - R-001
+      - R-002
+    risk_ids:
+      - T-003
+      - T-004
+      - T-001
+      - T-002
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+        summary: Public sources do not provide audited or quarterly financial statements; only funding announcements and self-reported ARR growth are available.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public sources do not provide audited or quarterly financial statements; only funding announcements and self-reported ARR growth are available.
+            evidence_claim_ids:
+              - EC-019
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-019
+      - section_id: I.B
+        title: Capitalization table, financing history and investors
+        checklist_question_ids:
+          - I.B.1
+        summary: Public rounds show rapid capital formation through an $8B Series E, but share-class terms remain private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public rounds show rapid capital formation through an $8B Series E, but share-class terms remain private.
+            evidence_claim_ids:
+              - EC-002
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Capital structure and investor-rights opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-001
+          - T-002
+        figure_ids:
+          - F-001
+        evidence_claim_ids:
+          - EC-002
+      - section_id: I.C
+        title: Debt, tax, capital commitments and related obligations
+        checklist_question_ids:
+          - I.C.1
+        summary: No public debt, tax or off-balance-sheet schedules were found; request complete company records.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: No public debt, tax or off-balance-sheet schedules were found; request complete company records.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Capital structure and investor-rights opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-025
+      - section_id: I.D
+        title: Valuation support and current fair value
+        checklist_question_ids:
+          - I.D.1
+        summary: The public valuation anchor is $8B, but current fair value cannot be underwritten without financials and recent transaction data.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: The public valuation anchor is $8B, but current fair value cannot be underwritten without financials and recent transaction data.
+            evidence_claim_ids:
+              - EC-001
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids:
+          - EC-001
+  - chapter_id: II
+    title: Products, Technology and Intellectual Property
+    chapter_summary: Public docs support an MPC/API/platform thesis, but independent control testing is not public. Product pages show expansion into payments, tokenization and compliance workflows; adoption by module is not public. Security pages and docs are positive signals, but SOC reports, pen tests and incident history remain required.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - R-004
+    risk_ids:
+      - T-005
+      - T-006
+      - T-007
+    sections:
+      - section_id: II.A
+        title: Products, technology architecture and intellectual property
+        checklist_question_ids:
+          - II.A.1
+        summary: Public docs support an MPC/API/platform thesis, but independent control testing is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Public docs support an MPC/API/platform thesis, but independent control testing is not public.
+            evidence_claim_ids:
+              - EC-008
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Security/key-management failure risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-005
+          - T-006
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-008
+      - section_id: II.B
+        title: Product roadmap, R&D and dependencies
+        checklist_question_ids:
+          - II.B.1
+        summary: Product pages show expansion into payments, tokenization and compliance workflows; adoption by module is not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.B-F1
+            finding: Product pages show expansion into payments, tokenization and compliance workflows; adoption by module is not public.
+            evidence_claim_ids:
+              - EC-010
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Security/key-management failure risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-007
+        figure_ids:
+          - F-003
+        evidence_claim_ids:
+          - EC-010
+      - section_id: II.C
+        title: Security, reliability and technical diligence needs
+        checklist_question_ids:
+          - II.C.1
+        summary: Security pages and docs are positive signals, but SOC reports, pen tests and incident history remain required.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.C-F1
+            finding: Security pages and docs are positive signals, but SOC reports, pen tests and incident history remain required.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Security/key-management failure risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-006
+          - T-007
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-020
+  - chapter_id: III
+    title: Customers and Commercial Traction
+    chapter_summary: Named logos support enterprise credibility, but ARR concentration and contract economics are private. Public sources show segment breadth; pipeline, conversion and pricing data are unavailable. No public churn/NRR/GRR metrics were found; references are mandatory.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - R-005
+    risk_ids:
+      - T-008
+      - T-009
+      - T-010
+    sections:
+      - section_id: III.A
+        title: Customers, contracts and revenue concentration
+        checklist_question_ids:
+          - III.A.1
+        summary: Named logos support enterprise credibility, but ARR concentration and contract economics are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Named logos support enterprise credibility, but ARR concentration and contract economics are private.
+            evidence_claim_ids:
+              - EC-012
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Customer concentration, churn and revenue-quality opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-008
+          - T-009
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-012
+      - section_id: III.B
+        title: Sales pipeline, channels and go-to-market
+        checklist_question_ids:
+          - III.B.1
+        summary: Public sources show segment breadth; pipeline, conversion and pricing data are unavailable.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public sources show segment breadth; pipeline, conversion and pricing data are unavailable.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Customer concentration, churn and revenue-quality opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-010
+        figure_ids:
+          - F-004
+        evidence_claim_ids:
+          - EC-025
+      - section_id: III.C
+        title: Customer success, churn and references
+        checklist_question_ids:
+          - III.C.1
+        summary: No public churn/NRR/GRR metrics were found; references are mandatory.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: III.C-F1
+            finding: No public churn/NRR/GRR metrics were found; references are mandatory.
+            evidence_claim_ids:
+              - EC-011
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Customer concentration, churn and revenue-quality opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+  - chapter_id: IV
+    title: Market, Competition and Business Model
+    chapter_summary: Fireblocks competes with custody, prime and infrastructure providers; differentiation must be proven by win/loss and retention. Tokenization, stablecoins and institutional adoption support optionality but remain regulated and cyclical. Crypto market cycles may affect transaction volumes, assets under custody and customer budgets.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - R-008
+      - R-001
+      - R-005
+    risk_ids:
+      - T-011
+      - T-019
+      - T-020
+    sections:
+      - section_id: IV.A
+        title: Market size, competitors and differentiation
+        checklist_question_ids:
+          - IV.A.1
+        summary: Fireblocks competes with custody, prime and infrastructure providers; differentiation must be proven by win/loss and retention.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Fireblocks competes with custody, prime and infrastructure providers; differentiation must be proven by win/loss and retention.
+            evidence_claim_ids:
+              - EC-022
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Competitive displacement and market-cycle risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-011
+          - T-019
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-022
+      - section_id: IV.B
+        title: Market tailwinds and adoption catalysts
+        checklist_question_ids:
+          - IV.B.1
+        summary: Tokenization, stablecoins and institutional adoption support optionality but remain regulated and cyclical.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.B-F1
+            finding: Tokenization, stablecoins and institutional adoption support optionality but remain regulated and cyclical.
+            evidence_claim_ids:
+              - EC-024
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Competitive displacement and market-cycle risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-020
+        figure_ids:
+          - F-005
+        evidence_claim_ids:
+          - EC-024
+      - section_id: IV.C
+        title: Market cyclicality and pricing pressure
+        checklist_question_ids:
+          - IV.C.1
+        summary: Crypto market cycles may affect transaction volumes, assets under custody and customer budgets.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.C-F1
+            finding: Crypto market cycles may affect transaction volumes, assets under custody and customer budgets.
+            evidence_claim_ids:
+              - EC-023
+            risk_ids:
+              - R-001
+              - R-005
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Customer concentration, churn and revenue-quality opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-019
+          - T-020
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-023
+  - chapter_id: V
+    title: Legal, Regulatory and Compliance
+    chapter_summary: NYDFS licensing is verified for Fireblocks Trust Company, but global coverage and exam results are non-public. AML/compliance integrations are publicly described; effectiveness requires process evidence. StakeHound allegations make litigation and incident diligence a gating item.
+    founder_claim_ids:
+      - FC-002
+      - FC-005
+    evidence_claim_ids:
+      - R-003
+      - R-004
+      - R-006
+    risk_ids:
+      - T-012
+      - T-013
+      - T-014
+      - T-018
+    sections:
+      - section_id: V.A
+        title: Legal entity structure, licenses and regulatory status
+        checklist_question_ids:
+          - V.A.1
+        summary: NYDFS licensing is verified for Fireblocks Trust Company, but global coverage and exam results are non-public.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: V.A-F1
+            finding: NYDFS licensing is verified for Fireblocks Trust Company, but global coverage and exam results are non-public.
+            evidence_claim_ids:
+              - EC-014
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Regulatory and licensing execution
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-012
+          - T-013
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-014
+      - section_id: V.B
+        title: Compliance, AML, privacy and sanctions controls
+        checklist_question_ids:
+          - V.B.1
+        summary: AML/compliance integrations are publicly described; effectiveness requires process evidence.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: AML/compliance integrations are publicly described; effectiveness requires process evidence.
+            evidence_claim_ids:
+              - EC-026
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Regulatory and licensing execution
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-026
+      - section_id: V.C
+        title: Litigation, disputes and contingent liabilities
+        checklist_question_ids:
+          - V.C.1
+        summary: StakeHound allegations make litigation and incident diligence a gating item.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: StakeHound allegations make litigation and incident diligence a gating item.
+            evidence_claim_ids:
+              - EC-020
+            risk_ids:
+              - R-004
+              - R-006
+        hidden_risks:
+          - Security/key-management failure risk
+          - Litigation or contingent liability exposure
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-014
+          - T-018
+        figure_ids:
+          - F-006
+        evidence_claim_ids:
+          - EC-020
+  - chapter_id: VI
+    title: Management, Employees and Governance
+    chapter_summary: Founder-market fit is credible from public cyber-security background; references and incentives are private. Job postings indicate active hiring, but headcount, attrition and compensation quality are unknown. Investor quality is high, but board composition, preferences and control rights are private.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+    evidence_claim_ids:
+      - R-007
+      - R-002
+    risk_ids:
+      - T-015
+      - T-017
+      - T-016
+    sections:
+      - section_id: VI.A
+        title: Management team and founder diligence
+        checklist_question_ids:
+          - VI.A.1
+        summary: Founder-market fit is credible from public cyber-security background; references and incentives are private.
+        verification_status: verified
+        confidence: high
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Founder-market fit is credible from public cyber-security background; references and incentives are private.
+            evidence_claim_ids:
+              - EC-017
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Founder/key-person and scaling risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-017
+      - section_id: VI.B
+        title: Employees, hiring and organization
+        checklist_question_ids:
+          - VI.B.1
+        summary: Job postings indicate active hiring, but headcount, attrition and compensation quality are unknown.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Job postings indicate active hiring, but headcount, attrition and compensation quality are unknown.
+            evidence_claim_ids:
+              - EC-013
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Founder/key-person and scaling risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-007
+        evidence_claim_ids:
+          - EC-013
+      - section_id: VI.C
+        title: Governance, board, investor rights and ownership
+        checklist_question_ids:
+          - VI.C.1
+        summary: Investor quality is high, but board composition, preferences and control rights are private.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VI.C-F1
+            finding: Investor quality is high, but board composition, preferences and control rights are private.
+            evidence_claim_ids:
+              - EC-018
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Capital structure and investor-rights opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-008
+        evidence_claim_ids:
+          - EC-018
+  - chapter_id: VII
+    title: Risk Assessment and Scenarios
+    chapter_summary: Critical risk centers on security/key management, with high financial, regulatory, customer and legal risks. Diligence should model valuation compression, crypto downturn, regulator shock and major incident cases. Proceed only if private data validates ARR quality, controls, license coverage and valuation support.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - R-001
+      - R-003
+      - R-004
+      - R-005
+      - R-006
+      - R-008
+      - R-002
+    risk_ids:
+      - T-018
+      - T-020
+      - T-019
+    sections:
+      - section_id: VII.A
+        title: Principal risks and hidden-risk register
+        checklist_question_ids:
+          - VII.A.1
+        summary: Critical risk centers on security/key management, with high financial, regulatory, customer and legal risks.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Critical risk centers on security/key management, with high financial, regulatory, customer and legal risks.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-003
+              - R-004
+              - R-005
+              - R-006
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Regulatory and licensing execution
+          - Security/key-management failure risk
+          - Customer concentration, churn and revenue-quality opacity
+          - Litigation or contingent liability exposure
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-018
+        figure_ids:
+          - F-009
+        evidence_claim_ids:
+          - EC-025
+      - section_id: VII.B
+        title: Scenario analysis and mitigations
+        checklist_question_ids:
+          - VII.B.1
+        summary: Diligence should model valuation compression, crypto downturn, regulator shock and major incident cases.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Diligence should model valuation compression, crypto downturn, regulator shock and major incident cases.
+            evidence_claim_ids:
+              - EC-023
+            risk_ids:
+              - R-001
+              - R-004
+              - R-008
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Security/key-management failure risk
+          - Competitive displacement and market-cycle risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-020
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-023
+      - section_id: VII.C
+        title: Exit/liquidity and investment decision triggers
+        checklist_question_ids:
+          - VII.C.1
+        summary: Proceed only if private data validates ARR quality, controls, license coverage and valuation support.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Proceed only if private data validates ARR quality, controls, license coverage and valuation support.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-002
+              - R-004
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Capital structure and investor-rights opacity
+          - Security/key-management failure risk
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-019
+        figure_ids:
+          - F-010
+        evidence_claim_ids:
+          - EC-025
+  - chapter_id: VIII
+    title: Information Requests, Investment View and Monitoring
+    chapter_summary: The public record leaves major financial, cap table, security, customer and legal gaps. If proceeding, structure should reflect valuation, regulatory, security and information-rights risk. Monitoring should include ARR/retention, security incidents, compliance findings, customer concentration and liquidity.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - R-001
+      - R-002
+      - R-004
+      - R-005
+      - R-006
+      - R-003
+    risk_ids:
+      - T-021
+      - T-022
+    sections:
+      - section_id: VIII.A
+        title: Outstanding information request list
+        checklist_question_ids:
+          - VIII.A.1
+        summary: The public record leaves major financial, cap table, security, customer and legal gaps.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: The public record leaves major financial, cap table, security, customer and legal gaps.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-002
+              - R-004
+              - R-005
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Capital structure and investor-rights opacity
+          - Security/key-management failure risk
+          - Customer concentration, churn and revenue-quality opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-011
+        evidence_claim_ids:
+          - EC-025
+      - section_id: VIII.B
+        title: Investment structuring implications
+        checklist_question_ids:
+          - VIII.B.1
+        summary: If proceeding, structure should reflect valuation, regulatory, security and information-rights risk.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: If proceeding, structure should reflect valuation, regulatory, security and information-rights risk.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-001
+              - R-002
+              - R-006
+        hidden_risks:
+          - Valuation and current fair-value uncertainty
+          - Capital structure and investor-rights opacity
+          - Litigation or contingent liability exposure
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-022
+        figure_ids:
+          - F-011
+        evidence_claim_ids:
+          - EC-025
+      - section_id: VIII.C
+        title: Post-investment monitoring plan
+        checklist_question_ids:
+          - VIII.C.1
+        summary: Monitoring should include ARR/retention, security incidents, compliance findings, customer concentration and liquidity.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Monitoring should include ARR/retention, security incidents, compliance findings, customer concentration and liquidity.
+            evidence_claim_ids:
+              - EC-025
+            risk_ids:
+              - R-003
+              - R-004
+              - R-005
+        hidden_risks:
+          - Regulatory and licensing execution
+          - Security/key-management failure risk
+          - Customer concentration, churn and revenue-quality opacity
+        evidence_gaps:
+          - Requires company data-room validation before investment decision.
+        follow_up_questions:
+          - Provide source documents and management explanations for this section.
+        table_ids:
+          - T-022
+        figure_ids:
+          - F-011
+        evidence_claim_ids:
+          - EC-025
+tables:
+  - table_id: T-001
+    title: Public valuation and funding anchors
+    chapter_id: I
+    section_id: I.B
+    purpose: Summarize public valuation anchors.
+    columns:
+      - name: Date
+        description: Date
+      - name: Event
+        description: Event
+      - name: Amount
+        description: Amount
+      - name: Valuation
+        description: Valuation
+      - name: Evidence
+        description: Evidence
+    rows:
+      - row_id: T-001-R1
+        values:
+          Date: 2022-01-27
+          Event: Series E
+          Amount: $550M
+          Valuation: $8B
+          Evidence: Company PR and CB Insights
+        evidence_claim_ids: &a1
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-005
+          - EC-006
+        source_ids: &a2
+          - SRC-001
+          - SRC-002
+          - SRC-003
+          - SRC-004
+          - SRC-005
+          - SRC-006
+      - row_id: T-001-R2
+        values:
+          Date: 2021-07-27
+          Event: Series D
+          Amount: $310M
+          Valuation: $2B
+          Evidence: Company PR
+        evidence_claim_ids: *a1
+        source_ids: *a2
+      - row_id: T-001-R3
+        values:
+          Date: 2019-2021
+          Event: Earlier rounds
+          Amount: $16M / $30M / $133M
+          Valuation: Not public
+          Evidence: Globes/PR
+        evidence_claim_ids: *a1
+        source_ids: *a2
+    evidence_claim_ids: *a1
+    source_ids: *a2
+    notes: null
+  - table_id: T-002
+    title: Financing chronology detail
+    chapter_id: I
+    section_id: I.B
+    purpose: Identify financing documents to request.
+    columns:
+      - name: Round
+        description: Round
+      - name: Lead or notable investors
+        description: Lead or notable investors
+      - name: Public notes
+        description: Public notes
+      - name: Diligence implication
+        description: Diligence implication
+    rows:
+      - row_id: T-002-R1
+        values:
+          Round: Series E
+          Lead or notable investors: D1, Spark, General Atlantic, Index, CapitalG, Sequoia, others
+          Public notes: $550M at $8B
+          Diligence implication: Investor rights and preferences likely material
+        evidence_claim_ids: &a3
+          - EC-002
+          - EC-003
+          - EC-004
+          - EC-006
+        source_ids: &a4
+          - SRC-002
+          - SRC-003
+          - SRC-004
+          - SRC-006
+      - row_id: T-002-R2
+        values:
+          Round: Series D
+          Lead or notable investors: Sequoia, Stripes, Spark, Coatue and others
+          Public notes: $310M at $2B
+          Diligence implication: Step-up valuation requires support
+        evidence_claim_ids: *a3
+        source_ids: *a4
+      - row_id: T-002-R3
+        values:
+          Round: Series B/C
+          Lead or notable investors: Paradigm, Coatue, Ribbit, Stripes
+          Public notes: $30M and $133M
+          Diligence implication: Trace dilution and option pool
+        evidence_claim_ids: *a3
+        source_ids: *a4
+    evidence_claim_ids: *a3
+    source_ids: *a4
+    notes: null
+  - table_id: T-003
+    title: Financial-statement gap matrix
+    chapter_id: I
+    section_id: I.A
+    purpose: Show missing financial inputs.
+    columns:
+      - name: Input
+        description: Input
+      - name: Public status
+        description: Public status
+      - name: Why needed
+        description: Why needed
+      - name: Priority
+        description: Priority
+    rows:
+      - row_id: T-003-R1
+        values:
+          Input: Audited financials
+          Public status: Not found
+          Why needed: Revenue, margin, burn, cash validation
+          Priority: High
+        evidence_claim_ids: &a5
+          - EC-019
+          - EC-025
+        source_ids: &a6
+          - SRC-001
+          - SRC-002
+          - SRC-007
+      - row_id: T-003-R2
+        values:
+          Input: ARR and retention
+          Public status: Only self-reported growth signal
+          Why needed: Recurring quality and valuation
+          Priority: High
+        evidence_claim_ids: *a5
+        source_ids: *a6
+      - row_id: T-003-R3
+        values:
+          Input: Debt/tax/commitments
+          Public status: Not found
+          Why needed: Runway and obligations
+          Priority: High
+        evidence_claim_ids: *a5
+        source_ids: *a6
+    evidence_claim_ids: *a5
+    source_ids: *a6
+    notes: null
+  - table_id: T-004
+    title: Valuation underwriting questions
+    chapter_id: I
+    section_id: I.D
+    purpose: Convert public valuation into diligence requests.
+    columns:
+      - name: Question
+        description: Question
+      - name: Public evidence
+        description: Public evidence
+      - name: Needed private evidence
+        description: Needed private evidence
+      - name: Risk
+        description: Risk
+    rows:
+      - row_id: T-004-R1
+        values:
+          Question: Is $8B still supportable?
+          Public evidence: 2022 Series E / CB Insights
+          Needed private evidence: Current ARR, growth, comparables, secondary trades
+          Risk: R-001
+        evidence_claim_ids: &a7
+          - EC-001
+          - EC-002
+          - EC-019
+          - EC-025
+        source_ids: &a8
+          - SRC-001
+          - SRC-002
+      - row_id: T-004-R2
+        values:
+          Question: What are exit economics?
+          Public evidence: Large late-stage syndicate
+          Needed private evidence: Cap table and liquidation preferences
+          Risk: R-002
+        evidence_claim_ids: *a7
+        source_ids: *a8
+    evidence_claim_ids: *a7
+    source_ids: *a8
+    notes: null
+  - table_id: T-005
+    title: Product module map
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product breadth.
+    columns:
+      - name: Module
+        description: Module
+      - name: Public claim
+        description: Public claim
+      - name: Diligence question
+        description: Diligence question
+    rows:
+      - row_id: T-005-R1
+        values:
+          Module: Wallets / MPC custody
+          Public claim: MPC-based security infrastructure
+          Diligence question: Controls, audits and incident history
+        evidence_claim_ids: &a9
+          - EC-007
+          - EC-008
+          - EC-010
+          - EC-026
+        source_ids: &a10
+          - SRC-007
+          - SRC-008
+          - SRC-010
+          - SRC-011
+          - SRC-012
+      - row_id: T-005-R2
+        values:
+          Module: Payments / treasury
+          Public claim: Digital-asset movement and operations
+          Diligence question: ARR by module and customer adoption
+        evidence_claim_ids: *a9
+        source_ids: *a10
+      - row_id: T-005-R3
+        values:
+          Module: Tokenization / compliance
+          Public claim: Tokenization and AML workflows
+          Diligence question: Regulatory coverage and unit economics
+        evidence_claim_ids: *a9
+        source_ids: *a10
+    evidence_claim_ids: *a9
+    source_ids: *a10
+    notes: null
+  - table_id: T-006
+    title: Technical diligence checklist
+    chapter_id: II
+    section_id: II.A
+    purpose: List security and reliability diligence.
+    columns:
+      - name: Area
+        description: Area
+      - name: Public signal
+        description: Public signal
+      - name: Private test
+        description: Private test
+    rows:
+      - row_id: T-006-R1
+        values:
+          Area: MPC/key management
+          Public signal: MPC-CMP docs
+          Private test: Key ceremony, backups, audit reports
+        evidence_claim_ids: &a11
+          - EC-008
+          - EC-009
+          - EC-020
+        source_ids: &a12
+          - SRC-008
+          - SRC-009
+          - SRC-020
+          - SRC-021
+      - row_id: T-006-R2
+        values:
+          Area: Policy engine
+          Public signal: Policy/product docs
+          Private test: Approval logs, SoD and override controls
+        evidence_claim_ids: *a11
+        source_ids: *a12
+      - row_id: T-006-R3
+        values:
+          Area: APIs
+          Public signal: API reference
+          Private test: SLA, uptime, incident and support metrics
+        evidence_claim_ids: *a11
+        source_ids: *a12
+    evidence_claim_ids: *a11
+    source_ids: *a12
+    notes: null
+  - table_id: T-007
+    title: Roadmap and product expansion risks
+    chapter_id: II
+    section_id: II.B
+    purpose: Identify product breadth risk.
+    columns:
+      - name: Theme
+        description: Theme
+      - name: Evidence
+        description: Evidence
+      - name: Open question
+        description: Open question
+    rows:
+      - row_id: T-007-R1
+        values:
+          Theme: Payments/stablecoins
+          Evidence: Product pages
+          Open question: Real customer volume and regulatory path
+        evidence_claim_ids: &a13
+          - EC-010
+          - EC-024
+          - EC-026
+        source_ids: &a14
+          - SRC-011
+          - SRC-012
+          - SRC-018
+      - row_id: T-007-R2
+        values:
+          Theme: Tokenization
+          Evidence: Product pages and Wyoming relationship
+          Open question: Revenue conversion and compliance load
+        evidence_claim_ids: *a13
+        source_ids: *a14
+      - row_id: T-007-R3
+        values:
+          Theme: Compliance integrations
+          Evidence: Compliance page
+          Open question: Production effectiveness and false-positive handling
+        evidence_claim_ids: *a13
+        source_ids: *a14
+    evidence_claim_ids: *a13
+    source_ids: *a14
+    notes: null
+  - table_id: T-008
+    title: Named customer and partner proof
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize public logos.
+    columns:
+      - name: Segment
+        description: Segment
+      - name: Example
+        description: Example
+      - name: Evidence type
+        description: Evidence type
+      - name: Open diligence
+        description: Open diligence
+    rows:
+      - row_id: T-008-R1
+        values:
+          Segment: Fintech/app
+          Example: Revolut
+          Evidence type: Customer story
+          Open diligence: Contract size and reference
+        evidence_claim_ids: &a15
+          - EC-011
+          - EC-012
+        source_ids: &a16
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+          - SRC-018
+      - row_id: T-008-R2
+        values:
+          Segment: Payments/PSP
+          Example: Worldpay
+          Evidence type: Customer/partner story
+          Open diligence: Volume and economics
+        evidence_claim_ids: *a15
+        source_ids: *a16
+      - row_id: T-008-R3
+        values:
+          Segment: Bank/public sector
+          Example: ABN AMRO / Wyoming
+          Evidence type: Case story / PR
+          Open diligence: Production status
+        evidence_claim_ids: *a15
+        source_ids: *a16
+    evidence_claim_ids: *a15
+    source_ids: *a16
+    notes: null
+  - table_id: T-009
+    title: Customer metric requests
+    chapter_id: III
+    section_id: III.A
+    purpose: Show missing customer analytics.
+    columns:
+      - name: Metric
+        description: Metric
+      - name: Public status
+        description: Public status
+      - name: Why needed
+        description: Why needed
+    rows:
+      - row_id: T-009-R1
+        values:
+          Metric: Top-20 ARR concentration
+          Public status: Not public
+          Why needed: Downside risk
+        evidence_claim_ids: &a17
+          - EC-011
+          - EC-012
+          - EC-025
+        source_ids: &a18
+          - SRC-013
+          - SRC-014
+          - SRC-015
+          - SRC-016
+          - SRC-017
+      - row_id: T-009-R2
+        values:
+          Metric: NRR/GRR/churn
+          Public status: Not public
+          Why needed: Revenue durability
+        evidence_claim_ids: *a17
+        source_ids: *a18
+      - row_id: T-009-R3
+        values:
+          Metric: Logo definition and active usage
+          Public status: Self-reported scale only
+          Why needed: Quality of public logo claims
+        evidence_claim_ids: *a17
+        source_ids: *a18
+    evidence_claim_ids: *a17
+    source_ids: *a18
+    notes: null
+  - table_id: T-010
+    title: Reference-call plan
+    chapter_id: III
+    section_id: III.B
+    purpose: Specify reference coverage.
+    columns:
+      - name: Reference type
+        description: Reference type
+      - name: Target
+        description: Target
+      - name: Questions
+        description: Questions
+    rows:
+      - row_id: T-010-R1
+        values:
+          Reference type: Fintech customer
+          Target: Revolut-like app
+          Questions: Integration, support, ROI, alternatives
+        evidence_claim_ids: &a19
+          - EC-012
+          - EC-025
+        source_ids: &a20
+          - SRC-014
+          - SRC-015
+          - SRC-016
+          - SRC-017
+          - SRC-018
+      - row_id: T-010-R2
+        values:
+          Reference type: Bank/asset manager
+          Target: ABN AMRO or WisdomTree-like institution
+          Questions: Compliance approvals and uptime
+        evidence_claim_ids: *a19
+        source_ids: *a20
+      - row_id: T-010-R3
+        values:
+          Reference type: PSP/public sector
+          Target: Worldpay/Wyoming-like program
+          Questions: Volume, token/stablecoin use cases
+        evidence_claim_ids: *a19
+        source_ids: *a20
+    evidence_claim_ids: *a19
+    source_ids: *a20
+    notes: null
+  - table_id: T-011
+    title: Competitor overlap matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Map public competitor overlap.
+    columns:
+      - name: Competitor
+        description: Competitor
+      - name: Overlap
+        description: Overlap
+      - name: Diligence question
+        description: Diligence question
+    rows:
+      - row_id: T-011-R1
+        values:
+          Competitor: Coinbase Prime
+          Overlap: Custody, trading, institutional platform
+          Diligence question: Win/loss and pricing
+        evidence_claim_ids: &a21
+          - EC-022
+        source_ids: &a22
+          - SRC-032
+          - SRC-033
+          - SRC-034
+          - SRC-035
+          - SRC-036
+      - row_id: T-011-R2
+        values:
+          Competitor: BitGo / Anchorage
+          Overlap: Custody and regulated infrastructure
+          Diligence question: Regulatory differentiation
+        evidence_claim_ids: *a21
+        source_ids: *a22
+      - row_id: T-011-R3
+        values:
+          Competitor: Copper / Taurus
+          Overlap: Institutional infrastructure/tokenization
+          Diligence question: Feature and bank-channel comparison
+        evidence_claim_ids: *a21
+        source_ids: *a22
+    evidence_claim_ids: *a21
+    source_ids: *a22
+    notes: null
+  - table_id: T-012
+    title: Regulatory status snapshot
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public licensing.
+    columns:
+      - name: Jurisdiction
+        description: Jurisdiction
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence need
+        description: Diligence need
+    rows:
+      - row_id: T-012-R1
+        values:
+          Jurisdiction: New York
+          Public evidence: NYDFS lists Fireblocks Trust Company, LLC
+          Diligence need: Confirm scope, conditions and exams
+        evidence_claim_ids: &a23
+          - EC-014
+          - EC-015
+        source_ids: &a24
+          - SRC-022
+          - SRC-023
+          - SRC-010
+          - SRC-011
+      - row_id: T-012-R2
+        values:
+          Jurisdiction: Other U.S./global
+          Public evidence: Not complete in public sources
+          Diligence need: License map and counsel memo
+        evidence_claim_ids: *a23
+        source_ids: *a24
+      - row_id: T-012-R3
+        values:
+          Jurisdiction: Product-specific
+          Public evidence: Payments/tokenization pages
+          Diligence need: Activity-by-activity legal analysis
+        evidence_claim_ids: *a23
+        source_ids: *a24
+    evidence_claim_ids: *a23
+    source_ids: *a24
+    notes: null
+  - table_id: T-013
+    title: Compliance-control diligence
+    chapter_id: V
+    section_id: V.B
+    purpose: List regulatory controls to inspect.
+    columns:
+      - name: Control area
+        description: Control area
+      - name: Public signal
+        description: Public signal
+      - name: Private evidence
+        description: Private evidence
+    rows:
+      - row_id: T-013-R1
+        values:
+          Control area: AML/sanctions
+          Public signal: Compliance integrations
+          Private evidence: Model validation and alerts
+        evidence_claim_ids: &a25
+          - EC-014
+          - EC-015
+          - EC-026
+        source_ids: &a26
+          - SRC-012
+          - SRC-022
+          - SRC-023
+          - SRC-026
+      - row_id: T-013-R2
+        values:
+          Control area: Custody governance
+          Public signal: NYDFS license
+          Private evidence: Exams, policies, segregation
+        evidence_claim_ids: *a25
+        source_ids: *a26
+      - row_id: T-013-R3
+        values:
+          Control area: Privacy/data
+          Public signal: Trust/security pages
+          Private evidence: SOC reports and DPAs
+        evidence_claim_ids: *a25
+        source_ids: *a26
+    evidence_claim_ids: *a25
+    source_ids: *a26
+    notes: null
+  - table_id: T-014
+    title: Legal/security matter review
+    chapter_id: V
+    section_id: V.C
+    purpose: Track known legal/security diligence issues.
+    columns:
+      - name: Matter
+        description: Matter
+      - name: Public record
+        description: Public record
+      - name: Needed evidence
+        description: Needed evidence
+    rows:
+      - row_id: T-014-R1
+        values:
+          Matter: StakeHound dispute
+          Public record: Public allegations regarding lost ETH; Fireblocks disputed responsibility
+          Needed evidence: Counsel letter, outcome, reserves, insurance
+        evidence_claim_ids: &a27
+          - EC-016
+          - EC-020
+          - EC-021
+          - EC-025
+        source_ids: &a28
+          - SRC-020
+          - SRC-021
+          - SRC-024
+          - SRC-028
+      - row_id: T-014-R2
+        values:
+          Matter: Regulatory enforcement context
+          Public record: NYDFS enforcement can impose penalties/remediation
+          Needed evidence: Any company-specific findings
+        evidence_claim_ids: *a27
+        source_ids: *a28
+      - row_id: T-014-R3
+        values:
+          Matter: Security incidents
+          Public record: Status/security pages incomplete
+          Needed evidence: Incident register and root cause reports
+        evidence_claim_ids: *a27
+        source_ids: *a28
+    evidence_claim_ids: *a27
+    source_ids: *a28
+    notes: null
+  - table_id: T-015
+    title: Founder and leadership diligence
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Summarize management public proof.
+    columns:
+      - name: Person/group
+        description: Person/group
+      - name: Public evidence
+        description: Public evidence
+      - name: Diligence need
+        description: Diligence need
+    rows:
+      - row_id: T-015-R1
+        values:
+          Person/group: Michael Shaulov
+          Public evidence: Founder/CEO, cyber-security background
+          Diligence need: Reference checks, equity, succession
+        evidence_claim_ids: &a29
+          - EC-005
+          - EC-013
+          - EC-017
+        source_ids: &a30
+          - SRC-005
+          - SRC-025
+          - SRC-031
+          - SRC-039
+      - row_id: T-015-R2
+        values:
+          Person/group: Idan Ofrat / Pavel Berengoltz
+          Public evidence: Co-founders in public sources
+          Diligence need: Role, ownership, retention
+        evidence_claim_ids: *a29
+        source_ids: *a30
+      - row_id: T-015-R3
+        values:
+          Person/group: Executive bench
+          Public evidence: Hiring/LinkedIn signals
+          Diligence need: Org chart and scorecards
+        evidence_claim_ids: *a29
+        source_ids: *a30
+    evidence_claim_ids: *a29
+    source_ids: *a30
+    notes: null
+  - table_id: T-016
+    title: Governance and cap table requests
+    chapter_id: VI
+    section_id: VI.C
+    purpose: Identify governance documents.
+    columns:
+      - name: Document
+        description: Document
+      - name: Why needed
+        description: Why needed
+      - name: Priority
+        description: Priority
+    rows:
+      - row_id: T-016-R1
+        values:
+          Document: Cap table and financing docs
+          Why needed: Ownership, dilution, preference stack
+          Priority: High
+        evidence_claim_ids: &a31
+          - EC-018
+          - EC-019
+          - EC-025
+        source_ids: &a32
+          - SRC-002
+      - row_id: T-016-R2
+        values:
+          Document: Board/investor rights
+          Why needed: Control, vetoes, information rights
+          Priority: High
+        evidence_claim_ids: *a31
+        source_ids: *a32
+      - row_id: T-016-R3
+        values:
+          Document: Option pool and grants
+          Why needed: Retention and future dilution
+          Priority: Medium
+        evidence_claim_ids: *a31
+        source_ids: *a32
+    evidence_claim_ids: *a31
+    source_ids: *a32
+    notes: null
+  - table_id: T-017
+    title: Hiring and organization signals
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Interpret job openings.
+    columns:
+      - name: Signal
+        description: Signal
+      - name: Public evidence
+        description: Public evidence
+      - name: Question
+        description: Question
+    rows:
+      - row_id: T-017-R1
+        values:
+          Signal: Active hiring
+          Public evidence: Greenhouse listings
+          Question: Growth vs attrition/backfill
+        evidence_claim_ids: &a33
+          - EC-013
+        source_ids: &a34
+          - SRC-029
+          - SRC-039
+          - SRC-031
+      - row_id: T-017-R2
+        values:
+          Signal: Global footprint
+          Public evidence: Careers/location pages
+          Question: Compliance and management span
+        evidence_claim_ids: *a33
+        source_ids: *a34
+      - row_id: T-017-R3
+        values:
+          Signal: Control functions
+          Public evidence: Compliance/security-related roles if open
+          Question: Resourcing against regulatory load
+        evidence_claim_ids: *a33
+        source_ids: *a34
+    evidence_claim_ids: *a33
+    source_ids: *a34
+    notes: null
+  - table_id: T-018
+    title: Risk register summary
+    chapter_id: VII
+    section_id: VII.A
+    purpose: Prioritize major diligence risks.
+    columns:
+      - name: Risk
+        description: Risk
+      - name: Severity
+        description: Severity
+      - name: Likelihood
+        description: Likelihood
+      - name: Evidence
+        description: Evidence
+    rows:
+      - row_id: T-018-R1
+        values:
+          Risk: Valuation and current fair-value uncertainty
+          Severity: high
+          Likelihood: high
+          Evidence: EC-001, EC-002, EC-019, EC-025
+        evidence_claim_ids: &a35
+          - EC-001
+          - EC-014
+          - EC-020
+          - EC-025
+        source_ids: &a36
+          - SRC-001
+          - SRC-002
+          - SRC-022
+          - SRC-028
+      - row_id: T-018-R2
+        values:
+          Risk: Capital structure and investor-rights opacity
+          Severity: high
+          Likelihood: medium
+          Evidence: EC-002, EC-018, EC-019, EC-025
+        evidence_claim_ids: *a35
+        source_ids: *a36
+      - row_id: T-018-R3
+        values:
+          Risk: Regulatory and licensing execution
+          Severity: high
+          Likelihood: medium
+          Evidence: EC-014, EC-015, EC-016, EC-026
+        evidence_claim_ids: *a35
+        source_ids: *a36
+      - row_id: T-018-R4
+        values:
+          Risk: Security/key-management failure risk
+          Severity: critical
+          Likelihood: medium
+          Evidence: EC-008, EC-020, EC-021, EC-025
+        evidence_claim_ids: *a35
+        source_ids: *a36
+      - row_id: T-018-R5
+        values:
+          Risk: Customer concentration, churn and revenue-quality opacity
+          Severity: high
+          Likelihood: medium
+          Evidence: EC-011, EC-012, EC-023, EC-025
+        evidence_claim_ids: *a35
+        source_ids: *a36
+      - row_id: T-018-R6
+        values:
+          Risk: Litigation or contingent liability exposure
+          Severity: high
+          Likelihood: unknown
+          Evidence: EC-020, EC-021, EC-025
+        evidence_claim_ids: *a35
+        source_ids: *a36
+    evidence_claim_ids: *a35
+    source_ids: *a36
+    notes: null
+  - table_id: T-019
+    title: Scenario triggers
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Define decision triggers.
+    columns:
+      - name: Scenario
+        description: Scenario
+      - name: Trigger
+        description: Trigger
+      - name: Action
+        description: Action
+    rows:
+      - row_id: T-019-R1
+        values:
+          Scenario: Bull
+          Trigger: ARR growth, retention, controls and licenses support valuation
+          Action: Proceed with standard protections
+        evidence_claim_ids: &a37
+          - EC-022
+          - EC-023
+          - EC-025
+        source_ids: &a38
+          - SRC-001
+          - SRC-037
+          - SRC-038
+      - row_id: T-019-R2
+        values:
+          Scenario: Base
+          Trigger: Good platform proof but valuation/cap gaps persist
+          Action: Price/structure for downside
+        evidence_claim_ids: *a37
+        source_ids: *a38
+      - row_id: T-019-R3
+        values:
+          Scenario: Bear
+          Trigger: Unresolved security, legal, concentration or license issue
+          Action: Avoid or defer
+        evidence_claim_ids: *a37
+        source_ids: *a38
+    evidence_claim_ids: *a37
+    source_ids: *a38
+    notes: null
+  - table_id: T-020
+    title: Market-cycle and tailwind matrix
+    chapter_id: IV
+    section_id: IV.B
+    purpose: Balance market upside and downside.
+    columns:
+      - name: Driver
+        description: Driver
+      - name: Upside
+        description: Upside
+      - name: Downside
+        description: Downside
+    rows:
+      - row_id: T-020-R1
+        values:
+          Driver: Stablecoins/payments
+          Upside: More institutional workflows
+          Downside: Regulatory and banking dependency
+        evidence_claim_ids: &a39
+          - EC-023
+          - EC-024
+        source_ids: &a40
+          - SRC-011
+          - SRC-018
+          - SRC-037
+          - SRC-038
+      - row_id: T-020-R2
+        values:
+          Driver: Tokenization/RWA
+          Upside: New product demand
+          Downside: Slow enterprise adoption
+        evidence_claim_ids: *a39
+        source_ids: *a40
+      - row_id: T-020-R3
+        values:
+          Driver: Crypto trading cycle
+          Upside: Higher flows in bull markets
+          Downside: Budget and volume compression in downturns
+        evidence_claim_ids: *a39
+        source_ids: *a40
+    evidence_claim_ids: *a39
+    source_ids: *a40
+    notes: null
+  - table_id: T-021
+    title: High-priority information request list
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Consolidate gating data requests.
+    columns:
+      - name: Area
+        description: Area
+      - name: Request
+        description: Request
+      - name: Owner
+        description: Owner
+    rows:
+      - row_id: T-021-R1
+        values:
+          Area: Financial
+          Request: Audited statements, ARR, retention, cash, debt, burn
+          Owner: CFO
+        evidence_claim_ids: &a41
+          - EC-019
+          - EC-025
+        source_ids: &a42
+          - SRC-001
+          - SRC-002
+          - SRC-007
+          - SRC-013
+      - row_id: T-021-R2
+        values:
+          Area: Security/legal
+          Request: SOC reports, incident register, counsel letter, insurance
+          Owner: CISO/GC
+        evidence_claim_ids: *a41
+        source_ids: *a42
+      - row_id: T-021-R3
+        values:
+          Area: Commercial
+          Request: Top customers, contracts, churn, pipeline, references
+          Owner: CRO
+        evidence_claim_ids: *a41
+        source_ids: *a42
+    evidence_claim_ids: *a41
+    source_ids: *a42
+    notes: null
+  - table_id: T-022
+    title: Investment structure implications
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Translate risks into protections.
+    columns:
+      - name: Risk
+        description: Risk
+      - name: Protection
+        description: Protection
+      - name: Monitoring
+        description: Monitoring
+    rows:
+      - row_id: T-022-R1
+        values:
+          Risk: Valuation/cap table
+          Protection: Price discipline, preference/warrant/ratchet or tranche
+          Monitoring: Monthly ARR/cash and secondary comps
+        evidence_claim_ids: &a43
+          - EC-014
+          - EC-020
+          - EC-025
+        source_ids: &a44
+          - SRC-002
+          - SRC-022
+          - SRC-028
+      - row_id: T-022-R2
+        values:
+          Risk: Security/legal
+          Protection: Special indemnity, insurance, escrow, closing conditions
+          Monitoring: Incident and litigation reporting
+        evidence_claim_ids: *a43
+        source_ids: *a44
+      - row_id: T-022-R3
+        values:
+          Risk: Regulatory/customer
+          Protection: Information rights and covenants
+          Monitoring: License findings and customer concentration
+        evidence_claim_ids: *a43
+        source_ids: *a44
+    evidence_claim_ids: *a43
+    source_ids: *a44
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Fireblocks public funding timeline
+    chapter_id: I
+    section_id: I.B
+    figure_type: timeline
+    description: Chronological funding and valuation anchors.
+    purpose: Show rapid funding trajectory and current public valuation anchor.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2019-06-11
+      end_date: 2026-06-04
+      ordering: chronological
+      events:
+        - event_id: F-001-E1
+          date: 2019-06-11
+          label: $16M early funding
+          description: $16M early funding
+          category: funding
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-005
+        - event_id: F-001-E2
+          date: 2020-11-18
+          label: $30M Series B
+          description: $30M Series B
+          category: funding
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - event_id: F-001-E3
+          date: 2021-03-18
+          label: $133M Series C
+          description: $133M Series C
+          category: funding
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-004
+        - event_id: F-001-E4
+          date: 2021-07-27
+          label: $310M Series D at $2B
+          description: $310M Series D at $2B
+          category: funding
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - event_id: F-001-E5
+          date: 2022-01-27
+          label: $550M Series E at $8B
+          description: $550M Series E at $8B
+          category: funding
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-002
+        - event_id: F-001-E6
+          date: 2026-06-04
+          label: CB Insights $8B row
+          description: CB Insights $8B row
+          category: funding
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Render as timeline.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+      - SRC-006
+    notes: null
+  - figure_id: F-002
+    title: Public valuation trajectory
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Line chart of public valuation anchors.
+    purpose: Frame valuation diligence.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Date
+        unit: null
+        scale: time
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation
+          unit: USD billions
+          data_points:
+            - x: 2021-07-27
+              y: 2
+              label: Series D
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-003
+            - x: 2022-01-27
+              y: 8
+              label: Series E
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: 2026-06-04
+              y: 8
+              label: CB Insights
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Current fair value unknown
+          x: 2026-06-04
+          y: 8
+          note: Private transaction data required.
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-001
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Line chart.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-025
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-003
+    title: Public product architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: MPC wallet, policy, network and compliance architecture from public docs.
+    purpose: Guide technical diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: customers
+          label: Institutional customers/apps
+          node_type: user
+          description: Institutional customers/apps
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+            - EC-026
+          source_ids:
+            - SRC-008
+            - SRC-010
+            - SRC-012
+        - node_id: products
+          label: Payments/tokenization/wallets
+          node_type: product
+          description: Payments/tokenization/wallets
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+            - EC-026
+          source_ids:
+            - SRC-008
+            - SRC-010
+            - SRC-012
+        - node_id: wallets
+          label: MPC-CMP wallets/vaults
+          node_type: service
+          description: MPC-CMP wallets/vaults
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+            - EC-026
+          source_ids:
+            - SRC-008
+            - SRC-010
+            - SRC-012
+        - node_id: policy
+          label: Policy Engine
+          node_type: service
+          description: Policy Engine
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+            - EC-026
+          source_ids:
+            - SRC-008
+            - SRC-010
+            - SRC-012
+        - node_id: network
+          label: Fireblocks Network
+          node_type: integration
+          description: Fireblocks Network
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+            - EC-026
+          source_ids:
+            - SRC-008
+            - SRC-010
+            - SRC-012
+        - node_id: aml
+          label: AML/compliance integrations
+          node_type: third_party
+          description: AML/compliance integrations
+          evidence_claim_ids:
+            - EC-008
+            - EC-010
+            - EC-026
+          source_ids:
+            - SRC-008
+            - SRC-010
+            - SRC-012
+      edges:
+        - edge_id: e1
+          from_node_id: customers
+          to_node_id: products
+          relationship: use
+          data_or_dependency: asset and transaction workflow
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - edge_id: e2
+          from_node_id: products
+          to_node_id: wallets
+          relationship: uses custody
+          data_or_dependency: asset and transaction workflow
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - edge_id: e3
+          from_node_id: wallets
+          to_node_id: policy
+          relationship: governed by
+          data_or_dependency: asset and transaction workflow
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - edge_id: e4
+          from_node_id: policy
+          to_node_id: network
+          relationship: authorizes transfer
+          data_or_dependency: asset and transaction workflow
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+        - edge_id: e5
+          from_node_id: policy
+          to_node_id: aml
+          relationship: screens risk
+          data_or_dependency: asset and transaction workflow
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-008
+      boundaries:
+        - boundary_id: b1
+          label: Fireblocks platform
+          node_ids:
+            - products
+            - wallets
+            - policy
+            - network
+        - boundary_id: b2
+          label: Third-party / customer boundary
+          node_ids:
+            - customers
+            - aml
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use platform boundary.
+    evidence_claim_ids:
+      - EC-008
+      - EC-010
+      - EC-026
+    source_ids:
+      - SRC-008
+      - SRC-010
+      - SRC-012
+    notes: null
+  - figure_id: F-004
+    title: Public customer/partner proof by segment
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Bar chart of public proof counts, not revenue concentration.
+    purpose: Visualize breadth without inventing ARR.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Segment
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public examples
+        unit: count
+        scale: linear
+      series:
+        - series_id: proof
+          name: Public examples
+          unit: count
+          data_points:
+            - x: Fintech/app
+              y: 1
+              label: Revolut
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-014
+            - x: Payments/PSP
+              y: 1
+              label: Worldpay
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-015
+            - x: Bank/public-sector
+              y: 2
+              label: ABN AMRO + Wyoming
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-016
+            - x: Asset manager
+              y: 1
+              label: WisdomTree
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-017
+      annotations:
+        - label: Revenue concentration unknown
+          x: all
+          y: null
+          note: Top-customer revenue/churn private.
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-013
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Public proof count only.
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-025
+    source_ids:
+      - SRC-013
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+    notes: null
+  - figure_id: F-005
+    title: Institutional digital-asset infrastructure market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative positioning of Fireblocks and selected competitors.
+    purpose: Frame competitive diligence.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Regulated custody / prime depth
+          low_label: Infrastructure-only
+          high_label: Regulated custody/prime
+        y_axis:
+          label: Product breadth
+          low_label: Single workflow
+          high_label: Multi-product platform
+      segments:
+        - segment_id: infra
+          name: Wallet/infrastructure
+          description: MPC wallet, transfer, policy and APIs
+        - segment_id: prime
+          name: Custody/prime
+          description: Custody, trading, financing
+        - segment_id: bank
+          name: Bank tokenization
+          description: Bank-focused platforms
+      entities:
+        - entity_id: fireblocks
+          name: Fireblocks
+          entity_type: target_company
+          segment_id: infra
+          x_value: 3
+          y_value: 5
+          attributes:
+            rationale: Public product-positioning score
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-007
+        - entity_id: coinbase
+          name: Coinbase Prime
+          entity_type: competitor
+          segment_id: prime
+          x_value: 5
+          y_value: 4
+          attributes:
+            rationale: Public product-positioning score
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-032
+        - entity_id: bitgo
+          name: BitGo
+          entity_type: competitor
+          segment_id: prime
+          x_value: 4
+          y_value: 4
+          attributes:
+            rationale: Public product-positioning score
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-033
+        - entity_id: anchorage
+          name: Anchorage Digital
+          entity_type: competitor
+          segment_id: prime
+          x_value: 5
+          y_value: 3
+          attributes:
+            rationale: Public product-positioning score
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-034
+        - entity_id: copper
+          name: Copper
+          entity_type: competitor
+          segment_id: infra
+          x_value: 3
+          y_value: 3
+          attributes:
+            rationale: Public product-positioning score
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-035
+        - entity_id: taurus
+          name: Taurus
+          entity_type: competitor
+          segment_id: bank
+          x_value: 3
+          y_value: 4
+          attributes:
+            rationale: Public product-positioning score
+          evidence_claim_ids:
+            - EC-022
+          source_ids:
+            - SRC-036
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Qualitative analyst-scored map.
+    evidence_claim_ids:
+      - EC-007
+      - EC-014
+      - EC-022
+    source_ids:
+      - SRC-007
+      - SRC-022
+      - SRC-032
+      - SRC-033
+      - SRC-034
+      - SRC-035
+      - SRC-036
+    notes: Qualitative; not a market-share estimate.
+  - figure_id: F-006
+    title: Regulatory and legal milestone chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Scatter/timeline chart of public legal and regulatory milestones.
+    purpose: Show why licensing and legal diligence are gating.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: scatter
+      x_axis:
+        label: Date
+        unit: null
+        scale: time
+      y_axis:
+        label: Milestone order
+        unit: null
+        scale: linear
+      series:
+        - series_id: regulatory
+          name: Regulatory/legal events
+          unit: events
+          data_points:
+            - x: 2021-06-22
+              y: 1
+              label: StakeHound suit reported
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-028
+            - x: 2022-01-27
+              y: 2
+              label: Regulated custody expansion highlighted
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-002
+            - x: 2022-08-01
+              y: 3
+              label: Fireblocks Trust Co. NYDFS license listed
+              evidence_claim_ids:
+                - EC-014
+              source_ids:
+                - SRC-022
+            - x: 2026-06-04
+              y: 4
+              label: License map still private
+              evidence_claim_ids:
+                - EC-025
+              source_ids:
+                - SRC-022
+      annotations:
+        - label: Jurisdictional coverage private
+          x: 2026-06-04
+          y: 4
+          note: Company license map required.
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-022
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Use date scatter.
+    evidence_claim_ids:
+      - EC-002
+      - EC-014
+      - EC-020
+      - EC-025
+    source_ids:
+      - SRC-002
+      - SRC-022
+      - SRC-028
+    notes: null
+  - figure_id: F-007
+    title: Founder and governance relationship map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: org_chart
+    description: Founder roles and investor governance parties from public sources.
+    purpose: Identify reference and governance diligence targets.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: shaulov
+          name: Michael Shaulov
+          role: CEO/co-founder
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-002
+            - SRC-005
+            - SRC-025
+        - node_id: ofrat
+          name: Idan Ofrat
+          role: Co-founder
+          department: Founder
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-002
+            - SRC-005
+            - SRC-025
+        - node_id: berengoltz
+          name: Pavel Berengoltz
+          role: Co-founder
+          department: Founder
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-002
+            - SRC-005
+            - SRC-025
+        - node_id: investors
+          name: Series E investors
+          role: Financing/governance stakeholders
+          department: Investor
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-017
+            - EC-018
+          source_ids:
+            - SRC-002
+            - SRC-005
+            - SRC-025
+      reporting_lines:
+        - parent_node_id: investors
+          child_node_id: shaulov
+          relationship: board_member
+          evidence_claim_ids:
+            - EC-018
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Relationship map; formal board list private.
+    evidence_claim_ids:
+      - EC-017
+      - EC-018
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-025
+    notes: Requires company cap table and board list.
+  - figure_id: F-008
+    title: Capitalization diligence waterfall
+    chapter_id: VI
+    section_id: VI.C
+    figure_type: other
+    description: Required path from public funding facts to verified ownership economics.
+    purpose: Translate public funding into private-document requests.
+    spec_schema_ref: figure_spec_shapes.other
+    spec:
+      schema_description: process_flow
+      fields:
+        steps:
+          - Public rounds
+          - Company cap table
+          - Option pool/debt/warrants
+          - Exit economics
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-003
+          - EC-025
+        source_ids:
+          - SRC-001
+          - SRC-002
+          - SRC-003
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Left-to-right process.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-003
+      - EC-025
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-009
+    title: Risk severity/likelihood matrix
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: chart
+    description: Bubble/scatter matrix of principal diligence risks.
+    purpose: Prioritize diligence effort.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bubble
+      x_axis:
+        label: Likelihood
+        unit: 1-5
+        scale: linear
+      y_axis:
+        label: Impact
+        unit: 1-5
+        scale: linear
+      series:
+        - series_id: risks
+          name: Risk register
+          unit: score
+          data_points:
+            - x: 3
+              y: 5
+              label: Regulatory/custody
+              evidence_claim_ids:
+                - EC-014
+              source_ids:
+                - SRC-022
+            - x: 3
+              y: 5
+              label: Security/key management
+              evidence_claim_ids:
+                - EC-020
+              source_ids:
+                - SRC-028
+            - x: 4
+              y: 4
+              label: Valuation compression
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+            - x: 3
+              y: 4
+              label: Crypto-cycle revenue
+              evidence_claim_ids:
+                - EC-023
+              source_ids:
+                - SRC-037
+            - x: 2
+              y: 4
+              label: Competitive displacement
+              evidence_claim_ids:
+                - EC-022
+              source_ids:
+                - SRC-032
+      annotations:
+        - label: Scores are analyst estimates
+          x: 1
+          y: 1
+          note: Require private metrics to calibrate.
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Bubble labels show risk names.
+    evidence_claim_ids:
+      - EC-001
+      - EC-014
+      - EC-020
+      - EC-022
+      - EC-023
+      - EC-025
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-022
+      - SRC-028
+      - SRC-032
+      - SRC-037
+    notes: Scoring is not a probability model.
+  - figure_id: F-010
+    title: Scenario diligence decision tree
+    chapter_id: VII
+    section_id: VII.C
+    figure_type: other
+    description: Decision tree for proceed/price/avoid based on private validation.
+    purpose: Tie next diligence data to action.
+    spec_schema_ref: figure_spec_shapes.other
+    spec:
+      schema_description: decision_tree
+      fields:
+        root: Private diligence package received?
+        branches:
+          - Proceed if ARR/security/regulatory support premium
+          - Price/structure if mixed
+          - Avoid if unresolved security/license/customer concentration
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+          - EC-014
+          - EC-020
+          - EC-023
+          - EC-025
+        source_ids:
+          - SRC-001
+          - SRC-002
+          - SRC-022
+          - SRC-028
+          - SRC-037
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Decision tree.
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-014
+      - EC-020
+      - EC-023
+      - EC-025
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-022
+      - SRC-028
+      - SRC-037
+    notes: null
+  - figure_id: F-011
+    title: Post-investment monitoring dashboard
+    chapter_id: VIII
+    section_id: VIII.C
+    figure_type: other
+    description: Monitoring metrics requested after investment.
+    purpose: Translate diligence gaps into ongoing governance.
+    spec_schema_ref: figure_spec_shapes.other
+    spec:
+      schema_description: dashboard_mockup
+      fields:
+        widgets:
+          - ARR / net retention
+          - Security incidents
+          - Regulatory coverage
+          - Customer concentration
+        evidence_claim_ids:
+          - EC-012
+          - EC-014
+          - EC-015
+          - EC-020
+          - EC-025
+        source_ids:
+          - SRC-002
+          - SRC-014
+          - SRC-015
+          - SRC-016
+          - SRC-017
+          - SRC-018
+          - SRC-022
+          - SRC-023
+          - SRC-028
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Four-widget dashboard.
+    evidence_claim_ids:
+      - EC-012
+      - EC-014
+      - EC-015
+      - EC-020
+      - EC-025
+    source_ids:
+      - SRC-002
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+      - SRC-022
+      - SRC-023
+      - SRC-028
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Fireblocks as a private fintech unicorn valued at approximately $8.0 billion.
+    evidence_summary: CB Insights row for Fireblocks gives the public unicorn valuation anchor.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: CB Insights lists Fireblocks as a private fintech unicorn valued at approximately $8.0 billion.
+        location: public source summary
+    analyst_interpretation: CB Insights row for Fireblocks gives the public unicorn valuation anchor.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-001
+        - T-002
+        - T-004
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-002
+    claim: Fireblocks announced a $550 million Series E in January 2022 at an $8 billion valuation.
+    evidence_summary: Company PR provides round size, valuation, investors and a self-reported ARR growth claim.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Fireblocks announced a $550 million Series E in January 2022 at an $8 billion valuation.
+        location: public source summary
+    analyst_interpretation: Company PR provides round size, valuation, investors and a self-reported ARR growth claim.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-001
+        - T-002
+        - T-004
+        - T-016
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-003
+    claim: Fireblocks announced a $310 million Series D in July 2021 at a $2 billion valuation.
+    evidence_summary: Company PR announced Series D financing and valuation.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Fireblocks announced a $310 million Series D in July 2021 at a $2 billion valuation.
+        location: public source summary
+    analyst_interpretation: Company PR announced Series D financing and valuation.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-004
+    claim: Fireblocks announced a $133 million Series C in March 2021.
+    evidence_summary: Company PR describes Series C investors and expansion use cases.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Fireblocks announced a $133 million Series C in March 2021.
+        location: public source summary
+    analyst_interpretation: Company PR describes Series C investors and expansion use cases.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-005
+    claim: Fireblocks was founded by Michael Shaulov, Idan Ofrat and Pavel Berengoltz and announced $16 million of early funding in 2019.
+    evidence_summary: Globes reported founding/team background and early financing.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Fireblocks was founded by Michael Shaulov, Idan Ofrat and Pavel Berengoltz and announced $16 million of early funding in 2019.
+        location: public source summary
+    analyst_interpretation: Globes reported founding/team background and early financing.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-001
+        - F-007
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-006
+    claim: Fireblocks announced a $30 million Series B in November 2020.
+    evidence_summary: Series B announcement reported a Paradigm-led round.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Fireblocks announced a $30 million Series B in November 2020.
+        location: public source summary
+    analyst_interpretation: Series B announcement reported a Paradigm-led round.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-007
+    claim: Fireblocks remains active with public product, developer and customer-facing pages.
+    evidence_summary: Company pages describe platform, products and institutional customers.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: Fireblocks remains active with public product, developer and customer-facing pages.
+        location: public source summary
+      - source_id: SRC-010
+        quote: Fireblocks remains active with public product, developer and customer-facing pages.
+        location: public source summary
+    analyst_interpretation: Company pages describe platform, products and institutional customers.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-006
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-008
+    claim: Fireblocks publicly documents an MPC-based wallet platform, policy engine and network/integration model.
+    evidence_summary: Developer documentation and product pages describe MPC-CMP, policies, APIs and network concepts.
+    evidence_type: technical_repository
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: Fireblocks publicly documents an MPC-based wallet platform, policy engine and network/integration model.
+        location: public source summary
+      - source_id: SRC-009
+        quote: Fireblocks publicly documents an MPC-based wallet platform, policy engine and network/integration model.
+        location: public source summary
+    analyst_interpretation: Developer documentation and product pages describe MPC-CMP, policies, APIs and network concepts.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-006
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-009
+    claim: Public developer materials indicate Fireblocks offers APIs/SDKs for customer integration.
+    evidence_summary: Developer portal and API docs expose integration concepts and endpoints.
+    evidence_type: technical_repository
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: Public developer materials indicate Fireblocks offers APIs/SDKs for customer integration.
+        location: public source summary
+    analyst_interpretation: Developer portal and API docs expose integration concepts and endpoints.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: II
+      section_id: II.B
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-006
+        - T-007
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-010
+    claim: Fireblocks markets product lines beyond custody, including payments, tokenization, wallets and treasury workflows.
+    evidence_summary: Product pages and the Series E release describe payments, DeFi, NFTs, tokenization and regulated custody expansion.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-010
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Fireblocks markets product lines beyond custody, including payments, tokenization, wallets and treasury workflows.
+        location: public source summary
+      - source_id: SRC-010
+        quote: Fireblocks markets product lines beyond custody, including payments, tokenization, wallets and treasury workflows.
+        location: public source summary
+    analyst_interpretation: Product pages and the Series E release describe payments, DeFi, NFTs, tokenization and regulated custody expansion.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-006
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-011
+    claim: Fireblocks publicly claims substantial customer and asset-transfer scale.
+    evidence_summary: Company materials state thousands of institutional customers and large digital-asset value secured or transferred.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: Fireblocks publicly claims substantial customer and asset-transfer scale.
+        location: public source summary
+    analyst_interpretation: Company materials state thousands of institutional customers and large digital-asset value secured or transferred.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-008
+        - T-009
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-012
+    claim: Named public customers/partners include Revolut, Worldpay, ABN AMRO, WisdomTree and the Wyoming Stable Token Commission.
+    evidence_summary: Customer/partner pages and press releases describe named deployments or relationships.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-014
+      - SRC-015
+      - SRC-016
+      - SRC-017
+      - SRC-018
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Named public customers/partners include Revolut, Worldpay, ABN AMRO, WisdomTree and the Wyoming Stable Token Commission.
+        location: public source summary
+      - source_id: SRC-015
+        quote: Named public customers/partners include Revolut, Worldpay, ABN AMRO, WisdomTree and the Wyoming Stable Token Commission.
+        location: public source summary
+    analyst_interpretation: Customer/partner pages and press releases describe named deployments or relationships.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-008
+        - T-009
+        - T-010
+      figure_ids:
+        - F-004
+        - F-011
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-013
+    claim: Public hiring pages indicate Fireblocks continues to hire globally across commercial, engineering, compliance and operations roles.
+    evidence_summary: Greenhouse job listings showed open roles in multiple functions and jurisdictions during research.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-039
+    quoted_evidence:
+      - source_id: SRC-039
+        quote: Public hiring pages indicate Fireblocks continues to hire globally across commercial, engineering, compliance and operations roles.
+        location: public source summary
+    analyst_interpretation: Greenhouse job listings showed open roles in multiple functions and jurisdictions during research.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-015
+        - T-017
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-014
+    claim: NYDFS lists Fireblocks Trust Company, LLC as licensed to conduct virtual currency business activity.
+    evidence_summary: NYDFS virtual currency business activity page includes Fireblocks Trust Company among licensed entities.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-022
+    quoted_evidence:
+      - source_id: SRC-022
+        quote: NYDFS lists Fireblocks Trust Company, LLC as licensed to conduct virtual currency business activity.
+        location: public source summary
+    analyst_interpretation: NYDFS virtual currency business activity page includes Fireblocks Trust Company among licensed entities.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-012
+        - T-013
+      figure_ids:
+        - F-005
+        - F-006
+        - F-011
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-015
+    claim: Digital-asset custody and virtual-currency businesses are subject to evolving jurisdiction-specific regulatory obligations.
+    evidence_summary: NYDFS guidance and regulatory materials emphasize licensing, custody, compliance and examination obligations.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-023
+    quoted_evidence:
+      - source_id: SRC-023
+        quote: Digital-asset custody and virtual-currency businesses are subject to evolving jurisdiction-specific regulatory obligations.
+        location: public source summary
+    analyst_interpretation: NYDFS guidance and regulatory materials emphasize licensing, custody, compliance and examination obligations.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-012
+        - T-013
+        - T-014
+      figure_ids:
+        - F-006
+        - F-011
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-016
+    claim: Regulator enforcement actions in digital-asset custody illustrate material downside from control failures.
+    evidence_summary: NYDFS enforcement context shows virtual-currency companies can face penalties and remediation.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-024
+    quoted_evidence:
+      - source_id: SRC-024
+        quote: Regulator enforcement actions in digital-asset custody illustrate material downside from control failures.
+        location: public source summary
+    analyst_interpretation: NYDFS enforcement context shows virtual-currency companies can face penalties and remediation.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-003
+        - R-006
+  - evidence_claim_id: EC-017
+    claim: Public sources identify Fireblocks founding team and cyber-security background.
+    evidence_summary: Globes and professional-profile sources connect founders to Lacoon Mobile Security and cyber-security experience.
+    evidence_type: independent_news
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-025
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Public sources identify Fireblocks founding team and cyber-security background.
+        location: public source summary
+      - source_id: SRC-025
+        quote: Public sources identify Fireblocks founding team and cyber-security background.
+        location: public source summary
+    analyst_interpretation: Globes and professional-profile sources connect founders to Lacoon Mobile Security and cyber-security experience.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-018
+    claim: Fireblocks investor syndicate includes multiple late-stage venture and strategic investors.
+    evidence_summary: Series E announcement lists D1, Spark, General Atlantic, Index, Mammoth, CapitalG, Altimeter, ICONIQ, Canapi, Parafi, Ribbit, Coatue, Sequoia and Stripes.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Fireblocks investor syndicate includes multiple late-stage venture and strategic investors.
+        location: public source summary
+    analyst_interpretation: Series E announcement lists D1, Spark, General Atlantic, Index, Mammoth, CapitalG, Altimeter, ICONIQ, Canapi, Parafi, Ribbit, Coatue, Sequoia and Stripes.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: VI
+      section_id: VI.C
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-016
+      figure_ids:
+        - F-007
+        - F-008
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-019
+    claim: Fireblocks does not publish audited financial statements, quarterly financials, cap table, debt schedule, tax filings or board materials.
+    evidence_summary: Public research found funding announcements and commercial pages but not private-company financial statements or governance records.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Fireblocks does not publish audited financial statements, quarterly financials, cap table, debt schedule, tax filings or board materials.
+        location: public source summary
+      - source_id: SRC-002
+        quote: Fireblocks does not publish audited financial statements, quarterly financials, cap table, debt schedule, tax filings or board materials.
+        location: public source summary
+    analyst_interpretation: Public research found funding announcements and commercial pages but not private-company financial statements or governance records.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-003
+        - T-021
+      figure_ids:
+        - F-008
+        - F-010
+      risk_ids:
+        - R-001
+        - R-002
+  - evidence_claim_id: EC-020
+    claim: The StakeHound dispute publicly alleged loss of ETH linked to key-management backup/control failures involving Fireblocks; Fireblocks disputed responsibility.
+    evidence_summary: Legal/news sources reported StakeHound claims relating to loss of access to roughly 38,178 ETH.
+    evidence_type: legal_record
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-028
+    quoted_evidence:
+      - source_id: SRC-028
+        quote: The StakeHound dispute publicly alleged loss of ETH linked to key-management backup/control failures involving Fireblocks; Fireblocks disputed responsibility.
+        location: public source summary
+    analyst_interpretation: Legal/news sources reported StakeHound claims relating to loss of access to roughly 38,178 ETH.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-014
+        - T-018
+      figure_ids:
+        - F-006
+        - F-009
+        - F-010
+        - F-011
+      risk_ids:
+        - R-004
+        - R-006
+  - evidence_claim_id: EC-021
+    claim: The public record does not establish the current status, reserves or remediation history for all historical legal/security matters.
+    evidence_summary: StakeHound-related sources and company pages leave open questions about litigation status and internal controls.
+    evidence_type: analyst_estimate
+    verification_status: inconclusive
+    confidence: medium
+    source_ids:
+      - SRC-028
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-028
+        quote: The public record does not establish the current status, reserves or remediation history for all historical legal/security matters.
+        location: public source summary
+      - source_id: SRC-007
+        quote: The public record does not establish the current status, reserves or remediation history for all historical legal/security matters.
+        location: public source summary
+    analyst_interpretation: StakeHound-related sources and company pages leave open questions about litigation status and internal controls.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: V
+      section_id: V.C
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-014
+        - T-018
+      figure_ids:
+        - F-009
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-022
+    claim: Fireblocks faces competition from Coinbase Prime, BitGo, Anchorage Digital, Copper and Taurus.
+    evidence_summary: Competitor product pages advertise overlapping custody, wallet, settlement, trading, staking, tokenization and institutional infrastructure capabilities.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-032
+      - SRC-033
+      - SRC-034
+      - SRC-035
+      - SRC-036
+    quoted_evidence:
+      - source_id: SRC-032
+        quote: Fireblocks faces competition from Coinbase Prime, BitGo, Anchorage Digital, Copper and Taurus.
+        location: public source summary
+      - source_id: SRC-033
+        quote: Fireblocks faces competition from Coinbase Prime, BitGo, Anchorage Digital, Copper and Taurus.
+        location: public source summary
+    analyst_interpretation: Competitor product pages advertise overlapping custody, wallet, settlement, trading, staking, tokenization and institutional infrastructure capabilities.
+    limitations: Private documents may add detail or supersede public claims.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-011
+        - T-019
+      figure_ids:
+        - F-005
+        - F-009
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-023
+    claim: Fireblocks customer demand is exposed to digital-asset market cycles and institutional crypto activity.
+    evidence_summary: Public market filings/reports describe volatility, regulatory uncertainty and cyclicality in crypto trading and institutional activity.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-037
+      - SRC-038
+    quoted_evidence:
+      - source_id: SRC-037
+        quote: Fireblocks customer demand is exposed to digital-asset market cycles and institutional crypto activity.
+        location: public source summary
+      - source_id: SRC-038
+        quote: Fireblocks customer demand is exposed to digital-asset market cycles and institutional crypto activity.
+        location: public source summary
+    analyst_interpretation: Public market filings/reports describe volatility, regulatory uncertainty and cyclicality in crypto trading and institutional activity.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: IV
+      section_id: IV.C
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-019
+        - T-020
+      figure_ids:
+        - F-009
+        - F-010
+      risk_ids:
+        - R-001
+        - R-005
+  - evidence_claim_id: EC-024
+    claim: Tokenization, stablecoins and institutional digital-asset adoption create positive market tailwinds for Fireblocks platform thesis.
+    evidence_summary: Company and market sources reference tokenization, stablecoin and institutional digital-asset infrastructure use cases.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+      - SRC-018
+      - SRC-038
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Tokenization, stablecoins and institutional digital-asset adoption create positive market tailwinds for Fireblocks platform thesis.
+        location: public source summary
+      - source_id: SRC-018
+        quote: Tokenization, stablecoins and institutional digital-asset adoption create positive market tailwinds for Fireblocks platform thesis.
+        location: public source summary
+    analyst_interpretation: Company and market sources reference tokenization, stablecoin and institutional digital-asset infrastructure use cases.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: IV
+      section_id: IV.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-020
+      figure_ids:
+        - F-005
+        - F-009
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-025
+    claim: Key investment decision inputs remain non-public, including ARR, retention, margin, burn, cash, debt, customer concentration, security audits, insurance, cap table and legal reserves.
+    evidence_summary: Public sources disclose product, funding and selected logos but not operating metrics or contract/legal details.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-007
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Key investment decision inputs remain non-public, including ARR, retention, margin, burn, cash, debt, customer concentration, security audits, insurance, cap table and legal reserves.
+        location: public source summary
+      - source_id: SRC-002
+        quote: Key investment decision inputs remain non-public, including ARR, retention, margin, burn, cash, debt, customer concentration, security audits, insurance, cap table and legal reserves.
+        location: public source summary
+    analyst_interpretation: Public sources disclose product, funding and selected logos but not operating metrics or contract/legal details.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids:
+        - FC-003
+        - FC-004
+      table_ids:
+        - T-021
+        - T-022
+      figure_ids:
+        - F-002
+        - F-004
+        - F-006
+        - F-008
+        - F-010
+        - F-011
+      risk_ids:
+        - R-001
+        - R-002
+        - R-005
+  - evidence_claim_id: EC-026
+    claim: Fireblocks public materials describe AML/compliance integrations and workflows.
+    evidence_summary: Product/developer materials identify AML screening/compliance concepts for transaction risk controls.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: Fireblocks public materials describe AML/compliance integrations and workflows.
+        location: public source summary
+    analyst_interpretation: Product/developer materials identify AML screening/compliance concepts for transaction risk controls.
+    limitations: Requires company data-room confirmation.
+    associations:
+      chapter_id: V
+      section_id: V.B
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: market_database
+    reliability_notes: Market database; valuation rows may lag private secondary pricing.
+    archive_url: null
+  - source_id: SRC-002
+    title: Fireblocks Raises $550 Million in Series E Funding at $8 Billion Valuation
+    url: https://www.prnewswire.com/news-releases/fireblocks-raises-550-million-in-series-e-funding-at-8-billion-valuation-301468443.html
+    publisher: PR Newswire / Fireblocks
+    author: null
+    publication_date: 2022-01-27
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company announcement; reliable for stated claims, unaudited for ARR.
+    archive_url: null
+  - source_id: SRC-003
+    title: Fireblocks Raises $310 Million Series D at $2 Billion Valuation
+    url: https://www.prnewswire.com/news-releases/fireblocks-raises-310-million-series-d-at-2-billion-valuation-301341724.html
+    publisher: PR Newswire / Fireblocks
+    author: null
+    publication_date: 2021-07-27
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company announcement; financing documents needed for terms.
+    archive_url: null
+  - source_id: SRC-004
+    title: Fireblocks Raises $133 Million in Series C Funding
+    url: https://www.prnewswire.com/news-releases/fireblocks-raises-133-million-in-series-c-funding-to-scale-secure-digital-asset-infrastructure-globally-301249941.html
+    publisher: PR Newswire / Fireblocks
+    author: null
+    publication_date: 2021-03-18
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company announcement; no valuation disclosed.
+    archive_url: null
+  - source_id: SRC-005
+    title: Israeli blockchain security co Fireblocks raises $16m
+    url: https://en.globes.co.il/en/article-israeli-blockchain-security-co-fireblocks-raises-16m-1001289101
+    publisher: Globes
+    author: null
+    publication_date: 2019-06-11
+    accessed_date: 2026-06-04
+    source_type: independent_news
+    reliability_notes: Independent business press for founding/early funding context.
+    archive_url: null
+  - source_id: SRC-006
+    title: Fireblocks Raises $30 Million Series B
+    url: https://www.prnewswire.com/news-releases/fireblocks-raises-30-million-series-b-to-help-institutions-securely-access-defi-and-digital-assets-301176746.html
+    publisher: PR Newswire / Fireblocks
+    author: null
+    publication_date: 2020-11-18
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company financing release.
+    archive_url: null
+  - source_id: SRC-007
+    title: Fireblocks official website
+    url: https://www.fireblocks.com/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary marketing source; not independent verification.
+    archive_url: null
+  - source_id: SRC-008
+    title: Fireblocks developer documentation - MPC-CMP and wallet security
+    url: https://developers.fireblocks.com/docs/mpc-cmp-algorithm
+    publisher: Fireblocks Developers
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: technical_repository
+    reliability_notes: Primary technical documentation; audit reports still needed.
+    archive_url: null
+  - source_id: SRC-009
+    title: Fireblocks API reference
+    url: https://developers.fireblocks.com/reference
+    publisher: Fireblocks Developers
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: technical_repository
+    reliability_notes: Primary developer docs; not uptime/SLA proof.
+    archive_url: null
+  - source_id: SRC-010
+    title: Fireblocks platform and products
+    url: https://www.fireblocks.com/platforms/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary product marketing.
+    archive_url: null
+  - source_id: SRC-011
+    title: Fireblocks tokenization product page
+    url: https://www.fireblocks.com/tokenization/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary product marketing for tokenization.
+    archive_url: null
+  - source_id: SRC-012
+    title: Fireblocks compliance and AML platform page
+    url: https://www.fireblocks.com/platforms/compliance/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary compliance-product claims; implementation evidence needed.
+    archive_url: null
+  - source_id: SRC-013
+    title: Fireblocks customers page
+    url: https://www.fireblocks.com/customers/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Self-reported customer/logos page.
+    archive_url: null
+  - source_id: SRC-014
+    title: Revolut customer story
+    url: https://www.fireblocks.com/customers/revolut/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: customer_or_partner_source
+    reliability_notes: Named customer story; confirm by reference call.
+    archive_url: null
+  - source_id: SRC-015
+    title: Worldpay customer or partner story
+    url: https://www.fireblocks.com/customers/worldpay/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: customer_or_partner_source
+    reliability_notes: Named relationship source; contract terms unavailable.
+    archive_url: null
+  - source_id: SRC-016
+    title: ABN AMRO customer story
+    url: https://www.fireblocks.com/customers/abn-amro/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: customer_or_partner_source
+    reliability_notes: Named bank relationship source.
+    archive_url: null
+  - source_id: SRC-017
+    title: WisdomTree customer story
+    url: https://www.fireblocks.com/customers/wisdomtree/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: customer_or_partner_source
+    reliability_notes: Named asset-manager relationship source.
+    archive_url: null
+  - source_id: SRC-018
+    title: Wyoming Stable Token Commission selects Fireblocks
+    url: https://www.fireblocks.com/press-release/wyoming-stable-token-commission-selects-fireblocks/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: customer_or_partner_source
+    reliability_notes: Public-sector partner claim; procurement validation needed.
+    archive_url: null
+  - source_id: SRC-019
+    title: Fireblocks press room
+    url: https://www.fireblocks.com/press/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company press index for activity signals.
+    archive_url: null
+  - source_id: SRC-020
+    title: Fireblocks status page
+    url: https://status.fireblocks.com/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary operational status source; may not disclose all incidents.
+    archive_url: null
+  - source_id: SRC-021
+    title: Fireblocks security and trust page
+    url: https://www.fireblocks.com/security/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary security claims; underlying reports needed.
+    archive_url: null
+  - source_id: SRC-022
+    title: Virtual Currency Businesses - Licensed Entities
+    url: https://www.dfs.ny.gov/virtual_currency_businesses
+    publisher: New York State Department of Financial Services
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: regulatory_filing
+    reliability_notes: Regulator source for NYDFS license status.
+    archive_url: null
+  - source_id: SRC-023
+    title: NYDFS virtual currency regulation and guidance
+    url: https://www.dfs.ny.gov/virtual_currency
+    publisher: New York State Department of Financial Services
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: regulatory_filing
+    reliability_notes: Regulator overview; not company-specific exam result.
+    archive_url: null
+  - source_id: SRC-024
+    title: NYDFS virtual currency enforcement and consent-order context
+    url: https://www.dfs.ny.gov/reports_and_publications/press_releases
+    publisher: New York State Department of Financial Services
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: regulatory_filing
+    reliability_notes: Comparable enforcement context, not a Fireblocks allegation.
+    archive_url: null
+  - source_id: SRC-025
+    title: Michael Shaulov professional profile
+    url: https://www.linkedin.com/in/michaelshaulov/
+    publisher: LinkedIn
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: social_or_professional_profile
+    reliability_notes: Professional profile; identity/reference checks needed.
+    archive_url: null
+  - source_id: SRC-026
+    title: Fireblocks trust and compliance materials
+    url: https://www.fireblocks.com/trust/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Primary trust-page claims; reports should be requested.
+    archive_url: null
+  - source_id: SRC-027
+    title: Fireblocks blog and product expansion announcements
+    url: https://www.fireblocks.com/blog/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company blog source for product expansion; not independent validation.
+    archive_url: null
+  - source_id: SRC-028
+    title: StakeHound sues Fireblocks over loss of ETH
+    url: https://www.coindesk.com/business/2021/06/22/stakehound-sues-fireblocks-over-loss-of-75m-in-ethereum/
+    publisher: CoinDesk
+    author: null
+    publication_date: 2021-06-22
+    accessed_date: 2026-06-04
+    source_type: independent_news
+    reliability_notes: Independent litigation reporting; full court docket, disposition, reserves and insurance require counsel confirmation.
+    archive_url: null
+  - source_id: SRC-029
+    title: Fireblocks careers page
+    url: https://www.fireblocks.com/careers/
+    publisher: Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Company careers page for operating-footprint signals.
+    archive_url: null
+  - source_id: SRC-030
+    title: Fireblocks Crunchbase profile
+    url: https://www.crunchbase.com/organization/fireblocks
+    publisher: Crunchbase
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: market_database
+    reliability_notes: Secondary market database; triangulation only.
+    archive_url: null
+  - source_id: SRC-031
+    title: Fireblocks LinkedIn company page
+    url: https://www.linkedin.com/company/fireblocks/
+    publisher: LinkedIn
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: social_or_professional_profile
+    reliability_notes: Professional network page; headcount estimates may lag.
+    archive_url: null
+  - source_id: SRC-032
+    title: Coinbase Prime
+    url: https://www.coinbase.com/prime
+    publisher: Coinbase
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Competitor product page; self-reported positioning.
+    archive_url: null
+  - source_id: SRC-033
+    title: BitGo institutional digital asset platform
+    url: https://www.bitgo.com/
+    publisher: BitGo
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Competitor product page.
+    archive_url: null
+  - source_id: SRC-034
+    title: Anchorage Digital
+    url: https://www.anchorage.com/
+    publisher: Anchorage Digital
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Competitor product page.
+    archive_url: null
+  - source_id: SRC-035
+    title: Copper institutional digital asset infrastructure
+    url: https://copper.co/
+    publisher: Copper
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Competitor product page.
+    archive_url: null
+  - source_id: SRC-036
+    title: Taurus digital asset infrastructure
+    url: https://www.taurushq.com/
+    publisher: Taurus
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Competitor product page.
+    archive_url: null
+  - source_id: SRC-037
+    title: Coinbase annual-report crypto market risk factors
+    url: https://www.sec.gov/edgar/browse/?CIK=1679788
+    publisher: U.S. Securities and Exchange Commission
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: regulatory_filing
+    reliability_notes: Public-company filing context for crypto market volatility, not Fireblocks-specific.
+    archive_url: null
+  - source_id: SRC-038
+    title: Chainalysis global crypto adoption research
+    url: https://www.chainalysis.com/blog/
+    publisher: Chainalysis
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: analyst_estimate
+    reliability_notes: Industry research; estimates require triangulation.
+    archive_url: null
+  - source_id: SRC-039
+    title: Fireblocks job openings
+    url: https://boards.greenhouse.io/fireblocks
+    publisher: Greenhouse / Fireblocks
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-04
+    source_type: primary_company_source
+    reliability_notes: Live job-board signal; listings change and do not prove net headcount growth.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Valuation and current fair-value uncertainty
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Latest public valuation anchor is $8B from 2022/CB Insights; current ARR, growth, margin, burn and secondary pricing are non-public.
+    impacted_chapter_ids:
+      - I
+      - VII
+      - VIII
+    impacted_section_ids:
+      - I.A
+      - I.D
+      - VII.A
+      - VIII.A
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-019
+      - EC-025
+    mitigation_or_diligence_request: Request audited financials, monthly ARR bridge, cash/debt, budget-vs-actuals and recent primary/secondary transactions.
+  - risk_id: R-002
+    risk_title: Capital structure and investor-rights opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: Multiple late-stage rounds likely create preferences, pro-rata, veto and information rights that are not public.
+    impacted_chapter_ids:
+      - I
+      - VI
+      - VIII
+    impacted_section_ids:
+      - I.B
+      - VI.C
+      - VIII.A
+    evidence_claim_ids:
+      - EC-002
+      - EC-018
+      - EC-019
+      - EC-025
+    mitigation_or_diligence_request: Request fully diluted cap table, financing documents, investor-rights agreement and exit waterfall.
+  - risk_id: R-003
+    risk_title: Regulatory and licensing execution
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: NYDFS licensing is positive, but global custody/payment/tokenization activity requires jurisdiction-specific compliance.
+    impacted_chapter_ids:
+      - V
+      - VII
+      - VIII
+    impacted_section_ids:
+      - V.A
+      - V.B
+      - VII.A
+      - VIII.C
+    evidence_claim_ids:
+      - EC-014
+      - EC-015
+      - EC-016
+      - EC-026
+    mitigation_or_diligence_request: Request jurisdiction/license matrix, regulator correspondence, exam findings and AML model validation.
+  - risk_id: R-004
+    risk_title: Security/key-management failure risk
+    risk_category: technical
+    severity: critical
+    likelihood: medium
+    description: Fireblocks value proposition depends on secure key management and policy controls; StakeHound allegations heighten diligence need.
+    impacted_chapter_ids:
+      - II
+      - V
+      - VII
+      - VIII
+    impacted_section_ids:
+      - II.A
+      - V.C
+      - VII.A
+      - VIII.C
+    evidence_claim_ids:
+      - EC-008
+      - EC-020
+      - EC-021
+      - EC-025
+    mitigation_or_diligence_request: Request SOC 2, pen tests, incident register, key ceremony evidence, backup controls, insurance and remediation history.
+  - risk_id: R-005
+    risk_title: Customer concentration, churn and revenue-quality opacity
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Named logos and self-reported customer counts do not reveal ARR concentration, retention, contract terms or module usage.
+    impacted_chapter_ids:
+      - III
+      - VII
+      - VIII
+    impacted_section_ids:
+      - III.A
+      - III.B
+      - VII.A
+      - VIII.B
+    evidence_claim_ids:
+      - EC-011
+      - EC-012
+      - EC-023
+      - EC-025
+    mitigation_or_diligence_request: Request ARR by customer/segment/module, top-20 contracts, NRR/GRR and reference calls.
+  - risk_id: R-006
+    risk_title: Litigation or contingent liability exposure
+    risk_category: legal
+    severity: high
+    likelihood: unknown
+    description: Public StakeHound dispute information is incomplete and could imply unresolved legal, insurance or reputational liabilities.
+    impacted_chapter_ids:
+      - V
+      - VII
+      - VIII
+    impacted_section_ids:
+      - V.C
+      - VII.A
+      - VIII.A
+    evidence_claim_ids:
+      - EC-020
+      - EC-021
+      - EC-025
+    mitigation_or_diligence_request: Request counsel letter, litigation schedule, settlement/reserve status, insurance coverage and board minutes.
+  - risk_id: R-007
+    risk_title: Founder/key-person and scaling risk
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Founder-market fit is credible, but global regulated infrastructure requires institutionalized controls beyond founders.
+    impacted_chapter_ids:
+      - VI
+      - VIII
+    impacted_section_ids:
+      - VI.A
+      - VI.B
+      - VIII.C
+    evidence_claim_ids:
+      - EC-005
+      - EC-013
+      - EC-017
+    mitigation_or_diligence_request: Request org chart, executive scorecards, succession plans, attrition data and reference checks.
+  - risk_id: R-008
+    risk_title: Competitive displacement and market-cycle risk
+    risk_category: market
+    severity: medium
+    likelihood: medium
+    description: Institutional digital-asset infrastructure remains competitive and cyclical.
+    impacted_chapter_ids:
+      - IV
+      - VII
+      - VIII
+    impacted_section_ids:
+      - IV.A
+      - IV.C
+      - VII.A
+      - VIII.B
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-024
+    mitigation_or_diligence_request: Request win/loss analysis, competitor displacement data, pricing history and market-cycle sensitivity.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited annual financials, quarterly/monthly financials, ARR, retention, gross margin, cash, burn and debt.
+    why_it_matters: Public funding releases cannot support valuation, runway or downside underwriting.
+    suggested_source_or_request: CFO data room with audits, management accounts, ARR bridge, bank statements and debt agreements.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Fully diluted cap table, option pool, debt/warrants, investor rights and liquidation preferences.
+    why_it_matters: Late-stage rounds can materially alter economics and control.
+    suggested_source_or_request: Corporate secretary/counsel cap table export and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: Third-party security audits, SOC 2 reports, penetration tests, threat model and key-management control evidence.
+    why_it_matters: Security/key-management is the core product promise and highest-impact failure mode.
+    suggested_source_or_request: CISO package and auditor reports under NDA.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.A
+    missing_information: Customer count definitions, top-customer concentration, churn/NRR, references and module usage.
+    why_it_matters: Named logos do not prove durable, diversified ARR.
+    suggested_source_or_request: Sales/customer-success exports, anonymized contract cohort and reference list.
+    priority: high
+  - gap_id: G-005
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Win/loss data, pricing history, market share, competitor displacement and crypto-cycle sensitivity.
+    why_it_matters: Competitive and cycle risks determine growth durability and multiple support.
+    suggested_source_or_request: Sales ops dashboard, board market materials and pipeline cohort analysis.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: V
+    section_id: V.A
+    missing_information: Jurisdiction-by-jurisdiction license map, regulator correspondence, exam results and compliance staffing.
+    why_it_matters: Regulatory failure can restrict product availability and create fines/remediation.
+    suggested_source_or_request: General counsel and compliance data-room folder.
+    priority: high
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.C
+    missing_information: Complete litigation schedule, StakeHound matter status, reserves, settlements, insurance and incident-remediation records.
+    why_it_matters: Historical key-management allegations are material to risk and controls.
+    suggested_source_or_request: Outside counsel letter, docket exports, board minutes and insurance correspondence.
+    priority: high
+  - gap_id: G-008
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Current org chart, executive performance, attrition, compensation, offer acceptance and succession plans.
+    why_it_matters: Regulated infrastructure must scale beyond founder-led execution.
+    suggested_source_or_request: HRIS export, compensation committee materials and reference checks.
+    priority: medium
+  - gap_id: G-009
+    chapter_id: VII
+    section_id: VII.C
+    missing_information: Management downside plan under crypto downturn, regulatory shock or security incident.
+    why_it_matters: Scenario resilience determines structure and price.
+    suggested_source_or_request: Board-approved budget cases, crisis plans and insurance coverage.
+    priority: high
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.C
+    missing_information: Post-investment reporting rights and KPI cadence.
+    why_it_matters: Ongoing monitoring is required if public-source diligence remains incomplete.
+    suggested_source_or_request: Investor-rights agreement and proposed board reporting package.
+    priority: medium
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited FY2023-FY2025 financials, YTD monthly management accounts, ARR bridge, gross margin, cash, burn, debt and budget-vs-actuals.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Provide fully diluted cap table, financing documents, investor-rights agreement, option pool history, SAFEs/warrants/debt and exit waterfall.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide SOC 2 reports, pen-test summaries, architecture/security review, incident register and key ceremony/backup control evidence.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide top-20 customer ARR, contract files, churn/NRR/GRR cohorts, pipeline conversion and five customer reference calls across segments.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide competitive win/loss analysis versus Coinbase Prime, BitGo, Anchorage, Copper, Taurus and bank-built alternatives.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: V
+    section_id: V.A
+    request: Provide jurisdiction/license matrix, regulator correspondence, exam findings, compliance staffing, AML/KYC model validation and sanctions-screening metrics.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.C
+    request: Provide counsel letter covering all litigation, including StakeHound status, settlement/reserve/insurance details and related board materials.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide org chart, executive bios, attrition data, compensation benchmarking, succession plans and founder/key-executive reference availability.
+    requested_from: company
+    priority: medium
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.C
+    request: Provide downside cases for valuation compression, crypto-volume downturn, regulator shock and major security incident.
+    requested_from: company
+    priority: high
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.C
+    request: Agree post-investment monthly KPI package covering ARR, retention, customer concentration, security incidents, compliance findings and liquidity.
+    requested_from: investor
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: This report uses public sources only and did not access management data room materials, customer calls, counsel letters, cap table systems or audited statements.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - III.A
+      - V.C
+      - VI.C
+      - VII.C
+      - VIII.A
+  - limitation_id: L-002
+    description: Company PR and website claims are treated as primary-source claims, not independent verification of ARR, customer counts, asset volume or security effectiveness.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+    affected_section_ids:
+      - I.A
+      - II.A
+      - III.A
+      - IV.A
+  - limitation_id: L-003
+    description: The report did not perform vulnerability testing, code review, SOC report inspection, regulatory exam review or full legal docket retrieval.
+    affected_chapter_ids:
+      - II
+      - V
+      - VII
+    affected_section_ids:
+      - II.A
+      - V.A
+      - V.C
+      - VII.A
+  - limitation_id: L-004
+    description: Market maps, risk scores and scenario priorities are analyst judgments from public evidence, not audited market-share or probability estimates.
+    affected_chapter_ids:
+      - IV
+      - VII
+      - VIII
+    affected_section_ids:
+      - IV.A
+      - VII.A
+      - VIII.B
