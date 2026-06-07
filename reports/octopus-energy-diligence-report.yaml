@@ -1,0 +1,3205 @@
+report_metadata:
+  report_title: Octopus Energy Startup Diligence Report
+  target_company: Octopus Energy
+  website: https://octopus.energy/
+  known_aliases:
+    - Octopus Energy Group Limited
+    - Octopus Energy Ltd
+    - Kraken Technologies
+  sector: Energy supply, renewable energy and energy software
+  geography: United Kingdom / international energy markets
+  company_stage: Private unicorn / growth-stage energy and technology company
+  research_date: 2026-06-07
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD unless otherwise noted
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built the exclusion list from existing reports and selected this target via shuf -n 3 from parsed public unicorn-list candidates.
+    - Used public company pages, public registry or security pages, news/search snippets and market-list evidence available through public web fetches.
+    - No private data room, founder interview, customer call, paid database export or counsel report was available.
+  included_jurisdictions:
+    - United Kingdom
+    - International markets referenced by public materials
+  excluded_topics:
+    - Private financial statements, cap table, customer contracts, board materials, legal docket exports, full security reports and non-public regulatory correspondence were unavailable.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Workflow request for random unicorn diligence reports
+      type: workflow_request
+      date_received: 2026-06-07
+      notes: No pitch deck, financial model, founder responses or data room were provided.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Octopus Energy is a private unicorn with a public valuation anchor of US$5B or more.
+    claim_source: Wikipedia unicorn list and public funding search
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.B
+      - I.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-013
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request primary company records and management confirmation.
+  - founder_claim_id: FC-002
+    claim_text: Octopus uses technology and Kraken to operate energy and support/license large account bases.
+    claim_source: Company and search-result public materials
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - III
+      - VI
+    mapped_section_ids:
+      - II.A
+      - III.B
+      - VI.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-011
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request primary company records and management confirmation.
+  - founder_claim_id: FC-003
+    claim_text: Octopus has large customer and renewable-generation scale.
+    claim_source: Company about and press materials
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-007
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request primary company records and management confirmation.
+  - founder_claim_id: FC-004
+    claim_text: Octopus is active and private rather than IPOed, acquired or shut down.
+    claim_source: Companies House public registry
+    claim_date: 2026-06-07
+    mapped_chapter_ids:
+      - I
+      - VIII
+    mapped_section_ids:
+      - I.C
+      - VIII.G
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-002
+      - EC-013
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request primary company records and management confirmation.
+executive_summary:
+  overall_assessment: "Octopus Energy is eligible for public diligence as an active private unicorn candidate: Companies House lists the group as active and private, and public unicorn/funding sources support a multi-billion-dollar valuation screen. Public evidence supports operating scale, but investment reliance is blocked by private financial, customer, regulatory, cap-table and contract gaps."
+  investment_or_diligence_thesis: Proceed only to confirmatory diligence. The upside case depends on proving durable retail energy margins, Kraken platform economics, renewable-portfolio returns and regulatory resilience beyond public scale narratives.
+  strongest_verified_claims:
+    - founder_claim_id: FC-004
+      summary: Companies House lists Octopus Energy Group Limited as active and private limited.
+      evidence_claim_ids:
+        - EC-002
+        - EC-013
+    - founder_claim_id: FC-003
+      summary: Octopus publicly claims more than 10 million homes powered and a large renewable-generation footprint.
+      evidence_claim_ids:
+        - EC-003
+        - EC-005
+    - founder_claim_id: FC-002
+      summary: Public materials support technology/platform positioning around Kraken and energy products.
+      evidence_claim_ids:
+        - EC-006
+        - EC-011
+  biggest_risks:
+    - risk_id: R-001
+      summary: Financial quality, cap table and runway are private.
+    - risk_id: R-002
+      summary: Energy-market volatility and regulatory exposure may pressure margins.
+    - risk_id: R-003
+      summary: Kraken platform economics and concentration are not public.
+  key_evidence_gaps:
+    - Audited financials, cash/debt, hedging/collateral and KPI pack.
+    - Cap table, preferences, investor rights and debt instruments.
+    - Customer churn, bad debt, concentration and contract economics.
+    - Kraken ARR, implementation economics, SLAs and incident history.
+    - Regulatory correspondence, litigation and material contracts.
+  recommended_next_steps:
+    - Run financial and energy-market stress diligence before relying on valuation.
+    - Request Kraken customer economics and top-licensee contracts.
+    - Have counsel review Ofgem/FCA compliance, complaints and material contracts.
+    - Review renewable project schedules, leverage, PPAs and returns.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Octopus has public valuation and investor signals, but audited financials, unit economics, hedging, cash, debt and cap-table terms are private.
+    founder_claim_ids:
+      - FC-001
+      - FC-004
+    evidence_claim_ids: &a5
+      - EC-001
+      - EC-002
+      - EC-008
+    risk_ids: &a1
+      - R-001
+      - R-002
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: No public audited financial statements or KPI pack were found.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a2
+              - EC-008
+            risk_ids: *a1
+        hidden_risks:
+          - R-001 remains open until private diligence closes this section.
+          - R-002 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify annual and quarterly financial information for the past three years.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Public valuation anchors exist, but forecasts and valuation bridge are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a3
+              - EC-001
+              - EC-004
+              - EC-008
+            risk_ids: *a1
+        hidden_risks:
+          - R-001 remains open until private diligence closes this section.
+          - R-002 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify financial projections.
+        table_ids: []
+        figure_ids:
+          - F-001
+        evidence_claim_ids: *a3
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Companies House confirms active private limited status; cap-table terms require private documents.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a4
+              - EC-001
+              - EC-002
+              - EC-004
+              - EC-013
+            risk_ids: *a1
+        hidden_risks:
+          - R-001 remains open until private diligence closes this section.
+          - R-002 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify capital structure.
+        table_ids:
+          - T-001
+        figure_ids: []
+        evidence_claim_ids: *a4
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Other financial information is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a5
+            risk_ids: *a1
+        hidden_risks:
+          - R-001 remains open until private diligence closes this section.
+          - R-002 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify other financial information.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a5
+  - chapter_id: II
+    title: Products
+    chapter_summary: Public materials support retail energy, business energy, renewables and Kraken technology positioning.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    risk_ids: &a6
+      - R-003
+      - R-004
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Octopus publicly markets retail/business energy, renewable-generation and Kraken-related technology products.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a7
+              - EC-003
+              - EC-006
+              - EC-010
+            risk_ids: *a6
+        hidden_risks:
+          - R-003 remains open until private diligence closes this section.
+          - R-004 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify description of each product.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids: *a7
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public scale signals are strong, but revenue concentration, churn and contract terms are not public.
+    founder_claim_ids:
+      - FC-002
+      - FC-003
+    evidence_claim_ids: &a11
+      - EC-005
+      - EC-006
+      - EC-008
+    risk_ids: &a8
+      - R-005
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Company materials and snippets show large customer/account scale, but top-customer revenue is private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a9
+              - EC-003
+              - EC-005
+              - EC-007
+              - EC-008
+            risk_ids: *a8
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify top customers by application.
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a9
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Investor and Kraken-licensee signals exist, but agreements and concentration are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a10
+              - EC-004
+              - EC-006
+            risk_ids: *a8
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify strategic relationships.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a11
+            risk_ids: *a8
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify revenue by customer.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: Significant relationships severed within the last two years is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a11
+            risk_ids: *a8
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify significant relationships severed within the last two years.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Top suppliers is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a11
+            risk_ids: *a8
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify top suppliers.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Octopus competes with incumbent utilities, energy retailers, renewable developers and energy software vendors.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-009
+    risk_ids: &a12
+      - R-006
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Competition spans regulated energy supply, energy software and renewable-generation markets.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a13
+              - EC-009
+            risk_ids: *a12
+        hidden_risks:
+          - R-006 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify competitive landscape by market segment.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a13
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Public GTM includes consumer retail, business energy and Kraken licensing, but CAC and sales productivity are not verifiable.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids: &a16
+      - EC-004
+      - EC-005
+      - EC-010
+    risk_ids: &a14
+      - R-005
+      - R-006
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public GTM channels are consumer retail, business energy and partner/licensing motions.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a15
+              - EC-003
+              - EC-006
+              - EC-010
+            risk_ids: *a14
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+          - R-006 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify strategy and implementation.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a15
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major Customers is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a16
+            risk_ids: *a14
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+          - R-006 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify major customers.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Principal avenues for generating new business is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a16
+            risk_ids: *a14
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+          - R-006 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify principal avenues for generating new business.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales force productivity model is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a16
+            risk_ids: *a14
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+          - R-006 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify sales force productivity model.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Ability to implement marketing plan with current and projected budgets is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a16
+            risk_ids: *a14
+        hidden_risks:
+          - R-005 remains open until private diligence closes this section.
+          - R-006 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify ability to implement marketing plan with current and projected budgets.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: R&D diligence should focus on Kraken, electrification products and renewable operations.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a19
+      - EC-003
+      - EC-011
+    risk_ids: &a17
+      - R-003
+      - R-004
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public R&D signals center on Kraken and smart-energy/electrification products.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a18
+              - EC-005
+              - EC-006
+              - EC-010
+              - EC-011
+            risk_ids: *a17
+        hidden_risks:
+          - R-003 remains open until private diligence closes this section.
+          - R-004 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify description of r&d organization.
+        table_ids:
+          - T-011
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a18
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: New Product Pipeline is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a19
+            risk_ids: *a17
+        hidden_risks:
+          - R-003 remains open until private diligence closes this section.
+          - R-004 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify new product pipeline.
+        table_ids:
+          - T-012
+        figure_ids: []
+        evidence_claim_ids: *a19
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: People evidence is mostly registry/investor/company narrative; HRIS and attrition are private.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids: &a20
+      - EC-011
+      - EC-013
+    risk_ids: &a21
+      - R-007
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Organization Chart is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a20
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify organization chart.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a20
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Headcount by function/location and turnover are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a22
+              - EC-008
+              - EC-011
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify historical and projected headcount by function and location.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a22
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Senior management biographies is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a20
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify senior management biographies.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids: *a20
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation arrangements is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a20
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify compensation arrangements.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a20
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Incentive stock plans is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a20
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify incentive stock plans.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a20
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Significant employee relations problems, past or present is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a20
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify significant employee relations problems, past or present.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a20
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Personnel Turnover is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a20
+            risk_ids: *a21
+        hidden_risks:
+          - R-007 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify personnel turnover.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a20
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public evidence confirms active private status and regulated context, but legal/regulatory records require counsel review.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids: &a23
+      - EC-007
+      - EC-012
+    risk_ids: &a24
+      - R-008
+      - R-009
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Pending lawsuits against the Company is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a23
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify pending lawsuits against the company.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Pending lawsuits initiated by Company is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a23
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify pending lawsuits initiated by company.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Environmental and employee safety issues and liabilities is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a23
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify environmental and employee safety issues and liabilities.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Material patents, copyrights, licenses, and trademarks is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a23
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify material patents, copyrights, licenses, and trademarks.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage and material exposures is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a23
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify insurance coverage and material exposures.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material contracts is not fully verifiable from public sources for Octopus Energy; private diligence is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: *a23
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Octopus operates in regulated energy and related credit-broker contexts; correspondence and enforcement history require counsel.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Public evidence provides screening-level information for Octopus Energy, but private records are needed for investment reliance.
+            evidence_claim_ids: &a25
+              - EC-007
+              - EC-012
+            risk_ids: *a24
+        hidden_risks:
+          - R-008 remains open until private diligence closes this section.
+          - R-009 remains open until private diligence closes this section.
+        evidence_gaps:
+          - Private financial, customer, contract, legal, security or HR records were not available unless specifically noted.
+        follow_up_questions:
+          - Provide private records to verify regulatory agency problems.
+        table_ids: []
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a25
+tables:
+  - table_id: T-001
+    title: Public funding and valuation anchors
+    chapter_id: I
+    section_id: I.C
+    purpose: Summarize financing and eligibility signals.
+    columns:
+      - name: date
+        description: date
+      - name: event
+        description: event
+      - name: amount_or_value
+        description: amount_or_value
+      - name: source
+        description: source
+      - name: diligence_caveat
+        description: diligence_caveat
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2021-12
+          event: Unicorn-list valuation
+          amount_or_value: US$5B valuation
+          source: Wikipedia unicorn table
+          diligence_caveat: Primary financing docs required
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+      - row_id: T-001-R2
+        values:
+          date: 2023 search snippet
+          event: Reported funding/valuation signal
+          amount_or_value: Reported US$800M round / US$7.8B valuation
+          source: Funding search results
+          diligence_caveat: Original article and docs required
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: T-001-R3
+        values:
+          date: 2026-06
+          event: Private active status
+          amount_or_value: Active private limited company
+          source: Companies House
+          diligence_caveat: Does not verify current valuation
+        evidence_claim_ids:
+          - EC-002
+          - EC-013
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-004
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-002
+    title: Financial diligence gaps
+    chapter_id: I
+    section_id: I.A
+    purpose: Identify private finance records required.
+    columns:
+      - name: item
+        description: item
+      - name: public_status
+        description: public_status
+      - name: why_it_matters
+        description: why_it_matters
+      - name: request
+        description: request
+    rows:
+      - row_id: T-002-R1
+        values:
+          item: Audited financials and KPI pack
+          public_status: not_publicly_verifiable
+          why_it_matters: Revenue, margin and cash quality drive valuation support
+          request: Audited financials and monthly KPI pack
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-002
+      - row_id: T-002-R2
+        values:
+          item: Cap table and debt
+          public_status: not_publicly_verifiable
+          why_it_matters: Preferences and leverage affect common value
+          request: Cap table, debt and investor rights
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-003
+      - row_id: T-002-R3
+        values:
+          item: Hedging/collateral/bad debt
+          public_status: not_publicly_verifiable
+          why_it_matters: Energy volatility can stress liquidity
+          request: Hedging, collateral and bad-debt schedules
+        evidence_claim_ids:
+          - EC-008
+          - EC-012
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-008
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+    notes: null
+  - table_id: T-003
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product surfaces.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: public_evidence
+        description: public_evidence
+      - name: status
+        description: status
+    rows:
+      - row_id: T-003-R1
+        values:
+          product: Residential energy supply
+          audience: Households
+          public_evidence: Over 10 million homes claim
+          status: verified as public claim
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-002
+      - row_id: T-003-R2
+        values:
+          product: Business energy
+          audience: Commercial customers
+          public_evidence: Traceable green energy proposition
+          status: verified as public claim
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-007
+      - row_id: T-003-R3
+        values:
+          product: Kraken platform
+          audience: Utilities/partners
+          public_evidence: 54M account licensing snippet
+          status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-004
+    title: Pricing and unit economics visibility
+    chapter_id: II
+    section_id: II.A
+    purpose: Separate visible products from private economics.
+    columns:
+      - name: dimension
+        description: dimension
+      - name: public_signal
+        description: public_signal
+      - name: status
+        description: status
+      - name: private_request
+        description: private_request
+    rows:
+      - row_id: T-004-R1
+        values:
+          dimension: Retail tariffs
+          public_signal: Retail energy offering visible
+          status: partially_verified
+          private_request: Tariff margin and hedging
+        evidence_claim_ids:
+          - EC-003
+          - EC-008
+        source_ids:
+          - SRC-002
+      - row_id: T-004-R2
+        values:
+          dimension: Business contracts
+          public_signal: Business energy page visible
+          status: partially_verified
+          private_request: Contract margins and sales cycle
+        evidence_claim_ids:
+          - EC-010
+          - EC-008
+        source_ids:
+          - SRC-007
+      - row_id: T-004-R3
+        values:
+          dimension: Kraken licensing
+          public_signal: Partner/account scale snippet
+          status: partially_verified
+          private_request: ARR, churn and SLAs
+        evidence_claim_ids:
+          - EC-006
+          - EC-008
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-008
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-005
+    title: Public customer and scale signals
+    chapter_id: III
+    section_id: III.A
+    purpose: Summarize customer-scale evidence.
+    columns:
+      - name: signal
+        description: signal
+      - name: value
+        description: value
+      - name: source
+        description: source
+      - name: risk
+        description: risk
+    rows:
+      - row_id: T-005-R1
+        values:
+          signal: Homes powered
+          value: Over 10M homes
+          source: Company about page
+          risk: Revenue/churn mix private
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-002
+      - row_id: T-005-R2
+        values:
+          signal: UK homes/market share
+          value: 6.8M UK homes / 22% market-share press claim
+          source: Company press page
+          risk: Market share is not profitability
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-005
+      - row_id: T-005-R3
+        values:
+          signal: Renewable projects
+          value: 260+ projects across 19 countries
+          source: Company about page
+          risk: Project economics private
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-005
+    notes: null
+  - table_id: T-006
+    title: Strategic relationships and suppliers
+    chapter_id: III
+    section_id: III.B
+    purpose: List public strategic counterparties and gaps.
+    columns:
+      - name: counterparty
+        description: counterparty
+      - name: relationship
+        description: relationship
+      - name: public_evidence
+        description: public_evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-006-R1
+        values:
+          counterparty: Origin Energy
+          relationship: Investor / Kraken signal
+          public_evidence: Investor named; licensing snippet
+          gap: Economics and governance private
+        evidence_claim_ids:
+          - EC-004
+          - EC-006
+        source_ids:
+          - SRC-002
+          - SRC-006
+      - row_id: T-006-R2
+        values:
+          counterparty: Tokyo Gas / CPP Investments / Generation
+          relationship: Investors
+          public_evidence: Named on about page
+          gap: Rights and preferences private
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+      - row_id: T-006-R3
+        values:
+          counterparty: EDF / E.ON
+          relationship: Kraken licensee signal
+          public_evidence: Search snippet cites licensing deals
+          gap: Contracts and SLAs private
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: null
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame competitive diligence.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: overlap
+        description: overlap
+      - name: target_differentiator
+        description: target_differentiator
+      - name: source
+        description: source
+    rows:
+      - row_id: T-007-R1
+        values:
+          competitor: British Gas / Centrica
+          segment: UK retail energy
+          overlap: Household energy supply
+          target_differentiator: Tech-led customer service and smart tariffs
+          source: Analyst mapping
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-002
+      - row_id: T-007-R2
+        values:
+          competitor: OVO / E.ON / EDF
+          segment: Energy retailers/utilities
+          overlap: Energy supply and customer relationships
+          target_differentiator: Kraken and green positioning
+          source: Analyst mapping
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-006
+      - row_id: T-007-R3
+        values:
+          competitor: Energy software platforms
+          segment: Utility SaaS
+          overlap: Customer operations software
+          target_differentiator: Operator plus software platform
+          source: Analyst mapping
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-009
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: null
+  - table_id: T-008
+    title: Basis of competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Score public axes.
+    columns:
+      - name: axis
+        description: axis
+      - name: public_position
+        description: public_position
+      - name: gap
+        description: gap
+      - name: risk
+        description: risk
+    rows:
+      - row_id: T-008-R1
+        values:
+          axis: Price/value
+          public_position: Claims lower costs/customer support
+          gap: Margin and CAC private
+          risk: Pricing pressure
+        evidence_claim_ids:
+          - EC-010
+          - EC-008
+        source_ids:
+          - SRC-002
+      - row_id: T-008-R2
+        values:
+          axis: Technology
+          public_position: Kraken platform claim
+          gap: SLAs and roadmap private
+          risk: Execution
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+        source_ids:
+          - SRC-006
+      - row_id: T-008-R3
+        values:
+          axis: Renewables
+          public_position: 260+ projects claim
+          gap: Returns and debt private
+          risk: Asset exposure
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-008
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: null
+  - table_id: T-009
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Map GTM channels.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public_evidence
+      - name: verification
+        description: verification
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-009-R1
+        values:
+          channel: Consumer retail
+          public_evidence: Homes-served claim and public quote/login surfaces
+          verification: partially_verified
+          gap: CAC and churn
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: T-009-R2
+        values:
+          channel: Business energy
+          public_evidence: Business page
+          verification: partially_verified
+          gap: Pipeline and margin
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-007
+      - row_id: T-009-R3
+        values:
+          channel: Kraken licensing
+          public_evidence: Licensee/account snippets
+          verification: partially_verified
+          gap: SaaS ARR and concentration
+        evidence_claim_ids:
+          - EC-006
+          - EC-010
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-010
+    title: Marketing signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Structure public marketing signals.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public_evidence
+      - name: implication
+        description: implication
+      - name: request
+        description: request
+    rows:
+      - row_id: T-010-R1
+        values:
+          signal: Largest supplier press
+          public_evidence: Ofgem-related press claim
+          implication: Scale/brand
+          request: Independent market-share and churn
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-005
+      - row_id: T-010-R2
+        values:
+          signal: Renewables narrative
+          public_evidence: 260+ project claim
+          implication: Green differentiation
+          request: Project economics
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-002
+      - row_id: T-010-R3
+        values:
+          signal: Investor backing
+          public_evidence: Named strategic investors
+          implication: Credibility/partnerships
+          request: Investor rights
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-007
+    source_ids:
+      - SRC-002
+      - SRC-005
+    notes: null
+  - table_id: T-011
+    title: R&D and technical organization signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Show technical signals and gaps.
+    columns:
+      - name: area
+        description: area
+      - name: public_signal
+        description: public_signal
+      - name: status
+        description: status
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-011-R1
+        values:
+          area: Kraken engineering
+          public_signal: Platform/account snippets
+          status: partially_verified
+          gap: Architecture and incident history
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+        source_ids:
+          - SRC-006
+          - SRC-008
+      - row_id: T-011-R2
+        values:
+          area: Smart energy/electrification
+          public_signal: Energy, EV, solar and heat-pump surfaces
+          status: partially_verified
+          gap: Roadmap and economics
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        source_ids:
+          - SRC-002
+      - row_id: T-011-R3
+        values:
+          area: Renewable operations
+          public_signal: 260+ project claim
+          status: partially_verified
+          gap: Operational KPIs
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-008
+    notes: null
+  - table_id: T-012
+    title: Product and research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Capture pipeline themes.
+    columns:
+      - name: project
+        description: project
+      - name: status
+        description: status
+      - name: public_evidence
+        description: public_evidence
+      - name: request
+        description: request
+    rows:
+      - row_id: T-012-R1
+        values:
+          project: Kraken expansion
+          status: Active public signal
+          public_evidence: 54M account snippet
+          request: Roadmap and implementation pipeline
+        evidence_claim_ids:
+          - EC-006
+          - EC-011
+        source_ids:
+          - SRC-006
+      - row_id: T-012-R2
+        values:
+          project: Electrification products
+          status: Active public surfaces
+          public_evidence: EV/solar/heat-pump navigation
+          request: Attachment rates
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        source_ids:
+          - SRC-002
+      - row_id: T-012-R3
+        values:
+          project: Renewable generation
+          status: Active public claim
+          public_evidence: 260+ projects across 19 countries
+          request: Capex, returns and debt
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: null
+  - table_id: T-013
+    title: Senior management and governance signals
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Summarize people/governance evidence.
+    columns:
+      - name: role_or_group
+        description: role_or_group
+      - name: public_signal
+        description: public_signal
+      - name: status
+        description: status
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-013-R1
+        values:
+          role_or_group: Corporate entity
+          public_signal: Active private limited company
+          status: verified
+          gap: Board minutes and subsidiaries
+        evidence_claim_ids:
+          - EC-002
+          - EC-013
+        source_ids:
+          - SRC-003
+      - row_id: T-013-R2
+        values:
+          role_or_group: Investor governance
+          public_signal: Strategic investors named
+          status: verified as public claim
+          gap: Board rights and preferences
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+      - row_id: T-013-R3
+        values:
+          role_or_group: Operating leadership
+          public_signal: Company-owned team narrative only
+          status: inconclusive
+          gap: Retention and succession
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+      - EC-011
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-014
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: List people-data needs.
+    columns:
+      - name: function
+        description: function
+      - name: public_signal
+        description: public_signal
+      - name: status
+        description: status
+      - name: request
+        description: request
+    rows:
+      - row_id: T-014-R1
+        values:
+          function: Engineering/product
+          public_signal: Kraken platform scope
+          status: inconclusive
+          request: Headcount and attrition
+        evidence_claim_ids:
+          - EC-011
+          - EC-008
+        source_ids:
+          - SRC-006
+      - row_id: T-014-R2
+        values:
+          function: Energy operations
+          public_signal: Retail/generation scale
+          status: inconclusive
+          request: Ops headcount and contractors
+        evidence_claim_ids:
+          - EC-005
+          - EC-008
+        source_ids:
+          - SRC-002
+      - row_id: T-014-R3
+        values:
+          function: Sales/support
+          public_signal: 10M+ homes claim
+          status: inconclusive
+          request: Support and sales productivity
+        evidence_claim_ids:
+          - EC-003
+          - EC-008
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-008
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: null
+  - table_id: T-015
+    title: Legal and regulatory screen
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Record public legal/regulatory observations.
+    columns:
+      - name: matter
+        description: matter
+      - name: public_evidence
+        description: public_evidence
+      - name: status
+        description: status
+      - name: request
+        description: request
+    rows:
+      - row_id: T-015-R1
+        values:
+          matter: Corporate status
+          public_evidence: Active private limited company
+          status: verified
+          request: Corporate structure and subsidiaries
+        evidence_claim_ids:
+          - EC-002
+          - EC-013
+        source_ids:
+          - SRC-003
+      - row_id: T-015-R2
+        values:
+          matter: Energy/FCA regulation
+          public_evidence: Ofgem press and FCA footer reference
+          status: partially_verified
+          request: Regulatory correspondence
+        evidence_claim_ids:
+          - EC-007
+          - EC-012
+        source_ids:
+          - SRC-002
+          - SRC-005
+      - row_id: T-015-R3
+        values:
+          matter: Pending litigation
+          public_evidence: No comprehensive docket search
+          status: not_publicly_verifiable
+          request: Counsel docket search
+        evidence_claim_ids:
+          - EC-008
+          - EC-012
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-002
+      - EC-007
+      - EC-008
+      - EC-012
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+    notes: null
+  - table_id: T-016
+    title: Material IP, contracts and insurance
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: List IP/contract diligence needs.
+    columns:
+      - name: asset_or_contract
+        description: asset_or_contract
+      - name: public_evidence
+        description: public_evidence
+      - name: risk
+        description: risk
+      - name: request
+        description: request
+    rows:
+      - row_id: T-016-R1
+        values:
+          asset_or_contract: Kraken technology
+          public_evidence: Platform claim
+          risk: IP ownership and license terms unknown
+          request: IP and license schedule
+        evidence_claim_ids:
+          - EC-006
+          - EC-012
+        source_ids:
+          - SRC-006
+          - SRC-008
+      - row_id: T-016-R2
+        values:
+          asset_or_contract: Energy customer/supplier contracts
+          public_evidence: Retail/business offerings
+          risk: Margin and compliance terms unknown
+          request: Material contracts
+        evidence_claim_ids:
+          - EC-010
+          - EC-012
+        source_ids:
+          - SRC-007
+      - row_id: T-016-R3
+        values:
+          asset_or_contract: Insurance
+          public_evidence: Not public
+          risk: Coverage unknown
+          request: Insurance schedule and claims history
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+      - EC-010
+      - EC-012
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Public valuation trajectory
+    chapter_id: I
+    section_id: I.B
+    figure_type: chart
+    description: Public valuation anchors and gaps.
+    purpose: Structure public quantitative signals and evidence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: value
+        unit: null
+        scale: linear
+      series:
+        - series_id: S-001
+          name: Public valuation trajectory
+          unit: null
+          data_points:
+            - x: 2021 list
+              y: 5
+              label: US$5B list valuation
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+            - x: 2023 snippet
+              y: 7.8
+              label: Reported US$7.8B valuation snippet
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-004
+            - x: current
+              y: null
+              label: current valuation private
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-003
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-004
+      - EC-008
+    source_ids:
+      - SRC-001
+      - SRC-003
+      - SRC-004
+    notes: null
+  - figure_id: F-002
+    title: Product and platform architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: High-level public product/dependency architecture.
+    purpose: Frame technical diligence from public product evidence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: Residential/business customers
+          node_type: user
+          description: Energy customers
+          evidence_claim_ids:
+            - EC-003
+            - EC-010
+          source_ids:
+            - SRC-002
+            - SRC-007
+        - node_id: N2
+          label: Octopus energy supply
+          node_type: product
+          description: Retail/business energy
+          evidence_claim_ids:
+            - EC-003
+            - EC-010
+          source_ids:
+            - SRC-002
+            - SRC-007
+        - node_id: N3
+          label: Kraken platform
+          node_type: service
+          description: Energy operating platform
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+            - SRC-008
+        - node_id: N4
+          label: Renewable portfolio
+          node_type: infrastructure
+          description: Generation projects
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: buys energy
+          data_or_dependency: billing/service
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-002
+        - edge_id: E2
+          from_node_id: N2
+          to_node_id: N3
+          relationship: operated on
+          data_or_dependency: platform dependency
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - edge_id: E3
+          from_node_id: N4
+          to_node_id: N2
+          relationship: supports green supply narrative
+          data_or_dependency: generation/PPA
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+      boundaries: []
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Based on public pages only; internal architecture review required.
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-006
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    notes: Public-source architecture only.
+  - figure_id: F-003
+    title: Customer and partner scale signals
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Public scale signals and private gaps.
+    purpose: Structure public quantitative signals and evidence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: value
+        unit: null
+        scale: linear
+      series:
+        - series_id: S-001
+          name: Customer and partner scale signals
+          unit: null
+          data_points:
+            - x: Homes powered
+              y: 10
+              label: 10M+ homes
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-002
+            - x: UK homes
+              y: 6.8
+              label: 6.8M UK homes press claim
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-005
+            - x: Kraken accounts
+              y: 54
+              label: 54M accounts snippet
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+            - x: Top revenue
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-002
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-007
+      - EC-008
+    source_ids:
+      - SRC-002
+      - SRC-005
+      - SRC-006
+    notes: null
+  - figure_id: F-004
+    title: Energy and software competitive map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Public competitive positioning map.
+    purpose: Frame win-loss and market diligence.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: narrow
+          high_label: broad
+        y_axis:
+          label: Buyer overlap
+          low_label: adjacent
+          high_label: direct
+      segments:
+        - segment_id: SEG-001
+          name: Core market
+          description: Closest public competitor set
+      entities:
+        - entity_id: E1
+          name: Octopus Energy
+          entity_type: target_company
+          segment_id: SEG-001
+          x_value: 8
+          y_value: 9
+          attributes:
+            position: retail energy plus software
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-002
+        - entity_id: E2
+          name: Incumbent utilities
+          entity_type: competitor
+          segment_id: SEG-001
+          x_value: 7
+          y_value: 8
+          attributes:
+            position: energy retailers
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-002
+        - entity_id: E3
+          name: Energy SaaS vendors
+          entity_type: competitor
+          segment_id: SEG-001
+          x_value: 6
+          y_value: 6
+          attributes:
+            position: software-only
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-006
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-009
+    source_ids:
+      - SRC-002
+      - SRC-006
+    notes: Positions are analyst judgments from public evidence.
+  - figure_id: F-005
+    title: GTM channel visibility
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Indexed public visibility of channels.
+    purpose: Structure public quantitative signals and evidence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: value
+        unit: null
+        scale: linear
+      series:
+        - series_id: S-001
+          name: GTM channel visibility
+          unit: null
+          data_points:
+            - x: Consumer retail
+              y: 3
+              label: public scale claim
+              evidence_claim_ids:
+                - EC-003
+                - EC-010
+              source_ids:
+                - SRC-002
+            - x: Business energy
+              y: 2
+              label: business page
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-007
+            - x: Kraken licensing
+              y: 2
+              label: licensee snippets
+              evidence_claim_ids:
+                - EC-006
+                - EC-010
+              source_ids:
+                - SRC-006
+            - x: Channel mix
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-002
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-006
+      - EC-008
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    notes: null
+  - figure_id: F-006
+    title: R&D portfolio map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: architecture_diagram
+    description: High-level public product/dependency architecture.
+    purpose: Frame technical diligence from public product evidence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: Kraken platform
+          node_type: service
+          description: Software platform
+          evidence_claim_ids:
+            - EC-006
+            - EC-011
+          source_ids:
+            - SRC-006
+            - SRC-008
+        - node_id: N2
+          label: Smart energy products
+          node_type: product
+          description: EV, solar, heat pump, tariffs
+          evidence_claim_ids:
+            - EC-010
+            - EC-011
+          source_ids:
+            - SRC-002
+        - node_id: N3
+          label: Renewable operations
+          node_type: infrastructure
+          description: Generation portfolio
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: enables
+          data_or_dependency: data and billing
+          evidence_claim_ids:
+            - EC-006
+            - EC-011
+          source_ids:
+            - SRC-006
+        - edge_id: E2
+          from_node_id: N3
+          to_node_id: N2
+          relationship: supports
+          data_or_dependency: green supply
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-002
+      boundaries: []
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Based on public pages only; internal architecture review required.
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-008
+    notes: Public-source architecture only.
+  - figure_id: F-007
+    title: Headcount evidence anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public headcount evidence gaps.
+    purpose: Structure public quantitative signals and evidence gaps.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: signal
+        unit: null
+        scale: categorical
+      y_axis:
+        label: value
+        unit: null
+        scale: linear
+      series:
+        - series_id: S-001
+          name: Headcount evidence anchors
+          unit: null
+          data_points:
+            - x: Engineering/product
+              y: null
+              label: not disclosed
+              evidence_claim_ids:
+                - EC-008
+                - EC-011
+              source_ids:
+                - SRC-006
+            - x: Operations/support
+              y: null
+              label: not disclosed
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-002
+            - x: Leadership/governance
+              y: null
+              label: registry/investor signals only
+              evidence_claim_ids:
+                - EC-002
+                - EC-004
+              source_ids:
+                - SRC-002
+                - SRC-003
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+      - EC-008
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-006
+    notes: null
+  - figure_id: F-008
+    title: Risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk-register severity and likelihood.
+    purpose: Prioritize follow-up diligence.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Private financial quality unverified
+          severity: high
+          likelihood: unknown
+          rationale: Audited financials, unit economics, hedging, cash runway and financing terms are not public.
+          evidence_claim_ids: &a27
+            - EC-001
+            - EC-008
+          source_ids: &a26
+            - SRC-002
+            - SRC-003
+            - SRC-005
+        - risk_id: R-002
+          label: Energy-market margin and working-capital volatility
+          severity: high
+          likelihood: medium
+          rationale: Retail energy suppliers face wholesale price, price-cap, hedging, collateral and bad-debt exposure.
+          evidence_claim_ids: &a28
+            - EC-007
+            - EC-012
+          source_ids: *a26
+        - risk_id: R-003
+          label: Kraken platform execution and concentration
+          severity: medium
+          likelihood: medium
+          rationale: Public Kraken account/licensee signals do not disclose ARR, service levels, implementation economics or licensee concentration.
+          evidence_claim_ids: &a29
+            - EC-006
+          source_ids: *a26
+        - risk_id: R-004
+          label: Renewable generation project exposure
+          severity: medium
+          likelihood: medium
+          rationale: Public renewable-project claims do not disclose project leverage, PPA terms or returns.
+          evidence_claim_ids: &a30
+            - EC-005
+          source_ids: *a26
+        - risk_id: R-005
+          label: Customer concentration and churn unknown
+          severity: medium
+          likelihood: unknown
+          rationale: Homes/accounts metrics do not disclose revenue concentration, churn, bad debt or cohort economics.
+          evidence_claim_ids: &a31
+            - EC-005
+            - EC-008
+          source_ids: *a26
+        - risk_id: R-006
+          label: Competition from incumbents and energy-tech rivals
+          severity: medium
+          likelihood: high
+          rationale: Octopus competes with large utilities, price-comparison channels, renewable developers and energy software platforms.
+          evidence_claim_ids: &a32
+            - EC-009
+          source_ids: *a26
+        - risk_id: R-007
+          label: People scale and succession unverified
+          severity: medium
+          likelihood: unknown
+          rationale: Public sources do not verify retention, succession, hiring plans or compensation.
+          evidence_claim_ids: &a33
+            - EC-011
+            - EC-013
+          source_ids: *a26
+        - risk_id: R-008
+          label: Regulatory licensing and conduct exposure
+          severity: high
+          likelihood: medium
+          rationale: Energy supply and FCA credit-broker references create regulatory exposure; full correspondence is private.
+          evidence_claim_ids: &a34
+            - EC-007
+            - EC-012
+          source_ids: *a26
+        - risk_id: R-009
+          label: Legal/IP and material contract exposure unverified
+          severity: medium
+          likelihood: unknown
+          rationale: Litigation, IP ownership, material contracts and insurance coverage are not public.
+          evidence_claim_ids: &a35
+            - EC-008
+            - EC-012
+          source_ids: *a26
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-012
+    source_ids: *a26
+    notes: Risk scores are analyst judgments from public-source diligence.
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: Octopus Energy appears on a current public unicorn list at a US$5B valuation dated December 2021.
+    evidence_summary: This is a screening valuation anchor, not primary financing evidence.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Octopus Energy | 5 | December 2021 | Energy supply | United Kingdom.
+        location: null
+    analyst_interpretation: This is a screening valuation anchor, not primary financing evidence.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-002
+    claim: Companies House lists Octopus Energy Group Limited as active and private limited.
+    evidence_summary: The registry confirms active private status and incorporation date.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Company status Active; Company type Private limited Company; Incorporated on 5 August 2015.
+        location: null
+    analyst_interpretation: The registry confirms active private status and incorporation date.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-003
+    claim: Octopus publicly says it powers more than 10 million homes in Britain and abroad.
+    evidence_summary: The company about page supports a scale claim, but not revenue or churn.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Powering over 10 million homes in Britain and abroad.
+        location: null
+    analyst_interpretation: The company about page supports a scale claim, but not revenue or churn.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids:
+        - T-003
+        - T-005
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-004
+    claim: Octopus names Origin Energy, Tokyo Gas, CPP Investments and Generation as investors.
+    evidence_summary: Public investor names support financing/governance diligence, not cap-table economics.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Our investors include Origin Energy, Tokyo Gas, CPP Investments and Generation.
+        location: null
+    analyst_interpretation: Public investor names support financing/governance diligence, not cap-table economics.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+        - T-006
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-005
+    claim: Octopus claims a large renewable-generation footprint.
+    evidence_summary: The about page says it manages more than 260 green energy projects across 19 countries and 17 technologies.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: We manage more than 260 large-scale green energy projects, spanning 19 countries and 17 technologies.
+        location: null
+    analyst_interpretation: The about page says it manages more than 260 green energy projects across 19 countries and 17 technologies.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids:
+        - T-005
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-004
+        - R-005
+  - evidence_claim_id: EC-006
+    claim: Public snippets indicate Kraken supports more than 54 million customer accounts through licensees including EDF, E.ON and Origin Energy.
+    evidence_summary: This snippet supports platform-scale screening but requires original license contracts and source documents.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: low
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Kraken ... support over 54 million customer accounts worldwide through licensing deals with companies such as EDF, E.ON and Origin Energy.
+        location: null
+    analyst_interpretation: This snippet supports platform-scale screening but requires original license contracts and source documents.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-007
+    claim: Octopus press materials say Ofgem confirmed it as the UK largest electricity supplier by market share.
+    evidence_summary: Company press says 6.8 million UK homes and 22 percent market share; verify against Ofgem datasets.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Well-loved disruptor powering 6.8 million UK homes, grabbing 22% market share.
+        location: null
+    analyst_interpretation: Company press says 6.8 million UK homes and 22 percent market share; verify against Ofgem datasets.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-002
+        - R-008
+  - evidence_claim_id: EC-008
+    claim: Core financial, customer, HR, legal and contract records are not publicly verifiable.
+    evidence_summary: Reviewed public sources did not provide audited financials, cap table, churn, contracts or HRIS data.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Public sources reviewed did not disclose private data-room materials.
+        location: null
+    analyst_interpretation: Reviewed public sources did not provide audited financials, cap table, churn, contracts or HRIS data.
+    limitations: Requires private records or direct confirmation.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+        - T-014
+        - T-016
+      figure_ids:
+        - F-007
+        - F-008
+      risk_ids:
+        - R-001
+        - R-005
+        - R-007
+        - R-009
+  - evidence_claim_id: EC-009
+    claim: Octopus competes across regulated energy supply, renewables and energy software.
+    evidence_summary: Product scope implies competition with utilities, renewable developers and energy software vendors.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Energy, business energy and Kraken public positioning.
+        location: null
+    analyst_interpretation: Product scope implies competition with utilities, renewable developers and energy software vendors.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-010
+    claim: Octopus GTM includes direct retail, business energy and Kraken licensing.
+    evidence_summary: Public pages and snippets show multiple GTM motions; channel mix and CAC are private.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Get traceable energy direct from green sources.
+        location: null
+    analyst_interpretation: Public pages and snippets show multiple GTM motions; channel mix and CAC are private.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-005
+        - R-006
+  - evidence_claim_id: EC-011
+    claim: R&D and people evidence centers on Kraken, smart energy and renewables but internal metrics are private.
+    evidence_summary: Public evidence supports product themes, not R&D budget, org chart or attrition.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: Kraken and smart-energy product references are public.
+        location: null
+    analyst_interpretation: Public evidence supports product themes, not R&D budget, org chart or attrition.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.A
+      founder_claim_ids: []
+      table_ids:
+        - T-011
+        - T-012
+        - T-013
+      figure_ids:
+        - F-006
+        - F-007
+      risk_ids:
+        - R-003
+        - R-004
+        - R-007
+  - evidence_claim_id: EC-012
+    claim: Regulatory, legal, IP and material-contract exposure requires specialist diligence.
+    evidence_summary: Public sources confirm regulated context but not full correspondence, litigation, IP ownership or insurance.
+    evidence_type: regulatory_filing
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Octopus Energy Services Ltd is authorised and regulated by the Financial Conduct Authority as a credit broker and not a lender.
+        location: null
+    analyst_interpretation: Public sources confirm regulated context but not full correspondence, litigation, IP ownership or insurance.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+        - T-016
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-008
+        - R-009
+  - evidence_claim_id: EC-013
+    claim: Eligibility screen found active private status and no reviewed public evidence of IPO, acquisition or shutdown.
+    evidence_summary: Companies House active private status and current company pages support eligibility.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Company status Active; Company type Private limited Company.
+        location: null
+    analyst_interpretation: Companies House active private status and current company pages support eligibility.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+sources:
+  - source_id: SRC-001
+    title: Wikipedia current unicorn startup list
+    url: https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: market_database
+    reliability_notes: Public list used for target selection.
+    archive_url: null
+  - source_id: SRC-002
+    title: About Us | Octopus Energy
+    url: https://octopus.energy/about-us/
+    publisher: Octopus Energy
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: primary_company_source
+    reliability_notes: Company-owned source; public claims require independent diligence.
+    archive_url: null
+  - source_id: SRC-003
+    title: Octopus Energy Group Limited overview
+    url: https://find-and-update.company-information.service.gov.uk/company/09718624
+    publisher: UK Companies House
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: regulatory_filing
+    reliability_notes: Official UK registry for active private company status.
+    archive_url: null
+  - source_id: SRC-004
+    title: Octopus Energy funding and valuation search results
+    url: https://duckduckgo.com/html/?q=Octopus%20Energy%20800m%20investment%20round%207.8bn%20valuation%202023%20Canada%20Pension%20Plan
+    publisher: DuckDuckGo
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: other
+    reliability_notes: Search-result snippets used where direct articles were inaccessible.
+    archive_url: null
+  - source_id: SRC-005
+    title: Octopus Energy largest electricity supplier press page
+    url: https://octopus.energy/press/largest-electricity-supplier-market-share/
+    publisher: Octopus Energy
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: primary_company_source
+    reliability_notes: Company press page citing Ofgem market-share data.
+    archive_url: null
+  - source_id: SRC-006
+    title: Octopus Energy Ofgem/Kraken search results
+    url: https://duckduckgo.com/html/?q=Octopus%20Energy%20Ofgem%20license%20customers%20Kraken%20platform
+    publisher: DuckDuckGo
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: other
+    reliability_notes: Search-result snippets for Kraken account/licensee scale.
+    archive_url: null
+  - source_id: SRC-007
+    title: Octopus Energy business page
+    url: https://octopus.energy/business/
+    publisher: Octopus Energy
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: primary_company_source
+    reliability_notes: Company-owned business energy page.
+    archive_url: null
+  - source_id: SRC-008
+    title: Kraken Technologies homepage
+    url: https://kraken.tech/
+    publisher: Kraken Technologies
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-07
+    source_type: primary_company_source
+    reliability_notes: Company-owned platform page.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Private financial quality unverified
+    risk_category: financial
+    severity: high
+    likelihood: unknown
+    description: Audited financials, unit economics, hedging, cash runway and financing terms are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - I.C
+    evidence_claim_ids: *a27
+    mitigation_or_diligence_request: Request full finance, KPI, hedging and financing data room.
+  - risk_id: R-002
+    risk_title: Energy-market margin and working-capital volatility
+    risk_category: market
+    severity: high
+    likelihood: medium
+    description: Retail energy suppliers face wholesale price, price-cap, hedging, collateral and bad-debt exposure.
+    impacted_chapter_ids:
+      - I
+      - V
+      - VIII
+    impacted_section_ids:
+      - I.B
+      - V.A
+      - VIII.G
+    evidence_claim_ids: *a28
+    mitigation_or_diligence_request: Review hedging, collateral, bad debt and regulatory stress cases.
+  - risk_id: R-003
+    risk_title: Kraken platform execution and concentration
+    risk_category: technical
+    severity: medium
+    likelihood: medium
+    description: Public Kraken account/licensee signals do not disclose ARR, service levels, implementation economics or licensee concentration.
+    impacted_chapter_ids:
+      - II
+      - III
+      - VI
+    impacted_section_ids:
+      - II.A
+      - III.B
+      - VI.A
+    evidence_claim_ids: *a29
+    mitigation_or_diligence_request: Request Kraken ARR, customer contracts, SLAs and incident history.
+  - risk_id: R-004
+    risk_title: Renewable generation project exposure
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Public renewable-project claims do not disclose project leverage, PPA terms or returns.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a30
+    mitigation_or_diligence_request: Request project schedule, SPV debt, PPAs and returns.
+  - risk_id: R-005
+    risk_title: Customer concentration and churn unknown
+    risk_category: customer
+    severity: medium
+    likelihood: unknown
+    description: Homes/accounts metrics do not disclose revenue concentration, churn, bad debt or cohort economics.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.C
+      - V.B
+    evidence_claim_ids: *a31
+    mitigation_or_diligence_request: Request customer cohorts, top-account schedule and bad-debt data.
+  - risk_id: R-006
+    risk_title: Competition from incumbents and energy-tech rivals
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Octopus competes with large utilities, price-comparison channels, renewable developers and energy software platforms.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+    evidence_claim_ids: *a32
+    mitigation_or_diligence_request: Benchmark tariffs, switching share, CAC and win/loss evidence.
+  - risk_id: R-007
+    risk_title: People scale and succession unverified
+    risk_category: team
+    severity: medium
+    likelihood: unknown
+    description: Public sources do not verify retention, succession, hiring plans or compensation.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VII.C
+    evidence_claim_ids: *a33
+    mitigation_or_diligence_request: Request HRIS, attrition and succession materials.
+  - risk_id: R-008
+    risk_title: Regulatory licensing and conduct exposure
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Energy supply and FCA credit-broker references create regulatory exposure; full correspondence is private.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.C
+      - VIII.G
+    evidence_claim_ids: *a34
+    mitigation_or_diligence_request: Have counsel review Ofgem/FCA licenses, complaints and enforcement history.
+  - risk_id: R-009
+    risk_title: Legal/IP and material contract exposure unverified
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: Litigation, IP ownership, material contracts and insurance coverage are not public.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.D
+      - VIII.F
+    evidence_claim_ids: *a35
+    mitigation_or_diligence_request: Run legal docket/IP searches and review material contracts.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financials, KPI pack, cash/debt and budget-to-actuals.
+    why_it_matters: Public valuation and product claims do not prove financial quality.
+    suggested_source_or_request: Request audited financials and management KPI pack.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, preferences, options, warrants and debt.
+    why_it_matters: Headline valuation may hide liquidation or dilution risk.
+    suggested_source_or_request: Request cap table and financing documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Top-customer revenue, churn, NRR and contract terms.
+    why_it_matters: Customer-count or logo claims do not prove revenue quality.
+    suggested_source_or_request: Request top-customer schedule and cohort metrics.
+    priority: high
+  - gap_id: G-004
+    chapter_id: V
+    section_id: V.D
+    missing_information: CAC, payback, quota attainment, funnel conversion and pipeline.
+    why_it_matters: GTM efficiency cannot be assessed from public pages.
+    suggested_source_or_request: Request sales productivity model.
+    priority: high
+  - gap_id: G-005
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Roadmap, R&D budget, incident history and dependency map.
+    why_it_matters: Product defensibility and execution risk require internal evidence.
+    suggested_source_or_request: Request roadmap, architecture and incident register.
+    priority: high
+  - gap_id: G-006
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: HRIS export, attrition, compensation and succession data.
+    why_it_matters: Team stability is not public.
+    suggested_source_or_request: Request org chart and HRIS export.
+    priority: high
+  - gap_id: G-007
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Litigation, regulatory correspondence, insurance and material contracts.
+    why_it_matters: Legal exposure can materially affect valuation.
+    suggested_source_or_request: Have counsel review dockets and material contracts.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide Octopus Energy's audited financials, KPI pack, cash/debt schedule and forecast model.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide cap table, liquidation preferences, option pool, warrants, debt and investor-rights agreements.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.C
+    request: Provide top-customer revenue, retention, churn, NRR, contract terms and reference contacts.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: V
+    section_id: V.D
+    request: Provide CAC, payback, quota attainment, pipeline, channel mix and sales compensation data.
+    requested_from: company
+    priority: high
+  - request_id: Q-005
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide roadmap, R&D budget, architecture, incident history and dependency map.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide HRIS export, org chart, attrition, open roles, compensation and employment agreements.
+    requested_from: company
+    priority: high
+  - request_id: Q-007
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Have counsel provide litigation, IP, regulatory, insurance and material-contract summaries.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Public-source diligence cannot verify audited financials, ARR, gross margin, churn, CAC, cash, debt, cap table, customer concentration, board materials or private regulatory/legal correspondence.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - III.C
+      - V.D
+      - VIII.G
+  - limitation_id: L-002
+    description: Search-result snippets were used where direct source pages were inaccessible; obtain original source documents before relying on the facts.
+    affected_chapter_ids:
+      - I
+      - III
+    affected_section_ids:
+      - I.C
+      - III.B
+  - limitation_id: L-003
+    description: Legal, IP and security observations are screening findings only and require counsel, IP counsel and security specialists.
+    affected_chapter_ids:
+      - VI
+      - VIII
+    affected_section_ids:
+      - VI.A
+      - VIII.A
+      - VIII.D
+      - VIII.G
