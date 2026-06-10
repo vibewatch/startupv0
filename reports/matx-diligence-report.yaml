@@ -1,0 +1,5126 @@
+report_metadata:
+  report_title: MatX Startup Diligence Report
+  target_company: MatX
+  website: https://matx.com/
+  known_aliases:
+    - MatX Inc.
+    - MatX One
+  sector: AI chip / high-throughput LLM inference and training hardware
+  geography: United States; Mountain View, California
+  company_stage: Private unicorn / growth-stage semiconductor startup
+  research_date: 2026-06-09
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD unless otherwise noted
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Used public company pages, SEC Form D filings, CB Insights, competitor pages and U.S. export-control sources.
+    - Treated company performance claims as claims made, not independent proof.
+    - Marked private financials, customer, supplier, IP, HR and legal records as not_publicly_verifiable.
+  included_jurisdictions:
+    - United States
+    - Delaware
+    - California
+    - U.S. export-control regime
+  excluded_topics:
+    - Private financials, cap table, customer calls, supplier contracts, engineering data room, non-public HR/legal/IP records.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: User task with MatX target and CB Insights row
+      type: workflow_request
+      date_received: 2026-06-09
+      notes: No pitch deck, financial model, data room or founder responses were provided.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: MatX is a $7B private unicorn in Mountain View with Spark Capital as a named investor.
+    claim_source: CB Insights row supplied by user and fetched public page
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.B
+      - I.C
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-025
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request financing documents, cap table, 409A and liquidation waterfall.
+  - founder_claim_id: FC-002
+    claim_text: MatX is building MatX One for high-throughput LLM training and inference.
+    claim_source: MatX public pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-011
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request independent benchmarks, silicon status and customer workload validation.
+  - founder_claim_id: FC-003
+    claim_text: MatX raised a $500M Series B with major financial, AI and supply-chain investors.
+    claim_source: MatX announcement and SEC Form D
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+      - III
+    mapped_section_ids:
+      - I.D
+      - III.B
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-014
+    contradiction_summary: null
+    diligence_follow_up:
+      - Reconcile press release, Form D, bank records and definitive financing documents.
+  - founder_claim_id: FC-004
+    claim_text: MatX has a 100-person multidisciplinary team.
+    claim_source: MatX announcement and jobs page
+    claim_date: null
+    mapped_chapter_ids:
+      - VI
+      - VII
+    mapped_section_ids:
+      - VI.A
+      - VII.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-010
+      - EC-024
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request HRIS, org chart, compensation, retention and contractor data.
+  - founder_claim_id: FC-005
+    claim_text: MatX Inc. is a Delaware 2023 corporation with Reiner Pope and Michial Gunter as public executive officers/directors.
+    claim_source: SEC Form D filings
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+      - VIII
+    mapped_section_ids:
+      - VII.C
+      - VIII.F
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-002
+      - EC-021
+    contradiction_summary: null
+    diligence_follow_up:
+      - Confirm founder equity, IP assignment, employment and governance records.
+  - founder_claim_id: FC-006
+    claim_text: MatX has material frontier-lab customer traction.
+    claim_source: Inferred from target-customer language; no explicit user claim
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.B
+    verification_status: unverified
+    confidence: low
+    evidence_claim_ids:
+      - EC-013
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request customer list, contracts, POCs, backlog and references.
+executive_summary:
+  overall_assessment: MatX appears to be a real, rapidly funded private AI-chip startup with strong public financing signals and credible technical positioning. Public evidence does not prove silicon execution, independent performance, customer adoption, supplier capacity, financial quality or legal/IP readiness.
+  investment_or_diligence_thesis: Proceed only to confirmatory diligence. The upside case depends on MatX converting a specialized LLM-chip architecture into manufacturable, benchmark-validated systems adopted by frontier labs before NVIDIA, hyperscaler ASICs and inference specialists close the window.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: CB Insights lists MatX as a $7B unicorn.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-003
+      summary: SEC and company sources support large 2026 financing activity.
+      evidence_claim_ids:
+        - EC-005
+        - EC-006
+    - founder_claim_id: FC-005
+      summary: SEC filings identify MatX Inc. and key related persons.
+      evidence_claim_ids:
+        - EC-002
+        - EC-021
+  biggest_risks:
+    - risk_id: R-001
+      summary: Tapeout and manufacturing execution risk
+    - risk_id: R-003
+      summary: Unvalidated technical performance claims
+    - risk_id: R-004
+      summary: Limited public customer proof
+    - risk_id: R-005
+      summary: NVIDIA, hyperscaler and inference-ASIC competition
+    - risk_id: R-006
+      summary: Valuation step-up and preference-stack opacity
+  key_evidence_gaps:
+    - Financials, cash/burn/runway, cap table and financing terms.
+    - Independent benchmarks, silicon/tapeout status and rack/software readiness.
+    - Customer contracts, POCs, backlog, revenue concentration and references.
+    - Foundry, HBM, packaging/test, third-party IP and supply-chain contracts.
+    - Patent/FTO, export-control, material-contract, insurance, litigation and HR schedules.
+  recommended_next_steps:
+    - Reconcile the $7B valuation to signed financing documents and cap table.
+    - Run engineering diligence on tapeout, yield, HBM/foundry availability, benchmarks and rack/software integration.
+    - Validate customer traction through contracts, backlog, POCs and references.
+    - Have counsel complete IP/FTO, export-control, contract, litigation and employment/IP-assignment reviews.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: "Financial Information: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-001
+      - FC-003
+    evidence_claim_ids:
+      - EC-012
+      - EC-006
+      - EC-020
+      - EC-001
+      - EC-005
+      - EC-025
+      - EC-003
+      - EC-004
+    risk_ids:
+      - R-007
+      - R-006
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: No audited statements or operating metrics are public; SEC filings decline revenue disclosure.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: I.A-F1
+            finding: No audited statements or operating metrics are public; SEC filings decline revenue disclosure.
+            evidence_claim_ids: &a1
+              - EC-012
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - Capital intensity and runway uncertainty
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids: *a1
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Forecasts depend on tapeout, manufacturing ramp and customer conversion; projections are private.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Forecasts depend on tapeout, manufacturing ramp and customer conversion; projections are private.
+            evidence_claim_ids: &a2
+              - EC-006
+              - EC-012
+              - EC-020
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Valuation step-up and preference-stack opacity
+          - Capital intensity and runway uncertainty
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-004
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public filings and CB Insights support financing/valuation signals, not ownership economics.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public filings and CB Insights support financing/valuation signals, not ownership economics.
+            evidence_claim_ids: &a3
+              - EC-001
+              - EC-005
+              - EC-025
+            risk_ids:
+              - R-006
+        hidden_risks:
+          - Valuation step-up and preference-stack opacity
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-002
+        figure_ids:
+          - F-002
+        evidence_claim_ids: *a3
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Three SEC offerings and a company Series B announcement are public; tax/accounting details are private.
+        verification_status: partially_verified
+        confidence: high
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Three SEC offerings and a company Series B announcement are public; tax/accounting details are private.
+            evidence_claim_ids: &a4
+              - EC-003
+              - EC-004
+              - EC-005
+              - EC-006
+            risk_ids:
+              - R-006
+              - R-007
+        hidden_risks:
+          - Valuation step-up and preference-stack opacity
+          - Capital intensity and runway uncertainty
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids: *a4
+  - chapter_id: II
+    title: Products
+    chapter_summary: "Products: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+    risk_ids:
+      - R-001
+      - R-003
+      - R-012
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: MatX One is publicly positioned for large LLMs, but independent silicon and customer validation are missing.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: MatX One is publicly positioned for large LLMs, but independent silicon and customer validation are missing.
+            evidence_claim_ids: &a5
+              - EC-007
+              - EC-008
+              - EC-009
+              - EC-010
+              - EC-011
+            risk_ids:
+              - R-001
+              - R-003
+              - R-012
+        hidden_risks:
+          - Tapeout and manufacturing execution risk
+          - Unvalidated technical performance claims
+          - Rack/datacenter integration risk
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-005
+          - T-006
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a5
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: "Customer Information: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-003
+      - FC-006
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-013
+      - EC-006
+      - EC-014
+      - EC-012
+      - EC-022
+      - EC-017
+    risk_ids:
+      - R-004
+      - R-002
+      - R-011
+      - R-012
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Target customer segment is public; named customers and case studies are not.
+        verification_status: unverified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Target customer segment is public; named customers and case studies are not.
+            evidence_claim_ids: &a6
+              - EC-007
+              - EC-008
+              - EC-013
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Limited public customer proof
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids: *a6
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Investors and supply-chain investors are named, but commercial agreements are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Investors and supply-chain investors are named, but commercial agreements are not public.
+            evidence_claim_ids: &a7
+              - EC-006
+              - EC-014
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Foundry, IP, HBM and supply-chain dependency
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-008
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a7
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer and concentration data are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Revenue by customer and concentration data are private.
+            evidence_claim_ids: &a8
+              - EC-012
+              - EC-013
+            risk_ids:
+              - R-004
+              - R-011
+        hidden_risks:
+          - Limited public customer proof
+          - GTM and sales-cycle opacity
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-010
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a8
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No public severed relationships were identified; company confirmation is required.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: No public severed relationships were identified; company confirmation is required.
+            evidence_claim_ids: &a9
+              - EC-022
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a9
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Foundry, HBM, packaging, IP and rack supplier commitments are not public.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Foundry, HBM, packaging, IP and rack supplier commitments are not public.
+            evidence_claim_ids: &a10
+              - EC-007
+              - EC-014
+              - EC-017
+            risk_ids:
+              - R-002
+              - R-012
+        hidden_risks:
+          - Foundry, IP, HBM and supply-chain dependency
+          - Rack/datacenter integration risk
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-009
+        figure_ids: []
+        evidence_claim_ids: *a10
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: "Competition: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-008
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-019
+    risk_ids:
+      - R-003
+      - R-005
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Multiple public competitor offerings exist; MatX differentiation is not independently benchmarked.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Multiple public competitor offerings exist; MatX differentiation is not independently benchmarked.
+            evidence_claim_ids: &a11
+              - EC-008
+              - EC-015
+              - EC-016
+              - EC-017
+              - EC-018
+              - EC-019
+            risk_ids:
+              - R-003
+              - R-005
+        hidden_risks:
+          - Unvalidated technical performance claims
+          - NVIDIA, hyperscaler and inference-ASIC competition
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a11
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: "Marketing, Sales, and Distribution: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-006
+    evidence_claim_ids:
+      - EC-007
+      - EC-011
+      - EC-013
+      - EC-020
+      - EC-006
+      - EC-005
+      - EC-012
+    risk_ids:
+      - R-005
+      - R-008
+      - R-011
+      - R-004
+      - R-007
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Positioning is clear, but channels, geography and export-constrained GTM are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Positioning is clear, but channels, geography and export-constrained GTM are private.
+            evidence_claim_ids: &a12
+              - EC-007
+              - EC-011
+              - EC-013
+              - EC-020
+            risk_ids:
+              - R-005
+              - R-008
+              - R-011
+        hidden_risks:
+          - NVIDIA, hyperscaler and inference-ASIC competition
+          - Export-control exposure
+          - GTM and sales-cycle opacity
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids: *a12
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major customer status, trends and pipeline are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Major customer status, trends and pipeline are not public.
+            evidence_claim_ids: &a13
+              - EC-013
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Limited public customer proof
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a13
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Research and investor announcements support awareness; conversion data is absent.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Research and investor announcements support awareness; conversion data is absent.
+            evidence_claim_ids: &a14
+              - EC-006
+              - EC-011
+              - EC-013
+            risk_ids:
+              - R-011
+        hidden_risks:
+          - GTM and sales-cycle opacity
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a14
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales headcount, quotas, cycle length and productivity are not public.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Sales headcount, quotas, cycle length and productivity are not public.
+            evidence_claim_ids: &a15
+              - EC-013
+            risk_ids:
+              - R-011
+        hidden_risks:
+          - GTM and sales-cycle opacity
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a15
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Budget adequacy cannot be assessed without burn and GTM plan.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Budget adequacy cannot be assessed without burn and GTM plan.
+            evidence_claim_ids: &a16
+              - EC-005
+              - EC-006
+              - EC-012
+            risk_ids:
+              - R-007
+              - R-011
+        hidden_risks:
+          - Capital intensity and runway uncertainty
+          - GTM and sales-cycle opacity
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: "Research and Development: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-002
+      - FC-004
+    evidence_claim_ids:
+      - EC-010
+      - EC-021
+      - EC-024
+      - EC-006
+      - EC-009
+      - EC-011
+      - EC-023
+    risk_ids:
+      - R-009
+      - R-001
+      - R-003
+      - R-010
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public team breadth is credible but detailed R&D organization is private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public team breadth is credible but detailed R&D organization is private.
+            evidence_claim_ids: &a17
+              - EC-010
+              - EC-021
+              - EC-024
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Team scaling and key-person concentration
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids: *a17
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: MatX One and research posts are public; cost-to-complete, IP and validation are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: MatX One and research posts are public; cost-to-complete, IP and validation are private.
+            evidence_claim_ids: &a18
+              - EC-006
+              - EC-009
+              - EC-011
+              - EC-023
+            risk_ids:
+              - R-001
+              - R-003
+              - R-010
+        hidden_risks:
+          - Tapeout and manufacturing execution risk
+          - Unvalidated technical performance claims
+          - IP ownership and freedom-to-operate gap
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-017
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a18
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: "Management and Personnel: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-004
+      - FC-005
+    evidence_claim_ids:
+      - EC-010
+      - EC-021
+      - EC-024
+      - EC-001
+      - EC-012
+      - EC-022
+    risk_ids:
+      - R-009
+      - R-006
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: No full org chart is public; filings identify only selected related persons.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: No full org chart is public; filings identify only selected related persons.
+            evidence_claim_ids: &a19
+              - EC-010
+              - EC-021
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Team scaling and key-person concentration
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a19
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Only a 100-person team anchor is public; history/projections by function/location are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Only a 100-person team anchor is public; history/projections by function/location are private.
+            evidence_claim_ids: &a20
+              - EC-010
+              - EC-024
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Team scaling and key-person concentration
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-019
+        figure_ids:
+          - F-010
+        evidence_claim_ids: *a20
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: SEC filings identify select managers/director; full biographies are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: SEC filings identify select managers/director; full biographies are not public.
+            evidence_claim_ids: &a21
+              - EC-021
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Team scaling and key-person concentration
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids: *a21
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Employment agreements, compensation and benefits are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Employment agreements, compensation and benefits are private.
+            evidence_claim_ids: &a22
+              - EC-024
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a22
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Option pool, grants, vesting and 409A are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Option pool, grants, vesting and 409A are private.
+            evidence_claim_ids: &a23
+              - EC-001
+              - EC-012
+            risk_ids:
+              - R-006
+              - R-009
+        hidden_risks:
+          - Valuation step-up and preference-stack opacity
+          - Team scaling and key-person concentration
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No public employee-relations issues were found in limited search; not dispositive.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: No public employee-relations issues were found in limited search; not dispositive.
+            evidence_claim_ids: &a24
+              - EC-022
+              - EC-024
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a24
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover and retention data are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Turnover and retention data are private.
+            evidence_claim_ids: &a25
+              - EC-024
+            risk_ids:
+              - R-009
+        hidden_risks:
+          - Team scaling and key-person concentration
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-020
+        figure_ids: []
+        evidence_claim_ids: *a25
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: "Legal and Related Matters: public evidence is sufficient for screening but private diligence remains required on material checklist items."
+    founder_claim_ids:
+      - FC-005
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+      - EC-010
+      - EC-024
+      - EC-009
+      - EC-012
+      - EC-014
+      - EC-013
+      - EC-020
+    risk_ids:
+      - R-010
+      - R-002
+      - R-008
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: No public lawsuit against MatX was identified in limited search; docket search needed.
+        verification_status: unverified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: No public lawsuit against MatX was identified in limited search; docket search needed.
+            evidence_claim_ids: &a26
+              - EC-022
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-021
+        figure_ids: []
+        evidence_claim_ids: *a26
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: No public lawsuit initiated by MatX was identified in limited search.
+        verification_status: unverified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: No public lawsuit initiated by MatX was identified in limited search.
+            evidence_claim_ids: &a27
+              - EC-022
+              - EC-023
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-022
+        figure_ids: []
+        evidence_claim_ids: *a27
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: No public EHS data; hardware/rack work may create lab and product safety obligations.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: No public EHS data; hardware/rack work may create lab and product safety obligations.
+            evidence_claim_ids: &a28
+              - EC-010
+              - EC-024
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a28
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Patent, trademark, license and FTO schedules are not public.
+        verification_status: not_publicly_verifiable
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Patent, trademark, license and FTO schedules are not public.
+            evidence_claim_ids: &a29
+              - EC-023
+              - EC-009
+            risk_ids:
+              - R-010
+        hidden_risks:
+          - IP ownership and freedom-to-operate gap
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-023
+        figure_ids: []
+        evidence_claim_ids: *a29
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage and claims history are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Insurance coverage and claims history are private.
+            evidence_claim_ids: &a30
+              - EC-012
+            risk_ids: []
+        hidden_risks:
+          - Private records may reveal material issues not visible in public sources.
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a30
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Customer, supplier, foundry, HBM, IP and investor side-letter contracts are private.
+        verification_status: not_publicly_verifiable
+        confidence: high
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Customer, supplier, foundry, HBM, IP and investor side-letter contracts are private.
+            evidence_claim_ids: &a31
+              - EC-014
+              - EC-013
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Foundry, IP, HBM and supply-chain dependency
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a31
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: No MatX-specific enforcement was found; export controls are a material category exposure.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: No MatX-specific enforcement was found; export controls are a material category exposure.
+            evidence_claim_ids: &a32
+              - EC-020
+              - EC-022
+            risk_ids:
+              - R-008
+        hidden_risks:
+          - Export-control exposure
+        evidence_gaps:
+          - Private diligence required for checklist items not disclosed publicly.
+        follow_up_questions:
+          - Provide source records sufficient to verify this checklist section.
+        table_ids:
+          - T-024
+        figure_ids:
+          - F-011
+          - F-012
+        evidence_claim_ids: *a32
+tables:
+  - table_id: T-001
+    title: Public funding-round and offering history
+    chapter_id: I
+    section_id: I.D
+    purpose: Public funding-round and offering history
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-001-R1
+        values:
+          item: "2023 Form D: $24.9M sold, 12 investors"
+          public_evidence: EC-003
+          status: verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-006
+      - row_id: T-001-R2
+        values:
+          item: "2024 Form D: $95.0M sold, 12 investors"
+          public_evidence: EC-004
+          status: verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-007
+      - row_id: T-001-R3
+        values:
+          item: "2026 Form D: $527.9M sold, 23 investors; company says $500M Series B"
+          public_evidence: EC-005, EC-006
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-005
+          - EC-006
+        source_ids:
+          - SRC-008
+          - SRC-002
+      - row_id: T-001-R4
+        values:
+          item: "CB Insights: $7B valuation row"
+          public_evidence: EC-001
+          status: verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-009
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-009
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-002
+    notes: null
+  - table_id: T-002
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Capital structure and ownership snapshot
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-002-R1
+        values:
+          item: Founders/executives publicly identified; shareholdings private
+          public_evidence: EC-021
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-002-R2
+        values:
+          item: Named investors public; ownership and preferences private
+          public_evidence: EC-006, EC-025
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+          - EC-025
+        source_ids:
+          - SRC-002
+          - SRC-008
+          - SRC-005
+          - SRC-009
+      - row_id: T-002-R3
+        values:
+          item: Option pool, warrants, notes and debt not public
+          public_evidence: EC-012
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+      - EC-012
+      - EC-021
+      - EC-025
+    source_ids:
+      - SRC-009
+      - SRC-002
+      - SRC-008
+      - SRC-006
+      - SRC-007
+      - SRC-005
+    notes: null
+  - table_id: T-003
+    title: Public revenue, ARR and unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Public revenue, ARR and unit-economic signals
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-003-R1
+        values:
+          item: Revenue range declined in Form D filings
+          public_evidence: EC-012
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-003-R2
+        values:
+          item: Cash/burn/runway not public despite 2026 financing
+          public_evidence: EC-005
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-008
+      - row_id: T-003-R3
+        values:
+          item: Backlog and customer deposits not public
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+    evidence_claim_ids:
+      - EC-005
+      - EC-012
+      - EC-013
+    source_ids:
+      - SRC-008
+      - SRC-006
+      - SRC-007
+      - SRC-001
+      - SRC-002
+    notes: null
+  - table_id: T-004
+    title: Projection and financing-assumption matrix
+    chapter_id: I
+    section_id: I.B
+    purpose: Projection and financing-assumption matrix
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-004-R1
+        values:
+          item: Manufacturing ramp tied to tapeout and scale-up claim
+          public_evidence: EC-006
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-002
+          - SRC-008
+      - row_id: T-004-R2
+        values:
+          item: Revenue growth depends on undisclosed customer conversion
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-004-R3
+        values:
+          item: Export-control assumptions needed for international sales
+          public_evidence: EC-020
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-015
+      - row_id: T-004-R4
+        values:
+          item: Valuation bridge not public
+          public_evidence: EC-025
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-025
+        source_ids:
+          - SRC-005
+          - SRC-008
+          - SRC-009
+    evidence_claim_ids:
+      - EC-006
+      - EC-013
+      - EC-020
+      - EC-025
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-001
+      - SRC-015
+      - SRC-005
+      - SRC-009
+    notes: null
+  - table_id: T-005
+    title: Product and workload matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Product and workload matrix
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-005-R1
+        values:
+          item: "MatX One chip: high-throughput LLM positioning"
+          public_evidence: EC-007, EC-009
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-007
+          - EC-009
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-005-R2
+        values:
+          item: "Target workloads: training, RL, prefill, decode; excludes small models"
+          public_evidence: EC-008
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-001
+      - row_id: T-005-R3
+        values:
+          item: System scope includes chips/racks/software teams
+          public_evidence: EC-010, EC-011
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+        source_ids:
+          - SRC-002
+          - SRC-004
+          - SRC-003
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-010
+      - EC-011
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+      - SRC-003
+    notes: null
+  - table_id: T-006
+    title: Pricing and competitive availability comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Pricing and competitive availability comparison
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-006-R1
+        values:
+          item: MatX pricing and availability not public
+          public_evidence: EC-007
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-006-R2
+        values:
+          item: NVIDIA Blackwell public production positioning
+          public_evidence: EC-015
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-010
+      - row_id: T-006-R3
+        values:
+          item: TPU/Trainium/AMD/Groq alternatives public
+          public_evidence: EC-016, EC-017, EC-018, EC-019
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-011
+          - SRC-012
+          - SRC-013
+          - SRC-014
+    evidence_claim_ids:
+      - EC-007
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-019
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+    notes: null
+  - table_id: T-007
+    title: Publicly known customers and case studies
+    chapter_id: III
+    section_id: III.A
+    purpose: Publicly known customers and case studies
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-007-R1
+        values:
+          item: Frontier labs are target segment, not named customers
+          public_evidence: EC-007, EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-007-R2
+        values:
+          item: No public customer logos or production case studies
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-007-R3
+        values:
+          item: Applications are large LLM training/inference workloads
+          public_evidence: EC-008
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - table_id: T-008
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Strategic relationships and partnerships
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-008-R1
+        values:
+          item: Jane Street and Situational Awareness lead Series B per MatX
+          public_evidence: EC-006
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-002
+          - SRC-008
+      - row_id: T-008-R2
+        values:
+          item: Spark Capital named by CB Insights and MatX
+          public_evidence: EC-001, EC-006
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-001
+          - EC-006
+        source_ids:
+          - SRC-009
+          - SRC-002
+          - SRC-008
+      - row_id: T-008-R3
+        values:
+          item: Alchip and Marvell named as supply-chain investors; contracts private
+          public_evidence: EC-014
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+      - EC-014
+    source_ids:
+      - SRC-009
+      - SRC-002
+      - SRC-008
+    notes: null
+  - table_id: T-009
+    title: Top suppliers and infrastructure dependencies
+    chapter_id: III
+    section_id: III.E
+    purpose: Top suppliers and infrastructure dependencies
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-009-R1
+        values:
+          item: Foundry/tapeout partner not public
+          public_evidence: EC-006
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-002
+          - SRC-008
+      - row_id: T-009-R2
+        values:
+          item: HBM dependency implied by MatX design and accelerator market
+          public_evidence: EC-007, EC-017
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-007
+          - EC-017
+        source_ids:
+          - SRC-001
+          - SRC-002
+          - SRC-012
+      - row_id: T-009-R3
+        values:
+          item: IP, packaging, rack and supply-chain contracts private
+          public_evidence: EC-014
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-014
+      - EC-017
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-001
+      - SRC-012
+    notes: null
+  - table_id: T-010
+    title: Revenue concentration and severed relationships
+    chapter_id: III
+    section_id: III.C
+    purpose: Revenue concentration and severed relationships
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-010-R1
+        values:
+          item: Revenue by customer not public
+          public_evidence: EC-012, EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-012
+          - EC-013
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+          - SRC-001
+          - SRC-002
+      - row_id: T-010-R2
+        values:
+          item: Customer concentration likely important due frontier-lab focus
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-010-R3
+        values:
+          item: No public severed relationships found; not dispositive
+          public_evidence: EC-022
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-017
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+      - EC-022
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-001
+      - SRC-002
+      - SRC-017
+    notes: null
+  - table_id: T-011
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Competitor comparison matrix
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-011-R1
+        values:
+          item: "NVIDIA Blackwell: incumbent full-production AI architecture"
+          public_evidence: EC-015
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-015
+        source_ids:
+          - SRC-010
+      - row_id: T-011-R2
+        values:
+          item: "Google TPU and AWS Trainium: hyperscaler custom silicon"
+          public_evidence: EC-016, EC-017
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-016
+          - EC-017
+        source_ids:
+          - SRC-011
+          - SRC-012
+      - row_id: T-011-R3
+        values:
+          item: "AMD MI300X and Groq: accelerator/inference alternatives"
+          public_evidence: EC-018, EC-019
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-018
+          - EC-019
+        source_ids:
+          - SRC-013
+          - SRC-014
+    evidence_claim_ids:
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-018
+      - EC-019
+    source_ids:
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-013
+      - SRC-014
+    notes: null
+  - table_id: T-012
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Basis-of-competition scoring
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-012-R1
+        values:
+          item: "Availability: MatX pre-production public posture vs NVIDIA full production"
+          public_evidence: EC-006, EC-015
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+          - EC-015
+        source_ids:
+          - SRC-002
+          - SRC-008
+          - SRC-010
+      - row_id: T-012-R2
+        values:
+          item: "Software ecosystem: MatX research/direct control vs incumbent stacks"
+          public_evidence: EC-007, EC-011, EC-016, EC-017
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-007
+          - EC-011
+          - EC-016
+          - EC-017
+        source_ids:
+          - SRC-001
+          - SRC-002
+          - SRC-003
+          - SRC-011
+          - SRC-012
+      - row_id: T-012-R3
+        values:
+          item: "Specialization: large LLM focus narrows TAM"
+          public_evidence: EC-008
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-015
+      - EC-016
+      - EC-017
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+      - SRC-010
+      - SRC-011
+      - SRC-012
+    notes: null
+  - table_id: T-013
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Distribution channels and GTM motions
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-013-R1
+        values:
+          item: Founder-led frontier-lab sales inferred; no pipeline data
+          public_evidence: EC-007, EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-013-R2
+        values:
+          item: Investor-network introductions possible but unproven
+          public_evidence: EC-006, EC-014
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+          - EC-014
+        source_ids:
+          - SRC-002
+          - SRC-008
+      - row_id: T-013-R3
+        values:
+          item: Technical research content creates awareness
+          public_evidence: EC-011
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-011
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-001
+      - SRC-003
+    notes: null
+  - table_id: T-014
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Public marketing-signal summary
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-014-R1
+        values:
+          item: Series B and MatX One announcement is strongest awareness event
+          public_evidence: EC-006, EC-007
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+        source_ids:
+          - SRC-002
+          - SRC-008
+          - SRC-001
+      - row_id: T-014-R2
+        values:
+          item: Research index supports technical credibility
+          public_evidence: EC-011
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-003
+      - row_id: T-014-R3
+        values:
+          item: No conversion metrics public
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-011
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-001
+      - SRC-003
+    notes: null
+  - table_id: T-015
+    title: Sales force productivity model gaps
+    chapter_id: V
+    section_id: V.D
+    purpose: Sales force productivity model gaps
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-015-R1
+        values:
+          item: Sales headcount, quotas and compensation not public
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-015-R2
+        values:
+          item: POC-to-production funnel not public
+          public_evidence: EC-013
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-015-R3
+        values:
+          item: Field engineering/support capacity inferred but not disclosed
+          public_evidence: EC-010
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-002
+          - SRC-004
+    evidence_claim_ids:
+      - EC-010
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-001
+    notes: null
+  - table_id: T-016
+    title: Key R&D personnel and leadership
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Key R&D personnel and leadership
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-016-R1
+        values:
+          item: Reiner Pope and Michial Gunter listed as executives/directors
+          public_evidence: EC-021
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-016-R2
+        values:
+          item: Yasmin Razavi listed as director
+          public_evidence: EC-021
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-016-R3
+        values:
+          item: 100-person multidisciplinary team claim requires HRIS validation
+          public_evidence: EC-010, EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-010
+          - EC-024
+        source_ids:
+          - SRC-002
+          - SRC-004
+          - SRC-003
+    evidence_claim_ids:
+      - EC-006
+      - EC-010
+      - EC-021
+      - EC-024
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-004
+      - SRC-006
+      - SRC-007
+      - SRC-003
+    notes: null
+  - table_id: T-017
+    title: Public product and research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Public product and research pipeline
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-017-R1
+        values:
+          item: MatX One announced; tapeout under one year claimed
+          public_evidence: EC-006, EC-009
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-006
+          - EC-009
+        source_ids:
+          - SRC-002
+          - SRC-008
+      - row_id: T-017-R2
+        values:
+          item: Research posts from 2024-2026 show R&D cadence
+          public_evidence: EC-011
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-011
+        source_ids:
+          - SRC-003
+      - row_id: T-017-R3
+        values:
+          item: IP/FTO schedule not public
+          public_evidence: EC-023
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-023
+        source_ids:
+          - SRC-016
+          - SRC-017
+    evidence_claim_ids:
+      - EC-006
+      - EC-009
+      - EC-011
+      - EC-023
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-003
+      - SRC-016
+      - SRC-017
+    notes: null
+  - table_id: T-018
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Senior management roster
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-018-R1
+        values:
+          item: "Reiner Pope: CEO/executive officer/director in filings"
+          public_evidence: EC-021
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-018-R2
+        values:
+          item: "Michial Gunter: executive officer/director in filings"
+          public_evidence: EC-021
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-021
+        source_ids:
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-018-R3
+        values:
+          item: Other executives/biographies not public
+          public_evidence: EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-003
+          - SRC-004
+    evidence_claim_ids:
+      - EC-002
+      - EC-021
+      - EC-024
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-019
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Headcount and hiring signals
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-019-R1
+        values:
+          item: Company says 100-person team
+          public_evidence: EC-010
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-002
+          - SRC-004
+      - row_id: T-019-R2
+        values:
+          item: Work spans silicon/racks/compilers/kernels/ML
+          public_evidence: EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-003
+          - SRC-004
+      - row_id: T-019-R3
+        values:
+          item: Function/location split not public
+          public_evidence: EC-002, EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-002
+          - EC-024
+        source_ids:
+          - SRC-005
+          - SRC-006
+          - SRC-007
+          - SRC-008
+          - SRC-003
+          - SRC-004
+    evidence_claim_ids:
+      - EC-002
+      - EC-010
+      - EC-024
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-002
+      - SRC-004
+      - SRC-003
+    notes: null
+  - table_id: T-020
+    title: Compensation, stock-plan and turnover gaps
+    chapter_id: VII
+    section_id: VII.G
+    purpose: Compensation, stock-plan and turnover gaps
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-020-R1
+        values:
+          item: Employment and compensation arrangements not public
+          public_evidence: EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-024
+        source_ids:
+          - SRC-003
+          - SRC-004
+      - row_id: T-020-R2
+        values:
+          item: Option pool and 409A private despite $7B valuation
+          public_evidence: EC-001, EC-012
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-001
+          - EC-012
+        source_ids:
+          - SRC-009
+          - SRC-006
+          - SRC-007
+          - SRC-008
+      - row_id: T-020-R3
+        values:
+          item: Turnover and employee-relations data not public
+          public_evidence: EC-022, EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-022
+          - EC-024
+        source_ids:
+          - SRC-017
+          - SRC-003
+          - SRC-004
+    evidence_claim_ids:
+      - EC-001
+      - EC-012
+      - EC-022
+      - EC-024
+    source_ids:
+      - SRC-009
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-017
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-021
+    title: Pending lawsuits against MatX
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Pending lawsuits against MatX
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-021-R1
+        values:
+          item: No public lawsuit against MatX found in limited web search
+          public_evidence: EC-022
+          status: inconclusive
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-017
+      - row_id: T-021-R2
+        values:
+          item: SEC filings are not litigation records and do not prove absence
+          public_evidence: EC-002
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-005
+          - SRC-006
+          - SRC-007
+          - SRC-008
+    evidence_claim_ids:
+      - EC-002
+      - EC-022
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-017
+    notes: null
+  - table_id: T-022
+    title: Pending lawsuits initiated by MatX
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Pending lawsuits initiated by MatX
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-022-R1
+        values:
+          item: No public plaintiff-side action found in limited search
+          public_evidence: EC-022
+          status: inconclusive
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-022
+        source_ids:
+          - SRC-017
+      - row_id: T-022-R2
+        values:
+          item: IP/trade-secret disputes require counsel confirmation
+          public_evidence: EC-023
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-023
+        source_ids:
+          - SRC-016
+          - SRC-017
+    evidence_claim_ids:
+      - EC-022
+      - EC-023
+    source_ids:
+      - SRC-017
+      - SRC-016
+    notes: null
+  - table_id: T-023
+    title: Material IP, trademarks, licenses and FTO gaps
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Material IP, trademarks, licenses and FTO gaps
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-023-R1
+        values:
+          item: Patent/trademark schedule not verified
+          public_evidence: EC-023
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-023
+        source_ids:
+          - SRC-016
+          - SRC-017
+      - row_id: T-023-R2
+        values:
+          item: Architecture and research imply protectable IP but ownership private
+          public_evidence: EC-009, EC-011
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-009
+          - EC-011
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: T-023-R3
+        values:
+          item: Third-party IP and supply-chain licenses not public
+          public_evidence: EC-014, EC-023
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-014
+          - EC-023
+        source_ids:
+          - SRC-002
+          - SRC-016
+          - SRC-017
+    evidence_claim_ids:
+      - EC-009
+      - EC-011
+      - EC-014
+      - EC-023
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-016
+      - SRC-017
+    notes: null
+  - table_id: T-024
+    title: Regulatory, contracts, insurance and EHS matters
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Regulatory, contracts, insurance and EHS matters
+    columns:
+      - name: item
+        description: Diligence item
+      - name: public_evidence
+        description: Public evidence
+      - name: status
+        description: Verification status
+      - name: request
+        description: Follow-up request
+    rows:
+      - row_id: T-024-R1
+        values:
+          item: Export controls apply to advanced computing IC category
+          public_evidence: EC-020
+          status: verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-020
+        source_ids:
+          - SRC-015
+      - row_id: T-024-R2
+        values:
+          item: Material customer/supplier contracts not public
+          public_evidence: EC-013, EC-014
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-013
+          - EC-014
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: T-024-R3
+        values:
+          item: Insurance and EHS records not public
+          public_evidence: EC-010, EC-012, EC-024
+          status: partially_verified
+          request: Request source documents.
+        evidence_claim_ids:
+          - EC-010
+          - EC-012
+          - EC-024
+        source_ids:
+          - SRC-002
+          - SRC-004
+          - SRC-006
+          - SRC-007
+          - SRC-008
+          - SRC-003
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-013
+      - EC-014
+      - EC-020
+      - EC-024
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-001
+      - SRC-015
+      - SRC-003
+    notes: null
+figures:
+  - figure_id: F-001
+    title: MatX public financing timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Timeline of Form D filings, Series B and unicorn-list row.
+    purpose: Show rapid capital formation.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2023-12-04
+      end_date: 2026-03-10
+      ordering: chronological
+      events:
+        - event_id: F-001-E1
+          date: 2023-12-04
+          label: 2023 offering first sale
+          description: 2023 offering first sale
+          category: funding
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-006
+        - event_id: F-001-E2
+          date: 2024-11-22
+          label: 2024 offering first sale
+          description: 2024 offering first sale
+          category: funding
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-007
+        - event_id: F-001-E3
+          date: 2026-02-18
+          label: 2026 large offering first sale
+          description: 2026 large offering first sale
+          category: funding
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-008
+        - event_id: F-001-E4
+          date: 2026-02-24
+          label: Series B and MatX One announced
+          description: Series B and MatX One announced
+          category: funding
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-008
+        - event_id: F-001-E5
+          date: 2026-02-24
+          label: CB Insights $7B row date
+          description: CB Insights $7B row date
+          category: funding
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-009
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-009
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-002
+    notes: null
+  - figure_id: F-002
+    title: Public financing and valuation anchors
+    chapter_id: I
+    section_id: I.C
+    figure_type: chart
+    description: Bar chart of public offering amounts and valuation.
+    purpose: Visualize valuation step-up.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Anchor
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD millions
+        unit: USDm
+        scale: linear
+      series:
+        - series_id: anchors
+          name: Public anchors
+          unit: USDm
+          data_points:
+            - x: 2023 sold
+              y: 24.9
+              label: null
+              evidence_claim_ids:
+                - EC-003
+              source_ids:
+                - SRC-006
+            - x: 2024 sold
+              y: 95
+              label: null
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-007
+            - x: 2026 sold
+              y: 527.9
+              label: null
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-008
+            - x: CB valuation
+              y: 7000
+              label: null
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-009
+      annotations:
+        - label: Terms missing
+          x: CB valuation
+          y: 7000
+          note: Request valuation bridge and preference stack.
+          evidence_claim_ids:
+            - EC-025
+          source_ids:
+            - SRC-005
+            - SRC-008
+            - SRC-009
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-025
+    source_ids:
+      - SRC-009
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-005
+    notes: null
+  - figure_id: F-003
+    title: MatX product/dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product architecture and dependencies.
+    purpose: Map claimed components and hidden dependencies.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: customer
+          label: Frontier lab
+          node_type: user
+          description: Target segment
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - node_id: chip
+          label: MatX One
+          node_type: product
+          description: LLM accelerator
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - node_id: sram
+          label: SRAM-first
+          node_type: infrastructure
+          description: Weights in SRAM
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - node_id: hbm
+          label: HBM
+          node_type: third_party
+          description: KV storage for long context
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - node_id: sw
+          label: Programming model
+          node_type: service
+          description: Direct hardware control
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+      edges:
+        - edge_id: e1
+          from_node_id: customer
+          to_node_id: chip
+          relationship: runs workloads
+          data_or_dependency: training/RL/prefill/decode
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-001
+        - edge_id: e2
+          from_node_id: chip
+          to_node_id: sram
+          relationship: uses
+          data_or_dependency: null
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - edge_id: e3
+          from_node_id: chip
+          to_node_id: hbm
+          relationship: depends on
+          data_or_dependency: HBM allocation
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - edge_id: e4
+          from_node_id: sw
+          to_node_id: chip
+          relationship: programs
+          data_or_dependency: compiler/runtime
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+      boundaries:
+        - boundary_id: b1
+          label: MatX system
+          node_ids:
+            - chip
+            - sram
+            - sw
+        - boundary_id: b2
+          label: Third-party dependency
+          node_ids:
+            - hbm
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-011
+      - EC-013
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-004
+    title: Customer concentration evidence gap
+    chapter_id: III
+    section_id: III.C
+    figure_type: chart
+    description: Chart with no disclosed customer revenue shares.
+    purpose: Make customer proof gap explicit.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Category
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed revenue share
+        unit: "%"
+        scale: linear
+      series:
+        - series_id: cust
+          name: Publicly disclosed share
+          unit: "%"
+          data_points:
+            - x: Named customers
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-001
+                - SRC-002
+            - x: Top customer >5%
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-001
+                - SRC-002
+            - x: Backlog
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-001
+                - SRC-002
+      annotations:
+        - label: No public logos
+          x: Named customers
+          y: null
+          note: Request customer schedule.
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-012
+      - EC-013
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-005
+    title: Customer/partner/supplier ecosystem map
+    chapter_id: III
+    section_id: III.B
+    figure_type: market_map
+    description: Public relationship map.
+    purpose: Separate targets, investors and suppliers.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Commercial proof
+          low_label: low
+          high_label: high
+        y_axis:
+          label: Dependency
+          low_label: low
+          high_label: high
+      segments:
+        - segment_id: customer
+          name: Customers
+          description: Target frontier labs
+        - segment_id: investor
+          name: Investors
+          description: Financing participants
+        - segment_id: supplier
+          name: Supply chain
+          description: HBM/IP/foundry/rack
+      entities:
+        - entity_id: matx
+          name: MatX
+          entity_type: target_company
+          segment_id: customer
+          x_value: 3
+          y_value: 8
+          attributes: {}
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - entity_id: leads
+          name: Jane Street / Situational Awareness
+          entity_type: partner
+          segment_id: investor
+          x_value: 7
+          y_value: 4
+          attributes: {}
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-008
+        - entity_id: supply
+          name: Alchip / Marvell
+          entity_type: supplier
+          segment_id: supplier
+          x_value: 5
+          y_value: 9
+          attributes: {}
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-002
+        - entity_id: hbm
+          name: HBM suppliers
+          entity_type: supplier
+          segment_id: supplier
+          x_value: 2
+          y_value: 9
+          attributes: {}
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-001
+            - SRC-002
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-007
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-001
+    notes: null
+  - figure_id: F-006
+    title: AI accelerator competitive positioning
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map of maturity and workload breadth.
+    purpose: Show competitive pressure.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Workload breadth
+          low_label: narrow
+          high_label: broad
+        y_axis:
+          label: Public maturity
+          low_label: pre-production
+          high_label: production/cloud
+      segments:
+        - segment_id: broad
+          name: Broad accelerators
+          description: GPU/hyperscaler
+        - segment_id: specialist
+          name: Specialists
+          description: LLM/inference focus
+      entities:
+        - entity_id: matx
+          name: MatX One
+          entity_type: target_company
+          segment_id: specialist
+          x_value: 3
+          y_value: 2
+          attributes: {}
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-008
+        - entity_id: nvidia
+          name: NVIDIA Blackwell
+          entity_type: competitor
+          segment_id: broad
+          x_value: 9
+          y_value: 9
+          attributes: {}
+          evidence_claim_ids:
+            - EC-015
+          source_ids:
+            - SRC-010
+        - entity_id: tpu
+          name: Google TPU
+          entity_type: competitor
+          segment_id: broad
+          x_value: 8
+          y_value: 8
+          attributes: {}
+          evidence_claim_ids:
+            - EC-016
+          source_ids:
+            - SRC-011
+        - entity_id: trainium
+          name: AWS Trainium
+          entity_type: competitor
+          segment_id: broad
+          x_value: 7
+          y_value: 7
+          attributes: {}
+          evidence_claim_ids:
+            - EC-017
+          source_ids:
+            - SRC-012
+        - entity_id: groq
+          name: Groq
+          entity_type: competitor
+          segment_id: specialist
+          x_value: 4
+          y_value: 7
+          attributes: {}
+          evidence_claim_ids:
+            - EC-019
+          source_ids:
+            - SRC-014
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-015
+      - EC-016
+      - EC-017
+      - EC-019
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-010
+      - SRC-011
+      - SRC-012
+      - SRC-014
+    notes: null
+  - figure_id: F-007
+    title: Public GTM funnel and gaps
+    chapter_id: V
+    section_id: V.C
+    figure_type: funnel
+    description: Funnel stages visible from public data.
+    purpose: Show conversion data absence.
+    spec_schema_ref: figure_spec_shapes.funnel
+    spec:
+      unit: accounts
+      cohort_or_period: public sources to 2026-06-09
+      stages:
+        - stage_id: awareness
+          name: Technical/investor awareness
+          order: 1
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-002
+            - SRC-008
+        - stage_id: targets
+          name: Frontier-lab target accounts
+          order: 2
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - stage_id: pocs
+          name: POCs/design wins
+          order: 3
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - stage_id: production
+          name: Production deployments
+          order: 4
+          count: null
+          conversion_rate_from_previous: null
+          period: null
+          evidence_claim_ids:
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-011
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-003
+      - SRC-001
+    notes: null
+  - figure_id: F-008
+    title: MatX research-output count by year
+    chapter_id: VI
+    section_id: VI.B
+    figure_type: chart
+    description: Counts visible research/announcement items by year.
+    purpose: Use public cadence as weak R&D signal.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Year
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Listed items
+        unit: count
+        scale: linear
+      series:
+        - series_id: research
+          name: Public posts/items
+          unit: count
+          data_points:
+            - x: "2024"
+              y: 1
+              label: null
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-003
+            - x: "2025"
+              y: 4
+              label: null
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-003
+            - x: "2026"
+              y: 2
+              label: null
+              evidence_claim_ids:
+                - EC-011
+              source_ids:
+                - SRC-003
+      annotations:
+        - label: Productization unverified
+          x: "2026"
+          y: 2
+          note: Posts are not silicon proof.
+          evidence_claim_ids:
+            - EC-011
+            - EC-024
+          source_ids:
+            - SRC-003
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-011
+      - EC-024
+    source_ids:
+      - SRC-003
+      - SRC-004
+    notes: null
+  - figure_id: F-009
+    title: Public management/org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Org chart limited to public names and functions.
+    purpose: Show verified roles and org gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: ceo
+          name: Reiner Pope
+          role: CEO / Executive Officer / Director
+          department: Executive
+          location: Mountain View
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-006
+            - SRC-007
+            - SRC-008
+        - node_id: gunter
+          name: Michial Gunter
+          role: Executive Officer / Director
+          department: Executive
+          location: Mountain View
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-006
+            - SRC-007
+            - SRC-008
+        - node_id: razavi
+          name: Yasmin Razavi
+          role: Director
+          department: Board
+          location: Mountain View
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-006
+            - SRC-007
+            - SRC-008
+        - node_id: rd
+          name: R&D teams
+          role: Silicon/rack/compiler/kernel/ML roles
+          department: R&D
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-003
+            - SRC-004
+      reporting_lines:
+        - parent_node_id: razavi
+          child_node_id: ceo
+          relationship: board_member
+          evidence_claim_ids:
+            - EC-021
+          source_ids:
+            - SRC-006
+            - SRC-007
+            - SRC-008
+        - parent_node_id: ceo
+          child_node_id: rd
+          relationship: other
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-003
+            - SRC-004
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-010
+      - EC-021
+      - EC-024
+    source_ids:
+      - SRC-002
+      - SRC-004
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-003
+    notes: null
+  - figure_id: F-010
+    title: Public headcount anchor
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Only one public headcount anchor is available.
+    purpose: Highlight HRIS gap.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Date
+        unit: null
+        scale: time
+      y_axis:
+        label: Employees
+        unit: count
+        scale: linear
+      series:
+        - series_id: hc
+          name: Public headcount
+          unit: employees
+          data_points:
+            - x: 2023-12-19
+              y: null
+              label: not disclosed
+              evidence_claim_ids:
+                - EC-002
+              source_ids:
+                - SRC-005
+                - SRC-006
+                - SRC-007
+                - SRC-008
+            - x: 2024-12-06
+              y: null
+              label: not disclosed
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-007
+            - x: 2026-02-24
+              y: 100
+              label: 100-person team
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-002
+                - SRC-004
+      annotations:
+        - label: HRIS required
+          x: 2026-02-24
+          y: 100
+          note: Function/location and turnover private.
+          evidence_claim_ids:
+            - EC-024
+          source_ids:
+            - SRC-003
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+      - EC-010
+      - EC-024
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-002
+      - SRC-004
+      - SRC-003
+    notes: null
+  - figure_id: F-011
+    title: Legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: timeline
+    description: Timeline of filings and regulatory context.
+    purpose: Show legal public evidence and gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      start_date: 2023-10-25
+      end_date: 2026-06-09
+      ordering: chronological
+      events:
+        - event_id: F-011-E1
+          date: 2023-10-25
+          label: Federal Register export-control rule
+          description: Federal Register export-control rule
+          category: regulatory
+          evidence_claim_ids:
+            - EC-020
+          source_ids:
+            - SRC-015
+        - event_id: F-011-E2
+          date: 2023-12-19
+          label: 2023 Form D
+          description: 2023 Form D
+          category: filing
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-006
+        - event_id: F-011-E3
+          date: 2024-12-06
+          label: 2024 Form D
+          description: 2024 Form D
+          category: filing
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-007
+        - event_id: F-011-E4
+          date: 2026-03-10
+          label: 2026 Form D
+          description: 2026 Form D
+          category: filing
+          evidence_claim_ids:
+            - EC-005
+          source_ids:
+            - SRC-008
+        - event_id: F-011-E5
+          date: 2026-06-09
+          label: No complete public IP/litigation schedule verified
+          description: No complete public IP/litigation schedule verified
+          category: gap
+          evidence_claim_ids:
+            - EC-023
+          source_ids:
+            - SRC-016
+            - SRC-017
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-002
+      - EC-003
+      - EC-004
+      - EC-005
+      - EC-020
+      - EC-022
+      - EC-023
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+      - SRC-015
+      - SRC-017
+      - SRC-016
+    notes: null
+  - figure_id: F-012
+    title: MatX diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Heatmap of risk register.
+    purpose: Prioritize hidden risks.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Tapeout and manufacturing execution risk
+          severity: critical
+          likelihood: high
+          rationale: First high-end AI chip tapeout, validation, yield, packaging and ramp are not publicly proven.
+          evidence_claim_ids: &a33
+            - EC-006
+            - EC-009
+          source_ids:
+            - SRC-002
+            - SRC-008
+        - risk_id: R-002
+          label: Foundry, IP, HBM and supply-chain dependency
+          severity: high
+          likelihood: medium
+          rationale: MatX depends on advanced manufacturing, HBM, IP blocks and rack/system partners with no public contracts.
+          evidence_claim_ids: &a34
+            - EC-007
+            - EC-014
+            - EC-017
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-012
+        - risk_id: R-003
+          label: Unvalidated technical performance claims
+          severity: critical
+          likelihood: high
+          rationale: Throughput/latency superiority is company-stated with no public independent benchmark or customer validation.
+          evidence_claim_ids: &a35
+            - EC-007
+            - EC-009
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - risk_id: R-004
+          label: Limited public customer proof
+          severity: high
+          likelihood: high
+          rationale: No public customer logos, revenue, backlog or production deployments were found.
+          evidence_claim_ids: &a36
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - risk_id: R-005
+          label: NVIDIA, hyperscaler and inference-ASIC competition
+          severity: high
+          likelihood: high
+          rationale: NVIDIA, Google, AWS, AMD and Groq have public AI accelerator/inference offerings.
+          evidence_claim_ids: &a37
+            - EC-015
+            - EC-016
+            - EC-017
+            - EC-018
+            - EC-019
+          source_ids:
+            - SRC-010
+            - SRC-011
+            - SRC-012
+            - SRC-013
+            - SRC-014
+        - risk_id: R-006
+          label: Valuation step-up and preference-stack opacity
+          severity: high
+          likelihood: medium
+          rationale: The $7B headline is not tied publicly to signed terms, preferences or liquidation stack.
+          evidence_claim_ids: &a38
+            - EC-001
+            - EC-005
+            - EC-025
+          source_ids:
+            - SRC-009
+            - SRC-008
+            - SRC-005
+        - risk_id: R-007
+          label: Capital intensity and runway uncertainty
+          severity: high
+          likelihood: medium
+          rationale: Masks, EDA, HBM, packaging, racks and talent can consume large rounds before revenue.
+          evidence_claim_ids: &a39
+            - EC-005
+            - EC-006
+            - EC-012
+          source_ids:
+            - SRC-008
+            - SRC-002
+            - SRC-006
+            - SRC-007
+        - risk_id: R-008
+          label: Export-control exposure
+          severity: high
+          likelihood: medium
+          rationale: Advanced computing ICs face U.S. export controls and end-use/customer restrictions.
+          evidence_claim_ids: &a40
+            - EC-020
+          source_ids:
+            - SRC-015
+        - risk_id: R-009
+          label: Team scaling and key-person concentration
+          severity: medium
+          likelihood: medium
+          rationale: Public evidence centers on founders and a broad 100-person team without full org/retention data.
+          evidence_claim_ids: &a41
+            - EC-010
+            - EC-021
+            - EC-024
+          source_ids:
+            - SRC-002
+            - SRC-004
+            - SRC-006
+            - SRC-007
+            - SRC-008
+            - SRC-003
+        - risk_id: R-010
+          label: IP ownership and freedom-to-operate gap
+          severity: high
+          likelihood: unknown
+          rationale: No definitive public patent/trademark/FTO schedule was verified.
+          evidence_claim_ids: &a42
+            - EC-023
+            - EC-009
+          source_ids:
+            - SRC-016
+            - SRC-017
+            - SRC-002
+        - risk_id: R-011
+          label: GTM and sales-cycle opacity
+          severity: medium
+          likelihood: high
+          rationale: Frontier-lab hardware sales likely require long qualification cycles; no public funnel or pricing exists.
+          evidence_claim_ids: &a43
+            - EC-013
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - risk_id: R-012
+          label: Rack/datacenter integration risk
+          severity: high
+          likelihood: unknown
+          rationale: Jobs language implies rack-level delivery, but public data does not prove power, cooling, networking or service readiness.
+          evidence_claim_ids: &a44
+            - EC-007
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-002
+            - SRC-004
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-009
+      - EC-007
+      - EC-014
+      - EC-017
+      - EC-013
+      - EC-015
+      - EC-016
+      - EC-018
+      - EC-019
+      - EC-001
+      - EC-005
+      - EC-025
+      - EC-012
+      - EC-020
+      - EC-010
+      - EC-021
+      - EC-024
+      - EC-023
+    source_ids:
+      - SRC-002
+      - SRC-008
+      - SRC-001
+      - SRC-012
+      - SRC-010
+      - SRC-011
+      - SRC-013
+      - SRC-014
+      - SRC-009
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-015
+      - SRC-004
+      - SRC-003
+      - SRC-016
+      - SRC-017
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists MatX as a $7B unicorn joined 2026-02-24 in Mountain View, United States, Industrials, investor Spark Capital.
+    evidence_summary: Public unicorn valuation anchor.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-009
+        quote: MatX ... $7 ... 2/24/2026 ... United States ... Mountain View ... Industrials ... Spark Capital
+        location: null
+    analyst_interpretation: Public unicorn valuation anchor.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+        - T-002
+        - T-008
+        - T-020
+      figure_ids:
+        - F-001
+        - F-002
+        - F-012
+      risk_ids:
+        - R-006
+  - evidence_claim_id: EC-002
+    claim: SEC EDGAR identifies MatX Inc. as a Delaware corporation incorporated in 2023 with Form D filings in 2023, 2024 and 2026.
+    evidence_summary: Legal entity and filing footprint.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: MatX Inc.; state-of-incorporation DE; yearOfInc 2023; Form D entries.
+        location: null
+    analyst_interpretation: Legal entity and filing footprint.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-018
+        - T-019
+        - T-021
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids: []
+  - evidence_claim_id: EC-003
+    claim: The 2023 Form D reports $24,908,675 sold of a $24,908,685 equity offering with 12 investors and first sale 2023-12-04.
+    evidence_summary: Early financing notice.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: totalOfferingAmount 24908685; totalAmountSold 24908675; totalNumberAlreadyInvested 12.
+        location: null
+    analyst_interpretation: Early financing notice.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+        - F-011
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: The 2024 Form D reports $94,994,997 sold of a $95,000,000 equity offering with 12 investors and first sale 2024-11-22.
+    evidence_summary: Series A-era financing notice.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: totalOfferingAmount 95000000; totalAmountSold 94994997; totalNumberAlreadyInvested 12.
+        location: null
+    analyst_interpretation: Series A-era financing notice.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+        - F-010
+        - F-011
+      risk_ids: []
+  - evidence_claim_id: EC-005
+    claim: The 2026 Form D reports $527,876,453 sold of a $557,858,000 equity offering with 23 investors and first sale 2026-02-18.
+    evidence_summary: Large 2026 financing notice.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: totalOfferingAmount 557858000; totalAmountSold 527876453; totalNumberAlreadyInvested 23.
+        location: null
+    analyst_interpretation: Large 2026 financing notice.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-001
+        - T-003
+      figure_ids:
+        - F-001
+        - F-002
+        - F-011
+        - F-012
+      risk_ids:
+        - R-006
+        - R-007
+  - evidence_claim_id: EC-006
+    claim: MatX says it raised a $500M Series B led by Jane Street and Situational Awareness LP to finish development, scale manufacturing and tape out in under a year.
+    evidence_summary: Company Series B and manufacturing timeline claim.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: We’ve raised a $500M Series B ... quickly scale manufacturing, with tapeout in under a year.
+        location: null
+    analyst_interpretation: Company Series B and manufacturing timeline claim.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-001
+        - T-002
+        - T-004
+        - T-008
+        - T-009
+        - T-013
+        - T-014
+        - T-016
+        - T-017
+      figure_ids:
+        - F-001
+        - F-005
+        - F-006
+        - F-007
+        - F-012
+      risk_ids:
+        - R-001
+        - R-007
+  - evidence_claim_id: EC-007
+    claim: MatX claims MatX One delivers higher throughput than any announced product while matching best latencies, using SRAM, HBM and scale interconnect features.
+    evidence_summary: Company product-performance claim.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: The MatX One chip delivers higher throughput than any announced product ... Weights are typically in SRAM ... KVs are typically in HBM.
+        location: null
+    analyst_interpretation: Company product-performance claim.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-006
+        - T-007
+        - T-009
+        - T-012
+        - T-013
+        - T-014
+      figure_ids:
+        - F-003
+        - F-005
+        - F-012
+      risk_ids:
+        - R-002
+        - R-003
+        - R-012
+  - evidence_claim_id: EC-008
+    claim: MatX targets training, RL, inference prefill and decode for large MoE and dense models and excludes small models, convolutions and recommenders.
+    evidence_summary: Workload-scope claim.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "Target workloads: Training, RL, inference prefill, inference decode ... No small models, no convolutions, no recommenders."
+        location: null
+    analyst_interpretation: Workload-scope claim.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-007
+        - T-012
+      figure_ids:
+        - F-003
+      risk_ids: []
+  - evidence_claim_id: EC-009
+    claim: MatX says MatX One uses a splittable systolic array, SRAM-first design, HBM and new numerics.
+    evidence_summary: Architecture claim requiring validation.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: based on a splittable systolic array ... SRAM-first designs ... long-context support of HBM ... fresh take on numerics.
+        location: null
+    analyst_interpretation: Architecture claim requiring validation.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-017
+        - T-023
+      figure_ids:
+        - F-012
+      risk_ids:
+        - R-001
+        - R-003
+        - R-010
+  - evidence_claim_id: EC-010
+    claim: MatX says it is a 100-person team; the jobs page says work spans silicon/rack design, compilers, kernels and ML models.
+    evidence_summary: Team scale and function-scope signal.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: We’re now a 100-person team ... work spans ... silicon and rack design, through compilers and kernels, to ML models.
+        location: null
+    analyst_interpretation: Team scale and function-scope signal.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-005
+        - T-015
+        - T-016
+        - T-019
+        - T-024
+      figure_ids:
+        - F-009
+        - F-010
+        - F-012
+      risk_ids:
+        - R-009
+        - R-012
+  - evidence_claim_id: EC-011
+    claim: MatX research index lists public research posts from 2024-2026, including seqax, inference, speculative decoding, attention, quantization and Series B announcements.
+    evidence_summary: R&D publication cadence.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Announcements include Introducing seqax, SPIRe, speculative decoding, quantization and MatX One and our Series B.
+        location: null
+    analyst_interpretation: R&D publication cadence.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-005
+        - T-012
+        - T-013
+        - T-014
+        - T-017
+        - T-023
+      figure_ids:
+        - F-003
+        - F-007
+        - F-008
+      risk_ids: []
+  - evidence_claim_id: EC-012
+    claim: MatX Form D filings decline to disclose revenue range; audited financial statements and operating metrics are not public.
+    evidence_summary: Financial non-disclosure.
+    evidence_type: regulatory_filing
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: revenueRange Decline to Disclose.
+        location: null
+    analyst_interpretation: Financial non-disclosure.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+        - T-003
+        - T-010
+        - T-020
+        - T-024
+      figure_ids:
+        - F-004
+        - F-012
+      risk_ids:
+        - R-007
+  - evidence_claim_id: EC-013
+    claim: MatX public materials identify frontier labs as target customers but disclose no named customers, case studies, revenue, backlog or pipeline conversion.
+    evidence_summary: Customer proof gap.
+    evidence_type: primary_company_source
+    verification_status: unverified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: large model needs of frontier labs.
+        location: null
+    analyst_interpretation: Customer proof gap.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-006
+      table_ids:
+        - T-003
+        - T-004
+        - T-007
+        - T-010
+        - T-013
+        - T-015
+        - T-024
+      figure_ids:
+        - F-003
+        - F-004
+        - F-005
+        - F-007
+        - F-012
+      risk_ids:
+        - R-003
+        - R-004
+        - R-011
+  - evidence_claim_id: EC-014
+    claim: MatX names Alchip and Marvell as supply-chain investors, but no public supply, IP, capacity or exclusivity agreements were disclosed.
+    evidence_summary: Supply-chain investor signal and contract gap.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: welcoming investors across the supply chain, including Alchip and Marvell.
+        location: null
+    analyst_interpretation: Supply-chain investor signal and contract gap.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-008
+        - T-009
+        - T-013
+        - T-023
+        - T-024
+      figure_ids:
+        - F-005
+        - F-012
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-015
+    claim: NVIDIA describes Blackwell as a full-production architecture for AI factories, generative AI and accelerated computing.
+    evidence_summary: Incumbent competitive signal.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-010
+        quote: The engine behind AI factories ... now in full production ... generative AI with ... performance, efficiency, and scale.
+        location: null
+    analyst_interpretation: Incumbent competitive signal.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-011
+        - T-012
+      figure_ids:
+        - F-006
+        - F-012
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-016
+    claim: Google Cloud positions TPUs for next-generation AI training, inference, reinforcement learning and large language models.
+    evidence_summary: Hyperscaler custom-silicon competitor.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-011
+    quoted_evidence:
+      - source_id: SRC-011
+        quote: Build, optimize, and scale training, inference, and reinforcement learning ... purpose-built for AI workloads such as ... large language models.
+        location: null
+    analyst_interpretation: Hyperscaler custom-silicon competitor.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-011
+        - T-012
+      figure_ids:
+        - F-006
+        - F-012
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-017
+    claim: AWS markets Trainium for generative AI acceleration with HBM3e and throughput claims in newer generations.
+    evidence_summary: Hyperscaler accelerator and HBM signal.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-012
+    quoted_evidence:
+      - source_id: SRC-012
+        quote: 144 GB HBM3e per chip ... generative AI models.
+        location: null
+    analyst_interpretation: Hyperscaler accelerator and HBM signal.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-009
+        - T-011
+        - T-012
+      figure_ids:
+        - F-006
+        - F-012
+      risk_ids:
+        - R-002
+        - R-005
+  - evidence_claim_id: EC-018
+    claim: AMD publicly markets Instinct MI300X accelerators as datacenter AI accelerator products.
+    evidence_summary: AMD competitor signal.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-013
+    quoted_evidence:
+      - source_id: SRC-013
+        quote: AMD Instinct™ MI300X Accelerators.
+        location: null
+    analyst_interpretation: AMD competitor signal.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-011
+      figure_ids:
+        - F-012
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-019
+    claim: Groq markets itself as fast, low-cost inference with LPU architecture.
+    evidence_summary: Inference competitor signal.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-014
+    quoted_evidence:
+      - source_id: SRC-014
+        quote: Groq is fast, low cost inference ... LPU Architecture.
+        location: null
+    analyst_interpretation: Inference competitor signal.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-006
+        - T-011
+      figure_ids:
+        - F-006
+        - F-012
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-020
+    claim: U.S. export controls cover advanced computing ICs, computer commodities containing such ICs and certain semiconductor manufacturing items.
+    evidence_summary: Regulatory exposure for AI chips.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-015
+    quoted_evidence:
+      - source_id: SRC-015
+        quote: controls on advanced computing integrated circuits (ICs), computer commodities that contain such ICs, and certain semiconductor manufacturing items.
+        location: null
+    analyst_interpretation: Regulatory exposure for AI chips.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-004
+        - T-024
+      figure_ids:
+        - F-011
+        - F-012
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-021
+    claim: SEC filings list Reiner Pope and Michial Gunter as executive officers/directors and Yasmin Razavi as director; Reiner Pope signed 2026 filing as CEO.
+    evidence_summary: Public management/board evidence.
+    evidence_type: regulatory_filing
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: Reiner Pope ... Executive Officer ... Director; Michial Gunter ... Executive Officer ... Director; Yasmin Razavi ... Director; signatureTitle Chief Executive Officer.
+        location: null
+    analyst_interpretation: Public management/board evidence.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids:
+        - FC-005
+      table_ids:
+        - T-002
+        - T-016
+        - T-018
+      figure_ids:
+        - F-009
+        - F-012
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-022
+    claim: Limited public web searches did not identify MatX lawsuits or severed relationships, but this is not docket-level evidence.
+    evidence_summary: Weak negative legal-search signal.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: low
+    source_ids:
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-017
+        quote: Search result excerpts returned company/Series B pages and unrelated ticker results, not legal dockets.
+        location: null
+    analyst_interpretation: Weak negative legal-search signal.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.A
+      founder_claim_ids: []
+      table_ids:
+        - T-010
+        - T-020
+        - T-021
+        - T-022
+      figure_ids:
+        - F-011
+      risk_ids: []
+  - evidence_claim_id: EC-023
+    claim: No stable public patent, trademark, license or FTO schedule for MatX was verified in this run.
+    evidence_summary: IP portfolio evidence gap.
+    evidence_type: patent_or_trademark_record
+    verification_status: not_publicly_verifiable
+    confidence: low
+    source_ids:
+      - SRC-016
+      - SRC-017
+    quoted_evidence:
+      - source_id: SRC-016
+        quote: USPTO dynamic search was accessible but no stable MatX IP schedule was harvested.
+        location: null
+    analyst_interpretation: IP portfolio evidence gap.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids:
+        - T-017
+        - T-022
+        - T-023
+      figure_ids:
+        - F-011
+        - F-012
+      risk_ids:
+        - R-010
+  - evidence_claim_id: EC-024
+    claim: Headcount by function, compensation, turnover and employee-relations data are not public despite hiring and R&D scope signals.
+    evidence_summary: Personnel evidence gap.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: work spans the entire range from silicon and rack design, through compilers and kernels, to ML models.
+        location: null
+    analyst_interpretation: Personnel evidence gap.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-016
+        - T-018
+        - T-019
+        - T-020
+        - T-024
+      figure_ids:
+        - F-008
+        - F-009
+        - F-010
+        - F-012
+      risk_ids:
+        - R-009
+  - evidence_claim_id: EC-025
+    claim: Public evidence implies a rapid valuation step-up from Form D financing notices to a $7B CB Insights valuation, but no valuation bridge is public.
+    evidence_summary: Valuation step-up risk.
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+      - SRC-008
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: CB Insights $7B row plus 2026 Form D sold amount.
+        location: null
+    analyst_interpretation: Valuation step-up risk.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-002
+        - T-004
+      figure_ids:
+        - F-002
+        - F-012
+      risk_ids:
+        - R-006
+sources:
+  - source_id: SRC-001
+    title: "MatX homepage: High-throughput chips for LLMs"
+    url: https://matx.com/
+    publisher: MatX
+    author: null
+    publication_date: 2026-05-28
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Company product page; validates claims made, not independent performance.
+    archive_url: null
+  - source_id: SRC-002
+    title: MatX One and our Series B
+    url: https://matx.com/research/series_b
+    publisher: MatX
+    author: Reiner Pope
+    publication_date: 2026-02-24
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Company announcement for financing, product and team claims.
+    archive_url: null
+  - source_id: SRC-003
+    title: MatX Research index
+    url: https://matx.com/research
+    publisher: MatX
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Company research index showing publication cadence.
+    archive_url: null
+  - source_id: SRC-004
+    title: MatX jobs page
+    url: https://matx.com/jobs
+    publisher: MatX
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Company hiring page; supports function scope, not HR records.
+    archive_url: null
+  - source_id: SRC-005
+    title: SEC EDGAR company search feed for MatX Inc.
+    url: https://www.sec.gov/cgi-bin/browse-edgar?company=MatX&owner=exclude&action=getcompany&output=atom&count=100
+    publisher: U.S. SEC
+    author: null
+    publication_date: 2026-06-09
+    accessed_date: 2026-06-09
+    source_type: regulatory_filing
+    reliability_notes: Official feed for issuer and Form D filings.
+    archive_url: null
+  - source_id: SRC-006
+    title: MatX Inc. Form D filed 2023-12-19
+    url: https://www.sec.gov/Archives/edgar/data/2004726/000200472623000002/primary_doc.xml
+    publisher: U.S. SEC
+    author: MatX Inc.
+    publication_date: 2023-12-19
+    accessed_date: 2026-06-09
+    source_type: regulatory_filing
+    reliability_notes: Official Form D notice, not audited financial data.
+    archive_url: null
+  - source_id: SRC-007
+    title: MatX Inc. Form D filed 2024-12-06
+    url: https://www.sec.gov/Archives/edgar/data/2004726/000200472624000001/primary_doc.xml
+    publisher: U.S. SEC
+    author: MatX Inc.
+    publication_date: 2024-12-06
+    accessed_date: 2026-06-09
+    source_type: regulatory_filing
+    reliability_notes: Official Form D notice, not valuation data.
+    archive_url: null
+  - source_id: SRC-008
+    title: MatX Inc. Form D filed 2026-03-10
+    url: https://www.sec.gov/Archives/edgar/data/2004726/000200472626000003/primary_doc.xml
+    publisher: U.S. SEC
+    author: MatX Inc.
+    publication_date: 2026-03-10
+    accessed_date: 2026-06-09
+    source_type: regulatory_filing
+    reliability_notes: Official Form D notice for large 2026 offering.
+    archive_url: null
+  - source_id: SRC-009
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: 2026-05-13
+    accessed_date: 2026-06-09
+    source_type: market_database
+    reliability_notes: Public market-database row; reconcile to primary financing documents.
+    archive_url: null
+  - source_id: SRC-010
+    title: NVIDIA Blackwell Architecture
+    url: https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/
+    publisher: NVIDIA
+    author: null
+    publication_date: 2026-06-08
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Competitor product page.
+    archive_url: null
+  - source_id: SRC-011
+    title: Tensor Processing Units (TPUs)
+    url: https://cloud.google.com/tpu
+    publisher: Google Cloud
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Hyperscaler competitor product page.
+    archive_url: null
+  - source_id: SRC-012
+    title: AI Accelerator - AWS Trainium
+    url: https://aws.amazon.com/ai/machine-learning/trainium/
+    publisher: Amazon Web Services
+    author: null
+    publication_date: 2026-06-08
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Hyperscaler accelerator page.
+    archive_url: null
+  - source_id: SRC-013
+    title: AMD Instinct MI300X Accelerators
+    url: https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html
+    publisher: AMD
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Competitor product page.
+    archive_url: null
+  - source_id: SRC-014
+    title: Groq homepage
+    url: https://groq.com/
+    publisher: Groq
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: primary_company_source
+    reliability_notes: Inference competitor page.
+    archive_url: null
+  - source_id: SRC-015
+    title: Federal Register advanced-computing export controls
+    url: https://www.federalregister.gov/documents/2023/10/25/2023-23055/implementation-of-additional-export-controls-certain-advanced-computing-items-supercomputer-and
+    publisher: Federal Register / BIS
+    author: U.S. Department of Commerce
+    publication_date: 2023-10-25
+    accessed_date: 2026-06-09
+    source_type: regulatory_filing
+    reliability_notes: Official U.S. export-control rulemaking.
+    archive_url: null
+  - source_id: SRC-016
+    title: USPTO Trademark Search landing page queried for MatX
+    url: https://tmsearch.uspto.gov/search/search-results?query=MatX
+    publisher: USPTO
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: patent_or_trademark_record
+    reliability_notes: Dynamic search page; no stable IP schedule harvested.
+    archive_url: null
+  - source_id: SRC-017
+    title: Public web searches for MatX lawsuits and IP mentions
+    url: https://www.bing.com/search?q=%22MatX%20Inc.%22%20lawsuit
+    publisher: Public web search
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-09
+    source_type: other
+    reliability_notes: Weak negative signal only; not a docket or IP search.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Tapeout and manufacturing execution risk
+    risk_category: technical
+    severity: critical
+    likelihood: high
+    description: First high-end AI chip tapeout, validation, yield, packaging and ramp are not publicly proven.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a33
+    mitigation_or_diligence_request: Review tapeout plan, foundry/OSAT commitments, yield model and validation milestones.
+  - risk_id: R-002
+    risk_title: Foundry, IP, HBM and supply-chain dependency
+    risk_category: operational
+    severity: high
+    likelihood: medium
+    description: MatX depends on advanced manufacturing, HBM, IP blocks and rack/system partners with no public contracts.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.E
+      - VIII.F
+    evidence_claim_ids: *a34
+    mitigation_or_diligence_request: Review supplier contracts, HBM allocations, IP licenses and dual-source options.
+  - risk_id: R-003
+    risk_title: Unvalidated technical performance claims
+    risk_category: technical
+    severity: critical
+    likelihood: high
+    description: Throughput/latency superiority is company-stated with no public independent benchmark or customer validation.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a35
+    mitigation_or_diligence_request: Require third-party benchmarks, workload assumptions and customer POC results.
+  - risk_id: R-004
+    risk_title: Limited public customer proof
+    risk_category: customer
+    severity: high
+    likelihood: high
+    description: No public customer logos, revenue, backlog or production deployments were found.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - V.B
+    evidence_claim_ids: *a36
+    mitigation_or_diligence_request: Request customer contracts, backlog, POCs and references.
+  - risk_id: R-005
+    risk_title: NVIDIA, hyperscaler and inference-ASIC competition
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: NVIDIA, Google, AWS, AMD and Groq have public AI accelerator/inference offerings.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+    evidence_claim_ids: *a37
+    mitigation_or_diligence_request: Benchmark against alternatives on TCO, availability, software and switching cost.
+  - risk_id: R-006
+    risk_title: Valuation step-up and preference-stack opacity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: The $7B headline is not tied publicly to signed terms, preferences or liquidation stack.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.B
+      - I.C
+      - I.D
+    evidence_claim_ids: *a38
+    mitigation_or_diligence_request: Request cap table, financing agreements, preferences and 409A.
+  - risk_id: R-007
+    risk_title: Capital intensity and runway uncertainty
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Masks, EDA, HBM, packaging, racks and talent can consume large rounds before revenue.
+    impacted_chapter_ids:
+      - I
+      - VI
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - VI.B
+    evidence_claim_ids: *a39
+    mitigation_or_diligence_request: Request cash, burn, committed capex, inventory and downside runway model.
+  - risk_id: R-008
+    risk_title: Export-control exposure
+    risk_category: regulatory
+    severity: high
+    likelihood: medium
+    description: Advanced computing ICs face U.S. export controls and end-use/customer restrictions.
+    impacted_chapter_ids:
+      - VIII
+      - V
+    impacted_section_ids:
+      - VIII.G
+      - V.A
+    evidence_claim_ids: *a40
+    mitigation_or_diligence_request: Obtain ECCN classification, export counsel memo and compliance procedures.
+  - risk_id: R-009
+    risk_title: Team scaling and key-person concentration
+    risk_category: team
+    severity: medium
+    likelihood: medium
+    description: Public evidence centers on founders and a broad 100-person team without full org/retention data.
+    impacted_chapter_ids:
+      - VII
+      - VI
+    impacted_section_ids:
+      - VII.A
+      - VII.B
+      - VI.A
+    evidence_claim_ids: *a41
+    mitigation_or_diligence_request: Review org chart, compensation, retention and key-person succession.
+  - risk_id: R-010
+    risk_title: IP ownership and freedom-to-operate gap
+    risk_category: legal
+    severity: high
+    likelihood: unknown
+    description: No definitive public patent/trademark/FTO schedule was verified.
+    impacted_chapter_ids:
+      - VIII
+      - VI
+    impacted_section_ids:
+      - VIII.D
+      - VI.B
+    evidence_claim_ids: *a42
+    mitigation_or_diligence_request: Request IP schedule, assignments, third-party licenses and FTO opinion.
+  - risk_id: R-011
+    risk_title: GTM and sales-cycle opacity
+    risk_category: market
+    severity: medium
+    likelihood: high
+    description: Frontier-lab hardware sales likely require long qualification cycles; no public funnel or pricing exists.
+    impacted_chapter_ids:
+      - V
+      - III
+    impacted_section_ids:
+      - V.C
+      - V.D
+      - III.C
+    evidence_claim_ids: *a43
+    mitigation_or_diligence_request: Request CRM, pricing/TCO, sales-cycle, win/loss and field-engineering plan.
+  - risk_id: R-012
+    risk_title: Rack/datacenter integration risk
+    risk_category: product
+    severity: high
+    likelihood: unknown
+    description: Jobs language implies rack-level delivery, but public data does not prove power, cooling, networking or service readiness.
+    impacted_chapter_ids:
+      - II
+      - III
+    impacted_section_ids:
+      - II.A
+      - III.E
+    evidence_claim_ids: *a44
+    mitigation_or_diligence_request: Review rack architecture, reliability tests, field support and datacenter integration plan.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financials, cash/burn, revenue, backlog and AR aging.
+    why_it_matters: Financial quality and runway cannot be assessed.
+    suggested_source_or_request: Company CFO/controller data room.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Cap table, preferences, debt, options and valuation bridge.
+    why_it_matters: $7B headline cannot be underwritten.
+    suggested_source_or_request: Financing documents and cap table.
+    priority: high
+  - gap_id: G-003
+    chapter_id: II
+    section_id: II.A
+    missing_information: Independent benchmarks, silicon status, yield, power and rack specs.
+    why_it_matters: Core product claims are unverified.
+    suggested_source_or_request: Engineering data room and third-party benchmark lab.
+    priority: high
+  - gap_id: G-004
+    chapter_id: III
+    section_id: III.A
+    missing_information: Named customers, POCs, contracts, backlog and references.
+    why_it_matters: Customer proof is the largest traction gap.
+    suggested_source_or_request: Customer schedule and reference calls.
+    priority: high
+  - gap_id: G-005
+    chapter_id: III
+    section_id: III.E
+    missing_information: Foundry, HBM, packaging/test and IP contracts.
+    why_it_matters: Supply constraints can block ramp.
+    suggested_source_or_request: Supplier agreements and purchase commitments.
+    priority: high
+  - gap_id: G-006
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Comparable TCO and benchmarks against NVIDIA/TPU/Trainium/AMD/Groq.
+    why_it_matters: Competition may compress pricing or adoption.
+    suggested_source_or_request: Independent benchmark and commercial analysis.
+    priority: high
+  - gap_id: G-007
+    chapter_id: V
+    section_id: V.D
+    missing_information: CRM pipeline, pricing, sales cycle and field support model.
+    why_it_matters: Revenue timing and CAC not modelable.
+    suggested_source_or_request: CRM export and GTM plan.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: R&D roadmap, tapeout risk burn-down, cost-to-complete and FTO.
+    why_it_matters: Execution risk is existential.
+    suggested_source_or_request: Engineering review and IP counsel memo.
+    priority: high
+  - gap_id: G-009
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: HRIS, function/location headcount, compensation and turnover.
+    why_it_matters: Team scaling drives execution.
+    suggested_source_or_request: HRIS/payroll and comp records.
+    priority: medium
+  - gap_id: G-010
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Patent/trademark schedule, assignments, licenses and FTO opinion.
+    why_it_matters: IP issues can block launch.
+    suggested_source_or_request: IP counsel materials.
+    priority: high
+  - gap_id: G-011
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: ECCN/export classification and compliance program.
+    why_it_matters: AI chips face export controls.
+    suggested_source_or_request: Export counsel memo.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.C
+    request: Provide full cap table, financing documents, investor rights, liquidation waterfall, option pool, 409A and debt/warrant/SAFE schedule.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, cash/debt, burn, budget-to-actuals, revenue/backlog and AR aging.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: II
+    section_id: II.A
+    request: Provide MatX One benchmarks, silicon/tapeout status, power/cooling/TCO model, compiler/runtime maturity and rack specs.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: III
+    section_id: III.A
+    request: Provide customer/POC list, contracts, backlog, revenue concentration and reference calls.
+    requested_from: customer
+    priority: high
+  - request_id: Q-005
+    chapter_id: III
+    section_id: III.E
+    request: Provide foundry, HBM, packaging, IP, EDA and rack supplier agreements.
+    requested_from: supplier
+    priority: high
+  - request_id: Q-006
+    chapter_id: IV
+    section_id: IV.A
+    request: Run independent TCO/benchmark comparison against NVIDIA, TPU, Trainium, AMD and Groq.
+    requested_from: other
+    priority: high
+  - request_id: Q-007
+    chapter_id: V
+    section_id: V.D
+    request: Provide CRM pipeline, pricing, sales-cycle, quotas and field-engineering plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide engineering roadmap, tapeout milestones, validation data, cost-to-complete and next-gen plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-009
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide HRIS/payroll export, function/location headcount, open roles, turnover and retention/equity plan.
+    requested_from: company
+    priority: medium
+  - request_id: Q-010
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide patent/trademark schedule, assignments, licenses, open-source review and FTO opinion.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-011
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide ECCN/classification analysis, restricted-party screening and export compliance procedures.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-012
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide federal/state/arbitration docket searches and litigation/demand-letter schedule.
+    requested_from: counsel
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: Public-source diligence only; no private data room, customer calls, founder interviews or supplier confirmations.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - I.D
+      - II.A
+      - III.A
+      - III.B
+      - III.C
+      - III.D
+      - III.E
+      - IV.A
+      - V.A
+      - V.B
+      - V.C
+      - V.D
+      - V.E
+      - VI.A
+      - VI.B
+      - VII.A
+      - VII.B
+      - VII.C
+      - VII.D
+      - VII.E
+      - VII.F
+      - VII.G
+      - VIII.A
+      - VIII.B
+      - VIII.C
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-002
+    description: Company performance claims are not independent benchmark evidence.
+    affected_chapter_ids:
+      - II
+      - IV
+      - VI
+    affected_section_ids:
+      - II.A
+      - IV.A
+      - VI.B
+  - limitation_id: L-003
+    description: Public web and dynamic USPTO searches are not substitutes for counsel-led docket, IP and FTO searches.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.G
+  - limitation_id: L-004
+    description: CB Insights valuation is secondary market-database data requiring primary financing reconciliation.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.B
+      - I.C
+      - I.D
