@@ -1,0 +1,3924 @@
+report_metadata:
+  report_title: "Ledger Diligence Research Report"
+  target_company: "Ledger"
+  website: "https://www.ledger.com/"
+  known_aliases:
+    - "Ledger SAS"
+    - "LedgerHQ"
+    - "Ledger Wallet"
+    - "Ledger Live"
+    - "Ledger Enterprise"
+  sector: "Financial Services / Digital asset security / Crypto hardware wallets"
+  geography: "France headquarters; global consumer and institutional operations"
+  company_stage: "Private unicorn / late-stage digital-asset security company"
+  research_date: "2026-06-06"
+  analyst: "GitHub Copilot CLI using startup-diligence-research skill"
+  report_version: "1.0"
+  currency: "USD unless otherwise noted"
+  time_zone: "UTC"
+research_scope:
+  diligence_depth: "standard_diligence"
+  source_strategy:
+    - "Public-source review of Ledger-owned website, product, careers, legal, security, breach-response and partnership pages."
+    - "Public-source review of independent technology news for financing, valuation, product and breach context."
+    - "Public registry review using Pappers for French company status and headquarters."
+    - "Public competitor scan of Trezor, Tangem and Keystone product pages."
+    - "No private data room, customer calls, management interviews, regulator portals, paywall bypass, secrets or auth-only systems were used."
+  included_jurisdictions:
+    - "France"
+    - "United States"
+    - "United Kingdom"
+    - "European Union"
+    - "Singapore and other global markets where Ledger publicly references availability"
+  excluded_topics:
+    - "No non-public financial statements, cap table, customer schedules, contracts or board materials."
+    - "No paywall bypassing or private litigation databases."
+    - "No private customer, employee or founder personal contact information."
+    - "No legal, tax, accounting or investment advice."
+  user_provided_materials:
+    - material_id: "MAT-001"
+      title: "CB Insights candidate unicorn row supplied in task prompt"
+      type: "user_provided_public_database_excerpt"
+      date_received: "2026-06-06"
+      notes: "Ledger; slug ledger; valuation USD 1.47B; date joined 2021-06-10; country France; city Paris; industry Financial Services; investors Digital Currency Group, Draper Esprit and Korelya Capital; CB Insights URL supplied."
+founder_claims:
+  - founder_claim_id: "FC-001"
+    claim_text: "Ledger is a private unicorn-scale company with a CB Insights valuation anchor around USD 1.47B and a June 2021 unicorn date."
+    claim_source: "User-provided CB Insights candidate row and CB Insights company profile"
+    claim_date: "2021-06-10"
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.C, I.D]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: [EC-001, EC-002]
+    contradiction_summary: "Public valuation anchors differ slightly across sources: CB Insights row says USD 1.47B; TechCrunch reported USD 1.5B in 2021 and about USD 1.41B in 2023."
+    diligence_follow_up:
+      - "Request current fully diluted cap table, latest 409A/fair-value support, investor rights, preference stack, option pool, secondary transactions and any IPO/acquisition process materials."
+  - founder_claim_id: "FC-002"
+    claim_text: "Ledger is headquartered in Paris, France and remains an active French SAS."
+    claim_source: "Ledger public pages and Pappers public company registry"
+    claim_date: null
+    mapped_chapter_ids: [VII, VIII]
+    mapped_section_ids: [VII.B, VIII.F]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: [EC-001, EC-012]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request corporate organization chart, subsidiary list, good-standing certificates and latest extrait Kbis."
+  - founder_claim_id: "FC-003"
+    claim_text: "Ledger provides crypto hardware wallets, a wallet app and digital-asset security infrastructure for consumers and institutions."
+    claim_source: "Ledger website, careers page, product pages and Enterprise page"
+    claim_date: null
+    mapped_chapter_ids: [II, VI]
+    mapped_section_ids: [II.A, VI.A]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: [EC-005, EC-006, EC-010]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request product-level revenue, gross margin, warranty returns, support tickets, incident logs, roadmap and SLA/security metrics."
+  - founder_claim_id: "FC-004"
+    claim_text: "Ledger raised a Series C extension in 2023 at about EUR 1.3B / USD 1.4B valuation."
+    claim_source: "TechCrunch 2023 funding article"
+    claim_date: "2023-03-30"
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.D]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: [EC-002]
+    contradiction_summary: null
+    diligence_follow_up:
+      - "Request 2023 financing documents, use-of-proceeds plan, secondary-sale details and current runway."
+  - founder_claim_id: "FC-005"
+    claim_text: "Ledger has sold more than 6 million devices and secures roughly 20% of global crypto assets."
+    claim_source: "Ledger careers page, Ledger homepage and TechCrunch 2023 article"
+    claim_date: null
+    mapped_chapter_ids: [I, III, V]
+    mapped_section_ids: [I.A, III.A, V.B]
+    verification_status: "partially_verified"
+    confidence: "medium"
+    evidence_claim_ids: [EC-003, EC-015]
+    contradiction_summary: "Device-sale and share-of-assets metrics are public but largely company-stated or reported from company statements; underlying methodology, active devices and revenue conversion are not public."
+    diligence_follow_up:
+      - "Request active-device cohorts, registered users, wallet balances methodology, retention, revenue by cohort and reconciliation to audited financials."
+  - founder_claim_id: "FC-006"
+    claim_text: "Ledger's named investors include Digital Currency Group, Draper Esprit/Molten Ventures and Korelya Capital."
+    claim_source: "Ledger Series B announcement, TechCrunch 2021 and CB Insights profile"
+    claim_date: null
+    mapped_chapter_ids: [I]
+    mapped_section_ids: [I.C, I.D]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: [EC-002, EC-004]
+    contradiction_summary: "Draper Esprit rebranded to Molten Ventures; source names vary by publication date."
+    diligence_follow_up:
+      - "Request latest investor register, board/observer rights, pro rata rights and related-party transactions."
+  - founder_claim_id: "FC-007"
+    claim_text: "Ledger Recover is an optional identity-based backup product for wallet recovery."
+    claim_source: "Ledger Recover product page and CEO message"
+    claim_date: null
+    mapped_chapter_ids: [II, VIII]
+    mapped_section_ids: [II.A, VIII.G]
+    verification_status: "verified"
+    confidence: "high"
+    evidence_claim_ids: [EC-007, EC-018]
+    contradiction_summary: "The technical workflow is company-stated; complete independent audit results, provider contracts and regulator views were not found in public sources."
+    diligence_follow_up:
+      - "Request Recover cryptographic audits, provider contracts, DPIAs, regulatory analyses, incident response plans and opt-in consent records."
+executive_summary:
+  overall_assessment: "Proceed only with high-intensity confirmatory diligence. Public evidence verifies that Ledger is an active French private unicorn, has major consumer hardware-wallet traction, broad app/enterprise product ambitions and credible security R&D assets. The diligence case is constrained by non-public financials, cap table, customer concentration, contracts, security incident history, Recover trust concerns and crypto-cycle exposure."
+  investment_or_diligence_thesis: "Ledger's upside depends on whether trusted hardware-backed self-custody can become a durable consumer and institutional platform with recurring software, Recover, staking, buy/swap and enterprise revenues, while maintaining security credibility after a 2020 customer-data breach and 2023 Recover backlash."
+  strongest_verified_claims:
+    - founder_claim_id: "FC-001"
+      summary: "CB Insights and TechCrunch sources support unicorn-scale private valuation anchors around USD 1.4B to USD 1.5B."
+      evidence_claim_ids: [EC-001, EC-002]
+    - founder_claim_id: "FC-003"
+      summary: "Ledger-owned pages verify a product surface spanning hardware wallets, Ledger Wallet/Live, Ledger Recover and Ledger Enterprise."
+      evidence_claim_ids: [EC-005, EC-010]
+    - founder_claim_id: "FC-005"
+      summary: "Public sources report 6 million devices sold and Ledger claims roughly 20% of crypto assets secured by Ledger devices."
+      evidence_claim_ids: [EC-003, EC-015]
+    - founder_claim_id: "FC-006"
+      summary: "Public financing announcements verify participation by DCG, Draper network/Molten, Korelya, Cathay and other investors."
+      evidence_claim_ids: [EC-002, EC-004]
+  biggest_risks:
+    - risk_id: "R-001"
+      summary: "Audited financial statements, current revenue, burn, runway and unit economics are not public."
+    - risk_id: "R-003"
+      summary: "Security and privacy trust is mission-critical, yet Ledger disclosed a 2020 customer-data breach and phishing fallout."
+    - risk_id: "R-004"
+      summary: "Ledger Recover creates identity-provider, key-backup, regulatory and reputational exposure despite being optional."
+    - risk_id: "R-005"
+      summary: "Customer concentration, active-device cohorts, churn and institutional revenue dependence are not public."
+    - risk_id: "R-007"
+      summary: "Trezor, Tangem, Keystone, software wallets and exchanges pressure pricing, UX and trust positioning."
+  key_evidence_gaps:
+    - "Audited financial statements, revenue by product/channel/geography, gross margin, returns/warranty reserves, burn and runway."
+    - "Fully diluted cap table, investor rights, preference stack, debt, options/warrants and secondary market transactions."
+    - "Active users, active devices, customer concentration, institutional customer list, churn, NRR and customer references."
+    - "Security audits, SOC/ISO reports, incident register, vulnerability-response metrics and Recover provider audits."
+    - "Supply-chain contracts, secure-element sourcing, manufacturing agreements, logistics/retail agreements and partner SLAs."
+    - "Regulatory correspondence, privacy impact assessments, CNIL follow-up, litigation schedule, insurance and material contracts."
+    - "HRIS headcount by function/location, turnover, compensation plans and option/incentive plan documents."
+  recommended_next_steps:
+    - "Gate any investment process on receipt of audited financials, product-level P&L, cash runway and cap table."
+    - "Run security diligence on hardware, firmware, Ledger Wallet, Recover and Enterprise, including independent audit review."
+    - "Obtain customer and channel diligence packages: active devices, cohorts, top customers, enterprise references and partner economics."
+    - "Review privacy, consumer-protection, crypto-service, sanctions/AML and data-transfer obligations with counsel."
+    - "Reconcile public funding totals and valuation marks against current financing documents and secondary transactions."
+chapters:
+  - chapter_id: "I"
+    title: "Financial Information"
+    chapter_summary: "Public sources verify substantial funding and unicorn valuation anchors, but do not disclose audited financial statements, current ARR, gross margin, cash, burn, runway, debt or product-level unit economics. Public traction signals are useful but cannot substitute for financial statements."
+    founder_claim_ids: [FC-001, FC-004, FC-005, FC-006]
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-019]
+    risk_ids: [R-001, R-002, R-011]
+    sections:
+      - section_id: "I.A"
+        title: "Annual and quarterly financial information for the past three years"
+        checklist_question_ids: [I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6]
+        summary: "Audited financials, management reporting, backlog, AR aging and sales/gross-profit by product/channel/geography are not public. Public device-sale and app-usage metrics provide directional scale only."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "I.A-F1"
+            finding: "Public sources report device and usage scale, including more than 6 million devices sold and Ledger Live/Walet active-user signals, but no audited revenue or margin schedules."
+            evidence_claim_ids: [EC-003, EC-015]
+            risk_ids: [R-001, R-005]
+        hidden_risks:
+          - "Hardware gross margin, warranty reserves, channel rebates, returns and inventory obsolescence could materially change profitability."
+          - "Crypto market cycles may create volatile sell-through and services revenue that public device-count metrics obscure."
+        evidence_gaps:
+          - "Audited consolidated financial statements, management accounts, product/channel/geography revenue, gross margin, backlog and AR aging."
+        follow_up_questions:
+          - "Provide monthly financial statements for FY2023-FY2026 YTD, product P&L, cash, debt, burn, runway, deferred revenue, backlog and AR aging."
+        table_ids: [T-003]
+        figure_ids: []
+        evidence_claim_ids: [EC-003, EC-019]
+      - section_id: "I.B"
+        title: "Financial Projections"
+        checklist_question_ids: [I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8]
+        summary: "Projections are not public. Public evidence points to growth drivers in hardware wallets, app services, Recover, enterprise custody/staking and tokenized assets, but no forecast assumptions or capex/working-capital plan is public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "I.B-F1"
+            finding: "Public growth signals include 2023 funding, Ledger Wallet app monetization, Recover subscription bundles and Enterprise institutional claims, but forecast conversion is not public."
+            evidence_claim_ids: [EC-002, EC-005, EC-010, EC-016]
+            risk_ids: [R-001, R-002]
+        hidden_risks:
+          - "Forecasts may be highly sensitive to crypto asset prices, exchange failures, consumer confidence, retail channel inventory and regulatory restrictions."
+        evidence_gaps:
+          - "Three-year projections, plan-vs-actuals, scenario analysis, capex, depreciation, working capital and external financing assumptions."
+        follow_up_questions:
+          - "Provide base/downside/upside forecasts with explicit crypto-market, device ASP, services attach-rate, churn, capex and financing assumptions."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-002, EC-005, EC-010, EC-016, EC-019]
+      - section_id: "I.C"
+        title: "Capital Structure"
+        checklist_question_ids: [I.C.1, I.C.2, I.C.3, I.C.4, I.C.5]
+        summary: "Ledger is publicly described as private/unicorn and Pappers lists Ledger SAS as active, but shares, options, warrants, debt, preferences and beneficial ownership are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "I.C-F1"
+            finding: "Named investors are public across funding sources, while current ownership percentages and preference terms are not."
+            evidence_claim_ids: [EC-001, EC-004]
+            risk_ids: [R-011]
+        hidden_risks:
+          - "Late-stage liquidation preferences, secondary discounts or debt covenants could materially affect common-equity value."
+        evidence_gaps:
+          - "Fully diluted cap table, option pool, warrants, SAFEs/notes, debt instruments, preference stack, investor rights and secondary transactions."
+        follow_up_questions:
+          - "Provide current cap table, investor rights agreements, option ledger, debt schedule, board minutes approving financings and secondary sale documentation."
+        table_ids: [T-002]
+        figure_ids: [F-002]
+        evidence_claim_ids: [EC-001, EC-004, EC-019]
+      - section_id: "I.D"
+        title: "Other financial information"
+        checklist_question_ids: [I.D.1, I.D.2, I.D.3]
+        summary: "Public funding history is reasonably well supported, but tax positions, accounting policies and current basis by investor are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "I.D-F1"
+            finding: "Public announcements identify major financing rounds from 2015 through 2023, including 2021 Series C and 2023 extension valuation anchors."
+            evidence_claim_ids: [EC-002]
+            risk_ids: [R-011]
+          - finding_id: "I.D-F2"
+            finding: "Public funding-total figures conflict: Ledger's people page shows USD 463M raised since 2014, while CB Insights shows USD 574.38M total raised."
+            evidence_claim_ids: [EC-002]
+            risk_ids: [R-011]
+        hidden_risks:
+          - "Conflicting public funding totals may indicate stale company pages, secondary rounds, FX differences or excluded tranches that require reconciliation."
+        evidence_gaps:
+          - "Tax positions, revenue-recognition policies, debt/financing arrangements and investor basis by round."
+        follow_up_questions:
+          - "Reconcile all financing rounds, currencies, primary versus secondary proceeds, valuation marks and post-money capitalization."
+        table_ids: [T-001]
+        figure_ids: [F-001]
+        evidence_claim_ids: [EC-002, EC-019]
+  - chapter_id: "II"
+    title: "Products"
+    chapter_summary: "Ledger's product portfolio is publicly visible across consumer hardware wallets, Ledger Wallet app, Ledger Recover and Ledger Enterprise. Product-market evidence is strong at a surface level, but product profitability, attach rates, return rates, reliability and roadmap timing require private diligence."
+    founder_claim_ids: [FC-003, FC-007]
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-010, EC-020]
+    risk_ids: [R-003, R-004, R-006, R-009]
+    sections:
+      - section_id: "II.A"
+        title: "Description of each product"
+        checklist_question_ids: [II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6]
+        summary: "Public evidence supports a multi-product line, but major customers/applications, growth rates, market share, cost structure and profitability are not publicly disclosed at a diligence-grade level."
+        verification_status: "partially_verified"
+        confidence: "high"
+        key_findings:
+          - finding_id: "II.A-F1"
+            finding: "Ledger markets hardware wallets/signers, a wallet app for buy/swap/stake/dApps, Recover backup, and Enterprise infrastructure for institutions."
+            evidence_claim_ids: [EC-005, EC-010]
+            risk_ids: [R-006, R-009]
+          - finding_id: "II.A-F2"
+            finding: "Hardware-wallet security claims rely on offline private-key storage, secure element/proprietary OS and on-device transaction confirmation."
+            evidence_claim_ids: [EC-006]
+            risk_ids: [R-003]
+          - finding_id: "II.A-F3"
+            finding: "Recover expands addressable users but creates trust, identity-verification and provider-dependency risk."
+            evidence_claim_ids: [EC-007, EC-018]
+            risk_ids: [R-004]
+        hidden_risks:
+          - "Product defects, firmware vulnerabilities, supply-chain compromise or confusing UX could damage trust faster than public marketing can rebuild it."
+          - "Recover may cannibalize Ledger's self-custody trust narrative if users believe seed material can leave devices without sufficient transparency."
+        evidence_gaps:
+          - "Product-level revenue, margin, warranty/return rates, roadmap, release-quality metrics, active-user cohorts, security certifications and third-party audit reports."
+        follow_up_questions:
+          - "Provide SKU-level P&L, attach rates, support tickets, product incident history, firmware release process and audited security certifications."
+        table_ids: [T-004, T-005]
+        figure_ids: [F-003]
+        evidence_claim_ids: [EC-005, EC-006, EC-007, EC-010, EC-020]
+  - chapter_id: "III"
+    title: "Customer Information"
+    chapter_summary: "Public evidence shows broad aggregate consumer reach and some institutional/partner relationships, but top customers, revenue concentration, churn, NRR and customer contract economics are not public."
+    founder_claim_ids: [FC-005]
+    evidence_claim_ids: [EC-009, EC-010, EC-015]
+    risk_ids: [R-005, R-006]
+    sections:
+      - section_id: "III.A"
+        title: "Top customers by application"
+        checklist_question_ids: [III.A]
+        summary: "No top-15 customer schedule is public. Public sources disclose aggregate consumer device sales, active app usage and Enterprise institution counts."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "III.A-F1"
+            finding: "Public sources support aggregate usage scale but do not identify revenue-weighted top customers."
+            evidence_claim_ids: [EC-015]
+            risk_ids: [R-005]
+        hidden_risks:
+          - "Enterprise revenue could be concentrated in a small number of institutions, while consumer sales could be concentrated by channel or geography."
+        evidence_gaps:
+          - "Top customers by revenue, application, geography, cohort, purchase timing and customer reference availability."
+        follow_up_questions:
+          - "Provide top 25 customers and top 25 channels by revenue for FY2024-FY2026 YTD with retention, gross margin and contract status."
+        table_ids: [T-006]
+        figure_ids: [F-004]
+        evidence_claim_ids: [EC-015]
+      - section_id: "III.B"
+        title: "Strategic relationships"
+        checklist_question_ids: [III.B]
+        summary: "Public sources identify important partner integrations for on-ramp, transfer, recovery and enterprise distribution, but revenue contribution and agreement terms are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "III.B-F1"
+            finding: "PayPal and Coinbase Pay integrations publicly support Ledger Wallet on-ramp/transfer distribution, while Coincover supports Recover."
+            evidence_claim_ids: [EC-007, EC-009, EC-016]
+            risk_ids: [R-006]
+        hidden_risks:
+          - "Partner API, KYC, fee, reserve, compliance or termination terms could materially affect revenue and customer experience."
+        evidence_gaps:
+          - "Partner contracts, revenue-share, SLAs, termination rights, indemnities, compliance obligations and partner concentration."
+        follow_up_questions:
+          - "Provide partner-contract summaries for on-ramp, swap, staking, Recover, retail and enterprise channels."
+        table_ids: [T-007]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-009, EC-016]
+      - section_id: "III.C"
+        title: "Revenue by customer"
+        checklist_question_ids: [III.C]
+        summary: "Revenue by customer and any customer over 5% of revenue are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "III.C-F1"
+            finding: "Public aggregate device and institution metrics do not reveal revenue concentration."
+            evidence_claim_ids: [EC-015]
+            risk_ids: [R-005]
+        hidden_risks:
+          - "One or more enterprise customers, retailers, distributors, on-ramp providers or app partners may drive a disproportionate share of revenue."
+        evidence_gaps:
+          - "Revenue by customer, channel, partner and geography; churn and NRR by cohort."
+        follow_up_questions:
+          - "Identify all customers, partners or channels exceeding 5% of revenue and provide contract status and renewal risk."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-015, EC-019]
+      - section_id: "III.D"
+        title: "Significant relationships severed within the last two years"
+        checklist_question_ids: [III.D]
+        summary: "No public schedule of severed customer, partner or supplier relationships was found in reviewed sources."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "III.D-F1"
+            finding: "Reviewed public sources emphasize new or active relationships rather than terminated relationships."
+            evidence_claim_ids: [EC-016, EC-019]
+            risk_ids: [R-006]
+        hidden_risks:
+          - "Terminated providers or retailers could indicate compliance, margin, service-quality or security issues not visible publicly."
+        evidence_gaps:
+          - "List of terminated or non-renewed material customer, supplier and partner relationships for FY2024-FY2026 YTD."
+        follow_up_questions:
+          - "Provide a severed-relationships schedule with reason, revenue impact, disputes, wind-down obligations and replacement status."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-019]
+      - section_id: "III.E"
+        title: "Top suppliers"
+        checklist_question_ids: [III.E]
+        summary: "Public sources identify categories of supplier dependency, including secure elements, HSM/storage providers, e-commerce/marketing systems and third-party crypto-service providers, but top supplier spend is not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "III.E-F1"
+            finding: "Recover depends on three independent companies/HSMs across countries, and app services depend on third-party providers."
+            evidence_claim_ids: [EC-007, EC-016]
+            risk_ids: [R-006]
+          - finding_id: "III.E-F2"
+            finding: "The 2020 data breach involved an e-commerce and marketing database accessed through an API key, making vendor/data architecture an important supplier diligence topic."
+            evidence_claim_ids: [EC-008]
+            risk_ids: [R-003, R-006]
+        hidden_risks:
+          - "Secure-element supply, manufacturing, logistics, app-provider compliance and HSM-provider availability may be single points of failure."
+        evidence_gaps:
+          - "Top supplier spend, sole-source components, manufacturing agreements, quality audits, inventory commitments and data-processor contracts."
+        follow_up_questions:
+          - "Provide supplier list by spend, criticality, geography, termination rights, security audit results and business-continuity plans."
+        table_ids: [T-008]
+        figure_ids: []
+        evidence_claim_ids: [EC-006, EC-007, EC-008, EC-016]
+  - chapter_id: "IV"
+    title: "Competition"
+    chapter_summary: "Ledger competes with hardware wallet providers, software wallets, custodial exchanges and institutional custody providers. Public evidence supports Ledger's scale and security positioning, but pricing, UX, open-source, trust and distribution pressure remain material."
+    founder_claim_ids: [FC-003, FC-005]
+    evidence_claim_ids: [EC-005, EC-006, EC-011]
+    risk_ids: [R-002, R-007]
+    sections:
+      - section_id: "IV.A"
+        title: "Competitive landscape by market segment"
+        checklist_question_ids: [IV.A.1, IV.A.2]
+        summary: "Competitor pages show alternatives using touchscreen, secure element, NFC/card, open-source or air-gapped positioning. Ledger's differentiation appears to be scale, brand, secure-element/OS stack, app ecosystem and institutional platform, but public data does not prove market share or win rates."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "IV.A-F1"
+            finding: "Trezor, Tangem and Keystone all publicly market security and usability features that overlap with Ledger hardware wallets."
+            evidence_claim_ids: [EC-011]
+            risk_ids: [R-007]
+          - finding_id: "IV.A-F2"
+            finding: "Ledger's self-custody positioning also competes with software wallets and custodial exchanges that may be easier or cheaper for mainstream users."
+            evidence_claim_ids: [EC-005, EC-006]
+            risk_ids: [R-002, R-007]
+        hidden_risks:
+          - "Competitors can undercut device pricing, market more open-source posture, simplify onboarding or exploit Ledger trust issues."
+        evidence_gaps:
+          - "Win/loss data, market share, customer switching, pricing elasticity, CAC by channel and competitor gross-margin benchmarks."
+        follow_up_questions:
+          - "Provide market-share analysis, competitive win/loss, pricing tests, channel CAC and roadmap comparison by competitor."
+        table_ids: [T-009, T-010]
+        figure_ids: [F-005]
+        evidence_claim_ids: [EC-005, EC-006, EC-011]
+  - chapter_id: "V"
+    title: "Marketing, Sales, and Distribution"
+    chapter_summary: "Ledger uses direct e-commerce, Ledger Wallet app distribution, resellers/affiliates, retail/brand partnerships and enterprise sales. Public sources do not disclose CAC, sales productivity, budget, conversion, channel margin or pipeline."
+    founder_claim_ids: [FC-005]
+    evidence_claim_ids: [EC-009, EC-016]
+    risk_ids: [R-002, R-006, R-007]
+    sections:
+      - section_id: "V.A"
+        title: "Strategy and implementation"
+        checklist_question_ids: [V.A.1, V.A.2, V.A.3, V.A.4]
+        summary: "Ledger's public GTM emphasizes security education, e-commerce hardware sales, app-based crypto services, partner integrations, affiliates/resellers and institutional sales."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "V.A-F1"
+            finding: "PayPal and Coinbase Pay integrations are public evidence of app-based distribution partnerships."
+            evidence_claim_ids: [EC-009, EC-016]
+            risk_ids: [R-006]
+          - finding_id: "V.A-F2"
+            finding: "Ledger's homepage and legal/footer pages support direct product, app, reseller, affiliate and developer channels."
+            evidence_claim_ids: [EC-005, EC-016]
+            risk_ids: [R-007]
+        hidden_risks:
+          - "Public channel breadth may mask high CAC, low service attach, retail inventory risk or dependence on a few providers."
+        evidence_gaps:
+          - "CAC, ROAS, conversion, channel revenue, channel gross margin, partner take rates and budget-vs-actual marketing spend."
+        follow_up_questions:
+          - "Provide channel P&L, marketing spend, traffic/conversion funnel, reseller/affiliate terms, partner revenue share and enterprise sales pipeline."
+        table_ids: [T-011, T-012]
+        figure_ids: [F-006]
+        evidence_claim_ids: [EC-005, EC-009, EC-016]
+      - section_id: "V.B"
+        title: "Major Customers"
+        checklist_question_ids: [V.B.1, V.B.2, V.B.3]
+        summary: "Major customer status, future growth and pipeline are not public. Consumer demand is indicated only by aggregate device and app metrics."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "V.B-F1"
+            finding: "Aggregate device sales and Ledger Live usage are public, but pipeline and major-customer trends are not."
+            evidence_claim_ids: [EC-003, EC-015]
+            risk_ids: [R-005]
+        hidden_risks:
+          - "Enterprise pipeline may be lumpy and consumer hardware replacement cycles may be slower than historical device sales suggest."
+        evidence_gaps:
+          - "Major-customer pipeline, renewal status, customer health scores and expansion opportunities."
+        follow_up_questions:
+          - "Provide pipeline by segment/stage, renewal calendar, customer-success metrics and references for top enterprise customers."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-015, EC-019]
+      - section_id: "V.C"
+        title: "Principal avenues for generating new business"
+        checklist_question_ids: [V.C]
+        summary: "Public avenues include DTC device sales, app on-ramp/staking/swap services, Recover subscriptions, reseller/affiliate programs, retail partnerships and enterprise sales."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "V.C-F1"
+            finding: "Public partner pages support app-based new-business generation through PayPal and Coinbase Pay, while Enterprise supports institutional direct sales."
+            evidence_claim_ids: [EC-009, EC-010, EC-016]
+            risk_ids: [R-006]
+        hidden_risks:
+          - "New-business quality may depend on crypto-market sentiment and partner economics rather than repeatable standalone sales productivity."
+        evidence_gaps:
+          - "Funnel conversion, paid/organic mix, partner-sourced revenue and enterprise sales cycle data."
+        follow_up_questions:
+          - "Provide new bookings by source, paid CAC, organic traffic, app conversion, sales cycle, ACV and partner-sourced pipeline."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-009, EC-010, EC-016]
+      - section_id: "V.D"
+        title: "Sales force productivity model"
+        checklist_question_ids: [V.D.1, V.D.2, V.D.3, V.D.4]
+        summary: "Sales compensation, quota, sales cycle and hiring plan are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "V.D-F1"
+            finding: "Public sources identify enterprise sales as a channel but do not disclose productivity metrics."
+            evidence_claim_ids: [EC-010, EC-019]
+            risk_ids: [R-001]
+        hidden_risks:
+          - "Enterprise sales may require long compliance, procurement and integration cycles that pressure CAC payback."
+        evidence_gaps:
+          - "Sales roster, quotas, attainment, ramp, sales cycle, pipeline coverage and compensation plan."
+        follow_up_questions:
+          - "Provide quota-carrying headcount, quota attainment, average sales cycle, pipeline coverage, CAC payback and new-hire ramp model."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-010, EC-019]
+      - section_id: "V.E"
+        title: "Ability to implement marketing plan with current and projected budgets"
+        checklist_question_ids: [V.E]
+        summary: "Marketing budgets and implementation capacity are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "V.E-F1"
+            finding: "Public marketing activity is visible through partnerships and education, but budget sufficiency cannot be tested publicly."
+            evidence_claim_ids: [EC-016, EC-019]
+            risk_ids: [R-001]
+        hidden_risks:
+          - "Budget cuts, regulatory restrictions or platform ad-policy changes could impair customer acquisition."
+        evidence_gaps:
+          - "Marketing budget, hiring plan, campaign ROI, channel targets and budget-vs-actual reporting."
+        follow_up_questions:
+          - "Provide marketing plan, spend by channel, ROI, attribution methodology and headcount required for the plan."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-016, EC-019]
+  - chapter_id: "VI"
+    title: "Research and Development"
+    chapter_summary: "Ledger has a credible public R&D/security narrative through LedgerOS, secure elements, Donjon, developer ecosystem, Recover transparency commitments and Enterprise product expansion. Public sources do not disclose R&D budget, roadmap dates, defect backlog or security audit details."
+    founder_claim_ids: [FC-003, FC-007]
+    evidence_claim_ids: [EC-006, EC-007, EC-010, EC-017]
+    risk_ids: [R-003, R-004, R-009]
+    sections:
+      - section_id: "VI.A"
+        title: "Description of R&D organization"
+        checklist_question_ids: [VI.A.1, VI.A.2, VI.A.3]
+        summary: "Public sources identify security, firmware, tech teams, the Ledger Donjon and CTO Charles Guillemet as core R&D/security assets, but the org chart and budget are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VI.A-F1"
+            finding: "Ledger's CTO appointment source states that Charles Guillemet founded the Donjon security lab and oversees technology/security operations."
+            evidence_claim_ids: [EC-006, EC-013]
+            risk_ids: [R-003]
+          - finding_id: "VI.A-F2"
+            finding: "Careers pages describe security and firmware teams focused on managing digital assets without compromising security."
+            evidence_claim_ids: [EC-012]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Key-person dependency in cryptography, secure hardware, firmware signing and vulnerability response may be material."
+        evidence_gaps:
+          - "R&D org chart, headcount by team, roadmap ownership, budget, security-review workflow, bug backlog and external audit history."
+        follow_up_questions:
+          - "Provide R&D org chart, security architecture, secure development lifecycle, firmware signing controls, audit reports and open vulnerability register."
+        table_ids: [T-013]
+        figure_ids: [F-007]
+        evidence_claim_ids: [EC-006, EC-012, EC-013]
+      - section_id: "VI.B"
+        title: "New Product Pipeline"
+        checklist_question_ids: [VI.B.1, VI.B.2, VI.B.3, VI.B.4]
+        summary: "Public pipeline signals include Ledger Wallet upgrades, Recover open-source roadmap and Enterprise institutional/tokenized-asset functionality, but development costs, timing and risk gates are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VI.B-F1"
+            finding: "Ledger committed to open source Recover protocol and more OS components before Recover release completion after community concerns."
+            evidence_claim_ids: [EC-007, EC-017]
+            risk_ids: [R-004]
+          - finding_id: "VI.B-F2"
+            finding: "Enterprise positioning includes custody, staking, tokenized assets and collateral/trading workflows."
+            evidence_claim_ids: [EC-010]
+            risk_ids: [R-006]
+        hidden_risks:
+          - "Product roadmap delays, audit findings, certification requirements and provider dependencies may delay monetization."
+        evidence_gaps:
+          - "Roadmap, release dates, R&D spend, dependency map, critical technology risks and post-launch KPIs."
+        follow_up_questions:
+          - "Provide roadmap with resource plan, audit gates, key dependencies, costs to complete and risk burndown for Recover, Wallet and Enterprise."
+        table_ids: [T-014]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-010, EC-017]
+  - chapter_id: "VII"
+    title: "Management and Personnel"
+    chapter_summary: "Ledger publicly reports a large global workforce and identifies key executives, but current management org chart, compensation, incentive plans and turnover data are not public."
+    founder_claim_ids: [FC-002]
+    evidence_claim_ids: [EC-012, EC-013]
+    risk_ids: [R-010]
+    sections:
+      - section_id: "VII.A"
+        title: "Organization Chart"
+        checklist_question_ids: [VII.A]
+        summary: "A complete org chart is not public. Public sources identify CEO/Chairman Pascal Gauthier, CTO Charles Guillemet, CXO Ian Rogers and historical founders/technical leaders."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.A-F1"
+            finding: "Public pages identify several senior roles but not reporting lines or full management layers."
+            evidence_claim_ids: [EC-013]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Unseen reporting-line gaps could impair security accountability, enterprise sales execution or compliance ownership."
+        evidence_gaps:
+          - "Current organization chart, reporting lines, functional ownership and board/committee structure."
+        follow_up_questions:
+          - "Provide current org chart, board roster, executive scorecards and succession plan for security-critical roles."
+        table_ids: []
+        figure_ids: [F-008]
+        evidence_claim_ids: [EC-013, EC-019]
+      - section_id: "VII.B"
+        title: "Historical and projected headcount by function and location"
+        checklist_question_ids: [VII.B]
+        summary: "Public sources provide historical headcount anchors and office footprint but not headcount by function/location or forward hiring plan."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.B-F1"
+            finding: "Ledger public sources show growth from about 15 staff in 2015 to 82 in 2018, more than 200 in 2019 and 600+ globally on current people/careers pages."
+            evidence_claim_ids: [EC-012]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Rapid global expansion can create HR, compliance, security training and culture risks."
+        evidence_gaps:
+          - "HRIS by function/location, open roles, planned hires, attrition, contractor use and compensation bands."
+        follow_up_questions:
+          - "Provide monthly headcount by function/location, hiring plan, regretted attrition, contractor roster and people budget."
+        table_ids: [T-016]
+        figure_ids: [F-009]
+        evidence_claim_ids: [EC-012]
+      - section_id: "VII.C"
+        title: "Senior management biographies"
+        checklist_question_ids: [VII.C]
+        summary: "Public information supports several senior biographies, especially Pascal Gauthier and Charles Guillemet, but complete executive biographies are not public."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VII.C-F1"
+            finding: "Charles Guillemet's appointment source provides substantive security/cryptography background, while Pascal is publicly identified as Chairman and CEO."
+            evidence_claim_ids: [EC-013]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Concentration of security credibility in a small number of leaders could increase succession risk."
+        evidence_gaps:
+          - "Complete executive bios, tenure, employment agreements, background checks and succession planning."
+        follow_up_questions:
+          - "Provide executive bios, employment agreements, severance/change-of-control terms and succession plan."
+        table_ids: [T-015]
+        figure_ids: []
+        evidence_claim_ids: [EC-013]
+      - section_id: "VII.D"
+        title: "Compensation arrangements"
+        checklist_question_ids: [VII.D.1, VII.D.2]
+        summary: "Compensation arrangements and benefit plans are not public beyond high-level careers-page benefits language."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.D-F1"
+            finding: "Careers page states Ledger offers compensation packages and benefits but does not disclose executive arrangements."
+            evidence_claim_ids: [EC-012]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Executive retention, bonus targets or change-of-control payments may materially affect post-transaction cost."
+        evidence_gaps:
+          - "Executive employment agreements, compensation plans, benefit plans and severance/change-of-control terms."
+        follow_up_questions:
+          - "Provide compensation summaries, benefit plans, executive agreements and change-of-control obligations."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-012, EC-019]
+      - section_id: "VII.E"
+        title: "Incentive stock plans"
+        checklist_question_ids: [VII.E]
+        summary: "Incentive equity plans are not public."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.E-F1"
+            finding: "Public financing sources do not disclose option pool, grants, vesting or dilution."
+            evidence_claim_ids: [EC-004, EC-019]
+            risk_ids: [R-011]
+        hidden_risks:
+          - "Option pool refresh, underwater grants or retention refreshes could dilute existing holders."
+        evidence_gaps:
+          - "Equity plan documents, grant ledger, vesting schedules, exercise prices, option pool and retention refresh plans."
+        follow_up_questions:
+          - "Provide stock option/incentive plans, board approvals, grant ledger, vesting schedule and pending refresh requests."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-004, EC-019]
+      - section_id: "VII.F"
+        title: "Significant employee relations problems, past or present"
+        checklist_question_ids: [VII.F]
+        summary: "No public schedule of employee-relations problems was found in reviewed sources."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.F-F1"
+            finding: "Public pages do not disclose labor disputes, employee-relations claims or investigations."
+            evidence_claim_ids: [EC-019]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Global offices may create jurisdiction-specific employment, works council or contractor-classification issues."
+        evidence_gaps:
+          - "HR claims, works council matters, investigations, employment litigation and complaints."
+        follow_up_questions:
+          - "Provide employee-relations matter schedule, employment litigation, settlements, complaints and works council materials."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-019]
+      - section_id: "VII.G"
+        title: "Personnel Turnover"
+        checklist_question_ids: [VII.G.1, VII.G.2]
+        summary: "Personnel turnover for the last two years is not public. Public evidence shows historical role transitions and headcount growth."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VII.G-F1"
+            finding: "Public sources show growth and role changes, not attrition rates or regretted turnover."
+            evidence_claim_ids: [EC-012, EC-013]
+            risk_ids: [R-010]
+        hidden_risks:
+          - "Security-lab, firmware, compliance or enterprise-sales attrition could materially impair execution."
+        evidence_gaps:
+          - "Monthly attrition, regretted attrition, retention programs, exit interview themes and benefit-plan changes."
+        follow_up_questions:
+          - "Provide turnover by function/location for FY2024-FY2026 YTD and retention plans for critical roles."
+        table_ids: [T-017]
+        figure_ids: []
+        evidence_claim_ids: [EC-012, EC-013, EC-019]
+  - chapter_id: "VIII"
+    title: "Legal and Related Matters"
+    chapter_summary: "Public legal evidence includes active French registry status, legal center documents, product compliance links, a disclosed 2020 data breach with CNIL notification and public IP/trademark/patent signals. Pending litigation, insurance, material contracts and regulatory correspondence are not public."
+    founder_claim_ids: [FC-002, FC-007]
+    evidence_claim_ids: [EC-001, EC-008, EC-014, EC-018, EC-019]
+    risk_ids: [R-003, R-004, R-006, R-008]
+    sections:
+      - section_id: "VIII.A"
+        title: "Pending lawsuits against the Company"
+        checklist_question_ids: [VIII.A]
+        summary: "No comprehensive public litigation docket was accessible in reviewed sources. The 2020 data breach is a material legal/reputational event, but pending lawsuit status requires counsel confirmation."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.A-F1"
+            finding: "Ledger disclosed the 2020 e-commerce/marketing data breach and CNIL notification; public pending-litigation schedules were not available in reviewed sources."
+            evidence_claim_ids: [EC-008, EC-019]
+            risk_ids: [R-003, R-008]
+        hidden_risks:
+          - "Privacy, consumer-protection, product-liability or securities/token-related claims may exist outside accessible sources."
+        evidence_gaps:
+          - "Litigation docket, claims schedule, settlement history, threatened claims, counsel assessments and reserves."
+        follow_up_questions:
+          - "Provide litigation schedule with claimant, court, docket, damages, status, reserves, insurance notice and counsel assessment."
+        table_ids: [T-018]
+        figure_ids: []
+        evidence_claim_ids: [EC-008, EC-019]
+      - section_id: "VIII.B"
+        title: "Pending lawsuits initiated by Company"
+        checklist_question_ids: [VIII.B]
+        summary: "Public reviewed sources did not provide a schedule of lawsuits initiated by Ledger."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.B-F1"
+            finding: "Ledger's public website and legal center do not list company-initiated litigation schedules."
+            evidence_claim_ids: [EC-014, EC-019]
+            risk_ids: [R-008]
+        hidden_risks:
+          - "IP, reseller, customer, supplier or employee disputes may exist but be hard to identify without counsel records."
+        evidence_gaps:
+          - "Claims initiated by Ledger, demand letters, IP enforcement and settlement documents."
+        follow_up_questions:
+          - "Provide schedule of claims initiated by Ledger and threatened disputes by counterparty."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-014, EC-019]
+      - section_id: "VIII.C"
+        title: "Environmental and employee safety issues and liabilities"
+        checklist_question_ids: [VIII.C.1, VIII.C.2]
+        summary: "Public sources reviewed do not disclose environmental or employee safety liabilities. Hardware manufacturing and global offices imply diligence is needed on product compliance, WEEE/RoHS, workplace safety and supplier practices."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.C-F1"
+            finding: "Ledger's legal center links product compliance declarations for hardware devices, but does not provide a safety-liability schedule."
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-009]
+        hidden_risks:
+          - "Battery, electronics, recycling, export-control, product-safety or workplace-safety issues could arise from hardware devices and global operations."
+        evidence_gaps:
+          - "Environmental/safety audits, product compliance files, recalls, workplace incidents and supplier compliance certificates."
+        follow_up_questions:
+          - "Provide environmental, safety, product compliance and recall records, plus supplier compliance certifications."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-014, EC-019]
+      - section_id: "VIII.D"
+        title: "Material patents, copyrights, licenses, and trademarks"
+        checklist_question_ids: [VIII.D]
+        summary: "Public sources identify Ledger trademarks, LedgerOS/product names and CB Insights states Ledger has filed 15 patents; full IP ownership, open-source obligations and inbound licenses require diligence."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VIII.D-F1"
+            finding: "Ledger's footer lists trademarks owned by Ledger SAS, and CB Insights states Ledger has filed 15 patents."
+            evidence_claim_ids: [EC-014]
+            risk_ids: [R-008]
+          - finding_id: "VIII.D-F2"
+            finding: "Ledger's CEO message says Ledger Live, all 150 Nano applications and part of the OS are open source, with more OS and Recover protocol open-sourcing planned."
+            evidence_claim_ids: [EC-007, EC-017]
+            risk_ids: [R-004, R-008]
+        hidden_risks:
+          - "Open-source license compliance, contractor invention assignment, patent coverage and third-party cryptography licenses may affect defensibility."
+        evidence_gaps:
+          - "Patent register, trademark schedule, copyright assignments, open-source SBOM, inbound/outbound licenses and invention-assignment agreements."
+        follow_up_questions:
+          - "Provide IP schedule, patent family status, trademark filings, open-source license review, SBOM and employee/contractor assignment agreements."
+        table_ids: [T-019]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-014, EC-017, EC-019]
+      - section_id: "VIII.E"
+        title: "Insurance coverage and material exposures"
+        checklist_question_ids: [VIII.E]
+        summary: "Insurance coverage is not public, including cyber, product liability, D&O, E&O and crime coverage."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.E-F1"
+            finding: "The public data breach and hardware/product risk profile make insurance a priority, but policy details are not public."
+            evidence_claim_ids: [EC-008, EC-019]
+            risk_ids: [R-003, R-008, R-009]
+        hidden_risks:
+          - "Policy exclusions for crypto assets, cyber incidents, phishing, product defects or sanctioned jurisdictions could leave material uninsured exposure."
+        evidence_gaps:
+          - "Insurance policies, limits, deductibles, exclusions, claims history and insurer notices."
+        follow_up_questions:
+          - "Provide insurance schedule and policies for cyber, product liability, D&O, E&O, crime, cargo and business interruption."
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: [EC-008, EC-019]
+      - section_id: "VIII.F"
+        title: "Material contracts"
+        checklist_question_ids: [VIII.F]
+        summary: "Material contracts are not public. Publicly visible dependencies include partner integrations, Recover provider, third-party crypto services, enterprise customers, suppliers and e-commerce/data processors."
+        verification_status: "not_publicly_verifiable"
+        confidence: "low"
+        key_findings:
+          - finding_id: "VIII.F-F1"
+            finding: "PayPal, Coinbase Pay, Coincover/Recover and third-party transaction providers imply material contracts, but terms are not public."
+            evidence_claim_ids: [EC-007, EC-009, EC-016]
+            risk_ids: [R-006, R-008]
+        hidden_risks:
+          - "Termination rights, revenue shares, KYC/AML obligations, indemnities, SLAs and data-processing terms may constrain economics."
+        evidence_gaps:
+          - "Material customer, supplier, reseller, retail, app-provider, Recover, enterprise, manufacturing and data-processing contracts."
+        follow_up_questions:
+          - "Provide all material contracts with revenue share, SLA, termination, compliance, data-processing, indemnity and exclusivity terms."
+        table_ids: [T-020]
+        figure_ids: []
+        evidence_claim_ids: [EC-007, EC-009, EC-016, EC-019]
+      - section_id: "VIII.G"
+        title: "Regulatory agency problems"
+        checklist_question_ids: [VIII.G]
+        summary: "Ledger disclosed CNIL notification after the 2020 breach; no complete public regulator correspondence schedule was available. Crypto transaction services and Recover identity workflows create multi-jurisdiction regulatory exposure."
+        verification_status: "partially_verified"
+        confidence: "medium"
+        key_findings:
+          - finding_id: "VIII.G-F1"
+            finding: "Ledger states it notified CNIL on 2020-07-17 after the e-commerce/marketing data breach."
+            evidence_claim_ids: [EC-008]
+            risk_ids: [R-003, R-008]
+          - finding_id: "VIII.G-F2"
+            finding: "Ledger discloses that crypto transaction services are provided by third-party providers, creating regulatory and partner-dependency diligence needs."
+            evidence_claim_ids: [EC-016, EC-018]
+            risk_ids: [R-006, R-008]
+        hidden_risks:
+          - "KYC/AML, sanctions, consumer-protection, data-protection, travel-rule, custody and e-money rules may apply differently by product and jurisdiction."
+        evidence_gaps:
+          - "Regulatory correspondence, DPIAs, AML/sanctions controls for app partners, consumer complaints and agency inquiries."
+        follow_up_questions:
+          - "Provide all regulatory correspondence, privacy impact assessments, AML/sanctions memos, consumer complaints and agency exam/inquiry history."
+        table_ids: []
+        figure_ids: [F-010, F-011]
+        evidence_claim_ids: [EC-008, EC-016, EC-018, EC-019]
+tables:
+  - table_id: "T-001"
+    title: "Public funding-round history"
+    chapter_id: "I"
+    section_id: "I.D"
+    purpose: "Reconcile publicly reported funding, investor and valuation anchors before requesting financing documents."
+    columns:
+      -
+        name: "date"
+        description: "Public announcement date or period"
+      -
+        name: "round"
+        description: "Financing round or market signal"
+      -
+        name: "amount"
+        description: "Publicly reported amount"
+      -
+        name: "investors"
+        description: "Lead or named participants"
+      -
+        name: "valuation"
+        description: "Public post-money or valuation anchor if disclosed"
+      -
+        name: "diligence_caveat"
+        description: "What remains to verify"
+    rows:
+      - row_id: "T-001-R1"
+        values:
+          date: "2015-02-19"
+          round: "Seed"
+          amount: "EUR 1.3M"
+          investors: "XAnge Capital, Pascal Gauthier, Hi-Pay, Fred Potter and others"
+          valuation: "Not disclosed"
+          diligence_caveat: "Confirm share class, ownership and all seed documents."
+        evidence_claim_ids: [EC-002]
+        source_ids: [SRC-005]
+      - row_id: "T-001-R2"
+        values:
+          date: "2017-03-30"
+          round: "Series A"
+          amount: "USD 7M"
+          investors: "MAIF Avenir, XAnge, Wicklow, GDTRE, Libertus, DCG and others"
+          valuation: "Not disclosed"
+          diligence_caveat: "Confirm total raised, board rights and investor terms."
+        evidence_claim_ids: [EC-002, EC-004]
+        source_ids: [SRC-006]
+      - row_id: "T-001-R3"
+        values:
+          date: "2018-01-18"
+          round: "Series B"
+          amount: "USD 75M / EUR 61M"
+          investors: "Draper Esprit, Draper network funds, FirstMark, Cathay, Korelya, DCG and others"
+          valuation: "Not disclosed"
+          diligence_caveat: "Confirm profitability statement, proceeds use and preference stack."
+        evidence_claim_ids: [EC-002, EC-004]
+        source_ids: [SRC-007]
+      - row_id: "T-001-R4"
+        values:
+          date: "2021-06-10"
+          round: "Series C"
+          amount: "USD 380M"
+          investors: "10T Holdings, Cathay, Draper, DCG, Korelya, Wicklow and others"
+          valuation: "USD 1.5B reported by TechCrunch; CB Insights row says USD 1.47B"
+          diligence_caveat: "Reconcile currency, secondary components and current fair value."
+        evidence_claim_ids: [EC-001, EC-002, EC-004]
+        source_ids: [SRC-001, SRC-008]
+      - row_id: "T-001-R5"
+        values:
+          date: "2023-03-30"
+          round: "Series C extension"
+          amount: "EUR 100M / USD 108M"
+          investors: "True Global Ventures, Digital Finance Group, VaynerFund, 10T, Cite Gestion, Morgan Creek, Cathay, Korelya, Molten and others"
+          valuation: "EUR 1.3B / about USD 1.41B"
+          diligence_caveat: "Confirm primary versus secondary proceeds and runway."
+        evidence_claim_ids: [EC-002, EC-004]
+        source_ids: [SRC-009]
+      - row_id: "T-001-R6"
+        values:
+          date: "2026 access"
+          round: "CB Insights latest funding signal"
+          amount: "Total raised USD 574.38M"
+          investors: "Includes Leading European Tech Scaleups, Korelya, Molten, Cathay, 10T Fund and others"
+          valuation: "Unicorn collection / private-company signal"
+          diligence_caveat: "CB Insights page may include secondary market data and should be reconciled to company records."
+        evidence_claim_ids: [EC-001, EC-002]
+        source_ids: [SRC-001]
+    evidence_claim_ids: [EC-001, EC-002, EC-004]
+    source_ids: [SRC-001, SRC-005, SRC-006, SRC-007, SRC-008, SRC-009]
+    notes: "Public funding totals conflict with Ledger people page's USD 463M raised figure; request management reconciliation."
+  - table_id: "T-002"
+    title: "Capital structure and ownership snapshot"
+    chapter_id: "I"
+    section_id: "I.C"
+    purpose: "Separate public ownership signals from private cap-table items."
+    columns:
+      -
+        name: "stakeholder_or_instrument"
+        description: "Public stakeholder or instrument class"
+      -
+        name: "public_position"
+        description: "Publicly observed position"
+      -
+        name: "verification_status"
+        description: "Verification status"
+      -
+        name: "diligence_caveat"
+        description: "Required private evidence"
+    rows:
+      - row_id: "T-002-R1"
+        values:
+          stakeholder_or_instrument: "Ledger SAS common/preferred equity"
+          public_position: "Active French SAS listed by Pappers; share count not public"
+          verification_status: "partially_verified"
+          diligence_caveat: "Need fully diluted cap table and articles."
+        evidence_claim_ids: [EC-001]
+        source_ids: [SRC-002]
+      - row_id: "T-002-R2"
+        values:
+          stakeholder_or_instrument: "Venture investors"
+          public_position: "DCG, Draper network/Molten, Korelya, Cathay, 10T and others are named in public sources"
+          verification_status: "verified"
+          diligence_caveat: "Need ownership percentages and investor rights."
+        evidence_claim_ids: [EC-004]
+        source_ids: [SRC-001, SRC-007, SRC-008, SRC-009]
+      - row_id: "T-002-R3"
+        values:
+          stakeholder_or_instrument: "Options and employee equity"
+          public_position: "Not publicly disclosed"
+          verification_status: "not_publicly_verifiable"
+          diligence_caveat: "Need option ledger, exercise prices, vesting and refresh plan."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-001]
+      - row_id: "T-002-R4"
+        values:
+          stakeholder_or_instrument: "Debt or credit facilities"
+          public_position: "Not publicly disclosed"
+          verification_status: "not_publicly_verifiable"
+          diligence_caveat: "Need debt schedule, covenants and liens."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-001]
+    evidence_claim_ids: [EC-001, EC-004, EC-019]
+    source_ids: [SRC-001, SRC-002, SRC-007, SRC-008, SRC-009]
+    notes: "Public investor names do not establish current ownership."
+  - table_id: "T-003"
+    title: "Public revenue and unit-economic signals"
+    chapter_id: "I"
+    section_id: "I.A"
+    purpose: "Capture observable scale metrics while flagging financial gaps."
+    columns:
+      -
+        name: "signal"
+        description: "Public signal"
+      -
+        name: "value"
+        description: "Reported value"
+      -
+        name: "source_context"
+        description: "Source context"
+      -
+        name: "verification_status"
+        description: "Verification status"
+      -
+        name: "financial_gap"
+        description: "Missing financial linkage"
+    rows:
+      - row_id: "T-003-R1"
+        values:
+          signal: "Hardware wallets sold"
+          value: "Over 1M across 165 countries in 2018"
+          source_context: "Ledger Series B announcement"
+          verification_status: "verified"
+          financial_gap: "Revenue, ASP, margin and returns not disclosed."
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-007]
+      - row_id: "T-003-R2"
+        values:
+          signal: "Hardware wallets sold"
+          value: "Over 3M by 2021; 1.5M monthly Ledger Live users; about 15% of crypto assets secured"
+          source_context: "TechCrunch 2021"
+          verification_status: "partially_verified"
+          financial_gap: "Active devices and monetization not disclosed."
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-008]
+      - row_id: "T-003-R3"
+        values:
+          signal: "Hardware wallets sold"
+          value: "6M devices since inception; 1M devices sold June 2022-February 2023; 20% crypto and 30% NFTs secured"
+          source_context: "TechCrunch 2023"
+          verification_status: "partially_verified"
+          financial_gap: "Methodology and revenue conversion not disclosed."
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-009]
+      - row_id: "T-003-R4"
+        values:
+          signal: "Careers scale claim"
+          value: "More than 6M devices sold in 180 countries; 20% of world's crypto assets secured, source_context: Ledger careers page, verification_status: partially_verified, financial_gap: Company-stated, not tied to revenue or active users."
+        evidence_claim_ids: [EC-003]
+        source_ids: [SRC-004]
+      - row_id: "T-003-R5"
+        values:
+          signal: "Financial statements"
+          value: "Not public"
+          source_context: "Public-source review"
+          verification_status: "not_publicly_verifiable"
+          financial_gap: "Need audited financials, product P&L, burn and runway."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-001]
+    evidence_claim_ids: [EC-003, EC-019]
+    source_ids: [SRC-004, SRC-007, SRC-008, SRC-009]
+    notes: "Treat device and share-of-assets metrics as traction signals, not revenue proof."
+  - table_id: "T-004"
+    title: "Product and SKU matrix"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Summarize public product surface and diligence needs."
+    columns:
+      -
+        name: "product"
+        description: "Product or product family"
+      -
+        name: "audience"
+        description: "Primary public audience"
+      -
+        name: "key_features"
+        description: "Publicly described features"
+      -
+        name: "evidence"
+        description: "Public evidence summary"
+      -
+        name: "diligence_gap"
+        description: "Missing diligence evidence"
+    rows:
+      - row_id: "T-004-R1"
+        values:
+          product: "Ledger hardware wallets/signers"
+          audience: "Consumers and prosumers"
+          key_features: "Secure element, proprietary OS, offline private-key storage, on-device signing"
+          evidence: "Homepage and TechCrunch describe hardware wallets/signers and private keys never leaving devices"
+          diligence_gap: "SKU revenue, margin, return rates and certifications."
+        evidence_claim_ids: [EC-005, EC-006]
+        source_ids: [SRC-010, SRC-008, SRC-009]
+      - row_id: "T-004-R2"
+        values:
+          product: "Ledger Wallet / Ledger Live"
+          audience: "Consumers managing digital assets"
+          key_features: "Portfolio tracking, buy, swap, stake, dApps and third-party provider integrations"
+          evidence: "Homepage and partner pages describe app-based buy/swap/stake services"
+          diligence_gap: "MAU, attach rate, take rate and compliance controls."
+        evidence_claim_ids: [EC-005, EC-009, EC-016]
+        source_ids: [SRC-010, SRC-015, SRC-016]
+      - row_id: "T-004-R3"
+        values:
+          product: "Ledger Recover"
+          audience: "Users needing backup/recovery"
+          key_features: "Encrypted and split digital spare key linked to identity with Coincover service"
+          evidence: "Recover page describes identity-based recovery and three encrypted pieces"
+          diligence_gap: "Audits, provider contracts, DPIA and user adoption."
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-011, SRC-012]
+      - row_id: "T-004-R4"
+        values:
+          product: "Ledger Enterprise"
+          audience: "Institutions"
+          key_features: "Custody, staking, digital asset management, tokenized capital markets and HSM policy engine"
+          evidence: "Enterprise page claims 100+ institutions and HSM certifications"
+          diligence_gap: "Customer references, regulated-custody structure and SLA."
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-014]
+      - row_id: "T-004-R5"
+        values:
+          product: "Developer ecosystem and apps"
+          audience: "Developers and ecosystem partners"
+          key_features: "Device apps, developer portal, open-source components"
+          evidence: "CEO message references Ledger Live, Nano apps and OS components open source"
+          diligence_gap: "SBOM, license compliance and app-review metrics."
+        evidence_claim_ids: [EC-017]
+        source_ids: [SRC-012]
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-010, EC-017]
+    source_ids: [SRC-010, SRC-011, SRC-012, SRC-014, SRC-015, SRC-016]
+    notes: "Product-market fit should be tested with cohort, security and financial data."
+  - table_id: "T-005"
+    title: "Public pricing and packaging signals"
+    chapter_id: "II"
+    section_id: "II.A"
+    purpose: "Capture visible pricing anchors and areas where pricing is opaque."
+    columns:
+      -
+        name: "offering"
+        description: "Product or bundle"
+      -
+        name: "public_price_or_terms"
+        description: "Publicly observed price/terms"
+      -
+        name: "source"
+        description: "Source context"
+      -
+        name: "risk_note"
+        description: "Pricing or margin diligence note"
+    rows:
+      - row_id: "T-005-R1"
+        values:
+          offering: "Ledger Nano S Plus"
+          public_price_or_terms: "USD 79 reported in TechCrunch 2023"
+          source: "TechCrunch 2023 product discussion"
+          risk_note: "Current price, promotions and margin need confirmation."
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-009]
+      - row_id: "T-005-R2"
+        values:
+          offering: "Ledger Stax"
+          public_price_or_terms: "USD 279 reported in TechCrunch 2023"
+          source: "TechCrunch 2023"
+          risk_note: "Premium hardware demand and delivery timing require cohort analysis."
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-009]
+      - row_id: "T-005-R3"
+        values:
+          offering: "Ledger Flex plus one year Recover"
+          public_price_or_terms: "USD 348.99 bundle shown on Recover page"
+          source: "Ledger Recover page"
+          risk_note: "Recover attach and renewal rates are not public."
+        evidence_claim_ids: [EC-007, EC-020]
+        source_ids: [SRC-011]
+      - row_id: "T-005-R4"
+        values:
+          offering: "Ledger Stax plus one year Recover"
+          public_price_or_terms: "USD 498.99 bundle shown on Recover page"
+          source: "Ledger Recover page"
+          risk_note: "Bundle discounting and gross margin need confirmation."
+        evidence_claim_ids: [EC-007, EC-020]
+        source_ids: [SRC-011]
+      - row_id: "T-005-R5"
+        values:
+          offering: "Ledger Enterprise"
+          public_price_or_terms: "Not public / sales-led"
+          source: "Enterprise page"
+          risk_note: "ACV, implementation fees, margins and renewal terms need data-room support."
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-014]
+    evidence_claim_ids: [EC-007, EC-010, EC-020]
+    source_ids: [SRC-009, SRC-011, SRC-014]
+    notes: "Current shop pricing can change; treat as point-in-time public signal."
+  - table_id: "T-006"
+    title: "Public customer and usage signals"
+    chapter_id: "III"
+    section_id: "III.A"
+    purpose: "Distinguish aggregate adoption signals from customer schedules."
+    columns:
+      -
+        name: "segment"
+        description: "Customer segment"
+      -
+        name: "public_signal"
+        description: "Public metric or statement"
+      -
+        name: "verification_status"
+        description: "Verification status"
+      -
+        name: "missing_customer_evidence"
+        description: "Required private records"
+    rows:
+      - row_id: "T-006-R1"
+        values:
+          segment: "Consumer hardware users"
+          public_signal: "More than 6M devices sold to consumers in 180 countries"
+          verification_status: "partially_verified"
+          missing_customer_evidence: "Active devices, cohorts, returns and revenue by geography."
+        evidence_claim_ids: [EC-003, EC-015]
+        source_ids: [SRC-004, SRC-009]
+      - row_id: "T-006-R2"
+        values:
+          segment: "App users"
+          public_signal: "Ledger Live cited as having over 1.5M active users in PayPal announcement and TechCrunch 2021"
+          verification_status: "partially_verified"
+          missing_customer_evidence: "MAU/WAU, retention, transaction volume and take rate."
+        evidence_claim_ids: [EC-009, EC-015]
+        source_ids: [SRC-008, SRC-015]
+      - row_id: "T-006-R3"
+        values:
+          segment: "Institutional customers"
+          public_signal: "Ledger Enterprise claims 100+ institutions launched client-facing digital asset services"
+          verification_status: "partially_verified"
+          missing_customer_evidence: "Customer list, ARR, churn and SLA."
+        evidence_claim_ids: [EC-010, EC-015]
+        source_ids: [SRC-014]
+      - row_id: "T-006-R4"
+        values:
+          segment: "Top customers"
+          public_signal: "Not publicly disclosed"
+          verification_status: "not_publicly_verifiable"
+          missing_customer_evidence: "Top 15 customer list by revenue for last two fiscal years and YTD."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-001]
+    evidence_claim_ids: [EC-003, EC-009, EC-010, EC-015, EC-019]
+    source_ids: [SRC-004, SRC-008, SRC-009, SRC-014, SRC-015]
+    notes: "Aggregate metrics may include inactive devices and non-revenue users."
+  - table_id: "T-007"
+    title: "Strategic relationships and partnerships"
+    chapter_id: "III"
+    section_id: "III.B"
+    purpose: "Identify public partner dependencies and missing commercial terms."
+    columns:
+      -
+        name: "partner"
+        description: "Public partner"
+      -
+        name: "relationship"
+        description: "Public relationship type"
+      -
+        name: "public_evidence"
+        description: "Evidence summary"
+      -
+        name: "diligence_gap"
+        description: "Missing terms"
+    rows:
+      - row_id: "T-007-R1"
+        values:
+          partner: "PayPal"
+          relationship: "Ledger Live buy/on-ramp integration for US users"
+          public_evidence: "PayPal joined Ledger Live Buy section for BTC, ETH, BCH and LTC purchases in applicable US states"
+          diligence_gap: "Revenue share, KYC allocation, termination and compliance terms."
+        evidence_claim_ids: [EC-009, EC-016]
+        source_ids: [SRC-015]
+      - row_id: "T-007-R2"
+        values:
+          partner: "Coinbase Pay"
+          relationship: "Ledger Wallet app purchase/transfer integration"
+          public_evidence: "Integration supports purchases/transfers in US, UK, EU, Brazil, New Zealand, Australia, Canada and Singapore"
+          diligence_gap: "Fees, chargebacks, data sharing and uptime."
+        evidence_claim_ids: [EC-009, EC-016]
+        source_ids: [SRC-016]
+      - row_id: "T-007-R3"
+        values:
+          partner: "Coincover and other Recover providers"
+          relationship: "Recovery service / identity and encrypted-piece storage"
+          public_evidence: "Ledger Recover page states service is provided by Coincover and pieces are stored by three independent companies across countries"
+          diligence_gap: "Provider contracts, security audits, liability allocation and data protection."
+        evidence_claim_ids: [EC-007, EC-018]
+        source_ids: [SRC-011]
+      - row_id: "T-007-R4"
+        values:
+          partner: "Third-party crypto transaction providers"
+          relationship: "Buy, swap, stake and manage through Ledger Wallet"
+          public_evidence: "Ledger homepage discloses crypto transaction services are provided by third-party providers"
+          diligence_gap: "Full provider list, revenue share, AML/sanctions roles and reserves."
+        evidence_claim_ids: [EC-016, EC-018]
+        source_ids: [SRC-010]
+      - row_id: "T-007-R5"
+        values:
+          partner: "Institutional clients/venues"
+          relationship: "Ledger Enterprise custody, staking and trading/collateral workflows"
+          public_evidence: "Enterprise page markets institutional digital-asset infrastructure"
+          diligence_gap: "Customer contracts, SLAs and regulatory division of responsibility."
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-014]
+    evidence_claim_ids: [EC-007, EC-009, EC-010, EC-016, EC-018]
+    source_ids: [SRC-010, SRC-011, SRC-014, SRC-015, SRC-016]
+    notes: "Partnership publicity does not prove material revenue contribution."
+  - table_id: "T-008"
+    title: "Supplier and infrastructure dependency matrix"
+    chapter_id: "III"
+    section_id: "III.E"
+    purpose: "Frame diligence around hardware, data, HSM and app-provider dependencies."
+    columns:
+      -
+        name: "dependency"
+        description: "Supplier or dependency category"
+      -
+        name: "role"
+        description: "Operational role"
+      -
+        name: "public_evidence"
+        description: "Public evidence"
+      -
+        name: "concentration_risk"
+        description: "Risk assessment"
+    rows:
+      - row_id: "T-008-R1"
+        values:
+          dependency: "Secure Element and hardware manufacturing"
+          role: "Core security and device production"
+          public_evidence: "Ledger describes Secure Element/proprietary OS and secure hardware; specific suppliers are not named"
+          concentration_risk: "Potential sole-source component or manufacturing risk."
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-010, SRC-013]
+      - row_id: "T-008-R2"
+        values:
+          dependency: "Recover HSM/storage providers"
+          role: "Store encrypted pieces across independent companies/countries"
+          public_evidence: "Recover page describes HSM storage by three independent companies"
+          concentration_risk: "Provider security, legal process and identity-verification risk."
+        evidence_claim_ids: [EC-007, EC-018]
+        source_ids: [SRC-011]
+      - row_id: "T-008-R3"
+        values:
+          dependency: "Crypto transaction providers"
+          role: "Buy/swap/stake services in Ledger Wallet"
+          public_evidence: "Ledger says transaction services are provided by third-party providers"
+          concentration_risk: "Compliance, fees, uptime and customer support risk."
+        evidence_claim_ids: [EC-016, EC-018]
+        source_ids: [SRC-010]
+      - row_id: "T-008-R4"
+        values:
+          dependency: "E-commerce and marketing systems"
+          role: "Customer order and marketing communications"
+          public_evidence: "2020 breach involved e-commerce and marketing database accessed via API key"
+          concentration_risk: "Data-processor and phishing exposure."
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-013]
+    evidence_claim_ids: [EC-006, EC-007, EC-008, EC-016, EC-018]
+    source_ids: [SRC-010, SRC-011, SRC-013]
+    notes: "Request supplier spend and SOC/security evidence for each dependency."
+  - table_id: "T-009"
+    title: "Competitor comparison matrix"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Compare Ledger against public competitor positioning."
+    columns:
+      -
+        name: "competitor"
+        description: "Competitor or substitute"
+      -
+        name: "segment"
+        description: "Product segment"
+      -
+        name: "public_positioning"
+        description: "Public feature positioning"
+      -
+        name: "overlap_with_ledger"
+        description: "Overlap"
+      -
+        name: "diligence_implication"
+        description: "Diligence implication"
+    rows:
+      - row_id: "T-009-R1"
+        values:
+          competitor: "Trezor"
+          segment: "Hardware wallet"
+          public_positioning: "Trezor Safe 5 markets color touchscreen, haptic feedback, secure element and open-source security"
+          overlap_with_ledger: "Direct consumer hardware-wallet competition"
+          diligence_implication: "Test Ledger's price, UX, open-source and security-differentiation claims."
+        evidence_claim_ids: [EC-011]
+        source_ids: [SRC-019]
+      - row_id: "T-009-R2"
+        values:
+          competitor: "Tangem"
+          segment: "NFC card/ring hardware wallet"
+          public_positioning: "Tangem claims 6M cards, EAL6+ chip security, NFC setup and many assets"
+          overlap_with_ledger: "Competes on simplicity, security and price/portability"
+          diligence_implication: "Assess mainstream onboarding and lower-cost alternatives."
+        evidence_claim_ids: [EC-011]
+        source_ids: [SRC-020]
+      - row_id: "T-009-R3"
+        values:
+          competitor: "Keystone"
+          segment: "Touchscreen hardware wallet"
+          public_positioning: "Keystone markets secure open-source crypto solution and hardware wallet bundle"
+          overlap_with_ledger: "Competes on touchscreen and security narrative"
+          diligence_implication: "Monitor Ledger-user switching promotions and open-source messaging."
+        evidence_claim_ids: [EC-011]
+        source_ids: [SRC-021]
+      - row_id: "T-009-R4"
+        values:
+          competitor: "Software wallets and exchanges"
+          segment: "Hot/custodial wallets"
+          public_positioning: "Convenience and integrated trading can reduce hardware friction"
+          overlap_with_ledger: "Substitute for users prioritizing ease over offline custody"
+          diligence_implication: "Model attach rates after exchange failures versus bull-market convenience preferences."
+        evidence_claim_ids: [EC-005, EC-006]
+        source_ids: [SRC-010, SRC-008, SRC-009]
+    evidence_claim_ids: [EC-005, EC-006, EC-011]
+    source_ids: [SRC-010, SRC-019, SRC-020, SRC-021]
+    notes: "Public competitor pages are marketing sources; request win/loss and pricing elasticity data."
+  - table_id: "T-010"
+    title: "Basis-of-competition scoring"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    purpose: "Translate public evidence into competitive diligence axes."
+    columns:
+      -
+        name: "axis"
+        description: "Competition axis"
+      -
+        name: "ledger_public_position"
+        description: "Ledger position from public evidence"
+      -
+        name: "competitor_pressure"
+        description: "Public competitor pressure"
+      -
+        name: "evidence_strength"
+        description: "Evidence strength"
+      -
+        name: "follow_up"
+        description: "Follow-up request"
+    rows:
+      - row_id: "T-010-R1"
+        values:
+          axis: "Security credibility"
+          ledger_public_position: "Secure Element, proprietary OS, Donjon, private keys stay on device"
+          competitor_pressure: "Trezor/Tangem/Keystone market secure element/open-source/EAL/air-gapped attributes"
+          evidence_strength: "medium"
+          follow_up: "Independent security benchmark and audit comparison."
+        evidence_claim_ids: [EC-006, EC-011]
+        source_ids: [SRC-010, SRC-017, SRC-019, SRC-020, SRC-021]
+      - row_id: "T-010-R2"
+        values:
+          axis: "UX and onboarding"
+          ledger_public_position: "Ledger Wallet app, Ledger Recover, touch devices and provider integrations"
+          competitor_pressure: "Tangem single-tap NFC and Trezor touchscreen simplify onboarding"
+          evidence_strength: "medium"
+          follow_up: "Conversion, support tickets and NPS by product."
+        evidence_claim_ids: [EC-005, EC-007, EC-011]
+        source_ids: [SRC-010, SRC-011, SRC-019, SRC-020]
+      - row_id: "T-010-R3"
+        values:
+          axis: "Pricing"
+          ledger_public_position: "Public prices range from sub-USD 100 device to premium Stax/Recover bundles"
+          competitor_pressure: "Competitor pricing not fully normalized in public data"
+          evidence_strength: "low"
+          follow_up: "SKU ASP, discounting and elasticity."
+        evidence_claim_ids: [EC-020]
+        source_ids: [SRC-009, SRC-011]
+      - row_id: "T-010-R4"
+        values:
+          axis: "Distribution"
+          ledger_public_position: "Direct shop, app, partners, affiliates/resellers and enterprise sales"
+          competitor_pressure: "App stores, exchanges and wallet ecosystems can bypass hardware channels"
+          evidence_strength: "medium"
+          follow_up: "Channel P&L and partner-sourced revenue."
+        evidence_claim_ids: [EC-009, EC-016]
+        source_ids: [SRC-010, SRC-015, SRC-016]
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-009, EC-011, EC-016, EC-020]
+    source_ids: [SRC-009, SRC-010, SRC-011, SRC-015, SRC-016, SRC-017, SRC-019, SRC-020, SRC-021]
+    notes: "Scores are qualitative and for diligence triage only."
+  - table_id: "T-011"
+    title: "Distribution channels and GTM motions"
+    chapter_id: "V"
+    section_id: "V.A"
+    purpose: "Identify observable go-to-market channels and missing economics."
+    columns:
+      -
+        name: "channel"
+        description: "Channel"
+      -
+        name: "public_evidence"
+        description: "Public evidence"
+      -
+        name: "likely_revenue_type"
+        description: "Revenue type"
+      -
+        name: "diligence_gap"
+        description: "Missing economics"
+    rows:
+      - row_id: "T-011-R1"
+        values:
+          channel: "Direct e-commerce"
+          public_evidence: "Ledger site links to shop hardware wallets and device bundles"
+          likely_revenue_type: "Hardware sales and accessories"
+          diligence_gap: "Traffic, conversion, CAC, returns and margin."
+        evidence_claim_ids: [EC-005, EC-016]
+        source_ids: [SRC-010, SRC-018]
+      - row_id: "T-011-R2"
+        values:
+          channel: "Ledger Wallet app"
+          public_evidence: "App supports buy, swap, stake, dApps and partner integrations"
+          likely_revenue_type: "Service fees/revenue share"
+          diligence_gap: "Attach rate, take rate and compliance responsibilities."
+        evidence_claim_ids: [EC-009, EC-016]
+        source_ids: [SRC-010, SRC-015, SRC-016]
+      - row_id: "T-011-R3"
+        values:
+          channel: "Partnerships"
+          public_evidence: "PayPal and Coinbase Pay announcements"
+          likely_revenue_type: "On-ramp conversion"
+          diligence_gap: "Revenue-share and data-sharing terms."
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-015, SRC-016]
+      - row_id: "T-011-R4"
+        values:
+          channel: "Enterprise direct sales"
+          public_evidence: "Ledger Enterprise markets institutional digital-asset infrastructure"
+          likely_revenue_type: "Subscription/platform/professional services"
+          diligence_gap: "ACV, pipeline, implementation cost and renewal."
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-014]
+      - row_id: "T-011-R5"
+        values:
+          channel: "Resellers/affiliates"
+          public_evidence: "Legal/footer links to resellers and affiliates"
+          likely_revenue_type: "Hardware channel sales"
+          diligence_gap: "Channel concentration, discounts and grey-market controls."
+        evidence_claim_ids: [EC-016]
+        source_ids: [SRC-018]
+    evidence_claim_ids: [EC-005, EC-009, EC-010, EC-016]
+    source_ids: [SRC-010, SRC-014, SRC-015, SRC-016, SRC-018]
+    notes: "Channel breadth does not imply healthy unit economics."
+  - table_id: "T-012"
+    title: "Public marketing signal summary"
+    chapter_id: "V"
+    section_id: "V.A"
+    purpose: "Capture marketing and brand signals relevant to diligence."
+    columns:
+      -
+        name: "signal"
+        description: "Marketing signal"
+      -
+        name: "observation"
+        description: "Public observation"
+      -
+        name: "diligence_question"
+        description: "Diligence question"
+    rows:
+      - row_id: "T-012-R1"
+        values:
+          signal: "Security education"
+          observation: "Ledger homepage warns phishing victims that Ledger will never ask for the 24 words of a recovery phrase"
+          diligence_question: "How has phishing affected conversion, support load and brand trust?"
+        evidence_claim_ids: [EC-008, EC-016]
+        source_ids: [SRC-010, SRC-013]
+      - row_id: "T-012-R2"
+        values:
+          signal: "Partner-led acquisition"
+          observation: "PayPal and Coinbase Pay announcements frame Ledger as easier for mainstream users"
+          diligence_question: "What share of new customers is partner-sourced and at what margin?"
+        evidence_claim_ids: [EC-009]
+        source_ids: [SRC-015, SRC-016]
+      - row_id: "T-012-R3"
+        values:
+          signal: "Recover messaging"
+          observation: "CEO acknowledged communication mistake and committed to open-source transparency roadmap"
+          diligence_question: "Did Recover launch improve or reduce trust, conversion and retention?"
+        evidence_claim_ids: [EC-007]
+        source_ids: [SRC-012]
+      - row_id: "T-012-R4"
+        values:
+          signal: "Enterprise positioning"
+          observation: "Enterprise page claims 100+ institutions and regulated-yield/tokenized-asset workflows"
+          diligence_question: "Are claims backed by references and recurring revenue?"
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-014]
+    evidence_claim_ids: [EC-007, EC-008, EC-009, EC-010, EC-016]
+    source_ids: [SRC-010, SRC-012, SRC-013, SRC-014, SRC-015, SRC-016]
+    notes: "Marketing claims require funnel, cohort and revenue validation."
+  - table_id: "T-013"
+    title: "Key R&D personnel and security organization"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    purpose: "Identify public R&D/security assets."
+    columns:
+      -
+        name: "person_or_team"
+        description: "Person/team"
+      -
+        name: "public_role"
+        description: "Public role"
+      -
+        name: "evidence"
+        description: "Evidence summary"
+      -
+        name: "diligence_need"
+        description: "Follow-up need"
+    rows:
+      - row_id: "T-013-R1"
+        values:
+          person_or_team: "Charles Guillemet"
+          public_role: "Chief Technology Officer"
+          evidence: "Ledger says he founded the Donjon security department/lab and oversees technology/security operations"
+          diligence_need: "Confirm current scope, succession and security KPIs."
+        evidence_claim_ids: [EC-006, EC-013]
+        source_ids: [SRC-017]
+      - row_id: "T-013-R2"
+        values:
+          person_or_team: "Ledger Donjon"
+          public_role: "Security evaluation lab/team"
+          evidence: "Appointment page describes product assessments, security certifications and vulnerability disclosure work"
+          diligence_need: "Review audit plans, findings and remediation SLAs."
+        evidence_claim_ids: [EC-006]
+        source_ids: [SRC-017]
+      - row_id: "T-013-R3"
+        values:
+          person_or_team: "Security and Firmware teams"
+          public_role: "Tech teams"
+          evidence: "Careers page references Security and Firmware teams and focus on easy digital asset management without compromising security"
+          diligence_need: "R&D headcount, attrition and critical-path staffing."
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-004]
+      - row_id: "T-013-R4"
+        values:
+          person_or_team: "Developer ecosystem"
+          public_role: "Nano applications, Ledger Live and OS components"
+          evidence: "CEO message says Ledger Live, 150 Nano applications and part of OS are open source"
+          diligence_need: "SBOM and app-review controls."
+        evidence_claim_ids: [EC-017]
+        source_ids: [SRC-012]
+    evidence_claim_ids: [EC-006, EC-012, EC-013, EC-017]
+    source_ids: [SRC-004, SRC-012, SRC-017]
+    notes: "Current R&D org chart is not public."
+  - table_id: "T-014"
+    title: "Public product and research pipeline"
+    chapter_id: "VI"
+    section_id: "VI.B"
+    purpose: "Track visible roadmap items and diligence asks."
+    columns:
+      -
+        name: "initiative"
+        description: "Product/research initiative"
+      -
+        name: "public_status"
+        description: "Public status"
+      -
+        name: "evidence"
+        description: "Evidence summary"
+      -
+        name: "key_risk"
+        description: "Development risk"
+    rows:
+      - row_id: "T-014-R1"
+        values:
+          initiative: "Ledger Recover protocol transparency"
+          public_status: "Open-source roadmap committed in 2023 CEO message"
+          evidence: "Ledger said Recover would not be released until open-source work was complete and protocol would be open sourced"
+          key_risk: "Trust, audits, legal process and provider risk."
+        evidence_claim_ids: [EC-007, EC-017]
+        source_ids: [SRC-012]
+      - row_id: "T-014-R2"
+        values:
+          initiative: "Ledger Wallet 4.0 / app expansion"
+          public_status: "Homepage markets Ledger Wallet 4.0 to buy, swap, stake and build"
+          evidence: "Ledger homepage"
+          key_risk: "App reliability, third-party provider compliance and monetization."
+        evidence_claim_ids: [EC-005, EC-016]
+        source_ids: [SRC-010]
+      - row_id: "T-014-R3"
+        values:
+          initiative: "Enterprise tokenized capital markets"
+          public_status: "Enterprise page markets tokenized assets, equities, funds, bonds and deposits workflows"
+          evidence: "Ledger Enterprise page"
+          key_risk: "Regulated-market adoption, integration costs and legal scope."
+        evidence_claim_ids: [EC-010]
+        source_ids: [SRC-014]
+      - row_id: "T-014-R4"
+        values:
+          initiative: "Secure hardware roadmap"
+          public_status: "Current navigation markets Stax, Flex, Nano Gen5 and Nano Classics"
+          evidence: "Ledger homepage navigation"
+          key_risk: "Hardware certification, inventory and quality."
+        evidence_claim_ids: [EC-005]
+        source_ids: [SRC-010]
+    evidence_claim_ids: [EC-005, EC-007, EC-010, EC-016, EC-017]
+    source_ids: [SRC-010, SRC-012, SRC-014]
+    notes: "Request roadmap, costs to complete and security gate status."
+  - table_id: "T-015"
+    title: "Senior management roster from public sources"
+    chapter_id: "VII"
+    section_id: "VII.C"
+    purpose: "Summarize public executive evidence without using private contact details."
+    columns:
+      -
+        name: "name"
+        description: "Publicly identified person"
+      -
+        name: "role"
+        description: "Public role"
+      -
+        name: "public_background"
+        description: "Public background summary"
+      -
+        name: "diligence_caveat"
+        description: "Missing evidence"
+    rows:
+      - row_id: "T-015-R1"
+        values:
+          name: "Pascal Gauthier"
+          role: "Chairman and CEO"
+          public_background: "CEO message and partner quote identify him as Chairman & CEO; 2018 announcement identifies him as President and former Criteo COO"
+          diligence_caveat: "Need employment agreement, compensation and succession plan."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-012, SRC-007, SRC-015]
+      - row_id: "T-015-R2"
+        values:
+          name: "Charles Guillemet"
+          role: "CTO"
+          public_background: "Appointed CTO in 2019; founded Donjon; cryptography/security background"
+          diligence_caveat: "Need current scope and retention plan."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-017]
+      - row_id: "T-015-R3"
+        values:
+          name: "Ian Rogers"
+          role: "Chief Experience Officer"
+          public_background: "Coinbase Pay announcement quotes him as Chief Experience Officer at Ledger"
+          diligence_caveat: "Need current management roster and tenure."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-016]
+      - row_id: "T-015-R4"
+        values:
+          name: "Eric Larcheveque"
+          role: "Historical CEO/co-founder"
+          public_background: "2017 and 2018 funding announcements identify him as CEO; current role requires confirmation"
+          diligence_caveat: "Need founder equity and ongoing role confirmation."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-006, SRC-007]
+      - row_id: "T-015-R5"
+        values:
+          name: "Nicolas Bacca"
+          role: "Historical CTO/co-founder/board member"
+          public_background: "2015/2018 sources identify him as CTO or board member"
+          diligence_caveat: "Need current role/IP assignment confirmation."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-005, SRC-007]
+    evidence_claim_ids: [EC-013]
+    source_ids: [SRC-005, SRC-006, SRC-007, SRC-012, SRC-016, SRC-017]
+    notes: "Do not infer current employment from older sources without management confirmation."
+  - table_id: "T-016"
+    title: "Headcount and hiring signals"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    purpose: "Chart public workforce growth anchors."
+    columns:
+      -
+        name: "date_or_period"
+        description: "Date/period"
+      -
+        name: "public_headcount_or_footprint"
+        description: "Public headcount or offices"
+      -
+        name: "source_context"
+        description: "Source context"
+      -
+        name: "diligence_gap"
+        description: "Missing HR evidence"
+    rows:
+      - row_id: "T-016-R1"
+        values:
+          date_or_period: "2015"
+          public_headcount_or_footprint: "11 engineers and 4 support crew"
+          source_context: "Seed announcement"
+          diligence_gap: "No formal HRIS by function/location."
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-005]
+      - row_id: "T-016-R2"
+        values:
+          date_or_period: "2018"
+          public_headcount_or_footprint: "82 people in San Francisco, Paris and Vierzon"
+          source_context: "Series B announcement"
+          diligence_gap: "No function split or attrition."
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-007]
+      - row_id: "T-016-R3"
+        values:
+          date_or_period: "2019"
+          public_headcount_or_footprint: "More than 200 professionals and offices in Paris, New York, Hong Kong and Vierzon"
+          source_context: "CTO appointment page"
+          diligence_gap: "Current continuity of offices."
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-017]
+      - row_id: "T-016-R4"
+        values:
+          date_or_period: "2026 access"
+          public_headcount_or_footprint: "600+ employees globally and 9 offices listed by Ledger people page"
+          source_context: "Ledger people page"
+          diligence_gap: "HRIS, open roles and projected hiring."
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-003]
+      - row_id: "T-016-R5"
+        values:
+          date_or_period: "2026 access"
+          public_headcount_or_footprint: "Careers page describes global teams and office locations"
+          source_context: "Ledger careers page"
+          diligence_gap: "Function/location headcount and contractor usage."
+        evidence_claim_ids: [EC-012]
+        source_ids: [SRC-004]
+    evidence_claim_ids: [EC-012]
+    source_ids: [SRC-003, SRC-004, SRC-005, SRC-007, SRC-017]
+    notes: "Public headcount anchors are not a substitute for HRIS exports."
+  - table_id: "T-017"
+    title: "Public management and turnover signals"
+    chapter_id: "VII"
+    section_id: "VII.G"
+    purpose: "Track public role changes while flagging missing turnover data."
+    columns:
+      -
+        name: "signal"
+        description: "Public signal"
+      -
+        name: "date_or_period"
+        description: "Date/period"
+      -
+        name: "observation"
+        description: "Observation"
+      -
+        name: "diligence_need"
+        description: "Follow-up"
+    rows:
+      - row_id: "T-017-R1"
+        values:
+          signal: "CEO role transition"
+          date_or_period: "2018-2019"
+          observation: "2018 source names Eric Larcheveque CEO and Pascal President; 2019 CTO source quotes Pascal as CEO"
+          diligence_need: "Confirm leadership transition, founder roles and retention."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-007, SRC-017]
+      - row_id: "T-017-R2"
+        values:
+          signal: "CTO appointment"
+          date_or_period: "2019-12-05"
+          observation: "Charles Guillemet appointed CTO while continuing security operations oversight"
+          diligence_need: "Confirm current role and critical-person dependency."
+        evidence_claim_ids: [EC-013]
+        source_ids: [SRC-017]
+      - row_id: "T-017-R3"
+        values:
+          signal: "Turnover rates"
+          date_or_period: "FY2024-FY2026"
+          observation: "Not publicly disclosed"
+          diligence_need: "Request monthly attrition and regretted-turnover reports."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-004]
+    evidence_claim_ids: [EC-013, EC-019]
+    source_ids: [SRC-004, SRC-007, SRC-017]
+    notes: "Public role changes are not evidence of negative turnover."
+  - table_id: "T-018"
+    title: "Legal and regulatory matters observed publicly"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    purpose: "Capture known public legal/regulatory events and gaps."
+    columns:
+      -
+        name: "matter"
+        description: "Matter"
+      -
+        name: "date"
+        description: "Public date"
+      -
+        name: "public_status"
+        description: "Public status"
+      -
+        name: "diligence_gap"
+        description: "Missing diligence evidence"
+    rows:
+      - row_id: "T-018-R1"
+        values:
+          matter: "2020 e-commerce and marketing data breach"
+          date: "2020-06-25 / 2020-07-14 disclosed"
+          public_status: "Ledger said unauthorized third party accessed database via API key; about 1M emails and 9,500 detailed records exposed; payment info and crypto funds safe"
+          diligence_gap: "Legal claims, remediation cost, regulator follow-up and insurance."
+        evidence_claim_ids: [EC-008]
+        source_ids: [SRC-013]
+      - row_id: "T-018-R2"
+        values:
+          matter: "CNIL notification"
+          date: "2020-07-17"
+          public_status: "Ledger said it notified CNIL after the breach"
+          diligence_gap: "CNIL correspondence, findings, fines or closure letter."
+        evidence_claim_ids: [EC-008, EC-018]
+        source_ids: [SRC-013]
+      - row_id: "T-018-R3"
+        values:
+          matter: "Pending lawsuits against company"
+          date: "2026 public review"
+          public_status: "Not available in reviewed public sources"
+          diligence_gap: "Counsel litigation schedule and reserves."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-018]
+      - row_id: "T-018-R4"
+        values:
+          matter: "Regulatory agency problems beyond CNIL notification"
+          date: "2026 public review"
+          public_status: "Not comprehensively public"
+          diligence_gap: "Regulator correspondence across privacy, consumer protection and crypto-service jurisdictions."
+        evidence_claim_ids: [EC-018, EC-019]
+        source_ids: [SRC-010, SRC-018]
+    evidence_claim_ids: [EC-008, EC-018, EC-019]
+    source_ids: [SRC-010, SRC-013, SRC-018]
+    notes: "Absence from reviewed sources is not proof of no litigation."
+  - table_id: "T-019"
+    title: "Material IP and compliance assets"
+    chapter_id: "VIII"
+    section_id: "VIII.D"
+    purpose: "Summarize public IP and product-compliance signals."
+    columns:
+      -
+        name: "asset_or_right"
+        description: "IP or compliance asset"
+      -
+        name: "public_evidence"
+        description: "Public evidence"
+      -
+        name: "verification_status"
+        description: "Verification status"
+      -
+        name: "diligence_gap"
+        description: "Missing evidence"
+    rows:
+      - row_id: "T-019-R1"
+        values:
+          asset_or_right: "Ledger trademarks"
+          public_evidence: "Ledger footer says Ledger SAS owns Ledger, Ledger Stax, Ledger Flex, Ledger Nano, Ledger OS, Ledger Wallet and logos"
+          verification_status: "partially_verified"
+          diligence_gap: "Trademark register and jurisdictions."
+        evidence_claim_ids: [EC-014]
+        source_ids: [SRC-003]
+      - row_id: "T-019-R2"
+        values:
+          asset_or_right: "Patents"
+          public_evidence: "CB Insights states Ledger has filed 15 patents"
+          verification_status: "partially_verified"
+          diligence_gap: "Patent family list, ownership, status and claims mapping."
+        evidence_claim_ids: [EC-014]
+        source_ids: [SRC-001]
+      - row_id: "T-019-R3"
+        values:
+          asset_or_right: "Ledger OS, Ledger Live and Nano apps"
+          public_evidence: "CEO message says Ledger Live, 150 Nano apps and part of OS are open source"
+          verification_status: "partially_verified"
+          diligence_gap: "SBOM and open-source license compliance."
+        evidence_claim_ids: [EC-017]
+        source_ids: [SRC-012]
+      - row_id: "T-019-R4"
+        values:
+          asset_or_right: "Product compliance declarations"
+          public_evidence: "Legal center links compliance declarations and user manuals for hardware products"
+          verification_status: "partially_verified"
+          diligence_gap: "Underlying test reports, recalls and jurisdictional certificates."
+        evidence_claim_ids: [EC-014]
+        source_ids: [SRC-018]
+    evidence_claim_ids: [EC-014, EC-017, EC-019]
+    source_ids: [SRC-001, SRC-003, SRC-012, SRC-018]
+    notes: "Public IP signals are incomplete; request IP counsel schedule."
+  - table_id: "T-020"
+    title: "Material contracts and insurance diligence matrix"
+    chapter_id: "VIII"
+    section_id: "VIII.F"
+    purpose: "Map public dependencies to contract requests."
+    columns:
+      -
+        name: "contract_area"
+        description: "Contract or policy area"
+      -
+        name: "public_signal"
+        description: "Public signal"
+      -
+        name: "risk"
+        description: "Main risk"
+      -
+        name: "diligence_request"
+        description: "Required document"
+    rows:
+      - row_id: "T-020-R1"
+        values:
+          contract_area: "Recover providers"
+          public_signal: "Recover provided by Coincover; encrypted pieces stored by three independent companies"
+          risk: "Identity, legal process, breach and liability allocation"
+          diligence_request: "Provider agreements, DPAs, audits and insurance certificates."
+        evidence_claim_ids: [EC-007, EC-018]
+        source_ids: [SRC-011]
+      - row_id: "T-020-R2"
+        values:
+          contract_area: "App transaction providers"
+          public_signal: "Third-party providers support buy/swap/stake/manage"
+          risk: "Revenue share, compliance and customer harm"
+          diligence_request: "Provider contracts, AML/sanctions roles and SLA/indemnity."
+        evidence_claim_ids: [EC-016, EC-018]
+        source_ids: [SRC-010, SRC-015, SRC-016]
+      - row_id: "T-020-R3"
+        values:
+          contract_area: "Hardware supply chain and logistics"
+          public_signal: "Product compliance documents exist but suppliers not public"
+          risk: "Product defects, recalls and supply disruption"
+          diligence_request: "Manufacturing, component, QA, logistics and warranty agreements."
+        evidence_claim_ids: [EC-014]
+        source_ids: [SRC-018]
+      - row_id: "T-020-R4"
+        values:
+          contract_area: "Insurance"
+          public_signal: "Not public"
+          risk: "Cyber, product, E&O, D&O and crime exposures may be uninsured or excluded"
+          diligence_request: "Insurance schedule, policies, claims history and notices."
+        evidence_claim_ids: [EC-019]
+        source_ids: [SRC-018]
+    evidence_claim_ids: [EC-007, EC-014, EC-016, EC-018, EC-019]
+    source_ids: [SRC-010, SRC-011, SRC-015, SRC-016, SRC-018]
+    notes: "This table is a contract request list, not evidence that terms are unfavorable."
+figures:
+  - figure_id: "F-001"
+    title: "Ledger funding timeline"
+    chapter_id: "I"
+    section_id: "I.D"
+    figure_type: "timeline"
+    description: "Timeline of publicly reported financing milestones."
+    purpose: "Show the sequence of public funding events and valuation anchors."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      start_date: "2015-02-19"
+      end_date: "2023-03-30"
+      ordering: "chronological"
+      events:
+        - event_id: "F-001-E1"
+          date: "2015-02-19"
+          label: "Seed round"
+          description: "Ledger announced EUR 1.3M seed funding led by XAnge with angel/strategic participants."
+          category: "financing"
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-005]
+        - event_id: "F-001-E2"
+          date: "2017-03-30"
+          label: "Series A"
+          description: "Ledger announced USD 7M Series A led by MAIF Avenir with DCG and others."
+          category: "financing"
+          evidence_claim_ids: [EC-002, EC-004]
+          source_ids: [SRC-006]
+        - event_id: "F-001-E3"
+          date: "2018-01-18"
+          label: "Series B"
+          description: "Ledger announced USD 75M Series B led by Draper Esprit."
+          category: "financing"
+          evidence_claim_ids: [EC-002, EC-004]
+          source_ids: [SRC-007]
+        - event_id: "F-001-E4"
+          date: "2021-06-10"
+          label: "Series C / unicorn"
+          description: "TechCrunch reported USD 380M Series C at USD 1.5B valuation; CB Insights row gives USD 1.47B."
+          category: "financing"
+          evidence_claim_ids: [EC-001, EC-002]
+          source_ids: [SRC-001, SRC-008]
+        - event_id: "F-001-E5"
+          date: "2023-03-30"
+          label: "Series C extension"
+          description: "TechCrunch reported EUR 100M / USD 108M extension at EUR 1.3B / about USD 1.41B valuation."
+          category: "financing"
+          evidence_claim_ids: [EC-002]
+          source_ids: [SRC-009]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Use chronological timeline; annotate valuation-source differences."
+    evidence_claim_ids: [EC-001, EC-002, EC-004]
+    source_ids: [SRC-001, SRC-005, SRC-006, SRC-007, SRC-008, SRC-009]
+    notes: "Exact post-money and FX should be reconciled to financing documents."
+  - figure_id: "F-002"
+    title: "Public valuation trajectory"
+    chapter_id: "I"
+    section_id: "I.C"
+    figure_type: "chart"
+    description: "Publicly reported valuation anchors from CB Insights and TechCrunch."
+    purpose: "Visualize whether public valuation signals are stable, stale or conflicting."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "line"
+      x_axis:
+        label: "Year / source"
+        unit: "year"
+        scale: "time"
+      y_axis:
+        label: "Valuation"
+        unit: "USD billions"
+        scale: "linear"
+      series:
+        - series_id: "valuation"
+          name: "Public valuation anchor"
+          unit: "USD billions"
+          data_points:
+            -
+              x: "2021-06-10"
+              y: 1.47
+              label: "CB Insights candidate row"
+              evidence_claim_ids: [EC-001]
+              source_ids: [SRC-001]
+            -
+              x: "2021-06-10"
+              y: 1.5
+              label: "TechCrunch Series C"
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-008]
+            -
+              x: "2023-03-30"
+              y: 1.41
+              label: "TechCrunch Series C extension"
+              evidence_claim_ids: [EC-002]
+              source_ids: [SRC-009]
+      annotations:
+        - label: "Current valuation requires company records"
+          x: "2026-06-06"
+          y: null
+          note: "Public marks are historical and may not represent current secondary or fair value."
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-001]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Plot points with source labels and note FX differences."
+    evidence_claim_ids: [EC-001, EC-002, EC-019]
+    source_ids: [SRC-001, SRC-008, SRC-009]
+    notes: "Historical public valuations are not a current appraisal."
+  - figure_id: "F-003"
+    title: "Product and dependency architecture"
+    chapter_id: "II"
+    section_id: "II.A"
+    figure_type: "architecture_diagram"
+    description: "Public architecture-level view of Ledger products and dependencies."
+    purpose: "Show where security, app, partner and provider risks enter the product stack."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        -
+          node_id: "consumer"
+          label: "Consumer / institution user"
+          node_type: "user"
+          description: "End user of device/app/enterprise"
+          evidence_claim_ids: [EC-005]
+          source_ids: [SRC-010]
+        -
+          node_id: "hardware"
+          label: "Ledger hardware signer"
+          node_type: "product"
+          description: "Secure Element and proprietary OS keep private keys offline"
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-010, SRC-009]
+        -
+          node_id: "wallet_app"
+          label: "Ledger Wallet app"
+          node_type: "service"
+          description: "Portfolio, buy, swap, stake and dApp gateway"
+          evidence_claim_ids: [EC-005, EC-016]
+          source_ids: [SRC-010]
+        -
+          node_id: "recover"
+          label: "Ledger Recover"
+          node_type: "service"
+          description: "Optional encrypted/split recovery backup linked to identity"
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-011]
+        -
+          node_id: "providers"
+          label: "Third-party crypto providers"
+          node_type: "third_party"
+          description: "Buy/swap/stake/on-ramp partners such as PayPal and Coinbase Pay"
+          evidence_claim_ids: [EC-009, EC-016]
+          source_ids: [SRC-015, SRC-016]
+        -
+          node_id: "enterprise"
+          label: "Ledger Enterprise"
+          node_type: "service"
+          description: "Institutional custody/staking/tokenized asset platform"
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-014]
+        -
+          node_id: "hsm"
+          label: "Recover HSM/provider storage"
+          node_type: "third_party"
+          description: "Encrypted pieces stored by independent companies"
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-011]
+      edges:
+        -
+          edge_id: "E1"
+          from_node_id: "consumer"
+          to_node_id: "hardware"
+          relationship: "signs transactions on device"
+          data_or_dependency: "private keys stay on device"
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-010, SRC-009]
+        -
+          edge_id: "E2"
+          from_node_id: "hardware"
+          to_node_id: "wallet_app"
+          relationship: "pairs with app"
+          data_or_dependency: "app initiates transaction/user flow"
+          evidence_claim_ids: [EC-005]
+          source_ids: [SRC-010]
+        -
+          edge_id: "E3"
+          from_node_id: "wallet_app"
+          to_node_id: "providers"
+          relationship: "integrates providers"
+          data_or_dependency: "transaction services by third parties"
+          evidence_claim_ids: [EC-016]
+          source_ids: [SRC-010, SRC-015, SRC-016]
+        -
+          edge_id: "E4"
+          from_node_id: "hardware"
+          to_node_id: "recover"
+          relationship: "creates encrypted backup"
+          data_or_dependency: "backup created inside Secure Element"
+          evidence_claim_ids: [EC-007]
+          source_ids: [SRC-011]
+        -
+          edge_id: "E5"
+          from_node_id: "recover"
+          to_node_id: "hsm"
+          relationship: "distributes encrypted pieces"
+          data_or_dependency: "HSM provider storage and identity verification"
+          evidence_claim_ids: [EC-007, EC-018]
+          source_ids: [SRC-011]
+        -
+          edge_id: "E6"
+          from_node_id: "enterprise"
+          to_node_id: "providers"
+          relationship: "connects to venues/infrastructure"
+          data_or_dependency: "custody/trading/staking workflows"
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-014]
+      boundaries:
+        - boundary_id: "B1"
+          label: "Ledger-controlled product surface"
+          node_ids: [hardware, wallet_app, recover, enterprise]
+        - boundary_id: "B2"
+          label: "Third-party/provider surface"
+          node_ids: [providers, hsm]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Emphasize external dependencies for security and contract diligence."
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-009, EC-010, EC-016]
+    source_ids: [SRC-010, SRC-011, SRC-014, SRC-015, SRC-016]
+    notes: "This is a public-source architecture abstraction, not a verified technical design."
+  - figure_id: "F-004"
+    title: "Public customer and partner scale signals"
+    chapter_id: "III"
+    section_id: "III.A"
+    figure_type: "chart"
+    description: "Bar chart of disclosed adoption/partner scale anchors."
+    purpose: "Show that public customer evidence is aggregate rather than customer-specific."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Signal"
+        unit: "category"
+        scale: "categorical"
+      y_axis:
+        label: "Public count"
+        unit: "count"
+        scale: "linear"
+      series:
+        - series_id: "public_scale"
+          name: "Publicly disclosed scale"
+          unit: "count"
+          data_points:
+            -
+              x: "Devices sold"
+              y: 6000000
+              label: "More than 6M devices"
+              evidence_claim_ids: [EC-003, EC-015]
+              source_ids: [SRC-004, SRC-009]
+            -
+              x: "Countries"
+              y: 180
+              label: "180 countries in careers page"
+              evidence_claim_ids: [EC-015]
+              source_ids: [SRC-004]
+            -
+              x: "Ledger Live active users"
+              y: 1500000
+              label: "1.5M active users cited publicly"
+              evidence_claim_ids: [EC-009, EC-015]
+              source_ids: [SRC-008, SRC-015]
+            -
+              x: "Enterprise institutions"
+              y: 100
+              label: "100+ institutions on Enterprise page"
+              evidence_claim_ids: [EC-010, EC-015]
+              source_ids: [SRC-014]
+      annotations:
+        -
+          label: "Revenue concentration unavailable"
+          x: null
+          y: null
+          note: "None of these bars identifies top revenue customers or customer concentration."
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-001]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Use log scale if rendering cannot accommodate 6M and 100 on one axis."
+    evidence_claim_ids: [EC-003, EC-009, EC-010, EC-015, EC-019]
+    source_ids: [SRC-004, SRC-008, SRC-009, SRC-014, SRC-015]
+    notes: "Counts are public-source scale signals, not audited customer counts."
+  - figure_id: "F-005"
+    title: "Competitive market map"
+    chapter_id: "IV"
+    section_id: "IV.A"
+    figure_type: "market_map"
+    description: "Qualitative positioning of Ledger and public competitors by custody model and UX/hardware intensity."
+    purpose: "Visualize competitive clusters and substitutes."
+    spec_schema_ref: "figure_spec_shapes.market_map"
+    spec:
+      dimensions:
+        x_axis:
+          label: "Custody model"
+          low_label: "Custodial / software"
+          high_label: "Hardware self-custody"
+        y_axis:
+          label: "UX / device sophistication"
+          low_label: "Simple / low hardware"
+          high_label: "Premium hardware or app ecosystem"
+      segments:
+        -
+          segment_id: "hardware"
+          name: "Hardware self-custody"
+          description: "Dedicated devices/cards for private-key protection"
+        -
+          segment_id: "software"
+          name: "Software/custodial substitutes"
+          description: "Hot wallets, exchanges and apps"
+        -
+          segment_id: "enterprise"
+          name: "Institutional infrastructure"
+          description: "Custody, staking and tokenized-asset operations"
+      entities:
+        -
+          entity_id: "ledger"
+          name: "Ledger"
+          entity_type: "target_company"
+          segment_id: "hardware"
+          x_value: 9
+          y_value: 8
+          attributes: {notes: Hardware plus app plus enterprise}
+          evidence_claim_ids: [EC-005, EC-010]
+          source_ids: [SRC-010, SRC-014]
+        -
+          entity_id: "trezor"
+          name: "Trezor"
+          entity_type: "competitor"
+          segment_id: "hardware"
+          x_value: 8
+          y_value: 7
+          attributes: {notes: Touchscreen and open-source security positioning}
+          evidence_claim_ids: [EC-011]
+          source_ids: [SRC-019]
+        -
+          entity_id: "tangem"
+          name: "Tangem"
+          entity_type: "competitor"
+          segment_id: "hardware"
+          x_value: 8
+          y_value: 6
+          attributes: {notes: NFC card/ring simplicity}
+          evidence_claim_ids: [EC-011]
+          source_ids: [SRC-020]
+        -
+          entity_id: "keystone"
+          name: "Keystone"
+          entity_type: "competitor"
+          segment_id: "hardware"
+          x_value: 8
+          y_value: 7
+          attributes: {notes: Touchscreen/open-source security positioning}
+          evidence_claim_ids: [EC-011]
+          source_ids: [SRC-021]
+        -
+          entity_id: "exchanges"
+          name: "Exchanges/software wallets"
+          entity_type: "competitor"
+          segment_id: "software"
+          x_value: 2
+          y_value: 8
+          attributes: {notes: Convenience substitute}
+          evidence_claim_ids: [EC-005, EC-006]
+          source_ids: [SRC-010, SRC-008]
+    rendering_guidance:
+      preferred_format: "svg"
+      display_notes: "Qualitative, not a measured market-share chart."
+    evidence_claim_ids: [EC-005, EC-006, EC-010, EC-011]
+    source_ids: [SRC-008, SRC-010, SRC-014, SRC-019, SRC-020, SRC-021]
+    notes: "Axis values are analyst scoring based on public positioning."
+  - figure_id: "F-006"
+    title: "Public GTM channel signal bar"
+    chapter_id: "V"
+    section_id: "V.A"
+    figure_type: "chart"
+    description: "Bar chart of public evidence strength by channel, not revenue mix."
+    purpose: "Provide a structured chart when revenue channel weights are not public."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "bar"
+      x_axis:
+        label: "Channel"
+        unit: "channel"
+        scale: "categorical"
+      y_axis:
+        label: "Public evidence score"
+        unit: "0-3 score"
+        scale: "linear"
+      series:
+        - series_id: "channel_signal"
+          name: "Public evidence score"
+          unit: "score"
+          data_points:
+            -
+              x: "Direct shop"
+              y: 2
+              label: "Product/shop links visible"
+              evidence_claim_ids: [EC-005, EC-016]
+              source_ids: [SRC-010, SRC-018]
+            -
+              x: "Ledger Wallet app"
+              y: 3
+              label: "Buy/swap/stake and integrations visible"
+              evidence_claim_ids: [EC-009, EC-016]
+              source_ids: [SRC-010, SRC-015, SRC-016]
+            -
+              x: "Reseller/affiliate"
+              y: 1
+              label: "Footer links only"
+              evidence_claim_ids: [EC-016]
+              source_ids: [SRC-018]
+            -
+              x: "Enterprise direct"
+              y: 2
+              label: "Enterprise platform page"
+              evidence_claim_ids: [EC-010]
+              source_ids: [SRC-014]
+            -
+              x: "Retail/brand partnerships"
+              y: 1
+              label: "Select public partnership signals"
+              evidence_claim_ids: [EC-016]
+              source_ids: [SRC-015]
+      annotations:
+        -
+          label: "Revenue mix unavailable"
+          x: null
+          y: null
+          note: "Scores are evidence presence, not channel revenue or CAC."
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-001]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Label prominently as evidence score, not revenue mix."
+    evidence_claim_ids: [EC-005, EC-009, EC-010, EC-016, EC-019]
+    source_ids: [SRC-010, SRC-014, SRC-015, SRC-016, SRC-018]
+    notes: "Request actual channel revenue and CAC before relying on GTM mix."
+  - figure_id: "F-007"
+    title: "R&D and security portfolio map"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    figure_type: "architecture_diagram"
+    description: "Public-source map of Ledger R&D/security workstreams."
+    purpose: "Link R&D organization to product and security risks."
+    spec_schema_ref: "figure_spec_shapes.architecture_diagram"
+    spec:
+      nodes:
+        -
+          node_id: "cto"
+          label: "CTO / security leadership"
+          node_type: "other"
+          description: "Charles Guillemet and technology/security operations"
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-017]
+        -
+          node_id: "donjon"
+          label: "Ledger Donjon"
+          node_type: "service"
+          description: "Security evaluation lab and vulnerability disclosure work"
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-017]
+        -
+          node_id: "firmware"
+          label: "Firmware / OS teams"
+          node_type: "service"
+          description: "Secure OS and device apps"
+          evidence_claim_ids: [EC-012, EC-017]
+          source_ids: [SRC-004, SRC-012]
+        -
+          node_id: "wallet"
+          label: "Ledger Wallet app teams"
+          node_type: "product"
+          description: "App for manage/buy/swap/stake/dApps"
+          evidence_claim_ids: [EC-005]
+          source_ids: [SRC-010]
+        -
+          node_id: "recover_rd"
+          label: "Recover cryptographic protocol"
+          node_type: "service"
+          description: "Open-source roadmap and optional backup service"
+          evidence_claim_ids: [EC-007, EC-017]
+          source_ids: [SRC-011, SRC-012]
+        -
+          node_id: "enterprise_rd"
+          label: "Enterprise infrastructure"
+          node_type: "service"
+          description: "HSM-backed institutional digital asset workflows"
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-014]
+      edges:
+        -
+          edge_id: "F7-E1"
+          from_node_id: "cto"
+          to_node_id: "donjon"
+          relationship: "oversees/founded"
+          data_or_dependency: "security evaluation"
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-017]
+        -
+          edge_id: "F7-E2"
+          from_node_id: "donjon"
+          to_node_id: "firmware"
+          relationship: "reviews"
+          data_or_dependency: "product security assessment"
+          evidence_claim_ids: [EC-006]
+          source_ids: [SRC-017]
+        -
+          edge_id: "F7-E3"
+          from_node_id: "firmware"
+          to_node_id: "wallet"
+          relationship: "enables secure signing"
+          data_or_dependency: "device/app integration"
+          evidence_claim_ids: [EC-005, EC-006]
+          source_ids: [SRC-010]
+        -
+          edge_id: "F7-E4"
+          from_node_id: "firmware"
+          to_node_id: "recover_rd"
+          relationship: "supports protocol"
+          data_or_dependency: "Secure Element and OS components"
+          evidence_claim_ids: [EC-007, EC-017]
+          source_ids: [SRC-011, SRC-012]
+        -
+          edge_id: "F7-E5"
+          from_node_id: "firmware"
+          to_node_id: "enterprise_rd"
+          relationship: "underpins"
+          data_or_dependency: "HSM and policy engine"
+          evidence_claim_ids: [EC-010]
+          source_ids: [SRC-014]
+      boundaries:
+        - boundary_id: "F7-B1"
+          label: "R&D/security workstreams"
+          node_ids: [cto, donjon, firmware, wallet, recover_rd, enterprise_rd]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Show feedback loop from Donjon into firmware/app releases."
+    evidence_claim_ids: [EC-005, EC-006, EC-007, EC-010, EC-012, EC-013, EC-017]
+    source_ids: [SRC-004, SRC-010, SRC-011, SRC-012, SRC-014, SRC-017]
+    notes: "Does not represent actual reporting lines or sprint ownership."
+  - figure_id: "F-008"
+    title: "Public management role map"
+    chapter_id: "VII"
+    section_id: "VII.A"
+    figure_type: "org_chart"
+    description: "Publicly observed senior roles and gaps."
+    purpose: "Show confirmed public roles while avoiding invented reporting lines."
+    spec_schema_ref: "figure_spec_shapes.org_chart"
+    spec:
+      people_or_roles:
+        -
+          node_id: "ceo"
+          name: "Pascal Gauthier"
+          role: "Chairman and CEO"
+          department: "Executive"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-012, SRC-015]
+        -
+          node_id: "cto"
+          name: "Charles Guillemet"
+          role: "Chief Technology Officer"
+          department: "Technology and Security"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-017]
+        -
+          node_id: "cxo"
+          name: "Ian Rogers"
+          role: "Chief Experience Officer"
+          department: "Experience"
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-016]
+        -
+          node_id: "founders"
+          name: null
+          role: "Eight founding experts / historical founders"
+          department: "Founding team"
+          location: "France"
+          is_publicly_verified: true
+          evidence_claim_ids: [EC-012, EC-013]
+          source_ids: [SRC-003, SRC-005]
+        -
+          node_id: "board"
+          name: null
+          role: "Board / investor directors"
+          department: "Governance"
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids: [EC-004, EC-019]
+          source_ids: [SRC-007]
+      reporting_lines:
+        -
+          parent_node_id: "board"
+          child_node_id: "ceo"
+          relationship: "other"
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-007]
+        -
+          parent_node_id: "ceo"
+          child_node_id: "cto"
+          relationship: "other"
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-017]
+        -
+          parent_node_id: "ceo"
+          child_node_id: "cxo"
+          relationship: "other"
+          evidence_claim_ids: [EC-013]
+          source_ids: [SRC-016]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Dotted or caveated lines; full org chart not public."
+    evidence_claim_ids: [EC-004, EC-012, EC-013, EC-019]
+    source_ids: [SRC-003, SRC-005, SRC-007, SRC-012, SRC-015, SRC-016, SRC-017]
+    notes: "Reporting lines are inferred for visualization and require company confirmation."
+  - figure_id: "F-009"
+    title: "Public headcount trend anchors"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    figure_type: "chart"
+    description: "Chart of public workforce-growth anchors."
+    purpose: "Show rapid scale-up and the need for HR diligence."
+    spec_schema_ref: "figure_spec_shapes.chart"
+    spec:
+      chart_type: "line"
+      x_axis:
+        label: "Year"
+        unit: "year"
+        scale: "time"
+      y_axis:
+        label: "Public headcount"
+        unit: "employees"
+        scale: "linear"
+      series:
+        - series_id: "headcount"
+          name: "Public headcount anchors"
+          unit: "employees"
+          data_points:
+            -
+              x: "2015"
+              y: 15
+              label: "11 engineers plus 4 support crew"
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-005]
+            -
+              x: "2018"
+              y: 82
+              label: "82 people"
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-007]
+            -
+              x: "2019"
+              y: 200
+              label: "More than 200 professionals"
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-017]
+            -
+              x: "2026"
+              y: 600
+              label: "600+ employees globally"
+              evidence_claim_ids: [EC-012]
+              source_ids: [SRC-003]
+      annotations:
+        -
+          label: "Function/location split missing"
+          x: "2026"
+          y: 600
+          note: "Public data does not disclose HRIS, attrition or projected hiring."
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-004]
+    rendering_guidance:
+      preferred_format: "chart_spec"
+      display_notes: "Use plus symbols in labels where source says 'more than'."
+    evidence_claim_ids: [EC-012, EC-019]
+    source_ids: [SRC-003, SRC-004, SRC-005, SRC-007, SRC-017]
+    notes: "Values are public anchors, not audited average headcount."
+  - figure_id: "F-010"
+    title: "Legal and regulatory event timeline"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    figure_type: "timeline"
+    description: "Timeline of public legal/regulatory/compliance events relevant to diligence."
+    purpose: "Frame privacy, compliance and product-risk diligence."
+    spec_schema_ref: "figure_spec_shapes.timeline"
+    spec:
+      start_date: "2020-06-25"
+      end_date: "2026-06-06"
+      ordering: "chronological"
+      events:
+        - event_id: "F-010-E1"
+          date: "2020-06-25"
+          label: "Database accessed"
+          description: "Ledger states an unauthorized third party exploited e-commerce/marketing database access."
+          category: "privacy"
+          evidence_claim_ids: [EC-008]
+          source_ids: [SRC-013]
+        - event_id: "F-010-E2"
+          date: "2020-07-17"
+          label: "CNIL notified"
+          description: "Ledger says it notified the French data protection authority after the breach."
+          category: "regulatory"
+          evidence_claim_ids: [EC-008, EC-018]
+          source_ids: [SRC-013]
+        - event_id: "F-010-E3"
+          date: "2023-05-23"
+          label: "Recover response"
+          description: "CEO message acknowledged communication concerns and committed to accelerated open-source roadmap."
+          category: "product_trust"
+          evidence_claim_ids: [EC-007, EC-017]
+          source_ids: [SRC-012]
+        - event_id: "F-010-E4"
+          date: "2026-06-06"
+          label: "Legal center reviewed"
+          description: "Legal center lists terms, privacy, compliance declarations and product documents; insurance/contracts are not public."
+          category: "legal_documents"
+          evidence_claim_ids: [EC-014, EC-019]
+          source_ids: [SRC-018]
+    rendering_guidance:
+      preferred_format: "mermaid"
+      display_notes: "Annotate that this is not a complete litigation/regulatory schedule."
+    evidence_claim_ids: [EC-007, EC-008, EC-014, EC-017, EC-018, EC-019]
+    source_ids: [SRC-012, SRC-013, SRC-018]
+    notes: "Counsel should confirm pending matters and regulator correspondence."
+  - figure_id: "F-011"
+    title: "Ledger diligence risk heatmap"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    figure_type: "risk_heatmap"
+    description: "Heatmap covering full risk register."
+    purpose: "Prioritize confirmatory diligence."
+    spec_schema_ref: "figure_spec_shapes.risk_heatmap"
+    spec:
+      x_axis:
+        label: "likelihood"
+        scale: [low, medium, high, unknown]
+      y_axis:
+        label: "severity"
+        scale: [informational, low, medium, high, critical]
+      risk_points:
+        -
+          risk_id: "R-001"
+          label: "Financial opacity"
+          severity: "high"
+          likelihood: "high"
+          rationale: "No public financial statements or unit economics."
+          evidence_claim_ids: [EC-019]
+          source_ids: [SRC-001]
+        -
+          risk_id: "R-002"
+          label: "Crypto-cycle demand"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "Hardware and service demand likely correlate with crypto sentiment."
+          evidence_claim_ids: [EC-003]
+          source_ids: [SRC-008, SRC-009]
+        -
+          risk_id: "R-003"
+          label: "Security/privacy trust"
+          severity: "critical"
+          likelihood: "medium"
+          rationale: "Ledger's brand depends on security after prior data breach and phishing risk., evidence_claim_ids: [EC-008], source_ids: [SRC-013]"
+        -
+          risk_id: "R-004"
+          label: "Recover trust/regulatory"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "Identity-based backup introduces provider and perception risk."
+          evidence_claim_ids: [EC-007, EC-018]
+          source_ids: [SRC-011, SRC-012]
+        -
+          risk_id: "R-005"
+          label: "Customer concentration unknown"
+          severity: "high"
+          likelihood: "unknown"
+          rationale: "Top customers and revenue mix are not public."
+          evidence_claim_ids: [EC-015, EC-019]
+          source_ids: [SRC-014]
+        -
+          risk_id: "R-006"
+          label: "Partner/supplier dependency"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "App services and Recover rely on third parties."
+          evidence_claim_ids: [EC-007, EC-016]
+          source_ids: [SRC-010, SRC-011]
+        -
+          risk_id: "R-007"
+          label: "Competition/price pressure"
+          severity: "medium"
+          likelihood: "high"
+          rationale: "Public competitors overlap on security and UX claims."
+          evidence_claim_ids: [EC-011]
+          source_ids: [SRC-019, SRC-020, SRC-021]
+        -
+          risk_id: "R-008"
+          label: "Regulatory/legal exposure"
+          severity: "high"
+          likelihood: "medium"
+          rationale: "Privacy, consumer protection and crypto service rules vary by product and jurisdiction."
+          evidence_claim_ids: [EC-008, EC-018]
+          source_ids: [SRC-010, SRC-013, SRC-018]
+        -
+          risk_id: "R-009"
+          label: "Hardware quality/supply chain"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "Hardware devices require compliant components, manufacturing and support."
+          evidence_claim_ids: [EC-006, EC-014]
+          source_ids: [SRC-010, SRC-018]
+        -
+          risk_id: "R-010"
+          label: "Talent/retention"
+          severity: "medium"
+          likelihood: "unknown"
+          rationale: "Turnover and compensation are not public for security-critical teams."
+          evidence_claim_ids: [EC-012, EC-019]
+          source_ids: [SRC-003, SRC-004]
+        -
+          risk_id: "R-011"
+          label: "Cap-table/valuation overhang"
+          severity: "medium"
+          likelihood: "medium"
+          rationale: "Public valuation and funding totals require reconciliation."
+          evidence_claim_ids: [EC-001, EC-002, EC-004]
+          source_ids: [SRC-001, SRC-008, SRC-009]
+    rendering_guidance:
+      preferred_format: "svg"
+      display_notes: "Use severity rows and likelihood columns matching risk_register."
+    evidence_claim_ids: [EC-001, EC-002, EC-003, EC-004, EC-007, EC-008, EC-011, EC-012, EC-014, EC-015, EC-016, EC-018, EC-019]
+    source_ids: [SRC-001, SRC-003, SRC-004, SRC-008, SRC-009, SRC-010, SRC-011, SRC-012, SRC-013, SRC-014, SRC-018, SRC-019, SRC-020, SRC-021]
+    notes: "Heatmap is analyst prioritization based on public evidence."
+evidence_claims:
+  - evidence_claim_id: "EC-001"
+    claim: "Ledger appears eligible as an active private unicorn for this report."
+    evidence_summary: "CB Insights lists Ledger in its Unicorns collection and states it is based in Paris, France; the user-provided CB Insights row reported USD 1.47B valuation and 2021-06-10 unicorn date. Pappers lists Ledger SAS as active. No reviewed public source indicated IPO, acquisition or shutdown."
+    evidence_type: "market_database"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: [SRC-001, SRC-002]
+    quoted_evidence:
+      -
+        source_id: "SRC-001"
+        quote: "Ledger is included in 7 Expert Collections, including Unicorns- Billion Dollar Startups; it was founded in 2014 and is based in Paris, France."
+        location: "CB Insights company page"
+      -
+        source_id: "SRC-002"
+        quote: "LEDGER ... 529 991 119 ... Active ... 106 RUE DU TEMPLE, 75003 PARIS ... SAS."
+        location: "Pappers company profile"
+    analyst_interpretation: "Public evidence is sufficient to proceed with a private-unicorn diligence report, subject to management confirmation of current ownership and no pending transaction."
+    limitations: "CB Insights is a market database and may be stale; public-source review cannot prove absence of confidential M&A or IPO preparations."
+    associations:
+      chapter_id: "I"
+      section_id: "I.C"
+      founder_claim_ids: [FC-001, FC-002]
+      table_ids: [T-001, T-002]
+      figure_ids: [F-001, F-002, F-011]
+      risk_ids: [R-011]
+  - evidence_claim_id: "EC-002"
+    claim: "Public sources support a major funding history through the 2023 Series C extension, with valuation anchors around USD 1.4B to USD 1.5B."
+    evidence_summary: "Ledger announced seed, Series A and Series B rounds; TechCrunch reported USD 380M Series C at USD 1.5B in 2021 and EUR 100M/USD 108M extension at EUR 1.3B/USD 1.41B in 2023."
+    evidence_type: "independent_news"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: [SRC-005, SRC-006, SRC-007, SRC-008, SRC-009]
+    quoted_evidence:
+      -
+        source_id: "SRC-008"
+        quote: "Ledger has raised a $380 million Series C funding round led by 10T Holdings... valuation of $1.5 billion."
+        location: "TechCrunch 2021"
+      -
+        source_id: "SRC-009"
+        quote: "The company is adding another EUR 100 million ($108 million) in new funding... valuation... EUR 1.3 billion ($1.41 billion)."
+        location: "TechCrunch 2023"
+    analyst_interpretation: "Funding/valuation claims are well supported historically but require reconciliation to current valuation, ownership and cash runway."
+    limitations: "FX conversion and primary/secondary allocations may differ by source."
+    associations:
+      chapter_id: "I"
+      section_id: "I.D"
+      founder_claim_ids: [FC-001, FC-004, FC-006]
+      table_ids: [T-001]
+      figure_ids: [F-001, F-002, F-011]
+      risk_ids: [R-011]
+  - evidence_claim_id: "EC-003"
+    claim: "Ledger has public traction signals, but revenue and unit economics remain non-public."
+    evidence_summary: "Public sources report 1M devices sold by 2018, over 3M by 2021, 6M by 2023/2026, Ledger Live active user figures and claims of securing about 20% of crypto assets."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-004, SRC-007, SRC-008, SRC-009, SRC-010]
+    quoted_evidence:
+      -
+        source_id: "SRC-004"
+        quote: "With more than 6 million devices sold to consumers in 180 countries, 20% of the world's crypto assets are secured by Ledger devices."
+        location: "Ledger Careers"
+      -
+        source_id: "SRC-009"
+        quote: "Ledger has sold 6 million devices since its inception in 2014... secures 20% of cryptocurrencies and 30% of NFTs worldwide."
+        location: "TechCrunch 2023"
+    analyst_interpretation: "Traction appears meaningful, but active usage, revenue conversion, margin and customer concentration require private data."
+    limitations: "Metrics are largely company-stated and may include inactive devices."
+    associations:
+      chapter_id: "I"
+      section_id: "I.A"
+      founder_claim_ids: [FC-005]
+      table_ids: [T-003, T-006]
+      figure_ids: [F-004, F-011]
+      risk_ids: [R-001, R-002, R-005]
+  - evidence_claim_id: "EC-004"
+    claim: "Named investors are public, but the current cap table and investor rights are not."
+    evidence_summary: "Public announcements name DCG, Draper network/Molten, Korelya, Cathay, 10T and other investors across financing rounds, while ownership percentages, preferences and rights are not public."
+    evidence_type: "independent_news"
+    verification_status: "partially_verified"
+    confidence: "high"
+    source_ids: [SRC-001, SRC-007, SRC-008, SRC-009]
+    quoted_evidence:
+      -
+        source_id: "SRC-007"
+        quote: "The USD 75 million round was led by Draper Esprit... FirstMark Capital, Cathay Innovation, and Korelya Capital... Digital Currency Group also participated."
+        location: "Ledger Series B announcement"
+      -
+        source_id: "SRC-008"
+        quote: "Other investors... Cathay Innovation, Draper Associates, Draper Dragon, Draper Esprit, DCG, Korelya Capital and Wicklow Capital."
+        location: "TechCrunch 2021"
+    analyst_interpretation: "Public investor quality is strong, but current economic ownership is a private diligence item."
+    limitations: "Investor names do not show current shareholdings or liquidation preferences."
+    associations:
+      chapter_id: "I"
+      section_id: "I.C"
+      founder_claim_ids: [FC-006]
+      table_ids: [T-001, T-002]
+      figure_ids: [F-001, F-011]
+      risk_ids: [R-011]
+  - evidence_claim_id: "EC-005"
+    claim: "Ledger publicly offers consumer hardware wallets/signers, Ledger Wallet app services, Recover and Enterprise products."
+    evidence_summary: "Ledger homepage, product navigation, Recover page and Enterprise page show a broad consumer and institutional product surface."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: [SRC-010, SRC-011, SRC-014]
+    quoted_evidence:
+      -
+        source_id: "SRC-010"
+        quote: "Ledger Signers & Crypto Wallets... Ledger Wallet 4.0 to buy swap, stake and build."
+        location: "Ledger homepage"
+      -
+        source_id: "SRC-014"
+        quote: "Custody, staking and digital asset management for your clients - plugged into your existing infrastructure."
+        location: "Ledger Enterprise page"
+    analyst_interpretation: "Product existence is verified; product economics are not."
+    limitations: "Website marketing does not prove revenue, adoption or reliability."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004, T-009, T-011]
+      figure_ids: [F-003, F-005, F-006, F-007]
+      risk_ids: [R-006, R-007, R-009]
+  - evidence_claim_id: "EC-006"
+    claim: "Ledger's security positioning centers on offline private-key protection, Secure Element hardware, proprietary OS and Donjon security review."
+    evidence_summary: "Ledger homepage and funding articles state private keys stay offline/on device; CTO page describes Donjon security lab and certifications."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-010, SRC-017, SRC-008, SRC-009]
+    quoted_evidence:
+      -
+        source_id: "SRC-010"
+        quote: "All Ledger crypto wallets are powered by an industry-leading Secure Element chip, together with Ledger's proprietary OS."
+        location: "Ledger homepage"
+      -
+        source_id: "SRC-017"
+        quote: "Guillemet joined Ledger in 2017 and founded... The Ledger Donjon."
+        location: "CTO appointment"
+    analyst_interpretation: "Public security architecture is credible but requires independent audit, certification and incident review."
+    limitations: "Public marketing cannot substitute for technical diligence."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004, T-008, T-010, T-013]
+      figure_ids: [F-003, F-005, F-007]
+      risk_ids: [R-003, R-009]
+  - evidence_claim_id: "EC-007"
+    claim: "Ledger Recover is publicly described as an optional identity-based recovery service that encrypts and splits a backup, but it creates material trust and regulatory diligence needs."
+    evidence_summary: "Recover page describes digital spare key creation inside Secure Element, encryption, splitting into three pieces, HSM storage by three independent companies, and identity verification. CEO message acknowledged communication concerns and open-source commitments."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: [SRC-011, SRC-012]
+    quoted_evidence:
+      -
+        source_id: "SRC-011"
+        quote: "Your digital spare key is created, encrypted, split into three within your Ledger's Secure Element... Your private keys, however, never leave your Ledger device."
+        location: "Ledger Recover page"
+      -
+        source_id: "SRC-012"
+        quote: "Our unintentional communication mistake took everyone by surprise... We apologise for the way this was communicated."
+        location: "CEO message"
+    analyst_interpretation: "Recover may expand addressable market but requires cryptographic, privacy, identity and provider-contract diligence."
+    limitations: "Independent audit outcomes and provider terms were not publicly available in reviewed sources."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: [FC-007]
+      table_ids: [T-004, T-005, T-007, T-008, T-014, T-020]
+      figure_ids: [F-003, F-007, F-010, F-011]
+      risk_ids: [R-004, R-006, R-008]
+  - evidence_claim_id: "EC-008"
+    claim: "Ledger disclosed a July 2020 e-commerce and marketing data breach with about 1 million email addresses and 9,500 detailed customer records exposed."
+    evidence_summary: "Ledger leadership said a third party exploited an API key to access an e-commerce/marketing database; Ledger notified CNIL and warned about phishing."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: [SRC-013]
+    quoted_evidence:
+      -
+        source_id: "SRC-013"
+        quote: "An unauthorized third party had access to a portion of our e-commerce and marketing database through an API Key."
+        location: "Ledger breach announcement"
+      -
+        source_id: "SRC-013"
+        quote: "Approximately 1M addresses... for a subset of 9500 customers... first and last name, postal address, phone number or ordered products."
+        location: "Ledger breach announcement"
+    analyst_interpretation: "The breach is a major trust, privacy, support and litigation diligence item even if funds/payment data were not exposed."
+    limitations: "Public source does not provide final remediation cost, claims, insurance recovery or regulator closure."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.A"
+      founder_claim_ids: []
+      table_ids: [T-008, T-012, T-018]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-003, R-008]
+  - evidence_claim_id: "EC-009"
+    claim: "Ledger Wallet distribution is supported by public PayPal and Coinbase Pay integrations."
+    evidence_summary: "Ledger announced PayPal as a Buy provider in Ledger Live and Coinbase Pay functionality integrated into Ledger Wallet."
+    evidence_type: "customer_or_partner_source"
+    verification_status: "verified"
+    confidence: "high"
+    source_ids: [SRC-015, SRC-016]
+    quoted_evidence:
+      -
+        source_id: "SRC-015"
+        quote: "PayPal joins Ledger Live's Buy section as a new payment method and Buy provider."
+        location: "PayPal announcement"
+      -
+        source_id: "SRC-016"
+        quote: "Coinbase Pay's functionalities are now integrated into the Ledger Wallet app."
+        location: "Coinbase Pay announcement"
+    analyst_interpretation: "Partnerships support distribution, but economics and compliance allocation require contracts."
+    limitations: "Partner announcements do not disclose revenue contribution."
+    associations:
+      chapter_id: "III"
+      section_id: "III.B"
+      founder_claim_ids: []
+      table_ids: [T-006, T-007, T-011, T-012, T-020]
+      figure_ids: [F-003, F-004, F-006]
+      risk_ids: [R-006]
+  - evidence_claim_id: "EC-010"
+    claim: "Ledger Enterprise publicly targets institutions with custody, staking, tokenized-asset and HSM-backed policy capabilities."
+    evidence_summary: "Enterprise page states 100+ institutions have launched services on Ledger Enterprise and markets custody, staking, tokenized capital markets and hardware-enforced policy engine."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-014]
+    quoted_evidence:
+      -
+        source_id: "SRC-014"
+        quote: "100+ institutions have launched client-facing digital asset services on Ledger Enterprise."
+        location: "Ledger Enterprise page"
+      -
+        source_id: "SRC-014"
+        quote: "Manage cryptographic operations and keys within dedicated hardware security... FIPS 140-2 Level 3 and EAL6+ certified."
+        location: "Ledger Enterprise page"
+    analyst_interpretation: "Institutional product direction is public, but customer contracts and compliance perimeter require private diligence."
+    limitations: "Claims are company-stated and not independently audited in public sources reviewed."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: [FC-003]
+      table_ids: [T-004, T-006, T-007, T-011, T-012, T-014]
+      figure_ids: [F-003, F-004, F-005, F-007]
+      risk_ids: [R-005, R-006, R-008]
+  - evidence_claim_id: "EC-011"
+    claim: "Ledger faces direct hardware-wallet competition from Trezor, Tangem and Keystone with overlapping security and UX positioning."
+    evidence_summary: "Competitor pages market secure hardware wallets, open-source or secure-element claims, NFC/card approaches, touchscreen UX and broad asset support."
+    evidence_type: "primary_company_source"
+    verification_status: "verified"
+    confidence: "medium"
+    source_ids: [SRC-019, SRC-020, SRC-021]
+    quoted_evidence:
+      -
+        source_id: "SRC-019"
+        quote: "Trezor Safe 5... vibrant color touchscreen... Protected by Secure Element... Security starts with open-source."
+        location: "Trezor Safe 5 page"
+      -
+        source_id: "SRC-020"
+        quote: "Tangem supports... over 14,100+ assets... Certified EAL6+."
+        location: "Tangem homepage"
+    analyst_interpretation: "Competition is credible and should be tested with win/loss, pricing and switching data."
+    limitations: "Competitor pages are marketing sources, not market-share data."
+    associations:
+      chapter_id: "IV"
+      section_id: "IV.A"
+      founder_claim_ids: []
+      table_ids: [T-009, T-010]
+      figure_ids: [F-005, F-011]
+      risk_ids: [R-007]
+  - evidence_claim_id: "EC-012"
+    claim: "Ledger grew from a small founding team to a public claim of 600+ employees across nine offices."
+    evidence_summary: "Ledger people page states the company launched in 2014 by eight experts and has 600+ employees and nine offices; earlier funding/CTO sources show 15, 82 and 200+ headcount anchors."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-003, SRC-004, SRC-005, SRC-007, SRC-017]
+    quoted_evidence:
+      -
+        source_id: "SRC-003"
+        quote: "Ledger was launched in 2014 by eight experts... 600+ employees globally... 9 offices."
+        location: "The people behind Ledger"
+      -
+        source_id: "SRC-007"
+        quote: "Now employ 82 people in San Francisco, Paris and Vierzon."
+        location: "Ledger Series B announcement"
+    analyst_interpretation: "Public headcount growth is material; function/location/attrition detail requires HRIS."
+    limitations: "Public pages may be stale and do not disclose attrition."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.B"
+      founder_claim_ids: [FC-002]
+      table_ids: [T-013, T-016, T-017]
+      figure_ids: [F-008, F-009, F-011]
+      risk_ids: [R-010]
+  - evidence_claim_id: "EC-013"
+    claim: "Public sources identify key Ledger leaders, including Pascal Gauthier, Charles Guillemet and Ian Rogers, but not a complete current org chart."
+    evidence_summary: "CEO message identifies Pascal as Chairman & CEO; CTO page identifies Charles Guillemet as CTO; Coinbase Pay announcement quotes Ian Rogers as Chief Experience Officer; older sources identify historical founders/leaders."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-006, SRC-007, SRC-012, SRC-016, SRC-017]
+    quoted_evidence:
+      -
+        source_id: "SRC-012"
+        quote: "Ledger Recover: A Message From Pascal Gauthier, Chairman & CEO at Ledger."
+        location: "CEO message title"
+      -
+        source_id: "SRC-017"
+        quote: "Ledger... announced that Charles Guillemet has been appointed Chief Technology Officer."
+        location: "CTO appointment"
+    analyst_interpretation: "Executive identity is public, but full governance, compensation and succession need diligence."
+    limitations: "Older sources may not reflect current roles."
+    associations:
+      chapter_id: "VII"
+      section_id: "VII.C"
+      founder_claim_ids: []
+      table_ids: [T-015, T-017]
+      figure_ids: [F-008]
+      risk_ids: [R-010]
+  - evidence_claim_id: "EC-014"
+    claim: "Public legal/IP evidence includes active registry status, legal-center compliance documents, Ledger trademarks and CB Insights patent count."
+    evidence_summary: "Pappers lists Ledger SAS as active; Ledger legal center links terms/privacy/compliance documents; Ledger footer lists trademarks; CB Insights states Ledger has filed 15 patents."
+    evidence_type: "legal_record"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-001, SRC-002, SRC-003, SRC-018]
+    quoted_evidence:
+      -
+        source_id: "SRC-018"
+        quote: "Legal Center... Terms of Use, Privacy Policy... Sales Terms and Conditions... Product Compliance Declarations."
+        location: "Ledger Legal Center"
+      -
+        source_id: "SRC-001"
+        quote: "Ledger has filed 15 patents."
+        location: "CB Insights company page"
+    analyst_interpretation: "Public legal/IP signals exist, but complete IP and compliance files require counsel records."
+    limitations: "CB Insights patent count was not independently cross-checked against patent registers."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.D"
+      founder_claim_ids: [FC-002]
+      table_ids: [T-019, T-020]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-008, R-009]
+  - evidence_claim_id: "EC-015"
+    claim: "Customer concentration, churn and revenue by customer are not publicly verifiable from reviewed sources."
+    evidence_summary: "Public sources give aggregate devices, users, countries and institution counts but not top customers or revenue concentration."
+    evidence_type: "analyst_estimate"
+    verification_status: "not_publicly_verifiable"
+    confidence: "high"
+    source_ids: [SRC-004, SRC-008, SRC-009, SRC-014, SRC-015]
+    quoted_evidence:
+      -
+        source_id: "SRC-014"
+        quote: "100+ institutions have launched client-facing digital asset services on Ledger Enterprise."
+        location: "Enterprise page"
+      -
+        source_id: "SRC-004"
+        quote: "More than 6 million devices sold to consumers in 180 countries."
+        location: "Careers page"
+    analyst_interpretation: "Aggregate adoption is not a substitute for revenue concentration and retention diligence."
+    limitations: "No private customer schedule reviewed."
+    associations:
+      chapter_id: "III"
+      section_id: "III.A"
+      founder_claim_ids: [FC-005]
+      table_ids: [T-006]
+      figure_ids: [F-004, F-011]
+      risk_ids: [R-005]
+  - evidence_claim_id: "EC-016"
+    claim: "Ledger's GTM includes direct, app, partnership, reseller/affiliate and enterprise channels, but channel economics are not public."
+    evidence_summary: "Ledger website/footer and partnership pages show public channels and app integrations. No CAC, ROAS, channel margin or sales productivity metrics were public."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-010, SRC-014, SRC-015, SRC-016, SRC-018]
+    quoted_evidence:
+      -
+        source_id: "SRC-010"
+        quote: "Ledger has integrated leading third-party providers to make it possible to buy, swap, stake, and manage crypto through the Ledger Wallet app."
+        location: "Ledger homepage"
+      -
+        source_id: "SRC-018"
+        quote: "Resellers... Affiliates... Partners... Developers."
+        location: "Ledger legal/footer links"
+    analyst_interpretation: "Channel breadth is visible, but economics and concentration need private data."
+    limitations: "Public pages do not reveal revenue share or CAC."
+    associations:
+      chapter_id: "V"
+      section_id: "V.A"
+      founder_claim_ids: []
+      table_ids: [T-007, T-008, T-011, T-012, T-020]
+      figure_ids: [F-003, F-006, F-011]
+      risk_ids: [R-006, R-007]
+  - evidence_claim_id: "EC-017"
+    claim: "Public R&D pipeline includes open-source commitments for Recover/OS and continued app/enterprise expansion."
+    evidence_summary: "CEO message says Ledger Live, 150 Nano apps and part of OS are open source, and that Ledger would accelerate open-sourcing and include Recover protocol. Homepage and Enterprise page show ongoing product initiatives."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-010, SRC-012, SRC-014]
+    quoted_evidence:
+      -
+        source_id: "SRC-012"
+        quote: "Today, all 150 Ledger Nano applications, Ledger Live, and a portion of the operating system... are open source."
+        location: "CEO message"
+      -
+        source_id: "SRC-012"
+        quote: "We will open source the Ledger Recover protocol."
+        location: "CEO message"
+    analyst_interpretation: "Transparency commitments reduce but do not eliminate technical, timing and license-compliance risk."
+    limitations: "Current completion status and audit results were not verified."
+    associations:
+      chapter_id: "VI"
+      section_id: "VI.B"
+      founder_claim_ids: [FC-007]
+      table_ids: [T-013, T-014, T-019]
+      figure_ids: [F-007, F-010]
+      risk_ids: [R-004, R-008]
+  - evidence_claim_id: "EC-018"
+    claim: "Ledger has regulatory and legal exposure from privacy, consumer protection, third-party crypto services and identity-based recovery."
+    evidence_summary: "Ledger notified CNIL after the data breach; homepage says transaction services are provided by third-party providers; Recover relies on identity verification and third-party storage."
+    evidence_type: "legal_record"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-010, SRC-011, SRC-013, SRC-018]
+    quoted_evidence:
+      -
+        source_id: "SRC-013"
+        quote: "On the 17th of July, we notified the CNIL, the French Data Protection Authority."
+        location: "Ledger breach announcement"
+      -
+        source_id: "SRC-010"
+        quote: "Crypto transaction services are provided by third-party providers."
+        location: "Ledger homepage"
+    analyst_interpretation: "Regulatory review should cover privacy, data transfers, KYC/AML allocation, sanctions, consumer-protection and provider liability."
+    limitations: "Regulator correspondence and legal memos were not public."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.G"
+      founder_claim_ids: [FC-007]
+      table_ids: [T-018, T-020]
+      figure_ids: [F-010, F-011]
+      risk_ids: [R-004, R-006, R-008]
+  - evidence_claim_id: "EC-019"
+    claim: "Core diligence records are not publicly available and must be requested from the company or counsel."
+    evidence_summary: "Public-source review did not disclose audited financials, cap table, customer schedules, contracts, litigation schedule, insurance, HRIS, incentive plans, security audits or full regulatory correspondence."
+    evidence_type: "analyst_estimate"
+    verification_status: "not_publicly_verifiable"
+    confidence: "high"
+    source_ids: [SRC-001, SRC-018]
+    quoted_evidence:
+      -
+        source_id: "SRC-001"
+        quote: "CB Insights provides company profile/funding summary, not audited company data-room materials."
+        location: "Analyst characterization of source scope"
+      -
+        source_id: "SRC-018"
+        quote: "Legal Center lists public documents but not insurance, litigation schedules or material contracts."
+        location: "Analyst characterization of Legal Center"
+    analyst_interpretation: "A transaction process should not proceed beyond preliminary diligence without these private records."
+    limitations: "This is an evidence-gap claim based on public-source limits."
+    associations:
+      chapter_id: "VIII"
+      section_id: "VIII.F"
+      founder_claim_ids: []
+      table_ids: [T-002, T-003, T-006, T-018, T-020]
+      figure_ids: [F-002, F-004, F-006, F-009, F-010, F-011]
+      risk_ids: [R-001, R-005, R-008, R-010, R-011]
+  - evidence_claim_id: "EC-020"
+    claim: "Public pricing anchors exist for selected Ledger consumer products, but current ASP and margin are not public."
+    evidence_summary: "TechCrunch 2023 reported Nano S Plus and Stax prices; Ledger Recover page showed current bundles for Flex/Stax plus Recover."
+    evidence_type: "primary_company_source"
+    verification_status: "partially_verified"
+    confidence: "medium"
+    source_ids: [SRC-009, SRC-011]
+    quoted_evidence:
+      -
+        source_id: "SRC-009"
+        quote: "Ledger Nano S Plus... It costs $79... Ledger Stax... costs $279."
+        location: "TechCrunch 2023"
+      -
+        source_id: "SRC-011"
+        quote: "Ledger Flex + 1 year of Ledger Recover... $348.99; Ledger Stax + 1 year of Ledger Recover... $498.99."
+        location: "Ledger Recover page"
+    analyst_interpretation: "Pricing is visible enough for market context but insufficient for margin and discount analysis."
+    limitations: "Prices are point-in-time and may vary by promotion, tax, region or currency."
+    associations:
+      chapter_id: "II"
+      section_id: "II.A"
+      founder_claim_ids: []
+      table_ids: [T-005, T-010]
+      figure_ids: []
+      risk_ids: [R-007]
+sources:
+  - source_id: "SRC-001"
+    title: "Ledger - Products, Competitors, Financials, Employees, Headquarters Locations"
+    url: "https://www.cbinsights.com/company/ledger"
+    publisher: "CB Insights"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "market_database"
+    reliability_notes: "Market database profile; useful for funding/private-unicorn signal but can be stale and should be reconciled to company records."
+    archive_url: null
+  - source_id: "SRC-002"
+    title: "Societe LEDGER (529991119)"
+    url: "https://www.pappers.fr/entreprise/ledger-529991119"
+    publisher: "Pappers"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "regulatory_filing"
+    reliability_notes: "Public French company-registry aggregator; active status and registered address are public registry-derived signals."
+    archive_url: null
+  - source_id: "SRC-003"
+    title: "The People Behind Ledger"
+    url: "https://www.ledger.com/the-people-behind-ledger"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company page; strong for self-description, headcount/office claims require HRIS confirmation."
+    archive_url: null
+  - source_id: "SRC-004"
+    title: "Ledger Careers | Home"
+    url: "https://www.ledger.com/career"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company recruiting page; useful for public claims but marketing-oriented."
+    archive_url: null
+  - source_id: "SRC-005"
+    title: "Ledger raises a 1.3M EUR seed round to accelerate the development of its Bitcoin security solutions"
+    url: "https://www.ledger.com/ledger-raises-a-1-3me-seed-round-to-accelerate-the-development-of-its-bitcoin-security-solutions"
+    publisher: "Ledger"
+    author: null
+    publication_date: "2015-02-19"
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company funding announcement; useful for round details but not independently audited."
+    archive_url: null
+  - source_id: "SRC-006"
+    title: "Ledger raises $7M to accelerate worldwide adoption of security solutions for bitcoin and blockchain"
+    url: "https://www.ledger.com/ledger-raises-7m-to-accelerate-worldwide-adoption-of-security-solutions-for-bitcoin-and-blockchain"
+    publisher: "Ledger"
+    author: null
+    publication_date: "2017-03-30"
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company funding announcement; round details should be reconciled to financing documents."
+    archive_url: null
+  - source_id: "SRC-007"
+    title: "Ledger raises USD 75 million to secure cryptocurrency assets"
+    url: "https://www.ledger.com/ledger-raises-usd-75-million-secure-cryptocurrency-assets"
+    publisher: "Ledger"
+    author: null
+    publication_date: "2018-01-18"
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company funding announcement with investor and traction statements."
+    archive_url: null
+  - source_id: "SRC-008"
+    title: "Ledger raises $380 million for its crypto hardware wallet"
+    url: "https://techcrunch.com/2021/06/10/ledger-raises-380-million-for-its-crypto-hardware-wallet/"
+    publisher: "TechCrunch"
+    author: "Romain Dillet"
+    publication_date: "2021-06-10"
+    accessed_date: "2026-06-06"
+    source_type: "independent_news"
+    reliability_notes: "Reputable technology news source; relies partly on company/investor-provided details."
+    archive_url: null
+  - source_id: "SRC-009"
+    title: "Crypto wallet company Ledger raises another $108 million"
+    url: "https://techcrunch.com/2023/03/30/crypto-wallet-company-ledger-raises-another-108-million/"
+    publisher: "TechCrunch"
+    author: "Romain Dillet"
+    publication_date: "2023-03-30"
+    accessed_date: "2026-06-06"
+    source_type: "independent_news"
+    reliability_notes: "Reputable technology news source; valuation and product details should be checked against financing documents."
+    archive_url: null
+  - source_id: "SRC-010"
+    title: "Ledger Crypto Wallet - Security for DeFi & Web3"
+    url: "https://www.ledger.com/"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company homepage; useful for product and positioning claims."
+    archive_url: null
+  - source_id: "SRC-011"
+    title: "Wallet recovery made easy with Ledger Recover"
+    url: "https://www.ledger.com/ledger-recover"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Product marketing page; technical workflow and provider claims need audit/contract review."
+    archive_url: null
+  - source_id: "SRC-012"
+    title: "Ledger Recover: A Message From Pascal Gauthier, Chairman & CEO at Ledger"
+    url: "https://www.ledger.com/blog/ledger-recover-a-message-from-pascal-gauthier-chairman-ceo-at-ledger"
+    publisher: "Ledger"
+    author: "Pascal Gauthier"
+    publication_date: "2023-05-23"
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company leadership statement; important for trust/communication risk but not independent."
+    archive_url: null
+  - source_id: "SRC-013"
+    title: "Addressing the July 2020 e-commerce and marketing data breach - A Message From Ledger's Leadership"
+    url: "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach"
+    publisher: "Ledger"
+    author: "Ledger Leadership"
+    publication_date: "2020-07-29"
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company breach disclosure; regulator/litigation outcomes require external confirmation."
+    archive_url: null
+  - source_id: "SRC-014"
+    title: "Digital Asset Platform for Institutions"
+    url: "https://enterprise.ledger.com/"
+    publisher: "Ledger Enterprise"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company enterprise product page; customer and certification claims need direct verification."
+    archive_url: null
+  - source_id: "SRC-015"
+    title: "Ledger And PayPal Team Up To Simplify Entry Into The World Of Cryptocurrency"
+    url: "https://www.ledger.com/ledger-and-paypal-team-up-to-simplify-entry-into-the-world-of-cryptocurrency"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "customer_or_partner_source"
+    reliability_notes: "Company partnership announcement; contract economics not disclosed."
+    archive_url: null
+  - source_id: "SRC-016"
+    title: "Ledger Live and Coinbase Pay Collaborate To Streamline Crypto Purchases"
+    url: "https://www.ledger.com/blog-ledger-live-and-coinbase-pay-collaborate-to-streamline-crypto-purchases"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "customer_or_partner_source"
+    reliability_notes: "Company partnership announcement with partner quotes; economics not disclosed."
+    archive_url: null
+  - source_id: "SRC-017"
+    title: "Ledger Appoints Charles Guillemet as Chief Technology Officer"
+    url: "https://www.ledger.com/ledger-appoints-charles-guillemet-as-chief-technology-officer"
+    publisher: "Ledger"
+    author: null
+    publication_date: "2019-12-05"
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company announcement; useful for public background but may be stale for current role scope."
+    archive_url: null
+  - source_id: "SRC-018"
+    title: "Legal Center"
+    url: "https://www.ledger.com/legal-center"
+    publisher: "Ledger"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Company legal document index; does not include private litigation, insurance or contract schedules."
+    archive_url: null
+  - source_id: "SRC-019"
+    title: "Trezor Safe 5 | Secure Crypto Hardware Wallet"
+    url: "https://trezor.io/trezor-safe-5"
+    publisher: "Trezor"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor product page; marketing claims should be treated as public positioning, not verified performance."
+    archive_url: null
+  - source_id: "SRC-020"
+    title: "Tangem Wallet - The Secure Hardware & Crypto Wallet"
+    url: "https://tangem.com/en/"
+    publisher: "Tangem"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor product page; useful for competitive positioning."
+    archive_url: null
+  - source_id: "SRC-021"
+    title: "Secure Open Source Crypto Solution"
+    url: "https://keyst.one/"
+    publisher: "Keystone"
+    author: null
+    publication_date: null
+    accessed_date: "2026-06-06"
+    source_type: "primary_company_source"
+    reliability_notes: "Competitor product page; useful for public positioning and switching-risk signals."
+    archive_url: null
+risk_register:
+  - risk_id: "R-001"
+    risk_title: "Financial opacity and runway unknown"
+    risk_category: "financial"
+    severity: "high"
+    likelihood: "high"
+    description: "Ledger does not publish audited financials, product revenue, gross margin, cash, burn, runway, debt or unit economics."
+    impacted_chapter_ids: [I, V]
+    impacted_section_ids: [I.A, I.B, V.D, V.E]
+    evidence_claim_ids: [EC-019]
+    mitigation_or_diligence_request: "Require audited financials, management accounts, cash/debt schedule, product/channel P&L, burn and runway before valuation reliance."
+  - risk_id: "R-002"
+    risk_title: "Crypto-cycle demand volatility"
+    risk_category: "market"
+    severity: "high"
+    likelihood: "medium"
+    description: "Hardware-wallet and app-service demand may fluctuate with crypto prices, exchange failures, consumer sentiment and NFT/DeFi activity."
+    impacted_chapter_ids: [I, IV, V]
+    impacted_section_ids: [I.B, IV.A, V.A]
+    evidence_claim_ids: [EC-003]
+    mitigation_or_diligence_request: "Review monthly bookings by crypto market regime, cohort retention, downside scenario and inventory exposure."
+  - risk_id: "R-003"
+    risk_title: "Security and privacy trust fragility"
+    risk_category: "technical"
+    severity: "critical"
+    likelihood: "medium"
+    description: "Ledger's value proposition depends on trust; the 2020 data breach and phishing fallout show that non-wallet data systems can still harm customers and brand."
+    impacted_chapter_ids: [II, III, VIII]
+    impacted_section_ids: [II.A, III.E, VIII.A, VIII.G]
+    evidence_claim_ids: [EC-006, EC-008]
+    mitigation_or_diligence_request: "Conduct independent security/privacy diligence, incident review, phishing-impact analysis, SOC/ISO audit review and breach remediation verification."
+  - risk_id: "R-004"
+    risk_title: "Ledger Recover trust and regulatory exposure"
+    risk_category: "product"
+    severity: "high"
+    likelihood: "medium"
+    description: "Identity-based backup may improve accessibility but introduces provider, identity, consent, law-enforcement, privacy and perception risks."
+    impacted_chapter_ids: [II, VI, VIII]
+    impacted_section_ids: [II.A, VI.B, VIII.G]
+    evidence_claim_ids: [EC-007, EC-017, EC-018]
+    mitigation_or_diligence_request: "Review Recover audits, source-code release, provider contracts, DPIA, legal memos, user consent and incident simulations."
+  - risk_id: "R-005"
+    risk_title: "Customer concentration and churn unknown"
+    risk_category: "customer"
+    severity: "high"
+    likelihood: "unknown"
+    description: "Public sources provide aggregate adoption but not top customers, churn, NRR, active-device cohorts or revenue concentration."
+    impacted_chapter_ids: [III, V]
+    impacted_section_ids: [III.A, III.C, V.B]
+    evidence_claim_ids: [EC-015, EC-019]
+    mitigation_or_diligence_request: "Request customer schedules, cohort retention, active devices, NRR/churn, enterprise references and channel concentration."
+  - risk_id: "R-006"
+    risk_title: "Partner and supplier dependency"
+    risk_category: "operational"
+    severity: "high"
+    likelihood: "medium"
+    description: "Ledger depends on third-party transaction providers, Recover/HSM providers, hardware suppliers, retail/affiliate channels and enterprise integrations."
+    impacted_chapter_ids: [III, V, VIII]
+    impacted_section_ids: [III.B, III.E, V.A, VIII.F]
+    evidence_claim_ids: [EC-007, EC-009, EC-016, EC-018]
+    mitigation_or_diligence_request: "Review material contracts, SLAs, termination rights, DPAs, supplier redundancy, provider compliance and business-continuity plans."
+  - risk_id: "R-007"
+    risk_title: "Competitive price, UX and trust pressure"
+    risk_category: "market"
+    severity: "medium"
+    likelihood: "high"
+    description: "Competitors such as Trezor, Tangem and Keystone market overlapping security, simplicity and open-source attributes, while software wallets/exchanges compete on convenience."
+    impacted_chapter_ids: [IV, V]
+    impacted_section_ids: [IV.A, V.A]
+    evidence_claim_ids: [EC-011, EC-020]
+    mitigation_or_diligence_request: "Request win/loss data, market share, pricing elasticity, NPS, CAC by competitor and switching analysis."
+  - risk_id: "R-008"
+    risk_title: "Regulatory, privacy and consumer-protection exposure"
+    risk_category: "regulatory"
+    severity: "high"
+    likelihood: "medium"
+    description: "Privacy obligations, third-party crypto-service integrations, Recover identity verification, hardware compliance and global consumer claims create multi-jurisdiction exposure."
+    impacted_chapter_ids: [VIII]
+    impacted_section_ids: [VIII.A, VIII.C, VIII.D, VIII.F, VIII.G]
+    evidence_claim_ids: [EC-008, EC-014, EC-018]
+    mitigation_or_diligence_request: "Obtain legal/regulatory memos, CNIL correspondence, DPIAs, AML/sanctions allocation, product compliance files and complaints schedule."
+  - risk_id: "R-009"
+    risk_title: "Hardware supply chain and product quality"
+    risk_category: "operational"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Ledger's hardware security model depends on compliant components, manufacturing quality, firmware signing, logistics and warranty support."
+    impacted_chapter_ids: [II, III, VIII]
+    impacted_section_ids: [II.A, III.E, VIII.C]
+    evidence_claim_ids: [EC-006, EC-014]
+    mitigation_or_diligence_request: "Review supplier contracts, component sourcing, product certifications, QA, return rates, warranty reserves and recall history."
+  - risk_id: "R-010"
+    risk_title: "Talent retention and security key-person risk"
+    risk_category: "team"
+    severity: "medium"
+    likelihood: "unknown"
+    description: "Public evidence shows rapid headcount growth and key security leaders, but turnover, compensation and succession are not public."
+    impacted_chapter_ids: [VI, VII]
+    impacted_section_ids: [VI.A, VII.A, VII.B, VII.C, VII.G]
+    evidence_claim_ids: [EC-012, EC-013, EC-019]
+    mitigation_or_diligence_request: "Request HRIS, turnover by function/location, compensation, option plan, key-person retention and succession planning."
+  - risk_id: "R-011"
+    risk_title: "Cap-table, valuation and secondary overhang"
+    risk_category: "financing"
+    severity: "medium"
+    likelihood: "medium"
+    description: "Public valuation anchors and funding totals differ, and current preferences, secondaries and investor rights are not public."
+    impacted_chapter_ids: [I, VII]
+    impacted_section_ids: [I.C, I.D, VII.E]
+    evidence_claim_ids: [EC-001, EC-002, EC-004, EC-019]
+    mitigation_or_diligence_request: "Reconcile financing history to cap table, preference stack, secondary trades, 409A/fair value and investor consents."
+diligence_gaps:
+  - gap_id: "G-001"
+    chapter_id: "I"
+    section_id: "I.A"
+    missing_information: "Audited financial statements, product/channel/geography P&L, cash, burn, runway, debt, backlog and AR aging."
+    why_it_matters: "Public traction signals do not prove profitability, liquidity or revenue quality."
+    suggested_source_or_request: "CFO data room and auditor workpapers."
+    priority: "high"
+  - gap_id: "G-002"
+    chapter_id: "I"
+    section_id: "I.C"
+    missing_information: "Fully diluted cap table, investor rights, preferences, options, warrants, debt and secondary transactions."
+    why_it_matters: "Determines economic ownership and current valuation credibility."
+    suggested_source_or_request: "Corporate secretary, counsel and financing documents."
+    priority: "high"
+  - gap_id: "G-003"
+    chapter_id: "III"
+    section_id: "III.A"
+    missing_information: "Top customers, active-device cohorts, churn, NRR and revenue concentration."
+    why_it_matters: "Aggregate devices/users may hide concentration, low retention or non-paying users."
+    suggested_source_or_request: "CRM, billing, analytics and enterprise customer references."
+    priority: "high"
+  - gap_id: "G-004"
+    chapter_id: "III"
+    section_id: "III.E"
+    missing_information: "Supplier list, secure-element sourcing, manufacturing agreements, HSM providers, data processors and app provider contracts."
+    why_it_matters: "Security and hardware delivery depend on critical third parties."
+    suggested_source_or_request: "Procurement, security, legal and vendor-management data rooms."
+    priority: "high"
+  - gap_id: "G-005"
+    chapter_id: "II"
+    section_id: "II.A"
+    missing_information: "SKU-level P&L, warranty/return rates, support tickets, product incidents and certifications."
+    why_it_matters: "Hardware/software reliability and gross margin drive value and trust."
+    suggested_source_or_request: "Product, support, QA and finance exports."
+    priority: "high"
+  - gap_id: "G-006"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    missing_information: "Security audits, vulnerability register, SDLC, firmware signing controls and Recover cryptographic audit results."
+    why_it_matters: "Ledger's brand and product safety depend on verifiable security controls."
+    suggested_source_or_request: "CTO/CISO/Donjon security data room."
+    priority: "high"
+  - gap_id: "G-007"
+    chapter_id: "VIII"
+    section_id: "VIII.G"
+    missing_information: "CNIL follow-up, regulatory correspondence, DPIAs, AML/sanctions allocation and consumer complaints."
+    why_it_matters: "Privacy and crypto-service regulatory exposure can create fines, restrictions or contract obligations."
+    suggested_source_or_request: "Counsel, DPO, compliance and privacy office."
+    priority: "high"
+  - gap_id: "G-008"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    missing_information: "Litigation, threatened claims, reserves, settlements and insurance notices."
+    why_it_matters: "Public-source search cannot establish absence of claims, especially after data/privacy events."
+    suggested_source_or_request: "Counsel litigation schedule and insurer correspondence."
+    priority: "high"
+  - gap_id: "G-009"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    missing_information: "HRIS headcount by function/location, compensation, turnover and incentive plans."
+    why_it_matters: "Security-critical talent retention and global employment compliance affect execution."
+    suggested_source_or_request: "HRIS, compensation files and option-plan documents."
+    priority: "medium"
+  - gap_id: "G-010"
+    chapter_id: "V"
+    section_id: "V.A"
+    missing_information: "CAC, ROAS, funnel conversion, channel margin, reseller economics and enterprise sales productivity."
+    why_it_matters: "Public distribution breadth does not establish repeatable profitable growth."
+    suggested_source_or_request: "Marketing analytics, CRM and channel P&L."
+    priority: "high"
+follow_up_requests:
+  - request_id: "Q-001"
+    chapter_id: "I"
+    section_id: "I.A"
+    request: "Provide audited financials, management accounts, product/channel/geography P&L, cash, burn, runway, debt, backlog and AR aging for FY2023-FY2026 YTD."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-002"
+    chapter_id: "I"
+    section_id: "I.C"
+    request: "Provide fully diluted cap table, investor rights, preference stack, option/warrant/note schedule, secondary transactions and current valuation support."
+    requested_from: "counsel"
+    priority: "high"
+  - request_id: "Q-003"
+    chapter_id: "III"
+    section_id: "III.A"
+    request: "Provide top customer/channel schedules, active-device cohorts, app MAU/WAU, churn, NRR, revenue concentration and customer references."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-004"
+    chapter_id: "II"
+    section_id: "II.A"
+    request: "Provide SKU-level P&L, warranty/return rates, support tickets, incident history, certifications and roadmap with release gates."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-005"
+    chapter_id: "VI"
+    section_id: "VI.A"
+    request: "Provide SDLC documentation, firmware signing controls, security audit reports, SOC/ISO evidence, vulnerability register and Donjon remediation metrics."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-006"
+    chapter_id: "II"
+    section_id: "II.A"
+    request: "Provide Ledger Recover cryptographic audits, source-code release status, provider agreements, DPIA, identity-verification flow and incident-response plan."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-007"
+    chapter_id: "III"
+    section_id: "III.E"
+    request: "Provide supplier and data-processor list by spend/criticality, manufacturing and secure-element agreements, HSM/provider contracts and business-continuity plans."
+    requested_from: "supplier"
+    priority: "high"
+  - request_id: "Q-008"
+    chapter_id: "V"
+    section_id: "V.A"
+    request: "Provide channel P&L, CAC, ROAS, funnel conversion, partner economics, reseller/affiliate terms, enterprise pipeline and sales productivity metrics."
+    requested_from: "company"
+    priority: "high"
+  - request_id: "Q-009"
+    chapter_id: "VIII"
+    section_id: "VIII.A"
+    request: "Provide litigation/threatened-claims schedule, CNIL and regulator correspondence, consumer complaints, reserves and insurance notices."
+    requested_from: "counsel"
+    priority: "high"
+  - request_id: "Q-010"
+    chapter_id: "VIII"
+    section_id: "VIII.E"
+    request: "Provide cyber, product liability, D&O, E&O, crime, cargo and business interruption insurance policies, exclusions and claims history."
+    requested_from: "counsel"
+    priority: "high"
+  - request_id: "Q-011"
+    chapter_id: "VII"
+    section_id: "VII.B"
+    request: "Provide HRIS headcount by function/location, open roles, turnover, compensation bands, executive agreements and incentive equity plan."
+    requested_from: "company"
+    priority: "medium"
+  - request_id: "Q-012"
+    chapter_id: "VIII"
+    section_id: "VIII.D"
+    request: "Provide patent/trademark schedule, SBOM, open-source license review and employee/contractor IP assignment agreements."
+    requested_from: "counsel"
+    priority: "medium"
+limitations:
+  - limitation_id: "L-001"
+    description: "This report uses public sources only and did not access management interviews, customer calls, private data rooms, paywalled legal databases or auth-only systems."
+    affected_chapter_ids: [I, II, III, IV, V, VI, VII, VIII]
+    affected_section_ids: [I.A, I.B, I.C, I.D, II.A, III.A, III.B, III.C, III.D, III.E, IV.A, V.A, V.B, V.C, V.D, V.E, VI.A, VI.B, VII.A, VII.B, VII.C, VII.D, VII.E, VII.F, VII.G, VIII.A, VIII.B, VIII.C, VIII.D, VIII.E, VIII.F, VIII.G]
+  - limitation_id: "L-002"
+    description: "Company pages and partner announcements are marketing/primary sources and may be stale or incomplete; independent verification is required."
+    affected_chapter_ids: [II, III, V, VI, VII, VIII]
+    affected_section_ids: [II.A, III.A, III.B, III.E, V.A, VI.A, VI.B, VII.B, VIII.D, VIII.F]
+  - limitation_id: "L-003"
+    description: "Public database valuations and total funding figures conflict by source and do not establish current fair value."
+    affected_chapter_ids: [I]
+    affected_section_ids: [I.C, I.D]
+  - limitation_id: "L-004"
+    description: "Public-source review did not prove absence of lawsuits, regulatory actions, material contracts, insurance claims or confidential IPO/M&A processes."
+    affected_chapter_ids: [I, VIII]
+    affected_section_ids: [I.C, VIII.A, VIII.B, VIII.E, VIII.F, VIII.G]
+  - limitation_id: "L-005"
+    description: "Competitor analysis uses public product pages and qualitative analyst scoring, not measured market share, customer win/loss or audited performance."
+    affected_chapter_ids: [IV]
+    affected_section_ids: [IV.A]
