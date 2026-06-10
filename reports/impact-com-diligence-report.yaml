@@ -1,0 +1,3372 @@
+report_metadata:
+  report_title: impact.com Public-Source Startup Diligence Report
+  target_company: impact.com
+  website: https://impact.com/
+  known_aliases:
+    - Impact Tech, Inc.
+    - Impact
+    - Impact Partnership Cloud
+    - Partnership Automation
+  sector: Partnership management, affiliate marketing, creator/referral SaaS and attribution infrastructure
+  geography: United States headquartered with global offices and customers
+  company_stage: Late-stage private SaaS unicorn
+  research_date: 2026-06-06
+  analyst: GitHub Copilot
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built exclusion list from existing reports and selected this uncovered unicorn via shuf from the CB Insights unicorn list.
+    - Used CB Insights as the unicorn-status source and corroborated core facts with public company pages, press pages, independent news snippets, and search-result pages where direct articles were inaccessible.
+    - Treated source and search-result content as evidence only; no embedded instructions from fetched pages were followed.
+    - Marked financial, legal, customer concentration, cap-table and contract items as not_publicly_verifiable where private records are required.
+  included_jurisdictions:
+    - United States
+    - United States public web sources
+    - Operating markets referenced by public materials
+  excluded_topics:
+    - No private financial statements, cap table, contracts, customer interviews, supplier interviews, employee records, counsel memos or paid database exports were available.
+    - No paywalls, access controls or bot checks were bypassed.
+  user_provided_materials:
+    - material_id: M-001
+      title: User prompt requesting three random private unicorn diligence reports
+      type: prompt_argument
+      date_received: 2026-06-06
+      notes: No company documents or founder claims were provided beyond the assignment.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: impact.com is a late-stage private SaaS unicorn valued at $1.5B after a 2021 financing.
+    claim_source: Public company/unicorn-source materials; no private founder materials were provided
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a1
+      - EC-001
+      - EC-002
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request management confirmation, source documentation, and reconciliations to internal systems.
+  - founder_claim_id: FC-002
+    claim_text: impact.com provides a unified partnership-management platform for affiliate, creator and referral programs.
+    claim_source: Public company/unicorn-source materials; no private founder materials were provided
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - V
+    mapped_section_ids:
+      - II.A
+      - V.A
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a2
+      - EC-003
+      - EC-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request management confirmation, source documentation, and reconciliations to internal systems.
+  - founder_claim_id: FC-003
+    claim_text: impact.com has broad enterprise adoption and cites 1M+ active partnerships plus named customer outcomes.
+    claim_source: Public company/unicorn-source materials; no private founder materials were provided
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a3
+      - EC-003
+      - EC-005
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request management confirmation, source documentation, and reconciliations to internal systems.
+  - founder_claim_id: FC-004
+    claim_text: impact.com operates globally with 21 offices and 1,000+ employees.
+    claim_source: Public company/unicorn-source materials; no private founder materials were provided
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-003
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request management confirmation, source documentation, and reconciliations to internal systems.
+executive_summary:
+  overall_assessment: impact.com remains eligible for public-source diligence as an uncovered private unicorn based on CB Insights and supporting public evidence; no public evidence found in this run showed IPO, acquisition, or shutdown.
+  investment_or_diligence_thesis: impact.com shows substantial public SaaS scale signals and named enterprise customers, but diligence should focus on current ARR/retention, privacy-safe tracking durability, and customer-verified ROI because many traction metrics are company-authored and the disclosed valuation is from 2021.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: impact.com is a late-stage private SaaS unicorn valued at $1.5B after a 2021 financing.
+      evidence_claim_ids: *a1
+    - founder_claim_id: FC-002
+      summary: impact.com provides a unified partnership-management platform for affiliate, creator and referral programs.
+      evidence_claim_ids: *a2
+    - founder_claim_id: FC-003
+      summary: impact.com has broad enterprise adoption and cites 1M+ active partnerships plus named customer outcomes.
+      evidence_claim_ids: *a3
+  biggest_risks:
+    - risk_id: R-001
+      summary: Privacy, tracking and attribution regulation pressure
+    - risk_id: R-002
+      summary: Valuation and ARR staleness since 2021 financing
+    - risk_id: R-003
+      summary: Company-authored ROI claims need customer verification
+  key_evidence_gaps:
+    - Audited financial statements, ARR/revenue by product and geography, gross margin, cash burn and runway.
+    - Cap table, financing documents, debt/warrants, option pool and liquidation preferences.
+    - Customer/account concentration, churn, retention, pipeline, CAC/payback and cohort performance.
+    - Material contracts, IP assignments, regulatory correspondence, litigation schedules and insurance coverage.
+  recommended_next_steps:
+    - Request a full financial and legal data room before investment reliance.
+    - Interview management on the top three risks and reconcile public scale claims to source systems.
+    - Run customer, supplier and counsel reference checks for claims that are company-authored or not publicly verifiable.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Financial Information diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-008
+      - EC-010
+    risk_ids:
+      - R-001
+      - R-002
+      - R-005
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Public-source findings are structured in exhibits T-003; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-I.A
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-001, EC-002, EC-008, EC-010.
+            evidence_claim_ids: &a4
+              - EC-001
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - "R-001: Privacy, tracking and attribution regulation pressure"
+          - "R-002: Valuation and ARR staleness since 2021 financing"
+        evidence_gaps:
+          - "Private data-room evidence needed for Annual and quarterly financial information for the past three years: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Annual and quarterly financial information for the past three years, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids: *a4
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: No complete public dataset was available for Financial Projections; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-I.B
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-001, EC-002, EC-008, EC-010.
+            evidence_claim_ids: &a5
+              - EC-001
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - "R-001: Privacy, tracking and attribution regulation pressure"
+          - "R-002: Valuation and ARR staleness since 2021 financing"
+        evidence_gaps:
+          - "Private data-room evidence needed for Financial Projections: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Financial Projections, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a5
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Public-source findings are structured in exhibits T-002; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-I.C
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-001, EC-002, EC-008, EC-010.
+            evidence_claim_ids: &a6
+              - EC-001
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - "R-001: Privacy, tracking and attribution regulation pressure"
+          - "R-002: Valuation and ARR staleness since 2021 financing"
+        evidence_gaps:
+          - "Private data-room evidence needed for Capital Structure: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Capital Structure, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a6
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Public-source findings are structured in exhibits T-001, F-001, F-002; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-I.D
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-001, EC-002, EC-008, EC-010.
+            evidence_claim_ids: &a7
+              - EC-001
+              - EC-002
+              - EC-008
+              - EC-010
+            risk_ids:
+              - R-001
+              - R-002
+        hidden_risks:
+          - "R-001: Privacy, tracking and attribution regulation pressure"
+          - "R-002: Valuation and ARR staleness since 2021 financing"
+        evidence_gaps:
+          - "Private data-room evidence needed for Other financial information: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Other financial information, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids: *a7
+  - chapter_id: II
+    title: Products
+    chapter_summary: Products diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    risk_ids: []
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public-source findings are structured in exhibits T-004, T-005, F-003; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-II.A
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-003, EC-004.
+            evidence_claim_ids: &a8
+              - EC-003
+              - EC-004
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Description of each product: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Description of each product, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a8
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Customer Information diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-005
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Public-source findings are structured in exhibits T-006; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-III.A
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-005.
+            evidence_claim_ids: &a9
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Top customers by application: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Top customers by application, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids: *a9
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public-source findings are structured in exhibits T-007; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-III.B
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-005.
+            evidence_claim_ids: &a10
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Strategic relationships: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Strategic relationships, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Public-source findings are structured in exhibits F-004; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-III.C
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-005.
+            evidence_claim_ids: &a11
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Revenue by customer: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Revenue by customer, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a11
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No complete public dataset was available for Significant relationships severed within the last two years; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-III.D
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-005.
+            evidence_claim_ids: &a12
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Significant relationships severed within the last two years: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Significant relationships severed within the last two years, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a12
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Public-source findings are structured in exhibits T-008; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-III.E
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-005.
+            evidence_claim_ids: &a13
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Top suppliers: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Top suppliers, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids: *a13
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Competition diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids: []
+    evidence_claim_ids: []
+    risk_ids:
+      - R-005
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Public-source findings are structured in exhibits T-009, T-010, F-005; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks:
+          - "R-005: Dependence on browser, mobile and platform tracking rules"
+        evidence_gaps:
+          - "Private data-room evidence needed for Competitive landscape by market segment: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Competitive landscape by market segment, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids: []
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Marketing, Sales, and Distribution diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids:
+      - FC-002
+      - FC-003
+    evidence_claim_ids: []
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public-source findings are structured in exhibits T-011, T-012; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Strategy and implementation: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Strategy and implementation, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids: []
+        evidence_claim_ids: []
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: No complete public dataset was available for Major Customers; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Major Customers: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Major Customers, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: []
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public-source findings are structured in exhibits F-006; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Principal avenues for generating new business: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Principal avenues for generating new business, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids:
+          - F-006
+        evidence_claim_ids: []
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: No complete public dataset was available for Sales force productivity model; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Sales force productivity model: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Sales force productivity model, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: []
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: No complete public dataset was available for Ability to implement marketing plan with current and projected budgets; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks:
+          - "R-004: Competitive pressure from affiliate networks and creator platforms"
+        evidence_gaps:
+          - "Private data-room evidence needed for Ability to implement marketing plan with current and projected budgets: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Ability to implement marketing plan with current and projected budgets, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: []
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Research and Development diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids: []
+    evidence_claim_ids: []
+    risk_ids: []
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public-source findings are structured in exhibits T-013, F-007; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Description of R&D organization: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Description of R&D organization, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-013
+        figure_ids:
+          - F-007
+        evidence_claim_ids: []
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public-source findings are structured in exhibits T-014; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for New Product Pipeline: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for New Product Pipeline, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-014
+        figure_ids: []
+        evidence_claim_ids: []
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Management and Personnel diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids:
+      - EC-006
+    risk_ids: []
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Public-source findings are structured in exhibits F-008; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VII.A
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a14
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Organization Chart: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Organization Chart, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a14
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public-source findings are structured in exhibits T-016, F-009; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VII.B
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a15
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Historical and projected headcount by function and location: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Historical and projected headcount by function and location, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a15
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public-source findings are structured in exhibits T-015; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VII.C
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a16
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Senior management biographies: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Senior management biographies, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: No complete public dataset was available for Compensation arrangements; this section is treated as a data-room request area.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VII.D
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a17
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Compensation arrangements: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Compensation arrangements, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a17
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: No complete public dataset was available for Incentive stock plans; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VII.E
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a18
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Incentive stock plans: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Incentive stock plans, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: No complete public dataset was available for Significant employee relations problems, past or present; this section is treated as a data-room request area.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VII.F
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a19
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Significant employee relations problems, past or present: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Significant employee relations problems, past or present, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a19
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Public-source findings are structured in exhibits T-017; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VII.G
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-006.
+            evidence_claim_ids: &a20
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - "Private data-room evidence needed for Personnel Turnover: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Personnel Turnover, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-017
+        figure_ids: []
+        evidence_claim_ids: *a20
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Legal and Related Matters diligence for impact.com found public evidence on valuation, product position, scale signals and leadership where available, but private data-room materials are required for definitive underwriting.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-007
+      - EC-009
+    risk_ids:
+      - R-003
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Public-source findings are structured in exhibits T-018; unresolved private items are called out below.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VIII.A
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a21
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Pending lawsuits against the Company: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Pending lawsuits against the Company, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids: *a21
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Public-source findings are structured in exhibits T-019; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VIII.B
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a22
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Pending lawsuits initiated by Company: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Pending lawsuits initiated by Company, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids: *a22
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: No complete public dataset was available for Environmental and employee safety issues and liabilities; this section is treated as a data-room request area.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VIII.C
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a23
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Environmental and employee safety issues and liabilities: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Environmental and employee safety issues and liabilities, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a23
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Public-source findings are structured in exhibits T-020; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VIII.D
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a24
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Material patents, copyrights, licenses, and trademarks: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Material patents, copyrights, licenses, and trademarks, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-020
+        figure_ids: []
+        evidence_claim_ids: *a24
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: No complete public dataset was available for Insurance coverage and material exposures; this section is treated as a data-room request area.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VIII.E
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a25
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Insurance coverage and material exposures: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Insurance coverage and material exposures, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a25
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: No complete public dataset was available for Material contracts; this section is treated as a data-room request area.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: KF-VIII.F
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a26
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Material contracts: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Material contracts, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a26
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Public-source findings are structured in exhibits T-021, F-010, F-011; unresolved private items are called out below.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: KF-VIII.G
+            finding: Relevant public evidence for impact.com is limited to source-backed claims EC-007, EC-009.
+            evidence_claim_ids: &a27
+              - EC-007
+              - EC-009
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - "R-003: Company-authored ROI claims need customer verification"
+        evidence_gaps:
+          - "Private data-room evidence needed for Regulatory agency problems: source records, contracts, policies, schedules and management explanations."
+        follow_up_questions:
+          - Provide current source documentation for Regulatory agency problems, including owner, date, and reconciliation to audited or board-approved materials.
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-010
+          - F-011
+        evidence_claim_ids: *a27
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize publicly disclosed financing and valuation milestones.
+    columns:
+      - name: date
+        description: date
+      - name: round
+        description: round
+      - name: lead_or_participants
+        description: lead or participants
+      - name: amount
+        description: amount
+      - name: post_money_or_valuation
+        description: post money or valuation
+      - name: source
+        description: source
+    rows:
+      - row_id: R1
+        values:
+          date: 2021-07-13
+          round: Growth investment
+          lead_or_participants: Funding-led-by-QIA announcement surfaced in public search and CB Insights unicorn list
+          amount: US$150M
+          post_money_or_valuation: $1.5B
+          source: SRC-005
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+      - SRC-005
+    notes: null
+  - table_id: T-002
+    title: Capital structure and ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Identify public investor/ownership signals and private diligence caveats.
+    columns:
+      - name: stakeholder
+        description: stakeholder
+      - name: public_position
+        description: public position
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: R1
+        values:
+          stakeholder: Founders and common shareholders
+          public_position: Founder identities are publicly referenced but exact ownership is private
+          diligence_caveat: Request cap table, option pool, founder vesting and secondary-sale history
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+      - row_id: R2
+        values:
+          stakeholder: Institutional investors
+          public_position: Qatar Investment Authority; Providence Public; Redpoint / Silversmith / Providence Equity
+          diligence_caveat: Request share classes, liquidation preferences, side letters and pro-rata rights
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        source_ids:
+          - SRC-001
+      - row_id: R3
+        values:
+          stakeholder: Debt/warrant holders
+          public_position: not_publicly_verifiable
+          diligence_caveat: Request all debt, warehouse, venture-debt, warrant and security agreements
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-007
+    source_ids:
+      - SRC-001
+    notes: null
+  - table_id: T-003
+    title: Public revenue, ARR, unit-economic and financial-quality signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate public operating signals from data-room requests.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: private_data_request
+        description: private data request
+    rows:
+      - row_id: R1
+        values:
+          metric: Revenue / ARR
+          public_signal: 2021 snippets say surpassed $100M ARR
+          verification_status: partially_verified
+          private_data_request: Audited income statements, monthly revenue by product/channel/geography, deferred revenue and revenue-recognition policy
+        evidence_claim_ids:
+          - EC-002
+          - EC-010
+        source_ids:
+          - SRC-005
+      - row_id: R2
+        values:
+          metric: Gross margin / contribution margin
+          public_signal: not_publicly_verifiable
+          verification_status: not_publicly_verifiable
+          private_data_request: Gross margin bridge, COGS allocation, support costs, transaction losses and sales commissions
+        evidence_claim_ids:
+          - EC-007
+          - EC-010
+        source_ids:
+          - SRC-001
+      - row_id: R3
+        values:
+          metric: Backlog / customer concentration
+          public_signal: not_publicly_verifiable
+          verification_status: not_publicly_verifiable
+          private_data_request: Top customers/accounts, backlog, retention, churn, cohort and AR aging schedules
+        evidence_claim_ids:
+          - EC-007
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-007
+      - EC-010
+    source_ids:
+      - SRC-001
+    notes: null
+  - table_id: T-004
+    title: Product / SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public products to audiences and evidence.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: key_features
+        description: key features
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          product: Performance partnerships platform
+          audience: Brands and agencies
+          key_features: Affiliate, creator and referral program management
+          public_evidence: SRC-003
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+        source_ids:
+          - SRC-003
+      - row_id: R2
+        values:
+          product: Discover & Recruit
+          audience: Partner teams
+          key_features: Partner discovery and recruitment automation
+          public_evidence: SRC-003
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+        source_ids:
+          - SRC-003
+      - row_id: R3
+        values:
+          product: Contract & Pay
+          audience: Partner operations/finance
+          key_features: Outcome-based partner payout and contracting workflows
+          public_evidence: SRC-003
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+        source_ids:
+          - SRC-003
+      - row_id: R4
+        values:
+          product: Track / Protect & Monitor / Optimize
+          audience: Marketing and analytics teams
+          key_features: Cross-device tracking, fraud/brand-safety monitoring, performance optimization
+          public_evidence: SRC-003
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-005
+    title: Pricing / packaging and monetization comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture public monetization evidence and gaps.
+    columns:
+      - name: offering
+        description: offering
+      - name: public_pricing_or_fee_signal
+        description: public pricing or fee signal
+      - name: competitor_or_alternative
+        description: competitor or alternative
+      - name: verification_status
+        description: verification status
+      - name: gap
+        description: gap
+    rows:
+      - row_id: R1
+        values:
+          offering: Performance partnerships platform
+          public_pricing_or_fee_signal: Annual SaaS fee, setup fee and 2.5% transaction-fee mechanics publicly described
+          competitor_or_alternative: Partnerize
+          verification_status: partially_verified
+          gap: Request price book, discounting, take-rate, gross/net revenue and refunds/credits policy
+        evidence_claim_ids:
+          - EC-003
+          - EC-008
+        source_ids:
+          - SRC-008
+      - row_id: R2
+        values:
+          offering: Discover & Recruit
+          public_pricing_or_fee_signal: not_publicly_verifiable
+          competitor_or_alternative: CJ Affiliate / Rakuten Advertising
+          verification_status: not_publicly_verifiable
+          gap: Request monetization by SKU and margin by plan/category/geography
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-003
+      - EC-008
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-008
+    notes: null
+  - table_id: T-006
+    title: Publicly known customers, users and case studies
+    chapter_id: III
+    section_id: III.A
+    purpose: Capture visible customer/user proof without assuming revenue concentration.
+    columns:
+      - name: customer_or_segment
+        description: customer or segment
+      - name: use_case
+        description: use case
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          customer_or_segment: Lenovo
+          use_case: Affiliate/performance partnerships
+          public_evidence: Company page cites 200+ partners onboarded and +97% revenue in a case study
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: R2
+        values:
+          customer_or_segment: HubSpot
+          use_case: B2B affiliate program
+          public_evidence: Company page cites 50%+ affiliate revenue/sign-up lift
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: R3
+        values:
+          customer_or_segment: Ticketmaster
+          use_case: Mobile partnerships
+          public_evidence: Company page cites +32% YoY revenue and +20% conversion rate
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: R4
+        values:
+          customer_or_segment: Canva / Easyship
+          use_case: Partnership scaling
+          public_evidence: Customer stories cite 11K+ partners for Canva and 312% more revenue for Easyship
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+          - EC-005
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: List public strategic relationships and identify private contract gaps.
+    columns:
+      - name: partner
+        description: partner
+      - name: relationship_type
+        description: relationship type
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: gap
+        description: gap
+    rows:
+      - row_id: R1
+        values:
+          partner: Qatar Investment Authority
+          relationship_type: 2021 funding lead
+          public_evidence: Public snippets cite QIA leading the $150M round
+          verification_status: partially_verified
+          gap: Request agreements, economics, termination rights and exclusivity/most-favored-nation terms
+        evidence_claim_ids:
+          - EC-001
+          - EC-005
+        source_ids:
+          - SRC-001
+          - SRC-003
+      - row_id: R2
+        values:
+          partner: Providence Public
+          relationship_type: 2021 funding participant
+          public_evidence: Public snippets cite Providence joining the round
+          verification_status: partially_verified
+          gap: Request agreements, economics, termination rights and exclusivity/most-favored-nation terms
+        evidence_claim_ids:
+          - EC-001
+          - EC-005
+        source_ids:
+          - SRC-001
+          - SRC-003
+      - row_id: R3
+        values:
+          partner: Redpoint / Silversmith / Providence Equity
+          relationship_type: Investors
+          public_evidence: CB Insights lists named investors
+          verification_status: verified
+          gap: Request agreements, economics, termination rights and exclusivity/most-favored-nation terms
+        evidence_claim_ids:
+          - EC-001
+          - EC-005
+        source_ids:
+          - SRC-001
+          - SRC-003
+      - row_id: R4
+        values:
+          partner: Technology and agency partners
+          relationship_type: Ecosystem channel
+          public_evidence: Company navigation exposes agency and technology partner directories
+          verification_status: partially_verified
+          gap: Request agreements, economics, termination rights and exclusivity/most-favored-nation terms
+        evidence_claim_ids:
+          - EC-001
+          - EC-005
+        source_ids:
+          - SRC-001
+          - SRC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+    source_ids:
+      - SRC-001
+      - SRC-003
+    notes: null
+  - table_id: T-008
+    title: Top supplier / infrastructure dependency register
+    chapter_id: III
+    section_id: III.E
+    purpose: Identify operating dependencies and concentration risks.
+    columns:
+      - name: supplier_or_dependency
+        description: supplier or dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: concentration_risk
+        description: concentration risk
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          supplier_or_dependency: Cloud and data infrastructure providers
+          role: SaaS hosting and analytics
+          public_evidence: Specific vendors not disclosed on public pages; privacy policy references data centers and service providers
+          concentration_risk: high if supply/channel access is concentrated
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: R2
+        values:
+          supplier_or_dependency: Publishers/creators/affiliates
+          role: Marketplace supply side
+          public_evidence: Platform relies on partner networks and marketplace participation
+          concentration_risk: medium or not_publicly_verifiable
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: R3
+        values:
+          supplier_or_dependency: Customer-side websites/apps
+          role: Tracking data source
+          public_evidence: Privacy policy says Impact processes client visitor/customer data as service provider
+          concentration_risk: medium or not_publicly_verifiable
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-010
+    source_ids:
+      - SRC-002
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Frame competitive overlap and differentiation.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: product_overlap
+        description: product overlap
+      - name: differentiator
+        description: differentiator
+      - name: source
+        description: source
+    rows:
+      - row_id: R1
+        values:
+          competitor: Partnerize
+          segment: Partnership automation SaaS
+          product_overlap: Affiliate and partner management overlap
+          differentiator: Enterprise SaaS focus
+          source: SRC-003
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: R2
+        values:
+          competitor: CJ Affiliate / Rakuten Advertising
+          segment: Affiliate network
+          product_overlap: Performance marketing and affiliate channel overlap
+          differentiator: Network scale and publisher relationships
+          source: SRC-006
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-006
+      - row_id: R3
+        values:
+          competitor: CreatorIQ / GRIN
+          segment: Creator-management platforms
+          product_overlap: Influencer/creator program overlap
+          differentiator: Creator workflow depth
+          source: SRC-003
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-003
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-005
+    notes: null
+  - table_id: T-010
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Score public competitive dimensions qualitatively.
+    columns:
+      - name: axis
+        description: axis
+      - name: target_position
+        description: target position
+      - name: top_competitor_position
+        description: top competitor position
+      - name: evidence
+        description: evidence
+    rows:
+      - row_id: R1
+        values:
+          axis: Scale / network effects
+          target_position: public scale signals but private economics
+          top_competitor_position: varies by market/category
+          evidence: Public pages cite users/customers/partnerships but not retention or market share
+        evidence_claim_ids:
+          - EC-004
+          - EC-010
+        source_ids:
+          - SRC-002
+      - row_id: R2
+        values:
+          axis: Trust / compliance / risk controls
+          target_position: public controls or process claims; audit evidence private
+          top_competitor_position: regulated/incumbent alternatives may have deeper controls
+          evidence: Request SOC/audits, compliance reports and incident history
+        evidence_claim_ids:
+          - EC-006
+          - EC-007
+        source_ids:
+          - SRC-002
+      - row_id: R3
+        values:
+          axis: Pricing / take rate
+          target_position: not_publicly_verifiable or partially public
+          top_competitor_position: competitive pressure likely
+          evidence: Request win/loss and discounting data
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-004
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Show how demand is publicly acquired and converted.
+    columns:
+      - name: channel
+        description: channel
+      - name: region
+        description: region
+      - name: public_evidence
+        description: public evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: R1
+        values:
+          channel: Direct online conversion / self-service
+          region: United States headquartered with global offices and customers
+          public_evidence: Website CTAs, forms, marketplace or sign-up flows are public
+          gap: Request funnel conversion, CAC and payback by channel
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-002
+      - row_id: R2
+        values:
+          channel: Partnerships / ecosystem / brokers
+          region: United States headquartered with global offices and customers
+          public_evidence: Public snippets cite QIA leading the $150M round
+          gap: Request partner-sourced revenue and concentration
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-003
+      - row_id: R3
+        values:
+          channel: PR, case studies and content
+          region: Global/public web
+          public_evidence: Funding announcements, press/fact sheets and customer stories are public
+          gap: Request campaign spend, attribution and pipeline influence
+        evidence_claim_ids:
+          - EC-002
+          - EC-004
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-012
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public proof points and their verification caveats.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_metric_or_claim
+        description: public metric or claim
+      - name: source
+        description: source
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          signal: Funding/valuation PR
+          public_metric_or_claim: $1.5B unicorn valuation
+          source: SRC-001
+          verification_status: verified or partially_verified
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        source_ids:
+          - SRC-001
+      - row_id: R2
+        values:
+          signal: Usage/customer proof
+          public_metric_or_claim: Company page cites 200+ partners onboarded and +97% revenue in a case study
+          source: SRC-002
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+      - row_id: R3
+        values:
+          signal: Thought leadership / product positioning
+          public_metric_or_claim: Affiliate, creator and referral program management
+          source: SRC-003
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-001
+      - EC-003
+      - EC-004
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-013
+    title: Key R&D personnel and technical leadership signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture publicly identified product/technical leadership and gaps.
+    columns:
+      - name: name_or_role
+        description: name or role
+      - name: public_role
+        description: public role
+      - name: background_or_signal
+        description: background or signal
+      - name: source
+        description: source
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          name_or_role: David A. Yovanno
+          public_role: CEO, Board Director
+          background_or_signal: Leadership page says Dave joined impact.com in February 2017 and has MarTech/SaaS leadership experience
+          source: SRC-006
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: R2
+        values:
+          name_or_role: Per Pettersen
+          public_role: Chief Strategy Officer, Co-Founder, Board Director
+          background_or_signal: Leadership page describes Per as a founder and architect of product/business/operations strategy
+          source: SRC-006
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: R3
+        values:
+          name_or_role: Max Ciccotosto
+          public_role: Chief Product Officer
+          background_or_signal: Leadership page says Max leads product management, data science, ops and growth teams
+          source: SRC-006
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-006
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-005
+    notes: null
+  - table_id: T-014
+    title: Public product / research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: List product and R&D initiatives visible from public sources.
+    columns:
+      - name: project
+        description: project
+      - name: status
+        description: status
+      - name: expected_date
+        description: expected date
+      - name: evidence
+        description: evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          project: Discover & Recruit
+          status: Publicly described active product/capability
+          expected_date: not_publicly_verifiable
+          evidence: Partner discovery and recruitment automation
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: R2
+        values:
+          project: Contract & Pay
+          status: Publicly described active product/capability
+          expected_date: not_publicly_verifiable
+          evidence: Outcome-based partner payout and contracting workflows
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: R3
+        values:
+          project: Internal roadmap and R&D spend
+          status: not_publicly_verifiable
+          expected_date: not_publicly_verifiable
+          evidence: Requires product roadmap and engineering budget
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-003
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: List public senior leadership and diligence caveats.
+    columns:
+      - name: name
+        description: name
+      - name: role
+        description: role
+      - name: public_background
+        description: public background
+      - name: source
+        description: source
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: R1
+        values:
+          name: David A. Yovanno
+          role: CEO, Board Director
+          public_background: Leadership page says Dave joined impact.com in February 2017 and has MarTech/SaaS leadership experience
+          source: SRC-006
+          diligence_caveat: Request employment agreements, equity grants, departures and reference checks
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: R2
+        values:
+          name: Per Pettersen
+          role: Chief Strategy Officer, Co-Founder, Board Director
+          public_background: Leadership page describes Per as a founder and architect of product/business/operations strategy
+          source: SRC-006
+          diligence_caveat: Request employment agreements, equity grants, departures and reference checks
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: R3
+        values:
+          name: Max Ciccotosto
+          role: Chief Product Officer
+          public_background: Leadership page says Max leads product management, data science, ops and growth teams
+          source: SRC-006
+          diligence_caveat: Request employment agreements, equity grants, departures and reference checks
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+      - row_id: R4
+        values:
+          name: Dale Lynch
+          role: Chief Financial Officer
+          public_background: Leadership page says Dale oversees fiscal management and financial strategy
+          source: SRC-006
+          diligence_caveat: Request employment agreements, equity grants, departures and reference checks
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-006
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-006
+    notes: null
+  - table_id: T-016
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Capture public headcount anchors and private staffing requests.
+    columns:
+      - name: function_or_region
+        description: function or region
+      - name: public_evidence
+        description: public evidence
+      - name: source
+        description: source
+      - name: verification_status
+        description: verification status
+      - name: private_request
+        description: private request
+    rows:
+      - row_id: R1
+        values:
+          function_or_region: Total employees/teammates
+          public_evidence: About page says 1,000+ employees
+          source: SRC-002
+          verification_status: verified
+          private_request: Monthly headcount by function/location, open reqs and attrition
+        evidence_claim_ids:
+          - EC-006
+          - EC-004
+        source_ids:
+          - SRC-002
+      - row_id: R2
+        values:
+          function_or_region: Projected hiring plan
+          public_evidence: not_publicly_verifiable
+          source: N/A
+          verification_status: not_publicly_verifiable
+          private_request: Hiring plan, budget, compensation bands and contractor/vendor usage
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-006
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-017
+    title: Departures / turnover signals
+    chapter_id: VII
+    section_id: VII.G
+    purpose: Summarize public turnover visibility and diligence requests.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: follow_up
+        description: follow up
+    rows:
+      - row_id: R1
+        values:
+          signal: Executive departures
+          public_evidence: No comprehensive public departure register found in this run
+          verification_status: not_publicly_verifiable
+          follow_up: Request executive-change log, regretted attrition and retention-risk list
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+      - row_id: R2
+        values:
+          signal: Employee relations issues
+          public_evidence: No reliable public evidence reviewed in this run established material employee-relations problems
+          verification_status: inconclusive
+          follow_up: Request complaints, investigations, settlements and employee engagement surveys
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-010
+    source_ids:
+      - SRC-001
+    notes: null
+  - table_id: T-018
+    title: Pending lawsuits against the company
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Record public litigation findings and gaps.
+    columns:
+      - name: case
+        description: case
+      - name: court_or_forum
+        description: court or forum
+      - name: filed_date
+        description: filed date
+      - name: status
+        description: status
+      - name: source
+        description: source
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          case: No material pending case identified in public-source sweep
+          court_or_forum: not_publicly_verifiable
+          filed_date: not_publicly_verifiable
+          status: inconclusive
+          source: Public web/search only
+          diligence_request: Request litigation docket, demand letters, threatened claims and outside counsel memo
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-010
+    source_ids:
+      - SRC-001
+    notes: null
+  - table_id: T-019
+    title: Pending lawsuits initiated by company
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Record public plaintiff-side litigation findings and gaps.
+    columns:
+      - name: defendant
+        description: defendant
+      - name: court_or_forum
+        description: court or forum
+      - name: filed_date
+        description: filed date
+      - name: status
+        description: status
+      - name: source
+        description: source
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          defendant: No material plaintiff-side case identified in public-source sweep
+          court_or_forum: not_publicly_verifiable
+          filed_date: not_publicly_verifiable
+          status: inconclusive
+          source: Public web/search only
+          diligence_request: Request litigation docket, collection actions, IP claims and settlement history
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-010
+    source_ids:
+      - SRC-001
+    notes: null
+  - table_id: T-020
+    title: Material IP, trademarks, copyrights and key licenses
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Summarize visible IP/brand assets and private registry gaps.
+    columns:
+      - name: asset
+        description: asset
+      - name: jurisdiction
+        description: jurisdiction
+      - name: status
+        description: status
+      - name: source
+        description: source
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          asset: impact.com brand and product marks
+          jurisdiction: Primary operating markets
+          status: Public brand use observed; registry status not checked exhaustively
+          source: Company site/press pages
+          diligence_request: Request trademark schedule, assignments, licenses and open-source policy
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-002
+      - row_id: R2
+        values:
+          asset: Software, algorithms, data assets and content
+          jurisdiction: Operating markets
+          status: Ownership and third-party license posture not_publicly_verifiable
+          source: Product descriptions
+          diligence_request: Request IP assignment agreements, code provenance and OSS/license scans
+        evidence_claim_ids:
+          - EC-003
+          - EC-010
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-003
+      - EC-010
+    source_ids:
+      - SRC-002
+    notes: null
+  - table_id: T-021
+    title: Regulatory / agency action summary
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Summarize public regulatory posture and data-room requests.
+    columns:
+      - name: agency_or_domain
+        description: agency or domain
+      - name: action_or_requirement
+        description: action or requirement
+      - name: date
+        description: date
+      - name: status
+        description: status
+      - name: source
+        description: source
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          agency_or_domain: Privacy/data protection
+          action_or_requirement: Policies/controls or direct policy text require deeper review
+          date: current
+          status: partially_verified
+          source: SRC-007
+          diligence_request: Request DPAs, privacy impact assessments, incident logs and regulator correspondence
+        evidence_claim_ids:
+          - EC-007
+          - EC-010
+        source_ids:
+          - SRC-007
+      - row_id: R2
+        values:
+          agency_or_domain: Sector-specific consumer/commerce regulation
+          action_or_requirement: Consumer, credit, advertising or marketplace obligations vary by product and geography
+          date: current
+          status: not_publicly_verifiable
+          source: Public product descriptions
+          diligence_request: Request counsel memo, licenses/registrations and compliance testing results
+        evidence_claim_ids:
+          - EC-008
+          - EC-010
+        source_ids:
+          - SRC-002
+    evidence_claim_ids:
+      - EC-007
+      - EC-010
+    source_ids:
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Public financing milestones for impact.com.
+    purpose: Show valuation and financing chronology.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: E1
+          date: 2021-07-13
+          label: Growth investment
+          description: US$150M Growth investment at $1.5B valuation
+          category: financing
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-005
+      start_date: 2021-07-13
+      end_date: 2021-07-13
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+    notes: null
+  - figure_id: F-002
+    title: Public valuation trajectory
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Known valuation anchor for impact.com; missing values are explicit diligence gaps.
+    purpose: Frame valuation anchoring and stale-mark risk.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Year
+        unit: null
+        scale: time
+      y_axis:
+        label: Valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Public valuation anchors
+          unit: USD billions
+          data_points:
+            - x: "2021"
+              y: 1.5
+              label: $1.5B
+              evidence_claim_ids:
+                - EC-001
+                - EC-002
+              source_ids:
+                - SRC-005
+      annotations:
+        - label: Current private mark requires refresh
+          x: "2026"
+          y: null
+          note: Request current 409A/secondary/priced-round evidence.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-010
+    source_ids:
+      - SRC-001
+    notes: null
+  - figure_id: F-003
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Simplified public product architecture for impact.com.
+    purpose: Show public modules and key dependencies.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: target
+          label: impact.com
+          node_type: service
+          description: Target company platform
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-002
+        - node_id: p1
+          label: Performance partnerships platform
+          node_type: product
+          description: Affiliate, creator and referral program management
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: p2
+          label: Discover & Recruit
+          node_type: product
+          description: Partner discovery and recruitment automation
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: p3
+          label: Contract & Pay
+          node_type: product
+          description: Outcome-based partner payout and contracting workflows
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: p4
+          label: Track / Protect & Monitor / Optimize
+          node_type: product
+          description: Cross-device tracking, fraud/brand-safety monitoring, performance optimization
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: users
+          label: Users / customers / partners
+          node_type: user
+          description: Demand-side and supply-side participants
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+      edges:
+        - edge_id: e1
+          from_node_id: target
+          to_node_id: p1
+          relationship: operates
+          data_or_dependency: Affiliate, creator and referral program management
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: e2
+          from_node_id: target
+          to_node_id: p2
+          relationship: operates
+          data_or_dependency: Partner discovery and recruitment automation
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: e3
+          from_node_id: target
+          to_node_id: p3
+          relationship: operates
+          data_or_dependency: Outcome-based partner payout and contracting workflows
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: e4
+          from_node_id: target
+          to_node_id: p4
+          relationship: operates
+          data_or_dependency: Cross-device tracking, fraud/brand-safety monitoring, performance optimization
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: e-users
+          from_node_id: users
+          to_node_id: target
+          relationship: uses
+          data_or_dependency: transactions, listings, partnership interactions or property data
+          evidence_claim_ids:
+            - EC-004
+          source_ids:
+            - SRC-002
+      boundaries:
+        - boundary_id: public
+          label: Publicly described platform boundary
+          node_ids:
+            - target
+            - p1
+            - p2
+            - p3
+            - p4
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-004
+    title: Customer / partner concentration proxy
+    chapter_id: III
+    section_id: III.C
+    figure_type: chart
+    description: Publicly known customer/partner segments for impact.com; weights are unknown.
+    purpose: Make concentration gaps visible.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Public segment or customer
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Publicly disclosed revenue weight
+        unit: percent
+        scale: linear
+      series:
+        - series_id: segments
+          name: Known public segments with undisclosed revenue weight
+          unit: percent
+          data_points:
+            - x: Lenovo
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-002
+            - x: HubSpot
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-002
+            - x: Ticketmaster
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-002
+            - x: Canva / Easyship
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-002
+      annotations:
+        - label: Revenue concentration unavailable
+          x: null
+          y: null
+          note: Request revenue by customer/account and >5% customer schedule.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-004
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-005
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Positioning map for impact.com and public competitors.
+    purpose: Summarize competitive axes that need validation.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Transaction depth / workflow ownership
+          low_label: Discovery/listings only
+          high_label: End-to-end workflow
+        y_axis:
+          label: Trust/compliance intensity
+          low_label: Lightweight marketplace
+          high_label: Managed/compliance-heavy platform
+      segments:
+        - segment_id: target
+          name: Target operating segment
+          description: Partnership management, affiliate marketing, creator/referral SaaS and attribution infrastructure
+        - segment_id: adjacent
+          name: Adjacent competitors
+          description: Platforms with overlapping customers or workflows
+      entities:
+        - entity_id: target
+          name: impact.com
+          entity_type: target_company
+          segment_id: target
+          x_value: 7
+          y_value: 6
+          attributes:
+            valuation: $1.5B
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-002
+        - entity_id: comp1
+          name: Partnerize
+          entity_type: competitor
+          segment_id: adjacent
+          x_value: 5
+          y_value: 4
+          attributes:
+            overlap: Affiliate and partner management overlap
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - entity_id: comp2
+          name: CJ Affiliate / Rakuten Advertising
+          entity_type: competitor
+          segment_id: adjacent
+          x_value: 6
+          y_value: 5
+          attributes:
+            overlap: Performance marketing and affiliate channel overlap
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-006
+        - entity_id: comp3
+          name: CreatorIQ / GRIN
+          entity_type: competitor
+          segment_id: adjacent
+          x_value: 7
+          y_value: 6
+          attributes:
+            overlap: Influencer/creator program overlap
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+    source_ids:
+      - SRC-002
+      - SRC-005
+    notes: null
+  - figure_id: F-006
+    title: GTM channel mix diligence chart
+    chapter_id: V
+    section_id: V.C
+    figure_type: chart
+    description: Public GTM channels for impact.com; actual pipeline weights are private.
+    purpose: Show channel evidence and missing attribution data.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Verified pipeline share
+        unit: percent
+        scale: linear
+      series:
+        - series_id: gtm
+          name: Public channel signals with unknown share
+          unit: percent
+          data_points:
+            - x: Direct/self-service
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-003
+                - EC-005
+              source_ids:
+                - SRC-002
+            - x: Partners/ecosystem
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-003
+                - EC-005
+              source_ids:
+                - SRC-002
+            - x: PR/content
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-003
+                - EC-005
+              source_ids:
+                - SRC-002
+      annotations:
+        - label: CAC/payback private
+          x: null
+          y: null
+          note: Request channel-level spend, pipeline, conversion and payback.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-007
+    title: R&D / product leadership map
+    chapter_id: VI
+    section_id: VI.A
+    figure_type: org_chart
+    description: Public product/R&D leadership signals for impact.com.
+    purpose: Identify leadership roles requiring confirmation.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: n1
+          name: David A. Yovanno
+          role: CEO, Board Director
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - node_id: n2
+          name: Per Pettersen
+          role: Chief Strategy Officer, Co-Founder, Board Director
+          department: Leadership
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - node_id: n3
+          name: Max Ciccotosto
+          role: Chief Product Officer
+          department: Product
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - node_id: n4
+          name: Dale Lynch
+          role: Chief Financial Officer
+          department: Leadership
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+      reporting_lines: []
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-005
+    notes: null
+  - figure_id: F-008
+    title: Management organization chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Public management roster for impact.com.
+    purpose: Represent known executive roles and gaps.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: m1
+          name: David A. Yovanno
+          role: CEO, Board Director
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - node_id: m2
+          name: Per Pettersen
+          role: Chief Strategy Officer, Co-Founder, Board Director
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - node_id: m3
+          name: Max Ciccotosto
+          role: Chief Product Officer
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - node_id: m4
+          name: Dale Lynch
+          role: Chief Financial Officer
+          department: Executive
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+      reporting_lines:
+        - parent_node_id: m1
+          child_node_id: m2
+          relationship: other
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - parent_node_id: m1
+          child_node_id: m3
+          relationship: other
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+        - parent_node_id: m1
+          child_node_id: m4
+          relationship: other
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-006
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-006
+    notes: null
+  - figure_id: F-009
+    title: Public headcount trend anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public headcount anchors for impact.com.
+    purpose: Show staffing scale and missing historical trend.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: line
+      x_axis:
+        label: Year
+        unit: null
+        scale: time
+      y_axis:
+        label: Headcount
+        unit: employees
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public headcount anchors
+          unit: employees
+          data_points:
+            - x: "2026"
+              y: 1000
+              label: 1,000+ public anchor
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-002
+            - x: 2026-current
+              y: null
+              label: function/location detail not public
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Need monthly roster
+          x: 2026-current
+          y: null
+          note: Request headcount by function, geography and employment type.
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-010
+    title: Legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: timeline
+    description: Public legal/regulatory events and diligence requests for impact.com.
+    purpose: Chronicle legal signals and gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: E1
+          date: "2021"
+          label: Unicorn/private financing status
+          description: Financing/valuation creates securities and governance diligence needs.
+          category: financing/legal
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+        - event_id: E2
+          date: 2026-06-06
+          label: Public legal sweep incomplete
+          description: No material litigation found in public-source sweep, but docket/counsel confirmation is required.
+          category: diligence_gap
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+      start_date: "2021"
+      end_date: 2026-06-06
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-010
+    source_ids:
+      - SRC-001
+    notes: null
+  - figure_id: F-011
+    title: Risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk heatmap for impact.com.
+    purpose: Visualize severity/likelihood across the risk register.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Privacy, tracking and attribution regulation pressure
+          severity: high
+          likelihood: medium
+          rationale: Privacy, tracking and attribution regulation pressure is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+          evidence_claim_ids: &a28
+            - EC-007
+            - EC-010
+          source_ids:
+            - SRC-001
+        - risk_id: R-002
+          label: Valuation and ARR staleness since 2021 financing
+          severity: high
+          likelihood: high
+          rationale: Valuation and ARR staleness since 2021 financing is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+          evidence_claim_ids: &a29
+            - EC-007
+            - EC-010
+          source_ids:
+            - SRC-001
+        - risk_id: R-003
+          label: Company-authored ROI claims need customer verification
+          severity: medium
+          likelihood: medium
+          rationale: Company-authored ROI claims need customer verification is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+          evidence_claim_ids: &a30
+            - EC-007
+            - EC-010
+          source_ids:
+            - SRC-001
+        - risk_id: R-004
+          label: Competitive pressure from affiliate networks and creator platforms
+          severity: medium
+          likelihood: medium
+          rationale: Competitive pressure from affiliate networks and creator platforms is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+          evidence_claim_ids: &a31
+            - EC-003
+            - EC-004
+          source_ids:
+            - SRC-001
+        - risk_id: R-005
+          label: Dependence on browser, mobile and platform tracking rules
+          severity: medium
+          likelihood: medium
+          rationale: Dependence on browser, mobile and platform tracking rules is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+          evidence_claim_ids: &a32
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists impact.com as a private unicorn valued at $1.50B joined on 2021-07-13.
+    evidence_summary: "CB Insights row: impact.com | $1.50 | 7/13/2021 | United States | Santa Barbara | Enterprise Tech | Redpoint Ventures, Providence Equity Partners, Silversmith Capital Partners."
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: "CB Insights row: impact.com | $1.50 | 7/13/2021 | United States | Santa Barbara | Enterprise Tech | Redpoint Ventures, Providence Equity Partners, Silversmith Capital Partners."
+        location: public web source fetched or search snippet
+    analyst_interpretation: CB Insights lists impact.com as a private unicorn valued at $1.50B joined on 2021-07-13.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-002
+    claim: Public coverage says Impact raised $150M at a $1.5B valuation and surpassed $100M ARR in 2021.
+    evidence_summary: Search-result snippets cite Impact/Silversmith/BusinessWire coverage that the $150M investment brought valuation to $1.5B and that Impact had surpassed $100M ARR.
+    evidence_type: independent_news
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Search-result snippets cite Impact/Silversmith/BusinessWire coverage that the $150M investment brought valuation to $1.5B and that Impact had surpassed $100M ARR.
+        location: public web source fetched or search snippet
+    analyst_interpretation: Public coverage says Impact raised $150M at a $1.5B valuation and surpassed $100M ARR in 2021.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-003
+    claim: impact.com describes itself as transforming how enterprises manage and optimize partnerships, with 21 global offices, 1,000+ employees, and 1M+ active partnerships on platform.
+    evidence_summary: The About page states impact.com transforms enterprise partnership management and shows 21 offices, 1,000+ employees, and 1M+ active partnerships.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: The About page states impact.com transforms enterprise partnership management and shows 21 offices, 1,000+ employees, and 1M+ active partnerships.
+        location: public web source fetched or search snippet
+    analyst_interpretation: impact.com describes itself as transforming how enterprises manage and optimize partnerships, with 21 global offices, 1,000+ employees, and 1M+ active partnerships on platform.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: impact.com’s product suite spans affiliate, creator, referral, contract/pay, tracking, engagement, protection and optimization workflows.
+    evidence_summary: The platform page describes unified affiliate, creator and referral programs, and lists Discover & Recruit, Contract & Pay, Track, Engage, Protect & Monitor, and Optimize.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: The platform page describes unified affiliate, creator and referral programs, and lists Discover & Recruit, Contract & Pay, Track, Engage, Protect & Monitor, and Optimize.
+        location: public web source fetched or search snippet
+    analyst_interpretation: impact.com’s product suite spans affiliate, creator, referral, contract/pay, tracking, engagement, protection and optimization workflows.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-005
+    claim: Customer stories name Lenovo, HubSpot, Ticketmaster, Canva, Easyship and others with outcome claims, but those metrics are company-authored case studies.
+    evidence_summary: Company pages cite Lenovo +97% revenue, HubSpot +50% affiliate revenue, Ticketmaster +32% YoY revenue, and customer-story tiles for Canva and Easyship.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Company pages cite Lenovo +97% revenue, HubSpot +50% affiliate revenue, Ticketmaster +32% YoY revenue, and customer-story tiles for Canva and Easyship.
+        location: public web source fetched or search snippet
+    analyst_interpretation: Customer stories name Lenovo, HubSpot, Ticketmaster, Canva, Easyship and others with outcome claims, but those metrics are company-authored case studies.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-006
+    claim: impact.com publicly lists David A. Yovanno as CEO and Per Pettersen as co-founder/chief strategy officer.
+    evidence_summary: The leadership page lists David A. Yovanno as CEO/board director and Per Pettersen as Chief Strategy Officer, Co-Founder, Board Director.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: The leadership page lists David A. Yovanno as CEO/board director and Per Pettersen as Chief Strategy Officer, Co-Founder, Board Director.
+        location: public web source fetched or search snippet
+    analyst_interpretation: impact.com publicly lists David A. Yovanno as CEO and Per Pettersen as co-founder/chief strategy officer.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-007
+    claim: impact.com processes personal information for SaaS services as a service provider/data processor and says it uses security controls while not guaranteeing absolute security.
+    evidence_summary: The privacy policy describes service-provider/data-processor context, hashing/encryption measures, CCPA service-provider position, and security limitations.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: The privacy policy describes service-provider/data-processor context, hashing/encryption measures, CCPA service-provider position, and security limitations.
+        location: public web source fetched or search snippet
+    analyst_interpretation: impact.com processes personal information for SaaS services as a service provider/data processor and says it uses security controls while not guaranteeing absolute security.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-008
+    claim: Pricing pages disclose setup fees, payment tiering, annual SaaS fees, and a 2.5% transaction fee on partner-driven transactions.
+    evidence_summary: The pricing FAQ states setup fees depend on onboarding, customers can pay annual SaaS fees, higher payout volume may require upgraded tiers/overage, and a 2.5% transaction fee applies only to partner-driven transactions.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-008
+        quote: The pricing FAQ states setup fees depend on onboarding, customers can pay annual SaaS fees, higher payout volume may require upgraded tiers/overage, and a 2.5% transaction fee applies only to partner-driven transactions.
+        location: public web source fetched or search snippet
+    analyst_interpretation: Pricing pages disclose setup fees, payment tiering, annual SaaS fees, and a 2.5% transaction fee on partner-driven transactions.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-009
+    claim: No public-source evidence in this run showed impact.com has IPO’d, been acquired, or shut down.
+    evidence_summary: CB Insights continues to list impact.com as a unicorn; public search centered on private funding and valuation, not IPO or acquisition closure.
+    evidence_type: other
+    verification_status: inconclusive
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: CB Insights continues to list impact.com as a unicorn; public search centered on private funding and valuation, not IPO or acquisition closure.
+        location: public web source fetched or search snippet
+    analyst_interpretation: No public-source evidence in this run showed impact.com has IPO’d, been acquired, or shut down.
+    limitations: Requires direct company confirmation or private data-room evidence.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.F
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-010
+    claim: Financial statements, current ARR, gross retention, customer concentration, and cap-table details remain private.
+    evidence_summary: Public sources disclose 2021 ARR and marketing outcome claims, but not audited financials, cohort retention, top-customer concentration or current cap table.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-005
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Public sources disclose 2021 ARR and marketing outcome claims, but not audited financials, cohort retention, top-customer concentration or current cap table.
+        location: public web source fetched or search snippet
+    analyst_interpretation: Financial statements, current ARR, gross retention, customer concentration, and cap-table details remain private.
+    limitations: Requires direct company confirmation or private data-room evidence.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: market_database
+    reliability_notes: CB Insights lists impact.com at $1.50B with 2021 join date and named investors.
+    archive_url: null
+  - source_id: SRC-002
+    title: About - impact.com
+    url: https://impact.com/about/
+    publisher: impact.com
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: primary_company_source
+    reliability_notes: Company-owned overview with employee, office and partnership scale metrics.
+    archive_url: null
+  - source_id: SRC-003
+    title: impact.com partnership management platform
+    url: https://impact.com/partnership-management-platform/
+    publisher: impact.com
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: primary_company_source
+    reliability_notes: Company-owned product page describing platform modules and customer outcome claims.
+    archive_url: null
+  - source_id: SRC-004
+    title: Customer Success Stories - impact.com
+    url: https://impact.com/customer-stories/
+    publisher: impact.com
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: primary_company_source
+    reliability_notes: Company-owned customer-story index with named customer logos and outcome claims.
+    archive_url: null
+  - source_id: SRC-005
+    title: impact.com raises 150 million 1.5 billion valuation search results
+    url: https://html.duckduckgo.com/html/?q=impact.com+raises+150+million+1.5+billion+valuation+Redpoint+Providence+Silversmith
+    publisher: DuckDuckGo HTML search
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: other
+    reliability_notes: Search snippets point to company, Silversmith, TechCrunch and BusinessWire coverage of the 2021 financing.
+    archive_url: null
+  - source_id: SRC-006
+    title: impact.com Leadership and Investors Overview
+    url: https://impact.com/leadership/
+    publisher: impact.com
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: primary_company_source
+    reliability_notes: Company-owned leadership roster and biographies.
+    archive_url: null
+  - source_id: SRC-007
+    title: Privacy Policy - impact.com
+    url: https://impact.com/privacy-policy/
+    publisher: impact.com
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: primary_company_source
+    reliability_notes: Company privacy policy outlining SaaS data-processing, service-provider, security and CCPA positions.
+    archive_url: null
+  - source_id: SRC-008
+    title: impact.com Pricing - Partnership Management Platform
+    url: https://impact.com/plans-b2b/
+    publisher: impact.com
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-06
+    source_type: primary_company_source
+    reliability_notes: Pricing page discloses setup fees, support, transaction-fee mechanics and customer-story claims.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Privacy, tracking and attribution regulation pressure
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Privacy, tracking and attribution regulation pressure is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+    evidence_claim_ids: *a28
+    mitigation_or_diligence_request: Request management data-room materials, third-party corroboration, and covenant/compliance evidence before underwriting this risk.
+  - risk_id: R-002
+    risk_title: Valuation and ARR staleness since 2021 financing
+    risk_category: financial
+    severity: high
+    likelihood: high
+    description: Valuation and ARR staleness since 2021 financing is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+    evidence_claim_ids: *a29
+    mitigation_or_diligence_request: Request management data-room materials, third-party corroboration, and covenant/compliance evidence before underwriting this risk.
+  - risk_id: R-003
+    risk_title: Company-authored ROI claims need customer verification
+    risk_category: regulatory
+    severity: medium
+    likelihood: medium
+    description: Company-authored ROI claims need customer verification is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.G
+    evidence_claim_ids: *a30
+    mitigation_or_diligence_request: Request management data-room materials, third-party corroboration, and covenant/compliance evidence before underwriting this risk.
+  - risk_id: R-004
+    risk_title: Competitive pressure from affiliate networks and creator platforms
+    risk_category: operational
+    severity: medium
+    likelihood: medium
+    description: Competitive pressure from affiliate networks and creator platforms is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - V.A
+    evidence_claim_ids: *a31
+    mitigation_or_diligence_request: Request management data-room materials, third-party corroboration, and covenant/compliance evidence before underwriting this risk.
+  - risk_id: R-005
+    risk_title: Dependence on browser, mobile and platform tracking rules
+    risk_category: financing
+    severity: medium
+    likelihood: medium
+    description: Dependence on browser, mobile and platform tracking rules is material for impact.com because public sources do not provide enough private operating evidence to quantify it fully.
+    impacted_chapter_ids:
+      - I
+      - IV
+    impacted_section_ids:
+      - I.D
+      - IV.A
+    evidence_claim_ids: *a32
+    mitigation_or_diligence_request: Request management data-room materials, third-party corroboration, and covenant/compliance evidence before underwriting this risk.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Private records for Financial Information are not available in public sources.
+    why_it_matters: Financial Information drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: high
+  - gap_id: G-002
+    chapter_id: II
+    section_id: II.A
+    missing_information: Private records for Products are not available in public sources.
+    why_it_matters: Products drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.A
+    missing_information: Private records for Customer Information are not available in public sources.
+    why_it_matters: Customer Information drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: high
+  - gap_id: G-004
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Private records for Competition are not available in public sources.
+    why_it_matters: Competition drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: medium
+  - gap_id: G-005
+    chapter_id: V
+    section_id: V.A
+    missing_information: Private records for Marketing, Sales, and Distribution are not available in public sources.
+    why_it_matters: Marketing, Sales, and Distribution drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Private records for Research and Development are not available in public sources.
+    why_it_matters: Research and Development drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: medium
+  - gap_id: G-007
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Private records for Management and Personnel are not available in public sources.
+    why_it_matters: Management and Personnel drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: medium
+  - gap_id: G-008
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Private records for Legal and Related Matters are not available in public sources.
+    why_it_matters: Legal and Related Matters drives underwriting quality and cannot be inferred reliably from public web evidence.
+    suggested_source_or_request: Request data-room schedules, source-system exports, and management/counsel certifications.
+    priority: medium
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide current company-approved materials covering Financial Information, including source documentation and owner/date metadata.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-002
+    chapter_id: II
+    section_id: II.A
+    request: Provide current company-approved materials covering Products, including source documentation and owner/date metadata.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.A
+    request: Provide current company-approved materials covering Customer Information, including source documentation and owner/date metadata.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide current company-approved materials covering Competition, including source documentation and owner/date metadata.
+    requested_from: company
+    priority: medium
+  - request_id: Q-005
+    chapter_id: V
+    section_id: V.A
+    request: Provide current company-approved materials covering Marketing, Sales, and Distribution, including source documentation and owner/date metadata.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide current company-approved materials covering Research and Development, including source documentation and owner/date metadata.
+    requested_from: company
+    priority: medium
+  - request_id: Q-007
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide current company-approved materials covering Management and Personnel, including source documentation and owner/date metadata.
+    requested_from: company
+    priority: medium
+  - request_id: Q-008
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide current company-approved materials covering Legal and Related Matters, including source documentation and owner/date metadata.
+    requested_from: counsel
+    priority: medium
+limitations:
+  - limitation_id: L-001
+    description: This is a public-source diligence report; no private company data room, founder interview, customer references or paid database exports were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - III.C
+      - VII.D
+      - VIII.F
+  - limitation_id: L-002
+    description: Some source pages were inaccessible, blocked, stale or available only through search-result snippets; those items are marked with lower confidence or not_publicly_verifiable.
+    affected_chapter_ids:
+      - I
+      - VIII
+    affected_section_ids:
+      - I.D
+      - VIII.G
+  - limitation_id: L-003
+    description: No legal conclusion is offered; litigation, regulatory, IP and privacy findings require counsel review and official docket/registry checks.
+    affected_chapter_ids:
+      - VIII
+    affected_section_ids:
+      - VIII.A
+      - VIII.B
+      - VIII.D
+      - VIII.G
+  - limitation_id: L-004
+    description: Public valuation data may be stale and should not be used as current fair value without recent priced-round, secondary, 409A or board-approved valuation evidence.
+    affected_chapter_ids:
+      - I
+    affected_section_ids:
+      - I.D
