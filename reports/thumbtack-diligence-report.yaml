@@ -1,0 +1,3253 @@
+report_metadata:
+  report_title: Thumbtack Startup Diligence Research Report
+  target_company: Thumbtack
+  website: https://www.thumbtack.com/
+  known_aliases:
+    - Thumbtack, Inc.
+  sector: Home-services marketplace software
+  geography: United States
+  company_stage: Private unicorn
+  research_date: 2026-06-12
+  analyst: GitHub Copilot CLI
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built existing-report exclusion list from reports/*-diligence-report.yaml and selected uncovered current-list unicorns with shuf -n 3.
+    - Fetched Wikipedia and CB Insights current unicorn lists via public web/Jina sources.
+    - Fetched company-owned pages and public source pages for product, customer, pricing, trust, leadership, and market evidence.
+    - No private data-room materials, financial statements, customer references, counsel letters, or cap-table documents were provided.
+  included_jurisdictions:
+    - United States
+  excluded_topics:
+    - Non-public financial, legal, customer, employee, vendor, and cap-table records not available from public sources.
+  user_provided_materials: []
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Thumbtack is a current private unicorn with latest public valuation of US$3.2B.
+    claim_source: Wikipedia and CB Insights current unicorn lists
+    claim_date: 2026-06-12
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids:
+      - EC-001
+      - EC-012
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request latest financing documents, 409A, secondary transaction data, and cap table.
+  - founder_claim_id: FC-002
+    claim_text: Thumbtack operates an active business in Home-services marketplace software.
+    claim_source: Company-owned public website
+    claim_date: 2026-06-12
+    mapped_chapter_ids:
+      - II
+      - III
+      - V
+    mapped_section_ids:
+      - II.A
+      - III.A
+      - V.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+      - EC-008
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request customer references, contracts, product usage cohorts, and revenue tie-out.
+executive_summary:
+  overall_assessment: "Thumbtack has credible public evidence of private-unicorn status and an operating public product footprint, but the highest-value diligence questions remain private: financial quality, customer economics, contract exposure, team retention, and legal/IP completeness."
+  investment_or_diligence_thesis: Thumbtack shows strong public marketplace-scale signals and a live national operating footprint, but diligence must validate unit economics, pro/customer retention, legal/licensing controls, and whether 2021 valuation support still holds.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Thumbtack appears on Wikipedia and CB Insights unicorn lists at US$3.2B.
+      evidence_claim_ids:
+        - EC-001
+    - founder_claim_id: FC-002
+      summary: Thumbtack is a national home-services marketplace connecting homeowners with local professionals across repair, maintenance, and improvement categories.
+      evidence_claim_ids:
+        - EC-002
+  biggest_risks:
+    - risk_id: R-001
+      summary: Audited financials, ARR, gross margin, cash burn, debt, backlog, and AR aging were not public.
+    - risk_id: R-002
+      summary: Latest public valuation anchor is US$3.2B around 2021-06; post-round performance and secondary pricing are not public.
+    - risk_id: R-003
+      summary: Public customer/marketplace signals do not disclose revenue concentration, net retention, churn, or cohort economics.
+  key_evidence_gaps:
+    - Audited financial statements, management reports, ARR bridge, burn, cash runway, AR aging, debt and off-balance-sheet liabilities.
+    - Customer-level revenue, concentration, churn, renewal, and cohort data.
+    - CAC, sales cycle, quota attainment, pipeline conversion, and marketing channel spend.
+    - Roadmap cost, R&D staffing, vendor dependencies, incident history, and release quality metrics.
+    - Headcount history, attrition, compensation, employment agreements, and option plans.
+  recommended_next_steps:
+    - Provide audited financials, monthly management reporting, ARR bridge, burn, cash runway, debt schedule, and board-approved operating plan.
+    - Provide top-customer revenue, cohort retention, churn, renewal status, contract terms, and customer references.
+    - Provide CAC/payback, quota attainment, pipeline conversion, and channel-spend analysis by cohort.
+    - Provide roadmap, R&D budget, engineering allocation, vendor/subprocessor architecture, and security review.
+    - Provide org chart, employment agreements, compensation bands, option plan, and attrition report.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Public sources support Thumbtack's unicorn valuation anchor (US$3.2B) but not audited financial quality, revenue, cash burn, debt, or cap-table detail.
+    founder_claim_ids:
+      - FC-001
+      - FC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-006
+      - EC-012
+    risk_ids: &a1
+      - R-001
+      - R-002
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Public sources did not disclose full financial statements or management reports for Thumbtack.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public sources did not disclose full financial statements or management reports for Thumbtack.
+            evidence_claim_ids: &a2
+              - EC-001
+              - EC-006
+            risk_ids: *a1
+        hidden_risks:
+          - Financial quality is opaque
+          - Valuation may be stale or list-source divergent
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids: *a2
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Growth drivers can be inferred from product/market signals, but projections and assumptions are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Growth drivers can be inferred from product/market signals, but projections and assumptions are private.
+            evidence_claim_ids: &a3
+              - EC-001
+              - EC-006
+            risk_ids: *a1
+        hidden_risks:
+          - Financial quality is opaque
+          - Valuation may be stale or list-source divergent
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a3
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Founder and select investor names are public, but ownership percentages and debt terms are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Founder and select investor names are public, but ownership percentages and debt terms are private.
+            evidence_claim_ids: &a4
+              - EC-001
+              - EC-006
+            risk_ids: *a1
+        hidden_risks:
+          - Financial quality is opaque
+          - Valuation may be stale or list-source divergent
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a4
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Current public lists anchor valuation at US$3.2B; updated financing history requires company documents.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Current public lists anchor valuation at US$3.2B; updated financing history requires company documents.
+            evidence_claim_ids: &a5
+              - EC-001
+              - EC-006
+            risk_ids: *a1
+        hidden_risks:
+          - Financial quality is opaque
+          - Valuation may be stale or list-source divergent
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids: *a5
+  - chapter_id: II
+    title: Products
+    chapter_summary: Public product pages describe active product offerings; pricing is partly disclosed while enterprise economics and product profitability remain private.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a6
+      - EC-002
+      - EC-003
+    risk_ids: &a7
+      - R-005
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Thumbtack is a national home-services marketplace connecting homeowners with local professionals across repair, maintenance, and improvement categories.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Thumbtack is a national home-services marketplace connecting homeowners with local professionals across repair, maintenance, and improvement categories.
+            evidence_claim_ids: *a6
+            risk_ids: *a7
+        hidden_risks:
+          - Product roadmap and technical execution risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a6
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public traction/customer signals exist, but customer-level revenue concentration, churn, contract terms, and supplier spend are not public.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a8
+      - EC-004
+      - EC-011
+    risk_ids: &a9
+      - R-003
+      - R-008
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: With over 12 million 5-star projects and counting ... 300,000 local service businesses.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: With over 12 million 5-star projects and counting ... 300,000 local service businesses.
+            evidence_claim_ids: *a8
+            risk_ids: *a9
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-006
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a8
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public partnership signals exist, but revenue contribution and contract terms are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public partnership signals exist, but revenue contribution and contract terms are not public.
+            evidence_claim_ids: *a8
+            risk_ids: *a9
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-007
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Customer-level revenue and concentration are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Customer-level revenue and concentration are not public.
+            evidence_claim_ids: *a8
+            risk_ids: *a9
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: No comprehensive public list of severed customer, partner, or supplier relationships was found in reviewed sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: No comprehensive public list of severed customer, partner, or supplier relationships was found in reviewed sources.
+            evidence_claim_ids: *a8
+            risk_ids: *a9
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Supplier, cloud, subprocessor, and vendor-spend concentration are not fully public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Supplier, cloud, subprocessor, and vendor-spend concentration are not fully public.
+            evidence_claim_ids: *a8
+            risk_ids: *a9
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids: *a8
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: The company competes in a market with credible alternatives; public evidence supports overlap but not win/loss or share.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a10
+      - EC-007
+    risk_ids: &a11
+      - R-004
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Public alternatives overlap target workflows and create pricing/distribution pressure.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Public alternatives overlap target workflows and create pricing/distribution pressure.
+            evidence_claim_ids: *a10
+            risk_ids: *a11
+        hidden_risks:
+          - Competitive and pricing pressure
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a10
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Owned-channel and GTM signals are visible, but CAC, quota, payback, pipeline, and channel-mix data are private.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a12
+      - EC-008
+    risk_ids: &a13
+      - R-003
+      - R-004
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public GTM channels are visible but channel weights and CAC are not.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public GTM channels are visible but channel weights and CAC are not.
+            evidence_claim_ids: *a12
+            risk_ids: *a13
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Competitive and pricing pressure
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a12
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major customer trends and pipeline quality require private CRM and renewal data.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Major customer trends and pipeline quality require private CRM and renewal data.
+            evidence_claim_ids: *a12
+            risk_ids: *a13
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Competitive and pricing pressure
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a12
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public pages show owned channels and CTAs; lead source attribution is private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public pages show owned channels and CTAs; lead source attribution is private.
+            evidence_claim_ids: *a12
+            risk_ids: *a13
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Competitive and pricing pressure
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a12
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales compensation, quota, cycle length, and hiring plan were not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: Sales compensation, quota, cycle length, and hiring plan were not public.
+            evidence_claim_ids: *a12
+            risk_ids: *a13
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Competitive and pricing pressure
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a12
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Budget sufficiency cannot be assessed from public sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: Budget sufficiency cannot be assessed from public sources.
+            evidence_claim_ids: *a12
+            risk_ids: *a13
+        hidden_risks:
+          - Customer concentration and retention are unknown
+          - Competitive and pricing pressure
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a12
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public roadmap/R&D signals exist, but R&D spend, staffing, and technical dependencies require company records.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a14
+      - EC-009
+    risk_ids: &a15
+      - R-005
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public personnel/product signals exist, but R&D org design and staffing are incomplete.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public personnel/product signals exist, but R&D org design and staffing are incomplete.
+            evidence_claim_ids: *a14
+            risk_ids: *a15
+        hidden_risks:
+          - Product roadmap and technical execution risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids: *a14
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public roadmap/product initiatives exist, but timing, cost, and dependency risk need internal review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Public roadmap/product initiatives exist, but timing, cost, and dependency risk need internal review.
+            evidence_claim_ids: *a14
+            risk_ids: *a15
+        hidden_risks:
+          - Product roadmap and technical execution risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a14
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Founder or leadership signals are public, but org chart, compensation, option plans, and turnover are not public.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a16
+      - EC-010
+    risk_ids: &a17
+      - R-006
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: No complete public org chart with reporting lines was found.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: No complete public org chart with reporting lines was found.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a16
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Historical and projected headcount by function/location are mostly not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Historical and projected headcount by function/location are mostly not public.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a16
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public founder/leader signals support basic management identification.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public founder/leader signals support basic management identification.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation and employment agreements are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Compensation and employment agreements are not public.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Option/incentive stock plan documents are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Option/incentive stock plan documents are not public.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Employee-relations issues, if any, require HR/legal records.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Employee-relations issues, if any, require HR/legal records.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Turnover data is not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Turnover data is not public.
+            evidence_claim_ids: *a16
+            risk_ids: *a17
+        hidden_risks:
+          - Leadership, compensation, and turnover opacity
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-017
+        figure_ids: []
+        evidence_claim_ids: *a16
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Public legal/trust surfaces are limited; litigation, regulatory, IP, insurance, and material-contract schedules require counsel-led diligence.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a18
+      - EC-011
+    risk_ids: &a19
+      - R-007
+      - R-008
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Pending lawsuits against the company require counsel confirmation and docket search.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Pending lawsuits against the company require counsel confirmation and docket search.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-018
+        figure_ids:
+          - F-010
+        evidence_claim_ids: *a18
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Company-initiated litigation requires counsel confirmation and docket search.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Company-initiated litigation requires counsel confirmation and docket search.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Environmental/safety exposure appears limited for software/service operations but employee safety policies are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Environmental/safety exposure appears limited for software/service operations but employee safety policies are private.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: IP ownership and assignment chain are not verifiable from reviewed public sources.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: IP ownership and assignment chain are not verifiable from reviewed public sources.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-020
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage and exclusions are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Insurance coverage and exclusions are private.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material customer, vendor, and financing contracts are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Material customer, vendor, and financing contracts are private.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Regulatory history and correspondence require company/counsel records.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Regulatory history and correspondence require company/counsel records.
+            evidence_claim_ids: *a18
+            risk_ids: *a19
+        hidden_risks:
+          - Legal, regulatory, IP, and contractual gaps
+          - Operational dependency risk
+        evidence_gaps:
+          - Private data-room records are required to verify completeness, currentness, and economic materiality.
+        follow_up_questions:
+          - Provide source documents, owner, date, and reconciliation for each private metric or contract supporting this section.
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-011
+        evidence_claim_ids: *a18
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize public financing and valuation anchors.
+    columns:
+      - name: date
+        description: date
+      - name: round
+        description: round
+      - name: amount
+        description: amount
+      - name: post_money_valuation
+        description: post money valuation
+      - name: lead_or_investors
+        description: lead or investors
+      - name: source
+        description: source
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-001-R01
+        values:
+          date: 2021-06-15
+          round: growth financing
+          amount: $275M
+          post_money_valuation: $3.2B
+          lead_or_investors: Tiger Global, Sequoia Capital, and Google Capital are listed by CB Insights as select investors; Thumbtack says it has raised $500M+ from Sequoia, Tiger Global, Javelin, Baillie Gifford, and CapitalG.
+          source: Wikipedia reference to TechCrunch
+          verification_status: partially_verified
+        evidence_claim_ids: &a20
+          - EC-001
+          - EC-005
+          - EC-012
+        source_ids: &a21
+          - SRC-001
+          - SRC-002
+      - row_id: T-001-R02
+        values:
+          date: 2021-06
+          round: CB Insights current unicorn-list valuation
+          amount: not disclosed in list row
+          post_money_valuation: US$3.2B
+          lead_or_investors: Tiger Global, Sequoia Capital, and Google Capital are listed by CB Insights as select investors; Thumbtack says it has raised $500M+ from Sequoia, Tiger Global, Javelin, Baillie Gifford, and CapitalG.
+          source: CB Insights
+          verification_status: verified
+        evidence_claim_ids: *a20
+        source_ids: *a21
+      - row_id: T-001-R03
+        values:
+          date: 2026-06-12
+          round: current public eligibility check
+          amount: not applicable
+          post_money_valuation: US$3.2B
+          lead_or_investors: not applicable
+          source: Wikipedia and CB Insights current lists
+          verification_status: partially_verified
+        evidence_claim_ids: *a20
+        source_ids: *a21
+    evidence_claim_ids: *a20
+    source_ids: *a21
+    notes: null
+  - table_id: T-002
+    title: Capital structure / ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Capture public stakeholder signals and private cap-table gaps.
+    columns:
+      - name: stakeholder
+        description: stakeholder
+      - name: public_position
+        description: public position
+      - name: public_evidence
+        description: public evidence
+      - name: diligence_caveat
+        description: diligence caveat
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-002-R01
+        values:
+          stakeholder: Founders
+          public_position: Marco Zappacosta is listed by Wikipedia as founder.
+          public_evidence: Wikipedia founder row
+          diligence_caveat: Share ownership, vesting, and founder employment terms are private.
+          verification_status: partially_verified
+        evidence_claim_ids: &a22
+          - EC-005
+          - EC-006
+        source_ids: &a23
+          - SRC-001
+          - SRC-002
+      - row_id: T-002-R02
+        values:
+          stakeholder: Select investors
+          public_position: Tiger Global, Sequoia Capital, and Google Capital are listed by CB Insights as select investors; Thumbtack says it has raised $500M+ from Sequoia, Tiger Global, Javelin, Baillie Gifford, and CapitalG.
+          public_evidence: CB Insights select investor row
+          diligence_caveat: Ownership percentages, liquidation preferences, and notes/warrants are private.
+          verification_status: partially_verified
+        evidence_claim_ids: *a22
+        source_ids: *a23
+      - row_id: T-002-R03
+        values:
+          stakeholder: Employees/options
+          public_position: not public
+          public_evidence: No option schedule found in reviewed sources.
+          diligence_caveat: Request current option plan, grants, exercise prices, and repurchase rights.
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a22
+        source_ids: *a23
+    evidence_claim_ids: *a22
+    source_ids: *a23
+    notes: null
+  - table_id: T-003
+    title: Public revenue / ARR / unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate public traction signals from private financial metrics.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_value
+        description: public value
+      - name: source
+        description: source
+      - name: verification_status
+        description: verification status
+      - name: private_data_request
+        description: private data request
+    rows:
+      - row_id: T-003-R01
+        values:
+          metric: Pros disclosed
+          public_value: 300000+ pros
+          source: With over 12 million 5-star projects and counting ... 300,000 local service businesses.
+          verification_status: verified
+          private_data_request: Map metric to paid accounts and revenue.
+        evidence_claim_ids: &a24
+          - EC-004
+          - EC-006
+        source_ids: &a25
+          - SRC-003
+          - SRC-005
+      - row_id: T-003-R02
+        values:
+          metric: ARR / revenue / gross margin
+          public_value: not disclosed
+          source: reviewed public sources
+          verification_status: not_publicly_verifiable
+          private_data_request: Audited financials, ARR bridge, gross margin by product, and cohort retention.
+        evidence_claim_ids: *a24
+        source_ids: *a25
+      - row_id: T-003-R03
+        values:
+          metric: Cash runway / burn
+          public_value: not disclosed
+          source: reviewed public sources
+          verification_status: not_publicly_verifiable
+          private_data_request: Cash balance, monthly burn, board plan, debt schedule, and runway sensitivity.
+        evidence_claim_ids: *a24
+        source_ids: *a25
+    evidence_claim_ids: *a24
+    source_ids: *a25
+    notes: null
+  - table_id: T-004
+    title: Product / SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public product surfaces to buyers and verification status.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: public_features
+        description: public features
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-004-R01
+        values:
+          product: Homeowner marketplace
+          audience: Homeowners
+          public_features: Find local pros, reviews, cost guides, maintenance tips, and project guides
+          verification_status: verified
+        evidence_claim_ids: &a26
+          - EC-002
+        source_ids: &a27
+          - SRC-003
+          - SRC-004
+      - row_id: T-004-R02
+        values:
+          product: Pro marketplace
+          audience: Local service businesses
+          public_features: Lead generation, direct customer communication, pricing/budget controls
+          verification_status: verified
+        evidence_claim_ids: *a26
+        source_ids: *a27
+      - row_id: T-004-R03
+        values:
+          product: Home management content
+          audience: Homeowners
+          public_features: Cost guides, maintenance tips, project guides
+          verification_status: verified
+        evidence_claim_ids: *a26
+        source_ids: *a27
+      - row_id: T-004-R04
+        values:
+          product: AI-powered home-care experience
+          audience: Homeowners
+          public_features: Press page announces AI-powered experience for home care
+          verification_status: partially_verified
+        evidence_claim_ids: *a26
+        source_ids: *a27
+    evidence_claim_ids: *a26
+    source_ids: *a27
+    notes: null
+  - table_id: T-005
+    title: Pricing and packaging evidence
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture disclosed prices and quote-based gaps.
+    columns:
+      - name: offering
+        description: offering
+      - name: public_price_or_model
+        description: public price or model
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-005-R01
+        values:
+          offering: Pro signup
+          public_price_or_model: No subscription/join/annual/member fees
+          public_evidence: Pro page says there is no charge to join and no annual or membership fees
+          verification_status: verified
+        evidence_claim_ids: &a28
+          - EC-003
+        source_ids: &a29
+          - SRC-004
+      - row_id: T-005-R02
+        values:
+          offering: Lead budget/pricing
+          public_price_or_model: Pros control pricing and budget for leads
+          public_evidence: Pro page says budget determines how many leads a pro gets
+          verification_status: verified
+        evidence_claim_ids: *a28
+        source_ids: *a29
+      - row_id: T-005-R03
+        values:
+          offering: Consumer fees/take rate
+          public_price_or_model: Not disclosed in fetched public sources
+          public_evidence: Request transaction economics and fee schedules
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a28
+        source_ids: *a29
+    evidence_claim_ids: *a28
+    source_ids: *a29
+    notes: null
+  - table_id: T-006
+    title: Publicly known customers and case studies
+    chapter_id: III
+    section_id: III.A
+    purpose: List public customer or marketplace proof points without inferring revenue concentration.
+    columns:
+      - name: customer_or_segment
+        description: customer or segment
+      - name: use_case
+        description: use case
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-006-R01
+        values:
+          customer_or_segment: Homeowners
+          use_case: Demand side
+          public_evidence: Millions of people and every county in the U.S. are cited on the about page
+          verification_status: verified
+        evidence_claim_ids: &a30
+          - EC-004
+        source_ids: &a31
+          - SRC-003
+          - SRC-005
+      - row_id: T-006-R02
+        values:
+          customer_or_segment: Local service businesses
+          use_case: Supply side
+          public_evidence: 300,000+ pros are cited publicly
+          verification_status: verified
+        evidence_claim_ids: *a30
+        source_ids: *a31
+      - row_id: T-006-R03
+        values:
+          customer_or_segment: Projects/reviews
+          use_case: Marketplace activity
+          public_evidence: 90M+ projects started and 12M+ 5-star reviews are cited publicly
+          verification_status: verified
+        evidence_claim_ids: *a30
+        source_ids: *a31
+      - row_id: T-006-R04
+        values:
+          customer_or_segment: Top customers by revenue
+          use_case: Not applicable / not public
+          public_evidence: Marketplace has fragmented demand; concentration data requires internal data
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a30
+        source_ids: *a31
+    evidence_claim_ids: *a30
+    source_ids: *a31
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Identify public partnership signals and missing revenue terms.
+    columns:
+      - name: partner
+        description: partner
+      - name: relationship_nature
+        description: relationship nature
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-007-R01
+        values:
+          partner: Redfin
+          relationship_nature: Co-branded trend predictions
+          public_evidence: Press page lists Thumbtack and Redfin home trend predictions
+          verification_status: verified
+        evidence_claim_ids: &a32
+          - EC-004
+          - EC-008
+        source_ids: &a33
+          - SRC-003
+          - SRC-006
+      - row_id: T-007-R02
+        values:
+          partner: Anthropic Claude
+          relationship_nature: Home-services experience inside Claude
+          public_evidence: Press page says Thumbtack delivers home services experience in Anthropic Claude
+          verification_status: partially_verified
+        evidence_claim_ids: *a32
+        source_ids: *a33
+      - row_id: T-007-R03
+        values:
+          partner: CRM/tool integrations
+          relationship_nature: Pro page says Thumbtack works with favorite customer management tools
+          public_evidence: partially_verified
+        evidence_claim_ids: *a32
+        source_ids: *a33
+    evidence_claim_ids: *a32
+    source_ids: *a33
+    notes: null
+  - table_id: T-008
+    title: Top supplier / platform dependency snapshot
+    chapter_id: III
+    section_id: III.E
+    purpose: Frame operational supplier concentration diligence.
+    columns:
+      - name: supplier_or_dependency
+        description: supplier or dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-008-R01
+        values:
+          supplier_or_dependency: Consumer/pro data infrastructure
+          role: Not named in fetched public sources
+          public_evidence: Request cloud, payments, messaging, and identity vendor spend
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: &a34
+          - EC-011
+        source_ids: &a35
+          - SRC-003
+          - SRC-005
+          - SRC-006
+      - row_id: T-008-R02
+        values:
+          supplier_or_dependency: Local licensing and insurance ecosystem
+          role: Safety page encourages users to verify occupational licenses, permits, and insurance
+          public_evidence: verified
+        evidence_claim_ids: *a34
+        source_ids: *a35
+      - row_id: T-008-R03
+        values:
+          supplier_or_dependency: Payment/lead delivery systems
+          role: Not named in fetched public sources
+          public_evidence: Request processor, dispute, and refund data
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a34
+        source_ids: *a35
+    evidence_claim_ids: *a34
+    source_ids: *a35
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare public market alternatives and overlap.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: product_overlap
+        description: product overlap
+      - name: differentiator
+        description: differentiator
+    rows:
+      - row_id: T-009-R01
+        values:
+          competitor: Angi / HomeAdvisor
+          segment: Home services marketplace
+          product_overlap: Lead-gen and marketplace overlap
+          differentiator: Legacy brand and contractor network
+        evidence_claim_ids: &a36
+          - EC-007
+        source_ids: &a37
+          - SRC-003
+      - row_id: T-009-R02
+        values:
+          competitor: Taskrabbit
+          segment: Local task marketplace
+          product_overlap: Overlaps small jobs and household tasks
+          differentiator: Consumer marketplace brand
+        evidence_claim_ids: *a36
+        source_ids: *a37
+      - row_id: T-009-R03
+        values:
+          competitor: Yelp / Google Local Services
+          segment: Local discovery and ads
+          product_overlap: Competes for high-intent local demand
+          differentiator: Search distribution
+        evidence_claim_ids: *a36
+        source_ids: *a37
+      - row_id: T-009-R04
+        values:
+          competitor: Porch / Houzz
+          segment: Home improvement services/content
+          product_overlap: Adjacency in home projects and contractor discovery
+          differentiator: Vertical specialization
+        evidence_claim_ids: *a36
+        source_ids: *a37
+    evidence_claim_ids: *a36
+    source_ids: *a37
+    notes: null
+  - table_id: T-010
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Structure where the company competes and where evidence is missing.
+    columns:
+      - name: axis
+        description: axis
+      - name: target_position
+        description: target position
+      - name: competitor_pressure
+        description: competitor pressure
+      - name: evidence_status
+        description: evidence status
+    rows:
+      - row_id: T-010-R01
+        values:
+          axis: Product breadth
+          target_position: Homeowner marketplace, Pro marketplace, Home management content, AI-powered home-care experience
+          competitor_pressure: Multiple adjacent competitors overlap core workflows.
+          evidence_status: partially_verified
+        evidence_claim_ids: &a38
+          - EC-007
+          - EC-008
+        source_ids: &a39
+          - SRC-003
+          - SRC-004
+      - row_id: T-010-R02
+        values:
+          axis: Distribution
+          target_position: Consumer SEO/content, Pro acquisition, Partnership/AI surfaces, Paid local marketing
+          competitor_pressure: Competitors may have stronger bundled or search distribution.
+          evidence_status: partially_verified
+        evidence_claim_ids: *a38
+        source_ids: *a39
+      - row_id: T-010-R03
+        values:
+          axis: Price / unit economics
+          target_position: Not fully disclosed
+          competitor_pressure: Discounting and CAC payback require win/loss data.
+          evidence_status: not_publicly_verifiable
+        evidence_claim_ids: *a38
+        source_ids: *a39
+    evidence_claim_ids: *a38
+    source_ids: *a39
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Map observed channels and unverified economics.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public evidence
+      - name: public_weight
+        description: public weight
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-011-R01
+        values:
+          channel: Consumer SEO/content
+          public_evidence: Cost guides, maintenance tips, and project guides are public
+          public_weight: not disclosed
+          verification_status: verified
+        evidence_claim_ids: &a40
+          - EC-008
+        source_ids: &a41
+          - SRC-003
+          - SRC-004
+          - SRC-006
+      - row_id: T-011-R02
+        values:
+          channel: Pro acquisition
+          public_evidence: Pro page emphasizes sign-up and 30,000+ leads/day
+          public_weight: not disclosed
+          verification_status: verified
+        evidence_claim_ids: *a40
+        source_ids: *a41
+      - row_id: T-011-R03
+        values:
+          channel: Partnership/AI surfaces
+          public_evidence: Press page references Claude and Redfin initiatives
+          public_weight: not disclosed
+          verification_status: partially_verified
+        evidence_claim_ids: *a40
+        source_ids: *a41
+      - row_id: T-011-R04
+        values:
+          channel: Paid local marketing
+          public_evidence: Not quantified publicly
+          public_weight: not disclosed
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a40
+        source_ids: *a41
+    evidence_claim_ids: *a40
+    source_ids: *a41
+    notes: null
+  - table_id: T-012
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize owned-channel proof points and risks.
+    columns:
+      - name: signal
+        description: signal
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-012-R01
+        values:
+          signal: Marketplace scale metrics
+          public_evidence: 300,000+ pros, 90M+ projects, 12M+ reviews, available nationwide
+          verification_status: verified
+        evidence_claim_ids: &a42
+          - EC-008
+        source_ids: &a43
+          - SRC-003
+          - SRC-006
+      - row_id: T-012-R02
+        values:
+          signal: Press/PR
+          public_evidence: Press page lists AI, Claude, Redfin trend prediction, and workplace news
+          verification_status: verified
+        evidence_claim_ids: *a42
+        source_ids: *a43
+      - row_id: T-012-R03
+        values:
+          signal: Trust and safety
+          public_evidence: Safety page describes licenses, permits, insurance checks, reviews, and risk mitigation
+          verification_status: verified
+        evidence_claim_ids: *a42
+        source_ids: *a43
+    evidence_claim_ids: *a42
+    source_ids: *a43
+    notes: null
+  - table_id: T-013
+    title: Key R&D personnel / leadership signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture public leadership signals relevant to product/R&D.
+    columns:
+      - name: name_or_role
+        description: name or role
+      - name: public_role
+        description: public role
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-013-R01
+        values:
+          name_or_role: Marco Zappacosta
+          public_role: Founder / public founder
+          public_evidence: Founder listed in Wikipedia row
+          verification_status: verified
+        evidence_claim_ids: &a44
+          - EC-009
+          - EC-010
+        source_ids: &a45
+          - SRC-001
+          - SRC-005
+      - row_id: T-013-R02
+        values:
+          name_or_role: Current executive roster
+          public_role: Not captured in fetched public sources
+          public_evidence: Request current leadership roster and employment agreements
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a44
+        source_ids: *a45
+      - row_id: T-013-R03
+        values:
+          name_or_role: Functional leadership by marketplace side
+          public_role: Not public
+          public_evidence: Request org chart split across demand, supply, marketplace, trust, and product
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a44
+        source_ids: *a45
+    evidence_claim_ids: *a44
+    source_ids: *a45
+    notes: null
+  - table_id: T-014
+    title: Public product / research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: List public roadmap and product-development signals.
+    columns:
+      - name: project
+        description: project
+      - name: status
+        description: status
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-014-R01
+        values:
+          project: AI-powered homeowner experience
+          status: Recently announced
+          public_evidence: Press page lists AI-powered experience to reinvent home care
+          verification_status: partially_verified
+        evidence_claim_ids: &a46
+          - EC-009
+        source_ids: &a47
+          - SRC-003
+          - SRC-004
+      - row_id: T-014-R02
+        values:
+          project: Claude integration
+          status: Recently announced
+          public_evidence: Press page lists home services experience in Anthropic Claude
+          verification_status: partially_verified
+        evidence_claim_ids: *a46
+        source_ids: *a47
+      - row_id: T-014-R03
+        values:
+          project: Pro growth calculator
+          status: Live product surface
+          public_evidence: Pro page describes earning-potential calculator
+          verification_status: verified
+        evidence_claim_ids: *a46
+        source_ids: *a47
+    evidence_claim_ids: *a46
+    source_ids: *a47
+    notes: null
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Summarize publicly identified leaders and founder signals.
+    columns:
+      - name: name
+        description: name
+      - name: role
+        description: role
+      - name: source_detail
+        description: source detail
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-015-R01
+        values:
+          name: Marco Zappacosta
+          role: Founder / public founder
+          source_detail: Founder listed in Wikipedia row
+          verification_status: verified
+        evidence_claim_ids: &a48
+          - EC-010
+        source_ids: &a49
+          - SRC-001
+          - SRC-005
+      - row_id: T-015-R02
+        values:
+          name: Current executive roster
+          role: Not captured in fetched public sources
+          source_detail: Request current leadership roster and employment agreements
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a48
+        source_ids: *a49
+      - row_id: T-015-R03
+        values:
+          name: Functional leadership by marketplace side
+          role: Not public
+          source_detail: Request org chart split across demand, supply, marketplace, trust, and product
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a48
+        source_ids: *a49
+    evidence_claim_ids: *a48
+    source_ids: *a49
+    notes: null
+  - table_id: T-016
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Separate disclosed headcount anchors from missing org detail.
+    columns:
+      - name: function_or_metric
+        description: function or metric
+      - name: public_value
+        description: public value
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-016-R01
+        values:
+          function_or_metric: Total employees
+          public_value: 1000
+          public_evidence: About page says 1000+ employees
+          verification_status: verified
+        evidence_claim_ids: &a50
+          - EC-010
+        source_ids: &a51
+          - SRC-003
+          - SRC-005
+      - row_id: T-016-R02
+        values:
+          function_or_metric: Supply-side network
+          public_value: 300000
+          public_evidence: About page says 300,000+ pros
+          verification_status: verified
+        evidence_claim_ids: *a50
+        source_ids: *a51
+      - row_id: T-016-R03
+        values:
+          function_or_metric: Functional/geographic employee split
+          public_value: not disclosed
+          public_evidence: Not disclosed in fetched public sources
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a50
+        source_ids: *a51
+    evidence_claim_ids: *a50
+    source_ids: *a51
+    notes: null
+  - table_id: T-017
+    title: Departures / turnover signals
+    chapter_id: VII
+    section_id: VII.G
+    purpose: Document public availability of departure and turnover evidence.
+    columns:
+      - name: item
+        description: item
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-017-R01
+        values:
+          item: Executive departures last two years
+          public_evidence: No comprehensive departure list in reviewed sources.
+          verification_status: not_publicly_verifiable
+          diligence_request: Request executive-change log and references.
+        evidence_claim_ids: &a52
+          - EC-010
+        source_ids: &a53
+          - SRC-003
+      - row_id: T-017-R02
+        values:
+          item: Voluntary/involuntary turnover
+          public_evidence: Not disclosed.
+          verification_status: not_publicly_verifiable
+          diligence_request: Request monthly attrition by function and geography.
+        evidence_claim_ids: *a52
+        source_ids: *a53
+      - row_id: T-017-R03
+        values:
+          item: Retention programs
+          public_evidence: Not disclosed.
+          verification_status: not_publicly_verifiable
+          diligence_request: Request compensation, option refresh, and retention plans.
+        evidence_claim_ids: *a52
+        source_ids: *a53
+    evidence_claim_ids: *a52
+    source_ids: *a53
+    notes: null
+  - table_id: T-018
+    title: Pending lawsuits against the company
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Track public litigation evidence and requested legal schedule.
+    columns:
+      - name: case
+        description: case
+      - name: court_or_source
+        description: court or source
+      - name: status
+        description: status
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-018-R01
+        values:
+          case: Public litigation inventory
+          court_or_source: Not found in reviewed company/list sources
+          status: Requires counsel confirmation and docket search
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: &a54
+          - EC-011
+        source_ids: &a55
+          - SRC-003
+      - row_id: T-018-R02
+        values:
+          case: Customer/vendor disputes
+          court_or_source: Not public
+          status: Request legal schedule
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a54
+        source_ids: *a55
+    evidence_claim_ids: *a54
+    source_ids: *a55
+    notes: null
+  - table_id: T-019
+    title: Pending lawsuits initiated by company
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Track offensive litigation evidence and requested legal schedule.
+    columns:
+      - name: defendant_or_matter
+        description: defendant or matter
+      - name: court_or_source
+        description: court or source
+      - name: status
+        description: status
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-019-R01
+        values:
+          defendant_or_matter: Public offensive litigation inventory
+          court_or_source: Not found in reviewed company/list sources
+          status: Requires counsel confirmation and docket search
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: &a56
+          - EC-011
+        source_ids: &a57
+          - SRC-003
+      - row_id: T-019-R02
+        values:
+          defendant_or_matter: IP enforcement / collections
+          court_or_source: Not public
+          status: Request legal schedule
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a56
+        source_ids: *a57
+    evidence_claim_ids: *a56
+    source_ids: *a57
+    notes: null
+  - table_id: T-020
+    title: Material IP and trust/legal assets
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: List public IP/legal/trust surfaces and private ownership gaps.
+    columns:
+      - name: asset_or_surface
+        description: asset or surface
+      - name: jurisdiction_or_scope
+        description: jurisdiction or scope
+      - name: public_status
+        description: public status
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-020-R01
+        values:
+          asset_or_surface: Company brand / trademarks
+          jurisdiction_or_scope: Not independently searched
+          public_status: Brand use visible on company website
+          verification_status: partially_verified
+        evidence_claim_ids: &a58
+          - EC-011
+        source_ids: &a59
+          - SRC-003
+          - SRC-005
+          - SRC-006
+      - row_id: T-020-R02
+        values:
+          asset_or_surface: Product IP / code / model rights
+          jurisdiction_or_scope: Private records required
+          public_status: Not disclosed in reviewed public sources
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids: *a58
+        source_ids: *a59
+      - row_id: T-020-R03
+        values:
+          asset_or_surface: Terms/privacy/trust surfaces
+          jurisdiction_or_scope: Public website
+          public_status: Public legal or trust links/pages reviewed where available
+          verification_status: partially_verified
+        evidence_claim_ids: *a58
+        source_ids: *a59
+    evidence_claim_ids: *a58
+    source_ids: *a59
+    notes: null
+  - table_id: T-021
+    title: Regulatory / agency actions
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Summarize public regulatory-action evidence and required follow-up.
+    columns:
+      - name: agency_or_area
+        description: agency or area
+      - name: public_action
+        description: public action
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-021-R01
+        values:
+          agency_or_area: Privacy/data protection
+          public_action: No enforcement action identified in reviewed sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Request privacy incidents, DSR metrics, DPIAs, and regulator correspondence.
+        evidence_claim_ids: &a60
+          - EC-011
+        source_ids: &a61
+          - SRC-003
+      - row_id: T-021-R02
+        values:
+          agency_or_area: Sector-specific compliance
+          public_action: Business model creates possible regulatory obligations depending on customers and jurisdictions
+          verification_status: inconclusive
+          diligence_request: Request compliance matrix and counsel memo.
+        evidence_claim_ids: *a60
+        source_ids: *a61
+      - row_id: T-021-R03
+        values:
+          agency_or_area: Insurance/material exposure
+          public_action: Not public
+          verification_status: not_publicly_verifiable
+          diligence_request: Request insurance policies, claims history, and exclusions.
+        evidence_claim_ids: *a60
+        source_ids: *a61
+    evidence_claim_ids: *a60
+    source_ids: *a61
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding and valuation timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Chronological public events and diligence gaps.
+    purpose: Anchor public evidence in time and flag missing private records.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-001-E01
+          date: 2021-06-15
+          label: growth financing ($3.2B)
+          description: $275M / $3.2B public valuation anchor from Wikipedia reference to TechCrunch.
+          category: financing
+          evidence_claim_ids:
+            - EC-001
+          source_ids:
+            - SRC-001
+        - event_id: F-001-E02
+          date: 2026-06-12
+          label: Public-data gap
+          description: No public audited financials, ARR bridge, or updated private valuation data found in reviewed sources.
+          category: diligence_gap
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-001
+            - SRC-002
+      start_date: 2021-06-15
+      end_date: 2026-06-12
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Show evidence-backed events and not-publicly-verifiable gaps.
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-002
+    title: Public valuation anchors
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Bar chart of public valuation anchors from Wikipedia and CB Insights.
+    purpose: Structure public quantitative signals and flag missing private metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric or period
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed value
+        unit: null
+        scale: linear
+      series:
+        - series_id: valuation
+          name: Valuation
+          unit: USD billions
+          data_points:
+            - x: Wikipedia
+              y: 3.2
+              label: US$3.2B
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+            - x: CB Insights
+              y: 3.2
+              label: US$3.2B
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-002
+            - x: Latest private 409A
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-001
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render null values as diligence gaps.
+    evidence_claim_ids:
+      - EC-001
+      - EC-006
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-003
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Publicly inferred product surface and diligence-required dependencies.
+    purpose: Show product workflow and where private vendor/architecture diligence is required.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: user
+          label: End users / buyers
+          node_type: user
+          description: Customers or professionals using the product.
+          evidence_claim_ids:
+            - EC-002
+            - EC-004
+          source_ids:
+            - SRC-003
+        - node_id: platform
+          label: Thumbtack platform
+          node_type: product
+          description: Homeowner marketplace, Pro marketplace, Home management content, AI-powered home-care experience
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-003
+        - node_id: data
+          label: Customer/workflow data
+          node_type: database
+          description: Public product pages imply customer/workflow data; retention/security controls require private review.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+        - node_id: third_party
+          label: Third-party integrations/vendors
+          node_type: third_party
+          description: Vendor and subprocessor dependency is not fully public.
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+      edges:
+        - edge_id: e1
+          from_node_id: user
+          to_node_id: platform
+          relationship: uses
+          data_or_dependency: workflow requests and feedback
+          evidence_claim_ids:
+            - EC-002
+          source_ids:
+            - SRC-003
+        - edge_id: e2
+          from_node_id: platform
+          to_node_id: data
+          relationship: stores/processes
+          data_or_dependency: customer and operational data
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+        - edge_id: e3
+          from_node_id: platform
+          to_node_id: third_party
+          relationship: integrates with
+          data_or_dependency: not fully disclosed
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+      boundaries:
+        - boundary_id: public
+          label: Publicly described surfaces
+          node_ids:
+            - user
+            - platform
+        - boundary_id: private
+          label: Private diligence required
+          node_ids:
+            - data
+            - third_party
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Use dashed boundary for private diligence gaps.
+    evidence_claim_ids:
+      - EC-002
+      - EC-011
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-004
+    title: Customer / partner concentration proxy
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Public customer/activity metrics and missing concentration data.
+    purpose: Structure public quantitative signals and flag missing private metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric or period
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed value
+        unit: null
+        scale: linear
+      series:
+        - series_id: public-metrics
+          name: Public metrics
+          unit: pros
+          data_points:
+            - x: Pros disclosed
+              y: 300000
+              label: 300000+
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-003
+            - x: Top customer revenue share
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-003
+            - x: Revenue concentration >5%
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-003
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render null values as diligence gaps.
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-005
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Qualitative map of target and public alternatives.
+    purpose: Frame competitive diligence axes.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Workflow breadth
+          low_label: point solution
+          high_label: suite/platform
+        y_axis:
+          label: Distribution strength
+          low_label: niche
+          high_label: broad
+      segments:
+        - segment_id: target
+          name: Thumbtack
+          description: Target company
+        - segment_id: competitors
+          name: Competitors
+          description: Publicly identified alternatives
+      entities:
+        - entity_id: target
+          name: Thumbtack
+          entity_type: target_company
+          segment_id: target
+          x_value: 7
+          y_value: 6
+          attributes:
+            rationale: Public product breadth and customer signals
+          evidence_claim_ids:
+            - EC-002
+            - EC-004
+          source_ids:
+            - SRC-003
+        - entity_id: comp-1
+          name: Angi / HomeAdvisor
+          entity_type: competitor
+          segment_id: competitors
+          x_value: 5
+          y_value: 5
+          attributes:
+            segment: Home services marketplace
+            differentiator: Legacy brand and contractor network
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-003
+        - entity_id: comp-2
+          name: Taskrabbit
+          entity_type: competitor
+          segment_id: competitors
+          x_value: 6
+          y_value: 6
+          attributes:
+            segment: Local task marketplace
+            differentiator: Consumer marketplace brand
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-003
+        - entity_id: comp-3
+          name: Yelp / Google Local Services
+          entity_type: competitor
+          segment_id: competitors
+          x_value: 7
+          y_value: 7
+          attributes:
+            segment: Local discovery and ads
+            differentiator: Search distribution
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-003
+        - entity_id: comp-4
+          name: Porch / Houzz
+          entity_type: competitor
+          segment_id: competitors
+          x_value: 8
+          y_value: 5
+          attributes:
+            segment: Home improvement services/content
+            differentiator: Vertical specialization
+          evidence_claim_ids:
+            - EC-007
+          source_ids:
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Qualitative positions; validate with win/loss and market share data.
+    evidence_claim_ids:
+      - EC-007
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-006
+    title: GTM channel evidence map
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Observed channels with missing public channel weights.
+    purpose: Structure public quantitative signals and flag missing private metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric or period
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed value
+        unit: null
+        scale: linear
+      series:
+        - series_id: channels
+          name: Disclosed channel weight
+          unit: percent
+          data_points:
+            - x: Consumer SEO/content
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-003
+            - x: Pro acquisition
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-003
+            - x: Partnership/AI surfaces
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-003
+            - x: Paid local marketing
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-003
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render null values as diligence gaps.
+    evidence_claim_ids:
+      - EC-008
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-007
+    title: R&D portfolio map
+    chapter_id: VI
+    section_id: VI.B
+    figure_type: architecture_diagram
+    description: Public roadmap/research projects and private cost/staffing gaps.
+    purpose: Show product/R&D initiatives from public pages.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: pipeline-1
+          label: AI-powered homeowner experience
+          node_type: product
+          description: Recently announced - Press page lists AI-powered experience to reinvent home care
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+            - SRC-004
+        - node_id: pipeline-2
+          label: Claude integration
+          node_type: product
+          description: Recently announced - Press page lists home services experience in Anthropic Claude
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+            - SRC-004
+        - node_id: pipeline-3
+          label: Pro growth calculator
+          node_type: product
+          description: Live product surface - Pro page describes earning-potential calculator
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+            - SRC-004
+      edges:
+        - edge_id: pipeline-edge-1
+          from_node_id: pipeline-1
+          to_node_id: pipeline-2
+          relationship: related roadmap item
+          data_or_dependency: cost and timing not public
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+        - edge_id: pipeline-edge-2
+          from_node_id: pipeline-1
+          to_node_id: pipeline-3
+          relationship: related roadmap item
+          data_or_dependency: cost and timing not public
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-003
+      boundaries:
+        - boundary_id: public-roadmap
+          label: Public roadmap / product initiatives
+          node_ids:
+            - pipeline-1
+            - pipeline-2
+            - pipeline-3
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: Annotate cost/staffing as private diligence gaps.
+    evidence_claim_ids:
+      - EC-009
+    source_ids:
+      - SRC-003
+      - SRC-004
+    notes: null
+  - figure_id: F-008
+    title: Public management org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Publicly identified management/founder roles and missing org detail.
+    purpose: Organize available personnel signals.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: leader-1
+          name: Marco Zappacosta
+          role: Founder / public founder
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-005
+        - node_id: leader-2
+          name: null
+          role: Not captured in fetched public sources
+          department: null
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-005
+        - node_id: leader-3
+          name: null
+          role: Not public
+          department: null
+          location: null
+          is_publicly_verified: false
+          evidence_claim_ids:
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-005
+      reporting_lines: []
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: No reporting lines inferred without a public org chart.
+    evidence_claim_ids:
+      - EC-010
+    source_ids:
+      - SRC-001
+      - SRC-005
+    notes: null
+  - figure_id: F-009
+    title: Headcount and personnel signal trend
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public personnel anchors and missing historical trend.
+    purpose: Structure public quantitative signals and flag missing private metrics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Metric or period
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed value
+        unit: null
+        scale: linear
+      series:
+        - series_id: headcount
+          name: Public values
+          unit: count
+          data_points:
+            - x: Total employees
+              y: 1000
+              label: 1000+
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+            - x: Supply-side network
+              y: 300000
+              label: 300000+
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+            - x: Functional/geographic employee split
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-003
+                - SRC-005
+      annotations: []
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Render null values as diligence gaps.
+    evidence_claim_ids:
+      - EC-010
+    source_ids:
+      - SRC-003
+      - SRC-005
+    notes: null
+  - figure_id: F-010
+    title: Legal and regulatory diligence timeline
+    chapter_id: VIII
+    section_id: VIII.A
+    figure_type: timeline
+    description: Chronological public events and diligence gaps.
+    purpose: Anchor public evidence in time and flag missing private records.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: F-010-E01
+          date: 2026-06-12
+          label: Public legal surface reviewed
+          description: Public company/list/legal/trust sources were reviewed; comprehensive litigation, IP, insurance, and regulatory records require counsel-led diligence.
+          category: legal_gap
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+        - event_id: F-010-E02
+          date: 2026-06-12
+          label: Data-room request required
+          description: Request litigation schedule, IP assignments, insurance policies, material contracts, and regulatory correspondence.
+          category: diligence_request
+          evidence_claim_ids:
+            - EC-011
+          source_ids:
+            - SRC-003
+      start_date: 2026-06-12
+      end_date: 2026-06-12
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: markdown
+      display_notes: Show evidence-backed events and not-publicly-verifiable gaps.
+    evidence_claim_ids:
+      - EC-011
+    source_ids:
+      - SRC-003
+    notes: null
+  - figure_id: F-011
+    title: Risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Severity/likelihood map for the public-diligence risk register.
+    purpose: Prioritize follow-up work.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Financial quality is opaque
+          severity: high
+          likelihood: unknown
+          rationale: Audited financials, ARR, gross margin, cash burn, debt, backlog, and AR aging were not public.
+          evidence_claim_ids: &a62
+            - EC-006
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-002
+          label: Valuation may be stale or list-source divergent
+          severity: medium
+          likelihood: medium
+          rationale: Latest public valuation anchor is US$3.2B around 2021-06; post-round performance and secondary pricing are not public.
+          evidence_claim_ids: &a63
+            - EC-001
+            - EC-012
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-003
+          label: Customer concentration and retention are unknown
+          severity: high
+          likelihood: unknown
+          rationale: Public customer/marketplace signals do not disclose revenue concentration, net retention, churn, or cohort economics.
+          evidence_claim_ids: &a64
+            - EC-004
+            - EC-006
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-004
+          label: Competitive and pricing pressure
+          severity: medium
+          likelihood: medium
+          rationale: Public competitors have overlapping products and/or distribution advantages.
+          evidence_claim_ids: &a65
+            - EC-007
+            - EC-008
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-005
+          label: Product roadmap and technical execution risk
+          severity: medium
+          likelihood: medium
+          rationale: Public roadmap/R&D signals are directional; shipping cadence, cost, model/vendor dependencies, and quality metrics are private.
+          evidence_claim_ids: &a66
+            - EC-002
+            - EC-009
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-006
+          label: Leadership, compensation, and turnover opacity
+          severity: medium
+          likelihood: unknown
+          rationale: Public biographies do not disclose full org chart, compensation, incentive plans, succession, or turnover.
+          evidence_claim_ids: &a67
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-007
+          label: Legal, regulatory, IP, and contractual gaps
+          severity: medium
+          likelihood: unknown
+          rationale: Public review did not establish litigation inventory, IP ownership, insurance coverage, or material contract obligations.
+          evidence_claim_ids: &a68
+            - EC-011
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-008
+          label: Operational dependency risk
+          severity: medium
+          likelihood: unknown
+          rationale: Cloud, AI/model, payments, data, SOC, or marketplace vendor dependencies are not fully disclosed publicly.
+          evidence_claim_ids: &a69
+            - EC-011
+          source_ids:
+            - SRC-001
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: Unknown likelihood indicates private diligence required.
+    evidence_claim_ids:
+      - EC-006
+      - EC-011
+    source_ids:
+      - SRC-001
+      - SRC-003
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: Thumbtack appears on current public unicorn lists at US$3.2B.
+    evidence_summary: "Thumbtack 3.2 June 2021 Software United States Marco Zappacosta. CB Insights row: Thumbtack | $3.20 | 9/29/2015 | United States | San Francisco | Consumer & Retail | Tiger Global, Sequoia Capital, Google Capital."
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Thumbtack 3.2 June 2021 Software United States Marco Zappacosta.
+        location: null
+      - source_id: SRC-002
+        quote: Thumbtack | $3.20 | 9/29/2015 | United States | San Francisco | Consumer & Retail | Tiger Global, Sequoia Capital, Google Capital.
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-002
+    claim: Thumbtack is a national home-services marketplace connecting homeowners with local professionals across repair, maintenance, and improvement categories.
+    evidence_summary: Every day in every county of the U.S., people turn to Thumbtack to complete small fixes, routine maintenance, and major improvements.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Every day in every county of the U.S., people turn to Thumbtack to complete small fixes, routine maintenance, and major improvements.
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-003
+    claim: Thumbtack publicly discloses selected pricing or go-to-market mechanics but not full contract economics.
+    evidence_summary: "Pro signup: No subscription/join/annual/member fees; Lead budget/pricing: Pros control pricing and budget for leads; Consumer fees/take rate: Not disclosed in fetched public sources"
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: No subscription/join/annual/member fees
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: Thumbtack discloses customer or marketplace traction signals.
+    evidence_summary: With over 12 million 5-star projects and counting ... 300,000 local service businesses.
+    evidence_type: customer_or_partner_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: With over 12 million 5-star projects and counting ... 300,000 local service businesses.
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-005
+    claim: Thumbtack has public founder, investor, or leadership signals but not a full cap table.
+    evidence_summary: Marco Zappacosta is listed by Wikipedia as founder. Tiger Global, Sequoia Capital, and Google Capital are listed by CB Insights as select investors; Thumbtack says it has raised $500M+ from Sequoia, Tiger Global, Javelin, Baillie Gifford, and CapitalG.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Marco Zappacosta is listed by Wikipedia as founder.
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-006
+    claim: Thumbtack public research did not reveal full financial statements, ARR, gross margin, backlog, AR aging, or debt schedules.
+    evidence_summary: No public audited financials, detailed management reports, customer-level revenue, or debt instruments were located in the reviewed public sources.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Private company financial records are required for verification.
+        location: null
+    analyst_interpretation: This cannot be verified from public sources and should be requested from the company.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-007
+    claim: Thumbtack operates in a competitive market with credible public alternatives.
+    evidence_summary: Angi / HomeAdvisor, Taskrabbit, Yelp / Google Local Services, Porch / Houzz
+    evidence_type: analyst_estimate
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Angi / HomeAdvisor, Taskrabbit, Yelp / Google Local Services, Porch / Houzz
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-008
+    claim: Thumbtack public GTM evidence identifies channels but not CAC, payback, quota, pipeline, or channel mix.
+    evidence_summary: "Consumer SEO/content: Cost guides, maintenance tips, and project guides are public; Pro acquisition: Pro page emphasizes sign-up and 30,000+ leads/day; Partnership/AI surfaces: Press page references Claude and Redfin initiatives; Paid local marketing: Not quantified publicly"
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-004
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Cost guides, maintenance tips, and project guides are public
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-009
+    claim: Thumbtack publicly discloses product roadmap or R&D-oriented initiatives, but not R&D spend or staffing detail.
+    evidence_summary: AI-powered homeowner experience (Recently announced); Claude integration (Recently announced); Pro growth calculator (Live product surface)
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Press page lists AI-powered experience to reinvent home care
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-010
+    claim: Thumbtack has public management/personnel signals but private compensation, turnover, and incentive plans remain undisclosed.
+    evidence_summary: Marco Zappacosta - Founder / public founder; Current executive roster - Not captured in fetched public sources; Functional leadership by marketplace side - Not public
+    evidence_type: social_or_professional_profile
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Founder listed in Wikipedia row
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-011
+    claim: Thumbtack has public legal/privacy/trust surfaces, but litigation, insurance, material contracts, and IP ownership require direct legal diligence.
+    evidence_summary: Not named in fetched public sources; Safety page encourages users to verify occupational licenses, permits, and insurance; Not named in fetched public sources
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-005
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Reviewed public legal, trust, safety, or platform pages where available.
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-012
+    claim: Thumbtack remained eligible for this run based on current unicorn-list inclusion and operating website evidence.
+    evidence_summary: No public IPO/acquisition/shutdown evidence was identified in the fetched current unicorn lists or operating company pages; current eligibility rests on public-list and live-site evidence.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: No public IPO/acquisition/shutdown evidence was identified in the fetched current unicorn lists or operating company pages; current eligibility rests on public-list and live-site evidence.
+        location: null
+    analyst_interpretation: Public evidence supports the directional finding; private diligence should verify completeness and current status.
+    limitations: Public-source-only review; private data-room materials may change the conclusion.
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids: []
+sources:
+  - source_id: SRC-001
+    title: "Wikipedia: List of unicorn startup companies"
+    url: https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
+    publisher: Wikipedia
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: market_database
+    reliability_notes: Current public unicorn list fetched through Jina; useful as an index but individual claims should be cross-checked.
+    archive_url: null
+  - source_id: SRC-002
+    title: "CB Insights: The Complete List Of Unicorn Companies"
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: market_database
+    reliability_notes: Current public unicorn list fetched through Jina; row includes valuation, country, sector, and select investors.
+    archive_url: null
+  - source_id: SRC-003
+    title: Thumbtack about page
+    url: https://www.thumbtack.com/about/
+    publisher: Thumbtack
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: primary_company_source
+    reliability_notes: Fetched public about page for marketplace scale, funding, employee, and market-size claims.
+    archive_url: null
+  - source_id: SRC-004
+    title: Thumbtack pros page
+    url: https://www.thumbtack.com/pro/
+    publisher: Thumbtack
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: primary_company_source
+    reliability_notes: Fetched pro page for lead generation, pricing/budget, and pro economics claims.
+    archive_url: null
+  - source_id: SRC-005
+    title: Thumbtack safety page
+    url: https://www.thumbtack.com/safety/
+    publisher: Thumbtack
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: primary_company_source
+    reliability_notes: Fetched safety page for licensing, trust, and privacy controls.
+    archive_url: null
+  - source_id: SRC-006
+    title: Thumbtack press page
+    url: https://www.thumbtack.com/press/
+    publisher: Thumbtack
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: primary_company_source
+    reliability_notes: Fetched press index for AI, Claude, Redfin, and workplace news signals.
+    archive_url: null
+  - source_id: SRC-007
+    title: TechCrunch reference cited by Wikipedia
+    url: null
+    publisher: TechCrunch via Wikipedia references
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-12
+    source_type: independent_news
+    reliability_notes: Wikipedia reference title says Thumbtack raised $275M at a $3.2B valuation; direct article fetch was not used, so confidence is medium.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Financial quality is opaque
+    risk_category: financial
+    severity: high
+    likelihood: unknown
+    description: Audited financials, ARR, gross margin, cash burn, debt, backlog, and AR aging were not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.B
+      - I.C
+    evidence_claim_ids: *a62
+    mitigation_or_diligence_request: Request audited financial statements, management reports, ARR bridge, cohort retention, cash runway, AR aging, debt, and board materials.
+  - risk_id: R-002
+    risk_title: Valuation may be stale or list-source divergent
+    risk_category: financing
+    severity: medium
+    likelihood: medium
+    description: Latest public valuation anchor is US$3.2B around 2021-06; post-round performance and secondary pricing are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.D
+    evidence_claim_ids: *a63
+    mitigation_or_diligence_request: Request latest 409A, financing documents, option repricings, secondary transactions, and board-approved plan.
+  - risk_id: R-003
+    risk_title: Customer concentration and retention are unknown
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: Public customer/marketplace signals do not disclose revenue concentration, net retention, churn, or cohort economics.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.C
+      - V.B
+    evidence_claim_ids: *a64
+    mitigation_or_diligence_request: Request customer-level revenue, renewal, churn, top-customer contracts, and reference calls.
+  - risk_id: R-004
+    risk_title: Competitive and pricing pressure
+    risk_category: market
+    severity: medium
+    likelihood: medium
+    description: Public competitors have overlapping products and/or distribution advantages.
+    impacted_chapter_ids:
+      - IV
+      - V
+    impacted_section_ids:
+      - IV.A
+      - V.A
+    evidence_claim_ids: *a65
+    mitigation_or_diligence_request: Benchmark win/loss data, discounting, competitive displacement, and CAC payback.
+  - risk_id: R-005
+    risk_title: Product roadmap and technical execution risk
+    risk_category: product
+    severity: medium
+    likelihood: medium
+    description: Public roadmap/R&D signals are directional; shipping cadence, cost, model/vendor dependencies, and quality metrics are private.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a66
+    mitigation_or_diligence_request: Request roadmap, release history, incident/quality metrics, engineering headcount, and architecture/subprocessor review.
+  - risk_id: R-006
+    risk_title: Leadership, compensation, and turnover opacity
+    risk_category: team
+    severity: medium
+    likelihood: unknown
+    description: Public biographies do not disclose full org chart, compensation, incentive plans, succession, or turnover.
+    impacted_chapter_ids:
+      - VII
+    impacted_section_ids:
+      - VII.A
+      - VII.D
+      - VII.G
+    evidence_claim_ids: *a67
+    mitigation_or_diligence_request: Request current org chart, employment agreements, option plans, hiring/attrition data, and retention-risk analysis.
+  - risk_id: R-007
+    risk_title: Legal, regulatory, IP, and contractual gaps
+    risk_category: legal
+    severity: medium
+    likelihood: unknown
+    description: Public review did not establish litigation inventory, IP ownership, insurance coverage, or material contract obligations.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.A
+      - VIII.D
+      - VIII.E
+      - VIII.F
+      - VIII.G
+    evidence_claim_ids: *a68
+    mitigation_or_diligence_request: Request litigation schedule, IP assignment records, trademark/patent list, insurance policies, regulatory correspondence, and material contracts.
+  - risk_id: R-008
+    risk_title: Operational dependency risk
+    risk_category: operational
+    severity: medium
+    likelihood: unknown
+    description: Cloud, AI/model, payments, data, SOC, or marketplace vendor dependencies are not fully disclosed publicly.
+    impacted_chapter_ids:
+      - III
+      - VIII
+    impacted_section_ids:
+      - III.E
+      - VIII.F
+    evidence_claim_ids: *a69
+    mitigation_or_diligence_request: Request vendor concentration, subprocessors, SLAs, data-processing agreements, BCP/DR tests, and security attestations.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited financial statements, management reports, ARR bridge, burn, cash runway, AR aging, debt and off-balance-sheet liabilities.
+    why_it_matters: Required to validate financial quality and runway.
+    suggested_source_or_request: Company CFO / accountant data room
+    priority: high
+  - gap_id: G-002
+    chapter_id: III
+    section_id: III.C
+    missing_information: Customer-level revenue, concentration, churn, renewal, and cohort data.
+    why_it_matters: Required to validate revenue predictability and retention.
+    suggested_source_or_request: Company CRM / billing export and customer references
+    priority: high
+  - gap_id: G-003
+    chapter_id: V
+    section_id: V.D
+    missing_information: CAC, sales cycle, quota attainment, pipeline conversion, and marketing channel spend.
+    why_it_matters: Required to assess scalable GTM economics.
+    suggested_source_or_request: Sales/marketing ops data room
+    priority: high
+  - gap_id: G-004
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Roadmap cost, R&D staffing, vendor dependencies, incident history, and release quality metrics.
+    why_it_matters: Required to validate product execution risk.
+    suggested_source_or_request: Product/engineering data room
+    priority: medium
+  - gap_id: G-005
+    chapter_id: VII
+    section_id: VII.G
+    missing_information: Headcount history, attrition, compensation, employment agreements, and option plans.
+    why_it_matters: Required to assess retention and dilution risk.
+    suggested_source_or_request: People/legal data room
+    priority: medium
+  - gap_id: G-006
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Litigation, IP, insurance, regulatory, and material-contract schedules.
+    why_it_matters: Required to assess legal and contractual liabilities.
+    suggested_source_or_request: Company counsel
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financials, monthly management reporting, ARR bridge, burn, cash runway, debt schedule, and board-approved operating plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: III
+    section_id: III.C
+    request: Provide top-customer revenue, cohort retention, churn, renewal status, contract terms, and customer references.
+    requested_from: company
+    priority: high
+  - request_id: Q-003
+    chapter_id: V
+    section_id: V.D
+    request: Provide CAC/payback, quota attainment, pipeline conversion, and channel-spend analysis by cohort.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide roadmap, R&D budget, engineering allocation, vendor/subprocessor architecture, and security review.
+    requested_from: company
+    priority: medium
+  - request_id: Q-005
+    chapter_id: VII
+    section_id: VII.D
+    request: Provide org chart, employment agreements, compensation bands, option plan, and attrition report.
+    requested_from: company
+    priority: medium
+  - request_id: Q-006
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Counsel to provide litigation/regulatory/IP/insurance/material-contract schedules with status and exposure.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Public-source-only report. No company data room, founder interview, customer calls, financial statements, legal schedules, or cap-table records were available.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.B
+      - I.C
+      - III.C
+      - V.D
+      - VII.D
+      - VIII.A
+  - limitation_id: L-002
+    description: Direct search via DuckDuckGo returned a bot challenge; research relied on fetched Wikipedia/CB Insights lists and direct company/source pages. No access controls or paywalls were bypassed.
+    affected_chapter_ids:
+      - I
+      - VIII
+    affected_section_ids:
+      - I.D
+      - VIII.A
+      - VIII.G
+  - limitation_id: L-003
+    description: The report treats customer logos, testimonials, and marketplace activity metrics as public traction signals, not as revenue concentration, retention, or profitability proof.
+    affected_chapter_ids:
+      - III
+      - V
+    affected_section_ids:
+      - III.A
+      - III.C
+      - V.B
