@@ -1,0 +1,3148 @@
+report_metadata:
+  report_title: Worldcoin Startup Diligence Report
+  target_company: Worldcoin (Tools for Humanity / World Network)
+  website: https://world.org/
+  known_aliases:
+    - Worldcoin
+    - World
+    - World Network
+    - Tools for Humanity
+    - TFH
+    - World ID
+    - World App
+  sector: Digital identity, proof-of-human, crypto/financial infrastructure
+  geography: United States and Germany / global network
+  company_stage: Private unicorn / growth-stage company
+  research_date: 2026-06-13
+  analyst: GitHub Copilot diligence agent
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built the existing-report exclusion list from reports/*-diligence-report.yaml before target selection.
+    - Selected this target at random from the fetched CB Insights unicorn list after excluding existing report slugs.
+    - Reviewed company-owned pages, the fetched CB Insights unicorn-list row, reputable public articles where accessible, Wikipedia pages with cited references where direct pages were blocked, and legal/regulatory references available on the public web.
+    - Treated company claims as evidence that the claim is public, not as independent proof of operating performance; marked private records as not_publicly_verifiable.
+  included_jurisdictions:
+    - United States
+    - Germany/EU
+    - Kenya
+    - Spain
+    - Portugal
+    - Hong Kong
+    - Indonesia
+    - Philippines
+    - Thailand
+    - Global crypto markets
+  excluded_topics:
+    - No private data room, customer calls, management interviews, paid databases, non-public litigation dockets, security reports, HRIS exports or cap-table records were available.
+  user_provided_materials:
+    - material_id: UPM-001
+      title: Fetched CB Insights unicorn-list row
+      type: market_database_row
+      date_received: 2026-06-13
+      notes: CB Insights row listed Worldcoin, valuation $1B, joined 2021-06-29, United States/San Francisco, Financial Services, investors Day One Ventures, Coinbase Ventures, Andreessen Horowitz.
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Worldcoin is an uncovered private unicorn at approximately $1B.
+    claim_source: CB Insights unicorn tracker
+    claim_date: 2021-06-29
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.C
+      - I.D
+    verification_status: partially_verified
+    confidence: high
+    evidence_claim_ids: &a1
+      - EC-001
+      - EC-005
+    contradiction_summary: The public project/token is distinct from private-company equity; entity-level value requires cap-table diligence.
+    diligence_follow_up:
+      - Request entity chart, cap table, token allocation, treasury, investor rights and latest valuation support.
+  - founder_claim_id: FC-002
+    claim_text: World provides proof-of-human products via World ID, Orb, World App and Worldcoin.
+    claim_source: World and Tools for Humanity pages
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+      - VI
+    mapped_section_ids:
+      - II.A
+      - VI.B
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a2
+      - EC-003
+      - EC-009
+    contradiction_summary: null
+    diligence_follow_up:
+      - Run technical, privacy, security and cryptographic architecture review.
+  - founder_claim_id: FC-003
+    claim_text: World has public adoption and partner signals.
+    claim_source: World homepage and 2026 partner announcement
+    claim_date: 2026-04-17
+    mapped_chapter_ids:
+      - III
+      - V
+    mapped_section_ids:
+      - III.A
+      - III.B
+      - V.B
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids: &a3
+      - EC-004
+    contradiction_summary: Partner logos/adoption claims do not disclose revenue or active usage quality.
+    diligence_follow_up:
+      - Confirm partner contracts, usage, revenue contribution and user retention.
+  - founder_claim_id: FC-004
+    claim_text: Tools for Humanity is a private operating company founded in 2019 with substantial technical staff.
+    claim_source: Tools for Humanity and Wikipedia
+    claim_date: null
+    mapped_chapter_ids:
+      - VII
+    mapped_section_ids:
+      - VII.B
+      - VII.C
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-002
+      - EC-006
+    contradiction_summary: Public headcount figures differ across sources and dates.
+    diligence_follow_up:
+      - Request org chart, HRIS, entity structure and founder/executive employment terms.
+executive_summary:
+  overall_assessment: Worldcoin is eligible only when framed as the private operator/ecosystem behind World/Tools for Humanity rather than the token alone. Public evidence supports active product, team and adoption claims, but the diligence profile is dominated by biometric privacy, token, governance and global regulatory risk.
+  investment_or_diligence_thesis: Proceed only with specialist crypto, privacy, biometrics and international regulatory diligence; the opportunity is large if proof-of-human becomes infrastructure, but unresolved regulatory and trust risk could be existential.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Worldcoin is an uncovered private unicorn at approximately $1B.
+      evidence_claim_ids: *a1
+    - founder_claim_id: FC-002
+      summary: World provides proof-of-human products via World ID, Orb, World App and Worldcoin.
+      evidence_claim_ids: *a2
+    - founder_claim_id: FC-003
+      summary: World has public adoption and partner signals.
+      evidence_claim_ids: *a3
+  biggest_risks:
+    - risk_id: R-001
+      summary: Entity, token and valuation support complexity
+    - risk_id: R-002
+      summary: Biometric privacy and technical trust risk
+    - risk_id: R-003
+      summary: Partner/adoption claims may not translate to revenue
+  key_evidence_gaps:
+    - Entity chart, cap table, token allocation, treasury and revenue model.
+    - Regulator correspondence, DPIAs, consent flows, deletion proofs and remediation status by country.
+    - Partner contracts, active usage and revenue contribution.
+    - Independent cryptographic, hardware, privacy and security audits.
+    - Governance rights across Tools for Humanity, World Foundation and token ecosystem.
+  recommended_next_steps:
+    - Commission counsel-led jurisdictional regulatory review before any investment reliance.
+    - Review token/equity economics, treasury, vesting and related-party arrangements.
+    - Obtain independent security/privacy assessment of Orb, World ID and app data flows.
+    - Confirm partner integrations and paying customer economics directly with counterparties.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Worldcoin has public valuation/funding anchors, but audited financials, forecast support, cash runway, revenue quality, debt and cap-table details are not public.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids: &a4
+      - EC-001
+      - EC-005
+      - EC-008
+    risk_ids:
+      - R-001
+      - R-004
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Worldcoin has public valuation/funding anchors, but audited financials, forecast support, cash runway, revenue quality, debt and cap-table details are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.A-F1
+            finding: Public evidence establishes Worldcoin's unicorn-list and funding context, but not investment-grade financial quality.
+            evidence_claim_ids: *a4
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Equity, token and foundation/operator economics may be misaligned.
+        evidence_gaps:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a4
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Worldcoin has public valuation/funding anchors, but audited financials, forecast support, cash runway, revenue quality, debt and cap-table details are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.B-F1
+            finding: Public evidence establishes Worldcoin's unicorn-list and funding context, but not investment-grade financial quality.
+            evidence_claim_ids: *a4
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Equity, token and foundation/operator economics may be misaligned.
+        evidence_gaps:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a4
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Worldcoin has public valuation/funding anchors, but audited financials, forecast support, cash runway, revenue quality, debt and cap-table details are not public.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: I.C-F1
+            finding: Public evidence establishes Worldcoin's unicorn-list and funding context, but not investment-grade financial quality.
+            evidence_claim_ids: *a4
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Equity, token and foundation/operator economics may be misaligned.
+        evidence_gaps:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids: *a4
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Worldcoin has public valuation/funding anchors, but audited financials, forecast support, cash runway, revenue quality, debt and cap-table details are not public.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public evidence establishes Worldcoin's unicorn-list and funding context, but not investment-grade financial quality.
+            evidence_claim_ids: *a4
+            risk_ids:
+              - R-001
+        hidden_risks:
+          - Equity, token and foundation/operator economics may be misaligned.
+        evidence_gaps:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request audited/management financial statements, KPI bridge, cash runway, debt schedule, cap table and financing documents for Worldcoin.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+        evidence_claim_ids: *a4
+  - chapter_id: II
+    title: Products
+    chapter_summary: Public product pages verify an active product suite, but roadmap, margins, reliability, security and unit economics need private confirmation.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a5
+      - EC-002
+      - EC-004
+      - EC-009
+    risk_ids:
+      - R-002
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Public product pages verify an active product suite, but roadmap, margins, reliability, security and unit economics need private confirmation.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Company-owned pages verify that Worldcoin markets active products and services.
+            evidence_claim_ids: *a5
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Biometric proof-of-human claims are technical and regulator-sensitive.
+        evidence_gaps:
+          - Request product demos, architecture review, roadmap, security reports and gross-margin/unit-cost data.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request product demos, architecture review, roadmap, security reports and gross-margin/unit-cost data.
+        table_ids:
+          - T-003
+          - T-004
+        figure_ids:
+          - F-002
+        evidence_claim_ids: *a5
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Public customer or partner signals exist, but revenue concentration, retention, churn, contract terms and top-customer identity are not publicly verifiable.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids: &a6
+      - EC-003
+      - EC-004
+      - EC-008
+    risk_ids:
+      - R-003
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Public customer or partner signals exist, but revenue concentration, retention, churn, contract terms and top-customer identity are not publicly verifiable.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public sources show customer, user or partner signals but not customer-level revenue economics.
+            evidence_claim_ids: *a6
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Partner logos and verified-human counts may not equal paying revenue.
+        evidence_gaps:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+        table_ids:
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a6
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Public customer or partner signals exist, but revenue concentration, retention, churn, contract terms and top-customer identity are not publicly verifiable.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public sources show customer, user or partner signals but not customer-level revenue economics.
+            evidence_claim_ids: *a6
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Partner logos and verified-human counts may not equal paying revenue.
+        evidence_gaps:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a6
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Public customer or partner signals exist, but revenue concentration, retention, churn, contract terms and top-customer identity are not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.C-F1
+            finding: Public sources show customer, user or partner signals but not customer-level revenue economics.
+            evidence_claim_ids: *a6
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Partner logos and verified-human counts may not equal paying revenue.
+        evidence_gaps:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a6
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: Public customer or partner signals exist, but revenue concentration, retention, churn, contract terms and top-customer identity are not publicly verifiable.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: III.D-F1
+            finding: Public sources show customer, user or partner signals but not customer-level revenue economics.
+            evidence_claim_ids: *a6
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Partner logos and verified-human counts may not equal paying revenue.
+        evidence_gaps:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a6
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Public customer or partner signals exist, but revenue concentration, retention, churn, contract terms and top-customer identity are not publicly verifiable.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Public sources show customer, user or partner signals but not customer-level revenue economics.
+            evidence_claim_ids: *a6
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Partner logos and verified-human counts may not equal paying revenue.
+        evidence_gaps:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request top-customer ARR, NRR/churn, cohort retention, customer contracts and reference calls.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids: *a6
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: The company operates in a competitive market where public evidence supports positioning but not win rates, switching costs or defensibility.
+    founder_claim_ids: []
+    evidence_claim_ids: &a7
+      - EC-002
+      - EC-004
+      - EC-007
+    risk_ids: []
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: The company operates in a competitive market where public evidence supports positioning but not win rates, switching costs or defensibility.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Public positioning indicates meaningful competitive pressure and unresolved differentiation questions.
+            evidence_claim_ids: *a7
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Non-biometric identity alternatives may be more regulator-friendly.
+        evidence_gaps:
+          - Request win/loss, competitor displacement, pricing pressure and differentiation evidence.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request win/loss, competitor displacement, pricing pressure and differentiation evidence.
+        table_ids:
+          - T-007
+          - T-008
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a7
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Public GTM evidence shows active distribution channels, but CAC, quota productivity, pipeline conversion and budget adequacy are private.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids: &a8
+      - EC-003
+      - EC-004
+      - EC-008
+    risk_ids:
+      - R-003
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Public GTM evidence shows active distribution channels, but CAC, quota productivity, pipeline conversion and budget adequacy are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.A-F1
+            finding: GTM channels are visible publicly, while pipeline metrics and sales productivity are private.
+            evidence_claim_ids: *a8
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Jurisdictional restrictions can constrain GTM.
+        evidence_gaps:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+        table_ids:
+          - T-009
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a8
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Public GTM evidence shows active distribution channels, but CAC, quota productivity, pipeline conversion and budget adequacy are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: GTM channels are visible publicly, while pipeline metrics and sales productivity are private.
+            evidence_claim_ids: *a8
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Jurisdictional restrictions can constrain GTM.
+        evidence_gaps:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Public GTM evidence shows active distribution channels, but CAC, quota productivity, pipeline conversion and budget adequacy are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: GTM channels are visible publicly, while pipeline metrics and sales productivity are private.
+            evidence_claim_ids: *a8
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Jurisdictional restrictions can constrain GTM.
+        evidence_gaps:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+        table_ids:
+          - T-010
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Public GTM evidence shows active distribution channels, but CAC, quota productivity, pipeline conversion and budget adequacy are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.D-F1
+            finding: GTM channels are visible publicly, while pipeline metrics and sales productivity are private.
+            evidence_claim_ids: *a8
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Jurisdictional restrictions can constrain GTM.
+        evidence_gaps:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Public GTM evidence shows active distribution channels, but CAC, quota productivity, pipeline conversion and budget adequacy are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: V.E-F1
+            finding: GTM channels are visible publicly, while pipeline metrics and sales productivity are private.
+            evidence_claim_ids: *a8
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - Jurisdictional restrictions can constrain GTM.
+        evidence_gaps:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request pipeline by source, CAC/payback, quota attainment, sales-cycle, channel mix and marketing budget data.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a8
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Public sources reveal product and technical initiatives, but R&D spend, roadmap commitments and technical debt require management review.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids: &a9
+      - EC-002
+      - EC-006
+      - EC-009
+    risk_ids:
+      - R-002
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Public sources reveal product and technical initiatives, but R&D spend, roadmap commitments and technical debt require management review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public roadmap or technical signals exist, but execution risk remains open without product and R&D review.
+            evidence_claim_ids: *a9
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Technical architecture must withstand independent privacy/security review.
+        evidence_gaps:
+          - Request R&D budget, roadmap milestones, release quality metrics, incident history and technical-debt backlog.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request R&D budget, roadmap milestones, release quality metrics, incident history and technical-debt backlog.
+        table_ids:
+          - T-011
+        figure_ids: []
+        evidence_claim_ids: *a9
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: Public sources reveal product and technical initiatives, but R&D spend, roadmap commitments and technical debt require management review.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Public roadmap or technical signals exist, but execution risk remains open without product and R&D review.
+            evidence_claim_ids: *a9
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Technical architecture must withstand independent privacy/security review.
+        evidence_gaps:
+          - Request R&D budget, roadmap milestones, release quality metrics, incident history and technical-debt backlog.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request R&D budget, roadmap milestones, release quality metrics, incident history and technical-debt backlog.
+        table_ids:
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a9
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+    founder_claim_ids:
+      - FC-004
+    evidence_claim_ids: &a10
+      - EC-006
+      - EC-008
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a10
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.D-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.E-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.F-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Public team signals are available, but current org chart, compensation, retention, headcount plan and employee-relations records are private.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VII.G-F1
+            finding: Public leadership or headcount signals are incomplete and require HRIS and management confirmation.
+            evidence_claim_ids: *a10
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Governance across TFH, foundation and token ecosystem is complex.
+        evidence_gaps:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request org chart, HRIS export, compensation plans, option grants, attrition data and employee-relations matters.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+    founder_claim_ids: []
+    evidence_claim_ids: &a11
+      - EC-007
+      - EC-008
+    risk_ids:
+      - R-005
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.A-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.B-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids:
+          - T-016
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.E-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings:
+          - finding_id: VIII.F-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Legal, regulatory, IP, privacy, insurance and material-contract exposure cannot be cleared from public sources alone.
+        verification_status: partially_verified
+        confidence: medium
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Public legal/regulatory/reputational signals require counsel review and private schedules.
+            evidence_claim_ids: *a11
+            risk_ids:
+              - R-005
+        hidden_risks:
+          - Regulatory enforcement is already material across several countries.
+        evidence_gaps:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+          - Private data-room records are required before relying on this public-source screen for investment or acquisition decisions.
+        follow_up_questions:
+          - Request litigation docket search, regulatory correspondence, IP schedule, privacy/security audits, insurance policies and material contracts.
+        table_ids:
+          - T-015
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a11
+tables:
+  - table_id: T-001
+    title: Public funding and valuation history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize funding and valuation anchors available from public sources.
+    columns:
+      - name: date
+        description: date
+      - name: round_or_event
+        description: round or event
+      - name: amount
+        description: amount
+      - name: valuation_or_post_money
+        description: valuation or post money
+      - name: investors_or_participants
+        description: investors or participants
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-001-R1
+        values:
+          date: 2021-06-29
+          round_or_event: CB Insights unicorn date
+          amount: not disclosed in tracker row
+          valuation_or_post_money: $1B
+          investors_or_participants: Day One Ventures; Coinbase Ventures; Andreessen Horowitz
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-001
+        source_ids:
+          - SRC-001
+      - row_id: T-001-R2
+        values:
+          date: 2023-05
+          round_or_event: Reported funding announcement
+          amount: $115M
+          valuation_or_post_money: not disclosed
+          investors_or_participants: Blockchain Capital per cited TechCrunch reference
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+    source_ids: &a12
+      - SRC-001
+      - SRC-006
+    notes: null
+  - table_id: T-002
+    title: Capital structure and financial-signal snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Separate public capital facts from private financial records required for diligence.
+    columns:
+      - name: item
+        description: item
+      - name: public_signal
+        description: public signal
+      - name: diligence_caveat
+        description: diligence caveat
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-002-R1
+        values:
+          item: Entity/cap table
+          public_signal: Tools for Humanity private company; World Foundation/token ecosystem referenced publicly
+          diligence_caveat: Equity vs token rights, treasury, foundation/operator economics are private
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-002
+          - EC-008
+        source_ids:
+          - SRC-004
+          - SRC-006
+      - row_id: T-002-R2
+        values:
+          item: Token economics
+          public_signal: Whitepaper discusses WLD and network economics
+          diligence_caveat: Treasury, reserves, jurisdictional restrictions and revenue model require counsel/accounting review
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-009
+          - EC-008
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+      - EC-008
+    source_ids: *a12
+    notes: null
+  - table_id: T-003
+    title: Product and SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Map public products to buyers and evidence status.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-003-R1
+        values:
+          product: World ID
+          audience: Consumers, developers, enterprises
+          public_evidence: Proof of human without revealing anything else; Orb verification
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: T-003-R2
+        values:
+          product: World App / Worldcoin
+          audience: Consumers and token users
+          public_evidence: Homepage lists World App and Worldcoin as universal access/token of World
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-002
+      - row_id: T-003-R3
+        values:
+          product: World for Business / integrations
+          audience: Enterprises and developers
+          public_evidence: World pages describe Zoom, Docusign, Vercel, Okta and other partner use cases
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-002
+      - EC-009
+    source_ids: &a13
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - SRC-005
+    notes: null
+  - table_id: T-004
+    title: Pricing and packaging comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture public pricing/packaging or explicitly request missing pricing support.
+    columns:
+      - name: offering
+        description: offering
+      - name: public_price_or_model
+        description: public price or model
+      - name: competitor_context
+        description: competitor context
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-004-R1
+        values:
+          offering: Consumer World ID / app
+          public_price_or_model: No traditional price disclosed; token eligibility restricted by geography/age
+          competitor_context: Digital identity and crypto onboarding alternatives
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-008
+        source_ids:
+          - SRC-002
+          - SRC-005
+      - row_id: T-004-R2
+        values:
+          offering: Enterprise integrations
+          public_price_or_model: No public enterprise pricing found
+          competitor_context: Identity verification, liveness, bot defense and enterprise security vendors
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-004
+          - EC-008
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-004
+      - EC-008
+    source_ids:
+      - SRC-005
+      - SRC-006
+    notes: null
+  - table_id: T-005
+    title: Public customers and strategic partners
+    chapter_id: III
+    section_id: III.A
+    purpose: List customer, partner or adoption proof points and whether revenue contribution is public.
+    columns:
+      - name: customer_or_partner
+        description: customer or partner
+      - name: relationship_or_use_case
+        description: relationship or use case
+      - name: public_evidence
+        description: public evidence
+      - name: revenue_contribution_public
+        description: revenue contribution public
+    rows:
+      - row_id: T-005-R1
+        values:
+          customer_or_partner: Zoom
+          relationship_or_use_case: Deep Face integration for meetings
+          public_evidence: World announcement describes integration and VanEck limited beta
+          revenue_contribution_public: No
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-007
+      - row_id: T-005-R2
+        values:
+          customer_or_partner: Docusign / Vercel / Okta / Tinder / Razer
+          relationship_or_use_case: Proof-of-human integrations and partner ecosystem
+          public_evidence: World homepage/announcement list partners and logos
+          revenue_contribution_public: No
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+          - SRC-007
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    source_ids: &a15
+      - SRC-002
+      - SRC-003
+      - SRC-007
+    notes: null
+  - table_id: T-006
+    title: Supplier, infrastructure and delivery dependencies
+    chapter_id: III
+    section_id: III.E
+    purpose: Identify public dependencies and private supplier records needed.
+    columns:
+      - name: supplier_or_dependency
+        description: supplier or dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: concentration_risk
+        description: concentration risk
+    rows:
+      - row_id: T-006-R1
+        values:
+          supplier_or_dependency: Orb hardware/operators
+          role: User biometric verification and enrollment
+          public_evidence: World ID page states verification happens at an Orb
+          concentration_risk: Hardware supply, operator compliance and data handling are critical
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+        source_ids:
+          - SRC-003
+          - SRC-006
+      - row_id: T-006-R2
+        values:
+          supplier_or_dependency: Blockchain/exchange ecosystem
+          role: WLD token availability and settlement
+          public_evidence: Whitepaper and Wikipedia discuss WLD and exchanges/geographic restrictions
+          concentration_risk: Token liquidity/regulatory availability risk
+        evidence_claim_ids:
+          - EC-005
+          - EC-009
+        source_ids:
+          - SRC-005
+          - SRC-006
+    evidence_claim_ids:
+      - EC-002
+      - EC-008
+    source_ids: *a13
+    notes: null
+  - table_id: T-007
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Compare target positioning with major public competitors or substitutes.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: overlap
+        description: overlap
+      - name: target_differentiator
+        description: target differentiator
+      - name: source_basis
+        description: source basis
+    rows:
+      - row_id: T-007-R1
+        values:
+          competitor: Traditional identity verification/liveness vendors
+          segment: KYC, anti-fraud, biometric identity
+          overlap: Human verification and anti-bot/deepfake trust
+          target_differentiator: Privacy-preserving World ID and Orb-based uniqueness
+          source_basis: Public product claims
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+        source_ids:
+          - SRC-003
+          - SRC-007
+      - row_id: T-007-R2
+        values:
+          competitor: Decentralized identity and passkey ecosystems
+          segment: Digital identity
+          overlap: Credential and human/authentication primitives
+          target_differentiator: Global verified-human network and WLD ecosystem
+          source_basis: Analyst comparison from public positioning
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+        source_ids:
+          - SRC-002
+          - SRC-006
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+      - EC-007
+    source_ids: &a14
+      - SRC-002
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-008
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Score public strengths and weaknesses without over-claiming private metrics.
+    columns:
+      - name: axis
+        description: axis
+      - name: target_position
+        description: target position
+      - name: competitor_pressure
+        description: competitor pressure
+      - name: evidence_strength
+        description: evidence strength
+    rows:
+      - row_id: T-008-R1
+        values:
+          axis: Proof-of-unique-human assurance
+          target_position: High ambition with Orb biometrics
+          competitor_pressure: Regulators and non-biometric identity alternatives
+          evidence_strength: medium
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+        source_ids:
+          - SRC-003
+          - SRC-006
+      - row_id: T-008-R2
+        values:
+          axis: Regulatory portability
+          target_position: Weak public risk due to global suspensions/investigations
+          competitor_pressure: Localized compliant KYC vendors
+          evidence_strength: high
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-002
+      - EC-004
+      - EC-007
+    source_ids: *a14
+    notes: null
+  - table_id: T-009
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Map channels visible in public sources.
+    columns:
+      - name: channel
+        description: channel
+      - name: region_or_buyer
+        description: region or buyer
+      - name: public_evidence
+        description: public evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: T-009-R1
+        values:
+          channel: Consumer Orb enrollment
+          region_or_buyer: Global consumers where available
+          public_evidence: World ID verification at Orb; nearly 18M verified humans claimed
+          gap: Country-level active users, retention and consent evidence
+        evidence_claim_ids:
+          - EC-003
+          - EC-004
+        source_ids:
+          - SRC-003
+          - SRC-007
+      - row_id: T-009-R2
+        values:
+          channel: Enterprise/developer integrations
+          region_or_buyer: Zoom, Docusign, Vercel, Okta and developers
+          public_evidence: World partner announcement and IDKit integration page references
+          gap: Revenue, contracts and production usage
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    source_ids: *a15
+    notes: null
+  - table_id: T-010
+    title: Public marketing and sales signal summary
+    chapter_id: V
+    section_id: V.C
+    purpose: Summarize marketing proof and private sales productivity gaps.
+    columns:
+      - name: signal
+        description: signal
+      - name: evidence
+        description: evidence
+      - name: diligence_request
+        description: diligence request
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-010-R1
+        values:
+          signal: Lift Off partner announcement
+          evidence: World claims partner ecosystem and nearly 18M verified humans across 160 countries
+          diligence_request: Confirm partner contracts and active usage
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-007
+      - row_id: T-010-R2
+        values:
+          signal: Privacy/security positioning
+          evidence: World ID says users prove uniqueness without revealing anything else
+          diligence_request: Independent privacy and cryptography audit
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+        source_ids:
+          - SRC-003
+          - SRC-007
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-008
+    source_ids: *a15
+    notes: null
+  - table_id: T-011
+    title: R&D personnel and technical leadership signals
+    chapter_id: VI
+    section_id: VI.A
+    purpose: Capture visible technical/clinical/product leadership signals.
+    columns:
+      - name: person_or_role
+        description: person or role
+      - name: public_role
+        description: public role
+      - name: background_or_signal
+        description: background or signal
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-011-R1
+        values:
+          person_or_role: Alex Blania
+          public_role: CEO / co-founder
+          background_or_signal: Tools for Humanity page and Wikipedia identify leadership
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+        source_ids:
+          - SRC-004
+          - SRC-006
+      - row_id: T-011-R2
+        values:
+          person_or_role: Sam Altman
+          public_role: Chairman / co-founder
+          background_or_signal: Tools for Humanity and Wikipedia identify chairman/founder role
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+        source_ids:
+          - SRC-004
+          - SRC-006
+    evidence_claim_ids:
+      - EC-006
+      - EC-009
+    source_ids: &a16
+      - SRC-004
+      - SRC-006
+    notes: null
+  - table_id: T-012
+    title: Public product and R&D pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Track roadmap items or clinical/technical initiatives visible in public sources.
+    columns:
+      - name: project
+        description: project
+      - name: status
+        description: status
+      - name: expected_timing
+        description: expected timing
+      - name: public_evidence
+        description: public evidence
+    rows:
+      - row_id: T-012-R1
+        values:
+          project: World ID 4.0 / full-stack proof of human
+          status: Announced
+          expected_timing: 2026 public beta/partner expansion
+          public_evidence: World announcement describes account architecture, key rotation and SDK
+        evidence_claim_ids:
+          - EC-004
+          - EC-009
+        source_ids:
+          - SRC-007
+      - row_id: T-012-R2
+        values:
+          project: Decentralization and scale roadmap
+          status: Whitepaper updated
+          expected_timing: March 2026 whitepaper
+          public_evidence: Whitepaper sections on proof of human, decentralization and scale
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-005
+    evidence_claim_ids:
+      - EC-002
+      - EC-009
+    source_ids: *a13
+    notes: null
+  - table_id: T-013
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: List senior management visible from public sources and confirm private gaps.
+    columns:
+      - name: name_or_role
+        description: name or role
+      - name: title
+        description: title
+      - name: source_signal
+        description: source signal
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: T-013-R1
+        values:
+          name_or_role: Alex Blania
+          title: CEO
+          source_signal: Tools for Humanity page
+          diligence_caveat: Confirm employment, equity and board rights
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+        source_ids:
+          - SRC-004
+      - row_id: T-013-R2
+        values:
+          name_or_role: Sam Altman
+          title: Chairman / co-founder
+          source_signal: Tools for Humanity page and Wikipedia
+          diligence_caveat: Confirm time commitment, conflicts, governance and related-party matters
+        evidence_claim_ids:
+          - EC-002
+          - EC-006
+        source_ids:
+          - SRC-004
+          - SRC-006
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    source_ids: *a16
+    notes: null
+  - table_id: T-014
+    title: Headcount, hiring and turnover signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Summarize public headcount, hiring and turnover indicators.
+    columns:
+      - name: function_or_signal
+        description: function or signal
+      - name: public_evidence
+        description: public evidence
+      - name: risk_or_gap
+        description: risk or gap
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-014-R1
+        values:
+          function_or_signal: Tools for Humanity staff
+          public_evidence: TFH page says over 500 scientists, engineers, creatives, economists and other optimists
+          risk_or_gap: Function/location mix and employment entity are private
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-004
+      - row_id: T-014-R2
+        values:
+          function_or_signal: 2025 employee count
+          public_evidence: Wikipedia infobox says 400 employees in 2025
+          risk_or_gap: Differs from TFH page; reconcile dates and scope
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-006
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    source_ids: *a16
+    notes: null
+  - table_id: T-015
+    title: Litigation, regulatory and agency matters
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Identify public legal/regulatory matters and docket gaps.
+    columns:
+      - name: matter
+        description: matter
+      - name: jurisdiction
+        description: jurisdiction
+      - name: status_or_public_signal
+        description: status or public signal
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: T-015-R1
+        values:
+          matter: Biometric/privacy investigations and suspensions
+          jurisdiction: France, UK, Bavaria/Germany, South Korea, Kenya, Hong Kong, Spain, Portugal, Indonesia, Philippines, Thailand
+          status_or_public_signal: Wikipedia summarizes multiple investigations, suspensions and orders
+          diligence_request: Jurisdiction-by-jurisdiction counsel memo and regulator correspondence
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-006
+      - row_id: T-015-R2
+        values:
+          matter: Token availability/geographic restrictions
+          jurisdiction: Global/United States/EU
+          status_or_public_signal: World pages state WLD eligibility is restricted by geography/age/other factors
+          diligence_request: Securities/commodities/tax and consumer-protection analysis
+        evidence_claim_ids:
+          - EC-007
+          - EC-008
+        source_ids:
+          - SRC-002
+          - SRC-005
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+    source_ids: &a17
+      - SRC-006
+      - SRC-003
+      - SRC-005
+    notes: null
+  - table_id: T-016
+    title: IP, contracts, privacy and insurance snapshot
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Capture public IP/privacy/contract signals and missing legal schedules.
+    columns:
+      - name: asset_or_contract
+        description: asset or contract
+      - name: public_signal
+        description: public signal
+      - name: missing_private_record
+        description: missing private record
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: T-016-R1
+        values:
+          asset_or_contract: Orb hardware, World ID protocol, app and WLD token
+          public_signal: World/whitepaper pages describe technical system
+          missing_private_record: Patent/trademark schedule, open-source licenses, hardware contracts, security audits
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-003
+          - EC-009
+          - EC-008
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: T-016-R2
+        values:
+          asset_or_contract: Data-protection controls and deletion commitments
+          public_signal: World ID page says data is encrypted, sent to phone and deleted from Orb
+          missing_private_record: DPIAs, audit logs, regulator correspondence, consent flows and deletion proofs
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-003
+          - EC-007
+          - EC-008
+        source_ids:
+          - SRC-003
+          - SRC-006
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+    source_ids: *a17
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Public valuation and funding anchor
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Known valuation/funding anchors for Worldcoin.
+    purpose: Quantify the public evidence anchor and expose missing private measurements.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Measure
+        unit: null
+        scale: categorical
+      y_axis:
+        label: USD billions or indexed value
+        unit: null
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly evidenced values
+          unit: null
+          data_points:
+            - x: CB valuation
+              y: 1
+              label: $1B
+              evidence_claim_ids:
+                - EC-001
+              source_ids:
+                - SRC-001
+            - x: Reported cumulative funding
+              y: 0.25
+              label: $250M
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-006
+            - x: Reported May 2023 round
+              y: 0.115
+              label: $115M
+              evidence_claim_ids:
+                - EC-005
+              source_ids:
+                - SRC-006
+      annotations:
+        - label: Private-data gap
+          x: null
+          y: null
+          note: Missing values require company data-room support before investment reliance.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-005
+    source_ids: *a12
+    notes: null
+  - figure_id: F-002
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product architecture for Worldcoin.
+    purpose: Structure product and operating dependencies visible from public sources.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: User
+          node_type: user
+          description: Person seeking proof of human
+          evidence_claim_ids: &a18
+            - EC-002
+            - EC-009
+          source_ids: *a13
+        - node_id: N2
+          label: Orb
+          node_type: infrastructure
+          description: Biometric verification hardware
+          evidence_claim_ids: *a18
+          source_ids: *a13
+        - node_id: N3
+          label: World ID
+          node_type: service
+          description: Private proof-of-human credential
+          evidence_claim_ids: *a18
+          source_ids: *a13
+        - node_id: N4
+          label: World App / WLD
+          node_type: product
+          description: App and token/financial infrastructure
+          evidence_claim_ids: *a18
+          source_ids: *a13
+        - node_id: N5
+          label: Partners/developers
+          node_type: third_party
+          description: Enterprise and consumer integrations
+          evidence_claim_ids: *a18
+          source_ids: *a13
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: verifies at
+          data_or_dependency: face/iris verification
+          evidence_claim_ids: *a18
+          source_ids: *a13
+        - edge_id: E2
+          from_node_id: N2
+          to_node_id: N3
+          relationship: issues proof
+          data_or_dependency: encrypted/deleted biometric claims
+          evidence_claim_ids: *a18
+          source_ids: *a13
+        - edge_id: E3
+          from_node_id: N3
+          to_node_id: N5
+          relationship: proves human to
+          data_or_dependency: zero-knowledge proof
+          evidence_claim_ids: *a18
+          source_ids: *a13
+        - edge_id: E4
+          from_node_id: N1
+          to_node_id: N4
+          relationship: uses
+          data_or_dependency: app and token access
+          evidence_claim_ids: *a18
+          source_ids: *a13
+      boundaries:
+        - boundary_id: B1
+          label: Publicly visible product boundary
+          node_ids:
+            - N1
+            - N2
+            - N3
+            - N4
+            - N5
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids: *a18
+    source_ids: *a13
+    notes: null
+  - figure_id: F-003
+    title: Customer and partner public-signal bar
+    chapter_id: III
+    section_id: III.A
+    figure_type: chart
+    description: Quantifies available public customer/partner signals while flagging private revenue gaps.
+    purpose: Quantify the public evidence anchor and expose missing private measurements.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Measure
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Publicly reported count or index
+        unit: null
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly evidenced values
+          unit: null
+          data_points:
+            - x: Verified humans
+              y: 18
+              label: 18M approx
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-007
+            - x: Countries
+              y: 160
+              label: "160"
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-007
+            - x: Revenue contribution
+              y: null
+              label: not public
+              evidence_claim_ids:
+                - EC-008
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Private-data gap
+          x: null
+          y: null
+          note: Missing values require company data-room support before investment reliance.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-008
+    source_ids: *a15
+    notes: null
+  - figure_id: F-004
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Public positioning for Worldcoin and alternatives.
+    purpose: Place the company and major competitors on public positioning axes.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: narrow
+          high_label: broad
+        y_axis:
+          label: Regulatory or operational intensity
+          low_label: low
+          high_label: high
+      segments:
+        - segment_id: S1
+          name: Target segment
+          description: null
+        - segment_id: S2
+          name: Adjacent competitors
+          description: null
+      entities:
+        - entity_id: E1
+          name: Worldcoin / Tools for Humanity
+          entity_type: target_company
+          segment_id: S1
+          x_value: 5
+          y_value: 5
+          attributes:
+            model: biometric proof-of-human plus token
+          evidence_claim_ids: &a19
+            - EC-002
+            - EC-004
+            - EC-007
+          source_ids: *a14
+        - entity_id: E2
+          name: KYC/liveness vendors
+          entity_type: competitor
+          segment_id: S2
+          x_value: 3
+          y_value: 4
+          attributes:
+            model: identity verification
+          evidence_claim_ids: *a19
+          source_ids: *a14
+        - entity_id: E3
+          name: Passkeys/decentralized identity
+          entity_type: competitor
+          segment_id: S2
+          x_value: 4
+          y_value: 2
+          attributes:
+            model: credential-based identity
+          evidence_claim_ids: *a19
+          source_ids: *a14
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids: *a19
+    source_ids: *a14
+    notes: null
+  - figure_id: F-005
+    title: GTM channel evidence mix
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public evidence intensity by GTM channel.
+    purpose: Quantify the public evidence anchor and expose missing private measurements.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Measure
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Evidence index
+        unit: null
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly evidenced values
+          unit: null
+          data_points:
+            - x: Consumer Orb network
+              y: 3
+              label: strong public signal
+              evidence_claim_ids:
+                - EC-003
+                - EC-004
+              source_ids:
+                - SRC-003
+                - SRC-007
+            - x: Enterprise integrations
+              y: 2
+              label: partner claims
+              evidence_claim_ids:
+                - EC-004
+              source_ids:
+                - SRC-007
+            - x: Token/exchange
+              y: 2
+              label: regulated
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-006
+      annotations:
+        - label: Private-data gap
+          x: null
+          y: null
+          note: Missing values require company data-room support before investment reliance.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    source_ids: *a15
+    notes: null
+  - figure_id: F-006
+    title: R&D and operating portfolio map
+    chapter_id: VI
+    section_id: VI.B
+    figure_type: architecture_diagram
+    description: R&D/product initiatives visible for Worldcoin.
+    purpose: Structure product and operating dependencies visible from public sources.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: R1
+          label: World ID protocol
+          node_type: service
+          description: Account architecture, key rotation, recovery, SDK
+          evidence_claim_ids: &a20
+            - EC-002
+            - EC-006
+            - EC-009
+          source_ids: *a13
+        - node_id: R2
+          label: Orb hardware
+          node_type: infrastructure
+          description: Biometric uniqueness verification
+          evidence_claim_ids: *a20
+          source_ids: *a13
+        - node_id: R3
+          label: World whitepaper
+          node_type: other
+          description: Proof of human, decentralization and scale roadmap
+          evidence_claim_ids: *a20
+          source_ids: *a13
+      edges:
+        - edge_id: E1
+          from_node_id: R2
+          to_node_id: R1
+          relationship: feeds uniqueness proof
+          data_or_dependency: biometric verification
+          evidence_claim_ids: *a20
+          source_ids: *a13
+        - edge_id: E2
+          from_node_id: R1
+          to_node_id: R3
+          relationship: implements roadmap
+          data_or_dependency: protocol/economic design
+          evidence_claim_ids: *a20
+          source_ids: *a13
+      boundaries:
+        - boundary_id: B1
+          label: Publicly visible product boundary
+          node_ids:
+            - R1
+            - R2
+            - R3
+    rendering_guidance:
+      preferred_format: mermaid
+      display_notes: null
+    evidence_claim_ids: *a20
+    source_ids: *a13
+    notes: null
+  - figure_id: F-007
+    title: Headcount and organization public anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Public headcount/organization anchors with missing periods annotated.
+    purpose: Quantify the public evidence anchor and expose missing private measurements.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Measure
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Public headcount or index
+        unit: null
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly evidenced values
+          unit: null
+          data_points:
+            - x: Wikipedia 2025
+              y: 400
+              label: "400"
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-006
+            - x: TFH current page
+              y: 500
+              label: 500+
+              evidence_claim_ids:
+                - EC-006
+              source_ids:
+                - SRC-004
+      annotations:
+        - label: Private-data gap
+          x: null
+          y: null
+          note: Missing values require company data-room support before investment reliance.
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-008
+    source_ids: *a16
+    notes: null
+  - figure_id: F-008
+    title: Legal and diligence risk heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Severity and likelihood view of the full risk register.
+    purpose: Prioritize counsel, financial, customer and operating follow-up.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Entity, token and valuation support complexity
+          severity: high
+          likelihood: medium
+          rationale: CB Insights valuation applies to Worldcoin, but private equity, token treasury, foundation/operator entities and economics require reconciliation.
+          evidence_claim_ids: &a21
+            - EC-001
+            - EC-005
+            - EC-008
+          source_ids: *a17
+        - risk_id: R-002
+          label: Biometric privacy and technical trust risk
+          severity: critical
+          likelihood: medium
+          rationale: World depends on biometric proof-of-human, zero-knowledge claims and Orb security; failure would be existential.
+          evidence_claim_ids: &a22
+            - EC-003
+            - EC-009
+          source_ids: *a17
+        - risk_id: R-003
+          label: Partner/adoption claims may not translate to revenue
+          severity: high
+          likelihood: medium
+          rationale: Verified-human counts and partner integrations do not disclose paying customer revenue, retention or utilization.
+          evidence_claim_ids: &a23
+            - EC-004
+            - EC-008
+          source_ids: *a17
+        - risk_id: R-004
+          label: Governance and centralization risk
+          severity: high
+          likelihood: medium
+          rationale: World spans Tools for Humanity, World Foundation/token ecosystem and regulatory-facing operations; governance rights are private.
+          evidence_claim_ids: &a24
+            - EC-002
+            - EC-006
+            - EC-008
+          source_ids: *a17
+        - risk_id: R-005
+          label: Global regulatory enforcement exposure
+          severity: critical
+          likelihood: high
+          rationale: Wikipedia/cited sources describe multiple investigations, suspensions and biometric data orders globally.
+          evidence_claim_ids: &a25
+            - EC-007
+            - EC-008
+          source_ids: *a17
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+    source_ids: *a17
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Worldcoin as a $1B unicorn.
+    evidence_summary: The fetched CB Insights row lists Worldcoin at $1B with a 2021-06-29 join date.
+    evidence_type: market_database
+    verification_status: partially_verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Worldcoin	$1	6/29/2021	United States	San Francisco	Financial Services	Day One Ventures, Coinbase Ventures, Andreessen Horowitz
+        location: null
+    analyst_interpretation: CB Insights supports eligibility; the correct diligence target is the private company/operator behind World/Worldcoin.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-002
+    claim: Tools for Humanity is a private technology company building World, Orb and World App.
+    evidence_summary: Tools for Humanity page says it is a technology company founded in 2019 by Alex Blania and Sam Altman, headquartered in San Francisco and Munich, and home to over 500 workers.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Tools for Humanity is a technology company building for humans in the age of AI.
+        location: null
+      - source_id: SRC-004
+        quote: Founded in 2019 by Alex Blania (CEO) and Sam Altman (Chairman). Headquartered in San Francisco, United States and Munich, Germany.
+        location: null
+    analyst_interpretation: This verifies the active private-company operator framing.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-003
+    claim: World markets World ID, World App and Worldcoin as proof-of-human and financial infrastructure.
+    evidence_summary: World homepage lists World ID, World App, Worldcoin and World for Business; World ID page describes proof-of-human use cases.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: World is a new standard of trust for the internet - private proof of human, powerful financial infrastructure...
+        location: null
+      - source_id: SRC-003
+        quote: Use World ID to prove you are a unique human, without revealing anything else about you.
+        location: null
+    analyst_interpretation: Product existence and positioning are public and active.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-003
+      figure_ids:
+        - F-002
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-004
+    claim: World publishes partner and adoption claims for proof-of-human use cases.
+    evidence_summary: World pages show partner logos and 2026 announcements around Zoom, Docusign, Tinder, Vercel, Okta and other integrations; one announcement claims nearly 18M verified humans across 160 countries.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-007
+        quote: The real human network now spans nearly 18 million verified humans across 160 countries.
+        location: null
+      - source_id: SRC-007
+        quote: Zoom is the first communications platform to offer integration of Deep Face directly into its meetings product.
+        location: null
+    analyst_interpretation: Partner/adoption claims need partner-side confirmation and revenue contribution data.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-005
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-005
+    claim: Secondary sources report Worldcoin/World accumulated substantial venture funding including a $115M May 2023 raise.
+    evidence_summary: Wikipedia states World accumulated $250M in funding and announced further $115M funding in May 2023, citing TechCrunch/other sources.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: After accumulating $250 million in funding from venture capital firms...
+        location: null
+      - source_id: SRC-006
+        quote: Further funding of $115 million was announced in May 2023...
+        location: null
+    analyst_interpretation: Funding is materially supported by secondary sources, but terms and current cap table are private.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+  - evidence_claim_id: EC-006
+    claim: Tools for Humanity has public team/headcount and governance signals.
+    evidence_summary: Tools for Humanity says it has over 500 scientists, engineers and others; Wikipedia says Tools for Humanity is private, had 400 employees in 2025 and identifies Sam Altman and Alex Blania.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Home to over 500 scientists, engineers, creatives, economists...
+        location: null
+      - source_id: SRC-006
+        quote: Company type Private
+        location: null
+    analyst_interpretation: Public headcount signals need reconciliation and HRIS confirmation.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.B
+      founder_claim_ids:
+        - FC-004
+      table_ids:
+        - T-013
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-007
+    claim: Worldcoin/World faces extensive global privacy, biometric and crypto regulatory scrutiny.
+    evidence_summary: Wikipedia summarizes investigations, suspensions and orders in France, UK, Bavaria, South Korea, Kenya, Hong Kong, Spain, Portugal, Indonesia, Philippines and Thailand.
+    evidence_type: other
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-006
+    quoted_evidence:
+      - source_id: SRC-006
+        quote: The currency has been suspended, formally investigated, or delayed in multiple countries...
+        location: null
+      - source_id: SRC-006
+        quote: the Spanish Data Protection Agency (AEPD) ordered World to stop its activity of "collection of biometric data"...
+        location: null
+      - source_id: SRC-006
+        quote: Kenya... suspended its enrollment in the country, citing security, privacy and financial concerns.
+        location: null
+    analyst_interpretation: Regulatory exposure is the dominant diligence risk.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.G
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+        - T-016
+      figure_ids:
+        - F-008
+      risk_ids:
+        - R-005
+  - evidence_claim_id: EC-008
+    claim: Worldcoin private financials, token economics, entity structure, customer revenue and legal records are not publicly verifiable.
+    evidence_summary: No public source reviewed provides audited financials, cap table, entity-level revenue, token treasury, customer contracts, regulatory correspondence or litigation schedules.
+    evidence_type: analyst_estimate
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: CB Insights tracker row provides company, valuation, date joined and investors, not data-room records.
+        location: null
+    analyst_interpretation: Private and counsel-led diligence is mandatory.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-002
+      figure_ids:
+        - F-001
+      risk_ids:
+        - R-001
+        - R-005
+  - evidence_claim_id: EC-009
+    claim: World technical roadmap emphasizes proof-of-human, zero-knowledge/privacy architecture and decentralization.
+    evidence_summary: Whitepapers discuss proof of human, economic infrastructure, decentralization and scale; World ID business page describes zero-knowledge/no personal data claims.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-005
+      - SRC-007
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: This series of whitepapers explores the technical foundations, philosophical underpinnings and economic structures of the World Network.
+        location: null
+      - source_id: SRC-007
+        quote: World ID proofs reveal no personal information.
+        location: null
+    analyst_interpretation: Technical claims require cryptographic/security review and regulator validation.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids:
+        - R-002
+        - R-005
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: 2026-03-01
+    accessed_date: 2026-06-13
+    source_type: market_database
+    reliability_notes: Public unicorn tracker row used for valuation/status screening.
+    archive_url: null
+  - source_id: SRC-002
+    title: World homepage
+    url: https://world.org/
+    publisher: World
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-13
+    source_type: primary_company_source
+    reliability_notes: Primary source for active World product and partner positioning.
+    archive_url: null
+  - source_id: SRC-003
+    title: World ID page
+    url: https://world.org/world-id
+    publisher: World
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-13
+    source_type: primary_company_source
+    reliability_notes: Primary source for product mechanics and privacy claims.
+    archive_url: null
+  - source_id: SRC-004
+    title: Tools for Humanity homepage
+    url: https://toolsforhumanity.com/
+    publisher: Tools for Humanity
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-13
+    source_type: primary_company_source
+    reliability_notes: Primary source for private company status, founders, headquarters and team size.
+    archive_url: null
+  - source_id: SRC-005
+    title: World whitepapers
+    url: https://whitepaper.world.org/
+    publisher: World
+    author: null
+    publication_date: 2026-03-25
+    accessed_date: 2026-06-13
+    source_type: primary_company_source
+    reliability_notes: Primary technical/economic whitepaper; not independent validation.
+    archive_url: null
+  - source_id: SRC-006
+    title: Worldcoin Wikipedia page
+    url: https://en.wikipedia.org/wiki/Worldcoin
+    publisher: Wikipedia
+    author: null
+    publication_date: 2023-04-14
+    accessed_date: 2026-06-13
+    source_type: other
+    reliability_notes: Secondary source with cited references to Reuters, BBC, TechCrunch and regulators; used for regulatory chronology where direct pages were blocked.
+    archive_url: null
+  - source_id: SRC-007
+    title: "World ID for business: Zoom and Docusign integrate proof of human"
+    url: https://world.org/blog/announcements/zoom-docusign-world-id-for-business
+    publisher: World
+    author: null
+    publication_date: 2026-04-17
+    accessed_date: 2026-06-13
+    source_type: primary_company_source
+    reliability_notes: Company-owned partner announcement; partner integrations require confirmation.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Entity, token and valuation support complexity
+    risk_category: financing
+    severity: high
+    likelihood: medium
+    description: CB Insights valuation applies to Worldcoin, but private equity, token treasury, foundation/operator entities and economics require reconciliation.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids: *a21
+    mitigation_or_diligence_request: Request entity chart, cap table, token allocation/vesting, treasury, revenue model and valuation materials.
+  - risk_id: R-002
+    risk_title: Biometric privacy and technical trust risk
+    risk_category: technical
+    severity: critical
+    likelihood: medium
+    description: World depends on biometric proof-of-human, zero-knowledge claims and Orb security; failure would be existential.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a22
+    mitigation_or_diligence_request: Commission independent cryptography, privacy, security, hardware and data deletion audits.
+  - risk_id: R-003
+    risk_title: Partner/adoption claims may not translate to revenue
+    risk_category: customer
+    severity: high
+    likelihood: medium
+    description: Verified-human counts and partner integrations do not disclose paying customer revenue, retention or utilization.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - III.B
+      - V.B
+    evidence_claim_ids: *a23
+    mitigation_or_diligence_request: Request customer contracts, partner attestations, active usage, revenue by customer and retention.
+  - risk_id: R-004
+    risk_title: Governance and centralization risk
+    risk_category: team
+    severity: high
+    likelihood: medium
+    description: World spans Tools for Humanity, World Foundation/token ecosystem and regulatory-facing operations; governance rights are private.
+    impacted_chapter_ids:
+      - VII
+      - I
+    impacted_section_ids:
+      - VII.C
+      - I.C
+    evidence_claim_ids: *a24
+    mitigation_or_diligence_request: Review governance documents, board/committee minutes, employment terms and decision rights across entities.
+  - risk_id: R-005
+    risk_title: Global regulatory enforcement exposure
+    risk_category: regulatory
+    severity: critical
+    likelihood: high
+    description: Wikipedia/cited sources describe multiple investigations, suspensions and biometric data orders globally.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.G
+      - VIII.D
+    evidence_claim_ids: *a25
+    mitigation_or_diligence_request: Counsel must review every jurisdiction, regulator correspondence, data-protection impact assessments and remediation status.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Private support for Annual and quarterly financial information for the past three years
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.B
+    missing_information: Private support for Financial Projections
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-003
+    chapter_id: I
+    section_id: I.C
+    missing_information: Private support for Capital Structure
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-004
+    chapter_id: I
+    section_id: I.D
+    missing_information: Private support for Other financial information
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-005
+    chapter_id: II
+    section_id: II.A
+    missing_information: Private support for Description of each product
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-006
+    chapter_id: III
+    section_id: III.A
+    missing_information: Private support for Top customers by application
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-007
+    chapter_id: III
+    section_id: III.B
+    missing_information: Private support for Strategic relationships
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-008
+    chapter_id: III
+    section_id: III.C
+    missing_information: Private support for Revenue by customer
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-009
+    chapter_id: III
+    section_id: III.D
+    missing_information: Private support for Significant relationships severed within the last two years
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-010
+    chapter_id: III
+    section_id: III.E
+    missing_information: Private support for Top suppliers
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-011
+    chapter_id: IV
+    section_id: IV.A
+    missing_information: Private support for Competitive landscape by market segment
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-012
+    chapter_id: V
+    section_id: V.A
+    missing_information: Private support for Strategy and implementation
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-013
+    chapter_id: V
+    section_id: V.B
+    missing_information: Private support for Major Customers
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-014
+    chapter_id: V
+    section_id: V.C
+    missing_information: Private support for Principal avenues for generating new business
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-015
+    chapter_id: V
+    section_id: V.D
+    missing_information: Private support for Sales force productivity model
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-016
+    chapter_id: V
+    section_id: V.E
+    missing_information: Private support for Ability to implement marketing plan with current and projected budgets
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-017
+    chapter_id: VI
+    section_id: VI.A
+    missing_information: Private support for Description of R&D organization
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-018
+    chapter_id: VI
+    section_id: VI.B
+    missing_information: Private support for New Product Pipeline
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-019
+    chapter_id: VII
+    section_id: VII.A
+    missing_information: Private support for Organization Chart
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-020
+    chapter_id: VII
+    section_id: VII.B
+    missing_information: Private support for Historical and projected headcount by function and location
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-021
+    chapter_id: VII
+    section_id: VII.C
+    missing_information: Private support for Senior management biographies
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-022
+    chapter_id: VII
+    section_id: VII.D
+    missing_information: Private support for Compensation arrangements
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-023
+    chapter_id: VII
+    section_id: VII.E
+    missing_information: Private support for Incentive stock plans
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-024
+    chapter_id: VII
+    section_id: VII.F
+    missing_information: Private support for Significant employee relations problems, past or present
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-025
+    chapter_id: VII
+    section_id: VII.G
+    missing_information: Private support for Personnel Turnover
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: medium
+  - gap_id: G-026
+    chapter_id: VIII
+    section_id: VIII.A
+    missing_information: Private support for Pending lawsuits against the Company
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-027
+    chapter_id: VIII
+    section_id: VIII.B
+    missing_information: Private support for Pending lawsuits initiated by Company
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-028
+    chapter_id: VIII
+    section_id: VIII.C
+    missing_information: Private support for Environmental and employee safety issues and liabilities
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-029
+    chapter_id: VIII
+    section_id: VIII.D
+    missing_information: Private support for Material patents, copyrights, licenses, and trademarks
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-030
+    chapter_id: VIII
+    section_id: VIII.E
+    missing_information: Private support for Insurance coverage and material exposures
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-031
+    chapter_id: VIII
+    section_id: VIII.F
+    missing_information: Private support for Material contracts
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+  - gap_id: G-032
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: Private support for Regulatory agency problems
+    why_it_matters: Public sources do not provide investment-grade confirmation for this checklist item.
+    suggested_source_or_request: Request data-room schedules, management explanations, counsel/accountant confirmation and source documents.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide source documents and management/counsel commentary for Annual and quarterly financial information for the past three years.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.B
+    request: Provide source documents and management/counsel commentary for Financial Projections.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-003
+    chapter_id: I
+    section_id: I.C
+    request: Provide source documents and management/counsel commentary for Capital Structure.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-004
+    chapter_id: I
+    section_id: I.D
+    request: Provide source documents and management/counsel commentary for Other financial information.
+    requested_from: accountant
+    priority: high
+  - request_id: Q-011
+    chapter_id: II
+    section_id: II.A
+    request: Provide source documents and management/counsel commentary for Description of each product.
+    requested_from: company
+    priority: medium
+  - request_id: Q-021
+    chapter_id: III
+    section_id: III.A
+    request: Provide source documents and management/counsel commentary for Top customers by application.
+    requested_from: company
+    priority: high
+  - request_id: Q-022
+    chapter_id: III
+    section_id: III.B
+    request: Provide source documents and management/counsel commentary for Strategic relationships.
+    requested_from: company
+    priority: high
+  - request_id: Q-023
+    chapter_id: III
+    section_id: III.C
+    request: Provide source documents and management/counsel commentary for Revenue by customer.
+    requested_from: company
+    priority: high
+  - request_id: Q-024
+    chapter_id: III
+    section_id: III.D
+    request: Provide source documents and management/counsel commentary for Significant relationships severed within the last two years.
+    requested_from: company
+    priority: high
+  - request_id: Q-025
+    chapter_id: III
+    section_id: III.E
+    request: Provide source documents and management/counsel commentary for Top suppliers.
+    requested_from: company
+    priority: high
+  - request_id: Q-031
+    chapter_id: IV
+    section_id: IV.A
+    request: Provide source documents and management/counsel commentary for Competitive landscape by market segment.
+    requested_from: company
+    priority: medium
+  - request_id: Q-041
+    chapter_id: V
+    section_id: V.A
+    request: Provide source documents and management/counsel commentary for Strategy and implementation.
+    requested_from: company
+    priority: medium
+  - request_id: Q-042
+    chapter_id: V
+    section_id: V.B
+    request: Provide source documents and management/counsel commentary for Major Customers.
+    requested_from: company
+    priority: medium
+  - request_id: Q-043
+    chapter_id: V
+    section_id: V.C
+    request: Provide source documents and management/counsel commentary for Principal avenues for generating new business.
+    requested_from: company
+    priority: medium
+  - request_id: Q-044
+    chapter_id: V
+    section_id: V.D
+    request: Provide source documents and management/counsel commentary for Sales force productivity model.
+    requested_from: company
+    priority: medium
+  - request_id: Q-045
+    chapter_id: V
+    section_id: V.E
+    request: Provide source documents and management/counsel commentary for Ability to implement marketing plan with current and projected budgets.
+    requested_from: company
+    priority: medium
+  - request_id: Q-051
+    chapter_id: VI
+    section_id: VI.A
+    request: Provide source documents and management/counsel commentary for Description of R&D organization.
+    requested_from: company
+    priority: medium
+  - request_id: Q-052
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide source documents and management/counsel commentary for New Product Pipeline.
+    requested_from: company
+    priority: medium
+  - request_id: Q-061
+    chapter_id: VII
+    section_id: VII.A
+    request: Provide source documents and management/counsel commentary for Organization Chart.
+    requested_from: company
+    priority: medium
+  - request_id: Q-062
+    chapter_id: VII
+    section_id: VII.B
+    request: Provide source documents and management/counsel commentary for Historical and projected headcount by function and location.
+    requested_from: company
+    priority: medium
+  - request_id: Q-063
+    chapter_id: VII
+    section_id: VII.C
+    request: Provide source documents and management/counsel commentary for Senior management biographies.
+    requested_from: company
+    priority: medium
+  - request_id: Q-064
+    chapter_id: VII
+    section_id: VII.D
+    request: Provide source documents and management/counsel commentary for Compensation arrangements.
+    requested_from: company
+    priority: medium
+  - request_id: Q-065
+    chapter_id: VII
+    section_id: VII.E
+    request: Provide source documents and management/counsel commentary for Incentive stock plans.
+    requested_from: company
+    priority: medium
+  - request_id: Q-066
+    chapter_id: VII
+    section_id: VII.F
+    request: Provide source documents and management/counsel commentary for Significant employee relations problems, past or present.
+    requested_from: company
+    priority: medium
+  - request_id: Q-067
+    chapter_id: VII
+    section_id: VII.G
+    request: Provide source documents and management/counsel commentary for Personnel Turnover.
+    requested_from: company
+    priority: medium
+  - request_id: Q-071
+    chapter_id: VIII
+    section_id: VIII.A
+    request: Provide source documents and management/counsel commentary for Pending lawsuits against the Company.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-072
+    chapter_id: VIII
+    section_id: VIII.B
+    request: Provide source documents and management/counsel commentary for Pending lawsuits initiated by Company.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-073
+    chapter_id: VIII
+    section_id: VIII.C
+    request: Provide source documents and management/counsel commentary for Environmental and employee safety issues and liabilities.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-074
+    chapter_id: VIII
+    section_id: VIII.D
+    request: Provide source documents and management/counsel commentary for Material patents, copyrights, licenses, and trademarks.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-075
+    chapter_id: VIII
+    section_id: VIII.E
+    request: Provide source documents and management/counsel commentary for Insurance coverage and material exposures.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-076
+    chapter_id: VIII
+    section_id: VIII.F
+    request: Provide source documents and management/counsel commentary for Material contracts.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-077
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide source documents and management/counsel commentary for Regulatory agency problems.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: Direct Reuters/TechCrunch/CoinDesk pages were blocked during this run; Wikipedia with cited references and accessible primary pages were used conservatively.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids: []
+  - limitation_id: L-002
+    description: Worldcoin is both a project/token and private-company ecosystem; entity-level diligence requires private documents.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids: []
+  - limitation_id: L-003
+    description: Public adoption and partner claims are not proof of revenue, retention or regulatory clearance.
+    affected_chapter_ids:
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+    affected_section_ids: []
