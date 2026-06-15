@@ -1,0 +1,3630 @@
+report_metadata:
+  report_title: Contrast Security Startup Diligence Research Report
+  target_company: Contrast Security
+  website: https://www.contrastsecurity.com/
+  known_aliases:
+    - Contrast Security Inc.
+    - Contrast
+  sector: Enterprise application and API security
+  geography: United States - Pleasanton/Los Altos, California
+  company_stage: Private unicorn / growth-stage cybersecurity company
+  research_date: 2026-06-15
+  analyst: GitHub Copilot CLI
+  report_version: "1.0"
+  currency: USD
+  time_zone: UTC
+research_scope:
+  diligence_depth: standard_diligence
+  source_strategy:
+    - Built existing-report exclusion list from reports/*-diligence-report.yaml.
+    - Fetched CB Insights unicorn list and public company/news/search pages.
+    - Screened for IPO, acquisition and shutdown signals from public sources.
+    - Used public evidence only; private data-room records are requested where facts are not publicly verifiable.
+  included_jurisdictions:
+    - United States
+  excluded_topics:
+    - Private financial statements, non-public contracts, credentials, private data rooms and paywalled records not accessible in public research.
+  user_provided_materials: []
+founder_claims:
+  - founder_claim_id: FC-001
+    claim_text: Contrast secures applications from within using live in-app runtime visibility and protection.
+    claim_source: Public company website
+    claim_date: null
+    mapped_chapter_ids:
+      - II
+    mapped_section_ids:
+      - II.A
+    verification_status: verified
+    confidence: medium
+    evidence_claim_ids: &a1
+      - EC-003
+      - EC-004
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request technical validation of agent/instrumentation performance, coverage and false-positive/false-negative rates.
+  - founder_claim_id: FC-002
+    claim_text: Contrast achieved unicorn status through a $150M Series E at greater than $1B valuation.
+    claim_source: Company funding announcement / CB Insights
+    claim_date: null
+    mapped_chapter_ids:
+      - I
+    mapped_section_ids:
+      - I.D
+    verification_status: verified
+    confidence: high
+    evidence_claim_ids: &a2
+      - EC-001
+      - EC-002
+    contradiction_summary: null
+    diligence_follow_up:
+      - Request financing documents, liquidation preferences, option pool and latest 409A/common valuation.
+  - founder_claim_id: FC-003
+    claim_text: Contrast has enterprise customer adoption across named financial, technology and public-sector-like accounts.
+    claim_source: Company about/customer references
+    claim_date: null
+    mapped_chapter_ids:
+      - III
+    mapped_section_ids:
+      - III.A
+    verification_status: partially_verified
+    confidence: medium
+    evidence_claim_ids:
+      - EC-005
+    contradiction_summary: Named logos do not disclose active contract status, ACV, renewal or concentration.
+    diligence_follow_up:
+      - Request top-20 customer schedule, cohort retention, reference calls and revenue by customer.
+executive_summary:
+  overall_assessment: Contrast Security appears eligible as an uncovered private unicorn based on CB Insights/current public screens, but the diligence case is incomplete without private financial, customer, cap-table, legal and security records.
+  investment_or_diligence_thesis: Public evidence supports a real company with material product and financing signals in Enterprise application and API security; underwriting should focus on Stale 2021 unicorn valuation with no audited public financials; Crowded AppSec/ASPM/ADR market with platform repositioning risk; Enterprise telemetry and AI-remediation claims require security validation.
+  strongest_verified_claims:
+    - founder_claim_id: FC-001
+      summary: Contrast secures applications from within using live in-app runtime visibility and protection.
+      evidence_claim_ids: *a1
+    - founder_claim_id: FC-002
+      summary: Contrast achieved unicorn status through a $150M Series E at greater than $1B valuation.
+      evidence_claim_ids: *a2
+  biggest_risks:
+    - risk_id: R-001
+      summary: Stale public valuation and opaque financial quality
+    - risk_id: R-002
+      summary: Crowded AppSec and platform-consolidation market
+    - risk_id: R-003
+      summary: AI/runtime efficacy and integration risk
+    - risk_id: R-004
+      summary: Customer concentration and renewal quality unknown
+    - risk_id: R-005
+      summary: Enterprise GTM productivity not public
+  key_evidence_gaps:
+    - Audited financial statements, ARR/revenue bridge, cash runway and board-approved plan.
+    - Cap table, financing documents, preference stack, debt and option schedule.
+    - Customer concentration, retention/churn, current contract status and reference calls.
+    - Security/privacy/legal/IP/insurance records and counsel confirmation.
+  recommended_next_steps:
+    - Open data-room request list focused on financials, customer schedules, cap table and legal/security evidence.
+    - Run independent technical/product validation and customer reference calls.
+    - Benchmark valuation and unit economics against direct public/private comparables.
+    - Have counsel verify corporate status, litigation, regulatory exposure and material contracts.
+chapters:
+  - chapter_id: I
+    title: Financial Information
+    chapter_summary: Financial Information review for Contrast Security found public evidence for EC-001, EC-002, EC-010, EC-011 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids:
+      - FC-002
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+      - EC-010
+      - EC-011
+    risk_ids:
+      - R-001
+      - R-008
+    sections:
+      - section_id: I.A
+        title: Annual and quarterly financial information for the past three years
+        checklist_question_ids:
+          - I.A.1
+          - I.A.2
+          - I.A.3
+          - I.A.4
+          - I.A.5
+          - I.A.6
+        summary: Annual and quarterly financial information for the past three years is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks:
+          - Stale public valuation and opaque financial quality
+        evidence_gaps:
+          - Audited statements, monthly management reports, backlog, AR aging and gross margin by product/channel/geography are private.
+        follow_up_questions:
+          - Request company-provided evidence for annual and quarterly financial information for the past three years mapped to checklist item(s) I.A.1, I.A.2, I.A.3, I.A.4, I.A.5, I.A.6.
+        table_ids:
+          - T-003
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-010
+      - section_id: I.B
+        title: Financial Projections
+        checklist_question_ids:
+          - I.B.1
+          - I.B.2
+          - I.B.3
+          - I.B.4
+          - I.B.5
+          - I.B.6
+          - I.B.7
+          - I.B.8
+        summary: Financial Projections is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Board-approved projections, scenario model, pricing assumptions, capex plan and external financing assumptions are private.
+        follow_up_questions:
+          - Request company-provided evidence for financial projections mapped to checklist item(s) I.B.1, I.B.2, I.B.3, I.B.4, I.B.5, I.B.6, I.B.7, I.B.8.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+      - section_id: I.C
+        title: Capital Structure
+        checklist_question_ids:
+          - I.C.1
+          - I.C.2
+          - I.C.3
+          - I.C.4
+          - I.C.5
+        summary: Capital Structure is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks:
+          - Exit timing and secondary-market valuation risk
+        evidence_gaps:
+          - Current cap table, stockholder list, options/warrants/notes, debt instruments and off-balance-sheet liabilities are private.
+        follow_up_questions:
+          - Request company-provided evidence for capital structure mapped to checklist item(s) I.C.1, I.C.2, I.C.3, I.C.4, I.C.5.
+        table_ids:
+          - T-002
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-011
+      - section_id: I.D
+        title: Other financial information
+        checklist_question_ids:
+          - I.D.1
+          - I.D.2
+          - I.D.3
+        summary: Other financial information has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: I.D-F1
+            finding: Public research supports a directional view of other financial information for Contrast Security.
+            evidence_claim_ids: &a3
+              - EC-001
+              - EC-002
+            risk_ids:
+              - R-001
+              - R-008
+        hidden_risks:
+          - Stale public valuation and opaque financial quality
+          - Exit timing and secondary-market valuation risk
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for other financial information mapped to checklist item(s) I.D.1, I.D.2, I.D.3.
+        table_ids:
+          - T-001
+        figure_ids:
+          - F-001
+          - F-002
+        evidence_claim_ids: *a3
+  - chapter_id: II
+    title: Products
+    chapter_summary: Products review for Contrast Security found public evidence for EC-003, EC-004 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids:
+      - FC-001
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+    risk_ids:
+      - R-003
+    sections:
+      - section_id: II.A
+        title: Description of each product
+        checklist_question_ids:
+          - II.A.1
+          - II.A.2
+          - II.A.3
+          - II.A.4
+          - II.A.5
+          - II.A.6
+        summary: Description of each product has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: II.A-F1
+            finding: Public research supports a directional view of description of each product for Contrast Security.
+            evidence_claim_ids: &a4
+              - EC-003
+              - EC-004
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - AI/runtime efficacy and integration risk
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for description of each product mapped to checklist item(s) II.A.1, II.A.2, II.A.3, II.A.4, II.A.5, II.A.6.
+        table_ids:
+          - T-004
+          - T-005
+        figure_ids:
+          - F-003
+        evidence_claim_ids: *a4
+  - chapter_id: III
+    title: Customer Information
+    chapter_summary: Customer Information review for Contrast Security found public evidence for EC-005, EC-012 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids:
+      - FC-003
+    evidence_claim_ids:
+      - EC-005
+      - EC-012
+    risk_ids:
+      - R-004
+    sections:
+      - section_id: III.A
+        title: Top customers by application
+        checklist_question_ids:
+          - III.A
+        summary: Top customers by application has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: III.A-F1
+            finding: Public research supports a directional view of top customers by application for Contrast Security.
+            evidence_claim_ids: &a5
+              - EC-005
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Customer concentration and renewal quality unknown
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for top customers by application mapped to checklist item(s) III.A.
+        table_ids:
+          - T-006
+        figure_ids: []
+        evidence_claim_ids: *a5
+      - section_id: III.B
+        title: Strategic relationships
+        checklist_question_ids:
+          - III.B
+        summary: Strategic relationships has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.B-F1
+            finding: Public research supports a directional view of strategic relationships for Contrast Security.
+            evidence_claim_ids: &a6
+              - EC-012
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for strategic relationships mapped to checklist item(s) III.B.
+        table_ids:
+          - T-007
+        figure_ids:
+          - F-004
+        evidence_claim_ids: *a6
+      - section_id: III.C
+        title: Revenue by customer
+        checklist_question_ids:
+          - III.C
+        summary: Revenue by customer is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Revenue by customer and any greater-than-5-percent concentration schedule are private.
+        follow_up_questions:
+          - Request company-provided evidence for revenue by customer mapped to checklist item(s) III.C.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-012
+      - section_id: III.D
+        title: Significant relationships severed within the last two years
+        checklist_question_ids:
+          - III.D
+        summary: Significant relationships severed within the last two years is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Severed customer, partner or supplier relationships over the last two years require company confirmation.
+        follow_up_questions:
+          - Request company-provided evidence for significant relationships severed within the last two years mapped to checklist item(s) III.D.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-005
+          - EC-012
+      - section_id: III.E
+        title: Top suppliers
+        checklist_question_ids:
+          - III.E
+        summary: Top suppliers has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: III.E-F1
+            finding: Public research supports a directional view of top suppliers for Contrast Security.
+            evidence_claim_ids: &a7
+              - EC-005
+              - EC-012
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for top suppliers mapped to checklist item(s) III.E.
+        table_ids:
+          - T-008
+        figure_ids: []
+        evidence_claim_ids: *a7
+  - chapter_id: IV
+    title: Competition
+    chapter_summary: Competition review for Contrast Security found public evidence for EC-009 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-009
+    risk_ids:
+      - R-002
+    sections:
+      - section_id: IV.A
+        title: Competitive landscape by market segment
+        checklist_question_ids:
+          - IV.A.1
+          - IV.A.2
+        summary: Competitive landscape by market segment has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: IV.A-F1
+            finding: Public research supports a directional view of competitive landscape by market segment for Contrast Security.
+            evidence_claim_ids: &a8
+              - EC-009
+            risk_ids:
+              - R-002
+        hidden_risks:
+          - Crowded AppSec and platform-consolidation market
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for competitive landscape by market segment mapped to checklist item(s) IV.A.1, IV.A.2.
+        table_ids:
+          - T-009
+          - T-010
+        figure_ids:
+          - F-005
+        evidence_claim_ids: *a8
+  - chapter_id: V
+    title: Marketing, Sales, and Distribution
+    chapter_summary: Marketing, Sales, and Distribution review for Contrast Security found public evidence for EC-007, EC-013 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+    risk_ids:
+      - R-004
+      - R-005
+    sections:
+      - section_id: V.A
+        title: Strategy and implementation
+        checklist_question_ids:
+          - V.A.1
+          - V.A.2
+          - V.A.3
+          - V.A.4
+        summary: Strategy and implementation has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: V.A-F1
+            finding: Public research supports a directional view of strategy and implementation for Contrast Security.
+            evidence_claim_ids: &a9
+              - EC-007
+              - EC-013
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for strategy and implementation mapped to checklist item(s) V.A.1, V.A.2, V.A.3, V.A.4.
+        table_ids:
+          - T-011
+          - T-012
+        figure_ids:
+          - F-006
+        evidence_claim_ids: *a9
+      - section_id: V.B
+        title: Major Customers
+        checklist_question_ids:
+          - V.B.1
+          - V.B.2
+          - V.B.3
+        summary: Major Customers has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.B-F1
+            finding: Public research supports a directional view of major customers for Contrast Security.
+            evidence_claim_ids: &a10
+              - EC-007
+              - EC-013
+            risk_ids:
+              - R-004
+        hidden_risks:
+          - Customer concentration and renewal quality unknown
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for major customers mapped to checklist item(s) V.B.1, V.B.2, V.B.3.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a10
+      - section_id: V.C
+        title: Principal avenues for generating new business
+        checklist_question_ids:
+          - V.C
+        summary: Principal avenues for generating new business has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: V.C-F1
+            finding: Public research supports a directional view of principal avenues for generating new business for Contrast Security.
+            evidence_claim_ids: &a11
+              - EC-007
+              - EC-013
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for principal avenues for generating new business mapped to checklist item(s) V.C.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a11
+      - section_id: V.D
+        title: Sales force productivity model
+        checklist_question_ids:
+          - V.D.1
+          - V.D.2
+          - V.D.3
+          - V.D.4
+        summary: Sales force productivity model is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks:
+          - Enterprise GTM productivity not public
+        evidence_gaps:
+          - Quota, sales-cycle, attainment, compensation and sales productivity data are private.
+        follow_up_questions:
+          - Request company-provided evidence for sales force productivity model mapped to checklist item(s) V.D.1, V.D.2, V.D.3, V.D.4.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+      - section_id: V.E
+        title: Ability to implement marketing plan with current and projected budgets
+        checklist_question_ids:
+          - V.E
+        summary: Ability to implement marketing plan with current and projected budgets is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks:
+          - Enterprise GTM productivity not public
+        evidence_gaps:
+          - Marketing budget, CAC, payback and forecast capacity are not public.
+        follow_up_questions:
+          - Request company-provided evidence for ability to implement marketing plan with current and projected budgets mapped to checklist item(s) V.E.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-007
+          - EC-013
+  - chapter_id: VI
+    title: Research and Development
+    chapter_summary: Research and Development review for Contrast Security found public evidence for EC-008 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-008
+    risk_ids:
+      - R-003
+    sections:
+      - section_id: VI.A
+        title: Description of R&D organization
+        checklist_question_ids:
+          - VI.A.1
+          - VI.A.2
+          - VI.A.3
+        summary: Description of R&D organization has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VI.A-F1
+            finding: Public research supports a directional view of description of r&d organization for Contrast Security.
+            evidence_claim_ids: &a12
+              - EC-008
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for description of r&d organization mapped to checklist item(s) VI.A.1, VI.A.2, VI.A.3.
+        table_ids:
+          - T-013
+        figure_ids: []
+        evidence_claim_ids: *a12
+      - section_id: VI.B
+        title: New Product Pipeline
+        checklist_question_ids:
+          - VI.B.1
+          - VI.B.2
+          - VI.B.3
+          - VI.B.4
+        summary: New Product Pipeline has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VI.B-F1
+            finding: Public research supports a directional view of new product pipeline for Contrast Security.
+            evidence_claim_ids: &a13
+              - EC-008
+            risk_ids:
+              - R-003
+        hidden_risks:
+          - AI/runtime efficacy and integration risk
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for new product pipeline mapped to checklist item(s) VI.B.1, VI.B.2, VI.B.3, VI.B.4.
+        table_ids:
+          - T-014
+        figure_ids:
+          - F-007
+        evidence_claim_ids: *a13
+  - chapter_id: VII
+    title: Management and Personnel
+    chapter_summary: Management and Personnel review for Contrast Security found public evidence for EC-006 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-006
+    risk_ids: []
+    sections:
+      - section_id: VII.A
+        title: Organization Chart
+        checklist_question_ids:
+          - VII.A
+        summary: Organization Chart has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.A-F1
+            finding: Public research supports a directional view of organization chart for Contrast Security.
+            evidence_claim_ids: &a14
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for organization chart mapped to checklist item(s) VII.A.
+        table_ids: []
+        figure_ids:
+          - F-008
+        evidence_claim_ids: *a14
+      - section_id: VII.B
+        title: Historical and projected headcount by function and location
+        checklist_question_ids:
+          - VII.B
+        summary: Historical and projected headcount by function and location has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.B-F1
+            finding: Public research supports a directional view of historical and projected headcount by function and location for Contrast Security.
+            evidence_claim_ids: &a15
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for historical and projected headcount by function and location mapped to checklist item(s) VII.B.
+        table_ids:
+          - T-016
+        figure_ids:
+          - F-009
+        evidence_claim_ids: *a15
+      - section_id: VII.C
+        title: Senior management biographies
+        checklist_question_ids:
+          - VII.C
+        summary: Senior management biographies has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: verified
+        confidence: medium
+        key_findings:
+          - finding_id: VII.C-F1
+            finding: Public research supports a directional view of senior management biographies for Contrast Security.
+            evidence_claim_ids: &a16
+              - EC-006
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for senior management biographies mapped to checklist item(s) VII.C.
+        table_ids:
+          - T-015
+        figure_ids: []
+        evidence_claim_ids: *a16
+      - section_id: VII.D
+        title: Compensation arrangements
+        checklist_question_ids:
+          - VII.D.1
+          - VII.D.2
+        summary: Compensation arrangements is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Employment agreements, benefits, severance and compensation arrangements are private.
+        follow_up_questions:
+          - Request company-provided evidence for compensation arrangements mapped to checklist item(s) VII.D.1, VII.D.2.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+      - section_id: VII.E
+        title: Incentive stock plans
+        checklist_question_ids:
+          - VII.E
+        summary: Incentive stock plans is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Equity incentive plan, grants, vesting and refresh practices are private.
+        follow_up_questions:
+          - Request company-provided evidence for incentive stock plans mapped to checklist item(s) VII.E.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+      - section_id: VII.F
+        title: Significant employee relations problems, past or present
+        checklist_question_ids:
+          - VII.F
+        summary: Significant employee relations problems, past or present is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Employee-relations complaints, investigations and settlements require HR/counsel confirmation.
+        follow_up_questions:
+          - Request company-provided evidence for significant employee relations problems, past or present mapped to checklist item(s) VII.F.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+      - section_id: VII.G
+        title: Personnel Turnover
+        checklist_question_ids:
+          - VII.G.1
+          - VII.G.2
+        summary: Personnel Turnover is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Two-year turnover by function/location and regretted attrition are private.
+        follow_up_questions:
+          - Request company-provided evidence for personnel turnover mapped to checklist item(s) VII.G.1, VII.G.2.
+        table_ids:
+          - T-017
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-006
+  - chapter_id: VIII
+    title: Legal and Related Matters
+    chapter_summary: Legal and Related Matters review for Contrast Security found public evidence for EC-014 and material private-data gaps that should be closed before investment or acquisition reliance.
+    founder_claim_ids: []
+    evidence_claim_ids:
+      - EC-014
+    risk_ids:
+      - R-006
+      - R-007
+    sections:
+      - section_id: VIII.A
+        title: Pending lawsuits against the Company
+        checklist_question_ids:
+          - VIII.A
+        summary: Pending lawsuits against the Company is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Complete litigation docket search and counsel letter are required.
+        follow_up_questions:
+          - Request company-provided evidence for pending lawsuits against the company mapped to checklist item(s) VIII.A.
+        table_ids:
+          - T-018
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+      - section_id: VIII.B
+        title: Pending lawsuits initiated by Company
+        checklist_question_ids:
+          - VIII.B
+        summary: Pending lawsuits initiated by Company is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks: []
+        evidence_gaps:
+          - Plaintiff-side litigation schedule is not public.
+        follow_up_questions:
+          - Request company-provided evidence for pending lawsuits initiated by company mapped to checklist item(s) VIII.B.
+        table_ids:
+          - T-019
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+      - section_id: VIII.C
+        title: Environmental and employee safety issues and liabilities
+        checklist_question_ids:
+          - VIII.C.1
+          - VIII.C.2
+        summary: Environmental and employee safety issues and liabilities has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.C-F1
+            finding: Public research supports a directional view of environmental and employee safety issues and liabilities for Contrast Security.
+            evidence_claim_ids: &a17
+              - EC-014
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for environmental and employee safety issues and liabilities mapped to checklist item(s) VIII.C.1, VIII.C.2.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids: *a17
+      - section_id: VIII.D
+        title: Material patents, copyrights, licenses, and trademarks
+        checklist_question_ids:
+          - VIII.D
+        summary: Material patents, copyrights, licenses, and trademarks has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.D-F1
+            finding: Public research supports a directional view of material patents, copyrights, licenses, and trademarks for Contrast Security.
+            evidence_claim_ids: &a18
+              - EC-014
+            risk_ids:
+              - R-007
+        hidden_risks:
+          - IP ownership and patent defensibility not enumerated
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for material patents, copyrights, licenses, and trademarks mapped to checklist item(s) VIII.D.
+        table_ids:
+          - T-020
+        figure_ids: []
+        evidence_claim_ids: *a18
+      - section_id: VIII.E
+        title: Insurance coverage and material exposures
+        checklist_question_ids:
+          - VIII.E
+        summary: Insurance coverage and material exposures is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks:
+          - Security-trust and data-processing exposure
+        evidence_gaps:
+          - Insurance policies, retentions, exclusions and claim history are private.
+        follow_up_questions:
+          - Request company-provided evidence for insurance coverage and material exposures mapped to checklist item(s) VIII.E.
+        table_ids: []
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+      - section_id: VIII.F
+        title: Material contracts
+        checklist_question_ids:
+          - VIII.F
+        summary: Material contracts is not fully publicly verifiable for Contrast Security; public sources provide context but transaction-grade records must be requested.
+        verification_status: not_publicly_verifiable
+        confidence: low
+        key_findings: []
+        hidden_risks:
+          - Security-trust and data-processing exposure
+        evidence_gaps:
+          - Material contracts, termination rights, indemnities and change-of-control provisions are private.
+        follow_up_questions:
+          - Request company-provided evidence for material contracts mapped to checklist item(s) VIII.F.
+        table_ids:
+          - T-022
+        figure_ids: []
+        evidence_claim_ids:
+          - EC-014
+      - section_id: VIII.G
+        title: Regulatory agency problems
+        checklist_question_ids:
+          - VIII.G
+        summary: Regulatory agency problems has public evidence for Contrast Security, but should be reconciled to company records and third-party confirmations.
+        verification_status: partially_verified
+        confidence: low
+        key_findings:
+          - finding_id: VIII.G-F1
+            finding: Public research supports a directional view of regulatory agency problems for Contrast Security.
+            evidence_claim_ids: &a19
+              - EC-014
+            risk_ids: []
+        hidden_risks: []
+        evidence_gaps:
+          - Public evidence is directional; private records and direct confirmations are required for transaction-grade diligence.
+        follow_up_questions:
+          - Request company-provided evidence for regulatory agency problems mapped to checklist item(s) VIII.G.
+        table_ids:
+          - T-021
+        figure_ids:
+          - F-010
+          - F-011
+        evidence_claim_ids: *a19
+tables:
+  - table_id: T-001
+    title: Public funding-round history
+    chapter_id: I
+    section_id: I.D
+    purpose: Summarize public financing and valuation anchors.
+    columns:
+      - name: date
+        description: date
+      - name: round
+        description: round
+      - name: lead_or_participants
+        description: lead or participants
+      - name: amount
+        description: amount
+      - name: post_money
+        description: post money
+      - name: source
+        description: source
+    rows:
+      - row_id: R1
+        values:
+          date: 2021-11-09
+          round: Series E
+          lead_or_participants: Liberty Strategic Capital; Warburg Pincus, Battery, General Catalyst, M12, AXA, Acero
+          amount: $150M
+          post_money: $1.0B
+          source: Public unicorn/funding sources
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: R2
+        values:
+          date: not_publicly_verifiable
+          round: Prior rounds / debt
+          lead_or_participants: Not fully public
+          amount: not_publicly_verifiable
+          post_money: not_publicly_verifiable
+          source: Request data room schedule
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: Amounts and post-money values should be reconciled to financing documents.
+  - table_id: T-002
+    title: Capital structure / ownership snapshot
+    chapter_id: I
+    section_id: I.C
+    purpose: Frame public investor/control evidence and private cap-table requests.
+    columns:
+      - name: stakeholder
+        description: stakeholder
+      - name: public_position
+        description: public position
+      - name: diligence_caveat
+        description: diligence caveat
+    rows:
+      - row_id: R1
+        values:
+          stakeholder: Founders / management
+          public_position: Founder/CTO and executive team publicly identified
+          diligence_caveat: Ownership percentages, vesting, options, warrants and debt not public
+        evidence_claim_ids:
+          - EC-003
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R2
+        values:
+          stakeholder: Growth investors
+          public_position: Named financing participants and CB Insights investors
+          diligence_caveat: Share classes, preferences and control rights require financing documents
+        evidence_claim_ids:
+          - EC-001
+          - EC-002
+        source_ids:
+          - SRC-001
+          - SRC-002
+      - row_id: R3
+        values:
+          stakeholder: Employees/options/debt holders
+          public_position: not_publicly_verifiable
+          diligence_caveat: Request current cap table, option pool, SAFEs/notes, debt and 409A/common valuations
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - table_id: T-003
+    title: Public revenue / ARR / unit-economic signals
+    chapter_id: I
+    section_id: I.A
+    purpose: Separate public operating signals from private financial gaps.
+    columns:
+      - name: metric
+        description: metric
+      - name: public_signal
+        description: public signal
+      - name: verification_status
+        description: verification status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          metric: ARR / revenue
+          public_signal: No audited revenue or ARR public in screened sources
+          verification_status: not_publicly_verifiable
+          diligence_request: Audited financials, ARR bridge, gross margin, retention/churn, customer concentration and cash runway
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+      - row_id: R2
+        values:
+          metric: Gross margin / unit economics
+          public_signal: not_publicly_verifiable
+          verification_status: not_publicly_verifiable
+          diligence_request: CAC, payback, sales efficiency, support cost and product gross margin
+        evidence_claim_ids:
+          - EC-011
+          - EC-012
+          - EC-010
+        source_ids:
+          - SRC-001
+      - row_id: R3
+        values:
+          metric: Backlog / AR aging / plan vs actual
+          public_signal: not_publicly_verifiable
+          verification_status: not_publicly_verifiable
+          diligence_request: Management reporting package, monthly KPIs, forecast accuracy and AR aging schedule
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+      - EC-003
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - table_id: T-004
+    title: Product / SKU matrix
+    chapter_id: II
+    section_id: II.A
+    purpose: Summarize public product lines and verification status.
+    columns:
+      - name: product
+        description: product
+      - name: audience
+        description: audience
+      - name: key_features
+        description: key features
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          product: Contrast ADR
+          audience: Security/SecOps
+          key_features: Application Detection and Response to detect and respond to attacks in running applications
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: R2
+        values:
+          product: Contrast AST
+          audience: AppSec/developers
+          key_features: Application and API security testing, including Assess, SCA and Scan surfaces
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: R3
+        values:
+          product: Contrast One
+          audience: Enterprise managed service
+          key_features: Managed runtime security combining platform with AppSec expertise
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-004
+      - row_id: R4
+        values:
+          product: Contrast AI SmartFix / Graph
+          audience: Developers and SecOps
+          key_features: AI remediation guidance and runtime graph context; public performance metrics undisclosed
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+    notes: null
+  - table_id: T-005
+    title: Pricing and packaging comparison
+    chapter_id: II
+    section_id: II.A
+    purpose: Capture visible pricing/package signals and private quote gaps.
+    columns:
+      - name: package_or_comparator
+        description: package or comparator
+      - name: public_pricing_signal
+        description: public pricing signal
+      - name: verification_status
+        description: verification status
+      - name: caveat
+        description: caveat
+    rows:
+      - row_id: R1
+        values:
+          package_or_comparator: Contrast platform packaging
+          public_pricing_signal: Quote-based enterprise packaging
+          verification_status: not_publicly_verifiable
+          caveat: Public nav shows pricing-and-packaging page but not public rates
+        evidence_claim_ids:
+          - EC-003
+        source_ids:
+          - SRC-003
+      - row_id: R2
+        values:
+          package_or_comparator: Competitors
+          public_pricing_signal: Often seat/app/API-volume based in AppSec market
+          verification_status: inconclusive
+          caveat: Requires direct quotes against Snyk, Veracode, Checkmarx, Palo Alto, Rapid7 and ASPM tools
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-004
+      - EC-005
+      - EC-009
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-006
+    notes: null
+  - table_id: T-006
+    title: Publicly known customers and use cases
+    chapter_id: III
+    section_id: III.A
+    purpose: Record public customer/user signals without implying current revenue.
+    columns:
+      - name: customer_or_segment
+        description: customer or segment
+      - name: application
+        description: application
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          customer_or_segment: Citizens Bank
+          application: Financial services
+          public_evidence: Named as a company following Contrast plan
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-004
+      - row_id: R2
+        values:
+          customer_or_segment: Backbase
+          application: Financial technology
+          public_evidence: Named as a company following Contrast plan
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-004
+      - row_id: R3
+        values:
+          customer_or_segment: AARP
+          application: Membership/nonprofit
+          public_evidence: Named as a company following Contrast plan
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-004
+      - row_id: R4
+        values:
+          customer_or_segment: UTIMCO
+          application: Institutional investment management
+          public_evidence: Quote about telemetry improving security posture
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-005
+        source_ids:
+          - SRC-004
+    evidence_claim_ids:
+      - EC-003
+      - EC-005
+      - EC-006
+    source_ids:
+      - SRC-002
+      - SRC-004
+    notes: null
+  - table_id: T-007
+    title: Strategic relationships and partnerships
+    chapter_id: III
+    section_id: III.B
+    purpose: Map investors, channel partners and ecosystem relationships.
+    columns:
+      - name: partner
+        description: partner
+      - name: nature
+        description: nature
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          partner: Liberty Strategic Capital
+          nature: Series E lead / board influence
+          public_evidence: Led 2021 Series E
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: R2
+        values:
+          partner: Warburg Pincus / Battery / General Catalyst / M12 / AXA / Acero
+          nature: Existing investors
+          public_evidence: 100% participation in Series E per release
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-002
+        source_ids:
+          - SRC-002
+      - row_id: R3
+        values:
+          partner: AWS Marketplace
+          nature: Cloud marketplace distribution
+          public_evidence: Marketplace listing for ADR
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-008
+    evidence_claim_ids:
+      - EC-002
+      - EC-006
+      - EC-012
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-004
+    notes: null
+  - table_id: T-008
+    title: Top supplier / infrastructure dependency screen
+    chapter_id: III
+    section_id: III.E
+    purpose: Identify public supplier/dependency signals and missing private contracts.
+    columns:
+      - name: supplier_or_dependency
+        description: supplier or dependency
+      - name: role
+        description: role
+      - name: public_evidence
+        description: public evidence
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          supplier_or_dependency: Cloud marketplaces
+          role: Distribution/procurement route
+          public_evidence: AWS Marketplace listing observed; cloud hosting dependency not disclosed
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-008
+      - row_id: R2
+        values:
+          supplier_or_dependency: Customer applications and APIs
+          role: Embedded runtime sensors depend on customer integration quality
+          public_evidence: Public architecture implies in-app instrumentation
+          verification_status: verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-004
+      - row_id: R3
+        values:
+          supplier_or_dependency: AI model/tooling providers
+          role: AI SmartFix/MCP interoperability
+          public_evidence: Model/vendor dependencies not disclosed publicly
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-013
+      - EC-014
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-008
+    notes: null
+  - table_id: T-009
+    title: Competitor comparison matrix
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Place the company against public competitor categories.
+    columns:
+      - name: competitor
+        description: competitor
+      - name: segment
+        description: segment
+      - name: product_overlap
+        description: product overlap
+      - name: source_or_gap
+        description: source or gap
+    rows:
+      - row_id: R1
+        values:
+          competitor: Snyk
+          segment: Developer security / SCA / code security
+          product_overlap: High product overlap in developer-first security; private/public valuation pressure relevant
+          source_or_gap: independent market comparison required
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-007
+      - row_id: R2
+        values:
+          competitor: Veracode
+          segment: Application security testing
+          product_overlap: Direct AST/DAST/SCA overlap with enterprise buyers
+          source_or_gap: independent market comparison required
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-007
+      - row_id: R3
+        values:
+          competitor: Checkmarx
+          segment: AST / AppSec platform
+          product_overlap: Overlaps with SAST/SCA/API security programs
+          source_or_gap: independent market comparison required
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-007
+      - row_id: R4
+        values:
+          competitor: Palo Alto / Wiz / ASPM entrants
+          segment: Cloud/AppSec platform consolidation
+          product_overlap: Large platforms may bundle posture management and runtime signals
+          source_or_gap: inferred from category
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-007
+    evidence_claim_ids:
+      - EC-009
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-007
+    notes: null
+  - table_id: T-010
+    title: Basis-of-competition scoring
+    chapter_id: IV
+    section_id: IV.A
+    purpose: Summarize competition axes requiring further diligence.
+    columns:
+      - name: axis
+        description: axis
+      - name: target_position
+        description: target position
+      - name: competitor_position_or_gap
+        description: competitor position or gap
+      - name: evidence_claim
+        description: evidence claim
+    rows:
+      - row_id: R1
+        values:
+          axis: Runtime instrumentation depth
+          target_position: Strong public positioning
+          competitor_position_or_gap: Competitors vary; verify with POCs
+          evidence_claim: EC-004
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-003
+      - row_id: R2
+        values:
+          axis: Developer workflow fit
+          target_position: Claims fast remediation and AI guidance
+          competitor_position_or_gap: Snyk/Checkmarx/Veracode compete heavily
+          evidence_claim: EC-008
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-003
+      - row_id: R3
+        values:
+          axis: Enterprise trust/compliance
+          target_position: Trust center and named sectors
+          competitor_position_or_gap: Requires SOC2/security artifacts
+          evidence_claim: EC-014
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-003
+    evidence_claim_ids:
+      - EC-009
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-006
+    notes: null
+  - table_id: T-011
+    title: Distribution channels and GTM motions
+    chapter_id: V
+    section_id: V.A
+    purpose: Inventory public GTM channels and missing economics.
+    columns:
+      - name: channel
+        description: channel
+      - name: public_evidence
+        description: public evidence
+      - name: gap
+        description: gap
+    rows:
+      - row_id: R1
+        values:
+          channel: Direct enterprise sales
+          public_evidence: Global expansion and enterprise sectors cited
+          gap: Pipeline, sales cycle and quota not public
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-004
+          - SRC-002
+      - row_id: R2
+        values:
+          channel: Partner/channel/GSI
+          public_evidence: Partner program links and portals public
+          gap: Revenue contribution by channel not public
+        evidence_claim_ids:
+          - EC-012
+        source_ids:
+          - SRC-004
+          - SRC-002
+      - row_id: R3
+        values:
+          channel: Cloud marketplaces
+          public_evidence: AWS Marketplace listing visible
+          gap: Marketplace revenue weight not public
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-004
+          - SRC-002
+      - row_id: R4
+        values:
+          channel: Owned content/reports
+          public_evidence: Threat reports, Gartner report and buyer guides promoted
+          gap: Lead conversion not public
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-004
+          - SRC-002
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-008
+    source_ids:
+      - SRC-002
+      - SRC-004
+    notes: null
+  - table_id: T-012
+    title: Public marketing-signal summary
+    chapter_id: V
+    section_id: V.A
+    purpose: Summarize public demand-generation and brand signals.
+    columns:
+      - name: signal
+        description: signal
+      - name: observed_evidence
+        description: observed evidence
+      - name: evidence_claim
+        description: evidence claim
+    rows:
+      - row_id: R1
+        values:
+          signal: Threat Report / Gartner content
+          observed_evidence: Owned demand-generation assets are prominent in navigation
+          evidence_claim: EC-013
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-002
+          - SRC-004
+      - row_id: R2
+        values:
+          signal: Industry pages
+          observed_evidence: Technology, financial services, healthcare and insurance pages signal vertical GTM
+          evidence_claim: EC-013
+        evidence_claim_ids:
+          - EC-013
+        source_ids:
+          - SRC-002
+          - SRC-004
+      - row_id: R3
+        values:
+          signal: Award badges
+          observed_evidence: Public about page shows cybersecurity award badges
+          evidence_claim: EC-004
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-002
+          - SRC-004
+    evidence_claim_ids:
+      - EC-007
+      - EC-008
+      - EC-009
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-004
+    notes: null
+  - table_id: T-013
+    title: Key R&D personnel / leadership
+    chapter_id: VI
+    section_id: VI.A
+    purpose: List public technical/product leaders and unknown organization detail.
+    columns:
+      - name: name_or_role
+        description: name or role
+      - name: role
+        description: role
+      - name: public_background
+        description: public background
+    rows:
+      - row_id: R1
+        values:
+          name_or_role: Jeff Williams
+          role: Co-founder & CTO
+          public_background: OWASP founder/Top 10 creator; security leadership background
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R2
+        values:
+          name_or_role: Faya Peng
+          role: Chief Product Officer
+          public_background: Leads runtime security platform and ADR product strategy
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R3
+        values:
+          name_or_role: David Lindner
+          role: CISO / Contrast Labs
+          public_background: Threat-intelligence and appsec leadership
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+    evidence_claim_ids:
+      - EC-006
+      - EC-013
+    source_ids:
+      - SRC-003
+      - SRC-005
+    notes: null
+  - table_id: T-014
+    title: Public product / research pipeline
+    chapter_id: VI
+    section_id: VI.B
+    purpose: Capture public roadmap and R&D signals.
+    columns:
+      - name: project_or_capability
+        description: project or capability
+      - name: status
+        description: status
+      - name: public_signal_or_gap
+        description: public signal or gap
+    rows:
+      - row_id: R1
+        values:
+          project_or_capability: Contrast Graph
+          status: Commercial platform capability
+          public_signal_or_gap: Runtime intelligence model for application/API ecosystem
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: R2
+        values:
+          project_or_capability: AI SmartFix
+          status: Publicly promoted capability
+          public_signal_or_gap: AI-assisted remediation claims need efficacy testing
+        evidence_claim_ids:
+          - EC-008
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: R3
+        values:
+          project_or_capability: ADR category expansion
+          status: Emerging category
+          public_signal_or_gap: GTM and category leadership not yet financially verified
+        evidence_claim_ids:
+          - EC-009
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-008
+      - EC-013
+      - EC-005
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-015
+    title: Senior management roster
+    chapter_id: VII
+    section_id: VII.C
+    purpose: Record public leadership roles and biographies.
+    columns:
+      - name: name
+        description: name
+      - name: role
+        description: role
+      - name: prior_roles_or_notes
+        description: prior roles or notes
+    rows:
+      - row_id: R1
+        values:
+          name: Rick Fitz
+          role: Chief Executive Officer
+          prior_roles_or_notes: Former Splunk SVP/GM; enterprise software scaling background
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R2
+        values:
+          name: Jeff Williams
+          role: Co-Founder & Chief Technology Officer
+          prior_roles_or_notes: Application-security and OWASP background
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R3
+        values:
+          name: David Lindner
+          role: Chief Information Security and Data Privacy Officer
+          prior_roles_or_notes: Application-security professional and Contrast Labs lead
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R4
+        values:
+          name: Faya Peng
+          role: Chief Product Officer
+          prior_roles_or_notes: Global product strategy for runtime security/ADR
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+      - row_id: R5
+        values:
+          name: Shay Mowlem
+          role: Chief Marketing Officer
+          prior_roles_or_notes: Software marketing leadership from NinjaOne, Illumio, Rubrik, MuleSoft and Splunk
+        evidence_claim_ids:
+          - EC-006
+        source_ids:
+          - SRC-003
+          - SRC-005
+    evidence_claim_ids:
+      - EC-006
+      - EC-003
+    source_ids:
+      - SRC-003
+      - SRC-005
+    notes: null
+  - table_id: T-016
+    title: Headcount and hiring signals
+    chapter_id: VII
+    section_id: VII.B
+    purpose: Show public headcount anchors and gaps.
+    columns:
+      - name: period
+        description: period
+      - name: public_headcount_anchor
+        description: public headcount anchor
+      - name: public_evidence_or_gap
+        description: public evidence or gap
+    rows:
+      - row_id: R1
+        values:
+          period: 2021 Series E
+          public_headcount_anchor: not_publicly_verifiable
+          public_evidence_or_gap: Company planned global expansion but did not disclose headcount in release
+        evidence_claim_ids:
+          - EC-007
+        source_ids:
+          - SRC-002
+          - SRC-003
+      - row_id: R2
+        values:
+          period: 2026 public site
+          public_headcount_anchor: not_publicly_verifiable
+          public_evidence_or_gap: Current employee count by function/location not public
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-002
+          - SRC-003
+    evidence_claim_ids:
+      - EC-007
+      - EC-003
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - table_id: T-017
+    title: Departures / turnover signals
+    chapter_id: VII
+    section_id: VII.G
+    purpose: Document public turnover limitations.
+    columns:
+      - name: person_or_group
+        description: person or group
+      - name: public_signal
+        description: public signal
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          person_or_group: Senior-management departures
+          public_signal: not_publicly_verifiable in screened sources
+          diligence_request: Two-year turnover report, regretted departures, offer acceptance, attrition by function/location
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-001
+      - row_id: R2
+        values:
+          person_or_group: Employee relations issues
+          public_signal: not_publicly_verifiable in screened sources
+          diligence_request: HR complaints, litigation, employee engagement, severance and retention plans
+        evidence_claim_ids:
+          - EC-010
+          - EC-011
+          - EC-012
+        source_ids:
+          - SRC-001
+    evidence_claim_ids:
+      - EC-010
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-001
+    notes: null
+  - table_id: T-018
+    title: Pending lawsuits against the company
+    chapter_id: VIII
+    section_id: VIII.A
+    purpose: Record public lawsuit screen and docket gaps.
+    columns:
+      - name: matter
+        description: matter
+      - name: status
+        description: status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          matter: No material lawsuit identified in public screen
+          status: not_publicly_verifiable
+          diligence_request: Need litigation search in state/federal dockets and counsel confirmation
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-003
+          - SRC-010
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-014
+      - EC-012
+    source_ids:
+      - SRC-003
+      - SRC-010
+    notes: null
+  - table_id: T-019
+    title: Pending lawsuits initiated by the company
+    chapter_id: VIII
+    section_id: VIII.B
+    purpose: Record public plaintiff-side litigation screen and gaps.
+    columns:
+      - name: matter
+        description: matter
+      - name: status
+        description: status
+      - name: diligence_request
+        description: diligence request
+    rows:
+      - row_id: R1
+        values:
+          matter: No material plaintiff-side lawsuit identified in public screen
+          status: not_publicly_verifiable
+          diligence_request: Need docket search and counsel schedule
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-003
+          - SRC-010
+    evidence_claim_ids:
+      - EC-014
+      - EC-012
+    source_ids:
+      - SRC-003
+      - SRC-010
+    notes: null
+  - table_id: T-020
+    title: Material IP assets
+    chapter_id: VIII
+    section_id: VIII.D
+    purpose: Summarize public IP signals and full schedule requests.
+    columns:
+      - name: asset
+        description: asset
+      - name: jurisdiction_or_source
+        description: jurisdiction or source
+      - name: status_or_gap
+        description: status or gap
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          asset: Patented in-app sensors
+          jurisdiction_or_source: United States / global likely
+          status_or_gap: Publicly claimed; patent numbers not enumerated in public report
+          verification_status: partially_verified
+        evidence_claim_ids:
+          - EC-004
+        source_ids:
+          - SRC-003
+          - SRC-009
+      - row_id: R2
+        values:
+          asset: Contrast trademarks/logos/product names
+          jurisdiction_or_source: Trademark jurisdictions not collected
+          status_or_gap: Need USPTO/WIPO/EUIPO schedule
+          verification_status: not_publicly_verifiable
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-003
+          - SRC-009
+    evidence_claim_ids:
+      - EC-004
+      - EC-006
+      - EC-011
+      - EC-014
+      - EC-012
+    source_ids:
+      - SRC-003
+      - SRC-009
+    notes: null
+  - table_id: T-021
+    title: Regulatory / agency actions and safety issues
+    chapter_id: VIII
+    section_id: VIII.G
+    purpose: Capture public regulatory, safety, privacy or cybersecurity matters.
+    columns:
+      - name: agency_or_topic
+        description: agency or topic
+      - name: action_or_exposure
+        description: action or exposure
+      - name: status
+        description: status
+      - name: verification_status
+        description: verification status
+    rows:
+      - row_id: R1
+        values:
+          agency_or_topic: Privacy/cookie and security trust representations
+          action_or_exposure: Company website / customer trust
+          status: Public trust center exists; security certifications need artifact review
+          verification_status: inconclusive
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-003
+          - SRC-006
+          - SRC-010
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-006
+      - SRC-010
+    notes: null
+  - table_id: T-022
+    title: Material contracts / insurance exposure
+    chapter_id: VIII
+    section_id: VIII.F
+    purpose: List key contracts and insurance policies to request.
+    columns:
+      - name: contract_or_policy
+        description: contract or policy
+      - name: public_gap
+        description: public gap
+      - name: priority
+        description: priority
+    rows:
+      - row_id: R1
+        values:
+          contract_or_policy: Enterprise customer MSAs
+          public_gap: Material terms, SLAs, indemnities and termination rights not public
+          priority: high diligence priority
+        evidence_claim_ids:
+          - EC-010
+        source_ids:
+          - SRC-001
+          - SRC-003
+      - row_id: R2
+        values:
+          contract_or_policy: Insurance policies
+          public_gap: Cyber/E&O/D&O coverage not public
+          priority: medium diligence priority
+        evidence_claim_ids:
+          - EC-014
+        source_ids:
+          - SRC-001
+          - SRC-003
+    evidence_claim_ids:
+      - EC-010
+      - EC-012
+      - EC-014
+    source_ids:
+      - SRC-001
+      - SRC-003
+    notes: null
+figures:
+  - figure_id: F-001
+    title: Funding and company status timeline
+    chapter_id: I
+    section_id: I.D
+    figure_type: timeline
+    description: Public financing and status events.
+    purpose: Show how the public valuation anchor relates to private-company status.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: E1
+          date: 2021-11-09
+          label: Unicorn valuation anchor
+          description: "Contrast Security public valuation anchor: $1.0B."
+          category: financing
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - event_id: E2
+          date: 2026-06-15
+          label: Public-diligence screen
+          description: No public IPO/acquisition/shutdown signal found in the screened sources.
+          category: status
+          evidence_claim_ids:
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-001
+            - SRC-010
+      start_date: 2021-11-09
+      end_date: 2026-06-15
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-002
+    title: Implied valuation trajectory
+    chapter_id: I
+    section_id: I.D
+    figure_type: chart
+    description: Known public valuation anchor plus diligence gaps for other rounds.
+    purpose: Visualize valuation evidence and missing private financing data.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Round/status
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Post-money valuation
+        unit: USD billions
+        scale: linear
+      series:
+        - series_id: S1
+          name: Public valuation
+          unit: USD billions
+          data_points:
+            - x: Prior rounds
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-010
+                - EC-011
+                - EC-012
+              source_ids:
+                - SRC-001
+            - x: 2021-11-09
+              y: 1
+              label: $1.0B
+              evidence_claim_ids:
+                - EC-001
+                - EC-002
+              source_ids:
+                - SRC-001
+                - SRC-002
+            - x: Current 2026 mark
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-010
+                - EC-011
+                - EC-012
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: Diligence gap
+          x: Current 2026 mark
+          y: null
+          note: Request current 409A/secondary marks and cap table.
+          evidence_claim_ids:
+            - EC-010
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-002
+    source_ids:
+      - SRC-001
+      - SRC-002
+    notes: null
+  - figure_id: F-003
+    title: Product and dependency architecture
+    chapter_id: II
+    section_id: II.A
+    figure_type: architecture_diagram
+    description: Public product families and dependencies.
+    purpose: Show product modules and dependency surfaces that require technical diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: Contrast Security
+          node_type: service
+          description: Target company platform/product portfolio
+          evidence_claim_ids:
+            - EC-003
+            - EC-004
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: N2
+          label: Contrast ADR
+          node_type: product
+          description: Application Detection and Response to detect and respond to attacks in running applications
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: N3
+          label: Contrast AST
+          node_type: product
+          description: Application and API security testing, including Assess, SCA and Scan surfaces
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - node_id: N4
+          label: Contrast One
+          node_type: product
+          description: Managed runtime security combining platform with AppSec expertise
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-004
+        - node_id: N5
+          label: Contrast AI SmartFix / Graph
+          node_type: product
+          description: AI remediation guidance and runtime graph context; public performance metrics undisclosed
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-003
+        - node_id: N9
+          label: External dependencies
+          node_type: third_party
+          description: Suppliers, data providers, cloud, app stores or component ecosystem depending on company
+          evidence_claim_ids:
+            - EC-012
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-003
+            - SRC-008
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: offers
+          data_or_dependency: Security/SecOps
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: E2
+          from_node_id: N1
+          to_node_id: N3
+          relationship: offers
+          data_or_dependency: AppSec/developers
+          evidence_claim_ids:
+            - EC-003
+          source_ids:
+            - SRC-003
+        - edge_id: E3
+          from_node_id: N1
+          to_node_id: N4
+          relationship: offers
+          data_or_dependency: Enterprise managed service
+          evidence_claim_ids:
+            - EC-012
+          source_ids:
+            - SRC-004
+        - edge_id: E4
+          from_node_id: N1
+          to_node_id: N5
+          relationship: offers
+          data_or_dependency: Developers and SecOps
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-003
+        - edge_id: E9
+          from_node_id: N1
+          to_node_id: N9
+          relationship: depends_on
+          data_or_dependency: Requires private dependency and security review
+          evidence_claim_ids:
+            - EC-012
+            - EC-013
+            - EC-014
+          source_ids:
+            - SRC-003
+            - SRC-008
+      boundaries:
+        - boundary_id: B1
+          label: Publicly described product scope
+          node_ids:
+            - N1
+            - N2
+            - N3
+            - N4
+            - N5
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-003
+      - EC-004
+      - EC-005
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-004
+    title: Customer / partner concentration proxy
+    chapter_id: III
+    section_id: III.B
+    figure_type: chart
+    description: Publicly visible customer and partner references; revenue weights undisclosed.
+    purpose: Represent known relationships and the missing concentration schedule.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Relationship category
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Disclosed revenue weight
+        unit: percent
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly disclosed revenue weight
+          unit: percent
+          data_points:
+            - x: Named customers/users
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-003
+                - EC-005
+                - EC-006
+              source_ids:
+                - SRC-002
+                - SRC-004
+            - x: Strategic partners
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-002
+                - EC-012
+                - EC-013
+              source_ids:
+                - SRC-002
+                - SRC-004
+            - x: Top 5 accounts
+              y: null
+              label: request company schedule
+              evidence_claim_ids:
+                - EC-010
+                - EC-011
+                - EC-012
+              source_ids:
+                - SRC-001
+      annotations:
+        - label: No revenue-by-customer disclosure
+          x: Top 5 accounts
+          y: null
+          note: Obtain top-customer and channel concentration schedule.
+          evidence_claim_ids:
+            - EC-010
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-005
+      - EC-006
+      - EC-013
+    source_ids:
+      - SRC-002
+      - SRC-004
+    notes: null
+  - figure_id: F-005
+    title: Competitive market map
+    chapter_id: IV
+    section_id: IV.A
+    figure_type: market_map
+    description: Positioning map based on public product scope and diligence judgment.
+    purpose: Frame competitive diligence axes.
+    spec_schema_ref: figure_spec_shapes.market_map
+    spec:
+      dimensions:
+        x_axis:
+          label: Product breadth
+          low_label: Point solution
+          high_label: Broad platform
+        y_axis:
+          label: Operational/regulatory complexity
+          low_label: Low
+          high_label: High
+      segments:
+        - segment_id: S1
+          name: Target
+          description: Target company public position
+        - segment_id: S2
+          name: Competitors
+          description: Comparable companies
+      entities:
+        - entity_id: E0
+          name: Contrast Security
+          entity_type: target_company
+          segment_id: S1
+          x_value: 4
+          y_value: 3
+          attributes:
+            note: Analyst placement from public evidence
+          evidence_claim_ids:
+            - EC-009
+            - EC-014
+          source_ids:
+            - SRC-003
+            - SRC-006
+        - entity_id: E1
+          name: Snyk
+          entity_type: competitor
+          segment_id: S2
+          x_value: 2
+          y_value: 2
+          attributes:
+            segment: Developer security / SCA / code security
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-007
+        - entity_id: E2
+          name: Veracode
+          entity_type: competitor
+          segment_id: S2
+          x_value: 3
+          y_value: 3
+          attributes:
+            segment: Application security testing
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-007
+        - entity_id: E3
+          name: Checkmarx
+          entity_type: competitor
+          segment_id: S2
+          x_value: 4
+          y_value: 2
+          attributes:
+            segment: AST / AppSec platform
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-007
+        - entity_id: E4
+          name: Palo Alto / Wiz / ASPM entrants
+          entity_type: competitor
+          segment_id: S2
+          x_value: 2
+          y_value: 3
+          attributes:
+            segment: Cloud/AppSec platform consolidation
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-007
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-009
+      - EC-014
+    source_ids:
+      - SRC-003
+      - SRC-006
+    notes: null
+  - figure_id: F-006
+    title: GTM channel-mix diligence chart
+    chapter_id: V
+    section_id: V.A
+    figure_type: chart
+    description: Public channels with undisclosed revenue mix.
+    purpose: Show the diligence request for channel economics.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Channel
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Revenue mix
+        unit: percent
+        scale: linear
+      series:
+        - series_id: S1
+          name: Publicly disclosed channel mix
+          unit: percent
+          data_points:
+            - x: Direct enterprise sales
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-002
+                - SRC-004
+            - x: Partner/channel/GSI
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-012
+              source_ids:
+                - SRC-002
+                - SRC-004
+            - x: Cloud marketplaces
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-009
+              source_ids:
+                - SRC-002
+                - SRC-004
+            - x: Owned content/reports
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-013
+              source_ids:
+                - SRC-002
+                - SRC-004
+      annotations:
+        - label: Request channel P&L
+          x: Direct enterprise sales
+          y: null
+          note: No public channel revenue or CAC mix was found.
+          evidence_claim_ids:
+            - EC-007
+            - EC-013
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-004
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-013
+      - EC-008
+    source_ids:
+      - SRC-002
+      - SRC-004
+    notes: null
+  - figure_id: F-007
+    title: R&D portfolio map
+    chapter_id: VI
+    section_id: VI.B
+    figure_type: architecture_diagram
+    description: Public R&D and product pipeline map.
+    purpose: Connect people/resources to roadmap items requiring technical diligence.
+    spec_schema_ref: figure_spec_shapes.architecture_diagram
+    spec:
+      nodes:
+        - node_id: N1
+          label: R&D / product leadership
+          node_type: other
+          description: Jeff Williams, Faya Peng, David Lindner
+          evidence_claim_ids:
+            - EC-006
+            - EC-013
+            - EC-003
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - node_id: N2
+          label: Contrast Graph
+          node_type: product
+          description: Runtime intelligence model for application/API ecosystem
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: N3
+          label: AI SmartFix
+          node_type: product
+          description: AI-assisted remediation claims need efficacy testing
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - node_id: N4
+          label: ADR category expansion
+          node_type: product
+          description: GTM and category leadership not yet financially verified
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-002
+            - SRC-003
+      edges:
+        - edge_id: E1
+          from_node_id: N1
+          to_node_id: N2
+          relationship: develops_or_oversees
+          data_or_dependency: Commercial platform capability
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - edge_id: E2
+          from_node_id: N1
+          to_node_id: N3
+          relationship: develops_or_oversees
+          data_or_dependency: Publicly promoted capability
+          evidence_claim_ids:
+            - EC-008
+          source_ids:
+            - SRC-002
+            - SRC-003
+        - edge_id: E3
+          from_node_id: N1
+          to_node_id: N4
+          relationship: develops_or_oversees
+          data_or_dependency: Emerging category
+          evidence_claim_ids:
+            - EC-009
+          source_ids:
+            - SRC-002
+            - SRC-003
+      boundaries:
+        - boundary_id: B1
+          label: Public R&D scope
+          node_ids:
+            - N1
+            - N2
+            - N3
+            - N4
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-008
+      - EC-013
+      - EC-005
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-008
+    title: Public leadership org chart
+    chapter_id: VII
+    section_id: VII.A
+    figure_type: org_chart
+    description: Public senior leadership structure.
+    purpose: Show known leaders and missing functional headcount.
+    spec_schema_ref: figure_spec_shapes.org_chart
+    spec:
+      people_or_roles:
+        - node_id: P1
+          name: Rick Fitz
+          role: Chief Executive Officer
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - node_id: P2
+          name: Jeff Williams
+          role: Co-Founder & Chief Technology Officer
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - node_id: P3
+          name: David Lindner
+          role: Chief Information Security and Data Privacy Officer
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - node_id: P4
+          name: Faya Peng
+          role: Chief Product Officer
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - node_id: P5
+          name: Shay Mowlem
+          role: Chief Marketing Officer
+          department: null
+          location: null
+          is_publicly_verified: true
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+      reporting_lines:
+        - parent_node_id: P1
+          child_node_id: P2
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - parent_node_id: P1
+          child_node_id: P3
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - parent_node_id: P1
+          child_node_id: P4
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+        - parent_node_id: P1
+          child_node_id: P5
+          relationship: reports_to
+          evidence_claim_ids:
+            - EC-006
+          source_ids:
+            - SRC-003
+            - SRC-005
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-006
+      - EC-003
+    source_ids:
+      - SRC-003
+      - SRC-005
+    notes: null
+  - figure_id: F-009
+    title: Headcount trend anchors
+    chapter_id: VII
+    section_id: VII.B
+    figure_type: chart
+    description: Known headcount anchors and missing current function/location details.
+    purpose: Make the private headcount schedule request explicit.
+    spec_schema_ref: figure_spec_shapes.chart
+    spec:
+      chart_type: bar
+      x_axis:
+        label: Period
+        unit: null
+        scale: categorical
+      y_axis:
+        label: Employees
+        unit: count
+        scale: linear
+      series:
+        - series_id: S1
+          name: Public headcount anchor
+          unit: employees
+          data_points:
+            - x: 2021 Series E
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-007
+              source_ids:
+                - SRC-002
+                - SRC-003
+            - x: 2026 public site
+              y: null
+              label: not_publicly_verifiable
+              evidence_claim_ids:
+                - EC-010
+              source_ids:
+                - SRC-002
+                - SRC-003
+      annotations:
+        - label: Function/location gap
+          x: 2026 current
+          y: null
+          note: Request headcount by function, location, open reqs and attrition.
+          evidence_claim_ids:
+            - EC-010
+            - EC-011
+            - EC-012
+          source_ids:
+            - SRC-001
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-007
+      - EC-003
+      - EC-011
+      - EC-012
+    source_ids:
+      - SRC-002
+      - SRC-003
+    notes: null
+  - figure_id: F-010
+    title: Legal and regulatory timeline
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: timeline
+    description: Public legal, regulatory and diligence-request timeline.
+    purpose: Distinguish observed public matters from docket gaps.
+    spec_schema_ref: figure_spec_shapes.timeline
+    spec:
+      events:
+        - event_id: E1
+          date: 2021-11-09
+          label: Public unicorn/funding status
+          description: Financing/valuation event establishes diligence baseline.
+          category: financing
+          evidence_claim_ids:
+            - EC-001
+            - EC-002
+          source_ids:
+            - SRC-001
+            - SRC-002
+        - event_id: E2
+          date: 2026-06-15
+          label: Legal/regulatory screen
+          description: Privacy/cookie and security trust representations
+          category: regulatory
+          evidence_claim_ids:
+            - EC-014
+          source_ids:
+            - SRC-003
+            - SRC-006
+        - event_id: E3
+          date: 2026-06-15
+          label: Private records request
+          description: Full litigation, IP, insurance and material-contract schedules are required.
+          category: diligence_gap
+          evidence_claim_ids:
+            - EC-010
+            - EC-012
+            - EC-014
+          source_ids:
+            - SRC-001
+      start_date: 2021-11-09
+      end_date: 2026-06-15
+      ordering: chronological
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-009
+      - EC-010
+      - EC-014
+      - EC-012
+    source_ids:
+      - SRC-003
+      - SRC-006
+    notes: null
+  - figure_id: F-011
+    title: Full risk-register heatmap
+    chapter_id: VIII
+    section_id: VIII.G
+    figure_type: risk_heatmap
+    description: Risk severity/likelihood map for the diligence register.
+    purpose: Prioritize diligence workstreams.
+    spec_schema_ref: figure_spec_shapes.risk_heatmap
+    spec:
+      x_axis:
+        label: likelihood
+        scale:
+          - low
+          - medium
+          - high
+          - unknown
+      y_axis:
+        label: severity
+        scale:
+          - informational
+          - low
+          - medium
+          - high
+          - critical
+      risk_points:
+        - risk_id: R-001
+          label: Stale public valuation and opaque financial quality
+          severity: high
+          likelihood: medium
+          rationale: Latest public unicorn valuation anchors to 2021/CB Insights; audited revenue, ARR, margins and burn are not public.
+          evidence_claim_ids: &a20
+            - EC-001
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-002
+          label: Crowded AppSec and platform-consolidation market
+          severity: high
+          likelihood: high
+          rationale: Contrast competes against specialist AST/SCA vendors and larger security platforms that can bundle adjacent capabilities.
+          evidence_claim_ids: &a21
+            - EC-009
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-003
+          label: AI/runtime efficacy and integration risk
+          severity: high
+          likelihood: medium
+          rationale: AI SmartFix and runtime instrumentation claims require validation for coverage, latency, false positives and secure remediation quality.
+          evidence_claim_ids: &a22
+            - EC-004
+            - EC-008
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-004
+          label: Customer concentration and renewal quality unknown
+          severity: high
+          likelihood: unknown
+          rationale: Named logos do not disclose ARR, current contract status, expansion, churn or customer concentration.
+          evidence_claim_ids: &a23
+            - EC-005
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-005
+          label: Enterprise GTM productivity not public
+          severity: medium
+          likelihood: unknown
+          rationale: Sales cycle, quota attainment, partner contribution and CAC payback are not publicly disclosed.
+          evidence_claim_ids: &a24
+            - EC-007
+            - EC-010
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-006
+          label: Security-trust and data-processing exposure
+          severity: medium
+          likelihood: medium
+          rationale: Security products embedded in customer apps may process sensitive telemetry; trust artifacts and contractual risk allocation are not public.
+          evidence_claim_ids: &a25
+            - EC-014
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-007
+          label: IP ownership and patent defensibility not enumerated
+          severity: medium
+          likelihood: unknown
+          rationale: Company claims patented sensors but public diligence lacks a full patent, license and open-source schedule.
+          evidence_claim_ids: &a26
+            - EC-004
+            - EC-014
+          source_ids:
+            - SRC-001
+            - SRC-003
+        - risk_id: R-008
+          label: Exit timing and secondary-market valuation risk
+          severity: medium
+          likelihood: medium
+          rationale: No obvious exit found, but the 2021 valuation may not reflect current software multiples or later preference stack.
+          evidence_claim_ids: &a27
+            - EC-001
+            - EC-011
+          source_ids:
+            - SRC-001
+            - SRC-003
+    rendering_guidance:
+      preferred_format: chart_spec
+      display_notes: null
+    evidence_claim_ids:
+      - EC-001
+      - EC-010
+      - EC-009
+      - EC-004
+      - EC-008
+      - EC-005
+      - EC-007
+      - EC-014
+      - EC-011
+    source_ids:
+      - SRC-001
+      - SRC-003
+    notes: null
+evidence_claims:
+  - evidence_claim_id: EC-001
+    claim: CB Insights lists Contrast Security as a current unicorn with a $1B valuation and 2021 date joined.
+    evidence_summary: CB Insights row shows Contrast Security at $1B, date joined 11/9/2021, United States, Enterprise Tech.
+    evidence_type: market_database
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-001
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: Contrast Security	$1	11/9/2021	United States	Pleasanton	Enterprise Tech	Acero Capital, General Catalyst, M12
+        location: null
+    analyst_interpretation: CB Insights row shows Contrast Security at $1B, date joined 11/9/2021, United States, Enterprise Tech.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids: []
+      table_ids:
+        - T-001
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids: []
+  - evidence_claim_id: EC-002
+    claim: Contrast announced a $150M Series E at a greater-than-billion-dollar valuation led by Liberty Strategic Capital.
+    evidence_summary: Company-distributed PRNewswire release states the round size, valuation threshold, lead investor, and existing-investor participation.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: closed $150M in a Series E round of funding at a greater than billion-dollar valuation ... led by Liberty Strategic Capital ... Warburg Pincus, Battery Ventures, General Catalyst, Microsoft's M-12 Fund, AXA Venture Partners and Acero Capital
+        location: null
+    analyst_interpretation: Company-distributed PRNewswire release states the round size, valuation threshold, lead investor, and existing-investor participation.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.D
+      founder_claim_ids:
+        - FC-002
+      table_ids:
+        - T-001
+        - T-002
+      figure_ids:
+        - F-001
+        - F-002
+      risk_ids: []
+  - evidence_claim_id: EC-003
+    claim: Contrast markets a runtime application-security platform spanning ADR and AST products.
+    evidence_summary: The platform page lists Contrast ADR, Contrast AST, Assess, SCA, Scan and Contrast One, and describes real-time in-application security.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Identify vulnerabilities and stop attacks in real-time with innovative, in-app technology
+        location: null
+    analyst_interpretation: The platform page lists Contrast ADR, Contrast AST, Assess, SCA, Scan and Contrast One, and describes real-time in-application security.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-004
+      figure_ids:
+        - F-003
+      risk_ids: []
+  - evidence_claim_id: EC-004
+    claim: Contrast claims patented in-app sensors and a unified platform purpose-built for live application-layer attacks.
+    evidence_summary: The About page describes patented in-app sensors and runtime visibility/protection from inside running applications.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Through patented in-app sensors and a unified platform for Application Detection and Response and Application Security Testing, Contrast delivers real-time visibility and protection directly from inside your running applications.
+        location: null
+    analyst_interpretation: The About page describes patented in-app sensors and runtime visibility/protection from inside running applications.
+    limitations: null
+    associations:
+      chapter_id: II
+      section_id: II.A
+      founder_claim_ids:
+        - FC-001
+      table_ids:
+        - T-004
+      figure_ids:
+        - F-003
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-005
+    claim: Contrast publicly names Citizens Bank, Backbase, AARP and UTIMCO as customer/adoption references.
+    evidence_summary: The About page says companies such as Citizens Bank, Backbase and AARP use Contrast, and includes an UTIMCO quote about telemetry.
+    evidence_type: customer_or_partner_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: companies worldwide, such as Citizens Bank, Backbase, and AARP ... "The telemetry we get from Contrast further hardens our overall security posture"
+        location: null
+    analyst_interpretation: The About page says companies such as Citizens Bank, Backbase and AARP use Contrast, and includes an UTIMCO quote about telemetry.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.A
+      founder_claim_ids:
+        - FC-003
+      table_ids:
+        - T-006
+      figure_ids:
+        - F-004
+      risk_ids:
+        - R-004
+  - evidence_claim_id: EC-006
+    claim: Contrast discloses a senior leadership team including Rick Fitz, Jeff Williams, David Lindner, Faya Peng and Shay Mowlem.
+    evidence_summary: The leadership page lists executive roles and biographies for CEO, co-founder/CTO, CISO, CPO and CMO.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: high
+    source_ids:
+      - SRC-005
+    quoted_evidence:
+      - source_id: SRC-005
+        quote: Rick Fitz is the Chief Executive Officer ... Jeff ... Co-Founder and Chief Technology Officer ... David ... chief information security officer ... Faya Peng is Chief Product Officer ... Shay Mowlem is the Chief Marketing Officer
+        location: null
+    analyst_interpretation: The leadership page lists executive roles and biographies for CEO, co-founder/CTO, CISO, CPO and CMO.
+    limitations: null
+    associations:
+      chapter_id: VII
+      section_id: VII.C
+      founder_claim_ids: []
+      table_ids:
+        - T-015
+      figure_ids:
+        - F-008
+      risk_ids: []
+  - evidence_claim_id: EC-007
+    claim: Contrast reports global expansion and customer adoption in EMEA/APAC as use of Series E proceeds.
+    evidence_summary: The Series E release says the investment would support market share, global expansion after EMEA growth and APAC customer adoption.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-002
+        quote: accelerated global expansion plans, following growth in EMEA and rapid customer adoption in APAC
+        location: null
+    analyst_interpretation: The Series E release says the investment would support market share, global expansion after EMEA growth and APAC customer adoption.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids:
+        - T-011
+        - T-012
+      figure_ids:
+        - F-006
+      risk_ids: []
+  - evidence_claim_id: EC-008
+    claim: Contrast positions AI SmartFix and Contrast Graph as newer product/R&D directions.
+    evidence_summary: The platform page describes Contrast Graph and AI SmartFix remediation guidance.
+    evidence_type: primary_company_source
+    verification_status: partially_verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: The Contrast Graph is the core of the platform ... Contrast AI SmartFix suggests and applies targeted code fixes within minutes
+        location: null
+    analyst_interpretation: The platform page describes Contrast Graph and AI SmartFix remediation guidance.
+    limitations: null
+    associations:
+      chapter_id: VI
+      section_id: VI.B
+      founder_claim_ids: []
+      table_ids:
+        - T-014
+      figure_ids:
+        - F-007
+      risk_ids:
+        - R-003
+  - evidence_claim_id: EC-009
+    claim: Contrast competes in application security testing, runtime security, API security and ASPM categories.
+    evidence_summary: Company navigation and third-party listings place Contrast in application security testing and application-detection/response segments.
+    evidence_type: review_site
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-003
+      - SRC-007
+      - SRC-008
+    quoted_evidence:
+      - source_id: SRC-003
+        quote: Application Security Testing and Application Detection and Response
+        location: null
+    analyst_interpretation: Company navigation and third-party listings place Contrast in application security testing and application-detection/response segments.
+    limitations: null
+    associations:
+      chapter_id: IV
+      section_id: IV.A
+      founder_claim_ids: []
+      table_ids:
+        - T-009
+        - T-010
+      figure_ids:
+        - F-005
+      risk_ids:
+        - R-002
+  - evidence_claim_id: EC-010
+    claim: Detailed financial statements, customer concentration, churn, sales productivity and cap-table terms are not public.
+    evidence_summary: No audited financial statements or customer revenue schedules were found in public company/market sources.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-001
+      - SRC-002
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: The public sources disclose financing and selected investors but not audited revenue, backlog, AR aging, churn, or share schedules.
+        location: null
+    analyst_interpretation: No audited financial statements or customer revenue schedules were found in public company/market sources.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.A
+      founder_claim_ids: []
+      table_ids:
+        - T-003
+      figure_ids: []
+      risk_ids:
+        - R-001
+        - R-005
+  - evidence_claim_id: EC-011
+    claim: No obvious IPO, acquisition or shutdown result was found in the public search screen; CB Insights still lists the company.
+    evidence_summary: Exit screening used CB Insights current list plus search results; this is an absence screen, not legal confirmation.
+    evidence_type: other
+    verification_status: partially_verified
+    confidence: low
+    source_ids:
+      - SRC-001
+      - SRC-009
+    quoted_evidence:
+      - source_id: SRC-001
+        quote: CB Insights current unicorn list includes Contrast Security; searched public web snippets for IPO/acquisition/shutdown signals.
+        location: null
+    analyst_interpretation: Exit screening used CB Insights current list plus search results; this is an absence screen, not legal confirmation.
+    limitations: null
+    associations:
+      chapter_id: I
+      section_id: I.C
+      founder_claim_ids: []
+      table_ids: []
+      figure_ids: []
+      risk_ids:
+        - R-008
+  - evidence_claim_id: EC-012
+    claim: Contrast exposes customer and partner portals and partner-program surfaces.
+    evidence_summary: The company navigation links to customer login, partner portal, channel/GSI/technology partners and partner directory.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Contrast customer ... Contrast partner ... Channel partners ... GSI and service providers ... Technology partners
+        location: null
+    analyst_interpretation: The company navigation links to customer login, partner portal, channel/GSI/technology partners and partner directory.
+    limitations: null
+    associations:
+      chapter_id: III
+      section_id: III.B
+      founder_claim_ids: []
+      table_ids:
+        - T-007
+        - T-008
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-013
+    claim: Contrast operates in sectors including technology, financial services, healthcare and insurance.
+    evidence_summary: Company navigation lists industry pages for technology, financial services, healthcare and insurance.
+    evidence_type: primary_company_source
+    verification_status: verified
+    confidence: medium
+    source_ids:
+      - SRC-004
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: By industry ... Technology ... Financial services ... Healthcare ... Insurance
+        location: null
+    analyst_interpretation: Company navigation lists industry pages for technology, financial services, healthcare and insurance.
+    limitations: null
+    associations:
+      chapter_id: V
+      section_id: V.A
+      founder_claim_ids: []
+      table_ids:
+        - T-011
+      figure_ids: []
+      risk_ids: []
+  - evidence_claim_id: EC-014
+    claim: Legal, IP ownership, insurance coverage and material contracts require diligence beyond public pages.
+    evidence_summary: Public pages mention patented sensors but do not provide patent schedules, litigation dockets, insurance policies or material contracts.
+    evidence_type: other
+    verification_status: not_publicly_verifiable
+    confidence: high
+    source_ids:
+      - SRC-004
+      - SRC-010
+    quoted_evidence:
+      - source_id: SRC-004
+        quote: Public pages mention patented in-app sensors but do not disclose a complete IP schedule, insurance policies, litigation register, or material contracts.
+        location: null
+    analyst_interpretation: Public pages mention patented sensors but do not provide patent schedules, litigation dockets, insurance policies or material contracts.
+    limitations: null
+    associations:
+      chapter_id: VIII
+      section_id: VIII.D
+      founder_claim_ids: []
+      table_ids:
+        - T-020
+        - T-022
+      figure_ids:
+        - F-010
+        - F-011
+      risk_ids:
+        - R-006
+        - R-007
+sources:
+  - source_id: SRC-001
+    title: The Complete List Of Unicorn Companies
+    url: https://www.cbinsights.com/research-unicorn-companies
+    publisher: CB Insights
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: market_database
+    reliability_notes: Reputable public market database used for current unicorn-screen valuation and status.
+    archive_url: null
+  - source_id: SRC-002
+    title: Contrast Security Closes $150M Series E Funding Led by Liberty Strategic Capital
+    url: https://www.prnewswire.com/news-releases/contrast-security-closes-150m-series-e-funding-led-by-liberty-strategic-capital-to-expand-leadership-in-code-security-301419307.html
+    publisher: PR Newswire / Contrast Security
+    author: null
+    publication_date: 2021-11-09
+    accessed_date: 2026-06-15
+    source_type: primary_company_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-003
+    title: Contrast Runtime Security Platform for Application Security
+    url: https://www.contrastsecurity.com/platform
+    publisher: Contrast Security
+    author: null
+    publication_date: 2026-06-15
+    accessed_date: 2026-06-15
+    source_type: primary_company_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-004
+    title: About Us | Get Secure Code Moving
+    url: https://www.contrastsecurity.com/about-us
+    publisher: Contrast Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: primary_company_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-005
+    title: Leadership | Contrast Security
+    url: https://www.contrastsecurity.com/about/management-team
+    publisher: Contrast Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: primary_company_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-006
+    title: Contrast Security customer-success pages
+    url: https://www.contrastsecurity.com/customer-success
+    publisher: Contrast Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: customer_or_partner_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-007
+    title: Contrast Security reviews and application-security testing market page
+    url: https://www.gartner.com/reviews/market/application-security-testing/vendor/contrast-security
+    publisher: Gartner Peer Insights
+    author: null
+    publication_date: 2025-02-25
+    accessed_date: 2026-06-15
+    source_type: review_site
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-008
+    title: AWS Marketplace - Contrast Security Application Detection and Response
+    url: https://aws.amazon.com/marketplace/pp/prodview-ivnthehx7c7pg
+    publisher: Amazon Web Services Marketplace
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: customer_or_partner_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+  - source_id: SRC-009
+    title: DuckDuckGo search results for Contrast Security IPO acquired private company
+    url: https://html.duckduckgo.com/html/?q=Contrast%20Security%20private%20company%20IPO%20acquired
+    publisher: DuckDuckGo HTML Search
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: other
+    reliability_notes: Search-result source used only for absence-of-obvious-exit screening, not as proof of non-existence.
+    archive_url: null
+  - source_id: SRC-010
+    title: Contrast Security Trust Center
+    url: https://www.contrastsecurity.com/trust-center
+    publisher: Contrast Security
+    author: null
+    publication_date: null
+    accessed_date: 2026-06-15
+    source_type: primary_company_source
+    reliability_notes: Public source used for standard-diligence evidence; content should be re-confirmed against primary records before transaction reliance.
+    archive_url: null
+risk_register:
+  - risk_id: R-001
+    risk_title: Stale public valuation and opaque financial quality
+    risk_category: financial
+    severity: high
+    likelihood: medium
+    description: Latest public unicorn valuation anchors to 2021/CB Insights; audited revenue, ARR, margins and burn are not public.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.A
+      - I.D
+    evidence_claim_ids: *a20
+    mitigation_or_diligence_request: Request audited financials, ARR bridge, bookings, gross margin by product, burn/runway and board-approved plan.
+  - risk_id: R-002
+    risk_title: Crowded AppSec and platform-consolidation market
+    risk_category: market
+    severity: high
+    likelihood: high
+    description: Contrast competes against specialist AST/SCA vendors and larger security platforms that can bundle adjacent capabilities.
+    impacted_chapter_ids:
+      - IV
+    impacted_section_ids:
+      - IV.A
+    evidence_claim_ids: *a21
+    mitigation_or_diligence_request: Run competitive win/loss calls, pricing benchmark and POC against top alternatives.
+  - risk_id: R-003
+    risk_title: AI/runtime efficacy and integration risk
+    risk_category: technical
+    severity: high
+    likelihood: medium
+    description: AI SmartFix and runtime instrumentation claims require validation for coverage, latency, false positives and secure remediation quality.
+    impacted_chapter_ids:
+      - II
+      - VI
+    impacted_section_ids:
+      - II.A
+      - VI.B
+    evidence_claim_ids: *a22
+    mitigation_or_diligence_request: Perform technical diligence, customer telemetry review and red-team validation.
+  - risk_id: R-004
+    risk_title: Customer concentration and renewal quality unknown
+    risk_category: customer
+    severity: high
+    likelihood: unknown
+    description: Named logos do not disclose ARR, current contract status, expansion, churn or customer concentration.
+    impacted_chapter_ids:
+      - III
+      - V
+    impacted_section_ids:
+      - III.A
+      - V.B
+    evidence_claim_ids: *a23
+    mitigation_or_diligence_request: Request top-customer revenue, cohorts, NRR/GRR, churn reasons and reference calls.
+  - risk_id: R-005
+    risk_title: Enterprise GTM productivity not public
+    risk_category: operational
+    severity: medium
+    likelihood: unknown
+    description: Sales cycle, quota attainment, partner contribution and CAC payback are not publicly disclosed.
+    impacted_chapter_ids:
+      - V
+    impacted_section_ids:
+      - V.D
+      - V.E
+    evidence_claim_ids: *a24
+    mitigation_or_diligence_request: Request pipeline, bookings by channel, sales productivity and forecast accuracy.
+  - risk_id: R-006
+    risk_title: Security-trust and data-processing exposure
+    risk_category: legal
+    severity: medium
+    likelihood: medium
+    description: Security products embedded in customer apps may process sensitive telemetry; trust artifacts and contractual risk allocation are not public.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.E
+      - VIII.F
+    evidence_claim_ids: *a25
+    mitigation_or_diligence_request: Review SOC2/ISO reports, DPA, incident history, insurance and indemnity caps.
+  - risk_id: R-007
+    risk_title: IP ownership and patent defensibility not enumerated
+    risk_category: technical
+    severity: medium
+    likelihood: unknown
+    description: Company claims patented sensors but public diligence lacks a full patent, license and open-source schedule.
+    impacted_chapter_ids:
+      - VIII
+    impacted_section_ids:
+      - VIII.D
+    evidence_claim_ids: *a26
+    mitigation_or_diligence_request: Request patent schedule, invention assignments, OSS scans and infringement opinions.
+  - risk_id: R-008
+    risk_title: Exit timing and secondary-market valuation risk
+    risk_category: financing
+    severity: medium
+    likelihood: medium
+    description: No obvious exit found, but the 2021 valuation may not reflect current software multiples or later preference stack.
+    impacted_chapter_ids:
+      - I
+    impacted_section_ids:
+      - I.C
+      - I.D
+    evidence_claim_ids: *a27
+    mitigation_or_diligence_request: Request cap table, preference stack, recent secondary marks and board financing alternatives.
+diligence_gaps:
+  - gap_id: G-001
+    chapter_id: I
+    section_id: I.A
+    missing_information: Audited annual/quarterly financial statements and management KPI package.
+    why_it_matters: Needed to verify revenue quality, margins, burn, runway and plan credibility.
+    suggested_source_or_request: Company CFO/controller data-room package.
+    priority: high
+  - gap_id: G-002
+    chapter_id: I
+    section_id: I.C
+    missing_information: Current cap table, preference stack, option pool, debt and latest 409A/common valuation.
+    why_it_matters: Needed to underwrite dilution, liquidation economics and exit outcomes.
+    suggested_source_or_request: Company counsel and finance team.
+    priority: high
+  - gap_id: G-003
+    chapter_id: III
+    section_id: III.C
+    missing_information: Revenue by customer, product, channel and geography plus top-customer contracts.
+    why_it_matters: Needed to assess concentration, renewal risk and quality of revenue.
+    suggested_source_or_request: Sales ops, billing system exports and customer contracts.
+    priority: high
+  - gap_id: G-004
+    chapter_id: VIII
+    section_id: VIII.G
+    missing_information: Litigation, regulatory, privacy/security, insurance and IP schedules.
+    why_it_matters: Needed to bound legal, security, regulatory and ownership exposure.
+    suggested_source_or_request: Outside counsel, security team and insurance broker.
+    priority: high
+follow_up_requests:
+  - request_id: Q-001
+    chapter_id: I
+    section_id: I.A
+    request: Provide audited financial statements, monthly management reports, ARR/revenue bridge, cash runway and board plan.
+    requested_from: company
+    priority: high
+  - request_id: Q-002
+    chapter_id: I
+    section_id: I.C
+    request: Provide current cap table, financing documents, debt instruments, option/warrant schedule and latest 409A/common valuation.
+    requested_from: counsel
+    priority: high
+  - request_id: Q-003
+    chapter_id: III
+    section_id: III.C
+    request: Provide top-customer schedule, contract status, churn/cohort retention, NRR/GRR and reference-call list.
+    requested_from: company
+    priority: high
+  - request_id: Q-004
+    chapter_id: V
+    section_id: V.D
+    request: Provide sales productivity model, quota attainment, CAC/payback, pipeline conversion and channel economics.
+    requested_from: company
+    priority: medium
+  - request_id: Q-005
+    chapter_id: VI
+    section_id: VI.B
+    request: Provide product roadmap, technical architecture, security review, R&D budget and open-source/license scan.
+    requested_from: company
+    priority: high
+  - request_id: Q-006
+    chapter_id: VIII
+    section_id: VIII.G
+    request: Provide litigation/regulatory schedule, insurance policies, privacy/security audits and material-contract list.
+    requested_from: counsel
+    priority: high
+limitations:
+  - limitation_id: L-001
+    description: This report is based solely on public web research and public-search snippets available on 2026-06-15; no private data room, management interviews, customer calls or paid databases were accessed.
+    affected_chapter_ids:
+      - I
+      - III
+      - V
+      - VII
+      - VIII
+    affected_section_ids:
+      - I.A
+      - I.C
+      - III.C
+      - V.D
+      - VII.G
+      - VIII.A
+      - VIII.F
+      - VIII.G
+  - limitation_id: L-002
+    description: Search-result snippets are used only as directional evidence and must be replaced or corroborated with primary filings, direct source pages, counsel records or company documents before transaction reliance.
+    affected_chapter_ids:
+      - I
+      - IV
+      - VIII
+    affected_section_ids:
+      - I.D
+      - IV.A
+      - VIII.G
+  - limitation_id: L-003
+    description: No claim is made that absence of public litigation, acquisition, shutdown or IPO results proves non-existence; legal status should be verified immediately before any investment action.
+    affected_chapter_ids:
+      - I
+      - VIII
+    affected_section_ids:
+      - I.C
+      - VIII.A
+      - VIII.B
+      - VIII.G
