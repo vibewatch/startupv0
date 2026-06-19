@@ -102,7 +102,7 @@ engine:
     - xhigh
     - --autopilot
 
-max-effective-tokens: 100000000
+max-ai-credits: 10000
 
 tools:
   web-fetch:
