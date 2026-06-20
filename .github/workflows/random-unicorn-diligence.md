@@ -102,6 +102,7 @@ engine:
     - xhigh
     - --autopilot
 
+max-ai-credits: -1
 max-daily-ai-credits: -1
 
 tools:
