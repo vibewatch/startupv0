@@ -96,7 +96,7 @@ network:
 
 engine:
   id: copilot
-  model: gpt-5.4
+  model: gpt-6-luna
   args:
     - --effort
     - xhigh

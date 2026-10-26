@@ -14,7 +14,7 @@ permissions: read-all
 
 engine:
   id: copilot
-  model: gpt-5.4
+  model: gpt-6-luna
   
 network:
   allowed:
